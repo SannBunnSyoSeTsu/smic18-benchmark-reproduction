@@ -1,0 +1,34 @@
+simulator lang=spectre
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/08/20260922T103843871154Z_ac/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-14
+VDD (vdd 0) vsource dc=1.8
+VCM (vcm 0) vsource dc=.9
+IREF (vdd iref) isource dc=20u
+X (iref vcm vdd vin vip von vop 0) buf_ppsf_bs
+CLP (vop 0) capacitor c=1p
+CLN (von 0) capacitor c=1p
+save vop von vip vin VDD:p VCM:p VIP:p VIN:p X.VBN1 X.VBN2 X.VBP1 X.VBP2 X.ndP X.pdP
+VIP (vip 0) vsource dc=.9 mag=.4 phase=0
+VIN (vin 0) vsource dc=.9 mag=.4 phase=180
+save X.MREF:ids X.MREF:gm X.MREF:gds X.MREF:vds X.MREF:vdsat X.MREF:vgs
+save X.MBN:ids X.MBN:gm X.MBN:gds X.MBN:vds X.MBN:vdsat X.MBN:vgs
+save X.MBP:ids X.MBP:gm X.MBP:gds X.MBP:vds X.MBP:vdsat X.MBP:vgs
+save X.MPBN1:ids X.MPBN1:gm X.MPBN1:gds X.MPBN1:vds X.MPBN1:vdsat X.MPBN1:vgs
+save X.MNBN1:ids X.MNBN1:gm X.MNBN1:gds X.MNBN1:vds X.MNBN1:vdsat X.MNBN1:vgs
+save X.MNBP1:ids X.MNBP1:gm X.MNBP1:gds X.MNBP1:vds X.MNBP1:vdsat X.MNBP1:vgs
+save X.MPBP1:ids X.MPBP1:gm X.MPBP1:gds X.MPBP1:vds X.MPBP1:vdsat X.MPBP1:vgs
+save X.MPBN2:ids X.MPBN2:gm X.MPBN2:gds X.MPBN2:vds X.MPBN2:vdsat X.MPBN2:vgs
+save X.MNBN2:ids X.MNBN2:gm X.MNBN2:gds X.MNBN2:vds X.MNBN2:vdsat X.MNBN2:vgs
+save X.MNBP2:ids X.MNBP2:gm X.MNBP2:gds X.MNBP2:vds X.MNBP2:vdsat X.MNBP2:vgs
+save X.MPBP2:ids X.MPBP2:gm X.MPBP2:gds X.MPBP2:vds X.MPBP2:vdsat X.MPBP2:vgs
+save X.MINP:ids X.MINP:gm X.MINP:gds X.MINP:vds X.MINP:vdsat X.MINP:vgs
+save X.MCNP:ids X.MCNP:gm X.MCNP:gds X.MCNP:vds X.MCNP:vdsat X.MCNP:vgs
+save X.MIPP:ids X.MIPP:gm X.MIPP:gds X.MIPP:vds X.MIPP:vdsat X.MIPP:vgs
+save X.MCPP:ids X.MCPP:gm X.MCPP:gds X.MCPP:vds X.MCPP:vdsat X.MCPP:vgs
+save X.MINN:ids X.MINN:gm X.MINN:gds X.MINN:vds X.MINN:vdsat X.MINN:vgs
+save X.MCNN:ids X.MCNN:gm X.MCNN:gds X.MCNN:vds X.MCNN:vdsat X.MCNN:vgs
+save X.MIPN:ids X.MIPN:gm X.MIPN:gds X.MIPN:vds X.MIPN:vdsat X.MIPN:vgs
+save X.MCPN:ids X.MCPN:gm X.MCPN:gds X.MCPN:vds X.MCPN:vdsat X.MCPN:vgs
+dcOp dc
+ac ac start=1M stop=40M dec=100

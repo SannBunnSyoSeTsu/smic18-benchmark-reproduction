@@ -1,0 +1,59 @@
+{
+  "source_task": "sky130-unregulated-charge-pump-10mhz-pvt",
+  "scope": "SMIC18 TT/1.8V/40C nominal representative point; independent enabled/disabled benches",
+  "VDD_V": 1.8,
+  "temperature_C": 40,
+  "pin_order": [
+    "AVDD",
+    "AVSS",
+    "CLK",
+    "EN",
+    "VOUT"
+  ],
+  "clock_Hz": 10000000.0,
+  "clock_initial_V": 1.8,
+  "clock_low_V": 0,
+  "clock_edge_s": 1e-12,
+  "clock_low_plateau_s": 5e-08,
+  "clock_period_s": 1e-07,
+  "clock_and_enable_source_ohm": 50,
+  "enabled_load_A": 5e-05,
+  "disabled_load_A": 0,
+  "external_output_F": 1e-09,
+  "enabled_stop_s": 0.0002,
+  "enabled_window_s": [
+    0.00019,
+    0.0002
+  ],
+  "disabled_stop_s": 1e-05,
+  "disabled_window_s": [
+    9e-06,
+    1e-05
+  ],
+  "disabled_enable_from_time_zero": true,
+  "disabled_clock_keeps_running": true,
+  "output_center_V": 2.5,
+  "output_error_max_V": 0.3,
+  "ripple_max_V": 0.005,
+  "enabled_current_max_A": 0.0002,
+  "disabled_current_max_A": 1e-07,
+  "current_definition": "absolute value of time-average VDD sense current, separate runs",
+  "allowed_DUT": "native SMIC MOS and MIM; exact unmodified HD cells; no ideal R/C or internal sources",
+  "terminal_screen_V": {
+    "n33": 3.63,
+    "n18": 1.98,
+    "p18": 1.98,
+    "nnt33": 3.63
+  },
+  "terminal_screen_interpretation": "non-relaxable engineering 110percent nominal-terminal screen; not a foundry lifetime signoff rating",
+  "exclusions": [
+    "other7representative PVT points",
+    "full Cartesian PVT",
+    "mismatch",
+    "efficiency",
+    "behavior after200us",
+    "layout/PEX"
+  ],
+  "acceptance_policy": "/home/IC/CodeX/smic18_benchmark_repro/contracts/acceptance-policy.md",
+  "transient_output_sampling": "all adaptive points in0..2us and180..200us; one of100points in2..180us only, no effect on simulation steps or190..200us measurements; disabled all adaptive points"
+}

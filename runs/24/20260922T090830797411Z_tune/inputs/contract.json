@@ -1,0 +1,196 @@
+{
+  "source_task": "sky130-current-starved-ring-vco-pvt",
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "load_F": 2e-14,
+  "controls_V": [
+    0.9,
+    1.0,
+    1.1,
+    1.2
+  ],
+  "plateau_starts_s": [
+    5.1e-08,
+    1.052e-06,
+    2.053e-06,
+    3.054e-06
+  ],
+  "plateau_ends_s": [
+    1.051e-06,
+    2.052e-06,
+    3.0530000000000002e-06,
+    4.054e-06
+  ],
+  "transition_s": 1e-09,
+  "tuning_frequency": "5/(rise6-rise1), rising half-supply crossings beginning300ns after each plateau starts",
+  "settling_drift": "abs(fearly-flate)/mean(fearly,flate); 2 periods each beginning300ns after start and300ns before end",
+  "plateau_containment_nonrelaxable": true,
+  "startup": "First rising half-supply crossing after51ns minus51ns; no forced IC",
+  "duty_control_V": 1.1,
+  "duty_original_verifier": "min(abs(firstfall-firstrise),period-abs(firstfall-firstrise))/period; actual high fraction also extracted",
+  "duty_acceptance": "abs(actual high fraction-0.5)<=0.05;10/15% expand halfwidth to0.055/0.0575, center stays0.5",
+  "swing_windows_s": [
+    [
+      3.51e-07,
+      1.051e-06
+    ],
+    [
+      1.352e-06,
+      2.052e-06
+    ],
+    [
+      2.353e-06,
+      3.0530000000000002e-06
+    ],
+    [
+      3.354e-06,
+      4.054e-06
+    ]
+  ],
+  "power_window_s": [
+    3.754e-06,
+    4.054e-06
+  ],
+  "power_port": "Entire DUT VDD including analog bias, all5 delay stages and both output buffers",
+  "supply_pushing": {
+    "controls_V": 1.1,
+    "temperature_C": 27,
+    "corner": "tt",
+    "supplies_V": [
+      1.71,
+      1.89
+    ],
+    "measurement_start_s": 5.5e-07,
+    "periods": 5,
+    "stop_s": 1e-06,
+    "formula": "abs(fhigh-flow)/mean(fhigh,flow)/0.18*100"
+  },
+  "specs": {
+    "f_0p9_min_Hz": {
+      "unit": "Hz",
+      "sense": "min",
+      "limits": {
+        "original": 10000000.0,
+        "10pct": 9000000.0,
+        "15pct": 8500000.0
+      }
+    },
+    "f_0p9_max_Hz": {
+      "unit": "Hz",
+      "sense": "max",
+      "limits": {
+        "original": 25000000.0,
+        "10pct": 27500000.000000004,
+        "15pct": 28749999.999999996
+      }
+    },
+    "f_1p2_Hz": {
+      "unit": "Hz",
+      "sense": "min",
+      "limits": {
+        "original": 25000000.0,
+        "10pct": 22500000.0,
+        "15pct": 21250000.0
+      }
+    },
+    "tuning_ratio": {
+      "unit": "ratio",
+      "sense": "min",
+      "limits": {
+        "original": 1.5,
+        "10pct": 1.35,
+        "15pct": 1.275
+      }
+    },
+    "kvco_min_Hz_per_V": {
+      "unit": "Hz/V",
+      "sense": "min",
+      "limits": {
+        "original": 30000000.0,
+        "10pct": 27000000.0,
+        "15pct": 25500000.0
+      }
+    },
+    "kvco_linearity_ratio": {
+      "unit": "ratio",
+      "sense": "max",
+      "limits": {
+        "original": 1.5,
+        "10pct": 1.6500000000000001,
+        "15pct": 1.7249999999999999
+      }
+    },
+    "frequency_settling_drift": {
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.001,
+        "10pct": 0.0011,
+        "15pct": 0.00115
+      }
+    },
+    "duty_error_from_half": {
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.05,
+        "10pct": 0.05500000000000001,
+        "15pct": 0.057499999999999996
+      }
+    },
+    "startup_time_s": {
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 1e-07,
+        "10pct": 1.1e-07,
+        "15pct": 1.1499999999999998e-07
+      }
+    },
+    "output_low_fraction": {
+      "unit": "VDD",
+      "sense": "max",
+      "limits": {
+        "original": 0.1,
+        "10pct": 0.11000000000000001,
+        "15pct": 0.11499999999999999
+      }
+    },
+    "output_high_fraction": {
+      "unit": "VDD",
+      "sense": "min",
+      "limits": {
+        "original": 0.9,
+        "10pct": 0.81,
+        "15pct": 0.765
+      }
+    },
+    "power_W": {
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.0002,
+        "10pct": 0.00022000000000000003,
+        "15pct": 0.00022999999999999998
+      }
+    },
+    "supply_pushing_pct_per_V": {
+      "unit": "%/V",
+      "sense": "max",
+      "limits": {
+        "original": 100.0,
+        "10pct": 110.00000000000001,
+        "15pct": 114.99999999999999
+      }
+    }
+  },
+  "nominal_scope_excludes": [
+    "other26 tuning PVT combinations",
+    "SS/FF supply-pushing tests",
+    "phase noise and jitter",
+    "mismatch/Monte Carlo",
+    "PEX"
+  ],
+  "source": "Frozen instruction and formal verifier define the timing. Static supply perturbation is a nominal sensitivity dimension and remains required."
+}

@@ -1,0 +1,5471 @@
+{
+  "generated_at": "2026-09-26T05:32:57.676419+00:00",
+  "circuit_sha256": "45eb5290815c778d817a7b9e108994121159fdb0e952d17e8984bdd00b1af2af",
+  "top": "low_power_line_driver",
+  "subcircuit_ports": {
+    "low_power_line_driver": [
+      "vss",
+      "iref",
+      "vdd",
+      "vinn",
+      "vinp",
+      "vout"
+    ]
+  },
+  "instances": {
+    "low_power_line_driver/MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "10"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=2.22u l=1u m=10",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 10.0,
+      "sheet": 1,
+      "origin": [
+        3,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          3,
+          6
+        ],
+        "S": [
+          3,
+          4
+        ],
+        "G": [
+          1.45,
+          5
+        ],
+        "B": [
+          3.86,
+          5
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MBP": {
+      "name": "MBP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pb",
+        "G": "pb",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MBP (pb pb vdd vdd) p18 w=10.52u l=1u m=2",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        11,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          19
+        ],
+        "S": [
+          11,
+          21
+        ],
+        "G": [
+          9.45,
+          20
+        ],
+        "B": [
+          11.86,
+          20
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MBN": {
+      "name": "MBN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pb",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MBN (pb iref vss vss) n18 w=2.22u l=1u m=2",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        11,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          6
+        ],
+        "S": [
+          11,
+          4
+        ],
+        "G": [
+          9.45,
+          5
+        ],
+        "B": [
+          11.86,
+          5
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MABNS": {
+      "name": "MABNS",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbn",
+        "G": "pb",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MABNS (vbn pb vdd vdd) p18 w=10.52u l=1u m=1",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        23,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          23,
+          20
+        ],
+        "S": [
+          23,
+          22
+        ],
+        "G": [
+          21.45,
+          21
+        ],
+        "B": [
+          23.86,
+          21
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MABNU": {
+      "name": "MABNU",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbn",
+        "G": "vbn",
+        "S": "xn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.84u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MABNU (vbn vbn xn vss) n18 w=0.84u l=0.36u m=1",
+      "W_unit_um": 0.8399999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        23,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          23,
+          15
+        ],
+        "S": [
+          23,
+          13
+        ],
+        "G": [
+          21.45,
+          14
+        ],
+        "B": [
+          23.86,
+          14
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MABNL": {
+      "name": "MABNL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "xn",
+        "G": "xn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "6.94u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MABNL (xn xn vss vss) n18 w=6.94u l=0.36u m=1",
+      "W_unit_um": 6.94,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        23,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          23,
+          7
+        ],
+        "S": [
+          23,
+          5
+        ],
+        "G": [
+          21.45,
+          6
+        ],
+        "B": [
+          23.86,
+          6
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MABPL": {
+      "name": "MABPL",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "yp",
+        "G": "yp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "26.92u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MABPL (yp yp vdd vdd) p18 w=26.92u l=0.36u m=1",
+      "W_unit_um": 26.919999999999998,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        37,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          20
+        ],
+        "S": [
+          37,
+          22
+        ],
+        "G": [
+          35.45,
+          21
+        ],
+        "B": [
+          37.86,
+          21
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MABPU": {
+      "name": "MABPU",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbp",
+        "G": "vbp",
+        "S": "yp",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.48u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MABPU (vbp vbp yp vdd) p18 w=3.48u l=0.36u m=1",
+      "W_unit_um": 3.4799999999999995,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        37,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          13
+        ],
+        "S": [
+          37,
+          15
+        ],
+        "G": [
+          35.45,
+          14
+        ],
+        "B": [
+          37.86,
+          14
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MABPS": {
+      "name": "MABPS",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MABPS (vbp iref vss vss) n18 w=2.22u l=1u m=1",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        37,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          7
+        ],
+        "S": [
+          37,
+          5
+        ],
+        "G": [
+          35.45,
+          6
+        ],
+        "B": [
+          37.86,
+          6
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MP3": {
+      "name": "MP3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "x3",
+        "G": "x3",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MP3 (x3 x3 vdd vdd) p18 w=10.52u l=1u m=2",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        5,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          19
+        ],
+        "S": [
+          5,
+          21
+        ],
+        "G": [
+          3.45,
+          20
+        ],
+        "B": [
+          5.86,
+          20
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MP5": {
+      "name": "MP5",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "x5",
+        "G": "x5",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MP5 (x5 x5 vdd vdd) p18 w=10.52u l=1u m=2",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        17,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          17,
+          19
+        ],
+        "S": [
+          17,
+          21
+        ],
+        "G": [
+          15.45,
+          20
+        ],
+        "B": [
+          17.86,
+          20
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "x3",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "10.32u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MINP (x3 vinp tail vss) n18 w=10.32u l=1u m=1",
+      "W_unit_um": 10.32,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        5,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          14
+        ],
+        "S": [
+          5,
+          12
+        ],
+        "G": [
+          3.45,
+          13
+        ],
+        "B": [
+          5.86,
+          13
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "x5",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "10.32u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MINN (x5 vinn tail vss) n18 w=10.32u l=1u m=1",
+      "W_unit_um": 10.32,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        17,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          17,
+          14
+        ],
+        "S": [
+          17,
+          12
+        ],
+        "G": [
+          15.45,
+          13
+        ],
+        "B": [
+          17.86,
+          13
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MTAIL (tail iref vss vss) n18 w=2.22u l=1u m=4",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        11,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          6
+        ],
+        "S": [
+          11,
+          4
+        ],
+        "G": [
+          9.45,
+          5
+        ],
+        "B": [
+          11.86,
+          5
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MP4": {
+      "name": "MP4",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "x4",
+        "G": "x3",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MP4 (x4 x3 vdd vdd) p18 w=10.52u l=1u m=2",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        29,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          19
+        ],
+        "S": [
+          29,
+          21
+        ],
+        "G": [
+          27.45,
+          20
+        ],
+        "B": [
+          29.86,
+          20
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MN7": {
+      "name": "MN7",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "x4",
+        "G": "x4",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MN7 (x4 x4 vss vss) n18 w=2.22u l=1u m=2",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        29,
+        8
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          9
+        ],
+        "S": [
+          29,
+          7
+        ],
+        "G": [
+          27.45,
+          8
+        ],
+        "B": [
+          29.86,
+          8
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MP6": {
+      "name": "MP6",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "gp",
+        "G": "x5",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MP6 (gp x5 vdd vdd) p18 w=10.52u l=1u m=2",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        39,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          39,
+          19
+        ],
+        "S": [
+          39,
+          21
+        ],
+        "G": [
+          37.45,
+          20
+        ],
+        "B": [
+          39.86,
+          20
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MN8": {
+      "name": "MN8",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "gn",
+        "G": "x4",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MN8 (gn x4 vss vss) n18 w=2.22u l=1u m=2",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        39,
+        8
+      ],
+      "rendered_pins": {
+        "D": [
+          39,
+          9
+        ],
+        "S": [
+          39,
+          7
+        ],
+        "G": [
+          37.45,
+          8
+        ],
+        "B": [
+          39.86,
+          8
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MCN": {
+      "name": "MCN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "gp",
+        "G": "vbn",
+        "S": "gn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.84u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MCN (gp vbn gn vss) n18 w=0.84u l=0.36u m=1",
+      "W_unit_um": 0.8399999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        7,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          7,
+          20
+        ],
+        "S": [
+          7,
+          18
+        ],
+        "G": [
+          5.45,
+          19
+        ],
+        "B": [
+          7.86,
+          19
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MCP": {
+      "name": "MCP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "gn",
+        "G": "vbp",
+        "S": "gp",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.48u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MCP (gn vbp gp vdd) p18 w=3.48u l=0.36u m=1",
+      "W_unit_um": 3.4799999999999995,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        18,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          18,
+          18
+        ],
+        "S": [
+          18,
+          20
+        ],
+        "G": [
+          16.45,
+          19
+        ],
+        "B": [
+          18.86,
+          19
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MOUTP": {
+      "name": "MOUTP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "gp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "26.92u",
+        "l": "0.36u",
+        "m": "14"
+      },
+      "source_line": "MOUTP (vout gp vdd vdd) p18 w=26.92u l=0.36u m=14",
+      "W_unit_um": 26.919999999999998,
+      "L_um": 0.36,
+      "m": 14.0,
+      "sheet": 3,
+      "origin": [
+        34,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          19
+        ],
+        "S": [
+          34,
+          21
+        ],
+        "G": [
+          32.45,
+          20
+        ],
+        "B": [
+          34.86,
+          20
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/MOUTN": {
+      "name": "MOUTN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "gn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "6.94u",
+        "l": "0.36u",
+        "m": "14"
+      },
+      "source_line": "MOUTN (vout gn vss vss) n18 w=6.94u l=0.36u m=14",
+      "W_unit_um": 6.94,
+      "L_um": 0.36,
+      "m": 14.0,
+      "sheet": 3,
+      "origin": [
+        34,
+        9
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          10
+        ],
+        "S": [
+          34,
+          8
+        ],
+        "G": [
+          32.45,
+          9
+        ],
+        "B": [
+          34.86,
+          9
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/RBAT": {
+      "name": "RBAT",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "gp",
+        "2": "gn"
+      },
+      "parameters": {
+        "r": "2M"
+      },
+      "source_line": "RBAT (gp gn) resistor r=2M",
+      "value_SI": 2000000.0,
+      "sheet": 3,
+      "origin": [
+        12,
+        10
+      ],
+      "rendered_pins": {
+        "1": [
+          11.18,
+          10
+        ],
+        "2": [
+          12.82,
+          10
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/CCP": {
+      "name": "CCP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "zp"
+      },
+      "parameters": {
+        "c": "6p"
+      },
+      "source_line": "CCP (vout zp) capacitor c=6p",
+      "value_SI": 6e-12,
+      "sheet": 3,
+      "origin": [
+        5,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          4.18,
+          4
+        ],
+        "2": [
+          5.82,
+          4
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/RZP": {
+      "name": "RZP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "zp",
+        "2": "gp"
+      },
+      "parameters": {
+        "r": "1000"
+      },
+      "source_line": "RZP (zp gp) resistor r=1000",
+      "value_SI": 1000.0,
+      "sheet": 3,
+      "origin": [
+        15,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          14.18,
+          4
+        ],
+        "2": [
+          15.82,
+          4
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/CCN": {
+      "name": "CCN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "zn"
+      },
+      "parameters": {
+        "c": "6p"
+      },
+      "source_line": "CCN (vout zn) capacitor c=6p",
+      "value_SI": 6e-12,
+      "sheet": 3,
+      "origin": [
+        27,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          26.18,
+          4
+        ],
+        "2": [
+          27.82,
+          4
+        ]
+      },
+      "block": "low_power_line_driver"
+    },
+    "low_power_line_driver/RZN": {
+      "name": "RZN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "zn",
+        "2": "gn"
+      },
+      "parameters": {
+        "r": "1000"
+      },
+      "source_line": "RZN (zn gn) resistor r=1000",
+      "value_SI": 1000.0,
+      "sheet": 3,
+      "origin": [
+        38,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          37.18,
+          4
+        ],
+        "2": [
+          38.82,
+          4
+        ]
+      },
+      "block": "low_power_line_driver"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "10"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=2.22u l=1u m=10",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 10.0,
+      "definition": "low_power_line_driver/MREF",
+      "path": "MREF"
+    },
+    "MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MTAIL (tail iref vss vss) n18 w=2.22u l=1u m=4",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "low_power_line_driver/MTAIL",
+      "path": "MTAIL"
+    },
+    "MBN": {
+      "name": "MBN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pb",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MBN (pb iref vss vss) n18 w=2.22u l=1u m=2",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "low_power_line_driver/MBN",
+      "path": "MBN"
+    },
+    "MBP": {
+      "name": "MBP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pb",
+        "G": "pb",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MBP (pb pb vdd vdd) p18 w=10.52u l=1u m=2",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "low_power_line_driver/MBP",
+      "path": "MBP"
+    },
+    "MABNS": {
+      "name": "MABNS",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbn",
+        "G": "pb",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MABNS (vbn pb vdd vdd) p18 w=10.52u l=1u m=1",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "low_power_line_driver/MABNS",
+      "path": "MABNS"
+    },
+    "MABNU": {
+      "name": "MABNU",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbn",
+        "G": "vbn",
+        "S": "xn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.84u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MABNU (vbn vbn xn vss) n18 w=0.84u l=0.36u m=1",
+      "W_unit_um": 0.8399999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "low_power_line_driver/MABNU",
+      "path": "MABNU"
+    },
+    "MABNL": {
+      "name": "MABNL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "xn",
+        "G": "xn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "6.94u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MABNL (xn xn vss vss) n18 w=6.94u l=0.36u m=1",
+      "W_unit_um": 6.94,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "low_power_line_driver/MABNL",
+      "path": "MABNL"
+    },
+    "MABPS": {
+      "name": "MABPS",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MABPS (vbp iref vss vss) n18 w=2.22u l=1u m=1",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "low_power_line_driver/MABPS",
+      "path": "MABPS"
+    },
+    "MABPU": {
+      "name": "MABPU",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbp",
+        "G": "vbp",
+        "S": "yp",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.48u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MABPU (vbp vbp yp vdd) p18 w=3.48u l=0.36u m=1",
+      "W_unit_um": 3.4799999999999995,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "low_power_line_driver/MABPU",
+      "path": "MABPU"
+    },
+    "MABPL": {
+      "name": "MABPL",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "yp",
+        "G": "yp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "26.92u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MABPL (yp yp vdd vdd) p18 w=26.92u l=0.36u m=1",
+      "W_unit_um": 26.919999999999998,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "low_power_line_driver/MABPL",
+      "path": "MABPL"
+    },
+    "MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "x3",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "10.32u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MINP (x3 vinp tail vss) n18 w=10.32u l=1u m=1",
+      "W_unit_um": 10.32,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "low_power_line_driver/MINP",
+      "path": "MINP"
+    },
+    "MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "x5",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "10.32u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MINN (x5 vinn tail vss) n18 w=10.32u l=1u m=1",
+      "W_unit_um": 10.32,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "low_power_line_driver/MINN",
+      "path": "MINN"
+    },
+    "MP3": {
+      "name": "MP3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "x3",
+        "G": "x3",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MP3 (x3 x3 vdd vdd) p18 w=10.52u l=1u m=2",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "low_power_line_driver/MP3",
+      "path": "MP3"
+    },
+    "MP4": {
+      "name": "MP4",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "x4",
+        "G": "x3",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MP4 (x4 x3 vdd vdd) p18 w=10.52u l=1u m=2",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "low_power_line_driver/MP4",
+      "path": "MP4"
+    },
+    "MP5": {
+      "name": "MP5",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "x5",
+        "G": "x5",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MP5 (x5 x5 vdd vdd) p18 w=10.52u l=1u m=2",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "low_power_line_driver/MP5",
+      "path": "MP5"
+    },
+    "MP6": {
+      "name": "MP6",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "gp",
+        "G": "x5",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.52u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MP6 (gp x5 vdd vdd) p18 w=10.52u l=1u m=2",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "low_power_line_driver/MP6",
+      "path": "MP6"
+    },
+    "MN7": {
+      "name": "MN7",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "x4",
+        "G": "x4",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MN7 (x4 x4 vss vss) n18 w=2.22u l=1u m=2",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "low_power_line_driver/MN7",
+      "path": "MN7"
+    },
+    "MN8": {
+      "name": "MN8",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "gn",
+        "G": "x4",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.22u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MN8 (gn x4 vss vss) n18 w=2.22u l=1u m=2",
+      "W_unit_um": 2.2199999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "low_power_line_driver/MN8",
+      "path": "MN8"
+    },
+    "MCN": {
+      "name": "MCN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "gp",
+        "G": "vbn",
+        "S": "gn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.84u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MCN (gp vbn gn vss) n18 w=0.84u l=0.36u m=1",
+      "W_unit_um": 0.8399999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "low_power_line_driver/MCN",
+      "path": "MCN"
+    },
+    "MCP": {
+      "name": "MCP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "gn",
+        "G": "vbp",
+        "S": "gp",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.48u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MCP (gn vbp gp vdd) p18 w=3.48u l=0.36u m=1",
+      "W_unit_um": 3.4799999999999995,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "low_power_line_driver/MCP",
+      "path": "MCP"
+    },
+    "MOUTP": {
+      "name": "MOUTP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "gp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "26.92u",
+        "l": "0.36u",
+        "m": "14"
+      },
+      "source_line": "MOUTP (vout gp vdd vdd) p18 w=26.92u l=0.36u m=14",
+      "W_unit_um": 26.919999999999998,
+      "L_um": 0.36,
+      "m": 14.0,
+      "definition": "low_power_line_driver/MOUTP",
+      "path": "MOUTP"
+    },
+    "MOUTN": {
+      "name": "MOUTN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "gn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "6.94u",
+        "l": "0.36u",
+        "m": "14"
+      },
+      "source_line": "MOUTN (vout gn vss vss) n18 w=6.94u l=0.36u m=14",
+      "W_unit_um": 6.94,
+      "L_um": 0.36,
+      "m": 14.0,
+      "definition": "low_power_line_driver/MOUTN",
+      "path": "MOUTN"
+    },
+    "RBAT": {
+      "name": "RBAT",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "gp",
+        "2": "gn"
+      },
+      "parameters": {
+        "r": "2M"
+      },
+      "source_line": "RBAT (gp gn) resistor r=2M",
+      "value_SI": 2000000.0,
+      "definition": "low_power_line_driver/RBAT",
+      "path": "RBAT"
+    },
+    "CCP": {
+      "name": "CCP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "zp"
+      },
+      "parameters": {
+        "c": "6p"
+      },
+      "source_line": "CCP (vout zp) capacitor c=6p",
+      "value_SI": 6e-12,
+      "definition": "low_power_line_driver/CCP",
+      "path": "CCP"
+    },
+    "RZP": {
+      "name": "RZP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "zp",
+        "2": "gp"
+      },
+      "parameters": {
+        "r": "1000"
+      },
+      "source_line": "RZP (zp gp) resistor r=1000",
+      "value_SI": 1000.0,
+      "definition": "low_power_line_driver/RZP",
+      "path": "RZP"
+    },
+    "CCN": {
+      "name": "CCN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "zn"
+      },
+      "parameters": {
+        "c": "6p"
+      },
+      "source_line": "CCN (vout zn) capacitor c=6p",
+      "value_SI": 6e-12,
+      "definition": "low_power_line_driver/CCN",
+      "path": "CCN"
+    },
+    "RZN": {
+      "name": "RZN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "zn",
+        "2": "gn"
+      },
+      "parameters": {
+        "r": "1000"
+      },
+      "source_line": "RZN (zn gn) resistor r=1000",
+      "value_SI": 1000.0,
+      "definition": "low_power_line_driver/RZN",
+      "path": "RZN"
+    }
+  },
+  "nets": {
+    "low_power_line_driver/iref": [
+      {
+        "instance": "low_power_line_driver/MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          3,
+          6
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          1.45,
+          5
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MBN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          9.45,
+          5
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABPS",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          35.45,
+          6
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MTAIL",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          9.45,
+          5
+        ]
+      }
+    ],
+    "low_power_line_driver/vss": [
+      {
+        "instance": "low_power_line_driver/MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          3,
+          4
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          3.86,
+          5
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MBN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          11,
+          4
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MBN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          11.86,
+          5
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABNU",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          23.86,
+          14
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABNL",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          23,
+          5
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABNL",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          23.86,
+          6
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABPS",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          37,
+          5
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABPS",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          37.86,
+          6
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MINP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          5.86,
+          13
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MINN",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          17.86,
+          13
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MTAIL",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          11,
+          4
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MTAIL",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          11.86,
+          5
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MN7",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          29,
+          7
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MN7",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          29.86,
+          8
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MN8",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          39,
+          7
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MN8",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          39.86,
+          8
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MCN",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          7.86,
+          19
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MOUTN",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          34,
+          8
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MOUTN",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          34.86,
+          9
+        ]
+      }
+    ],
+    "low_power_line_driver/pb": [
+      {
+        "instance": "low_power_line_driver/MBP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          11,
+          19
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MBP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          9.45,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MBN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          11,
+          6
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABNS",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          21.45,
+          21
+        ]
+      }
+    ],
+    "low_power_line_driver/vdd": [
+      {
+        "instance": "low_power_line_driver/MBP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          11,
+          21
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MBP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          11.86,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABNS",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          23,
+          22
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABNS",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          23.86,
+          21
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABPL",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          37,
+          22
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABPL",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          37.86,
+          21
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABPU",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          37.86,
+          14
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP3",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          5,
+          21
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP3",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          5.86,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP5",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          17,
+          21
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP5",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          17.86,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP4",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          29,
+          21
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP4",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          29.86,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP6",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          39,
+          21
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP6",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          39.86,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MCP",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          18.86,
+          19
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MOUTP",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          34,
+          21
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MOUTP",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          34.86,
+          20
+        ]
+      }
+    ],
+    "low_power_line_driver/vbn": [
+      {
+        "instance": "low_power_line_driver/MABNS",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          23,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABNU",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          23,
+          15
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABNU",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          21.45,
+          14
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MCN",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          5.45,
+          19
+        ]
+      }
+    ],
+    "low_power_line_driver/xn": [
+      {
+        "instance": "low_power_line_driver/MABNU",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          23,
+          13
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABNL",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          23,
+          7
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABNL",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          21.45,
+          6
+        ]
+      }
+    ],
+    "low_power_line_driver/yp": [
+      {
+        "instance": "low_power_line_driver/MABPL",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          37,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABPL",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          35.45,
+          21
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABPU",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          37,
+          15
+        ]
+      }
+    ],
+    "low_power_line_driver/vbp": [
+      {
+        "instance": "low_power_line_driver/MABPU",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          37,
+          13
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABPU",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          35.45,
+          14
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MABPS",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          37,
+          7
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MCP",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          16.45,
+          19
+        ]
+      }
+    ],
+    "low_power_line_driver/x3": [
+      {
+        "instance": "low_power_line_driver/MP3",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          5,
+          19
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP3",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          3.45,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MINP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          5,
+          14
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP4",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          27.45,
+          20
+        ]
+      }
+    ],
+    "low_power_line_driver/x5": [
+      {
+        "instance": "low_power_line_driver/MP5",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          17,
+          19
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP5",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          15.45,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MINN",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          17,
+          14
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MP6",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          37.45,
+          20
+        ]
+      }
+    ],
+    "low_power_line_driver/vinp": [
+      {
+        "instance": "low_power_line_driver/MINP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          3.45,
+          13
+        ]
+      }
+    ],
+    "low_power_line_driver/tail": [
+      {
+        "instance": "low_power_line_driver/MINP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          5,
+          12
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MINN",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          17,
+          12
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MTAIL",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          11,
+          6
+        ]
+      }
+    ],
+    "low_power_line_driver/vinn": [
+      {
+        "instance": "low_power_line_driver/MINN",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          15.45,
+          13
+        ]
+      }
+    ],
+    "low_power_line_driver/x4": [
+      {
+        "instance": "low_power_line_driver/MP4",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          29,
+          19
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MN7",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          29,
+          9
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MN7",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          27.45,
+          8
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MN8",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          37.45,
+          8
+        ]
+      }
+    ],
+    "low_power_line_driver/gp": [
+      {
+        "instance": "low_power_line_driver/MP6",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          39,
+          19
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MCN",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          7,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MCP",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          18,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MOUTP",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          32.45,
+          20
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/RBAT",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          11.18,
+          10
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/RZP",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          15.82,
+          4
+        ]
+      }
+    ],
+    "low_power_line_driver/gn": [
+      {
+        "instance": "low_power_line_driver/MN8",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          39,
+          9
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MCN",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          7,
+          18
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MCP",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          18,
+          18
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MOUTN",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          32.45,
+          9
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/RBAT",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          12.82,
+          10
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/RZN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          38.82,
+          4
+        ]
+      }
+    ],
+    "low_power_line_driver/vout": [
+      {
+        "instance": "low_power_line_driver/MOUTP",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          34,
+          19
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/MOUTN",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          34,
+          10
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/CCP",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          4.18,
+          4
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/CCN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          26.18,
+          4
+        ]
+      }
+    ],
+    "low_power_line_driver/zp": [
+      {
+        "instance": "low_power_line_driver/CCP",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          5.82,
+          4
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/RZP",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          14.18,
+          4
+        ]
+      }
+    ],
+    "low_power_line_driver/zn": [
+      {
+        "instance": "low_power_line_driver/CCN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          27.82,
+          4
+        ]
+      },
+      {
+        "instance": "low_power_line_driver/RZN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          37.18,
+          4
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MABNS",
+      "pin": "D",
+      "net": "vbn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABNU",
+      "pin": "D",
+      "net": "vbn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABNU",
+      "pin": "G",
+      "net": "vbn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABNS",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABNS",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPL",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPL",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPU",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABNU",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABNL",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABNL",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPS",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPS",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABNU",
+      "pin": "S",
+      "net": "xn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABNL",
+      "pin": "D",
+      "net": "xn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABNL",
+      "pin": "G",
+      "net": "xn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPL",
+      "pin": "D",
+      "net": "yp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPL",
+      "pin": "G",
+      "net": "yp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPU",
+      "pin": "S",
+      "net": "yp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPS",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "D",
+      "net": "pb",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "G",
+      "net": "pb",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "D",
+      "net": "pb",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABNS",
+      "pin": "G",
+      "net": "pb",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPU",
+      "pin": "D",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPU",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "MABPS",
+      "pin": "D",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "D",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP6",
+      "pin": "D",
+      "net": "gp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP3",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP3",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP5",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP5",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP4",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP4",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP6",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP6",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "G",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN7",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN7",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN8",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN8",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP5",
+      "pin": "D",
+      "net": "x5",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP5",
+      "pin": "G",
+      "net": "x5",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "D",
+      "net": "x5",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP6",
+      "pin": "G",
+      "net": "x5",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP3",
+      "pin": "D",
+      "net": "x3",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP3",
+      "pin": "G",
+      "net": "x3",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "D",
+      "net": "x3",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP4",
+      "pin": "G",
+      "net": "x3",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN8",
+      "pin": "D",
+      "net": "gn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP4",
+      "pin": "D",
+      "net": "x4",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN7",
+      "pin": "D",
+      "net": "x4",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN7",
+      "pin": "G",
+      "net": "x4",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN8",
+      "pin": "G",
+      "net": "x4",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "G",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCN",
+      "pin": "G",
+      "net": "vbn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCN",
+      "pin": "D",
+      "net": "gp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCP",
+      "pin": "S",
+      "net": "gp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MOUTP",
+      "pin": "G",
+      "net": "gp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "RBAT",
+      "pin": "1",
+      "net": "gp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "RZP",
+      "pin": "2",
+      "net": "gp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCP",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MOUTP",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MOUTP",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MOUTN",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MOUTN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "CCP",
+      "pin": "2",
+      "net": "zp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "RZP",
+      "pin": "1",
+      "net": "zp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "CCN",
+      "pin": "2",
+      "net": "zn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "RZN",
+      "pin": "1",
+      "net": "zn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCP",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCN",
+      "pin": "S",
+      "net": "gn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCP",
+      "pin": "D",
+      "net": "gn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MOUTN",
+      "pin": "G",
+      "net": "gn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "RBAT",
+      "pin": "2",
+      "net": "gn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "RZN",
+      "pin": "2",
+      "net": "gn",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MOUTP",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "MOUTN",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "CCP",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    },
+    {
+      "sheet": 3,
+      "instance": "CCN",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "low_power_line_driver"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "low_power_line_driver",
+      "title": "单参考偏置与互补复制堆叠",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              3.86,
+              5
+            ],
+            [
+              4.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11.86,
+              20
+            ],
+            [
+              12.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11.86,
+              5
+            ],
+            [
+              12.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              23.86,
+              21
+            ],
+            [
+              24.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23.86,
+              14
+            ],
+            [
+              24.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23.86,
+              6
+            ],
+            [
+              24.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.86,
+              21
+            ],
+            [
+              38.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.86,
+              14
+            ],
+            [
+              38.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.86,
+              6
+            ],
+            [
+              38.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pb",
+          "points": [
+            [
+              11,
+              19
+            ],
+            [
+              11,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "points": [
+            [
+              23,
+              20
+            ],
+            [
+              23,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "xn",
+          "points": [
+            [
+              23,
+              13
+            ],
+            [
+              23,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "yp",
+          "points": [
+            [
+              37,
+              20
+            ],
+            [
+              37,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              37,
+              13
+            ],
+            [
+              37,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11,
+              23.5
+            ],
+            [
+              37,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11,
+              21
+            ],
+            [
+              11,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              23,
+              22
+            ],
+            [
+              23,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37,
+              22
+            ],
+            [
+              37,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              1.5
+            ],
+            [
+              37,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23,
+              5
+            ],
+            [
+              23,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37,
+              5
+            ],
+            [
+              37,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              1.45,
+              5
+            ],
+            [
+              0.9500000000000002,
+              5
+            ],
+            [
+              0.9500000000000002,
+              7.2
+            ],
+            [
+              3,
+              7.2
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pb",
+          "points": [
+            [
+              9.45,
+              20
+            ],
+            [
+              8.95,
+              20
+            ],
+            [
+              8.95,
+              17.8
+            ],
+            [
+              11,
+              17.8
+            ],
+            [
+              11,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "points": [
+            [
+              21.45,
+              14
+            ],
+            [
+              20.95,
+              14
+            ],
+            [
+              20.95,
+              16.2
+            ],
+            [
+              23,
+              16.2
+            ],
+            [
+              23,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "xn",
+          "points": [
+            [
+              21.45,
+              6
+            ],
+            [
+              20.95,
+              6
+            ],
+            [
+              20.95,
+              8.2
+            ],
+            [
+              23,
+              8.2
+            ],
+            [
+              23,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "yp",
+          "points": [
+            [
+              35.45,
+              21
+            ],
+            [
+              34.95,
+              21
+            ],
+            [
+              34.95,
+              18.8
+            ],
+            [
+              37,
+              18.8
+            ],
+            [
+              37,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              35.45,
+              14
+            ],
+            [
+              34.95,
+              14
+            ],
+            [
+              34.95,
+              11.8
+            ],
+            [
+              37,
+              11.8
+            ],
+            [
+              37,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              9.45,
+              5
+            ],
+            [
+              8.899999999999999,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pb",
+          "points": [
+            [
+              21.45,
+              21
+            ],
+            [
+              20.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              35.45,
+              6
+            ],
+            [
+              34.900000000000006,
+              6
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            4.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            12.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            24.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            24.15,
+            14
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            24.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            38.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            38.15,
+            14
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "pb",
+          "point": [
+            11.0,
+            12.5
+          ],
+          "text": "pb",
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "point": [
+            23.0,
+            17.5
+          ],
+          "text": "vbn",
+          "body": false
+        },
+        {
+          "net": "xn",
+          "point": [
+            23.0,
+            10.0
+          ],
+          "text": "xn",
+          "body": false
+        },
+        {
+          "net": "yp",
+          "point": [
+            37.0,
+            17.5
+          ],
+          "text": "yp",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            37.0,
+            10.0
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            11,
+            23.5
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            3,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            2,
+            7.2
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "pb",
+          "point": [
+            10,
+            17.8
+          ],
+          "text": "pb",
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "point": [
+            22,
+            16.2
+          ],
+          "text": "vbn",
+          "body": false
+        },
+        {
+          "net": "xn",
+          "point": [
+            22,
+            8.2
+          ],
+          "text": "xn",
+          "body": false
+        },
+        {
+          "net": "yp",
+          "point": [
+            36,
+            18.8
+          ],
+          "text": "yp",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            36,
+            11.8
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            8.899999999999999,
+            5
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "pb",
+          "point": [
+            20.9,
+            21
+          ],
+          "text": "pb",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            34.900000000000006,
+            6
+          ],
+          "text": "iref",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "low_power_line_driver",
+      "title": "输入对、尾电流与电流镜",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5.86,
+              20
+            ],
+            [
+              6.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              17.86,
+              20
+            ],
+            [
+              18.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.86,
+              13
+            ],
+            [
+              6.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17.86,
+              13
+            ],
+            [
+              18.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11.86,
+              5
+            ],
+            [
+              12.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              29.86,
+              20
+            ],
+            [
+              30.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29.86,
+              8
+            ],
+            [
+              30.15,
+              8
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              39.86,
+              20
+            ],
+            [
+              40.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              39.86,
+              8
+            ],
+            [
+              40.15,
+              8
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "x3",
+          "points": [
+            [
+              5,
+              19
+            ],
+            [
+              5,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "x5",
+          "points": [
+            [
+              17,
+              19
+            ],
+            [
+              17,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "x4",
+          "points": [
+            [
+              29,
+              19
+            ],
+            [
+              29,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              5,
+              10
+            ],
+            [
+              17,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              5,
+              12
+            ],
+            [
+              5,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              17,
+              12
+            ],
+            [
+              17,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5,
+              23.5
+            ],
+            [
+              39,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5,
+              21
+            ],
+            [
+              5,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              17,
+              21
+            ],
+            [
+              17,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              29,
+              21
+            ],
+            [
+              29,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              39,
+              21
+            ],
+            [
+              39,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11,
+              1.5
+            ],
+            [
+              39,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29,
+              7
+            ],
+            [
+              29,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              39,
+              7
+            ],
+            [
+              39,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "x3",
+          "points": [
+            [
+              3.45,
+              20
+            ],
+            [
+              2.95,
+              20
+            ],
+            [
+              2.95,
+              17.8
+            ],
+            [
+              5,
+              17.8
+            ],
+            [
+              5,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "x5",
+          "points": [
+            [
+              15.45,
+              20
+            ],
+            [
+              14.95,
+              20
+            ],
+            [
+              14.95,
+              17.8
+            ],
+            [
+              17,
+              17.8
+            ],
+            [
+              17,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "x4",
+          "points": [
+            [
+              27.45,
+              8
+            ],
+            [
+              26.95,
+              8
+            ],
+            [
+              26.95,
+              10.2
+            ],
+            [
+              29,
+              10.2
+            ],
+            [
+              29,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              3.45,
+              13
+            ],
+            [
+              2.9000000000000004,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              15.45,
+              13
+            ],
+            [
+              14.899999999999999,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              9.45,
+              5
+            ],
+            [
+              8.899999999999999,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "x3",
+          "points": [
+            [
+              27.45,
+              20
+            ],
+            [
+              26.9,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gp",
+          "points": [
+            [
+              39,
+              19
+            ],
+            [
+              39,
+              18.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "x5",
+          "points": [
+            [
+              37.45,
+              20
+            ],
+            [
+              36.900000000000006,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gn",
+          "points": [
+            [
+              39,
+              9
+            ],
+            [
+              39,
+              9.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "x4",
+          "points": [
+            [
+              37.45,
+              8
+            ],
+            [
+              36.900000000000006,
+              8
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            6.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            18.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            6.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            18.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            12.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            30.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            30.15,
+            8
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            40.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            40.15,
+            8
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "x3",
+          "point": [
+            5.0,
+            16.5
+          ],
+          "text": "x3",
+          "body": false
+        },
+        {
+          "net": "x5",
+          "point": [
+            17.0,
+            16.5
+          ],
+          "text": "x5",
+          "body": false
+        },
+        {
+          "net": "x4",
+          "point": [
+            29.0,
+            14.0
+          ],
+          "text": "x4",
+          "body": false
+        },
+        {
+          "net": "tail",
+          "point": [
+            5,
+            10
+          ],
+          "text": "tail",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            5,
+            23.5
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            11,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "x3",
+          "point": [
+            4,
+            17.8
+          ],
+          "text": "x3",
+          "body": false
+        },
+        {
+          "net": "x5",
+          "point": [
+            16,
+            17.8
+          ],
+          "text": "x5",
+          "body": false
+        },
+        {
+          "net": "x4",
+          "point": [
+            28,
+            10.2
+          ],
+          "text": "x4",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            2.9000000000000004,
+            13
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            14.899999999999999,
+            13
+          ],
+          "text": "vinn",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            8.899999999999999,
+            5
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "x3",
+          "point": [
+            26.9,
+            20
+          ],
+          "text": "x3",
+          "body": false
+        },
+        {
+          "net": "gp",
+          "point": [
+            39,
+            18.36
+          ],
+          "text": "gp",
+          "body": false
+        },
+        {
+          "net": "x5",
+          "point": [
+            36.900000000000006,
+            20
+          ],
+          "text": "x5",
+          "body": false
+        },
+        {
+          "net": "gn",
+          "point": [
+            39,
+            9.64
+          ],
+          "text": "gn",
+          "body": false
+        },
+        {
+          "net": "x4",
+          "point": [
+            36.900000000000006,
+            8
+          ],
+          "text": "x4",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "block": "low_power_line_driver",
+      "title": "浮动Class-AB、输出与双路补偿",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              7.86,
+              19
+            ],
+            [
+              8.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18.86,
+              19
+            ],
+            [
+              19.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.86,
+              20
+            ],
+            [
+              35.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.86,
+              9
+            ],
+            [
+              35.15,
+              9
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "gp",
+          "points": [
+            [
+              7,
+              20
+            ],
+            [
+              7,
+              22
+            ],
+            [
+              18,
+              22
+            ],
+            [
+              18,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gn",
+          "points": [
+            [
+              7,
+              18
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              18,
+              16
+            ],
+            [
+              18,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              34,
+              19
+            ],
+            [
+              34,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "zp",
+          "points": [
+            [
+              5.82,
+              4
+            ],
+            [
+              14.18,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "zn",
+          "points": [
+            [
+              27.82,
+              4
+            ],
+            [
+              37.18,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34,
+              21
+            ],
+            [
+              34,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34,
+              8
+            ],
+            [
+              34,
+              6.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "points": [
+            [
+              5.45,
+              19
+            ],
+            [
+              4.9,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              16.45,
+              19
+            ],
+            [
+              15.899999999999999,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gp",
+          "points": [
+            [
+              32.45,
+              20
+            ],
+            [
+              31.900000000000002,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gn",
+          "points": [
+            [
+              32.45,
+              9
+            ],
+            [
+              31.900000000000002,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gp",
+          "points": [
+            [
+              11.18,
+              10
+            ],
+            [
+              10.379999999999999,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gn",
+          "points": [
+            [
+              12.82,
+              10
+            ],
+            [
+              13.620000000000001,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              4.18,
+              4
+            ],
+            [
+              3.38,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gp",
+          "points": [
+            [
+              15.82,
+              4
+            ],
+            [
+              16.62,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              26.18,
+              4
+            ],
+            [
+              25.38,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gn",
+          "points": [
+            [
+              38.82,
+              4
+            ],
+            [
+              39.62,
+              4
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            8.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            19.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.15,
+            9
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "gp",
+          "point": [
+            7.0,
+            21.0
+          ],
+          "text": "gp",
+          "body": false
+        },
+        {
+          "net": "gn",
+          "point": [
+            7.0,
+            17.0
+          ],
+          "text": "gn",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            34.0,
+            14.5
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            34,
+            14
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "zp",
+          "point": [
+            10.0,
+            4.0
+          ],
+          "text": "zp",
+          "body": false
+        },
+        {
+          "net": "zn",
+          "point": [
+            32.5,
+            4.0
+          ],
+          "text": "zn",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            34,
+            23.5
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            34,
+            6.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "point": [
+            4.9,
+            19
+          ],
+          "text": "vbn",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            15.899999999999999,
+            19
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "gp",
+          "point": [
+            31.900000000000002,
+            20
+          ],
+          "text": "gp",
+          "body": false
+        },
+        {
+          "net": "gn",
+          "point": [
+            31.900000000000002,
+            9
+          ],
+          "text": "gn",
+          "body": false
+        },
+        {
+          "net": "gp",
+          "point": [
+            10.379999999999999,
+            10
+          ],
+          "text": "gp",
+          "body": false
+        },
+        {
+          "net": "gn",
+          "point": [
+            13.620000000000001,
+            10
+          ],
+          "text": "gn",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            3.38,
+            4
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "gp",
+          "point": [
+            16.62,
+            4
+          ],
+          "text": "gp",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            25.38,
+            4
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "gn",
+          "point": [
+            39.62,
+            4
+          ],
+          "text": "gn",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "low_power_line_driver": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

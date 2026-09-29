@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-09-29T04:48:21.278160+00:00",
+  "baseline_groups": {
+    "pw20": "runs/05/20260929T044635972843Z_pw20",
+    "pw50": "runs/05/20260929T044650071170Z_pw50",
+    "pw80": "runs/05/20260929T044703977679Z_pw80"
+  },
+  "baseline": {
+    "maxstep_s": 1e-10,
+    "global_reltol": 1e-05
+  },
+  "refined": {
+    "maxstep_s": 5e-11,
+    "global_reltol": 1e-06
+  },
+  "absolute_difference_limits": {
+    "VGS_avg_V": 0.002,
+    "power_W": 5e-06,
+    "VGS_peak_V": 0.005,
+    "HS_peak_A": 0.005,
+    "VBST_cap_peak_V": 0.005,
+    "GN2_peak_V": 0.005,
+    "VBST_peak_V": 0.005,
+    "dead_HL_s": 2e-11,
+    "dead_LH_s": 2e-11,
+    "dead_all_min_s": 2e-11,
+    "dead_all_max_s": 2e-11,
+    "high_fraction": 0.002
+  },
+  "method": "traponly retained; waveform comparison must bound peak, timing, power and average differences."
+}

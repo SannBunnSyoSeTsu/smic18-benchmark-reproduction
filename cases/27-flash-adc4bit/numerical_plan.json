@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-09-29T03:00:37.242178+00:00",
+  "baseline_groups": {
+    "transfer": "runs/27/20260929T025350105081Z_transfer",
+    "linearity": "runs/27/20260929T025430904874Z_linearity",
+    "dynamic": "runs/27/20260929T025638561296Z_dynamic"
+  },
+  "baseline": {
+    "maxstep_s": 1e-10,
+    "reltol": 1e-05
+  },
+  "refined": {
+    "maxstep_s": 5e-11,
+    "reltol": 1e-06
+  },
+  "power_difference_max_W": 3e-06,
+  "other_scalar_difference_max": 1e-10,
+  "conversion_codes_must_be_identical": true
+}

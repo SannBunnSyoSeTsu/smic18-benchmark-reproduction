@@ -1,0 +1,5861 @@
+{
+  "generated_at": "2026-09-23T06:18:38.674009+00:00",
+  "circuit_sha256": "6c7258bcafc0a0050f1b2a210f2174404ae84e56347d6067ddb433b29d21ba0c",
+  "top": "programmable_current_mirror",
+  "subcircuit_ports": {
+    "programmable_current_mirror": [
+      "vss",
+      "vdd",
+      "icc_ref",
+      "iptat_ref",
+      "ratio_b0",
+      "ratio_b1",
+      "iout"
+    ]
+  },
+  "instances": {
+    "programmable_current_mirror/MICC": {
+      "name": "MICC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "icc_ref",
+        "G": "icc_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.78u",
+        "l": "1u"
+      },
+      "source_line": "MICC (icc_ref icc_ref vss vss) n18 w=34.78u l=1u",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        4.5,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          4.5,
+          7
+        ],
+        "S": [
+          4.5,
+          5
+        ],
+        "G": [
+          2.95,
+          6
+        ],
+        "B": [
+          5.36,
+          6
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MPTAT": {
+      "name": "MPTAT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iptat_ref",
+        "G": "iptat_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.78u",
+        "l": "1u"
+      },
+      "source_line": "MPTAT (iptat_ref iptat_ref vss vss) n18 w=34.78u l=1u",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        11.5,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          11.5,
+          7
+        ],
+        "S": [
+          11.5,
+          5
+        ],
+        "G": [
+          9.95,
+          6
+        ],
+        "B": [
+          12.36,
+          6
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/RTOP": {
+      "name": "RTOP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "vcb"
+      },
+      "parameters": {
+        "r": "210000"
+      },
+      "source_line": "RTOP (vdd vcb) resistor r=210000",
+      "value_SI": 210000.0,
+      "sheet": 1,
+      "origin": [
+        18,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          18,
+          19.82
+        ],
+        "2": [
+          18,
+          18.18
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MBC": {
+      "name": "MBC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vcb",
+        "G": "vcb",
+        "S": "vb",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.12u",
+        "l": ".36u"
+      },
+      "source_line": "MBC (vcb vcb vb vss) n18 w=2.12u l=.36u",
+      "W_unit_um": 2.12,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        18,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          18,
+          13
+        ],
+        "S": [
+          18,
+          11
+        ],
+        "G": [
+          16.45,
+          12
+        ],
+        "B": [
+          18.86,
+          12
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/RBOT": {
+      "name": "RBOT",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vb",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "50000"
+      },
+      "source_line": "RBOT (vb vss) resistor r=50000",
+      "value_SI": 50000.0,
+      "sheet": 1,
+      "origin": [
+        18,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          18,
+          5.82
+        ],
+        "2": [
+          18,
+          4.18
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/XNB0": {
+      "name": "XNB0",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "ratio_b0",
+        "ZN": "nb0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XNB0 (ratio_b0 nb0 vdd vss vdd vss) INHDV0",
+      "sheet": 1,
+      "origin": [
+        28,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          25.3,
+          19.0
+        ],
+        "ZN": [
+          30.7,
+          19.0
+        ],
+        "VDD": [
+          27.2,
+          21.2
+        ],
+        "VNW": [
+          28.8,
+          21.2
+        ],
+        "VSS": [
+          27.2,
+          16.8
+        ],
+        "VPW": [
+          28.8,
+          16.8
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/XNB1": {
+      "name": "XNB1",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "ratio_b1",
+        "ZN": "nb1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XNB1 (ratio_b1 nb1 vdd vss vdd vss) INHDV0",
+      "sheet": 1,
+      "origin": [
+        38,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          35.3,
+          19.0
+        ],
+        "ZN": [
+          40.7,
+          19.0
+        ],
+        "VDD": [
+          37.2,
+          21.2
+        ],
+        "VNW": [
+          38.8,
+          21.2
+        ],
+        "VSS": [
+          37.2,
+          16.8
+        ],
+        "VPW": [
+          38.8,
+          16.8
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/XSEL0": {
+      "name": "XSEL0",
+      "kind": "HD",
+      "model": "NOR2HDV0",
+      "pins": {
+        "A1": "ratio_b0",
+        "A2": "ratio_b1",
+        "ZN": "sel0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XSEL0 (ratio_b0 ratio_b1 sel0 vdd vss vdd vss) NOR2HDV0",
+      "sheet": 1,
+      "origin": [
+        28,
+        11
+      ],
+      "rendered_pins": {
+        "A1": [
+          25.3,
+          11.5
+        ],
+        "A2": [
+          25.3,
+          10.5
+        ],
+        "ZN": [
+          30.7,
+          11.0
+        ],
+        "VDD": [
+          27.2,
+          13.2
+        ],
+        "VNW": [
+          28.8,
+          13.2
+        ],
+        "VSS": [
+          27.2,
+          8.8
+        ],
+        "VPW": [
+          28.8,
+          8.8
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/XSEL1": {
+      "name": "XSEL1",
+      "kind": "HD",
+      "model": "NOR2HDV0",
+      "pins": {
+        "A1": "nb0",
+        "A2": "ratio_b1",
+        "ZN": "sel1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XSEL1 (nb0 ratio_b1 sel1 vdd vss vdd vss) NOR2HDV0",
+      "sheet": 1,
+      "origin": [
+        38,
+        11
+      ],
+      "rendered_pins": {
+        "A1": [
+          35.3,
+          11.5
+        ],
+        "A2": [
+          35.3,
+          10.5
+        ],
+        "ZN": [
+          40.7,
+          11.0
+        ],
+        "VDD": [
+          37.2,
+          13.2
+        ],
+        "VNW": [
+          38.8,
+          13.2
+        ],
+        "VSS": [
+          37.2,
+          8.8
+        ],
+        "VPW": [
+          38.8,
+          8.8
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/XSEL2": {
+      "name": "XSEL2",
+      "kind": "HD",
+      "model": "NOR2HDV0",
+      "pins": {
+        "A1": "ratio_b0",
+        "A2": "nb1",
+        "ZN": "sel2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XSEL2 (ratio_b0 nb1 sel2 vdd vss vdd vss) NOR2HDV0",
+      "sheet": 1,
+      "origin": [
+        28,
+        3.5
+      ],
+      "rendered_pins": {
+        "A1": [
+          25.3,
+          4.0
+        ],
+        "A2": [
+          25.3,
+          3.0
+        ],
+        "ZN": [
+          30.7,
+          3.5
+        ],
+        "VDD": [
+          27.2,
+          5.7
+        ],
+        "VNW": [
+          28.8,
+          5.7
+        ],
+        "VSS": [
+          27.2,
+          1.2999999999999998
+        ],
+        "VPW": [
+          28.8,
+          1.2999999999999998
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/XSEL3": {
+      "name": "XSEL3",
+      "kind": "HD",
+      "model": "NOR2HDV0",
+      "pins": {
+        "A1": "nb0",
+        "A2": "nb1",
+        "ZN": "sel3",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XSEL3 (nb0 nb1 sel3 vdd vss vdd vss) NOR2HDV0",
+      "sheet": 1,
+      "origin": [
+        38,
+        3.5
+      ],
+      "rendered_pins": {
+        "A1": [
+          35.3,
+          4.0
+        ],
+        "A2": [
+          35.3,
+          3.0
+        ],
+        "ZN": [
+          40.7,
+          3.5
+        ],
+        "VDD": [
+          37.2,
+          5.7
+        ],
+        "VNW": [
+          38.8,
+          5.7
+        ],
+        "VSS": [
+          37.2,
+          1.2999999999999998
+        ],
+        "VPW": [
+          38.8,
+          1.2999999999999998
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MIC0": {
+      "name": "MIC0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre0",
+        "G": "icc_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "16"
+      },
+      "source_line": "MIC0 (pre0 icc_ref vss vss) n18 w=34.780000u l=1u m=16",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 16.0,
+      "sheet": 2,
+      "origin": [
+        4.6,
+        8
+      ],
+      "rendered_pins": {
+        "D": [
+          4.6,
+          9
+        ],
+        "S": [
+          4.6,
+          7
+        ],
+        "G": [
+          3.05,
+          8
+        ],
+        "B": [
+          5.46,
+          8
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MPT0": {
+      "name": "MPT0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre0",
+        "G": "iptat_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPT0 (pre0 iptat_ref vss vss) n18 w=34.780000u l=1u m=4",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        4.6,
+        3
+      ],
+      "rendered_pins": {
+        "D": [
+          4.6,
+          4
+        ],
+        "S": [
+          4.6,
+          2
+        ],
+        "G": [
+          3.05,
+          3
+        ],
+        "B": [
+          5.46,
+          3
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MSW0": {
+      "name": "MSW0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "isum",
+        "G": "sel0",
+        "S": "pre0",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "32.84u",
+        "l": ".18u"
+      },
+      "source_line": "MSW0 (isum sel0 pre0 vss) n18 w=32.84u l=.18u",
+      "W_unit_um": 32.84,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        8.6,
+        15
+      ],
+      "rendered_pins": {
+        "D": [
+          8.6,
+          16
+        ],
+        "S": [
+          8.6,
+          14
+        ],
+        "G": [
+          7.05,
+          15
+        ],
+        "B": [
+          9.459999999999999,
+          15
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MIC1": {
+      "name": "MIC1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre1",
+        "G": "icc_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "12"
+      },
+      "source_line": "MIC1 (pre1 icc_ref vss vss) n18 w=34.780000u l=1u m=12",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 12.0,
+      "sheet": 2,
+      "origin": [
+        14.1,
+        8
+      ],
+      "rendered_pins": {
+        "D": [
+          14.1,
+          9
+        ],
+        "S": [
+          14.1,
+          7
+        ],
+        "G": [
+          12.549999999999999,
+          8
+        ],
+        "B": [
+          14.959999999999999,
+          8
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MPT1": {
+      "name": "MPT1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre1",
+        "G": "iptat_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MPT1 (pre1 iptat_ref vss vss) n18 w=34.780000u l=1u m=8",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        14.1,
+        3
+      ],
+      "rendered_pins": {
+        "D": [
+          14.1,
+          4
+        ],
+        "S": [
+          14.1,
+          2
+        ],
+        "G": [
+          12.549999999999999,
+          3
+        ],
+        "B": [
+          14.959999999999999,
+          3
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MSW1": {
+      "name": "MSW1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "isum",
+        "G": "sel1",
+        "S": "pre1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "32.84u",
+        "l": ".18u"
+      },
+      "source_line": "MSW1 (isum sel1 pre1 vss) n18 w=32.84u l=.18u",
+      "W_unit_um": 32.84,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        18.1,
+        15
+      ],
+      "rendered_pins": {
+        "D": [
+          18.1,
+          16
+        ],
+        "S": [
+          18.1,
+          14
+        ],
+        "G": [
+          16.55,
+          15
+        ],
+        "B": [
+          18.96,
+          15
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MIC2": {
+      "name": "MIC2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre2",
+        "G": "icc_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MIC2 (pre2 icc_ref vss vss) n18 w=34.780000u l=1u m=8",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        23.6,
+        8
+      ],
+      "rendered_pins": {
+        "D": [
+          23.6,
+          9
+        ],
+        "S": [
+          23.6,
+          7
+        ],
+        "G": [
+          22.05,
+          8
+        ],
+        "B": [
+          24.46,
+          8
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MPT2": {
+      "name": "MPT2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre2",
+        "G": "iptat_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "12"
+      },
+      "source_line": "MPT2 (pre2 iptat_ref vss vss) n18 w=34.780000u l=1u m=12",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 12.0,
+      "sheet": 2,
+      "origin": [
+        23.6,
+        3
+      ],
+      "rendered_pins": {
+        "D": [
+          23.6,
+          4
+        ],
+        "S": [
+          23.6,
+          2
+        ],
+        "G": [
+          22.05,
+          3
+        ],
+        "B": [
+          24.46,
+          3
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MSW2": {
+      "name": "MSW2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "isum",
+        "G": "sel2",
+        "S": "pre2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "32.84u",
+        "l": ".18u"
+      },
+      "source_line": "MSW2 (isum sel2 pre2 vss) n18 w=32.84u l=.18u",
+      "W_unit_um": 32.84,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        27.6,
+        15
+      ],
+      "rendered_pins": {
+        "D": [
+          27.6,
+          16
+        ],
+        "S": [
+          27.6,
+          14
+        ],
+        "G": [
+          26.05,
+          15
+        ],
+        "B": [
+          28.46,
+          15
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MIC3": {
+      "name": "MIC3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre3",
+        "G": "icc_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MIC3 (pre3 icc_ref vss vss) n18 w=34.780000u l=1u m=4",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        33.1,
+        8
+      ],
+      "rendered_pins": {
+        "D": [
+          33.1,
+          9
+        ],
+        "S": [
+          33.1,
+          7
+        ],
+        "G": [
+          31.55,
+          8
+        ],
+        "B": [
+          33.96,
+          8
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MPT3": {
+      "name": "MPT3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre3",
+        "G": "iptat_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "16"
+      },
+      "source_line": "MPT3 (pre3 iptat_ref vss vss) n18 w=34.780000u l=1u m=16",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 16.0,
+      "sheet": 2,
+      "origin": [
+        33.1,
+        3
+      ],
+      "rendered_pins": {
+        "D": [
+          33.1,
+          4
+        ],
+        "S": [
+          33.1,
+          2
+        ],
+        "G": [
+          31.55,
+          3
+        ],
+        "B": [
+          33.96,
+          3
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MSW3": {
+      "name": "MSW3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "isum",
+        "G": "sel3",
+        "S": "pre3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "32.84u",
+        "l": ".18u"
+      },
+      "source_line": "MSW3 (isum sel3 pre3 vss) n18 w=32.84u l=.18u",
+      "W_unit_um": 32.84,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        37.1,
+        15
+      ],
+      "rendered_pins": {
+        "D": [
+          37.1,
+          16
+        ],
+        "S": [
+          37.1,
+          14
+        ],
+        "G": [
+          35.550000000000004,
+          15
+        ],
+        "B": [
+          37.96,
+          15
+        ]
+      },
+      "block": "programmable_current_mirror"
+    },
+    "programmable_current_mirror/MCASC": {
+      "name": "MCASC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iout",
+        "G": "vcb",
+        "S": "isum",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.12u",
+        "l": ".36u",
+        "m": "200"
+      },
+      "source_line": "MCASC (iout vcb isum vss) n18 w=2.12u l=.36u m=200",
+      "W_unit_um": 2.12,
+      "L_um": 0.36,
+      "m": 200.0,
+      "sheet": 2,
+      "origin": [
+        22.5,
+        22
+      ],
+      "rendered_pins": {
+        "D": [
+          22.5,
+          23
+        ],
+        "S": [
+          22.5,
+          21
+        ],
+        "G": [
+          20.95,
+          22
+        ],
+        "B": [
+          23.36,
+          22
+        ]
+      },
+      "block": "programmable_current_mirror"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MICC": {
+      "name": "MICC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "icc_ref",
+        "G": "icc_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.78u",
+        "l": "1u"
+      },
+      "source_line": "MICC (icc_ref icc_ref vss vss) n18 w=34.78u l=1u",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "programmable_current_mirror/MICC",
+      "path": "MICC"
+    },
+    "MPTAT": {
+      "name": "MPTAT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iptat_ref",
+        "G": "iptat_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.78u",
+        "l": "1u"
+      },
+      "source_line": "MPTAT (iptat_ref iptat_ref vss vss) n18 w=34.78u l=1u",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "programmable_current_mirror/MPTAT",
+      "path": "MPTAT"
+    },
+    "XNB0": {
+      "name": "XNB0",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "ratio_b0",
+        "ZN": "nb0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XNB0 (ratio_b0 nb0 vdd vss vdd vss) INHDV0",
+      "definition": "programmable_current_mirror/XNB0",
+      "path": "XNB0"
+    },
+    "XNB1": {
+      "name": "XNB1",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "ratio_b1",
+        "ZN": "nb1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XNB1 (ratio_b1 nb1 vdd vss vdd vss) INHDV0",
+      "definition": "programmable_current_mirror/XNB1",
+      "path": "XNB1"
+    },
+    "XSEL0": {
+      "name": "XSEL0",
+      "kind": "HD",
+      "model": "NOR2HDV0",
+      "pins": {
+        "A1": "ratio_b0",
+        "A2": "ratio_b1",
+        "ZN": "sel0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XSEL0 (ratio_b0 ratio_b1 sel0 vdd vss vdd vss) NOR2HDV0",
+      "definition": "programmable_current_mirror/XSEL0",
+      "path": "XSEL0"
+    },
+    "MIC0": {
+      "name": "MIC0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre0",
+        "G": "icc_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "16"
+      },
+      "source_line": "MIC0 (pre0 icc_ref vss vss) n18 w=34.780000u l=1u m=16",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 16.0,
+      "definition": "programmable_current_mirror/MIC0",
+      "path": "MIC0"
+    },
+    "MPT0": {
+      "name": "MPT0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre0",
+        "G": "iptat_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPT0 (pre0 iptat_ref vss vss) n18 w=34.780000u l=1u m=4",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "programmable_current_mirror/MPT0",
+      "path": "MPT0"
+    },
+    "MSW0": {
+      "name": "MSW0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "isum",
+        "G": "sel0",
+        "S": "pre0",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "32.84u",
+        "l": ".18u"
+      },
+      "source_line": "MSW0 (isum sel0 pre0 vss) n18 w=32.84u l=.18u",
+      "W_unit_um": 32.84,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "programmable_current_mirror/MSW0",
+      "path": "MSW0"
+    },
+    "XSEL1": {
+      "name": "XSEL1",
+      "kind": "HD",
+      "model": "NOR2HDV0",
+      "pins": {
+        "A1": "nb0",
+        "A2": "ratio_b1",
+        "ZN": "sel1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XSEL1 (nb0 ratio_b1 sel1 vdd vss vdd vss) NOR2HDV0",
+      "definition": "programmable_current_mirror/XSEL1",
+      "path": "XSEL1"
+    },
+    "MIC1": {
+      "name": "MIC1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre1",
+        "G": "icc_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "12"
+      },
+      "source_line": "MIC1 (pre1 icc_ref vss vss) n18 w=34.780000u l=1u m=12",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 12.0,
+      "definition": "programmable_current_mirror/MIC1",
+      "path": "MIC1"
+    },
+    "MPT1": {
+      "name": "MPT1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre1",
+        "G": "iptat_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MPT1 (pre1 iptat_ref vss vss) n18 w=34.780000u l=1u m=8",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 8.0,
+      "definition": "programmable_current_mirror/MPT1",
+      "path": "MPT1"
+    },
+    "MSW1": {
+      "name": "MSW1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "isum",
+        "G": "sel1",
+        "S": "pre1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "32.84u",
+        "l": ".18u"
+      },
+      "source_line": "MSW1 (isum sel1 pre1 vss) n18 w=32.84u l=.18u",
+      "W_unit_um": 32.84,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "programmable_current_mirror/MSW1",
+      "path": "MSW1"
+    },
+    "XSEL2": {
+      "name": "XSEL2",
+      "kind": "HD",
+      "model": "NOR2HDV0",
+      "pins": {
+        "A1": "ratio_b0",
+        "A2": "nb1",
+        "ZN": "sel2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XSEL2 (ratio_b0 nb1 sel2 vdd vss vdd vss) NOR2HDV0",
+      "definition": "programmable_current_mirror/XSEL2",
+      "path": "XSEL2"
+    },
+    "MIC2": {
+      "name": "MIC2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre2",
+        "G": "icc_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MIC2 (pre2 icc_ref vss vss) n18 w=34.780000u l=1u m=8",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 8.0,
+      "definition": "programmable_current_mirror/MIC2",
+      "path": "MIC2"
+    },
+    "MPT2": {
+      "name": "MPT2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre2",
+        "G": "iptat_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "12"
+      },
+      "source_line": "MPT2 (pre2 iptat_ref vss vss) n18 w=34.780000u l=1u m=12",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 12.0,
+      "definition": "programmable_current_mirror/MPT2",
+      "path": "MPT2"
+    },
+    "MSW2": {
+      "name": "MSW2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "isum",
+        "G": "sel2",
+        "S": "pre2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "32.84u",
+        "l": ".18u"
+      },
+      "source_line": "MSW2 (isum sel2 pre2 vss) n18 w=32.84u l=.18u",
+      "W_unit_um": 32.84,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "programmable_current_mirror/MSW2",
+      "path": "MSW2"
+    },
+    "XSEL3": {
+      "name": "XSEL3",
+      "kind": "HD",
+      "model": "NOR2HDV0",
+      "pins": {
+        "A1": "nb0",
+        "A2": "nb1",
+        "ZN": "sel3",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XSEL3 (nb0 nb1 sel3 vdd vss vdd vss) NOR2HDV0",
+      "definition": "programmable_current_mirror/XSEL3",
+      "path": "XSEL3"
+    },
+    "MIC3": {
+      "name": "MIC3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre3",
+        "G": "icc_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MIC3 (pre3 icc_ref vss vss) n18 w=34.780000u l=1u m=4",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "programmable_current_mirror/MIC3",
+      "path": "MIC3"
+    },
+    "MPT3": {
+      "name": "MPT3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pre3",
+        "G": "iptat_ref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "34.780000u",
+        "l": "1u",
+        "m": "16"
+      },
+      "source_line": "MPT3 (pre3 iptat_ref vss vss) n18 w=34.780000u l=1u m=16",
+      "W_unit_um": 34.78,
+      "L_um": 1.0,
+      "m": 16.0,
+      "definition": "programmable_current_mirror/MPT3",
+      "path": "MPT3"
+    },
+    "MSW3": {
+      "name": "MSW3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "isum",
+        "G": "sel3",
+        "S": "pre3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "32.84u",
+        "l": ".18u"
+      },
+      "source_line": "MSW3 (isum sel3 pre3 vss) n18 w=32.84u l=.18u",
+      "W_unit_um": 32.84,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "programmable_current_mirror/MSW3",
+      "path": "MSW3"
+    },
+    "MCASC": {
+      "name": "MCASC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iout",
+        "G": "vcb",
+        "S": "isum",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.12u",
+        "l": ".36u",
+        "m": "200"
+      },
+      "source_line": "MCASC (iout vcb isum vss) n18 w=2.12u l=.36u m=200",
+      "W_unit_um": 2.12,
+      "L_um": 0.36,
+      "m": 200.0,
+      "definition": "programmable_current_mirror/MCASC",
+      "path": "MCASC"
+    },
+    "MBC": {
+      "name": "MBC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vcb",
+        "G": "vcb",
+        "S": "vb",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.12u",
+        "l": ".36u"
+      },
+      "source_line": "MBC (vcb vcb vb vss) n18 w=2.12u l=.36u",
+      "W_unit_um": 2.12,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "programmable_current_mirror/MBC",
+      "path": "MBC"
+    },
+    "RTOP": {
+      "name": "RTOP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "vcb"
+      },
+      "parameters": {
+        "r": "210000"
+      },
+      "source_line": "RTOP (vdd vcb) resistor r=210000",
+      "value_SI": 210000.0,
+      "definition": "programmable_current_mirror/RTOP",
+      "path": "RTOP"
+    },
+    "RBOT": {
+      "name": "RBOT",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vb",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "50000"
+      },
+      "source_line": "RBOT (vb vss) resistor r=50000",
+      "value_SI": 50000.0,
+      "definition": "programmable_current_mirror/RBOT",
+      "path": "RBOT"
+    }
+  },
+  "nets": {
+    "programmable_current_mirror/icc_ref": [
+      {
+        "instance": "programmable_current_mirror/MICC",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          4.5,
+          7
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MICC",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          2.95,
+          6
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC0",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          3.05,
+          8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC1",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          12.549999999999999,
+          8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          22.05,
+          8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC3",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          31.55,
+          8
+        ]
+      }
+    ],
+    "programmable_current_mirror/vss": [
+      {
+        "instance": "programmable_current_mirror/MICC",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          4.5,
+          5
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MICC",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          5.36,
+          6
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPTAT",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          11.5,
+          5
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPTAT",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          12.36,
+          6
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MBC",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          18.86,
+          12
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/RBOT",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          18,
+          4.18
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XNB0",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          27.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XNB0",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          28.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XNB1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          37.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XNB1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL0",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          27.2,
+          8.8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL0",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          28.8,
+          8.8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          37.2,
+          8.8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          8.8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL2",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          27.2,
+          1.2999999999999998
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL2",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          28.8,
+          1.2999999999999998
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL3",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          37.2,
+          1.2999999999999998
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL3",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          1.2999999999999998
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC0",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          4.6,
+          7
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC0",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          5.46,
+          8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT0",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          4.6,
+          2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT0",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          5.46,
+          3
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW0",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          9.459999999999999,
+          15
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC1",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          14.1,
+          7
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC1",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          14.959999999999999,
+          8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT1",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          14.1,
+          2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT1",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          14.959999999999999,
+          3
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW1",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          18.96,
+          15
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          23.6,
+          7
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          24.46,
+          8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          23.6,
+          2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          24.46,
+          3
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          28.46,
+          15
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC3",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          33.1,
+          7
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MIC3",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          33.96,
+          8
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT3",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          33.1,
+          2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT3",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          33.96,
+          3
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW3",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          37.96,
+          15
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MCASC",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          23.36,
+          22
+        ]
+      }
+    ],
+    "programmable_current_mirror/iptat_ref": [
+      {
+        "instance": "programmable_current_mirror/MPTAT",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          11.5,
+          7
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPTAT",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          9.95,
+          6
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT0",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          3.05,
+          3
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT1",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          12.549999999999999,
+          3
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          22.05,
+          3
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT3",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          31.55,
+          3
+        ]
+      }
+    ],
+    "programmable_current_mirror/vdd": [
+      {
+        "instance": "programmable_current_mirror/RTOP",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          18,
+          19.82
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XNB0",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          27.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XNB0",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          28.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XNB1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          37.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XNB1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL0",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          27.2,
+          13.2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL0",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          28.8,
+          13.2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          37.2,
+          13.2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          13.2
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL2",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          27.2,
+          5.7
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL2",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          28.8,
+          5.7
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL3",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          37.2,
+          5.7
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL3",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          5.7
+        ]
+      }
+    ],
+    "programmable_current_mirror/vcb": [
+      {
+        "instance": "programmable_current_mirror/RTOP",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          18,
+          18.18
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MBC",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          18,
+          13
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MBC",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          16.45,
+          12
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MCASC",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          20.95,
+          22
+        ]
+      }
+    ],
+    "programmable_current_mirror/vb": [
+      {
+        "instance": "programmable_current_mirror/MBC",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          18,
+          11
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/RBOT",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          18,
+          5.82
+        ]
+      }
+    ],
+    "programmable_current_mirror/ratio_b0": [
+      {
+        "instance": "programmable_current_mirror/XNB0",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          25.3,
+          19.0
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL0",
+        "pin": "A1",
+        "sheet": 1,
+        "point": [
+          25.3,
+          11.5
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL2",
+        "pin": "A1",
+        "sheet": 1,
+        "point": [
+          25.3,
+          4.0
+        ]
+      }
+    ],
+    "programmable_current_mirror/nb0": [
+      {
+        "instance": "programmable_current_mirror/XNB0",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          30.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL1",
+        "pin": "A1",
+        "sheet": 1,
+        "point": [
+          35.3,
+          11.5
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL3",
+        "pin": "A1",
+        "sheet": 1,
+        "point": [
+          35.3,
+          4.0
+        ]
+      }
+    ],
+    "programmable_current_mirror/ratio_b1": [
+      {
+        "instance": "programmable_current_mirror/XNB1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          35.3,
+          19.0
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL0",
+        "pin": "A2",
+        "sheet": 1,
+        "point": [
+          25.3,
+          10.5
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL1",
+        "pin": "A2",
+        "sheet": 1,
+        "point": [
+          35.3,
+          10.5
+        ]
+      }
+    ],
+    "programmable_current_mirror/nb1": [
+      {
+        "instance": "programmable_current_mirror/XNB1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          40.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL2",
+        "pin": "A2",
+        "sheet": 1,
+        "point": [
+          25.3,
+          3.0
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/XSEL3",
+        "pin": "A2",
+        "sheet": 1,
+        "point": [
+          35.3,
+          3.0
+        ]
+      }
+    ],
+    "programmable_current_mirror/sel0": [
+      {
+        "instance": "programmable_current_mirror/XSEL0",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          30.7,
+          11.0
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW0",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          7.05,
+          15
+        ]
+      }
+    ],
+    "programmable_current_mirror/sel1": [
+      {
+        "instance": "programmable_current_mirror/XSEL1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          40.7,
+          11.0
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW1",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          16.55,
+          15
+        ]
+      }
+    ],
+    "programmable_current_mirror/sel2": [
+      {
+        "instance": "programmable_current_mirror/XSEL2",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          30.7,
+          3.5
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          26.05,
+          15
+        ]
+      }
+    ],
+    "programmable_current_mirror/sel3": [
+      {
+        "instance": "programmable_current_mirror/XSEL3",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          40.7,
+          3.5
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW3",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          35.550000000000004,
+          15
+        ]
+      }
+    ],
+    "programmable_current_mirror/pre0": [
+      {
+        "instance": "programmable_current_mirror/MIC0",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          4.6,
+          9
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT0",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          4.6,
+          4
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW0",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          8.6,
+          14
+        ]
+      }
+    ],
+    "programmable_current_mirror/isum": [
+      {
+        "instance": "programmable_current_mirror/MSW0",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          8.6,
+          16
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW1",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          18.1,
+          16
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          27.6,
+          16
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW3",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          37.1,
+          16
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MCASC",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          22.5,
+          21
+        ]
+      }
+    ],
+    "programmable_current_mirror/pre1": [
+      {
+        "instance": "programmable_current_mirror/MIC1",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          14.1,
+          9
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT1",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          14.1,
+          4
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW1",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          18.1,
+          14
+        ]
+      }
+    ],
+    "programmable_current_mirror/pre2": [
+      {
+        "instance": "programmable_current_mirror/MIC2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          23.6,
+          9
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          23.6,
+          4
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          27.6,
+          14
+        ]
+      }
+    ],
+    "programmable_current_mirror/pre3": [
+      {
+        "instance": "programmable_current_mirror/MIC3",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          33.1,
+          9
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MPT3",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          33.1,
+          4
+        ]
+      },
+      {
+        "instance": "programmable_current_mirror/MSW3",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          37.1,
+          14
+        ]
+      }
+    ],
+    "programmable_current_mirror/iout": [
+      {
+        "instance": "programmable_current_mirror/MCASC",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          22.5,
+          23
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MBC",
+      "pin": "S",
+      "net": "vb",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "RBOT",
+      "pin": "1",
+      "net": "vb",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB1",
+      "pin": "ZN",
+      "net": "nb1",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL2",
+      "pin": "A2",
+      "net": "nb1",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL3",
+      "pin": "A2",
+      "net": "nb1",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "MICC",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "MICC",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPTAT",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPTAT",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBC",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "RBOT",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB0",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB0",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL0",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL0",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL2",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL3",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL3",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL0",
+      "pin": "ZN",
+      "net": "sel0",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL2",
+      "pin": "ZN",
+      "net": "sel2",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "RTOP",
+      "pin": "1",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB0",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB0",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL0",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL0",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL2",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL3",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL3",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPTAT",
+      "pin": "D",
+      "net": "iptat_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPTAT",
+      "pin": "G",
+      "net": "iptat_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL1",
+      "pin": "ZN",
+      "net": "sel1",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB0",
+      "pin": "ZN",
+      "net": "nb0",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL1",
+      "pin": "A1",
+      "net": "nb0",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL3",
+      "pin": "A1",
+      "net": "nb0",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "RTOP",
+      "pin": "2",
+      "net": "vcb",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBC",
+      "pin": "D",
+      "net": "vcb",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBC",
+      "pin": "G",
+      "net": "vcb",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB1",
+      "pin": "I",
+      "net": "ratio_b1",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL0",
+      "pin": "A2",
+      "net": "ratio_b1",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL1",
+      "pin": "A2",
+      "net": "ratio_b1",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB0",
+      "pin": "I",
+      "net": "ratio_b0",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL0",
+      "pin": "A1",
+      "net": "ratio_b0",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL2",
+      "pin": "A1",
+      "net": "ratio_b0",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSEL3",
+      "pin": "ZN",
+      "net": "sel3",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "MICC",
+      "pin": "D",
+      "net": "icc_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 1,
+      "instance": "MICC",
+      "pin": "G",
+      "net": "icc_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC0",
+      "pin": "D",
+      "net": "pre0",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT0",
+      "pin": "D",
+      "net": "pre0",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW0",
+      "pin": "S",
+      "net": "pre0",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW0",
+      "pin": "G",
+      "net": "sel0",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC0",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC0",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT0",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT0",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW0",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC1",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT1",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC2",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT2",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC3",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC3",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT3",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT3",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW3",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW2",
+      "pin": "G",
+      "net": "sel2",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC3",
+      "pin": "D",
+      "net": "pre3",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT3",
+      "pin": "D",
+      "net": "pre3",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW3",
+      "pin": "S",
+      "net": "pre3",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC1",
+      "pin": "D",
+      "net": "pre1",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT1",
+      "pin": "D",
+      "net": "pre1",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW1",
+      "pin": "S",
+      "net": "pre1",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW0",
+      "pin": "D",
+      "net": "isum",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW1",
+      "pin": "D",
+      "net": "isum",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW2",
+      "pin": "D",
+      "net": "isum",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW3",
+      "pin": "D",
+      "net": "isum",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "S",
+      "net": "isum",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT0",
+      "pin": "G",
+      "net": "iptat_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT1",
+      "pin": "G",
+      "net": "iptat_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT2",
+      "pin": "G",
+      "net": "iptat_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT3",
+      "pin": "G",
+      "net": "iptat_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW1",
+      "pin": "G",
+      "net": "sel1",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "G",
+      "net": "vcb",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "D",
+      "net": "iout",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC2",
+      "pin": "D",
+      "net": "pre2",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT2",
+      "pin": "D",
+      "net": "pre2",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW2",
+      "pin": "S",
+      "net": "pre2",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSW3",
+      "pin": "G",
+      "net": "sel3",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC0",
+      "pin": "G",
+      "net": "icc_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC1",
+      "pin": "G",
+      "net": "icc_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC2",
+      "pin": "G",
+      "net": "icc_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIC3",
+      "pin": "G",
+      "net": "icc_ref",
+      "path_to_named_net": true,
+      "block": "programmable_current_mirror"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "programmable_current_mirror",
+      "title": "参考、级联偏置与 HD 译码",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.36,
+              6
+            ],
+            [
+              5.65,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.36,
+              6
+            ],
+            [
+              12.65,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "icc_ref",
+          "points": [
+            [
+              2.95,
+              6
+            ],
+            [
+              2.45,
+              6
+            ],
+            [
+              2.45,
+              9
+            ],
+            [
+              4.5,
+              9
+            ],
+            [
+              4.5,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "icc_ref",
+          "points": [
+            [
+              4.5,
+              7
+            ],
+            [
+              4.5,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iptat_ref",
+          "points": [
+            [
+              9.95,
+              6
+            ],
+            [
+              9.45,
+              6
+            ],
+            [
+              9.45,
+              9
+            ],
+            [
+              11.5,
+              9
+            ],
+            [
+              11.5,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iptat_ref",
+          "points": [
+            [
+              11.5,
+              7
+            ],
+            [
+              11.5,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              18.86,
+              12
+            ],
+            [
+              19.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vcb",
+          "points": [
+            [
+              18,
+              18.18
+            ],
+            [
+              18,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcb",
+          "points": [
+            [
+              16.45,
+              12
+            ],
+            [
+              15.95,
+              12
+            ],
+            [
+              15.95,
+              15
+            ],
+            [
+              18,
+              15
+            ],
+            [
+              18,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vb",
+          "points": [
+            [
+              18,
+              11
+            ],
+            [
+              18,
+              5.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ratio_b0",
+          "points": [
+            [
+              25.3,
+              19.0
+            ],
+            [
+              24.7,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb0",
+          "points": [
+            [
+              30.7,
+              19.0
+            ],
+            [
+              31.3,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              27.2,
+              21.2
+            ],
+            [
+              27.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              28.8,
+              21.2
+            ],
+            [
+              28.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27.2,
+              16.8
+            ],
+            [
+              27.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.8,
+              16.8
+            ],
+            [
+              28.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ratio_b1",
+          "points": [
+            [
+              35.3,
+              19.0
+            ],
+            [
+              34.699999999999996,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb1",
+          "points": [
+            [
+              40.7,
+              19.0
+            ],
+            [
+              41.300000000000004,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.2,
+              21.2
+            ],
+            [
+              37.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              38.8,
+              21.2
+            ],
+            [
+              38.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.2,
+              16.8
+            ],
+            [
+              37.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.8,
+              16.8
+            ],
+            [
+              38.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ratio_b0",
+          "points": [
+            [
+              25.3,
+              11.5
+            ],
+            [
+              24.7,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ratio_b1",
+          "points": [
+            [
+              25.3,
+              10.5
+            ],
+            [
+              24.7,
+              10.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sel0",
+          "points": [
+            [
+              30.7,
+              11.0
+            ],
+            [
+              31.3,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              27.2,
+              13.2
+            ],
+            [
+              27.2,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              28.8,
+              13.2
+            ],
+            [
+              28.8,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27.2,
+              8.8
+            ],
+            [
+              27.2,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.8,
+              8.8
+            ],
+            [
+              28.8,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb0",
+          "points": [
+            [
+              35.3,
+              11.5
+            ],
+            [
+              34.699999999999996,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ratio_b1",
+          "points": [
+            [
+              35.3,
+              10.5
+            ],
+            [
+              34.699999999999996,
+              10.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sel1",
+          "points": [
+            [
+              40.7,
+              11.0
+            ],
+            [
+              41.300000000000004,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.2,
+              13.2
+            ],
+            [
+              37.2,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              38.8,
+              13.2
+            ],
+            [
+              38.8,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.2,
+              8.8
+            ],
+            [
+              37.2,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.8,
+              8.8
+            ],
+            [
+              38.8,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ratio_b0",
+          "points": [
+            [
+              25.3,
+              4.0
+            ],
+            [
+              24.7,
+              4.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb1",
+          "points": [
+            [
+              25.3,
+              3.0
+            ],
+            [
+              24.7,
+              3.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sel2",
+          "points": [
+            [
+              30.7,
+              3.5
+            ],
+            [
+              31.3,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              27.2,
+              5.7
+            ],
+            [
+              27.2,
+              6.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              28.8,
+              5.7
+            ],
+            [
+              28.8,
+              6.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27.2,
+              1.2999999999999998
+            ],
+            [
+              27.2,
+              0.7999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.8,
+              1.2999999999999998
+            ],
+            [
+              28.8,
+              0.7999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb0",
+          "points": [
+            [
+              35.3,
+              4.0
+            ],
+            [
+              34.699999999999996,
+              4.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb1",
+          "points": [
+            [
+              35.3,
+              3.0
+            ],
+            [
+              34.699999999999996,
+              3.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sel3",
+          "points": [
+            [
+              40.7,
+              3.5
+            ],
+            [
+              41.300000000000004,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.2,
+              5.7
+            ],
+            [
+              37.2,
+              6.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              38.8,
+              5.7
+            ],
+            [
+              38.8,
+              6.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.2,
+              1.2999999999999998
+            ],
+            [
+              37.2,
+              0.7999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.8,
+              1.2999999999999998
+            ],
+            [
+              38.8,
+              0.7999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.5,
+              5
+            ],
+            [
+              4.5,
+              4.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11.5,
+              5
+            ],
+            [
+              11.5,
+              4.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18,
+              19.82
+            ],
+            [
+              18,
+              20.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              18,
+              4.18
+            ],
+            [
+              18,
+              3.5399999999999996
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            5.65,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            12.65,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "icc_ref",
+          "point": [
+            4.5,
+            12
+          ],
+          "text": "icc_ref",
+          "body": false
+        },
+        {
+          "net": "iptat_ref",
+          "point": [
+            11.5,
+            12
+          ],
+          "text": "iptat_ref",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            19.15,
+            12
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vcb",
+          "point": [
+            18,
+            16.5
+          ],
+          "text": "vcb",
+          "body": false
+        },
+        {
+          "net": "vb",
+          "point": [
+            18,
+            8.2
+          ],
+          "text": "vb",
+          "body": false
+        },
+        {
+          "net": "ratio_b0",
+          "point": [
+            24.7,
+            19.0
+          ],
+          "text": "ratio_b0",
+          "body": false
+        },
+        {
+          "net": "nb0",
+          "point": [
+            31.3,
+            19.0
+          ],
+          "text": "nb0",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            27.2,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            28.8,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            27.2,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            28.8,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ratio_b1",
+          "point": [
+            34.699999999999996,
+            19.0
+          ],
+          "text": "ratio_b1",
+          "body": false
+        },
+        {
+          "net": "nb1",
+          "point": [
+            41.300000000000004,
+            19.0
+          ],
+          "text": "nb1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.2,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            38.8,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.2,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.8,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ratio_b0",
+          "point": [
+            24.7,
+            11.5
+          ],
+          "text": "ratio_b0",
+          "body": false
+        },
+        {
+          "net": "ratio_b1",
+          "point": [
+            24.7,
+            10.5
+          ],
+          "text": "ratio_b1",
+          "body": false
+        },
+        {
+          "net": "sel0",
+          "point": [
+            31.3,
+            11.0
+          ],
+          "text": "sel0",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            27.2,
+            13.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            28.8,
+            13.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            27.2,
+            8.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            28.8,
+            8.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "nb0",
+          "point": [
+            34.699999999999996,
+            11.5
+          ],
+          "text": "nb0",
+          "body": false
+        },
+        {
+          "net": "ratio_b1",
+          "point": [
+            34.699999999999996,
+            10.5
+          ],
+          "text": "ratio_b1",
+          "body": false
+        },
+        {
+          "net": "sel1",
+          "point": [
+            41.300000000000004,
+            11.0
+          ],
+          "text": "sel1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.2,
+            13.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            38.8,
+            13.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.2,
+            8.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.8,
+            8.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ratio_b0",
+          "point": [
+            24.7,
+            4.0
+          ],
+          "text": "ratio_b0",
+          "body": false
+        },
+        {
+          "net": "nb1",
+          "point": [
+            24.7,
+            3.0
+          ],
+          "text": "nb1",
+          "body": false
+        },
+        {
+          "net": "sel2",
+          "point": [
+            31.3,
+            3.5
+          ],
+          "text": "sel2",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            27.2,
+            6.2
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            28.8,
+            6.2
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            27.2,
+            0.7999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            28.8,
+            0.7999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "nb0",
+          "point": [
+            34.699999999999996,
+            4.0
+          ],
+          "text": "nb0",
+          "body": false
+        },
+        {
+          "net": "nb1",
+          "point": [
+            34.699999999999996,
+            3.0
+          ],
+          "text": "nb1",
+          "body": false
+        },
+        {
+          "net": "sel3",
+          "point": [
+            41.300000000000004,
+            3.5
+          ],
+          "text": "sel3",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.2,
+            6.2
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            38.8,
+            6.2
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.2,
+            0.7999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.8,
+            0.7999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4.5,
+            4.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.5,
+            4.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            18,
+            20.46
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            18,
+            3.5399999999999996
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "programmable_current_mirror",
+      "title": "四路加权电流镜、选择开关与输出",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.46,
+              8
+            ],
+            [
+              5.75,
+              8
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.46,
+              3
+            ],
+            [
+              5.75,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              9.459999999999999,
+              15
+            ],
+            [
+              9.75,
+              15
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pre0",
+          "points": [
+            [
+              4.6,
+              9
+            ],
+            [
+              4.6,
+              9.7
+            ],
+            [
+              9.0,
+              9.7
+            ],
+            [
+              9.0,
+              4.7
+            ],
+            [
+              4.6,
+              4.7
+            ],
+            [
+              4.6,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pre0",
+          "points": [
+            [
+              8.6,
+              14
+            ],
+            [
+              8.6,
+              12
+            ],
+            [
+              9.0,
+              12
+            ],
+            [
+              9.0,
+              9.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "isum",
+          "points": [
+            [
+              8.6,
+              16
+            ],
+            [
+              8.6,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              14.959999999999999,
+              8
+            ],
+            [
+              15.25,
+              8
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              14.959999999999999,
+              3
+            ],
+            [
+              15.25,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              18.96,
+              15
+            ],
+            [
+              19.25,
+              15
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pre1",
+          "points": [
+            [
+              14.1,
+              9
+            ],
+            [
+              14.1,
+              9.7
+            ],
+            [
+              18.5,
+              9.7
+            ],
+            [
+              18.5,
+              4.7
+            ],
+            [
+              14.1,
+              4.7
+            ],
+            [
+              14.1,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pre1",
+          "points": [
+            [
+              18.1,
+              14
+            ],
+            [
+              18.1,
+              12
+            ],
+            [
+              18.5,
+              12
+            ],
+            [
+              18.5,
+              9.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "isum",
+          "points": [
+            [
+              18.1,
+              16
+            ],
+            [
+              18.1,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24.46,
+              8
+            ],
+            [
+              24.75,
+              8
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24.46,
+              3
+            ],
+            [
+              24.75,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.46,
+              15
+            ],
+            [
+              28.75,
+              15
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pre2",
+          "points": [
+            [
+              23.6,
+              9
+            ],
+            [
+              23.6,
+              9.7
+            ],
+            [
+              28.0,
+              9.7
+            ],
+            [
+              28.0,
+              4.7
+            ],
+            [
+              23.6,
+              4.7
+            ],
+            [
+              23.6,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pre2",
+          "points": [
+            [
+              27.6,
+              14
+            ],
+            [
+              27.6,
+              12
+            ],
+            [
+              28.0,
+              12
+            ],
+            [
+              28.0,
+              9.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "isum",
+          "points": [
+            [
+              27.6,
+              16
+            ],
+            [
+              27.6,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33.96,
+              8
+            ],
+            [
+              34.25,
+              8
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33.96,
+              3
+            ],
+            [
+              34.25,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.96,
+              15
+            ],
+            [
+              38.25,
+              15
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pre3",
+          "points": [
+            [
+              33.1,
+              9
+            ],
+            [
+              33.1,
+              9.7
+            ],
+            [
+              37.5,
+              9.7
+            ],
+            [
+              37.5,
+              4.7
+            ],
+            [
+              33.1,
+              4.7
+            ],
+            [
+              33.1,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pre3",
+          "points": [
+            [
+              37.1,
+              14
+            ],
+            [
+              37.1,
+              12
+            ],
+            [
+              37.5,
+              12
+            ],
+            [
+              37.5,
+              9.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "isum",
+          "points": [
+            [
+              37.1,
+              16
+            ],
+            [
+              37.1,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "isum",
+          "points": [
+            [
+              8.6,
+              19
+            ],
+            [
+              37.1,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23.36,
+              22
+            ],
+            [
+              23.65,
+              22
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "isum",
+          "points": [
+            [
+              22.5,
+              21
+            ],
+            [
+              22.5,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.6,
+              7
+            ],
+            [
+              4.6,
+              6.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "icc_ref",
+          "points": [
+            [
+              3.05,
+              8
+            ],
+            [
+              2.5,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.6,
+              2
+            ],
+            [
+              4.6,
+              1.3599999999999999
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iptat_ref",
+          "points": [
+            [
+              3.05,
+              3
+            ],
+            [
+              2.5,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sel0",
+          "points": [
+            [
+              7.05,
+              15
+            ],
+            [
+              6.5,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              14.1,
+              7
+            ],
+            [
+              14.1,
+              6.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "icc_ref",
+          "points": [
+            [
+              12.549999999999999,
+              8
+            ],
+            [
+              11.999999999999998,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              14.1,
+              2
+            ],
+            [
+              14.1,
+              1.3599999999999999
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iptat_ref",
+          "points": [
+            [
+              12.549999999999999,
+              3
+            ],
+            [
+              11.999999999999998,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sel1",
+          "points": [
+            [
+              16.55,
+              15
+            ],
+            [
+              16.0,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23.6,
+              7
+            ],
+            [
+              23.6,
+              6.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "icc_ref",
+          "points": [
+            [
+              22.05,
+              8
+            ],
+            [
+              21.5,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23.6,
+              2
+            ],
+            [
+              23.6,
+              1.3599999999999999
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iptat_ref",
+          "points": [
+            [
+              22.05,
+              3
+            ],
+            [
+              21.5,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sel2",
+          "points": [
+            [
+              26.05,
+              15
+            ],
+            [
+              25.5,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33.1,
+              7
+            ],
+            [
+              33.1,
+              6.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "icc_ref",
+          "points": [
+            [
+              31.55,
+              8
+            ],
+            [
+              31.0,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33.1,
+              2
+            ],
+            [
+              33.1,
+              1.3599999999999999
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iptat_ref",
+          "points": [
+            [
+              31.55,
+              3
+            ],
+            [
+              31.0,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sel3",
+          "points": [
+            [
+              35.550000000000004,
+              15
+            ],
+            [
+              35.00000000000001,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iout",
+          "points": [
+            [
+              22.5,
+              23
+            ],
+            [
+              22.5,
+              23.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcb",
+          "points": [
+            [
+              20.95,
+              22
+            ],
+            [
+              20.4,
+              22
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            5.75,
+            8
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.75,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            9.75,
+            15
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "pre0",
+          "point": [
+            9.0,
+            10.5
+          ],
+          "text": "pre0",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            15.25,
+            8
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            15.25,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            19.25,
+            15
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "pre1",
+          "point": [
+            18.5,
+            10.5
+          ],
+          "text": "pre1",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            24.75,
+            8
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            24.75,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            28.75,
+            15
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "pre2",
+          "point": [
+            28.0,
+            10.5
+          ],
+          "text": "pre2",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.25,
+            8
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.25,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.25,
+            15
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "pre3",
+          "point": [
+            37.5,
+            10.5
+          ],
+          "text": "pre3",
+          "body": false
+        },
+        {
+          "net": "isum",
+          "point": [
+            9.5,
+            19
+          ],
+          "text": "isum",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            23.65,
+            22
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            4.6,
+            6.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "icc_ref",
+          "point": [
+            2.5,
+            8
+          ],
+          "text": "icc_ref",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4.6,
+            1.3599999999999999
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iptat_ref",
+          "point": [
+            2.5,
+            3
+          ],
+          "text": "iptat_ref",
+          "body": false
+        },
+        {
+          "net": "sel0",
+          "point": [
+            6.5,
+            15
+          ],
+          "text": "sel0",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            14.1,
+            6.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "icc_ref",
+          "point": [
+            11.999999999999998,
+            8
+          ],
+          "text": "icc_ref",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            14.1,
+            1.3599999999999999
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iptat_ref",
+          "point": [
+            11.999999999999998,
+            3
+          ],
+          "text": "iptat_ref",
+          "body": false
+        },
+        {
+          "net": "sel1",
+          "point": [
+            16.0,
+            15
+          ],
+          "text": "sel1",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            23.6,
+            6.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "icc_ref",
+          "point": [
+            21.5,
+            8
+          ],
+          "text": "icc_ref",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            23.6,
+            1.3599999999999999
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iptat_ref",
+          "point": [
+            21.5,
+            3
+          ],
+          "text": "iptat_ref",
+          "body": false
+        },
+        {
+          "net": "sel2",
+          "point": [
+            25.5,
+            15
+          ],
+          "text": "sel2",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            33.1,
+            6.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "icc_ref",
+          "point": [
+            31.0,
+            8
+          ],
+          "text": "icc_ref",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            33.1,
+            1.3599999999999999
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iptat_ref",
+          "point": [
+            31.0,
+            3
+          ],
+          "text": "iptat_ref",
+          "body": false
+        },
+        {
+          "net": "sel3",
+          "point": [
+            35.00000000000001,
+            15
+          ],
+          "text": "sel3",
+          "body": false
+        },
+        {
+          "net": "iout",
+          "point": [
+            22.5,
+            23.64
+          ],
+          "text": "iout",
+          "body": false
+        },
+        {
+          "net": "vcb",
+          "point": [
+            20.4,
+            22
+          ],
+          "text": "vcb",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "programmable_current_mirror": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-09-28T18:06:57.144675+00:00",
+  "baseline_groups": {
+    "load1": "runs/18/20260928T175827420444Z_load1",
+    "load25": "runs/18/20260928T180020763492Z_load25",
+    "load50": "runs/18/20260928T180215890808Z_load50",
+    "disabled": "runs/18/20260928T180414236837Z_disabled"
+  },
+  "baseline": {
+    "maxstep_s": 1e-09,
+    "reltol": 1e-05
+  },
+  "refined": {
+    "maxstep_s": 5e-10,
+    "reltol": 1e-06
+  },
+  "bounds": {
+    "vout_avg_V": 5e-05,
+    "vout_min_V": 5e-05,
+    "vout_max_V": 5e-05,
+    "enabled_current_A": 2.5e-07,
+    "control_avg_V": 0.001,
+    "driver_supply_avg_V": 0.001,
+    "error_V": 5e-05,
+    "ripple_V": 5e-05
+  },
+  "disabled_current_difference_A": 5e-11
+}

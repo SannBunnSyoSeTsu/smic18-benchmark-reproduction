@@ -1,0 +1,54 @@
+// Gain-boosted folded first stage and cascoded common-source output.
+// D G S B; legal base widths from SMIC18 gm/ID, m scales current.
+simulator lang=spectre
+subckt folded_cascode_ota (vss iref vdd vinn vinp vout)
+MREF (iref iref vss vss) n18 w=4.68u l=1u m=5
+MTAIL (tail iref vss vss) n18 w=4.68u l=1u m=30
+MNBP (vbp iref vss vss) n18 w=4.68u l=1u m=1
+MPBP (vbp vbp vdd vdd) p18 w=14.24u l=1u m=1
+MNPC (vpc iref vss vss) n18 w=4.68u l=1u m=1
+RPC (vdd pcbs) resistor r=35000
+MPPC (vpc vpc pcbs vdd) p18 w=6.96u l=0.36u m=1
+MPB2 (ncb vbp vdd vdd) p18 w=14.24u l=1u m=1
+MNCB (ncb ncb ncbs vss) n18 w=1.12u l=0.36u m=1
+RNCB (ncbs vss) resistor r=25000
+MNRBI (nref iref vss vss) n18 w=4.68u l=1u m=1
+MNRS (vdd ncb nref vss) n18 w=1.12u l=0.36u m=1
+MPRBI (pref vbp vdd vdd) p18 w=14.24u l=1u m=1
+MPRS (vss vpc pref vdd) p18 w=6.96u l=0.36u m=1
+MINP (p1 vinn sinp vss) n18 w=5.28u l=0.5u m=15
+MINN (p2 vinp sinn vss) n18 w=5.28u l=0.5u m=15
+RINP (sinp tail) resistor r=50
+RINN (sinn tail) resistor r=50
+MFP (p1 vbp vdd vdd) p18 w=14.24u l=1u m=25
+MFN (p2 vbp vdd vdd) p18 w=14.24u l=1u m=25
+MFCP (mirror vpc p1 vdd) p18 w=6.96u l=0.36u m=10
+MFCN (nfirst gpc p2 vdd) p18 w=6.96u l=0.36u m=10
+MMD (mirror ncb n1 vss) n18 w=1.12u l=0.36u m=10
+MMO (nfirst gnc n2 vss) n18 w=3.98u l=0.36u m=10
+MCD (n1 mirror vss vss) n18 w=4.68u l=1u m=10
+MCO (n2 mirror vss vss) n18 w=4.68u l=1u m=10
+MHSI (hs iref vss vss) n18 w=4.68u l=1u m=1
+MHSF (vdd p2 hs vss) n18 w=0.48u l=0.36u m=1
+MHRI (hr iref vss vss) n18 w=4.68u l=1u m=1
+MHRF (vdd pref hr vss) n18 w=0.48u l=0.36u m=1
+MPT (apt vbp vdd vdd) p18 w=14.24u l=1u m=4
+MPA (pgd hr apt vdd) p18 w=6.96u l=0.36u m=2
+MPB (gpc hs apt vdd) p18 w=6.96u l=0.36u m=2
+MPMA (pgd pgd vss vss) n18 w=4.44u l=1u m=2
+MPMB (gpc pgd vss vss) n18 w=4.44u l=1u m=2
+MNT (ant vbp vdd vdd) p18 w=14.24u l=1u m=16
+MNA (ngd nref ant vdd) p18 w=6.96u l=0.36u m=8
+MNB (gnc n2 ant vdd) p18 w=6.96u l=0.36u m=8
+MNMA (ngd ngd vss vss) n18 w=4.44u l=1u m=8
+MNMB (gnc ngd vss vss) n18 w=4.44u l=1u m=8
+CGPC (gpc vdd) capacitor c=3p
+CGNC (gnc vss) capacitor c=9p
+MOBN (obias iref vss vss) n18 w=4.68u l=1u m=1
+MOBP (obias obias vdd vdd) p18 w=1.96u l=0.36u m=1
+MOUT (nout nfirst vss vss) n18 w=0.26u l=0.18u m=90
+MOUTC (vout ncb nout vss) n18 w=2.3u l=0.18u m=90
+MLOAD (vout obias vdd vdd) p18 w=1.96u l=0.36u m=90
+CCOMP (vout comp) capacitor c=1.3p
+RCOMP (comp nfirst) resistor r=1000
+ends folded_cascode_ota

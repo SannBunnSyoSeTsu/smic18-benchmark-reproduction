@@ -1,0 +1,199 @@
+simulator lang=spectre
+global 0
+parameters vtest=.9
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/02/20260922T062026366425Z_mirror/inputs/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/02/20260922T062026366425Z_mirror/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-7 vabstol=1e-10 iabstol=1e-15
+saveOptions options save=selected
+VS_c0_nom (vdd_c0_nom 0) vsource dc=1.8
+IC_c0_nom (vdd_c0_nom icc_c0_nom) isource dc=50u
+IP_c0_nom (vdd_c0_nom iptat_c0_nom) isource dc=50u
+VB0_c0_nom (b0_c0_nom 0) vsource dc=0.0
+VB1_c0_nom (b1_c0_nom 0) vsource dc=0.0
+VO_c0_nom (out_c0_nom 0) vsource dc=vtest
+Xc0_nom (0 vdd_c0_nom icc_c0_nom iptat_c0_nom b0_c0_nom b1_c0_nom out_c0_nom) programmable_current_mirror
+save icc_c0_nom iptat_c0_nom VO_c0_nom:p VS_c0_nom:p VB0_c0_nom:p VB1_c0_nom:p
+VS_c0_icup (vdd_c0_icup 0) vsource dc=1.8
+IC_c0_icup (vdd_c0_icup icc_c0_icup) isource dc=55u
+IP_c0_icup (vdd_c0_icup iptat_c0_icup) isource dc=50u
+VB0_c0_icup (b0_c0_icup 0) vsource dc=0.0
+VB1_c0_icup (b1_c0_icup 0) vsource dc=0.0
+VO_c0_icup (out_c0_icup 0) vsource dc=.9
+Xc0_icup (0 vdd_c0_icup icc_c0_icup iptat_c0_icup b0_c0_icup b1_c0_icup out_c0_icup) programmable_current_mirror
+save icc_c0_icup iptat_c0_icup VO_c0_icup:p VS_c0_icup:p VB0_c0_icup:p VB1_c0_icup:p
+VS_c0_icdn (vdd_c0_icdn 0) vsource dc=1.8
+IC_c0_icdn (vdd_c0_icdn icc_c0_icdn) isource dc=45u
+IP_c0_icdn (vdd_c0_icdn iptat_c0_icdn) isource dc=50u
+VB0_c0_icdn (b0_c0_icdn 0) vsource dc=0.0
+VB1_c0_icdn (b1_c0_icdn 0) vsource dc=0.0
+VO_c0_icdn (out_c0_icdn 0) vsource dc=.9
+Xc0_icdn (0 vdd_c0_icdn icc_c0_icdn iptat_c0_icdn b0_c0_icdn b1_c0_icdn out_c0_icdn) programmable_current_mirror
+save icc_c0_icdn iptat_c0_icdn VO_c0_icdn:p VS_c0_icdn:p VB0_c0_icdn:p VB1_c0_icdn:p
+VS_c0_ptup (vdd_c0_ptup 0) vsource dc=1.8
+IC_c0_ptup (vdd_c0_ptup icc_c0_ptup) isource dc=50u
+IP_c0_ptup (vdd_c0_ptup iptat_c0_ptup) isource dc=55u
+VB0_c0_ptup (b0_c0_ptup 0) vsource dc=0.0
+VB1_c0_ptup (b1_c0_ptup 0) vsource dc=0.0
+VO_c0_ptup (out_c0_ptup 0) vsource dc=.9
+Xc0_ptup (0 vdd_c0_ptup icc_c0_ptup iptat_c0_ptup b0_c0_ptup b1_c0_ptup out_c0_ptup) programmable_current_mirror
+save icc_c0_ptup iptat_c0_ptup VO_c0_ptup:p VS_c0_ptup:p VB0_c0_ptup:p VB1_c0_ptup:p
+VS_c0_ptdn (vdd_c0_ptdn 0) vsource dc=1.8
+IC_c0_ptdn (vdd_c0_ptdn icc_c0_ptdn) isource dc=50u
+IP_c0_ptdn (vdd_c0_ptdn iptat_c0_ptdn) isource dc=45u
+VB0_c0_ptdn (b0_c0_ptdn 0) vsource dc=0.0
+VB1_c0_ptdn (b1_c0_ptdn 0) vsource dc=0.0
+VO_c0_ptdn (out_c0_ptdn 0) vsource dc=.9
+Xc0_ptdn (0 vdd_c0_ptdn icc_c0_ptdn iptat_c0_ptdn b0_c0_ptdn b1_c0_ptdn out_c0_ptdn) programmable_current_mirror
+save icc_c0_ptdn iptat_c0_ptdn VO_c0_ptdn:p VS_c0_ptdn:p VB0_c0_ptdn:p VB1_c0_ptdn:p
+save Xc0_nom.MICC:ids Xc0_nom.MICC:gm Xc0_nom.MICC:gds Xc0_nom.MICC:vgs Xc0_nom.MICC:vds Xc0_nom.MICC:vdsat Xc0_nom.MICC:region
+save Xc0_nom.MIC0:ids Xc0_nom.MIC0:gm Xc0_nom.MIC0:gds Xc0_nom.MIC0:vgs Xc0_nom.MIC0:vds Xc0_nom.MIC0:vdsat Xc0_nom.MIC0:region
+save Xc0_nom.MPT0:ids Xc0_nom.MPT0:gm Xc0_nom.MPT0:gds Xc0_nom.MPT0:vgs Xc0_nom.MPT0:vds Xc0_nom.MPT0:vdsat Xc0_nom.MPT0:region
+save Xc0_nom.MCASC:ids Xc0_nom.MCASC:gm Xc0_nom.MCASC:gds Xc0_nom.MCASC:vgs Xc0_nom.MCASC:vds Xc0_nom.MCASC:vdsat Xc0_nom.MCASC:region
+save Xc0_nom.MSW0:ids Xc0_nom.MSW0:gm Xc0_nom.MSW0:gds Xc0_nom.MSW0:vgs Xc0_nom.MSW0:vds Xc0_nom.MSW0:vdsat Xc0_nom.MSW0:region
+save Xc0_nom.MBC:ids Xc0_nom.MBC:gm Xc0_nom.MBC:gds Xc0_nom.MBC:vgs Xc0_nom.MBC:vds Xc0_nom.MBC:vdsat Xc0_nom.MBC:region
+save Xc0_nom.vcb Xc0_nom.vb Xc0_nom.isum Xc0_nom.pre0
+VS_c1_nom (vdd_c1_nom 0) vsource dc=1.8
+IC_c1_nom (vdd_c1_nom icc_c1_nom) isource dc=50u
+IP_c1_nom (vdd_c1_nom iptat_c1_nom) isource dc=50u
+VB0_c1_nom (b0_c1_nom 0) vsource dc=1.8
+VB1_c1_nom (b1_c1_nom 0) vsource dc=0.0
+VO_c1_nom (out_c1_nom 0) vsource dc=vtest
+Xc1_nom (0 vdd_c1_nom icc_c1_nom iptat_c1_nom b0_c1_nom b1_c1_nom out_c1_nom) programmable_current_mirror
+save icc_c1_nom iptat_c1_nom VO_c1_nom:p VS_c1_nom:p VB0_c1_nom:p VB1_c1_nom:p
+VS_c1_icup (vdd_c1_icup 0) vsource dc=1.8
+IC_c1_icup (vdd_c1_icup icc_c1_icup) isource dc=55u
+IP_c1_icup (vdd_c1_icup iptat_c1_icup) isource dc=50u
+VB0_c1_icup (b0_c1_icup 0) vsource dc=1.8
+VB1_c1_icup (b1_c1_icup 0) vsource dc=0.0
+VO_c1_icup (out_c1_icup 0) vsource dc=.9
+Xc1_icup (0 vdd_c1_icup icc_c1_icup iptat_c1_icup b0_c1_icup b1_c1_icup out_c1_icup) programmable_current_mirror
+save icc_c1_icup iptat_c1_icup VO_c1_icup:p VS_c1_icup:p VB0_c1_icup:p VB1_c1_icup:p
+VS_c1_icdn (vdd_c1_icdn 0) vsource dc=1.8
+IC_c1_icdn (vdd_c1_icdn icc_c1_icdn) isource dc=45u
+IP_c1_icdn (vdd_c1_icdn iptat_c1_icdn) isource dc=50u
+VB0_c1_icdn (b0_c1_icdn 0) vsource dc=1.8
+VB1_c1_icdn (b1_c1_icdn 0) vsource dc=0.0
+VO_c1_icdn (out_c1_icdn 0) vsource dc=.9
+Xc1_icdn (0 vdd_c1_icdn icc_c1_icdn iptat_c1_icdn b0_c1_icdn b1_c1_icdn out_c1_icdn) programmable_current_mirror
+save icc_c1_icdn iptat_c1_icdn VO_c1_icdn:p VS_c1_icdn:p VB0_c1_icdn:p VB1_c1_icdn:p
+VS_c1_ptup (vdd_c1_ptup 0) vsource dc=1.8
+IC_c1_ptup (vdd_c1_ptup icc_c1_ptup) isource dc=50u
+IP_c1_ptup (vdd_c1_ptup iptat_c1_ptup) isource dc=55u
+VB0_c1_ptup (b0_c1_ptup 0) vsource dc=1.8
+VB1_c1_ptup (b1_c1_ptup 0) vsource dc=0.0
+VO_c1_ptup (out_c1_ptup 0) vsource dc=.9
+Xc1_ptup (0 vdd_c1_ptup icc_c1_ptup iptat_c1_ptup b0_c1_ptup b1_c1_ptup out_c1_ptup) programmable_current_mirror
+save icc_c1_ptup iptat_c1_ptup VO_c1_ptup:p VS_c1_ptup:p VB0_c1_ptup:p VB1_c1_ptup:p
+VS_c1_ptdn (vdd_c1_ptdn 0) vsource dc=1.8
+IC_c1_ptdn (vdd_c1_ptdn icc_c1_ptdn) isource dc=50u
+IP_c1_ptdn (vdd_c1_ptdn iptat_c1_ptdn) isource dc=45u
+VB0_c1_ptdn (b0_c1_ptdn 0) vsource dc=1.8
+VB1_c1_ptdn (b1_c1_ptdn 0) vsource dc=0.0
+VO_c1_ptdn (out_c1_ptdn 0) vsource dc=.9
+Xc1_ptdn (0 vdd_c1_ptdn icc_c1_ptdn iptat_c1_ptdn b0_c1_ptdn b1_c1_ptdn out_c1_ptdn) programmable_current_mirror
+save icc_c1_ptdn iptat_c1_ptdn VO_c1_ptdn:p VS_c1_ptdn:p VB0_c1_ptdn:p VB1_c1_ptdn:p
+save Xc1_nom.MICC:ids Xc1_nom.MICC:gm Xc1_nom.MICC:gds Xc1_nom.MICC:vgs Xc1_nom.MICC:vds Xc1_nom.MICC:vdsat Xc1_nom.MICC:region
+save Xc1_nom.MIC1:ids Xc1_nom.MIC1:gm Xc1_nom.MIC1:gds Xc1_nom.MIC1:vgs Xc1_nom.MIC1:vds Xc1_nom.MIC1:vdsat Xc1_nom.MIC1:region
+save Xc1_nom.MPT1:ids Xc1_nom.MPT1:gm Xc1_nom.MPT1:gds Xc1_nom.MPT1:vgs Xc1_nom.MPT1:vds Xc1_nom.MPT1:vdsat Xc1_nom.MPT1:region
+save Xc1_nom.MCASC:ids Xc1_nom.MCASC:gm Xc1_nom.MCASC:gds Xc1_nom.MCASC:vgs Xc1_nom.MCASC:vds Xc1_nom.MCASC:vdsat Xc1_nom.MCASC:region
+save Xc1_nom.MSW1:ids Xc1_nom.MSW1:gm Xc1_nom.MSW1:gds Xc1_nom.MSW1:vgs Xc1_nom.MSW1:vds Xc1_nom.MSW1:vdsat Xc1_nom.MSW1:region
+save Xc1_nom.MBC:ids Xc1_nom.MBC:gm Xc1_nom.MBC:gds Xc1_nom.MBC:vgs Xc1_nom.MBC:vds Xc1_nom.MBC:vdsat Xc1_nom.MBC:region
+save Xc1_nom.vcb Xc1_nom.vb Xc1_nom.isum Xc1_nom.pre1
+VS_c2_nom (vdd_c2_nom 0) vsource dc=1.8
+IC_c2_nom (vdd_c2_nom icc_c2_nom) isource dc=50u
+IP_c2_nom (vdd_c2_nom iptat_c2_nom) isource dc=50u
+VB0_c2_nom (b0_c2_nom 0) vsource dc=0.0
+VB1_c2_nom (b1_c2_nom 0) vsource dc=1.8
+VO_c2_nom (out_c2_nom 0) vsource dc=vtest
+Xc2_nom (0 vdd_c2_nom icc_c2_nom iptat_c2_nom b0_c2_nom b1_c2_nom out_c2_nom) programmable_current_mirror
+save icc_c2_nom iptat_c2_nom VO_c2_nom:p VS_c2_nom:p VB0_c2_nom:p VB1_c2_nom:p
+VS_c2_icup (vdd_c2_icup 0) vsource dc=1.8
+IC_c2_icup (vdd_c2_icup icc_c2_icup) isource dc=55u
+IP_c2_icup (vdd_c2_icup iptat_c2_icup) isource dc=50u
+VB0_c2_icup (b0_c2_icup 0) vsource dc=0.0
+VB1_c2_icup (b1_c2_icup 0) vsource dc=1.8
+VO_c2_icup (out_c2_icup 0) vsource dc=.9
+Xc2_icup (0 vdd_c2_icup icc_c2_icup iptat_c2_icup b0_c2_icup b1_c2_icup out_c2_icup) programmable_current_mirror
+save icc_c2_icup iptat_c2_icup VO_c2_icup:p VS_c2_icup:p VB0_c2_icup:p VB1_c2_icup:p
+VS_c2_icdn (vdd_c2_icdn 0) vsource dc=1.8
+IC_c2_icdn (vdd_c2_icdn icc_c2_icdn) isource dc=45u
+IP_c2_icdn (vdd_c2_icdn iptat_c2_icdn) isource dc=50u
+VB0_c2_icdn (b0_c2_icdn 0) vsource dc=0.0
+VB1_c2_icdn (b1_c2_icdn 0) vsource dc=1.8
+VO_c2_icdn (out_c2_icdn 0) vsource dc=.9
+Xc2_icdn (0 vdd_c2_icdn icc_c2_icdn iptat_c2_icdn b0_c2_icdn b1_c2_icdn out_c2_icdn) programmable_current_mirror
+save icc_c2_icdn iptat_c2_icdn VO_c2_icdn:p VS_c2_icdn:p VB0_c2_icdn:p VB1_c2_icdn:p
+VS_c2_ptup (vdd_c2_ptup 0) vsource dc=1.8
+IC_c2_ptup (vdd_c2_ptup icc_c2_ptup) isource dc=50u
+IP_c2_ptup (vdd_c2_ptup iptat_c2_ptup) isource dc=55u
+VB0_c2_ptup (b0_c2_ptup 0) vsource dc=0.0
+VB1_c2_ptup (b1_c2_ptup 0) vsource dc=1.8
+VO_c2_ptup (out_c2_ptup 0) vsource dc=.9
+Xc2_ptup (0 vdd_c2_ptup icc_c2_ptup iptat_c2_ptup b0_c2_ptup b1_c2_ptup out_c2_ptup) programmable_current_mirror
+save icc_c2_ptup iptat_c2_ptup VO_c2_ptup:p VS_c2_ptup:p VB0_c2_ptup:p VB1_c2_ptup:p
+VS_c2_ptdn (vdd_c2_ptdn 0) vsource dc=1.8
+IC_c2_ptdn (vdd_c2_ptdn icc_c2_ptdn) isource dc=50u
+IP_c2_ptdn (vdd_c2_ptdn iptat_c2_ptdn) isource dc=45u
+VB0_c2_ptdn (b0_c2_ptdn 0) vsource dc=0.0
+VB1_c2_ptdn (b1_c2_ptdn 0) vsource dc=1.8
+VO_c2_ptdn (out_c2_ptdn 0) vsource dc=.9
+Xc2_ptdn (0 vdd_c2_ptdn icc_c2_ptdn iptat_c2_ptdn b0_c2_ptdn b1_c2_ptdn out_c2_ptdn) programmable_current_mirror
+save icc_c2_ptdn iptat_c2_ptdn VO_c2_ptdn:p VS_c2_ptdn:p VB0_c2_ptdn:p VB1_c2_ptdn:p
+save Xc2_nom.MICC:ids Xc2_nom.MICC:gm Xc2_nom.MICC:gds Xc2_nom.MICC:vgs Xc2_nom.MICC:vds Xc2_nom.MICC:vdsat Xc2_nom.MICC:region
+save Xc2_nom.MIC2:ids Xc2_nom.MIC2:gm Xc2_nom.MIC2:gds Xc2_nom.MIC2:vgs Xc2_nom.MIC2:vds Xc2_nom.MIC2:vdsat Xc2_nom.MIC2:region
+save Xc2_nom.MPT2:ids Xc2_nom.MPT2:gm Xc2_nom.MPT2:gds Xc2_nom.MPT2:vgs Xc2_nom.MPT2:vds Xc2_nom.MPT2:vdsat Xc2_nom.MPT2:region
+save Xc2_nom.MCASC:ids Xc2_nom.MCASC:gm Xc2_nom.MCASC:gds Xc2_nom.MCASC:vgs Xc2_nom.MCASC:vds Xc2_nom.MCASC:vdsat Xc2_nom.MCASC:region
+save Xc2_nom.MSW2:ids Xc2_nom.MSW2:gm Xc2_nom.MSW2:gds Xc2_nom.MSW2:vgs Xc2_nom.MSW2:vds Xc2_nom.MSW2:vdsat Xc2_nom.MSW2:region
+save Xc2_nom.MBC:ids Xc2_nom.MBC:gm Xc2_nom.MBC:gds Xc2_nom.MBC:vgs Xc2_nom.MBC:vds Xc2_nom.MBC:vdsat Xc2_nom.MBC:region
+save Xc2_nom.vcb Xc2_nom.vb Xc2_nom.isum Xc2_nom.pre2
+VS_c3_nom (vdd_c3_nom 0) vsource dc=1.8
+IC_c3_nom (vdd_c3_nom icc_c3_nom) isource dc=50u
+IP_c3_nom (vdd_c3_nom iptat_c3_nom) isource dc=50u
+VB0_c3_nom (b0_c3_nom 0) vsource dc=1.8
+VB1_c3_nom (b1_c3_nom 0) vsource dc=1.8
+VO_c3_nom (out_c3_nom 0) vsource dc=vtest
+Xc3_nom (0 vdd_c3_nom icc_c3_nom iptat_c3_nom b0_c3_nom b1_c3_nom out_c3_nom) programmable_current_mirror
+save icc_c3_nom iptat_c3_nom VO_c3_nom:p VS_c3_nom:p VB0_c3_nom:p VB1_c3_nom:p
+VS_c3_icup (vdd_c3_icup 0) vsource dc=1.8
+IC_c3_icup (vdd_c3_icup icc_c3_icup) isource dc=55u
+IP_c3_icup (vdd_c3_icup iptat_c3_icup) isource dc=50u
+VB0_c3_icup (b0_c3_icup 0) vsource dc=1.8
+VB1_c3_icup (b1_c3_icup 0) vsource dc=1.8
+VO_c3_icup (out_c3_icup 0) vsource dc=.9
+Xc3_icup (0 vdd_c3_icup icc_c3_icup iptat_c3_icup b0_c3_icup b1_c3_icup out_c3_icup) programmable_current_mirror
+save icc_c3_icup iptat_c3_icup VO_c3_icup:p VS_c3_icup:p VB0_c3_icup:p VB1_c3_icup:p
+VS_c3_icdn (vdd_c3_icdn 0) vsource dc=1.8
+IC_c3_icdn (vdd_c3_icdn icc_c3_icdn) isource dc=45u
+IP_c3_icdn (vdd_c3_icdn iptat_c3_icdn) isource dc=50u
+VB0_c3_icdn (b0_c3_icdn 0) vsource dc=1.8
+VB1_c3_icdn (b1_c3_icdn 0) vsource dc=1.8
+VO_c3_icdn (out_c3_icdn 0) vsource dc=.9
+Xc3_icdn (0 vdd_c3_icdn icc_c3_icdn iptat_c3_icdn b0_c3_icdn b1_c3_icdn out_c3_icdn) programmable_current_mirror
+save icc_c3_icdn iptat_c3_icdn VO_c3_icdn:p VS_c3_icdn:p VB0_c3_icdn:p VB1_c3_icdn:p
+VS_c3_ptup (vdd_c3_ptup 0) vsource dc=1.8
+IC_c3_ptup (vdd_c3_ptup icc_c3_ptup) isource dc=50u
+IP_c3_ptup (vdd_c3_ptup iptat_c3_ptup) isource dc=55u
+VB0_c3_ptup (b0_c3_ptup 0) vsource dc=1.8
+VB1_c3_ptup (b1_c3_ptup 0) vsource dc=1.8
+VO_c3_ptup (out_c3_ptup 0) vsource dc=.9
+Xc3_ptup (0 vdd_c3_ptup icc_c3_ptup iptat_c3_ptup b0_c3_ptup b1_c3_ptup out_c3_ptup) programmable_current_mirror
+save icc_c3_ptup iptat_c3_ptup VO_c3_ptup:p VS_c3_ptup:p VB0_c3_ptup:p VB1_c3_ptup:p
+VS_c3_ptdn (vdd_c3_ptdn 0) vsource dc=1.8
+IC_c3_ptdn (vdd_c3_ptdn icc_c3_ptdn) isource dc=50u
+IP_c3_ptdn (vdd_c3_ptdn iptat_c3_ptdn) isource dc=45u
+VB0_c3_ptdn (b0_c3_ptdn 0) vsource dc=1.8
+VB1_c3_ptdn (b1_c3_ptdn 0) vsource dc=1.8
+VO_c3_ptdn (out_c3_ptdn 0) vsource dc=.9
+Xc3_ptdn (0 vdd_c3_ptdn icc_c3_ptdn iptat_c3_ptdn b0_c3_ptdn b1_c3_ptdn out_c3_ptdn) programmable_current_mirror
+save icc_c3_ptdn iptat_c3_ptdn VO_c3_ptdn:p VS_c3_ptdn:p VB0_c3_ptdn:p VB1_c3_ptdn:p
+save Xc3_nom.MICC:ids Xc3_nom.MICC:gm Xc3_nom.MICC:gds Xc3_nom.MICC:vgs Xc3_nom.MICC:vds Xc3_nom.MICC:vdsat Xc3_nom.MICC:region
+save Xc3_nom.MIC3:ids Xc3_nom.MIC3:gm Xc3_nom.MIC3:gds Xc3_nom.MIC3:vgs Xc3_nom.MIC3:vds Xc3_nom.MIC3:vdsat Xc3_nom.MIC3:region
+save Xc3_nom.MPT3:ids Xc3_nom.MPT3:gm Xc3_nom.MPT3:gds Xc3_nom.MPT3:vgs Xc3_nom.MPT3:vds Xc3_nom.MPT3:vdsat Xc3_nom.MPT3:region
+save Xc3_nom.MCASC:ids Xc3_nom.MCASC:gm Xc3_nom.MCASC:gds Xc3_nom.MCASC:vgs Xc3_nom.MCASC:vds Xc3_nom.MCASC:vdsat Xc3_nom.MCASC:region
+save Xc3_nom.MSW3:ids Xc3_nom.MSW3:gm Xc3_nom.MSW3:gds Xc3_nom.MSW3:vgs Xc3_nom.MSW3:vds Xc3_nom.MSW3:vdsat Xc3_nom.MSW3:region
+save Xc3_nom.MBC:ids Xc3_nom.MBC:gm Xc3_nom.MBC:gds Xc3_nom.MBC:vgs Xc3_nom.MBC:vds Xc3_nom.MBC:vdsat Xc3_nom.MBC:region
+save Xc3_nom.vcb Xc3_nom.vb Xc3_nom.isum Xc3_nom.pre3
+dcOp dc
+compliance dc param=vtest start=.45 stop=1.6 step=.02875
+rout dc param=vtest start=.89 stop=.91 step=.005

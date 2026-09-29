@@ -1,0 +1,15 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        TIM["HD关断顺序控制"]
+        SW["信号端 / 底板开关"]
+        CAP["差分采样保持电容"]
+    end
+    VIN["差分模拟输入"]
+    CLK["时钟与共模参考"]
+    OUT["保持输出及原负载"]
+    VIN --> SW
+    CLK -.-> TIM
+    TIM -.->|"先后关断"| SW
+    SW -->|"采样电荷"| CAP
+    CAP -->|"保持值"| OUT

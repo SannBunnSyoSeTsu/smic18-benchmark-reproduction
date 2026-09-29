@@ -1,0 +1,64 @@
+{
+  "audited_at": "2026-09-22T10:42:05.006040+00:00",
+  "status": "complete_original",
+  "input_gate_nonrelaxable": true,
+  "scalar_gates": 9,
+  "sources_and_LUT_valid": true,
+  "run_snapshots": [
+    {
+      "run": "runs/08/20260922T103843871154Z_ac",
+      "warnings": [],
+      "snapshots_valid": true,
+      "PSF_sha256": {
+        "runs/08/20260922T103843871154Z_ac/output/bench.raw/dcOp.dc": "aa48486cdbb43b64ad30f95fdc34581dd3b039045e835d484c17ec73dcb2dbe6",
+        "runs/08/20260922T103843871154Z_ac/output/bench.raw/ac.ac": "be7a5edbdd4f6d11e6d69612043a8e5b309f47562906dd508d5d722921441161"
+      }
+    },
+    {
+      "run": "runs/08/20260922T103844026021Z_tran1M",
+      "warnings": [],
+      "snapshots_valid": true,
+      "PSF_sha256": {
+        "runs/08/20260922T103844026021Z_tran1M/output/bench.raw/tran.tran.tran": "3d8d6fc38fc34c1ff8935ede0c3d6ec3db17d101a25313a205c955ab55cdea02"
+      }
+    },
+    {
+      "run": "runs/08/20260922T103900239843Z_tran11M",
+      "warnings": [],
+      "snapshots_valid": true,
+      "PSF_sha256": {
+        "runs/08/20260922T103900239843Z_tran11M/output/bench.raw/tran.tran.tran": "e56a56b7b7393e77303dc65d7279a0049788bcfbea859411161c1a949179e7aa"
+      }
+    },
+    {
+      "run": "runs/08/20260922T103917549506Z_tran41M",
+      "warnings": [],
+      "snapshots_valid": true,
+      "PSF_sha256": {
+        "runs/08/20260922T103917549506Z_tran41M/output/bench.raw/tran.tran.tran": "3f5f3dc1b0f5cb3d2b8478c40df9888b95c0d54853b5465ed2beb770848fc68b"
+      }
+    }
+  ],
+  "final_FFT_points_each": 1000,
+  "original_dynamic_metrics_used": true,
+  "independent_rfft_agrees": true,
+  "source_sine_offset_preserved": true,
+  "scope": "SMIC18 TT27 at1.8V only; strict nonrelaxable input-current gate; all1–40MHzAC samples and three fullNyquist rectangular spectra when complete.",
+  "review_pdf_sha256": "f3168d181d6d44560c228c9a8fec02f2b3fbf01bb5f7c7de793b00d35ea8c790",
+  "review_pdf_pages": 6,
+  "all_pages_visually_reviewed": true,
+  "knowledge_sha256": "e4516933c4155396d36721c5b9816896c33be7c6daa75eadb4f61636d2aeb23e",
+  "knowledge_document_update_at": "2026-09-23T04:14:07.853875+00:00",
+  "knowledge_document_update_note": "Added a level-two heading before the existing acceptance conditions and complete measured-results table so publish(8) retains this text. No circuit, results, simulation, PDF or global publisher semantics changed.",
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:27:37.310699+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "ffeed03d880f06caf2e1bada341477edcbc75089e3eb9b2a9d0a72995ecf88ca",
+    "results_sha256": "eca754f739577f26b045cd30d056c40fad664f549f30926cd948ecfb9b9b89df",
+    "previous_pdf_sha256": "f3168d181d6d44560c228c9a8fec02f2b3fbf01bb5f7c7de793b00d35ea8c790",
+    "current_pdf_sha256": "a6873a741cb11f3db9ac13a85ea1f9032c4aa0b796eb6ac039177c023cf10c44",
+    "schematic_audit_sha256": "ae171b6635c7bada64764bc91e787d0c04c58081bac86344a02518e94b3f3b3d",
+    "report_pages": 9,
+    "all_merged_pages_pixel_identical_to_sources": true
+  }
+}

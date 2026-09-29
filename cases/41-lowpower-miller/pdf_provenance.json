@@ -1,0 +1,100 @@
+{
+  "pdf": "reports/41-lowpower-miller-review.pdf",
+  "sha256": "b91704341aa321677385e8904ffd82ebd5b03c70c57e6c7049b8e91ab1402e0b",
+  "results_sha256": "2bc29c0619a6d4d9b9d2b6379e16f142a19e6b184aadc0d77d026f214b5045d9",
+  "circuit_sha256": "09fc144dd0c6ea413977b2b7d0409f97aac83f192f915337a6d7dcc7af959a37",
+  "generated_at": "2026-09-23T06:19:22.718589+00:00",
+  "pages": 7,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:19:22.721524+00:00",
+  "opening_paragraph_sha256": "482e92fc73890fd70b4275c607e1439574ff1e84f9d56bcad1d988bf73b11931",
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change.",
+  "body_pages": 5,
+  "schematic_pages": 2,
+  "schematic_sheets_sha256": "df8708c733abc0bbe6a70da7ab870eeb97ef48c34585908ff2279a56e320f280",
+  "schematic_audit_sha256": "520f100c20c0f9157bd60f11f455ded26e6681c2b9d41e830fd34a10ce904a00",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/41-lowpower-miller/41-lowpower-miller-review.pdf",
+    "sha256": "d28e80611bfd9b747d8eea2e155d878d92f411deb1331354b8ed9faa076a994a",
+    "pages": 5,
+    "previous_render_reviewed_at": "2026-09-22T07:28:38.273597+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "6fe306c19730c0e0c073b3bcfdbaee860d5bfbe541c41a608b5ace841e5a2e27"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "a2b687c0ee785ced90656f8efe45e0cd267515e135ac522f084b9fbb45b4dbf6"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "454086a2ca144e2674e7dba3ea3da8c7e06c0f4b8e9978f79c7eca69d392d0d3"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "40f0cc144dfdbfc6ba892fe4191ec2160c984269907ab2e2bc6fb916b6afe262"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "f9e28a24055ba4f80cad76f549ac5d730d41482208822344c0115c43db97b4ae"
+    },
+    {
+      "page": 6,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "64218e4a2196e312decdd84e5267deed3d3b75420c35191cce5c012c3e0a1528",
+      "path": "reports/schematic-retrofit-renders/41-lowpower-miller/page-06.png",
+      "sha256": "ab7f97e6f3d4c8f99f9492887dd88d47ff13fa120093232121674ce5e38f6fa1"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "dd26a556ec6868d51e153ab0b743cc009b3502eeca6e08e85831640d1af9ce2e",
+      "path": "reports/schematic-retrofit-renders/41-lowpower-miller/page-07.png",
+      "sha256": "53860a0304ec50b0f0b528fabfac588766491ccddd5a1212570263f4e42e4d0f"
+    }
+  ]
+}

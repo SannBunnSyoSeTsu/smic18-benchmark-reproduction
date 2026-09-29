@@ -1,0 +1,33 @@
+{
+  "independent_values": {
+    "pos20": {
+      "mean_diff_V": 0.1606900671506156,
+      "static_error_fraction": 0.00431291969134745,
+      "cm_error_V": 0.007629151363719888,
+      "power_W": 0.0002969660521266787,
+      "settle_s": 3.522819265275227e-08,
+      "ripple_V": 0.00043360844414755406
+    },
+    "pos10": {
+      "mean_diff_V": 0.0777569927435828
+    },
+    "zero": {
+      "mean_diff_V": 0.00028274137675824595
+    },
+    "neg20": {
+      "mean_diff_V": -0.1590154178064295,
+      "static_error_fraction": 0.006153638709815654,
+      "cm_error_V": 0.007594605270830779,
+      "power_W": 0.00029692655153654445,
+      "settle_s": 3.487808945088655e-08,
+      "ripple_V": 0.0004293244157234366
+    },
+    "transfer": {
+      "positive_gain": 8.293307440703279,
+      "bipolar_gain": 7.992637123926127,
+      "zero_residual_V": 0.00028274137675824595
+    }
+  },
+  "zero_state": "No imposed capacitor/node voltage; existing skipdc and 1fF shunt preserved.",
+  "startup": "Two actual native NMOS bias-gated input startup paths are part of DUT and schematic, not hidden bench initialization."
+}

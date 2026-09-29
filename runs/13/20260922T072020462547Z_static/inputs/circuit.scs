@@ -1,0 +1,16 @@
+// Self-biased beta multiplier, density-matched input pair and resistor loads.
+simulator lang=spectre
+subckt cgm_amp (vss iref vdd vinp vinn voutp voutn)
+MREF (iref iref vss vss) n18 w=14.88u l=1u
+MST (nc iref vss vss) n18 w=0.24u l=4u
+MB1 (nb nb vss vss) n18 w=19.94u l=1u
+MB2 (nc nb rb2 vss) n18 w=19.94u l=1u m=4
+RB (rb2 vss) resistor r=1450
+MP1 (nb nc vdd vdd) p18 w=42.2u l=1u
+MP2 (nc nc vdd vdd) p18 w=42.2u l=1u
+MTAIL (tail nb vss vss) n18 w=19.94u l=1u m=2
+MINP (voutn vinp tail vss) n18 w=19.94u l=1u
+MINN (voutp vinn tail vss) n18 w=19.94u l=1u
+RLP (vdd voutp) resistor r=5600
+RLN (vdd voutn) resistor r=5600
+ends cgm_amp

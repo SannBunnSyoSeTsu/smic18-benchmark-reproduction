@@ -1,0 +1,38 @@
+// SMIC18 gm/ID migration of a fully differential telescopic OTA.
+// D G S B; all individual W <= 100um, wide devices use m copies.
+simulator lang=spectre
+subckt telescopic_cascode_ota (vss iref vdd vinn vinp vocm voutn voutp)
+MREF (iref iref vss vss) n18 w=4.68u l=1u m=5
+MTAIL (tail iref vss vss) n18 w=4.68u l=1u m=28
+MINP (a1 vinp tail vss) n18 w=10.32u l=1u m=14
+MINN (a2 vinn tail vss) n18 w=10.32u l=1u m=14
+MNCP (voutn vcn a1 vss) n18 w=3.98u l=.36u m=14
+MNCN (voutp vcn a2 vss) n18 w=3.98u l=.36u m=14
+MPCN (voutn vbpc pn pn) p18 w=6.96u l=.36u m=14
+MPCP (voutp vbpc pp pp) p18 w=6.96u l=.36u m=14
+MPTN (pn vctrl vdd vdd) p18 w=14.24u l=1u m=14
+MPTP (pp vctrl vdd vdd) p18 w=14.24u l=1u m=14
+MR1 (vdd vocm srep vss) n18 w=10.32u l=1u
+MT1 (srep iref vss vss) n18 w=4.68u l=1u m=2
+MPB2 (vcn vbp vdd vdd) p18 w=14.24u l=1u
+MD1 (vcn vcn x1 vss) n18 w=3.98u l=.36u
+RN (x1 srep) resistor r=20000
+RP (vdd x2) resistor r=24000
+MDP1 (vbpc vbpc x2 x2) p18 w=6.96u l=.36u
+MT4 (vbpc iref vss vss) n18 w=4.68u l=1u
+MPM (vbp vbp vdd vdd) p18 w=14.24u l=1u
+MT5 (vbp iref vss vss) n18 w=4.68u l=1u
+RSP (voutp vcm_sense) resistor r=4.7M
+RSN (voutn vcm_sense) resistor r=4.7M
+CSP (voutp vcm_sense) capacitor c=0.15p
+CSN (voutn vcm_sense) capacitor c=0.15p
+MCMS (dg vcm_sense cmt vss) n18 w=3.98u l=0.36u m=1
+MCMR (vctrl vocm cmt vss) n18 w=3.98u l=0.36u m=1
+MCMT (cmt iref vss vss) n18 w=4.68u l=1u m=2
+MCML (dg dg vdd vdd) p18 w=14.24u l=1u m=1
+MCMLO (vctrl dg vdd vdd) p18 w=14.24u l=1u m=1
+CCP (vctrl zp) capacitor c=1p
+RZP (zp voutp) resistor r=1000
+CCN (vctrl zn) capacitor c=1p
+RZN (zn voutn) resistor r=1000
+ends telescopic_cascode_ota

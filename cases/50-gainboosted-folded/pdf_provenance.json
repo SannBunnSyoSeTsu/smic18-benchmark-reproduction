@@ -1,0 +1,147 @@
+{
+  "pdf": "reports/50-gainboosted-folded-review.pdf",
+  "sha256": "8f6b0ae847a00560327e0a80a696a4a411ccf33f16eb8d23c3ffca79b02861ee",
+  "results_sha256": "f2ae49233223e59a9ef8fbbb8cc271c326a78f8e860049500917612e894147bb",
+  "circuit_sha256": "2bd50c5eb26a20f10d7e11c3a857716e417a47b187bcd32de1d617491ee51213",
+  "sizing_sha256": "368f11539a48cdb9f24489a994d0dfb2be25b8fc0f746242fa0c158e80569594",
+  "geometry_sha256": "7351c41252ad0346bbaaf5f48071d5269473b810a0ba8a8d77bb83c020585e21",
+  "generated_at": "2026-09-23T06:27:46.390882+00:00",
+  "pages": 11,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:27:46.394041+00:00",
+  "opening_paragraph_sha256": "7497e90fdf5b5ae2040694ba2961c5bb905dd9e308fbc7b53fb86e715ce8bb16",
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change.",
+  "root_visual_reviewed_at": "2026-09-22T10:25:22.422710+00:00",
+  "body_pages": 7,
+  "schematic_pages": 4,
+  "schematic_sheets_sha256": "b4a9d417335454d3045139913b39ae207099c88506648fdb7948feedeeef1f28",
+  "schematic_audit_sha256": "38dcf698e4d23b1c416c8a47b9e3b1e2eb30d64131f10ad967ecaba42502dca5",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/50-gainboosted-folded/50-gainboosted-folded-review.pdf",
+    "sha256": "382705de490826a769cf183f5da86b726652e18b50314a692dabc28d87bd4c78",
+    "pages": 7,
+    "previous_render_reviewed_at": "2026-09-22T10:23:08.062448+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "e3ca2b3d2036cfcbcd537c9878062a366fd5decfc11e3e900356fa6f0e7f5909"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "31348a6a8c417be8e128df5a847c7fe2b98ea56bcfaadd9be3b0fd4902aa98e6"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "5a6255d4f04404538664497477f2c476f2cf167e3d43eef803086a76757688e4"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "fde0f3aae2fb91d6d2db9233102d35d68ee801b9283fdb9f9fe37ef42adcced3"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "1fc528759aac577bb401354c505d739b7d9605c930ff96004da926d159955e43"
+    },
+    {
+      "page": 6,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "99bcca0470c190bb5bdbfc262ca201630cbd5d23bcb2c829ceb9b4c1cf14045e"
+    },
+    {
+      "page": 7,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "3c015dbba84e4706dfd08767a451f9f79ea456c060e8fe1990e444ef0f609d39"
+    },
+    {
+      "page": 8,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "a5f6d361c4ba3e2d18eec33b40bb7cbc57478ba6cfbfc22ce1a459bbceeb692c",
+      "path": "reports/schematic-retrofit-renders/50-gainboosted-folded/page-08.png",
+      "sha256": "6602629627f3a4b9cdf2107d355d17e0a0977dc8823028ff4462b54b79a35981"
+    },
+    {
+      "page": 9,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "1718221c3f44430b84424e9d8ceb6b5cc838b20bc5df81b69efe81bab27eb35b",
+      "path": "reports/schematic-retrofit-renders/50-gainboosted-folded/page-09.png",
+      "sha256": "af9179eca39dda5504821718c286c62586ac8b614e17caa703544fcf78557adf"
+    },
+    {
+      "page": 10,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "b63054dc4096d76c92ea92031f8d11638ddb9c7b4b3dbf573e535ac84db10c40",
+      "path": "reports/schematic-retrofit-renders/50-gainboosted-folded/page-10.png",
+      "sha256": "07112a529206482aa683b7d97498412c66532b3c0ab3ead469d9be8847f074f4"
+    },
+    {
+      "page": 11,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "b14574c09af17202735271da9c8f9ae11c11cea9b76e321a46ca11406564e0ed",
+      "path": "reports/schematic-retrofit-renders/50-gainboosted-folded/page-11.png",
+      "sha256": "c20809d2c548b825148fd2d45af8a1cc42dd0f527e1dc7e3fde65eaf45859c1d"
+    }
+  ]
+}

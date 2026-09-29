@@ -1,0 +1,15 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        DRV["5路HD位驱动"]
+        SW["按位互补开关"]
+        R["原生电阻按1/2/4/8/16并联加权"]
+    end
+    CODE["5位数字输入"]
+    REF["电源 / 地参考"]
+    OUT["电压输出及负载"]
+    CODE -.-> DRV
+    DRV -.->|"逐位控制"| SW
+    REF -->|"两参考轨"| SW
+    SW -->|"支路电压"| R
+    R -->|"加权汇流"| OUT

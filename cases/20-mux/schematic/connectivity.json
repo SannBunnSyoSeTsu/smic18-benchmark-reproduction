@@ -1,0 +1,5930 @@
+{
+  "generated_at": "2026-09-23T06:18:44.040949+00:00",
+  "circuit_sha256": "4343f4ada2c14da0014bc9d81efc5017d1ccbebd4d9fb77c50a885aaf21dbba0",
+  "top": "input_mux_8to1",
+  "subcircuit_ports": {
+    "tg": [
+      "VDD",
+      "VSS",
+      "EN",
+      "ENB",
+      "I",
+      "O"
+    ],
+    "input_mux_8to1": [
+      "AVDD",
+      "AVSS",
+      "S2",
+      "S1",
+      "S0",
+      "VIN7",
+      "VIN6",
+      "VIN5",
+      "VIN4",
+      "VIN3",
+      "VIN2",
+      "VIN1",
+      "VIN0",
+      "VO"
+    ]
+  },
+  "instances": {
+    "tg/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "O",
+        "G": "EN",
+        "S": "I",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        22,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          18
+        ],
+        "S": [
+          22,
+          16
+        ],
+        "G": [
+          20.45,
+          17
+        ],
+        "B": [
+          22.86,
+          17
+        ]
+      },
+      "block": "tg"
+    },
+    "tg/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "O",
+        "G": "ENB",
+        "S": "I",
+        "B": "VDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        22,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          6
+        ],
+        "S": [
+          22,
+          8
+        ],
+        "G": [
+          20.45,
+          7
+        ],
+        "B": [
+          22.86,
+          7
+        ]
+      },
+      "block": "tg"
+    },
+    "input_mux_8to1/XSW0": {
+      "name": "XSW0",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "SB0",
+        "ENB": "S0",
+        "I": "VIN0",
+        "O": "n0_0"
+      },
+      "parameters": {},
+      "source_line": "XSW0 (AVDD AVSS SB0 S0 VIN0 n0_0) tg",
+      "sheet": 1,
+      "origin": [
+        6,
+        17
+      ],
+      "rendered_pins": {
+        "EN": [
+          3.3,
+          18.0
+        ],
+        "ENB": [
+          3.3,
+          17.0
+        ],
+        "I": [
+          3.3,
+          16.0
+        ],
+        "O": [
+          8.7,
+          17.0
+        ],
+        "VDD": [
+          5.2,
+          19.65
+        ],
+        "VSS": [
+          5.2,
+          14.35
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW1": {
+      "name": "XSW1",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "S0",
+        "ENB": "SB0",
+        "I": "VIN1",
+        "O": "n0_0"
+      },
+      "parameters": {},
+      "source_line": "XSW1 (AVDD AVSS S0 SB0 VIN1 n0_0) tg",
+      "sheet": 1,
+      "origin": [
+        6,
+        6
+      ],
+      "rendered_pins": {
+        "EN": [
+          3.3,
+          7.0
+        ],
+        "ENB": [
+          3.3,
+          6.0
+        ],
+        "I": [
+          3.3,
+          5.0
+        ],
+        "O": [
+          8.7,
+          6.0
+        ],
+        "VDD": [
+          5.2,
+          8.65
+        ],
+        "VSS": [
+          5.2,
+          3.3499999999999996
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW2": {
+      "name": "XSW2",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "SB0",
+        "ENB": "S0",
+        "I": "VIN2",
+        "O": "n0_1"
+      },
+      "parameters": {},
+      "source_line": "XSW2 (AVDD AVSS SB0 S0 VIN2 n0_1) tg",
+      "sheet": 1,
+      "origin": [
+        16,
+        17
+      ],
+      "rendered_pins": {
+        "EN": [
+          13.3,
+          18.0
+        ],
+        "ENB": [
+          13.3,
+          17.0
+        ],
+        "I": [
+          13.3,
+          16.0
+        ],
+        "O": [
+          18.7,
+          17.0
+        ],
+        "VDD": [
+          15.2,
+          19.65
+        ],
+        "VSS": [
+          15.2,
+          14.35
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW3": {
+      "name": "XSW3",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "S0",
+        "ENB": "SB0",
+        "I": "VIN3",
+        "O": "n0_1"
+      },
+      "parameters": {},
+      "source_line": "XSW3 (AVDD AVSS S0 SB0 VIN3 n0_1) tg",
+      "sheet": 1,
+      "origin": [
+        16,
+        6
+      ],
+      "rendered_pins": {
+        "EN": [
+          13.3,
+          7.0
+        ],
+        "ENB": [
+          13.3,
+          6.0
+        ],
+        "I": [
+          13.3,
+          5.0
+        ],
+        "O": [
+          18.7,
+          6.0
+        ],
+        "VDD": [
+          15.2,
+          8.65
+        ],
+        "VSS": [
+          15.2,
+          3.3499999999999996
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW4": {
+      "name": "XSW4",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "SB0",
+        "ENB": "S0",
+        "I": "VIN4",
+        "O": "n0_2"
+      },
+      "parameters": {},
+      "source_line": "XSW4 (AVDD AVSS SB0 S0 VIN4 n0_2) tg",
+      "sheet": 1,
+      "origin": [
+        26,
+        17
+      ],
+      "rendered_pins": {
+        "EN": [
+          23.3,
+          18.0
+        ],
+        "ENB": [
+          23.3,
+          17.0
+        ],
+        "I": [
+          23.3,
+          16.0
+        ],
+        "O": [
+          28.7,
+          17.0
+        ],
+        "VDD": [
+          25.2,
+          19.65
+        ],
+        "VSS": [
+          25.2,
+          14.35
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW5": {
+      "name": "XSW5",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "S0",
+        "ENB": "SB0",
+        "I": "VIN5",
+        "O": "n0_2"
+      },
+      "parameters": {},
+      "source_line": "XSW5 (AVDD AVSS S0 SB0 VIN5 n0_2) tg",
+      "sheet": 1,
+      "origin": [
+        26,
+        6
+      ],
+      "rendered_pins": {
+        "EN": [
+          23.3,
+          7.0
+        ],
+        "ENB": [
+          23.3,
+          6.0
+        ],
+        "I": [
+          23.3,
+          5.0
+        ],
+        "O": [
+          28.7,
+          6.0
+        ],
+        "VDD": [
+          25.2,
+          8.65
+        ],
+        "VSS": [
+          25.2,
+          3.3499999999999996
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW6": {
+      "name": "XSW6",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "SB0",
+        "ENB": "S0",
+        "I": "VIN6",
+        "O": "n0_3"
+      },
+      "parameters": {},
+      "source_line": "XSW6 (AVDD AVSS SB0 S0 VIN6 n0_3) tg",
+      "sheet": 1,
+      "origin": [
+        36,
+        17
+      ],
+      "rendered_pins": {
+        "EN": [
+          33.3,
+          18.0
+        ],
+        "ENB": [
+          33.3,
+          17.0
+        ],
+        "I": [
+          33.3,
+          16.0
+        ],
+        "O": [
+          38.7,
+          17.0
+        ],
+        "VDD": [
+          35.2,
+          19.65
+        ],
+        "VSS": [
+          35.2,
+          14.35
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW7": {
+      "name": "XSW7",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "S0",
+        "ENB": "SB0",
+        "I": "VIN7",
+        "O": "n0_3"
+      },
+      "parameters": {},
+      "source_line": "XSW7 (AVDD AVSS S0 SB0 VIN7 n0_3) tg",
+      "sheet": 1,
+      "origin": [
+        36,
+        6
+      ],
+      "rendered_pins": {
+        "EN": [
+          33.3,
+          7.0
+        ],
+        "ENB": [
+          33.3,
+          6.0
+        ],
+        "I": [
+          33.3,
+          5.0
+        ],
+        "O": [
+          38.7,
+          6.0
+        ],
+        "VDD": [
+          35.2,
+          8.65
+        ],
+        "VSS": [
+          35.2,
+          3.3499999999999996
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW8": {
+      "name": "XSW8",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "SB1",
+        "ENB": "S1",
+        "I": "n0_0",
+        "O": "n1_0"
+      },
+      "parameters": {},
+      "source_line": "XSW8 (AVDD AVSS SB1 S1 n0_0 n1_0) tg",
+      "sheet": 2,
+      "origin": [
+        7,
+        19
+      ],
+      "rendered_pins": {
+        "EN": [
+          4.3,
+          20.0
+        ],
+        "ENB": [
+          4.3,
+          19.0
+        ],
+        "I": [
+          4.3,
+          18.0
+        ],
+        "O": [
+          9.7,
+          19.0
+        ],
+        "VDD": [
+          6.2,
+          21.65
+        ],
+        "VSS": [
+          6.2,
+          16.35
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW9": {
+      "name": "XSW9",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "S1",
+        "ENB": "SB1",
+        "I": "n0_1",
+        "O": "n1_0"
+      },
+      "parameters": {},
+      "source_line": "XSW9 (AVDD AVSS S1 SB1 n0_1 n1_0) tg",
+      "sheet": 2,
+      "origin": [
+        7,
+        11
+      ],
+      "rendered_pins": {
+        "EN": [
+          4.3,
+          12.0
+        ],
+        "ENB": [
+          4.3,
+          11.0
+        ],
+        "I": [
+          4.3,
+          10.0
+        ],
+        "O": [
+          9.7,
+          11.0
+        ],
+        "VDD": [
+          6.2,
+          13.65
+        ],
+        "VSS": [
+          6.2,
+          8.35
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW10": {
+      "name": "XSW10",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "SB1",
+        "ENB": "S1",
+        "I": "n0_2",
+        "O": "n1_1"
+      },
+      "parameters": {},
+      "source_line": "XSW10 (AVDD AVSS SB1 S1 n0_2 n1_1) tg",
+      "sheet": 2,
+      "origin": [
+        22,
+        19
+      ],
+      "rendered_pins": {
+        "EN": [
+          19.3,
+          20.0
+        ],
+        "ENB": [
+          19.3,
+          19.0
+        ],
+        "I": [
+          19.3,
+          18.0
+        ],
+        "O": [
+          24.7,
+          19.0
+        ],
+        "VDD": [
+          21.2,
+          21.65
+        ],
+        "VSS": [
+          21.2,
+          16.35
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW11": {
+      "name": "XSW11",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "S1",
+        "ENB": "SB1",
+        "I": "n0_3",
+        "O": "n1_1"
+      },
+      "parameters": {},
+      "source_line": "XSW11 (AVDD AVSS S1 SB1 n0_3 n1_1) tg",
+      "sheet": 2,
+      "origin": [
+        22,
+        11
+      ],
+      "rendered_pins": {
+        "EN": [
+          19.3,
+          12.0
+        ],
+        "ENB": [
+          19.3,
+          11.0
+        ],
+        "I": [
+          19.3,
+          10.0
+        ],
+        "O": [
+          24.7,
+          11.0
+        ],
+        "VDD": [
+          21.2,
+          13.65
+        ],
+        "VSS": [
+          21.2,
+          8.35
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW12": {
+      "name": "XSW12",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "SB2",
+        "ENB": "S2",
+        "I": "n1_0",
+        "O": "VO"
+      },
+      "parameters": {},
+      "source_line": "XSW12 (AVDD AVSS SB2 S2 n1_0 VO) tg",
+      "sheet": 2,
+      "origin": [
+        37,
+        19
+      ],
+      "rendered_pins": {
+        "EN": [
+          34.3,
+          20.0
+        ],
+        "ENB": [
+          34.3,
+          19.0
+        ],
+        "I": [
+          34.3,
+          18.0
+        ],
+        "O": [
+          39.7,
+          19.0
+        ],
+        "VDD": [
+          36.2,
+          21.65
+        ],
+        "VSS": [
+          36.2,
+          16.35
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XSW13": {
+      "name": "XSW13",
+      "kind": "SUBCKT",
+      "model": "tg",
+      "pins": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "EN": "S2",
+        "ENB": "SB2",
+        "I": "n1_1",
+        "O": "VO"
+      },
+      "parameters": {},
+      "source_line": "XSW13 (AVDD AVSS S2 SB2 n1_1 VO) tg",
+      "sheet": 2,
+      "origin": [
+        37,
+        11
+      ],
+      "rendered_pins": {
+        "EN": [
+          34.3,
+          12.0
+        ],
+        "ENB": [
+          34.3,
+          11.0
+        ],
+        "I": [
+          34.3,
+          10.0
+        ],
+        "O": [
+          39.7,
+          11.0
+        ],
+        "VDD": [
+          36.2,
+          13.65
+        ],
+        "VSS": [
+          36.2,
+          8.35
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XINV0": {
+      "name": "XINV0",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "S0",
+        "ZN": "SB0",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV0 (S0 SB0 AVDD AVSS AVDD AVSS) INHDV0",
+      "sheet": 2,
+      "origin": [
+        7,
+        3.5
+      ],
+      "rendered_pins": {
+        "I": [
+          4.3,
+          3.5
+        ],
+        "ZN": [
+          9.7,
+          3.5
+        ],
+        "VDD": [
+          6.2,
+          5.7
+        ],
+        "VNW": [
+          7.8,
+          5.7
+        ],
+        "VSS": [
+          6.2,
+          1.2999999999999998
+        ],
+        "VPW": [
+          7.8,
+          1.2999999999999998
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XINV1": {
+      "name": "XINV1",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "S1",
+        "ZN": "SB1",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV1 (S1 SB1 AVDD AVSS AVDD AVSS) INHDV0",
+      "sheet": 2,
+      "origin": [
+        22,
+        3.5
+      ],
+      "rendered_pins": {
+        "I": [
+          19.3,
+          3.5
+        ],
+        "ZN": [
+          24.7,
+          3.5
+        ],
+        "VDD": [
+          21.2,
+          5.7
+        ],
+        "VNW": [
+          22.8,
+          5.7
+        ],
+        "VSS": [
+          21.2,
+          1.2999999999999998
+        ],
+        "VPW": [
+          22.8,
+          1.2999999999999998
+        ]
+      },
+      "block": "input_mux_8to1"
+    },
+    "input_mux_8to1/XINV2": {
+      "name": "XINV2",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "S2",
+        "ZN": "SB2",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV2 (S2 SB2 AVDD AVSS AVDD AVSS) INHDV0",
+      "sheet": 2,
+      "origin": [
+        37,
+        3.5
+      ],
+      "rendered_pins": {
+        "I": [
+          34.3,
+          3.5
+        ],
+        "ZN": [
+          39.7,
+          3.5
+        ],
+        "VDD": [
+          36.2,
+          5.7
+        ],
+        "VNW": [
+          37.8,
+          5.7
+        ],
+        "VSS": [
+          36.2,
+          1.2999999999999998
+        ],
+        "VPW": [
+          37.8,
+          1.2999999999999998
+        ]
+      },
+      "block": "input_mux_8to1"
+    }
+  },
+  "expanded_leaf_instances": {
+    "XINV0": {
+      "name": "XINV0",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "S0",
+        "ZN": "SB0",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV0 (S0 SB0 AVDD AVSS AVDD AVSS) INHDV0",
+      "definition": "input_mux_8to1/XINV0",
+      "path": "XINV0"
+    },
+    "XINV1": {
+      "name": "XINV1",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "S1",
+        "ZN": "SB1",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV1 (S1 SB1 AVDD AVSS AVDD AVSS) INHDV0",
+      "definition": "input_mux_8to1/XINV1",
+      "path": "XINV1"
+    },
+    "XINV2": {
+      "name": "XINV2",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "S2",
+        "ZN": "SB2",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV2 (S2 SB2 AVDD AVSS AVDD AVSS) INHDV0",
+      "definition": "input_mux_8to1/XINV2",
+      "path": "XINV2"
+    },
+    "XSW0/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n0_0",
+        "G": "SB0",
+        "S": "VIN0",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW0/MN"
+    },
+    "XSW0/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n0_0",
+        "G": "S0",
+        "S": "VIN0",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW0/MP"
+    },
+    "XSW1/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n0_0",
+        "G": "S0",
+        "S": "VIN1",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW1/MN"
+    },
+    "XSW1/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n0_0",
+        "G": "SB0",
+        "S": "VIN1",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW1/MP"
+    },
+    "XSW2/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n0_1",
+        "G": "SB0",
+        "S": "VIN2",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW2/MN"
+    },
+    "XSW2/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n0_1",
+        "G": "S0",
+        "S": "VIN2",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW2/MP"
+    },
+    "XSW3/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n0_1",
+        "G": "S0",
+        "S": "VIN3",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW3/MN"
+    },
+    "XSW3/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n0_1",
+        "G": "SB0",
+        "S": "VIN3",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW3/MP"
+    },
+    "XSW4/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n0_2",
+        "G": "SB0",
+        "S": "VIN4",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW4/MN"
+    },
+    "XSW4/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n0_2",
+        "G": "S0",
+        "S": "VIN4",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW4/MP"
+    },
+    "XSW5/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n0_2",
+        "G": "S0",
+        "S": "VIN5",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW5/MN"
+    },
+    "XSW5/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n0_2",
+        "G": "SB0",
+        "S": "VIN5",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW5/MP"
+    },
+    "XSW6/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n0_3",
+        "G": "SB0",
+        "S": "VIN6",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW6/MN"
+    },
+    "XSW6/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n0_3",
+        "G": "S0",
+        "S": "VIN6",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW6/MP"
+    },
+    "XSW7/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n0_3",
+        "G": "S0",
+        "S": "VIN7",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW7/MN"
+    },
+    "XSW7/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n0_3",
+        "G": "SB0",
+        "S": "VIN7",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW7/MP"
+    },
+    "XSW8/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n1_0",
+        "G": "SB1",
+        "S": "n0_0",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW8/MN"
+    },
+    "XSW8/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n1_0",
+        "G": "S1",
+        "S": "n0_0",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW8/MP"
+    },
+    "XSW9/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n1_0",
+        "G": "S1",
+        "S": "n0_1",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW9/MN"
+    },
+    "XSW9/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n1_0",
+        "G": "SB1",
+        "S": "n0_1",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW9/MP"
+    },
+    "XSW10/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n1_1",
+        "G": "SB1",
+        "S": "n0_2",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW10/MN"
+    },
+    "XSW10/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n1_1",
+        "G": "S1",
+        "S": "n0_2",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW10/MP"
+    },
+    "XSW11/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n1_1",
+        "G": "S1",
+        "S": "n0_3",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW11/MN"
+    },
+    "XSW11/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n1_1",
+        "G": "SB1",
+        "S": "n0_3",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW11/MP"
+    },
+    "XSW12/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VO",
+        "G": "SB2",
+        "S": "n1_0",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW12/MN"
+    },
+    "XSW12/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VO",
+        "G": "S2",
+        "S": "n1_0",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW12/MP"
+    },
+    "XSW13/MN": {
+      "name": "MN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VO",
+        "G": "S2",
+        "S": "n1_1",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "0.36u"
+      },
+      "source_line": "MN (O EN I VSS) n18 w=1.46u l=0.36u",
+      "W_unit_um": 1.46,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MN",
+      "path": "XSW13/MN"
+    },
+    "XSW13/MP": {
+      "name": "MP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VO",
+        "G": "SB2",
+        "S": "n1_1",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "6.08u",
+        "l": "0.36u"
+      },
+      "source_line": "MP (O ENB I VDD) p18 w=6.08u l=0.36u",
+      "W_unit_um": 6.079999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tg/MP",
+      "path": "XSW13/MP"
+    }
+  },
+  "nets": {
+    "tg/O": [
+      {
+        "instance": "tg/MN",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          22,
+          18
+        ]
+      },
+      {
+        "instance": "tg/MP",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          22,
+          6
+        ]
+      }
+    ],
+    "tg/EN": [
+      {
+        "instance": "tg/MN",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          20.45,
+          17
+        ]
+      }
+    ],
+    "tg/I": [
+      {
+        "instance": "tg/MN",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          22,
+          16
+        ]
+      },
+      {
+        "instance": "tg/MP",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          22,
+          8
+        ]
+      }
+    ],
+    "tg/VSS": [
+      {
+        "instance": "tg/MN",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          22.86,
+          17
+        ]
+      }
+    ],
+    "tg/ENB": [
+      {
+        "instance": "tg/MP",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          20.45,
+          7
+        ]
+      }
+    ],
+    "tg/VDD": [
+      {
+        "instance": "tg/MP",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          22.86,
+          7
+        ]
+      }
+    ],
+    "input_mux_8to1/AVDD": [
+      {
+        "instance": "input_mux_8to1/XSW0",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          5.2,
+          19.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          5.2,
+          8.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW2",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          15.2,
+          19.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW3",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          15.2,
+          8.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW4",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          25.2,
+          19.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW5",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          25.2,
+          8.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW6",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          35.2,
+          19.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW7",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          35.2,
+          8.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW8",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          6.2,
+          21.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW9",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          6.2,
+          13.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW10",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          21.2,
+          21.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW11",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          21.2,
+          13.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW12",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          36.2,
+          21.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW13",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          36.2,
+          13.65
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV0",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          6.2,
+          5.7
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV0",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          7.8,
+          5.7
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV1",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          21.2,
+          5.7
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV1",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          22.8,
+          5.7
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV2",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          36.2,
+          5.7
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV2",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          37.8,
+          5.7
+        ]
+      }
+    ],
+    "input_mux_8to1/AVSS": [
+      {
+        "instance": "input_mux_8to1/XSW0",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          5.2,
+          14.35
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          5.2,
+          3.3499999999999996
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW2",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          15.2,
+          14.35
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW3",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          15.2,
+          3.3499999999999996
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW4",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          25.2,
+          14.35
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW5",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          25.2,
+          3.3499999999999996
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW6",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          35.2,
+          14.35
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW7",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          35.2,
+          3.3499999999999996
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW8",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          6.2,
+          16.35
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW9",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          6.2,
+          8.35
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW10",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          21.2,
+          16.35
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW11",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          21.2,
+          8.35
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW12",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          36.2,
+          16.35
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW13",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          36.2,
+          8.35
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV0",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          6.2,
+          1.2999999999999998
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV0",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          7.8,
+          1.2999999999999998
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV1",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          21.2,
+          1.2999999999999998
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV1",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          22.8,
+          1.2999999999999998
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV2",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          36.2,
+          1.2999999999999998
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV2",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          37.8,
+          1.2999999999999998
+        ]
+      }
+    ],
+    "input_mux_8to1/SB0": [
+      {
+        "instance": "input_mux_8to1/XSW0",
+        "pin": "EN",
+        "sheet": 1,
+        "point": [
+          3.3,
+          18.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW1",
+        "pin": "ENB",
+        "sheet": 1,
+        "point": [
+          3.3,
+          6.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW2",
+        "pin": "EN",
+        "sheet": 1,
+        "point": [
+          13.3,
+          18.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW3",
+        "pin": "ENB",
+        "sheet": 1,
+        "point": [
+          13.3,
+          6.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW4",
+        "pin": "EN",
+        "sheet": 1,
+        "point": [
+          23.3,
+          18.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW5",
+        "pin": "ENB",
+        "sheet": 1,
+        "point": [
+          23.3,
+          6.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW6",
+        "pin": "EN",
+        "sheet": 1,
+        "point": [
+          33.3,
+          18.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW7",
+        "pin": "ENB",
+        "sheet": 1,
+        "point": [
+          33.3,
+          6.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV0",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          9.7,
+          3.5
+        ]
+      }
+    ],
+    "input_mux_8to1/S0": [
+      {
+        "instance": "input_mux_8to1/XSW0",
+        "pin": "ENB",
+        "sheet": 1,
+        "point": [
+          3.3,
+          17.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW1",
+        "pin": "EN",
+        "sheet": 1,
+        "point": [
+          3.3,
+          7.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW2",
+        "pin": "ENB",
+        "sheet": 1,
+        "point": [
+          13.3,
+          17.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW3",
+        "pin": "EN",
+        "sheet": 1,
+        "point": [
+          13.3,
+          7.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW4",
+        "pin": "ENB",
+        "sheet": 1,
+        "point": [
+          23.3,
+          17.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW5",
+        "pin": "EN",
+        "sheet": 1,
+        "point": [
+          23.3,
+          7.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW6",
+        "pin": "ENB",
+        "sheet": 1,
+        "point": [
+          33.3,
+          17.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW7",
+        "pin": "EN",
+        "sheet": 1,
+        "point": [
+          33.3,
+          7.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV0",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          4.3,
+          3.5
+        ]
+      }
+    ],
+    "input_mux_8to1/VIN0": [
+      {
+        "instance": "input_mux_8to1/XSW0",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          3.3,
+          16.0
+        ]
+      }
+    ],
+    "input_mux_8to1/n0_0": [
+      {
+        "instance": "input_mux_8to1/XSW0",
+        "pin": "O",
+        "sheet": 1,
+        "point": [
+          8.7,
+          17.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW1",
+        "pin": "O",
+        "sheet": 1,
+        "point": [
+          8.7,
+          6.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW8",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          4.3,
+          18.0
+        ]
+      }
+    ],
+    "input_mux_8to1/VIN1": [
+      {
+        "instance": "input_mux_8to1/XSW1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          3.3,
+          5.0
+        ]
+      }
+    ],
+    "input_mux_8to1/VIN2": [
+      {
+        "instance": "input_mux_8to1/XSW2",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          13.3,
+          16.0
+        ]
+      }
+    ],
+    "input_mux_8to1/n0_1": [
+      {
+        "instance": "input_mux_8to1/XSW2",
+        "pin": "O",
+        "sheet": 1,
+        "point": [
+          18.7,
+          17.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW3",
+        "pin": "O",
+        "sheet": 1,
+        "point": [
+          18.7,
+          6.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW9",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          4.3,
+          10.0
+        ]
+      }
+    ],
+    "input_mux_8to1/VIN3": [
+      {
+        "instance": "input_mux_8to1/XSW3",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          13.3,
+          5.0
+        ]
+      }
+    ],
+    "input_mux_8to1/VIN4": [
+      {
+        "instance": "input_mux_8to1/XSW4",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          23.3,
+          16.0
+        ]
+      }
+    ],
+    "input_mux_8to1/n0_2": [
+      {
+        "instance": "input_mux_8to1/XSW4",
+        "pin": "O",
+        "sheet": 1,
+        "point": [
+          28.7,
+          17.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW5",
+        "pin": "O",
+        "sheet": 1,
+        "point": [
+          28.7,
+          6.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW10",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          19.3,
+          18.0
+        ]
+      }
+    ],
+    "input_mux_8to1/VIN5": [
+      {
+        "instance": "input_mux_8to1/XSW5",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          23.3,
+          5.0
+        ]
+      }
+    ],
+    "input_mux_8to1/VIN6": [
+      {
+        "instance": "input_mux_8to1/XSW6",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          33.3,
+          16.0
+        ]
+      }
+    ],
+    "input_mux_8to1/n0_3": [
+      {
+        "instance": "input_mux_8to1/XSW6",
+        "pin": "O",
+        "sheet": 1,
+        "point": [
+          38.7,
+          17.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW7",
+        "pin": "O",
+        "sheet": 1,
+        "point": [
+          38.7,
+          6.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW11",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          19.3,
+          10.0
+        ]
+      }
+    ],
+    "input_mux_8to1/VIN7": [
+      {
+        "instance": "input_mux_8to1/XSW7",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          33.3,
+          5.0
+        ]
+      }
+    ],
+    "input_mux_8to1/SB1": [
+      {
+        "instance": "input_mux_8to1/XSW8",
+        "pin": "EN",
+        "sheet": 2,
+        "point": [
+          4.3,
+          20.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW9",
+        "pin": "ENB",
+        "sheet": 2,
+        "point": [
+          4.3,
+          11.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW10",
+        "pin": "EN",
+        "sheet": 2,
+        "point": [
+          19.3,
+          20.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW11",
+        "pin": "ENB",
+        "sheet": 2,
+        "point": [
+          19.3,
+          11.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV1",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          24.7,
+          3.5
+        ]
+      }
+    ],
+    "input_mux_8to1/S1": [
+      {
+        "instance": "input_mux_8to1/XSW8",
+        "pin": "ENB",
+        "sheet": 2,
+        "point": [
+          4.3,
+          19.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW9",
+        "pin": "EN",
+        "sheet": 2,
+        "point": [
+          4.3,
+          12.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW10",
+        "pin": "ENB",
+        "sheet": 2,
+        "point": [
+          19.3,
+          19.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW11",
+        "pin": "EN",
+        "sheet": 2,
+        "point": [
+          19.3,
+          12.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV1",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          19.3,
+          3.5
+        ]
+      }
+    ],
+    "input_mux_8to1/n1_0": [
+      {
+        "instance": "input_mux_8to1/XSW8",
+        "pin": "O",
+        "sheet": 2,
+        "point": [
+          9.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW9",
+        "pin": "O",
+        "sheet": 2,
+        "point": [
+          9.7,
+          11.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW12",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          34.3,
+          18.0
+        ]
+      }
+    ],
+    "input_mux_8to1/n1_1": [
+      {
+        "instance": "input_mux_8to1/XSW10",
+        "pin": "O",
+        "sheet": 2,
+        "point": [
+          24.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW11",
+        "pin": "O",
+        "sheet": 2,
+        "point": [
+          24.7,
+          11.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW13",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          34.3,
+          10.0
+        ]
+      }
+    ],
+    "input_mux_8to1/SB2": [
+      {
+        "instance": "input_mux_8to1/XSW12",
+        "pin": "EN",
+        "sheet": 2,
+        "point": [
+          34.3,
+          20.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW13",
+        "pin": "ENB",
+        "sheet": 2,
+        "point": [
+          34.3,
+          11.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV2",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          39.7,
+          3.5
+        ]
+      }
+    ],
+    "input_mux_8to1/S2": [
+      {
+        "instance": "input_mux_8to1/XSW12",
+        "pin": "ENB",
+        "sheet": 2,
+        "point": [
+          34.3,
+          19.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW13",
+        "pin": "EN",
+        "sheet": 2,
+        "point": [
+          34.3,
+          12.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XINV2",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          34.3,
+          3.5
+        ]
+      }
+    ],
+    "input_mux_8to1/VO": [
+      {
+        "instance": "input_mux_8to1/XSW12",
+        "pin": "O",
+        "sheet": 2,
+        "point": [
+          39.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "input_mux_8to1/XSW13",
+        "pin": "O",
+        "sheet": 2,
+        "point": [
+          39.7,
+          11.0
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 3,
+      "instance": "MP",
+      "pin": "B",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "tg"
+    },
+    {
+      "sheet": 3,
+      "instance": "MN",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "tg"
+    },
+    {
+      "sheet": 3,
+      "instance": "MP",
+      "pin": "G",
+      "net": "ENB",
+      "path_to_named_net": true,
+      "block": "tg"
+    },
+    {
+      "sheet": 3,
+      "instance": "MN",
+      "pin": "G",
+      "net": "EN",
+      "path_to_named_net": true,
+      "block": "tg"
+    },
+    {
+      "sheet": 3,
+      "instance": "MN",
+      "pin": "D",
+      "net": "O",
+      "path_to_named_net": true,
+      "block": "tg"
+    },
+    {
+      "sheet": 3,
+      "instance": "MP",
+      "pin": "D",
+      "net": "O",
+      "path_to_named_net": true,
+      "block": "tg"
+    },
+    {
+      "sheet": 3,
+      "instance": "MN",
+      "pin": "S",
+      "net": "I",
+      "path_to_named_net": true,
+      "block": "tg"
+    },
+    {
+      "sheet": 3,
+      "instance": "MP",
+      "pin": "S",
+      "net": "I",
+      "path_to_named_net": true,
+      "block": "tg"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW6",
+      "pin": "O",
+      "net": "n0_3",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW7",
+      "pin": "O",
+      "net": "n0_3",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW1",
+      "pin": "I",
+      "net": "VIN1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW3",
+      "pin": "I",
+      "net": "VIN3",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW4",
+      "pin": "I",
+      "net": "VIN4",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW0",
+      "pin": "EN",
+      "net": "SB0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW1",
+      "pin": "ENB",
+      "net": "SB0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW2",
+      "pin": "EN",
+      "net": "SB0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW3",
+      "pin": "ENB",
+      "net": "SB0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW4",
+      "pin": "EN",
+      "net": "SB0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW5",
+      "pin": "ENB",
+      "net": "SB0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW6",
+      "pin": "EN",
+      "net": "SB0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW7",
+      "pin": "ENB",
+      "net": "SB0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW0",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW1",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW2",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW3",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW4",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW5",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW6",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW7",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW7",
+      "pin": "I",
+      "net": "VIN7",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW2",
+      "pin": "O",
+      "net": "n0_1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW3",
+      "pin": "O",
+      "net": "n0_1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW0",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW1",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW2",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW3",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW4",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW5",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW6",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW7",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW6",
+      "pin": "I",
+      "net": "VIN6",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW4",
+      "pin": "O",
+      "net": "n0_2",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW5",
+      "pin": "O",
+      "net": "n0_2",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW0",
+      "pin": "O",
+      "net": "n0_0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW1",
+      "pin": "O",
+      "net": "n0_0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW5",
+      "pin": "I",
+      "net": "VIN5",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW2",
+      "pin": "I",
+      "net": "VIN2",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW0",
+      "pin": "ENB",
+      "net": "S0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW1",
+      "pin": "EN",
+      "net": "S0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW2",
+      "pin": "ENB",
+      "net": "S0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW3",
+      "pin": "EN",
+      "net": "S0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW4",
+      "pin": "ENB",
+      "net": "S0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW5",
+      "pin": "EN",
+      "net": "S0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW6",
+      "pin": "ENB",
+      "net": "S0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW7",
+      "pin": "EN",
+      "net": "S0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 1,
+      "instance": "XSW0",
+      "pin": "I",
+      "net": "VIN0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW11",
+      "pin": "I",
+      "net": "n0_3",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV0",
+      "pin": "ZN",
+      "net": "SB0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW8",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW9",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW10",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW11",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW12",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW13",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV0",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV0",
+      "pin": "VNW",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV1",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV1",
+      "pin": "VNW",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV2",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV2",
+      "pin": "VNW",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW10",
+      "pin": "O",
+      "net": "n1_1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW11",
+      "pin": "O",
+      "net": "n1_1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW13",
+      "pin": "I",
+      "net": "n1_1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW12",
+      "pin": "O",
+      "net": "VO",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW13",
+      "pin": "O",
+      "net": "VO",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW9",
+      "pin": "I",
+      "net": "n0_1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW10",
+      "pin": "I",
+      "net": "n0_2",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW8",
+      "pin": "ENB",
+      "net": "S1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW9",
+      "pin": "EN",
+      "net": "S1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW10",
+      "pin": "ENB",
+      "net": "S1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW11",
+      "pin": "EN",
+      "net": "S1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV1",
+      "pin": "I",
+      "net": "S1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW8",
+      "pin": "I",
+      "net": "n0_0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW8",
+      "pin": "O",
+      "net": "n1_0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW9",
+      "pin": "O",
+      "net": "n1_0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW12",
+      "pin": "I",
+      "net": "n1_0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW12",
+      "pin": "ENB",
+      "net": "S2",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW13",
+      "pin": "EN",
+      "net": "S2",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV2",
+      "pin": "I",
+      "net": "S2",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV0",
+      "pin": "I",
+      "net": "S0",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW12",
+      "pin": "EN",
+      "net": "SB2",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW13",
+      "pin": "ENB",
+      "net": "SB2",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV2",
+      "pin": "ZN",
+      "net": "SB2",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW8",
+      "pin": "EN",
+      "net": "SB1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW9",
+      "pin": "ENB",
+      "net": "SB1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW10",
+      "pin": "EN",
+      "net": "SB1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW11",
+      "pin": "ENB",
+      "net": "SB1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV1",
+      "pin": "ZN",
+      "net": "SB1",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW8",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW9",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW10",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW11",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW12",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XSW13",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV0",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV0",
+      "pin": "VPW",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV1",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV1",
+      "pin": "VPW",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV2",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV2",
+      "pin": "VPW",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "input_mux_8to1"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "input_mux_8to1",
+      "title": "八路选择树：第一级传输门",
+      "wires": [
+        {
+          "net": "n0_0",
+          "points": [
+            [
+              8.7,
+              17.0
+            ],
+            [
+              9.9,
+              17
+            ],
+            [
+              9.9,
+              6
+            ],
+            [
+              8.7,
+              6.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n0_1",
+          "points": [
+            [
+              18.7,
+              17.0
+            ],
+            [
+              19.9,
+              17
+            ],
+            [
+              19.9,
+              6
+            ],
+            [
+              18.7,
+              6.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n0_2",
+          "points": [
+            [
+              28.7,
+              17.0
+            ],
+            [
+              29.9,
+              17
+            ],
+            [
+              29.9,
+              6
+            ],
+            [
+              28.7,
+              6.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n0_3",
+          "points": [
+            [
+              38.7,
+              17.0
+            ],
+            [
+              39.9,
+              17
+            ],
+            [
+              39.9,
+              6
+            ],
+            [
+              38.7,
+              6.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "points": [
+            [
+              3.3,
+              18.0
+            ],
+            [
+              2.6999999999999997,
+              18.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S0",
+          "points": [
+            [
+              3.3,
+              17.0
+            ],
+            [
+              2.6999999999999997,
+              17.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIN0",
+          "points": [
+            [
+              3.3,
+              16.0
+            ],
+            [
+              2.6999999999999997,
+              16.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              5.2,
+              19.65
+            ],
+            [
+              5.2,
+              20.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              5.2,
+              14.35
+            ],
+            [
+              5.2,
+              13.85
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S0",
+          "points": [
+            [
+              3.3,
+              7.0
+            ],
+            [
+              2.6999999999999997,
+              7.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "points": [
+            [
+              3.3,
+              6.0
+            ],
+            [
+              2.6999999999999997,
+              6.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIN1",
+          "points": [
+            [
+              3.3,
+              5.0
+            ],
+            [
+              2.6999999999999997,
+              5.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              5.2,
+              8.65
+            ],
+            [
+              5.2,
+              9.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              5.2,
+              3.3499999999999996
+            ],
+            [
+              5.2,
+              2.8499999999999996
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "points": [
+            [
+              13.3,
+              18.0
+            ],
+            [
+              12.700000000000001,
+              18.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S0",
+          "points": [
+            [
+              13.3,
+              17.0
+            ],
+            [
+              12.700000000000001,
+              17.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIN2",
+          "points": [
+            [
+              13.3,
+              16.0
+            ],
+            [
+              12.700000000000001,
+              16.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              15.2,
+              19.65
+            ],
+            [
+              15.2,
+              20.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              15.2,
+              14.35
+            ],
+            [
+              15.2,
+              13.85
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S0",
+          "points": [
+            [
+              13.3,
+              7.0
+            ],
+            [
+              12.700000000000001,
+              7.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "points": [
+            [
+              13.3,
+              6.0
+            ],
+            [
+              12.700000000000001,
+              6.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIN3",
+          "points": [
+            [
+              13.3,
+              5.0
+            ],
+            [
+              12.700000000000001,
+              5.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              15.2,
+              8.65
+            ],
+            [
+              15.2,
+              9.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              15.2,
+              3.3499999999999996
+            ],
+            [
+              15.2,
+              2.8499999999999996
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "points": [
+            [
+              23.3,
+              18.0
+            ],
+            [
+              22.7,
+              18.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S0",
+          "points": [
+            [
+              23.3,
+              17.0
+            ],
+            [
+              22.7,
+              17.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIN4",
+          "points": [
+            [
+              23.3,
+              16.0
+            ],
+            [
+              22.7,
+              16.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              25.2,
+              19.65
+            ],
+            [
+              25.2,
+              20.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              25.2,
+              14.35
+            ],
+            [
+              25.2,
+              13.85
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S0",
+          "points": [
+            [
+              23.3,
+              7.0
+            ],
+            [
+              22.7,
+              7.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "points": [
+            [
+              23.3,
+              6.0
+            ],
+            [
+              22.7,
+              6.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIN5",
+          "points": [
+            [
+              23.3,
+              5.0
+            ],
+            [
+              22.7,
+              5.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              25.2,
+              8.65
+            ],
+            [
+              25.2,
+              9.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              25.2,
+              3.3499999999999996
+            ],
+            [
+              25.2,
+              2.8499999999999996
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "points": [
+            [
+              33.3,
+              18.0
+            ],
+            [
+              32.699999999999996,
+              18.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S0",
+          "points": [
+            [
+              33.3,
+              17.0
+            ],
+            [
+              32.699999999999996,
+              17.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIN6",
+          "points": [
+            [
+              33.3,
+              16.0
+            ],
+            [
+              32.699999999999996,
+              16.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              35.2,
+              19.65
+            ],
+            [
+              35.2,
+              20.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              35.2,
+              14.35
+            ],
+            [
+              35.2,
+              13.85
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S0",
+          "points": [
+            [
+              33.3,
+              7.0
+            ],
+            [
+              32.699999999999996,
+              7.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "points": [
+            [
+              33.3,
+              6.0
+            ],
+            [
+              32.699999999999996,
+              6.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIN7",
+          "points": [
+            [
+              33.3,
+              5.0
+            ],
+            [
+              32.699999999999996,
+              5.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              35.2,
+              8.65
+            ],
+            [
+              35.2,
+              9.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              35.2,
+              3.3499999999999996
+            ],
+            [
+              35.2,
+              2.8499999999999996
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "n0_0",
+          "point": [
+            9.9,
+            11.5
+          ],
+          "text": "n0_0",
+          "body": false
+        },
+        {
+          "net": "n0_1",
+          "point": [
+            19.9,
+            11.5
+          ],
+          "text": "n0_1",
+          "body": false
+        },
+        {
+          "net": "n0_2",
+          "point": [
+            29.9,
+            11.5
+          ],
+          "text": "n0_2",
+          "body": false
+        },
+        {
+          "net": "n0_3",
+          "point": [
+            39.9,
+            11.5
+          ],
+          "text": "n0_3",
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "point": [
+            2.6999999999999997,
+            18.0
+          ],
+          "text": "SB0",
+          "body": false
+        },
+        {
+          "net": "S0",
+          "point": [
+            2.6999999999999997,
+            17.0
+          ],
+          "text": "S0",
+          "body": false
+        },
+        {
+          "net": "VIN0",
+          "point": [
+            2.6999999999999997,
+            16.0
+          ],
+          "text": "VIN0",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            5.2,
+            20.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            5.2,
+            13.85
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "S0",
+          "point": [
+            2.6999999999999997,
+            7.0
+          ],
+          "text": "S0",
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "point": [
+            2.6999999999999997,
+            6.0
+          ],
+          "text": "SB0",
+          "body": false
+        },
+        {
+          "net": "VIN1",
+          "point": [
+            2.6999999999999997,
+            5.0
+          ],
+          "text": "VIN1",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            5.2,
+            9.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            5.2,
+            2.8499999999999996
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "point": [
+            12.700000000000001,
+            18.0
+          ],
+          "text": "SB0",
+          "body": false
+        },
+        {
+          "net": "S0",
+          "point": [
+            12.700000000000001,
+            17.0
+          ],
+          "text": "S0",
+          "body": false
+        },
+        {
+          "net": "VIN2",
+          "point": [
+            12.700000000000001,
+            16.0
+          ],
+          "text": "VIN2",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            15.2,
+            20.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            15.2,
+            13.85
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "S0",
+          "point": [
+            12.700000000000001,
+            7.0
+          ],
+          "text": "S0",
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "point": [
+            12.700000000000001,
+            6.0
+          ],
+          "text": "SB0",
+          "body": false
+        },
+        {
+          "net": "VIN3",
+          "point": [
+            12.700000000000001,
+            5.0
+          ],
+          "text": "VIN3",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            15.2,
+            9.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            15.2,
+            2.8499999999999996
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "point": [
+            22.7,
+            18.0
+          ],
+          "text": "SB0",
+          "body": false
+        },
+        {
+          "net": "S0",
+          "point": [
+            22.7,
+            17.0
+          ],
+          "text": "S0",
+          "body": false
+        },
+        {
+          "net": "VIN4",
+          "point": [
+            22.7,
+            16.0
+          ],
+          "text": "VIN4",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            25.2,
+            20.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            25.2,
+            13.85
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "S0",
+          "point": [
+            22.7,
+            7.0
+          ],
+          "text": "S0",
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "point": [
+            22.7,
+            6.0
+          ],
+          "text": "SB0",
+          "body": false
+        },
+        {
+          "net": "VIN5",
+          "point": [
+            22.7,
+            5.0
+          ],
+          "text": "VIN5",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            25.2,
+            9.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            25.2,
+            2.8499999999999996
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "point": [
+            32.699999999999996,
+            18.0
+          ],
+          "text": "SB0",
+          "body": false
+        },
+        {
+          "net": "S0",
+          "point": [
+            32.699999999999996,
+            17.0
+          ],
+          "text": "S0",
+          "body": false
+        },
+        {
+          "net": "VIN6",
+          "point": [
+            32.699999999999996,
+            16.0
+          ],
+          "text": "VIN6",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            35.2,
+            20.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            35.2,
+            13.85
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "S0",
+          "point": [
+            32.699999999999996,
+            7.0
+          ],
+          "text": "S0",
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "point": [
+            32.699999999999996,
+            6.0
+          ],
+          "text": "SB0",
+          "body": false
+        },
+        {
+          "net": "VIN7",
+          "point": [
+            32.699999999999996,
+            5.0
+          ],
+          "text": "VIN7",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            35.2,
+            9.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            35.2,
+            2.8499999999999996
+          ],
+          "text": "AVSS",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "input_mux_8to1",
+      "title": "上层选择与 HD 互补时钟",
+      "wires": [
+        {
+          "net": "n1_0",
+          "points": [
+            [
+              9.7,
+              19.0
+            ],
+            [
+              11,
+              19
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              9.7,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1_1",
+          "points": [
+            [
+              24.7,
+              19.0
+            ],
+            [
+              26,
+              19
+            ],
+            [
+              26,
+              11
+            ],
+            [
+              24.7,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VO",
+          "points": [
+            [
+              39.7,
+              19.0
+            ],
+            [
+              41,
+              19
+            ],
+            [
+              41,
+              11
+            ],
+            [
+              39.7,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB1",
+          "points": [
+            [
+              4.3,
+              20.0
+            ],
+            [
+              3.6999999999999997,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S1",
+          "points": [
+            [
+              4.3,
+              19.0
+            ],
+            [
+              3.6999999999999997,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n0_0",
+          "points": [
+            [
+              4.3,
+              18.0
+            ],
+            [
+              3.6999999999999997,
+              18.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              6.2,
+              21.65
+            ],
+            [
+              6.2,
+              22.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              6.2,
+              16.35
+            ],
+            [
+              6.2,
+              15.850000000000001
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S1",
+          "points": [
+            [
+              4.3,
+              12.0
+            ],
+            [
+              3.6999999999999997,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB1",
+          "points": [
+            [
+              4.3,
+              11.0
+            ],
+            [
+              3.6999999999999997,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n0_1",
+          "points": [
+            [
+              4.3,
+              10.0
+            ],
+            [
+              3.6999999999999997,
+              10.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              6.2,
+              13.65
+            ],
+            [
+              6.2,
+              14.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              6.2,
+              8.35
+            ],
+            [
+              6.2,
+              7.85
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB1",
+          "points": [
+            [
+              19.3,
+              20.0
+            ],
+            [
+              18.7,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S1",
+          "points": [
+            [
+              19.3,
+              19.0
+            ],
+            [
+              18.7,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n0_2",
+          "points": [
+            [
+              19.3,
+              18.0
+            ],
+            [
+              18.7,
+              18.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              21.2,
+              21.65
+            ],
+            [
+              21.2,
+              22.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              21.2,
+              16.35
+            ],
+            [
+              21.2,
+              15.850000000000001
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S1",
+          "points": [
+            [
+              19.3,
+              12.0
+            ],
+            [
+              18.7,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB1",
+          "points": [
+            [
+              19.3,
+              11.0
+            ],
+            [
+              18.7,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n0_3",
+          "points": [
+            [
+              19.3,
+              10.0
+            ],
+            [
+              18.7,
+              10.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              21.2,
+              13.65
+            ],
+            [
+              21.2,
+              14.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              21.2,
+              8.35
+            ],
+            [
+              21.2,
+              7.85
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB2",
+          "points": [
+            [
+              34.3,
+              20.0
+            ],
+            [
+              33.699999999999996,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S2",
+          "points": [
+            [
+              34.3,
+              19.0
+            ],
+            [
+              33.699999999999996,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1_0",
+          "points": [
+            [
+              34.3,
+              18.0
+            ],
+            [
+              33.699999999999996,
+              18.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              36.2,
+              21.65
+            ],
+            [
+              36.2,
+              22.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              36.2,
+              16.35
+            ],
+            [
+              36.2,
+              15.850000000000001
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S2",
+          "points": [
+            [
+              34.3,
+              12.0
+            ],
+            [
+              33.699999999999996,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB2",
+          "points": [
+            [
+              34.3,
+              11.0
+            ],
+            [
+              33.699999999999996,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1_1",
+          "points": [
+            [
+              34.3,
+              10.0
+            ],
+            [
+              33.699999999999996,
+              10.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              36.2,
+              13.65
+            ],
+            [
+              36.2,
+              14.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              36.2,
+              8.35
+            ],
+            [
+              36.2,
+              7.85
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S0",
+          "points": [
+            [
+              4.3,
+              3.5
+            ],
+            [
+              3.6999999999999997,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "points": [
+            [
+              9.7,
+              3.5
+            ],
+            [
+              10.299999999999999,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              6.2,
+              5.7
+            ],
+            [
+              6.2,
+              6.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              7.8,
+              5.7
+            ],
+            [
+              7.8,
+              6.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              6.2,
+              1.2999999999999998
+            ],
+            [
+              6.2,
+              0.7999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              7.8,
+              1.2999999999999998
+            ],
+            [
+              7.8,
+              0.7999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S1",
+          "points": [
+            [
+              19.3,
+              3.5
+            ],
+            [
+              18.7,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB1",
+          "points": [
+            [
+              24.7,
+              3.5
+            ],
+            [
+              25.3,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              21.2,
+              5.7
+            ],
+            [
+              21.2,
+              6.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              22.8,
+              5.7
+            ],
+            [
+              22.8,
+              6.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              21.2,
+              1.2999999999999998
+            ],
+            [
+              21.2,
+              0.7999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              22.8,
+              1.2999999999999998
+            ],
+            [
+              22.8,
+              0.7999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "S2",
+          "points": [
+            [
+              34.3,
+              3.5
+            ],
+            [
+              33.699999999999996,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SB2",
+          "points": [
+            [
+              39.7,
+              3.5
+            ],
+            [
+              40.300000000000004,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              36.2,
+              5.7
+            ],
+            [
+              36.2,
+              6.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              37.8,
+              5.7
+            ],
+            [
+              37.8,
+              6.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              36.2,
+              1.2999999999999998
+            ],
+            [
+              36.2,
+              0.7999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              37.8,
+              1.2999999999999998
+            ],
+            [
+              37.8,
+              0.7999999999999998
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "n1_0",
+          "point": [
+            11,
+            15.1
+          ],
+          "text": "n1_0",
+          "body": false
+        },
+        {
+          "net": "n1_1",
+          "point": [
+            26,
+            15.1
+          ],
+          "text": "n1_1",
+          "body": false
+        },
+        {
+          "net": "VO",
+          "point": [
+            41,
+            15.1
+          ],
+          "text": "VO",
+          "body": false
+        },
+        {
+          "net": "SB1",
+          "point": [
+            3.6999999999999997,
+            20.0
+          ],
+          "text": "SB1",
+          "body": false
+        },
+        {
+          "net": "S1",
+          "point": [
+            3.6999999999999997,
+            19.0
+          ],
+          "text": "S1",
+          "body": false
+        },
+        {
+          "net": "n0_0",
+          "point": [
+            3.6999999999999997,
+            18.0
+          ],
+          "text": "n0_0",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            6.2,
+            22.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            6.2,
+            15.850000000000001
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "S1",
+          "point": [
+            3.6999999999999997,
+            12.0
+          ],
+          "text": "S1",
+          "body": false
+        },
+        {
+          "net": "SB1",
+          "point": [
+            3.6999999999999997,
+            11.0
+          ],
+          "text": "SB1",
+          "body": false
+        },
+        {
+          "net": "n0_1",
+          "point": [
+            3.6999999999999997,
+            10.0
+          ],
+          "text": "n0_1",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            6.2,
+            14.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            6.2,
+            7.85
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "SB1",
+          "point": [
+            18.7,
+            20.0
+          ],
+          "text": "SB1",
+          "body": false
+        },
+        {
+          "net": "S1",
+          "point": [
+            18.7,
+            19.0
+          ],
+          "text": "S1",
+          "body": false
+        },
+        {
+          "net": "n0_2",
+          "point": [
+            18.7,
+            18.0
+          ],
+          "text": "n0_2",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            21.2,
+            22.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            21.2,
+            15.850000000000001
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "S1",
+          "point": [
+            18.7,
+            12.0
+          ],
+          "text": "S1",
+          "body": false
+        },
+        {
+          "net": "SB1",
+          "point": [
+            18.7,
+            11.0
+          ],
+          "text": "SB1",
+          "body": false
+        },
+        {
+          "net": "n0_3",
+          "point": [
+            18.7,
+            10.0
+          ],
+          "text": "n0_3",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            21.2,
+            14.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            21.2,
+            7.85
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "SB2",
+          "point": [
+            33.699999999999996,
+            20.0
+          ],
+          "text": "SB2",
+          "body": false
+        },
+        {
+          "net": "S2",
+          "point": [
+            33.699999999999996,
+            19.0
+          ],
+          "text": "S2",
+          "body": false
+        },
+        {
+          "net": "n1_0",
+          "point": [
+            33.699999999999996,
+            18.0
+          ],
+          "text": "n1_0",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            36.2,
+            22.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            36.2,
+            15.850000000000001
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "S2",
+          "point": [
+            33.699999999999996,
+            12.0
+          ],
+          "text": "S2",
+          "body": false
+        },
+        {
+          "net": "SB2",
+          "point": [
+            33.699999999999996,
+            11.0
+          ],
+          "text": "SB2",
+          "body": false
+        },
+        {
+          "net": "n1_1",
+          "point": [
+            33.699999999999996,
+            10.0
+          ],
+          "text": "n1_1",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            36.2,
+            14.15
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            36.2,
+            7.85
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "S0",
+          "point": [
+            3.6999999999999997,
+            3.5
+          ],
+          "text": "S0",
+          "body": false
+        },
+        {
+          "net": "SB0",
+          "point": [
+            10.299999999999999,
+            3.5
+          ],
+          "text": "SB0",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            6.2,
+            6.2
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            7.8,
+            6.2
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            6.2,
+            0.7999999999999998
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            7.8,
+            0.7999999999999998
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "S1",
+          "point": [
+            18.7,
+            3.5
+          ],
+          "text": "S1",
+          "body": false
+        },
+        {
+          "net": "SB1",
+          "point": [
+            25.3,
+            3.5
+          ],
+          "text": "SB1",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            21.2,
+            6.2
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            22.8,
+            6.2
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            21.2,
+            0.7999999999999998
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            22.8,
+            0.7999999999999998
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "S2",
+          "point": [
+            33.699999999999996,
+            3.5
+          ],
+          "text": "S2",
+          "body": false
+        },
+        {
+          "net": "SB2",
+          "point": [
+            40.300000000000004,
+            3.5
+          ],
+          "text": "SB2",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            36.2,
+            6.2
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            37.8,
+            6.2
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            36.2,
+            0.7999999999999998
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            37.8,
+            0.7999999999999998
+          ],
+          "text": "AVSS",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "block": "tg",
+      "title": "完整可复用 tg 晶体管电路",
+      "wires": [
+        {
+          "net": "VSS",
+          "points": [
+            [
+              22.86,
+              17
+            ],
+            [
+              23.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              22.86,
+              7
+            ],
+            [
+              23.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "I",
+          "points": [
+            [
+              22,
+              16
+            ],
+            [
+              10,
+              16
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              22,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "O",
+          "points": [
+            [
+              22,
+              18
+            ],
+            [
+              22,
+              18.7
+            ],
+            [
+              34,
+              18.7
+            ],
+            [
+              34,
+              5.3
+            ],
+            [
+              22,
+              5.3
+            ],
+            [
+              22,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "EN",
+          "points": [
+            [
+              20.45,
+              17
+            ],
+            [
+              19.9,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ENB",
+          "points": [
+            [
+              20.45,
+              7
+            ],
+            [
+              19.9,
+              7
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "VSS",
+          "point": [
+            23.15,
+            17
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "point": [
+            23.15,
+            7
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "I",
+          "point": [
+            10,
+            12
+          ],
+          "text": "I",
+          "body": false
+        },
+        {
+          "net": "O",
+          "point": [
+            34,
+            12
+          ],
+          "text": "O",
+          "body": false
+        },
+        {
+          "net": "EN",
+          "point": [
+            19.9,
+            17
+          ],
+          "text": "EN",
+          "body": false
+        },
+        {
+          "net": "ENB",
+          "point": [
+            19.9,
+            7
+          ],
+          "text": "ENB",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "tg": [],
+    "input_mux_8to1": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

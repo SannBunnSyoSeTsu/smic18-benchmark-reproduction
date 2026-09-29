@@ -1,0 +1,123 @@
+{
+  "pdf": "reports/08-ppsf-review.pdf",
+  "sha256": "a6873a741cb11f3db9ac13a85ea1f9032c4aa0b796eb6ac039177c023cf10c44",
+  "results_sha256": "eca754f739577f26b045cd30d056c40fad664f549f30926cd948ecfb9b9b89df",
+  "circuit_sha256": "ffeed03d880f06caf2e1bada341477edcbc75089e3eb9b2a9d0a72995ecf88ca",
+  "generated_at": "2026-09-23T06:27:37.307225+00:00",
+  "pages": 9,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:27:37.310306+00:00",
+  "root_visual_reviewed_at": "2026-09-22T10:46:02.397650+00:00",
+  "visual_review": "All6 pages reviewed; page5 re-rendered after correcting40MHz input-current wording.",
+  "body_pages": 6,
+  "schematic_pages": 3,
+  "schematic_sheets_sha256": "82f1f0616fd6de548aad349980dad071274bca7997794774ac8e08356dd234a5",
+  "schematic_audit_sha256": "ae171b6635c7bada64764bc91e787d0c04c58081bac86344a02518e94b3f3b3d",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/08-ppsf/08-ppsf-review.pdf",
+    "sha256": "f3168d181d6d44560c228c9a8fec02f2b3fbf01bb5f7c7de793b00d35ea8c790",
+    "pages": 6,
+    "previous_render_reviewed_at": "2026-09-22T10:46:02.397636+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "e0bdc9730a53f2c86102fb353b97152c0038cfb3c277bae9c1f3642b3f6fdced"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "19e28a4ec9a136fca5af4224dc74d2e859b88a70a2d8ba141a72bff71cb3eec9"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "d3921616753c16cadd3d6e588042a7123e1ea3c61d2bf125ebbcaf8ca0183bcd"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "7deded4b31dccd4ced52726cc2b7af042b71fbb906d1656acbfea6321b8857df"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "c0beeb5ef7644d121392967f3a49f5d61215a87dd9bbdc0a3167d48b8e1b720f"
+    },
+    {
+      "page": 6,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "c57ad328e73952e21e9af5e79943526f75b653578242e3ee4ae0de1fe380713d"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "096bc4cddb8b33cdf8d60e16b2ceb336523801afb2cd03ef4691875f27390bc7",
+      "path": "reports/schematic-retrofit-renders/08-ppsf/page-07.png",
+      "sha256": "1f6fd937a2dae3f9fbae25bb67dfd0cd01cc143e331ed160f374c577eef72874"
+    },
+    {
+      "page": 8,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "8ee3ca513d4ad0392f01958c2c8f8044a663e34af4dbd7b0d1b15301563947de",
+      "path": "reports/schematic-retrofit-renders/08-ppsf/page-08.png",
+      "sha256": "b8ffff8334079d765a2abba91fa6be914c629777a062db236ed66977f7c41164"
+    },
+    {
+      "page": 9,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "678dfe8f2b8f8cbd4ae082164eea92f70c5f7993a8676946bc3d6c751b515bd9",
+      "path": "reports/schematic-retrofit-renders/08-ppsf/page-09.png",
+      "sha256": "b7bc43b05dd06ff0a3b2a95c97ec73456ea941c94e98148ef381658d725998e3"
+    }
+  ],
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change."
+}

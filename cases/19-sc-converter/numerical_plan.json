@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-09-28T18:03:12.781002+00:00",
+  "baseline_groups": {
+    "heavy": "runs/19/20260928T180211443851Z_heavy",
+    "light": "runs/19/20260928T180220087251Z_light"
+  },
+  "baseline": {
+    "maxstep_s": 5e-10,
+    "reltol": 1e-06
+  },
+  "refined": {
+    "maxstep_s": 2.5e-10,
+    "reltol": 1e-07
+  },
+  "bounds": {
+    "vout_mean_V": 0.0002,
+    "vout_min_V": 0.0002,
+    "vout_max_V": 0.0002,
+    "supply_power_W": 2e-06,
+    "clock_power_W": 2e-06,
+    "load_power_W": 2e-06,
+    "conversion_ratio": 0.0002,
+    "ripple_V": 0.0002,
+    "input_power_W": 2e-06,
+    "load_current_A": 1e-06,
+    "efficiency": 0.001,
+    "startup_s": 5e-10,
+    "post_startup_min_V": 0.0002
+  },
+  "rout_difference_max_ohm": 0.1
+}

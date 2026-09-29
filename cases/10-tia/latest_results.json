@@ -1,0 +1,289 @@
+{
+  "case_slot": 10,
+  "generated_at": "2026-09-22T10:34:18.052958+00:00",
+  "status": "complete_15pct",
+  "values": {
+    "zt_1m_ohm": 8263.724801233158,
+    "zt_10g_ohm": 10.001795504161198,
+    "bandwidth_hz": 649626880.0870719,
+    "power_w": 0.004688570893867397,
+    "noise_density_a_per_rt_hz": 3.346861526125138e-12,
+    "integrated_noise_a_rms": 6.666484173473463e-08,
+    "large_signal_zt_ohm": 8167.725477849444,
+    "sfdr_db": 70.67501982103414,
+    "largest_spur_hz": 200000000.0
+  },
+  "gates": {
+    "zt_1m_ohm": {
+      "value": 8263.724801233158,
+      "unit": "ohm",
+      "sense": "min",
+      "limits": {
+        "original": 8000.0,
+        "10pct": 7200.0,
+        "15pct": 6800.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": ">"
+    },
+    "bandwidth_hz": {
+      "value": 649626880.0870719,
+      "unit": "Hz",
+      "sense": "min",
+      "limits": {
+        "original": 750000000.0,
+        "10pct": 675000000.0,
+        "15pct": 637500000.0
+      },
+      "passes": {
+        "original": false,
+        "10pct": false,
+        "15pct": true
+      },
+      "comparison": ">"
+    },
+    "power_w": {
+      "value": 0.004688570893867397,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": "<"
+    },
+    "noise_density_a_per_rt_hz": {
+      "value": 3.346861526125138e-12,
+      "unit": "A/sqrtHz",
+      "sense": "max",
+      "limits": {
+        "original": 5e-12,
+        "10pct": 5.5e-12,
+        "15pct": 5.7499999999999995e-12
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": "<"
+    },
+    "integrated_noise_a_rms": {
+      "value": 6.666484173473463e-08,
+      "unit": "Arms",
+      "sense": "max",
+      "limits": {
+        "original": 1e-07,
+        "10pct": 1.1e-07,
+        "15pct": 1.1499999999999998e-07
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": "<"
+    },
+    "large_signal_zt_ohm": {
+      "value": 8167.725477849444,
+      "unit": "ohm",
+      "sense": "min",
+      "limits": {
+        "original": 8000.0,
+        "10pct": 7200.0,
+        "15pct": 6800.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": ">"
+    },
+    "sfdr_db": {
+      "value": 70.67501982103414,
+      "unit": "dBc",
+      "sense": "min",
+      "limits": {
+        "original": 70.0,
+        "10pct": 69.0848501887865,
+        "15pct": 68.58837851428585
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": ">"
+    }
+  },
+  "pass_tiers": {
+    "original": false,
+    "10pct": false,
+    "15pct": true
+  },
+  "measurement_detail": {
+    "ac": {
+      "bandwidth_is_lower_bound": false,
+      "bandwidth_logfrequency_crosscheck_Hz": 649593285.9733416,
+      "relative_interpolation_difference": 5.1715611068869904e-05,
+      "VDD_power_W": 0.0046885665919860235,
+      "VCM_power_W": 4.3018813738308944e-09
+    },
+    "noise": {
+      "points": 171,
+      "band_Hz": [
+        10000000.0,
+        500000000.0
+      ],
+      "worst_frequency_Hz": 500000000.0,
+      "power_law_integral_Arms": 6.666503470788931e-08,
+      "relative_integration_difference": 2.8946681798203144e-06
+    },
+    "sfdr": {
+      "frozen_function": "sfdr_metrics",
+      "translated_waveform": "runs/10/20260922T103417174989Z_sfdr/sfdr_psf.dat",
+      "translated_waveform_sha256": "e3358bab0a277a97b5ddecbcd0e9fb29aa1fb428c52e863dd3bfcccb320ff7d0",
+      "FFT_samples": 16384,
+      "cycles": 16,
+      "window_s": [
+        9.999999999949903e-09,
+        1.699999999999499e-07
+      ],
+      "sample_interval_s": 9.765625e-12,
+      "fundamental_amplitude_V": 0.08167725477849445,
+      "largest_spur_amplitude_V": 2.3897371849985728e-05,
+      "spectrum": "runs/10/20260922T103417174989Z_sfdr/spectrum.csv"
+    }
+  },
+  "source_nominal_checks": [
+    [
+      "pvt_transimpedance",
+      true,
+      "worst=8.26372 kOhm at tt/+27C/1.80V (requirement >8)"
+    ],
+    [
+      "pvt_bandwidth",
+      false,
+      "worst=649.627 MHz at tt/+27C/1.80V (requirement >750)"
+    ],
+    [
+      "pvt_power",
+      true,
+      "worst=4.68857 mW at tt/+27C/1.80V (requirement <5)"
+    ],
+    [
+      "pvt_noise_density",
+      true,
+      "worst=3.34686 pA/sqrt(Hz) at tt/+27C/1.80V (requirement <5)"
+    ],
+    [
+      "pvt_integrated_noise",
+      true,
+      "worst=0.0666648 uA rms at tt/+27C/1.80V (requirement <0.1)"
+    ],
+    [
+      "pvt_sfdr",
+      true,
+      "minimum SFDR=70.6750 dBc at tt/+27C/1.80V (>70); minimum large-signal ZT=8.16773 kOhm at tt/+27C/1.80V (>8)"
+    ]
+  ],
+  "operating_point": {
+    "MN1": {
+      "ids": 0.001491215557222884,
+      "gm": 0.004978640679157001,
+      "gds": 0.0002050386883791924,
+      "vgs": 0.8952201318068546,
+      "vds": 0.8952010123340821,
+      "vdsat": 0.2682901794965985,
+      "region": 2.0,
+      "gmid": 3.3386458819064413,
+      "gmro": 24.281469602213082,
+      "headroom_V": 0.6269108328374836
+    },
+    "MP1": {
+      "ids": -0.001491201355109875,
+      "gm": 0.005767417544035594,
+      "gds": 0.0002611675382122548,
+      "vgs": -0.9047798681931455,
+      "vds": -0.9047989876659179,
+      "vdsat": -0.3688730008988268,
+      "region": 2.0,
+      "gmid": 3.8676316409400244,
+      "gmro": 22.083209818167855,
+      "headroom_V": 0.5359259867670911
+    },
+    "MN2": {
+      "ids": 0.001093548427423338,
+      "gm": 0.003651009835722212,
+      "gds": 0.0001503516629725327,
+      "vgs": 0.8952151553679168,
+      "vds": 0.8952575844694217,
+      "vdsat": 0.2682885270974036,
+      "region": 2.0,
+      "gmid": 3.338681437570045,
+      "gmro": 24.283135706914024,
+      "headroom_V": 0.6269690573720181
+    },
+    "MP2": {
+      "ids": -0.001093557860844011,
+      "gm": 0.0042294273555863,
+      "gds": 0.000191535103658551,
+      "vgs": -0.9047848446320832,
+      "vds": -0.9047424155305783,
+      "vdsat": -0.3688759855563363,
+      "region": 2.0,
+      "gmid": 3.867584429709111,
+      "gmro": 22.081734756705934,
+      "headroom_V": 0.5358664299742419
+    },
+    "MREF": {
+      "ids": 1.999999954673577e-05,
+      "gm": 0.000280195849258422,
+      "gds": 1.229302710529468e-06,
+      "vgs": 0.5155605009158933,
+      "vds": 0.5155605009158933,
+      "vdsat": 0.1220336622695602,
+      "region": 2.0,
+      "gmid": 14.009792780427997,
+      "gmro": 227.93071784389053,
+      "headroom_V": 0.39352683864633314
+    }
+  },
+  "dc_nodes": {
+    "X.nbuf": 0.8952151553679168,
+    "X.n1": 0.8952010123340821,
+    "iref": 0.5155605009158933,
+    "vcm": 0.9,
+    "in": 0.8952201318068546,
+    "vout": 0.8952575844694217
+  },
+  "all_nominal_checks_complete": true,
+  "nonrelaxable_guards_pass": true,
+  "nominal_OP_all_5_saturation": true,
+  "model_dimensions_valid": true,
+  "run_dirs": [
+    "runs/10/20260922T103416916168Z_ac",
+    "runs/10/20260922T103417040905Z_noise",
+    "runs/10/20260922T103417174989Z_sfdr"
+  ],
+  "runs_by_analysis": {
+    "ac": "runs/10/20260922T103416916168Z_ac",
+    "noise": "runs/10/20260922T103417040905Z_noise",
+    "sfdr": "runs/10/20260922T103417174989Z_sfdr"
+  },
+  "geometry_sha256": "294b5b7c86807936f634b89298c1271af224674cc4aa420cff52f9f7ee65d1c0",
+  "source_verifier_sha256": "189bf23abe81b23eefef0c7c7fcf2806e01bc97d12533c127873fd802b04ecf2",
+  "measurement_engine": "Frozen sfdr_metrics and original nominal ac_checks/noise_checks/sfdr_check. AC crossing linear interpolation as bench.meas with log-frequency crosscheck; noise direct spectral maximum and PSD integration over fixed10..500MHz.",
+  "scope": "tt1.8V27C,originalAC/noise/official10uA SFDR; other14 process/temperature points,extra photodiodeC,voltagevariation,parasitics,mismatch excluded."
+}

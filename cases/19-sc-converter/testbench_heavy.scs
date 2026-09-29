@@ -1,0 +1,15 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/19-sc-converter/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/19-sc-converter/circuit.scs"
+VDD (vdd 0) vsource dc=1.8
+VCLK (clk_src 0) vsource type=pulse val0=0 val1=1.8 delay=5n rise=.4n fall=.4n width=24.6n period=50n
+RCLK (clk_src clk) resistor r=50
+RL (vout 0) resistor r=680
+X (0 vdd clk vout) sc_2to1_converter
+simulatorOptions options temp=27 tnom=27 reltol=1e-07 vabstol=1e-8 iabstol=1e-14
+saveOptions options save=selected
+save vdd vout clk clk_src VDD:p VCLK:p X.ckb X.ck X.fb1 X.fb2 X.n1 X.n2 X.s1 X.s2 X.pgA X.pgB X.ngA X.ngB X.npgA X.npgB X.ctA X.ctB X.cbA X.cbB
+tran tran stop=.7u maxstep=2.5e-10 skipdc=yes method=gear2only errpreset=conservative

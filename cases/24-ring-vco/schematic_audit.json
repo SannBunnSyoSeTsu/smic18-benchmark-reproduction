@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-09-23T06:18:47.049852+00:00",
+  "status": "passed",
+  "circuit_sha256": "fc15de4598b7f285d780f50fc2a85f864935cf0bfa81dfb4d21208dfdfef662c",
+  "hd_cells_sha256": "3b2e92d833d5e19f9a24476e8bfb07e03c8b05024c038bdb734ae9a805889e2a",
+  "renderer_sha256": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+  "layout_file": "scripts/schematics_mixed.py",
+  "layout_sha256": "b29c004d5ad88c8fcef0913faa4cdf4a5ba34357c72ccf7b59d02b9618f68d47",
+  "instance_counts": {
+    "MOS": 14,
+    "R": 1,
+    "HD": 7,
+    "C": 5
+  },
+  "expanded_leaf_instance_counts": {
+    "R": 1,
+    "MOS": 14,
+    "HD": 7,
+    "C": 5
+  },
+  "total_instances": 27,
+  "expanded_leaf_instances": 27,
+  "total_terminals": 110,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 2,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/24-ring-vco/schematic/connectivity.json": "450c1ad2426a14981d616dc3e128356a793d70448f3d97222d8d20163893fdfb",
+    "cases/24-ring-vco/schematic/full.pdf": "b582a43b489f05c0f5db03dc51bf414f4dbfdc98561c32922d77a045fa43762c",
+    "cases/24-ring-vco/schematic/full.png": "18aa11a55ab902a3e541ebb7926efe277dc3b51223e9fda7e267ec807cf247e7",
+    "cases/24-ring-vco/schematic/full.svg": "cabf3ddab87f008e416e44b01ae2eed9a841773aa1c8f82a34c019dcf00c5353",
+    "cases/24-ring-vco/schematic/layout_source.py": "b29c004d5ad88c8fcef0913faa4cdf4a5ba34357c72ccf7b59d02b9618f68d47",
+    "cases/24-ring-vco/schematic/renderer_source.py": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+    "cases/24-ring-vco/schematic/sheet-1.png": "840874a225ddb4740fd25b8554bca342af39c1a9c8f8f0f9372e337dc8fd5441",
+    "cases/24-ring-vco/schematic/sheet-1.svg": "c61d72f6a2689819f6d6eadbde5f2ab017269c19cbd4d0d89b1694397cfd34ec",
+    "cases/24-ring-vco/schematic/sheet-2.png": "82663c8a5fee56eb1602596add3fcdc1d2711cc8a9849285d7cad9e3a50daafb",
+    "cases/24-ring-vco/schematic/sheet-2.svg": "56c526af445c8f4a94f212747c599001b4b1607a087b155ee76bca315c282141",
+    "cases/24-ring-vco/schematic/sheets.pdf": "cd387f48f2603bb30e2aae630f1849d8560c48e4d5cace0b20be63f7b007458a",
+    "cases/24-ring-vco/schematic/symbol_source.py": "c65698950039c9fd48e1659d37f7fb5220517dd0dc1847b24f5b1761d0956898"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "final_source_freeze_at": "2026-09-23T06:18:47.050907+00:00",
+  "previous_visual_review": {
+    "reviewed_at": "2026-09-23T06:17:14.782910+00:00",
+    "note": "All split sheets and full overview actually viewed; connectivity, symbols, values, body ties and text readability reviewed.",
+    "reviewed_png_hashes": {
+      "cases/24-ring-vco/schematic/full.png": "18aa11a55ab902a3e541ebb7926efe277dc3b51223e9fda7e267ec807cf247e7",
+      "cases/24-ring-vco/schematic/sheet-1.png": "840874a225ddb4740fd25b8554bca342af39c1a9c8f8f0f9372e337dc8fd5441",
+      "cases/24-ring-vco/schematic/sheet-2.png": "82663c8a5fee56eb1602596add3fcdc1d2711cc8a9849285d7cad9e3a50daafb"
+    }
+  },
+  "rebuild_png_changes": [],
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-23T06:17:14.782910+00:00",
+  "visual_review_note": "All final sheet PNGs and full overview are byte-for-byte identical to the actually viewed artifacts; final renderer, symbols and layout sources were frozen beside the drawings."
+}

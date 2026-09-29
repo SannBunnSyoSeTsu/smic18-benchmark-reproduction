@@ -1,0 +1,5921 @@
+{
+  "generated_at": "2026-09-23T06:18:51.012078+00:00",
+  "circuit_sha256": "56f91d72cc942ead964ed387c001590690600315d999f535cc6f0f26940c4753",
+  "top": "lc_vco_2ghz",
+  "subcircuit_ports": {
+    "lc_vco_2ghz": [
+      "vss",
+      "iref",
+      "vctrl",
+      "vdd",
+      "outp",
+      "outn"
+    ]
+  },
+  "instances": {
+    "lc_vco_2ghz/MPREFU": {
+      "name": "MPREFU",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pbu",
+        "G": "pbu",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "17.8u",
+        "l": ".18u",
+        "m": "4"
+      },
+      "source_line": "MPREFU (pbu pbu vdd vdd) p18 w=17.8u l=.18u m=4",
+      "W_unit_um": 17.8,
+      "L_um": 0.18,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        6,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          6,
+          19
+        ],
+        "S": [
+          6,
+          21
+        ],
+        "G": [
+          4.45,
+          20
+        ],
+        "B": [
+          6.86,
+          20
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MPREFL": {
+      "name": "MPREFL",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "pbu",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "17.8u",
+        "l": ".18u",
+        "m": "4"
+      },
+      "source_line": "MPREFL (iref iref pbu vdd) p18 w=17.8u l=.18u m=4",
+      "W_unit_um": 17.8,
+      "L_um": 0.18,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        6,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          6,
+          13
+        ],
+        "S": [
+          6,
+          15
+        ],
+        "G": [
+          4.45,
+          14
+        ],
+        "B": [
+          6.86,
+          14
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MPFEED": {
+      "name": "MPFEED",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pcas",
+        "G": "pbu",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "17.8u",
+        "l": ".18u",
+        "m": "64"
+      },
+      "source_line": "MPFEED (pcas pbu vdd vdd) p18 w=17.8u l=.18u m=64",
+      "W_unit_um": 17.8,
+      "L_um": 0.18,
+      "m": 64.0,
+      "sheet": 1,
+      "origin": [
+        18,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          18,
+          19
+        ],
+        "S": [
+          18,
+          21
+        ],
+        "G": [
+          16.45,
+          20
+        ],
+        "B": [
+          18.86,
+          20
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MPCAS": {
+      "name": "MPCAS",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "tankct",
+        "G": "iref",
+        "S": "pcas",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "17.8u",
+        "l": ".18u",
+        "m": "64"
+      },
+      "source_line": "MPCAS (tankct iref pcas vdd) p18 w=17.8u l=.18u m=64",
+      "W_unit_um": 17.8,
+      "L_um": 0.18,
+      "m": 64.0,
+      "sheet": 1,
+      "origin": [
+        18,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          18,
+          13
+        ],
+        "S": [
+          18,
+          15
+        ],
+        "G": [
+          16.45,
+          14
+        ],
+        "B": [
+          18.86,
+          14
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MPVB": {
+      "name": "MPVB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vrefvar",
+        "G": "pbu",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "56.44u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPVB (vrefvar pbu vdd vdd) p18 w=56.44u l=1u m=4",
+      "W_unit_um": 56.44,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        32,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          19
+        ],
+        "S": [
+          32,
+          21
+        ],
+        "G": [
+          30.45,
+          20
+        ],
+        "B": [
+          32.86,
+          20
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MNB2": {
+      "name": "MNB2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vrefvar",
+        "G": "vrefvar",
+        "S": "nbmid",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.34u",
+        "l": "1u"
+      },
+      "source_line": "MNB2 (vrefvar vrefvar nbmid vss) n18 w=5.34u l=1u",
+      "W_unit_um": 5.34,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        32,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          13
+        ],
+        "S": [
+          32,
+          11
+        ],
+        "G": [
+          30.45,
+          12
+        ],
+        "B": [
+          32.86,
+          12
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MNB1": {
+      "name": "MNB1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nbmid",
+        "G": "nbmid",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.34u",
+        "l": "1u"
+      },
+      "source_line": "MNB1 (nbmid nbmid vss vss) n18 w=5.34u l=1u",
+      "W_unit_um": 5.34,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        32,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          6
+        ],
+        "S": [
+          32,
+          4
+        ],
+        "G": [
+          30.45,
+          5
+        ],
+        "B": [
+          32.86,
+          5
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MRT": {
+      "name": "MRT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "rtail",
+        "G": "nbmid",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.34u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MRT (rtail nbmid vss vss) n18 w=5.34u l=1u m=2",
+      "W_unit_um": 5.34,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        19,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          19,
+          5
+        ],
+        "S": [
+          19,
+          3
+        ],
+        "G": [
+          17.45,
+          4
+        ],
+        "B": [
+          19.86,
+          4
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MRI1": {
+      "name": "MRI1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ra",
+        "G": "vbias",
+        "S": "rtail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.12u",
+        "l": ".36u",
+        "m": "2"
+      },
+      "source_line": "MRI1 (ra vbias rtail vss) n18 w=5.12u l=.36u m=2",
+      "W_unit_um": 5.12,
+      "L_um": 0.36,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        12,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          13
+        ],
+        "S": [
+          12,
+          11
+        ],
+        "G": [
+          10.45,
+          12
+        ],
+        "B": [
+          12.86,
+          12
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MRI2": {
+      "name": "MRI2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "rout",
+        "G": "vrefvar",
+        "S": "rtail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.12u",
+        "l": ".36u",
+        "m": "2"
+      },
+      "source_line": "MRI2 (rout vrefvar rtail vss) n18 w=5.12u l=.36u m=2",
+      "W_unit_um": 5.12,
+      "L_um": 0.36,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        26,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          26,
+          13
+        ],
+        "S": [
+          26,
+          11
+        ],
+        "G": [
+          24.45,
+          12
+        ],
+        "B": [
+          26.86,
+          12
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MRL1": {
+      "name": "MRL1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ra",
+        "G": "ra",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "64.02u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MRL1 (ra ra vdd vdd) p18 w=64.02u l=1u m=2",
+      "W_unit_um": 64.01999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        12,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          19
+        ],
+        "S": [
+          12,
+          21
+        ],
+        "G": [
+          10.45,
+          20
+        ],
+        "B": [
+          12.86,
+          20
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MRL2": {
+      "name": "MRL2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "rout",
+        "G": "ra",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "64.02u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MRL2 (rout ra vdd vdd) p18 w=64.02u l=1u m=2",
+      "W_unit_um": 64.01999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        26,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          26,
+          19
+        ],
+        "S": [
+          26,
+          21
+        ],
+        "G": [
+          24.45,
+          20
+        ],
+        "B": [
+          26.86,
+          20
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MRPU": {
+      "name": "MRPU",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbias",
+        "G": "rout",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.22u",
+        "l": ".18u",
+        "m": "20"
+      },
+      "source_line": "MRPU (vbias rout vdd vdd) p18 w=9.22u l=.18u m=20",
+      "W_unit_um": 9.22,
+      "L_um": 0.18,
+      "m": 20.0,
+      "sheet": 2,
+      "origin": [
+        37,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          19
+        ],
+        "S": [
+          37,
+          21
+        ],
+        "G": [
+          35.45,
+          20
+        ],
+        "B": [
+          37.86,
+          20
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MRPD": {
+      "name": "MRPD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbias",
+        "G": "rout",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": ".18u",
+        "m": "4"
+      },
+      "source_line": "MRPD (vbias rout vss vss) n18 w=0.28u l=.18u m=4",
+      "W_unit_um": 0.28,
+      "L_um": 0.18,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        37,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          5
+        ],
+        "S": [
+          37,
+          3
+        ],
+        "G": [
+          35.45,
+          4
+        ],
+        "B": [
+          37.86,
+          4
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XLP": {
+      "name": "XLP",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "outp",
+        "2": "tankct"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLP (outp tankct) ind_rf r=60u n=3.5",
+      "sheet": 3,
+      "origin": [
+        12,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          12,
+          19.18
+        ],
+        "2": [
+          12,
+          20.82
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XLN": {
+      "name": "XLN",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "outn",
+        "2": "tankct"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLN (outn tankct) ind_rf r=60u n=3.5",
+      "sheet": 3,
+      "origin": [
+        30,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          30,
+          19.18
+        ],
+        "2": [
+          30,
+          20.82
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XCP": {
+      "name": "XCP",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outp",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "20u",
+        "lr": "30u"
+      },
+      "source_line": "XCP (outp vss) mim1_rf wr=20u lr=30u",
+      "sheet": 3,
+      "origin": [
+        5,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          5,
+          13.82
+        ],
+        "2": [
+          5,
+          12.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XCN": {
+      "name": "XCN",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outn",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "20u",
+        "lr": "30u"
+      },
+      "source_line": "XCN (outn vss) mim1_rf wr=20u lr=30u",
+      "sheet": 3,
+      "origin": [
+        38,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          38,
+          13.82
+        ],
+        "2": [
+          38,
+          12.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MNP": {
+      "name": "MNP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "outp",
+        "G": "outn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "24.1u",
+        "l": "0.18u"
+      },
+      "source_line": "MNP (outp outn vss vss) n18 w=24.1u l=0.18u",
+      "W_unit_um": 24.1,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        12,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          7
+        ],
+        "S": [
+          12,
+          5
+        ],
+        "G": [
+          10.45,
+          6
+        ],
+        "B": [
+          12.86,
+          6
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/MNN": {
+      "name": "MNN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "outn",
+        "G": "outp",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "24.1u",
+        "l": "0.18u"
+      },
+      "source_line": "MNN (outn outp vss vss) n18 w=24.1u l=0.18u",
+      "W_unit_um": 24.1,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        30,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          30,
+          7
+        ],
+        "S": [
+          30,
+          5
+        ],
+        "G": [
+          28.45,
+          6
+        ],
+        "B": [
+          30.86,
+          6
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XCCP0": {
+      "name": "XCCP0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outp",
+        "2": "varp"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCP0 (outp varp) mim1_rf wr=30u lr=30u",
+      "sheet": 4,
+      "origin": [
+        5,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          5,
+          20.82
+        ],
+        "2": [
+          5,
+          19.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XCCP1": {
+      "name": "XCCP1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outp",
+        "2": "varp"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCP1 (outp varp) mim1_rf wr=30u lr=30u",
+      "sheet": 4,
+      "origin": [
+        11,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          11,
+          20.82
+        ],
+        "2": [
+          11,
+          19.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XCCP2": {
+      "name": "XCCP2",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outp",
+        "2": "varp"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCP2 (outp varp) mim1_rf wr=30u lr=30u",
+      "sheet": 4,
+      "origin": [
+        17,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          17,
+          20.82
+        ],
+        "2": [
+          17,
+          19.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XVP0": {
+      "name": "XVP0",
+      "kind": "VAR",
+      "model": "pvar18w10l1_ckt_rf",
+      "pins": {
+        "1": "vctrl",
+        "2": "varp"
+      },
+      "parameters": {
+        "wr": "10u",
+        "lr": "1u",
+        "nf": "20"
+      },
+      "source_line": "XVP0 (vctrl varp) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20",
+      "sheet": 4,
+      "origin": [
+        5,
+        10
+      ],
+      "rendered_pins": {
+        "1": [
+          5,
+          10.82
+        ],
+        "2": [
+          5,
+          9.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XVP1": {
+      "name": "XVP1",
+      "kind": "VAR",
+      "model": "pvar18w10l1_ckt_rf",
+      "pins": {
+        "1": "vctrl",
+        "2": "varp"
+      },
+      "parameters": {
+        "wr": "10u",
+        "lr": "1u",
+        "nf": "20"
+      },
+      "source_line": "XVP1 (vctrl varp) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20",
+      "sheet": 4,
+      "origin": [
+        11,
+        10
+      ],
+      "rendered_pins": {
+        "1": [
+          11,
+          10.82
+        ],
+        "2": [
+          11,
+          9.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/RBP": {
+      "name": "RBP",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vbias",
+        "2": "varp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "3u"
+      },
+      "source_line": "RBP (vbias varp vss) rpposab_3t w=1u l=3u",
+      "sheet": 4,
+      "origin": [
+        10,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          9.18,
+          3
+        ],
+        "2": [
+          10.82,
+          3
+        ],
+        "B": [
+          10,
+          2.3
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/RBP2": {
+      "name": "RBP2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vbias",
+        "2": "varp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "3u"
+      },
+      "source_line": "RBP2 (vbias varp vss) rpposab_3t w=1u l=3u",
+      "sheet": 4,
+      "origin": [
+        10,
+        6
+      ],
+      "rendered_pins": {
+        "1": [
+          9.18,
+          6
+        ],
+        "2": [
+          10.82,
+          6
+        ],
+        "B": [
+          10,
+          5.3
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XCCN0": {
+      "name": "XCCN0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outn",
+        "2": "varn"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCN0 (outn varn) mim1_rf wr=30u lr=30u",
+      "sheet": 4,
+      "origin": [
+        27,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          27,
+          20.82
+        ],
+        "2": [
+          27,
+          19.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XCCN1": {
+      "name": "XCCN1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outn",
+        "2": "varn"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCN1 (outn varn) mim1_rf wr=30u lr=30u",
+      "sheet": 4,
+      "origin": [
+        33,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          33,
+          20.82
+        ],
+        "2": [
+          33,
+          19.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XCCN2": {
+      "name": "XCCN2",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outn",
+        "2": "varn"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCN2 (outn varn) mim1_rf wr=30u lr=30u",
+      "sheet": 4,
+      "origin": [
+        39,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          39,
+          20.82
+        ],
+        "2": [
+          39,
+          19.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XVN0": {
+      "name": "XVN0",
+      "kind": "VAR",
+      "model": "pvar18w10l1_ckt_rf",
+      "pins": {
+        "1": "vctrl",
+        "2": "varn"
+      },
+      "parameters": {
+        "wr": "10u",
+        "lr": "1u",
+        "nf": "20"
+      },
+      "source_line": "XVN0 (vctrl varn) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20",
+      "sheet": 4,
+      "origin": [
+        27,
+        10
+      ],
+      "rendered_pins": {
+        "1": [
+          27,
+          10.82
+        ],
+        "2": [
+          27,
+          9.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/XVN1": {
+      "name": "XVN1",
+      "kind": "VAR",
+      "model": "pvar18w10l1_ckt_rf",
+      "pins": {
+        "1": "vctrl",
+        "2": "varn"
+      },
+      "parameters": {
+        "wr": "10u",
+        "lr": "1u",
+        "nf": "20"
+      },
+      "source_line": "XVN1 (vctrl varn) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20",
+      "sheet": 4,
+      "origin": [
+        33,
+        10
+      ],
+      "rendered_pins": {
+        "1": [
+          33,
+          10.82
+        ],
+        "2": [
+          33,
+          9.18
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/RBN": {
+      "name": "RBN",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vbias",
+        "2": "varn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "3u"
+      },
+      "source_line": "RBN (vbias varn vss) rpposab_3t w=1u l=3u",
+      "sheet": 4,
+      "origin": [
+        32,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          31.18,
+          3
+        ],
+        "2": [
+          32.82,
+          3
+        ],
+        "B": [
+          32,
+          2.3
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    },
+    "lc_vco_2ghz/RBN2": {
+      "name": "RBN2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vbias",
+        "2": "varn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "3u"
+      },
+      "source_line": "RBN2 (vbias varn vss) rpposab_3t w=1u l=3u",
+      "sheet": 4,
+      "origin": [
+        32,
+        6
+      ],
+      "rendered_pins": {
+        "1": [
+          31.18,
+          6
+        ],
+        "2": [
+          32.82,
+          6
+        ],
+        "B": [
+          32,
+          5.3
+        ]
+      },
+      "block": "lc_vco_2ghz"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MPREFU": {
+      "name": "MPREFU",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pbu",
+        "G": "pbu",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "17.8u",
+        "l": ".18u",
+        "m": "4"
+      },
+      "source_line": "MPREFU (pbu pbu vdd vdd) p18 w=17.8u l=.18u m=4",
+      "W_unit_um": 17.8,
+      "L_um": 0.18,
+      "m": 4.0,
+      "definition": "lc_vco_2ghz/MPREFU",
+      "path": "MPREFU"
+    },
+    "MPREFL": {
+      "name": "MPREFL",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "pbu",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "17.8u",
+        "l": ".18u",
+        "m": "4"
+      },
+      "source_line": "MPREFL (iref iref pbu vdd) p18 w=17.8u l=.18u m=4",
+      "W_unit_um": 17.8,
+      "L_um": 0.18,
+      "m": 4.0,
+      "definition": "lc_vco_2ghz/MPREFL",
+      "path": "MPREFL"
+    },
+    "MPFEED": {
+      "name": "MPFEED",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pcas",
+        "G": "pbu",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "17.8u",
+        "l": ".18u",
+        "m": "64"
+      },
+      "source_line": "MPFEED (pcas pbu vdd vdd) p18 w=17.8u l=.18u m=64",
+      "W_unit_um": 17.8,
+      "L_um": 0.18,
+      "m": 64.0,
+      "definition": "lc_vco_2ghz/MPFEED",
+      "path": "MPFEED"
+    },
+    "MPCAS": {
+      "name": "MPCAS",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "tankct",
+        "G": "iref",
+        "S": "pcas",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "17.8u",
+        "l": ".18u",
+        "m": "64"
+      },
+      "source_line": "MPCAS (tankct iref pcas vdd) p18 w=17.8u l=.18u m=64",
+      "W_unit_um": 17.8,
+      "L_um": 0.18,
+      "m": 64.0,
+      "definition": "lc_vco_2ghz/MPCAS",
+      "path": "MPCAS"
+    },
+    "MPVB": {
+      "name": "MPVB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vrefvar",
+        "G": "pbu",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "56.44u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPVB (vrefvar pbu vdd vdd) p18 w=56.44u l=1u m=4",
+      "W_unit_um": 56.44,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "lc_vco_2ghz/MPVB",
+      "path": "MPVB"
+    },
+    "MNB1": {
+      "name": "MNB1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nbmid",
+        "G": "nbmid",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.34u",
+        "l": "1u"
+      },
+      "source_line": "MNB1 (nbmid nbmid vss vss) n18 w=5.34u l=1u",
+      "W_unit_um": 5.34,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "lc_vco_2ghz/MNB1",
+      "path": "MNB1"
+    },
+    "MNB2": {
+      "name": "MNB2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vrefvar",
+        "G": "vrefvar",
+        "S": "nbmid",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.34u",
+        "l": "1u"
+      },
+      "source_line": "MNB2 (vrefvar vrefvar nbmid vss) n18 w=5.34u l=1u",
+      "W_unit_um": 5.34,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "lc_vco_2ghz/MNB2",
+      "path": "MNB2"
+    },
+    "MRT": {
+      "name": "MRT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "rtail",
+        "G": "nbmid",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.34u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MRT (rtail nbmid vss vss) n18 w=5.34u l=1u m=2",
+      "W_unit_um": 5.34,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "lc_vco_2ghz/MRT",
+      "path": "MRT"
+    },
+    "MRI1": {
+      "name": "MRI1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ra",
+        "G": "vbias",
+        "S": "rtail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.12u",
+        "l": ".36u",
+        "m": "2"
+      },
+      "source_line": "MRI1 (ra vbias rtail vss) n18 w=5.12u l=.36u m=2",
+      "W_unit_um": 5.12,
+      "L_um": 0.36,
+      "m": 2.0,
+      "definition": "lc_vco_2ghz/MRI1",
+      "path": "MRI1"
+    },
+    "MRI2": {
+      "name": "MRI2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "rout",
+        "G": "vrefvar",
+        "S": "rtail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.12u",
+        "l": ".36u",
+        "m": "2"
+      },
+      "source_line": "MRI2 (rout vrefvar rtail vss) n18 w=5.12u l=.36u m=2",
+      "W_unit_um": 5.12,
+      "L_um": 0.36,
+      "m": 2.0,
+      "definition": "lc_vco_2ghz/MRI2",
+      "path": "MRI2"
+    },
+    "MRL1": {
+      "name": "MRL1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ra",
+        "G": "ra",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "64.02u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MRL1 (ra ra vdd vdd) p18 w=64.02u l=1u m=2",
+      "W_unit_um": 64.01999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "lc_vco_2ghz/MRL1",
+      "path": "MRL1"
+    },
+    "MRL2": {
+      "name": "MRL2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "rout",
+        "G": "ra",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "64.02u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MRL2 (rout ra vdd vdd) p18 w=64.02u l=1u m=2",
+      "W_unit_um": 64.01999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "lc_vco_2ghz/MRL2",
+      "path": "MRL2"
+    },
+    "MRPU": {
+      "name": "MRPU",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbias",
+        "G": "rout",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.22u",
+        "l": ".18u",
+        "m": "20"
+      },
+      "source_line": "MRPU (vbias rout vdd vdd) p18 w=9.22u l=.18u m=20",
+      "W_unit_um": 9.22,
+      "L_um": 0.18,
+      "m": 20.0,
+      "definition": "lc_vco_2ghz/MRPU",
+      "path": "MRPU"
+    },
+    "MRPD": {
+      "name": "MRPD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbias",
+        "G": "rout",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": ".18u",
+        "m": "4"
+      },
+      "source_line": "MRPD (vbias rout vss vss) n18 w=0.28u l=.18u m=4",
+      "W_unit_um": 0.28,
+      "L_um": 0.18,
+      "m": 4.0,
+      "definition": "lc_vco_2ghz/MRPD",
+      "path": "MRPD"
+    },
+    "XLP": {
+      "name": "XLP",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "outp",
+        "2": "tankct"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLP (outp tankct) ind_rf r=60u n=3.5",
+      "definition": "lc_vco_2ghz/XLP",
+      "path": "XLP"
+    },
+    "XLN": {
+      "name": "XLN",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "outn",
+        "2": "tankct"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLN (outn tankct) ind_rf r=60u n=3.5",
+      "definition": "lc_vco_2ghz/XLN",
+      "path": "XLN"
+    },
+    "XCP": {
+      "name": "XCP",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outp",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "20u",
+        "lr": "30u"
+      },
+      "source_line": "XCP (outp vss) mim1_rf wr=20u lr=30u",
+      "definition": "lc_vco_2ghz/XCP",
+      "path": "XCP"
+    },
+    "XCN": {
+      "name": "XCN",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outn",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "20u",
+        "lr": "30u"
+      },
+      "source_line": "XCN (outn vss) mim1_rf wr=20u lr=30u",
+      "definition": "lc_vco_2ghz/XCN",
+      "path": "XCN"
+    },
+    "RBP": {
+      "name": "RBP",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vbias",
+        "2": "varp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "3u"
+      },
+      "source_line": "RBP (vbias varp vss) rpposab_3t w=1u l=3u",
+      "definition": "lc_vco_2ghz/RBP",
+      "path": "RBP"
+    },
+    "RBN": {
+      "name": "RBN",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vbias",
+        "2": "varn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "3u"
+      },
+      "source_line": "RBN (vbias varn vss) rpposab_3t w=1u l=3u",
+      "definition": "lc_vco_2ghz/RBN",
+      "path": "RBN"
+    },
+    "RBP2": {
+      "name": "RBP2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vbias",
+        "2": "varp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "3u"
+      },
+      "source_line": "RBP2 (vbias varp vss) rpposab_3t w=1u l=3u",
+      "definition": "lc_vco_2ghz/RBP2",
+      "path": "RBP2"
+    },
+    "RBN2": {
+      "name": "RBN2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vbias",
+        "2": "varn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "3u"
+      },
+      "source_line": "RBN2 (vbias varn vss) rpposab_3t w=1u l=3u",
+      "definition": "lc_vco_2ghz/RBN2",
+      "path": "RBN2"
+    },
+    "MNP": {
+      "name": "MNP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "outp",
+        "G": "outn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "24.1u",
+        "l": "0.18u"
+      },
+      "source_line": "MNP (outp outn vss vss) n18 w=24.1u l=0.18u",
+      "W_unit_um": 24.1,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "lc_vco_2ghz/MNP",
+      "path": "MNP"
+    },
+    "MNN": {
+      "name": "MNN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "outn",
+        "G": "outp",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "24.1u",
+        "l": "0.18u"
+      },
+      "source_line": "MNN (outn outp vss vss) n18 w=24.1u l=0.18u",
+      "W_unit_um": 24.1,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "lc_vco_2ghz/MNN",
+      "path": "MNN"
+    },
+    "XCCP0": {
+      "name": "XCCP0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outp",
+        "2": "varp"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCP0 (outp varp) mim1_rf wr=30u lr=30u",
+      "definition": "lc_vco_2ghz/XCCP0",
+      "path": "XCCP0"
+    },
+    "XCCN0": {
+      "name": "XCCN0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outn",
+        "2": "varn"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCN0 (outn varn) mim1_rf wr=30u lr=30u",
+      "definition": "lc_vco_2ghz/XCCN0",
+      "path": "XCCN0"
+    },
+    "XCCP1": {
+      "name": "XCCP1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outp",
+        "2": "varp"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCP1 (outp varp) mim1_rf wr=30u lr=30u",
+      "definition": "lc_vco_2ghz/XCCP1",
+      "path": "XCCP1"
+    },
+    "XCCN1": {
+      "name": "XCCN1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outn",
+        "2": "varn"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCN1 (outn varn) mim1_rf wr=30u lr=30u",
+      "definition": "lc_vco_2ghz/XCCN1",
+      "path": "XCCN1"
+    },
+    "XCCP2": {
+      "name": "XCCP2",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outp",
+        "2": "varp"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCP2 (outp varp) mim1_rf wr=30u lr=30u",
+      "definition": "lc_vco_2ghz/XCCP2",
+      "path": "XCCP2"
+    },
+    "XCCN2": {
+      "name": "XCCN2",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "outn",
+        "2": "varn"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCCN2 (outn varn) mim1_rf wr=30u lr=30u",
+      "definition": "lc_vco_2ghz/XCCN2",
+      "path": "XCCN2"
+    },
+    "XVP0": {
+      "name": "XVP0",
+      "kind": "VAR",
+      "model": "pvar18w10l1_ckt_rf",
+      "pins": {
+        "1": "vctrl",
+        "2": "varp"
+      },
+      "parameters": {
+        "wr": "10u",
+        "lr": "1u",
+        "nf": "20"
+      },
+      "source_line": "XVP0 (vctrl varp) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20",
+      "definition": "lc_vco_2ghz/XVP0",
+      "path": "XVP0"
+    },
+    "XVN0": {
+      "name": "XVN0",
+      "kind": "VAR",
+      "model": "pvar18w10l1_ckt_rf",
+      "pins": {
+        "1": "vctrl",
+        "2": "varn"
+      },
+      "parameters": {
+        "wr": "10u",
+        "lr": "1u",
+        "nf": "20"
+      },
+      "source_line": "XVN0 (vctrl varn) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20",
+      "definition": "lc_vco_2ghz/XVN0",
+      "path": "XVN0"
+    },
+    "XVP1": {
+      "name": "XVP1",
+      "kind": "VAR",
+      "model": "pvar18w10l1_ckt_rf",
+      "pins": {
+        "1": "vctrl",
+        "2": "varp"
+      },
+      "parameters": {
+        "wr": "10u",
+        "lr": "1u",
+        "nf": "20"
+      },
+      "source_line": "XVP1 (vctrl varp) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20",
+      "definition": "lc_vco_2ghz/XVP1",
+      "path": "XVP1"
+    },
+    "XVN1": {
+      "name": "XVN1",
+      "kind": "VAR",
+      "model": "pvar18w10l1_ckt_rf",
+      "pins": {
+        "1": "vctrl",
+        "2": "varn"
+      },
+      "parameters": {
+        "wr": "10u",
+        "lr": "1u",
+        "nf": "20"
+      },
+      "source_line": "XVN1 (vctrl varn) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20",
+      "definition": "lc_vco_2ghz/XVN1",
+      "path": "XVN1"
+    }
+  },
+  "nets": {
+    "lc_vco_2ghz/pbu": [
+      {
+        "instance": "lc_vco_2ghz/MPREFU",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          6,
+          19
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPREFU",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          4.45,
+          20
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPREFL",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          6,
+          15
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPFEED",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          16.45,
+          20
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPVB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          30.45,
+          20
+        ]
+      }
+    ],
+    "lc_vco_2ghz/vdd": [
+      {
+        "instance": "lc_vco_2ghz/MPREFU",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          6,
+          21
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPREFU",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          6.86,
+          20
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPREFL",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          6.86,
+          14
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPFEED",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          18,
+          21
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPFEED",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          18.86,
+          20
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPCAS",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          18.86,
+          14
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPVB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          32,
+          21
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPVB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          32.86,
+          20
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRL1",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          12,
+          21
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRL1",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          12.86,
+          20
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRL2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          26,
+          21
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRL2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          26.86,
+          20
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRPU",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          37,
+          21
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRPU",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          37.86,
+          20
+        ]
+      }
+    ],
+    "lc_vco_2ghz/iref": [
+      {
+        "instance": "lc_vco_2ghz/MPREFL",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          6,
+          13
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPREFL",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          4.45,
+          14
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPCAS",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          16.45,
+          14
+        ]
+      }
+    ],
+    "lc_vco_2ghz/pcas": [
+      {
+        "instance": "lc_vco_2ghz/MPFEED",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          18,
+          19
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MPCAS",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          18,
+          15
+        ]
+      }
+    ],
+    "lc_vco_2ghz/tankct": [
+      {
+        "instance": "lc_vco_2ghz/MPCAS",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          18,
+          13
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XLP",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          12,
+          20.82
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XLN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          30,
+          20.82
+        ]
+      }
+    ],
+    "lc_vco_2ghz/vrefvar": [
+      {
+        "instance": "lc_vco_2ghz/MPVB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          32,
+          19
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNB2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          32,
+          13
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNB2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          30.45,
+          12
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRI2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          24.45,
+          12
+        ]
+      }
+    ],
+    "lc_vco_2ghz/nbmid": [
+      {
+        "instance": "lc_vco_2ghz/MNB2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          32,
+          11
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNB1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          32,
+          6
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNB1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          30.45,
+          5
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRT",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          17.45,
+          4
+        ]
+      }
+    ],
+    "lc_vco_2ghz/vss": [
+      {
+        "instance": "lc_vco_2ghz/MNB2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          32.86,
+          12
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNB1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          32,
+          4
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNB1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          32.86,
+          5
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRT",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          19,
+          3
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRT",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          19.86,
+          4
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRI1",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          12.86,
+          12
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRI2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          26.86,
+          12
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRPD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          37,
+          3
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRPD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          37.86,
+          4
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCP",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          5,
+          12.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          38,
+          12.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNP",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          12,
+          5
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNP",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          12.86,
+          6
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNN",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          30,
+          5
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNN",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          30.86,
+          6
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBP",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          10,
+          2.3
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBP2",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          10,
+          5.3
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBN",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          32,
+          2.3
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBN2",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          32,
+          5.3
+        ]
+      }
+    ],
+    "lc_vco_2ghz/rtail": [
+      {
+        "instance": "lc_vco_2ghz/MRT",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          19,
+          5
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRI1",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          12,
+          11
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRI2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          26,
+          11
+        ]
+      }
+    ],
+    "lc_vco_2ghz/ra": [
+      {
+        "instance": "lc_vco_2ghz/MRI1",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          12,
+          13
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRL1",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          12,
+          19
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRL1",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          10.45,
+          20
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRL2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          24.45,
+          20
+        ]
+      }
+    ],
+    "lc_vco_2ghz/vbias": [
+      {
+        "instance": "lc_vco_2ghz/MRI1",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          10.45,
+          12
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRPU",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          37,
+          19
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRPD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          37,
+          5
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBP",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          9.18,
+          3
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBP2",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          9.18,
+          6
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBN",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          31.18,
+          3
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBN2",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          31.18,
+          6
+        ]
+      }
+    ],
+    "lc_vco_2ghz/rout": [
+      {
+        "instance": "lc_vco_2ghz/MRI2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          26,
+          13
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRL2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          26,
+          19
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRPU",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          35.45,
+          20
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MRPD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          35.45,
+          4
+        ]
+      }
+    ],
+    "lc_vco_2ghz/outp": [
+      {
+        "instance": "lc_vco_2ghz/XLP",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          12,
+          19.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCP",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          5,
+          13.82
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNP",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          12,
+          7
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNN",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          28.45,
+          6
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCCP0",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          5,
+          20.82
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCCP1",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          11,
+          20.82
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCCP2",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          17,
+          20.82
+        ]
+      }
+    ],
+    "lc_vco_2ghz/outn": [
+      {
+        "instance": "lc_vco_2ghz/XLN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          30,
+          19.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          38,
+          13.82
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNP",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          10.45,
+          6
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/MNN",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          30,
+          7
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCCN0",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          27,
+          20.82
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCCN1",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          33,
+          20.82
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCCN2",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          39,
+          20.82
+        ]
+      }
+    ],
+    "lc_vco_2ghz/varp": [
+      {
+        "instance": "lc_vco_2ghz/XCCP0",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          5,
+          19.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCCP1",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          11,
+          19.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCCP2",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          17,
+          19.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XVP0",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          5,
+          9.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XVP1",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          11,
+          9.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBP",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          10.82,
+          3
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBP2",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          10.82,
+          6
+        ]
+      }
+    ],
+    "lc_vco_2ghz/vctrl": [
+      {
+        "instance": "lc_vco_2ghz/XVP0",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          5,
+          10.82
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XVP1",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          11,
+          10.82
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XVN0",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          27,
+          10.82
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XVN1",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          33,
+          10.82
+        ]
+      }
+    ],
+    "lc_vco_2ghz/varn": [
+      {
+        "instance": "lc_vco_2ghz/XCCN0",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          27,
+          19.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCCN1",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          33,
+          19.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XCCN2",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          39,
+          19.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XVN0",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          27,
+          9.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/XVN1",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          33,
+          9.18
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBN",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          32.82,
+          3
+        ]
+      },
+      {
+        "instance": "lc_vco_2ghz/RBN2",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          32.82,
+          6
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MNB2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNB1",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNB1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREFU",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREFU",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREFL",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPFEED",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPFEED",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCAS",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPVB",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPVB",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCAS",
+      "pin": "D",
+      "net": "tankct",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREFL",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREFL",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCAS",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPVB",
+      "pin": "D",
+      "net": "vrefvar",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNB2",
+      "pin": "D",
+      "net": "vrefvar",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNB2",
+      "pin": "G",
+      "net": "vrefvar",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNB2",
+      "pin": "S",
+      "net": "nbmid",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNB1",
+      "pin": "D",
+      "net": "nbmid",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNB1",
+      "pin": "G",
+      "net": "nbmid",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREFU",
+      "pin": "D",
+      "net": "pbu",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREFU",
+      "pin": "G",
+      "net": "pbu",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREFL",
+      "pin": "S",
+      "net": "pbu",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPFEED",
+      "pin": "G",
+      "net": "pbu",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPVB",
+      "pin": "G",
+      "net": "pbu",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPFEED",
+      "pin": "D",
+      "net": "pcas",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCAS",
+      "pin": "S",
+      "net": "pcas",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRI1",
+      "pin": "G",
+      "net": "vbias",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRPU",
+      "pin": "D",
+      "net": "vbias",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRPD",
+      "pin": "D",
+      "net": "vbias",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRT",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRT",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRI1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRI2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRPD",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRPD",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRT",
+      "pin": "D",
+      "net": "rtail",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRI1",
+      "pin": "S",
+      "net": "rtail",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRI2",
+      "pin": "S",
+      "net": "rtail",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRL1",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRL1",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRL2",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRL2",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRPU",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRPU",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRI2",
+      "pin": "G",
+      "net": "vrefvar",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRI2",
+      "pin": "D",
+      "net": "rout",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRL2",
+      "pin": "D",
+      "net": "rout",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRPU",
+      "pin": "G",
+      "net": "rout",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRPD",
+      "pin": "G",
+      "net": "rout",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRT",
+      "pin": "G",
+      "net": "nbmid",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRI1",
+      "pin": "D",
+      "net": "ra",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRL1",
+      "pin": "D",
+      "net": "ra",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRL1",
+      "pin": "G",
+      "net": "ra",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 2,
+      "instance": "MRL2",
+      "pin": "G",
+      "net": "ra",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "XLP",
+      "pin": "1",
+      "net": "outp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCP",
+      "pin": "1",
+      "net": "outp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNP",
+      "pin": "D",
+      "net": "outp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNN",
+      "pin": "G",
+      "net": "outp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "XLN",
+      "pin": "1",
+      "net": "outn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCN",
+      "pin": "1",
+      "net": "outn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNP",
+      "pin": "G",
+      "net": "outn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNN",
+      "pin": "D",
+      "net": "outn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "XLP",
+      "pin": "2",
+      "net": "tankct",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "XLN",
+      "pin": "2",
+      "net": "tankct",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCP",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCN",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNP",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNN",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCP0",
+      "pin": "2",
+      "net": "varp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCP1",
+      "pin": "2",
+      "net": "varp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCP2",
+      "pin": "2",
+      "net": "varp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XVP0",
+      "pin": "2",
+      "net": "varp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XVP1",
+      "pin": "2",
+      "net": "varp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBP",
+      "pin": "2",
+      "net": "varp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBP2",
+      "pin": "2",
+      "net": "varp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBP",
+      "pin": "1",
+      "net": "vbias",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBP2",
+      "pin": "1",
+      "net": "vbias",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBN",
+      "pin": "1",
+      "net": "vbias",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBN2",
+      "pin": "1",
+      "net": "vbias",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBP2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBN2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCP0",
+      "pin": "1",
+      "net": "outp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCP1",
+      "pin": "1",
+      "net": "outp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCP2",
+      "pin": "1",
+      "net": "outp",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XVP0",
+      "pin": "1",
+      "net": "vctrl",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XVP1",
+      "pin": "1",
+      "net": "vctrl",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XVN0",
+      "pin": "1",
+      "net": "vctrl",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XVN1",
+      "pin": "1",
+      "net": "vctrl",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCN0",
+      "pin": "2",
+      "net": "varn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCN1",
+      "pin": "2",
+      "net": "varn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCN2",
+      "pin": "2",
+      "net": "varn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XVN0",
+      "pin": "2",
+      "net": "varn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XVN1",
+      "pin": "2",
+      "net": "varn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBN",
+      "pin": "2",
+      "net": "varn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "RBN2",
+      "pin": "2",
+      "net": "varn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCN0",
+      "pin": "1",
+      "net": "outn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCN1",
+      "pin": "1",
+      "net": "outn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    },
+    {
+      "sheet": 4,
+      "instance": "XCCN2",
+      "pin": "1",
+      "net": "outn",
+      "path_to_named_net": true,
+      "block": "lc_vco_2ghz"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "lc_vco_2ghz",
+      "title": "叠接电流源与变容参考偏置",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6.86,
+              20
+            ],
+            [
+              7.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6.86,
+              14
+            ],
+            [
+              7.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18.86,
+              20
+            ],
+            [
+              19.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18.86,
+              14
+            ],
+            [
+              19.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              32.86,
+              20
+            ],
+            [
+              33.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              32.86,
+              12
+            ],
+            [
+              33.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              32.86,
+              5
+            ],
+            [
+              33.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6,
+              23
+            ],
+            [
+              32,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6,
+              21
+            ],
+            [
+              6,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              32,
+              21
+            ],
+            [
+              32,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              32,
+              4
+            ],
+            [
+              32,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pbu",
+          "points": [
+            [
+              6,
+              19
+            ],
+            [
+              6,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pbu",
+          "points": [
+            [
+              4.45,
+              20
+            ],
+            [
+              3.95,
+              20
+            ],
+            [
+              3.95,
+              17
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              6,
+              13
+            ],
+            [
+              6,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              4.45,
+              14
+            ],
+            [
+              3.95,
+              14
+            ],
+            [
+              3.95,
+              11
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pcas",
+          "points": [
+            [
+              18,
+              19
+            ],
+            [
+              18,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tankct",
+          "points": [
+            [
+              18,
+              13
+            ],
+            [
+              18,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vrefvar",
+          "points": [
+            [
+              32,
+              19
+            ],
+            [
+              32,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vrefvar",
+          "points": [
+            [
+              30.45,
+              12
+            ],
+            [
+              29.95,
+              12
+            ],
+            [
+              29.95,
+              15.5
+            ],
+            [
+              32,
+              15.5
+            ],
+            [
+              32,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nbmid",
+          "points": [
+            [
+              32,
+              11
+            ],
+            [
+              32,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nbmid",
+          "points": [
+            [
+              30.45,
+              5
+            ],
+            [
+              29.95,
+              5
+            ],
+            [
+              29.95,
+              8.5
+            ],
+            [
+              32,
+              8.5
+            ],
+            [
+              32,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pbu",
+          "points": [
+            [
+              16.45,
+              20
+            ],
+            [
+              15.899999999999999,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              16.45,
+              14
+            ],
+            [
+              15.899999999999999,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pbu",
+          "points": [
+            [
+              30.45,
+              20
+            ],
+            [
+              29.9,
+              20
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            7.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            7.15,
+            14
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            19.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            19.15,
+            14
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            33.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            33.15,
+            12
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            33.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            6,
+            23
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            32,
+            1.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "pbu",
+          "point": [
+            6,
+            17
+          ],
+          "text": "pbu",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            6,
+            10
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "pcas",
+          "point": [
+            18,
+            17
+          ],
+          "text": "pcas",
+          "body": false
+        },
+        {
+          "net": "tankct",
+          "point": [
+            18,
+            10
+          ],
+          "text": "tankct",
+          "body": false
+        },
+        {
+          "net": "vrefvar",
+          "point": [
+            32,
+            16
+          ],
+          "text": "vrefvar",
+          "body": false
+        },
+        {
+          "net": "nbmid",
+          "point": [
+            32,
+            9
+          ],
+          "text": "nbmid",
+          "body": false
+        },
+        {
+          "net": "pbu",
+          "point": [
+            15.899999999999999,
+            20
+          ],
+          "text": "pbu",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            15.899999999999999,
+            14
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "pbu",
+          "point": [
+            29.9,
+            20
+          ],
+          "text": "pbu",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "lc_vco_2ghz",
+      "title": "变容偏置调节器：差分放大与推挽输出",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              19.86,
+              4
+            ],
+            [
+              20.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.86,
+              12
+            ],
+            [
+              13.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              26.86,
+              12
+            ],
+            [
+              27.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12.86,
+              20
+            ],
+            [
+              13.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              26.86,
+              20
+            ],
+            [
+              27.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.86,
+              20
+            ],
+            [
+              38.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.86,
+              4
+            ],
+            [
+              38.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12,
+              23
+            ],
+            [
+              37,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12,
+              21
+            ],
+            [
+              12,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              26,
+              21
+            ],
+            [
+              26,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37,
+              21
+            ],
+            [
+              37,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              19,
+              1.3
+            ],
+            [
+              37,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              19,
+              3
+            ],
+            [
+              19,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37,
+              3
+            ],
+            [
+              37,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ra",
+          "points": [
+            [
+              12,
+              19
+            ],
+            [
+              12,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ra",
+          "points": [
+            [
+              10.45,
+              20
+            ],
+            [
+              9.95,
+              20
+            ],
+            [
+              9.95,
+              16
+            ],
+            [
+              12,
+              16
+            ],
+            [
+              12,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rout",
+          "points": [
+            [
+              26,
+              19
+            ],
+            [
+              26,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rtail",
+          "points": [
+            [
+              12,
+              11
+            ],
+            [
+              12,
+              8
+            ],
+            [
+              26,
+              8
+            ],
+            [
+              26,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rtail",
+          "points": [
+            [
+              19,
+              5
+            ],
+            [
+              19,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rout",
+          "points": [
+            [
+              35.45,
+              20
+            ],
+            [
+              32,
+              20
+            ],
+            [
+              32,
+              4
+            ],
+            [
+              35.45,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rout",
+          "points": [
+            [
+              26,
+              16
+            ],
+            [
+              32,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbias",
+          "points": [
+            [
+              37,
+              19
+            ],
+            [
+              37,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nbmid",
+          "points": [
+            [
+              17.45,
+              4
+            ],
+            [
+              16.9,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbias",
+          "points": [
+            [
+              10.45,
+              12
+            ],
+            [
+              9.899999999999999,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vrefvar",
+          "points": [
+            [
+              24.45,
+              12
+            ],
+            [
+              23.9,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ra",
+          "points": [
+            [
+              24.45,
+              20
+            ],
+            [
+              23.9,
+              20
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            20.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            13.15,
+            12
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            27.15,
+            12
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            13.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            27.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            38.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12,
+            23
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            19,
+            1.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ra",
+          "point": [
+            12,
+            16
+          ],
+          "text": "ra",
+          "body": false
+        },
+        {
+          "net": "rout",
+          "point": [
+            26,
+            16
+          ],
+          "text": "rout",
+          "body": false
+        },
+        {
+          "net": "rtail",
+          "point": [
+            19,
+            8
+          ],
+          "text": "rtail",
+          "body": false
+        },
+        {
+          "net": "vbias",
+          "point": [
+            37,
+            13
+          ],
+          "text": "vbias",
+          "body": false
+        },
+        {
+          "net": "nbmid",
+          "point": [
+            16.9,
+            4
+          ],
+          "text": "nbmid",
+          "body": false
+        },
+        {
+          "net": "vbias",
+          "point": [
+            9.899999999999999,
+            12
+          ],
+          "text": "vbias",
+          "body": false
+        },
+        {
+          "net": "vrefvar",
+          "point": [
+            23.9,
+            12
+          ],
+          "text": "vrefvar",
+          "body": false
+        },
+        {
+          "net": "ra",
+          "point": [
+            23.9,
+            20
+          ],
+          "text": "ra",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "block": "lc_vco_2ghz",
+      "title": "差分 LC 谐振腔与交叉耦合负阻",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.86,
+              6
+            ],
+            [
+              13.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              30.86,
+              6
+            ],
+            [
+              31.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "tankct",
+          "points": [
+            [
+              12,
+              23
+            ],
+            [
+              30,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tankct",
+          "points": [
+            [
+              12,
+              20.82
+            ],
+            [
+              12,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tankct",
+          "points": [
+            [
+              30,
+              20.82
+            ],
+            [
+              30,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5,
+              1.4
+            ],
+            [
+              38,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12,
+              5
+            ],
+            [
+              12,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              30,
+              5
+            ],
+            [
+              30,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5,
+              12.18
+            ],
+            [
+              5,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38,
+              12.18
+            ],
+            [
+              38,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outp",
+          "points": [
+            [
+              12,
+              19.18
+            ],
+            [
+              12,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outp",
+          "points": [
+            [
+              5,
+              13.82
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              12,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outn",
+          "points": [
+            [
+              30,
+              19.18
+            ],
+            [
+              30,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outn",
+          "points": [
+            [
+              38,
+              13.82
+            ],
+            [
+              38,
+              16
+            ],
+            [
+              30,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outn",
+          "points": [
+            [
+              10.45,
+              6
+            ],
+            [
+              9,
+              6
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              30,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outp",
+          "points": [
+            [
+              28.45,
+              6
+            ],
+            [
+              25,
+              6
+            ],
+            [
+              25,
+              11
+            ],
+            [
+              12,
+              11
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            13.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            31.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "tankct",
+          "point": [
+            12,
+            23
+          ],
+          "text": "tankct",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5,
+            1.4
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "outp",
+          "point": [
+            12,
+            17
+          ],
+          "text": "outp",
+          "body": false
+        },
+        {
+          "net": "outn",
+          "point": [
+            30,
+            17
+          ],
+          "text": "outn",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "block": "lc_vco_2ghz",
+      "title": "交流耦合、变容阵列与直流偏置电阻",
+      "wires": [
+        {
+          "net": "outp",
+          "points": [
+            [
+              5,
+              22.5
+            ],
+            [
+              17,
+              22.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outp",
+          "points": [
+            [
+              5,
+              20.82
+            ],
+            [
+              5,
+              22.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outp",
+          "points": [
+            [
+              11,
+              20.82
+            ],
+            [
+              11,
+              22.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outp",
+          "points": [
+            [
+              17,
+              20.82
+            ],
+            [
+              17,
+              22.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varp",
+          "points": [
+            [
+              5,
+              19.18
+            ],
+            [
+              5,
+              17.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varp",
+          "points": [
+            [
+              11,
+              19.18
+            ],
+            [
+              11,
+              17.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varp",
+          "points": [
+            [
+              17,
+              19.18
+            ],
+            [
+              17,
+              17.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varp",
+          "points": [
+            [
+              5,
+              17.5
+            ],
+            [
+              20,
+              17.5
+            ],
+            [
+              20,
+              8
+            ],
+            [
+              5,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varp",
+          "points": [
+            [
+              5,
+              9.18
+            ],
+            [
+              5,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varp",
+          "points": [
+            [
+              11,
+              9.18
+            ],
+            [
+              11,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vctrl",
+          "points": [
+            [
+              5,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vctrl",
+          "points": [
+            [
+              5,
+              10.82
+            ],
+            [
+              5,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vctrl",
+          "points": [
+            [
+              11,
+              10.82
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              2.3
+            ],
+            [
+              10,
+              1.85
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vbias",
+          "points": [
+            [
+              9.18,
+              3
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varp",
+          "points": [
+            [
+              10.82,
+              3
+            ],
+            [
+              17,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              5.3
+            ],
+            [
+              10,
+              4.85
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vbias",
+          "points": [
+            [
+              9.18,
+              6
+            ],
+            [
+              7,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varp",
+          "points": [
+            [
+              10.82,
+              6
+            ],
+            [
+              17,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbias",
+          "points": [
+            [
+              7,
+              3
+            ],
+            [
+              7,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varp",
+          "points": [
+            [
+              17,
+              3
+            ],
+            [
+              17,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outn",
+          "points": [
+            [
+              27,
+              22.5
+            ],
+            [
+              39,
+              22.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outn",
+          "points": [
+            [
+              27,
+              20.82
+            ],
+            [
+              27,
+              22.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outn",
+          "points": [
+            [
+              33,
+              20.82
+            ],
+            [
+              33,
+              22.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "outn",
+          "points": [
+            [
+              39,
+              20.82
+            ],
+            [
+              39,
+              22.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varn",
+          "points": [
+            [
+              27,
+              19.18
+            ],
+            [
+              27,
+              17.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varn",
+          "points": [
+            [
+              33,
+              19.18
+            ],
+            [
+              33,
+              17.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varn",
+          "points": [
+            [
+              39,
+              19.18
+            ],
+            [
+              39,
+              17.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varn",
+          "points": [
+            [
+              27,
+              17.5
+            ],
+            [
+              42,
+              17.5
+            ],
+            [
+              42,
+              8
+            ],
+            [
+              27,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varn",
+          "points": [
+            [
+              27,
+              9.18
+            ],
+            [
+              27,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varn",
+          "points": [
+            [
+              33,
+              9.18
+            ],
+            [
+              33,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vctrl",
+          "points": [
+            [
+              27,
+              13
+            ],
+            [
+              33,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vctrl",
+          "points": [
+            [
+              27,
+              10.82
+            ],
+            [
+              27,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vctrl",
+          "points": [
+            [
+              33,
+              10.82
+            ],
+            [
+              33,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              32,
+              2.3
+            ],
+            [
+              32,
+              1.85
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vbias",
+          "points": [
+            [
+              31.18,
+              3
+            ],
+            [
+              29,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varn",
+          "points": [
+            [
+              32.82,
+              3
+            ],
+            [
+              39,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              32,
+              5.3
+            ],
+            [
+              32,
+              4.85
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vbias",
+          "points": [
+            [
+              31.18,
+              6
+            ],
+            [
+              29,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varn",
+          "points": [
+            [
+              32.82,
+              6
+            ],
+            [
+              39,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbias",
+          "points": [
+            [
+              29,
+              3
+            ],
+            [
+              29,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "varn",
+          "points": [
+            [
+              39,
+              3
+            ],
+            [
+              39,
+              8
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "outp",
+          "point": [
+            5,
+            22.5
+          ],
+          "text": "outp",
+          "body": false
+        },
+        {
+          "net": "varp",
+          "point": [
+            20,
+            15
+          ],
+          "text": "varp",
+          "body": false
+        },
+        {
+          "net": "vctrl",
+          "point": [
+            5,
+            13
+          ],
+          "text": "vctrl",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            10,
+            1.85
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            10,
+            4.85
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vbias",
+          "point": [
+            7,
+            4.5
+          ],
+          "text": "vbias",
+          "body": false
+        },
+        {
+          "net": "outn",
+          "point": [
+            27,
+            22.5
+          ],
+          "text": "outn",
+          "body": false
+        },
+        {
+          "net": "varn",
+          "point": [
+            42,
+            15
+          ],
+          "text": "varn",
+          "body": false
+        },
+        {
+          "net": "vctrl",
+          "point": [
+            27,
+            13
+          ],
+          "text": "vctrl",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            32,
+            1.85
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            32,
+            4.85
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vbias",
+          "point": [
+            29,
+            4.5
+          ],
+          "text": "vbias",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [
+    {
+      "sheet": 3,
+      "nets": [
+        "outp",
+        "outn"
+      ],
+      "point": [
+        12,
+        9
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 3,
+      "nets": [
+        "outn",
+        "outp"
+      ],
+      "point": [
+        25,
+        9
+      ],
+      "junction": false
+    }
+  ],
+  "unused_ports": {
+    "lc_vco_2ghz": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

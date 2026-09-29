@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-09-23T06:18:43.053109+00:00",
+  "status": "passed",
+  "circuit_sha256": "86c144ccb47792bd6c7138674ec8c4a91ffeb98d9921b1860ba02759fdb7c971",
+  "hd_cells_sha256": null,
+  "renderer_sha256": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+  "layout_file": "scripts/schematics_core.py",
+  "layout_sha256": "e28fbcf5a01d57ea17091e3312b1f838000ac5e19fb97b869eb7a7032fd37535",
+  "instance_counts": {
+    "MOS": 10,
+    "R": 1,
+    "C": 1
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 10,
+    "R": 1,
+    "C": 1
+  },
+  "total_instances": 12,
+  "expanded_leaf_instances": 12,
+  "total_terminals": 44,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 2,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/16-miller/schematic/connectivity.json": "6b96fdd0c9619f2eec66f11e21d2a9fd65f20849970a88d6215c7b63d2c1fd07",
+    "cases/16-miller/schematic/full.pdf": "aff88168d1ec3c2af85afa7f3082f0e4ca4f83f85146e7a985ccc8d45481271c",
+    "cases/16-miller/schematic/full.png": "556726f290806979f678a7f916425549c4c45e7fe6664e794d2be318a5bbef25",
+    "cases/16-miller/schematic/full.svg": "8f116e43463f9472e48594dc3a973f281da6e7bd3aaf27b88f43cc543fdab1ec",
+    "cases/16-miller/schematic/layout_source.py": "e28fbcf5a01d57ea17091e3312b1f838000ac5e19fb97b869eb7a7032fd37535",
+    "cases/16-miller/schematic/renderer_source.py": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+    "cases/16-miller/schematic/sheet-1.png": "dec4f48d548b9700951fd7bd9133e7117fd1146c1c784f7573a7d2d3ff7d0cc3",
+    "cases/16-miller/schematic/sheet-1.svg": "1011d07d85d8e4d00c491b1749cb4e7acf207e800c4f4a35ff16dc5dae46b2fe",
+    "cases/16-miller/schematic/sheet-2.png": "f2cc3f94cb6c6a6259298fa7083dda717a3a498fd8d5c9883f7f8aa16d1c79f6",
+    "cases/16-miller/schematic/sheet-2.svg": "e3968508a6f0c180697293e6e25cea7e8dd4ac0b92ca212708e577141b8fc7c2",
+    "cases/16-miller/schematic/sheets.pdf": "004af4cdf3bf3b5f815a7bed65c5b8ccad2ed1f89790cc250308dc207d1e01fe",
+    "cases/16-miller/schematic/symbol_source.py": "c65698950039c9fd48e1659d37f7fb5220517dd0dc1847b24f5b1761d0956898"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "final_source_freeze_at": "2026-09-23T06:18:43.054035+00:00",
+  "previous_visual_review": {
+    "reviewed_at": "2026-09-23T06:13:53.295009+00:00",
+    "note": "All split sheets and full overview actually viewed; connectivity, symbols, values, body ties and text readability reviewed.",
+    "reviewed_png_hashes": {
+      "cases/16-miller/schematic/full.png": "556726f290806979f678a7f916425549c4c45e7fe6664e794d2be318a5bbef25",
+      "cases/16-miller/schematic/sheet-1.png": "dec4f48d548b9700951fd7bd9133e7117fd1146c1c784f7573a7d2d3ff7d0cc3",
+      "cases/16-miller/schematic/sheet-2.png": "f2cc3f94cb6c6a6259298fa7083dda717a3a498fd8d5c9883f7f8aa16d1c79f6"
+    }
+  },
+  "rebuild_png_changes": [],
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-23T06:13:53.295009+00:00",
+  "visual_review_note": "All final sheet PNGs and full overview are byte-for-byte identical to the actually viewed artifacts; final renderer, symbols and layout sources were frozen beside the drawings."
+}

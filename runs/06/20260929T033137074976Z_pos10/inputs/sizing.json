@@ -1,0 +1,520 @@
+{
+  "generated_at": "2026-09-29T03:03:30.049382+00:00",
+  "roles": {
+    "input": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.36,
+      "W_um": 9.938070499967576,
+      "Id_A": 2.5e-05,
+      "Vgs_V": 0.4892605297045875,
+      "Vov_V": 0.037902685895703475,
+      "gmid": 18.0,
+      "gm_S": 0.00045000000000000004,
+      "ft_Hz": 2842676393.351616,
+      "gmro": 101.58281225126639,
+      "id_w_Apm": 2.5155788540724844,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.36,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 566
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L360nm_VDS0p450.json",
+      "lut_sha256": "d3bc319c5881ed3563df75b08be12ec5de5a6f7cdecb6c2e17683f4189eaa286",
+      "rounded_W_um": 9.94
+    },
+    "nbias": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.36,
+      "W_um": 1.8900859384130582,
+      "Id_A": 2.5e-05,
+      "Vgs_V": 0.6104991769012904,
+      "Vov_V": 0.15908072505930188,
+      "gmid": 10.0,
+      "gm_S": 0.00025,
+      "ft_Hz": 7079093129.899327,
+      "gmro": 60.914332314772025,
+      "id_w_Apm": 13.226911799042504,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.36,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 566
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L360nm_VDS0p450.json",
+      "lut_sha256": "d3bc319c5881ed3563df75b08be12ec5de5a6f7cdecb6c2e17683f4189eaa286",
+      "rounded_W_um": 1.9000000000000001
+    },
+    "pbias": {
+      "model": "p18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.36,
+      "W_um": 11.725043323615516,
+      "Id_A": 2.5e-05,
+      "Vgs_V": 0.5874862213919219,
+      "Vov_V": 0.1352636936605324,
+      "gmid": 12.0,
+      "gm_S": 0.00030000000000000003,
+      "ft_Hz": 1421681246.696354,
+      "gmro": 114.18890881921712,
+      "id_w_Apm": 2.132188283658387,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "p18",
+        "polarity": "pmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.36,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 488
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/p18_L360nm_VDS0p450.json",
+      "lut_sha256": "ee4e960a7f56905dde9d4ca16e2d3dd8b11fe672958a531578d11c2800b53b4b",
+      "rounded_W_um": 11.72
+    },
+    "ncas": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 1.3941476939132278,
+      "Id_A": 1e-05,
+      "Vgs_V": 0.5249959535675496,
+      "Vov_V": 0.04285768338194176,
+      "gmid": 16.0,
+      "gm_S": 0.00016,
+      "ft_Hz": 11370379130.301497,
+      "gmro": 32.93512077854812,
+      "id_w_Apm": 7.172841187242536,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 562
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L180nm_VDS0p450.json",
+      "lut_sha256": "23de3e3b54740ba12d20048280e7beea451a0066bbf05af9bfc5cd978a029495",
+      "rounded_W_um": 1.4000000000000001
+    },
+    "pcas": {
+      "model": "p18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 2.175973514230056,
+      "Id_A": 5e-06,
+      "Vgs_V": 0.5504291094564848,
+      "Vov_V": 0.06633024227735489,
+      "gmid": 16.0,
+      "gm_S": 8e-05,
+      "ft_Hz": 3755978168.5321927,
+      "gmro": 37.0898048076404,
+      "id_w_Apm": 2.2978220862073293,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "p18",
+        "polarity": "pmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 511
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/p18_L180nm_VDS0p450.json",
+      "lut_sha256": "113c19ac21a0a84e3e33dfcac26a018500c04084b2100eba007648140f48b449",
+      "rounded_W_um": 2.18
+    },
+    "nout": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 1.0,
+      "W_um": 0.633509301838737,
+      "Id_A": 5e-06,
+      "Vgs_V": 0.6336373583692829,
+      "Vov_V": 0.22097556552516925,
+      "gmid": 8.0,
+      "gm_S": 4e-05,
+      "ft_Hz": 1430877829.6955812,
+      "gmro": 102.50376334372987,
+      "id_w_Apm": 7.892543938167424,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 1.0,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 487
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L1000nm_VDS0p450.json",
+      "lut_sha256": "9a855796a988085c4ea8631f0ed07dab1f85ce009a1f90fed978235ad0efe452",
+      "rounded_W_um": 0.64
+    },
+    "pout": {
+      "model": "p18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 1.0,
+      "W_um": 3.049910482664202,
+      "Id_A": 5e-06,
+      "Vgs_V": 0.6497399626790026,
+      "Vov_V": 0.2247194314087533,
+      "gmid": 8.0,
+      "gm_S": 4e-05,
+      "ft_Hz": 297572337.3176716,
+      "gmro": 166.53989431499124,
+      "id_w_Apm": 1.639392378373128,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "p18",
+        "polarity": "pmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 1.0,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 477
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/p18_L1000nm_VDS0p450.json",
+      "lut_sha256": "ef45dd88a2dfbe7f5b10b434d7d80bca24869fe6ec766cdb876fc4b1ed2976e8",
+      "rounded_W_um": 3.04
+    },
+    "startup": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 1.0,
+      "W_um": 0.5,
+      "Id_A": 3.9462719690837115e-06,
+      "Vgs_V": 0.6336373583692829,
+      "Vov_V": 0.22097556552516925,
+      "gmid": 8.0,
+      "gm_S": 3.157017575266969e-05,
+      "ft_Hz": 1430877829.6955812,
+      "gmro": 102.50376334372987,
+      "id_w_Apm": 7.892543938167424,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 1.0,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 487
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L1000nm_VDS0p450.json",
+      "lut_sha256": "9a855796a988085c4ea8631f0ed07dab1f85ce009a1f90fed978235ad0efe452",
+      "rounded_W_um": 0.5
+    }
+  },
+  "parameters": {
+    "input_scale": 1,
+    "load_scale": 1,
+    "tail_scale": 0.7,
+    "output_scale": 1.2,
+    "feedback_fF": 109.5,
+    "instance_roles": {
+      "XNM14": {
+        "role": "nbias",
+        "multiplier": 0.7,
+        "W_um": 1.33,
+        "L_um": 0.36
+      },
+      "XNM13a": {
+        "role": "ncas",
+        "multiplier": 0.25,
+        "W_um": 0.35000000000000003,
+        "L_um": 0.18
+      },
+      "XNM13b": {
+        "role": "ncas",
+        "multiplier": 0.25,
+        "W_um": 0.35000000000000003,
+        "L_um": 0.18
+      },
+      "XNM13c": {
+        "role": "ncas",
+        "multiplier": 0.25,
+        "W_um": 0.35000000000000003,
+        "L_um": 0.18
+      },
+      "XNM13d": {
+        "role": "ncas",
+        "multiplier": 0.25,
+        "W_um": 0.35000000000000003,
+        "L_um": 0.18
+      },
+      "XNM12": {
+        "role": "ncas",
+        "multiplier": 2.0,
+        "W_um": 2.8000000000000003,
+        "L_um": 0.18
+      },
+      "XNM11": {
+        "role": "nbias",
+        "multiplier": 0.2,
+        "W_um": 0.38000000000000006,
+        "L_um": 0.36
+      },
+      "XNM10": {
+        "role": "nout",
+        "multiplier": 1.2,
+        "W_um": 0.768,
+        "L_um": 1.0
+      },
+      "XNM9": {
+        "role": "ncas",
+        "multiplier": 1,
+        "W_um": 1.4000000000000001,
+        "L_um": 0.18
+      },
+      "XNM8": {
+        "role": "nbias",
+        "multiplier": 1.0,
+        "W_um": 1.9000000000000001,
+        "L_um": 0.36
+      },
+      "XNM7": {
+        "role": "nout",
+        "multiplier": 1.2,
+        "W_um": 0.768,
+        "L_um": 1.0
+      },
+      "XNM5": {
+        "role": "nbias",
+        "multiplier": 1.0,
+        "W_um": 1.9000000000000001,
+        "L_um": 0.36
+      },
+      "XNM4": {
+        "role": "nbias",
+        "multiplier": 1.0,
+        "W_um": 1.9000000000000001,
+        "L_um": 0.36
+      },
+      "XNM15a": {
+        "role": "ncas",
+        "multiplier": 0.25,
+        "W_um": 0.35000000000000003,
+        "L_um": 0.18
+      },
+      "XNM15b": {
+        "role": "ncas",
+        "multiplier": 0.25,
+        "W_um": 0.35000000000000003,
+        "L_um": 0.18
+      },
+      "XNM15c": {
+        "role": "ncas",
+        "multiplier": 0.25,
+        "W_um": 0.35000000000000003,
+        "L_um": 0.18
+      },
+      "XNM15d": {
+        "role": "ncas",
+        "multiplier": 0.25,
+        "W_um": 0.35000000000000003,
+        "L_um": 0.18
+      },
+      "XNM3": {
+        "role": "nbias",
+        "multiplier": 0.7,
+        "W_um": 1.33,
+        "L_um": 0.36
+      },
+      "XNM2": {
+        "role": "nbias",
+        "multiplier": 1.0,
+        "W_um": 1.9000000000000001,
+        "L_um": 0.36
+      },
+      "XNM1": {
+        "role": "input",
+        "multiplier": 1,
+        "W_um": 9.94,
+        "L_um": 0.36
+      },
+      "XNM0": {
+        "role": "input",
+        "multiplier": 1,
+        "W_um": 9.94,
+        "L_um": 0.36
+      },
+      "XPM12": {
+        "role": "pbias",
+        "multiplier": 0.2,
+        "W_um": 2.3440000000000003,
+        "L_um": 0.36
+      },
+      "XPM11": {
+        "role": "pcas",
+        "multiplier": 1.0,
+        "W_um": 2.18,
+        "L_um": 0.18
+      },
+      "XPM10": {
+        "role": "pcas",
+        "multiplier": 2.0,
+        "W_um": 4.36,
+        "L_um": 0.18
+      },
+      "XPM9": {
+        "role": "pout",
+        "multiplier": 1.2,
+        "W_um": 3.6479999999999997,
+        "L_um": 1.0
+      },
+      "XPM8": {
+        "role": "pbias",
+        "multiplier": 1.0,
+        "W_um": 11.72,
+        "L_um": 0.36
+      },
+      "XPM7": {
+        "role": "pcas",
+        "multiplier": 1,
+        "W_um": 2.18,
+        "L_um": 0.18
+      },
+      "XPM6": {
+        "role": "pout",
+        "multiplier": 1.2,
+        "W_um": 3.6479999999999997,
+        "L_um": 1.0
+      },
+      "XPM13": {
+        "role": "pcas",
+        "multiplier": 1.0,
+        "W_um": 2.18,
+        "L_um": 0.18
+      },
+      "XPM1": {
+        "role": "pbias",
+        "multiplier": 1.0,
+        "W_um": 11.72,
+        "L_um": 0.36
+      },
+      "XPM5": {
+        "role": "pbias",
+        "multiplier": 1.0,
+        "W_um": 11.72,
+        "L_um": 0.36
+      },
+      "XPM4": {
+        "role": "pbias",
+        "multiplier": 1.0,
+        "W_um": 11.72,
+        "L_um": 0.36
+      },
+      "XPM0": {
+        "role": "pbias",
+        "multiplier": 1.0,
+        "W_um": 11.72,
+        "L_um": 0.36
+      },
+      "XPM3": {
+        "role": "pbias",
+        "multiplier": 1.0,
+        "W_um": 11.72,
+        "L_um": 0.36
+      },
+      "MSTARTP": {
+        "role": "startup",
+        "multiplier": 1,
+        "W_um": 0.5,
+        "L_um": 1
+      },
+      "MSTARTN": {
+        "role": "startup",
+        "multiplier": 1,
+        "W_um": 0.5,
+        "L_um": 1
+      }
+    }
+  },
+  "rationale": "Source three-stage SC/ring signal topology and all reset terminals retained. Native LUT roles choose .18/.36/1um lengths with explicit instance ratios. Input and feedback capacitors set closed-loop gain; auto-zero stores second-stage gate biases; long-channel output devices reduce quiescent current. Matched cascode sizing restores differential symmetry. Two weak, bias-gated NMOS startup paths charge initially unpowered AC-coupled inputs during the unchanged zero-state transient; their conductance naturally falls as the inputs rise. No forced initial voltage or added ideal fixture source. Dynamic gmID is not constant.",
+  "circuit_sha256": "96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1"
+}

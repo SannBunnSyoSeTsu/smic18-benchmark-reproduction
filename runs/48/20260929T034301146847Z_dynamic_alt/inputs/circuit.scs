@@ -1,0 +1,71 @@
+simulator lang=spectre
+subckt sar_cmp (clk outn outp vss vdd vinn vinp)
+MTAIL (tail clk vss vss) n18 w=8.14u l=.18u
+MINP (dx vinp tail vss) n18 w=9.02u l=.18u
+MINN (dy vinn tail vss) n18 w=9.02u l=.18u
+MLN (ln lp dx vss) n18 w=4.06u l=.18u
+MLP (lp ln dy vss) n18 w=4.06u l=.18u
+MPN (ln lp vdd vdd) p18 w=6.12u l=.18u
+MPP (lp ln vdd vdd) p18 w=6.12u l=.18u
+MRST_dx (dx clk vdd vdd) p18 w=6.12u l=.18u
+MRST_dy (dy clk vdd vdd) p18 w=6.12u l=.18u
+MRST_ln (ln clk vdd vdd) p18 w=6.12u l=.18u
+MRST_lp (lp clk vdd vdd) p18 w=6.12u l=.18u
+XON (ln outp vdd vss vdd vss) INHDV4
+XOP (lp outn vdd vss vdd vss) INHDV4
+ends sar_cmp
+subckt sar_sample (clk clkb vin vout vdd vss)
+MSN (vout clk vin vss) n18 w=6.78u l=.18u
+MSP (vout clkb vin vdd) p18 w=20.04u l=.18u
+ends sar_sample
+subckt sar_cdac (clks clkb dctrl3 dctrl2 dctrl1 vss vdd vin vrefn vrefp vtop)
+XS (clks clkb vin vtop vdd vss) sar_sample
+CD (vtop vss) capacitor c=10f
+C1 (vtop bot1) capacitor c=50f
+MN1 (bot1 dctrl1 vrefn vss) n18 w=0.68u l=.18u
+MP1 (bot1 dctrl1 vrefp vdd) p18 w=2u l=.18u
+C2 (vtop bot2) capacitor c=100f
+MN2 (bot2 dctrl2 vrefn vss) n18 w=1.36u l=.18u
+MP2 (bot2 dctrl2 vrefp vdd) p18 w=4u l=.18u
+C3 (vtop bot3) capacitor c=200f
+MN3 (bot3 dctrl3 vrefn vss) n18 w=2.72u l=.18u
+MP3 (bot3 dctrl3 vrefp vdd) p18 w=8u l=.18u
+ends sar_cdac
+subckt sar_logic (clkc cmpck dcmpn dcmpp dctrln3 dctrln2 dctrln1 dctrlp3 dctrlp2 dctrlp1 do3 do2 do1 do0 vss vdd)
+XGATE (clkc rdyb clk_gate vdd vss vdd vss) AND2HDV1
+XLOOP (nvalid clk_gate loop vdd vss vdd vss) AND2HDV1
+XVALID (dcmpp dcmpn valid vdd vss vdd vss) OR2HDV2
+XNVALID (valid nvalid vdd vss vdd vss) INHDV1
+XRDY (clk0 rdyb vdd vss vdd vss) INHDV1
+XDELAY1 (loop delay1 vdd vss vdd vss) INHDV1
+CDEL (delay1 vss) capacitor c=70f
+XDELAY2 (delay1 cmpck vdd vss vdd vss) INHDV8
+XSEQ3 (valid vdd clk3 clkc vdd vss vdd vss) DRNQHDV1
+XDECp3 (clk3 dcmpn dctrlp3_raw clkc vdd vss vdd vss) DRNQHDV1
+XMSBp (dctrlp3_raw dctrlp3 vdd vss vdd vss) INHDV8
+XDECn3 (clk3 dcmpp dctrln3_raw clkc vdd vss vdd vss) DRNQHDV1
+XMSBn (dctrln3_raw dctrln3 vdd vss vdd vss) INHDV8
+XSEQ2 (valid clk3 clk2 clkc vdd vss vdd vss) DRNQHDV1
+XDECp2 (clk2 dcmpp dctrlp2 clkc vdd vss vdd vss) DRNQHDV1
+XDECn2 (clk2 dcmpn dctrln2 clkc vdd vss vdd vss) DRNQHDV1
+XSEQ1 (valid clk2 clk1 clkc vdd vss vdd vss) DRNQHDV1
+XDECp1 (clk1 dcmpp dctrlp1 clkc vdd vss vdd vss) DRNQHDV1
+XDECn1 (clk1 dcmpn dctrln1 clkc vdd vss vdd vss) DRNQHDV1
+XSEQ0 (valid clk1 clk0 clkc vdd vss vdd vss) DRNQHDV1
+XDECp0 (clk0 dcmpp dctrlp0_raw vdd vss vdd vss) DQHDV1
+XLSBp (dctrlp0_raw clk0 dctrlp0 vdd vss vdd vss) AND2HDV1
+XDECn0 (clk0 dcmpn dctrln0_raw vdd vss vdd vss) DQHDV1
+XLSBn (dctrln0_raw clk0 dctrln0 vdd vss vdd vss) AND2HDV1
+XEOC (clk0 nvalid eoc vdd vss vdd vss) AND2HDV1
+XOUT0 (eoc dctrlp0 do0 vdd vss vdd vss) DQHDV1
+XOUT1 (eoc dctrlp1 do1 vdd vss vdd vss) DQHDV1
+XOUT2 (eoc dctrlp2 do2 vdd vss vdd vss) DQHDV1
+XOUT3 (eoc dctrlp3 do3 vdd vss vdd vss) DQHDV1
+ends sar_logic
+subckt sar_adc_4bit_async (clks dout3 dout2 dout1 dout0 vss vdd vinn vinp vrefn vrefp)
+XCLKC (clks clkc vdd vss vdd vss) INHDV8
+XCMP (cmpck dcmpn dcmpp vss vdd vresn vresp) sar_cmp
+XDP (clks clkc dctrlp3 dctrlp2 dctrlp1 vss vdd vinp vrefn vrefp vresp) sar_cdac
+XDN (clks clkc dctrln3 dctrln2 dctrln1 vss vdd vinn vrefn vrefp vresn) sar_cdac
+XLOG (clkc cmpck dcmpn dcmpp dctrln3 dctrln2 dctrln1 dctrlp3 dctrlp2 dctrlp1 dout3 dout2 dout1 dout0 vss vdd) sar_logic
+ends sar_adc_4bit_async

@@ -1,0 +1,18 @@
+{
+  "corrected_at": "2026-09-28T18:59:48.517988+00:00",
+  "scope": "Current batch case19 knowledge prose only; no circuit, simulation, PDF, results or numerical audit changes.",
+  "reason": "Manual transcription error in circuit SHA256 string; checked against actual circuit bytes and existing PDF/results metadata.",
+  "incorrect_text": "69f65f854aa02cd0251d90dd44a8a16840e73ba6a835ddde886870fd010f144",
+  "correct_circuit_sha256": "69f65f854aa02cd025a190dd4448aa16840e73ba6a835cdde88687dfe010f144",
+  "prior_text_file_sha256": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/19-sc-converter/knowledge.md": "b35c7203bcbb45cb71e092692917f2c72fe623c75ee14582cf56fd770b393d3e",
+    "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/SMIC18-Benchmark-Reproduction/cases/19-sc-converter.md": "c443f07c4a9a85dd71ab02c963e8a760131734643b018df6ddc65c1256c2767f"
+  },
+  "corrected_text_file_sha256": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/19-sc-converter/knowledge.md": "2c9aab0ade3c76943802bcd1f8c53e7866a748e0923034b6e1406819d193ba08",
+    "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/SMIC18-Benchmark-Reproduction/cases/19-sc-converter.md": "18f77774374477a4c0e25de2a2e873002e1797d6fd6c2b6f7f405be5ebecc496"
+  },
+  "pdf_sha256_unchanged": "33b55a66461bb6c80e2ca0a38894d3efcd75f77bbf3b0565247669a7106072c1",
+  "results_sha256_unchanged": "bf240fd5b87f9cfb1b215bd00d3d15de95c4ec8b6e06f745cbedc3dd465f4098",
+  "prior_receipt": "reports/19-sc-converter-delivery-audit-before-text-fix.json"
+}

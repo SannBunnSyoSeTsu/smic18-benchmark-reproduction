@@ -1,0 +1,735 @@
+{
+  "slot": 46,
+  "case": "cases/46-flash-adc3bit",
+  "circuit_sha256": "932079bd1b52f635b8632deb2e396f31044070eec8bb522322982af2f83ff7bd",
+  "hd_cells_sha256": "b4d10b2a6438d06ebc348de56f56fc9a32b5bc55ea6b8a0286a6789ab6710b7f",
+  "top": "flash_adc_3bit",
+  "source_definition_count": 54,
+  "source_terminal_count": 259,
+  "source_expanded_leaf_count": 118,
+  "hierarchy_boundaries": [
+    {
+      "path": "XC1",
+      "definition": "fa_comp",
+      "port_bindings": {
+        "clk": "clk",
+        "vinp": "vin",
+        "vinn": "t1",
+        "outp": "cp1",
+        "outn": "cn1",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XS1",
+      "definition": "fa_sr",
+      "port_bindings": {
+        "sn": "cn1",
+        "rn": "cp1",
+        "q": "q1",
+        "qb": "qb1",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XC2",
+      "definition": "fa_comp",
+      "port_bindings": {
+        "clk": "clk",
+        "vinp": "vin",
+        "vinn": "t2",
+        "outp": "cp2",
+        "outn": "cn2",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XS2",
+      "definition": "fa_sr",
+      "port_bindings": {
+        "sn": "cn2",
+        "rn": "cp2",
+        "q": "q2",
+        "qb": "qb2",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XC3",
+      "definition": "fa_comp",
+      "port_bindings": {
+        "clk": "clk",
+        "vinp": "vin",
+        "vinn": "t3",
+        "outp": "cp3",
+        "outn": "cn3",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XS3",
+      "definition": "fa_sr",
+      "port_bindings": {
+        "sn": "cn3",
+        "rn": "cp3",
+        "q": "q3",
+        "qb": "qb3",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XC4",
+      "definition": "fa_comp",
+      "port_bindings": {
+        "clk": "clk",
+        "vinp": "vin",
+        "vinn": "t4",
+        "outp": "cp4",
+        "outn": "cn4",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XS4",
+      "definition": "fa_sr",
+      "port_bindings": {
+        "sn": "cn4",
+        "rn": "cp4",
+        "q": "q4",
+        "qb": "qb4",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XC5",
+      "definition": "fa_comp",
+      "port_bindings": {
+        "clk": "clk",
+        "vinp": "vin",
+        "vinn": "t5",
+        "outp": "cp5",
+        "outn": "cn5",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XS5",
+      "definition": "fa_sr",
+      "port_bindings": {
+        "sn": "cn5",
+        "rn": "cp5",
+        "q": "q5",
+        "qb": "qb5",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XC6",
+      "definition": "fa_comp",
+      "port_bindings": {
+        "clk": "clk",
+        "vinp": "vin",
+        "vinn": "t6",
+        "outp": "cp6",
+        "outn": "cn6",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XS6",
+      "definition": "fa_sr",
+      "port_bindings": {
+        "sn": "cn6",
+        "rn": "cp6",
+        "q": "q6",
+        "qb": "qb6",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XC7",
+      "definition": "fa_comp",
+      "port_bindings": {
+        "clk": "clk",
+        "vinp": "vin",
+        "vinn": "t7",
+        "outp": "cp7",
+        "outn": "cn7",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XS7",
+      "definition": "fa_sr",
+      "port_bindings": {
+        "sn": "cn7",
+        "rn": "cp7",
+        "q": "q7",
+        "qb": "qb7",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    }
+  ],
+  "connectivity_sha256": "c31b8f59a1ccba4cfc8918523c237eb6df58b85ea4006be3760da61e03825795",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 54,
+  "schematic_expanded_leaf_count": 118,
+  "independently_traced_terminals": 259,
+  "expanded_leaf_counts_by_kind": {
+    "R": 8,
+    "C": 7,
+    "MOS": 77,
+    "HD": 26
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "fa_comp/MTAIL",
+      "D_G_S_B": [
+        "tail",
+        "clk",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "fa_comp/MIN1",
+      "D_G_S_B": [
+        "dx",
+        "vinp",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "fa_comp/MIN2",
+      "D_G_S_B": [
+        "dy",
+        "vinn",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "fa_comp/MNL1",
+      "D_G_S_B": [
+        "outn",
+        "outp",
+        "dx",
+        "vss"
+      ]
+    },
+    {
+      "instance": "fa_comp/MNL2",
+      "D_G_S_B": [
+        "outp",
+        "outn",
+        "dy",
+        "vss"
+      ]
+    },
+    {
+      "instance": "fa_comp/MPL1",
+      "D_G_S_B": [
+        "outn",
+        "outp",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "fa_comp/MPL2",
+      "D_G_S_B": [
+        "outp",
+        "outn",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "fa_comp/MPC1",
+      "D_G_S_B": [
+        "outn",
+        "clk",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "fa_comp/MPC2",
+      "D_G_S_B": [
+        "outp",
+        "clk",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "fa_comp/MPC3",
+      "D_G_S_B": [
+        "dx",
+        "clk",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "fa_comp/MPC4",
+      "D_G_S_B": [
+        "dy",
+        "clk",
+        "vdd",
+        "vdd"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [
+    {
+      "instance": "fa_sr/XG1",
+      "model": "NAND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "sn",
+        "A2": "qb",
+        "ZN": "q",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "fa_sr/XG2",
+      "model": "NAND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "rn",
+        "A2": "q",
+        "ZN": "qb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE1",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "q2",
+        "ZN": "n2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE2",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "q4",
+        "ZN": "n4",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE3",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "q6",
+        "ZN": "n6",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE4",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "q7",
+        "ZN": "n7",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE5",
+      "model": "NAND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "q2",
+        "A2": "n4",
+        "ZN": "x1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE6",
+      "model": "NAND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "n6",
+        "A2": "x1",
+        "ZN": "b1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE7",
+      "model": "NAND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "q5",
+        "A2": "n6",
+        "ZN": "y1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE8",
+      "model": "NAND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "q3",
+        "A2": "n4",
+        "ZN": "y2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE9",
+      "model": "NAND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "q1",
+        "A2": "n2",
+        "ZN": "y3",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE10",
+      "model": "NAND4HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "n7",
+        "A2": "y1",
+        "A3": "y2",
+        "A4": "y3",
+        "ZN": "b0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE11",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "q4",
+        "ZN": "d4",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "flash_adc_3bit/XE12",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "d4",
+        "ZN": "b2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    }
+  ],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 69,
+  "hd_models_declared": {
+    "INHDV1": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "NAND2HDV1": [
+      "A1",
+      "A2",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "NAND4HDV1": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ]
+  },
+  "HD_internal_MOS_counts": {
+    "INHDV1": 2,
+    "NAND2HDV1": 4,
+    "NAND4HDV1": 8
+  },
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-09-26T04:17:06.992117+00:00",
+  "status": "passed",
+  "circuit_sha256": "e04ccef10f5421ebe9f379e9baa59e99fd238fb5b7db73ba28bf47e11f07b0de",
+  "hd_cells_sha256": "2f58c53039c04edf72b6c70236c9ffc0d0c99a1beafa1f3d37e35754f06c37cd",
+  "renderer_sha256": "918b7c678253c59d9f19beb6d1631ff46e5c6ed49cace441bde935c284affae8",
+  "layout_file": "scripts/schematic15.py",
+  "layout_sha256": "ba6fa108ee587c7dd9edcde2f294d61e6851974fba37249ad9a4f6dd23b8a1d6",
+  "instance_counts": {
+    "HD": 3,
+    "MOS": 4,
+    "C": 2
+  },
+  "expanded_leaf_instance_counts": {
+    "HD": 3,
+    "C": 2,
+    "MOS": 4
+  },
+  "total_instances": 9,
+  "expanded_leaf_instances": 9,
+  "total_terminals": 39,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 1,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/15-unregulated-pump/schematic/connectivity.json": "0e303f18aa801c638252b8b1ed31e4d1d643d4a0e2a69798da529c55c0e7e94e",
+    "cases/15-unregulated-pump/schematic/full.pdf": "518877b53dd6010fe5e816389461935889b61f6049c3c03dc1b9f5aad4d69595",
+    "cases/15-unregulated-pump/schematic/full.png": "a634117936e3890d8bdbf59771d75a1259b83b7e3c1250391f820926606c788a",
+    "cases/15-unregulated-pump/schematic/full.svg": "be6ca6147f40adeee748d941a90ffcf550a01069841b3f245336837fef4a3233",
+    "cases/15-unregulated-pump/schematic/layout_source.py": "ba6fa108ee587c7dd9edcde2f294d61e6851974fba37249ad9a4f6dd23b8a1d6",
+    "cases/15-unregulated-pump/schematic/renderer_source.py": "918b7c678253c59d9f19beb6d1631ff46e5c6ed49cace441bde935c284affae8",
+    "cases/15-unregulated-pump/schematic/sheet-1.png": "c46cbe175db75bb743c21c4faad1a1260b7bc6d286b269166ae1207bed402899",
+    "cases/15-unregulated-pump/schematic/sheet-1.svg": "1da5907112c02d51bd095919dd4290b8b317cc13b3e7fa059b2942551d7c948b",
+    "cases/15-unregulated-pump/schematic/sheets.pdf": "59c399fb6b66213be25a4b9b4063e430814db3eef6383ab2038541259cb6231c",
+    "cases/15-unregulated-pump/schematic/symbol_source.py": "b40da4f8a653b6d880132a5b28a9209435d767215cdba57d3682ccb27e9cee0c"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-26T04:23:23.950407+00:00",
+  "visual_review_note": "实际逐页查看9页PDF及单张完整总图：中文、原与放宽门槛、全部尺寸、迭代表、源漏端名及供电/井端清楚。复看修订第3页的关断电流mA轴与0至2V输出轴，以及第5页有效源漏交换说明；无遮挡裁切。保留LTE警告及10%开启电流等级。"
+}

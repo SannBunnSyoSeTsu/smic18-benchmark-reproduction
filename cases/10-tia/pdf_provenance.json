@@ -1,0 +1,114 @@
+{
+  "pdf": "reports/10-tia-review.pdf",
+  "sha256": "6f1982d6ba509e6c72abdf2204657dc7ae20485336e8979bcef19cec588858af",
+  "results_sha256": "b0d7c5bef8fa70cfb8143ca661f1480b62d43aa52385f34b272e60f9fecba2b3",
+  "circuit_sha256": "3e96952b371aec9580fd6fc7366ff78e08bf19958c732078db5e69c9341ff565",
+  "sizing_sha256": "b04c4734dca29841bf3e51456508080bdfbb58cca6b8b725719d164321c3b108",
+  "geometry_sha256": "294b5b7c86807936f634b89298c1271af224674cc4aa420cff52f9f7ee65d1c0",
+  "generated_at": "2026-09-23T06:19:10.602652+00:00",
+  "pages": 8,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:19:10.605573+00:00",
+  "opening_paragraph_sha256": "e5c34d05f3a80e98c859e9695eb0bcb3e1edb0ce9c95c24851e0c7a425877be1",
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change.",
+  "root_render_reviewed_at": "2026-09-22T10:55:14.747937+00:00",
+  "root_render_review_note": "Root reviewed all six pages; final page5 table wrapping reviewed again; other five final renders unchanged.",
+  "body_pages": 6,
+  "schematic_pages": 2,
+  "schematic_sheets_sha256": "26f97344bd106911c4341d2f5e85fc5d91675937b736a00621d609d303f28dfb",
+  "schematic_audit_sha256": "33300ca9527204c0d810f2a404e2b23371e17130bbac99bc9a129d2f6a71e4d3",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/10-tia/10-tia-review.pdf",
+    "sha256": "f002834c724ff70faaba00831f7c3d3e82323a24273a4d9f804a163d50dfcb71",
+    "pages": 6,
+    "previous_render_reviewed_at": "2026-09-22T10:51:05.222957+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "7ba3d4b1d2d7cb8bcb9dd028a655825de1b810d4e5f290e5a1e73c81ddc31deb"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "be9d440ae23a136998086f3eab722c6f5dc6c8c90b3c7df74735b23717f80a6b"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "94fa7f1f690bf052daf270feae0a39a235d291d7844900ea06d565ac3da098a4"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "c75304a7c693ad709f6d8fb5d1fa00e6cc127388269aca1bfa90cf0fdcef3267"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "6b8807303cd99642083368dfb0081cb516000686af59621ceaca0283966c83b1"
+    },
+    {
+      "page": 6,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "ebefcc1a26574f7066d0c5c5e671c096f02142a2fe6e3f7a7f164c9e39e4899a"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "e3e81a6a61004e8472d1966716efba2c891e16efe45eb2612edb7af32c287d70",
+      "path": "reports/schematic-retrofit-renders/10-tia/page-07.png",
+      "sha256": "67e0d42c204d88c6e7e31633a108c561b8bb76ce300488d792665bfd812ae1ba"
+    },
+    {
+      "page": 8,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "cb28cf9183c52bc1cb2533f5230f620cd7c3270dc1c3ce55694b67c4635f20ab",
+      "path": "reports/schematic-retrofit-renders/10-tia/page-08.png",
+      "sha256": "e28c0327ef01923a6728acc0ac3fc45de4c2a86b1755adc9022c9ae55bd91516"
+    }
+  ]
+}

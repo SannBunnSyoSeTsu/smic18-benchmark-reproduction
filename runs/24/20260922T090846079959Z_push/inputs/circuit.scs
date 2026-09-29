@@ -1,0 +1,31 @@
+// Five-stage current-starved VCO; original HD cells on virtual rails.
+simulator lang=spectre
+subckt current_starved_ring_vco (vss vctrl vdd vout)
+RDEG (ndeg vss) resistor r=47000
+MVIN (pdio vctrl ndeg vss) n18 w=2.04u l=0.36u
+MPDIO (pdio pdio vdd vdd) p18 w=8.52u l=0.36u
+MPSRC (ndio pdio vdd vdd) p18 w=8.52u l=0.36u
+MNDIO (ndio ndio vss vss) n18 w=2.04u l=0.36u
+MPS1 (s1t pdio vdd vdd) p18 w=8.52u l=0.36u
+XINV1 (n5 n1 s1t s1b vdd vss) INHDV2
+MNS1 (s1b ndio vss vss) n18 w=2.04u l=0.36u
+CS1 (n1 vss) capacitor c=30f
+MPS2 (s2t pdio vdd vdd) p18 w=8.52u l=0.36u
+XINV2 (n1 n2 s2t s2b vdd vss) INHDV2
+MNS2 (s2b ndio vss vss) n18 w=2.04u l=0.36u
+CS2 (n2 vss) capacitor c=30f
+MPS3 (s3t pdio vdd vdd) p18 w=8.52u l=0.36u
+XINV3 (n2 n3 s3t s3b vdd vss) INHDV2
+MNS3 (s3b ndio vss vss) n18 w=2.04u l=0.36u
+CS3 (n3 vss) capacitor c=30f
+MPS4 (s4t pdio vdd vdd) p18 w=8.52u l=0.36u
+XINV4 (n3 n4 s4t s4b vdd vss) INHDV2
+MNS4 (s4b ndio vss vss) n18 w=2.04u l=0.36u
+CS4 (n4 vss) capacitor c=30f
+MPS5 (s5t pdio vdd vdd) p18 w=8.52u l=0.36u
+XINV5 (n4 n5 s5t s5b vdd vss) INHDV2
+MNS5 (s5b ndio vss vss) n18 w=2.04u l=0.36u
+CS5 (n5 vss) capacitor c=30f
+XBUF0 (n5 bo1 vdd vss vdd vss) INHDV0
+XBUF1 (bo1 vout vdd vss vdd vss) INHDV2
+ends current_starved_ring_vco

@@ -1,0 +1,78 @@
+{
+  "pdf": "reports/04-gmr-review.pdf",
+  "sha256": "05e3a437b7f41404201f85f4bafd4090e5fa2dc89ebe3ecf47ddfdad8b2454a3",
+  "results_sha256": "b5706dfe2b1c8a1b40fa715fb41a2e25869f664d22728ea34d9a6774e7a22dc6",
+  "circuit_sha256": "a24eabce265e3f4d1403df9021be27a53369767e545ee6fcb38ca90eaebd8554",
+  "generated_at": "2026-09-23T06:19:09.223721+00:00",
+  "pages": 5,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:19:09.226870+00:00",
+  "opening_paragraph_sha256": "852584a15a55852a4fd3f69bfed2dc329c67dd36632ee2552a02fce7716c9a5c",
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change.",
+  "body_pages": 4,
+  "schematic_pages": 1,
+  "schematic_sheets_sha256": "b8f5a3d311caa58e1cdb2daeb43dc2110f3ad40904bf6866e72bcb2db05af771",
+  "schematic_audit_sha256": "262ce469c145db1f361b8ab501ed53ffd349737b8285010a99cb8d507b2911ab",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/04-gmr/04-gmr-review.pdf",
+    "sha256": "31d658d8b3782111debfd711649cb5bab7f609056008befd03114de4a28858d1",
+    "pages": 4,
+    "previous_render_reviewed_at": "2026-09-22T07:28:38.262264+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "ad5923d3ed3533ad2b7e5c4dadfcbb33e5087a5563d649775ee41ac943915c63"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "0c97b13639dd174c8e620372caa3e8221ca61a1d0422e20cf8d18b5d4e0c5bb6"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "a2d6378db53608629176a2332b4f4fb0d05c566983d3818791f2aa7287346749"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "dc9b4cd4a5c72379f23c8449e1dbc218f61ba466ce59f8b1dc734817ee615c98"
+    },
+    {
+      "page": 5,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "d621b71b074a8685910678ad7b3ca24bce2e99ea2eddad8eeb8ee391a8fabc5d",
+      "path": "reports/schematic-retrofit-renders/04-gmr/page-05.png",
+      "sha256": "c8a6d7c18a8a0f5f3f0066d34a32792bfa009057b323735a4a4d8ff935ca6777"
+    }
+  ]
+}

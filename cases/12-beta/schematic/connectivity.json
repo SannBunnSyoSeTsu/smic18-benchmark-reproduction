@@ -1,0 +1,1955 @@
+{
+  "generated_at": "2026-09-23T06:18:41.004716+00:00",
+  "circuit_sha256": "4b835cfbbebce5f00832ddba5038e657a2d1887c6e44689f8177dc34ca5d39dd",
+  "top": "beta_multiplier_reference",
+  "subcircuit_ports": {
+    "beta_multiplier_reference": [
+      "vss",
+      "vdd",
+      "vref",
+      "iout"
+    ]
+  },
+  "instances": {
+    "beta_multiplier_reference/MP1": {
+      "name": "MP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "na",
+        "G": "na",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.38u",
+        "l": "1u"
+      },
+      "source_line": "MP1 (na na vdd vdd) p18 w=9.38u l=1u",
+      "W_unit_um": 9.38,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        10,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          18
+        ],
+        "S": [
+          10,
+          20
+        ],
+        "G": [
+          8.45,
+          19
+        ],
+        "B": [
+          10.86,
+          19
+        ]
+      },
+      "block": "beta_multiplier_reference"
+    },
+    "beta_multiplier_reference/MN2": {
+      "name": "MN2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "na",
+        "G": "vref",
+        "S": "nr",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.7u",
+        "l": "4u",
+        "m": "4"
+      },
+      "source_line": "MN2 (na vref nr vss) n18 w=3.7u l=4u m=4",
+      "W_unit_um": 3.7,
+      "L_um": 4.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        10,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          12
+        ],
+        "S": [
+          10,
+          10
+        ],
+        "G": [
+          8.45,
+          11
+        ],
+        "B": [
+          10.86,
+          11
+        ]
+      },
+      "block": "beta_multiplier_reference"
+    },
+    "beta_multiplier_reference/MP2": {
+      "name": "MP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vref",
+        "G": "na",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.38u",
+        "l": "1u"
+      },
+      "source_line": "MP2 (vref na vdd vdd) p18 w=9.38u l=1u",
+      "W_unit_um": 9.38,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        24,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          24,
+          18
+        ],
+        "S": [
+          24,
+          20
+        ],
+        "G": [
+          22.45,
+          19
+        ],
+        "B": [
+          24.86,
+          19
+        ]
+      },
+      "block": "beta_multiplier_reference"
+    },
+    "beta_multiplier_reference/MN1": {
+      "name": "MN1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vref",
+        "G": "vref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.7u",
+        "l": "4u"
+      },
+      "source_line": "MN1 (vref vref vss vss) n18 w=3.7u l=4u",
+      "W_unit_um": 3.7,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        24,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          24,
+          8
+        ],
+        "S": [
+          24,
+          6
+        ],
+        "G": [
+          22.45,
+          7
+        ],
+        "B": [
+          24.86,
+          7
+        ]
+      },
+      "block": "beta_multiplier_reference"
+    },
+    "beta_multiplier_reference/MOUT": {
+      "name": "MOUT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iout",
+        "G": "vref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.7u",
+        "l": "4u",
+        "m": "4"
+      },
+      "source_line": "MOUT (iout vref vss vss) n18 w=3.7u l=4u m=4",
+      "W_unit_um": 3.7,
+      "L_um": 4.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        37,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          8
+        ],
+        "S": [
+          37,
+          6
+        ],
+        "G": [
+          35.45,
+          7
+        ],
+        "B": [
+          37.86,
+          7
+        ]
+      },
+      "block": "beta_multiplier_reference"
+    },
+    "beta_multiplier_reference/RGM": {
+      "name": "RGM",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "nr",
+        "2": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "36u"
+      },
+      "source_line": "RGM (nr vss vss) rpposab_3t w=1u l=36u",
+      "sheet": 1,
+      "origin": [
+        10,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          5.82
+        ],
+        "2": [
+          10,
+          4.18
+        ],
+        "B": [
+          10.7,
+          5
+        ]
+      },
+      "block": "beta_multiplier_reference"
+    },
+    "beta_multiplier_reference/MPUP": {
+      "name": "MPUP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nx",
+        "G": "vss",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "0.24u",
+        "l": "4u"
+      },
+      "source_line": "MPUP (nx vss vdd vdd) p18 w=0.24u l=4u",
+      "W_unit_um": 0.24,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        12,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          18
+        ],
+        "S": [
+          12,
+          20
+        ],
+        "G": [
+          10.45,
+          19
+        ],
+        "B": [
+          12.86,
+          19
+        ]
+      },
+      "block": "beta_multiplier_reference"
+    },
+    "beta_multiplier_reference/MDET": {
+      "name": "MDET",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nx",
+        "G": "vref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "1u"
+      },
+      "source_line": "MDET (nx vref vss vss) n18 w=1.46u l=1u",
+      "W_unit_um": 1.46,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        12,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          8
+        ],
+        "S": [
+          12,
+          6
+        ],
+        "G": [
+          10.45,
+          7
+        ],
+        "B": [
+          12.86,
+          7
+        ]
+      },
+      "block": "beta_multiplier_reference"
+    },
+    "beta_multiplier_reference/MSTART": {
+      "name": "MSTART",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "na",
+        "G": "nx",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.38u",
+        "l": "4u"
+      },
+      "source_line": "MSTART (na nx vss vss) n18 w=0.38u l=4u",
+      "W_unit_um": 0.37999999999999995,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        31,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          31,
+          8
+        ],
+        "S": [
+          31,
+          6
+        ],
+        "G": [
+          29.45,
+          7
+        ],
+        "B": [
+          31.86,
+          7
+        ]
+      },
+      "block": "beta_multiplier_reference"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MP1": {
+      "name": "MP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "na",
+        "G": "na",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.38u",
+        "l": "1u"
+      },
+      "source_line": "MP1 (na na vdd vdd) p18 w=9.38u l=1u",
+      "W_unit_um": 9.38,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "beta_multiplier_reference/MP1",
+      "path": "MP1"
+    },
+    "MP2": {
+      "name": "MP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vref",
+        "G": "na",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.38u",
+        "l": "1u"
+      },
+      "source_line": "MP2 (vref na vdd vdd) p18 w=9.38u l=1u",
+      "W_unit_um": 9.38,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "beta_multiplier_reference/MP2",
+      "path": "MP2"
+    },
+    "MN1": {
+      "name": "MN1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vref",
+        "G": "vref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.7u",
+        "l": "4u"
+      },
+      "source_line": "MN1 (vref vref vss vss) n18 w=3.7u l=4u",
+      "W_unit_um": 3.7,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "beta_multiplier_reference/MN1",
+      "path": "MN1"
+    },
+    "MN2": {
+      "name": "MN2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "na",
+        "G": "vref",
+        "S": "nr",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.7u",
+        "l": "4u",
+        "m": "4"
+      },
+      "source_line": "MN2 (na vref nr vss) n18 w=3.7u l=4u m=4",
+      "W_unit_um": 3.7,
+      "L_um": 4.0,
+      "m": 4.0,
+      "definition": "beta_multiplier_reference/MN2",
+      "path": "MN2"
+    },
+    "MOUT": {
+      "name": "MOUT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iout",
+        "G": "vref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.7u",
+        "l": "4u",
+        "m": "4"
+      },
+      "source_line": "MOUT (iout vref vss vss) n18 w=3.7u l=4u m=4",
+      "W_unit_um": 3.7,
+      "L_um": 4.0,
+      "m": 4.0,
+      "definition": "beta_multiplier_reference/MOUT",
+      "path": "MOUT"
+    },
+    "RGM": {
+      "name": "RGM",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "nr",
+        "2": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "36u"
+      },
+      "source_line": "RGM (nr vss vss) rpposab_3t w=1u l=36u",
+      "definition": "beta_multiplier_reference/RGM",
+      "path": "RGM"
+    },
+    "MPUP": {
+      "name": "MPUP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nx",
+        "G": "vss",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "0.24u",
+        "l": "4u"
+      },
+      "source_line": "MPUP (nx vss vdd vdd) p18 w=0.24u l=4u",
+      "W_unit_um": 0.24,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "beta_multiplier_reference/MPUP",
+      "path": "MPUP"
+    },
+    "MDET": {
+      "name": "MDET",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nx",
+        "G": "vref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "1u"
+      },
+      "source_line": "MDET (nx vref vss vss) n18 w=1.46u l=1u",
+      "W_unit_um": 1.46,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "beta_multiplier_reference/MDET",
+      "path": "MDET"
+    },
+    "MSTART": {
+      "name": "MSTART",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "na",
+        "G": "nx",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.38u",
+        "l": "4u"
+      },
+      "source_line": "MSTART (na nx vss vss) n18 w=0.38u l=4u",
+      "W_unit_um": 0.37999999999999995,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "beta_multiplier_reference/MSTART",
+      "path": "MSTART"
+    }
+  },
+  "nets": {
+    "beta_multiplier_reference/na": [
+      {
+        "instance": "beta_multiplier_reference/MP1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          10,
+          18
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MP1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          8.45,
+          19
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MN2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          10,
+          12
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MP2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          22.45,
+          19
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MSTART",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          31,
+          8
+        ]
+      }
+    ],
+    "beta_multiplier_reference/vdd": [
+      {
+        "instance": "beta_multiplier_reference/MP1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          10,
+          20
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MP1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          10.86,
+          19
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MP2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          24,
+          20
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MP2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          24.86,
+          19
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MPUP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          12,
+          20
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MPUP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          12.86,
+          19
+        ]
+      }
+    ],
+    "beta_multiplier_reference/vref": [
+      {
+        "instance": "beta_multiplier_reference/MN2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          8.45,
+          11
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MP2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          24,
+          18
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MN1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          24,
+          8
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MN1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          22.45,
+          7
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MOUT",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          35.45,
+          7
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MDET",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          10.45,
+          7
+        ]
+      }
+    ],
+    "beta_multiplier_reference/nr": [
+      {
+        "instance": "beta_multiplier_reference/MN2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          10,
+          10
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/RGM",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          10,
+          5.82
+        ]
+      }
+    ],
+    "beta_multiplier_reference/vss": [
+      {
+        "instance": "beta_multiplier_reference/MN2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          10.86,
+          11
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MN1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          24,
+          6
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MN1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          24.86,
+          7
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MOUT",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          37,
+          6
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MOUT",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          37.86,
+          7
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/RGM",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          10,
+          4.18
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/RGM",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          10.7,
+          5
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MPUP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          10.45,
+          19
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MDET",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          12,
+          6
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MDET",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          12.86,
+          7
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MSTART",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          31,
+          6
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MSTART",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          31.86,
+          7
+        ]
+      }
+    ],
+    "beta_multiplier_reference/iout": [
+      {
+        "instance": "beta_multiplier_reference/MOUT",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          37,
+          8
+        ]
+      }
+    ],
+    "beta_multiplier_reference/nx": [
+      {
+        "instance": "beta_multiplier_reference/MPUP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          12,
+          18
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MDET",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          12,
+          8
+        ]
+      },
+      {
+        "instance": "beta_multiplier_reference/MSTART",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          29.45,
+          7
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MN2",
+      "pin": "G",
+      "net": "vref",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "D",
+      "net": "vref",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "D",
+      "net": "vref",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "G",
+      "net": "vref",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MOUT",
+      "pin": "G",
+      "net": "vref",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MOUT",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MOUT",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "RGM",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "RGM",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN2",
+      "pin": "S",
+      "net": "nr",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "RGM",
+      "pin": "1",
+      "net": "nr",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "D",
+      "net": "na",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "G",
+      "net": "na",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN2",
+      "pin": "D",
+      "net": "na",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "G",
+      "net": "na",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 1,
+      "instance": "MOUT",
+      "pin": "D",
+      "net": "iout",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDET",
+      "pin": "G",
+      "net": "vref",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPUP",
+      "pin": "D",
+      "net": "nx",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDET",
+      "pin": "D",
+      "net": "nx",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSTART",
+      "pin": "G",
+      "net": "nx",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPUP",
+      "pin": "G",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDET",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDET",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSTART",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSTART",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPUP",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPUP",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSTART",
+      "pin": "D",
+      "net": "na",
+      "path_to_named_net": true,
+      "block": "beta_multiplier_reference"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "beta_multiplier_reference",
+      "title": "β 倍增核心、工艺电阻与电流输出",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10.86,
+              19
+            ],
+            [
+              11.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.86,
+              11
+            ],
+            [
+              11.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              24.86,
+              19
+            ],
+            [
+              25.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24.86,
+              7
+            ],
+            [
+              25.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.86,
+              7
+            ],
+            [
+              38.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.7,
+              5
+            ],
+            [
+              11.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10,
+              23
+            ],
+            [
+              24,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10,
+              20
+            ],
+            [
+              10,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              24,
+              20
+            ],
+            [
+              24,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              1.4
+            ],
+            [
+              37,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              4.18
+            ],
+            [
+              10,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24,
+              6
+            ],
+            [
+              24,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37,
+              6
+            ],
+            [
+              37,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "na",
+          "points": [
+            [
+              10,
+              18
+            ],
+            [
+              10,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "na",
+          "points": [
+            [
+              8.45,
+              19
+            ],
+            [
+              7.95,
+              19
+            ],
+            [
+              7.95,
+              16
+            ],
+            [
+              10,
+              16
+            ],
+            [
+              10,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vref",
+          "points": [
+            [
+              24,
+              18
+            ],
+            [
+              24,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vref",
+          "points": [
+            [
+              22.45,
+              7
+            ],
+            [
+              21.95,
+              7
+            ],
+            [
+              21.95,
+              12
+            ],
+            [
+              24,
+              12
+            ],
+            [
+              24,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "na",
+          "points": [
+            [
+              22.45,
+              19
+            ],
+            [
+              20,
+              19
+            ],
+            [
+              20,
+              16
+            ],
+            [
+              10,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nr",
+          "points": [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              5.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vref",
+          "points": [
+            [
+              8.45,
+              11
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              15
+            ],
+            [
+              3,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iout",
+          "points": [
+            [
+              37,
+              8
+            ],
+            [
+              37,
+              8.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vref",
+          "points": [
+            [
+              35.45,
+              7
+            ],
+            [
+              34.900000000000006,
+              7
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            11.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            25.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            25.15,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.15,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            10,
+            23
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            10,
+            1.4
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "na",
+          "point": [
+            10,
+            15
+          ],
+          "text": "na",
+          "body": false
+        },
+        {
+          "net": "vref",
+          "point": [
+            24,
+            13
+          ],
+          "text": "vref",
+          "body": false
+        },
+        {
+          "net": "nr",
+          "point": [
+            10,
+            8
+          ],
+          "text": "nr",
+          "body": false
+        },
+        {
+          "net": "vref",
+          "point": [
+            3,
+            15
+          ],
+          "text": "vref",
+          "body": false
+        },
+        {
+          "net": "iout",
+          "point": [
+            37,
+            8.64
+          ],
+          "text": "iout",
+          "body": false
+        },
+        {
+          "net": "vref",
+          "point": [
+            34.900000000000006,
+            7
+          ],
+          "text": "vref",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "beta_multiplier_reference",
+      "title": "弱上拉、启动检测与注入支路",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12.86,
+              19
+            ],
+            [
+              13.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.86,
+              7
+            ],
+            [
+              13.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              31.86,
+              7
+            ],
+            [
+              32.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12,
+              20
+            ],
+            [
+              12,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12,
+              1.4
+            ],
+            [
+              31,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12,
+              6
+            ],
+            [
+              12,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              31,
+              6
+            ],
+            [
+              31,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nx",
+          "points": [
+            [
+              12,
+              18
+            ],
+            [
+              12,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nx",
+          "points": [
+            [
+              29.45,
+              7
+            ],
+            [
+              27,
+              7
+            ],
+            [
+              27,
+              14
+            ],
+            [
+              12,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.45,
+              19
+            ],
+            [
+              9.899999999999999,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vref",
+          "points": [
+            [
+              10.45,
+              7
+            ],
+            [
+              9.899999999999999,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "na",
+          "points": [
+            [
+              31,
+              8
+            ],
+            [
+              31,
+              8.64
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            13.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            13.15,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            32.15,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12,
+            23
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            12,
+            1.4
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "nx",
+          "point": [
+            12,
+            14
+          ],
+          "text": "nx",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            9.899999999999999,
+            19
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vref",
+          "point": [
+            9.899999999999999,
+            7
+          ],
+          "text": "vref",
+          "body": false
+        },
+        {
+          "net": "na",
+          "point": [
+            31,
+            8.64
+          ],
+          "text": "na",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "beta_multiplier_reference": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

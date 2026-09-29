@@ -1,0 +1,122 @@
+{
+  "slot": 30,
+  "case": "cases/30-gilbert-mixer",
+  "circuit_sha256": "e405fd9038a74aff43c984389a5b0cdfbc7eb96bc6f992c541b4bea568d89879",
+  "hd_cells_sha256": null,
+  "top": "gilbert_mixer",
+  "source_definition_count": 15,
+  "source_terminal_count": 48,
+  "source_expanded_leaf_count": 15,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "8f5f91628b655e3eb5c508d0507e5c2602ec36410a80ae181bc301e99303278b",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 15,
+  "schematic_expanded_leaf_count": 15,
+  "independently_traced_terminals": 48,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 9,
+    "C": 3,
+    "R": 3
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "gilbert_mixer/MREF",
+      "D_G_S_B": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gilbert_mixer/MTAILP",
+      "D_G_S_B": [
+        "stp",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gilbert_mixer/MTAILN",
+      "D_G_S_B": [
+        "stn",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gilbert_mixer/MRFP",
+      "D_G_S_B": [
+        "drfp",
+        "rfp",
+        "stp",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gilbert_mixer/MRFN",
+      "D_G_S_B": [
+        "drfn",
+        "rfn",
+        "stn",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gilbert_mixer/MQ1",
+      "D_G_S_B": [
+        "ifoutp",
+        "lop",
+        "drfp",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gilbert_mixer/MQ2",
+      "D_G_S_B": [
+        "ifoutn",
+        "lon",
+        "drfp",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gilbert_mixer/MQ3",
+      "D_G_S_B": [
+        "ifoutn",
+        "lop",
+        "drfn",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gilbert_mixer/MQ4",
+      "D_G_S_B": [
+        "ifoutp",
+        "lon",
+        "drfn",
+        "vss"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 13,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

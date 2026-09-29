@@ -1,0 +1,314 @@
+{
+  "circuit_sha256": "45eb5290815c778d817a7b9e108994121159fdb0e952d17e8984bdd00b1af2af",
+  "devices": [
+    {
+      "name": "MREF",
+      "pins": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "role": "nbias",
+      "model": "n18",
+      "W_unit_um": 2.22,
+      "L_um": 1.0,
+      "m": 10
+    },
+    {
+      "name": "MTAIL",
+      "pins": [
+        "tail",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "role": "nbias",
+      "model": "n18",
+      "W_unit_um": 2.22,
+      "L_um": 1.0,
+      "m": 4.0
+    },
+    {
+      "name": "MBN",
+      "pins": [
+        "pb",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "role": "nbias",
+      "model": "n18",
+      "W_unit_um": 2.22,
+      "L_um": 1.0,
+      "m": 2
+    },
+    {
+      "name": "MBP",
+      "pins": [
+        "pb",
+        "pb",
+        "vdd",
+        "vdd"
+      ],
+      "role": "pbias",
+      "model": "p18",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2
+    },
+    {
+      "name": "MABNS",
+      "pins": [
+        "vbn",
+        "pb",
+        "vdd",
+        "vdd"
+      ],
+      "role": "pbias",
+      "model": "p18",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 1
+    },
+    {
+      "name": "MABNU",
+      "pins": [
+        "vbn",
+        "vbn",
+        "xn",
+        "vss"
+      ],
+      "role": "nab",
+      "model": "n18",
+      "W_unit_um": 0.84,
+      "L_um": 0.36,
+      "m": 1
+    },
+    {
+      "name": "MABNL",
+      "pins": [
+        "xn",
+        "xn",
+        "vss",
+        "vss"
+      ],
+      "role": "nout",
+      "model": "n18",
+      "W_unit_um": 6.94,
+      "L_um": 0.36,
+      "m": 1
+    },
+    {
+      "name": "MABPS",
+      "pins": [
+        "vbp",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "role": "nbias",
+      "model": "n18",
+      "W_unit_um": 2.22,
+      "L_um": 1.0,
+      "m": 1
+    },
+    {
+      "name": "MABPU",
+      "pins": [
+        "vbp",
+        "vbp",
+        "yp",
+        "vdd"
+      ],
+      "role": "pab",
+      "model": "p18",
+      "W_unit_um": 3.48,
+      "L_um": 0.36,
+      "m": 1
+    },
+    {
+      "name": "MABPL",
+      "pins": [
+        "yp",
+        "yp",
+        "vdd",
+        "vdd"
+      ],
+      "role": "pout",
+      "model": "p18",
+      "W_unit_um": 26.92,
+      "L_um": 0.36,
+      "m": 1
+    },
+    {
+      "name": "MINP",
+      "pins": [
+        "x3",
+        "vinp",
+        "tail",
+        "vss"
+      ],
+      "role": "input",
+      "model": "n18",
+      "W_unit_um": 10.32,
+      "L_um": 1.0,
+      "m": 1.0
+    },
+    {
+      "name": "MINN",
+      "pins": [
+        "x5",
+        "vinn",
+        "tail",
+        "vss"
+      ],
+      "role": "input",
+      "model": "n18",
+      "W_unit_um": 10.32,
+      "L_um": 1.0,
+      "m": 1.0
+    },
+    {
+      "name": "MP3",
+      "pins": [
+        "x3",
+        "x3",
+        "vdd",
+        "vdd"
+      ],
+      "role": "pbias",
+      "model": "p18",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0
+    },
+    {
+      "name": "MP4",
+      "pins": [
+        "x4",
+        "x3",
+        "vdd",
+        "vdd"
+      ],
+      "role": "pbias",
+      "model": "p18",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0
+    },
+    {
+      "name": "MP5",
+      "pins": [
+        "x5",
+        "x5",
+        "vdd",
+        "vdd"
+      ],
+      "role": "pbias",
+      "model": "p18",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0
+    },
+    {
+      "name": "MP6",
+      "pins": [
+        "gp",
+        "x5",
+        "vdd",
+        "vdd"
+      ],
+      "role": "pbias",
+      "model": "p18",
+      "W_unit_um": 10.52,
+      "L_um": 1.0,
+      "m": 2.0
+    },
+    {
+      "name": "MN7",
+      "pins": [
+        "x4",
+        "x4",
+        "vss",
+        "vss"
+      ],
+      "role": "nbias",
+      "model": "n18",
+      "W_unit_um": 2.22,
+      "L_um": 1.0,
+      "m": 2.0
+    },
+    {
+      "name": "MN8",
+      "pins": [
+        "gn",
+        "x4",
+        "vss",
+        "vss"
+      ],
+      "role": "nbias",
+      "model": "n18",
+      "W_unit_um": 2.22,
+      "L_um": 1.0,
+      "m": 2.0
+    },
+    {
+      "name": "MCN",
+      "pins": [
+        "gp",
+        "vbn",
+        "gn",
+        "vss"
+      ],
+      "role": "nab",
+      "model": "n18",
+      "W_unit_um": 0.84,
+      "L_um": 0.36,
+      "m": 1.0
+    },
+    {
+      "name": "MCP",
+      "pins": [
+        "gn",
+        "vbp",
+        "gp",
+        "vdd"
+      ],
+      "role": "pab",
+      "model": "p18",
+      "W_unit_um": 3.48,
+      "L_um": 0.36,
+      "m": 1.0
+    },
+    {
+      "name": "MOUTP",
+      "pins": [
+        "vout",
+        "gp",
+        "vdd",
+        "vdd"
+      ],
+      "role": "pout",
+      "model": "p18",
+      "W_unit_um": 26.92,
+      "L_um": 0.36,
+      "m": 14.0
+    },
+    {
+      "name": "MOUTN",
+      "pins": [
+        "vout",
+        "gn",
+        "vss",
+        "vss"
+      ],
+      "role": "nout",
+      "model": "n18",
+      "W_unit_um": 6.94,
+      "L_um": 0.36,
+      "m": 14.0
+    }
+  ],
+  "all_unit_widths_valid": true
+}

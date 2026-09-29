@@ -1,0 +1,44 @@
+{
+  "source_task": "sky130-switched-capacitor-2to1-converter-pvt",
+  "scope": "SMIC18 TT1.8V27C, matched680/6800ohm loads with all original nominal checks. Other44active and2passive corners excluded.",
+  "supply_V": 1.8,
+  "temperature_C": 27,
+  "loads_ohm": [
+    680,
+    6800
+  ],
+  "clock": {
+    "Hz": 20000000.0,
+    "delay_s": 5e-09,
+    "rise_fall_s": 4e-10,
+    "width_s": 2.46e-08,
+    "period_s": 5e-08,
+    "source_ohm": 50
+  },
+  "stop_s": 7e-07,
+  "window_s": [
+    3e-07,
+    7e-07
+  ],
+  "startup_target_V": 0.6804,
+  "startup_max_s": 2e-07,
+  "startup_measurement": "Last rising crossing of0.378VDD; minimum200ns-to-stop separately fixedabove0.378VDD",
+  "cold_start": "skipdc=yes: equivalent originaluic, zero storedcapacitor state",
+  "heavy_ratio": [
+    0.42,
+    0.51
+  ],
+  "light_ratio": [
+    0.45,
+    0.51
+  ],
+  "heavy_efficiency_min": 0.7,
+  "light_efficiency_min": 0.3,
+  "efficiency_max_nonrelaxable": 1,
+  "heavy_ripple_max_V": 0.08,
+  "light_input_power_max_W": 0.0005,
+  "output_resistance_max_ohm": 100,
+  "power": "mean(-VDD*I(VDD)) plus mean(max(-VCLK*I(VCLK),0)); returnedclockenergy notcredited",
+  "allowed_DUT": "nativeMOS/MIM and exactHD logic, no idealDUT passives",
+  "terminal_limit_V": 1.98
+}

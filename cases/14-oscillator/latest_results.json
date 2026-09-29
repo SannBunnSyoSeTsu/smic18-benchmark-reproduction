@@ -1,0 +1,167 @@
+{
+  "case_slot": 14,
+  "generated_at": "2026-09-22T09:32:41.705181+00:00",
+  "run_dir": "runs/14/20260922T093117787976Z_ramp",
+  "status": "complete_original",
+  "nominal_complete": true,
+  "values": {
+    "frequency_Hz": 1973570.0478632948,
+    "frequency_error_Hz": 26429.952136705164,
+    "swing_Vpp": 1.8001039336404498,
+    "swing_ratio": 1.000057740911361,
+    "swing_error_ratio": 5.774091136090398e-05,
+    "power_W": 1.9039205099128956e-05
+  },
+  "gates": {
+    "frequency_error_Hz": {
+      "value": 26429.952136705164,
+      "unit": "Hz",
+      "sense": "max",
+      "limits": {
+        "original": 200000.0,
+        "10pct": 220000.00000000003,
+        "15pct": 229999.99999999997
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "swing_error_ratio": {
+      "value": 5.774091136090398e-05,
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.05,
+        "10pct": 0.05500000000000001,
+        "15pct": 0.057499999999999996
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power_W": {
+      "value": 1.9039205099128956e-05,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 2e-05,
+        "10pct": 2.2000000000000003e-05,
+        "15pct": 2.3e-05
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "functional_checks_pass": true,
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "observations": {
+    "current_avg_A": 1.0577336166182753e-05,
+    "total_supply_charge_C": 1.0577336166182754e-10,
+    "external_bias_power_W": 3.6e-06,
+    "remaining_DUT_power_W": 1.5439205099128957e-05,
+    "theoretical_load_dynamic_power_W": 6.3943669550770756e-06,
+    "first_half_supply_crossing_s": 5.935529356410755e-07,
+    "output_min_V": -3.283789319888119e-05,
+    "output_max_V": 1.800071095747251,
+    "stable_rising_edges_s": [
+      1.0498198612501444e-05,
+      1.1004894710646843e-05,
+      1.15115907044717e-05,
+      1.2018286451181998e-05,
+      1.2524982605178715e-05,
+      1.3031678654888716e-05,
+      1.3538374567118092e-05,
+      1.4045070469929839e-05,
+      1.4551766567951492e-05,
+      1.5058462561679529e-05,
+      1.5565158308665623e-05,
+      1.607185446250698e-05,
+      1.6578550512162284e-05,
+      1.7085246424275482e-05,
+      1.7591942327252357e-05,
+      1.8098638425225597e-05,
+      1.8605334418915685e-05,
+      1.9112030166009955e-05,
+      1.961872631979041e-05
+    ],
+    "period_10_s": 5.0669597518601375e-06,
+    "frequency_edges_s": [
+      1.1004894710646843e-05,
+      1.15115907044717e-05,
+      1.2018286451181998e-05,
+      1.2524982605178715e-05,
+      1.3031678654888716e-05,
+      1.3538374567118092e-05,
+      1.4045070469929839e-05,
+      1.4551766567951492e-05,
+      1.5058462561679529e-05,
+      1.5565158308665623e-05,
+      1.607185446250698e-05
+    ],
+    "all_period_average_Hz": 1973570.0145524158,
+    "all_periods_relative_frequency_difference": 1.6878488384719503e-08,
+    "complete_cycles_in_saved_window": 18,
+    "period_to_period_range_s": [
+      5.066957467102983e-07,
+      5.066961539967177e-07
+    ],
+    "frequency_ten_period_end_inside_window": true,
+    "stage1_virtual_rails_V": {
+      "XDUT.P1": [
+        0.8543062151754331,
+        1.800181495623839
+      ],
+      "XDUT.Q1": [
+        -6.55487460108579e-05,
+        1.044382029186632
+      ]
+    },
+    "full_supply_startup_note": "First0.9V crossing occurs during the specified ramp and is diagnostic. Frequency/swing/current are scored exclusively in the10–20us saved interval."
+  },
+  "bias_operating_conditions": {
+    "MNREF": {
+      "ids": 2.0000057570983553e-06,
+      "gm": 2.9069637931050974e-05,
+      "gds": 1.379437163492207e-07,
+      "vgs": 0.45804495574314563,
+      "vds": 0.45804495574314563,
+      "vdsat": 0.11604089741192769,
+      "gmid": 14.534777126454742,
+      "minimum_saturation_headroom_V": 0.3419218589587403
+    },
+    "MNBP": {
+      "ids": 5.218844940128196e-07,
+      "gm": 7.525234999955085e-06,
+      "gds": 2.3833965074074556e-08,
+      "vgs": 0.45804495574314563,
+      "vds": 1.2792217465338234,
+      "vdsat": 0.1160467596301178,
+      "gmid": 14.419349657417172,
+      "minimum_saturation_headroom_V": 1.1598337067733722
+    },
+    "MPREF": {
+      "ids": -5.218268884396526e-07,
+      "gm": 7.666530668254357e-06,
+      "gds": 2.1802559261821787e-08,
+      "vgs": -0.5207782534661766,
+      "vds": -0.5207782534661766,
+      "vdsat": -0.11585972752029043,
+      "gmid": 14.691712592999055,
+      "minimum_saturation_headroom_V": 0.40371725336730024
+    }
+  },
+  "scope": "TT/1.8V/27C, original1us ramp,2uA external bias,1pF load,10–20us measurement window. Other4PVT rows and noise/mismatch/PEX excluded."
+}

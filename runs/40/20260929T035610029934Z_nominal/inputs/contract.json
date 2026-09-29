@@ -1,0 +1,74 @@
+{
+  "source_task": "sky130-delta-sigma-adc-1bit-first-order-osr32-sndr40",
+  "scope": "SMIC18 TT1.8V27C all three original coherent records at10MHz, OSR32,N512. Original external transistor OTA and comparator are explicitly migrated fixtures; source-owned load, current, reset and comparator offset are retained.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "clock": {
+    "period_s": 1e-07,
+    "rise_fall_s": 5e-09,
+    "width_s": 3.4e-08,
+    "phi2_delay_s": 5e-08,
+    "comparator_first_delay_s": 1e-07,
+    "source_ohm": 50
+  },
+  "input_cm_V": 0.9,
+  "output_cm_V": 0.9,
+  "reference_V": [
+    0.5,
+    1.3
+  ],
+  "bias_reference_A": 5e-05,
+  "fixture_output_load_F": 1e-12,
+  "fixture_input_bias_ohm": 5000000.0,
+  "comparator_offset_diff_V": 0.001,
+  "stop_s": 5.8e-05,
+  "N": 512,
+  "sample_offset_s": 2e-08,
+  "records": {
+    "nominal": {
+      "per_leg_amp_V": 0.24,
+      "tone_bin": 4,
+      "phase_deg": 45,
+      "per_leg_offset_V": 0.02
+    },
+    "mid_pos": {
+      "per_leg_amp_V": 0.22,
+      "tone_bin": 2,
+      "phase_deg": 45,
+      "per_leg_offset_V": 0.02
+    },
+    "mid_inv": {
+      "per_leg_amp_V": 0.22,
+      "tone_bin": 2,
+      "phase_deg": 225,
+      "per_leg_offset_V": -0.02
+    }
+  },
+  "sndr_min_dB": 40,
+  "osr32_minus16_min_dB": 6,
+  "shaping_min_dB": 10,
+  "AC_gain_range": [
+    0.7,
+    1.35
+  ],
+  "DC_error_max": 0.035,
+  "polarity_amplitude_ratio": [
+    0.8,
+    1.25
+  ],
+  "polarity_phase_error_max_deg": 15,
+  "state_diff_peak_max_V": 2,
+  "power_max_W": 0.002,
+  "power_definition": "Original extractor arithmetic sample mean of VDD current retained as a separately labeled source metric; physical time-weighted delivered VDD power also required <=2mW. Includes OTA/comparator and50uA reference powered fromVDD, excludes ideal clocks/inputs/reference sources as source contract.",
+  "nonrelaxable": "Complementary finite decisions, 0.05<density<0.95, transitions>0.05, correct AC/DC/polarity transfer and bounded state; no FFT bin deletion beyond DC/tone.",
+  "allowed": "NativeMOS positiveR/C only within DUT; all fixture devices explicit.",
+  "unmodeled": [
+    "noise",
+    "mismatch",
+    "PVT",
+    "PEX",
+    "decimationfilter"
+  ],
+  "sample_schedule_s": "(k*100+20)ns, k=0..579; last512 = k68..579",
+  "sampler_boundary_note": "Original analyzer derives an arange from simulator first/last exported points. Spectre exports exactly0 and58us, which can otherwise create a spurious581st target at58.02us and clip it backwards. Use the stated580clock cycles and only in-record sample times; no added/clipped extra sample."
+}

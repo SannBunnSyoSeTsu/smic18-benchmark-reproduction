@@ -1,0 +1,24 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        G1["输入跨导与第一积分电容"]
+        BP["差分带通状态"]
+        G2["前向跨导与第二积分电容"]
+        LP["差分低通输出"]
+        DAMP["阻尼跨导"]
+        CM["两个状态各自的CMFB"]
+    end
+    VIN["差分输入"]
+    REF["偏置电流 / 共模参考"]
+    VIN --> G1
+    G1 --> BP
+    BP --> G2
+    G2 --> LP
+    LP -->|"反向跨导反馈"| G1
+    BP -->|"状态取样"| DAMP
+    DAMP -->|"阻尼电流"| BP
+    BP -->|"共模取样"| CM
+    LP -->|"共模取样"| CM
+    REF -.->|"设定值"| CM
+    CM -.->|"共模控制"| G1
+    CM -.->|"共模控制"| G2

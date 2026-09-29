@@ -1,0 +1,43 @@
+{
+  "started_at": "2026-09-22T10:34:17.175425+00:00",
+  "case_slot": 10,
+  "label": "sfdr",
+  "netlist": "runs/10/20260922T103417174989Z_sfdr/inputs/bench.scs",
+  "netlist_sha256": "9833c254664a091065303450515b7490b142b1732e66bffdec3b071130600c83",
+  "dependencies": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/10-tia/circuit.scs": {
+      "snapshot": "runs/10/20260922T103417174989Z_sfdr/inputs/circuit.scs",
+      "sha256": "3e96952b371aec9580fd6fc7366ff78e08bf19958c732078db5e69c9341ff565"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/10-tia/sizing.json": {
+      "snapshot": "runs/10/20260922T103417174989Z_sfdr/inputs/sizing.json",
+      "sha256": "b04c4734dca29841bf3e51456508080bdfbb58cca6b8b725719d164321c3b108"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/10-tia/contract.json": {
+      "snapshot": "runs/10/20260922T103417174989Z_sfdr/inputs/contract.json",
+      "sha256": "0dcbf30510d7b64161d5ca139df5cb00f0e59c5276d443c8dc0e20a43e76b542"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/scripts/case10_tia.py": {
+      "snapshot": "runs/10/20260922T103417174989Z_sfdr/inputs/case10_tia.py",
+      "sha256": "9cb3b06ee2ca23c6fa8cdc21d1c7c8282ed71ddf0c44247bcdfa8a463a582b6c"
+    }
+  },
+  "models": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib": "88246a7e992cb3f5af5ac0f6a9a1c5934707ecd72e7f8f08150b44a01796c20f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.mdl": "832d378241360815f6d4009514d863f2aac9c48c312326410de9421564b1033d",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_bjt_spe.mdl": "d2d45e69a854f8d090fe3ef83041bc39ed8a0abcd9d272b8067a9db3014a9b6f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_res_spe.mdl": "173a1a7c1d8cc2f1009ac12db0f0d4f9725aebea8625cf9796a0be50f06fceb1",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_mim_spe.mdl": "02c8e7986a1c159e52c8fa403fdb52b9b4f928e00bca5522a648992528d7edff"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "status": "completed",
+  "completed_at": "2026-09-22T10:34:17.860144+00:00",
+  "errors": [],
+  "warnings": [
+    "WARNING (SPECTRE-8059): `IIN': `p' No such output parameter, terminal, or internal node name.",
+    "WARNING (SPECTRE-8287): Ignoring invalid item `IIN:p' in save statement."
+  ],
+  "model_dimensions_valid": true,
+  "raw_dir": "runs/10/20260922T103417174989Z_sfdr/output/bench.raw"
+}

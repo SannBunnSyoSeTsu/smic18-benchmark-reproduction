@@ -1,0 +1,59 @@
+// Full native power devices and parameter-free exact HD hierarchy.
+simulator lang=spectre
+subckt bank4 (I O vdd vss)
+XB0 (I O vdd vss vdd vss) INHDV32
+XB1 (I O vdd vss vdd vss) INHDV32
+XB2 (I O vdd vss vdd vss) INHDV32
+XB3 (I O vdd vss vdd vss) INHDV32
+ends bank4
+
+subckt delay4 (I O vdd vss)
+XD0 (I d1 vdd vss vdd vss) INHDV1
+CD0 (d1 vss) mim w=10u l=10.29866117u
+XD1 (d1 d2 vdd vss vdd vss) INHDV1
+CD1 (d2 vss) mim w=10u l=10.29866117u
+XD2 (d2 d3 vdd vss vdd vss) INHDV1
+CD2 (d3 vss) mim w=10u l=10.29866117u
+XD3 (d3 O vdd vss vdd vss) INHDV1
+CD3 (O vss) mim w=10u l=10.29866117u
+ends delay4
+
+subckt driver_p (I O vdd vss)
+XP0 (I a vdd vss vdd vss) INHDV4
+XP1 (a b vdd vss vdd vss) INHDV32
+XP2_0 (b c vdd vss) bank4
+XP2_1 (b c vdd vss) bank4
+XP3_0 (c O vdd vss) bank4
+XP3_1 (c O vdd vss) bank4
+XP3_2 (c O vdd vss) bank4
+XP3_3 (c O vdd vss) bank4
+XP3_4 (c O vdd vss) bank4
+XP3_5 (c O vdd vss) bank4
+XP3_6 (c O vdd vss) bank4
+XP3_7 (c O vdd vss) bank4
+ends driver_p
+
+subckt driver_n (I O vdd vss)
+XN0 (I a vdd vss vdd vss) INHDV8
+XN1 (a b vdd vss) bank4
+XN2_0 (b O vdd vss) bank4
+XN2_1 (b O vdd vss) bank4
+XN2_2 (b O vdd vss) bank4
+XN2_3 (b O vdd vss) bank4
+ends driver_n
+
+subckt half_bridge (vss vdd clk_in sw)
+MP0 (sw gp vdd vdd) p18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
+MP1 (sw gp vdd vdd) p18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
+MP2 (sw gp vdd vdd) p18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
+MP3 (sw gp vdd vdd) p18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
+MN0 (sw gn vss vss) n18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
+MN1 (sw gn vss vss) n18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
+XINV (clk_in clkb vdd vss vdd vss) INHDV1
+XHP (clk_in noffd poff vdd vss vdd vss) NAND2HDV1
+XLN (clkb poffd noff vdd vss vdd vss) NAND2HDV1
+XDP (poff poffd vdd vss) delay4
+XDN (noff noffd vdd vss) delay4
+XBP (poff gp vdd vss) driver_p
+XBN (noff gn vdd vss) driver_n
+ends half_bridge

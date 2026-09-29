@@ -1,0 +1,77 @@
+{
+  "slot": 32,
+  "case": "cases/32-cml-tx",
+  "circuit_sha256": "4a3d75102319b904cbe4a9aabfdb373e34eb42a70c57c37fb97fb94aa7c29b91",
+  "hd_cells_sha256": null,
+  "top": "tx_driver_28g",
+  "source_definition_count": 10,
+  "source_terminal_count": 28,
+  "source_expanded_leaf_count": 10,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "0126b428ad96a7a7f271bbd340d197b643b0d2a3558cd30e67dc0ccd8552cc84",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 10,
+  "schematic_expanded_leaf_count": 10,
+  "independently_traced_terminals": 28,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 4,
+    "C": 2,
+    "L": 4
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "tx_driver_28g/MREF",
+      "D_G_S_B": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "tx_driver_28g/MTAIL",
+      "D_G_S_B": [
+        "tail",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "tx_driver_28g/MPAIRP",
+      "D_G_S_B": [
+        "dn",
+        "gip",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "tx_driver_28g/MPAIRN",
+      "D_G_S_B": [
+        "dp",
+        "gin",
+        "tail",
+        "vss"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 11,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

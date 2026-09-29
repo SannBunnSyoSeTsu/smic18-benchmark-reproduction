@@ -1,0 +1,257 @@
+[
+  {
+    "generated_at": "2026-09-29T03:53:50.981376+00:00",
+    "circuit_sha256": "4aaf6d34c8b340befe6ed823cd465696013bfeb81a7958240afa39fd1c254f39",
+    "parameters": {
+      "bits": 6,
+      "unit_fF": 30,
+      "dummy_fF": 10,
+      "sample_scale": 1,
+      "cmp_scale": 0.25,
+      "delay_fF": 10,
+      "bootstrap": true
+    },
+    "status": "complete_original",
+    "values": {
+      "transfer0": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer1": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer2": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer3": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt0": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt1": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt2": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt3": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "dynamic0": {
+        "invalid_levels": 0,
+        "power_W": 0.0016799238766782934
+      },
+      "dynamic1": {
+        "invalid_levels": 0,
+        "power_W": 0.001709254825429429
+      },
+      "dynamic2": {
+        "invalid_levels": 0,
+        "power_W": 0.0016749406848701274
+      },
+      "dynamic3": {
+        "invalid_levels": 0,
+        "power_W": 0.001709636622940018
+      },
+      "dynamic_spectrum": {
+        "sndr_dB": 38.29857688528917,
+        "normalized_enob_bits": 6.17315129583463,
+        "signal_power": 908281.6112751373,
+        "noise_power": 134.3887248627143,
+        "tone_bin": 31
+      }
+    },
+    "groups": {
+      "transfer0": "runs/42/20260929T033249359058Z_transfer0",
+      "transfer1": "runs/42/20260929T033249359377Z_transfer1",
+      "transfer2": "runs/42/20260929T033249359634Z_transfer2",
+      "transfer3": "runs/42/20260929T033249359888Z_transfer3",
+      "transfer_alt0": "runs/42/20260929T033919960510Z_transfer_alt0",
+      "transfer_alt1": "runs/42/20260929T033920517224Z_transfer_alt1",
+      "transfer_alt2": "runs/42/20260929T033920720635Z_transfer_alt2",
+      "transfer_alt3": "runs/42/20260929T033921541669Z_transfer_alt3",
+      "dynamic0": "runs/42/20260929T034537290951Z_dynamic0",
+      "dynamic1": "runs/42/20260929T034540667713Z_dynamic1",
+      "dynamic2": "runs/42/20260929T034541005085Z_dynamic2",
+      "dynamic3": "runs/42/20260929T034541739897Z_dynamic3"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T04:31:43.868260+00:00",
+    "circuit_sha256": "4aaf6d34c8b340befe6ed823cd465696013bfeb81a7958240afa39fd1c254f39",
+    "parameters": {
+      "bits": 6,
+      "unit_fF": 30,
+      "dummy_fF": 10,
+      "sample_scale": 1,
+      "cmp_scale": 0.25,
+      "delay_fF": 10,
+      "bootstrap": true
+    },
+    "status": "needs_iteration",
+    "values": {
+      "transfer0": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer1": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer2": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer3": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt0": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt1": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt2": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt3": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "dynamic0": {
+        "invalid_levels": 0,
+        "power_W": 0.001679940631639119
+      },
+      "dynamic1": {
+        "invalid_levels": 0,
+        "power_W": 0.001709285171010262
+      },
+      "dynamic2": {
+        "invalid_levels": 0,
+        "power_W": 0.001674958316428882
+      },
+      "dynamic3": {
+        "invalid_levels": 0,
+        "power_W": 0.0017096670753162548
+      },
+      "dynamic_spectrum": {
+        "sndr_dB": 38.29857688528917,
+        "normalized_enob_bits": 6.17315129583463,
+        "signal_power": 908281.6112751373,
+        "noise_power": 134.3887248627143,
+        "tone_bin": 31
+      }
+    },
+    "groups": {
+      "transfer0": "runs/42/20260929T035544754760Z_transfer0",
+      "transfer1": "runs/42/20260929T035544755077Z_transfer1",
+      "transfer2": "runs/42/20260929T035544755378Z_transfer2",
+      "transfer3": "runs/42/20260929T035544755666Z_transfer3",
+      "transfer_alt0": "runs/42/20260929T040645562754Z_transfer_alt0",
+      "transfer_alt1": "runs/42/20260929T040646785524Z_transfer_alt1",
+      "transfer_alt2": "runs/42/20260929T040647086806Z_transfer_alt2",
+      "transfer_alt3": "runs/42/20260929T040648382966Z_transfer_alt3",
+      "dynamic0": "runs/42/20260929T041747087507Z_dynamic0",
+      "dynamic1": "runs/42/20260929T041747222335Z_dynamic1",
+      "dynamic2": "runs/42/20260929T041750767193Z_dynamic2",
+      "dynamic3": "runs/42/20260929T041754461984Z_dynamic3"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T04:36:13.515118+00:00",
+    "circuit_sha256": "4aaf6d34c8b340befe6ed823cd465696013bfeb81a7958240afa39fd1c254f39",
+    "parameters": {
+      "bits": 6,
+      "unit_fF": 30,
+      "dummy_fF": 10,
+      "sample_scale": 1,
+      "cmp_scale": 0.25,
+      "delay_fF": 10,
+      "bootstrap": true
+    },
+    "status": "complete_original",
+    "values": {
+      "transfer0": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer1": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer2": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer3": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt0": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt1": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt2": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt3": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "dynamic0": {
+        "invalid_levels": 0,
+        "power_W": 0.001679940631639119
+      },
+      "dynamic1": {
+        "invalid_levels": 0,
+        "power_W": 0.001709285171010262
+      },
+      "dynamic2": {
+        "invalid_levels": 0,
+        "power_W": 0.001674958316428882
+      },
+      "dynamic3": {
+        "invalid_levels": 0,
+        "power_W": 0.0017096670753162548
+      },
+      "dynamic_spectrum": {
+        "sndr_dB": 38.29857688528917,
+        "normalized_enob_bits": 6.17315129583463,
+        "signal_power": 908281.6112751373,
+        "noise_power": 134.3887248627143,
+        "tone_bin": 31
+      }
+    },
+    "groups": {
+      "transfer0": "runs/42/20260929T035544754760Z_transfer0",
+      "transfer1": "runs/42/20260929T035544755077Z_transfer1",
+      "transfer2": "runs/42/20260929T035544755378Z_transfer2",
+      "transfer3": "runs/42/20260929T035544755666Z_transfer3",
+      "transfer_alt0": "runs/42/20260929T040645562754Z_transfer_alt0",
+      "transfer_alt1": "runs/42/20260929T040646785524Z_transfer_alt1",
+      "transfer_alt2": "runs/42/20260929T040647086806Z_transfer_alt2",
+      "transfer_alt3": "runs/42/20260929T040648382966Z_transfer_alt3",
+      "dynamic0": "runs/42/20260929T041747087507Z_dynamic0",
+      "dynamic1": "runs/42/20260929T041747222335Z_dynamic1",
+      "dynamic2": "runs/42/20260929T041750767193Z_dynamic2",
+      "dynamic3": "runs/42/20260929T041754461984Z_dynamic3"
+    }
+  }
+]

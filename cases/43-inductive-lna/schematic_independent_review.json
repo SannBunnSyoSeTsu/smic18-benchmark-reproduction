@@ -1,0 +1,123 @@
+{
+  "slot": 43,
+  "case": "cases/43-inductive-lna",
+  "circuit_sha256": "dfceb74aacbcd14aeab9a680577996f67fbf2ffc8c7b4e321f7d3658b3ace2c5",
+  "hd_cells_sha256": null,
+  "top": "inductive_lna",
+  "source_definition_count": 39,
+  "source_terminal_count": 95,
+  "source_expanded_leaf_count": 39,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "6dd9e131b8d7ab2f9823d96171e220e8b6a7528de6331d8f888a9ffc8250bcf7",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 39,
+  "schematic_expanded_leaf_count": 39,
+  "independently_traced_terminals": 95,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 8,
+    "R": 1,
+    "C": 19,
+    "L": 11
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "inductive_lna/MREF",
+      "D_G_S_B": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "inductive_lna/MNSINK",
+      "D_G_S_B": [
+        "pgate",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "inductive_lna/MPDIO",
+      "D_G_S_B": [
+        "pgate",
+        "pgate",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "inductive_lna/MPMIR",
+      "D_G_S_B": [
+        "vcas",
+        "pgate",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "inductive_lna/MCBOT",
+      "D_G_S_B": [
+        "vbias",
+        "vbias",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "inductive_lna/MCTOP",
+      "D_G_S_B": [
+        "vcas",
+        "vcas",
+        "vbias",
+        "vss"
+      ]
+    },
+    {
+      "instance": "inductive_lna/MIN",
+      "D_G_S_B": [
+        "nx",
+        "ng",
+        "ns",
+        "vss"
+      ]
+    },
+    {
+      "instance": "inductive_lna/MCAS",
+      "D_G_S_B": [
+        "nd",
+        "vcas",
+        "nx",
+        "vss"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [
+    {
+      "instance": "inductive_lna/RBIAS",
+      "terminal_1_2_B": [
+        "iref",
+        "ng",
+        "vss"
+      ]
+    }
+  ],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 16,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

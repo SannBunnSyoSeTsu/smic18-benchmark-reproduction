@@ -1,0 +1,15 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        LOG["UP / DN互补开关控制"]
+        BIAS["复制偏置与级联电流源"]
+        STEER["上下电流转向支路"]
+    end
+    CTRL["UP / DN脉冲"]
+    REF["参考电流"]
+    OUT["电流输出端口与固定测量负载"]
+    CTRL -.-> LOG
+    REF --> BIAS
+    BIAS -->|"持续偏置电流"| STEER
+    LOG -.->|"注入 / 抽取"| STEER
+    STEER -->|"脉冲电荷"| OUT

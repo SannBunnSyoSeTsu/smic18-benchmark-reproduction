@@ -1,0 +1,112 @@
+[
+  {
+    "generated_at": "2026-09-28T18:07:29.006089+00:00",
+    "circuit_sha256": "932079bd1b52f635b8632deb2e396f31044070eec8bb522322982af2f83ff7bd",
+    "parameters": {
+      "scale": 1,
+      "ladder": 500,
+      "tap": 0.3
+    },
+    "status": "complete_original",
+    "values": {
+      "transition": {
+        "transition_errors": 0,
+        "missing_expected_transitions": 0,
+        "late_transitions": 0,
+        "invalid_output_levels": 0,
+        "stable_level_violations": 0,
+        "clock_to_output_s": 6.908067779122534e-10,
+        "core_reference_power_w": 0.0003266099063089952,
+        "clock_delivery_power_w": 4.363302416064873e-05,
+        "clock_peak_current_a": 0.003698845599962661
+      },
+      "ramp": {
+        "dnl_lsb": 0.0999999999999992,
+        "inl_lsb": 0.09000000000000119,
+        "absolute_error_lsb": 0.19000000000000128,
+        "monotonic": true,
+        "codes_present": 8,
+        "thresholds_found": 7,
+        "invalid_output_levels": 0,
+        "stable_level_violations": 0
+      },
+      "sine_low": {
+        "codes_present": 7,
+        "invalid_output_levels": 0,
+        "stable_level_violations": 0,
+        "sndr_db": 20.012330916340176,
+        "sfdr_db": 26.537022145577915,
+        "normalized_enob_bits": 3.1242538838074037
+      },
+      "sine_high": {
+        "codes_present": 7,
+        "invalid_output_levels": 0,
+        "stable_level_violations": 0,
+        "sndr_db": 22.415351535468652,
+        "sfdr_db": 28.053528550786496,
+        "normalized_enob_bits": 3.55823246062442
+      }
+    },
+    "groups": {
+      "transition": "runs/46/20260928T180537281650Z_transition",
+      "ramp": "runs/46/20260928T180557513778Z_ramp",
+      "sine_low": "runs/46/20260928T180652513372Z_sine_low",
+      "sine_high": "runs/46/20260928T180704975793Z_sine_high"
+    }
+  },
+  {
+    "generated_at": "2026-09-28T18:12:27.176785+00:00",
+    "circuit_sha256": "932079bd1b52f635b8632deb2e396f31044070eec8bb522322982af2f83ff7bd",
+    "parameters": {
+      "scale": 1,
+      "ladder": 500,
+      "tap": 0.3
+    },
+    "status": "complete_original",
+    "values": {
+      "transition": {
+        "transition_errors": 0,
+        "missing_expected_transitions": 0,
+        "late_transitions": 0,
+        "invalid_output_levels": 0,
+        "stable_level_violations": 0,
+        "clock_to_output_s": 6.908039939063852e-10,
+        "core_reference_power_w": 0.0003266122347381317,
+        "clock_delivery_power_w": 4.363281918559468e-05,
+        "clock_peak_current_a": 0.003698856831841585
+      },
+      "ramp": {
+        "dnl_lsb": 0.0999999999999992,
+        "inl_lsb": 0.09000000000000119,
+        "absolute_error_lsb": 0.19000000000000128,
+        "monotonic": true,
+        "codes_present": 8,
+        "thresholds_found": 7,
+        "invalid_output_levels": 0,
+        "stable_level_violations": 0
+      },
+      "sine_low": {
+        "codes_present": 7,
+        "invalid_output_levels": 0,
+        "stable_level_violations": 0,
+        "sndr_db": 20.012330916340176,
+        "sfdr_db": 26.537022145577915,
+        "normalized_enob_bits": 3.1242538838074037
+      },
+      "sine_high": {
+        "codes_present": 7,
+        "invalid_output_levels": 0,
+        "stable_level_violations": 0,
+        "sndr_db": 22.415351535468652,
+        "sfdr_db": 28.053528550786496,
+        "normalized_enob_bits": 3.55823246062442
+      }
+    },
+    "groups": {
+      "transition": "runs/46/20260928T180852276960Z_transition",
+      "ramp": "runs/46/20260928T180930749182Z_ramp",
+      "sine_low": "runs/46/20260928T181118452556Z_sine_low",
+      "sine_high": "runs/46/20260928T181141726685Z_sine_high"
+    }
+  }
+]

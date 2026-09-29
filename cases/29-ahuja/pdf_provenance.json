@@ -1,0 +1,90 @@
+{
+  "pdf": "reports/29-ahuja-review.pdf",
+  "sha256": "8d822bbc5795c9331b9a5e2f5dcad5f9f78994700181a20aec97f52ed6d63cb9",
+  "results_sha256": "208dac06612273637497f10fbe1e5916fede6329ebc7f5213d100249b6c5971c",
+  "circuit_sha256": "5dc44123e5a36555ed339bf528dd09696385da5df0298ee34e558f26f14423d9",
+  "generated_at": "2026-09-23T06:27:38.311229+00:00",
+  "pages": 6,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:27:38.314079+00:00",
+  "opening_paragraph_sha256": "504e8c4488dc64fc970b48c9cfb75cc22f55542c840490439e8ec2655f77f6d5",
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change.",
+  "body_pages": 4,
+  "schematic_pages": 2,
+  "schematic_sheets_sha256": "8856c6ffee2d8c5ed36e5d0236ff3a29c4a8c265ff4e508598f7f8fd8d5736dc",
+  "schematic_audit_sha256": "c9409229f378e2200b64652f64871f99dfe967df45f53198fb2dadd4203af853",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/29-ahuja/29-ahuja-review.pdf",
+    "sha256": "e74d9c1e6dff378a79e0c8eef851005f62a3595d584108e78ec6b464435a5205",
+    "pages": 4,
+    "previous_render_reviewed_at": "2026-09-22T07:28:38.271990+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "78601d3e91bc5876e807e668ffb1c730596ab6932e2e9718803e99a0e2c00dfe"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "2e664923407b905b91748999f048364ec126782cd0c0d8ff1fdef263122ba88e"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "20b2d4113d5cc7a5de9270a57bf6a9ae8b42c5e79096f53506ed55da134ea637"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "363062c97c18fcef997bf68f234b677eba79e20f8f1466950a9052fb45d8013d"
+    },
+    {
+      "page": 5,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "e1acdca8cf90c8042b4aae55405e47b3969994e2d1dd76af233f83ad58acd919",
+      "path": "reports/schematic-retrofit-renders/29-ahuja/page-05.png",
+      "sha256": "5c8d5732c4f3e5d13087381b901262d1634e33b460c58caa1d13dc570a6b8b1f"
+    },
+    {
+      "page": 6,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "fd9e7d8b634c8c1edaf38fdae42753f16b75dcd7e0973926cde36cd6651c7861",
+      "path": "reports/schematic-retrofit-renders/29-ahuja/page-06.png",
+      "sha256": "e6769f632b7653534b85c46bf9a0b078f1183d7542c17f359f677c143a9614ea"
+    }
+  ]
+}

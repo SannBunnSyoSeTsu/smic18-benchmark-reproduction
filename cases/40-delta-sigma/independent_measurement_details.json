@@ -1,0 +1,43 @@
+{
+  "sample_boundary": "Exactly580 samples20ns..57.92us; last5126.82us..57.92us; no extrapolation.",
+  "source_gates": [
+    [
+      "nominal_function",
+      true
+    ],
+    [
+      "stimulus_transfer",
+      true
+    ],
+    [
+      "dc_tracking",
+      true
+    ],
+    [
+      "polarity_tracking",
+      true
+    ],
+    [
+      "bounded_state",
+      true
+    ],
+    [
+      "noise_shaping",
+      true
+    ],
+    [
+      "first_order_gain",
+      true
+    ],
+    [
+      "power",
+      true
+    ],
+    [
+      "sndr_suite",
+      true
+    ]
+  ],
+  "all_power_windows_include_startup": true,
+  "serialization_recovery": "All numerical/structural checks previously passed; converted NumPy bool to JSON boolean without repeating waveform analysis."
+}

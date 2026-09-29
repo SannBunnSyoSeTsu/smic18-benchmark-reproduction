@@ -1,0 +1,419 @@
+{
+  "case_slot": 24,
+  "generated_at": "2026-09-22T09:16:23.416842+00:00",
+  "run_dirs": [
+    "runs/24/20260922T090830797411Z_tune",
+    "runs/24/20260922T090846079959Z_push"
+  ],
+  "status": "complete_original",
+  "nominal_complete": true,
+  "values": {
+    "f_0p9_min_Hz": 16907988.270248022,
+    "f_0p9_max_Hz": 16907988.270248022,
+    "f_1p2_Hz": 29614813.825846586,
+    "tuning_ratio": 1.7515279377120225,
+    "kvco_min_Hz_per_V": 40751972.77658749,
+    "kvco_linearity_ratio": 1.0767330257495895,
+    "frequency_settling_drift": 4.812646464076705e-07,
+    "duty_error_from_half": 0.026899815740426436,
+    "startup_time_s": 1.8608842261848993e-08,
+    "output_low_fraction": -0.0004805606392082441,
+    "output_high_fraction": 1.0013197366310171,
+    "power_W": 8.467062902799182e-05,
+    "supply_pushing_pct_per_V": 83.52287055865695
+  },
+  "gates": {
+    "f_0p9_min_Hz": {
+      "value": 16907988.270248022,
+      "unit": "Hz",
+      "sense": "min",
+      "limits": {
+        "original": 10000000.0,
+        "10pct": 9000000.0,
+        "15pct": 8500000.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "f_0p9_max_Hz": {
+      "value": 16907988.270248022,
+      "unit": "Hz",
+      "sense": "max",
+      "limits": {
+        "original": 25000000.0,
+        "10pct": 27500000.000000004,
+        "15pct": 28749999.999999996
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "f_1p2_Hz": {
+      "value": 29614813.825846586,
+      "unit": "Hz",
+      "sense": "min",
+      "limits": {
+        "original": 25000000.0,
+        "10pct": 22500000.0,
+        "15pct": 21250000.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "tuning_ratio": {
+      "value": 1.7515279377120225,
+      "unit": "ratio",
+      "sense": "min",
+      "limits": {
+        "original": 1.5,
+        "10pct": 1.35,
+        "15pct": 1.275
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "kvco_min_Hz_per_V": {
+      "value": 40751972.77658749,
+      "unit": "Hz/V",
+      "sense": "min",
+      "limits": {
+        "original": 30000000.0,
+        "10pct": 27000000.0,
+        "15pct": 25500000.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "kvco_linearity_ratio": {
+      "value": 1.0767330257495895,
+      "unit": "ratio",
+      "sense": "max",
+      "limits": {
+        "original": 1.5,
+        "10pct": 1.6500000000000001,
+        "15pct": 1.7249999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "frequency_settling_drift": {
+      "value": 4.812646464076705e-07,
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.001,
+        "10pct": 0.0011,
+        "15pct": 0.00115
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "duty_error_from_half": {
+      "value": 0.026899815740426436,
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.05,
+        "10pct": 0.05500000000000001,
+        "15pct": 0.057499999999999996
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_time_s": {
+      "value": 1.8608842261848993e-08,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 1e-07,
+        "10pct": 1.1e-07,
+        "15pct": 1.1499999999999998e-07
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "output_low_fraction": {
+      "value": -0.0004805606392082441,
+      "unit": "VDD",
+      "sense": "max",
+      "limits": {
+        "original": 0.1,
+        "10pct": 0.11000000000000001,
+        "15pct": 0.11499999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "output_high_fraction": {
+      "value": 1.0013197366310171,
+      "unit": "VDD",
+      "sense": "min",
+      "limits": {
+        "original": 0.9,
+        "10pct": 0.81,
+        "15pct": 0.765
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power_W": {
+      "value": 8.467062902799182e-05,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.0002,
+        "10pct": 0.00022000000000000003,
+        "15pct": 0.00022999999999999998
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "supply_pushing_pct_per_V": {
+      "value": 83.52287055865695,
+      "unit": "%/V",
+      "sense": "max",
+      "limits": {
+        "original": 100.0,
+        "10pct": 110.00000000000001,
+        "15pct": 114.99999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "functional_checks_pass": true,
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "tuning": {
+    "run_dir": "runs/24/20260922T090830797411Z_tune",
+    "valid": true,
+    "plateaus": [
+      {
+        "control_V": 0.9,
+        "plateau_start_s": 5.1e-08,
+        "plateau_end_s": 1.051e-06,
+        "frequency_Hz": 16907988.270248022,
+        "early_frequency_Hz": 16907988.2547052,
+        "late_frequency_Hz": 16907988.282286823,
+        "drift": 1.631277507615701e-09,
+        "six_period_edges_s": [
+          4.011694695124727e-07,
+          4.6031311130364864e-07,
+          5.194567530066184e-07,
+          5.786003946751909e-07,
+          6.377440363253933e-07,
+          6.968876779759953e-07
+        ],
+        "late_three_edges_s": [
+          7.560313196265886e-07,
+          8.151749612771819e-07,
+          8.74318602927775e-07
+        ],
+        "period_end_s": 6.968876779759953e-07,
+        "late_end_s": 8.74318602927775e-07,
+        "all_edges_inside_plateau": true,
+        "output_min_V": -0.0008650091505748394,
+        "output_max_V": 1.802375525935831,
+        "average_bias_current_A": 6.716088880983965e-06,
+        "average_ndeg_V": 0.31565622854958525,
+        "average_VDD_current_A": 2.9921619985291527e-05
+      },
+      {
+        "control_V": 1.0,
+        "plateau_start_s": 1.052e-06,
+        "plateau_end_s": 2.052e-06,
+        "frequency_Hz": 20983185.54790677,
+        "early_frequency_Hz": 20983185.547910843,
+        "late_frequency_Hz": 20983185.547903806,
+        "drift": 3.3536725668883824e-13,
+        "six_period_edges_s": [
+          1.3857332121210301e-06,
+          1.4333904183024512e-06,
+          1.4810476244838911e-06,
+          1.5287048306653364e-06,
+          1.5763620368467824e-06,
+          1.624019243028229e-06
+        ],
+        "late_three_edges_s": [
+          1.7669908615725695e-06,
+          1.8146480677540164e-06,
+          1.8623052739354625e-06
+        ],
+        "period_end_s": 1.624019243028229e-06,
+        "late_end_s": 1.8623052739354625e-06,
+        "all_edges_inside_plateau": true,
+        "output_min_V": -0.001060515303504629,
+        "output_max_V": 1.802811588484379,
+        "average_bias_current_A": 8.212018034880659e-06,
+        "average_ndeg_V": 0.38596490010002005,
+        "average_VDD_current_A": 3.5544578902929605e-05
+      },
+      {
+        "control_V": 1.1,
+        "plateau_start_s": 2.053e-06,
+        "plateau_end_s": 3.0530000000000002e-06,
+        "frequency_Hz": 25226914.33054659,
+        "early_frequency_Hz": 25226916.32014941,
+        "late_frequency_Hz": 25226904.17932937,
+        "drift": 4.812646464076705e-07,
+        "six_period_edges_s": [
+          2.3703192083158596e-06,
+          2.409959405189407e-06,
+          2.4495996076567235e-06,
+          2.4892398242332397e-06,
+          2.5288800209317443e-06,
+          2.568520222299787e-06
+        ],
+        "late_three_edges_s": [
+          2.7667212499111593e-06,
+          2.806361458073807e-06,
+          2.8460016874068856e-06
+        ],
+        "period_end_s": 2.568520222299787e-06,
+        "late_end_s": 2.8460016874068856e-06,
+        "all_edges_inside_plateau": true,
+        "output_min_V": -0.001251145279315699,
+        "output_max_V": 1.803225105065822,
+        "average_bias_current_A": 9.738933717650172e-06,
+        "average_ndeg_V": 0.45772991990134493,
+        "average_VDD_current_A": 4.124241136074755e-05
+      },
+      {
+        "control_V": 1.2,
+        "plateau_start_s": 3.054e-06,
+        "plateau_end_s": 4.054e-06,
+        "frequency_Hz": 29614813.825846586,
+        "early_frequency_Hz": 29614813.82584666,
+        "late_frequency_Hz": 29614813.82584666,
+        "drift": 0.0,
+        "six_period_edges_s": [
+          3.383537956803491e-06,
+          3.417304841372836e-06,
+          3.4510717259421807e-06,
+          3.4848386105115255e-06,
+          3.5186054950808703e-06,
+          3.5523723796502155e-06
+        ],
+        "late_three_edges_s": [
+          3.7549736870662833e-06,
+          3.7887405716356276e-06,
+          3.822507456204973e-06
+        ],
+        "period_end_s": 3.5523723796502155e-06,
+        "late_end_s": 3.822507456204973e-06,
+        "all_edges_inside_plateau": true,
+        "output_min_V": -0.001433882458545728,
+        "output_max_V": 1.80363307738913,
+        "average_bias_current_A": 1.1290747559472457e-05,
+        "average_ndeg_V": 0.5306651610648443,
+        "average_VDD_current_A": 4.686647233596253e-05
+      }
+    ],
+    "f_0p9_min_Hz": 16907988.270248022,
+    "f_0p9_max_Hz": 16907988.270248022,
+    "f_1p2_Hz": 29614813.825846586,
+    "tuning_ratio": 1.7515279377120225,
+    "kvco_Hz_per_V": [
+      40751972.77658749,
+      42437287.8263982,
+      43878994.95299995
+    ],
+    "kvco_min_Hz_per_V": 40751972.77658749,
+    "kvco_linearity_ratio": 1.0767330257495895,
+    "frequency_settling_drift": 4.812646464076705e-07,
+    "startup_time_s": 1.8608842261848993e-08,
+    "startup_crossing_s": 6.960884226184899e-08,
+    "duty_high_fraction": 0.5268998157404264,
+    "duty_verifier_fraction": 0.47310018425957356,
+    "duty_error_from_half": 0.026899815740426436,
+    "duty_edges_s": {
+      "rise1": 2.3703192083158596e-06,
+      "rise2": 2.409959405189407e-06,
+      "firstfall": 2.391205620744446e-06,
+      "followingfall": 2.391205620744446e-06
+    },
+    "output_low_fraction": -0.0004805606392082441,
+    "output_high_fraction": 1.0013197366310171,
+    "power_W": 8.467062902799182e-05,
+    "all_windows_valid": true,
+    "monotonic": true
+  },
+  "pushing": {
+    "run_dir": "runs/24/20260922T090846079959Z_push",
+    "valid": true,
+    "supplies": [
+      {
+        "VDD_V": 1.71,
+        "frequency_Hz": 27272269.063459627,
+        "edges_s": [
+          5.6417072770588e-07,
+          6.00838550041564e-07,
+          6.375054173799938e-07,
+          6.741733686021107e-07,
+          7.108400871824992e-07,
+          7.475071412754858e-07
+        ],
+        "all_edges_in_window": true
+      },
+      {
+        "VDD_V": 1.89,
+        "frequency_Hz": 23458786.048947707,
+        "edges_s": [
+          5.598225917527816e-07,
+          6.024499753814013e-07,
+          6.450791737951876e-07,
+          6.87705592862782e-07,
+          7.303346534528711e-07,
+          7.729623505436797e-07
+        ],
+        "all_edges_in_window": true
+      }
+    ],
+    "supply_pushing_pct_per_V": 83.52287055865695,
+    "all_windows_valid": true
+  },
+  "scope": "TT/1.8V/27C4 control plateaus and TT/27C1.71/1.89V pushing pair. Other PVT, mismatch, noise/jitter and PEX excluded."
+}

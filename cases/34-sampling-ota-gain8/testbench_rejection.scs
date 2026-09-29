@@ -1,0 +1,43 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/34-sampling-ota-gain8/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-10 iabstol=1e-15
+saveOptions options save=selected
+VSSC (vssC 0) vsource dc=0 mag=0 phase=0
+VDDC (vddC vssC) vsource dc=1.8 mag=0 phase=0
+IREFC (vddC irefC) isource dc=50u
+VOCMC (vocmC vssC) vsource dc=.9
+VCMC (cmC 0) vsource dc=0 mag=1
+ECMC (cmrefC vocmC cmC 0) vcvs gain=1
+EPC (vinpC cmrefC voutpC voutnC) vcvs gain=-.0555555555556
+ENC (vinnC cmrefC voutpC voutnC) vcvs gain=.0555555555556
+XC (vssC irefC vddC vinnC vinpC vocmC voutnC voutpC) sampling_feedback_ota
+CLPC (voutpC vssC) capacitor c=.361111111111111p
+CLNC (voutnC vssC) capacitor c=.361111111111111p
+save voutpC voutnC
+VSSP (vssP 0) vsource dc=0 mag=0 phase=0
+VDDP (vddP vssP) vsource dc=1.8 mag=1 phase=0
+IREFP (vddP irefP) isource dc=50u
+VOCMP (vocmP vssP) vsource dc=.9
+VCMP (cmP 0) vsource dc=0 mag=0
+ECMP (cmrefP vocmP cmP 0) vcvs gain=1
+EPP (vinpP cmrefP voutpP voutnP) vcvs gain=-.0555555555556
+ENP (vinnP cmrefP voutpP voutnP) vcvs gain=.0555555555556
+XP (vssP irefP vddP vinnP vinpP vocmP voutnP voutpP) sampling_feedback_ota
+CLPP (voutpP vssP) capacitor c=.361111111111111p
+CLNP (voutnP vssP) capacitor c=.361111111111111p
+save voutpP voutnP
+VSSN (vssN 0) vsource dc=0 mag=1 phase=0
+VDDN (vddN vssN) vsource dc=1.8 mag=1 phase=180
+IREFN (vddN irefN) isource dc=50u
+VOCMN (vocmN vssN) vsource dc=.9
+VCMN (cmN 0) vsource dc=0 mag=0
+ECMN (cmrefN vocmN cmN 0) vcvs gain=1
+EPN (vinpN cmrefN voutpN voutnN) vcvs gain=-.0555555555556
+ENN (vinnN cmrefN voutpN voutnN) vcvs gain=.0555555555556
+XN (vssN irefN vddN vinnN vinpN vocmN voutnN voutpN) sampling_feedback_ota
+CLPN (voutpN vssN) capacitor c=.361111111111111p
+CLNN (voutnN vssN) capacitor c=.361111111111111p
+save voutpN voutnN
+ac ac start=10 stop=11 lin=2

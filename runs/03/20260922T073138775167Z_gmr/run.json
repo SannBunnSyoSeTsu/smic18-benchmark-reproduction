@@ -1,0 +1,36 @@
+{
+  "started_at": "2026-09-22T07:31:38.775573+00:00",
+  "case_slot": 3,
+  "label": "gmr",
+  "netlist": "runs/03/20260922T073138775167Z_gmr/inputs/bench.scs",
+  "netlist_sha256": "b8b55358d4ee4710141260a9297f1c9b850063b17985cae68a36185028ef7f7d",
+  "dependencies": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/03-selfbiased-gmr/circuit.scs": {
+      "snapshot": "runs/03/20260922T073138775167Z_gmr/inputs/circuit.scs",
+      "sha256": "d4504f8b99aae74c22d49109938ee6d187d5e83a13dbcb02ad518e93df3748cd"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/03-selfbiased-gmr/sizing.json": {
+      "snapshot": "runs/03/20260922T073138775167Z_gmr/inputs/sizing.json",
+      "sha256": "a9ba863e61b9d401db963d5d4cdbbe37953e47afc018d1ccce6aee780cd41898"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/03-selfbiased-gmr/contract.json": {
+      "snapshot": "runs/03/20260922T073138775167Z_gmr/inputs/contract.json",
+      "sha256": "60843252fcfaa286e3f4f3ffefa758e452b4e5d3dbb81d85a36185bb45a99173"
+    }
+  },
+  "models": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib": "88246a7e992cb3f5af5ac0f6a9a1c5934707ecd72e7f8f08150b44a01796c20f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.mdl": "832d378241360815f6d4009514d863f2aac9c48c312326410de9421564b1033d",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_bjt_spe.mdl": "d2d45e69a854f8d090fe3ef83041bc39ed8a0abcd9d272b8067a9db3014a9b6f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_res_spe.mdl": "173a1a7c1d8cc2f1009ac12db0f0d4f9725aebea8625cf9796a0be50f06fceb1",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_mim_spe.mdl": "02c8e7986a1c159e52c8fa403fdb52b9b4f928e00bca5522a648992528d7edff"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "status": "completed",
+  "completed_at": "2026-09-22T07:31:39.123279+00:00",
+  "errors": [],
+  "warnings": [],
+  "model_dimensions_valid": true,
+  "raw_dir": "runs/03/20260922T073138775167Z_gmr/output/bench.raw"
+}

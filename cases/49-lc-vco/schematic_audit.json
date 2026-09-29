@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-09-23T06:18:51.015002+00:00",
+  "status": "passed",
+  "circuit_sha256": "56f91d72cc942ead964ed387c001590690600315d999f535cc6f0f26940c4753",
+  "hd_cells_sha256": null,
+  "renderer_sha256": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+  "layout_file": "scripts/schematics_core.py",
+  "layout_sha256": "e28fbcf5a01d57ea17091e3312b1f838000ac5e19fb97b869eb7a7032fd37535",
+  "instance_counts": {
+    "MOS": 16,
+    "L": 2,
+    "C": 8,
+    "VAR": 4,
+    "R": 4
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 16,
+    "L": 2,
+    "C": 8,
+    "R": 4,
+    "VAR": 4
+  },
+  "total_instances": 34,
+  "expanded_leaf_instances": 34,
+  "total_terminals": 104,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 4,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/49-lc-vco/schematic/connectivity.json": "b7f2348322e076e47468a8bcaca62408e779bb57a62f445385510ec6d31d9966",
+    "cases/49-lc-vco/schematic/full.pdf": "93dfcf8376d85e653d67822a8b9b395d59944e3f618f4666f54f2230a74043d2",
+    "cases/49-lc-vco/schematic/full.png": "c75cd56707c960b81ca7a0fb022997743de447755c343b2077770737131e83d3",
+    "cases/49-lc-vco/schematic/full.svg": "11ae6b2f25c333f2668375755fd2593c86ff8c9613dadb318e12771284505586",
+    "cases/49-lc-vco/schematic/layout_source.py": "e28fbcf5a01d57ea17091e3312b1f838000ac5e19fb97b869eb7a7032fd37535",
+    "cases/49-lc-vco/schematic/renderer_source.py": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+    "cases/49-lc-vco/schematic/sheet-1.png": "63684ac39cf5056ed1098cacc16397ab19c60b9317aabdd5bf759442a1d1ea61",
+    "cases/49-lc-vco/schematic/sheet-1.svg": "562d35a6652af0c7dc12eee2669400ca1aa6c9ec5940b5422bf80a0e066e3967",
+    "cases/49-lc-vco/schematic/sheet-2.png": "18f45e6a84b949d23c1a128fbe130993ed225e693fceb14fe5d4000b80dd3edf",
+    "cases/49-lc-vco/schematic/sheet-2.svg": "a44909c2358cc1845539d4f2f429a55ab9fcd7060130bb9c577cfc2e721eef6c",
+    "cases/49-lc-vco/schematic/sheet-3.png": "a1e9426b02f1acad86320aecd9914f6367474f465bf93dbc5b8f250b3824bb3c",
+    "cases/49-lc-vco/schematic/sheet-3.svg": "b2648e3bb8c8a0d378da5f24d7b405aa77bfbe8a635d9bd329a16d7ed77130c8",
+    "cases/49-lc-vco/schematic/sheet-4.png": "ced411fda8978f2665de7cfe0a6dbeaf6765967d5cfb07c5e285af414d16a539",
+    "cases/49-lc-vco/schematic/sheet-4.svg": "3df576785d069287298a30a8f67dc3f5a749579751f5ae5cafc4e50a11a736a0",
+    "cases/49-lc-vco/schematic/sheets.pdf": "732c03b90f7837edf6643a8d08fedac56f02712b0141a1ae484edb3236403ffb",
+    "cases/49-lc-vco/schematic/symbol_source.py": "c65698950039c9fd48e1659d37f7fb5220517dd0dc1847b24f5b1761d0956898"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "final_source_freeze_at": "2026-09-23T06:18:51.016456+00:00",
+  "previous_visual_review": {
+    "reviewed_at": "2026-09-23T06:13:53.297600+00:00",
+    "note": "All split sheets and full overview actually viewed; connectivity, symbols, values, body ties and text readability reviewed.",
+    "reviewed_png_hashes": {
+      "cases/49-lc-vco/schematic/full.png": "c75cd56707c960b81ca7a0fb022997743de447755c343b2077770737131e83d3",
+      "cases/49-lc-vco/schematic/sheet-1.png": "63684ac39cf5056ed1098cacc16397ab19c60b9317aabdd5bf759442a1d1ea61",
+      "cases/49-lc-vco/schematic/sheet-2.png": "18f45e6a84b949d23c1a128fbe130993ed225e693fceb14fe5d4000b80dd3edf",
+      "cases/49-lc-vco/schematic/sheet-3.png": "a1e9426b02f1acad86320aecd9914f6367474f465bf93dbc5b8f250b3824bb3c",
+      "cases/49-lc-vco/schematic/sheet-4.png": "ced411fda8978f2665de7cfe0a6dbeaf6765967d5cfb07c5e285af414d16a539"
+    }
+  },
+  "rebuild_png_changes": [],
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-23T06:13:53.297600+00:00",
+  "visual_review_note": "All final sheet PNGs and full overview are byte-for-byte identical to the actually viewed artifacts; final renderer, symbols and layout sources were frozen beside the drawings."
+}

@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-09-26T03:35:42.025329+00:00",
+  "case_slot": 9,
+  "label": "10g",
+  "netlist": "runs/09/20260926T033542023288Z_10g/inputs/bench.scs",
+  "netlist_sha256": "5e72e5b87ac2dd232c97437e560ec1a97dcaeae8efcc016b1d6e7880981c8a5a",
+  "dependencies": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/09-cml-divider/circuit.scs": {
+      "snapshot": "runs/09/20260926T033542023288Z_10g/inputs/circuit.scs",
+      "sha256": "b92dbeb47541da5d5b1137db661ae3624ef18c87bb0e152bebb98b803b9b1a55"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/09-cml-divider/sizing.json": {
+      "snapshot": "runs/09/20260926T033542023288Z_10g/inputs/sizing.json",
+      "sha256": "af90645e7cf2b356e4b270b15a24660b5d2e7e5e95a8c03ea7480162d277b6cc"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/09-cml-divider/contract.json": {
+      "snapshot": "runs/09/20260926T033542023288Z_10g/inputs/contract.json",
+      "sha256": "f8407b19d0dda7d2b287818cac9197d514679bb1add67997b22a8ea7cb60c68e"
+    }
+  },
+  "models": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib": "88246a7e992cb3f5af5ac0f6a9a1c5934707ecd72e7f8f08150b44a01796c20f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.mdl": "832d378241360815f6d4009514d863f2aac9c48c312326410de9421564b1033d",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_bjt_spe.mdl": "d2d45e69a854f8d090fe3ef83041bc39ed8a0abcd9d272b8067a9db3014a9b6f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_res_spe.mdl": "173a1a7c1d8cc2f1009ac12db0f0d4f9725aebea8625cf9796a0be50f06fceb1",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_mim_spe.mdl": "02c8e7986a1c159e52c8fa403fdb52b9b4f928e00bca5522a648992528d7edff"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "status": "completed",
+  "completed_at": "2026-09-26T03:35:43.750037+00:00",
+  "errors": [
+    "license error"
+  ],
+  "warnings": [],
+  "model_dimensions_valid": true,
+  "raw_dir": "runs/09/20260926T033542023288Z_10g/output/bench.raw"
+}

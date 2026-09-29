@@ -1,0 +1,912 @@
+{
+  "checked_at": "2026-09-29T14:30:16.864020+00:00",
+  "status": "passed",
+  "documents": 180,
+  "rendered_markdown_tables": 391,
+  "links": 2872,
+  "source_pdf_tables": "201 tables /8098 cells passed before export; original reports and measured values retained",
+  "mermaid": "28 final sources match actually viewed original SVG/PNG and successful parser audit",
+  "documents_checked": [
+    {
+      "path": "NOTICE.md",
+      "tables": 0,
+      "sha256": "0b7d76ac391650ab85376b344e7e12df29cf424b01e48cf2ea2e339e012e0231"
+    },
+    {
+      "path": "README.md",
+      "tables": 1,
+      "sha256": "e5bb07ccb3e3e777ac138bd4eb578ee8d73818d8134d5cb8b4416891d5dd76c5"
+    },
+    {
+      "path": "cases/01-class-d/knowledge.md",
+      "tables": 2,
+      "sha256": "8f926f7eac0b96d9fc4a67e2bef5d8b190c3378eedb2a72ccfa5098f21eefbce"
+    },
+    {
+      "path": "cases/01-class-d/measurement-review.md",
+      "tables": 1,
+      "sha256": "0aa480eecb9831823468d41ac76954362164b28c6073c62da7e0f33e4cca9cfb"
+    },
+    {
+      "path": "cases/01-class-d/review_report.md",
+      "tables": 6,
+      "sha256": "9ae4652c399ae717d3eb3382e90575bd88747dccef5f462742561ab9d32ddf55"
+    },
+    {
+      "path": "cases/02-mirror/review_report.md",
+      "tables": 4,
+      "sha256": "2734885bdc9cbf7b16bf07ef671b4df0b148dfaa3ecc39e32aad4fc31357e777"
+    },
+    {
+      "path": "cases/03-selfbiased-gmr/review_report.md",
+      "tables": 3,
+      "sha256": "a84831eff313db6dc4b1f52ff45cef3819275f5a713de3032718c6f5e8f1164c"
+    },
+    {
+      "path": "cases/04-gmr/review_report.md",
+      "tables": 4,
+      "sha256": "3ef0d005266f0960e90affe1825d003997bc3de915b21fcfdba95ecabbaa58d0"
+    },
+    {
+      "path": "cases/05-bootstrap-driver/knowledge.md",
+      "tables": 0,
+      "sha256": "b27ba3d66819616d7fba41aa27fbef92fb4cfac1471bd49a5949d339c03c9205"
+    },
+    {
+      "path": "cases/05-bootstrap-driver/measurement-review.md",
+      "tables": 1,
+      "sha256": "555057c7a7560130f4a0e55611bbd0f6230813bbed80d0eef4c2ff75dff0ebaa"
+    },
+    {
+      "path": "cases/05-bootstrap-driver/review_report.md",
+      "tables": 3,
+      "sha256": "15cc6821067d8e3894be3e60e783e85f713a7c4f01ffedccf70abfb37e18c23e"
+    },
+    {
+      "path": "cases/06-ring-amplifier/knowledge.md",
+      "tables": 0,
+      "sha256": "9993dcfa947cfefa6681ee5c9f0b1de8de66fa7c1b54a363b8e5e813ca6e988b"
+    },
+    {
+      "path": "cases/06-ring-amplifier/measurement-review.md",
+      "tables": 1,
+      "sha256": "417587ee199d4361b3616b004731acdaf1092bf79989b170ef024e0d6a2af591"
+    },
+    {
+      "path": "cases/06-ring-amplifier/review_report.md",
+      "tables": 2,
+      "sha256": "cd1ebb4636d1fd4893361478ed43a4cf93c5f218c9563042273f4d07d2941a1b"
+    },
+    {
+      "path": "cases/07-ldo-ota5/knowledge.md",
+      "tables": 1,
+      "sha256": "8c52d1e5b71cc15271f354e6259c92d6c2c1e6d84c91661cffadd9c272a70c72"
+    },
+    {
+      "path": "cases/07-ldo-ota5/review_report.md",
+      "tables": 5,
+      "sha256": "37480a024509ec905858b60c9e32b709218095cdc693c9fbc2d60f523452f187"
+    },
+    {
+      "path": "cases/08-ppsf/knowledge.md",
+      "tables": 2,
+      "sha256": "e4516933c4155396d36721c5b9816896c33be7c6daa75eadb4f61636d2aeb23e"
+    },
+    {
+      "path": "cases/08-ppsf/review_report.md",
+      "tables": 4,
+      "sha256": "d6940639269273657db1510861d2b9b55445af84b244cede12fcbbae5af1045f"
+    },
+    {
+      "path": "cases/09-cml-divider/PREPARATION.md",
+      "tables": 0,
+      "sha256": "6563b2c0cc4b8433429a3259d7e1b18281b1fe440171f3ecb35b0025bc28408a"
+    },
+    {
+      "path": "cases/09-cml-divider/knowledge.md",
+      "tables": 1,
+      "sha256": "4411c332896dd498f63a7fde60b0a6ae49bf4fea1d277b436c08c034edc65780"
+    },
+    {
+      "path": "cases/09-cml-divider/measurement-review.md",
+      "tables": 1,
+      "sha256": "91b07dc067a8c040681772b66a22cd631e601c7554d19ecddfa71090c15fee0f"
+    },
+    {
+      "path": "cases/09-cml-divider/review_report.md",
+      "tables": 4,
+      "sha256": "cc852a15615e18e686b7c289a44fa4d6399f312b199136c079f2454bbe5b7efd"
+    },
+    {
+      "path": "cases/10-tia/knowledge.md",
+      "tables": 4,
+      "sha256": "9b46ee08692df952156676bedcf4370a86392acbc8247a706e07696fd1c1c496"
+    },
+    {
+      "path": "cases/10-tia/review_report.md",
+      "tables": 5,
+      "sha256": "b210c533e0f61def98b5388764675fb80f344cd1627d72a4cd8f02cf9570af18"
+    },
+    {
+      "path": "cases/11-bandgap/README.md",
+      "tables": 0,
+      "sha256": "9677cac70ec9f478c12235ba2f5ba77cb4ccb89421a530bad72d0ca79c5c7411"
+    },
+    {
+      "path": "cases/11-bandgap/knowledge.md",
+      "tables": 2,
+      "sha256": "a4d7b440afe1fae918da2ca3935dfdceac7f19e891452bec6a1ac8fd4f02c793"
+    },
+    {
+      "path": "cases/11-bandgap/measurement-review.md",
+      "tables": 1,
+      "sha256": "4a14963923e11e6c370795b85a33014dd446e83eca1048aaf0bf4b4edd61d9bc"
+    },
+    {
+      "path": "cases/11-bandgap/review_report.md",
+      "tables": 9,
+      "sha256": "dae7658777bb7d0a30bc343394947e9d8a30648245e9fa559f8f149cd1ea9600"
+    },
+    {
+      "path": "cases/12-beta/review_report.md",
+      "tables": 3,
+      "sha256": "6008c80a2b957fce505c190935bc9bf84414d0bc4a241c443d7592c1c4744770"
+    },
+    {
+      "path": "cases/13-constant-gm/review_report.md",
+      "tables": 4,
+      "sha256": "5257d67297e13a7eb43db449d4ad213ac4519a58a913fe3844663cd0113f37e9"
+    },
+    {
+      "path": "cases/14-oscillator/knowledge.md",
+      "tables": 6,
+      "sha256": "848db895cfb06f34cc9f668e2c1ba647983fb56cb4cf1699a69da2df1c7d8433"
+    },
+    {
+      "path": "cases/14-oscillator/review_report.md",
+      "tables": 7,
+      "sha256": "a0a4895ee16791322eb826cf51c0fd2f740d6b1e45e55a0b86bc9e38050e227c"
+    },
+    {
+      "path": "cases/15-unregulated-pump/knowledge.md",
+      "tables": 1,
+      "sha256": "98cde9e35968f0acf693df9e3eff59e9815047506299422aa9e7ff0745a2ae01"
+    },
+    {
+      "path": "cases/15-unregulated-pump/measurement-review.md",
+      "tables": 1,
+      "sha256": "3695cbe13360d9952c7cb41968b9d18f8acf81fd950215dcee846f8151587cc8"
+    },
+    {
+      "path": "cases/15-unregulated-pump/review_report.md",
+      "tables": 5,
+      "sha256": "5116172dbd049d016e58997c9487be8607216d0a08473a962cce2e846543c805"
+    },
+    {
+      "path": "cases/16-miller/review_report.md",
+      "tables": 3,
+      "sha256": "c8536e8005c12e735d1701cc85dc38b71f7dfdfb2bf19b40eaec26a9f52efdb1"
+    },
+    {
+      "path": "cases/17-nmos-ldo/knowledge.md",
+      "tables": 1,
+      "sha256": "a7a6ad8470edcf69657cc2a706fb1a84db5edcf0460363a1a733a0a423d7f4d6"
+    },
+    {
+      "path": "cases/17-nmos-ldo/measurement-review.md",
+      "tables": 1,
+      "sha256": "823645a9769630f5aaa683919c23a7b1421323b830724ea16e945b5702c4f76e"
+    },
+    {
+      "path": "cases/17-nmos-ldo/review_report.md",
+      "tables": 4,
+      "sha256": "d12bf66fbe78c1dfed6c137fb24c1049b23e5e34847e6aabd5e620e529d2f80e"
+    },
+    {
+      "path": "cases/18-regulated-pump/knowledge.md",
+      "tables": 1,
+      "sha256": "238810d39020de7270e695c6ff82f195244831d3d91e3a631ffc8190f29236f7"
+    },
+    {
+      "path": "cases/18-regulated-pump/measurement-review.md",
+      "tables": 1,
+      "sha256": "a4a9b3236dfa7426a7c421fc9ec24c046fa7a7639992b67ead5e76f02dea3ddb"
+    },
+    {
+      "path": "cases/18-regulated-pump/review_report.md",
+      "tables": 3,
+      "sha256": "0a2a63efe128020e60d6f5919da55960627971c5d0c523ffe1a3db7a6db89868"
+    },
+    {
+      "path": "cases/19-sc-converter/knowledge.md",
+      "tables": 1,
+      "sha256": "2c9aab0ade3c76943802bcd1f8c53e7866a748e0923034b6e1406819d193ba08"
+    },
+    {
+      "path": "cases/19-sc-converter/measurement-review.md",
+      "tables": 1,
+      "sha256": "b949bc6348b09b3f90c073601a27e27cfc8d31bbde7a48d624246f6e9fb23c48"
+    },
+    {
+      "path": "cases/19-sc-converter/review_report.md",
+      "tables": 4,
+      "sha256": "abef43cb9eadf1d64b9bfb1c94cdda5770221a848737bedbe921074bdf678bf1"
+    },
+    {
+      "path": "cases/20-mux/knowledge.md",
+      "tables": 0,
+      "sha256": "4f63287c79b4e198547767acc3461d53db5b84922013b85b589f0bba6a198e56"
+    },
+    {
+      "path": "cases/20-mux/review_report.md",
+      "tables": 4,
+      "sha256": "c94297fafbc972f71de2843c0ec9a1d14e16ca75510a64e385c2895d9a91e97e"
+    },
+    {
+      "path": "cases/21-highpsrr-bandgap/knowledge.md",
+      "tables": 1,
+      "sha256": "c9645c7ebe0e52851173784a03fda7a8a5e48bf6c06d8dbcf8a86eb41b73b893"
+    },
+    {
+      "path": "cases/21-highpsrr-bandgap/measurement-review.md",
+      "tables": 1,
+      "sha256": "63a50931a0f9be13a350732221b46588e5091f457937a8931033e468be1fcc35"
+    },
+    {
+      "path": "cases/21-highpsrr-bandgap/review_report.md",
+      "tables": 4,
+      "sha256": "ca7fa7839f3e2905568a267f8af232273ad6669784dfdb9d36a4a3492710feb7"
+    },
+    {
+      "path": "cases/22-bootstrap/knowledge.md",
+      "tables": 1,
+      "sha256": "7072422ad77cce64dddee6a2af8380e6846a8d49e118da02f52141c2b3db4250"
+    },
+    {
+      "path": "cases/22-bootstrap/review_report.md",
+      "tables": 4,
+      "sha256": "ef960564a64bf113ac903df54b71b3b1157a50e7bd7ee2ee64920a1b305cec04"
+    },
+    {
+      "path": "cases/23-resistor-dac/knowledge.md",
+      "tables": 5,
+      "sha256": "b23a99ed860fcb6b388157f32a0b07faebb926146806de51dcae2229569551b8"
+    },
+    {
+      "path": "cases/23-resistor-dac/review_report.md",
+      "tables": 5,
+      "sha256": "e4fdcb7a8764b4b3df9850ddaf6cba73ce29b71a64c77b2483dea4b8fddd289e"
+    },
+    {
+      "path": "cases/24-ring-vco/knowledge.md",
+      "tables": 6,
+      "sha256": "6d4b9f8c4bf1a19ec191d59388f6245f708761c3691be2a13bdac9f90d06d9e0"
+    },
+    {
+      "path": "cases/24-ring-vco/review_report.md",
+      "tables": 6,
+      "sha256": "296b71470f8eb8f0b6f7237754b0a4d38a914b6d3c12233c192de5ad019cea33"
+    },
+    {
+      "path": "cases/25-complementary-ab/knowledge.md",
+      "tables": 1,
+      "sha256": "42599174561b3383255761ebd6042d65db88dc96802502f53ff0241ca0e4c9dc"
+    },
+    {
+      "path": "cases/25-complementary-ab/measurement-review.md",
+      "tables": 3,
+      "sha256": "6f7ef90df979915fa615ab8cb86db294cca9fd408edd8eba6c5bb7c21a69fe24"
+    },
+    {
+      "path": "cases/25-complementary-ab/reference-analysis.md",
+      "tables": 2,
+      "sha256": "134b5782cf6c52adb552651a328b0249063cf8ffc90c6c63b64d3b233a2cb5d3"
+    },
+    {
+      "path": "cases/25-complementary-ab/review_report.md",
+      "tables": 8,
+      "sha256": "2ac91126347ab6b801e8aff9029ca110fe3b609b88781dbcbb40e7dfb4abe607"
+    },
+    {
+      "path": "cases/26-ota-c-biquad/knowledge.md",
+      "tables": 1,
+      "sha256": "74aad4f603c9e3fd3c27ac4d3c75cb2ff0f65fe474b6a7bd8cba6548ad853087"
+    },
+    {
+      "path": "cases/26-ota-c-biquad/measurement-review.md",
+      "tables": 1,
+      "sha256": "bc1aa030f0a80c4efc6c2487479d3e250e2540b88c3a91be9ca7f01be5ceaf0c"
+    },
+    {
+      "path": "cases/26-ota-c-biquad/review_report.md",
+      "tables": 4,
+      "sha256": "a101035fa09fc2a386fd68aa0c95062380f6ac7c0bc24512c3d23a40baed3875"
+    },
+    {
+      "path": "cases/27-flash-adc4bit/knowledge.md",
+      "tables": 0,
+      "sha256": "c9d381031ef49962ba62c83d7d1b189dc97f1670492ae234b1d2a68ff69520ea"
+    },
+    {
+      "path": "cases/27-flash-adc4bit/measurement-review.md",
+      "tables": 1,
+      "sha256": "f7097b6a14d2b75cc13a39b454de6d8be235afe5db3c5245d34d32b3a0a12e5d"
+    },
+    {
+      "path": "cases/27-flash-adc4bit/review_report.md",
+      "tables": 2,
+      "sha256": "074a9855875e5d089800a75256808da6b31b625adb40bc67ec3fed3ab1e9d30f"
+    },
+    {
+      "path": "cases/28-fct-amplifier/knowledge.md",
+      "tables": 0,
+      "sha256": "0219343b8a14ab1486087072cbc3d8cdbf57dc7feb6e0b523a343ac247c9ba6f"
+    },
+    {
+      "path": "cases/28-fct-amplifier/measurement-review.md",
+      "tables": 1,
+      "sha256": "5283ba49dd434e6695bf16b018b1bce05bdcfab15944f0c8df99a437efa9e7a6"
+    },
+    {
+      "path": "cases/28-fct-amplifier/review_report.md",
+      "tables": 3,
+      "sha256": "de042b037ec9dee9bff3c7e0cf587ef74b81e925de7bb5cc8dfc906b088ca788"
+    },
+    {
+      "path": "cases/29-ahuja/review_report.md",
+      "tables": 4,
+      "sha256": "aabdfadd1671b1ad5a26d8cf876d08e2acfd21bf78bc86d7ac40ad304ccb3da7"
+    },
+    {
+      "path": "cases/30-gilbert-mixer/knowledge.md",
+      "tables": 2,
+      "sha256": "4e970fff244ffd9cd762ef5026f99014a733f6f89269c564af020ce5da770116"
+    },
+    {
+      "path": "cases/30-gilbert-mixer/measurement-review.md",
+      "tables": 1,
+      "sha256": "5ddb4c9c750ec2fc403a8f2938d9fd501dabfa13f18a6f04cab5deaf548bc16c"
+    },
+    {
+      "path": "cases/30-gilbert-mixer/review_report.md",
+      "tables": 5,
+      "sha256": "fb804ae112fea6bc1c438505a5aac4f4d4353f78724ea6cd906ef5ac7017e485"
+    },
+    {
+      "path": "cases/31-bottom-plate/knowledge.md",
+      "tables": 2,
+      "sha256": "130a9ac4fba4706fdec83442ed9304d44bb3706b8cd934b7e24235fbca22e1bb"
+    },
+    {
+      "path": "cases/31-bottom-plate/review_report.md",
+      "tables": 5,
+      "sha256": "7df6fc9623d220748af8744dc82e3352d5509574dc01d8b7f1ae8af71ec6ade1"
+    },
+    {
+      "path": "cases/32-cml-tx/knowledge.md",
+      "tables": 1,
+      "sha256": "39175e9b25fec3f3035b7543d931b41792190b06d133761492333aa66022abd1"
+    },
+    {
+      "path": "cases/32-cml-tx/measurement-review.md",
+      "tables": 1,
+      "sha256": "d1678ae49371e1d0a3521e1856263838469300c84db256ded34053f030b32d26"
+    },
+    {
+      "path": "cases/32-cml-tx/review_report.md",
+      "tables": 7,
+      "sha256": "2d192cd97725933957bee607d26cb6360456809bae6f3c71996f29c7d91cfbf1"
+    },
+    {
+      "path": "cases/33-sampling-ota-gain1/knowledge.md",
+      "tables": 1,
+      "sha256": "6ed1ee399be944805cb34276cd66938c58bbb8cf13681b33cb18ca8721d238ea"
+    },
+    {
+      "path": "cases/33-sampling-ota-gain1/measurement-review.md",
+      "tables": 1,
+      "sha256": "fa831402894e0d2f919a7cf9d9cfb995e9344b9a7f28fbe57902ad645c4e45a8"
+    },
+    {
+      "path": "cases/33-sampling-ota-gain1/review_report.md",
+      "tables": 6,
+      "sha256": "69682077d7c8405455e2d36161e204cbd0bd053a8b474908b635bb03320ab2c6"
+    },
+    {
+      "path": "cases/34-sampling-ota-gain8/knowledge.md",
+      "tables": 1,
+      "sha256": "72f04246cc10999a33ed9e3495ac548c523aaae7be7272cf8101b69279f105eb"
+    },
+    {
+      "path": "cases/34-sampling-ota-gain8/measurement-review.md",
+      "tables": 1,
+      "sha256": "d652fa7c525fe3087d4fc471a757ac61554a60d23ee4ced8488dffedb0da4fa4"
+    },
+    {
+      "path": "cases/34-sampling-ota-gain8/review_report.md",
+      "tables": 6,
+      "sha256": "c03504971d7282b9f926ac6e936e593bcf70065913600d48be12ed164693807a"
+    },
+    {
+      "path": "cases/35-fd-miller/knowledge.md",
+      "tables": 4,
+      "sha256": "918782462db7a867bbcb6e35627a88738f008e433e1bb6be726ecfaddc0774c6"
+    },
+    {
+      "path": "cases/35-fd-miller/review_report.md",
+      "tables": 5,
+      "sha256": "cadcf066055dc417459954c8d0255218ff3a24eefb4f6ead43ee15654a782a9c"
+    },
+    {
+      "path": "cases/36-telescopic/knowledge.md",
+      "tables": 4,
+      "sha256": "6bf4ac291e26a95fa3f4bb31d78446dc0b5f004ee54d82742a119b525d02484c"
+    },
+    {
+      "path": "cases/36-telescopic/review_report.md",
+      "tables": 4,
+      "sha256": "d84f70b9d3c908cab8049427a23c1d02068cea94f5f5cf83a50d9d3fce7e9182"
+    },
+    {
+      "path": "cases/37-nested-miller/knowledge.md",
+      "tables": 3,
+      "sha256": "004ea8fa691a82c7237dd3444020e85b8b12a7d4f5537333fe89f06d3c0b02c6"
+    },
+    {
+      "path": "cases/37-nested-miller/review_report.md",
+      "tables": 3,
+      "sha256": "244beaaebac5e48e5d3ba2292f00ce398308c50499b36234d8310db49016b120"
+    },
+    {
+      "path": "cases/38-capless-ldo/knowledge.md",
+      "tables": 2,
+      "sha256": "3c57a2bd8568ca6aba08436183f9f56eda61a9e396b0300b0958ee529cec8a92"
+    },
+    {
+      "path": "cases/38-capless-ldo/measurement-review.md",
+      "tables": 1,
+      "sha256": "a35579e28d095e4ecff04763b736e48f2214facd2bbaa8e4fea141d075759a8b"
+    },
+    {
+      "path": "cases/38-capless-ldo/review_report.md",
+      "tables": 5,
+      "sha256": "778247c8aa1d9c05abd6557ae58ea746669f1d61c802fa418a8e5696938e576b"
+    },
+    {
+      "path": "cases/39-line-driver/knowledge.md",
+      "tables": 1,
+      "sha256": "92c413b0b3adb4dab2dd45e4bd5ad3e1d7900df6403b62ffffae2b3a3994983e"
+    },
+    {
+      "path": "cases/39-line-driver/measurement-review.md",
+      "tables": 1,
+      "sha256": "fcec36222cb9cc2cc1d8f6a07736ca637d5774a35b365682205b67eac6a0e38d"
+    },
+    {
+      "path": "cases/39-line-driver/review_report.md",
+      "tables": 4,
+      "sha256": "922c5284142b44e197cf4d5b9d35b6efd0cf5739bde35bdd46811792e19c39f0"
+    },
+    {
+      "path": "cases/40-delta-sigma/knowledge.md",
+      "tables": 0,
+      "sha256": "411bfdeb022c242e4adbf8959bc3c4b8a5c06c6a0b81e9d778f35c7d981ac456"
+    },
+    {
+      "path": "cases/40-delta-sigma/measurement-review.md",
+      "tables": 1,
+      "sha256": "0def794d6cd1816b5dfa4c480c21eb318ac21e938df7bf3f1318e5c1e336bda6"
+    },
+    {
+      "path": "cases/40-delta-sigma/review_report.md",
+      "tables": 2,
+      "sha256": "0bd48a0c8c694e35c69e25a426f8c87d7920cafa5f3c15f1a1241b38b1bf6672"
+    },
+    {
+      "path": "cases/41-lowpower-miller/review_report.md",
+      "tables": 3,
+      "sha256": "9447c9823f5b188ca9c8212e143cd42f40f1c94399a59d6715f73437658a3809"
+    },
+    {
+      "path": "cases/42-sar-adc6bit/knowledge.md",
+      "tables": 0,
+      "sha256": "3b496c5d41cfa27a79c474baeebec06f63ea3249003d86f9c190c7bf22574e01"
+    },
+    {
+      "path": "cases/42-sar-adc6bit/measurement-review.md",
+      "tables": 1,
+      "sha256": "a854f147aef52c07def93c25a7ff00d1c1bd122dae3ee000e822fc64d1f7fa40"
+    },
+    {
+      "path": "cases/42-sar-adc6bit/review_report.md",
+      "tables": 2,
+      "sha256": "64e893eee51067f815bb590eb02b27f98e908d2c107af62997a9d15441ab4a47"
+    },
+    {
+      "path": "cases/43-inductive-lna/knowledge.md",
+      "tables": 2,
+      "sha256": "7a38f8a33558eb0fc74f5b641d61a25c23def0b428120edfc2d84565bf33c778"
+    },
+    {
+      "path": "cases/43-inductive-lna/measurement-review.md",
+      "tables": 1,
+      "sha256": "01d03fcc88d4a917d6c00d7028f4cd2d5ff7d9fe15969a1dafdb6951b8e5fc6e"
+    },
+    {
+      "path": "cases/43-inductive-lna/review_report.md",
+      "tables": 6,
+      "sha256": "82733224955c4d317d8d5d398ac9346c6150bd174ae2865a2342a4a2e5d54a30"
+    },
+    {
+      "path": "cases/44-ota5/review_report.md",
+      "tables": 3,
+      "sha256": "98322938d04049e83294a36df5ffa60e1ab310317ebec49b412f6b931009f53d"
+    },
+    {
+      "path": "cases/45-divider/review_report.md",
+      "tables": 4,
+      "sha256": "32009c2081604b502dd5f3203a7e664dfe65eb98c7b9833727330fef175db0cc"
+    },
+    {
+      "path": "cases/46-flash-adc3bit/knowledge.md",
+      "tables": 1,
+      "sha256": "ccb4f638ff3f7cbf71cb2245878499ff3fecb7e4919cf7205b83c200110d72c4"
+    },
+    {
+      "path": "cases/46-flash-adc3bit/measurement-review.md",
+      "tables": 1,
+      "sha256": "cab9637b29484c2745d1134e7bb359fb1ca7e243ed16ae70e91dfd6fb71c3da0"
+    },
+    {
+      "path": "cases/46-flash-adc3bit/review_report.md",
+      "tables": 2,
+      "sha256": "fb6c4cb962cd310e02061a5ae540c0b1e6ca489e82a2e113d94b29f666d85b71"
+    },
+    {
+      "path": "cases/47-charge-pump/knowledge.md",
+      "tables": 0,
+      "sha256": "44b9a60c27bd78d84fe214dbbddf2486281a6304604f2927f3088d142a91aa08"
+    },
+    {
+      "path": "cases/47-charge-pump/review_report.md",
+      "tables": 4,
+      "sha256": "ccdbefec9bb72b79dd0ff2e19321ab22a222c96022986846879b78745afa5724"
+    },
+    {
+      "path": "cases/48-sar-adc4bit/knowledge.md",
+      "tables": 0,
+      "sha256": "56d047b9cbc1a908b8acb2b6ba4edbc3244510824dbaf5a93761a0aaf665ae34"
+    },
+    {
+      "path": "cases/48-sar-adc4bit/measurement-review.md",
+      "tables": 1,
+      "sha256": "b13d0f22b691f3af9cb49eaec16dcb447b71d92a383b8989b6775a6f03d62f30"
+    },
+    {
+      "path": "cases/48-sar-adc4bit/review_report.md",
+      "tables": 2,
+      "sha256": "d70a25dab8aadc81b6a3b261cd22fd462dc066ce29b2523e2dcf0c1fa4309529"
+    },
+    {
+      "path": "cases/49-lc-vco/HANDOFF.md",
+      "tables": 0,
+      "sha256": "bffb100c9982943bad57389aab248ceb2ae77d9b83bbfcd5f2f5b6d794afced0"
+    },
+    {
+      "path": "cases/49-lc-vco/knowledge.md",
+      "tables": 4,
+      "sha256": "42106019ab0ec6cc1bbe457ae7f6c6ce70c19c19d73eaa8f9d2b04139b90001d"
+    },
+    {
+      "path": "cases/49-lc-vco/review_report.md",
+      "tables": 8,
+      "sha256": "c3c244a7af64a4559a896b50c246104bfd8f957f2e088ebba2ce8cf0a422860b"
+    },
+    {
+      "path": "cases/50-gainboosted-folded/knowledge.md",
+      "tables": 5,
+      "sha256": "695a5202d913ce4f1965f31e46e951d2b8aac582499093e3d3e495b388b85f8c"
+    },
+    {
+      "path": "cases/50-gainboosted-folded/review_report.md",
+      "tables": 5,
+      "sha256": "7ffd314c05ff6084d26ff1c2833c0d9fb03193602df399d72767f66e9257f2dc"
+    },
+    {
+      "path": "contracts/acceptance-policy.md",
+      "tables": 0,
+      "sha256": "9e017f6150768c58d1c8eb8c6ee3dc06a8093f1c7315a92f69afafb7959965d3"
+    },
+    {
+      "path": "docs/DISTRIBUTION.md",
+      "tables": 0,
+      "sha256": "703a17843f851a4f87468c944afa2a41d76a8fce1be7435088f77bcd6694ae1d"
+    },
+    {
+      "path": "docs/HISTORY.md",
+      "tables": 0,
+      "sha256": "adcce8a0754763f6b120d10056dda0049f317cb8ed20b0b640b10df2e3e07b07"
+    },
+    {
+      "path": "docs/REPRODUCING.md",
+      "tables": 0,
+      "sha256": "2c8cbd15543ce189ab49bb0e6de9f7cf3af4f3be21f7a7f93def5c1a4661830f"
+    },
+    {
+      "path": "notes/01-class-d.md",
+      "tables": 2,
+      "sha256": "add34830ef7e9e25a53d9557fd93bebea72f682f83d10110428bcbf216ce63c5"
+    },
+    {
+      "path": "notes/02-mirror.md",
+      "tables": 0,
+      "sha256": "c9652524b7eaa68b3b8548037d983026bd97fb0341dc19dc15231371f8eb599a"
+    },
+    {
+      "path": "notes/03-selfbiased-gmr.md",
+      "tables": 0,
+      "sha256": "2a5bf866df0c8e16998f68e96cecf6213826fbecfb1e02ce59cd5ee134558c0b"
+    },
+    {
+      "path": "notes/04-gmr.md",
+      "tables": 0,
+      "sha256": "fd7ad86dedc7a0b91c0b0fbb3350a7bf72da3ba4045f53e8b7edc36c23708d0b"
+    },
+    {
+      "path": "notes/05-bootstrap-driver.md",
+      "tables": 0,
+      "sha256": "c77e544093efefc24587b54323af729c62961b42d70416aa41038c5f7836f8bc"
+    },
+    {
+      "path": "notes/06-ring-amplifier.md",
+      "tables": 0,
+      "sha256": "74d1f7740d2560799af4ba8e6622ab6b5a912202a4d2815ac2893428bdd88ee5"
+    },
+    {
+      "path": "notes/07-ldo-ota5.md",
+      "tables": 0,
+      "sha256": "bd279416562a38fa4a17a6ceeedb8f962e2a7a61a62fe1afe7443013f71f205c"
+    },
+    {
+      "path": "notes/08-ppsf.md",
+      "tables": 2,
+      "sha256": "978f05d69689f55ac6e6a307e1ba400e5716931a9e57ad1a397138544b83f1ab"
+    },
+    {
+      "path": "notes/09-cml-divider.md",
+      "tables": 1,
+      "sha256": "a20aa51eec5b6a0f4aa90be686c6de81494be1e38660450a2adff84b036cf624"
+    },
+    {
+      "path": "notes/10-tia.md",
+      "tables": 4,
+      "sha256": "c772d96fd2024303d5117e6557e262eda241837554da7f2bf0841f72e7664f0a"
+    },
+    {
+      "path": "notes/11-bandgap.md",
+      "tables": 2,
+      "sha256": "526fdda2df2647ae808847c7da3ea6373ad9eafcfee520ba77e72c9032ca230e"
+    },
+    {
+      "path": "notes/12-beta.md",
+      "tables": 0,
+      "sha256": "060cd4c63194efb5b9252821848c95a4c313bde5c09c25052544aae2fae1ea55"
+    },
+    {
+      "path": "notes/13-constant-gm.md",
+      "tables": 0,
+      "sha256": "9fe9fe0cdac39c58f4e3333872b19189806312c3b1f2f9d076794e19d179f6ef"
+    },
+    {
+      "path": "notes/14-oscillator.md",
+      "tables": 6,
+      "sha256": "c04f660b05cb862a37a6769065f26498371a0f2f98e8771bd2676bedfc6b92d7"
+    },
+    {
+      "path": "notes/15-unregulated-pump.md",
+      "tables": 1,
+      "sha256": "45b52028f172e74688a1b8ff6aa0cd0c6e1309e839c3d548fb208a1a482d0efb"
+    },
+    {
+      "path": "notes/16-miller.md",
+      "tables": 0,
+      "sha256": "7b31f27b0889103533810297df79dc0195706224315e08d09d66e465758ec19a"
+    },
+    {
+      "path": "notes/17-nmos-ldo.md",
+      "tables": 1,
+      "sha256": "4f99dd30e7cdec0c943dad1976da2c1acddd2dce51997175f664d4b7f4282751"
+    },
+    {
+      "path": "notes/18-regulated-pump.md",
+      "tables": 1,
+      "sha256": "3fe188c7de9b32e59caa2e6530e830c42a254ae3e4d1282a955601c58d55142c"
+    },
+    {
+      "path": "notes/19-sc-converter.md",
+      "tables": 1,
+      "sha256": "096da58e95f918591c37e9d6a1e064a440ff2a302a5f039bef03b7f91490ba5b"
+    },
+    {
+      "path": "notes/20-mux.md",
+      "tables": 0,
+      "sha256": "b5b4ac7c9b6f79cc06f4cc4855af5ad95de370436101f92b1fa50cc3af7d7845"
+    },
+    {
+      "path": "notes/21-highpsrr-bandgap.md",
+      "tables": 1,
+      "sha256": "f47fee4fa6e78549bc00bf6986b16665218efa30323ba5336403587b95bf09dc"
+    },
+    {
+      "path": "notes/22-bootstrap.md",
+      "tables": 1,
+      "sha256": "0e3997f069af75b5a76d82f1a53626b22884c9c12f1f1eabb1fe12ef862fd9ea"
+    },
+    {
+      "path": "notes/23-resistor-dac.md",
+      "tables": 5,
+      "sha256": "fdb45d385941754e2ea32e708b2f07e5ae83d696dae22309b657faeabc94bbfb"
+    },
+    {
+      "path": "notes/24-ring-vco.md",
+      "tables": 6,
+      "sha256": "c7c36dbb3e69868e0b3d37c564944731b3fca3bc4de1e9a13c9a75615678e386"
+    },
+    {
+      "path": "notes/25-complementary-ab.md",
+      "tables": 1,
+      "sha256": "e7823255bafdfca33653387a3d12b438326353a2d5cf54078ab851a3bffa74b3"
+    },
+    {
+      "path": "notes/26-ota-c-biquad.md",
+      "tables": 1,
+      "sha256": "0863ee7a86ba37f4295ec060a56811b7ecb98d57fe860b454e4910d24bd416f5"
+    },
+    {
+      "path": "notes/27-flash-adc4bit.md",
+      "tables": 0,
+      "sha256": "ff4c03f79f853d0b8b7f640a2fa01787fe750bd3d813d19157035844878e260b"
+    },
+    {
+      "path": "notes/28-fct-amplifier.md",
+      "tables": 0,
+      "sha256": "1f425a893a47342fbcae23122ea85c91648461b6fe2367809a1bc1f803a29a0b"
+    },
+    {
+      "path": "notes/29-ahuja.md",
+      "tables": 0,
+      "sha256": "d4849b926bb7db09b458bd8ef1f7b47860dc02294ad821a0d77714b800f575f3"
+    },
+    {
+      "path": "notes/30-gilbert-mixer.md",
+      "tables": 2,
+      "sha256": "0d3071ef5814a643124c4f76e62921b8041f1bb56573545fcc9432ba5e5c288c"
+    },
+    {
+      "path": "notes/31-bottom-plate.md",
+      "tables": 2,
+      "sha256": "5d344a1ef6382b868af3e1f5f1d7366b17b2a3f96fb1ad76fda5551fce6916b6"
+    },
+    {
+      "path": "notes/32-cml-tx.md",
+      "tables": 1,
+      "sha256": "27353f9c6054070a290d7901528e9e6d94f91878739059e2064064dc3520385f"
+    },
+    {
+      "path": "notes/33-sampling-ota-gain1.md",
+      "tables": 1,
+      "sha256": "b557db8f3f71dbe24c6802c690f90fd303166a03439eb14d5b65d7be89b733e0"
+    },
+    {
+      "path": "notes/34-sampling-ota-gain8.md",
+      "tables": 1,
+      "sha256": "c3d48e8c9710d5d1560609465c13f3d2ecd230c98c4c37f08512249aeb3f7d1c"
+    },
+    {
+      "path": "notes/35-fd-miller.md",
+      "tables": 4,
+      "sha256": "9501b642a5a2c704585ee4ee0946d4e3cfa7c9faca74edd38b72e6343f2df101"
+    },
+    {
+      "path": "notes/36-telescopic.md",
+      "tables": 4,
+      "sha256": "376c8fb4585060e9c9fe8a88a838818ce60567782daa12a3585c0e06fb640c3e"
+    },
+    {
+      "path": "notes/37-nested-miller.md",
+      "tables": 3,
+      "sha256": "2d000de097020fe2169285c422f2461f45b6e88e64ef49086460a2e005850f9c"
+    },
+    {
+      "path": "notes/38-capless-ldo.md",
+      "tables": 2,
+      "sha256": "f05d61d02b6d4ade283312cece972cdbccd42065c335d07b5d9386d5854b35a6"
+    },
+    {
+      "path": "notes/39-line-driver.md",
+      "tables": 1,
+      "sha256": "98df608b63c5c8525cf357e34af696632038387f19f2f435fccb75768098b92d"
+    },
+    {
+      "path": "notes/40-delta-sigma.md",
+      "tables": 0,
+      "sha256": "4aa4555d46a018eb9213028c644b1c25c6b906f7b2cb7435ed9bb14ea18fea42"
+    },
+    {
+      "path": "notes/41-lowpower-miller.md",
+      "tables": 0,
+      "sha256": "db702829d2c6f5da3a2758b2f82f5383a73d4c423b25d6dd313a383a078febb6"
+    },
+    {
+      "path": "notes/42-sar-adc6bit.md",
+      "tables": 0,
+      "sha256": "d13ec7f3e3c2d4879bf5e448188add1fcd88fcbcb7cd3e9dfb83698c3c61eba4"
+    },
+    {
+      "path": "notes/43-inductive-lna.md",
+      "tables": 2,
+      "sha256": "0aa6610c3e5c8065aff8f1e0c590bd9c06339c817280e61c4258253c883626e2"
+    },
+    {
+      "path": "notes/44-ota5.md",
+      "tables": 0,
+      "sha256": "683fdcf35015696242b6061b9fd5641316ea720c42810f47cee991f8f6136ef9"
+    },
+    {
+      "path": "notes/45-divider.md",
+      "tables": 0,
+      "sha256": "1706eb7d70f202a99f44719fbd04297adcd39e894ff01f9c8ca52ff9a4a2ae13"
+    },
+    {
+      "path": "notes/46-flash-adc3bit.md",
+      "tables": 1,
+      "sha256": "8612531d4205857221f13f6ea5da26869c41176d2a2c332ae348a2d13ab5dd1b"
+    },
+    {
+      "path": "notes/47-charge-pump.md",
+      "tables": 0,
+      "sha256": "142b0df52702260be626267239e45380e29983af0eddfd4812da1747a86ba3c8"
+    },
+    {
+      "path": "notes/48-sar-adc4bit.md",
+      "tables": 0,
+      "sha256": "4ccf8f07d06d8dfeb99e0e2cfd4e133a3e0e8d9001553029d30f4f81f970ac9e"
+    },
+    {
+      "path": "notes/49-lc-vco.md",
+      "tables": 4,
+      "sha256": "98996ac64f040fd382fd14a033ffd1b8691c06339655d83c675f39ea2faeced7"
+    },
+    {
+      "path": "notes/50-gainboosted-folded.md",
+      "tables": 5,
+      "sha256": "88716642ead5bec08f08ec92cf26ed665a7a425f7da383dbe21a2977c2bf1795"
+    },
+    {
+      "path": "reports/all-reproduction-markdown.md",
+      "tables": 1,
+      "sha256": "0e9806a42acebf8350ccf94aa5710c838a75a9609508058a8a59b4d45ad525df"
+    },
+    {
+      "path": "reports/batch-20260929-final-seven.md",
+      "tables": 1,
+      "sha256": "46b0cbc89744d8f1915d1d989f4c4da053ee92b9e4141670d48e74f0ff2b71c9"
+    },
+    {
+      "path": "reports/batch-20260929-seven.md",
+      "tables": 1,
+      "sha256": "4b5df8f141a4dc0417dc2527b30ee55ff3c223ff454a57a6919afba131bab0bf"
+    },
+    {
+      "path": "reports/current-delivery-index.md",
+      "tables": 1,
+      "sha256": "92d81f244d849b47ac10fed9d1587fdb274c436ebd290943aac56434a799ffd8"
+    },
+    {
+      "path": "reports/schematic-independent-review.md",
+      "tables": 1,
+      "sha256": "e3528cd39a3afebedb3cf745f5ae9f4732ac631692e71594a6f614a32f863f9d"
+    }
+  ],
+  "upstream_credit_visible_in_readme": true
+}

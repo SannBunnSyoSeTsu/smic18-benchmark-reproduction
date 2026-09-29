@@ -1,0 +1,101 @@
+{
+  "pdf": "reports/20-mux-review.pdf",
+  "sha256": "a34f414b632e9a350b8a8010cc3c0375148e5d66d08804661fe978a5897ce33b",
+  "results_sha256": "105d1ea0d5805777b4722f8e51fcba565167d995ab79d2d804104060e6c9dd2a",
+  "circuit_sha256": "4343f4ada2c14da0014bc9d81efc5017d1ccbebd4d9fb77c50a885aaf21dbba0",
+  "generated_at": "2026-09-23T06:19:16.029469+00:00",
+  "pages": 7,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:19:16.032435+00:00",
+  "body_pages": 4,
+  "schematic_pages": 3,
+  "schematic_sheets_sha256": "f13eccdb5733a8fd78b54a759c7697f93c0b6fc6f4d4f073e999d37bc1b3c35b",
+  "schematic_audit_sha256": "bf498f27a12ba0dc10b5ff9fd9120bd0de17a1bda12c3ea50e9d3c068f31f5d1",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/20-mux/20-mux-review.pdf",
+    "sha256": "a8a93d5674ba891f80ee47aa8df4d99235191a6d0d287d928c4568aee0098606",
+    "pages": 4,
+    "previous_render_reviewed_at": "2026-09-22T08:48:46.161475+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "c0d3f57c2182ca7a46117d29a859ab3a3858d45cf69dd51c95cb5a4aa2373188"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "67b443d488d5fd829663a7a77d86ad5974908367dfcac22169fadc9e79f8ff6f"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "00f030027e4cf35ed37b47a18801f26c30be0ed9e541ab1e16fa49b841a34ada"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "505f098e15895aa998c1aacebbb79d6454962d94c4f69cb07af95f5db7c68f6c"
+    },
+    {
+      "page": 5,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "164877c2a1a3834a368692c27d96529c8fe75a97f5ee57e93fef2d168d7ba23e",
+      "path": "reports/schematic-retrofit-renders/20-mux/page-05.png",
+      "sha256": "35847d500b6f1f9577bbb83f2bffa194e804b0d69047ccf954c8b661ff3d15a6"
+    },
+    {
+      "page": 6,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "35a5b641045ca997a1c9b06ae519fbfe7b424cf4fd84c49b62fc924dd5e3c6d5",
+      "path": "reports/schematic-retrofit-renders/20-mux/page-06.png",
+      "sha256": "0cfdad0d81c399f79899535d0eebc6f90782cd933f58bca896afb1a9de9265ff"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "ca8bd97c8cd5f23d9fc2f8c8019490d8edacb911491c495ecf49ed8f0758463e",
+      "path": "reports/schematic-retrofit-renders/20-mux/page-07.png",
+      "sha256": "68ba2da5114ac75743a77f6a860b8aafabbeff50136c92ab2bbd87374ab9cc0d"
+    }
+  ],
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change."
+}

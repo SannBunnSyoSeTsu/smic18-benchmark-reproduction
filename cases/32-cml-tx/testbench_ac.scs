@@ -1,0 +1,22 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/32-cml-tx/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-06 vabstol=1e-9 iabstol=1e-14
+saveOptions options save=selected
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=100u
+RQP (voutp vdd) resistor r=50
+RQN (voutn vdd) resistor r=50
+CQP (voutp 0) capacitor c=100f
+CQN (voutn 0) capacitor c=100f
+X (0 vdd iref dinp dinn voutp voutn) tx_driver_28g
+save voutp voutn dinp dinn iref VDD:p X.tail
+RSP (srcp dinp) resistor r=50
+RSN (srcn dinn) resistor r=50
+CPADP (dinp 0) capacitor c=30f
+CPADN (dinn 0) capacitor c=30f
+save srcp srcn
+VP (srcp 0) vsource dc=1.17 mag=.5
+VN (srcn 0) vsource dc=1.17 mag=.5 phase=180
+ac ac start=10M stop=50G dec=50

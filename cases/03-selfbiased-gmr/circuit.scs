@@ -1,0 +1,18 @@
+// Beta-biased source-degenerated GM-R; VCM is a compatibility port.
+simulator lang=spectre
+subckt gmr_degen (IREF VCM VDD VIN VIP VON VOP VSS)
+MREF (IREF IREF VSS VSS) n18 w=14.88u l=1u
+MST (nc IREF VSS VSS) n18 w=0.24u l=4u
+MB1 (nb nb VSS VSS) n18 w=5.04u l=.36u
+MB2 (nc nb rb2 VSS) n18 w=5.04u l=.36u m=4
+RB (rb2 VSS) resistor r=3000
+MP1 (nb nc VDD VDD) p18 w=18.76u l=1u
+MP2 (nc nc VDD VDD) p18 w=18.76u l=1u
+MTAIL (tail nb VSS VSS) n18 w=5.04u l=.36u m=25
+MINN (VON VIN sn VSS) n18 w=5.04u l=.36u m=12.5
+MINP (VOP VIP sp VSS) n18 w=5.04u l=.36u m=12.5
+RSN (sn tail) resistor r=500
+RSP (sp tail) resistor r=500
+RLN (VDD VON) resistor r=1770
+RLP (VDD VOP) resistor r=1770
+ends gmr_degen

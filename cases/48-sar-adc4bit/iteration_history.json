@@ -1,0 +1,104 @@
+[
+  {
+    "generated_at": "2026-09-29T03:16:49.124133+00:00",
+    "circuit_sha256": "a87f8ceb7193b5c69bc95a629ca3d628484b30cb708e843db74e2d94b0687f8d",
+    "parameters": {
+      "bits": 4,
+      "unit_fF": 50,
+      "dummy_fF": 10,
+      "sample_scale": 1,
+      "cmp_scale": 1,
+      "delay_fF": 70
+    },
+    "status": "complete_original",
+    "values": {
+      "transfer": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "dynamic": {
+        "invalid_levels": 0,
+        "power_W": 0.0010319457909828984
+      },
+      "dynamic_alt": {
+        "invalid_levels": 0,
+        "power_W": 0.0010329495455817324
+      },
+      "dynamic_spectrum": {
+        "sndr_dB": 27.55147276515953,
+        "normalized_enob_bits": 4.317248646714115,
+        "signal_power": 15652.493441676912,
+        "noise_power": 27.506558323082572,
+        "tone_bin": 15
+      },
+      "dynamic_alt_spectrum": {
+        "sndr_dB": 27.551472765159538,
+        "normalized_enob_bits": 4.317248646714115,
+        "signal_power": 15652.49344167692,
+        "noise_power": 27.506558323082572,
+        "tone_bin": 13
+      }
+    },
+    "groups": {
+      "transfer": "runs/48/20260929T025757786361Z_transfer",
+      "transfer_alt": "runs/48/20260929T030111846843Z_transfer_alt",
+      "dynamic": "runs/48/20260929T030429269930Z_dynamic",
+      "dynamic_alt": "runs/48/20260929T031022700087Z_dynamic_alt"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T03:55:24.071447+00:00",
+    "circuit_sha256": "a87f8ceb7193b5c69bc95a629ca3d628484b30cb708e843db74e2d94b0687f8d",
+    "parameters": {
+      "bits": 4,
+      "unit_fF": 50,
+      "dummy_fF": 10,
+      "sample_scale": 1,
+      "cmp_scale": 1,
+      "delay_fF": 70
+    },
+    "status": "complete_original",
+    "values": {
+      "transfer": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "transfer_alt": {
+        "invalid_levels": 0,
+        "code_errors": 0
+      },
+      "dynamic": {
+        "invalid_levels": 0,
+        "power_W": 0.0010319492549304182
+      },
+      "dynamic_alt": {
+        "invalid_levels": 0,
+        "power_W": 0.0010329546503274516
+      },
+      "dynamic_spectrum": {
+        "sndr_dB": 27.55147276515953,
+        "normalized_enob_bits": 4.317248646714115,
+        "signal_power": 15652.493441676912,
+        "noise_power": 27.506558323082572,
+        "tone_bin": 15
+      },
+      "dynamic_alt_spectrum": {
+        "sndr_dB": 27.551472765159538,
+        "normalized_enob_bits": 4.317248646714115,
+        "signal_power": 15652.49344167692,
+        "noise_power": 27.506558323082572,
+        "tone_bin": 13
+      }
+    },
+    "groups": {
+      "transfer": "runs/48/20260929T032014979173Z_transfer",
+      "transfer_alt": "runs/48/20260929T032557465554Z_transfer_alt",
+      "dynamic": "runs/48/20260929T033140508050Z_dynamic",
+      "dynamic_alt": "runs/48/20260929T034301146847Z_dynamic_alt"
+    }
+  }
+]

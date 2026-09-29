@@ -1,0 +1,17 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        DEC["HD独热译码"]
+        MIR["两组参考镜与四组权重支路"]
+        SW["模拟选择开关"]
+        CAS["共享共栅输出"]
+    end
+    CODE["2位控制码"]
+    REF["ICC / IPTAT参考电流"]
+    OUT["输出电流端口与扫描负载"]
+    CODE -.-> DEC
+    REF -->|"参考"| MIR
+    MIR -->|"加权电流"| SW
+    DEC -.->|"选择"| SW
+    SW --> CAS
+    CAS -->|"Iout"| OUT

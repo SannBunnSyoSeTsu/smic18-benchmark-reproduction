@@ -1,0 +1,194 @@
+{
+  "generated_at": "2026-09-22T06:20:26.365521+00:00",
+  "roles": {
+    "reference": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 1.0,
+      "W_um": 34.77910454847006,
+      "Id_A": 5e-05,
+      "Vgs_V": 0.4876151174216143,
+      "Vov_V": 0.07498750151427731,
+      "gmid": 16.0,
+      "gm_S": 0.0008,
+      "ft_Hz": 573682769.6615214,
+      "gmro": 65.12348104136453,
+      "id_w_Apm": 1.4376448344239936,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 1.0,
+        "vds_V": 0.2,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 312
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L1000nm_VDS0p200.json",
+      "lut_sha256": "75be42d1cd66b8d1f608421b92b00f53fbd4ed36f299fdf1722c4d32d6d78c2b",
+      "rounded_W_um": 34.78
+    },
+    "cascode": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.36,
+      "W_um": 425.01596296059415,
+      "Id_A": 0.001,
+      "Vgs_V": 0.489044616047397,
+      "Vov_V": 0.03714940907809365,
+      "gmid": 18.0,
+      "gm_S": 0.018000000000000002,
+      "ft_Hz": 2657749833.107094,
+      "gmro": 43.08630037135897,
+      "id_w_Apm": 2.352852803537443,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.36,
+        "vds_V": 0.2,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 339
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L360nm_VDS0p200.json",
+      "lut_sha256": "dbe703c9a40f5335a81c0724a92f03840953b6667424e54e3c2023378e380032",
+      "rounded_W_um": 425.02
+    },
+    "cascode_bias": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.36,
+      "W_um": 2.125079814802971,
+      "Id_A": 5e-06,
+      "Vgs_V": 0.489044616047397,
+      "Vov_V": 0.03714940907809365,
+      "gmid": 18.0,
+      "gm_S": 9e-05,
+      "ft_Hz": 2657749833.107094,
+      "gmro": 43.08630037135897,
+      "id_w_Apm": 2.352852803537443,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.36,
+        "vds_V": 0.2,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 339
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L360nm_VDS0p200.json",
+      "lut_sha256": "dbe703c9a40f5335a81c0724a92f03840953b6667424e54e3c2023378e380032",
+      "rounded_W_um": 2.12
+    },
+    "selector": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 32.84692907398324,
+      "Id_A": 0.001,
+      "Vgs_V": 0.6622716997149372,
+      "Vov_V": 0.17659450813911323,
+      "gmid": 8.0,
+      "gm_S": 0.008,
+      "ft_Hz": 21275901015.695026,
+      "gmro": 6.481924102677104,
+      "id_w_Apm": 30.444246332667387,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.2,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 379
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L180nm_VDS0p200.json",
+      "lut_sha256": "302efcc034dd48e3f4783825c76fd9d81feacce51d66010488ec373ae04a4a3a",
+      "rounded_W_um": 32.84
+    }
+  },
+  "weight_pairs": [
+    [
+      16,
+      4
+    ],
+    [
+      12,
+      8
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      4,
+      16
+    ]
+  ],
+  "rtop_ohm": 210000,
+  "rbot_ohm": 50000,
+  "implementation": {
+    "mirror_unit_W_um": 34.78,
+    "mirror_multiplicities": [
+      [
+        16,
+        4
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        4,
+        16
+      ]
+    ],
+    "cascode_unit_W_um": 2.12,
+    "cascode_multiplicity": 200,
+    "model_max_unit_width_um": 100
+  },
+  "rationale": "Same-unit mirrors and shared wide-swing cascode; integer m values preserve reference W/L and keep unit dimensions in model range. Cascode diode replica at 5uA with source resistor targets low internal drain voltage. Selector gm/ID point supplies an initial width; selected switches intentionally operate in triode, with actual Ron reported. HD decoder is unmodified vendor CDL."
+}

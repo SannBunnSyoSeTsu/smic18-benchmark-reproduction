@@ -1,0 +1,30 @@
+{
+  "validated_at": "2026-09-22T10:12:08.227231+00:00",
+  "table": "lut_supplement/tt/n18_L500nm_VDS0.900.json",
+  "table_sha256": "34b9a4d9c23d5869704f5e0c7b0273b80f632403518457834a2732b9eed13c7e",
+  "characterization_run": "runs/50/20260922T100429951374Z_characterize_n18_L0.5",
+  "npoints": 603,
+  "finite_positive_data": true,
+  "inversion_branch_monotone": true,
+  "gmid_agrees_with_gm_over_id": true,
+  "raw_normalization_crosscheck": "supplement_lut.characterize asserted exported/derived gmID agreement1e-9",
+  "length_comparison_at_gmid18": {
+    "0.36": {
+      "ft_Hz": 2912514121.24076,
+      "gmro": 146.4147750641061
+    },
+    "0.5": {
+      "ft_Hz": 1652880604.6746528,
+      "gmro": 220.27199083418063
+    },
+    "1.0": {
+      "ft_Hz": 471076480.58634555,
+      "gmro": 325.55851594870626
+    }
+  },
+  "plot": "reports/50-input-lut-validation.png",
+  "plot_sha256": "3076820b1d899a20b9f0f69c7caacde05407c1ef7d45d83f3e487e3a8ba430fd",
+  "visual_review_pending": false,
+  "visual_reviewed_at": "2026-09-22T10:13:22.256127+00:00",
+  "visual_review_note": "Four-panel gm/ID curves inspected: monotone current density,VGS and fT, smooth gm/gds peak near19 without foldback. L=.5um lies between.36um and1um in fT and intrinsic gain."
+}

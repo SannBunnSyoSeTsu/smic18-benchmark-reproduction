@@ -1,0 +1,31 @@
+simulator lang=spectre
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=res_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/07/20260922T102555553119Z_dropout_noise/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-14
+parameters supply=1.8
+VIND (vinD 0) vsource dc=supply
+VREFD (vrefD 0) vsource dc=.8
+IBIASD (vinD ibiasD) isource dc=50u
+ILOADD (voutD 0) isource dc=0.03
+XD (vinD voutD 0 vrefD ibiasD fbD gate_driveD gateD) ldo_ota5
+RFBTD (voutD fbD) resistor r=300k
+RFBBD (fbD 0) resistor r=600k
+VLOOPD (gate_driveD gateD) vsource dc=0
+RESRD (voutD vcapD) resistor r=0.05
+COUTD (vcapD 0) capacitor c=1e-06
+save vinD voutD fbD gate_driveD gateD ibiasD VIND:p
+VINN (vinN 0) vsource dc=1.8
+VREFN (vrefN 0) vsource dc=.8
+IBIASN (vinN ibiasN) isource dc=50u
+ILOADN (voutN 0) isource dc=0.01
+XN (vinN voutN 0 vrefN ibiasN fbN gate_driveN gateN) ldo_ota5
+RFBTN (voutN fbN) resistor r=300k
+RFBBN (fbN 0) resistor r=600k
+VLOOPN (gate_driveN gateN) vsource dc=0
+RESRN (voutN vcapN) resistor r=0.05
+COUTN (vcapN 0) capacitor c=1e-06
+save vinN voutN fbN gate_driveN gateN ibiasN VINN:p
+dropout dc param=supply start=1.15 stop=1.8 step=.002
+noise (voutN 0) noise iprobe=VINN start=10 stop=1M dec=100

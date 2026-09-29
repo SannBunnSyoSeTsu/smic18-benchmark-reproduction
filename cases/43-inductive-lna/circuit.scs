@@ -1,0 +1,42 @@
+simulator lang=spectre
+subckt inductive_lna (vss iref vdd rfin rfout)
+MREF (iref iref vss vss) n18 w=4.3u l=.18u
+MNSINK (pgate iref vss vss) n18 w=4.3u l=.18u m=6
+MPDIO (pgate pgate vdd vdd) p18 w=33.94u l=.36u m=6
+MPMIR (vcas pgate vdd vdd) p18 w=33.94u l=.36u m=6
+MCBOT (vbias vbias vss vss) n18 w=1.92u l=.18u m=6
+MCTOP (vcas vcas vbias vss) n18 w=1.92u l=.18u m=6
+MIN (nx ng ns vss) n18 w=4.3u l=.18u m=60
+MCAS (nd vcas nx vss) n18 w=1.92u l=.18u m=60
+RBIAS (iref ng vss) rpposab_3t w=1u l=150u
+XCIN0 (rfin nin) mim1_rf wr=30u lr=30u
+XCIN1 (rfin nin) mim1_rf wr=30u lr=30u
+XCIN2 (rfin nin) mim1_rf wr=30u lr=30u
+XCIN3 (rfin nin) mim1_rf wr=30u lr=30u
+XCIN4 (rfin nin) mim1_rf wr=30u lr=30u
+XCIN5 (rfin nin) mim1_rf wr=30u lr=30u
+XCBN0 (iref vss) mim1_rf wr=30u lr=30u
+XCBN1 (iref vss) mim1_rf wr=30u lr=30u
+XCBN2 (iref vss) mim1_rf wr=30u lr=30u
+XCBN3 (iref vss) mim1_rf wr=30u lr=30u
+XCBN4 (iref vss) mim1_rf wr=30u lr=30u
+XCBN5 (iref vss) mim1_rf wr=30u lr=30u
+XCBC0 (vcas vss) mim1_rf wr=30u lr=30u
+XCBC1 (vcas vss) mim1_rf wr=30u lr=30u
+XCBC2 (vcas vss) mim1_rf wr=30u lr=30u
+XCBC3 (vcas vss) mim1_rf wr=30u lr=30u
+XCOUT0 (nd rfout) mim1_rf wr=30u lr=21.8333333333u
+XCMATCH0 (rfout vss) mim1_rf wr=30u lr=26.4566666667u
+XCMATCH1 (rfout vss) mim1_rf wr=30u lr=26.4566666667u
+XLG0 (nin lg1) ind_rf r=60u n=3.5
+XLG1 (lg1 lg2) ind_rf r=60u n=3.5
+XLG2 (lg2 ng) ind_rf r=60u n=3.5
+XLD0 (vdd ld1) ind_rf r=60u n=3.5
+XLD1 (ld1 nd) ind_rf r=60u n=3.5
+XLS0 (ns vss) ind_rf r=60u n=3.5
+XLS1 (ns vss) ind_rf r=60u n=3.5
+XLS2 (ns vss) ind_rf r=60u n=3.5
+XLS3 (ns vss) ind_rf r=60u n=3.5
+XLS4 (ns vss) ind_rf r=60u n=3.5
+XLS5 (ns vss) ind_rf r=60u n=3.5
+ends inductive_lna

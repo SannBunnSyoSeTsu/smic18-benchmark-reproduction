@@ -1,0 +1,18 @@
+simulator lang=spectre
+subckt boot_cell (VDD VSS CLK VIN VG)
+XINV (CLK CLKP VDD VSS VDD VSS) INHDV8
+CBOOT (CBT CBB) capacitor c=1.5p
+MDCHG (CBB CLK VSS VSS) n18 w=5.1u l=.18u
+MPCHG (CG CLKP VDD VDD) p18 w=14.8u l=.18u
+MLIM (VDD VG CBT CBT) p18 w=14.8u l=.18u
+MPRE (VDD CLKP PRE VSS) n18 w=5.1u l=.18u m=2
+MGTRK (CG CLKP CBB VSS) n18 w=5.1u l=.18u m=2
+MBPP (VG CG CBT CBT) p18 w=14.8u l=.18u
+MPVIN (CBB VG VIN VSS) n18 w=5.1u l=.18u m=2
+MCASC (VG VDD CLKP VSS) n18 w=5.1u l=.18u m=2
+MPRGUARD (VG VDD PRE VSS) n18 w=5.1u l=.18u m=2
+ends boot_cell
+subckt bootstrap_gate_driver (vdd vss clk vinp vinn gatep gaten)
+XBP (vdd vss clk vinp gatep) boot_cell
+XBN (vdd vss clk vinn gaten) boot_cell
+ends bootstrap_gate_driver

@@ -1,0 +1,317 @@
+{
+  "case_slot": 28,
+  "generated_at": "2026-09-29T05:53:30.976043+00:00",
+  "status": "complete_15pct",
+  "values": {
+    "10mv": {
+      "gain_vv": 4.796738397775286,
+      "sfdr_db": 87.87971267414265,
+      "cm_mean_v": 1.1789563390324003,
+      "output_min_v": 1.153762068537423,
+      "output_max_v": 1.203226396466775,
+      "hold_movement_ratio": 0.016312722958045953,
+      "power_w": 0.0047481655317843496
+    },
+    "20mv": {
+      "gain_vv": 4.812310695597589,
+      "sfdr_db": 84.99662463654323,
+      "cm_mean_v": 1.178707263458867,
+      "output_min_v": 1.129012343832373,
+      "output_max_v": 1.22677843665755,
+      "hold_movement_ratio": 0.016234655970845457,
+      "power_w": 0.004748208434134922
+    }
+  },
+  "gates": {
+    "10mv_gain_vv_min": {
+      "value": 4.796738397775286,
+      "unit": "V/V",
+      "sense": "min",
+      "limits": {
+        "original": 5.5,
+        "10pct": 4.95,
+        "15pct": 4.675
+      },
+      "passes": {
+        "original": false,
+        "10pct": false,
+        "15pct": true
+      }
+    },
+    "10mv_gain_vv_max": {
+      "value": 4.796738397775286,
+      "unit": "V/V",
+      "sense": "max",
+      "limits": {
+        "original": 6.5,
+        "10pct": 7.15,
+        "15pct": 7.475
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "10mv_sfdr_db_min": {
+      "value": 87.87971267414265,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 60.0,
+        "10pct": 59.0848501887865,
+        "15pct": 58.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "10mv_cm_mean_v_min": {
+      "value": 1.1789563390324003,
+      "unit": "V",
+      "sense": "min",
+      "limits": {
+        "original": 0.3,
+        "10pct": 0.27,
+        "15pct": 0.255
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "10mv_cm_mean_v_max": {
+      "value": 1.1789563390324003,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 1.2,
+        "10pct": 1.32,
+        "15pct": 1.38
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "10mv_output_min_v_min": {
+      "value": 1.153762068537423,
+      "unit": "V",
+      "sense": "min",
+      "limits": {
+        "original": 0.2,
+        "10pct": 0.18000000000000002,
+        "15pct": 0.17
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "10mv_output_max_v_max": {
+      "value": 1.203226396466775,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 1.6,
+        "10pct": 1.7600000000000002,
+        "15pct": 1.8399999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "10mv_hold_movement_ratio_max": {
+      "value": 0.016312722958045953,
+      "unit": "ratio",
+      "sense": "max",
+      "limits": {
+        "original": 0.015,
+        "10pct": 0.0165,
+        "15pct": 0.017249999999999998
+      },
+      "passes": {
+        "original": false,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "10mv_power_w_max": {
+      "value": 0.0047481655317843496,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "20mv_gain_vv_min": {
+      "value": 4.812310695597589,
+      "unit": "V/V",
+      "sense": "min",
+      "limits": {
+        "original": 5.5,
+        "10pct": 4.95,
+        "15pct": 4.675
+      },
+      "passes": {
+        "original": false,
+        "10pct": false,
+        "15pct": true
+      }
+    },
+    "20mv_gain_vv_max": {
+      "value": 4.812310695597589,
+      "unit": "V/V",
+      "sense": "max",
+      "limits": {
+        "original": 6.5,
+        "10pct": 7.15,
+        "15pct": 7.475
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "20mv_sfdr_db_min": {
+      "value": 84.99662463654323,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 60.0,
+        "10pct": 59.0848501887865,
+        "15pct": 58.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "20mv_cm_mean_v_min": {
+      "value": 1.178707263458867,
+      "unit": "V",
+      "sense": "min",
+      "limits": {
+        "original": 0.3,
+        "10pct": 0.27,
+        "15pct": 0.255
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "20mv_cm_mean_v_max": {
+      "value": 1.178707263458867,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 1.2,
+        "10pct": 1.32,
+        "15pct": 1.38
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "20mv_output_min_v_min": {
+      "value": 1.129012343832373,
+      "unit": "V",
+      "sense": "min",
+      "limits": {
+        "original": 0.2,
+        "10pct": 0.18000000000000002,
+        "15pct": 0.17
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "20mv_output_max_v_max": {
+      "value": 1.22677843665755,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 1.6,
+        "10pct": 1.7600000000000002,
+        "15pct": 1.8399999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "20mv_hold_movement_ratio_max": {
+      "value": 0.016234655970845457,
+      "unit": "ratio",
+      "sense": "max",
+      "limits": {
+        "original": 0.015,
+        "10pct": 0.0165,
+        "15pct": 0.017249999999999998
+      },
+      "passes": {
+        "original": false,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "20mv_power_w_max": {
+      "value": 0.004748208434134922,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": false,
+    "10pct": false,
+    "15pct": true
+  },
+  "groups": {
+    "10mv": "runs/28/20260929T052500800082Z_precision_refined_10mv",
+    "20mv": "runs/28/20260929T052500800011Z_precision_refined_20mv"
+  },
+  "run_dirs": [
+    "runs/28/20260929T052500800082Z_precision_refined_10mv",
+    "runs/28/20260929T052500800011Z_precision_refined_20mv"
+  ],
+  "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+  "contract_sha256": "9857ff6b87ff2d4756302e5d12aeb15ba2f39589f3ad62422a4348ec7b4ed071",
+  "scope": "SMIC18 TT1.8V27C both original10mV/bin5 and20mV/bin3 records at900MS/s; fixed400fF flying capacitors,50fF output hold loads and original startup/timing.",
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "nonrelaxable_guards_pass": true,
+  "sample_records_sha256": "6bffa5184760d460996295c965cb5a7559f8e177f3f714965ee98cfe74baf7aa"
+}

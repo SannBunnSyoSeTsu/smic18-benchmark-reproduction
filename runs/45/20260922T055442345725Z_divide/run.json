@@ -1,0 +1,40 @@
+{
+  "started_at": "2026-09-22T05:54:42.346173+00:00",
+  "case_slot": 45,
+  "label": "divide",
+  "netlist": "runs/45/20260922T055442345725Z_divide/inputs/bench.scs",
+  "netlist_sha256": "135ee084264e7a8bd0852b67967f3b4cac8b96278308c65175d9e24ce31ece36",
+  "dependencies": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/45-divider/circuit.scs": {
+      "snapshot": "runs/45/20260922T055442345725Z_divide/inputs/circuit.scs",
+      "sha256": "3225ed0ae81d4f67f378c1bab3cbff73b5e83f5c45ee7fb237eccd046f4ff846"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/45-divider/hd_cells.scs": {
+      "snapshot": "runs/45/20260922T055442345725Z_divide/inputs/hd_cells.scs",
+      "sha256": "1620dc879c108e4d42d1c7a79bda30cce4f7240992e8fa923804bf51e6a52641"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/45-divider/hd_cells_manifest.json": {
+      "snapshot": "runs/45/20260922T055442345725Z_divide/inputs/hd_cells_manifest.json",
+      "sha256": "d60f925ba4df2f0b3ff8ae03d37da1e9d1bbde89ebc97c280391d74b7041b705"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/45-divider/contract.json": {
+      "snapshot": "runs/45/20260922T055442345725Z_divide/inputs/contract.json",
+      "sha256": "1b78b292a920939f7c8eae795dfb04641bee08873460f8982138d343d08216e6"
+    }
+  },
+  "models": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib": "88246a7e992cb3f5af5ac0f6a9a1c5934707ecd72e7f8f08150b44a01796c20f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.mdl": "832d378241360815f6d4009514d863f2aac9c48c312326410de9421564b1033d",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_bjt_spe.mdl": "d2d45e69a854f8d090fe3ef83041bc39ed8a0abcd9d272b8067a9db3014a9b6f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_res_spe.mdl": "173a1a7c1d8cc2f1009ac12db0f0d4f9725aebea8625cf9796a0be50f06fceb1",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_mim_spe.mdl": "02c8e7986a1c159e52c8fa403fdb52b9b4f928e00bca5522a648992528d7edff"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "status": "completed",
+  "completed_at": "2026-09-22T05:54:43.513650+00:00",
+  "errors": [],
+  "raw_dir": "runs/45/20260922T055442345725Z_divide/output/bench.raw",
+  "warnings": [],
+  "model_dimensions_valid": true
+}

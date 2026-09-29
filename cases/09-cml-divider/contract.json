@@ -1,0 +1,46 @@
+{
+  "source_task": "sky130-cml-divider-div2-range1gto10g",
+  "scope": "SMIC18 TT only; preserve all four frequency points and full40cycle observation",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 0.00015,
+  "clock_common_mode_V": 0.9,
+  "input_differential_Vpp": 0.3,
+  "input_source_ohm": 50,
+  "input_rise_s": 1e-11,
+  "input_fall_s": 1e-11,
+  "input_delay_s": 1e-10,
+  "output_load_F_each": 1e-14,
+  "frequency_Hz": [
+    1000000000.0,
+    2000000000.0,
+    5000000000.0,
+    10000000000.0
+  ],
+  "startup_s": 5e-09,
+  "observed_input_cycles": 40,
+  "minimum_each_cycle_swing_Vpp": 0.2,
+  "target_half_frequency_tone_Vpp": 0.2,
+  "sample_phase_period": 0.4,
+  "sign_threshold_V": 0.01,
+  "required_alternating_cycles": 40,
+  "dc_power_max_W": 0.0015,
+  "dc_power_comparison": "strictly less than; includes150uA reference sourced fromVDD",
+  "power_clock_inputs_V": 0.9,
+  "nodeset": {
+    "outp": 1.0,
+    "outn": 0.8,
+    "interpretation": "released DC operating-point hint, never forced during transient"
+  },
+  "allowed_DUT": "native SMIC MOS plus finite positive ideal R/C; CML core gm/ID explicitly authorized2026-09-22",
+  "relaxation": "Only swing, target-tone amplitude and power limits; fixed frequency points and alternating-sign function never relaxed",
+  "exclusions": [
+    "ff/ss/fs/sf corners",
+    "voltage/temperature sweeps",
+    "mismatch",
+    "PEX",
+    "phase noise",
+    "external clock-driver energy"
+  ],
+  "acceptance_policy": "/home/IC/CodeX/smic18_benchmark_repro/contracts/acceptance-policy.md"
+}

@@ -1,0 +1,28 @@
+simulator lang=spectre
+global 0
+parameters iload=0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/38-capless-ldo/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-07 vabstol=1e-9 iabstol=1e-14
+saveOptions options save=selected
+VSUP (vin 0) vsource dc=1.5 mag=1
+VREF (vref 0) vsource dc=.4
+X (vin vout 0 vref) capless_ldo
+save vin vout VSUP:p VREF:p X.nb X.pb X.ns X.tail X.nr X.nf X.pc X.gate X.fb X.vc
+ILOAD (vout 0) isource dc=.02
+save X.MPA:ids X.MPA:gm X.MPA:gds X.MPA:vgs X.MPA:vds X.MPA:vdsat X.MPA:region
+save X.MPB:ids X.MPB:gm X.MPB:gds X.MPB:vgs X.MPB:vds X.MPB:vdsat X.MPB:region
+save X.MN1:ids X.MN1:gm X.MN1:gds X.MN1:vgs X.MN1:vds X.MN1:vdsat X.MN1:region
+save X.MN2:ids X.MN2:gm X.MN2:gds X.MN2:vgs X.MN2:vds X.MN2:vdsat X.MN2:region
+save X.MPT:ids X.MPT:gm X.MPT:gds X.MPT:vgs X.MPT:vds X.MPT:vdsat X.MPT:region
+save X.MIR:ids X.MIR:gm X.MIR:gds X.MIR:vgs X.MIR:vds X.MIR:vdsat X.MIR:region
+save X.MIF:ids X.MIF:gm X.MIF:gds X.MIF:vgs X.MIF:vds X.MIF:vdsat X.MIF:region
+save X.MNDR:ids X.MNDR:gm X.MNDR:gds X.MNDR:vgs X.MNDR:vds X.MNDR:vdsat X.MNDR:region
+save X.MNDF:ids X.MNDF:gm X.MNDF:gds X.MNDF:vgs X.MNDF:vds X.MNDF:vdsat X.MNDF:region
+save X.MNOUT:ids X.MNOUT:gm X.MNOUT:gds X.MNOUT:vgs X.MNOUT:vds X.MNOUT:vdsat X.MNOUT:region
+save X.MNSINK:ids X.MNSINK:gm X.MNSINK:gds X.MNSINK:vgs X.MNSINK:vds X.MNSINK:vdsat X.MNSINK:region
+save X.MPD:ids X.MPD:gm X.MPD:gds X.MPD:vgs X.MPD:vds X.MPD:vdsat X.MPD:region
+save X.MPOUT:ids X.MPOUT:gm X.MPOUT:gds X.MPOUT:vgs X.MPOUT:vds X.MPOUT:vdsat X.MPOUT:region
+save X.MPASS:ids X.MPASS:gm X.MPASS:gds X.MPASS:vgs X.MPASS:vds X.MPASS:vdsat X.MPASS:region
+dcOp dc
+ac ac start=100 stop=10M dec=160

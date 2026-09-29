@@ -1,0 +1,26 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        SC["输入采样 / 差分电荷求和 / Cs与Ci"]
+        HOLD["互补判决保持"]
+        DAC["一位反馈DAC"]
+    end
+    VIN["低频差分输入"]
+    OTA["原生外部OTA夹具"]
+    CMP["原生外部比较器夹具"]
+    CLK["10MHz两相与比较时钟"]
+    REF["参考电压与共模"]
+    BIT["原始一位码流"]
+    VIN --> SC
+    SC -->|"差分误差"| OTA
+    OTA -->|"Ci积分反馈"| SC
+    OTA -->|"积分状态"| CMP
+    CMP -->|"判决"| HOLD
+    HOLD -.->|"上一拍判决"| DAC
+    DAC -->|"负反馈电荷"| SC
+    CMP -->|"原判决节点读出"| BIT
+    REF -.->|"共模设定"| SC
+    REF -->|"两参考轨"| DAC
+    CLK -.->|"采样 / 转移"| SC
+    CLK -.->|"比较时钟"| CMP
+    CLK -.->|"保持相位"| HOLD

@@ -1,0 +1,353 @@
+{
+  "generated_at": "2026-09-29T05:26:15.171623+00:00",
+  "status": "passed",
+  "method": "Editable text/table reconstruction from delivered vector PDF using Poppler XML; every PDF text fragment accounted for; tables rendered and shape-checked; plots and exact netlist retained.",
+  "pdf": "reports/19-sc-converter-review.pdf",
+  "pdf_sha256": "33b55a66461bb6c80e2ca0a38894d3efcd75f77bbf3b0565247669a7106072c1",
+  "circuit_sha256": "69f65f854aa02cd025a190dd4448aa16840e73ba6a835cdde88687dfe010f144",
+  "results_sha256": "bf240fd5b87f9cfb1b215bd00d3d15de95c4ec8b6e06f745cbedc3dd465f4098",
+  "markdown_sha256": "abef43cb9eadf1d64b9bfb1c94cdda5770221a848737bedbe921074bdf678bf1",
+  "body_pages": 6,
+  "tables": 4,
+  "pages": [
+    {
+      "page": 1,
+      "tables": [
+        {
+          "top": 500.0,
+          "headers": [
+            "指标",
+            "实测",
+            "原",
+            "10%",
+            "15%"
+          ],
+          "rows": [
+            [
+              "重载转换比下限",
+              "0.463932",
+              "≥0.42",
+              "≥0.378",
+              "≥0.357"
+            ],
+            [
+              "重载转换比上限",
+              "0.463932",
+              "≤0.51",
+              "≤0.561",
+              "≤0.5865"
+            ],
+            [
+              "重载效率下限",
+              "77.76",
+              "≥70",
+              "≥63",
+              "≥59.5"
+            ],
+            [
+              "轻载转换比下限",
+              "0.494181",
+              "≥0.45",
+              "≥0.405",
+              "≥0.3825"
+            ],
+            [
+              "轻载转换比上限",
+              "0.494181",
+              "≤0.51",
+              "≤0.561",
+              "≤0.5865"
+            ],
+            [
+              "轻载效率下限",
+              "34.5676",
+              "≥30",
+              "≥27",
+              "≥25.5"
+            ],
+            [
+              "重载纹波/mV",
+              "43.9973",
+              "≤80",
+              "≤88",
+              "≤92"
+            ],
+            [
+              "启动/ns",
+              "31.6751",
+              "≤200",
+              "≤220",
+              "≤230"
+            ],
+            [
+              "启动保持/V",
+              "0.809154",
+              "≥0.6804",
+              "≥0.6804",
+              "≥0.6804"
+            ],
+            [
+              "轻载总输入/uW",
+              "336.621",
+              "≤500",
+              "≤550",
+              "≤575"
+            ],
+            [
+              "输出电阻/Ω",
+              "49.6229",
+              "≤100",
+              "≤110",
+              "≤115"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 73,
+      "accounted_pdf_text_fragments": 73,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 2,
+      "tables": [
+        {
+          "top": 350.0,
+          "headers": [
+            "模拟角色",
+            "单位W/L um",
+            "初算gm/ID",
+            "单位ID/uA"
+          ],
+          "rows": [
+            [
+              "floating_switch",
+              "1.36/0.18",
+              "8",
+              "50"
+            ],
+            [
+              "ground_switch",
+              "2.04/0.18",
+              "10",
+              "50"
+            ],
+            [
+              "high_switch",
+              "4/0.18",
+              "8",
+              "50"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "top": 571.0,
+          "headers": [
+            "元件",
+            "最终实现"
+          ],
+          "rows": [
+            [
+              "浮置NMOS×4",
+              "1.36/0.18um，m60，总宽81.6um/只"
+            ],
+            [
+              "高侧PMOS×2",
+              "4.00/0.18um，m24，总宽96um/只"
+            ],
+            [
+              "底板NMOS×2",
+              "2.04/0.18um，m64，总宽130.56um/只"
+            ],
+            [
+              "CFA/CFB/CO",
+              "100×100um MIM，m10.29866/10.29866/28.83625"
+            ],
+            [
+              "CBPA/CBPB",
+              "20×102.9866um MIM，名义各2pF"
+            ]
+          ],
+          "pdf_text_indices": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 38,
+      "accounted_pdf_text_fragments": 38,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 3,
+      "tables": [],
+      "total_pdf_text_fragments": 70,
+      "accounted_pdf_text_fragments": 70,
+      "plot_text_fragments": 64
+    },
+    {
+      "page": 4,
+      "tables": [
+        {
+          "top": 217.0,
+          "headers": [
+            "负载/Ω",
+            "VDD/uW",
+            "正向CLK/uW",
+            "负载/uW",
+            "总输入/uW"
+          ],
+          "rows": [
+            [
+              "680",
+              "1319.027254",
+              "0.150690",
+              "1025.793265",
+              "1319.177945"
+            ],
+            [
+              "6800",
+              "336.470076",
+              "0.150690",
+              "116.361790",
+              "336.620766"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 27,
+      "accounted_pdf_text_fragments": 27,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 5,
+      "tables": [],
+      "total_pdf_text_fragments": 44,
+      "accounted_pdf_text_fragments": 44,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 6,
+      "tables": [],
+      "total_pdf_text_fragments": 18,
+      "accounted_pdf_text_fragments": 18,
+      "plot_text_fragments": 0
+    }
+  ],
+  "assets": {
+    "markdown_assets/page-04.png": "87e427cd3131ee57e313642523ae45aaf966d644dd95b83b07e777ffce22d20c",
+    "markdown_assets/page-02.png": "89be57a051121f4582f9106b5cdb89f60ae63c138782aeb480ae8fedfeb3b7c3",
+    "markdown_assets/page-05.png": "a293e96d11b6fbb2a38bcfee4059a5b1dc1250fb33d0e44d3c23d5fb8886200b",
+    "markdown_assets/page-01.png": "fb390681996d02b0ee45c677cb934268486262d9654648c037c306a24e2aa552",
+    "markdown_assets/page-06.png": "61a43bc6138a0f9381b5a0aaaf62c61ca47e91766ec8d6ac390c9672f96fcdbf",
+    "markdown_assets/page-03.png": "a2955f16205f1d62089f86d3fa4f89cb4ea55b6a3441c2b8aecdec514abd2eab"
+  },
+  "restored_markdown_sha256": "b41ee8c83e08306dbca850e2c0e5891be4e9f0842706d847735bf573d933bc69",
+  "system_diagram_sha256": "21bd9545e1fe250d96788ea13f99e0d498a9f4f8367695ed79d4560a11ccafb5"
+}

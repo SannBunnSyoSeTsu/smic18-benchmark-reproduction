@@ -1,0 +1,72 @@
+{
+  "source_task": "sky130-bottom-plate-sampler-pvt",
+  "source_hashes": {
+    "instruction.md": "1686d3bbd46643d1af27d7b0d65b6cbd9bff43084c3c8a188a0df64fa4c443b9",
+    "solution/circuit.spi": "5f7590d5ae876a508cdaf205cbbee6f85cc56d2850799af2ea2616f321dcb014",
+    "tests/verify.py": "410a6407ac79250df505a699238b615199bb19f8e7d4adfc22d1a131bb669df4",
+    "tests/utils.py": "8f9909aa283429e11d3d5b55b33d5e55d5c54f4bad33aaa599f1c8a35a99e299",
+    "tests/benches/tb_static.spi": "c053858d7fa4205ec445468b3d1334d0f79289ca7b3637721f2692f474d62a0e",
+    "tests/benches/tb_hold.spi": "56fadee44b340c2a91a2491befe8e648dea82048934c24c681045aedeb451aec",
+    "tests/benches/tb_fft.spi": "1739aef2dcd618bcc8250311693c624937a3f023832abe6715c3a475b9971a4d"
+  },
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "clock_Hz": 100000000.0,
+  "clock_delay_s": 2e-09,
+  "clock_edge_s": 5e-11,
+  "clock_high_plateau_s": 5e-09,
+  "clock_source_Ohm": 50,
+  "common_mode_V": 0.9,
+  "static_differential_V": [
+    0.8,
+    -0.8
+  ],
+  "acquisition_sample_s": 2.9e-08,
+  "acquisition_error_max_V": 0.005,
+  "hold_reversal_s": [
+    8e-09,
+    8.1e-09
+  ],
+  "hold_samples_s": [
+    7.8e-09,
+    1.15e-08,
+    1.95e-08
+  ],
+  "hold_error_max_V": 0.005,
+  "input_sine_Hz": 5000000.0,
+  "input_sine_differential_Vpp": 1.6,
+  "held_samples": 80,
+  "held_sample_s": "(9+10*cycle)ns, cycle8..87",
+  "fundamental_bin": 4,
+  "SFDR_min_dB": 80,
+  "spur_bins": "1..39 excluding4; no window or Nyquist bin, per frozen verifier",
+  "gain_error_max_fraction": 0.005,
+  "stored_common_mode_max_V": 0.025,
+  "power_window_s": [
+    8e-08,
+    8.8e-07
+  ],
+  "total_source_power_max_W": 0.0006,
+  "power_sources": [
+    "VDD",
+    "VCM",
+    "VINP",
+    "VINN",
+    "VCLK_before_50Ohm"
+  ],
+  "power_definition": "Sum max(0,time-mean(-Vsource*Isource)) separately across all5 sources over800ns",
+  "legal_DUT_leaves": "n18/p18 MOS, unmodified HD MOS cells, positive finite capacitors",
+  "scope_excludes": [
+    "remaining8 representative FFT PVT rows",
+    "ss/ff hold rows",
+    "noise/SNDR/THD/ENOB not graded",
+    "mismatch/PEX"
+  ],
+  "additional_voltage_guard": {
+    "max_abs_VGS_VGD_VDS_V": 1.98,
+    "relaxable": false,
+    "scope": "All four transient DUT copies, all analog and HD MOS terminals",
+    "basis": "Engineering screen at original maximum supply 1.8*1.10; not a foundry oxide/lifetime rating"
+  }
+}

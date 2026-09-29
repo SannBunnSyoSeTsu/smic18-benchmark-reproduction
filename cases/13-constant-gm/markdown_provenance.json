@@ -1,0 +1,364 @@
+{
+  "generated_at": "2026-09-29T05:26:14.278507+00:00",
+  "status": "passed",
+  "method": "Editable text/table reconstruction from delivered vector PDF using Poppler XML; every PDF text fragment accounted for; tables rendered and shape-checked; plots and exact netlist retained.",
+  "pdf": "reports/13-constant-gm-review.pdf",
+  "pdf_sha256": "9645ef7299b6daa54b8890e9a4bac4a40cd12139b8a5b861fc8aec35dd10cf48",
+  "circuit_sha256": "ddae3c2eeb075e2861029154ff9555db01c3092a7860f44e7bc7d70b9d597090",
+  "results_sha256": "ce9fdbc6e47aa4ddd9db1f2e497416aa0c93979f7538cb118dc8fea61e65ffc4",
+  "markdown_sha256": "5257d67297e13a7eb43db449d4ad213ac4519a58a913fe3844663cd0113f37e9",
+  "body_pages": 4,
+  "tables": 4,
+  "pages": [
+    {
+      "page": 1,
+      "tables": [
+        {
+          "top": 473.0,
+          "headers": [
+            "指标",
+            "实测",
+            "原门槛",
+            "10%边界",
+            "15%边界",
+            "单位"
+          ],
+          "rows": [
+            [
+              "1MHz差分增益",
+              "3.60145",
+              "3.0–4.0",
+              "2.95–4.05",
+              "2.925–4.075",
+              "V/V"
+            ],
+            [
+              "−3dB带宽",
+              "55.4226",
+              "≥30",
+              "≥27",
+              "≥25.5",
+              "MHz"
+            ],
+            [
+              "VDD−输出共模",
+              "259.777",
+              "150–400",
+              "137.5–412.5",
+              "131.25–418.75",
+              "mV"
+            ],
+            [
+              "确定性输出不平衡",
+              "0",
+              "≤10",
+              "≤11",
+              "≤11.5",
+              "mV"
+            ],
+            [
+              "总VDD功耗",
+              "424.366",
+              "≤500",
+              "≤550",
+              "≤575",
+              "uW"
+            ],
+            [
+              "最坏增量增益误差",
+              "3.3834",
+              "≤8",
+              "≤8.8",
+              "≤9.2",
+              "%"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ]
+        },
+        {
+          "top": 804.0,
+          "headers": [
+            "冷启动合同",
+            "实测",
+            "原门槛"
+          ],
+          "rows": [
+            [
+              "8–9us零输入不平衡",
+              "5.28e-14 mV",
+              "≤10 mV"
+            ],
+            [
+              "14–15us绝对阶跃增益",
+              "3.58842 V/V",
+              "3.0–4.0 V/V"
+            ],
+            [
+              "零输入负载压降",
+              "259.777 mV",
+              "150–400 mV"
+            ],
+            [
+              "阶跃后负载压降",
+              "259.785 mV",
+              "150–400 mV"
+            ],
+            [
+              "全部已存节点初值",
+              "0 V",
+              "零能量初态"
+            ]
+          ],
+          "pdf_text_indices": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 73,
+      "accounted_pdf_text_fragments": 73,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 2,
+      "tables": [
+        {
+          "top": 434.0,
+          "headers": [
+            "器件角色",
+            "模型",
+            "单位W/L(um)",
+            "m",
+            "目标gm/ID"
+          ],
+          "rows": [
+            [
+              "MB1/MB2/TAIL/IN±",
+              "n18",
+              "19.94/1",
+              "1 / 4 / 2 / 1",
+              "14.00"
+            ],
+            [
+              "MP1/MP2",
+              "p18",
+              "42.20/1",
+              "1",
+              "10.00"
+            ],
+            [
+              "MREF",
+              "n18",
+              "14.88/1",
+              "1",
+              "12.00"
+            ],
+            [
+              "MST",
+              "n18",
+              "0.24/4",
+              "1",
+              "8.56"
+            ]
+          ],
+          "pdf_text_indices": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ]
+        },
+        {
+          "top": 692.0,
+          "headers": [
+            "实际工作点",
+            "|I| / uA",
+            "gm/ID",
+            "饱和余量/mV"
+          ],
+          "rows": [
+            [
+              "MB1",
+              "46.998",
+              "13.822",
+              "394.3"
+            ],
+            [
+              "MB2",
+              "45.612",
+              "20.145",
+              "1056.8"
+            ],
+            [
+              "MP1",
+              "46.998",
+              "9.837",
+              "1105.1"
+            ],
+            [
+              "MP2",
+              "45.984",
+              "9.869",
+              "426.5"
+            ],
+            [
+              "MTAIL",
+              "92.777",
+              "13.820",
+              "218.0"
+            ],
+            [
+              "MINP",
+              "46.388",
+              "14.038",
+              "1074.1"
+            ],
+            [
+              "MST",
+              "0.372",
+              "8.591",
+              "996.1"
+            ]
+          ],
+          "pdf_text_indices": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 72,
+      "accounted_pdf_text_fragments": 72,
+      "plot_text_fragments": 7
+    },
+    {
+      "page": 3,
+      "tables": [],
+      "total_pdf_text_fragments": 83,
+      "accounted_pdf_text_fragments": 83,
+      "plot_text_fragments": 75
+    },
+    {
+      "page": 4,
+      "tables": [],
+      "total_pdf_text_fragments": 32,
+      "accounted_pdf_text_fragments": 32,
+      "plot_text_fragments": 0
+    }
+  ],
+  "assets": {
+    "markdown_assets/page-04.png": "8eb4e2d6e01dc097cb8f75d4a17a7c1a1e7ab4afcf288f6429cd136e577f5312",
+    "markdown_assets/page-02.png": "cb1ee79237cd7e0d43f187d524086408dcf9192f537009b59d2cf63d0810ee5f",
+    "markdown_assets/page-01.png": "a56ee12d5f3c2f0037675582cfd88e4ad39c0ce5cd687c467b73e408a3a6fd1d",
+    "markdown_assets/page-03.png": "35109c5fa37927db6afebcc0e564a27dff1025955f7fe6987a4cab30a1b6a41c"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "circuit_sha256": "3e96952b371aec9580fd6fc7366ff78e08bf19958c732078db5e69c9341ff565",
+  "devices": [
+    {
+      "name": "MN1",
+      "pins": [
+        "n1",
+        "in",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 0.76,
+      "L_um": 0.18,
+      "m": 15.0,
+      "W_total_um": 11.4,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MP1",
+      "pins": [
+        "n1",
+        "in",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 2.36,
+      "L_um": 0.18,
+      "m": 15.0,
+      "W_total_um": 35.4,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MN2",
+      "pins": [
+        "vout",
+        "nbuf",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 0.76,
+      "L_um": 0.18,
+      "m": 11.0,
+      "W_total_um": 8.36,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MP2",
+      "pins": [
+        "vout",
+        "nbuf",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 2.36,
+      "L_um": 0.18,
+      "m": 11.0,
+      "W_total_um": 25.959999999999997,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MREF",
+      "pins": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 8.86,
+      "unit_width_valid": true
+    }
+  ],
+  "all_unit_widths_valid": true,
+  "digital_logic": "none; CMOS inverters are continuously biased analog gain stages"
+}

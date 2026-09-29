@@ -1,0 +1,175 @@
+[
+  {
+    "generated_at": "2026-09-28T17:53:54.553982+00:00",
+    "circuit_sha256": "77a4416af6a43635cccaf696ba3d315b61df8488d3fb80ba25be667cb7cc9d34",
+    "parameters": {
+      "cap": 7.5,
+      "comp": 80,
+      "control_m": 4,
+      "pre_uA": 50,
+      "rect_uA": 250,
+      "divider": 6
+    },
+    "status": "needs_iteration",
+    "values": {
+      "enabled": [
+        {
+          "load_uA": 1,
+          "vout_avg_V": 2.3483242123117702,
+          "vout_min_V": 2.335052280850372,
+          "vout_max_V": 2.353331389283988,
+          "enabled_current_A": 0.00012034738352746919,
+          "control_avg_V": 1.271715211788704,
+          "driver_supply_avg_V": 1.0072160994981991,
+          "error_V": 0.008324212311770385,
+          "ripple_V": 0.01827910843361602
+        },
+        {
+          "load_uA": 25,
+          "vout_avg_V": 2.345527042410218,
+          "vout_min_V": 2.332053460184782,
+          "vout_max_V": 2.35218587410423,
+          "enabled_current_A": 0.00016338652793161703,
+          "control_avg_V": 1.2582485337169116,
+          "driver_supply_avg_V": 1.09117602098221,
+          "error_V": 0.005527042410218286,
+          "ripple_V": 0.020132413919447867
+        },
+        {
+          "load_uA": 50,
+          "vout_avg_V": 2.3338222362560033,
+          "vout_min_V": 2.326751099807869,
+          "vout_max_V": 2.34467593246158,
+          "enabled_current_A": 0.00022080710066316682,
+          "control_avg_V": 1.242198863212774,
+          "driver_supply_avg_V": 1.2013775457450253,
+          "error_V": 0.006177763743996589,
+          "ripple_V": 0.017924832653711142
+        }
+      ],
+      "disabled_current_A": 1.095479732144913e-09
+    },
+    "groups": {
+      "load1": "runs/18/20260928T174737796747Z_load1",
+      "load25": "runs/18/20260928T174931240774Z_load25",
+      "load50": "runs/18/20260928T175126999546Z_load50",
+      "disabled": "runs/18/20260928T175325164764Z_disabled"
+    }
+  },
+  {
+    "generated_at": "2026-09-28T18:04:43.584521+00:00",
+    "circuit_sha256": "6fc878c0bf1ec3399b2991d1291687c0777fa5b3c642e9e8266ef6f957560e0c",
+    "parameters": {
+      "cap": 7.5,
+      "comp": 80,
+      "control_m": 4,
+      "pre_uA": 50,
+      "rect_uA": 250,
+      "divider": 6,
+      "zero_segments": 3
+    },
+    "status": "complete_10pct",
+    "values": {
+      "enabled": [
+        {
+          "load_uA": 1,
+          "vout_avg_V": 2.338852145918617,
+          "vout_min_V": 2.338416569675998,
+          "vout_max_V": 2.339155708479985,
+          "enabled_current_A": 0.00011731196677573162,
+          "control_avg_V": 1.2736411575391215,
+          "driver_supply_avg_V": 1.0100904769943613,
+          "error_V": 0.0011478540813829596,
+          "ripple_V": 0.0007391388039872382
+        },
+        {
+          "load_uA": 25,
+          "vout_avg_V": 2.3386309255893467,
+          "vout_min_V": 2.337994144118334,
+          "vout_max_V": 2.33906703722148,
+          "enabled_current_A": 0.00016609453702943916,
+          "control_avg_V": 1.2588959861869207,
+          "driver_supply_avg_V": 1.1246139782572355,
+          "error_V": 0.0013690744106531483,
+          "ripple_V": 0.0010728931031462885
+        },
+        {
+          "load_uA": 50,
+          "vout_avg_V": 2.339085857528746,
+          "vout_min_V": 2.338068641808515,
+          "vout_max_V": 2.339842412832642,
+          "enabled_current_A": 0.0002172523491808378,
+          "control_avg_V": 1.245080933748272,
+          "driver_supply_avg_V": 1.2541093154396987,
+          "error_V": 0.0009141424712537649,
+          "ripple_V": 0.0017737710241267912
+        }
+      ],
+      "disabled_current_A": 1.095479732144787e-09
+    },
+    "groups": {
+      "load1": "runs/18/20260928T175827420444Z_load1",
+      "load25": "runs/18/20260928T180020763492Z_load25",
+      "load50": "runs/18/20260928T180215890808Z_load50",
+      "disabled": "runs/18/20260928T180414236837Z_disabled"
+    }
+  },
+  {
+    "generated_at": "2026-09-28T18:18:48.190029+00:00",
+    "circuit_sha256": "6fc878c0bf1ec3399b2991d1291687c0777fa5b3c642e9e8266ef6f957560e0c",
+    "parameters": {
+      "cap": 7.5,
+      "comp": 80,
+      "control_m": 4,
+      "pre_uA": 50,
+      "rect_uA": 250,
+      "divider": 6,
+      "zero_segments": 3
+    },
+    "status": "complete_10pct",
+    "values": {
+      "enabled": [
+        {
+          "load_uA": 1,
+          "vout_avg_V": 2.338852287330478,
+          "vout_min_V": 2.338416553320337,
+          "vout_max_V": 2.339155942923119,
+          "enabled_current_A": 0.00011736970732693913,
+          "control_avg_V": 1.2736526490887277,
+          "driver_supply_avg_V": 1.0100683539144075,
+          "error_V": 0.0011477126695220718,
+          "ripple_V": 0.0007393896027818592
+        },
+        {
+          "load_uA": 25,
+          "vout_avg_V": 2.338631013798192,
+          "vout_min_V": 2.337994060394534,
+          "vout_max_V": 2.339067122407597,
+          "enabled_current_A": 0.00016616570638655108,
+          "control_avg_V": 1.2589036114094065,
+          "driver_supply_avg_V": 1.1246084599915163,
+          "error_V": 0.0013689862018080312,
+          "ripple_V": 0.0010730620130630086
+        },
+        {
+          "load_uA": 50,
+          "vout_avg_V": 2.3390864207833717,
+          "vout_min_V": 2.338068888573302,
+          "vout_max_V": 2.33984319766168,
+          "enabled_current_A": 0.000217336564159355,
+          "control_avg_V": 1.245085170619701,
+          "driver_supply_avg_V": 1.254120501884657,
+          "error_V": 0.0009135792166281576,
+          "ripple_V": 0.0017743090883781676
+        }
+      ],
+      "disabled_current_A": 1.095479732144787e-09
+    },
+    "groups": {
+      "load1": "runs/18/20260928T180657145570Z_load1",
+      "load25": "runs/18/20260928T181032550097Z_load25",
+      "load50": "runs/18/20260928T181411096708Z_load50",
+      "disabled": "runs/18/20260928T181752376863Z_disabled"
+    }
+  }
+]

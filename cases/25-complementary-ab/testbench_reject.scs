@@ -1,0 +1,34 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/25-complementary-ab/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+VDDD (vddD 0) vsource dc=1.8 mag=0
+IRD (vddD irefD) isource dc=20u
+VPD (vpD 0) vsource dc=.9 mag=0.5
+VND (vnD 0) vsource dc=.9 mag=0.5 phase=180
+XD (0 irefD vddD vnD vpD outD) complementary_folded_cascode_ab_opamp
+LFD (outD vnD) inductor l=1e15
+RBD (outD 0) resistor r=100M
+CLD (outD 0) capacitor c=4p
+save outD vpD vnD
+VDDC (vddC 0) vsource dc=1.8 mag=0
+IRC (vddC irefC) isource dc=20u
+VPC (vpC 0) vsource dc=.9 mag=1
+VNC (vnC 0) vsource dc=.9 mag=1 phase=0
+XC (0 irefC vddC vnC vpC outC) complementary_folded_cascode_ab_opamp
+LFC (outC vnC) inductor l=1e15
+RBC (outC 0) resistor r=100M
+CLC (outC 0) capacitor c=4p
+save outC vpC vnC
+VDDP (vddP 0) vsource dc=1.8 mag=1
+IRP (vddP irefP) isource dc=20u
+VPP (vpP 0) vsource dc=.9 mag=0
+VNP (vnP 0) vsource dc=.9 mag=0 phase=0
+XP (0 irefP vddP vnP vpP outP) complementary_folded_cascode_ab_opamp
+LFP (outP vnP) inductor l=1e15
+RBP (outP 0) resistor r=100M
+CLP (outP 0) capacitor c=4p
+save outP vpP vnP
+ac ac start=10 stop=100M dec=100

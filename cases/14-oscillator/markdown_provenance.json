@@ -1,0 +1,415 @@
+{
+  "generated_at": "2026-09-29T05:26:15.042111+00:00",
+  "status": "passed",
+  "method": "Editable text/table reconstruction from delivered vector PDF using Poppler XML; every PDF text fragment accounted for; tables rendered and shape-checked; plots and exact netlist retained.",
+  "pdf": "reports/14-oscillator-review.pdf",
+  "pdf_sha256": "bebd71d85bbd63606b313264289e47c53567fef2595b9965244dce99009f7984",
+  "circuit_sha256": "383ec5c083dff63dfe2d4529615c33f22d541e3bf14d2c927e3655b98488c1a6",
+  "results_sha256": "901a7bf80c322c929c086204f7980eb062f7da31d130a0bf86b1a319af181299",
+  "markdown_sha256": "a0a4895ee16791322eb826cf51c0fd2f740d6b1e45e55a0b86bc9e38050e227c",
+  "body_pages": 6,
+  "tables": 7,
+  "pages": [
+    {
+      "page": 1,
+      "tables": [
+        {
+          "top": 456.0,
+          "headers": [
+            "指标",
+            "实测",
+            "原门槛",
+            "10%边界",
+            "15%边界"
+          ],
+          "rows": [
+            [
+              "频率/MHz",
+              "1.97357005",
+              "1.8–2.2",
+              "1.78–2.22",
+              "1.77–2.23"
+            ],
+            [
+              "摆幅/VDD",
+              "1.000057741",
+              "0.95–1.05",
+              "0.945–1.055",
+              "0.9425–1.0575"
+            ],
+            [
+              "总功耗/uW",
+              "19.0392051",
+              "≤20",
+              "≤22",
+              "≤23"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "top": 734.0,
+          "headers": [
+            "冻结的nominal维度",
+            "实施方式"
+          ],
+          "rows": [
+            [
+              "瞬态总长",
+              "20 us，普通DC初始化，无强制IC或额外kick"
+            ],
+            [
+              "测量区间",
+              "10–20 us，端点插值并按实际时间积分"
+            ],
+            [
+              "频率定义",
+              "半供电0.9 V，第2上升沿至第12上升沿共10周期"
+            ],
+            [
+              "摆幅定义",
+              "10–20 us中max(CLKO)−min(CLKO)"
+            ],
+            [
+              "功耗定义",
+              "1.8 V×abs(mean I(VSENSE))，包含2 uA和负载驱动"
+            ]
+          ],
+          "pdf_text_indices": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 49,
+      "accounted_pdf_text_fragments": 49,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 2,
+      "tables": [
+        {
+          "top": 520.0,
+          "headers": [
+            "单位模型",
+            "W/L (um)",
+            "gm/ID",
+            "ID/W(uA/um)",
+            "|VGS|表点/V",
+            "gm·ro"
+          ],
+          "rows": [
+            [
+              "n18",
+              "0.28/1.00",
+              "15",
+              "1.8449",
+              "0.5018",
+              "214.97"
+            ],
+            [
+              "p18",
+              "1.28/1.00",
+              "15",
+              "0.3905",
+              "0.5196",
+              "337.98"
+            ]
+          ],
+          "pdf_text_indices": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ]
+        },
+        {
+          "top": 774.0,
+          "headers": [
+            "实际偏置管",
+            "|平均ID|/uA",
+            "实际gm/ID",
+            "最小|VDS|−|VDSAT|/V"
+          ],
+          "rows": [
+            [
+              "MNREF",
+              "2.000006",
+              "14.5348",
+              "0.34192"
+            ],
+            [
+              "MNBP",
+              "0.521884",
+              "14.4193",
+              "1.15983"
+            ],
+            [
+              "MPREF",
+              "0.521827",
+              "14.6917",
+              "0.40372"
+            ]
+          ],
+          "pdf_text_indices": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 60,
+      "accounted_pdf_text_fragments": 60,
+      "plot_text_fragments": 14
+    },
+    {
+      "page": 3,
+      "tables": [],
+      "total_pdf_text_fragments": 41,
+      "accounted_pdf_text_fragments": 41,
+      "plot_text_fragments": 31
+    },
+    {
+      "page": 4,
+      "tables": [
+        {
+          "top": 851.0,
+          "headers": [
+            "功耗口径",
+            "数值",
+            "说明"
+          ],
+          "rows": [
+            [
+              "实测平均供电电流",
+              "10.57733617 uA",
+              "VSENSE:p时间积分/10 us"
+            ],
+            [
+              "实测总供电功耗",
+              "19.03920510 uW",
+              "包含偏置、核心与完整输出驱动"
+            ],
+            [
+              "其中外部2 uA偏置",
+              "3.60000000 uW",
+              "2 uA从测量后的AVDD引出"
+            ],
+            [
+              "理想CL动态功耗估算",
+              "6.39436696 uW",
+              "CL·VDD²·f，仅用于预算说明"
+            ]
+          ],
+          "pdf_text_indices": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 55,
+      "accounted_pdf_text_fragments": 55,
+      "plot_text_fragments": 32
+    },
+    {
+      "page": 5,
+      "tables": [
+        {
+          "top": 221.0,
+          "headers": [
+            "轮次",
+            "每只MIM/um²",
+            "转接目标/uA",
+            "频率/MHz",
+            "总功耗/uW",
+            "结论"
+          ],
+          "rows": [
+            [
+              "1",
+              "90.00",
+              "1.00",
+              "1.6968732",
+              "19.310878",
+              "频率失败"
+            ],
+            [
+              "2",
+              "81.50",
+              "1.00",
+              "1.8687452",
+              "20.072710",
+              "10%功耗放宽"
+            ],
+            [
+              "3",
+              "77.50",
+              "0.50",
+              "1.9735700",
+              "19.039205",
+              "原门槛全过"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "top": 848.0,
+          "headers": [
+            "验证项目",
+            "证据"
+          ],
+          "rows": [
+            [
+              "Spectre容差",
+              "reltol=2e-5，vabstol=1e-8 V，iabstol=1e-14 A"
+            ],
+            [
+              "瞬态步长",
+              "maxstep=300 ps，errpreset=conservative；约1690步/周期"
+            ],
+            [
+              "PSF检查",
+              "实际保存波形；采样点有限，时间严格递增，覆盖20 us"
+            ],
+            [
+              "测量复核",
+              "端点插值、真实时间积分；全18周期平均与10周期一致"
+            ],
+            [
+              "求解/模型检查",
+              "最终运行无警告；无CMI-2441模型尺寸越界"
+            ]
+          ],
+          "pdf_text_indices": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 50,
+      "accounted_pdf_text_fragments": 50,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 6,
+      "tables": [],
+      "total_pdf_text_fragments": 35,
+      "accounted_pdf_text_fragments": 35,
+      "plot_text_fragments": 0
+    }
+  ],
+  "assets": {
+    "markdown_assets/page-04.png": "78adf307df7ffaf65ac0b81f8a99992be00322721f57ca9d557143975932f8bd",
+    "markdown_assets/page-02.png": "064b2c8e4dbe0b1d2e5b9abbf8eda451ffa92597be2061855d9d5fc605400c60",
+    "markdown_assets/page-05.png": "7b69cd6c2a8717b263598f58beb5c9650e33c7533f4911ac514850437c681911",
+    "markdown_assets/page-01.png": "15cb0bb3d1bc76ded00189fb57bad130287ff77a4df77822993be982ab207c24",
+    "markdown_assets/page-06.png": "73bcaf1df14f3a653703207f7944cec37e08ddace9c84add9169a695c49ad25e",
+    "markdown_assets/page-03.png": "5be0930aee099b24e04292b1ed62e02dfdae1efe712fdea3b9bd0ac938c39db3"
+  }
+}

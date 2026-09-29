@@ -1,0 +1,19 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/01-class-d/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/01-class-d/circuit.scs"
+VSS (vss 0) vsource dc=0
+VDD (vdd vss) vsource dc=1.8
+VCLK (clk_src vss) vsource type=pulse val0=0 val1=1.8 delay=0 rise=2n fall=2n width=98n period=200n
+RCLK (clk_src clk_in) resistor r=50
+X (vss vdd clk_in sw) half_bridge
+L1 (sw lc_node) inductor l=3u
+C1 (lc_node rl_node) capacitor c=345p
+VMEAS_RL (rl_node rl_meas) vsource dc=0
+RL (rl_meas vss) resistor r=1
+simulatorOptions options temp=27 tnom=27 reltol=1e-07 vabstol=1e-8 iabstol=1e-12
+saveOptions options save=selected
+save vdd vss clk_src clk_in sw lc_node rl_node rl_meas VDD:p VSS:p VCLK:p VMEAS_RL:p X.gp X.gn X.poff X.noff X.poffd X.noffd
+tran tran stop=20u maxstep=0.25n errpreset=conservative method=traponly

@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-09-23T06:18:46.049647+00:00",
+  "status": "passed",
+  "circuit_sha256": "e8388c72d139da2b34832dc179379e63bfa19e1f59e8c9e2cd45f85e566f75af",
+  "hd_cells_sha256": "0f8c505b345afc2e6636edc5819ca2484dd040f2b38c0446fb8a28e40e0dc997",
+  "renderer_sha256": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+  "layout_file": "scripts/schematics_mixed.py",
+  "layout_sha256": "b29c004d5ad88c8fcef0913faa4cdf4a5ba34357c72ccf7b59d02b9618f68d47",
+  "instance_counts": {
+    "HD": 5,
+    "MOS": 10,
+    "R": 32
+  },
+  "expanded_leaf_instance_counts": {
+    "HD": 5,
+    "MOS": 10,
+    "R": 32
+  },
+  "total_instances": 47,
+  "expanded_leaf_instances": 47,
+  "total_terminals": 166,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 3,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/23-resistor-dac/schematic/connectivity.json": "9e2bffc07829ed336e763a5d7627b2b41db6bee887fc537cc17d66502a3d5ed6",
+    "cases/23-resistor-dac/schematic/full.pdf": "5988d6a33e78f4e2bcbebf17e8be89562f43e57593c6e1e125a43e05c8c818c5",
+    "cases/23-resistor-dac/schematic/full.png": "aff4d175296e409b07d2e0b2cdf82a20c03b230ffcf3add301f1b1bf9d49344d",
+    "cases/23-resistor-dac/schematic/full.svg": "fff9e89c2280e3e8147e0524f0d9d5726ac8d8accfd01480edf07b4fdb94d90f",
+    "cases/23-resistor-dac/schematic/layout_source.py": "b29c004d5ad88c8fcef0913faa4cdf4a5ba34357c72ccf7b59d02b9618f68d47",
+    "cases/23-resistor-dac/schematic/renderer_source.py": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+    "cases/23-resistor-dac/schematic/sheet-1.png": "5353219b7545e774af895e484dbce0e4dd1e2d3d088e2207efa962c786f2cf77",
+    "cases/23-resistor-dac/schematic/sheet-1.svg": "be2bbcab99ac8491d4e8d6432453d75fb10b5ec6739298725bad665a881f87f7",
+    "cases/23-resistor-dac/schematic/sheet-2.png": "f29310a036ed8a7624fa0e35baac365302d2e44e7a8498d172d19fa46b60c952",
+    "cases/23-resistor-dac/schematic/sheet-2.svg": "f0a76eb48a006a6db859dcd91e0c696b88df3619ad16404d27ca69e18a4bd459",
+    "cases/23-resistor-dac/schematic/sheet-3.png": "8014237fbb24828594d8cde9958525f62966226cb7547cdbe8808d09ba37f2a8",
+    "cases/23-resistor-dac/schematic/sheet-3.svg": "c2601c307442ef61429146bde2b4ae50311a61d5161c1b6c1abfb33188629b63",
+    "cases/23-resistor-dac/schematic/sheets.pdf": "7e19092c25d6af74de9d2a4d10848832f6c8b0b8be88cc4404312d5412d1eb56",
+    "cases/23-resistor-dac/schematic/symbol_source.py": "c65698950039c9fd48e1659d37f7fb5220517dd0dc1847b24f5b1761d0956898"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "final_source_freeze_at": "2026-09-23T06:18:46.051183+00:00",
+  "previous_visual_review": {
+    "reviewed_at": "2026-09-23T06:17:14.781931+00:00",
+    "note": "All split sheets and full overview actually viewed; connectivity, symbols, values, body ties and text readability reviewed.",
+    "reviewed_png_hashes": {
+      "cases/23-resistor-dac/schematic/full.png": "aff4d175296e409b07d2e0b2cdf82a20c03b230ffcf3add301f1b1bf9d49344d",
+      "cases/23-resistor-dac/schematic/sheet-1.png": "5353219b7545e774af895e484dbce0e4dd1e2d3d088e2207efa962c786f2cf77",
+      "cases/23-resistor-dac/schematic/sheet-2.png": "f29310a036ed8a7624fa0e35baac365302d2e44e7a8498d172d19fa46b60c952",
+      "cases/23-resistor-dac/schematic/sheet-3.png": "8014237fbb24828594d8cde9958525f62966226cb7547cdbe8808d09ba37f2a8"
+    }
+  },
+  "rebuild_png_changes": [],
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-23T06:17:14.781931+00:00",
+  "visual_review_note": "All final sheet PNGs and full overview are byte-for-byte identical to the actually viewed artifacts; final renderer, symbols and layout sources were frozen beside the drawings."
+}

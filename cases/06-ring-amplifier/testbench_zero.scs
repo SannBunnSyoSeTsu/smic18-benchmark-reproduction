@@ -1,0 +1,26 @@
+simulator lang=spectre
+global 0
+model SW_RESET relay ropen=1e12 rclosed=100 vth=.25 trans=1u hysteresis=.1
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/06-ring-amplifier/circuit.scs"
+VDD (vdd 0) vsource dc=1.8
+VCM (vcm 0) vsource dc=.9
+V05 (v05 0) vsource dc=.5
+IBIAS (ibias 0) isource dc=25u
+VRST (rst 0) vsource type=pulse val0=1 val1=0 delay=50n rise=20p fall=20p width=450n period=500n
+VINP (vinp 0) vsource type=pulse val0=.9 val1=0.9 delay=50n rise=20p fall=20p width=450n period=500n
+VINN (vinn 0) vsource type=pulse val0=.9 val1=0.9 delay=50n rise=20p fall=20p width=450n period=500n
+X (0 vdd vinp vinn voutp voutn ibias bn1 net4 net5 net7 net11 net13) ring_amp8
+CLP (voutp 0) capacitor c=10p
+CLN (voutn 0) capacitor c=10p
+simulatorOptions options temp=27 tnom=27 reltol=1e-07 vabstol=1e-8 iabstol=1e-14 gmin=1e-15 cmin=1f
+saveOptions options save=selected
+save vinp vinn voutp voutn rst ibias bn1 net4 net5 net7 net11 net13 VDD:p X.vop1 X.von1 X.vgp3 X.vgn3 X.net8 X.net10
+S0 (voutn vcm rst v05) SW_RESET
+S1 (voutp vcm rst v05) SW_RESET
+S2 (net4 bn1 rst v05) SW_RESET
+S3 (net13 bn1 rst v05) SW_RESET
+S4 (ibias net11 rst v05) SW_RESET
+S5 (net7 bn1 rst v05) SW_RESET
+S6 (ibias net5 rst v05) SW_RESET
+tran tran stop=1.5u maxstep=1.25e-10 skipdc=yes method=gear2only errpreset=conservative

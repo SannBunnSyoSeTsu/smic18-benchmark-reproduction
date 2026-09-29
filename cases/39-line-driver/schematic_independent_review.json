@@ -1,0 +1,239 @@
+{
+  "slot": 39,
+  "case": "cases/39-line-driver",
+  "circuit_sha256": "45eb5290815c778d817a7b9e108994121159fdb0e952d17e8984bdd00b1af2af",
+  "hd_cells_sha256": null,
+  "top": "low_power_line_driver",
+  "source_definition_count": 27,
+  "source_terminal_count": 98,
+  "source_expanded_leaf_count": 27,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "84d787299f9e255c28699a3b3124facde4de6b7e8354578ae9f6aab1778a39e4",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 27,
+  "schematic_expanded_leaf_count": 27,
+  "independently_traced_terminals": 98,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 22,
+    "R": 3,
+    "C": 2
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "low_power_line_driver/MREF",
+      "D_G_S_B": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MTAIL",
+      "D_G_S_B": [
+        "tail",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MBN",
+      "D_G_S_B": [
+        "pb",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MBP",
+      "D_G_S_B": [
+        "pb",
+        "pb",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MABNS",
+      "D_G_S_B": [
+        "vbn",
+        "pb",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MABNU",
+      "D_G_S_B": [
+        "vbn",
+        "vbn",
+        "xn",
+        "vss"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MABNL",
+      "D_G_S_B": [
+        "xn",
+        "xn",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MABPS",
+      "D_G_S_B": [
+        "vbp",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MABPU",
+      "D_G_S_B": [
+        "vbp",
+        "vbp",
+        "yp",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MABPL",
+      "D_G_S_B": [
+        "yp",
+        "yp",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MINP",
+      "D_G_S_B": [
+        "x3",
+        "vinp",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MINN",
+      "D_G_S_B": [
+        "x5",
+        "vinn",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MP3",
+      "D_G_S_B": [
+        "x3",
+        "x3",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MP4",
+      "D_G_S_B": [
+        "x4",
+        "x3",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MP5",
+      "D_G_S_B": [
+        "x5",
+        "x5",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MP6",
+      "D_G_S_B": [
+        "gp",
+        "x5",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MN7",
+      "D_G_S_B": [
+        "x4",
+        "x4",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MN8",
+      "D_G_S_B": [
+        "gn",
+        "x4",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MCN",
+      "D_G_S_B": [
+        "gp",
+        "vbn",
+        "gn",
+        "vss"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MCP",
+      "D_G_S_B": [
+        "gn",
+        "vbp",
+        "gp",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MOUTP",
+      "D_G_S_B": [
+        "vout",
+        "gp",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "low_power_line_driver/MOUTN",
+      "D_G_S_B": [
+        "vout",
+        "gn",
+        "vss",
+        "vss"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 19,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

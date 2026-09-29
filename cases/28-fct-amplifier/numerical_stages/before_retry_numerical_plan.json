@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-09-29T04:57:15.786035+00:00",
+  "baseline_groups": {
+    "10mv": "runs/28/20260929T044850676802Z_10mv",
+    "20mv": "runs/28/20260929T044939226581Z_20mv"
+  },
+  "baseline": {
+    "maxstep_s": 1.25e-12,
+    "global_reltol": 1e-07,
+    "vabstol_V": 1e-06,
+    "iabstol_A": 1e-12
+  },
+  "refined": {
+    "maxstep_s": 6.25e-13,
+    "global_reltol": 1e-08,
+    "vabstol_V": 1e-06,
+    "iabstol_A": 1e-12
+  },
+  "absolute_difference_limits": {
+    "gain_vv": 0.01,
+    "sfdr_db": 0.5,
+    "cm_mean_v": 0.001,
+    "output_min_v": 0.001,
+    "output_max_v": 0.001,
+    "hold_movement_ratio": 0.0002,
+    "power_w": 5e-06
+  },
+  "unchanged_original_readout_strobes": true,
+  "reason": "Further halve maxstep and tighten relative tolerance after the0.5dB SFDR confirmation failed. No physical fixture changes."
+}

@@ -1,0 +1,39 @@
+{
+  "source_task": "sky130-beta-multiplier-reference-pvt-mc",
+  "corner": "tt",
+  "resistor_corner": "res_tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "output_voltage_nominal_V": 0.9,
+  "output_current_target_A": 4e-05,
+  "nominal_current_error_max_A": 5e-06,
+  "vref_target_V": 0.675,
+  "vref_error_max_V": 0.075,
+  "power_max_W": 0.0001,
+  "power_definition": "max(0,-1.8*I(VDD)) + .9*Iout",
+  "compliance_range_V": [
+    0.4,
+    1.6
+  ],
+  "compliance_points": 121,
+  "flatness_definition": "(max(I)-min(I))/mean(I)",
+  "flatness_max": 0.08,
+  "startup_ramps_s": [
+    1e-06,
+    1e-05
+  ],
+  "startup_observation_after_ramp_s": 1e-05,
+  "startup_final_average_window_s": 1e-06,
+  "startup_current_target_A": 4e-05,
+  "startup_current_error_max_A": 2e-05,
+  "startup_settling_max_s": 1e-05,
+  "startup_overshoot_max": 1.5,
+  "startup_peak_supply_current_max_A": 0.0001,
+  "startup_positive_vdd_energy_max_J": 1e-09,
+  "nominal_scope_excludes": [
+    "remaining 26 PVT combinations",
+    "stressed paired startup corners",
+    "Monte Carlo/mismatch"
+  ],
+  "passives": "Native PDK resistor model, no ideal resistor substituted"
+}

@@ -1,0 +1,19 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/41-lowpower-miller/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+VDDS (vddS 0) vsource dc=1.8
+IREFS (vddS irefS) isource dc=50u
+VINS (vinS 0) vsource type=pwl wave=[0 .85 5n .85 6n .95 66n .95 67n .85 130n .85]
+XS (0 irefS vddS outS vinS outS) two_stage_miller_opamp
+CLS (outS 0) capacitor c=2p
+save vinS outS VDDS:p
+VDDR (vddR 0) vsource dc=1.8
+IREFR (vddR irefR) isource dc=50u
+VINR (vinR 0) vsource type=pwl wave=[0 .65 10n .65 11n 1.15 71n 1.15 72n .65 130n .65]
+XR (0 irefR vddR outR vinR outR) two_stage_miller_opamp
+CLR (outR 0) capacitor c=2p
+save vinR outR VDDR:p
+tran tran stop=130n maxstep=20p strobeperiod=100p strobeoutput=strobeonly errpreset=conservative

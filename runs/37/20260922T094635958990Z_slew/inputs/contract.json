@@ -1,0 +1,134 @@
+{
+  "source_task": "sky130-three-stage-nested-miller-ota-pvt",
+  "source_files": {
+    "instruction.md": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-three-stage-nested-miller-ota-pvt/instruction.md",
+      "sha256": "d81413ddb9706472c31ac0b5c6bd0cfc589be5d2183e3d1fb4b2b8b8b6e26ad7",
+      "frozen": "cases/37-nested-miller/source/instruction.md"
+    },
+    "solution/circuit.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-three-stage-nested-miller-ota-pvt/solution/circuit.spi",
+      "sha256": "b599dc90b1905987833e4ca77bd54ccb1cc61ccb40829d87e9febd68de949c9d",
+      "frozen": "cases/37-nested-miller/source/solution/circuit.spi"
+    },
+    "tests/verify.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-three-stage-nested-miller-ota-pvt/tests/verify.py",
+      "sha256": "24543cb440c44a24a50168336b97872aedd1f792af6f18ae6246e48c2709b124",
+      "frozen": "cases/37-nested-miller/source/tests/verify.py"
+    },
+    "tests/utils.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-three-stage-nested-miller-ota-pvt/tests/utils.py",
+      "sha256": "8f9909aa283429e11d3d5b55b33d5e55d5c54f4bad33aaa599f1c8a35a99e299",
+      "frozen": "cases/37-nested-miller/source/tests/utils.py"
+    },
+    "tests/benches/tb_pvt.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-three-stage-nested-miller-ota-pvt/tests/benches/tb_pvt.spi",
+      "sha256": "4dc0f0784d42aa8674e158667e89817e84abfeb408bcfcac92e59fc41322809c",
+      "frozen": "cases/37-nested-miller/source/tests/benches/tb_pvt.spi"
+    },
+    "tests/benches/tb_input_bias.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-three-stage-nested-miller-ota-pvt/tests/benches/tb_input_bias.spi",
+      "sha256": "5f171be6e9a489cb05c285584a6815cbd84aa6cf324c23fdf3e725f098ecc058",
+      "frozen": "cases/37-nested-miller/source/tests/benches/tb_input_bias.spi"
+    },
+    "tests/benches/tb_swing.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-three-stage-nested-miller-ota-pvt/tests/benches/tb_swing.spi",
+      "sha256": "f4b43e8289d5c263adc5783f34316281a292901388a04587bebf5b03655796c1",
+      "frozen": "cases/37-nested-miller/source/tests/benches/tb_swing.spi"
+    },
+    "tests/benches/tb_settling.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-three-stage-nested-miller-ota-pvt/tests/benches/tb_settling.spi",
+      "sha256": "d1662d71ab28a6acb02c3e4003dbbc8918f3d0b78d7105439dfc544a03870574",
+      "frozen": "cases/37-nested-miller/source/tests/benches/tb_settling.spi"
+    },
+    "tests/benches/tb_slew.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-three-stage-nested-miller-ota-pvt/tests/benches/tb_slew.spi",
+      "sha256": "6294559d9af2e9e24315f2fd0a8a6f5be53c5b29ba04df8e63dc4c5155131bbc",
+      "frozen": "cases/37-nested-miller/source/tests/benches/tb_slew.spi"
+    }
+  },
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 5e-06,
+  "load_F": 2e-10,
+  "input_common_mode_V": 0.9,
+  "output_target_V": 0.9,
+  "ac": {
+    "frequency_Hz": [
+      0.01,
+      100000000.0
+    ],
+    "points_per_decade": 100,
+    "return_ratio": "-V(vout)/V(vinn) from series AC1 source VTEST(vout,vinn), with unity DC feedback",
+    "gain_0p1Hz_min_dB": 110,
+    "ugb_min_Hz": 400000.0,
+    "phase_margin_min_deg": 70,
+    "power_W": [
+      0,
+      0.0003
+    ],
+    "output_error_max_V": 0.01,
+    "drive_FOM_min": 300,
+    "drive_FOM": "UGB(kHz)*200pF/power(uW)"
+  },
+  "input_bias": {
+    "connection": "Both independent inputs at0.9V, open-loop output with200pF",
+    "each_input_abs_current_max_A": 1e-07
+  },
+  "range": {
+    "command_V": [
+      0.1,
+      1.7
+    ],
+    "step_V": 0.002,
+    "points": 801,
+    "contiguous_valid_span_min_V": 0.8,
+    "eligibility_tracking_error_max_V": 0.02
+  },
+  "settling": {
+    "command_V": [
+      0.4,
+      0.9
+    ],
+    "edge_start_s": 2e-06,
+    "edge_end_s": 2.1e-06,
+    "end_s": 5e-05,
+    "fixed_band_V": 0.01,
+    "first_sample_after_last_exit": true,
+    "reference_time_s": 2e-06,
+    "time_max_s": 3e-06,
+    "strict_time": true,
+    "final_error_fraction_max": 0.02
+  },
+  "slew": {
+    "command_V": [
+      0.65,
+      1.15
+    ],
+    "rise_edge_s": [
+      2e-06,
+      2.1e-06
+    ],
+    "fall_edge_s": [
+      4.21e-05,
+      4.22e-05
+    ],
+    "threshold_V": [
+      0.75,
+      1.05
+    ],
+    "fall_search_start_s": 4.2e-05,
+    "end_s": 8.2e-05,
+    "rise_min_V_per_us": 0.2,
+    "fall_min_V_per_us": 0.2
+  },
+  "relaxation": "Positive min*0.9/0.85; max*1.1/1.15; amplitude gain dB adds20log10(.9/.85); PM min retains>=45deg. Strict power< and settling< retained. Full stimuli, fixed eligibility/settling windows, finite/positive-power guard, load and source connections unchanged.",
+  "nominal_only": true,
+  "excluded": [
+    "other44 original PVT points",
+    "local mismatch/Monte Carlo (outside original task too)",
+    "extracted parasitics/package/aging",
+    "passive variation"
+  ]
+}

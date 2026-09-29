@@ -1,0 +1,5975 @@
+{
+  "generated_at": "2026-09-23T06:26:41.381120+00:00",
+  "circuit_sha256": "b17085a791dade0dd8a9d9543708ea5a9f3f81de25cc1314296b773d5124aa93",
+  "top": "pll_charge_pump",
+  "subcircuit_ports": {
+    "pll_charge_pump": [
+      "vss",
+      "iref",
+      "up",
+      "dn",
+      "vdd",
+      "vout"
+    ]
+  },
+  "instances": {
+    "pll_charge_pump/MN0": {
+      "name": "MN0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "14.44u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MN0 (iref iref vss vss) n18 w=14.44u l=4u m=2",
+      "W_unit_um": 14.44,
+      "L_um": 4.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        4,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          7
+        ],
+        "S": [
+          4,
+          5
+        ],
+        "G": [
+          2.45,
+          6
+        ],
+        "B": [
+          4.86,
+          6
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MPCB": {
+      "name": "MPCB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbpc",
+        "G": "vbpc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.68u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MPCB (vbpc vbpc vdd vdd) p18 w=10.68u l=4u m=1",
+      "W_unit_um": 10.68,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        12,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          18
+        ],
+        "S": [
+          12,
+          20
+        ],
+        "G": [
+          10.45,
+          19
+        ],
+        "B": [
+          12.86,
+          19
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MN2": {
+      "name": "MN2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbpc",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "14.44u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MN2 (vbpc iref vss vss) n18 w=14.44u l=4u m=1",
+      "W_unit_um": 14.44,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        12,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          7
+        ],
+        "S": [
+          12,
+          5
+        ],
+        "G": [
+          10.45,
+          6
+        ],
+        "B": [
+          12.86,
+          6
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MP2X": {
+      "name": "MP2X",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbnc",
+        "G": "vbpc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.68u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MP2X (vbnc vbpc vdd vdd) p18 w=10.68u l=4u m=1",
+      "W_unit_um": 10.68,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        22,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          18
+        ],
+        "S": [
+          22,
+          20
+        ],
+        "G": [
+          20.45,
+          19
+        ],
+        "B": [
+          22.86,
+          19
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MNCB": {
+      "name": "MNCB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbnc",
+        "G": "vbnc",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MNCB (vbnc vbnc vss vss) n18 w=2.04u l=4u m=1",
+      "W_unit_um": 2.04,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        22,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          7
+        ],
+        "S": [
+          22,
+          5
+        ],
+        "G": [
+          20.45,
+          6
+        ],
+        "B": [
+          22.86,
+          6
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MP0": {
+      "name": "MP0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n1a",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "29u",
+        "l": "4u",
+        "m": "2.5"
+      },
+      "source_line": "MP0 (n1a vbp vdd vdd) p18 w=29u l=4u m=2.5",
+      "W_unit_um": 29.0,
+      "L_um": 4.0,
+      "m": 2.5,
+      "sheet": 1,
+      "origin": [
+        34,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          20
+        ],
+        "S": [
+          34,
+          22
+        ],
+        "G": [
+          32.45,
+          21
+        ],
+        "B": [
+          34.86,
+          21
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MPC0": {
+      "name": "MPC0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbp",
+        "G": "vbpc",
+        "S": "n1a",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "39.1u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPC0 (vbp vbpc n1a vdd) p18 w=39.1u l=1u m=1",
+      "W_unit_um": 39.1,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        34,
+        16
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          15
+        ],
+        "S": [
+          34,
+          17
+        ],
+        "G": [
+          32.45,
+          16
+        ],
+        "B": [
+          34.86,
+          16
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MNC1": {
+      "name": "MNC1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbp",
+        "G": "vbnc",
+        "S": "n1b",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.32u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MNC1 (vbp vbnc n1b vss) n18 w=8.32u l=1u m=1",
+      "W_unit_um": 8.32,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        34,
+        10
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          11
+        ],
+        "S": [
+          34,
+          9
+        ],
+        "G": [
+          32.45,
+          10
+        ],
+        "B": [
+          34.86,
+          10
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MN1": {
+      "name": "MN1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n1b",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "14.44u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MN1 (n1b iref vss vss) n18 w=14.44u l=4u m=1",
+      "W_unit_um": 14.44,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        34,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          6
+        ],
+        "S": [
+          34,
+          4
+        ],
+        "G": [
+          32.45,
+          5
+        ],
+        "B": [
+          34.86,
+          5
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/CIR": {
+      "name": "CIR",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": ".8p"
+      },
+      "source_line": "CIR (iref vss) capacitor c=.8p",
+      "value_SI": 8e-13,
+      "sheet": 1,
+      "origin": [
+        4,
+        12
+      ],
+      "rendered_pins": {
+        "1": [
+          4,
+          11.18
+        ],
+        "2": [
+          4,
+          12.82
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/CBPC": {
+      "name": "CBPC",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vbpc",
+        "2": "vdd"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBPC (vbpc vdd) capacitor c=1p",
+      "value_SI": 1e-12,
+      "sheet": 1,
+      "origin": [
+        18,
+        14
+      ],
+      "rendered_pins": {
+        "1": [
+          18,
+          14.82
+        ],
+        "2": [
+          18,
+          13.18
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/CBNC": {
+      "name": "CBNC",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vbnc",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBNC (vbnc vss) capacitor c=1p",
+      "value_SI": 1e-12,
+      "sheet": 1,
+      "origin": [
+        27,
+        9
+      ],
+      "rendered_pins": {
+        "1": [
+          27,
+          9.82
+        ],
+        "2": [
+          27,
+          8.18
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/CBP": {
+      "name": "CBP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vbp",
+        "2": "vdd"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBP (vbp vdd) capacitor c=1p",
+      "value_SI": 1e-12,
+      "sheet": 1,
+      "origin": [
+        41,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          41,
+          13.82
+        ],
+        "2": [
+          41,
+          12.18
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MPM": {
+      "name": "MPM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "na",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "29u",
+        "l": "4u",
+        "m": "10"
+      },
+      "source_line": "MPM (na vbp vdd vdd) p18 w=29u l=4u m=10",
+      "W_unit_um": 29.0,
+      "L_um": 4.0,
+      "m": 10.0,
+      "sheet": 2,
+      "origin": [
+        14,
+        22
+      ],
+      "rendered_pins": {
+        "D": [
+          14,
+          21
+        ],
+        "S": [
+          14,
+          23
+        ],
+        "G": [
+          12.45,
+          22
+        ],
+        "B": [
+          14.86,
+          22
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MPC": {
+      "name": "MPC",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nc",
+        "G": "vbpc",
+        "S": "na",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "39.1u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPC (nc vbpc na vdd) p18 w=39.1u l=1u m=4",
+      "W_unit_um": 39.1,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        14,
+        18
+      ],
+      "rendered_pins": {
+        "D": [
+          14,
+          17
+        ],
+        "S": [
+          14,
+          19
+        ],
+        "G": [
+          12.45,
+          18
+        ],
+        "B": [
+          14.86,
+          18
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MSUP": {
+      "name": "MSUP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "upb",
+        "S": "nc",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.7u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MSUP (vout upb nc vdd) p18 w=3.7u l=0.18u m=1",
+      "W_unit_um": 3.7,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        14,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          14,
+          11
+        ],
+        "S": [
+          14,
+          13
+        ],
+        "G": [
+          12.45,
+          12
+        ],
+        "B": [
+          14.86,
+          12
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MSDU": {
+      "name": "MSDU",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "wu",
+        "G": "upd",
+        "S": "nc",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.7u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MSDU (wu upd nc vdd) p18 w=3.7u l=0.18u m=1",
+      "W_unit_um": 3.7,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        4.5,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          4.5,
+          11
+        ],
+        "S": [
+          4.5,
+          13
+        ],
+        "G": [
+          2.95,
+          12
+        ],
+        "B": [
+          5.36,
+          12
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MNWU": {
+      "name": "MNWU",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "wu",
+        "G": "wu",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MNWU (wu wu vss vss) n18 w=1.46u l=1u m=1",
+      "W_unit_um": 1.46,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        4.5,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          4.5,
+          6
+        ],
+        "S": [
+          4.5,
+          4
+        ],
+        "G": [
+          2.95,
+          5
+        ],
+        "B": [
+          5.36,
+          5
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MSDN": {
+      "name": "MSDN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "dn",
+        "S": "nd",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MSDN (vout dn nd vss) n18 w=1.28u l=0.18u m=1",
+      "W_unit_um": 1.28,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        28,
+        10
+      ],
+      "rendered_pins": {
+        "D": [
+          28,
+          11
+        ],
+        "S": [
+          28,
+          9
+        ],
+        "G": [
+          26.45,
+          10
+        ],
+        "B": [
+          28.86,
+          10
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MNC": {
+      "name": "MNC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nd",
+        "G": "vbnc",
+        "S": "ne",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.32u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNC (nd vbnc ne vss) n18 w=8.32u l=1u m=4",
+      "W_unit_um": 8.32,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        28,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          28,
+          7
+        ],
+        "S": [
+          28,
+          5
+        ],
+        "G": [
+          26.45,
+          6
+        ],
+        "B": [
+          28.86,
+          6
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MNM": {
+      "name": "MNM",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ne",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "14.44u",
+        "l": "4u",
+        "m": "4"
+      },
+      "source_line": "MNM (ne iref vss vss) n18 w=14.44u l=4u m=4",
+      "W_unit_um": 14.44,
+      "L_um": 4.0,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        28,
+        2
+      ],
+      "rendered_pins": {
+        "D": [
+          28,
+          3
+        ],
+        "S": [
+          28,
+          1
+        ],
+        "G": [
+          26.45,
+          2
+        ],
+        "B": [
+          28.86,
+          2
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MSDD": {
+      "name": "MSDD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "wd",
+        "G": "dnb",
+        "S": "nd",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MSDD (wd dnb nd vss) n18 w=1.28u l=0.18u m=1",
+      "W_unit_um": 1.28,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        38,
+        10
+      ],
+      "rendered_pins": {
+        "D": [
+          38,
+          11
+        ],
+        "S": [
+          38,
+          9
+        ],
+        "G": [
+          36.45,
+          10
+        ],
+        "B": [
+          38.86,
+          10
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/MNWD": {
+      "name": "MNWD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vdd",
+        "G": "vdd",
+        "S": "wd",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.64u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MNWD (vdd vdd wd vss) n18 w=2.64u l=1u m=1",
+      "W_unit_um": 2.64,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        38,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          38,
+          20
+        ],
+        "S": [
+          38,
+          18
+        ],
+        "G": [
+          36.45,
+          19
+        ],
+        "B": [
+          38.86,
+          19
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/CNC": {
+      "name": "CNC",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "nc",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CNC (nc vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "sheet": 2,
+      "origin": [
+        8,
+        18
+      ],
+      "rendered_pins": {
+        "1": [
+          8,
+          17.18
+        ],
+        "2": [
+          8,
+          18.82
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/CWU": {
+      "name": "CWU",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "wu",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": ".4p"
+      },
+      "source_line": "CWU (wu vss) capacitor c=.4p",
+      "value_SI": 4e-13,
+      "sheet": 2,
+      "origin": [
+        10,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          5.82
+        ],
+        "2": [
+          10,
+          4.18
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/CND": {
+      "name": "CND",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "nd",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CND (nd vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "sheet": 2,
+      "origin": [
+        33,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          33,
+          5.82
+        ],
+        "2": [
+          33,
+          4.18
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/CWD": {
+      "name": "CWD",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "wd",
+        "2": "vdd"
+      },
+      "parameters": {
+        "c": ".4p"
+      },
+      "source_line": "CWD (wd vdd) capacitor c=.4p",
+      "value_SI": 4e-13,
+      "sheet": 2,
+      "origin": [
+        34,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          33.18,
+          19
+        ],
+        "2": [
+          34.82,
+          19
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/XUP": {
+      "name": "XUP",
+      "kind": "HD",
+      "model": "INHDV8",
+      "pins": {
+        "I": "up",
+        "ZN": "upb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XUP (up upb vdd vss vdd vss) INHDV8",
+      "sheet": 3,
+      "origin": [
+        10,
+        17
+      ],
+      "rendered_pins": {
+        "I": [
+          7.3,
+          17.0
+        ],
+        "ZN": [
+          12.7,
+          17.0
+        ],
+        "VDD": [
+          9.2,
+          19.2
+        ],
+        "VNW": [
+          10.8,
+          19.2
+        ],
+        "VSS": [
+          9.2,
+          14.8
+        ],
+        "VPW": [
+          10.8,
+          14.8
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/XUPD": {
+      "name": "XUPD",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "upb",
+        "ZN": "upd",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XUPD (upb upd vdd vss vdd vss) INHDV2",
+      "sheet": 3,
+      "origin": [
+        30,
+        17
+      ],
+      "rendered_pins": {
+        "I": [
+          27.3,
+          17.0
+        ],
+        "ZN": [
+          32.7,
+          17.0
+        ],
+        "VDD": [
+          29.2,
+          19.2
+        ],
+        "VNW": [
+          30.8,
+          19.2
+        ],
+        "VSS": [
+          29.2,
+          14.8
+        ],
+        "VPW": [
+          30.8,
+          14.8
+        ]
+      },
+      "block": "pll_charge_pump"
+    },
+    "pll_charge_pump/XDN": {
+      "name": "XDN",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "dn",
+        "ZN": "dnb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDN (dn dnb vdd vss vdd vss) INHDV4",
+      "sheet": 3,
+      "origin": [
+        10,
+        7
+      ],
+      "rendered_pins": {
+        "I": [
+          7.3,
+          7.0
+        ],
+        "ZN": [
+          12.7,
+          7.0
+        ],
+        "VDD": [
+          9.2,
+          9.2
+        ],
+        "VNW": [
+          10.8,
+          9.2
+        ],
+        "VSS": [
+          9.2,
+          4.8
+        ],
+        "VPW": [
+          10.8,
+          4.8
+        ]
+      },
+      "block": "pll_charge_pump"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MN0": {
+      "name": "MN0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "14.44u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MN0 (iref iref vss vss) n18 w=14.44u l=4u m=2",
+      "W_unit_um": 14.44,
+      "L_um": 4.0,
+      "m": 2.0,
+      "definition": "pll_charge_pump/MN0",
+      "path": "MN0"
+    },
+    "MN2": {
+      "name": "MN2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbpc",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "14.44u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MN2 (vbpc iref vss vss) n18 w=14.44u l=4u m=1",
+      "W_unit_um": 14.44,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MN2",
+      "path": "MN2"
+    },
+    "MPCB": {
+      "name": "MPCB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbpc",
+        "G": "vbpc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.68u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MPCB (vbpc vbpc vdd vdd) p18 w=10.68u l=4u m=1",
+      "W_unit_um": 10.68,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MPCB",
+      "path": "MPCB"
+    },
+    "MP2X": {
+      "name": "MP2X",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbnc",
+        "G": "vbpc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.68u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MP2X (vbnc vbpc vdd vdd) p18 w=10.68u l=4u m=1",
+      "W_unit_um": 10.68,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MP2X",
+      "path": "MP2X"
+    },
+    "MNCB": {
+      "name": "MNCB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbnc",
+        "G": "vbnc",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MNCB (vbnc vbnc vss vss) n18 w=2.04u l=4u m=1",
+      "W_unit_um": 2.04,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MNCB",
+      "path": "MNCB"
+    },
+    "MP0": {
+      "name": "MP0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n1a",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "29u",
+        "l": "4u",
+        "m": "2.5"
+      },
+      "source_line": "MP0 (n1a vbp vdd vdd) p18 w=29u l=4u m=2.5",
+      "W_unit_um": 29.0,
+      "L_um": 4.0,
+      "m": 2.5,
+      "definition": "pll_charge_pump/MP0",
+      "path": "MP0"
+    },
+    "MPC0": {
+      "name": "MPC0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbp",
+        "G": "vbpc",
+        "S": "n1a",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "39.1u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPC0 (vbp vbpc n1a vdd) p18 w=39.1u l=1u m=1",
+      "W_unit_um": 39.1,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MPC0",
+      "path": "MPC0"
+    },
+    "MNC1": {
+      "name": "MNC1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbp",
+        "G": "vbnc",
+        "S": "n1b",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.32u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MNC1 (vbp vbnc n1b vss) n18 w=8.32u l=1u m=1",
+      "W_unit_um": 8.32,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MNC1",
+      "path": "MNC1"
+    },
+    "MN1": {
+      "name": "MN1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n1b",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "14.44u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MN1 (n1b iref vss vss) n18 w=14.44u l=4u m=1",
+      "W_unit_um": 14.44,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MN1",
+      "path": "MN1"
+    },
+    "MPM": {
+      "name": "MPM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "na",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "29u",
+        "l": "4u",
+        "m": "10"
+      },
+      "source_line": "MPM (na vbp vdd vdd) p18 w=29u l=4u m=10",
+      "W_unit_um": 29.0,
+      "L_um": 4.0,
+      "m": 10.0,
+      "definition": "pll_charge_pump/MPM",
+      "path": "MPM"
+    },
+    "MPC": {
+      "name": "MPC",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nc",
+        "G": "vbpc",
+        "S": "na",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "39.1u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPC (nc vbpc na vdd) p18 w=39.1u l=1u m=4",
+      "W_unit_um": 39.1,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "pll_charge_pump/MPC",
+      "path": "MPC"
+    },
+    "MSUP": {
+      "name": "MSUP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "upb",
+        "S": "nc",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.7u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MSUP (vout upb nc vdd) p18 w=3.7u l=0.18u m=1",
+      "W_unit_um": 3.7,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MSUP",
+      "path": "MSUP"
+    },
+    "MSDU": {
+      "name": "MSDU",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "wu",
+        "G": "upd",
+        "S": "nc",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.7u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MSDU (wu upd nc vdd) p18 w=3.7u l=0.18u m=1",
+      "W_unit_um": 3.7,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MSDU",
+      "path": "MSDU"
+    },
+    "MNWU": {
+      "name": "MNWU",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "wu",
+        "G": "wu",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.46u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MNWU (wu wu vss vss) n18 w=1.46u l=1u m=1",
+      "W_unit_um": 1.46,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MNWU",
+      "path": "MNWU"
+    },
+    "MNM": {
+      "name": "MNM",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ne",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "14.44u",
+        "l": "4u",
+        "m": "4"
+      },
+      "source_line": "MNM (ne iref vss vss) n18 w=14.44u l=4u m=4",
+      "W_unit_um": 14.44,
+      "L_um": 4.0,
+      "m": 4.0,
+      "definition": "pll_charge_pump/MNM",
+      "path": "MNM"
+    },
+    "MNC": {
+      "name": "MNC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nd",
+        "G": "vbnc",
+        "S": "ne",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.32u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNC (nd vbnc ne vss) n18 w=8.32u l=1u m=4",
+      "W_unit_um": 8.32,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "pll_charge_pump/MNC",
+      "path": "MNC"
+    },
+    "MSDN": {
+      "name": "MSDN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "dn",
+        "S": "nd",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MSDN (vout dn nd vss) n18 w=1.28u l=0.18u m=1",
+      "W_unit_um": 1.28,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MSDN",
+      "path": "MSDN"
+    },
+    "MSDD": {
+      "name": "MSDD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "wd",
+        "G": "dnb",
+        "S": "nd",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MSDD (wd dnb nd vss) n18 w=1.28u l=0.18u m=1",
+      "W_unit_um": 1.28,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MSDD",
+      "path": "MSDD"
+    },
+    "MNWD": {
+      "name": "MNWD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vdd",
+        "G": "vdd",
+        "S": "wd",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.64u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MNWD (vdd vdd wd vss) n18 w=2.64u l=1u m=1",
+      "W_unit_um": 2.64,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "pll_charge_pump/MNWD",
+      "path": "MNWD"
+    },
+    "XUP": {
+      "name": "XUP",
+      "kind": "HD",
+      "model": "INHDV8",
+      "pins": {
+        "I": "up",
+        "ZN": "upb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XUP (up upb vdd vss vdd vss) INHDV8",
+      "definition": "pll_charge_pump/XUP",
+      "path": "XUP"
+    },
+    "XUPD": {
+      "name": "XUPD",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "upb",
+        "ZN": "upd",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XUPD (upb upd vdd vss vdd vss) INHDV2",
+      "definition": "pll_charge_pump/XUPD",
+      "path": "XUPD"
+    },
+    "XDN": {
+      "name": "XDN",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "dn",
+        "ZN": "dnb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDN (dn dnb vdd vss vdd vss) INHDV4",
+      "definition": "pll_charge_pump/XDN",
+      "path": "XDN"
+    },
+    "CBP": {
+      "name": "CBP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vbp",
+        "2": "vdd"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBP (vbp vdd) capacitor c=1p",
+      "value_SI": 1e-12,
+      "definition": "pll_charge_pump/CBP",
+      "path": "CBP"
+    },
+    "CBPC": {
+      "name": "CBPC",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vbpc",
+        "2": "vdd"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBPC (vbpc vdd) capacitor c=1p",
+      "value_SI": 1e-12,
+      "definition": "pll_charge_pump/CBPC",
+      "path": "CBPC"
+    },
+    "CBNC": {
+      "name": "CBNC",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vbnc",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBNC (vbnc vss) capacitor c=1p",
+      "value_SI": 1e-12,
+      "definition": "pll_charge_pump/CBNC",
+      "path": "CBNC"
+    },
+    "CIR": {
+      "name": "CIR",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": ".8p"
+      },
+      "source_line": "CIR (iref vss) capacitor c=.8p",
+      "value_SI": 8e-13,
+      "definition": "pll_charge_pump/CIR",
+      "path": "CIR"
+    },
+    "CWU": {
+      "name": "CWU",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "wu",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": ".4p"
+      },
+      "source_line": "CWU (wu vss) capacitor c=.4p",
+      "value_SI": 4e-13,
+      "definition": "pll_charge_pump/CWU",
+      "path": "CWU"
+    },
+    "CWD": {
+      "name": "CWD",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "wd",
+        "2": "vdd"
+      },
+      "parameters": {
+        "c": ".4p"
+      },
+      "source_line": "CWD (wd vdd) capacitor c=.4p",
+      "value_SI": 4e-13,
+      "definition": "pll_charge_pump/CWD",
+      "path": "CWD"
+    },
+    "CNC": {
+      "name": "CNC",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "nc",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CNC (nc vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "definition": "pll_charge_pump/CNC",
+      "path": "CNC"
+    },
+    "CND": {
+      "name": "CND",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "nd",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CND (nd vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "definition": "pll_charge_pump/CND",
+      "path": "CND"
+    }
+  },
+  "nets": {
+    "pll_charge_pump/iref": [
+      {
+        "instance": "pll_charge_pump/MN0",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          4,
+          7
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MN0",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          2.45,
+          6
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MN2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          10.45,
+          6
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MN1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          32.45,
+          5
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CIR",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          4,
+          11.18
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNM",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          26.45,
+          2
+        ]
+      }
+    ],
+    "pll_charge_pump/vss": [
+      {
+        "instance": "pll_charge_pump/MN0",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          4,
+          5
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MN0",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          4.86,
+          6
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MN2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          12,
+          5
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MN2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          12.86,
+          6
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNCB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          22,
+          5
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNCB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          22.86,
+          6
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNC1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          34.86,
+          10
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MN1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          34,
+          4
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MN1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          34.86,
+          5
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CIR",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          4,
+          12.82
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CBNC",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          27,
+          8.18
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNWU",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          4.5,
+          4
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNWU",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          5.36,
+          5
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MSDN",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          28.86,
+          10
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNC",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          28.86,
+          6
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNM",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          28,
+          1
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNM",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          28.86,
+          2
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MSDD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          38.86,
+          10
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNWD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          38.86,
+          19
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CNC",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          8,
+          18.82
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CWU",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          10,
+          4.18
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CND",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          33,
+          4.18
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XUP",
+        "pin": "VSS",
+        "sheet": 3,
+        "point": [
+          9.2,
+          14.8
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XUP",
+        "pin": "VPW",
+        "sheet": 3,
+        "point": [
+          10.8,
+          14.8
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XUPD",
+        "pin": "VSS",
+        "sheet": 3,
+        "point": [
+          29.2,
+          14.8
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XUPD",
+        "pin": "VPW",
+        "sheet": 3,
+        "point": [
+          30.8,
+          14.8
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XDN",
+        "pin": "VSS",
+        "sheet": 3,
+        "point": [
+          9.2,
+          4.8
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XDN",
+        "pin": "VPW",
+        "sheet": 3,
+        "point": [
+          10.8,
+          4.8
+        ]
+      }
+    ],
+    "pll_charge_pump/vbpc": [
+      {
+        "instance": "pll_charge_pump/MPCB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          12,
+          18
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPCB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          10.45,
+          19
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MN2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          12,
+          7
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MP2X",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          20.45,
+          19
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPC0",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          32.45,
+          16
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CBPC",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          18,
+          14.82
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPC",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          12.45,
+          18
+        ]
+      }
+    ],
+    "pll_charge_pump/vdd": [
+      {
+        "instance": "pll_charge_pump/MPCB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          12,
+          20
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPCB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          12.86,
+          19
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MP2X",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          22,
+          20
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MP2X",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          22.86,
+          19
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MP0",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          34,
+          22
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MP0",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          34.86,
+          21
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPC0",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          34.86,
+          16
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CBPC",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          18,
+          13.18
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CBP",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          41,
+          12.18
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPM",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          14,
+          23
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPM",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          14.86,
+          22
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPC",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          14.86,
+          18
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MSUP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          14.86,
+          12
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MSDU",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          5.36,
+          12
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNWD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          38,
+          20
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNWD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          36.45,
+          19
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CWD",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          34.82,
+          19
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XUP",
+        "pin": "VDD",
+        "sheet": 3,
+        "point": [
+          9.2,
+          19.2
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XUP",
+        "pin": "VNW",
+        "sheet": 3,
+        "point": [
+          10.8,
+          19.2
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XUPD",
+        "pin": "VDD",
+        "sheet": 3,
+        "point": [
+          29.2,
+          19.2
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XUPD",
+        "pin": "VNW",
+        "sheet": 3,
+        "point": [
+          30.8,
+          19.2
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XDN",
+        "pin": "VDD",
+        "sheet": 3,
+        "point": [
+          9.2,
+          9.2
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XDN",
+        "pin": "VNW",
+        "sheet": 3,
+        "point": [
+          10.8,
+          9.2
+        ]
+      }
+    ],
+    "pll_charge_pump/vbnc": [
+      {
+        "instance": "pll_charge_pump/MP2X",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          22,
+          18
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNCB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          22,
+          7
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNCB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          20.45,
+          6
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNC1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          32.45,
+          10
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CBNC",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          27,
+          9.82
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNC",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          26.45,
+          6
+        ]
+      }
+    ],
+    "pll_charge_pump/n1a": [
+      {
+        "instance": "pll_charge_pump/MP0",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          34,
+          20
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPC0",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          34,
+          17
+        ]
+      }
+    ],
+    "pll_charge_pump/vbp": [
+      {
+        "instance": "pll_charge_pump/MP0",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          32.45,
+          21
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPC0",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          34,
+          15
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNC1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          34,
+          11
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CBP",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          41,
+          13.82
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPM",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          12.45,
+          22
+        ]
+      }
+    ],
+    "pll_charge_pump/n1b": [
+      {
+        "instance": "pll_charge_pump/MNC1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          34,
+          9
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MN1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          34,
+          6
+        ]
+      }
+    ],
+    "pll_charge_pump/na": [
+      {
+        "instance": "pll_charge_pump/MPM",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          14,
+          21
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MPC",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          14,
+          19
+        ]
+      }
+    ],
+    "pll_charge_pump/nc": [
+      {
+        "instance": "pll_charge_pump/MPC",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          14,
+          17
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MSUP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          14,
+          13
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MSDU",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          4.5,
+          13
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CNC",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          8,
+          17.18
+        ]
+      }
+    ],
+    "pll_charge_pump/vout": [
+      {
+        "instance": "pll_charge_pump/MSUP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          14,
+          11
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MSDN",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          28,
+          11
+        ]
+      }
+    ],
+    "pll_charge_pump/upb": [
+      {
+        "instance": "pll_charge_pump/MSUP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          12.45,
+          12
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XUP",
+        "pin": "ZN",
+        "sheet": 3,
+        "point": [
+          12.7,
+          17.0
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XUPD",
+        "pin": "I",
+        "sheet": 3,
+        "point": [
+          27.3,
+          17.0
+        ]
+      }
+    ],
+    "pll_charge_pump/wu": [
+      {
+        "instance": "pll_charge_pump/MSDU",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          4.5,
+          11
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNWU",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          4.5,
+          6
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNWU",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          2.95,
+          5
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CWU",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          10,
+          5.82
+        ]
+      }
+    ],
+    "pll_charge_pump/upd": [
+      {
+        "instance": "pll_charge_pump/MSDU",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          2.95,
+          12
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XUPD",
+        "pin": "ZN",
+        "sheet": 3,
+        "point": [
+          32.7,
+          17.0
+        ]
+      }
+    ],
+    "pll_charge_pump/dn": [
+      {
+        "instance": "pll_charge_pump/MSDN",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          26.45,
+          10
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XDN",
+        "pin": "I",
+        "sheet": 3,
+        "point": [
+          7.3,
+          7.0
+        ]
+      }
+    ],
+    "pll_charge_pump/nd": [
+      {
+        "instance": "pll_charge_pump/MSDN",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          28,
+          9
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNC",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          28,
+          7
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MSDD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          38,
+          9
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CND",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          33,
+          5.82
+        ]
+      }
+    ],
+    "pll_charge_pump/ne": [
+      {
+        "instance": "pll_charge_pump/MNC",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          28,
+          5
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNM",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          28,
+          3
+        ]
+      }
+    ],
+    "pll_charge_pump/wd": [
+      {
+        "instance": "pll_charge_pump/MSDD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          38,
+          11
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/MNWD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          38,
+          18
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/CWD",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          33.18,
+          19
+        ]
+      }
+    ],
+    "pll_charge_pump/dnb": [
+      {
+        "instance": "pll_charge_pump/MSDD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          36.45,
+          10
+        ]
+      },
+      {
+        "instance": "pll_charge_pump/XDN",
+        "pin": "ZN",
+        "sheet": 3,
+        "point": [
+          12.7,
+          7.0
+        ]
+      }
+    ],
+    "pll_charge_pump/up": [
+      {
+        "instance": "pll_charge_pump/XUP",
+        "pin": "I",
+        "sheet": 3,
+        "point": [
+          7.3,
+          17.0
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "D",
+      "net": "vbpc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "G",
+      "net": "vbpc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN2",
+      "pin": "D",
+      "net": "vbpc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2X",
+      "pin": "G",
+      "net": "vbpc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC0",
+      "pin": "G",
+      "net": "vbpc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBPC",
+      "pin": "1",
+      "net": "vbpc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP0",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC0",
+      "pin": "D",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNC1",
+      "pin": "D",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBP",
+      "pin": "1",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN0",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN0",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN2",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "CIR",
+      "pin": "1",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2X",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2X",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP0",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP0",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC0",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBPC",
+      "pin": "2",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBP",
+      "pin": "2",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2X",
+      "pin": "D",
+      "net": "vbnc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "D",
+      "net": "vbnc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "G",
+      "net": "vbnc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNC1",
+      "pin": "G",
+      "net": "vbnc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBNC",
+      "pin": "1",
+      "net": "vbnc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP0",
+      "pin": "D",
+      "net": "n1a",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC0",
+      "pin": "S",
+      "net": "n1a",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNC1",
+      "pin": "S",
+      "net": "n1b",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "D",
+      "net": "n1b",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN0",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN0",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN2",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNC1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "CIR",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBNC",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPC",
+      "pin": "G",
+      "net": "vbpc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDU",
+      "pin": "G",
+      "net": "upd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPC",
+      "pin": "D",
+      "net": "nc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSUP",
+      "pin": "S",
+      "net": "nc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDU",
+      "pin": "S",
+      "net": "nc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "CNC",
+      "pin": "1",
+      "net": "nc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDD",
+      "pin": "D",
+      "net": "wd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNWD",
+      "pin": "S",
+      "net": "wd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "CWD",
+      "pin": "1",
+      "net": "wd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPC",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSUP",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDU",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNWD",
+      "pin": "D",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNWD",
+      "pin": "G",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "CWD",
+      "pin": "2",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDN",
+      "pin": "G",
+      "net": "dn",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNC",
+      "pin": "G",
+      "net": "vbnc",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDN",
+      "pin": "S",
+      "net": "nd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNC",
+      "pin": "D",
+      "net": "nd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDD",
+      "pin": "S",
+      "net": "nd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "CND",
+      "pin": "1",
+      "net": "nd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDU",
+      "pin": "D",
+      "net": "wu",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNWU",
+      "pin": "D",
+      "net": "wu",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNWU",
+      "pin": "G",
+      "net": "wu",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "CWU",
+      "pin": "1",
+      "net": "wu",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNC",
+      "pin": "S",
+      "net": "ne",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM",
+      "pin": "D",
+      "net": "ne",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSUP",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDN",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDD",
+      "pin": "G",
+      "net": "dnb",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSUP",
+      "pin": "G",
+      "net": "upb",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNWU",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNWU",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNC",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSDD",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNWD",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "CNC",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "CWU",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "CND",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM",
+      "pin": "D",
+      "net": "na",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPC",
+      "pin": "S",
+      "net": "na",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUP",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUP",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUPD",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUPD",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN",
+      "pin": "I",
+      "net": "dn",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUP",
+      "pin": "I",
+      "net": "up",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUP",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUP",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUPD",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUPD",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN",
+      "pin": "ZN",
+      "net": "dnb",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUPD",
+      "pin": "ZN",
+      "net": "upd",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUP",
+      "pin": "ZN",
+      "net": "upb",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    },
+    {
+      "sheet": 3,
+      "instance": "XUPD",
+      "pin": "I",
+      "net": "upb",
+      "path_to_named_net": true,
+      "block": "pll_charge_pump"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "pll_charge_pump",
+      "title": "电流基准、级联偏置与去耦",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.86,
+              6
+            ],
+            [
+              5.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12.86,
+              19
+            ],
+            [
+              13.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.86,
+              6
+            ],
+            [
+              13.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22.86,
+              19
+            ],
+            [
+              23.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22.86,
+              6
+            ],
+            [
+              23.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.86,
+              21
+            ],
+            [
+              35.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.86,
+              16
+            ],
+            [
+              35.15,
+              16
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.86,
+              10
+            ],
+            [
+              35.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.86,
+              5
+            ],
+            [
+              35.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vbpc",
+          "points": [
+            [
+              12,
+              18
+            ],
+            [
+              12,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbnc",
+          "points": [
+            [
+              22,
+              18
+            ],
+            [
+              22,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1a",
+          "points": [
+            [
+              34,
+              20
+            ],
+            [
+              34,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              34,
+              15
+            ],
+            [
+              34,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1b",
+          "points": [
+            [
+              34,
+              9
+            ],
+            [
+              34,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              4,
+              11.18
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbpc",
+          "points": [
+            [
+              18,
+              14.82
+            ],
+            [
+              18,
+              16
+            ],
+            [
+              12,
+              16
+            ],
+            [
+              12,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbnc",
+          "points": [
+            [
+              27,
+              9.82
+            ],
+            [
+              27,
+              12
+            ],
+            [
+              22,
+              12
+            ],
+            [
+              22,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              41,
+              13.82
+            ],
+            [
+              41,
+              14.5
+            ],
+            [
+              34,
+              14.5
+            ],
+            [
+              34,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12,
+              23.5
+            ],
+            [
+              34,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12,
+              20
+            ],
+            [
+              12,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22,
+              20
+            ],
+            [
+              22,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34,
+              22
+            ],
+            [
+              34,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              1.5
+            ],
+            [
+              34,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12,
+              5
+            ],
+            [
+              12,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22,
+              5
+            ],
+            [
+              22,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34,
+              4
+            ],
+            [
+              34,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27,
+              8.18
+            ],
+            [
+              27,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              2.45,
+              6
+            ],
+            [
+              1.9500000000000002,
+              6
+            ],
+            [
+              1.9500000000000002,
+              8.2
+            ],
+            [
+              4,
+              8.2
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbpc",
+          "points": [
+            [
+              10.45,
+              19
+            ],
+            [
+              9.95,
+              19
+            ],
+            [
+              9.95,
+              16.8
+            ],
+            [
+              12,
+              16.8
+            ],
+            [
+              12,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbnc",
+          "points": [
+            [
+              20.45,
+              6
+            ],
+            [
+              19.95,
+              6
+            ],
+            [
+              19.95,
+              8.2
+            ],
+            [
+              22,
+              8.2
+            ],
+            [
+              22,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              10.45,
+              6
+            ],
+            [
+              9.899999999999999,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbpc",
+          "points": [
+            [
+              20.45,
+              19
+            ],
+            [
+              19.9,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              32.45,
+              21
+            ],
+            [
+              31.900000000000002,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbpc",
+          "points": [
+            [
+              32.45,
+              16
+            ],
+            [
+              31.900000000000002,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbnc",
+          "points": [
+            [
+              32.45,
+              10
+            ],
+            [
+              31.900000000000002,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              32.45,
+              5
+            ],
+            [
+              31.900000000000002,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              12.82
+            ],
+            [
+              4,
+              13.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18,
+              13.18
+            ],
+            [
+              18,
+              12.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              41,
+              12.18
+            ],
+            [
+              41,
+              11.54
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            13.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            13.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            23.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            23.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.15,
+            16
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.15,
+            10
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vbpc",
+          "point": [
+            12.0,
+            12.5
+          ],
+          "text": "vbpc",
+          "body": false
+        },
+        {
+          "net": "vbnc",
+          "point": [
+            22.0,
+            12.5
+          ],
+          "text": "vbnc",
+          "body": false
+        },
+        {
+          "net": "n1a",
+          "point": [
+            34.0,
+            18.5
+          ],
+          "text": "n1a",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            34.0,
+            13.0
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "n1b",
+          "point": [
+            34.0,
+            7.5
+          ],
+          "text": "n1b",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12,
+            23.5
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            3,
+            8.2
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "vbpc",
+          "point": [
+            11,
+            16.8
+          ],
+          "text": "vbpc",
+          "body": false
+        },
+        {
+          "net": "vbnc",
+          "point": [
+            21,
+            8.2
+          ],
+          "text": "vbnc",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            9.899999999999999,
+            6
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "vbpc",
+          "point": [
+            19.9,
+            19
+          ],
+          "text": "vbpc",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            31.900000000000002,
+            21
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "vbpc",
+          "point": [
+            31.900000000000002,
+            16
+          ],
+          "text": "vbpc",
+          "body": false
+        },
+        {
+          "net": "vbnc",
+          "point": [
+            31.900000000000002,
+            10
+          ],
+          "text": "vbnc",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            31.900000000000002,
+            5
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4,
+            13.46
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            18,
+            12.54
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            41,
+            11.54
+          ],
+          "text": "vdd",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "pll_charge_pump",
+      "title": "上下电流转向、虚设支路与输出",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              14.86,
+              22
+            ],
+            [
+              15.15,
+              22
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              14.86,
+              18
+            ],
+            [
+              15.15,
+              18
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              14.86,
+              12
+            ],
+            [
+              15.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5.36,
+              12
+            ],
+            [
+              5.65,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.36,
+              5
+            ],
+            [
+              5.65,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.86,
+              10
+            ],
+            [
+              29.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.86,
+              6
+            ],
+            [
+              29.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.86,
+              2
+            ],
+            [
+              29.15,
+              2
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.86,
+              10
+            ],
+            [
+              39.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.86,
+              19
+            ],
+            [
+              39.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "na",
+          "points": [
+            [
+              14,
+              21
+            ],
+            [
+              14,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "wu",
+          "points": [
+            [
+              4.5,
+              11
+            ],
+            [
+              4.5,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nc",
+          "points": [
+            [
+              4.5,
+              15.3
+            ],
+            [
+              14,
+              15.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nc",
+          "points": [
+            [
+              14,
+              17
+            ],
+            [
+              14,
+              15.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nc",
+          "points": [
+            [
+              14,
+              13
+            ],
+            [
+              14,
+              15.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nc",
+          "points": [
+            [
+              4.5,
+              13
+            ],
+            [
+              4.5,
+              15.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nc",
+          "points": [
+            [
+              8,
+              17.18
+            ],
+            [
+              8,
+              15.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              14,
+              11
+            ],
+            [
+              28,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nd",
+          "points": [
+            [
+              28,
+              9
+            ],
+            [
+              28,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ne",
+          "points": [
+            [
+              28,
+              5
+            ],
+            [
+              28,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nd",
+          "points": [
+            [
+              28,
+              8
+            ],
+            [
+              38,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nd",
+          "points": [
+            [
+              28,
+              7
+            ],
+            [
+              28,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nd",
+          "points": [
+            [
+              38,
+              9
+            ],
+            [
+              38,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nd",
+          "points": [
+            [
+              33,
+              5.82
+            ],
+            [
+              33,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "wd",
+          "points": [
+            [
+              38,
+              18
+            ],
+            [
+              38,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "wu",
+          "points": [
+            [
+              10,
+              5.82
+            ],
+            [
+              10,
+              8.5
+            ],
+            [
+              4.5,
+              8.5
+            ],
+            [
+              4.5,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "wd",
+          "points": [
+            [
+              33.18,
+              19
+            ],
+            [
+              31,
+              19
+            ],
+            [
+              31,
+              16
+            ],
+            [
+              38,
+              16
+            ],
+            [
+              38,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.82,
+              19
+            ],
+            [
+              36.45,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              14,
+              24
+            ],
+            [
+              38,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              14,
+              23
+            ],
+            [
+              14,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              38,
+              20
+            ],
+            [
+              38,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.5,
+              0.3
+            ],
+            [
+              33,
+              0.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.5,
+              4
+            ],
+            [
+              4.5,
+              0.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28,
+              1
+            ],
+            [
+              28,
+              0.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              4.18
+            ],
+            [
+              10,
+              0.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33,
+              4.18
+            ],
+            [
+              33,
+              0.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "wu",
+          "points": [
+            [
+              2.95,
+              5
+            ],
+            [
+              2.45,
+              5
+            ],
+            [
+              2.45,
+              7.2
+            ],
+            [
+              4.5,
+              7.2
+            ],
+            [
+              4.5,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              12.45,
+              22
+            ],
+            [
+              11.899999999999999,
+              22
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbpc",
+          "points": [
+            [
+              12.45,
+              18
+            ],
+            [
+              11.899999999999999,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "upb",
+          "points": [
+            [
+              12.45,
+              12
+            ],
+            [
+              11.899999999999999,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "upd",
+          "points": [
+            [
+              2.95,
+              12
+            ],
+            [
+              2.4000000000000004,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "dn",
+          "points": [
+            [
+              26.45,
+              10
+            ],
+            [
+              25.9,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbnc",
+          "points": [
+            [
+              26.45,
+              6
+            ],
+            [
+              25.9,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              26.45,
+              2
+            ],
+            [
+              25.9,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "dnb",
+          "points": [
+            [
+              36.45,
+              10
+            ],
+            [
+              35.900000000000006,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8,
+              18.82
+            ],
+            [
+              8,
+              19.46
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            15.15,
+            22
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            15.15,
+            18
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            15.15,
+            12
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            5.65,
+            12
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.65,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            29.15,
+            10
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            29.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            29.15,
+            2
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            39.15,
+            10
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            39.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "na",
+          "point": [
+            14.0,
+            20.0
+          ],
+          "text": "na",
+          "body": false
+        },
+        {
+          "net": "wu",
+          "point": [
+            4.5,
+            8.5
+          ],
+          "text": "wu",
+          "body": false
+        },
+        {
+          "net": "nc",
+          "point": [
+            4.5,
+            15.3
+          ],
+          "text": "nc",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            21.0,
+            11.0
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "ne",
+          "point": [
+            28.0,
+            4.0
+          ],
+          "text": "ne",
+          "body": false
+        },
+        {
+          "net": "nd",
+          "point": [
+            28,
+            8
+          ],
+          "text": "nd",
+          "body": false
+        },
+        {
+          "net": "wd",
+          "point": [
+            38.0,
+            14.5
+          ],
+          "text": "wd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.635000000000005,
+            19.0
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            14,
+            24
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4.5,
+            0.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "wu",
+          "point": [
+            3.5,
+            7.2
+          ],
+          "text": "wu",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            11.899999999999999,
+            22
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "vbpc",
+          "point": [
+            11.899999999999999,
+            18
+          ],
+          "text": "vbpc",
+          "body": false
+        },
+        {
+          "net": "upb",
+          "point": [
+            11.899999999999999,
+            12
+          ],
+          "text": "upb",
+          "body": false
+        },
+        {
+          "net": "upd",
+          "point": [
+            2.4000000000000004,
+            12
+          ],
+          "text": "upd",
+          "body": false
+        },
+        {
+          "net": "dn",
+          "point": [
+            25.9,
+            10
+          ],
+          "text": "dn",
+          "body": false
+        },
+        {
+          "net": "vbnc",
+          "point": [
+            25.9,
+            6
+          ],
+          "text": "vbnc",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            25.9,
+            2
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "dnb",
+          "point": [
+            35.900000000000006,
+            10
+          ],
+          "text": "dnb",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            8,
+            19.46
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "block": "pll_charge_pump",
+      "title": "原厂 HD 反相器与开关控制网络",
+      "wires": [
+        {
+          "net": "upb",
+          "points": [
+            [
+              12.7,
+              17.0
+            ],
+            [
+              27.3,
+              17.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              9.2,
+              19.7
+            ],
+            [
+              30.8,
+              19.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              9.2,
+              19.2
+            ],
+            [
+              9.2,
+              19.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10.8,
+              19.2
+            ],
+            [
+              10.8,
+              19.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              29.2,
+              19.2
+            ],
+            [
+              29.2,
+              19.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              30.8,
+              19.2
+            ],
+            [
+              30.8,
+              19.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              9.2,
+              12.5
+            ],
+            [
+              30.8,
+              12.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              9.2,
+              14.8
+            ],
+            [
+              9.2,
+              12.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.8,
+              14.8
+            ],
+            [
+              10.8,
+              12.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29.2,
+              14.8
+            ],
+            [
+              29.2,
+              12.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              30.8,
+              14.8
+            ],
+            [
+              30.8,
+              12.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              9.2,
+              9.7
+            ],
+            [
+              10.8,
+              9.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              9.2,
+              9.2
+            ],
+            [
+              9.2,
+              9.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10.8,
+              9.2
+            ],
+            [
+              10.8,
+              9.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              9.2,
+              3.5
+            ],
+            [
+              10.8,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              9.2,
+              4.8
+            ],
+            [
+              9.2,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.8,
+              4.8
+            ],
+            [
+              10.8,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "up",
+          "points": [
+            [
+              7.3,
+              17.0
+            ],
+            [
+              6.7,
+              17.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "upd",
+          "points": [
+            [
+              32.7,
+              17.0
+            ],
+            [
+              33.300000000000004,
+              17.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "dn",
+          "points": [
+            [
+              7.3,
+              7.0
+            ],
+            [
+              6.7,
+              7.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "dnb",
+          "points": [
+            [
+              12.7,
+              7.0
+            ],
+            [
+              13.299999999999999,
+              7.0
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "upb",
+          "point": [
+            20.0,
+            17.0
+          ],
+          "text": "upb",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            9.2,
+            19.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            9.2,
+            12.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            9.2,
+            9.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            9.2,
+            3.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "up",
+          "point": [
+            6.7,
+            17.0
+          ],
+          "text": "up",
+          "body": false
+        },
+        {
+          "net": "upd",
+          "point": [
+            33.300000000000004,
+            17.0
+          ],
+          "text": "upd",
+          "body": false
+        },
+        {
+          "net": "dn",
+          "point": [
+            6.7,
+            7.0
+          ],
+          "text": "dn",
+          "body": false
+        },
+        {
+          "net": "dnb",
+          "point": [
+            13.299999999999999,
+            7.0
+          ],
+          "text": "dnb",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "pll_charge_pump": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

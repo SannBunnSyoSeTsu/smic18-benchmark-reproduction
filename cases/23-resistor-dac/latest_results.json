@@ -1,0 +1,1422 @@
+{
+  "case_slot": 23,
+  "generated_at": "2026-09-22T08:53:28.508615+00:00",
+  "run_dirs": [
+    "runs/23/20260922T085255104320Z_code_ramp_refined",
+    "runs/23/20260922T085306554939Z_major_carry_refined",
+    "runs/23/20260922T085318058247Z_output_resistance_refined"
+  ],
+  "status": "complete_original",
+  "values": {
+    "inl_lsb_max": 0.05360129707967776,
+    "dnl_lsb_max": 0.05147895226984034,
+    "zero_code_error_V": 0.00011658691820903037,
+    "full_scale_error_V": 0.0032986987842953397,
+    "power_avg_W": 0.0006452535336576371,
+    "settling_time_s": 3.0838934278507755e-09,
+    "settling_end_error_lsb_max": 0.04890162137675544,
+    "excursion_lsb_max": 0.8657252550591288,
+    "rout_max_Ohm": 993.8723850009267
+  },
+  "gates": {
+    "inl_lsb_max": {
+      "value": 0.05360129707967776,
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 0.25,
+        "10pct": 0.275,
+        "15pct": 0.2875
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "dnl_lsb_max": {
+      "value": 0.05147895226984034,
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 0.25,
+        "10pct": 0.275,
+        "15pct": 0.2875
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "zero_code_error_V": {
+      "value": 0.00011658691820903037,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.002,
+        "10pct": 0.0022,
+        "15pct": 0.0023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "full_scale_error_V": {
+      "value": 0.0032986987842953397,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power_avg_W": {
+      "value": 0.0006452535336576371,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.001,
+        "10pct": 0.0011,
+        "15pct": 0.00115
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "settling_time_s": {
+      "value": 3.0838934278507755e-09,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 5e-09,
+        "10pct": 5.5000000000000004e-09,
+        "15pct": 5.749999999999999e-09
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "settling_end_error_lsb_max": {
+      "value": 0.04890162137675544,
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 0.25,
+        "10pct": 0.275,
+        "15pct": 0.2875
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "excursion_lsb_max": {
+      "value": 0.8657252550591288,
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 1.0,
+        "10pct": 1.1,
+        "15pct": 1.15
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "rout_max_Ohm": {
+      "value": 993.8723850009267,
+      "unit": "Ohm",
+      "sense": "max",
+      "limits": {
+        "original": 2000.0,
+        "10pct": 2200.0,
+        "15pct": 2300.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "functional_checks_pass": true,
+  "all_nominal_checks_complete": true,
+  "nominal_complete": true,
+  "model_dimensions_valid": true,
+  "ramp": {
+    "run_dir": "runs/23/20260922T085255104320Z_code_ramp_refined",
+    "inl_lsb_max": 0.05360129707967776,
+    "dnl_lsb_max": 0.05147895226984034,
+    "zero_code_error_V": 0.00011658691820903037,
+    "full_scale_error_V": 0.0032986987842953397,
+    "power_avg_W": 0.0006452535336576371,
+    "external_driver_power_avg_W": 0.0001720069841540035,
+    "monotonic": true,
+    "minimum_step_V": 0.05324980989053642,
+    "endpoint_fitted_lsb_V": 0.05613982949346761,
+    "codes": [
+      {
+        "code": 0,
+        "sample_s": 7.000000000000001e-09,
+        "output_V": 0.00011658691820903037,
+        "ideal_V": 0.0,
+        "inl_LSB": 0.0,
+        "dnl_LSB": null
+      },
+      {
+        "code": 1,
+        "sample_s": 1.2000000000000002e-08,
+        "output_V": 0.05336639680874545,
+        "ideal_V": 0.05625,
+        "inl_LSB": -0.05147895226984034,
+        "dnl_LSB": -0.05147895226984034
+      },
+      {
+        "code": 2,
+        "sample_s": 1.7e-08,
+        "output_V": 0.10955017763725321,
+        "ideal_V": 0.1125,
+        "inl_LSB": -0.05069606184361852,
+        "dnl_LSB": 0.0007828904262217051
+      },
+      {
+        "code": 3,
+        "sample_s": 2.2000000000000002e-08,
+        "output_V": 0.16552690771993006,
+        "ideal_V": 0.16875,
+        "inl_LSB": -0.05360129707967776,
+        "dnl_LSB": -0.0029052352360587896
+      },
+      {
+        "code": 4,
+        "sample_s": 2.7e-08,
+        "output_V": 0.2220963546326471,
+        "ideal_V": 0.225,
+        "inl_LSB": -0.04594866572818024,
+        "dnl_LSB": 0.0076526313514972966
+      },
+      {
+        "code": 5,
+        "sample_s": 3.2e-08,
+        "output_V": 0.2778109157443961,
+        "ideal_V": 0.28125,
+        "inl_LSB": -0.053523829129203726,
+        "dnl_LSB": -0.007575163401023488
+      },
+      {
+        "code": 6,
+        "sample_s": 3.7e-08,
+        "output_V": 0.33410032678479795,
+        "ideal_V": 0.3375,
+        "inl_LSB": -0.050859383079333575,
+        "dnl_LSB": 0.0026644460498701505
+      },
+      {
+        "code": 7,
+        "sample_s": 4.2000000000000006e-08,
+        "output_V": 0.39011208099672595,
+        "ideal_V": 0.39375,
+        "inl_LSB": -0.05314074521910506,
+        "dnl_LSB": -0.002281362139771259
+      },
+      {
+        "code": 8,
+        "sample_s": 4.7000000000000004e-08,
+        "output_V": 0.4472463863284288,
+        "ideal_V": 0.45,
+        "inl_LSB": -0.035426479835543034,
+        "dnl_LSB": 0.017714265383562244
+      },
+      {
+        "code": 9,
+        "sample_s": 5.2e-08,
+        "output_V": 0.502479394472942,
+        "ideal_V": 0.50625,
+        "inl_LSB": -0.0515793851282087,
+        "dnl_LSB": -0.016152905292665998
+      },
+      {
+        "code": 10,
+        "sample_s": 5.7e-08,
+        "output_V": 0.5587886310717352,
+        "ideal_V": 0.5625,
+        "inl_LSB": -0.048561793039773704,
+        "dnl_LSB": 0.003017592088434551
+      },
+      {
+        "code": 11,
+        "sample_s": 6.2e-08,
+        "output_V": 0.6148327947519495,
+        "ideal_V": 0.61875,
+        "inl_LSB": -0.0502658561642324,
+        "dnl_LSB": -0.001704063124459143
+      },
+      {
+        "code": 12,
+        "sample_s": 6.7e-08,
+        "output_V": 0.6714759210039255,
+        "ideal_V": 0.675,
+        "inl_LSB": -0.041300799393496845,
+        "dnl_LSB": 0.008965056770736002
+      },
+      {
+        "code": 13,
+        "sample_s": 7.200000000000001e-08,
+        "output_V": 0.7272523313417841,
+        "ideal_V": 0.7312500000000001,
+        "inl_LSB": -0.047774263222796876,
+        "dnl_LSB": -0.006473463829299142
+      },
+      {
+        "code": 14,
+        "sample_s": 7.7e-08,
+        "output_V": 0.7836111442381308,
+        "ideal_V": 0.7875,
+        "inl_LSB": -0.043873585132839565,
+        "dnl_LSB": 0.003900678089957088
+      },
+      {
+        "code": 15,
+        "sample_s": 8.2e-08,
+        "output_V": 0.8396884652267238,
+        "ideal_V": 0.84375,
+        "inl_LSB": -0.04498702821662981,
+        "dnl_LSB": -0.0011134430837898002
+      },
+      {
+        "code": 16,
+        "sample_s": 8.700000000000001e-08,
+        "output_V": 0.8977959140330128,
+        "ideal_V": 0.9,
+        "inl_LSB": -0.00993848370599082,
+        "dnl_LSB": 0.0350485445106381
+      },
+      {
+        "code": 17,
+        "sample_s": 9.2e-08,
+        "output_V": 0.9522170843758547,
+        "ideal_V": 0.95625,
+        "inl_LSB": -0.040552384142323206,
+        "dnl_LSB": -0.03061390043633294
+      },
+      {
+        "code": 18,
+        "sample_s": 9.700000000000001e-08,
+        "output_V": 1.008569946055014,
+        "ideal_V": 1.0125,
+        "inl_LSB": -0.03675771309302078,
+        "dnl_LSB": 0.0037946710493017566
+      },
+      {
+        "code": 19,
+        "sample_s": 1.02e-07,
+        "output_V": 1.064678681907612,
+        "ideal_V": 1.06875,
+        "inl_LSB": -0.03731157371479554,
+        "dnl_LSB": -0.000553860621774982
+      },
+      {
+        "code": 20,
+        "sample_s": 1.07e-07,
+        "output_V": 1.1213949626054722,
+        "ideal_V": 1.125,
+        "inl_LSB": -0.02704344127488767,
+        "dnl_LSB": 0.010268132439906097
+      },
+      {
+        "code": 21,
+        "sample_s": 1.1200000000000001e-07,
+        "output_V": 1.1772327075830158,
+        "ideal_V": 1.1812500000000001,
+        "inl_LSB": -0.032424371688282605,
+        "dnl_LSB": -0.005380930413391938
+      },
+      {
+        "code": 22,
+        "sample_s": 1.17e-07,
+        "output_V": 1.233660446209234,
+        "ideal_V": 1.2375,
+        "inl_LSB": -0.027295942632683534,
+        "dnl_LSB": 0.0051284290555975165
+      },
+      {
+        "code": 23,
+        "sample_s": 1.22e-07,
+        "output_V": 1.2898028392544822,
+        "ideal_V": 1.29375,
+        "inl_LSB": -0.027250278942506867,
+        "dnl_LSB": 4.566369017822147e-05
+      },
+      {
+        "code": 24,
+        "sample_s": 1.27e-07,
+        "output_V": 1.3470994105949845,
+        "ideal_V": 1.35,
+        "inl_LSB": -0.006645623433723102,
+        "dnl_LSB": 0.020604655508781766
+      },
+      {
+        "code": 25,
+        "sample_s": 1.3200000000000002e-07,
+        "output_V": 1.402439707451105,
+        "ideal_V": 1.40625,
+        "inl_LSB": -0.02088743080223665,
+        "dnl_LSB": -0.014241807368512327
+      },
+      {
+        "code": 26,
+        "sample_s": 1.37e-07,
+        "output_V": 1.458886279852568,
+        "ideal_V": 1.4625000000000001,
+        "inl_LSB": -0.015423522009442081,
+        "dnl_LSB": 0.005463908792793459
+      },
+      {
+        "code": 27,
+        "sample_s": 1.42e-07,
+        "output_V": 1.5150605682593736,
+        "ideal_V": 1.51875,
+        "inl_LSB": -0.014809716915110016,
+        "dnl_LSB": 0.0006138050943336193
+      },
+      {
+        "code": 28,
+        "sample_s": 1.47e-07,
+        "output_V": 1.5718495898440015,
+        "ideal_V": 1.575,
+        "inl_LSB": -0.003245875396213904,
+        "dnl_LSB": 0.01156384151889478
+      },
+      {
+        "code": 29,
+        "sample_s": 1.52e-07,
+        "output_V": 1.6277481520784463,
+        "ideal_V": 1.63125,
+        "inl_LSB": -0.007543488360123973,
+        "dnl_LSB": -0.004297612963910069
+      },
+      {
+        "code": 30,
+        "sample_s": 1.5700000000000002e-07,
+        "output_V": 1.684244338541404,
+        "ideal_V": 1.6875,
+        "inl_LSB": -0.0011958208893538824,
+        "dnl_LSB": 0.006347667470769647
+      },
+      {
+        "code": 31,
+        "sample_s": 1.6200000000000002e-07,
+        "output_V": 1.7404513012157048,
+        "ideal_V": 1.7437500000000001,
+        "inl_LSB": 0.0,
+        "dnl_LSB": 0.0011958208893545486
+      }
+    ],
+    "switch_rail_drops": [
+      {
+        "code": 0,
+        "bit": 0,
+        "rail_drop_V": 6.737358276677944e-07
+      },
+      {
+        "code": 0,
+        "bit": 1,
+        "rail_drop_V": 6.735752381187251e-07
+      },
+      {
+        "code": 0,
+        "bit": 2,
+        "rail_drop_V": 6.734949397342283e-07
+      },
+      {
+        "code": 0,
+        "bit": 3,
+        "rail_drop_V": 6.734548347211213e-07
+      },
+      {
+        "code": 0,
+        "bit": 4,
+        "rail_drop_V": 6.734348326420888e-07
+      },
+      {
+        "code": 1,
+        "bit": 0,
+        "rail_drop_V": 0.014198316985240655
+      },
+      {
+        "code": 1,
+        "bit": 1,
+        "rail_drop_V": 0.00030133572681464716
+      },
+      {
+        "code": 1,
+        "bit": 2,
+        "rail_drop_V": 0.00030133564680276506
+      },
+      {
+        "code": 1,
+        "bit": 3,
+        "rail_drop_V": 0.00030133560588159643
+      },
+      {
+        "code": 1,
+        "bit": 4,
+        "rail_drop_V": 0.0003013355841440434
+      },
+      {
+        "code": 2,
+        "bit": 0,
+        "rail_drop_V": 0.000618874459481419
+      },
+      {
+        "code": 2,
+        "bit": 1,
+        "rail_drop_V": 0.013738358853500277
+      },
+      {
+        "code": 2,
+        "bit": 2,
+        "rail_drop_V": 0.0006188742184506047
+      },
+      {
+        "code": 2,
+        "bit": 3,
+        "rail_drop_V": 0.0006188741775799623
+      },
+      {
+        "code": 2,
+        "bit": 4,
+        "rail_drop_V": 0.0006188741557988541
+      },
+      {
+        "code": 3,
+        "bit": 0,
+        "rail_drop_V": 0.013280329370959798
+      },
+      {
+        "code": 3,
+        "bit": 1,
+        "rail_drop_V": 0.01328032913870425
+      },
+      {
+        "code": 3,
+        "bit": 2,
+        "rail_drop_V": 0.0009354805211363152
+      },
+      {
+        "code": 3,
+        "bit": 3,
+        "rail_drop_V": 0.0009354804802368755
+      },
+      {
+        "code": 3,
+        "bit": 4,
+        "rail_drop_V": 0.0009354804582565565
+      },
+      {
+        "code": 4,
+        "bit": 0,
+        "rail_drop_V": 0.001255700367009899
+      },
+      {
+        "code": 4,
+        "bit": 1,
+        "rail_drop_V": 0.0012557002051349774
+      },
+      {
+        "code": 4,
+        "bit": 2,
+        "rail_drop_V": 0.012817630523215273
+      },
+      {
+        "code": 4,
+        "bit": 3,
+        "rail_drop_V": 0.0012557000838817529
+      },
+      {
+        "code": 4,
+        "bit": 4,
+        "rail_drop_V": 0.0012557000621612482
+      },
+      {
+        "code": 5,
+        "bit": 0,
+        "rail_drop_V": 0.01236219996951693
+      },
+      {
+        "code": 5,
+        "bit": 1,
+        "rail_drop_V": 0.0015713033387202788
+      },
+      {
+        "code": 5,
+        "bit": 2,
+        "rail_drop_V": 0.012362199619702086
+      },
+      {
+        "code": 5,
+        "bit": 3,
+        "rail_drop_V": 0.0015713032172498824
+      },
+      {
+        "code": 5,
+        "bit": 4,
+        "rail_drop_V": 0.0015713031950825764
+      },
+      {
+        "code": 6,
+        "bit": 0,
+        "rail_drop_V": 0.0018904220440200729
+      },
+      {
+        "code": 6,
+        "bit": 1,
+        "rail_drop_V": 0.011902249002249121
+      },
+      {
+        "code": 6,
+        "bit": 2,
+        "rail_drop_V": 0.01190224888475333
+      },
+      {
+        "code": 6,
+        "bit": 3,
+        "rail_drop_V": 0.0018904217597361236
+      },
+      {
+        "code": 6,
+        "bit": 4,
+        "rail_drop_V": 0.001890421737602871
+      },
+      {
+        "code": 7,
+        "bit": 0,
+        "rail_drop_V": 0.01144480388349578
+      },
+      {
+        "code": 7,
+        "bit": 1,
+        "rail_drop_V": 0.01144480365151579
+      },
+      {
+        "code": 7,
+        "bit": 2,
+        "rail_drop_V": 0.011444803533974923
+      },
+      {
+        "code": 7,
+        "bit": 3,
+        "rail_drop_V": 0.002208204795628359
+      },
+      {
+        "code": 7,
+        "bit": 4,
+        "rail_drop_V": 0.0022082047732581416
+      },
+      {
+        "code": 8,
+        "bit": 0,
+        "rail_drop_V": 0.0025326363664372686
+      },
+      {
+        "code": 8,
+        "bit": 1,
+        "rail_drop_V": 0.0025326362024309804
+      },
+      {
+        "code": 8,
+        "bit": 2,
+        "rail_drop_V": 0.0025326361210641483
+      },
+      {
+        "code": 8,
+        "bit": 3,
+        "rail_drop_V": 0.010978337208180866
+      },
+      {
+        "code": 8,
+        "bit": 4,
+        "rail_drop_V": 0.0025326360593727116
+      },
+      {
+        "code": 9,
+        "bit": 0,
+        "rail_drop_V": 0.010527735219864054
+      },
+      {
+        "code": 9,
+        "bit": 1,
+        "rail_drop_V": 0.0028464693004589974
+      },
+      {
+        "code": 9,
+        "bit": 2,
+        "rail_drop_V": 0.0028464692192019343
+      },
+      {
+        "code": 9,
+        "bit": 3,
+        "rail_drop_V": 0.010527734829255397
+      },
+      {
+        "code": 9,
+        "bit": 4,
+        "rail_drop_V": 0.0028464691559158726
+      },
+      {
+        "code": 10,
+        "bit": 0,
+        "rail_drop_V": 0.0031666901898629186
+      },
+      {
+        "code": 10,
+        "bit": 1,
+        "rail_drop_V": 0.010068494382955429
+      },
+      {
+        "code": 10,
+        "bit": 2,
+        "rail_drop_V": 0.0031666899438130363
+      },
+      {
+        "code": 10,
+        "bit": 3,
+        "rail_drop_V": 0.010068494223210767
+      },
+      {
+        "code": 10,
+        "bit": 4,
+        "rail_drop_V": 0.0031666898806762996
+      },
+      {
+        "code": 11,
+        "bit": 0,
+        "rail_drop_V": 0.009611650117540504
+      },
+      {
+        "code": 11,
+        "bit": 1,
+        "rail_drop_V": 0.009611649885835183
+      },
+      {
+        "code": 11,
+        "bit": 2,
+        "rail_drop_V": 0.003485644288237332
+      },
+      {
+        "code": 11,
+        "bit": 3,
+        "rail_drop_V": 0.009611649726285032
+      },
+      {
+        "code": 11,
+        "bit": 4,
+        "rail_drop_V": 0.0034856442247550423
+      },
+      {
+        "code": 12,
+        "bit": 0,
+        "rail_drop_V": 0.00380827339330866
+      },
+      {
+        "code": 12,
+        "bit": 1,
+        "rail_drop_V": 0.0038082732276078055
+      },
+      {
+        "code": 12,
+        "bit": 2,
+        "rail_drop_V": 0.009150101038490677
+      },
+      {
+        "code": 12,
+        "bit": 3,
+        "rail_drop_V": 0.009150100993558175
+      },
+      {
+        "code": 12,
+        "bit": 4,
+        "rail_drop_V": 0.0038082730830496345
+      },
+      {
+        "code": 13,
+        "bit": 0,
+        "rail_drop_V": 0.008695887758318754
+      },
+      {
+        "code": 13,
+        "bit": 1,
+        "rail_drop_V": 0.004126192035764734
+      },
+      {
+        "code": 13,
+        "bit": 2,
+        "rail_drop_V": 0.00869588740973315
+      },
+      {
+        "code": 13,
+        "bit": 3,
+        "rail_drop_V": 0.008695887366311439
+      },
+      {
+        "code": 13,
+        "bit": 4,
+        "rail_drop_V": 0.004126191890256235
+      },
+      {
+        "code": 14,
+        "bit": 0,
+        "rail_drop_V": 0.004447694563478782
+      },
+      {
+        "code": 14,
+        "bit": 1,
+        "rail_drop_V": 0.008237107311674707
+      },
+      {
+        "code": 14,
+        "bit": 2,
+        "rail_drop_V": 0.00823710719483417
+      },
+      {
+        "code": 14,
+        "bit": 3,
+        "rail_drop_V": 0.008237107150284473
+      },
+      {
+        "code": 14,
+        "bit": 4,
+        "rail_drop_V": 0.004447694251488153
+      },
+      {
+        "code": 15,
+        "bit": 0,
+        "rail_drop_V": 0.007780852702858887
+      },
+      {
+        "code": 15,
+        "bit": 1,
+        "rail_drop_V": 0.007780852471425348
+      },
+      {
+        "code": 15,
+        "bit": 2,
+        "rail_drop_V": 0.007780852354566825
+      },
+      {
+        "code": 15,
+        "bit": 3,
+        "rail_drop_V": 0.007780852310153241
+      },
+      {
+        "code": 15,
+        "bit": 4,
+        "rail_drop_V": 0.0047678337161811786
+      },
+      {
+        "code": 16,
+        "bit": 0,
+        "rail_drop_V": 0.005099875919709451
+      },
+      {
+        "code": 16,
+        "bit": 1,
+        "rail_drop_V": 0.005099875751247909
+      },
+      {
+        "code": 16,
+        "bit": 2,
+        "rail_drop_V": 0.005099875668539928
+      },
+      {
+        "code": 16,
+        "bit": 3,
+        "rail_drop_V": 0.005099875629092816
+      },
+      {
+        "code": 16,
+        "bit": 4,
+        "rail_drop_V": 0.007308168514845281
+      },
+      {
+        "code": 17,
+        "bit": 0,
+        "rail_drop_V": 0.0068659202095189276
+      },
+      {
+        "code": 17,
+        "bit": 1,
+        "rail_drop_V": 0.005411010165488373
+      },
+      {
+        "code": 17,
+        "bit": 2,
+        "rail_drop_V": 0.005411010082943343
+      },
+      {
+        "code": 17,
+        "bit": 3,
+        "rail_drop_V": 0.0054110100424139464
+      },
+      {
+        "code": 17,
+        "bit": 4,
+        "rail_drop_V": 0.006865919808067833
+      },
+      {
+        "code": 18,
+        "bit": 0,
+        "rail_drop_V": 0.005733485632983872
+      },
+      {
+        "code": 18,
+        "bit": 1,
+        "rail_drop_V": 0.006408050625914541
+      },
+      {
+        "code": 18,
+        "bit": 2,
+        "rail_drop_V": 0.005733485381810549
+      },
+      {
+        "code": 18,
+        "bit": 3,
+        "rail_drop_V": 0.005733485341393477
+      },
+      {
+        "code": 18,
+        "bit": 4,
+        "rail_drop_V": 0.0064080504534287375
+      },
+      {
+        "code": 19,
+        "bit": 0,
+        "rail_drop_V": 0.005952394937142058
+      },
+      {
+        "code": 19,
+        "bit": 1,
+        "rail_drop_V": 0.0059523947059791915
+      },
+      {
+        "code": 19,
+        "bit": 2,
+        "rail_drop_V": 0.006054809612142562
+      },
+      {
+        "code": 19,
+        "bit": 3,
+        "rail_drop_V": 0.006054809571616893
+      },
+      {
+        "code": 19,
+        "bit": 4,
+        "rail_drop_V": 0.005952394533682126
+      },
+      {
+        "code": 20,
+        "bit": 0,
+        "rail_drop_V": 0.006379884164804857
+      },
+      {
+        "code": 20,
+        "bit": 1,
+        "rail_drop_V": 0.006379883995193824
+      },
+      {
+        "code": 20,
+        "bit": 2,
+        "rail_drop_V": 0.005491980006531172
+      },
+      {
+        "code": 20,
+        "bit": 3,
+        "rail_drop_V": 0.006379883871886283
+      },
+      {
+        "code": 20,
+        "bit": 4,
+        "rail_drop_V": 0.005491979945051684
+      },
+      {
+        "code": 21,
+        "bit": 0,
+        "rail_drop_V": 0.0050389679674682775
+      },
+      {
+        "code": 21,
+        "bit": 1,
+        "rail_drop_V": 0.006700153452647384
+      },
+      {
+        "code": 21,
+        "bit": 2,
+        "rail_drop_V": 0.005038967620097257
+      },
+      {
+        "code": 21,
+        "bit": 3,
+        "rail_drop_V": 0.006700153329003403
+      },
+      {
+        "code": 21,
+        "bit": 4,
+        "rail_drop_V": 0.005038967561451724
+      },
+      {
+        "code": 22,
+        "bit": 0,
+        "rail_drop_V": 0.0070240759969016795
+      },
+      {
+        "code": 22,
+        "bit": 1,
+        "rail_drop_V": 0.004581341940455008
+      },
+      {
+        "code": 22,
+        "bit": 2,
+        "rail_drop_V": 0.004581341824260399
+      },
+      {
+        "code": 22,
+        "bit": 3,
+        "rail_drop_V": 0.007024075702822298
+      },
+      {
+        "code": 22,
+        "bit": 4,
+        "rail_drop_V": 0.004581341762983193
+      },
+      {
+        "code": 23,
+        "bit": 0,
+        "rail_drop_V": 0.004126261807529286
+      },
+      {
+        "code": 23,
+        "bit": 1,
+        "rail_drop_V": 0.004126261576635537
+      },
+      {
+        "code": 23,
+        "bit": 2,
+        "rail_drop_V": 0.004126261460451142
+      },
+      {
+        "code": 23,
+        "bit": 3,
+        "rail_drop_V": 0.007346607338057735
+      },
+      {
+        "code": 23,
+        "bit": 4,
+        "rail_drop_V": 0.00412626139910377
+      },
+      {
+        "code": 24,
+        "bit": 0,
+        "rail_drop_V": 0.007676060327217558
+      },
+      {
+        "code": 24,
+        "bit": 1,
+        "rail_drop_V": 0.007676060155157869
+      },
+      {
+        "code": 24,
+        "bit": 2,
+        "rail_drop_V": 0.007676060070946095
+      },
+      {
+        "code": 24,
+        "bit": 3,
+        "rail_drop_V": 0.003661965866585515
+      },
+      {
+        "code": 24,
+        "bit": 4,
+        "rail_drop_V": 0.003661965847814086
+      },
+      {
+        "code": 25,
+        "bit": 0,
+        "rail_drop_V": 0.0032138602590012777
+      },
+      {
+        "code": 25,
+        "bit": 1,
+        "rail_drop_V": 0.007994468889937243
+      },
+      {
+        "code": 25,
+        "bit": 2,
+        "rail_drop_V": 0.00799446880610523
+      },
+      {
+        "code": 25,
+        "bit": 3,
+        "rail_drop_V": 0.0032138598626705317
+      },
+      {
+        "code": 25,
+        "bit": 4,
+        "rail_drop_V": 0.0032138598479445335
+      },
+      {
+        "code": 26,
+        "bit": 0,
+        "rail_drop_V": 0.008319525960758039
+      },
+      {
+        "code": 26,
+        "bit": 1,
+        "rail_drop_V": 0.0027569315918913873
+      },
+      {
+        "code": 26,
+        "bit": 2,
+        "rail_drop_V": 0.008319525704356859
+      },
+      {
+        "code": 26,
+        "bit": 3,
+        "rail_drop_V": 0.0027569314256252753
+      },
+      {
+        "code": 26,
+        "bit": 4,
+        "rail_drop_V": 0.0027569314094526565
+      },
+      {
+        "code": 27,
+        "bit": 0,
+        "rail_drop_V": 0.0023024364548920317
+      },
+      {
+        "code": 27,
+        "bit": 1,
+        "rail_drop_V": 0.002302436224266069
+      },
+      {
+        "code": 27,
+        "bit": 2,
+        "rail_drop_V": 0.008643264453335218
+      },
+      {
+        "code": 27,
+        "bit": 3,
+        "rail_drop_V": 0.002302436057894486
+      },
+      {
+        "code": 27,
+        "bit": 4,
+        "rail_drop_V": 0.0023024360415337952
+      },
+      {
+        "code": 28,
+        "bit": 0,
+        "rail_drop_V": 0.008970822128012153
+      },
+      {
+        "code": 28,
+        "bit": 1,
+        "rail_drop_V": 0.0089708219544053
+      },
+      {
+        "code": 28,
+        "bit": 2,
+        "rail_drop_V": 0.001843139317764031
+      },
+      {
+        "code": 28,
+        "bit": 3,
+        "rail_drop_V": 0.001843139265763849
+      },
+      {
+        "code": 28,
+        "bit": 4,
+        "rail_drop_V": 0.0018431392467441743
+      },
+      {
+        "code": 29,
+        "bit": 0,
+        "rail_drop_V": 0.0013913126942972642
+      },
+      {
+        "code": 29,
+        "bit": 1,
+        "rail_drop_V": 0.009293477831497867
+      },
+      {
+        "code": 29,
+        "bit": 2,
+        "rail_drop_V": 0.0013913123481268386
+      },
+      {
+        "code": 29,
+        "bit": 3,
+        "rail_drop_V": 0.0013913122965807379
+      },
+      {
+        "code": 29,
+        "bit": 4,
+        "rail_drop_V": 0.0013913122784403598
+      },
+      {
+        "code": 30,
+        "bit": 0,
+        "rail_drop_V": 0.009619857417373652
+      },
+      {
+        "code": 30,
+        "bit": 1,
+        "rail_drop_V": 0.0009348251807623775
+      },
+      {
+        "code": 30,
+        "bit": 2,
+        "rail_drop_V": 0.0009348250652063683
+      },
+      {
+        "code": 30,
+        "bit": 3,
+        "rail_drop_V": 0.0009348250128953239
+      },
+      {
+        "code": 30,
+        "bit": 4,
+        "rail_drop_V": 0.0009348249933989194
+      },
+      {
+        "code": 31,
+        "bit": 0,
+        "rail_drop_V": 0.00048090373390463625
+      },
+      {
+        "code": 31,
+        "bit": 1,
+        "rail_drop_V": 0.00048090350354490496
+      },
+      {
+        "code": 31,
+        "bit": 2,
+        "rail_drop_V": 0.0004809033880275315
+      },
+      {
+        "code": 31,
+        "bit": 3,
+        "rail_drop_V": 0.00048090333549644093
+      },
+      {
+        "code": 31,
+        "bit": 4,
+        "rail_drop_V": 0.00048090331564520916
+      }
+    ],
+    "input_bit_levels": [
+      {
+        "bit": 0,
+        "low_max_V": 7.452108401298393e-09,
+        "high_min_V": 1.7999999593666467
+      },
+      {
+        "bit": 1,
+        "low_max_V": 7.452339050361585e-09,
+        "high_min_V": 1.7999999593569203
+      },
+      {
+        "bit": 2,
+        "low_max_V": 7.452819823193993e-09,
+        "high_min_V": 1.799999959336532
+      },
+      {
+        "bit": 3,
+        "low_max_V": 7.453745755518541e-09,
+        "high_min_V": 1.799999959295984
+      },
+      {
+        "bit": 4,
+        "low_max_V": 7.455686313307854e-09,
+        "high_min_V": 1.799999959207028
+      }
+    ],
+    "all160_input_samples_correct": true
+  },
+  "major_carry": {
+    "run_dir": "runs/23/20260922T085306554939Z_major_carry_refined",
+    "transitions": [
+      {
+        "label": "34u",
+        "start_code": 3,
+        "stop_code": 4,
+        "trigger_s": 2e-08,
+        "settling_time_s": 1.9735262585805856e-09,
+        "all_crossings_s": [
+          1.9735262585805856e-09
+        ],
+        "end_sample_V": 0.22288359779059033,
+        "end_error_LSB": 0.037624928167283085,
+        "excursion_LSB": 0.00842997757749369,
+        "peak_max_V": 0.22289490199834427,
+        "peak_min_V": 0.168275813761266,
+        "last_crossing_enters_band": true
+      },
+      {
+        "label": "34d",
+        "start_code": 4,
+        "stop_code": 3,
+        "trigger_s": 2.5000000000000002e-08,
+        "settling_time_s": 2.3975207746737708e-09,
+        "all_crossings_s": [
+          2.3975207746737708e-09
+        ],
+        "end_sample_V": 0.1706629632574166,
+        "end_error_LSB": 0.034008235687405824,
+        "excursion_LSB": 0.11492435684043567,
+        "peak_max_V": 0.2314644950722745,
+        "peak_min_V": 0.1706466667577204,
+        "last_crossing_enters_band": true
+      },
+      {
+        "label": "78u",
+        "start_code": 7,
+        "stop_code": 8,
+        "trigger_s": 4.5000000000000006e-08,
+        "settling_time_s": 1.6465301951204179e-09,
+        "all_crossings_s": [
+          1.6465301951204179e-09
+        ],
+        "end_sample_V": 0.4478726660547239,
+        "end_error_LSB": 0.03781927013824157,
+        "excursion_LSB": 0.01711279660127296,
+        "peak_max_V": 0.44788138163049,
+        "peak_min_V": 0.3927874051911784,
+        "last_crossing_enters_band": true
+      },
+      {
+        "label": "78d",
+        "start_code": 8,
+        "stop_code": 7,
+        "trigger_s": 5.0000000000000004e-08,
+        "settling_time_s": 2.6394826571814535e-09,
+        "all_crossings_s": [
+          2.6394826571814535e-09
+        ],
+        "end_sample_V": 0.39576306287787605,
+        "end_error_LSB": 0.03578778449557439,
+        "excursion_LSB": 0.34316104391784463,
+        "peak_max_V": 0.4693028087203788,
+        "peak_min_V": 0.3957431636127243,
+        "last_crossing_enters_band": true
+      },
+      {
+        "label": "1516u",
+        "start_code": 15,
+        "stop_code": 16,
+        "trigger_s": 7e-08,
+        "settling_time_s": 6.917558380766129e-10,
+        "all_crossings_s": [
+          6.917558380766129e-10
+        ],
+        "end_sample_V": 0.8981482918516509,
+        "end_error_LSB": 0.03291925597065099,
+        "excursion_LSB": 0.026767509838290238,
+        "peak_max_V": 0.898152592653868,
+        "peak_min_V": 0.8422443275715962,
+        "last_crossing_enters_band": true
+      },
+      {
+        "label": "1516d",
+        "start_code": 16,
+        "stop_code": 15,
+        "trigger_s": 7.500000000000001e-08,
+        "settling_time_s": 3.0838934278507755e-09,
+        "all_crossings_s": [
+          3.0838934278507755e-09
+        ],
+        "end_sample_V": 0.8465007162024425,
+        "end_error_LSB": 0.04890162137675544,
+        "excursion_LSB": 0.8657252550591288,
+        "peak_max_V": 0.948697045597076,
+        "peak_min_V": 0.8464727303003519,
+        "last_crossing_enters_band": true
+      }
+    ],
+    "all_crossings_found": true,
+    "settling_time_s": 3.0838934278507755e-09,
+    "settling_end_error_lsb_max": 0.04890162137675544,
+    "excursion_lsb_max": 0.8657252550591288
+  },
+  "output_resistance": {
+    "run_dir": "runs/23/20260922T085318058247Z_output_resistance_refined",
+    "codes": [
+      {
+        "code": 0,
+        "unloaded_V": 8.350416454670661e-07,
+        "loaded_V": 0.004964502499866746,
+        "rout_Ohm": 992.7334916442558,
+        "direction": "inject"
+      },
+      {
+        "code": 4,
+        "unloaded_V": 0.22447478003477567,
+        "loaded_V": 0.21952153768035573,
+        "rout_Ohm": 990.6484708839868,
+        "direction": "draw"
+      },
+      {
+        "code": 15,
+        "unloaded_V": 0.8424905870542544,
+        "loaded_V": 0.8375569040627604,
+        "rout_Ohm": 986.7365982987985,
+        "direction": "draw"
+      },
+      {
+        "code": 16,
+        "unloaded_V": 0.8987618829100718,
+        "loaded_V": 0.8937925209850671,
+        "rout_Ohm": 993.8723850009267,
+        "direction": "draw"
+      },
+      {
+        "code": 28,
+        "unloaded_V": 1.5742075071390738,
+        "loaded_V": 1.569272745458326,
+        "rout_Ohm": 986.9523361495602,
+        "direction": "draw"
+      },
+      {
+        "code": 31,
+        "unloaded_V": 1.7432961667191262,
+        "loaded_V": 1.7383302007801211,
+        "rout_Ohm": 993.1931878010224,
+        "direction": "draw"
+      }
+    ],
+    "rout_max_Ohm": 993.8723850009267,
+    "rout_min_Ohm": 986.7365982987985
+  },
+  "scope": "Deterministic TT/1.8V/27C only: all32 ramp codes, all6 carry directions, all6 output-resistance codes; other PVT, local mismatch, MC and PEX excluded."
+}

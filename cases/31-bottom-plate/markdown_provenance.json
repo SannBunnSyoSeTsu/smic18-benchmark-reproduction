@@ -1,0 +1,430 @@
+{
+  "generated_at": "2026-09-29T05:26:46.077116+00:00",
+  "status": "passed",
+  "method": "Editable text/table reconstruction from delivered vector PDF using Poppler XML; every PDF text fragment accounted for; tables rendered and shape-checked; plots and exact netlist retained.",
+  "pdf": "reports/31-bottom-plate-review.pdf",
+  "pdf_sha256": "f52b37f5504fc8d32b372938ff864e52ff1c7ea704730d506de37f4910a9c07b",
+  "circuit_sha256": "aa9c00f53d8d04c120509fbc370d6ba92027551f5456a404845071ffbf3ff2ec",
+  "results_sha256": "6f96dc4c1bb4e4af2baedc3a5ac854443f349130b9dc0f0a7d7a55dbc6851626",
+  "markdown_sha256": "7df6fc9623d220748af8744dc82e3352d5509574dc01d8b7f1ae8af71ec6ade1",
+  "body_pages": 6,
+  "tables": 5,
+  "pages": [
+    {
+      "page": 1,
+      "tables": [
+        {
+          "top": 440.0,
+          "headers": [
+            "指标",
+            "实测",
+            "原门槛",
+            "10%边界",
+            "15%边界",
+            "单位"
+          ],
+          "rows": [
+            [
+              "正输入采集误差",
+              "3.8634",
+              "≤5",
+              "≤5.5",
+              "≤5.75",
+              "mV"
+            ],
+            [
+              "负输入采集误差",
+              "3.8634",
+              "≤5",
+              "≤5.5",
+              "≤5.75",
+              "mV"
+            ],
+            [
+              "保持前正样本误差",
+              "3.85716",
+              "≤5",
+              "≤5.5",
+              "≤5.75",
+              "mV"
+            ],
+            [
+              "保持期间反向输入扰动",
+              "0.221541",
+              "≤5000",
+              "≤5500",
+              "≤5750",
+              "uV"
+            ],
+            [
+              "下一次负样本误差",
+              "3.83728",
+              "≤5",
+              "≤5.5",
+              "≤5.75",
+              "mV"
+            ],
+            [
+              "80点采样SFDR",
+              "105.934",
+              "≥80",
+              "≥79.085",
+              "≥78.588",
+              "dB"
+            ],
+            [
+              "差分基波增益误差",
+              "0.482814",
+              "≤0.5",
+              "≤0.55",
+              "≤0.575",
+              "%"
+            ],
+            [
+              "存储电荷共模偏移",
+              "18.4026",
+              "≤25",
+              "≤27.5",
+              "≤28.75",
+              "mV"
+            ],
+            [
+              "五个外部源总功耗",
+              "303.454",
+              "≤600",
+              "≤660",
+              "≤690",
+              "uW"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 75,
+      "accounted_pdf_text_fragments": 75,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 2,
+      "tables": [
+        {
+          "top": 566.0,
+          "headers": [
+            "器件角色",
+            "单位W/L (um)",
+            "初算gm/ID",
+            "LUT参考电流/uA"
+          ],
+          "rows": [
+            [
+              "MIP / MIN",
+              "10.18 / 0.18",
+              "8",
+              "400"
+            ],
+            [
+              "MCP / MCN",
+              "1.28 / 0.18",
+              "8",
+              "50"
+            ],
+            [
+              "自举NMOS单位",
+              "2.54 / 0.18",
+              "8",
+              "100"
+            ],
+            [
+              "自举PMOS单位",
+              "7.4 / 0.18",
+              "8",
+              "100"
+            ],
+            [
+              "共模板连接MTS",
+              "15.28 / 0.18",
+              "8",
+              "600"
+            ]
+          ],
+          "pdf_text_indices": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 50,
+      "accounted_pdf_text_fragments": 50,
+      "plot_text_fragments": 16
+    },
+    {
+      "page": 3,
+      "tables": [
+        {
+          "top": 916.0,
+          "headers": [
+            "时刻/ns",
+            "存储差分/V",
+            "测量意义"
+          ],
+          "rows": [
+            [
+              "7.8",
+              "0.796142842",
+              "首次正样本"
+            ],
+            [
+              "11.5",
+              "0.796142621",
+              "输入已反转但仍保持"
+            ],
+            [
+              "19.5",
+              "-0.796162722",
+              "下一拍负样本"
+            ]
+          ],
+          "pdf_text_indices": [
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 71,
+      "accounted_pdf_text_fragments": 71,
+      "plot_text_fragments": 53
+    },
+    {
+      "page": 4,
+      "tables": [
+        {
+          "top": 846.0,
+          "headers": [
+            "外部源",
+            "非负平均功率/uW"
+          ],
+          "rows": [
+            [
+              "VDD",
+              "243.185470"
+            ],
+            [
+              "VCM",
+              "21.305285"
+            ],
+            [
+              "VINP",
+              "19.073975"
+            ],
+            [
+              "VINN",
+              "19.073974"
+            ],
+            [
+              "时钟源（50 Ω之前）",
+              "0.815501"
+            ],
+            [
+              "合计",
+              "303.454205"
+            ]
+          ],
+          "pdf_text_indices": [
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 58,
+      "accounted_pdf_text_fragments": 58,
+      "plot_text_fragments": 37
+    },
+    {
+      "page": 5,
+      "tables": [
+        {
+          "top": 546.0,
+          "headers": [
+            "方案",
+            "SFDR/dB",
+            "增益误差/%",
+            "判定"
+          ],
+          "rows": [
+            [
+              "传输门基线",
+              "56.7456",
+              "0.563185",
+              "频谱失败"
+            ],
+            [
+              "未保护自举",
+              "97.0926",
+              "0.471965",
+              "MPRE |VGS|=2.893 V，撤回"
+            ],
+            [
+              "保护自举/5 ps",
+              "105.93421",
+              "0.482814",
+              "通过，作为精度对照"
+            ],
+            [
+              "保护自举/2.5 ps",
+              "105.93358",
+              "0.482814",
+              "最终结果"
+            ]
+          ],
+          "pdf_text_indices": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 48,
+      "accounted_pdf_text_fragments": 48,
+      "plot_text_fragments": 16
+    },
+    {
+      "page": 6,
+      "tables": [],
+      "total_pdf_text_fragments": 46,
+      "accounted_pdf_text_fragments": 46,
+      "plot_text_fragments": 0
+    }
+  ],
+  "assets": {
+    "markdown_assets/page-04.png": "9ef21ff96045a66c4bddc6c31090b1f7c65443b03863a5a6cc4406563c80ccb7",
+    "markdown_assets/page-02.png": "3c6584a60ae0a0ef99f5d77ca4c528bbb464395d8c24eabba4c6bbc96206fe29",
+    "markdown_assets/page-05.png": "5ce75da606cf38cb41693130fd34169532da7c3b86bc33bbfb9132659810a24c",
+    "markdown_assets/page-01.png": "df490f59733017880cf773839d35352b302247be2caa214c72b686c8e21c90a8",
+    "markdown_assets/page-06.png": "8b12ead6653d6d2997a438b46811913328426dfb8aa15487e79e57e6176d369e",
+    "markdown_assets/page-03.png": "74bfa78b81ecda6346756cfe8d3f34108e57b4efb064ff34e2f527468809373a"
+  },
+  "restored_markdown_sha256": "20e25f4fe6e95a8516e0ffa0637ebabfc5797043799a472e6344cd81e9f4175d",
+  "system_diagram_sha256": "4b80943707a40c924aa63d32c039becfc16cc77a15888b0d2f121426ffb18fe3"
+}

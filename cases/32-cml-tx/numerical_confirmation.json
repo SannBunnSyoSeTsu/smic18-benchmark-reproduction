@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-09-26T05:57:09.682753+00:00",
+  "circuit_sha256": "4a3d75102319b904cbe4a9aabfdb373e34eb42a70c57c37fb97fb94aa7c29b91",
+  "baseline_groups": {
+    "static": "runs/32/20260926T055452603702Z_static",
+    "ac": "runs/32/20260926T055453225726Z_ac",
+    "prbs7": "runs/32/20260926T055532141304Z_prbs7",
+    "sensitivity": "runs/32/20260926T055534954087Z_sensitivity"
+  },
+  "final_groups": {
+    "static": "runs/32/20260926T055452603702Z_static",
+    "ac": "runs/32/20260926T055453225726Z_ac",
+    "prbs7": "runs/32/20260926T055659951988Z_prbs7",
+    "sensitivity": "runs/32/20260926T055704923326Z_sensitivity"
+  },
+  "metrics": {
+    "prbs_eye_height_v": {
+      "baseline": 0.33890120367450566,
+      "refined": 0.33894947250284124,
+      "absolute_difference": 4.826882833558477e-05,
+      "maximum_difference": 0.0005,
+      "passed": true
+    },
+    "sens_swing_v": {
+      "baseline": 0.22807724286904615,
+      "refined": 0.22810732133854383,
+      "absolute_difference": 3.0078469497679672e-05,
+      "maximum_difference": 0.0005,
+      "passed": true
+    },
+    "prbs_jitter_pp_s": {
+      "baseline": 2.6076424676618366e-13,
+      "refined": 2.6057331178385896e-13,
+      "absolute_difference": 1.9093498232470605e-16,
+      "maximum_difference": 5e-14,
+      "passed": true
+    },
+    "prbs_jitter_rms_s": {
+      "baseline": 1.253054451615611e-13,
+      "refined": 1.25149435896148e-13,
+      "absolute_difference": 1.5600926541309892e-16,
+      "maximum_difference": 5e-14,
+      "passed": true
+    },
+    "prbs_dcd_s": {
+      "baseline": 3.863385835363118e-15,
+      "refined": 3.856518298834525e-15,
+      "absolute_difference": 6.8675365285928364e-18,
+      "maximum_difference": 5e-14,
+      "passed": true
+    },
+    "prbs_rise_time_s": {
+      "baseline": 9.791299794885083e-12,
+      "refined": 9.792845901645046e-12,
+      "absolute_difference": 1.5461067599630095e-15,
+      "maximum_difference": 5e-14,
+      "passed": true
+    },
+    "prbs_fall_time_s": {
+      "baseline": 9.791662550439547e-12,
+      "refined": 9.793200337449996e-12,
+      "absolute_difference": 1.5377870104491757e-15,
+      "maximum_difference": 5e-14,
+      "passed": true
+    },
+    "sens_rise_time_s": {
+      "baseline": 7.740269443113814e-12,
+      "refined": 7.742050436700542e-12,
+      "absolute_difference": 1.780993586727135e-15,
+      "maximum_difference": 5e-14,
+      "passed": true
+    },
+    "sens_fall_time_s": {
+      "baseline": 7.740920605802244e-12,
+      "refined": 7.74270130359725e-12,
+      "absolute_difference": 1.780697795005097e-15,
+      "maximum_difference": 5e-14,
+      "passed": true
+    },
+    "time_weighted_power_w": {
+      "baseline": 0.03385934453621713,
+      "refined": 0.033859339282411485,
+      "absolute_difference": 5.2538056474760175e-09,
+      "maximum_difference": 5e-05,
+      "passed": true
+    }
+  },
+  "baseline_tier": "complete_10pct",
+  "refined_tier": "complete_10pct",
+  "passed": true
+}

@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-09-26T06:21:43.961096+00:00",
+  "parameters": {
+    "current_ma": 3,
+    "gmid": 14,
+    "cas_gmid": 10,
+    "lg_series": 3,
+    "ls_parallel": 6,
+    "ld_series": 2,
+    "cout_pf": 0.655,
+    "cmatch_pf": 1.5874,
+    "cin_pf": 5.4,
+    "damp_l_um": 0
+  },
+  "roles": {
+    "input": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 4.297135413059381,
+      "Id_A": 5e-05,
+      "Vgs_V": 0.5455301271623697,
+      "Vov_V": 0.06951375588676255,
+      "gmid": 14.0,
+      "gm_S": 0.0007,
+      "ft_Hz": 15384756981.146069,
+      "gmro": 41.87527947724478,
+      "id_w_Apm": 11.635658454710434,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.9,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 570
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L180nm_VDS0p900.json",
+      "lut_sha256": "62e4cceb85cc7dc8da45f8b4a3f8d0d3afa192bd08f7298ca49aecd93d26ae5c",
+      "rounded_W_um": 4.3
+    },
+    "cascode": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 1.9178113399479575,
+      "Id_A": 5e-05,
+      "Vgs_V": 0.613639128782854,
+      "Vov_V": 0.1375476852209853,
+      "gmid": 10.0,
+      "gm_S": 0.0005,
+      "ft_Hz": 23219206607.552814,
+      "gmro": 39.01762529188923,
+      "id_w_Apm": 26.071386146541826,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.9,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 570
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L180nm_VDS0p900.json",
+      "lut_sha256": "62e4cceb85cc7dc8da45f8b4a3f8d0d3afa192bd08f7298ca49aecd93d26ae5c",
+      "rounded_W_um": 1.92
+    },
+    "pmirror": {
+      "model": "p18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.36,
+      "W_um": 33.94816225830594,
+      "Id_A": 5e-05,
+      "Vgs_V": 0.5559480988605712,
+      "Vov_V": 0.1041165092291519,
+      "gmid": 14.0,
+      "gm_S": 0.0007,
+      "ft_Hz": 1186368360.7036808,
+      "gmro": 175.86656308286544,
+      "id_w_Apm": 1.4728337757890482,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "p18",
+        "polarity": "pmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.36,
+        "vds_V": 0.9,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 633
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/p18_L360nm_VDS0p900.json",
+      "lut_sha256": "bc81c2b979738429cc204f05431c84272cb8af85b8e67b9b0116852775c5b01c",
+      "rounded_W_um": 33.94
+    }
+  },
+  "circuit_sha256": "dfceb74aacbcd14aeab9a680577996f67fbf2ffc8c7b4e321f7d3658b3ace2c5",
+  "native_spiral": {
+    "radius_um": 60,
+    "turns": 3.5,
+    "width_um": 8,
+    "spacing_um": 1.5,
+    "unit_series_L_H": 3.1389750000000007e-09,
+    "unit_series_R_ohm": 3.7030115,
+    "gate_series": 3,
+    "source_parallel": 6,
+    "drain_series": 2
+  },
+  "native_mim": {
+    "unit_max_area_um2": 900,
+    "width_um": 30,
+    "capacitors": {
+      "CIN": {
+        "nodes": [
+          "rfin",
+          "nin"
+        ],
+        "target_pF": 5.4,
+        "instances": 6
+      },
+      "CBN": {
+        "nodes": [
+          "iref",
+          "vss"
+        ],
+        "target_pF": 5.4,
+        "instances": 6
+      },
+      "CBC": {
+        "nodes": [
+          "vcas",
+          "vss"
+        ],
+        "target_pF": 3.6,
+        "instances": 4
+      },
+      "COUT": {
+        "nodes": [
+          "nd",
+          "rfout"
+        ],
+        "target_pF": 0.655,
+        "instances": 1
+      },
+      "CMATCH": {
+        "nodes": [
+          "rfout",
+          "vss"
+        ],
+        "target_pF": 1.5874,
+        "instances": 2
+      }
+    }
+  },
+  "rf_model_files": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_rf_v1p5_spe.lib": "9918321a9113c99a2f7899bdffe160ff5782529df15a643d965936e62e732062",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_rf_v1p5_spri_ind_spe.ckt": "88c3b02e8429e0bee60366127195188411d6d6f7ca455af8881242d99b0c824f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_rf_v1p5_mim_spe.ckt": "a8ecb31749604d07917c23ba9edbd21be1b5d5c336b3d2366b732be06594560e"
+  },
+  "rationale": "InputgmID sets gm/noise/capacitance; sourceL targets gmLs/Cgs near50ohm, gateL resonatesCgs. Cascode and replica stack isolateoutput and preserveheadroom; outputcapacitive transformation matches finiteQdrainload to50ohm. All spirals use documented original r60/n3.5 geometry; no modified equivalent devices."
+}

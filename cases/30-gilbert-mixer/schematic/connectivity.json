@@ -1,0 +1,2845 @@
+{
+  "generated_at": "2026-09-28T18:40:27.338357+00:00",
+  "circuit_sha256": "e405fd9038a74aff43c984389a5b0cdfbc7eb96bc6f992c541b4bea568d89879",
+  "top": "gilbert_mixer",
+  "subcircuit_ports": {
+    "gilbert_mixer": [
+      "vss",
+      "iref",
+      "vdd",
+      "lop",
+      "lon",
+      "rfp",
+      "rfn",
+      "ifoutp",
+      "ifoutn"
+    ]
+  },
+  "instances": {
+    "gilbert_mixer/MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "51.64u",
+        "l": "1u"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=51.64u l=1u",
+      "W_unit_um": 51.64,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        6,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          6,
+          8
+        ],
+        "S": [
+          6,
+          6
+        ],
+        "G": [
+          4.45,
+          7
+        ],
+        "B": [
+          6.86,
+          7
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/MTAILP": {
+      "name": "MTAILP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "stp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "51.64u",
+        "l": "1u",
+        "m": "6.5"
+      },
+      "source_line": "MTAILP (stp iref vss vss) n18 w=51.64u l=1u m=6.5",
+      "W_unit_um": 51.64,
+      "L_um": 1.0,
+      "m": 6.5,
+      "sheet": 1,
+      "origin": [
+        19,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          19,
+          8
+        ],
+        "S": [
+          19,
+          6
+        ],
+        "G": [
+          17.45,
+          7
+        ],
+        "B": [
+          19.86,
+          7
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/MTAILN": {
+      "name": "MTAILN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "stn",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "51.64u",
+        "l": "1u",
+        "m": "6.5"
+      },
+      "source_line": "MTAILN (stn iref vss vss) n18 w=51.64u l=1u m=6.5",
+      "W_unit_um": 51.64,
+      "L_um": 1.0,
+      "m": 6.5,
+      "sheet": 1,
+      "origin": [
+        36,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          8
+        ],
+        "S": [
+          36,
+          6
+        ],
+        "G": [
+          34.45,
+          7
+        ],
+        "B": [
+          36.86,
+          7
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/MRFP": {
+      "name": "MRFP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "drfp",
+        "G": "rfp",
+        "S": "stp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.02u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MRFP (drfp rfp stp vss) n18 w=3.02u l=.18u m=6.5",
+      "W_unit_um": 3.02,
+      "L_um": 0.18,
+      "m": 6.5,
+      "sheet": 1,
+      "origin": [
+        19,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          19,
+          20
+        ],
+        "S": [
+          19,
+          18
+        ],
+        "G": [
+          17.45,
+          19
+        ],
+        "B": [
+          19.86,
+          19
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/MRFN": {
+      "name": "MRFN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "drfn",
+        "G": "rfn",
+        "S": "stn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.02u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MRFN (drfn rfn stn vss) n18 w=3.02u l=.18u m=6.5",
+      "W_unit_um": 3.02,
+      "L_um": 0.18,
+      "m": 6.5,
+      "sheet": 1,
+      "origin": [
+        36,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          20
+        ],
+        "S": [
+          36,
+          18
+        ],
+        "G": [
+          34.45,
+          19
+        ],
+        "B": [
+          36.86,
+          19
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/CBIAS": {
+      "name": "CBIAS",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBIAS (iref vss) capacitor c=1p",
+      "value_SI": 1e-12,
+      "sheet": 1,
+      "origin": [
+        12,
+        18
+      ],
+      "rendered_pins": {
+        "1": [
+          12,
+          18.82
+        ],
+        "2": [
+          12,
+          17.18
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/RDEG": {
+      "name": "RDEG",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "stp",
+        "2": "stn"
+      },
+      "parameters": {
+        "r": "650"
+      },
+      "source_line": "RDEG (stp stn) resistor r=650",
+      "value_SI": 650.0,
+      "sheet": 1,
+      "origin": [
+        27,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          26.18,
+          13
+        ],
+        "2": [
+          27.82,
+          13
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/MQ1": {
+      "name": "MQ1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ifoutp",
+        "G": "lop",
+        "S": "drfp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "11.52u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MQ1 (ifoutp lop drfp vss) n18 w=11.52u l=.18u m=6.5",
+      "W_unit_um": 11.52,
+      "L_um": 0.18,
+      "m": 6.5,
+      "sheet": 2,
+      "origin": [
+        5,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          13
+        ],
+        "S": [
+          5,
+          11
+        ],
+        "G": [
+          3.45,
+          12
+        ],
+        "B": [
+          5.86,
+          12
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/MQ2": {
+      "name": "MQ2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ifoutn",
+        "G": "lon",
+        "S": "drfp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "11.52u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MQ2 (ifoutn lon drfp vss) n18 w=11.52u l=.18u m=6.5",
+      "W_unit_um": 11.52,
+      "L_um": 0.18,
+      "m": 6.5,
+      "sheet": 2,
+      "origin": [
+        16,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          16,
+          13
+        ],
+        "S": [
+          16,
+          11
+        ],
+        "G": [
+          14.45,
+          12
+        ],
+        "B": [
+          16.86,
+          12
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/MQ3": {
+      "name": "MQ3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ifoutn",
+        "G": "lop",
+        "S": "drfn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "11.52u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MQ3 (ifoutn lop drfn vss) n18 w=11.52u l=.18u m=6.5",
+      "W_unit_um": 11.52,
+      "L_um": 0.18,
+      "m": 6.5,
+      "sheet": 2,
+      "origin": [
+        27,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          13
+        ],
+        "S": [
+          27,
+          11
+        ],
+        "G": [
+          25.45,
+          12
+        ],
+        "B": [
+          27.86,
+          12
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/MQ4": {
+      "name": "MQ4",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ifoutp",
+        "G": "lon",
+        "S": "drfn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "11.52u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MQ4 (ifoutp lon drfn vss) n18 w=11.52u l=.18u m=6.5",
+      "W_unit_um": 11.52,
+      "L_um": 0.18,
+      "m": 6.5,
+      "sheet": 2,
+      "origin": [
+        38,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          38,
+          13
+        ],
+        "S": [
+          38,
+          11
+        ],
+        "G": [
+          36.45,
+          12
+        ],
+        "B": [
+          38.86,
+          12
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/RLP": {
+      "name": "RLP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "ifoutp"
+      },
+      "parameters": {
+        "r": "3300"
+      },
+      "source_line": "RLP (vdd ifoutp) resistor r=3300",
+      "value_SI": 3300.0,
+      "sheet": 2,
+      "origin": [
+        10,
+        22
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          22.82
+        ],
+        "2": [
+          10,
+          21.18
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/RLN": {
+      "name": "RLN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "ifoutn"
+      },
+      "parameters": {
+        "r": "3300"
+      },
+      "source_line": "RLN (vdd ifoutn) resistor r=3300",
+      "value_SI": 3300.0,
+      "sheet": 2,
+      "origin": [
+        32,
+        22
+      ],
+      "rendered_pins": {
+        "1": [
+          32,
+          22.82
+        ],
+        "2": [
+          32,
+          21.18
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/COUTP": {
+      "name": "COUTP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "ifoutp",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "75f"
+      },
+      "source_line": "COUTP (ifoutp vss) capacitor c=75f",
+      "value_SI": 7.500000000000001e-14,
+      "sheet": 2,
+      "origin": [
+        10,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          5.82
+        ],
+        "2": [
+          10,
+          4.18
+        ]
+      },
+      "block": "gilbert_mixer"
+    },
+    "gilbert_mixer/COUTN": {
+      "name": "COUTN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "ifoutn",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "75f"
+      },
+      "source_line": "COUTN (ifoutn vss) capacitor c=75f",
+      "value_SI": 7.500000000000001e-14,
+      "sheet": 2,
+      "origin": [
+        32,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          32,
+          5.82
+        ],
+        "2": [
+          32,
+          4.18
+        ]
+      },
+      "block": "gilbert_mixer"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "51.64u",
+        "l": "1u"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=51.64u l=1u",
+      "W_unit_um": 51.64,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "gilbert_mixer/MREF",
+      "path": "MREF"
+    },
+    "MTAILP": {
+      "name": "MTAILP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "stp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "51.64u",
+        "l": "1u",
+        "m": "6.5"
+      },
+      "source_line": "MTAILP (stp iref vss vss) n18 w=51.64u l=1u m=6.5",
+      "W_unit_um": 51.64,
+      "L_um": 1.0,
+      "m": 6.5,
+      "definition": "gilbert_mixer/MTAILP",
+      "path": "MTAILP"
+    },
+    "MTAILN": {
+      "name": "MTAILN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "stn",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "51.64u",
+        "l": "1u",
+        "m": "6.5"
+      },
+      "source_line": "MTAILN (stn iref vss vss) n18 w=51.64u l=1u m=6.5",
+      "W_unit_um": 51.64,
+      "L_um": 1.0,
+      "m": 6.5,
+      "definition": "gilbert_mixer/MTAILN",
+      "path": "MTAILN"
+    },
+    "CBIAS": {
+      "name": "CBIAS",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBIAS (iref vss) capacitor c=1p",
+      "value_SI": 1e-12,
+      "definition": "gilbert_mixer/CBIAS",
+      "path": "CBIAS"
+    },
+    "MRFP": {
+      "name": "MRFP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "drfp",
+        "G": "rfp",
+        "S": "stp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.02u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MRFP (drfp rfp stp vss) n18 w=3.02u l=.18u m=6.5",
+      "W_unit_um": 3.02,
+      "L_um": 0.18,
+      "m": 6.5,
+      "definition": "gilbert_mixer/MRFP",
+      "path": "MRFP"
+    },
+    "MRFN": {
+      "name": "MRFN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "drfn",
+        "G": "rfn",
+        "S": "stn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.02u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MRFN (drfn rfn stn vss) n18 w=3.02u l=.18u m=6.5",
+      "W_unit_um": 3.02,
+      "L_um": 0.18,
+      "m": 6.5,
+      "definition": "gilbert_mixer/MRFN",
+      "path": "MRFN"
+    },
+    "RDEG": {
+      "name": "RDEG",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "stp",
+        "2": "stn"
+      },
+      "parameters": {
+        "r": "650"
+      },
+      "source_line": "RDEG (stp stn) resistor r=650",
+      "value_SI": 650.0,
+      "definition": "gilbert_mixer/RDEG",
+      "path": "RDEG"
+    },
+    "MQ1": {
+      "name": "MQ1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ifoutp",
+        "G": "lop",
+        "S": "drfp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "11.52u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MQ1 (ifoutp lop drfp vss) n18 w=11.52u l=.18u m=6.5",
+      "W_unit_um": 11.52,
+      "L_um": 0.18,
+      "m": 6.5,
+      "definition": "gilbert_mixer/MQ1",
+      "path": "MQ1"
+    },
+    "MQ2": {
+      "name": "MQ2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ifoutn",
+        "G": "lon",
+        "S": "drfp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "11.52u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MQ2 (ifoutn lon drfp vss) n18 w=11.52u l=.18u m=6.5",
+      "W_unit_um": 11.52,
+      "L_um": 0.18,
+      "m": 6.5,
+      "definition": "gilbert_mixer/MQ2",
+      "path": "MQ2"
+    },
+    "MQ3": {
+      "name": "MQ3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ifoutn",
+        "G": "lop",
+        "S": "drfn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "11.52u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MQ3 (ifoutn lop drfn vss) n18 w=11.52u l=.18u m=6.5",
+      "W_unit_um": 11.52,
+      "L_um": 0.18,
+      "m": 6.5,
+      "definition": "gilbert_mixer/MQ3",
+      "path": "MQ3"
+    },
+    "MQ4": {
+      "name": "MQ4",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ifoutp",
+        "G": "lon",
+        "S": "drfn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "11.52u",
+        "l": ".18u",
+        "m": "6.5"
+      },
+      "source_line": "MQ4 (ifoutp lon drfn vss) n18 w=11.52u l=.18u m=6.5",
+      "W_unit_um": 11.52,
+      "L_um": 0.18,
+      "m": 6.5,
+      "definition": "gilbert_mixer/MQ4",
+      "path": "MQ4"
+    },
+    "RLP": {
+      "name": "RLP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "ifoutp"
+      },
+      "parameters": {
+        "r": "3300"
+      },
+      "source_line": "RLP (vdd ifoutp) resistor r=3300",
+      "value_SI": 3300.0,
+      "definition": "gilbert_mixer/RLP",
+      "path": "RLP"
+    },
+    "RLN": {
+      "name": "RLN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "ifoutn"
+      },
+      "parameters": {
+        "r": "3300"
+      },
+      "source_line": "RLN (vdd ifoutn) resistor r=3300",
+      "value_SI": 3300.0,
+      "definition": "gilbert_mixer/RLN",
+      "path": "RLN"
+    },
+    "COUTP": {
+      "name": "COUTP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "ifoutp",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "75f"
+      },
+      "source_line": "COUTP (ifoutp vss) capacitor c=75f",
+      "value_SI": 7.500000000000001e-14,
+      "definition": "gilbert_mixer/COUTP",
+      "path": "COUTP"
+    },
+    "COUTN": {
+      "name": "COUTN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "ifoutn",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "75f"
+      },
+      "source_line": "COUTN (ifoutn vss) capacitor c=75f",
+      "value_SI": 7.500000000000001e-14,
+      "definition": "gilbert_mixer/COUTN",
+      "path": "COUTN"
+    }
+  },
+  "nets": {
+    "gilbert_mixer/iref": [
+      {
+        "instance": "gilbert_mixer/MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          6,
+          8
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          4.45,
+          7
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MTAILP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          17.45,
+          7
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MTAILN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          34.45,
+          7
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/CBIAS",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          12,
+          18.82
+        ]
+      }
+    ],
+    "gilbert_mixer/vss": [
+      {
+        "instance": "gilbert_mixer/MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          6,
+          6
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          6.86,
+          7
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MTAILP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          19,
+          6
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MTAILP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          19.86,
+          7
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MTAILN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          36,
+          6
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MTAILN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          36.86,
+          7
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MRFP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          19.86,
+          19
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MRFN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          36.86,
+          19
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/CBIAS",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          12,
+          17.18
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ1",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          5.86,
+          12
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          16.86,
+          12
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ3",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          27.86,
+          12
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ4",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          38.86,
+          12
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/COUTP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          10,
+          4.18
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/COUTN",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          32,
+          4.18
+        ]
+      }
+    ],
+    "gilbert_mixer/stp": [
+      {
+        "instance": "gilbert_mixer/MTAILP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          19,
+          8
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MRFP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          19,
+          18
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/RDEG",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          26.18,
+          13
+        ]
+      }
+    ],
+    "gilbert_mixer/stn": [
+      {
+        "instance": "gilbert_mixer/MTAILN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          36,
+          8
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MRFN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          36,
+          18
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/RDEG",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          27.82,
+          13
+        ]
+      }
+    ],
+    "gilbert_mixer/drfp": [
+      {
+        "instance": "gilbert_mixer/MRFP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          19,
+          20
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ1",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          5,
+          11
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          16,
+          11
+        ]
+      }
+    ],
+    "gilbert_mixer/rfp": [
+      {
+        "instance": "gilbert_mixer/MRFP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          17.45,
+          19
+        ]
+      }
+    ],
+    "gilbert_mixer/drfn": [
+      {
+        "instance": "gilbert_mixer/MRFN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          36,
+          20
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ3",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          27,
+          11
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ4",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          38,
+          11
+        ]
+      }
+    ],
+    "gilbert_mixer/rfn": [
+      {
+        "instance": "gilbert_mixer/MRFN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          34.45,
+          19
+        ]
+      }
+    ],
+    "gilbert_mixer/ifoutp": [
+      {
+        "instance": "gilbert_mixer/MQ1",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          5,
+          13
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ4",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          38,
+          13
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/RLP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          10,
+          21.18
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/COUTP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          10,
+          5.82
+        ]
+      }
+    ],
+    "gilbert_mixer/lop": [
+      {
+        "instance": "gilbert_mixer/MQ1",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          3.45,
+          12
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ3",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          25.45,
+          12
+        ]
+      }
+    ],
+    "gilbert_mixer/ifoutn": [
+      {
+        "instance": "gilbert_mixer/MQ2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          16,
+          13
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ3",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          27,
+          13
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/RLN",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          32,
+          21.18
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/COUTN",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          32,
+          5.82
+        ]
+      }
+    ],
+    "gilbert_mixer/lon": [
+      {
+        "instance": "gilbert_mixer/MQ2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          14.45,
+          12
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/MQ4",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          36.45,
+          12
+        ]
+      }
+    ],
+    "gilbert_mixer/vdd": [
+      {
+        "instance": "gilbert_mixer/RLP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          10,
+          22.82
+        ]
+      },
+      {
+        "instance": "gilbert_mixer/RLN",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          32,
+          22.82
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAILP",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAILP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAILN",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAILN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRFP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRFN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBIAS",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAILN",
+      "pin": "D",
+      "net": "stn",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRFN",
+      "pin": "S",
+      "net": "stn",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "RDEG",
+      "pin": "2",
+      "net": "stn",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRFP",
+      "pin": "D",
+      "net": "drfp",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAILP",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAILN",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBIAS",
+      "pin": "1",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAILP",
+      "pin": "D",
+      "net": "stp",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRFP",
+      "pin": "S",
+      "net": "stp",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "RDEG",
+      "pin": "1",
+      "net": "stp",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRFN",
+      "pin": "G",
+      "net": "rfn",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRFN",
+      "pin": "D",
+      "net": "drfn",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRFP",
+      "pin": "G",
+      "net": "rfp",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ2",
+      "pin": "G",
+      "net": "lon",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ4",
+      "pin": "G",
+      "net": "lon",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ3",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ4",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "COUTP",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "COUTN",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ1",
+      "pin": "D",
+      "net": "ifoutp",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ4",
+      "pin": "D",
+      "net": "ifoutp",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "RLP",
+      "pin": "2",
+      "net": "ifoutp",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "COUTP",
+      "pin": "1",
+      "net": "ifoutp",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ1",
+      "pin": "S",
+      "net": "drfp",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ2",
+      "pin": "S",
+      "net": "drfp",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ1",
+      "pin": "G",
+      "net": "lop",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ3",
+      "pin": "G",
+      "net": "lop",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ2",
+      "pin": "D",
+      "net": "ifoutn",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ3",
+      "pin": "D",
+      "net": "ifoutn",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "RLN",
+      "pin": "2",
+      "net": "ifoutn",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "COUTN",
+      "pin": "1",
+      "net": "ifoutn",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ3",
+      "pin": "S",
+      "net": "drfn",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "MQ4",
+      "pin": "S",
+      "net": "drfn",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "RLP",
+      "pin": "1",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    },
+    {
+      "sheet": 2,
+      "instance": "RLN",
+      "pin": "1",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "gilbert_mixer"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "gilbert_mixer",
+      "title": "偏置镜、RF跨导与源极退化",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              6.86,
+              7
+            ],
+            [
+              7.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              19.86,
+              7
+            ],
+            [
+              20.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.86,
+              7
+            ],
+            [
+              37.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              19.86,
+              19
+            ],
+            [
+              20.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.86,
+              19
+            ],
+            [
+              37.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              12,
+              18.82
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              2,
+              21
+            ],
+            [
+              2,
+              10
+            ],
+            [
+              6,
+              10
+            ],
+            [
+              6,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "stp",
+          "points": [
+            [
+              19,
+              18
+            ],
+            [
+              19,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "stn",
+          "points": [
+            [
+              36,
+              18
+            ],
+            [
+              36,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "stp",
+          "points": [
+            [
+              26.18,
+              13
+            ],
+            [
+              19,
+              13
+            ],
+            [
+              19,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "stn",
+          "points": [
+            [
+              27.82,
+              13
+            ],
+            [
+              36,
+              13
+            ],
+            [
+              36,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              6,
+              2
+            ],
+            [
+              36,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              6,
+              6
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36,
+              6
+            ],
+            [
+              36,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12,
+              17.18
+            ],
+            [
+              12,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              4.45,
+              7
+            ],
+            [
+              3.95,
+              7
+            ],
+            [
+              3.95,
+              9.2
+            ],
+            [
+              6,
+              9.2
+            ],
+            [
+              6,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              17.45,
+              7
+            ],
+            [
+              16.9,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              34.45,
+              7
+            ],
+            [
+              33.900000000000006,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "drfp",
+          "points": [
+            [
+              19,
+              20
+            ],
+            [
+              19,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfp",
+          "points": [
+            [
+              17.45,
+              19
+            ],
+            [
+              16.9,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "drfn",
+          "points": [
+            [
+              36,
+              20
+            ],
+            [
+              36,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfn",
+          "points": [
+            [
+              34.45,
+              19
+            ],
+            [
+              33.900000000000006,
+              19
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            7.15,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.15,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.15,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "iref",
+          "point": [
+            12.0,
+            19.91
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "stp",
+          "point": [
+            19.0,
+            13.0
+          ],
+          "text": "stp",
+          "body": false
+        },
+        {
+          "net": "stn",
+          "point": [
+            36.0,
+            13.0
+          ],
+          "text": "stn",
+          "body": false
+        },
+        {
+          "net": "stp",
+          "point": [
+            22.59,
+            13.0
+          ],
+          "text": "stp",
+          "body": false
+        },
+        {
+          "net": "stn",
+          "point": [
+            31.91,
+            13.0
+          ],
+          "text": "stn",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            6,
+            2
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            5,
+            9.2
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            16.9,
+            7
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            33.900000000000006,
+            7
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "drfp",
+          "point": [
+            19,
+            20.64
+          ],
+          "text": "drfp",
+          "body": false
+        },
+        {
+          "net": "rfp",
+          "point": [
+            16.9,
+            19
+          ],
+          "text": "rfp",
+          "body": false
+        },
+        {
+          "net": "drfn",
+          "point": [
+            36,
+            20.64
+          ],
+          "text": "drfn",
+          "body": false
+        },
+        {
+          "net": "rfn",
+          "point": [
+            33.900000000000006,
+            19
+          ],
+          "text": "rfn",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "gilbert_mixer",
+      "title": "LO四管换向、负载与输出电容",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.86,
+              12
+            ],
+            [
+              6.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              16.86,
+              12
+            ],
+            [
+              17.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27.86,
+              12
+            ],
+            [
+              28.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.86,
+              12
+            ],
+            [
+              39.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "drfp",
+          "points": [
+            [
+              5,
+              9
+            ],
+            [
+              16,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "drfp",
+          "points": [
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "drfp",
+          "points": [
+            [
+              16,
+              11
+            ],
+            [
+              16,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "drfn",
+          "points": [
+            [
+              27,
+              8
+            ],
+            [
+              38,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "drfn",
+          "points": [
+            [
+              27,
+              11
+            ],
+            [
+              27,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "drfn",
+          "points": [
+            [
+              38,
+              11
+            ],
+            [
+              38,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ifoutp",
+          "points": [
+            [
+              5,
+              19
+            ],
+            [
+              38,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ifoutp",
+          "points": [
+            [
+              10,
+              21.18
+            ],
+            [
+              10,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ifoutp",
+          "points": [
+            [
+              5,
+              13
+            ],
+            [
+              5,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ifoutp",
+          "points": [
+            [
+              38,
+              13
+            ],
+            [
+              38,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ifoutn",
+          "points": [
+            [
+              16,
+              16
+            ],
+            [
+              32,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ifoutn",
+          "points": [
+            [
+              32,
+              21.18
+            ],
+            [
+              32,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ifoutn",
+          "points": [
+            [
+              16,
+              13
+            ],
+            [
+              16,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ifoutn",
+          "points": [
+            [
+              27,
+              13
+            ],
+            [
+              27,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10,
+              25
+            ],
+            [
+              32,
+              25
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10,
+              22.82
+            ],
+            [
+              10,
+              25
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              32,
+              22.82
+            ],
+            [
+              32,
+              25
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              2
+            ],
+            [
+              32,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              4.18
+            ],
+            [
+              10,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              32,
+              4.18
+            ],
+            [
+              32,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "lop",
+          "points": [
+            [
+              3.45,
+              12
+            ],
+            [
+              2.9000000000000004,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "lon",
+          "points": [
+            [
+              14.45,
+              12
+            ],
+            [
+              13.899999999999999,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "lop",
+          "points": [
+            [
+              25.45,
+              12
+            ],
+            [
+              24.9,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "lon",
+          "points": [
+            [
+              36.45,
+              12
+            ],
+            [
+              35.900000000000006,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ifoutp",
+          "points": [
+            [
+              10,
+              5.82
+            ],
+            [
+              10,
+              6.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ifoutn",
+          "points": [
+            [
+              32,
+              5.82
+            ],
+            [
+              32,
+              6.46
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            6.15,
+            12
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            17.15,
+            12
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            28.15,
+            12
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            39.15,
+            12
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "drfp",
+          "point": [
+            5,
+            9
+          ],
+          "text": "drfp",
+          "body": false
+        },
+        {
+          "net": "drfn",
+          "point": [
+            27,
+            8
+          ],
+          "text": "drfn",
+          "body": false
+        },
+        {
+          "net": "ifoutp",
+          "point": [
+            5,
+            19
+          ],
+          "text": "ifoutp",
+          "body": false
+        },
+        {
+          "net": "ifoutn",
+          "point": [
+            16,
+            16
+          ],
+          "text": "ifoutn",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            10,
+            25
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            10,
+            2
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "lop",
+          "point": [
+            2.9000000000000004,
+            12
+          ],
+          "text": "lop",
+          "body": false
+        },
+        {
+          "net": "lon",
+          "point": [
+            13.899999999999999,
+            12
+          ],
+          "text": "lon",
+          "body": false
+        },
+        {
+          "net": "lop",
+          "point": [
+            24.9,
+            12
+          ],
+          "text": "lop",
+          "body": false
+        },
+        {
+          "net": "lon",
+          "point": [
+            35.900000000000006,
+            12
+          ],
+          "text": "lon",
+          "body": false
+        },
+        {
+          "net": "ifoutp",
+          "point": [
+            10,
+            6.46
+          ],
+          "text": "ifoutp",
+          "body": false
+        },
+        {
+          "net": "ifoutn",
+          "point": [
+            32,
+            6.46
+          ],
+          "text": "ifoutn",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [
+    {
+      "sheet": 2,
+      "nets": [
+        "ifoutp",
+        "ifoutn"
+      ],
+      "point": [
+        32,
+        19
+      ],
+      "junction": false
+    }
+  ],
+  "unused_ports": {
+    "gilbert_mixer": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

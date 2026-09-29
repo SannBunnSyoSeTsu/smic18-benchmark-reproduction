@@ -1,0 +1,121 @@
+{
+  "source_task": "sky130-low-power-line-driver-pvt",
+  "scope": "Matched SMIC18 TT/1.8V/27C nominal only; remaining44PVTpoints excluded, not passed.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 5e-05,
+  "reference_V": 0.9,
+  "pin_order": [
+    "vss",
+    "iref",
+    "vdd",
+    "vinn",
+    "vinp",
+    "vout"
+  ],
+  "feedback_ohm": [
+    10000,
+    10000
+  ],
+  "load": {
+    "coupling_F": 1e-06,
+    "line_ohm": 300,
+    "output_F": 2e-10
+  },
+  "loop": {
+    "frequency_Hz": [
+      1,
+      1000000000.0
+    ],
+    "points_per_decade": 60,
+    "probe": "seriesVTEST fbv-vout DC0 AC1",
+    "return_ratio": "-V(vout)/V(fbv)"
+  },
+  "thd": {
+    "input_offset_V": 0.9,
+    "input_amplitude_V": 0.6,
+    "frequency_Hz": 20000.0,
+    "stop_s": 0.0004,
+    "window_s": [
+      0.0002,
+      0.0004
+    ],
+    "samples": 2048,
+    "harmonics": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "sample_endpoint": false,
+    "peak_current": "max(-I_VDD) over200..400us",
+    "drive_ratio": "peak_VDD_current / (quiescent_VDD_power/1.8)"
+  },
+  "swing": {
+    "input_start_V": 0.1,
+    "input_stop_V": 1.7,
+    "input_step_V": 0.002,
+    "desired": "1.8-input",
+    "tracking_tolerance_V": 0.02,
+    "range": "contiguous commanded span around0.9V; nearest failing point each side bounds segment; discrete accepted endpoints, no interpolation"
+  },
+  "limits": {
+    "loop_gain_10hz_db": {
+      "value": 40,
+      "sense": "min",
+      "unit": "dB"
+    },
+    "ugb_hz": {
+      "value": 500000.0,
+      "sense": "min",
+      "unit": "Hz"
+    },
+    "phase_margin_deg": {
+      "value": 60,
+      "sense": "min",
+      "unit": "deg"
+    },
+    "output_offset_v": {
+      "value": 0.02,
+      "sense": "max",
+      "unit": "V"
+    },
+    "power_w": {
+      "value": 0.0004,
+      "sense": "max",
+      "unit": "W"
+    },
+    "thd_pct": {
+      "value": 3,
+      "sense": "max",
+      "unit": "%"
+    },
+    "fundamental_v": {
+      "value": 0.55,
+      "sense": "min",
+      "unit": "V"
+    },
+    "peak_supply_current_a": {
+      "value": 0.002,
+      "sense": "min",
+      "unit": "A"
+    },
+    "drive_ratio": {
+      "value": 10,
+      "sense": "min",
+      "unit": "ratio"
+    },
+    "closed_loop_range_vpp": {
+      "value": 1.5,
+      "sense": "min",
+      "unit": "Vpp"
+    }
+  },
+  "allowed_DUT": "native n18/p18 and positive idealR/C; no sources/behavioral elements",
+  "acceptance_policy": "/home/IC/CodeX/smic18_benchmark_repro/contracts/acceptance-policy.md"
+}

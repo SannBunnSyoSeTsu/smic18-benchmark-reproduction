@@ -1,0 +1,100 @@
+{
+  "source_task": "sky130-fully-differential-ota-c-biquad-pvt",
+  "scope": "SMIC18 TT1.8V27C completeAC/noise/threeamplitude-frequencyTHD/CMstep. Other24ACnoise PVT and2dynamicstressconditions excluded.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "bias_A": 2e-05,
+  "VCM_V": 0.9,
+  "probe_load_each_F": 2.5e-13,
+  "ac_Hz": [
+    1000.0,
+    100000000.0
+  ],
+  "fit_Hz": [
+    1000.0,
+    8000000.0
+  ],
+  "original_ac_dec": 100,
+  "noise_Hz": [
+    1000.0,
+    4000000.0
+  ],
+  "thd": {
+    "stop_s": 3e-05,
+    "cycles": 2,
+    "N": 256,
+    "harmonics": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "cases": [
+      [
+        200000.0,
+        0.6
+      ],
+      [
+        200000.0,
+        0.9
+      ],
+      [
+        2000000.0,
+        0.9
+      ]
+    ]
+  },
+  "cm_step": {
+    "start_s": 5e-06,
+    "end_s": 5.05e-06,
+    "low_V": 0.85,
+    "high_V": 0.95,
+    "band_V": 0.01,
+    "late_s": 1.2e-05,
+    "stop_s": 2e-05
+  },
+  "limits": {
+    "f0_Hz": [
+      1800000.0,
+      2200000.0
+    ],
+    "Q": [
+      0.65,
+      0.75
+    ],
+    "passgain_dB": [
+      -1,
+      1
+    ],
+    "fit_rms_dB": 0.5,
+    "stop20M_dB": 35,
+    "bp_peak_Hz": [
+      1700000.0,
+      2300000.0
+    ],
+    "bp_peak_dB": [
+      -8,
+      -5
+    ],
+    "bp_1k_rejection_dB": 18,
+    "bp_200k_20M_rejection_dB": 15,
+    "cm_error_V": 0.01,
+    "power_W": 0.0005,
+    "noise_Vrms": 0.0005,
+    "thd_dB": [
+      -45,
+      -30,
+      -45
+    ],
+    "fundamental_gain_min": [
+      0.85,
+      0.8,
+      0.5
+    ],
+    "bp_f0_thd_dB": -45,
+    "bp_f0_gain_min": 0.3,
+    "cm_settle_s": 1e-06
+  },
+  "allowed_DUT": "nativeMOS andpositiveidealR/C allowed; no behavioral orcontrolledsources",
+  "gmID": "initialtableindices; dynamicgm/ID differsunderlargeinput; allsourcebodyeffectsretained"
+}

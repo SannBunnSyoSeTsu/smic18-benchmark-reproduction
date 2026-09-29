@@ -1,0 +1,154 @@
+{
+  "audited_at": "2026-09-22T10:23:08.063730+00:00",
+  "status": "complete_original",
+  "nominal_groups": [
+    "op_ac",
+    "noise",
+    "range",
+    "settling"
+  ],
+  "nominal_scalar_gates": 13,
+  "source_group_passes": {
+    "op_ac": true,
+    "noise": true,
+    "range": true,
+    "settling": true
+  },
+  "original_60analysis_PVT_signoff_executed": false,
+  "all_41_nominal_OP_saturation": true,
+  "single_falling_crossing_no_recross": true,
+  "local_booster_diagnostics": {
+    "gpc": {
+      "gain_db": 35.744291289756056,
+      "ugb_hz": 9031569.087510293,
+      "phase_margin_deg": 88.69021106221236,
+      "falling_crossings": 1,
+      "run_dir": "runs/50/20260922T100839104170Z_gpc_stb",
+      "post_first_crossing_gain_db_max": -0.08487932014309352,
+      "op_output_difference_V": 1.1992518089698478e-11,
+      "probe": "X.PL between gpc and gpc_gate, main unity feedback intact",
+      "min_PM_deg": 45,
+      "passes": true,
+      "spectre_native_phase_margin_deg": 88.6903,
+      "native_PM_difference_deg": 8.893778763763294e-05,
+      "log_sha256": "62d8715645742f50a022bebccdcbceb65512f7aca3f97383f488abab758c3e8a"
+    },
+    "gnc": {
+      "gain_db": 27.532743403696497,
+      "ugb_hz": 15301498.911260616,
+      "phase_margin_deg": 87.95119346943713,
+      "falling_crossings": 1,
+      "run_dir": "runs/50/20260922T100839271650Z_gnc_stb",
+      "post_first_crossing_gain_db_max": -0.1068459395469225,
+      "op_output_difference_V": 5.052402940464162e-12,
+      "probe": "X.PL between gnc and gnc_gate, main unity feedback intact",
+      "min_PM_deg": 45,
+      "passes": true,
+      "spectre_native_phase_margin_deg": 87.9512,
+      "native_PM_difference_deg": 6.5305628709211305e-06,
+      "log_sha256": "91f4171547e4922ecb6afd488f928282c2161fee0319c36753c23392578eccd5"
+    }
+  },
+  "source_and_lut_and_model_hashes_valid": true,
+  "run_snapshots": [
+    {
+      "group": "op_ac",
+      "run": "runs/50/20260922T100810630324Z_op_ac",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/50/20260922T100810630324Z_op_ac/output/bench.raw/dcOp.dc": "81f5d5c443cf5bf1b91758c37cae32c89b836dc353b5d8f96d1eb9eae1d46138",
+        "runs/50/20260922T100810630324Z_op_ac/output/bench.raw/ac.ac": "0fbbd97fba4763899fc6b266a7cd769ec6b0603a3339bc502cea5870f98b0e13"
+      }
+    },
+    {
+      "group": "noise",
+      "run": "runs/50/20260922T100810861742Z_noise",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/50/20260922T100810861742Z_noise/output/bench.raw/noise.noise": "3464d57dda272c0ea1b52de93bf32112d7a818302ab8476575aa93ade916de48"
+      }
+    },
+    {
+      "group": "range",
+      "run": "runs/50/20260922T100811101938Z_range",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/50/20260922T100811101938Z_range/output/bench.raw/swing.dc": "2b4f96b5e564d24667d542e477978ad6bb4368f5168ddd497af7f65d86f6356d"
+      }
+    },
+    {
+      "group": "settling",
+      "run": "runs/50/20260922T100811270078Z_settling",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/50/20260922T100811270078Z_settling/output/bench.raw/tran.tran.tran": "7467d58596d70afb2904b3703f9b51f6312579e45125bddca709175d33737ea6"
+      }
+    },
+    {
+      "group": "gpc",
+      "run": "runs/50/20260922T100839104170Z_gpc_stb",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/50/20260922T100839104170Z_gpc_stb/output/bench.raw/dcOp.dc": "a74c89dc472cf5dfc4241a7e84a7995a3b4179e27c901fc7b7af73815f093008",
+        "runs/50/20260922T100839104170Z_gpc_stb/output/bench.raw/localstb.stb": "da66ec36c45f7222b56981fda07a1c9350994d1bc116f223d9b5aba22ae21896",
+        "runs/50/20260922T100839104170Z_gpc_stb/output/bench.raw/localstb.margin.stb": "023ed52aed466985ebc4dd40f6b8753362ba1e94868692d360b658bd88e35302"
+      }
+    },
+    {
+      "group": "gnc",
+      "run": "runs/50/20260922T100839271650Z_gnc_stb",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/50/20260922T100839271650Z_gnc_stb/output/bench.raw/dcOp.dc": "83c1b26c05fb5750a2ffa0a594b0f8bf8597754c183d9b400eccbad801a4e2b0",
+        "runs/50/20260922T100839271650Z_gnc_stb/output/bench.raw/localstb.stb": "a01c86d36ab2f7575d55200078b848aeb64cdb348066fbb2980861db8360a321",
+        "runs/50/20260922T100839271650Z_gnc_stb/output/bench.raw/localstb.margin.stb": "1851294c683375cdce4db296deec24d3a5d9fe7ed1c1aa8811155ab7d5fa3df5"
+      }
+    }
+  ],
+  "supplementary_LUT": {
+    "run": "runs/50/20260922T100429951374Z_characterize_n18_L0.5",
+    "snapshot_consistent": true,
+    "model_dimensions_valid": true,
+    "PSF_sha256": "beb492034c520bfdfed4b60df21fe31c6e93b0016274758a20e1f682a989303e",
+    "table_sha256": "34b9a4d9c23d5869704f5e0c7b0273b80f632403518457834a2732b9eed13c7e"
+  },
+  "AC_points": 1001,
+  "range_points": 121,
+  "settling_samples": 4801,
+  "full_stimulus_and_windows_preserved": true,
+  "review_pdf_sha256": "382705de490826a769cf183f5da86b726652e18b50314a692dabc28d87bd4c78",
+  "review_pdf_pages": 7,
+  "all_pages_visually_reviewed": true,
+  "knowledge_sha256": "695a5202d913ce4f1965f31e46e951d2b8aac582499093e3d3e495b388b85f8c",
+  "precision_limits": {
+    "ac": "100points/decade logfrequency interpolation. At10Hz |VINN|=50.96nV for1V series injection; loaded internal ratios105.93dB and39.93dB multiply to145.86dB. Nominal high gain is not mismatch accuracy.",
+    "noise": "601points from10Hz to10MHz; trapezoidal PSD vs piecewise power-law integral differs0.0019782%.",
+    "range": "121commands at10mV spacing. Boundary interpolation only adjacent failed/qualified samples; highendpoint1.5V is scan limit.",
+    "settling": "50ps saved samples,25ps maximum internal step. Last-entry reported at first accepted sample after final excursion, from20.5ns/121.5ns, not edge-end. Mean errors use exact published5ns windows.",
+    "scope": "Only tt1.8V27C; neither other26 OP/AC/noise points nor nonnominal range/settling representatives tested. Smallest nominal MOS saturation margin61.94mV does not establish corner margin."
+  },
+  "scope": "SMIC18 tt1.8V27C; fullfour nominal groups. OtherPVT/MC/parasitics/passive variation excluded.",
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:27:46.394452+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "2bd50c5eb26a20f10d7e11c3a857716e417a47b187bcd32de1d617491ee51213",
+    "results_sha256": "f2ae49233223e59a9ef8fbbb8cc271c326a78f8e860049500917612e894147bb",
+    "previous_pdf_sha256": "382705de490826a769cf183f5da86b726652e18b50314a692dabc28d87bd4c78",
+    "current_pdf_sha256": "8f6b0ae847a00560327e0a80a696a4a411ccf33f16eb8d23c3ffca79b02861ee",
+    "schematic_audit_sha256": "38dcf698e4d23b1c416c8a47b9e3b1e2eb30d64131f10ad967ecaba42502dca5",
+    "report_pages": 11,
+    "all_merged_pages_pixel_identical_to_sources": true
+  }
+}

@@ -1,0 +1,759 @@
+{
+  "case_slot": 35,
+  "generated_at": "2026-09-22T09:22:13.589644+00:00",
+  "run_dirs": [
+    "runs/35/20260922T091831965563Z_ac",
+    "runs/35/20260922T091832170295Z_noise",
+    "runs/35/20260922T091832394130Z_range",
+    "runs/35/20260922T091832565378Z_settling",
+    "runs/35/20260922T091833569988Z_cm",
+    "runs/35/20260922T091835170616Z_rejection"
+  ],
+  "runs_by_analysis": {
+    "ac": "runs/35/20260922T091831965563Z_ac",
+    "noise": "runs/35/20260922T091832170295Z_noise",
+    "range": "runs/35/20260922T091832394130Z_range",
+    "settling": "runs/35/20260922T091832565378Z_settling",
+    "cm": "runs/35/20260922T091833569988Z_cm",
+    "rejection": "runs/35/20260922T091835170616Z_rejection"
+  },
+  "status": "complete_original",
+  "values": {
+    "gain_db": 112.41920586003552,
+    "ugb_hz": 127508171.77342741,
+    "phase_margin_deg": 68.25120358853171,
+    "cm_error_V": 0.0036382349413944803,
+    "balance_error_V": 5.4891376999322006e-09,
+    "power_W": 0.003630798365128112,
+    "input_noise_Vrms": 2.4926302539109882e-05,
+    "range_Vpp": 1.6,
+    "range_tracking_error_V": 2.0900662194289765e-06,
+    "settling_s": 9.356112588427757e-09,
+    "settling_error_fraction": 2.403257945149395e-06,
+    "cm_recovery_s": 1.4162967052748803e-08,
+    "cm_final_error_V": 0.004971101948939571
+  },
+  "gates": {
+    "gain_db": {
+      "value": 112.41920586003552,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 60.0,
+        "10pct": 59.0848501887865,
+        "15pct": 58.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "ugb_hz": {
+      "value": 127508171.77342741,
+      "unit": "Hz",
+      "sense": "min",
+      "limits": {
+        "original": 100000000.0,
+        "10pct": 90000000.0,
+        "15pct": 85000000.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "phase_margin_deg": {
+      "value": 68.25120358853171,
+      "unit": "deg",
+      "sense": "min",
+      "limits": {
+        "original": 60.0,
+        "10pct": 54.0,
+        "15pct": 51.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "cm_error_V": {
+      "value": 0.0036382349413944803,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.015,
+        "10pct": 0.0165,
+        "15pct": 0.017249999999999998
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "balance_error_V": {
+      "value": 5.4891376999322006e-09,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.0001,
+        "10pct": 0.00011000000000000002,
+        "15pct": 0.00011499999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power_W": {
+      "value": 0.003630798365128112,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "input_noise_Vrms": {
+      "value": 2.4926302539109882e-05,
+      "unit": "Vrms",
+      "sense": "max",
+      "limits": {
+        "original": 5e-05,
+        "10pct": 5.500000000000001e-05,
+        "15pct": 5.7499999999999995e-05
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "range_Vpp": {
+      "value": 1.6,
+      "unit": "Vpp",
+      "sense": "min",
+      "limits": {
+        "original": 0.8,
+        "10pct": 0.7200000000000001,
+        "15pct": 0.68
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "range_tracking_error_V": {
+      "value": 2.0900662194289765e-06,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "settling_s": {
+      "value": 9.356112588427757e-09,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 1.5e-08,
+        "10pct": 1.65e-08,
+        "15pct": 1.7249999999999996e-08
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "settling_error_fraction": {
+      "value": 2.403257945149395e-06,
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.01,
+        "10pct": 0.011000000000000001,
+        "15pct": 0.0115
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "cm_recovery_s": {
+      "value": 1.4162967052748803e-08,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 1e-07,
+        "10pct": 1.1e-07,
+        "15pct": 1.1499999999999998e-07
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "cm_final_error_V": {
+      "value": 0.004971101948939571,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.01,
+        "10pct": 0.011000000000000001,
+        "15pct": 0.0115
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "operating_point": {
+    "MREF": {
+      "ids": 4.999999948782709e-05,
+      "gm": 0.0007120283565870478,
+      "gds": 3.10761721586779e-06,
+      "vgs": 0.512184639698032,
+      "vds": 0.512184639698032,
+      "vdsat": 0.1197404496695269,
+      "region": 2.0,
+      "gmid": 14.240567277613613,
+      "gmro": 229.12357189661685,
+      "headroom_V": 0.39244419002850506
+    },
+    "MBN": {
+      "ids": 1.033744032969167e-05,
+      "gm": 0.0001461924759117353,
+      "gds": 4.383555491546817e-07,
+      "vgs": 0.512184639698032,
+      "vds": 1.19709970948749,
+      "vdsat": 0.1197450428562138,
+      "region": 2.0,
+      "gmid": 14.142038188296436,
+      "gmro": 333.50205374073784,
+      "headroom_V": 1.077354666631276
+    },
+    "MBP": {
+      "ids": -1.033751258296816e-05,
+      "gm": 0.000102001284329484,
+      "gds": 3.748610065034276e-07,
+      "vgs": -0.6029002905125096,
+      "vds": -0.6029002905125096,
+      "vdsat": -0.1764433968450356,
+      "region": 2.0,
+      "gmid": 9.86710134675327,
+      "gmro": 272.10428014617025,
+      "headroom_V": 0.42645689366747397
+    },
+    "MOBN": {
+      "ids": 1.030328798599141e-05,
+      "gm": 0.0001458401751064889,
+      "gds": 4.441306286369154e-07,
+      "vgs": 0.512184639698032,
+      "vds": 1.119651662163691,
+      "vdsat": 0.1197445164879241,
+      "region": 2.0,
+      "gmid": 14.154721803833553,
+      "gmro": 328.372252897955,
+      "headroom_V": 0.9999071456757669
+    },
+    "MOBP": {
+      "ids": -1.030331820453847e-05,
+      "gm": 7.996809835744844e-05,
+      "gds": 7.826277895245446e-07,
+      "vgs": -0.6803483378363089,
+      "vds": -0.6803483378363089,
+      "vdsat": -0.220048587984346,
+      "region": 2.0,
+      "gmid": 7.76139266690061,
+      "gmro": 102.17896607789763,
+      "headroom_V": 0.46029974985196287
+    },
+    "MNCB": {
+      "ids": -1.043653869331186e-05,
+      "gm": 0.0001028593749092751,
+      "gds": 3.353141204873732e-07,
+      "vgs": -0.6029002905125096,
+      "vds": -0.8855573446081962,
+      "vdsat": -0.1764432913874136,
+      "region": 2.0,
+      "gmid": 9.855698132484422,
+      "gmro": 306.7552740092508,
+      "headroom_V": 0.7091140532207827
+    },
+    "MDN": {
+      "ids": 1.043653895632267e-05,
+      "gm": 0.0001437937823493841,
+      "gds": 1.424777932386994e-06,
+      "vgs": 0.6222195471943281,
+      "vds": 0.6222195471943281,
+      "vdsat": 0.1191888792209132,
+      "region": 2.0,
+      "gmid": 13.777918422109742,
+      "gmro": 100.92364506830899,
+      "headroom_V": 0.5030306679734149
+    },
+    "MDP": {
+      "ids": -1.017262889785303e-05,
+      "gm": 0.0001417953967268308,
+      "gds": 9.644375148453359e-07,
+      "vgs": -0.5576096384136675,
+      "vds": -0.5576096384136675,
+      "vdsat": -0.1266020468378135,
+      "region": 2.0,
+      "gmid": 13.938913741044583,
+      "gmro": 147.02393316747964,
+      "headroom_V": 0.431007591575854
+    },
+    "MPCB": {
+      "ids": 1.017262836454591e-05,
+      "gm": 0.0001444477911928999,
+      "gds": 4.811990894801205e-07,
+      "vgs": 0.512184639698032,
+      "vds": 0.8354851833652781,
+      "vdsat": 0.119742594514199,
+      "region": 2.0,
+      "gmid": 14.199652834692719,
+      "gmro": 300.18301021508347,
+      "headroom_V": 0.7157425888510791
+    },
+    "MTAIL": {
+      "ids": 0.0001975373966649446,
+      "gm": 0.002813246131554835,
+      "gds": 1.844295469542295e-05,
+      "vgs": 0.512184639698032,
+      "vds": 0.3453127597638819,
+      "vdsat": 0.1197394019334367,
+      "region": 2.0,
+      "gmid": 14.241587562918813,
+      "gmro": 152.53771307332917,
+      "headroom_V": 0.22557335783044524
+    },
+    "MINP": {
+      "ids": 9.876869745278983e-05,
+      "gm": 0.001798786512493584,
+      "gds": 5.347447834640978e-06,
+      "vgs": 0.554687240236118,
+      "vds": 1.052513724326896,
+      "vdsat": 0.08942246620149721,
+      "region": 2.0,
+      "gmid": 18.212111315463897,
+      "gmro": 336.38224590822074,
+      "headroom_V": 0.9630912581253989
+    },
+    "MINN": {
+      "ids": 9.876869745278738e-05,
+      "gm": 0.00179878651249355,
+      "gds": 5.347447834641332e-06,
+      "vgs": 0.554687240236118,
+      "vds": 1.052513724326432,
+      "vdsat": 0.08942246620149721,
+      "region": 2.0,
+      "gmid": 18.212111315464007,
+      "gmro": 336.3822459081921,
+      "headroom_V": 0.9630912581249348
+    },
+    "MSP": {
+      "ids": -0.0001537731320128434,
+      "gm": 0.00151677703447503,
+      "gds": 7.958027197545845e-06,
+      "vgs": -0.6029002905125096,
+      "vds": -0.4021735159092221,
+      "vdsat": -0.1764434978395684,
+      "region": 2.0,
+      "gmid": 9.863732464968887,
+      "gmro": 190.59711619769092,
+      "headroom_V": 0.22573001806965373
+    },
+    "MSN": {
+      "ids": -0.0001537731320128472,
+      "gm": 0.001516777034475075,
+      "gds": 7.958027197532284e-06,
+      "vgs": -0.6029002905125096,
+      "vds": -0.4021735159096858,
+      "vdsat": -0.1764434978395684,
+      "region": 2.0,
+      "gmid": 9.863732464968937,
+      "gmro": 190.59711619802138,
+      "headroom_V": 0.22573001807011742
+    },
+    "MPCP": {
+      "ids": -5.500425426710089e-05,
+      "gm": 0.0007474882017793098,
+      "gds": 4.682844377888828e-06,
+      "vgs": -0.5623413007254998,
+      "vds": -0.7046459620929824,
+      "vdsat": -0.1300968329585647,
+      "region": 2.0,
+      "gmid": 13.589643414662145,
+      "gmro": 159.62268686714307,
+      "headroom_V": 0.5745491291344177
+    },
+    "MPCN": {
+      "ids": -5.500425426743759e-05,
+      "gm": 0.0007474882017842719,
+      "gds": 4.682844377550373e-06,
+      "vgs": -0.5623413007250362,
+      "vds": -0.7046459622388556,
+      "vdsat": -0.1300968329583218,
+      "region": 2.0,
+      "gmid": 13.589643414669172,
+      "gmro": 159.62268687973952,
+      "headroom_V": 0.5745491292805338
+    },
+    "MNCP": {
+      "ids": 5.500425452645814e-05,
+      "gm": 0.0007361089881496501,
+      "gds": 1.07092961786442e-05,
+      "vgs": 0.6273656952396494,
+      "vds": 0.4061035618456411,
+      "vdsat": 0.1228719766465501,
+      "region": 2.0,
+      "gmid": 13.38276456043172,
+      "gmro": 68.7355150021485,
+      "headroom_V": 0.28323158519909103
+    },
+    "MNCN": {
+      "ids": 5.500425452628415e-05,
+      "gm": 0.0007361089881407416,
+      "gds": 1.070929618257956e-05,
+      "vgs": 0.6273656952411493,
+      "vds": 0.4061035617008041,
+      "vdsat": 0.1228719766474864,
+      "region": 2.0,
+      "gmid": 13.382764560312095,
+      "gmro": 68.73551497605833,
+      "headroom_V": 0.2832315850533177
+    },
+    "MSINKP": {
+      "ids": 5.5004254651887e-05,
+      "gm": 0.0007508815205590816,
+      "gds": 7.049717918725887e-06,
+      "vgs": 0.5203675112701617,
+      "vds": 0.2870769601521544,
+      "vdsat": 0.1253316744425239,
+      "region": 2.0,
+      "gmid": 13.651335252359821,
+      "gmro": 106.51227881963116,
+      "headroom_V": 0.16174528570963048
+    },
+    "MSINKN": {
+      "ids": 5.500425465187644e-05,
+      "gm": 0.0007508815205588988,
+      "gds": 7.049717918794429e-06,
+      "vgs": 0.5203675112701617,
+      "vds": 0.2870769601506546,
+      "vdsat": 0.1253316744425239,
+      "region": 2.0,
+      "gmid": 13.651335252359118,
+      "gmro": 106.51227881856965,
+      "headroom_V": 0.16174528570813068
+    },
+    "MSECONDP": {
+      "ids": 0.000732059017459709,
+      "gm": 0.004323397655363896,
+      "gds": 5.628458158215047e-05,
+      "vgs": 0.6931805219977956,
+      "vds": 0.9036382321968257,
+      "vdsat": 0.2409812764173292,
+      "region": 2.0,
+      "gmid": 5.905804794764169,
+      "gmro": 76.8131792727935,
+      "headroom_V": 0.6626569557794966
+    },
+    "MSECONDN": {
+      "ids": 0.0007320590171361467,
+      "gm": 0.004323397655402726,
+      "gds": 5.628458123621004e-05,
+      "vgs": 0.6931805218514587,
+      "vds": 0.9036382376859634,
+      "vdsat": 0.2409812763323871,
+      "region": 2.0,
+      "gmid": 5.905804797427513,
+      "gmro": 76.8131797455982,
+      "headroom_V": 0.6626569613535763
+    },
+    "MLOADP": {
+      "ids": -0.0007320590239362064,
+      "gm": 0.005673821214707783,
+      "gds": 4.649326585142063e-05,
+      "vgs": -0.6803483378363089,
+      "vds": -0.8963617678031743,
+      "vdsat": -0.2201954688153812,
+      "region": 2.0,
+      "gmid": 7.7504969260541685,
+      "gmro": 122.03533373714198,
+      "headroom_V": 0.6761662989877931
+    },
+    "MLOADN": {
+      "ids": -0.0007320590236810652,
+      "gm": 0.005673821213007326,
+      "gds": 4.649326599676834e-05,
+      "vgs": -0.6803483378363089,
+      "vds": -0.8963617623140366,
+      "vdsat": -0.2201954688116498,
+      "region": 2.0,
+      "gmid": 7.750496926432573,
+      "gmro": 122.03533331905965,
+      "headroom_V": 0.6761662935023869
+    },
+    "MCMT": {
+      "ids": 9.812256130425476e-05,
+      "gm": 0.001395906313486924,
+      "gds": 1.243159257292986e-05,
+      "vgs": 0.512184639698032,
+      "vds": 0.2844182098432095,
+      "vdsat": 0.1197390539074152,
+      "region": 2.0,
+      "gmid": 14.226150387152554,
+      "gmro": 112.28700629447502,
+      "headroom_V": 0.1646791559357943
+    },
+    "MCMREF": {
+      "ids": 5.065002758928289e-05,
+      "gm": 0.0007089904380933172,
+      "gds": 5.661263485310659e-06,
+      "vgs": 0.6155817901567905,
+      "vds": 0.9147196054928504,
+      "vdsat": 0.1166672718543346,
+      "region": 2.0,
+      "gmid": 13.997829257714628,
+      "gmro": 125.2353719152875,
+      "headroom_V": 0.7980523336385158
+    },
+    "MCMSENSE": {
+      "ids": 4.747253286079531e-05,
+      "gm": 0.0006573179616349143,
+      "gds": 1.859396765241921e-05,
+      "vgs": 0.619220025098185,
+      "vds": 0.2359493014269521,
+      "vdsat": 0.1178046660242143,
+      "region": 2.0,
+      "gmid": 13.84627956469863,
+      "gmro": 35.35114043018099,
+      "headroom_V": 0.11814463540273781
+    },
+    "MCMD": {
+      "ids": -5.065003661453746e-05,
+      "gm": 0.0005046300510662475,
+      "gds": 1.842251769346865e-06,
+      "vgs": -0.6008621846639401,
+      "vds": -0.6008621846639401,
+      "vdsat": -0.1748644955213731,
+      "region": 2.0,
+      "gmid": 9.963073766493778,
+      "gmro": 273.9202423158233,
+      "headroom_V": 0.4259976891425671
+    },
+    "MCMM": {
+      "ids": -0.0001035458479062222,
+      "gm": 0.001028213813707382,
+      "gds": 3.155315022554041e-06,
+      "vgs": -0.6008621846639401,
+      "vds": -1.279632488729838,
+      "vdsat": -0.17486426454491,
+      "region": 2.0,
+      "gmid": 9.930034226370898,
+      "gmro": 325.8672450635701,
+      "headroom_V": 1.104768224184928
+    },
+    "MCMND": {
+      "ids": 5.607331653543067e-05,
+      "gm": 0.0007664945143013966,
+      "gds": 3.40682459327181e-06,
+      "vgs": 0.5203675112701617,
+      "vds": 0.5203675112701617,
+      "vdsat": 0.1253330924105631,
+      "region": 2.0,
+      "gmid": 13.669505598390579,
+      "gmro": 224.98795970158204,
+      "headroom_V": 0.39503441885959856
+    }
+  },
+  "dc_nodes": {
+    "X.pcb": 1.393094821778946,
+    "X.ncb": 0.2922231081974756,
+    "X.cma": 1.19913781533606,
+    "X.cmt": 0.2844182098432095,
+    "X.vcms": 0.9036382349413945,
+    "X.vcmfb": 0.5203675112701617,
+    "X.vcn": 0.9144426553918038,
+    "X.vpc": 0.8354851833652781,
+    "X.vbpout": 1.119651662163691,
+    "X.vbp": 1.19709970948749,
+    "X.sinkn": 0.2870769601506546,
+    "X.sinkp": 0.2870769601521544,
+    "X.stagen": 0.6931805218514587,
+    "X.stagep": 0.6931805219977956,
+    "X.fn": 1.397826484090314,
+    "X.fp": 1.397826484090778,
+    "X.tail": 0.3453127597638819,
+    "iref": 0.512184639698032,
+    "vocm": 0.9,
+    "vinn": 0.9,
+    "vinp": 0.9,
+    "voutn": 0.9036382376859634,
+    "voutp": 0.9036382321968257
+  },
+  "ac_guards": {
+    "falling_crossings": 1,
+    "recross": false
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "nonrelaxable_guards_pass": true,
+  "nominal_OP_all_30_saturation": true,
+  "source_scalar_crosscheck": {
+    "nominal_OP_AC": {
+      "passed": true,
+      "message": "gain=112.419dB UGB=127.508MHz PM=68.251deg CM_error=3.638mV balance=0.000mV power=3.631mW"
+    },
+    "input_noise_Vrms": {
+      "passed": true,
+      "message": "worst=2.493e-05SI at smic18_nominal (max 5e-05SI)"
+    },
+    "range_Vpp": {
+      "passed": true,
+      "message": "worst=1.6SI at smic18_nominal (min 0.8SI)"
+    },
+    "range_tracking_error_V": {
+      "passed": true,
+      "message": "worst=2.09e-06SI at smic18_nominal (max 0.005SI)"
+    },
+    "settling_s": {
+      "passed": true,
+      "message": "worst=9.356e-09SI at smic18_nominal (max 1.5e-08SI)"
+    },
+    "settling_error_fraction": {
+      "passed": true,
+      "message": "worst=2.403e-06SI at smic18_nominal (max 0.01SI)"
+    },
+    "cm_recovery_s": {
+      "passed": true,
+      "message": "worst=1.416e-08SI at smic18_nominal (max 1e-07SI)"
+    },
+    "cm_final_error_V": {
+      "passed": true,
+      "message": "worst=0.004971SI at smic18_nominal (max 0.01SI)"
+    }
+  },
+  "source_verifier_sha256": "d6bb3e2f0735285982bf143e3749d211a0eb95f156075ebcb07a412a687c7a34",
+  "mismatch_samples_executed": 0,
+  "scope": "Matched deterministic nominal only. The original20-seed mismatch rejection requirement is excluded, not passed.",
+  "noise_quadrature": {
+    "primary": "trapezoid of squared input spectral amplitude over linear frequency",
+    "powerlaw_PSD_interpolation_Vrms": 2.4926065919117565e-05,
+    "relative_difference": 9.49287356788453e-06,
+    "points": 619,
+    "start_Hz": 10.0,
+    "stop_Hz": 15000000.0
+  },
+  "range": {
+    "points": 321,
+    "valid_points": 321,
+    "valid_command_min_V": -0.8,
+    "valid_command_max_V": 0.8,
+    "contiguous": true,
+    "max_CM_error_V": 0.003638349339606717
+  },
+  "matched_rejection": {
+    "CMRR": {
+      "10": {
+        "differential_signal_gain": 417792.1666880608,
+        "disturbance_to_differential_gain": 4.897999999999997e-11,
+        "rejection_db": 318.61883024426163,
+        "numerical_cancellation_limited": true,
+        "matched_symmetry_limited": true,
+        "relative_leg_residual": 6.385386356287915e-09
+      },
+      "1000000.0": {
+        "differential_signal_gain": 136.35173161175805,
+        "disturbance_to_differential_gain": 0.0,
+        "rejection_db": null,
+        "numerical_cancellation_limited": true,
+        "matched_symmetry_limited": true,
+        "relative_leg_residual": 0.0
+      },
+      "original_mismatch_limit_dB": 50,
+      "scope": "Matched nominal characterization only; not a20-sample mismatch pass"
+    },
+    "PSRR_plus": {
+      "10": {
+        "differential_signal_gain": 417792.1666880608,
+        "disturbance_to_differential_gain": 1.300690447657504e-07,
+        "rejection_db": 250.13572684456562,
+        "numerical_cancellation_limited": true,
+        "matched_symmetry_limited": true,
+        "relative_leg_residual": 2.9119196549876984e-05
+      },
+      "1000000.0": {
+        "differential_signal_gain": 136.35173161175805,
+        "disturbance_to_differential_gain": 0.0,
+        "rejection_db": null,
+        "numerical_cancellation_limited": true,
+        "matched_symmetry_limited": true,
+        "relative_leg_residual": 0.0
+      },
+      "original_mismatch_limit_dB": 40,
+      "scope": "Matched nominal characterization only; not a20-sample mismatch pass"
+    },
+    "PSRR_minus": {
+      "10": {
+        "differential_signal_gain": 417792.1666880608,
+        "disturbance_to_differential_gain": 3.8233e-09,
+        "rejection_db": 280.7704383237574,
+        "numerical_cancellation_limited": true,
+        "matched_symmetry_limited": true,
+        "relative_leg_residual": 3.840455313887133e-09
+      },
+      "1000000.0": {
+        "differential_signal_gain": 136.35173161175805,
+        "disturbance_to_differential_gain": 0.0,
+        "rejection_db": null,
+        "numerical_cancellation_limited": true,
+        "matched_symmetry_limited": true,
+        "relative_leg_residual": 0.0
+      },
+      "original_mismatch_limit_dB": 40,
+      "scope": "Matched nominal characterization only; not a20-sample mismatch pass"
+    }
+  },
+  "cm_loop_diagnostic": {
+    "gain_db": 109.71782524096598,
+    "ugb_hz": 47673528.601457894,
+    "phase_margin_deg": 51.14733652016843,
+    "falling_crossings": 1,
+    "run_dir": "runs/35/20260922T091835756615Z_cmstb",
+    "native_PM_deg": 51.1477,
+    "passes": true,
+    "definition": "-Spectre loopGain; zero-volt iprobe in CM sense-to-gate connection; minimum45deg diagnostic",
+    "probe_common_mode_OP_difference_V": 5.247469125890802e-13
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "case_slot": 48,
+  "generated_at": "2026-09-29T03:16:49.124133+00:00",
+  "status": "complete_original",
+  "values": {
+    "transfer": {
+      "invalid_levels": 0,
+      "code_errors": 0
+    },
+    "transfer_alt": {
+      "invalid_levels": 0,
+      "code_errors": 0
+    },
+    "dynamic": {
+      "invalid_levels": 0,
+      "power_W": 0.0010319457909828984
+    },
+    "dynamic_alt": {
+      "invalid_levels": 0,
+      "power_W": 0.0010329495455817324
+    },
+    "dynamic_spectrum": {
+      "sndr_dB": 27.55147276515953,
+      "normalized_enob_bits": 4.317248646714115,
+      "signal_power": 15652.493441676912,
+      "noise_power": 27.506558323082572,
+      "tone_bin": 15
+    },
+    "dynamic_alt_spectrum": {
+      "sndr_dB": 27.551472765159538,
+      "normalized_enob_bits": 4.317248646714115,
+      "signal_power": 15652.49344167692,
+      "noise_power": 27.506558323082572,
+      "tone_bin": 13
+    }
+  },
+  "gates": {
+    "dynamic_sndr": {
+      "value": 27.55147276515953,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 24.0,
+        "10pct": 23.084850188786497,
+        "15pct": 22.588378514285854
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "dynamic_enob": {
+      "value": 4.317248646714115,
+      "unit": "bit",
+      "sense": "min",
+      "limits": {
+        "original": 3.9,
+        "10pct": 3.51,
+        "15pct": 3.315
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "dynamic_alt_sndr": {
+      "value": 27.551472765159538,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 24.0,
+        "10pct": 23.084850188786497,
+        "15pct": 22.588378514285854
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "dynamic_alt_enob": {
+      "value": 4.317248646714115,
+      "unit": "bit",
+      "sense": "min",
+      "limits": {
+        "original": 3.9,
+        "10pct": 3.51,
+        "15pct": 3.315
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power": {
+      "value": 0.0010329495455817324,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "groups": {
+    "transfer": "runs/48/20260929T025757786361Z_transfer",
+    "transfer_alt": "runs/48/20260929T030111846843Z_transfer_alt",
+    "dynamic": "runs/48/20260929T030429269930Z_dynamic",
+    "dynamic_alt": "runs/48/20260929T031022700087Z_dynamic_alt"
+  },
+  "run_dirs": [
+    "runs/48/20260929T025757786361Z_transfer",
+    "runs/48/20260929T030111846843Z_transfer_alt",
+    "runs/48/20260929T030429269930Z_dynamic",
+    "runs/48/20260929T031022700087Z_dynamic_alt"
+  ],
+  "circuit_sha256": "a87f8ceb7193b5c69bc95a629ca3d628484b30cb708e843db74e2d94b0687f8d",
+  "contract_sha256": "169595e1d80b420f0cbe4d336a71d61477f23c0321edb05345a14c93db4c9c47",
+  "scope": "SMIC18 TT 1.8V 27C; all 16 code centers in both original orders with original post-acquisition decoys; original nominal coherent dynamic records. SS/FF source corners excluded from nominal reproduction.",
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "nonrelaxable_guards_pass": true,
+  "disallowed_warnings": {
+    "transfer": [],
+    "transfer_alt": [],
+    "dynamic": [],
+    "dynamic_alt": []
+  },
+  "conversion_records_sha256": "2975a38f113913ad128db39cfaaa0f22aac8e139569c03941152e962ebaf39e5"
+}

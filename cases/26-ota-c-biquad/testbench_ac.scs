@@ -1,0 +1,39 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/26-ota-c-biquad/circuit.scs"
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=20u
+VOCM (vocm 0) vsource dc=.9
+X (0 iref vdd vinp vinn vocm vbpp vbpn voutp voutn) fd_ota_c_biquad
+CLP (voutp 0) capacitor c=250f
+CLN (voutn 0) capacitor c=250f
+CBP (vbpp 0) capacitor c=250f
+CBN (vbpn 0) capacitor c=250f
+simulatorOptions options temp=27 tnom=27 reltol=1e-07 vabstol=1e-9 iabstol=1e-14
+saveOptions options save=selected
+save vdd iref vinp vinn vocm voutp voutn vbpp vbpn VDD:p X.vc1 X.vc2 X.sense1 X.sense2
+VINP (vinp 0) vsource dc=.9 mag=.5 phase=0
+VINN (vinn 0) vsource dc=.9 mag=.5 phase=180
+save X.MREF:ids X.MREF:gm X.MREF:gmbs X.MREF:vgs X.MREF:vds X.MREF:vdsat
+save X.XGIN.MTA:ids X.XGIN.MTA:gm X.XGIN.MTA:gmbs X.XGIN.MTA:vgs X.XGIN.MTA:vds X.XGIN.MTA:vdsat
+save X.XGIN.MTB:ids X.XGIN.MTB:gm X.XGIN.MTB:gmbs X.XGIN.MTB:vgs X.XGIN.MTB:vds X.XGIN.MTB:vdsat
+save X.XGIN.MA:ids X.XGIN.MA:gm X.XGIN.MA:gmbs X.XGIN.MA:vgs X.XGIN.MA:vds X.XGIN.MA:vdsat
+save X.XGIN.MB:ids X.XGIN.MB:gm X.XGIN.MB:gmbs X.XGIN.MB:vgs X.XGIN.MB:vds X.XGIN.MB:vdsat
+save X.XGIN.MLA:ids X.XGIN.MLA:gm X.XGIN.MLA:gmbs X.XGIN.MLA:vgs X.XGIN.MLA:vds X.XGIN.MLA:vdsat
+save X.XGIN.MLB:ids X.XGIN.MLB:gm X.XGIN.MLB:gmbs X.XGIN.MLB:vgs X.XGIN.MLB:vds X.XGIN.MLB:vdsat
+save X.XGF.MTA:ids X.XGF.MTA:gm X.XGF.MTA:gmbs X.XGF.MTA:vgs X.XGF.MTA:vds X.XGF.MTA:vdsat
+save X.XGF.MA:ids X.XGF.MA:gm X.XGF.MA:gmbs X.XGF.MA:vgs X.XGF.MA:vds X.XGF.MA:vdsat
+save X.XGF.MLA:ids X.XGF.MLA:gm X.XGF.MLA:gmbs X.XGF.MLA:vgs X.XGF.MLA:vds X.XGF.MLA:vdsat
+save X.XCM1.MCTA:ids X.XCM1.MCTA:gm X.XCM1.MCTA:gmbs X.XCM1.MCTA:vgs X.XCM1.MCTA:vds X.XCM1.MCTA:vdsat
+save X.XCM1.MC1:ids X.XCM1.MC1:gm X.XCM1.MC1:gmbs X.XCM1.MC1:vgs X.XCM1.MC1:vds X.XCM1.MC1:vdsat
+save X.XCM1.MCL1:ids X.XCM1.MCL1:gm X.XCM1.MCL1:gmbs X.XCM1.MCL1:vgs X.XCM1.MCL1:vds X.XCM1.MCL1:vdsat
+save X.XCM1.MC2:ids X.XCM1.MC2:gm X.XCM1.MC2:gmbs X.XCM1.MC2:vgs X.XCM1.MC2:vds X.XCM1.MC2:vdsat
+save X.XCM1.MCL2:ids X.XCM1.MCL2:gm X.XCM1.MCL2:gmbs X.XCM1.MCL2:vgs X.XCM1.MCL2:vds X.XCM1.MCL2:vdsat
+save X.XCM2.MCTA:ids X.XCM2.MCTA:gm X.XCM2.MCTA:gmbs X.XCM2.MCTA:vgs X.XCM2.MCTA:vds X.XCM2.MCTA:vdsat
+save X.XCM2.MC1:ids X.XCM2.MC1:gm X.XCM2.MC1:gmbs X.XCM2.MC1:vgs X.XCM2.MC1:vds X.XCM2.MC1:vdsat
+save X.XCM2.MCL1:ids X.XCM2.MCL1:gm X.XCM2.MCL1:gmbs X.XCM2.MCL1:vgs X.XCM2.MCL1:vds X.XCM2.MCL1:vdsat
+save X.XCM2.MC2:ids X.XCM2.MC2:gm X.XCM2.MC2:gmbs X.XCM2.MC2:vgs X.XCM2.MC2:vds X.XCM2.MC2:vdsat
+save X.XCM2.MCL2:ids X.XCM2.MCL2:gm X.XCM2.MCL2:gmbs X.XCM2.MCL2:vgs X.XCM2.MCL2:vds X.XCM2.MCL2:vdsat
+dcOp dc
+ac ac start=1k stop=100M dec=200

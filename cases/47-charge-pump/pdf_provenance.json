@@ -1,0 +1,111 @@
+{
+  "pdf": "reports/47-charge-pump-review.pdf",
+  "sha256": "f3e707ef9ecca4c797f8e833c1706db36d6b8a62124dcb13642c671e70d18c0a",
+  "results_sha256": "207035649bafbca0ce69d3f34e05d328fa8904332f23960174a44b204a5297e4",
+  "circuit_sha256": "b17085a791dade0dd8a9d9543708ea5a9f3f81de25cc1314296b773d5124aa93",
+  "generated_at": "2026-09-23T06:27:44.493462+00:00",
+  "pages": 8,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:27:44.496632+00:00",
+  "body_pages": 5,
+  "schematic_pages": 3,
+  "schematic_sheets_sha256": "aa472c57a5fefb6232081554ab0e03018095955af9346267d0bc2b43759d8375",
+  "schematic_audit_sha256": "e1f6439498b426ff5a2634394aa68e458b43448918b6555d57a8b0e358b9bd58",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/47-charge-pump/47-charge-pump-review.pdf",
+    "sha256": "a3ef3fc8e6088a29171f6e491be3ef70be3030fc6bc6bdbb9b6b8f2dca5a4626",
+    "pages": 5,
+    "previous_render_reviewed_at": "2026-09-22T09:01:48.871035+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "eec1fd6e796f98ddba89102e6188ecf26e702de353d58d3ed925de7ecbe9d6c9"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "c6f90db0aa8bdc4c3e32b58ebc7e09dab401dd7c8856d685f02ae61de14f229b"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "2c7f177b9c75ddc0a662831d7e753dbfdcd06a78143e1b190b5fc026e93cb079"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "6d2b29926273acce3142df0c5e7966ea67d664207630aa02cdff2dfd1f32b747"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "2c9259335d7189a39e0dcce3259f5b3d278686e76e31fb58ef57bae11ede4c46"
+    },
+    {
+      "page": 6,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "1f27a5c61031767ed2328a3206be397d83932840236da1ad9247c282e54cf94a",
+      "path": "reports/schematic-retrofit-renders/47-charge-pump/page-06.png",
+      "sha256": "fbe99a0c8e19e0c262c5676d891919661080f4348d7233d12d7a932fed1dccc2"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "12fe261892ec1a706ff7eb41a2d41890b85c88a73d89ef1985e43e2bdfa9b3c6",
+      "path": "reports/schematic-retrofit-renders/47-charge-pump/page-07.png",
+      "sha256": "aac2bfff3ead38225fa2a3e410e9c77bafcb68225c98d963c5e03aa2ee7db66c"
+    },
+    {
+      "page": 8,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "aad9f4cafbfe72fadf52cc3b7ca75fe83abad0ad922905fede510992a873822d",
+      "path": "reports/schematic-retrofit-renders/47-charge-pump/page-08.png",
+      "sha256": "a349ade28b9e3cc242ed7658e9f671093223ca59f511ac3762c913fa5c104ca7"
+    }
+  ],
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change."
+}

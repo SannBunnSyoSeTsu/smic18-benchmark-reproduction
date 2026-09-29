@@ -1,0 +1,63 @@
+{
+  "source_task": "sky130-bootstrap-driver-pt",
+  "scope": "SMIC18 TT1.8V27C all original20/50/80ns PWM widths; fixed two external50um*m450 NMOS,3.6ohm load and package/wire parasitics. OriginalFS/SF and80/125C not claimed.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "PWM": {
+    "period_s": 1e-07,
+    "rise_fall_s": 3e-09,
+    "width_s": [
+      2e-08,
+      5e-08,
+      8e-08
+    ],
+    "source_ohm": 50
+  },
+  "external_power_NMOS": {
+    "model": "n18",
+    "W_um": 50,
+    "L_um": 0.18,
+    "m": 450,
+    "HS_body": "external capacitor bottom ext_vlx2",
+    "migration": "Native minimum length .18um; same50um finger width and450parallel count."
+  },
+  "load_ohm": 3.6,
+  "supply_package": {
+    "L_H": 3e-10,
+    "R_ohm": 0.003
+  },
+  "bootstrap_wire_each": {
+    "L_H": 2e-09,
+    "R_ohm": 0.005
+  },
+  "offchip_cap_max_F": 1e-07,
+  "window_s": [
+    5e-07,
+    1e-06
+  ],
+  "deadtime_range_s": [
+    3e-09,
+    7e-09
+  ],
+  "power_strict_max_W": 0.0035,
+  "VGS_mean_range_V": [
+    1.65,
+    1.85
+  ],
+  "VGS_strict_peak_V": 2.15,
+  "HS_strict_peak_A": 0.8,
+  "VBST_minus_VLX_strict_peak_V": 2.15,
+  "GN2_strict_peak_V": 2.15,
+  "source_VBST_strict_peak_V": 5.65,
+  "native33_VBST_screen_V": 3.63,
+  "area_max_um2": 35000,
+  "power_definition": "abs(1.8*time-weighted mean current of zero-voltVDDDUT probe), includes bootstrap charge; external bridge current separately sensed byVHS.",
+  "allowed": "Native MOS,MIM and unmodifiedHD; no ideal DUT capacitors/resistors/sources.",
+  "nonrelaxable": "Gate and bootstrap voltage peaks,current shoot-through,positive nonoverlap,actual high-side drive;3.63V33device screening is not foundry reliability signoff.",
+  "unmodeled": [
+    "PVT",
+    "mismatch",
+    "PEX",
+    "reliability lifetime"
+  ]
+}

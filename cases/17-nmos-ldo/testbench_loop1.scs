@@ -1,0 +1,30 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/17-nmos-ldo/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-07 vabstol=1e-9 iabstol=1e-14
+saveOptions options save=selected
+VDD (vdd 0) vsource dc=1.8 mag=0
+VREF (vref 0) vsource dc=.4
+IBIAS (ibias 0) isource dc=40u
+ILOAD (vout 0) isource dc=0.001
+CLOAD (vout 0) capacitor c=10p
+VLOOP (loop_out probe) vsource dc=0 mag=1
+IP (probe pass_gate) iprobe
+X (vdd vout 0 vref ibias loop_out pass_gate) nmos_pass_ldo
+save vout vdd vref ibias loop_out pass_gate VDD:p X.tail X.nr X.nf X.pc
+save X.MPREF:ids X.MPREF:gm X.MPREF:gds X.MPREF:vgs X.MPREF:vds X.MPREF:vbs X.MPREF:vdsat X.MPREF:region
+save X.MPTAIL:ids X.MPTAIL:gm X.MPTAIL:gds X.MPTAIL:vgs X.MPTAIL:vds X.MPTAIL:vbs X.MPTAIL:vdsat X.MPTAIL:region
+save X.MPINR:ids X.MPINR:gm X.MPINR:gds X.MPINR:vgs X.MPINR:vds X.MPINR:vbs X.MPINR:vdsat X.MPINR:region
+save X.MPINF:ids X.MPINF:gm X.MPINF:gds X.MPINF:vgs X.MPINF:vds X.MPINF:vbs X.MPINF:vdsat X.MPINF:region
+save X.MNDR:ids X.MNDR:gm X.MNDR:gds X.MNDR:vgs X.MNDR:vds X.MNDR:vbs X.MNDR:vdsat X.MNDR:region
+save X.MNDF:ids X.MNDF:gm X.MNDF:gds X.MNDF:vgs X.MNDF:vds X.MNDF:vbs X.MNDF:vdsat X.MNDF:region
+save X.MNSINK:ids X.MNSINK:gm X.MNSINK:gds X.MNSINK:vgs X.MNSINK:vds X.MNSINK:vbs X.MNSINK:vdsat X.MNSINK:region
+save X.MNOUT:ids X.MNOUT:gm X.MNOUT:gds X.MNOUT:vgs X.MNOUT:vds X.MNOUT:vbs X.MNOUT:vdsat X.MNOUT:region
+save X.MPD:ids X.MPD:gm X.MPD:gds X.MPD:vgs X.MPD:vds X.MPD:vbs X.MPD:vdsat X.MPD:region
+save X.MPOUT:ids X.MPOUT:gm X.MPOUT:gds X.MPOUT:vgs X.MPOUT:vds X.MPOUT:vbs X.MPOUT:vdsat X.MPOUT:region
+save X.MPASS:ids X.MPASS:gm X.MPASS:gds X.MPASS:vgs X.MPASS:vds X.MPASS:vbs X.MPASS:vdsat X.MPASS:region
+dcOp dc
+ac ac start=1 stop=1G dec=160
+loop stb probe=IP start=1 stop=1G dec=160

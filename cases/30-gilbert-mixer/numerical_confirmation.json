@@ -1,0 +1,871 @@
+{
+  "generated_at": "2026-09-28T18:29:12.631939+00:00",
+  "baseline_groups": {
+    "rf2.3_bal": "runs/30/20260928T182108509042Z_rf2.3_bal",
+    "rf2.3_imb": "runs/30/20260928T182110409565Z_rf2.3_imb",
+    "rf2.4_bal": "runs/30/20260928T182112220205Z_rf2.4_bal",
+    "rf2.4_imb": "runs/30/20260928T182114092649Z_rf2.4_imb",
+    "rf2.5_bal": "runs/30/20260928T182115982423Z_rf2.5_bal",
+    "rf2.5_imb": "runs/30/20260928T182117884624Z_rf2.5_imb",
+    "two_low": "runs/30/20260928T182119860759Z_two_low",
+    "two_high": "runs/30/20260928T182123040906Z_two_high",
+    "small": "runs/30/20260928T182126280190Z_small",
+    "large": "runs/30/20260928T182129450553Z_large"
+  },
+  "final_groups": {
+    "rf2.3_bal": "runs/30/20260928T182524916915Z_rf2.3_bal",
+    "rf2.3_imb": "runs/30/20260928T182528195467Z_rf2.3_imb",
+    "rf2.4_bal": "runs/30/20260928T182531414405Z_rf2.4_bal",
+    "rf2.4_imb": "runs/30/20260928T182534620719Z_rf2.4_imb",
+    "rf2.5_bal": "runs/30/20260928T182537803171Z_rf2.5_bal",
+    "rf2.5_imb": "runs/30/20260928T182541116910Z_rf2.5_imb",
+    "two_low": "runs/30/20260928T182544470748Z_two_low",
+    "two_high": "runs/30/20260928T182550377287Z_two_high",
+    "small": "runs/30/20260928T182556400790Z_small",
+    "large": "runs/30/20260928T182602491674Z_large"
+  },
+  "circuit_sha256": "e405fd9038a74aff43c984389a5b0cdfbc7eb96bc6f992c541b4bea568d89879",
+  "metrics": [
+    {
+      "metric": "2300000000.0_False_conversion_gain_db",
+      "baseline": 5.427103967405843,
+      "refined": 5.4267457110087705,
+      "absolute_difference": 0.0003582563970727648,
+      "maximum_difference": 0.02,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_False_lo_if_isolation_db",
+      "baseline": 2.8658308178295192e-05,
+      "refined": 2.866461040307399e-05,
+      "absolute_difference": 6.30222477879922e-09,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_False_rf_if_feedthrough_db",
+      "baseline": 0.0004532656203641988,
+      "refined": 0.00045318075328932357,
+      "absolute_difference": 8.486707487524552e-08,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_False_lo_rf_isolation_db",
+      "baseline": 3.4852734700744237e-07,
+      "refined": 3.356122900590245e-07,
+      "absolute_difference": 1.2915056948417866e-08,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_False_output_dc_balance_v",
+      "baseline": 2.8031724958127068e-05,
+      "refined": 2.803577211737114e-05,
+      "absolute_difference": 4.047159244071648e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_False_output_common_mode_v",
+      "baseline": 0.7444261951876402,
+      "refined": 0.7444261772996977,
+      "absolute_difference": 1.7887942460603767e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_False_output_headroom_to_vdd_v",
+      "baseline": 1.0555738048123597,
+      "refined": 1.0555738227003024,
+      "absolute_difference": 1.7887942682648372e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_False_power_w",
+      "baseline": 0.0012415350597953013,
+      "refined": 0.0012415350793094206,
+      "absolute_difference": 1.951411927013369e-11,
+      "maximum_difference": 1e-06,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_False_if_amp_v",
+      "baseline": 0.07488997897325006,
+      "refined": 0.07488979970634213,
+      "absolute_difference": 1.7926690792924305e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_False_spur_low_v",
+      "baseline": 0.00015016141124845838,
+      "refined": 0.00015015413840843372,
+      "absolute_difference": 7.272840024663552e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_False_spur_high_v",
+      "baseline": 0.00023364380153337414,
+      "refined": 0.00023360395873406282,
+      "absolute_difference": 3.9842799311315055e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_False_spur_dbc",
+      "baseline": -50.11738889554966,
+      "refined": -50.11884941708014,
+      "absolute_difference": 0.0014605215304825947,
+      "maximum_difference": 0.15,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_conversion_gain_db",
+      "baseline": 5.425969690407878,
+      "refined": 5.425622393863744,
+      "absolute_difference": 0.0003472965441337905,
+      "maximum_difference": 0.02,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_lo_if_isolation_db",
+      "baseline": 3.089239157904149e-05,
+      "refined": 3.08747911362803e-05,
+      "absolute_difference": 1.7600442761188872e-08,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_rf_if_feedthrough_db",
+      "baseline": 0.0021667340694413346,
+      "refined": 0.002166959978144865,
+      "absolute_difference": 2.2590870353035586e-07,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_lo_rf_isolation_db",
+      "baseline": 3.3459441142912467e-07,
+      "refined": 3.0686834693208133e-07,
+      "absolute_difference": 2.772606449704334e-08,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_output_dc_balance_v",
+      "baseline": 3.0217288112780865e-05,
+      "refined": 3.0219807546361348e-05,
+      "absolute_difference": 2.5194335804827497e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_output_common_mode_v",
+      "baseline": 0.7446765314792525,
+      "refined": 0.7446765132281059,
+      "absolute_difference": 1.825114659403937e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_output_headroom_to_vdd_v",
+      "baseline": 1.0553234685207475,
+      "refined": 1.0553234867718941,
+      "absolute_difference": 1.825114659403937e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_power_w",
+      "baseline": 0.001241261965658997,
+      "refined": 0.0012412619855693386,
+      "absolute_difference": 1.991034160458982e-11,
+      "maximum_difference": 1e-06,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_if_amp_v",
+      "baseline": 0.07488026400107163,
+      "refined": 0.07488008446868254,
+      "absolute_difference": 1.7953238909407254e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_spur_low_v",
+      "baseline": 0.00014371721976387357,
+      "refined": 0.00014372143912953395,
+      "absolute_difference": 4.219365660383884e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_spur_high_v",
+      "baseline": 0.00021786195456827777,
+      "refined": 0.00021781928605431832,
+      "absolute_difference": 4.2668513959451216e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2300000000.0_True_spur_dbc",
+      "baseline": -50.72371942547348,
+      "refined": -50.7253999082873,
+      "absolute_difference": 0.0016804828138177186,
+      "maximum_difference": 0.15,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_conversion_gain_db",
+      "baseline": 5.493981277262813,
+      "refined": 5.493623275213172,
+      "absolute_difference": 0.00035800204964164806,
+      "maximum_difference": 0.02,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_lo_if_isolation_db",
+      "baseline": 2.9087549520258014e-05,
+      "refined": 2.9075551233332555e-05,
+      "absolute_difference": 1.1998286925458859e-08,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_rf_if_feedthrough_db",
+      "baseline": 0.0004614713120651364,
+      "refined": 0.0004614483963946475,
+      "absolute_difference": 2.2915670488889324e-08,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_lo_rf_isolation_db",
+      "baseline": 3.691300104651573e-07,
+      "refined": 3.5075790319013975e-07,
+      "absolute_difference": 1.837210727501756e-08,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_output_dc_balance_v",
+      "baseline": 2.600257852676189e-05,
+      "refined": 2.60055578234268e-05,
+      "absolute_difference": 2.9792966649099363e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_output_common_mode_v",
+      "baseline": 0.744399721516425,
+      "refined": 0.7443997078329113,
+      "absolute_difference": 1.3683513655493584e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_output_headroom_to_vdd_v",
+      "baseline": 1.055600278483575,
+      "refined": 1.0556002921670888,
+      "absolute_difference": 1.368351387753819e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_power_w",
+      "baseline": 0.0012415639401638999,
+      "refined": 0.001241563955091369,
+      "absolute_difference": 1.4927469199968457e-11,
+      "maximum_difference": 1e-06,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_if_amp_v",
+      "baseline": 0.07547521505590034,
+      "refined": 0.07547493897305237,
+      "absolute_difference": 2.7608284797198124e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_spur_low_v",
+      "baseline": 0.00015292074068126024,
+      "refined": 0.00015289452748459836,
+      "absolute_difference": 2.621319666187903e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_spur_high_v",
+      "baseline": 0.00024593380023600825,
+      "refined": 0.00024588152252971675,
+      "absolute_difference": 5.22777062915078e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_False_spur_dbc",
+      "baseline": -49.73972276964007,
+      "refined": -49.741537537457205,
+      "absolute_difference": 0.0018147678171374082,
+      "maximum_difference": 0.15,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_conversion_gain_db",
+      "baseline": 5.49295753217528,
+      "refined": 5.492599029832778,
+      "absolute_difference": 0.00035850234250212054,
+      "maximum_difference": 0.02,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_lo_if_isolation_db",
+      "baseline": 2.3676078989860322e-05,
+      "refined": 2.36747117354181e-05,
+      "absolute_difference": 1.3672544422220414e-09,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_rf_if_feedthrough_db",
+      "baseline": 0.002840870732613374,
+      "refined": 0.002840840559381476,
+      "absolute_difference": 3.017323189826587e-08,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_lo_rf_isolation_db",
+      "baseline": 3.06059178156003e-07,
+      "refined": 3.342360174293896e-07,
+      "absolute_difference": 2.8176839273386607e-08,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_output_dc_balance_v",
+      "baseline": 2.8276122153813098e-05,
+      "refined": 2.828172369275484e-05,
+      "absolute_difference": 5.601538941742948e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_output_common_mode_v",
+      "baseline": 0.7446500723973263,
+      "refined": 0.744650058996124,
+      "absolute_difference": 1.3401202259011313e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_output_headroom_to_vdd_v",
+      "baseline": 1.0553499276026739,
+      "refined": 1.055349941003876,
+      "absolute_difference": 1.3401202147989011e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_power_w",
+      "baseline": 0.0012412908301120075,
+      "refined": 0.001241290844731501,
+      "absolute_difference": 1.4619493549777873e-11,
+      "maximum_difference": 1e-06,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_if_amp_v",
+      "baseline": 0.07546629075930616,
+      "refined": 0.07546602089563226,
+      "absolute_difference": 2.6986367390735566e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_spur_low_v",
+      "baseline": 0.0001460535173539185,
+      "refined": 0.0001460370905144252,
+      "absolute_difference": 1.6426839493283206e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_spur_high_v",
+      "baseline": 0.00022959231782180306,
+      "refined": 0.00022954718803834195,
+      "absolute_difference": 4.512978346110858e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2400000000.0_True_spur_dbc",
+      "baseline": -50.33591304171324,
+      "refined": -50.337589489918386,
+      "absolute_difference": 0.0016764482051456753,
+      "maximum_difference": 0.15,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_conversion_gain_db",
+      "baseline": 5.554397109181952,
+      "refined": 5.554041705210109,
+      "absolute_difference": 0.00035540397184341543,
+      "maximum_difference": 0.02,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_lo_if_isolation_db",
+      "baseline": 2.9268491723384695e-05,
+      "refined": 2.9258228381786064e-05,
+      "absolute_difference": 1.0263341598630831e-08,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_rf_if_feedthrough_db",
+      "baseline": 0.00046613618303659225,
+      "refined": 0.0004659414001882218,
+      "absolute_difference": 1.9478284837045733e-07,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_lo_rf_isolation_db",
+      "baseline": 3.5825339471504515e-07,
+      "refined": 3.6017265002258535e-07,
+      "absolute_difference": 1.919255307540197e-09,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_output_dc_balance_v",
+      "baseline": 2.4243573355690584e-05,
+      "refined": 2.4249959436883793e-05,
+      "absolute_difference": 6.386081193209345e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_output_common_mode_v",
+      "baseline": 0.7443754077857707,
+      "refined": 0.7443753982681556,
+      "absolute_difference": 9.517615140453017e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_output_headroom_to_vdd_v",
+      "baseline": 1.0556245922142293,
+      "refined": 1.0556246017318445,
+      "absolute_difference": 9.517615140453017e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_power_w",
+      "baseline": 0.0012415904642337043,
+      "refined": 0.0012415904746165573,
+      "absolute_difference": 1.0382852997509184e-11,
+      "maximum_difference": 1e-06,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_if_amp_v",
+      "baseline": 0.07600791140483593,
+      "refined": 0.07600755257958583,
+      "absolute_difference": 3.588252500963396e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_spur_low_v",
+      "baseline": 0.00015550489711979256,
+      "refined": 0.0001554903061544336,
+      "absolute_difference": 1.4590965358954756e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_spur_high_v",
+      "baseline": 0.00025676566536562886,
+      "refined": 0.0002567137530425697,
+      "absolute_difference": 5.1912323059156995e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_False_spur_dbc",
+      "baseline": -49.42643698655957,
+      "refined": -49.42815225310055,
+      "absolute_difference": 0.0017152665409767565,
+      "maximum_difference": 0.15,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_conversion_gain_db",
+      "baseline": 5.553472177060712,
+      "refined": 5.553116763654802,
+      "absolute_difference": 0.0003554134059102765,
+      "maximum_difference": 0.02,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_lo_if_isolation_db",
+      "baseline": 3.0132159344468337e-05,
+      "refined": 3.013235281413348e-05,
+      "absolute_difference": 1.9346966514399168e-10,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_rf_if_feedthrough_db",
+      "baseline": 0.0019407053729316665,
+      "refined": 0.0019409796234130324,
+      "absolute_difference": 2.742504813658779e-07,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_lo_rf_isolation_db",
+      "baseline": 3.485813297621544e-07,
+      "refined": 3.4534641073504466e-07,
+      "absolute_difference": 3.2349190271097257e-09,
+      "maximum_difference": 2e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_output_dc_balance_v",
+      "baseline": 2.652214230505287e-05,
+      "refined": 2.6525037824596507e-05,
+      "absolute_difference": 2.8955195436358608e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_output_common_mode_v",
+      "baseline": 0.7446256397087168,
+      "refined": 0.7446256307877163,
+      "absolute_difference": 8.921000493877784e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_output_headroom_to_vdd_v",
+      "baseline": 1.0553743602912833,
+      "refined": 1.055374369212284,
+      "absolute_difference": 8.921000604900087e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_power_w",
+      "baseline": 0.0012413174839541268,
+      "refined": 0.0012413174936861274,
+      "absolute_difference": 9.732000578674405e-12,
+      "maximum_difference": 1e-06,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_if_amp_v",
+      "baseline": 0.0759998332266518,
+      "refined": 0.07599946885797217,
+      "absolute_difference": 3.6436867963118846e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_spur_low_v",
+      "baseline": 0.00014824964270656097,
+      "refined": 0.00014823960483587186,
+      "absolute_difference": 1.0037870689109853e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_spur_high_v",
+      "baseline": 0.00024004328373241853,
+      "refined": 0.0002399945340607786,
+      "absolute_difference": 4.874967163992104e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "2500000000.0_True_spur_dbc",
+      "baseline": -50.010461601895074,
+      "refined": -50.01218412918959,
+      "absolute_difference": 0.0017225272945182724,
+      "maximum_difference": 0.15,
+      "passed": true
+    },
+    {
+      "metric": "IIP3_dBm",
+      "baseline": -2.4369759086941896,
+      "refined": -2.4356002557141343,
+      "absolute_difference": 0.0013756529800552642,
+      "maximum_difference": 0.05,
+      "passed": true
+    },
+    {
+      "metric": "fundamental_slope",
+      "baseline": 0.9765490870541341,
+      "refined": 0.9765579011940567,
+      "absolute_difference": 8.814139922597164e-06,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "IM3_slope",
+      "baseline": 3.2538277660531194,
+      "refined": 3.2543220170271607,
+      "absolute_difference": 0.0004942509740413215,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "tone_gain_difference_dB",
+      "baseline": 1.3595068287496241,
+      "refined": 1.3595119130633384,
+      "absolute_difference": 5.0843137142653205e-06,
+      "maximum_difference": 0.02,
+      "passed": true
+    },
+    {
+      "metric": "compression_dB",
+      "baseline": 1.0192344355634306,
+      "refined": 1.0191064853100604,
+      "absolute_difference": 0.0001279502533702015,
+      "maximum_difference": 0.02,
+      "passed": true
+    },
+    {
+      "metric": "two_low_fund1",
+      "baseline": 0.03791503505688335,
+      "refined": 0.037914871384136385,
+      "absolute_difference": 1.636727469667143e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_low_fund2",
+      "baseline": 0.032421725197666576,
+      "refined": 0.03242156626052772,
+      "absolute_difference": 1.5893713885273275e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_low_im3lo",
+      "baseline": 0.00010222590097309906,
+      "refined": 0.00010216702968086624,
+      "absolute_difference": 5.887129223281211e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_low_im3hi",
+      "baseline": 6.563169864631789e-05,
+      "refined": 6.559895766753566e-05,
+      "absolute_difference": 3.274097878222721e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_low_input1",
+      "baseline": 0.02004845180179043,
+      "refined": 0.02004924158093561,
+      "absolute_difference": 7.897791451799696e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_low_input2",
+      "baseline": 0.02005048940955746,
+      "refined": 0.020051311408750185,
+      "absolute_difference": 8.219991927266301e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_low_gain_dB",
+      "baseline": 5.534612421544157,
+      "refined": 5.534232764904474,
+      "absolute_difference": 0.0003796566396827572,
+      "maximum_difference": 0.02,
+      "passed": true
+    },
+    {
+      "metric": "two_high_fund1",
+      "baseline": 0.07454534590327924,
+      "refined": 0.07454514494763298,
+      "absolute_difference": 2.009556462623241e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_high_fund2",
+      "baseline": 0.06385511905812288,
+      "refined": 0.06385487111752407,
+      "absolute_difference": 2.479405988159433e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_high_im3lo",
+      "baseline": 0.0009750108828196694,
+      "refined": 0.0009747677731142554,
+      "absolute_difference": 2.431097054139469e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_high_im3hi",
+      "baseline": 0.0005630717158354293,
+      "refined": 0.0005629116680638285,
+      "absolute_difference": 1.6004777160082834e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_high_input1",
+      "baseline": 0.040095368979397784,
+      "refined": 0.040096770615352065,
+      "absolute_difference": 1.4016359542803891e-06,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_high_input2",
+      "baseline": 0.04009960538992168,
+      "refined": 0.040101035796218626,
+      "absolute_difference": 1.4304062969441866e-06,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "two_high_gain_dB",
+      "baseline": 5.3865263968343235,
+      "refined": 5.386199349678888,
+      "absolute_difference": 0.00032704715543552254,
+      "maximum_difference": 0.02,
+      "passed": true
+    },
+    {
+      "metric": "small_fund1",
+      "baseline": 0.07558403310561959,
+      "refined": 0.07558374839969427,
+      "absolute_difference": 2.847059253213713e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "small_fund2",
+      "baseline": 9.013345697737048e-05,
+      "refined": 9.011618237388375e-05,
+      "absolute_difference": 1.727460348672897e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "small_im3lo",
+      "baseline": 7.103763649104118e-05,
+      "refined": 7.101970660160869e-05,
+      "absolute_difference": 1.7929889432487158e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "small_im3hi",
+      "baseline": 5.33689675103203e-05,
+      "refined": 5.336599126697474e-05,
+      "absolute_difference": 2.976243345559923e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "small_input1",
+      "baseline": 0.040096616047522585,
+      "refined": 0.04009814139493792,
+      "absolute_difference": 1.5253474153348323e-06,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "small_input2",
+      "baseline": 7.458336792235003e-08,
+      "refined": 5.794853290189764e-08,
+      "absolute_difference": 1.6634835020452385e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "small_gain_dB",
+      "baseline": 5.5064467983578655,
+      "refined": 5.506083660163617,
+      "absolute_difference": 0.0003631381942481582,
+      "maximum_difference": 0.02,
+      "passed": true
+    },
+    {
+      "metric": "large_fund1",
+      "baseline": 0.2687849834865321,
+      "refined": 0.26878543687142253,
+      "absolute_difference": 4.5338489040869234e-07,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "large_fund2",
+      "baseline": 0.000545709382249268,
+      "refined": 0.0005456935407358858,
+      "absolute_difference": 1.584151338210847e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "large_im3lo",
+      "baseline": 0.0004646810605690614,
+      "refined": 0.0004646713013436002,
+      "absolute_difference": 9.75922546123326e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "large_im3hi",
+      "baseline": 0.00031686431262784595,
+      "refined": 0.000316862681484983,
+      "absolute_difference": 1.6311428629772924e-09,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "large_input1",
+      "baseline": 0.1603409246329017,
+      "refined": 0.16034553671430343,
+      "absolute_difference": 4.6120814017336365e-06,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "large_input2",
+      "baseline": 4.68517493754249e-07,
+      "refined": 4.3530825623321885e-07,
+      "absolute_difference": 3.320923752103014e-08,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "large_gain_dB",
+      "baseline": 4.487212362794435,
+      "refined": 4.486977174853557,
+      "absolute_difference": 0.0002351879408779567,
+      "maximum_difference": 0.02,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

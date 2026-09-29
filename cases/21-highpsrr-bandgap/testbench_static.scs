@@ -1,0 +1,35 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=bjt_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=res_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/21-highpsrr-bandgap/circuit.scs"
+VDD (AVDD 0) vsource dc=1.8 mag=1
+X (AVDD 0 VBG 0) bandgap
+CLOAD (VBG 0) capacitor c=1p
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+save AVDD VBG VDD:p X.vcore X.va X.vb X.n1 X.vctat X.pctrl X.nout X.tail X.nbias X.st
+save X.pc0 X.pc1 X.pc2 X.cbias
+save X.namp
+save X.MP0:ids X.MP0:gm X.MP0:gds X.MP0:vgs X.MP0:vds X.MP0:vbs X.MP0:vdsat X.MP0:region
+save X.MP1:ids X.MP1:gm X.MP1:gds X.MP1:vgs X.MP1:vds X.MP1:vbs X.MP1:vdsat X.MP1:region
+save X.MP2:ids X.MP2:gm X.MP2:gds X.MP2:vgs X.MP2:vds X.MP2:vbs X.MP2:vdsat X.MP2:region
+save X.MPC0:ids X.MPC0:gm X.MPC0:gds X.MPC0:vgs X.MPC0:vds X.MPC0:vbs X.MPC0:vdsat X.MPC0:region
+save X.MPC1:ids X.MPC1:gm X.MPC1:gds X.MPC1:vgs X.MPC1:vds X.MPC1:vbs X.MPC1:vdsat X.MPC1:region
+save X.MPC2:ids X.MPC2:gm X.MPC2:gds X.MPC2:vgs X.MPC2:vds X.MPC2:vbs X.MPC2:vdsat X.MPC2:region
+save X.MPCB:ids X.MPCB:gm X.MPCB:gds X.MPCB:vgs X.MPCB:vds X.MPCB:vbs X.MPCB:vdsat X.MPCB:region
+save X.MPA:ids X.MPA:gm X.MPA:gds X.MPA:vgs X.MPA:vds X.MPA:vbs X.MPA:vdsat X.MPA:region
+save X.MPCA:ids X.MPCA:gm X.MPCA:gds X.MPCA:vgs X.MPCA:vds X.MPCA:vbs X.MPCA:vdsat X.MPCA:region
+save X.MNB:ids X.MNB:gm X.MNB:gds X.MNB:vgs X.MNB:vds X.MNB:vbs X.MNB:vdsat X.MNB:region
+save X.MTAIL:ids X.MTAIL:gm X.MTAIL:gds X.MTAIL:vgs X.MTAIL:vds X.MTAIL:vbs X.MTAIL:vdsat X.MTAIL:region
+save X.MINA:ids X.MINA:gm X.MINA:gds X.MINA:vgs X.MINA:vds X.MINA:vbs X.MINA:vdsat X.MINA:region
+save X.MINB:ids X.MINB:gm X.MINB:gds X.MINB:vgs X.MINB:vds X.MINB:vbs X.MINB:vdsat X.MINB:region
+save X.MPD:ids X.MPD:gm X.MPD:gds X.MPD:vgs X.MPD:vds X.MPD:vbs X.MPD:vdsat X.MPD:region
+save X.MPM:ids X.MPM:gm X.MPM:gds X.MPM:vgs X.MPM:vds X.MPM:vbs X.MPM:vdsat X.MPM:region
+save X.MPST:ids X.MPST:gm X.MPST:gds X.MPST:vgs X.MPST:vds X.MPST:vbs X.MPST:vdsat X.MPST:region
+save X.MNST:ids X.MNST:gm X.MNST:gds X.MNST:vgs X.MNST:vds X.MNST:vbs X.MNST:vdsat X.MNST:region
+save X.MSTART:ids X.MSTART:gm X.MSTART:gds X.MSTART:vgs X.MSTART:vds X.MSTART:vbs X.MSTART:vdsat X.MSTART:region
+dcOp dc
+temperature dc param=temp start=-40 stop=85 step=1

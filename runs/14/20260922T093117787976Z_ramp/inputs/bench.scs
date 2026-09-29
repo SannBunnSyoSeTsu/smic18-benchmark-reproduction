@@ -1,0 +1,19 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/14/20260922T093117787976Z_ramp/inputs/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/14/20260922T093117787976Z_ramp/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=2e-5 vabstol=1e-8 iabstol=1e-14 gmin=1e-12
+saveOptions options save=selected
+VDD (AVDD_SRC 0) vsource type=pwl wave=[0 0 1u 1.8 20u 1.8]
+VSENSE (AVDD_SRC AVDD) vsource dc=0
+IBIAS (AVDD IBN2U) isource dc=2u
+CLOAD (CLKO 0) capacitor c=1p
+XDUT (AVDD 0 CLKO IBN2U) osc_2m
+save AVDD CLKO IBN2U XDUT.VBP XDUT.N1 XDUT.N2 XDUT.N3 XDUT.B1 VSENSE:p
+save XDUT.P1 XDUT.Q1
+save XDUT.MNREF:ids XDUT.MNREF:gm XDUT.MNREF:gds XDUT.MNREF:vgs XDUT.MNREF:vds XDUT.MNREF:vdsat
+save XDUT.MNBP:ids XDUT.MNBP:gm XDUT.MNBP:gds XDUT.MNBP:vgs XDUT.MNBP:vds XDUT.MNBP:vdsat
+save XDUT.MPREF:ids XDUT.MPREF:gm XDUT.MPREF:gds XDUT.MPREF:vgs XDUT.MPREF:vds XDUT.MPREF:vdsat
+tran tran stop=20u maxstep=300p errpreset=conservative

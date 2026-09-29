@@ -1,0 +1,29 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=res_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/23/20260922T085255104320Z_code_ramp_refined/inputs/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/23/20260922T085255104320Z_code_ramp_refined/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=2e-6 vabstol=1e-8 iabstol=1e-14
+saveOptions options save=selected
+subckt dac_bit_driver (cmd bit vdrv vss)
+X0 (cmd n1 vdrv vss vdrv vss) INHDV3
+X1 (n1 bit vdrv vss vdrv vss) INHDV32
+ends dac_bit_driver
+VDD (vdd 0) vsource dc=1.8
+VDRV (vdrv 0) vsource dc=1.8
+VC0 (c0 0) vsource type=pulse val0=0 val1=1.8 delay=7.5n rise=50p fall=50p width=4.95n period=10n
+VC1 (c1 0) vsource type=pulse val0=0 val1=1.8 delay=12.5n rise=50p fall=50p width=9.95n period=20n
+VC2 (c2 0) vsource type=pulse val0=0 val1=1.8 delay=22.5n rise=50p fall=50p width=19.95n period=40n
+VC3 (c3 0) vsource type=pulse val0=0 val1=1.8 delay=42.5n rise=50p fall=50p width=39.95n period=80n
+VC4 (c4 0) vsource type=pulse val0=0 val1=1.8 delay=82.5n rise=50p fall=50p width=79.95n period=160n
+XDB0 (c0 b0 vdrv 0) dac_bit_driver
+XDB1 (c1 b1 vdrv 0) dac_bit_driver
+XDB2 (c2 b2 vdrv 0) dac_bit_driver
+XDB3 (c3 b3 vdrv 0) dac_bit_driver
+XDB4 (c4 b4 vdrv 0) dac_bit_driver
+XDAC (0 b0 b1 b2 b3 b4 vdd vout) switched_resistor_dac_5bit
+CL (vout 0) capacitor c=1p
+save vout VDD:p VDRV:p c0 b0 XDAC.nb0 XDAC.sw0 c1 b1 XDAC.nb1 XDAC.sw1 c2 b2 XDAC.nb2 XDAC.sw2 c3 b3 XDAC.nb3 XDAC.sw3 c4 b4 XDAC.nb4 XDAC.sw4
+tran tran stop=162.5n maxstep=2p skipdc=yes errpreset=conservative

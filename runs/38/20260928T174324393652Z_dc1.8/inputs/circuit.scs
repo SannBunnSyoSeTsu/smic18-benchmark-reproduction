@@ -1,0 +1,27 @@
+simulator lang=spectre
+subckt capless_ldo (vin vout vss vref)
+RSTART (vin nb) resistor r=1Meg
+MPA (nb pb vin vin) p18 w=10.4u l=1u
+MPB (pb pb vin vin) p18 w=10.4u l=1u
+MN1 (nb nb vss vss) n18 w=0.98u l=1u
+MN2 (pb nb ns vss) n18 w=0.98u l=1u m=4
+RS (ns vss) resistor r=12300
+MPT (tail pb vin vin) p18 w=10.4u l=1u
+MIR (nr vref tail tail) p18 w=4.08u l=.36u
+MIF (nf fb tail tail) p18 w=4.08u l=.36u
+MNDR (nr nr vss vss) n18 w=1.1u l=1u
+MNDF (nf nf vss vss) n18 w=1.1u l=1u
+MNOUT (gate nf vss vss) n18 w=1.1u l=1u m=3.5
+MNSINK (pc nr vss vss) n18 w=1.1u l=1u m=3.5
+MPD (pc pc vin vin) p18 w=5.2u l=1u m=3.5
+MPOUT (gate pc vin vin) p18 w=5.2u l=1u m=3.5
+MPASS (vout gate vin vin) p18 w=15.66u l=.36u m=400
+CM (gate cmx) capacitor c=3p
+RZ (cmx vout) resistor r=2200
+R1 (vout fb) resistor r=30k
+CF (vout fb) capacitor c=10p
+R2 (fb vss) resistor r=20k
+RESR (vout vc) resistor r=150
+C1 (vc vss) capacitor c=694p
+C2 (vout vss) capacitor c=270p
+ends capless_ldo

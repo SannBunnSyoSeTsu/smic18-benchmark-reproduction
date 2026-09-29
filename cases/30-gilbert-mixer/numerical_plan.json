@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-09-28T18:25:24.915512+00:00",
+  "baseline_groups": {
+    "rf2.3_bal": "runs/30/20260928T182108509042Z_rf2.3_bal",
+    "rf2.3_imb": "runs/30/20260928T182110409565Z_rf2.3_imb",
+    "rf2.4_bal": "runs/30/20260928T182112220205Z_rf2.4_bal",
+    "rf2.4_imb": "runs/30/20260928T182114092649Z_rf2.4_imb",
+    "rf2.5_bal": "runs/30/20260928T182115982423Z_rf2.5_bal",
+    "rf2.5_imb": "runs/30/20260928T182117884624Z_rf2.5_imb",
+    "two_low": "runs/30/20260928T182119860759Z_two_low",
+    "two_high": "runs/30/20260928T182123040906Z_two_high",
+    "small": "runs/30/20260928T182126280190Z_small",
+    "large": "runs/30/20260928T182129450553Z_large"
+  },
+  "baseline": {
+    "maxstep_s": 3e-12,
+    "reltol": 1e-06
+  },
+  "refined": {
+    "maxstep_s": 1.5e-12,
+    "reltol": 1e-07
+  },
+  "limits": {
+    "gain_difference_dB": 0.02,
+    "spur_difference_dB": 0.15,
+    "isolation_linear_ratio_difference": 2e-05,
+    "voltage_difference_V": 1e-05,
+    "power_difference_W": 1e-06,
+    "IIP3_difference_dBm": 0.05,
+    "slope_difference": 0.01,
+    "tone_or_compression_difference_dB": 0.02,
+    "raw_tone_amplitude_difference_V": 1e-05
+  },
+  "spectrum_N": 2048,
+  "isolation_note": "Compare linearamplitude ratios, notarbitrarydB errorsnearzero; reporteddeepnullsbelowthisnumericalresolution arenotaccurateisolationpredictions."
+}

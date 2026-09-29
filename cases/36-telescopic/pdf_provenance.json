@@ -1,0 +1,124 @@
+{
+  "pdf": "reports/36-telescopic-review.pdf",
+  "sha256": "6a180b36cb77f27e403056fdb9b74565bb1b0ff8a3e5749e567f6eb7d3a48dfc",
+  "results_sha256": "f4ac7e120b0e357f22f3fad5837e087bb3f037e3c2f4aa07d67233dbaf3945f1",
+  "circuit_sha256": "2d4a9e9504ac804dd6b55067d359dc4d79fabc31be9e32557493978f80d8af81",
+  "sizing_sha256": "542d75f9046cf8e9fbfee9acecb7f12a3606cf0a8bf7fb02d474aed3658d73c0",
+  "geometry_sha256": "6a0789d7927b6270baed4f996643bd07ed0708cfb7dd164473cd5a53cb42b165",
+  "generated_at": "2026-09-23T06:27:41.752678+00:00",
+  "pages": 9,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:27:41.755792+00:00",
+  "opening_paragraph_sha256": "96ee35f1d24fecad768a94edf437b7463e011bec4aaf5266f7ed34476fe43f03",
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change.",
+  "body_pages": 6,
+  "schematic_pages": 3,
+  "schematic_sheets_sha256": "a6c2fb13959c7a37252ac37ed3f98a2e45c0d07edbf235fc1d20caa8b76cdfa5",
+  "schematic_audit_sha256": "dc2d78ff2819f8cb30530985332a7dcfabce668c6c2a5d35bd4b2e174c656a0e",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/36-telescopic/36-telescopic-review.pdf",
+    "sha256": "8a7de2302024062846263208ce3d5d97185a97adfb5a04a8c9319ad12c090762",
+    "pages": 6,
+    "previous_render_reviewed_at": "2026-09-22T09:05:53.500926+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "b7ae95f10d7db5d4da5568176ab7cf6be1ad0a919dcbd638d78baf9cc1d1f9bb"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "3e68f703d2112d136181e884d7186bcf22352e2677b948572e5991742f8a9b5c"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "442e0ff7a570c7fdfe8c2bb749f9ec5ef95f25bc5cab5994f7f58de2a029c08c"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "4d9d713b720850ddd15c5db2e52864e72efbb0de0832e5b8470f15a5c4e33c47"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "0cdc88e6a4fb4292e292daf0d63bf1593df4b01f9ef6cdabd12e11d2c4c1848a"
+    },
+    {
+      "page": 6,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "ce884b74db333a746f6e6850cc0e807d09a8ecf76fa119a13e90d15ecce2a446"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "fd8c64c45c091e51e1137d55aed423547b36ea02f9cdbeed8890ca8d952b5dfa",
+      "path": "reports/schematic-retrofit-renders/36-telescopic/page-07.png",
+      "sha256": "22a9a9084383a8f3938dd899436ad41b8d2f05da58f62e09f7786a3f160ef1dc"
+    },
+    {
+      "page": 8,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "14074de446bc39d9b1813bd48d39b61ef471bfe492a6962f08e3884b6bdd6029",
+      "path": "reports/schematic-retrofit-renders/36-telescopic/page-08.png",
+      "sha256": "7c8a089dea094dd9ebe773b7f8e3e2b7027fa19f029d6061bd460d627dba86af"
+    },
+    {
+      "page": 9,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "38eda1a25e10301e569239c5fb1cfe4a849911ce6d5d29b9433e9c40cb3eb62b",
+      "path": "reports/schematic-retrofit-renders/36-telescopic/page-09.png",
+      "sha256": "5d4849ce9d64b0f16afe3a158ff5842d6d2e4034df5ac65aa93733c68e2589fc"
+    }
+  ]
+}

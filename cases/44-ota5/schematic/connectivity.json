@@ -1,0 +1,1345 @@
+{
+  "generated_at": "2026-09-23T06:18:49.395472+00:00",
+  "circuit_sha256": "053803f14ee4aa318d697793134fe613cd16978b67680028e1b3ca9152bf1ad3",
+  "top": "ota_5t",
+  "subcircuit_ports": {
+    "ota_5t": [
+      "vss",
+      "ibias",
+      "vdd",
+      "vinn",
+      "vinp",
+      "vout"
+    ]
+  },
+  "instances": {
+    "ota_5t/M6": {
+      "name": "M6",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ibias",
+        "G": "ibias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "11.1000u",
+        "l": "1u"
+      },
+      "source_line": "M6 (ibias ibias vss vss) n18 w=11.1000u l=1u",
+      "W_unit_um": 11.099999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        5,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          7
+        ],
+        "S": [
+          5,
+          5
+        ],
+        "G": [
+          3.45,
+          6
+        ],
+        "B": [
+          5.86,
+          6
+        ]
+      },
+      "block": "ota_5t"
+    },
+    "ota_5t/M5": {
+      "name": "M5",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "ibias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "39.9200u",
+        "l": "1u"
+      },
+      "source_line": "M5 (tail ibias vss vss) n18 w=39.9200u l=1u",
+      "W_unit_um": 39.919999999999995,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        25,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          25,
+          5
+        ],
+        "S": [
+          25,
+          3
+        ],
+        "G": [
+          23.45,
+          4
+        ],
+        "B": [
+          25.86,
+          4
+        ]
+      },
+      "block": "ota_5t"
+    },
+    "ota_5t/M1": {
+      "name": "M1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nleft",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "92.9600u",
+        "l": "1u"
+      },
+      "source_line": "M1 (nleft vinp tail vss) n18 w=92.9600u l=1u",
+      "W_unit_um": 92.96,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        18,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          18,
+          12
+        ],
+        "S": [
+          18,
+          10
+        ],
+        "G": [
+          16.45,
+          11
+        ],
+        "B": [
+          18.86,
+          11
+        ]
+      },
+      "block": "ota_5t"
+    },
+    "ota_5t/M2": {
+      "name": "M2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "92.9600u",
+        "l": "1u"
+      },
+      "source_line": "M2 (vout vinn tail vss) n18 w=92.9600u l=1u",
+      "W_unit_um": 92.96,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        32,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          12
+        ],
+        "S": [
+          32,
+          10
+        ],
+        "G": [
+          30.45,
+          11
+        ],
+        "B": [
+          32.86,
+          11
+        ]
+      },
+      "block": "ota_5t"
+    },
+    "ota_5t/M3": {
+      "name": "M3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nleft",
+        "G": "nleft",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.5200u",
+        "l": "0.36u"
+      },
+      "source_line": "M3 (nleft nleft vdd vdd) p18 w=10.5200u l=0.36u",
+      "W_unit_um": 10.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        18,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          18,
+          18
+        ],
+        "S": [
+          18,
+          20
+        ],
+        "G": [
+          16.45,
+          19
+        ],
+        "B": [
+          18.86,
+          19
+        ]
+      },
+      "block": "ota_5t"
+    },
+    "ota_5t/M4": {
+      "name": "M4",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "nleft",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.5200u",
+        "l": "0.36u"
+      },
+      "source_line": "M4 (vout nleft vdd vdd) p18 w=10.5200u l=0.36u",
+      "W_unit_um": 10.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        32,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          18
+        ],
+        "S": [
+          32,
+          20
+        ],
+        "G": [
+          30.45,
+          19
+        ],
+        "B": [
+          32.86,
+          19
+        ]
+      },
+      "block": "ota_5t"
+    }
+  },
+  "expanded_leaf_instances": {
+    "M1": {
+      "name": "M1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nleft",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "92.9600u",
+        "l": "1u"
+      },
+      "source_line": "M1 (nleft vinp tail vss) n18 w=92.9600u l=1u",
+      "W_unit_um": 92.96,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ota_5t/M1",
+      "path": "M1"
+    },
+    "M2": {
+      "name": "M2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "92.9600u",
+        "l": "1u"
+      },
+      "source_line": "M2 (vout vinn tail vss) n18 w=92.9600u l=1u",
+      "W_unit_um": 92.96,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ota_5t/M2",
+      "path": "M2"
+    },
+    "M3": {
+      "name": "M3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nleft",
+        "G": "nleft",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.5200u",
+        "l": "0.36u"
+      },
+      "source_line": "M3 (nleft nleft vdd vdd) p18 w=10.5200u l=0.36u",
+      "W_unit_um": 10.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ota_5t/M3",
+      "path": "M3"
+    },
+    "M4": {
+      "name": "M4",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "nleft",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "10.5200u",
+        "l": "0.36u"
+      },
+      "source_line": "M4 (vout nleft vdd vdd) p18 w=10.5200u l=0.36u",
+      "W_unit_um": 10.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ota_5t/M4",
+      "path": "M4"
+    },
+    "M5": {
+      "name": "M5",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "ibias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "39.9200u",
+        "l": "1u"
+      },
+      "source_line": "M5 (tail ibias vss vss) n18 w=39.9200u l=1u",
+      "W_unit_um": 39.919999999999995,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ota_5t/M5",
+      "path": "M5"
+    },
+    "M6": {
+      "name": "M6",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ibias",
+        "G": "ibias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "11.1000u",
+        "l": "1u"
+      },
+      "source_line": "M6 (ibias ibias vss vss) n18 w=11.1000u l=1u",
+      "W_unit_um": 11.099999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ota_5t/M6",
+      "path": "M6"
+    }
+  },
+  "nets": {
+    "ota_5t/ibias": [
+      {
+        "instance": "ota_5t/M6",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          5,
+          7
+        ]
+      },
+      {
+        "instance": "ota_5t/M6",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          3.45,
+          6
+        ]
+      },
+      {
+        "instance": "ota_5t/M5",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          23.45,
+          4
+        ]
+      }
+    ],
+    "ota_5t/vss": [
+      {
+        "instance": "ota_5t/M6",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          5,
+          5
+        ]
+      },
+      {
+        "instance": "ota_5t/M6",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          5.86,
+          6
+        ]
+      },
+      {
+        "instance": "ota_5t/M5",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          25,
+          3
+        ]
+      },
+      {
+        "instance": "ota_5t/M5",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          25.86,
+          4
+        ]
+      },
+      {
+        "instance": "ota_5t/M1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          18.86,
+          11
+        ]
+      },
+      {
+        "instance": "ota_5t/M2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          32.86,
+          11
+        ]
+      }
+    ],
+    "ota_5t/tail": [
+      {
+        "instance": "ota_5t/M5",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          25,
+          5
+        ]
+      },
+      {
+        "instance": "ota_5t/M1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          18,
+          10
+        ]
+      },
+      {
+        "instance": "ota_5t/M2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          32,
+          10
+        ]
+      }
+    ],
+    "ota_5t/nleft": [
+      {
+        "instance": "ota_5t/M1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          18,
+          12
+        ]
+      },
+      {
+        "instance": "ota_5t/M3",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          18,
+          18
+        ]
+      },
+      {
+        "instance": "ota_5t/M3",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          16.45,
+          19
+        ]
+      },
+      {
+        "instance": "ota_5t/M4",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          30.45,
+          19
+        ]
+      }
+    ],
+    "ota_5t/vinp": [
+      {
+        "instance": "ota_5t/M1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          16.45,
+          11
+        ]
+      }
+    ],
+    "ota_5t/vout": [
+      {
+        "instance": "ota_5t/M2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          32,
+          12
+        ]
+      },
+      {
+        "instance": "ota_5t/M4",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          32,
+          18
+        ]
+      }
+    ],
+    "ota_5t/vinn": [
+      {
+        "instance": "ota_5t/M2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          30.45,
+          11
+        ]
+      }
+    ],
+    "ota_5t/vdd": [
+      {
+        "instance": "ota_5t/M3",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          18,
+          20
+        ]
+      },
+      {
+        "instance": "ota_5t/M3",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          18.86,
+          19
+        ]
+      },
+      {
+        "instance": "ota_5t/M4",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          32,
+          20
+        ]
+      },
+      {
+        "instance": "ota_5t/M4",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          32.86,
+          19
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "M6",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M6",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M5",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M5",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M3",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M3",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M4",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M4",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M1",
+      "pin": "G",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M5",
+      "pin": "D",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M1",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M2",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M6",
+      "pin": "D",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M6",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M5",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M1",
+      "pin": "D",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M3",
+      "pin": "D",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M3",
+      "pin": "G",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M4",
+      "pin": "G",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M2",
+      "pin": "G",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M2",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    },
+    {
+      "sheet": 1,
+      "instance": "M4",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "ota_5t"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "ota_5t",
+      "title": "五管 OTA 信号核心与参考复制",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.86,
+              6
+            ],
+            [
+              6.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              25.86,
+              4
+            ],
+            [
+              26.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              18.86,
+              11
+            ],
+            [
+              19.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              32.86,
+              11
+            ],
+            [
+              33.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18.86,
+              19
+            ],
+            [
+              19.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              32.86,
+              19
+            ],
+            [
+              33.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18,
+              23
+            ],
+            [
+              32,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18,
+              20
+            ],
+            [
+              18,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              32,
+              20
+            ],
+            [
+              32,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5,
+              1.4
+            ],
+            [
+              25,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              25,
+              3
+            ],
+            [
+              25,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              5,
+              7
+            ],
+            [
+              5,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              3.45,
+              6
+            ],
+            [
+              2.95,
+              6
+            ],
+            [
+              2.95,
+              9
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "points": [
+            [
+              18,
+              18
+            ],
+            [
+              18,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              32,
+              18
+            ],
+            [
+              32,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "points": [
+            [
+              16.45,
+              19
+            ],
+            [
+              15.95,
+              19
+            ],
+            [
+              15.95,
+              16
+            ],
+            [
+              18,
+              16
+            ],
+            [
+              18,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "points": [
+            [
+              30.45,
+              19
+            ],
+            [
+              28,
+              19
+            ],
+            [
+              28,
+              16
+            ],
+            [
+              18,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              18,
+              10
+            ],
+            [
+              18,
+              8
+            ],
+            [
+              32,
+              8
+            ],
+            [
+              32,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              23.45,
+              4
+            ],
+            [
+              22.9,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              16.45,
+              11
+            ],
+            [
+              15.899999999999999,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              30.45,
+              11
+            ],
+            [
+              29.9,
+              11
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            6.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            26.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            19.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            33.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            19.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            33.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            18,
+            23
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5,
+            1.4
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            5,
+            11
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "point": [
+            18,
+            15
+          ],
+          "text": "nleft",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            32,
+            15
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "tail",
+          "point": [
+            25,
+            8
+          ],
+          "text": "tail",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            22.9,
+            4
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            15.899999999999999,
+            11
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            29.9,
+            11
+          ],
+          "text": "vinn",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "ota_5t": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

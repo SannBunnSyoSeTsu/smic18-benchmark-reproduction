@@ -1,0 +1,459 @@
+{
+  "generated_at": "2026-09-28T17:35:27.713391+00:00",
+  "status": "passed",
+  "circuit_sha256": "050cce2389d138c31156a14b1bf955093cbefb0018a2ec14f29689e12d65298d",
+  "results_sha256": "e016f88dca67c43a99b9a2ea9f4eb46064dc90c1205074d0eb88e1f71fe23fbe",
+  "contract_sha256": "2e05dbc147971c8634d3e4b9a5154bd5e86d90d302192221187e28189faaa2c8",
+  "measurement_cross_checks": [
+    {
+      "metric": "1mA_vout_V",
+      "report": 0.4015405395886478,
+      "independent": 0.4015405395886478,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1mA_iq_A",
+      "report": 0.00024639164303626095,
+      "independent": 0.00024639164303626095,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1mA_loop_ugb_Hz",
+      "report": 1906026.49840506,
+      "independent": 1906026.4984050598,
+      "absolute_difference": 2.3283064365386963e-10,
+      "passed": true
+    },
+    {
+      "metric": "1mA_phase_margin_deg",
+      "report": 88.14317345301231,
+      "independent": 88.14317345301231,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1mA_gain_margin_db",
+      "report": 40.39937090658675,
+      "independent": 40.39937090658675,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1mA_stb_ugb_Hz",
+      "report": 1900255.3827910111,
+      "independent": 1900255.3827910111,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1mA_stb_phase_margin_deg",
+      "report": 87.96453494996,
+      "independent": 87.96453494996,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1mA_stb_gain_margin_db",
+      "report": 38.59754994565423,
+      "independent": 38.59754994565423,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1mA_psrr_1k_dB",
+      "report": 46.88207863516017,
+      "independent": 46.88207863516017,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1mA_min_active_headroom_V",
+      "report": 0.3937908795889104,
+      "independent": 0.3937908795889104,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "5mA_vout_V",
+      "report": 0.4011136936326091,
+      "independent": 0.4011136936326091,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "5mA_iq_A",
+      "report": 0.0002470442720225401,
+      "independent": 0.0002470442720225401,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "5mA_loop_ugb_Hz",
+      "report": 1908763.9488750896,
+      "independent": 1908763.9488750899,
+      "absolute_difference": 2.3283064365386963e-10,
+      "passed": true
+    },
+    {
+      "metric": "5mA_phase_margin_deg",
+      "report": 88.761789107201,
+      "independent": 88.761789107201,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "5mA_gain_margin_db",
+      "report": 47.335668539565695,
+      "independent": 47.335668539565695,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "5mA_stb_ugb_Hz",
+      "report": 1902910.6849225347,
+      "independent": 1902910.684922535,
+      "absolute_difference": 2.3283064365386963e-10,
+      "passed": true
+    },
+    {
+      "metric": "5mA_stb_phase_margin_deg",
+      "report": 88.58280328558281,
+      "independent": 88.58280328558281,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "5mA_stb_gain_margin_db",
+      "report": 44.71649946573381,
+      "independent": 44.71649946573381,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "5mA_psrr_1k_dB",
+      "report": 46.83390175512372,
+      "independent": 46.83390175512372,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "5mA_min_active_headroom_V",
+      "report": 0.3938775909812568,
+      "independent": 0.3938775909812568,
+      "absolute_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "original_nominal_checks": [
+    {
+      "name": "1mA_output",
+      "passed": true,
+      "scope": "Original constants/inequalities on explicit TT1.8V27C two-load subset; PVT/MC not claimed."
+    },
+    {
+      "name": "1mA_iq",
+      "passed": true,
+      "scope": "Original constants/inequalities on explicit TT1.8V27C two-load subset; PVT/MC not claimed."
+    },
+    {
+      "name": "1mA_stability",
+      "passed": true,
+      "scope": "Original constants/inequalities on explicit TT1.8V27C two-load subset; PVT/MC not claimed."
+    },
+    {
+      "name": "1mA_psrr",
+      "passed": true,
+      "scope": "Original constants/inequalities on explicit TT1.8V27C two-load subset; PVT/MC not claimed."
+    },
+    {
+      "name": "1mA_headroom",
+      "passed": true,
+      "scope": "Original constants/inequalities on explicit TT1.8V27C two-load subset; PVT/MC not claimed."
+    },
+    {
+      "name": "5mA_output",
+      "passed": true,
+      "scope": "Original constants/inequalities on explicit TT1.8V27C two-load subset; PVT/MC not claimed."
+    },
+    {
+      "name": "5mA_iq",
+      "passed": true,
+      "scope": "Original constants/inequalities on explicit TT1.8V27C two-load subset; PVT/MC not claimed."
+    },
+    {
+      "name": "5mA_stability",
+      "passed": true,
+      "scope": "Original constants/inequalities on explicit TT1.8V27C two-load subset; PVT/MC not claimed."
+    },
+    {
+      "name": "5mA_psrr",
+      "passed": true,
+      "scope": "Original constants/inequalities on explicit TT1.8V27C two-load subset; PVT/MC not claimed."
+    },
+    {
+      "name": "5mA_headroom",
+      "passed": true,
+      "scope": "Original constants/inequalities on explicit TT1.8V27C two-load subset; PVT/MC not claimed."
+    }
+  ],
+  "original_model_hashes_unchanged": true,
+  "source_snapshot_hashes_verified": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "run": "runs/17/20260928T172658600590Z_loop1",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/17/20260928T172659789947Z_psrr1",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/17/20260928T172700408431Z_loop5",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/17/20260928T172701054011Z_psrr5",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/17/20260928T172845560178Z_loop1",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/17/20260928T172846225879Z_psrr1",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/17/20260928T172846881873Z_loop5",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/17/20260928T172847548848Z_psrr5",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    }
+  ],
+  "numerical_confirmation": {
+    "generated_at": "2026-09-28T17:28:48.273063+00:00",
+    "baseline_groups": {
+      "loop1": "runs/17/20260928T172658600590Z_loop1",
+      "psrr1": "runs/17/20260928T172659789947Z_psrr1",
+      "loop5": "runs/17/20260928T172700408431Z_loop5",
+      "psrr5": "runs/17/20260928T172701054011Z_psrr5"
+    },
+    "final_groups": {
+      "loop1": "runs/17/20260928T172845560178Z_loop1",
+      "psrr1": "runs/17/20260928T172846225879Z_psrr1",
+      "loop5": "runs/17/20260928T172846881873Z_loop5",
+      "psrr5": "runs/17/20260928T172847548848Z_psrr5"
+    },
+    "circuit_sha256": "050cce2389d138c31156a14b1bf955093cbefb0018a2ec14f29689e12d65298d",
+    "metrics": [
+      {
+        "metric": "1mA_vout_V",
+        "baseline": 0.4015405395886478,
+        "refined": 0.4015405395886478,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-06,
+        "passed": true
+      },
+      {
+        "metric": "1mA_iq_A",
+        "baseline": 0.00024639164303626095,
+        "refined": 0.00024639164303626095,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-08,
+        "passed": true
+      },
+      {
+        "metric": "1mA_loop_ugb_Hz",
+        "baseline": 1906516.6400225167,
+        "refined": 1906026.49840506,
+        "absolute_difference": 490.1416174566839,
+        "maximum_difference": 6000,
+        "passed": true
+      },
+      {
+        "metric": "1mA_phase_margin_deg",
+        "baseline": 88.14269463173648,
+        "refined": 88.14317345301231,
+        "absolute_difference": 0.00047882127583420697,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      {
+        "metric": "1mA_gain_margin_db",
+        "baseline": 40.388750168864355,
+        "refined": 40.39937090658675,
+        "absolute_difference": 0.010620737722398133,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      {
+        "metric": "1mA_stb_ugb_Hz",
+        "baseline": 1900619.3594239801,
+        "refined": 1900255.3827910111,
+        "absolute_difference": 363.97663296898827,
+        "maximum_difference": 6000,
+        "passed": true
+      },
+      {
+        "metric": "1mA_stb_phase_margin_deg",
+        "baseline": 87.96414380876583,
+        "refined": 87.96453494996,
+        "absolute_difference": 0.00039114119417149595,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      {
+        "metric": "1mA_stb_gain_margin_db",
+        "baseline": 38.59990082095465,
+        "refined": 38.59754994565423,
+        "absolute_difference": 0.002350875300422217,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      {
+        "metric": "1mA_psrr_1k_dB",
+        "baseline": 46.88207863516017,
+        "refined": 46.88207863516017,
+        "absolute_difference": 0.0,
+        "maximum_difference": 0.01,
+        "passed": true
+      },
+      {
+        "metric": "1mA_min_active_headroom_V",
+        "baseline": 0.3937908795889104,
+        "refined": 0.3937908795889104,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-06,
+        "passed": true
+      },
+      {
+        "metric": "5mA_vout_V",
+        "baseline": 0.4011136936326091,
+        "refined": 0.4011136936326091,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-06,
+        "passed": true
+      },
+      {
+        "metric": "5mA_iq_A",
+        "baseline": 0.0002470442720225401,
+        "refined": 0.0002470442720225401,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-08,
+        "passed": true
+      },
+      {
+        "metric": "5mA_loop_ugb_Hz",
+        "baseline": 1909314.4192107592,
+        "refined": 1908763.9488750896,
+        "absolute_difference": 550.4703356695827,
+        "maximum_difference": 6000,
+        "passed": true
+      },
+      {
+        "metric": "5mA_phase_margin_deg",
+        "baseline": 88.76143068090829,
+        "refined": 88.761789107201,
+        "absolute_difference": 0.0003584262927063264,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      {
+        "metric": "5mA_gain_margin_db",
+        "baseline": 47.302939982070264,
+        "refined": 47.335668539565695,
+        "absolute_difference": 0.03272855749543169,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      {
+        "metric": "5mA_stb_ugb_Hz",
+        "baseline": 1903333.0524708207,
+        "refined": 1902910.6849225347,
+        "absolute_difference": 422.3675482859835,
+        "maximum_difference": 6000,
+        "passed": true
+      },
+      {
+        "metric": "5mA_stb_phase_margin_deg",
+        "baseline": 88.58248728208065,
+        "refined": 88.58280328558281,
+        "absolute_difference": 0.00031600350216365314,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      {
+        "metric": "5mA_stb_gain_margin_db",
+        "baseline": 44.717267725022026,
+        "refined": 44.71649946573381,
+        "absolute_difference": 0.0007682592882147787,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      {
+        "metric": "5mA_psrr_1k_dB",
+        "baseline": 46.83390175512372,
+        "refined": 46.83390175512372,
+        "absolute_difference": 0.0,
+        "maximum_difference": 0.01,
+        "passed": true
+      },
+      {
+        "metric": "5mA_min_active_headroom_V",
+        "baseline": 0.3938775909812568,
+        "refined": 0.3938775909812568,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-06,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "schematic_instances": 13,
+  "schematic_terminals": 48,
+  "pdf_review_pending": false,
+  "full_upstream_signoff": false,
+  "method": "Independent complex-quotient identity, array interpolation, PSD PSRR and supply-current decomposition; original constants and strict inequalities applied to both nominal loads. First falling crossings and no unity recrossing verified. Signed Spectre return normalized as T=-loopGain. Full PVT/mismatch explicitly excluded.",
+  "pdf": "reports/17-nmos-ldo-review.pdf",
+  "pdf_sha256": "cb7a7d8a049dd34a4acab8c8eb9da7b7db09d6d632ad0c1fabdd6d67267d7ef0",
+  "pdf_pages": 8,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-28T17:35:58.284040+00:00"
+}

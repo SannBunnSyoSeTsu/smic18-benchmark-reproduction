@@ -1,0 +1,31 @@
+// First-order VBE + 2*RREF/RPTAT*DeltaVBE; untrimmed high-impedance output.
+simulator lang=spectre
+subckt bandgap_reference (vss vdd vref)
+MP0 (va pctrl vdd vdd) p18 w=25.3u l=1u
+MP1 (vb pctrl vdd vdd) p18 w=25.3u l=1u
+MP2 (vref pctrl vdd vdd) p18 w=25.3u l=1u m=2
+Q0 (va va vss vss) npn18a4 area=1
+RPTAT (vb n1 vss) rpposab_3t w=1u l=16.5u
+Q1 (n1 n1 vss vss) npn18a4 area=8
+RREF (vref vctat vss) rpposab_3t w=1u l=73.3u
+QREF (vctat vctat vss vss) npn18a4 area=2
+CREF (vref vss) mim w=100u l=617.91967u
+RB0 (vdd rb1 vss) rpposab_3t w=1u l=162.5u
+RB1 (rb1 rb2 vss) rpposab_3t w=1u l=162.5u
+RB2 (rb2 rb3 vss) rpposab_3t w=1u l=162.5u
+RB3 (rb3 rb4 vss) rpposab_3t w=1u l=162.5u
+RB4 (rb4 rb5 vss) rpposab_3t w=1u l=162.5u
+RB5 (rb5 rb6 vss) rpposab_3t w=1u l=162.5u
+RB6 (rb6 rb7 vss) rpposab_3t w=1u l=162.5u
+RB7 (rb7 nbias vss) rpposab_3t w=1u l=162.5u
+MNB (nbias nbias vss vss) n18 w=0.88u l=1u
+MTAIL (tail nbias vss vss) n18 w=0.88u l=1u m=3
+MINA (pctrl va tail vss) n18 w=13.0u l=1u
+MINB (nout vb tail vss) n18 w=13.0u l=1u
+MPD (nout nout vdd vdd) p18 w=12.52u l=1u
+MPM (pctrl nout vdd vdd) p18 w=12.52u l=1u
+CCOMP (pctrl vss) mim w=50u l=10.298661u
+MPST (st vref vdd vdd) p18 w=2.82u l=1u
+MNST (st vref vss vss) n18 w=0.58u l=1u
+MSTART (pctrl st vss vss) n18 w=0.58u l=1u
+ends bandgap_reference

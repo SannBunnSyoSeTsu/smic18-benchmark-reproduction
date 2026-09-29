@@ -1,0 +1,1821 @@
+[
+  {
+    "generated_at": "2026-09-29T02:57:21.558730+00:00",
+    "circuit_sha256": "79b01d55f2c2c91c3434032ece9fc6d1b0d8bac52fe119800001b0dbb3d415e6",
+    "parameters": {
+      "input_scale": 1,
+      "load_scale": 1,
+      "tail_scale": 0.7,
+      "output_scale": 1,
+      "feedback_fF": 100,
+      "instance_roles": {
+        "XNM14": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM13a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM12": {
+          "role": "ncas",
+          "multiplier": 2.0,
+          "W_um": 2.8000000000000003,
+          "L_um": 0.18
+        },
+        "XNM11": {
+          "role": "nbias",
+          "multiplier": 0.2,
+          "W_um": 0.38000000000000006,
+          "L_um": 0.36
+        },
+        "XNM10": {
+          "role": "nout",
+          "multiplier": 1,
+          "W_um": 0.64,
+          "L_um": 1.0
+        },
+        "XNM9": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM8": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM7": {
+          "role": "nout",
+          "multiplier": 1,
+          "W_um": 0.64,
+          "L_um": 1.0
+        },
+        "XNM5": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM4": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM15a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM3": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM2": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM1": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XNM0": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XPM12": {
+          "role": "pbias",
+          "multiplier": 0.2,
+          "W_um": 2.3440000000000003,
+          "L_um": 0.36
+        },
+        "XPM11": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM10": {
+          "role": "pcas",
+          "multiplier": 2.0,
+          "W_um": 4.36,
+          "L_um": 0.18
+        },
+        "XPM9": {
+          "role": "pout",
+          "multiplier": 1,
+          "W_um": 3.04,
+          "L_um": 1.0
+        },
+        "XPM8": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM7": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM6": {
+          "role": "pout",
+          "multiplier": 1,
+          "W_um": 3.04,
+          "L_um": 1.0
+        },
+        "XPM13": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM1": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM5": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM4": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM0": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM3": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        }
+      }
+    },
+    "status": "needs_iteration",
+    "values": {
+      "pos20": {
+        "mean_diff_V": 0.09666705105752703,
+        "static_error_fraction": 0.39583093089045607,
+        "cm_error_V": 0.14093055432337376,
+        "power_W": 0.00021740354606014927,
+        "settle_s": null,
+        "ripple_V": 0.0064073572855705
+      },
+      "pos10": {
+        "mean_diff_V": 0.09623247750357161
+      },
+      "zero": {
+        "mean_diff_V": 0.09575840201858182
+      },
+      "neg20": {
+        "mean_diff_V": 0.09483958016863739,
+        "static_error_fraction": 1.5927473760539836,
+        "cm_error_V": 0.14056654966316884,
+        "power_W": 0.00021735996967384093,
+        "settle_s": null,
+        "ripple_V": 0.006229695307785804
+      },
+      "transfer": {
+        "positive_gain": 0.043457355395541686,
+        "bipolar_gain": 0.045686772222241004,
+        "zero_residual_V": 0.09575840201858182
+      }
+    },
+    "groups": {
+      "pos20": "runs/06/20260929T025715753968Z_pos20",
+      "pos10": "runs/06/20260929T025717036167Z_pos10",
+      "zero": "runs/06/20260929T025718319665Z_zero",
+      "neg20": "runs/06/20260929T025719536964Z_neg20"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T03:00:49.420396+00:00",
+    "circuit_sha256": "7e662e894e313c4b53d0ca6bf6d01880c35353e398e599d2423aed1fbba59ac0",
+    "parameters": {
+      "input_scale": 1,
+      "load_scale": 1,
+      "tail_scale": 0.7,
+      "output_scale": 1,
+      "feedback_fF": 100,
+      "instance_roles": {
+        "XNM14": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM13a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM12": {
+          "role": "ncas",
+          "multiplier": 2.0,
+          "W_um": 2.8000000000000003,
+          "L_um": 0.18
+        },
+        "XNM11": {
+          "role": "nbias",
+          "multiplier": 0.2,
+          "W_um": 0.38000000000000006,
+          "L_um": 0.36
+        },
+        "XNM10": {
+          "role": "nout",
+          "multiplier": 1,
+          "W_um": 0.64,
+          "L_um": 1.0
+        },
+        "XNM9": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM8": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM7": {
+          "role": "nout",
+          "multiplier": 1,
+          "W_um": 0.64,
+          "L_um": 1.0
+        },
+        "XNM5": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM4": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM15a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM3": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM2": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM1": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XNM0": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XPM12": {
+          "role": "pbias",
+          "multiplier": 0.2,
+          "W_um": 2.3440000000000003,
+          "L_um": 0.36
+        },
+        "XPM11": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM10": {
+          "role": "pcas",
+          "multiplier": 2.0,
+          "W_um": 4.36,
+          "L_um": 0.18
+        },
+        "XPM9": {
+          "role": "pout",
+          "multiplier": 1,
+          "W_um": 3.04,
+          "L_um": 1.0
+        },
+        "XPM8": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM7": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM6": {
+          "role": "pout",
+          "multiplier": 1,
+          "W_um": 3.04,
+          "L_um": 1.0
+        },
+        "XPM13": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM1": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM5": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM4": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM0": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM3": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        }
+      }
+    },
+    "status": "needs_iteration",
+    "values": {
+      "pos20": {
+        "mean_diff_V": 0.17707012405994707,
+        "static_error_fraction": 0.10668827537466917,
+        "cm_error_V": 0.006558979661926534,
+        "power_W": 0.00029891250015008484,
+        "settle_s": 5.558369362345752e-08,
+        "ripple_V": 0.0005966323058022305
+      },
+      "pos10": {
+        "mean_diff_V": 0.08584096281537063
+      },
+      "zero": {
+        "mean_diff_V": 0.001020909280412954
+      },
+      "neg20": {
+        "mean_diff_V": -0.1729481577010526,
+        "static_error_fraction": 0.0809259856315787,
+        "cm_error_V": 0.006699727232938102,
+        "power_W": 0.00029862698933260024,
+        "settle_s": 5.429798465244719e-08,
+        "ripple_V": 0.0005770146359593276
+      },
+      "transfer": {
+        "positive_gain": 9.122916124457644,
+        "bipolar_gain": 8.750457044024992,
+        "zero_residual_V": 0.001020909280412954
+      }
+    },
+    "groups": {
+      "pos20": "runs/06/20260929T030038442409Z_pos20",
+      "pos10": "runs/06/20260929T030040095501Z_pos10",
+      "zero": "runs/06/20260929T030044612916Z_zero",
+      "neg20": "runs/06/20260929T030045946710Z_neg20"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T03:01:41.254346+00:00",
+    "circuit_sha256": "f8c6cb56ccdfb2323e296ca42ce373c11098d78230e593e9636c1edd11a46ce7",
+    "parameters": {
+      "input_scale": 1,
+      "load_scale": 1,
+      "tail_scale": 0.7,
+      "output_scale": 1.2,
+      "feedback_fF": 110,
+      "instance_roles": {
+        "XNM14": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM13a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM12": {
+          "role": "ncas",
+          "multiplier": 2.0,
+          "W_um": 2.8000000000000003,
+          "L_um": 0.18
+        },
+        "XNM11": {
+          "role": "nbias",
+          "multiplier": 0.2,
+          "W_um": 0.38000000000000006,
+          "L_um": 0.36
+        },
+        "XNM10": {
+          "role": "nout",
+          "multiplier": 1.2,
+          "W_um": 0.768,
+          "L_um": 1.0
+        },
+        "XNM9": {
+          "role": "ncas",
+          "multiplier": 1,
+          "W_um": 1.4000000000000001,
+          "L_um": 0.18
+        },
+        "XNM8": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM7": {
+          "role": "nout",
+          "multiplier": 1.2,
+          "W_um": 0.768,
+          "L_um": 1.0
+        },
+        "XNM5": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM4": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM15a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM3": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM2": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM1": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XNM0": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XPM12": {
+          "role": "pbias",
+          "multiplier": 0.2,
+          "W_um": 2.3440000000000003,
+          "L_um": 0.36
+        },
+        "XPM11": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM10": {
+          "role": "pcas",
+          "multiplier": 2.0,
+          "W_um": 4.36,
+          "L_um": 0.18
+        },
+        "XPM9": {
+          "role": "pout",
+          "multiplier": 1.2,
+          "W_um": 3.6479999999999997,
+          "L_um": 1.0
+        },
+        "XPM8": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM7": {
+          "role": "pcas",
+          "multiplier": 1,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM6": {
+          "role": "pout",
+          "multiplier": 1.2,
+          "W_um": 3.6479999999999997,
+          "L_um": 1.0
+        },
+        "XPM13": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM1": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM5": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM4": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM0": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM3": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        }
+      }
+    },
+    "status": "complete_10pct",
+    "values": {
+      "pos20": {
+        "mean_diff_V": 0.15991653222046637,
+        "static_error_fraction": 0.0005216736220852239,
+        "cm_error_V": 0.00762791683893882,
+        "power_W": 0.00029696586762239765,
+        "settle_s": 3.524077382101198e-08,
+        "ripple_V": 0.00042723528414462253
+      },
+      "pos10": {
+        "mean_diff_V": 0.07664465360162383
+      },
+      "zero": {
+        "mean_diff_V": 0.00028202032018256017
+      },
+      "neg20": {
+        "mean_diff_V": -0.15824453379976006,
+        "static_error_fraction": 0.010971663751499668,
+        "cm_error_V": 0.00759375477694435,
+        "power_W": 0.0002969269597156023,
+        "settle_s": 3.488369451301547e-08,
+        "ripple_V": 0.0004219991479836316
+      },
+      "transfer": {
+        "positive_gain": 8.327187861884253,
+        "bipolar_gain": 7.954026650505661,
+        "zero_residual_V": 0.00028202032018256017
+      }
+    },
+    "groups": {
+      "pos20": "runs/06/20260929T030129337559Z_pos20",
+      "pos10": "runs/06/20260929T030131016733Z_pos10",
+      "zero": "runs/06/20260929T030135953775Z_zero",
+      "neg20": "runs/06/20260929T030137427412Z_neg20"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T03:03:41.985987+00:00",
+    "circuit_sha256": "96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1",
+    "parameters": {
+      "input_scale": 1,
+      "load_scale": 1,
+      "tail_scale": 0.7,
+      "output_scale": 1.2,
+      "feedback_fF": 109.5,
+      "instance_roles": {
+        "XNM14": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM13a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM12": {
+          "role": "ncas",
+          "multiplier": 2.0,
+          "W_um": 2.8000000000000003,
+          "L_um": 0.18
+        },
+        "XNM11": {
+          "role": "nbias",
+          "multiplier": 0.2,
+          "W_um": 0.38000000000000006,
+          "L_um": 0.36
+        },
+        "XNM10": {
+          "role": "nout",
+          "multiplier": 1.2,
+          "W_um": 0.768,
+          "L_um": 1.0
+        },
+        "XNM9": {
+          "role": "ncas",
+          "multiplier": 1,
+          "W_um": 1.4000000000000001,
+          "L_um": 0.18
+        },
+        "XNM8": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM7": {
+          "role": "nout",
+          "multiplier": 1.2,
+          "W_um": 0.768,
+          "L_um": 1.0
+        },
+        "XNM5": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM4": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM15a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM3": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM2": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM1": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XNM0": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XPM12": {
+          "role": "pbias",
+          "multiplier": 0.2,
+          "W_um": 2.3440000000000003,
+          "L_um": 0.36
+        },
+        "XPM11": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM10": {
+          "role": "pcas",
+          "multiplier": 2.0,
+          "W_um": 4.36,
+          "L_um": 0.18
+        },
+        "XPM9": {
+          "role": "pout",
+          "multiplier": 1.2,
+          "W_um": 3.6479999999999997,
+          "L_um": 1.0
+        },
+        "XPM8": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM7": {
+          "role": "pcas",
+          "multiplier": 1,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM6": {
+          "role": "pout",
+          "multiplier": 1.2,
+          "W_um": 3.6479999999999997,
+          "L_um": 1.0
+        },
+        "XPM13": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM1": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM5": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM4": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM0": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM3": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "MSTARTP": {
+          "role": "startup",
+          "multiplier": 1,
+          "W_um": 0.5,
+          "L_um": 1
+        },
+        "MSTARTN": {
+          "role": "startup",
+          "multiplier": 1,
+          "W_um": 0.5,
+          "L_um": 1
+        }
+      }
+    },
+    "status": "complete_original",
+    "values": {
+      "pos20": {
+        "mean_diff_V": 0.16067881042396867,
+        "static_error_fraction": 0.004242565149804173,
+        "cm_error_V": 0.007627823587177729,
+        "power_W": 0.0002969660698230453,
+        "settle_s": 3.522935410320405e-08,
+        "ripple_V": 0.00043246388247328293
+      },
+      "pos10": {
+        "mean_diff_V": 0.07776354105770511
+      },
+      "zero": {
+        "mean_diff_V": 0.0002826730281019394
+      },
+      "neg20": {
+        "mean_diff_V": -0.15900419551313197,
+        "static_error_fraction": 0.006223778042925218,
+        "cm_error_V": 0.007593253724092808,
+        "power_W": 0.00029692657291867646,
+        "settle_s": 3.487927484527225e-08,
+        "ripple_V": 0.00042970298359848447
+      },
+      "transfer": {
+        "positive_gain": 8.291526936626356,
+        "bipolar_gain": 7.992075148427515,
+        "zero_residual_V": 0.0002826730281019394
+      }
+    },
+    "groups": {
+      "pos20": "runs/06/20260929T030330054810Z_pos20",
+      "pos10": "runs/06/20260929T030331748085Z_pos10",
+      "zero": "runs/06/20260929T030336871424Z_zero",
+      "neg20": "runs/06/20260929T030338233335Z_neg20"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T03:05:10.217248+00:00",
+    "circuit_sha256": "96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1",
+    "parameters": {
+      "input_scale": 1,
+      "load_scale": 1,
+      "tail_scale": 0.7,
+      "output_scale": 1.2,
+      "feedback_fF": 109.5,
+      "instance_roles": {
+        "XNM14": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM13a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM12": {
+          "role": "ncas",
+          "multiplier": 2.0,
+          "W_um": 2.8000000000000003,
+          "L_um": 0.18
+        },
+        "XNM11": {
+          "role": "nbias",
+          "multiplier": 0.2,
+          "W_um": 0.38000000000000006,
+          "L_um": 0.36
+        },
+        "XNM10": {
+          "role": "nout",
+          "multiplier": 1.2,
+          "W_um": 0.768,
+          "L_um": 1.0
+        },
+        "XNM9": {
+          "role": "ncas",
+          "multiplier": 1,
+          "W_um": 1.4000000000000001,
+          "L_um": 0.18
+        },
+        "XNM8": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM7": {
+          "role": "nout",
+          "multiplier": 1.2,
+          "W_um": 0.768,
+          "L_um": 1.0
+        },
+        "XNM5": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM4": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM15a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM3": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM2": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM1": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XNM0": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XPM12": {
+          "role": "pbias",
+          "multiplier": 0.2,
+          "W_um": 2.3440000000000003,
+          "L_um": 0.36
+        },
+        "XPM11": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM10": {
+          "role": "pcas",
+          "multiplier": 2.0,
+          "W_um": 4.36,
+          "L_um": 0.18
+        },
+        "XPM9": {
+          "role": "pout",
+          "multiplier": 1.2,
+          "W_um": 3.6479999999999997,
+          "L_um": 1.0
+        },
+        "XPM8": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM7": {
+          "role": "pcas",
+          "multiplier": 1,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM6": {
+          "role": "pout",
+          "multiplier": 1.2,
+          "W_um": 3.6479999999999997,
+          "L_um": 1.0
+        },
+        "XPM13": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM1": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM5": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM4": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM0": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM3": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "MSTARTP": {
+          "role": "startup",
+          "multiplier": 1,
+          "W_um": 0.5,
+          "L_um": 1
+        },
+        "MSTARTN": {
+          "role": "startup",
+          "multiplier": 1,
+          "W_um": 0.5,
+          "L_um": 1
+        }
+      }
+    },
+    "status": "complete_original",
+    "values": {
+      "pos20": {
+        "mean_diff_V": 0.16067869218237668,
+        "static_error_fraction": 0.0042418261398542365,
+        "cm_error_V": 0.007627733564296135,
+        "power_W": 0.000296966100033541,
+        "settle_s": 3.522857725418644e-08,
+        "ripple_V": 0.00043352030707927147
+      },
+      "pos10": {
+        "mean_diff_V": 0.07775380483808875
+      },
+      "zero": {
+        "mean_diff_V": 0.00028272408076476156
+      },
+      "neg20": {
+        "mean_diff_V": -0.15900426279377422,
+        "static_error_fraction": 0.006223357538911144,
+        "cm_error_V": 0.0075931841344935025,
+        "power_W": 0.00029692660222416847,
+        "settle_s": 3.487856245969667e-08,
+        "ripple_V": 0.000428900586868286
+      },
+      "transfer": {
+        "positive_gain": 8.292488734428794,
+        "bipolar_gain": 7.992073874403772,
+        "zero_residual_V": 0.00028272408076476156
+      }
+    },
+    "groups": {
+      "pos20": "runs/06/20260929T030449684289Z_pos20",
+      "pos10": "runs/06/20260929T030452302689Z_pos10",
+      "zero": "runs/06/20260929T030501217121Z_zero",
+      "neg20": "runs/06/20260929T030503329586Z_neg20"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T03:31:34.582974+00:00",
+    "circuit_sha256": "96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1",
+    "parameters": {
+      "input_scale": 1,
+      "load_scale": 1,
+      "tail_scale": 0.7,
+      "output_scale": 1.2,
+      "feedback_fF": 109.5,
+      "instance_roles": {
+        "XNM14": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM13a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM12": {
+          "role": "ncas",
+          "multiplier": 2.0,
+          "W_um": 2.8000000000000003,
+          "L_um": 0.18
+        },
+        "XNM11": {
+          "role": "nbias",
+          "multiplier": 0.2,
+          "W_um": 0.38000000000000006,
+          "L_um": 0.36
+        },
+        "XNM10": {
+          "role": "nout",
+          "multiplier": 1.2,
+          "W_um": 0.768,
+          "L_um": 1.0
+        },
+        "XNM9": {
+          "role": "ncas",
+          "multiplier": 1,
+          "W_um": 1.4000000000000001,
+          "L_um": 0.18
+        },
+        "XNM8": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM7": {
+          "role": "nout",
+          "multiplier": 1.2,
+          "W_um": 0.768,
+          "L_um": 1.0
+        },
+        "XNM5": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM4": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM15a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM3": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM2": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM1": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XNM0": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XPM12": {
+          "role": "pbias",
+          "multiplier": 0.2,
+          "W_um": 2.3440000000000003,
+          "L_um": 0.36
+        },
+        "XPM11": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM10": {
+          "role": "pcas",
+          "multiplier": 2.0,
+          "W_um": 4.36,
+          "L_um": 0.18
+        },
+        "XPM9": {
+          "role": "pout",
+          "multiplier": 1.2,
+          "W_um": 3.6479999999999997,
+          "L_um": 1.0
+        },
+        "XPM8": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM7": {
+          "role": "pcas",
+          "multiplier": 1,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM6": {
+          "role": "pout",
+          "multiplier": 1.2,
+          "W_um": 3.6479999999999997,
+          "L_um": 1.0
+        },
+        "XPM13": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM1": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM5": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM4": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM0": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM3": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "MSTARTP": {
+          "role": "startup",
+          "multiplier": 1,
+          "W_um": 0.5,
+          "L_um": 1
+        },
+        "MSTARTN": {
+          "role": "startup",
+          "multiplier": 1,
+          "W_um": 0.5,
+          "L_um": 1
+        }
+      }
+    },
+    "status": "complete_original",
+    "values": {
+      "pos20": {
+        "mean_diff_V": 0.16069167454951558,
+        "static_error_fraction": 0.004322965934472345,
+        "cm_error_V": 0.007629471514733366,
+        "power_W": 0.0002969660104335404,
+        "settle_s": 3.522902771788186e-08,
+        "ripple_V": 0.0004325587414128751
+      },
+      "pos10": {
+        "mean_diff_V": 0.0777665956125229
+      },
+      "zero": {
+        "mean_diff_V": 0.0002826566600255398
+      },
+      "neg20": {
+        "mean_diff_V": -0.15901364566551107,
+        "static_error_fraction": 0.006164714590555821,
+        "cm_error_V": 0.00759444971092349,
+        "power_W": 0.0002969265327429641,
+        "settle_s": 3.487871874951189e-08,
+        "ripple_V": 0.00042830295615642333
+      },
+      "transfer": {
+        "positive_gain": 8.292507893699268,
+        "bipolar_gain": 7.992633005375666,
+        "zero_residual_V": 0.0002826566600255398
+      }
+    },
+    "groups": {
+      "pos20": "runs/06/20260929T033123139402Z_pos20",
+      "pos10": "runs/06/20260929T033124710683Z_pos10",
+      "zero": "runs/06/20260929T033129643852Z_zero",
+      "neg20": "runs/06/20260929T033131011617Z_neg20"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T03:31:53.907295+00:00",
+    "circuit_sha256": "96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1",
+    "parameters": {
+      "input_scale": 1,
+      "load_scale": 1,
+      "tail_scale": 0.7,
+      "output_scale": 1.2,
+      "feedback_fF": 109.5,
+      "instance_roles": {
+        "XNM14": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM13a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM13d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM12": {
+          "role": "ncas",
+          "multiplier": 2.0,
+          "W_um": 2.8000000000000003,
+          "L_um": 0.18
+        },
+        "XNM11": {
+          "role": "nbias",
+          "multiplier": 0.2,
+          "W_um": 0.38000000000000006,
+          "L_um": 0.36
+        },
+        "XNM10": {
+          "role": "nout",
+          "multiplier": 1.2,
+          "W_um": 0.768,
+          "L_um": 1.0
+        },
+        "XNM9": {
+          "role": "ncas",
+          "multiplier": 1,
+          "W_um": 1.4000000000000001,
+          "L_um": 0.18
+        },
+        "XNM8": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM7": {
+          "role": "nout",
+          "multiplier": 1.2,
+          "W_um": 0.768,
+          "L_um": 1.0
+        },
+        "XNM5": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM4": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM15a": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15b": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15c": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM15d": {
+          "role": "ncas",
+          "multiplier": 0.25,
+          "W_um": 0.35000000000000003,
+          "L_um": 0.18
+        },
+        "XNM3": {
+          "role": "nbias",
+          "multiplier": 0.7,
+          "W_um": 1.33,
+          "L_um": 0.36
+        },
+        "XNM2": {
+          "role": "nbias",
+          "multiplier": 1.0,
+          "W_um": 1.9000000000000001,
+          "L_um": 0.36
+        },
+        "XNM1": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XNM0": {
+          "role": "input",
+          "multiplier": 1,
+          "W_um": 9.94,
+          "L_um": 0.36
+        },
+        "XPM12": {
+          "role": "pbias",
+          "multiplier": 0.2,
+          "W_um": 2.3440000000000003,
+          "L_um": 0.36
+        },
+        "XPM11": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM10": {
+          "role": "pcas",
+          "multiplier": 2.0,
+          "W_um": 4.36,
+          "L_um": 0.18
+        },
+        "XPM9": {
+          "role": "pout",
+          "multiplier": 1.2,
+          "W_um": 3.6479999999999997,
+          "L_um": 1.0
+        },
+        "XPM8": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM7": {
+          "role": "pcas",
+          "multiplier": 1,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM6": {
+          "role": "pout",
+          "multiplier": 1.2,
+          "W_um": 3.6479999999999997,
+          "L_um": 1.0
+        },
+        "XPM13": {
+          "role": "pcas",
+          "multiplier": 1.0,
+          "W_um": 2.18,
+          "L_um": 0.18
+        },
+        "XPM1": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM5": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM4": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM0": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "XPM3": {
+          "role": "pbias",
+          "multiplier": 1.0,
+          "W_um": 11.72,
+          "L_um": 0.36
+        },
+        "MSTARTP": {
+          "role": "startup",
+          "multiplier": 1,
+          "W_um": 0.5,
+          "L_um": 1
+        },
+        "MSTARTN": {
+          "role": "startup",
+          "multiplier": 1,
+          "W_um": 0.5,
+          "L_um": 1
+        }
+      }
+    },
+    "status": "complete_original",
+    "values": {
+      "pos20": {
+        "mean_diff_V": 0.16069006715061548,
+        "static_error_fraction": 0.004312919691346756,
+        "cm_error_V": 0.007629151363719888,
+        "power_W": 0.00029696605212667913,
+        "settle_s": 3.522819265275227e-08,
+        "ripple_V": 0.0004336084441476651
+      },
+      "pos10": {
+        "mean_diff_V": 0.07775699274358268
+      },
+      "zero": {
+        "mean_diff_V": 0.00028274137675824595
+      },
+      "neg20": {
+        "mean_diff_V": -0.15901541780642953,
+        "static_error_fraction": 0.00615363870981548,
+        "cm_error_V": 0.007594605270830779,
+        "power_W": 0.00029692655153654423,
+        "settle_s": 3.487808945088655e-08,
+        "ripple_V": 0.00042932441572346436
+      },
+      "transfer": {
+        "positive_gain": 8.29330744070328,
+        "bipolar_gain": 7.992637123926125,
+        "zero_residual_V": 0.00028274137675824595
+      }
+    },
+    "groups": {
+      "pos20": "runs/06/20260929T033134585984Z_pos20",
+      "pos10": "runs/06/20260929T033137074976Z_pos10",
+      "zero": "runs/06/20260929T033145699191Z_zero",
+      "neg20": "runs/06/20260929T033147677778Z_neg20"
+    }
+  }
+]

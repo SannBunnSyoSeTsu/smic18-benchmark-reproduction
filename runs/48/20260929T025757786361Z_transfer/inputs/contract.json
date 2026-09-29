@@ -1,0 +1,94 @@
+{
+  "source_task": "sky130-sar-adc-4bit-async",
+  "scope": "SMIC18 TT 1.8V 27C; all 16 code centers in both original orders with original post-acquisition decoys; original nominal coherent dynamic records. SS/FF source corners excluded from nominal reproduction.",
+  "bits": 4,
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "clock": {
+    "period_s": 1e-08,
+    "delay_s": 1e-12,
+    "rise_fall_s": 2e-11,
+    "width_s": 1.98e-09,
+    "source_ohm": 50
+  },
+  "load_per_output_F": 1e-14,
+  "input_common_V": 0.9,
+  "input_dynamic_per_leg_amplitude_V": 0.85,
+  "transfer_orders": [
+    [
+      0,
+      11,
+      4,
+      15,
+      2,
+      9,
+      6,
+      13,
+      1,
+      8,
+      5,
+      14,
+      3,
+      10,
+      7,
+      12
+    ],
+    [
+      15,
+      0,
+      8,
+      7,
+      3,
+      12,
+      5,
+      10,
+      1,
+      14,
+      6,
+      9,
+      2,
+      13,
+      4,
+      11
+    ]
+  ],
+  "decoy_offsets": [
+    8,
+    5
+  ],
+  "decoy_start_ns": 2.2,
+  "decoy_end_ns": 2.25,
+  "next_input_start_ns": 7.5,
+  "next_input_end_ns": 7.55,
+  "decode_offset_ns": 14.5,
+  "dynamic_samples": 32,
+  "dynamic_bins": [
+    15,
+    13
+  ],
+  "dynamic_phases_deg": [
+    0,
+    17
+  ],
+  "dynamic_first_decode_ns": 44.5,
+  "power_window_ns": [
+    39.5,
+    359.5
+  ],
+  "power_definition": "Signed net delivered energy summed over VDD,VREFP,VCM,VINP,VINN,VCLKS; no omitted input/clock power.",
+  "sndr_min_dB": 24,
+  "sndr_strict": true,
+  "normalized_enob_min_bits": 3.9,
+  "power_max_W": 0.005,
+  "power_strict": false,
+  "fft": "Rectangular, DC removed; bins 1..N/2-1 except tone plus half Nyquist; P_FS=(N*2^bits/4)^2.",
+  "nonrelaxable": "Exact sample-hold codes in BOTH orders, all groups finite, digital sample levels outside [0.2VDD,0.8VDD], correct reset and conversion timing.",
+  "allowed": "Native MOS and positive ideal capacitors; unmodified HD vendor cells for all digital logic.",
+  "unmodeled": [
+    "device noise",
+    "mismatch",
+    "PEX",
+    "metastability statistics",
+    "reference impedance"
+  ]
+}

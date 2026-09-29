@@ -1,0 +1,58 @@
+{
+  "source_task": "sky130-analog-input-mux-8to1-pvt",
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 40,
+  "nominal_temperature_reason": "Original task nominal row is TT/1.8V/40C",
+  "common_modes_V": [
+    0,
+    0.9,
+    1.8
+  ],
+  "selects": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "independently_excited_sources": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "selected_states": 24,
+  "total_transfers": 192,
+  "source_resistance_Ohm": 50,
+  "source_resistance_ports": "AVDD, all3 selects, all8 analog inputs; AVSS ideal ground per original bench",
+  "load_F": 1e-12,
+  "gain_frequency_Hz": 0.001,
+  "selected_gain_max_abs_dB": 0.001,
+  "unselected_gain_max_dB": -80,
+  "crosstalk_frequencies_Hz": [
+    0.001,
+    1000000.0
+  ],
+  "selected_bandwidth_min_Hz": 5000000.0,
+  "bandwidth_ratio": 0.7079457843841379,
+  "supply_current_max_A": 5e-06,
+  "ac_stop_Hz": 1000000000.0,
+  "pin_aliases": "S2/S1/S0 and VIN7..VIN0 are Spectre-safe aliases of original escaped bus pins, exact original order preserved.",
+  "legal_DUT_leaves": "PDK MOS only; HD cells expanded to original MOS; no ideal passive or source in DUT",
+  "nominal_scope_excludes": [
+    "remaining4 representative PVT rows",
+    "distortion",
+    "noise",
+    "switchingtransients",
+    "mismatch",
+    "PEX"
+  ]
+}

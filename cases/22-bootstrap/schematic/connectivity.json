@@ -1,0 +1,3148 @@
+{
+  "generated_at": "2026-09-23T06:18:44.789730+00:00",
+  "circuit_sha256": "496999c7be4b570b7703c9764e96497a300c7d78197c84eab4b3b99b97437152",
+  "top": "bootstrap_gate_driver",
+  "subcircuit_ports": {
+    "boot_cell": [
+      "VDD",
+      "VSS",
+      "CLK",
+      "VIN",
+      "VG"
+    ],
+    "bootstrap_gate_driver": [
+      "vdd",
+      "vss",
+      "clk",
+      "vinp",
+      "vinn",
+      "gatep",
+      "gaten"
+    ]
+  },
+  "instances": {
+    "boot_cell/XINV": {
+      "name": "XINV",
+      "kind": "HD",
+      "model": "INHDV8",
+      "pins": {
+        "I": "CLK",
+        "ZN": "CLKP",
+        "VDD": "VDD",
+        "VSS": "VSS",
+        "VNW": "VDD",
+        "VPW": "VSS"
+      },
+      "parameters": {},
+      "source_line": "XINV (CLK CLKP VDD VSS VDD VSS) INHDV8",
+      "sheet": 2,
+      "origin": [
+        5,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          2.3,
+          19.0
+        ],
+        "ZN": [
+          7.7,
+          19.0
+        ],
+        "VDD": [
+          4.2,
+          21.2
+        ],
+        "VNW": [
+          5.8,
+          21.2
+        ],
+        "VSS": [
+          4.2,
+          16.8
+        ],
+        "VPW": [
+          5.8,
+          16.8
+        ]
+      },
+      "block": "boot_cell"
+    },
+    "boot_cell/MPRE": {
+      "name": "MPRE",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VDD",
+        "G": "CLKP",
+        "S": "PRE",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRE (VDD CLKP PRE VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        5,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          12
+        ],
+        "S": [
+          5,
+          10
+        ],
+        "G": [
+          3.45,
+          11
+        ],
+        "B": [
+          5.86,
+          11
+        ]
+      },
+      "block": "boot_cell"
+    },
+    "boot_cell/MDCHG": {
+      "name": "MDCHG",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "CBB",
+        "G": "CLK",
+        "S": "VSS",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u"
+      },
+      "source_line": "MDCHG (CBB CLK VSS VSS) n18 w=5.1u l=.18u",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        5,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          6
+        ],
+        "S": [
+          5,
+          4
+        ],
+        "G": [
+          3.45,
+          5
+        ],
+        "B": [
+          5.86,
+          5
+        ]
+      },
+      "block": "boot_cell"
+    },
+    "boot_cell/MPCHG": {
+      "name": "MPCHG",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "CG",
+        "G": "CLKP",
+        "S": "VDD",
+        "B": "VDD"
+      },
+      "parameters": {
+        "w": "14.8u",
+        "l": ".18u"
+      },
+      "source_line": "MPCHG (CG CLKP VDD VDD) p18 w=14.8u l=.18u",
+      "W_unit_um": 14.8,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        13,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          13,
+          16
+        ],
+        "S": [
+          13,
+          18
+        ],
+        "G": [
+          11.45,
+          17
+        ],
+        "B": [
+          13.86,
+          17
+        ]
+      },
+      "block": "boot_cell"
+    },
+    "boot_cell/MGTRK": {
+      "name": "MGTRK",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "CG",
+        "G": "CLKP",
+        "S": "CBB",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MGTRK (CG CLKP CBB VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        13,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          13,
+          12
+        ],
+        "S": [
+          13,
+          10
+        ],
+        "G": [
+          11.45,
+          11
+        ],
+        "B": [
+          13.86,
+          11
+        ]
+      },
+      "block": "boot_cell"
+    },
+    "boot_cell/MBPP": {
+      "name": "MBPP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VG",
+        "G": "CG",
+        "S": "CBT",
+        "B": "CBT"
+      },
+      "parameters": {
+        "w": "14.8u",
+        "l": ".18u"
+      },
+      "source_line": "MBPP (VG CG CBT CBT) p18 w=14.8u l=.18u",
+      "W_unit_um": 14.8,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        27,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          16
+        ],
+        "S": [
+          27,
+          18
+        ],
+        "G": [
+          25.45,
+          17
+        ],
+        "B": [
+          27.86,
+          17
+        ]
+      },
+      "block": "boot_cell"
+    },
+    "boot_cell/MLIM": {
+      "name": "MLIM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VDD",
+        "G": "VG",
+        "S": "CBT",
+        "B": "CBT"
+      },
+      "parameters": {
+        "w": "14.8u",
+        "l": ".18u"
+      },
+      "source_line": "MLIM (VDD VG CBT CBT) p18 w=14.8u l=.18u",
+      "W_unit_um": 14.8,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        37,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          16
+        ],
+        "S": [
+          37,
+          18
+        ],
+        "G": [
+          35.45,
+          17
+        ],
+        "B": [
+          37.86,
+          17
+        ]
+      },
+      "block": "boot_cell"
+    },
+    "boot_cell/MCASC": {
+      "name": "MCASC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VG",
+        "G": "VDD",
+        "S": "CLKP",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MCASC (VG VDD CLKP VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        27,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          12
+        ],
+        "S": [
+          27,
+          10
+        ],
+        "G": [
+          25.45,
+          11
+        ],
+        "B": [
+          27.86,
+          11
+        ]
+      },
+      "block": "boot_cell"
+    },
+    "boot_cell/MPVIN": {
+      "name": "MPVIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "CBB",
+        "G": "VG",
+        "S": "VIN",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPVIN (CBB VG VIN VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        27,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          6
+        ],
+        "S": [
+          27,
+          4
+        ],
+        "G": [
+          25.45,
+          5
+        ],
+        "B": [
+          27.86,
+          5
+        ]
+      },
+      "block": "boot_cell"
+    },
+    "boot_cell/MPRGUARD": {
+      "name": "MPRGUARD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VG",
+        "G": "VDD",
+        "S": "PRE",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRGUARD (VG VDD PRE VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        37,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          6
+        ],
+        "S": [
+          37,
+          4
+        ],
+        "G": [
+          35.45,
+          5
+        ],
+        "B": [
+          37.86,
+          5
+        ]
+      },
+      "block": "boot_cell"
+    },
+    "boot_cell/CBOOT": {
+      "name": "CBOOT",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "CBT",
+        "2": "CBB"
+      },
+      "parameters": {
+        "c": "1.5p"
+      },
+      "source_line": "CBOOT (CBT CBB) capacitor c=1.5p",
+      "value_SI": 1.5e-12,
+      "sheet": 2,
+      "origin": [
+        19,
+        15
+      ],
+      "rendered_pins": {
+        "1": [
+          19,
+          15.82
+        ],
+        "2": [
+          19,
+          14.18
+        ]
+      },
+      "block": "boot_cell"
+    },
+    "bootstrap_gate_driver/XBP": {
+      "name": "XBP",
+      "kind": "SUBCKT",
+      "model": "boot_cell",
+      "pins": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "CLK": "clk",
+        "VIN": "vinp",
+        "VG": "gatep"
+      },
+      "parameters": {},
+      "source_line": "XBP (vdd vss clk vinp gatep) boot_cell",
+      "sheet": 1,
+      "origin": [
+        13,
+        13
+      ],
+      "rendered_pins": {
+        "CLK": [
+          10.3,
+          13.5
+        ],
+        "VIN": [
+          10.3,
+          12.5
+        ],
+        "VG": [
+          15.7,
+          13.0
+        ],
+        "VDD": [
+          12.2,
+          15.2
+        ],
+        "VSS": [
+          12.2,
+          10.8
+        ]
+      },
+      "block": "bootstrap_gate_driver"
+    },
+    "bootstrap_gate_driver/XBN": {
+      "name": "XBN",
+      "kind": "SUBCKT",
+      "model": "boot_cell",
+      "pins": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "CLK": "clk",
+        "VIN": "vinn",
+        "VG": "gaten"
+      },
+      "parameters": {},
+      "source_line": "XBN (vdd vss clk vinn gaten) boot_cell",
+      "sheet": 1,
+      "origin": [
+        31,
+        13
+      ],
+      "rendered_pins": {
+        "CLK": [
+          28.3,
+          13.5
+        ],
+        "VIN": [
+          28.3,
+          12.5
+        ],
+        "VG": [
+          33.7,
+          13.0
+        ],
+        "VDD": [
+          30.2,
+          15.2
+        ],
+        "VSS": [
+          30.2,
+          10.8
+        ]
+      },
+      "block": "bootstrap_gate_driver"
+    }
+  },
+  "expanded_leaf_instances": {
+    "XBP/XINV": {
+      "name": "XINV",
+      "kind": "HD",
+      "model": "INHDV8",
+      "pins": {
+        "I": "clk",
+        "ZN": "XBP/CLKP",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV (CLK CLKP VDD VSS VDD VSS) INHDV8",
+      "definition": "boot_cell/XINV",
+      "path": "XBP/XINV"
+    },
+    "XBP/CBOOT": {
+      "name": "CBOOT",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "XBP/CBT",
+        "2": "XBP/CBB"
+      },
+      "parameters": {
+        "c": "1.5p"
+      },
+      "source_line": "CBOOT (CBT CBB) capacitor c=1.5p",
+      "value_SI": 1.5e-12,
+      "definition": "boot_cell/CBOOT",
+      "path": "XBP/CBOOT"
+    },
+    "XBP/MDCHG": {
+      "name": "MDCHG",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBP/CBB",
+        "G": "clk",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u"
+      },
+      "source_line": "MDCHG (CBB CLK VSS VSS) n18 w=5.1u l=.18u",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_cell/MDCHG",
+      "path": "XBP/MDCHG"
+    },
+    "XBP/MPCHG": {
+      "name": "MPCHG",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "XBP/CG",
+        "G": "XBP/CLKP",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "14.8u",
+        "l": ".18u"
+      },
+      "source_line": "MPCHG (CG CLKP VDD VDD) p18 w=14.8u l=.18u",
+      "W_unit_um": 14.8,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_cell/MPCHG",
+      "path": "XBP/MPCHG"
+    },
+    "XBP/MLIM": {
+      "name": "MLIM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vdd",
+        "G": "gatep",
+        "S": "XBP/CBT",
+        "B": "XBP/CBT"
+      },
+      "parameters": {
+        "w": "14.8u",
+        "l": ".18u"
+      },
+      "source_line": "MLIM (VDD VG CBT CBT) p18 w=14.8u l=.18u",
+      "W_unit_um": 14.8,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_cell/MLIM",
+      "path": "XBP/MLIM"
+    },
+    "XBP/MPRE": {
+      "name": "MPRE",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vdd",
+        "G": "XBP/CLKP",
+        "S": "XBP/PRE",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRE (VDD CLKP PRE VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_cell/MPRE",
+      "path": "XBP/MPRE"
+    },
+    "XBP/MGTRK": {
+      "name": "MGTRK",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBP/CG",
+        "G": "XBP/CLKP",
+        "S": "XBP/CBB",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MGTRK (CG CLKP CBB VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_cell/MGTRK",
+      "path": "XBP/MGTRK"
+    },
+    "XBP/MBPP": {
+      "name": "MBPP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "gatep",
+        "G": "XBP/CG",
+        "S": "XBP/CBT",
+        "B": "XBP/CBT"
+      },
+      "parameters": {
+        "w": "14.8u",
+        "l": ".18u"
+      },
+      "source_line": "MBPP (VG CG CBT CBT) p18 w=14.8u l=.18u",
+      "W_unit_um": 14.8,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_cell/MBPP",
+      "path": "XBP/MBPP"
+    },
+    "XBP/MPVIN": {
+      "name": "MPVIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBP/CBB",
+        "G": "gatep",
+        "S": "vinp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPVIN (CBB VG VIN VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_cell/MPVIN",
+      "path": "XBP/MPVIN"
+    },
+    "XBP/MCASC": {
+      "name": "MCASC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "gatep",
+        "G": "vdd",
+        "S": "XBP/CLKP",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MCASC (VG VDD CLKP VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_cell/MCASC",
+      "path": "XBP/MCASC"
+    },
+    "XBP/MPRGUARD": {
+      "name": "MPRGUARD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "gatep",
+        "G": "vdd",
+        "S": "XBP/PRE",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRGUARD (VG VDD PRE VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_cell/MPRGUARD",
+      "path": "XBP/MPRGUARD"
+    },
+    "XBN/XINV": {
+      "name": "XINV",
+      "kind": "HD",
+      "model": "INHDV8",
+      "pins": {
+        "I": "clk",
+        "ZN": "XBN/CLKP",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV (CLK CLKP VDD VSS VDD VSS) INHDV8",
+      "definition": "boot_cell/XINV",
+      "path": "XBN/XINV"
+    },
+    "XBN/CBOOT": {
+      "name": "CBOOT",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "XBN/CBT",
+        "2": "XBN/CBB"
+      },
+      "parameters": {
+        "c": "1.5p"
+      },
+      "source_line": "CBOOT (CBT CBB) capacitor c=1.5p",
+      "value_SI": 1.5e-12,
+      "definition": "boot_cell/CBOOT",
+      "path": "XBN/CBOOT"
+    },
+    "XBN/MDCHG": {
+      "name": "MDCHG",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBN/CBB",
+        "G": "clk",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u"
+      },
+      "source_line": "MDCHG (CBB CLK VSS VSS) n18 w=5.1u l=.18u",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_cell/MDCHG",
+      "path": "XBN/MDCHG"
+    },
+    "XBN/MPCHG": {
+      "name": "MPCHG",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "XBN/CG",
+        "G": "XBN/CLKP",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "14.8u",
+        "l": ".18u"
+      },
+      "source_line": "MPCHG (CG CLKP VDD VDD) p18 w=14.8u l=.18u",
+      "W_unit_um": 14.8,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_cell/MPCHG",
+      "path": "XBN/MPCHG"
+    },
+    "XBN/MLIM": {
+      "name": "MLIM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vdd",
+        "G": "gaten",
+        "S": "XBN/CBT",
+        "B": "XBN/CBT"
+      },
+      "parameters": {
+        "w": "14.8u",
+        "l": ".18u"
+      },
+      "source_line": "MLIM (VDD VG CBT CBT) p18 w=14.8u l=.18u",
+      "W_unit_um": 14.8,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_cell/MLIM",
+      "path": "XBN/MLIM"
+    },
+    "XBN/MPRE": {
+      "name": "MPRE",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vdd",
+        "G": "XBN/CLKP",
+        "S": "XBN/PRE",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRE (VDD CLKP PRE VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_cell/MPRE",
+      "path": "XBN/MPRE"
+    },
+    "XBN/MGTRK": {
+      "name": "MGTRK",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBN/CG",
+        "G": "XBN/CLKP",
+        "S": "XBN/CBB",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MGTRK (CG CLKP CBB VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_cell/MGTRK",
+      "path": "XBN/MGTRK"
+    },
+    "XBN/MBPP": {
+      "name": "MBPP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "gaten",
+        "G": "XBN/CG",
+        "S": "XBN/CBT",
+        "B": "XBN/CBT"
+      },
+      "parameters": {
+        "w": "14.8u",
+        "l": ".18u"
+      },
+      "source_line": "MBPP (VG CG CBT CBT) p18 w=14.8u l=.18u",
+      "W_unit_um": 14.8,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_cell/MBPP",
+      "path": "XBN/MBPP"
+    },
+    "XBN/MPVIN": {
+      "name": "MPVIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBN/CBB",
+        "G": "gaten",
+        "S": "vinn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPVIN (CBB VG VIN VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_cell/MPVIN",
+      "path": "XBN/MPVIN"
+    },
+    "XBN/MCASC": {
+      "name": "MCASC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "gaten",
+        "G": "vdd",
+        "S": "XBN/CLKP",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MCASC (VG VDD CLKP VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_cell/MCASC",
+      "path": "XBN/MCASC"
+    },
+    "XBN/MPRGUARD": {
+      "name": "MPRGUARD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "gaten",
+        "G": "vdd",
+        "S": "XBN/PRE",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "5.1u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRGUARD (VG VDD PRE VSS) n18 w=5.1u l=.18u m=2",
+      "W_unit_um": 5.1,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_cell/MPRGUARD",
+      "path": "XBN/MPRGUARD"
+    }
+  },
+  "nets": {
+    "boot_cell/CLK": [
+      {
+        "instance": "boot_cell/XINV",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          2.3,
+          19.0
+        ]
+      },
+      {
+        "instance": "boot_cell/MDCHG",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          3.45,
+          5
+        ]
+      }
+    ],
+    "boot_cell/CLKP": [
+      {
+        "instance": "boot_cell/XINV",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          7.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "boot_cell/MPRE",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          3.45,
+          11
+        ]
+      },
+      {
+        "instance": "boot_cell/MPCHG",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          11.45,
+          17
+        ]
+      },
+      {
+        "instance": "boot_cell/MGTRK",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          11.45,
+          11
+        ]
+      },
+      {
+        "instance": "boot_cell/MCASC",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          27,
+          10
+        ]
+      }
+    ],
+    "boot_cell/VDD": [
+      {
+        "instance": "boot_cell/XINV",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          4.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "boot_cell/XINV",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          5.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "boot_cell/MPRE",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          5,
+          12
+        ]
+      },
+      {
+        "instance": "boot_cell/MPCHG",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          13,
+          18
+        ]
+      },
+      {
+        "instance": "boot_cell/MPCHG",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          13.86,
+          17
+        ]
+      },
+      {
+        "instance": "boot_cell/MLIM",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          37,
+          16
+        ]
+      },
+      {
+        "instance": "boot_cell/MCASC",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          25.45,
+          11
+        ]
+      },
+      {
+        "instance": "boot_cell/MPRGUARD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          35.45,
+          5
+        ]
+      }
+    ],
+    "boot_cell/VSS": [
+      {
+        "instance": "boot_cell/XINV",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          4.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "boot_cell/XINV",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          5.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "boot_cell/MPRE",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          5.86,
+          11
+        ]
+      },
+      {
+        "instance": "boot_cell/MDCHG",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          5,
+          4
+        ]
+      },
+      {
+        "instance": "boot_cell/MDCHG",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          5.86,
+          5
+        ]
+      },
+      {
+        "instance": "boot_cell/MGTRK",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          13.86,
+          11
+        ]
+      },
+      {
+        "instance": "boot_cell/MCASC",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          27.86,
+          11
+        ]
+      },
+      {
+        "instance": "boot_cell/MPVIN",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          27.86,
+          5
+        ]
+      },
+      {
+        "instance": "boot_cell/MPRGUARD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          37.86,
+          5
+        ]
+      }
+    ],
+    "boot_cell/PRE": [
+      {
+        "instance": "boot_cell/MPRE",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          5,
+          10
+        ]
+      },
+      {
+        "instance": "boot_cell/MPRGUARD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          37,
+          4
+        ]
+      }
+    ],
+    "boot_cell/CBB": [
+      {
+        "instance": "boot_cell/MDCHG",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          5,
+          6
+        ]
+      },
+      {
+        "instance": "boot_cell/MGTRK",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          13,
+          10
+        ]
+      },
+      {
+        "instance": "boot_cell/MPVIN",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          27,
+          6
+        ]
+      },
+      {
+        "instance": "boot_cell/CBOOT",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          19,
+          14.18
+        ]
+      }
+    ],
+    "boot_cell/CG": [
+      {
+        "instance": "boot_cell/MPCHG",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          13,
+          16
+        ]
+      },
+      {
+        "instance": "boot_cell/MGTRK",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          13,
+          12
+        ]
+      },
+      {
+        "instance": "boot_cell/MBPP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          25.45,
+          17
+        ]
+      }
+    ],
+    "boot_cell/VG": [
+      {
+        "instance": "boot_cell/MBPP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          27,
+          16
+        ]
+      },
+      {
+        "instance": "boot_cell/MLIM",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          35.45,
+          17
+        ]
+      },
+      {
+        "instance": "boot_cell/MCASC",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          27,
+          12
+        ]
+      },
+      {
+        "instance": "boot_cell/MPVIN",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          25.45,
+          5
+        ]
+      },
+      {
+        "instance": "boot_cell/MPRGUARD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          37,
+          6
+        ]
+      }
+    ],
+    "boot_cell/CBT": [
+      {
+        "instance": "boot_cell/MBPP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          27,
+          18
+        ]
+      },
+      {
+        "instance": "boot_cell/MBPP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          27.86,
+          17
+        ]
+      },
+      {
+        "instance": "boot_cell/MLIM",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          37,
+          18
+        ]
+      },
+      {
+        "instance": "boot_cell/MLIM",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          37.86,
+          17
+        ]
+      },
+      {
+        "instance": "boot_cell/CBOOT",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          19,
+          15.82
+        ]
+      }
+    ],
+    "boot_cell/VIN": [
+      {
+        "instance": "boot_cell/MPVIN",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          27,
+          4
+        ]
+      }
+    ],
+    "bootstrap_gate_driver/vdd": [
+      {
+        "instance": "bootstrap_gate_driver/XBP",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          12.2,
+          15.2
+        ]
+      },
+      {
+        "instance": "bootstrap_gate_driver/XBN",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          30.2,
+          15.2
+        ]
+      }
+    ],
+    "bootstrap_gate_driver/vss": [
+      {
+        "instance": "bootstrap_gate_driver/XBP",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          12.2,
+          10.8
+        ]
+      },
+      {
+        "instance": "bootstrap_gate_driver/XBN",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          30.2,
+          10.8
+        ]
+      }
+    ],
+    "bootstrap_gate_driver/clk": [
+      {
+        "instance": "bootstrap_gate_driver/XBP",
+        "pin": "CLK",
+        "sheet": 1,
+        "point": [
+          10.3,
+          13.5
+        ]
+      },
+      {
+        "instance": "bootstrap_gate_driver/XBN",
+        "pin": "CLK",
+        "sheet": 1,
+        "point": [
+          28.3,
+          13.5
+        ]
+      }
+    ],
+    "bootstrap_gate_driver/vinp": [
+      {
+        "instance": "bootstrap_gate_driver/XBP",
+        "pin": "VIN",
+        "sheet": 1,
+        "point": [
+          10.3,
+          12.5
+        ]
+      }
+    ],
+    "bootstrap_gate_driver/gatep": [
+      {
+        "instance": "bootstrap_gate_driver/XBP",
+        "pin": "VG",
+        "sheet": 1,
+        "point": [
+          15.7,
+          13.0
+        ]
+      }
+    ],
+    "bootstrap_gate_driver/vinn": [
+      {
+        "instance": "bootstrap_gate_driver/XBN",
+        "pin": "VIN",
+        "sheet": 1,
+        "point": [
+          28.3,
+          12.5
+        ]
+      }
+    ],
+    "bootstrap_gate_driver/gaten": [
+      {
+        "instance": "bootstrap_gate_driver/XBN",
+        "pin": "VG",
+        "sheet": 1,
+        "point": [
+          33.7,
+          13.0
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 2,
+      "instance": "XINV",
+      "pin": "ZN",
+      "net": "CLKP",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRE",
+      "pin": "G",
+      "net": "CLKP",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCHG",
+      "pin": "G",
+      "net": "CLKP",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MGTRK",
+      "pin": "G",
+      "net": "CLKP",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "S",
+      "net": "CLKP",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV",
+      "pin": "VDD",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV",
+      "pin": "VNW",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRE",
+      "pin": "D",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCHG",
+      "pin": "S",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCHG",
+      "pin": "B",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLIM",
+      "pin": "D",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "G",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRGUARD",
+      "pin": "G",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPVIN",
+      "pin": "S",
+      "net": "VIN",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV",
+      "pin": "VSS",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV",
+      "pin": "VPW",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRE",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDCHG",
+      "pin": "S",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDCHG",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MGTRK",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPVIN",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRGUARD",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBPP",
+      "pin": "D",
+      "net": "VG",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLIM",
+      "pin": "G",
+      "net": "VG",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "D",
+      "net": "VG",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPVIN",
+      "pin": "G",
+      "net": "VG",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRGUARD",
+      "pin": "D",
+      "net": "VG",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBPP",
+      "pin": "S",
+      "net": "CBT",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBPP",
+      "pin": "B",
+      "net": "CBT",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLIM",
+      "pin": "S",
+      "net": "CBT",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLIM",
+      "pin": "B",
+      "net": "CBT",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "CBOOT",
+      "pin": "1",
+      "net": "CBT",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRE",
+      "pin": "S",
+      "net": "PRE",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRGUARD",
+      "pin": "S",
+      "net": "PRE",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCHG",
+      "pin": "D",
+      "net": "CG",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MGTRK",
+      "pin": "D",
+      "net": "CG",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBPP",
+      "pin": "G",
+      "net": "CG",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV",
+      "pin": "I",
+      "net": "CLK",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDCHG",
+      "pin": "G",
+      "net": "CLK",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDCHG",
+      "pin": "D",
+      "net": "CBB",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MGTRK",
+      "pin": "S",
+      "net": "CBB",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPVIN",
+      "pin": "D",
+      "net": "CBB",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 2,
+      "instance": "CBOOT",
+      "pin": "2",
+      "net": "CBB",
+      "path_to_named_net": true,
+      "block": "boot_cell"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBP",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bootstrap_gate_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBN",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bootstrap_gate_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBP",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bootstrap_gate_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBN",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bootstrap_gate_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBP",
+      "pin": "VIN",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "bootstrap_gate_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBP",
+      "pin": "VG",
+      "net": "gatep",
+      "path_to_named_net": true,
+      "block": "bootstrap_gate_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBN",
+      "pin": "VG",
+      "net": "gaten",
+      "path_to_named_net": true,
+      "block": "bootstrap_gate_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBN",
+      "pin": "VIN",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "bootstrap_gate_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBP",
+      "pin": "CLK",
+      "net": "clk",
+      "path_to_named_net": true,
+      "block": "bootstrap_gate_driver"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBN",
+      "pin": "CLK",
+      "net": "clk",
+      "path_to_named_net": true,
+      "block": "bootstrap_gate_driver"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "bootstrap_gate_driver",
+      "title": "双路自举驱动顶层连接",
+      "wires": [
+        {
+          "net": "clk",
+          "points": [
+            [
+              10.3,
+              13.5
+            ],
+            [
+              8,
+              13.5
+            ],
+            [
+              8,
+              21
+            ],
+            [
+              26,
+              21
+            ],
+            [
+              26,
+              13.5
+            ],
+            [
+              28.3,
+              13.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              10.3,
+              12.5
+            ],
+            [
+              9.700000000000001,
+              12.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gatep",
+          "points": [
+            [
+              15.7,
+              13.0
+            ],
+            [
+              16.3,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12.2,
+              15.2
+            ],
+            [
+              12.2,
+              15.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.2,
+              10.8
+            ],
+            [
+              12.2,
+              10.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              28.3,
+              12.5
+            ],
+            [
+              27.7,
+              12.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gaten",
+          "points": [
+            [
+              33.7,
+              13.0
+            ],
+            [
+              34.300000000000004,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              30.2,
+              15.2
+            ],
+            [
+              30.2,
+              15.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              30.2,
+              10.8
+            ],
+            [
+              30.2,
+              10.3
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "clk",
+          "point": [
+            17,
+            21
+          ],
+          "text": "clk",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            9.700000000000001,
+            12.5
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "gatep",
+          "point": [
+            16.3,
+            13.0
+          ],
+          "text": "gatep",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12.2,
+            15.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            12.2,
+            10.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            27.7,
+            12.5
+          ],
+          "text": "vinn",
+          "body": false
+        },
+        {
+          "net": "gaten",
+          "point": [
+            34.300000000000004,
+            13.0
+          ],
+          "text": "gaten",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            30.2,
+            15.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            30.2,
+            10.3
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "boot_cell",
+      "title": "完整 boot_cell 自举与保护电路",
+      "wires": [
+        {
+          "net": "VSS",
+          "points": [
+            [
+              5.86,
+              11
+            ],
+            [
+              6.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              5.86,
+              5
+            ],
+            [
+              6.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              13.86,
+              17
+            ],
+            [
+              14.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              13.86,
+              11
+            ],
+            [
+              14.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "points": [
+            [
+              27.86,
+              17
+            ],
+            [
+              28.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "points": [
+            [
+              37.86,
+              17
+            ],
+            [
+              38.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              27.86,
+              11
+            ],
+            [
+              28.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              27.86,
+              5
+            ],
+            [
+              28.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              37.86,
+              5
+            ],
+            [
+              38.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "points": [
+            [
+              19,
+              15.82
+            ],
+            [
+              19,
+              21
+            ],
+            [
+              37,
+              21
+            ],
+            [
+              37,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CBT",
+          "points": [
+            [
+              27,
+              18
+            ],
+            [
+              27,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CBB",
+          "points": [
+            [
+              19,
+              14.18
+            ],
+            [
+              19,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CBB",
+          "points": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              27,
+              8
+            ],
+            [
+              27,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CBB",
+          "points": [
+            [
+              13,
+              10
+            ],
+            [
+              13,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CG",
+          "points": [
+            [
+              13,
+              16
+            ],
+            [
+              13,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VG",
+          "points": [
+            [
+              27,
+              16
+            ],
+            [
+              27,
+              14
+            ],
+            [
+              27,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VG",
+          "points": [
+            [
+              27,
+              14
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              37,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLK",
+          "points": [
+            [
+              2.3,
+              19.0
+            ],
+            [
+              1.6999999999999997,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "points": [
+            [
+              7.7,
+              19.0
+            ],
+            [
+              8.3,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              4.2,
+              21.2
+            ],
+            [
+              4.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              5.8,
+              21.2
+            ],
+            [
+              5.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              4.2,
+              16.8
+            ],
+            [
+              4.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              5.8,
+              16.8
+            ],
+            [
+              5.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              5,
+              12
+            ],
+            [
+              5,
+              12.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "PRE",
+          "points": [
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              9.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "points": [
+            [
+              3.45,
+              11
+            ],
+            [
+              2.9000000000000004,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              5,
+              4
+            ],
+            [
+              5,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLK",
+          "points": [
+            [
+              3.45,
+              5
+            ],
+            [
+              2.9000000000000004,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              13,
+              18
+            ],
+            [
+              13,
+              18.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "points": [
+            [
+              11.45,
+              17
+            ],
+            [
+              10.899999999999999,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "points": [
+            [
+              11.45,
+              11
+            ],
+            [
+              10.899999999999999,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CG",
+          "points": [
+            [
+              25.45,
+              17
+            ],
+            [
+              24.9,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              37,
+              16
+            ],
+            [
+              37,
+              15.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VG",
+          "points": [
+            [
+              35.45,
+              17
+            ],
+            [
+              34.900000000000006,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "points": [
+            [
+              27,
+              10
+            ],
+            [
+              27,
+              9.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              25.45,
+              11
+            ],
+            [
+              24.9,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIN",
+          "points": [
+            [
+              27,
+              4
+            ],
+            [
+              27,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VG",
+          "points": [
+            [
+              25.45,
+              5
+            ],
+            [
+              24.9,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "PRE",
+          "points": [
+            [
+              37,
+              4
+            ],
+            [
+              37,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              35.45,
+              5
+            ],
+            [
+              34.900000000000006,
+              5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "VSS",
+          "point": [
+            6.15,
+            11
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            6.15,
+            5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "point": [
+            14.15,
+            17
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            14.15,
+            11
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "point": [
+            28.15,
+            17
+          ],
+          "text": "CBT",
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "point": [
+            38.15,
+            17
+          ],
+          "text": "CBT",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            28.15,
+            11
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            28.15,
+            5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            38.15,
+            5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "point": [
+            22,
+            21
+          ],
+          "text": "CBT",
+          "body": false
+        },
+        {
+          "net": "CBB",
+          "point": [
+            17,
+            8
+          ],
+          "text": "CBB",
+          "body": false
+        },
+        {
+          "net": "CG",
+          "point": [
+            13,
+            14.5
+          ],
+          "text": "CG",
+          "body": false
+        },
+        {
+          "net": "VG",
+          "point": [
+            34,
+            14
+          ],
+          "text": "VG",
+          "body": false
+        },
+        {
+          "net": "CLK",
+          "point": [
+            1.6999999999999997,
+            19.0
+          ],
+          "text": "CLK",
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "point": [
+            8.3,
+            19.0
+          ],
+          "text": "CLKP",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            4.2,
+            21.7
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            5.8,
+            21.7
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "point": [
+            4.2,
+            16.3
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "point": [
+            5.8,
+            16.3
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            5,
+            12.64
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "PRE",
+          "point": [
+            5,
+            9.36
+          ],
+          "text": "PRE",
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "point": [
+            2.9000000000000004,
+            11
+          ],
+          "text": "CLKP",
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "point": [
+            5,
+            3.36
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "CLK",
+          "point": [
+            2.9000000000000004,
+            5
+          ],
+          "text": "CLK",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            13,
+            18.64
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "point": [
+            10.899999999999999,
+            17
+          ],
+          "text": "CLKP",
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "point": [
+            10.899999999999999,
+            11
+          ],
+          "text": "CLKP",
+          "body": false
+        },
+        {
+          "net": "CG",
+          "point": [
+            24.9,
+            17
+          ],
+          "text": "CG",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            37,
+            15.36
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VG",
+          "point": [
+            34.900000000000006,
+            17
+          ],
+          "text": "VG",
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "point": [
+            27,
+            9.36
+          ],
+          "text": "CLKP",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            24.9,
+            11
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VIN",
+          "point": [
+            27,
+            3.36
+          ],
+          "text": "VIN",
+          "body": false
+        },
+        {
+          "net": "VG",
+          "point": [
+            24.9,
+            5
+          ],
+          "text": "VG",
+          "body": false
+        },
+        {
+          "net": "PRE",
+          "point": [
+            37,
+            3.36
+          ],
+          "text": "PRE",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            34.900000000000006,
+            5
+          ],
+          "text": "VDD",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "boot_cell": [],
+    "bootstrap_gate_driver": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

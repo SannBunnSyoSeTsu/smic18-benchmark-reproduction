@@ -1,0 +1,146 @@
+{
+  "pdf": "reports/35-fd-miller-review.pdf",
+  "sha256": "cb91052965a20f7f3d91af5fc4001cf8a04a18dbc104e5e26ca942d9105eb8f7",
+  "results_sha256": "35ed078eafc9a26f7f26b2fbbc68e2d1eb41fc88d6f815765c4f683cf36ab0ba",
+  "circuit_sha256": "6d9f5f72270985bfe6f78ef2b76d423773ed5271b7edac16c114f3c9b148289b",
+  "sizing_sha256": "dc48dbdcfe7e85d40c3833fd66e9c68e8ad6f1a87c235501e91f35f54d231276",
+  "geometry_sha256": "01636a6653737900ac1a42573b8cf62385b3e807a3ed4160a6446400bca5311c",
+  "generated_at": "2026-09-23T06:27:40.167998+00:00",
+  "pages": 11,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:27:40.170879+00:00",
+  "opening_paragraph_sha256": "e9a9a4134ff00ec2d16d2bb4a477aaba71361990a8806638680c1a275b9d7e78",
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change.",
+  "body_pages": 7,
+  "schematic_pages": 4,
+  "schematic_sheets_sha256": "efdf034f2220eb7c05a41e1f31f534f4ab8ec0cf27997c66451584d066cdac5c",
+  "schematic_audit_sha256": "0d6f6c85ca91f600a5ad687dd1f0774f6dbad7c8ef086a55ba10c6b586f59543",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/35-fd-miller/35-fd-miller-review.pdf",
+    "sha256": "b9984c23b7dad320327c3ad282076f4b3eeb539cdfd337f199fb2e9b02130989",
+    "pages": 7,
+    "previous_render_reviewed_at": "2026-09-22T09:32:13.419351+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "8eacc6da4f439e845121b599084ec3d3a219e97999f1ead28ce45130676c4a2a"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "64be177a7a7e295d3de35b6d11a61b829b8f512dfed97d4a709b9bb00a812508"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "45161c30b923922eebec985ddae465b4c96b4bd4a74e82780cf73ae04ac562f9"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "470fbc7ecfeecfe4d964765bab198f6b164972b98eb738d6e96488db9e5deb5b"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "9eea0749925137402700958cd17b056ddf9a940d1a2475cfb0d62fe3867ca292"
+    },
+    {
+      "page": 6,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "5373787d74daded25299e49b424ca30c6f041d8c48ac649e2758f97568d9c506"
+    },
+    {
+      "page": 7,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "6892c80d1e33329bd549efe2ea1108bacbd90c851c61acb78818c1c3af230b8b"
+    },
+    {
+      "page": 8,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "37a4d31596cf5ee8e1c31f68fb2940e89b8b5348274dc5164ae4bf4aa86fe7fc",
+      "path": "reports/schematic-retrofit-renders/35-fd-miller/page-08.png",
+      "sha256": "1d0fbf1de02160df681e45514a39412a66c5f24521eda0ebefb7debca31e4abd"
+    },
+    {
+      "page": 9,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "e363d564d8017b02879e4f679703d7292b0acb71d23e8144a97d2c0556b6746e",
+      "path": "reports/schematic-retrofit-renders/35-fd-miller/page-09.png",
+      "sha256": "89e70879d801f1336974908961a1bd90ac25b42d7751f2b63b4aee07fdf8a8a1"
+    },
+    {
+      "page": 10,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "4dec50cef98483f6f2d528c31c2a622cda53f98ba6cf416b198da6f788c88504",
+      "path": "reports/schematic-retrofit-renders/35-fd-miller/page-10.png",
+      "sha256": "6638a35d8387f5fa78893fdc5aa5e0abbc897cd6397f97987d8e0abdfc49a556"
+    },
+    {
+      "page": 11,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "3f12b507cad75baa2b0e834286a9d9cda3b7f1b17491c4cbfa3b7d4643807a02",
+      "path": "reports/schematic-retrofit-renders/35-fd-miller/page-11.png",
+      "sha256": "47d6713a45b149e6f984694747c1b5f767bbef3a7664d78ea71bb3bef88d31eb"
+    }
+  ]
+}

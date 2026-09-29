@@ -1,0 +1,17 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        RST["复位极性转换"]
+        FF["HD翻转触发器反馈"]
+        GATE["复位输出门控"]
+    end
+    CLK["输入时钟"]
+    RESET["异步复位"]
+    OUT["除二时钟与负载"]
+    CLK -.-> FF
+    RESET -.-> RST
+    RST -.->|"异步复位"| FF
+    FF -->|"反相状态反馈"| FF
+    FF --> GATE
+    RESET -.->|"输出钳位"| GATE
+    GATE --> OUT

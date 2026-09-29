@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-09-26T04:19:03.156835+00:00",
+  "circuit_sha256": "e04ccef10f5421ebe9f379e9baa59e99fd238fb5b7db73ba28bf47e11f07b0de",
+  "baseline_run_dirs": [
+    "runs/15/20260926T041518225085Z_enabled",
+    "runs/15/20260926T041614079691Z_disabled"
+  ],
+  "refined_run_dirs": [
+    "runs/15/20260926T041705233014Z_enabled",
+    "runs/15/20260926T041846193656Z_disabled"
+  ],
+  "baseline_parameters": {
+    "maxstep_s": 1e-09,
+    "reltol": 1e-05,
+    "method": "gear2only"
+  },
+  "refined_parameters": {
+    "maxstep_s": 5e-10,
+    "reltol": 1e-06,
+    "method": "gear2only"
+  },
+  "metrics": {
+    "vout_en_avg": {
+      "baseline": 2.301675034911883,
+      "refined": 2.3016609613888064,
+      "absolute_difference": 1.4073523076696404e-05,
+      "max_absolute_difference": 0.0005,
+      "passed": true
+    },
+    "ripple_V": {
+      "baseline": 0.004728819379505644,
+      "refined": 0.004727336974605034,
+      "absolute_difference": 1.4824049006101347e-06,
+      "max_absolute_difference": 5e-05,
+      "passed": true
+    },
+    "enabled_current_A": {
+      "baseline": 0.000206001796689737,
+      "refined": 0.00020614184697306288,
+      "absolute_difference": 1.400502833258789e-07,
+      "max_absolute_difference": 5e-07,
+      "passed": true
+    },
+    "disabled_current_A": {
+      "baseline": 7.845630584393342e-10,
+      "refined": 7.70041276029637e-10,
+      "absolute_difference": 1.4521782409697206e-11,
+      "max_absolute_difference": 2e-11,
+      "passed": true
+    }
+  },
+  "baseline_tier": "complete_10pct",
+  "refined_tier": "complete_10pct",
+  "passed": true
+}

@@ -1,0 +1,373 @@
+{
+  "case_slot": 16,
+  "generated_at": "2026-09-22T06:48:53.571145+00:00",
+  "run_dirs": [
+    "runs/16/20260922T064852230057Z_static",
+    "runs/16/20260922T064852421079Z_noise",
+    "runs/16/20260922T064852632282Z_dynamic"
+  ],
+  "status": "complete_10pct",
+  "values": {
+    "gain_db": 79.13171116155536,
+    "ugb_hz": 198960968.4977983,
+    "phase_margin_deg": 71.34434875022255,
+    "falling_crossings": 1,
+    "output_error_V": 0.0011653811687765137,
+    "power_W": 0.0015541103043166164,
+    "noise_bandwidth_Hz": 14098104.280284716,
+    "input_noise_Vrms": 2.249987336571725e-05,
+    "psrr_1k_dB": 46.61373675719685,
+    "psrr_1m_dB": 46.524896454228745,
+    "cmrr_1k_dB": 65.40185688603898,
+    "output_range_Vpp": 1.0862299157866955,
+    "output_range_boundaries": {
+      "low": 0.3,
+      "high": 1.3862299157866955,
+      "span": 1.0862299157866955
+    },
+    "settling_edges": [
+      {
+        "time_s": 3.886259720769368e-09,
+        "final_error_V": 0.0012014452575828116,
+        "final_error_fraction": 0.012014452575828116
+      },
+      {
+        "time_s": 4.3137443065548085e-09,
+        "final_error_V": 0.0011370598132217635,
+        "final_error_fraction": 0.011370598132217635
+      }
+    ],
+    "settling_s": 4.3137443065548085e-09,
+    "settling_error_V": 0.0012014452575828116,
+    "settling_fraction": 0.012014452575828116,
+    "slew_rise_V_per_us": 153.0453104450894,
+    "slew_fall_V_per_us": 155.47838412599933,
+    "recross": false
+  },
+  "gates": {
+    "gain_db": {
+      "value": 79.13171116155536,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 60.0,
+        "10pct": 59.0848501887865,
+        "15pct": 58.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "ugb_hz": {
+      "value": 198960968.4977983,
+      "unit": "Hz",
+      "sense": "min",
+      "limits": {
+        "original": 200000000.0,
+        "10pct": 180000000.0,
+        "15pct": 170000000.0
+      },
+      "passes": {
+        "original": false,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "phase_margin_deg": {
+      "value": 71.34434875022255,
+      "unit": "deg",
+      "sense": "min",
+      "limits": {
+        "original": 60.0,
+        "10pct": 54.0,
+        "15pct": 51.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "output_error_V": {
+      "value": 0.0011653811687765137,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.025,
+        "10pct": 0.027500000000000004,
+        "15pct": 0.028749999999999998
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power_W": {
+      "value": 0.0015541103043166164,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.002,
+        "10pct": 0.0022,
+        "15pct": 0.0023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "input_noise_Vrms": {
+      "value": 2.249987336571725e-05,
+      "unit": "Vrms",
+      "sense": "max",
+      "limits": {
+        "original": 5e-05,
+        "10pct": 5.500000000000001e-05,
+        "15pct": 5.7499999999999995e-05
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "psrr_1k_dB": {
+      "value": 46.61373675719685,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 35.0,
+        "10pct": 34.0848501887865,
+        "15pct": 33.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "psrr_1m_dB": {
+      "value": 46.524896454228745,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 35.0,
+        "10pct": 34.0848501887865,
+        "15pct": 33.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "cmrr_1k_dB": {
+      "value": 65.40185688603898,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 55.0,
+        "10pct": 54.0848501887865,
+        "15pct": 53.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "output_range_Vpp": {
+      "value": 1.0862299157866955,
+      "unit": "Vpp",
+      "sense": "min",
+      "limits": {
+        "original": 0.8,
+        "10pct": 0.7200000000000001,
+        "15pct": 0.68
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "settling_error_V": {
+      "value": 0.0012014452575828116,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.002,
+        "10pct": 0.0022,
+        "15pct": 0.0023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "settling_fraction": {
+      "value": 0.012014452575828116,
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.02,
+        "10pct": 0.022000000000000002,
+        "15pct": 0.023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "slew_rise_V_per_us": {
+      "value": 153.0453104450894,
+      "unit": "V/us",
+      "sense": "min",
+      "limits": {
+        "original": 50.0,
+        "10pct": 45.0,
+        "15pct": 42.5
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "slew_fall_V_per_us": {
+      "value": 155.47838412599933,
+      "unit": "V/us",
+      "sense": "min",
+      "limits": {
+        "original": 50.0,
+        "10pct": 45.0,
+        "15pct": 42.5
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "settling_s": {
+      "value": 4.3137443065548085e-09,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 2e-08,
+        "10pct": 2.2000000000000002e-08,
+        "15pct": 2.2999999999999998e-08
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "operating_point": {
+    "MINP": {
+      "region": 2.0,
+      "ids": 6.921610928247304e-05,
+      "vgs": 0.5560310326390308,
+      "vds": 0.4456993657300259,
+      "vdsat": 0.0904292815842734,
+      "gm": 0.001259598573997303,
+      "gds": 5.171103589768576e-06,
+      "gmid": 18.198055150092923,
+      "gmro": 243.58409227955036,
+      "headroom_V": 0.3552700841457525
+    },
+    "MINN": {
+      "region": 2.0,
+      "ids": 6.879271418849217e-05,
+      "vgs": 0.5548656514702541,
+      "vds": 0.6728086568333924,
+      "vdsat": 0.0897666454910343,
+      "gm": 0.001255517228281388,
+      "gds": 4.19375619961556e-06,
+      "gmid": 18.250729646184162,
+      "gmro": 299.37773406963447,
+      "headroom_V": 0.5830420113423581
+    },
+    "MPM": {
+      "gds": 1.759133010456645e-06,
+      "region": 2.0,
+      "ids": -6.921610871692451e-05,
+      "vgs": -0.7832223758056382,
+      "vds": -1.010331666909005,
+      "vdsat": -0.3179964297940914,
+      "gm": 0.0003488238520153754,
+      "gmid": 5.039633959227212,
+      "gmro": 198.29305114615858,
+      "headroom_V": 0.6923352371149136
+    },
+    "MTAIL": {
+      "gds": 1.367635327677991e-05,
+      "gm": 0.001701138746663333,
+      "vdsat": 0.1396474346976117,
+      "vds": 0.3439689673609693,
+      "vgs": 0.5404993315922045,
+      "ids": 0.0001380088242441911,
+      "region": 2.0,
+      "gmid": 12.326304176415263,
+      "gmro": 124.38540539542609,
+      "headroom_V": 0.20432153266335762
+    },
+    "MSECOND": {
+      "gds": 4.09974827375345e-05,
+      "gm": 0.003045757104100773,
+      "vdsat": 0.2699631750039416,
+      "vds": 0.8988346188312235,
+      "vgs": 0.7896683330909953,
+      "ids": 0.0006239092445496958,
+      "region": 2.0,
+      "gmid": 4.8817310060841255,
+      "gmro": 74.2913198744343,
+      "headroom_V": 0.6288714438272819
+    },
+    "MLOAD": {
+      "region": 2.0,
+      "ids": -0.0006239092465678024,
+      "vgs": -0.6039171053318109,
+      "vds": -0.9011653811687765,
+      "vdsat": -0.1772129259287639,
+      "gm": 0.006128768773267981,
+      "gds": 1.993479382944898e-05,
+      "gmid": 9.823173493553835,
+      "gmro": 307.4407904943648,
+      "headroom_V": 0.7239524552400126
+    }
+  },
+  "dc_nodes": {
+    "irefl": 0.5404993315922045,
+    "XL.obias": 1.196082894668189,
+    "XL.nleft": 1.016777624194362,
+    "XL.stage1": 0.7896683330909953,
+    "XL.tail": 0.3439689673609693,
+    "vinps": 0.9,
+    "vouts": 0.8988346188312243,
+    "voutc": 0.8988346188312243,
+    "voutp": 0.8988346188312242,
+    "vinpn": 0.9,
+    "vinnn": 0.8988370854378261,
+    "voutn": 0.8767417087565234,
+    "vinpl": 0.9,
+    "vinnl": 0.8988346188312235,
+    "voutl": 0.8988346188312235
+  },
+  "all_nominal_checks_complete": true,
+  "pass_tiers": {
+    "original": false,
+    "10pct": true,
+    "15pct": true
+  },
+  "model_dimensions_valid": true,
+  "scope": "Full nominal primary, noise-gain-20 integration, closed-loop rejection, contiguous DC range, both settling and slew directions. Other PVT and mismatch excluded."
+}

@@ -1,0 +1,400 @@
+{
+  "generated_at": "2026-09-29T05:54:50.322683+00:00",
+  "status": "passed",
+  "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+  "results_sha256": "9f3de8aa1e52abf9ead6448ae6ea6f42530c9e6e8ab6717c7726774ebee40203",
+  "contract_sha256": "9857ff6b87ff2d4756302e5d12aeb15ba2f39589f3ad62422a4348ec7b4ed071",
+  "measurement_cross_checks": [
+    {
+      "metric": "10mv_gain_vv",
+      "report": 4.796738397775286,
+      "independent": 4.796738397775286,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "10mv_sfdr_db",
+      "report": 87.87971267414265,
+      "independent": 87.8797126740963,
+      "absolute_difference": 4.6355808080988936e-11,
+      "passed": true
+    },
+    {
+      "metric": "10mv_cm_mean_v",
+      "report": 1.1789563390324003,
+      "independent": 1.1789563390324,
+      "absolute_difference": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "metric": "10mv_output_min_v",
+      "report": 1.153762068537423,
+      "independent": 1.153762068537423,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "10mv_output_max_v",
+      "report": 1.203226396466775,
+      "independent": 1.203226396466775,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "10mv_hold_movement_ratio",
+      "report": 0.016312722958045953,
+      "independent": 0.01631272295805228,
+      "absolute_difference": 6.328271240363392e-15,
+      "passed": true
+    },
+    {
+      "metric": "10mv_power_w",
+      "report": 0.0047481655317843496,
+      "independent": 0.004748165531784351,
+      "absolute_difference": 1.734723475976807e-18,
+      "passed": true
+    },
+    {
+      "metric": "20mv_gain_vv",
+      "report": 4.812310695597589,
+      "independent": 4.81231069559759,
+      "absolute_difference": 8.881784197001252e-16,
+      "passed": true
+    },
+    {
+      "metric": "20mv_sfdr_db",
+      "report": 84.99662463654323,
+      "independent": 84.99662463661448,
+      "absolute_difference": 7.125322554202285e-11,
+      "passed": true
+    },
+    {
+      "metric": "20mv_cm_mean_v",
+      "report": 1.178707263458867,
+      "independent": 1.1787072634588671,
+      "absolute_difference": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "metric": "20mv_output_min_v",
+      "report": 1.129012343832373,
+      "independent": 1.129012343832373,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "20mv_output_max_v",
+      "report": 1.22677843665755,
+      "independent": 1.22677843665755,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "20mv_hold_movement_ratio",
+      "report": 0.016234655970845457,
+      "independent": 0.016234655970851553,
+      "absolute_difference": 6.0958182945825e-15,
+      "passed": true
+    },
+    {
+      "metric": "20mv_power_w",
+      "report": 0.004748208434134922,
+      "independent": 0.004748208434134923,
+      "absolute_difference": 8.673617379884035e-19,
+      "passed": true
+    }
+  ],
+  "original_nominal_checks": [
+    {
+      "name": "sampled_gain_pvt_10mv",
+      "passed": false,
+      "detail": "10 mV range=4.7967..4.7967V/V (5.5..6.5)"
+    },
+    {
+      "name": "sfdr_pvt_10mv",
+      "passed": true,
+      "detail": "10 mV min=87.880dB at tt (min 60dB)"
+    },
+    {
+      "name": "output_common_mode_pvt_10mv",
+      "passed": true,
+      "detail": "10 mV mean range=1.1790..1.1790V (0.3..1.2V)"
+    },
+    {
+      "name": "output_headroom_pvt_10mv",
+      "passed": true,
+      "detail": "10 mV sample range=1.1538..1.2032V (0.2..1.6V)"
+    },
+    {
+      "name": "hold_transition_movement_pvt_10mv",
+      "passed": false,
+      "detail": "10 mV max=1.6313% at tt (max 1.5%)"
+    },
+    {
+      "name": "power_pvt_10mv",
+      "passed": true,
+      "detail": "10 mV total delivered range=4.7482..4.7482mW (0..5mW)"
+    },
+    {
+      "name": "sampled_gain_pvt_20mv",
+      "passed": false,
+      "detail": "20 mV range=4.8123..4.8123V/V (5.5..6.5)"
+    },
+    {
+      "name": "sfdr_pvt_20mv",
+      "passed": true,
+      "detail": "20 mV min=84.997dB at tt (min 60dB)"
+    },
+    {
+      "name": "output_common_mode_pvt_20mv",
+      "passed": true,
+      "detail": "20 mV mean range=1.1787..1.1787V (0.3..1.2V)"
+    },
+    {
+      "name": "output_headroom_pvt_20mv",
+      "passed": true,
+      "detail": "20 mV sample range=1.1290..1.2268V (0.2..1.6V)"
+    },
+    {
+      "name": "hold_transition_movement_pvt_20mv",
+      "passed": false,
+      "detail": "20 mV max=1.6235% at tt (max 1.5%)"
+    },
+    {
+      "name": "power_pvt_20mv",
+      "passed": true,
+      "detail": "20 mV total delivered range=4.7482..4.7482mW (0..5mW)"
+    }
+  ],
+  "original_model_hashes_unchanged": true,
+  "source_snapshot_hashes_verified": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "run": "runs/28/20260929T050627252251Z_precision_refined_20mv",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `XSC.fly_p_output_plate' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XPREP.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XPREN.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XSC.XSW_N_SAMPLE_CM.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XSC.XSW_P_SAMPLE_INPUT.switch_series' to ground.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XSC.fly_n_input_plate. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XDUT.MP_INPUT_08:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XDUT.X_CLOCK_03.MM3:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XSC.fly_p_output_plate. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XSC.fly_p_output_plate. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/28/20260929T050627252473Z_precision_refined_10mv",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `XSC.fly_p_output_plate' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XPREP.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XPREN.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XSC.XSW_N_SAMPLE_CM.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XSC.XSW_P_SAMPLE_INPUT.switch_series' to ground.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XSC.fly_n_input_plate. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XSC.fly_p_input_plate. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XSC.XTRANSFER_COMPLEMENT_BUFFER.MM3:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: coutp. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: sam. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/28/20260929T052500800011Z_precision_refined_20mv",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `XSC.fly_p_output_plate' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XPREP.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XPREN.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XSC.XSW_N_SAMPLE_CM.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XSC.XSW_P_SAMPLE_INPUT.switch_series' to ground.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: coutp. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: coutn. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: coutn. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: coutp. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XSC.fly_n_input_plate. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/28/20260929T052500800082Z_precision_refined_10mv",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `XSC.fly_p_output_plate' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XPREP.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XPREN.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XSC.XSW_N_SAMPLE_CM.switch_series' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `XSC.XSW_P_SAMPLE_INPUT.switch_series' to ground.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XSC.fly_p_input_plate. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: coutp. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XSC.fly_p_input_plate. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XSC.fly_n_input_plate. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XSC.fly_p_input_plate. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    }
+  ],
+  "numerical_confirmation": {
+    "generated_at": "2026-09-29T05:53:30.980351+00:00",
+    "baseline_groups": {
+      "10mv": "runs/28/20260929T050627252473Z_precision_refined_10mv",
+      "20mv": "runs/28/20260929T050627252251Z_precision_refined_20mv"
+    },
+    "final_groups": {
+      "10mv": "runs/28/20260929T052500800082Z_precision_refined_10mv",
+      "20mv": "runs/28/20260929T052500800011Z_precision_refined_20mv"
+    },
+    "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+    "baseline_settings": {
+      "maxstep_s": 1.25e-12,
+      "global_reltol": 1e-08,
+      "vabstol_V": 1e-08,
+      "iabstol_A": 1e-12
+    },
+    "refined_settings": {
+      "maxstep_s": 6.25e-13,
+      "global_reltol": 1e-09,
+      "vabstol_V": 1e-08,
+      "iabstol_A": 1e-12
+    },
+    "exact_original_readout_strobes": true,
+    "metrics": [
+      {
+        "metric": "10mv_gain_vv",
+        "baseline": 4.7967568861612975,
+        "refined": 4.796738397775286,
+        "absolute_difference": 1.8488386011483726e-05,
+        "maximum_difference": 0.01,
+        "passed": true
+      },
+      {
+        "metric": "10mv_sfdr_db",
+        "baseline": 87.59560803736844,
+        "refined": 87.87971267414265,
+        "absolute_difference": 0.2841046367742166,
+        "maximum_difference": 0.5,
+        "passed": true
+      },
+      {
+        "metric": "10mv_cm_mean_v",
+        "baseline": 1.1789567711008577,
+        "refined": 1.1789563390324003,
+        "absolute_difference": 4.320684574565803e-07,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "10mv_output_min_v",
+        "baseline": 1.153762360729059,
+        "refined": 1.153762068537423,
+        "absolute_difference": 2.9219163599769615e-07,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "10mv_output_max_v",
+        "baseline": 1.203227500450661,
+        "refined": 1.203226396466775,
+        "absolute_difference": 1.1039838858639683e-06,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "10mv_hold_movement_ratio",
+        "baseline": 0.016311796536376422,
+        "refined": 0.016312722958045953,
+        "absolute_difference": 9.264216695309413e-07,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "10mv_power_w",
+        "baseline": 0.004748170478733103,
+        "refined": 0.0047481655317843496,
+        "absolute_difference": 4.946948753414837e-09,
+        "maximum_difference": 5e-06,
+        "passed": true
+      },
+      {
+        "metric": "20mv_gain_vv",
+        "baseline": 4.812329525028783,
+        "refined": 4.812310695597589,
+        "absolute_difference": 1.8829431193800872e-05,
+        "maximum_difference": 0.01,
+        "passed": true
+      },
+      {
+        "metric": "20mv_sfdr_db",
+        "baseline": 84.67656105624818,
+        "refined": 84.99662463654323,
+        "absolute_difference": 0.32006358029505577,
+        "maximum_difference": 0.5,
+        "passed": true
+      },
+      {
+        "metric": "20mv_cm_mean_v",
+        "baseline": 1.178707631054574,
+        "refined": 1.178707263458867,
+        "absolute_difference": 3.675957072069025e-07,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "20mv_output_min_v",
+        "baseline": 1.129012080301088,
+        "refined": 1.129012343832373,
+        "absolute_difference": 2.635312850163274e-07,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "20mv_output_max_v",
+        "baseline": 1.226778709217638,
+        "refined": 1.22677843665755,
+        "absolute_difference": 2.7256008805487397e-07,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "20mv_hold_movement_ratio",
+        "baseline": 0.01623403834124252,
+        "refined": 0.016234655970845457,
+        "absolute_difference": 6.176296029371253e-07,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "20mv_power_w",
+        "baseline": 0.004748237365427692,
+        "refined": 0.004748208434134922,
+        "absolute_difference": 2.8931292770338624e-08,
+        "maximum_difference": 5e-06,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "schematic_instances": 94,
+  "schematic_terminals": 372,
+  "pdf_review_pending": false,
+  "full_upstream_signoff": false,
+  "method": "Original unmodified 32-point direct DFT and analyze() independently applied to separately interpolated held/early samples; five-port signed power independently integrated. Original six checks per amplitude retained with truthful pass/fail; final classification uses the previously established original/10%/15% limits, with no timing, load or stimulus relaxation.",
+  "pdf": "reports/28-fct-amplifier-review.pdf",
+  "pdf_sha256": "d432d05d4249e92bcf615c51339ed1c576135a24e4b0966ae70cc77ae9ebbfdd",
+  "pdf_pages": 20,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-29T05:58:06.489810+00:00"
+}

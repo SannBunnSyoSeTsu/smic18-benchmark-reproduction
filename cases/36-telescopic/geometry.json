@@ -1,0 +1,352 @@
+{
+  "devices": [
+    {
+      "name": "MREF",
+      "pins": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 5.0,
+      "W_total_um": 23.4,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MTAIL",
+      "pins": [
+        "tail",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 28.0,
+      "W_total_um": 131.04,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MINP",
+      "pins": [
+        "a1",
+        "vinp",
+        "tail",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 10.32,
+      "L_um": 1.0,
+      "m": 14.0,
+      "W_total_um": 144.48000000000002,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MINN",
+      "pins": [
+        "a2",
+        "vinn",
+        "tail",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 10.32,
+      "L_um": 1.0,
+      "m": 14.0,
+      "W_total_um": 144.48000000000002,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MNCP",
+      "pins": [
+        "voutn",
+        "vcn",
+        "a1",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 3.98,
+      "L_um": 0.36,
+      "m": 14.0,
+      "W_total_um": 55.72,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MNCN",
+      "pins": [
+        "voutp",
+        "vcn",
+        "a2",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 3.98,
+      "L_um": 0.36,
+      "m": 14.0,
+      "W_total_um": 55.72,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MPCN",
+      "pins": [
+        "voutn",
+        "vbpc",
+        "pn",
+        "pn"
+      ],
+      "model": "p18",
+      "W_unit_um": 6.96,
+      "L_um": 0.36,
+      "m": 14.0,
+      "W_total_um": 97.44,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MPCP",
+      "pins": [
+        "voutp",
+        "vbpc",
+        "pp",
+        "pp"
+      ],
+      "model": "p18",
+      "W_unit_um": 6.96,
+      "L_um": 0.36,
+      "m": 14.0,
+      "W_total_um": 97.44,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MPTN",
+      "pins": [
+        "pn",
+        "vctrl",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 14.24,
+      "L_um": 1.0,
+      "m": 14.0,
+      "W_total_um": 199.36,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MPTP",
+      "pins": [
+        "pp",
+        "vctrl",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 14.24,
+      "L_um": 1.0,
+      "m": 14.0,
+      "W_total_um": 199.36,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MR1",
+      "pins": [
+        "vdd",
+        "vocm",
+        "srep",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 10.32,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 10.32,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MT1",
+      "pins": [
+        "srep",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 2.0,
+      "W_total_um": 9.36,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MPB2",
+      "pins": [
+        "vcn",
+        "vbp",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 14.24,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 14.24,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MD1",
+      "pins": [
+        "vcn",
+        "vcn",
+        "x1",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 3.98,
+      "L_um": 0.36,
+      "m": 1.0,
+      "W_total_um": 3.98,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MDP1",
+      "pins": [
+        "vbpc",
+        "vbpc",
+        "x2",
+        "x2"
+      ],
+      "model": "p18",
+      "W_unit_um": 6.96,
+      "L_um": 0.36,
+      "m": 1.0,
+      "W_total_um": 6.96,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MT4",
+      "pins": [
+        "vbpc",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 4.68,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MPM",
+      "pins": [
+        "vbp",
+        "vbp",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 14.24,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 14.24,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MT5",
+      "pins": [
+        "vbp",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 4.68,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MCMS",
+      "pins": [
+        "dg",
+        "vcm_sense",
+        "cmt",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 3.98,
+      "L_um": 0.36,
+      "m": 1.0,
+      "W_total_um": 3.98,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MCMR",
+      "pins": [
+        "vctrl",
+        "vocm",
+        "cmt",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 3.98,
+      "L_um": 0.36,
+      "m": 1.0,
+      "W_total_um": 3.98,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MCMT",
+      "pins": [
+        "cmt",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 2.0,
+      "W_total_um": 9.36,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MCML",
+      "pins": [
+        "dg",
+        "dg",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 14.24,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 14.24,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MCMLO",
+      "pins": [
+        "vctrl",
+        "dg",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 14.24,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 14.24,
+      "unit_width_valid": true
+    }
+  ],
+  "circuit_sha256": "2d4a9e9504ac804dd6b55067d359dc4d79fabc31be9e32557493978f80d8af81",
+  "interpretation": "Spectre primitive D G S B, w is each parallel unit and m replicates units. PMOS cascode body follows its source in a separate well. No digital cells.",
+  "all_unit_widths_valid": true
+}

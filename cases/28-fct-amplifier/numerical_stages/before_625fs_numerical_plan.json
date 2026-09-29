@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-09-29T04:47:20.744529+00:00",
+  "settings": [
+    {
+      "maxstep_s": 2.5e-12,
+      "global_reltol": 1e-06,
+      "vabstol_V": 1e-06,
+      "iabstol_A": 1e-12
+    },
+    {
+      "maxstep_s": 1.25e-12,
+      "global_reltol": 1e-07,
+      "vabstol_V": 1e-06,
+      "iabstol_A": 1e-12
+    }
+  ],
+  "absolute_difference_limits": {
+    "gain_vv": 0.01,
+    "sfdr_db": 0.5,
+    "cm_mean_v": 0.001,
+    "output_min_v": 0.001,
+    "output_max_v": 0.001,
+    "hold_movement_ratio": 0.0002,
+    "power_w": 5e-06
+  },
+  "reason": "Initial interpolated FFT check failed0.5dB convergence; tighter absolute tolerance failed at an ideal relay discontinuity. Force accepted time points at all unchanged held/early readout times using strobetimes and retain all adaptive samples for power. Preserve original difference bounds."
+}

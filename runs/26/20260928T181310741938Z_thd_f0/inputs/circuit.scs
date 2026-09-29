@@ -1,0 +1,53 @@
+simulator lang=spectre
+subckt gmc_core (vss vdd vbn vctrl inp inn outp outn)
+MTA (ta vbn vss vss) n18 w=20.66u l=1u m=1
+MTB (tb vbn vss vss) n18 w=20.66u l=1u m=1
+RDEG (ta tb) resistor r=19100
+MA (outn inp ta vss) n18 w=27.78u l=.36u
+MB (outp inn tb vss) n18 w=27.78u l=.36u
+MLA (outn vctrl vdd vdd) p18 w=41.58u l=1u m=1
+MLB (outp vctrl vdd vdd) p18 w=41.58u l=1u m=1
+ends gmc_core
+subckt gmc_core_bp (vss vdd vbn vctrl inp inn outp outn)
+MTA (ta vbn vss vss) n18 w=20.66u l=1u m=1
+MTB (tb vbn vss vss) n18 w=20.66u l=1u m=1
+RDEG (ta tb) resistor r=19100
+MA (outn inp ta vss) n18 w=27.78u l=.36u
+MB (outp inn tb vss) n18 w=27.78u l=.36u
+MLA (outn vctrl vdd vdd) p18 w=41.58u l=1u m=1.5
+MLB (outp vctrl vdd vdd) p18 w=41.58u l=1u m=1.5
+ends gmc_core_bp
+subckt gmc_sink (vss vbn inp inn outp outn)
+MTA (ta vbn vss vss) n18 w=20.66u l=1u m=1
+MTB (tb vbn vss vss) n18 w=20.66u l=1u m=1
+RDEG (ta tb) resistor r=8000
+MA (outn inp ta vss) n18 w=27.78u l=.36u
+MB (outp inn tb vss) n18 w=27.78u l=.36u
+ends gmc_sink
+subckt cmfb_amp (vss vdd vbn vocm vsense vctrl)
+MCTA (cta vbn vss vss) n18 w=20.66u l=1u m=0.5
+MCTB (ctb vbn vss vss) n18 w=20.66u l=1u m=0.5
+RCM (cta ctb) resistor r=5k
+MC1 (cd vsense cta vss) n18 w=6.82u l=.36u
+MC2 (vctrl vocm ctb vss) n18 w=6.82u l=.36u
+MCL1 (cd cd vdd vdd) p18 w=20.78u l=1u
+MCL2 (vctrl vctrl vdd vdd) p18 w=20.78u l=1u
+CCM (vctrl vdd) capacitor c=.3p
+ends cmfb_amp
+subckt fd_ota_c_biquad (vss iref vdd vinp vinn vocm vbpp vbpn voutp voutn)
+MREF (iref iref vss vss) n18 w=20.66u l=1u
+XGIN (vss vdd iref vc1 vinp vinn vbpp vbpn) gmc_core_bp
+XGF (vss vdd iref vc2 vbpp vbpn voutp voutn) gmc_core
+XGB (vss vdd iref vc1 voutp voutn vbpn vbpp) gmc_core_bp
+XGQ (vss iref vbpp vbpn vbpn vbpp) gmc_sink
+RS1A (vbpp sense1) resistor r=1Meg
+RS1B (vbpn sense1) resistor r=1Meg
+XCM1 (vss vdd iref vocm sense1 vc1) cmfb_amp
+RS2A (voutp sense2) resistor r=1Meg
+RS2B (voutn sense2) resistor r=1Meg
+XCM2 (vss vdd iref vocm sense2 vc2) cmfb_amp
+C1P (vbpp vss) capacitor c=8p
+C1N (vbpn vss) capacitor c=8p
+C2P (voutp vss) capacitor c=4p
+C2N (voutn vss) capacitor c=4p
+ends fd_ota_c_biquad

@@ -1,0 +1,610 @@
+{
+  "case_slot": 26,
+  "generated_at": "2026-09-28T18:15:48.067594+00:00",
+  "status": "complete_original",
+  "values": {
+    "ac": {
+      "f0_Hz": 1924718.0146987296,
+      "Q": 0.6903208807375485,
+      "passgain_dB": -0.5613358011599383,
+      "fit_error_dB": 0.0017873385039630801,
+      "atten20M_dB": 40.61716611983165,
+      "bp_peak_Hz": 1927524.913191025,
+      "bp_peak_dB": -6.405610324761575,
+      "bp_1k_dB": 23.752572994113066,
+      "bp_200k_dB": 15.741482214499241,
+      "bp_20M_dB": 17.108038760308677,
+      "cm_error_V": 0.0018250585352632687,
+      "power_W": 0.000393439730232396
+    },
+    "noise_Vrms": 0.0002956622851616086,
+    "thd": {
+      "output_amplitude_V": 0.28030457838422806,
+      "fundamental_gain": 0.9343485946140936,
+      "thd_dB": -54.50217941553218
+    },
+    "thd2": {
+      "output_amplitude_V": 0.41816123331139954,
+      "fundamental_gain": 0.9292471851364434,
+      "thd_dB": -44.44511136783645
+    },
+    "thd_f0": {
+      "output_amplitude_V": 0.2818691485716363,
+      "fundamental_gain": 0.6263758857147473,
+      "thd_dB": -59.89619675809011
+    },
+    "thd_f0_bp": {
+      "output_amplitude_V": 0.21762687255871066,
+      "fundamental_gain": 0.48361527235269036,
+      "thd_dB": -52.783332993931225
+    },
+    "cmstep": {
+      "initial_error_V": 0.002072876713432259,
+      "settle_s": 6.810258401985645e-08,
+      "late_excursion_V": 0.0017294306198274434
+    }
+  },
+  "gates": {
+    "f0_Hz_error": {
+      "value": 75281.98530127038,
+      "unit": "Hz/ratio",
+      "sense": "max",
+      "limits": {
+        "original": 200000.0,
+        "10pct": 220000.00000000003,
+        "15pct": 229999.99999999997
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "Q_error": {
+      "value": 0.009679119262451463,
+      "unit": "Hz/ratio",
+      "sense": "max",
+      "limits": {
+        "original": 0.05,
+        "10pct": 0.05500000000000001,
+        "15pct": 0.057499999999999996
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "bp_peak_Hz_error": {
+      "value": 72475.08680897509,
+      "unit": "Hz/ratio",
+      "sense": "max",
+      "limits": {
+        "original": 300000.0,
+        "10pct": 330000.0,
+        "15pct": 345000.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "passgain_dB_min": {
+      "value": -0.5613358011599383,
+      "unit": "dB/V/W",
+      "sense": "min",
+      "limits": {
+        "original": -1.0,
+        "10pct": -1.9151498112135024,
+        "15pct": -2.4116214857141456
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "passgain_dB_max": {
+      "value": -0.5613358011599383,
+      "unit": "dB/V/W",
+      "sense": "max",
+      "limits": {
+        "original": 1.0,
+        "10pct": 1.8278537031645015,
+        "15pct": 2.213956807072233
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "fit_error_dB_max": {
+      "value": 0.0017873385039630801,
+      "unit": "dB/V/W",
+      "sense": "max",
+      "limits": {
+        "original": 0.5,
+        "10pct": 0.55,
+        "15pct": 0.575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "atten20M_dB_min": {
+      "value": 40.61716611983165,
+      "unit": "dB/V/W",
+      "sense": "min",
+      "limits": {
+        "original": 35.0,
+        "10pct": 34.0848501887865,
+        "15pct": 33.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "bp_peak_dB_min": {
+      "value": -6.405610324761575,
+      "unit": "dB/V/W",
+      "sense": "min",
+      "limits": {
+        "original": -8.0,
+        "10pct": -8.915149811213503,
+        "15pct": -9.411621485714145
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "bp_peak_dB_max": {
+      "value": -6.405610324761575,
+      "unit": "dB/V/W",
+      "sense": "max",
+      "limits": {
+        "original": -5.0,
+        "10pct": -4.172146296835498,
+        "15pct": -3.786043192927767
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "bp_1k_dB_min": {
+      "value": 23.752572994113066,
+      "unit": "dB/V/W",
+      "sense": "min",
+      "limits": {
+        "original": 18.0,
+        "10pct": 17.084850188786497,
+        "15pct": 16.588378514285854
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "bp_200k_dB_min": {
+      "value": 15.741482214499241,
+      "unit": "dB/V/W",
+      "sense": "min",
+      "limits": {
+        "original": 15.0,
+        "10pct": 14.084850188786497,
+        "15pct": 13.588378514285855
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "bp_20M_dB_min": {
+      "value": 17.108038760308677,
+      "unit": "dB/V/W",
+      "sense": "min",
+      "limits": {
+        "original": 15.0,
+        "10pct": 14.084850188786497,
+        "15pct": 13.588378514285855
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "cm_error_V_max": {
+      "value": 0.0018250585352632687,
+      "unit": "dB/V/W",
+      "sense": "max",
+      "limits": {
+        "original": 0.01,
+        "10pct": 0.011000000000000001,
+        "15pct": 0.0115
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power_W_max": {
+      "value": 0.000393439730232396,
+      "unit": "dB/V/W",
+      "sense": "max",
+      "limits": {
+        "original": 0.0005,
+        "10pct": 0.00055,
+        "15pct": 0.000575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "noise_Vrms": {
+      "value": 0.0002956622851616086,
+      "unit": "Vrms",
+      "sense": "max",
+      "limits": {
+        "original": 0.0005,
+        "10pct": 0.00055,
+        "15pct": 0.000575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "thd_thd_dB": {
+      "value": -54.50217941553218,
+      "unit": "dB",
+      "sense": "max",
+      "limits": {
+        "original": -45.0,
+        "10pct": -44.1721462968355,
+        "15pct": -43.786043192927764
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "thd_gain": {
+      "value": 0.9343485946140936,
+      "unit": "V/V",
+      "sense": "min",
+      "limits": {
+        "original": 0.85,
+        "10pct": 0.765,
+        "15pct": 0.7224999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "thd2_thd_dB": {
+      "value": -44.44511136783645,
+      "unit": "dB",
+      "sense": "max",
+      "limits": {
+        "original": -30.0,
+        "10pct": -29.1721462968355,
+        "15pct": -28.786043192927767
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "thd2_gain": {
+      "value": 0.9292471851364434,
+      "unit": "V/V",
+      "sense": "min",
+      "limits": {
+        "original": 0.8,
+        "10pct": 0.7200000000000001,
+        "15pct": 0.68
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "thd_f0_thd_dB": {
+      "value": -59.89619675809011,
+      "unit": "dB",
+      "sense": "max",
+      "limits": {
+        "original": -45.0,
+        "10pct": -44.1721462968355,
+        "15pct": -43.786043192927764
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "thd_f0_gain": {
+      "value": 0.6263758857147473,
+      "unit": "V/V",
+      "sense": "min",
+      "limits": {
+        "original": 0.5,
+        "10pct": 0.45,
+        "15pct": 0.425
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "thd_f0_bp_thd_dB": {
+      "value": -52.783332993931225,
+      "unit": "dB",
+      "sense": "max",
+      "limits": {
+        "original": -45.0,
+        "10pct": -44.1721462968355,
+        "15pct": -43.786043192927764
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "thd_f0_bp_gain": {
+      "value": 0.48361527235269036,
+      "unit": "V/V",
+      "sense": "min",
+      "limits": {
+        "original": 0.3,
+        "10pct": 0.27,
+        "15pct": 0.255
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "cm_initial_error_V": {
+      "value": 0.002072876713432259,
+      "unit": "V/s",
+      "sense": "max",
+      "limits": {
+        "original": 0.01,
+        "10pct": 0.01,
+        "15pct": 0.01
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "cm_settle_s": {
+      "value": 6.810258401985645e-08,
+      "unit": "V/s",
+      "sense": "max",
+      "limits": {
+        "original": 1e-06,
+        "10pct": 1.1e-06,
+        "15pct": 1.1499999999999998e-06
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "cm_late_excursion_V": {
+      "value": 0.0017294306198274434,
+      "unit": "V/s",
+      "sense": "max",
+      "limits": {
+        "original": 0.01,
+        "10pct": 0.01,
+        "15pct": 0.01
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "groups": {
+    "ac": "runs/26/20260928T181533966305Z_ac",
+    "noise": "runs/26/20260928T181534633008Z_noise",
+    "thd": "runs/26/20260928T181535297678Z_thd",
+    "thd2": "runs/26/20260928T181538051207Z_thd2",
+    "thd_f0": "runs/26/20260928T181541028707Z_thd_f0",
+    "cmstep": "runs/26/20260928T181544167057Z_cmstep"
+  },
+  "run_dirs": [
+    "runs/26/20260928T181533966305Z_ac",
+    "runs/26/20260928T181534633008Z_noise",
+    "runs/26/20260928T181535297678Z_thd",
+    "runs/26/20260928T181538051207Z_thd2",
+    "runs/26/20260928T181541028707Z_thd_f0",
+    "runs/26/20260928T181544167057Z_cmstep"
+  ],
+  "circuit_sha256": "ca1d973f73e9bc1899742bfe7698bdb9dfd31c3b23f2dd842da9dc403d49a82d",
+  "contract_sha256": "0e2040784783455513b6322c6031ec0a68142f91a29881acac45edeca808af4c",
+  "scope": "SMIC18 TT1.8V27C completeAC/noise/threeamplitude-frequencyTHD/CMstep. Other24ACnoise PVT and2dynamicstressconditions excluded.",
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "nonrelaxable_guards_pass": true,
+  "operating_point": {
+    "X.XGIN.MTB:gmbs": 0.0001073038966906194,
+    "X.XGIN.MTB:gm": 0.0003581863690591132,
+    "X.XGIN.MTB:vdsat": 0.08870291609975559,
+    "X.XGIN.MTB:vds": 0.3747887726569634,
+    "X.XGIN.MTB:vgs": 0.4623363811851343,
+    "X.XGIN.MTB:ids": 1.986454994989599e-05,
+    "X.XGIN.MTA:gmbs": 0.0001073038966906194,
+    "X.XGIN.MTA:gm": 0.0003581863690591133,
+    "X.XGIN.MTA:vdsat": 0.08870291609975559,
+    "X.XGIN.MTA:vds": 0.3747887726569635,
+    "X.XGIN.MTA:vgs": 0.4623363811851343,
+    "X.XGIN.MTA:ids": 1.986454994989599e-05,
+    "X.XGIN.MLB:gmbs": 0.0001334699551455733,
+    "VDD:p": -0.0002185776279068867,
+    "X.MREF:ids": 1.99999995377119e-05,
+    "X.MREF:vgs": 0.4623363811851343,
+    "X.MREF:vds": 0.4623363811851343,
+    "X.MREF:vdsat": 0.08870329179519611,
+    "X.MREF:gm": 0.0003604372928321455,
+    "X.MREF:gmbs": 0.0001079735719566208,
+    "X.XCM1.MC1:ids": 1.002353810524798e-05,
+    "X.XCM1.MC1:vgs": 0.5506890757772334,
+    "X.XCM1.MC1:vds": 0.9148422449938399,
+    "X.XCM1.MC1:vdsat": 0.07184718065520455,
+    "X.XCM1.MC1:gm": 0.0002025013016495516,
+    "X.XCM1.MC1:gmbs": 4.878099535173156e-05,
+    "X.XCM1.MC2:ids": 9.799761372753857e-06,
+    "X.XCM1.MC2:vgs": 0.5494222205046778,
+    "X.XCM1.MC2:vds": 0.9170085169832802,
+    "X.XCM1.MC2:vdsat": 0.07138183982749623,
+    "X.XCM1.MC2:gm": 0.0001987149830274427,
+    "X.XCM1.MC2:gmbs": 4.788559966956883e-05,
+    "X.XCM1.MCL1:ids": -1.002354228172757e-05,
+    "X.XCM1.MCL1:vgs": -0.5340217722481302,
+    "X.XCM1.MCL1:vds": -0.5340217722481302,
+    "X.XCM1.MCL1:vdsat": -0.1247646283215497,
+    "X.XCM1.MCL1:gm": 0.0001397913476426083,
+    "X.XCM1.MCL1:gmbs": 4.453209507247782e-05,
+    "X.XCM1.MCL2:ids": -9.799765635759093e-06,
+    "X.XCM1.MCL2:vgs": -0.5324137035213976,
+    "X.XCM1.MCL2:vds": -0.5324137035213976,
+    "X.XCM1.MCL2:vdsat": -0.123623792978851,
+    "X.XCM1.MCL2:gm": 0.0001378019069221152,
+    "X.XCM1.MCL2:gmbs": 4.389314571265715e-05,
+    "X.XCM1.MCTA:ids": 9.91189801642601e-06,
+    "X.XCM1.MCTA:vgs": 0.4623363811851343,
+    "X.XCM1.MCTA:vds": 0.3511359827580299,
+    "X.XCM1.MCTA:vdsat": 0.08870281990476858,
+    "X.XCM1.MCTA:gm": 0.0001787383139888907,
+    "X.XCM1.MCTA:gmbs": 5.354635759601312e-05,
+    "X.XCM2.MC1:ids": 1.002313189263285e-05,
+    "X.XCM2.MC1:vgs": 0.5506861398210592,
+    "X.XCM2.MC1:vds": 0.9148487948406416,
+    "X.XCM2.MC1:vdsat": 0.07184632470993826,
+    "X.XCM2.MC1:gm": 0.0002024944393482516,
+    "X.XCM2.MC1:gmbs": 4.877943581597e-05,
+    "X.XCM2.MC2:ids": 9.800162893169533e-06,
+    "X.XCM2.MC2:vgs": 0.5494238571756581,
+    "X.XCM2.MC2:vds": 0.9170072475075619,
+    "X.XCM2.MC2:vdsat": 0.07138266363282957,
+    "X.XCM2.MC2:gm": 0.0001987217875078226,
+    "X.XCM2.MC2:gmbs": 4.788727096250412e-05,
+    "X.XCM2.MCL1:ids": -1.002313606944161e-05,
+    "X.XCM2.MCL1:vgs": -0.534018873942717,
+    "X.XCM2.MCL1:vds": -0.534018873942717,
+    "X.XCM2.MCL1:vdsat": -0.1247625682306588,
+    "X.XCM2.MCL1:gm": 0.000139787760408406,
+    "X.XCM2.MCL1:gmbs": 4.45309427273652e-05,
+    "X.XCM2.MCL2:ids": -9.800167156193991e-06,
+    "X.XCM2.MCL2:vgs": -0.5324166096680962,
+    "X.XCM2.MCL2:vds": -0.5324166096680962,
+    "X.XCM2.MCL2:vdsat": -0.1236258507802795,
+    "X.XCM2.MCL2:gm": 0.0001378055006193835,
+    "X.XCM2.MCL2:gmbs": 4.389429967048649e-05,
+    "X.XCM2.MCTA:ids": 9.911894777902746e-06,
+    "X.XCM2.MCTA:vgs": 0.4623363811851343,
+    "X.XCM2.MCTA:vds": 0.3511323312166415,
+    "X.XCM2.MCTA:vdsat": 0.08870281989015241,
+    "X.XCM2.MCTA:gm": 0.0001787382569077617,
+    "X.XCM2.MCTA:gmbs": 5.354634061182991e-05,
+    "X.XGF.MA:ids": 1.986698802008256e-05,
+    "X.XGF.MA:vgs": 0.5255790579745053,
+    "X.XGF.MA:vds": 0.5255724704771358,
+    "X.XGF.MA:vdsat": 0.06053447621248313,
+    "X.XGF.MA:gm": 0.0004433677552949122,
+    "X.XGF.MA:gmbs": 0.0001061686165533457,
+    "X.XGF.MLA:ids": -1.986698764136106e-05,
+    "X.XGF.MLA:vgs": -0.5324166096680962,
+    "X.XGF.MLA:vds": -0.8981815289621126,
+    "X.XGF.MLA:vdsat": -0.1236031616900011,
+    "X.XGF.MLA:gm": 0.000279079024603393,
+    "X.XGF.MLA:gmbs": 8.898231378219257e-05,
+    "X.XGF.MTA:ids": 1.986698816322597e-05,
+    "X.XGF.MTA:vgs": 0.4623363811851343,
+    "X.XGF.MTA:vds": 0.3762460005607516,
+    "X.XGF.MTA:vdsat": 0.08870292211884849,
+    "X.XGF.MTA:gm": 0.0003582283050124088,
+    "X.XGF.MTA:gmbs": 0.0001073163745931125,
+    "X.XGIN.MA:ids": 1.986454979769859e-05,
+    "X.XGIN.MA:vgs": 0.5252112273430365,
+    "X.XGIN.MA:vds": 0.5270362858783061,
+    "X.XGIN.MA:vdsat": 0.06052533922901715,
+    "X.XGIN.MA:gm": 0.0004433053477846854,
+    "X.XGIN.MA:gmbs": 0.0001062285908380587,
+    "X.XGIN.MB:ids": 1.986454979769865e-05,
+    "X.XGIN.MB:vgs": 0.5252112273430367,
+    "X.XGIN.MB:vds": 0.5270362858782935,
+    "X.XGIN.MB:vdsat": 0.06052533922901715,
+    "X.XGIN.MB:gm": 0.0004433053477846867,
+    "X.XGIN.MB:gmbs": 0.000106228590838059,
+    "X.XGIN.MLA:ids": -2.979925848948354e-05,
+    "X.XGIN.MLA:vgs": -0.5324137035213976,
+    "X.XGIN.MLA:vds": -0.8981749414647304,
+    "X.XGIN.MLA:vdsat": -0.1236011038856524,
+    "X.XGIN.MLA:gm": 0.0004186076015325316,
+    "X.XGIN.MLA:gmbs": 0.0001334699551455732,
+    "X.XGIN.MLB:ids": -2.979925848948355e-05,
+    "X.XGIN.MLB:vgs": -0.5324137035213976,
+    "X.XGIN.MLB:vds": -0.8981749414647431,
+    "X.XGIN.MLB:vdsat": -0.1236011038856524,
+    "X.XGIN.MLB:gm": 0.0004186076015325317,
+    "X.sense2": 0.9018184710377006,
+    "X.sense1": 0.9018250585352633,
+    "X.vc2": 1.267583390331904,
+    "X.vc1": 1.267586296478602,
+    "vbpn": 0.9018250585352696,
+    "vbpp": 0.901825058535257,
+    "voutn": 0.9018184710378875,
+    "voutp": 0.9018184710375139,
+    "vocm": 0.9,
+    "vinn": 0.9,
+    "vinp": 0.9,
+    "iref": 0.4623363811851343,
+    "vdd": 1.8
+  },
+  "disallowed_warnings": {
+    "ac": [],
+    "noise": [],
+    "thd": [],
+    "thd2": [],
+    "thd_f0": [],
+    "cmstep": []
+  }
+}

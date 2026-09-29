@@ -1,0 +1,594 @@
+{
+  "method": "Expanded DUT sum(W*L*m) for nativeMOS/MOSCAP/MIM and every unchangedHD MOS; repeated subcircuits counted per occurrence; fixed external powerMOS and external capacitor excluded.",
+  "total_um2": 33470.81309593338,
+  "instances": [
+    {
+      "instance": "XLVL3/Mlvl3_PM3",
+      "kind": "MOS",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XLVL3/Mlvl3_PM1",
+      "kind": "MOS",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XLVL3/Mlvl3_PM0",
+      "kind": "MOS",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XLVL3/XCOREINV",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XLVL3/Mlvl3_NM3",
+      "kind": "MOS",
+      "model": "n33",
+      "area_um2": 0.38880000000000003
+    },
+    {
+      "instance": "XLVL3/Mlvl3_NM2",
+      "kind": "MOS",
+      "model": "n33",
+      "area_um2": 1.5552000000000001
+    },
+    {
+      "instance": "XLVL3/Mlvl3_NM1",
+      "kind": "MOS",
+      "model": "n33",
+      "area_um2": 1.5552000000000001
+    },
+    {
+      "instance": "XINV34/XG",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XINV31/XG",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XINV17/XG",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XBUFF12/XB0_0",
+      "kind": "HD",
+      "model": "INHDV16",
+      "area_um2": 4.2192
+    },
+    {
+      "instance": "XBUFF12/XB1_0",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF12/XB2_0",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF12/XB2_1",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF12/XB3_0",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF12/XB3_1",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF12/XB3_2",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF12/XB3_3",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF12/XB3_4",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF12/XB3_5",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF12/XB3_6",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF12/XB3_7",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF11/XB0_0",
+      "kind": "HD",
+      "model": "INHDV16",
+      "area_um2": 4.2192
+    },
+    {
+      "instance": "XBUFF11/XB1_0",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF11/XB2_0",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF11/XB2_1",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF11/XB3_0",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF11/XB3_1",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF11/XB3_2",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF11/XB3_3",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF11/XB3_4",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF11/XB3_5",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF11/XB3_6",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF11/XB3_7",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "Mbootstrap_driver_NM1",
+      "kind": "MOS",
+      "model": "n18",
+      "area_um2": 34.1858160018
+    },
+    {
+      "instance": "Mbootstrap_driver_NM5",
+      "kind": "MOS",
+      "model": "n33",
+      "area_um2": 0.38880000000000003
+    },
+    {
+      "instance": "Mbootstrap_driver_NM2",
+      "kind": "MOS",
+      "model": "n33",
+      "area_um2": 221.5324800108
+    },
+    {
+      "instance": "Mbootstrap_driver_PM5",
+      "kind": "MOS",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "Mbootstrap_driver_PM2",
+      "kind": "MOS",
+      "model": "p33",
+      "area_um2": 199.26359999279995
+    },
+    {
+      "instance": "CBST",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 899.9999999999999
+    },
+    {
+      "instance": "MBSTCAP",
+      "kind": "MOS",
+      "model": "n18",
+      "area_um2": 26112.0
+    },
+    {
+      "instance": "MTRACKP",
+      "kind": "MOS",
+      "model": "p33",
+      "area_um2": 3985.2719999280002
+    },
+    {
+      "instance": "XNON/XI5/XG",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI0/XG",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI3/XG",
+      "kind": "HD",
+      "model": "NAND2HDV1",
+      "area_um2": 0.7092
+    },
+    {
+      "instance": "XNON/XI1/XG",
+      "kind": "HD",
+      "model": "NAND2HDV1",
+      "area_um2": 0.7092
+    },
+    {
+      "instance": "XNON/XI4/XD0",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI4/CD0",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD1",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI4/CD1",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD2",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI4/CD2",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD3",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI4/CD3",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD4",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI4/CD4",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD5",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI4/CD5",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD6",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI4/CD6",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD7",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI4/CD7",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD0",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI2/CD0",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD1",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI2/CD1",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD2",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI2/CD2",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD3",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI2/CD3",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD4",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI2/CD4",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD5",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI2/CD5",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD6",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI2/CD6",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD7",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XNON/XI2/CD7",
+      "kind": "C",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XBUFF7/XB0_0",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XBUFF7/XB1_0",
+      "kind": "HD",
+      "model": "INHDV4",
+      "area_um2": 1.0548
+    },
+    {
+      "instance": "XBUFF7/XB2_0",
+      "kind": "HD",
+      "model": "INHDV16",
+      "area_um2": 4.2192
+    },
+    {
+      "instance": "XBUFF7/XB3_0",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFF7/XB3_1",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_PM3",
+      "kind": "MOS",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_PM1",
+      "kind": "MOS",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_PM0",
+      "kind": "MOS",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XCHARGE_LS/XCOREINV",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_NM3",
+      "kind": "MOS",
+      "model": "n33",
+      "area_um2": 0.38880000000000003
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_NM2",
+      "kind": "MOS",
+      "model": "n33",
+      "area_um2": 1.5552000000000001
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_NM1",
+      "kind": "MOS",
+      "model": "n33",
+      "area_um2": 1.5552000000000001
+    },
+    {
+      "instance": "MCHN",
+      "kind": "MOS",
+      "model": "n33",
+      "area_um2": 0.38880000000000003
+    },
+    {
+      "instance": "MCHP",
+      "kind": "MOS",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XINVCH/XG",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XBUFFCH/XB0_0",
+      "kind": "HD",
+      "model": "INHDV1",
+      "area_um2": 0.37800000000000006
+    },
+    {
+      "instance": "XBUFFCH/XB1_0",
+      "kind": "HD",
+      "model": "INHDV4",
+      "area_um2": 1.0548
+    },
+    {
+      "instance": "XBUFFCH/XB2_0",
+      "kind": "HD",
+      "model": "INHDV16",
+      "area_um2": 4.2192
+    },
+    {
+      "instance": "XBUFFCH/XB3_0",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    },
+    {
+      "instance": "XBUFFCH/XB3_1",
+      "kind": "HD",
+      "model": "INHDV32",
+      "area_um2": 8.4384
+    }
+  ]
+}

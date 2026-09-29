@@ -1,0 +1,3781 @@
+{
+  "generated_at": "2026-09-23T06:26:40.270225+00:00",
+  "circuit_sha256": "0014c2c3bce36d7ea1099c7c8c13df67508d37d3fff87a719166c916e21dcbbb",
+  "top": "three_stage_nmc_ota",
+  "subcircuit_ports": {
+    "three_stage_nmc_ota": [
+      "vss",
+      "iref",
+      "vdd",
+      "vinn",
+      "vinp",
+      "vout"
+    ]
+  },
+  "instances": {
+    "three_stage_nmc_ota/MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=2.34u l=1u",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        3,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          3,
+          7
+        ],
+        "S": [
+          3,
+          5
+        ],
+        "G": [
+          1.45,
+          6
+        ],
+        "B": [
+          3.86,
+          6
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MPDM": {
+      "name": "MPDM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pdm",
+        "G": "pdm",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.68u",
+        "l": "1u"
+      },
+      "source_line": "MPDM (pdm pdm vdd vdd) p18 w=4.68u l=1u",
+      "W_unit_um": 4.679999999999999,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        11,
+        18
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          17
+        ],
+        "S": [
+          11,
+          19
+        ],
+        "G": [
+          9.45,
+          18
+        ],
+        "B": [
+          11.86,
+          18
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MBP1": {
+      "name": "MBP1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pdm",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u"
+      },
+      "source_line": "MBP1 (pdm iref vss vss) n18 w=2.34u l=1u",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        11,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          7
+        ],
+        "S": [
+          11,
+          5
+        ],
+        "G": [
+          9.45,
+          6
+        ],
+        "B": [
+          11.86,
+          6
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MS2B": {
+      "name": "MS2B",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbn",
+        "G": "pdm",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.68u",
+        "l": "1u"
+      },
+      "source_line": "MS2B (vbn pdm vdd vdd) p18 w=4.68u l=1u",
+      "W_unit_um": 4.679999999999999,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        20,
+        18
+      ],
+      "rendered_pins": {
+        "D": [
+          20,
+          17
+        ],
+        "S": [
+          20,
+          19
+        ],
+        "G": [
+          18.45,
+          18
+        ],
+        "B": [
+          20.86,
+          18
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MVBN": {
+      "name": "MVBN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbn",
+        "G": "vbn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u"
+      },
+      "source_line": "MVBN (vbn vbn vss vss) n18 w=2.34u l=1u",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        20,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          20,
+          7
+        ],
+        "S": [
+          20,
+          5
+        ],
+        "G": [
+          18.45,
+          6
+        ],
+        "B": [
+          20.86,
+          6
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MP1A": {
+      "name": "MP1A",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "na",
+        "G": "na",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "0.72u",
+        "l": "1u"
+      },
+      "source_line": "MP1A (na na vdd vdd) p18 w=0.72u l=1u",
+      "W_unit_um": 0.72,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        29,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          18
+        ],
+        "S": [
+          29,
+          20
+        ],
+        "G": [
+          27.45,
+          19
+        ],
+        "B": [
+          29.86,
+          19
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MP1B": {
+      "name": "MP1B",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n1",
+        "G": "na",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "0.72u",
+        "l": "1u"
+      },
+      "source_line": "MP1B (n1 na vdd vdd) p18 w=0.72u l=1u",
+      "W_unit_um": 0.72,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        38,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          38,
+          18
+        ],
+        "S": [
+          38,
+          20
+        ],
+        "G": [
+          36.45,
+          19
+        ],
+        "B": [
+          38.86,
+          19
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MI1": {
+      "name": "MI1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "na",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.24u",
+        "l": "1u"
+      },
+      "source_line": "MI1 (na vinn tail vss) n18 w=1.24u l=1u",
+      "W_unit_um": 1.24,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        29,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          13
+        ],
+        "S": [
+          29,
+          11
+        ],
+        "G": [
+          27.45,
+          12
+        ],
+        "B": [
+          29.86,
+          12
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MI2": {
+      "name": "MI2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n1",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.24u",
+        "l": "1u"
+      },
+      "source_line": "MI2 (n1 vinp tail vss) n18 w=1.24u l=1u",
+      "W_unit_um": 1.24,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        38,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          38,
+          13
+        ],
+        "S": [
+          38,
+          11
+        ],
+        "G": [
+          36.45,
+          12
+        ],
+        "B": [
+          38.86,
+          12
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u",
+        "m": "0.48"
+      },
+      "source_line": "MTAIL (tail iref vss vss) n18 w=2.34u l=1u m=0.48",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 0.48,
+      "sheet": 1,
+      "origin": [
+        33,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          33,
+          6
+        ],
+        "S": [
+          33,
+          4
+        ],
+        "G": [
+          31.45,
+          5
+        ],
+        "B": [
+          33.86,
+          5
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MPD2": {
+      "name": "MPD2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nb",
+        "G": "nb",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u"
+      },
+      "source_line": "MPD2 (nb nb vdd vdd) p18 w=2.34u l=1u",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        8,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          18
+        ],
+        "S": [
+          8,
+          20
+        ],
+        "G": [
+          6.45,
+          19
+        ],
+        "B": [
+          8.86,
+          19
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MA2": {
+      "name": "MA2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nb",
+        "G": "n1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.3u",
+        "l": "1u"
+      },
+      "source_line": "MA2 (nb n1 vss vss) n18 w=0.3u l=1u",
+      "W_unit_um": 0.3,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        8,
+        9
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          10
+        ],
+        "S": [
+          8,
+          8
+        ],
+        "G": [
+          6.45,
+          9
+        ],
+        "B": [
+          8.86,
+          9
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MPM2": {
+      "name": "MPM2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n2",
+        "G": "nb",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MPM2 (n2 nb vdd vdd) p18 w=2.34u l=1u m=2",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        22,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          18
+        ],
+        "S": [
+          22,
+          20
+        ],
+        "G": [
+          20.45,
+          19
+        ],
+        "B": [
+          22.86,
+          19
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MS2": {
+      "name": "MS2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n2",
+        "G": "vbn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MS2 (n2 vbn vss vss) n18 w=2.34u l=1u m=1",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        22,
+        9
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          10
+        ],
+        "S": [
+          22,
+          8
+        ],
+        "G": [
+          20.45,
+          9
+        ],
+        "B": [
+          22.86,
+          9
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/ML3": {
+      "name": "ML3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "pdm",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.68u",
+        "l": "1u",
+        "m": "21"
+      },
+      "source_line": "ML3 (vout pdm vdd vdd) p18 w=4.68u l=1u m=21",
+      "W_unit_um": 4.679999999999999,
+      "L_um": 1.0,
+      "m": 21.0,
+      "sheet": 2,
+      "origin": [
+        36,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          18
+        ],
+        "S": [
+          36,
+          20
+        ],
+        "G": [
+          34.45,
+          19
+        ],
+        "B": [
+          36.86,
+          19
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/MA3": {
+      "name": "MA3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "n2",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "17.02u",
+        "l": ".36u"
+      },
+      "source_line": "MA3 (vout n2 vss vss) n18 w=17.02u l=.36u",
+      "W_unit_um": 17.02,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        36,
+        9
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          10
+        ],
+        "S": [
+          36,
+          8
+        ],
+        "G": [
+          34.45,
+          9
+        ],
+        "B": [
+          36.86,
+          9
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/CM1": {
+      "name": "CM1",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "n1"
+      },
+      "parameters": {
+        "c": "8p"
+      },
+      "source_line": "CM1 (vout n1) capacitor c=8p",
+      "value_SI": 8e-12,
+      "sheet": 2,
+      "origin": [
+        20,
+        3.5
+      ],
+      "rendered_pins": {
+        "1": [
+          20.82,
+          3.5
+        ],
+        "2": [
+          19.18,
+          3.5
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    },
+    "three_stage_nmc_ota/CM2": {
+      "name": "CM2",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "n2"
+      },
+      "parameters": {
+        "c": "3p"
+      },
+      "source_line": "CM2 (vout n2) capacitor c=3p",
+      "value_SI": 3e-12,
+      "sheet": 2,
+      "origin": [
+        20,
+        1
+      ],
+      "rendered_pins": {
+        "1": [
+          20.82,
+          1
+        ],
+        "2": [
+          19.18,
+          1
+        ]
+      },
+      "block": "three_stage_nmc_ota"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=2.34u l=1u",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MREF",
+      "path": "MREF"
+    },
+    "MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u",
+        "m": "0.48"
+      },
+      "source_line": "MTAIL (tail iref vss vss) n18 w=2.34u l=1u m=0.48",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 0.48,
+      "definition": "three_stage_nmc_ota/MTAIL",
+      "path": "MTAIL"
+    },
+    "MBP1": {
+      "name": "MBP1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pdm",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u"
+      },
+      "source_line": "MBP1 (pdm iref vss vss) n18 w=2.34u l=1u",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MBP1",
+      "path": "MBP1"
+    },
+    "MPDM": {
+      "name": "MPDM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pdm",
+        "G": "pdm",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.68u",
+        "l": "1u"
+      },
+      "source_line": "MPDM (pdm pdm vdd vdd) p18 w=4.68u l=1u",
+      "W_unit_um": 4.679999999999999,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MPDM",
+      "path": "MPDM"
+    },
+    "MS2B": {
+      "name": "MS2B",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbn",
+        "G": "pdm",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.68u",
+        "l": "1u"
+      },
+      "source_line": "MS2B (vbn pdm vdd vdd) p18 w=4.68u l=1u",
+      "W_unit_um": 4.679999999999999,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MS2B",
+      "path": "MS2B"
+    },
+    "MVBN": {
+      "name": "MVBN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbn",
+        "G": "vbn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u"
+      },
+      "source_line": "MVBN (vbn vbn vss vss) n18 w=2.34u l=1u",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MVBN",
+      "path": "MVBN"
+    },
+    "MI1": {
+      "name": "MI1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "na",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.24u",
+        "l": "1u"
+      },
+      "source_line": "MI1 (na vinn tail vss) n18 w=1.24u l=1u",
+      "W_unit_um": 1.24,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MI1",
+      "path": "MI1"
+    },
+    "MI2": {
+      "name": "MI2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n1",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.24u",
+        "l": "1u"
+      },
+      "source_line": "MI2 (n1 vinp tail vss) n18 w=1.24u l=1u",
+      "W_unit_um": 1.24,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MI2",
+      "path": "MI2"
+    },
+    "MP1A": {
+      "name": "MP1A",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "na",
+        "G": "na",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "0.72u",
+        "l": "1u"
+      },
+      "source_line": "MP1A (na na vdd vdd) p18 w=0.72u l=1u",
+      "W_unit_um": 0.72,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MP1A",
+      "path": "MP1A"
+    },
+    "MP1B": {
+      "name": "MP1B",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n1",
+        "G": "na",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "0.72u",
+        "l": "1u"
+      },
+      "source_line": "MP1B (n1 na vdd vdd) p18 w=0.72u l=1u",
+      "W_unit_um": 0.72,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MP1B",
+      "path": "MP1B"
+    },
+    "MA2": {
+      "name": "MA2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nb",
+        "G": "n1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.3u",
+        "l": "1u"
+      },
+      "source_line": "MA2 (nb n1 vss vss) n18 w=0.3u l=1u",
+      "W_unit_um": 0.3,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MA2",
+      "path": "MA2"
+    },
+    "MPD2": {
+      "name": "MPD2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nb",
+        "G": "nb",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u"
+      },
+      "source_line": "MPD2 (nb nb vdd vdd) p18 w=2.34u l=1u",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MPD2",
+      "path": "MPD2"
+    },
+    "MPM2": {
+      "name": "MPM2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n2",
+        "G": "nb",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MPM2 (n2 nb vdd vdd) p18 w=2.34u l=1u m=2",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "three_stage_nmc_ota/MPM2",
+      "path": "MPM2"
+    },
+    "MS2": {
+      "name": "MS2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n2",
+        "G": "vbn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.34u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MS2 (n2 vbn vss vss) n18 w=2.34u l=1u m=1",
+      "W_unit_um": 2.3399999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MS2",
+      "path": "MS2"
+    },
+    "MA3": {
+      "name": "MA3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "n2",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "17.02u",
+        "l": ".36u"
+      },
+      "source_line": "MA3 (vout n2 vss vss) n18 w=17.02u l=.36u",
+      "W_unit_um": 17.02,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "three_stage_nmc_ota/MA3",
+      "path": "MA3"
+    },
+    "ML3": {
+      "name": "ML3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "pdm",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.68u",
+        "l": "1u",
+        "m": "21"
+      },
+      "source_line": "ML3 (vout pdm vdd vdd) p18 w=4.68u l=1u m=21",
+      "W_unit_um": 4.679999999999999,
+      "L_um": 1.0,
+      "m": 21.0,
+      "definition": "three_stage_nmc_ota/ML3",
+      "path": "ML3"
+    },
+    "CM1": {
+      "name": "CM1",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "n1"
+      },
+      "parameters": {
+        "c": "8p"
+      },
+      "source_line": "CM1 (vout n1) capacitor c=8p",
+      "value_SI": 8e-12,
+      "definition": "three_stage_nmc_ota/CM1",
+      "path": "CM1"
+    },
+    "CM2": {
+      "name": "CM2",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "n2"
+      },
+      "parameters": {
+        "c": "3p"
+      },
+      "source_line": "CM2 (vout n2) capacitor c=3p",
+      "value_SI": 3e-12,
+      "definition": "three_stage_nmc_ota/CM2",
+      "path": "CM2"
+    }
+  },
+  "nets": {
+    "three_stage_nmc_ota/iref": [
+      {
+        "instance": "three_stage_nmc_ota/MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          3,
+          7
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          1.45,
+          6
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MBP1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          9.45,
+          6
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MTAIL",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          31.45,
+          5
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/vss": [
+      {
+        "instance": "three_stage_nmc_ota/MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          3,
+          5
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          3.86,
+          6
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MBP1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          11,
+          5
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MBP1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          11.86,
+          6
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MVBN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          20,
+          5
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MVBN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          20.86,
+          6
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MI1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          29.86,
+          12
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MI2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          38.86,
+          12
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MTAIL",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          33,
+          4
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MTAIL",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          33.86,
+          5
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MA2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          8,
+          8
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MA2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          8.86,
+          9
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MS2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          22,
+          8
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MS2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          22.86,
+          9
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MA3",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          36,
+          8
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MA3",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          36.86,
+          9
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/pdm": [
+      {
+        "instance": "three_stage_nmc_ota/MPDM",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          11,
+          17
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MPDM",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          9.45,
+          18
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MBP1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          11,
+          7
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MS2B",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          18.45,
+          18
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/ML3",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          34.45,
+          19
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/vdd": [
+      {
+        "instance": "three_stage_nmc_ota/MPDM",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          11,
+          19
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MPDM",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          11.86,
+          18
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MS2B",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          20,
+          19
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MS2B",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          20.86,
+          18
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MP1A",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          29,
+          20
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MP1A",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          29.86,
+          19
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MP1B",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          38,
+          20
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MP1B",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          38.86,
+          19
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MPD2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          8,
+          20
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MPD2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          8.86,
+          19
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MPM2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          22,
+          20
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MPM2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          22.86,
+          19
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/ML3",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          36,
+          20
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/ML3",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          36.86,
+          19
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/vbn": [
+      {
+        "instance": "three_stage_nmc_ota/MS2B",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          20,
+          17
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MVBN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          20,
+          7
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MVBN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          18.45,
+          6
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MS2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          20.45,
+          9
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/na": [
+      {
+        "instance": "three_stage_nmc_ota/MP1A",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          29,
+          18
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MP1A",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          27.45,
+          19
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MP1B",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          36.45,
+          19
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MI1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          29,
+          13
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/n1": [
+      {
+        "instance": "three_stage_nmc_ota/MP1B",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          38,
+          18
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MI2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          38,
+          13
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MA2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          6.45,
+          9
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/CM1",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          19.18,
+          3.5
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/vinn": [
+      {
+        "instance": "three_stage_nmc_ota/MI1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          27.45,
+          12
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/tail": [
+      {
+        "instance": "three_stage_nmc_ota/MI1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          29,
+          11
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MI2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          38,
+          11
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MTAIL",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          33,
+          6
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/vinp": [
+      {
+        "instance": "three_stage_nmc_ota/MI2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          36.45,
+          12
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/nb": [
+      {
+        "instance": "three_stage_nmc_ota/MPD2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          8,
+          18
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MPD2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          6.45,
+          19
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MA2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          8,
+          10
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MPM2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          20.45,
+          19
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/n2": [
+      {
+        "instance": "three_stage_nmc_ota/MPM2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          22,
+          18
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MS2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          22,
+          10
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MA3",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          34.45,
+          9
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/CM2",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          19.18,
+          1
+        ]
+      }
+    ],
+    "three_stage_nmc_ota/vout": [
+      {
+        "instance": "three_stage_nmc_ota/ML3",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          36,
+          18
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/MA3",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          36,
+          10
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/CM1",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          20.82,
+          3.5
+        ]
+      },
+      {
+        "instance": "three_stage_nmc_ota/CM2",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          20.82,
+          1
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MS2B",
+      "pin": "D",
+      "net": "vbn",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MVBN",
+      "pin": "D",
+      "net": "vbn",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MVBN",
+      "pin": "G",
+      "net": "vbn",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP1",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDM",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDM",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MS2B",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MS2B",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1A",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1A",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1B",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1B",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDM",
+      "pin": "D",
+      "net": "pdm",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDM",
+      "pin": "G",
+      "net": "pdm",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP1",
+      "pin": "D",
+      "net": "pdm",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MS2B",
+      "pin": "G",
+      "net": "pdm",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1B",
+      "pin": "D",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MI2",
+      "pin": "D",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MI1",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MI2",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "D",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MI1",
+      "pin": "G",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MI2",
+      "pin": "G",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP1",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MVBN",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MVBN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MI1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MI2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1A",
+      "pin": "D",
+      "net": "na",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1A",
+      "pin": "G",
+      "net": "na",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1B",
+      "pin": "G",
+      "net": "na",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MI1",
+      "pin": "D",
+      "net": "na",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD2",
+      "pin": "D",
+      "net": "nb",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD2",
+      "pin": "G",
+      "net": "nb",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MA2",
+      "pin": "D",
+      "net": "nb",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM2",
+      "pin": "G",
+      "net": "nb",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MS2",
+      "pin": "G",
+      "net": "vbn",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD2",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD2",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM2",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM2",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "ML3",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "ML3",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "ML3",
+      "pin": "G",
+      "net": "pdm",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MA2",
+      "pin": "G",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "CM1",
+      "pin": "2",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "ML3",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MA3",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "CM1",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "CM2",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM2",
+      "pin": "D",
+      "net": "n2",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MS2",
+      "pin": "D",
+      "net": "n2",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MA3",
+      "pin": "G",
+      "net": "n2",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "CM2",
+      "pin": "2",
+      "net": "n2",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MA2",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MA2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MS2",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MS2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MA3",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MA3",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "three_stage_nmc_ota"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "three_stage_nmc_ota",
+      "title": "偏置、输入差分对与第一级镜负载",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              3.86,
+              6
+            ],
+            [
+              4.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11.86,
+              18
+            ],
+            [
+              12.15,
+              18
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11.86,
+              6
+            ],
+            [
+              12.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              20.86,
+              18
+            ],
+            [
+              21.15,
+              18
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.86,
+              6
+            ],
+            [
+              21.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              29.86,
+              19
+            ],
+            [
+              30.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              38.86,
+              19
+            ],
+            [
+              39.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29.86,
+              12
+            ],
+            [
+              30.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.86,
+              12
+            ],
+            [
+              39.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33.86,
+              5
+            ],
+            [
+              34.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pdm",
+          "points": [
+            [
+              11,
+              17
+            ],
+            [
+              11,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "points": [
+            [
+              20,
+              17
+            ],
+            [
+              20,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "na",
+          "points": [
+            [
+              29,
+              18
+            ],
+            [
+              29,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              38,
+              18
+            ],
+            [
+              38,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              29,
+              8.5
+            ],
+            [
+              38,
+              8.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              29,
+              11
+            ],
+            [
+              29,
+              8.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              38,
+              11
+            ],
+            [
+              38,
+              8.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              33,
+              6
+            ],
+            [
+              33,
+              8.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11,
+              23
+            ],
+            [
+              38,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11,
+              19
+            ],
+            [
+              11,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              20,
+              19
+            ],
+            [
+              20,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              29,
+              20
+            ],
+            [
+              29,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              38,
+              20
+            ],
+            [
+              38,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              1.5
+            ],
+            [
+              33,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20,
+              5
+            ],
+            [
+              20,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33,
+              4
+            ],
+            [
+              33,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              1.45,
+              6
+            ],
+            [
+              0.9500000000000002,
+              6
+            ],
+            [
+              0.9500000000000002,
+              8.2
+            ],
+            [
+              3,
+              8.2
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdm",
+          "points": [
+            [
+              9.45,
+              18
+            ],
+            [
+              8.95,
+              18
+            ],
+            [
+              8.95,
+              15.8
+            ],
+            [
+              11,
+              15.8
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "points": [
+            [
+              18.45,
+              6
+            ],
+            [
+              17.95,
+              6
+            ],
+            [
+              17.95,
+              8.2
+            ],
+            [
+              20,
+              8.2
+            ],
+            [
+              20,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "na",
+          "points": [
+            [
+              27.45,
+              19
+            ],
+            [
+              26.95,
+              19
+            ],
+            [
+              26.95,
+              16.8
+            ],
+            [
+              29,
+              16.8
+            ],
+            [
+              29,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              9.45,
+              6
+            ],
+            [
+              8.899999999999999,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdm",
+          "points": [
+            [
+              18.45,
+              18
+            ],
+            [
+              17.9,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "na",
+          "points": [
+            [
+              36.45,
+              19
+            ],
+            [
+              35.900000000000006,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              27.45,
+              12
+            ],
+            [
+              26.9,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              36.45,
+              12
+            ],
+            [
+              35.900000000000006,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              31.45,
+              5
+            ],
+            [
+              30.9,
+              5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            4.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12.15,
+            18
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            12.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            21.15,
+            18
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            30.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            39.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            30.15,
+            12
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            39.15,
+            12
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "pdm",
+          "point": [
+            11.0,
+            12.0
+          ],
+          "text": "pdm",
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "point": [
+            20.0,
+            12.0
+          ],
+          "text": "vbn",
+          "body": false
+        },
+        {
+          "net": "na",
+          "point": [
+            29.0,
+            15.5
+          ],
+          "text": "na",
+          "body": false
+        },
+        {
+          "net": "n1",
+          "point": [
+            38.0,
+            15.5
+          ],
+          "text": "n1",
+          "body": false
+        },
+        {
+          "net": "tail",
+          "point": [
+            29,
+            8.5
+          ],
+          "text": "tail",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            11,
+            23
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            3,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            2,
+            8.2
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "pdm",
+          "point": [
+            10,
+            15.8
+          ],
+          "text": "pdm",
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "point": [
+            19,
+            8.2
+          ],
+          "text": "vbn",
+          "body": false
+        },
+        {
+          "net": "na",
+          "point": [
+            28,
+            16.8
+          ],
+          "text": "na",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            8.899999999999999,
+            6
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "pdm",
+          "point": [
+            17.9,
+            18
+          ],
+          "text": "pdm",
+          "body": false
+        },
+        {
+          "net": "na",
+          "point": [
+            35.900000000000006,
+            19
+          ],
+          "text": "na",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            26.9,
+            12
+          ],
+          "text": "vinn",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            35.900000000000006,
+            12
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            30.9,
+            5
+          ],
+          "text": "iref",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "three_stage_nmc_ota",
+      "title": "第二／第三级及两条嵌套 Miller 通路",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8.86,
+              19
+            ],
+            [
+              9.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8.86,
+              9
+            ],
+            [
+              9.15,
+              9
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22.86,
+              19
+            ],
+            [
+              23.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22.86,
+              9
+            ],
+            [
+              23.15,
+              9
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              36.86,
+              19
+            ],
+            [
+              37.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.86,
+              9
+            ],
+            [
+              37.15,
+              9
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "nb",
+          "points": [
+            [
+              8,
+              18
+            ],
+            [
+              8,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n2",
+          "points": [
+            [
+              22,
+              18
+            ],
+            [
+              22,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              36,
+              18
+            ],
+            [
+              36,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8,
+              23
+            ],
+            [
+              36,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8,
+              20
+            ],
+            [
+              8,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22,
+              20
+            ],
+            [
+              22,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              36,
+              20
+            ],
+            [
+              36,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8,
+              6
+            ],
+            [
+              36,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22,
+              8
+            ],
+            [
+              22,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36,
+              8
+            ],
+            [
+              36,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb",
+          "points": [
+            [
+              8,
+              18
+            ],
+            [
+              8,
+              16
+            ],
+            [
+              19.9,
+              16
+            ],
+            [
+              19.9,
+              19
+            ],
+            [
+              20.45,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n2",
+          "points": [
+            [
+              22,
+              18
+            ],
+            [
+              22,
+              13
+            ],
+            [
+              31,
+              13
+            ],
+            [
+              31,
+              9
+            ],
+            [
+              34.45,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              36,
+              10
+            ],
+            [
+              36,
+              11
+            ],
+            [
+              40,
+              11
+            ],
+            [
+              40,
+              3.5
+            ],
+            [
+              20.82,
+              3.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              20.82,
+              3.5
+            ],
+            [
+              40,
+              3.5
+            ],
+            [
+              40,
+              1
+            ],
+            [
+              20.82,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n2",
+          "points": [
+            [
+              19.18,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              17,
+              13
+            ],
+            [
+              22,
+              13
+            ],
+            [
+              22,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb",
+          "points": [
+            [
+              6.45,
+              19
+            ],
+            [
+              5.95,
+              19
+            ],
+            [
+              5.95,
+              16.8
+            ],
+            [
+              8,
+              16.8
+            ],
+            [
+              8,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              6.45,
+              9
+            ],
+            [
+              5.9,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "points": [
+            [
+              20.45,
+              9
+            ],
+            [
+              19.9,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdm",
+          "points": [
+            [
+              34.45,
+              19
+            ],
+            [
+              33.900000000000006,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              19.18,
+              3.5
+            ],
+            [
+              18.38,
+              3.5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            9.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            9.15,
+            9
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            23.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            23.15,
+            9
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.15,
+            9
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "nb",
+          "point": [
+            8.0,
+            14.0
+          ],
+          "text": "nb",
+          "body": false
+        },
+        {
+          "net": "n2",
+          "point": [
+            22.0,
+            14.0
+          ],
+          "text": "n2",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            36.0,
+            14.0
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            8,
+            23
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            8,
+            6
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "nb",
+          "point": [
+            7,
+            16.8
+          ],
+          "text": "nb",
+          "body": false
+        },
+        {
+          "net": "n1",
+          "point": [
+            5.9,
+            9
+          ],
+          "text": "n1",
+          "body": false
+        },
+        {
+          "net": "vbn",
+          "point": [
+            19.9,
+            9
+          ],
+          "text": "vbn",
+          "body": false
+        },
+        {
+          "net": "pdm",
+          "point": [
+            33.900000000000006,
+            19
+          ],
+          "text": "pdm",
+          "body": false
+        },
+        {
+          "net": "n1",
+          "point": [
+            18.38,
+            3.5
+          ],
+          "text": "n1",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [
+    {
+      "sheet": 2,
+      "nets": [
+        "vss",
+        "n2"
+      ],
+      "point": [
+        17,
+        6
+      ],
+      "junction": false
+    }
+  ],
+  "unused_ports": {
+    "three_stage_nmc_ota": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

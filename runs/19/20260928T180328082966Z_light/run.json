@@ -1,0 +1,52 @@
+{
+  "started_at": "2026-09-28T18:03:28.084344+00:00",
+  "case_slot": 19,
+  "label": "light",
+  "netlist": "runs/19/20260928T180328082966Z_light/inputs/bench.scs",
+  "netlist_sha256": "e70fc4c474707c4a988df3f1d4afa1a6de7b2070d772c16c4a6a4249c8abcded",
+  "dependencies": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/19-sc-converter/circuit.scs": {
+      "snapshot": "runs/19/20260928T180328082966Z_light/inputs/circuit.scs",
+      "sha256": "69f65f854aa02cd025a190dd4448aa16840e73ba6a835cdde88687dfe010f144"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/19-sc-converter/sizing.json": {
+      "snapshot": "runs/19/20260928T180328082966Z_light/inputs/sizing.json",
+      "sha256": "f014c353855164ac0b10d8586a4617f063eb7937ca85f8f65ed7e4fcbdc48fa7"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/19-sc-converter/contract.json": {
+      "snapshot": "runs/19/20260928T180328082966Z_light/inputs/contract.json",
+      "sha256": "f5422a4fecc7b136c3d157b1aa1a6a9c862a77c291b4e81a2972810b8e642a68"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/19-sc-converter/hd_cells.scs": {
+      "snapshot": "runs/19/20260928T180328082966Z_light/inputs/hd_cells.scs",
+      "sha256": "7ce71784a91bad3830a43176195591396eb0b706f6b63251b05827bab33cb4d7"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/19-sc-converter/hd_cells_manifest.json": {
+      "snapshot": "runs/19/20260928T180328082966Z_light/inputs/hd_cells_manifest.json",
+      "sha256": "9ff1cb69b89e8e553dec48e3b1b05b4ddc49ae8bbfdf9148e9201b6ed9f64253"
+    }
+  },
+  "models": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib": "88246a7e992cb3f5af5ac0f6a9a1c5934707ecd72e7f8f08150b44a01796c20f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.mdl": "832d378241360815f6d4009514d863f2aac9c48c312326410de9421564b1033d",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_bjt_spe.mdl": "d2d45e69a854f8d090fe3ef83041bc39ed8a0abcd9d272b8067a9db3014a9b6f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_res_spe.mdl": "173a1a7c1d8cc2f1009ac12db0f0d4f9725aebea8625cf9796a0be50f06fceb1",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_mim_spe.mdl": "02c8e7986a1c159e52c8fa403fdb52b9b4f928e00bca5522a648992528d7edff"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "status": "completed",
+  "completed_at": "2026-09-28T18:03:43.164341+00:00",
+  "errors": [
+    "license error"
+  ],
+  "warnings": [
+    "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XA2.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+    "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDPB.MMP1:int_d. Check the design or use '+diagnose' to get more information.",
+    "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XB2.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+    "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XA2.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+    "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XA2.MMN1:int_s. Check the design or use '+diagnose' to get more information."
+  ],
+  "model_dimensions_valid": true,
+  "raw_dir": "runs/19/20260928T180328082966Z_light/output/bench.raw"
+}

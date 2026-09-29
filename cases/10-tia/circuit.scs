@@ -1,0 +1,14 @@
+// Analog inverters in two resistor-feedback gain stages, not digital gates.
+// D G S B; legal gm/ID model-unit widths, all capacitors are in the bench.
+simulator lang=spectre
+subckt tia (iref in vcm vdd vout vss)
+MN1 (n1 in vss vss) n18 w=0.76u l=.18u m=15
+MP1 (n1 in vdd vdd) p18 w=2.36u l=.18u m=15
+RF1 (n1 in) resistor r=4000
+RB (in vcm) resistor r=1M
+MN2 (vout nbuf vss vss) n18 w=0.76u l=.18u m=11
+MP2 (vout nbuf vdd vdd) p18 w=2.36u l=.18u m=11
+RIN2 (n1 nbuf) resistor r=1500
+RFB2 (vout nbuf) resistor r=4500
+MREF (iref iref vss vss) n18 w=8.86u l=1u
+ends tia

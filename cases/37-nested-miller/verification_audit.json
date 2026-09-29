@@ -1,0 +1,93 @@
+{
+  "audited_at": "2026-09-22T09:57:25.565470+00:00",
+  "status": "complete_original",
+  "nominal_groups": [
+    "pvt",
+    "input_bias",
+    "swing",
+    "settling",
+    "slew"
+  ],
+  "nominal_scalar_gates": 13,
+  "all_source_extract_metrics_used": true,
+  "source_nominal_functional_pass": true,
+  "full_45point_PVT_check_executed": false,
+  "nominal_OP_all_16_saturation": true,
+  "single_falling_crossing_no_recross": true,
+  "source_and_lut_and_model_hashes_valid": true,
+  "run_snapshots": [
+    {
+      "group": "pvt",
+      "run": "runs/37/20260922T094634948149Z_pvt",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/37/20260922T094634948149Z_pvt/output/bench.raw/dcOp.dc": "925123155786143d21000c4bbc663f852c95e4a8e80e1d6f51ac891764a0134a",
+        "runs/37/20260922T094634948149Z_pvt/output/bench.raw/ac.ac": "5efe9111af8022004782333bcfec37ec69a416a4c7efba4b00b2332342bdebfa"
+      }
+    },
+    {
+      "group": "input_bias",
+      "run": "runs/37/20260922T094635113442Z_input_bias",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/37/20260922T094635113442Z_input_bias/output/bench.raw/dcOp.dc": "bac87de4085bb2c21cdc8b3d26a9d89a8cd5a6a3b0f3aa48087f863ae2176bf9"
+      }
+    },
+    {
+      "group": "swing",
+      "run": "runs/37/20260922T094635241732Z_swing",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/37/20260922T094635241732Z_swing/output/bench.raw/swing.dc": "7c0f4e138dec69d08d8283bbdddcdfdc014d1e37823bd719db888d601e4c0a49"
+      }
+    },
+    {
+      "group": "settling",
+      "run": "runs/37/20260922T094635425475Z_settling",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/37/20260922T094635425475Z_settling/output/bench.raw/tran.tran.tran": "5334ade6fcc0521b063660660d0ac142e69391db372a359f41a05255f8b88213"
+      }
+    },
+    {
+      "group": "slew",
+      "run": "runs/37/20260922T094635958990Z_slew",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/37/20260922T094635958990Z_slew/output/bench.raw/tran.tran.tran": "aa3d9232b534ea0a2ab93fa89837bf0ba05194f527197c35fb26908c4a7b8ddb"
+      }
+    }
+  ],
+  "review_pdf_sha256": "a9cd07df00b18a19cff9b272b3cacfc8f102a98e6f7aaff1edd8820b22153dc1",
+  "review_pdf_pages": 6,
+  "all_pages_visually_reviewed": true,
+  "knowledge_sha256": "004ea8fa691a82c7237dd3444020e85b8b12a7d4f5537333fe89f06d3c0b02c6",
+  "precision_limits": {
+    "ac": "100 points/decade, logarithmic interpolation at0dB; gain measured at0.1Hz. Independent extraction agrees to floating-point roundoff.",
+    "dc_range": "Full801 points,2mV command spacing. Largest fixed20mV-eligible interval0.100..1.168V; next1.170V fails. Low endpoint is the scan boundary, not a proven physical limit. Static valid range does not establish uniform bandwidth or slew across that interval.",
+    "transient": "10ns uniform output samples,5ns internal maximum timestep. Original verifier uses the first accepted sample after the last sampled excursion, not interpolated settling time. SR uses linear interpolation at0.75/1.05V thresholds.",
+    "input_current": "The independent open-loop input-bias bench gives0A for each MOS gate in this schematic model. Gate leakage/ESD/package effects are not established by this zero result."
+  },
+  "scope": "SMIC18 tt1.8V27C; originalfive measurement groups and fixed200pF load. Other44 PVT points, mismatch, parasitics and passive variation excluded.",
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:27:43.172315+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "0014c2c3bce36d7ea1099c7c8c13df67508d37d3fff87a719166c916e21dcbbb",
+    "results_sha256": "781cf209e5aff6aaa918721cf49855383384960c94da9189d1e938a2f3560fab",
+    "previous_pdf_sha256": "a9cd07df00b18a19cff9b272b3cacfc8f102a98e6f7aaff1edd8820b22153dc1",
+    "current_pdf_sha256": "e4c5f5d538eec57708b729ab6e3cafc55c70ebdae285bfd4551863e1826ba6b4",
+    "schematic_audit_sha256": "93f046f24273b891833b810feedbfdb332a4387ddb859dfe81de464a0621f21c",
+    "report_pages": 8,
+    "all_merged_pages_pixel_identical_to_sources": true
+  }
+}

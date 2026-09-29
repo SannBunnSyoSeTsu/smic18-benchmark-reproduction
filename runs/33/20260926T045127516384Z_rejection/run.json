@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-09-26T04:51:27.517919+00:00",
+  "case_slot": 33,
+  "label": "rejection",
+  "netlist": "runs/33/20260926T045127516384Z_rejection/inputs/bench.scs",
+  "netlist_sha256": "f407f722f3ff91d5bc8ab4794ddceb3b8995bf2bb294b6323795950fed6092b2",
+  "dependencies": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/33-sampling-ota-gain1/circuit.scs": {
+      "snapshot": "runs/33/20260926T045127516384Z_rejection/inputs/circuit.scs",
+      "sha256": "05da74f7a23c1d2282c3274119e1fae0559296895141342ffc3a2b043dba1e44"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/33-sampling-ota-gain1/sizing.json": {
+      "snapshot": "runs/33/20260926T045127516384Z_rejection/inputs/sizing.json",
+      "sha256": "6abdb2400bbe3c9aaf86f2d79f926e46f7fe7f8ec7476967c624d36824274e5d"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/33-sampling-ota-gain1/contract.json": {
+      "snapshot": "runs/33/20260926T045127516384Z_rejection/inputs/contract.json",
+      "sha256": "493e75fc6c0d52812ced2331db139485bc7145c9eb6871ac417518872774d053"
+    }
+  },
+  "models": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib": "88246a7e992cb3f5af5ac0f6a9a1c5934707ecd72e7f8f08150b44a01796c20f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.mdl": "832d378241360815f6d4009514d863f2aac9c48c312326410de9421564b1033d",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_bjt_spe.mdl": "d2d45e69a854f8d090fe3ef83041bc39ed8a0abcd9d272b8067a9db3014a9b6f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_res_spe.mdl": "173a1a7c1d8cc2f1009ac12db0f0d4f9725aebea8625cf9796a0be50f06fceb1",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_mim_spe.mdl": "02c8e7986a1c159e52c8fa403fdb52b9b4f928e00bca5522a648992528d7edff"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "status": "completed",
+  "completed_at": "2026-09-26T04:51:28.152025+00:00",
+  "errors": [
+    "license error"
+  ],
+  "warnings": [],
+  "model_dimensions_valid": true,
+  "raw_dir": "runs/33/20260926T045127516384Z_rejection/output/bench.raw"
+}

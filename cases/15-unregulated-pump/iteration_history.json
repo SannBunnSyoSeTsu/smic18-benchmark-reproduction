@@ -1,0 +1,1898 @@
+[
+  {
+    "case_slot": 15,
+    "generated_at": "2026-09-26T03:55:47.589702+00:00",
+    "status": "needs_iteration",
+    "values": {
+      "vout_en_avg": 2.0623537789654325,
+      "vout_en_max": 2.06267822860622,
+      "vout_en_min": 2.061761204202468,
+      "i_avdd_en_avg": 0.00010646359356256999,
+      "i_avdd_pd_avg": 7.839277029233e-10,
+      "output_error_V": 0.4376462210345675,
+      "ripple_V": 0.0009170244037521869,
+      "enabled_current_A": 0.00010646359356256999,
+      "disabled_current_A": 7.839277029233e-10,
+      "output_last_cycle_mean_V": 2.0623537758417894
+    },
+    "gates": {
+      "output_error": {
+        "value": 0.4376462210345675,
+        "unit": "V",
+        "sense": "max",
+        "limits": {
+          "original": 0.3,
+          "10pct": 0.33,
+          "15pct": 0.345
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": false
+        }
+      },
+      "ripple": {
+        "value": 0.0009170244037521869,
+        "unit": "Vpp",
+        "sense": "max",
+        "limits": {
+          "original": 0.005,
+          "10pct": 0.0055000000000000005,
+          "15pct": 0.00575
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "enabled_current": {
+        "value": 0.00010646359356256999,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 0.0002,
+          "10pct": 0.00022000000000000003,
+          "15pct": 0.00022999999999999998
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "disabled_current": {
+        "value": 7.839277029233e-10,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 1e-07,
+          "10pct": 1.1e-07,
+          "15pct": 1.1499999999999998e-07
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      }
+    },
+    "pass_tiers": {
+      "original": false,
+      "10pct": false,
+      "15pct": false
+    },
+    "groups": {
+      "enabled": "runs/15/20260926T035315105349Z_enabled",
+      "disabled": "runs/15/20260926T035459589308Z_disabled"
+    },
+    "run_dirs": [
+      "runs/15/20260926T035315105349Z_enabled",
+      "runs/15/20260926T035459589308Z_disabled"
+    ],
+    "terminal_voltages": {
+      "enabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.01784133506069,
+            "VGD": 2.616524285229083,
+            "VDS": 2.6629745208309314,
+            "VGB": 3.542351060187603,
+            "VDB": 1.8,
+            "VSB": 3.538282751806256
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.01784133506069,
+            "VGD": 2.6629745208309314,
+            "VDS": 2.616524285229083,
+            "VGB": 3.538282751806256,
+            "VDB": 1.8,
+            "VSB": 3.542351060187603
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.6570047595269333,
+            "VDS": 1.6570047595269333,
+            "VGB": 3.538282751806256,
+            "VDB": 2.062678316460379,
+            "VSB": 3.538282751806256
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.649610461083635,
+            "VDS": 1.649610461083635,
+            "VGB": 3.542351060187603,
+            "VDB": 2.062678316460379,
+            "VSB": 3.542351060187603
+          }
+        }
+      ],
+      "disabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0041797906330209855,
+            "VGD": 0.0019419980612480625,
+            "VDS": 0.006021625504819994,
+            "VGB": 1.801302893050801,
+            "VDB": 1.8,
+            "VSB": 1.805479306348913
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0041797906330209855,
+            "VGD": 0.006021625504819994,
+            "VDS": 0.0019419980612480625,
+            "VGB": 1.805479306348913,
+            "VDB": 1.8,
+            "VSB": 1.801302893050801
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.006019011409928998,
+            "VDS": 0.006019011409928998,
+            "VGB": 1.805479306348913,
+            "VDB": 1.799460294965272,
+            "VSB": 1.805479306348913
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0018425982314900224,
+            "VDS": 0.0018425982314900224,
+            "VGB": 1.801302893050801,
+            "VDB": 1.799460294965272,
+            "VSB": 1.801302893050801
+          }
+        }
+      ]
+    },
+    "terminal_screen_valid": true,
+    "circuit_sha256": "b63d382ff79cf5723a8e7cacff530259517362015229949ee90a9d8346f0f5ba",
+    "contract_sha256": "65022ee9fd856d60a918e38ab7440c278ce2c9dd196e47013d6ae967b7fc9ad1",
+    "all_nominal_checks_complete": true,
+    "model_dimensions_valid": true,
+    "scope": "SMIC18 TT/1.8V/40C nominal representative point; independent enabled/disabled benches"
+  },
+  {
+    "case_slot": 15,
+    "generated_at": "2026-09-26T03:57:37.876150+00:00",
+    "status": "needs_iteration",
+    "values": {
+      "vout_en_avg": 2.088266604872796,
+      "vout_en_max": 2.088696649693658,
+      "vout_en_min": 2.087505929318312,
+      "i_avdd_en_avg": 0.00011455522458904364,
+      "i_avdd_pd_avg": 7.799534402238986e-10,
+      "output_error_V": 0.4117333951272042,
+      "ripple_V": 0.001190720375346288,
+      "enabled_current_A": 0.00011455522458904364,
+      "disabled_current_A": 7.799534402238986e-10,
+      "output_last_cycle_mean_V": 2.0882666048637692
+    },
+    "gates": {
+      "output_error": {
+        "value": 0.4117333951272042,
+        "unit": "V",
+        "sense": "max",
+        "limits": {
+          "original": 0.3,
+          "10pct": 0.33,
+          "15pct": 0.345
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": false
+        }
+      },
+      "ripple": {
+        "value": 0.001190720375346288,
+        "unit": "Vpp",
+        "sense": "max",
+        "limits": {
+          "original": 0.005,
+          "10pct": 0.0055000000000000005,
+          "15pct": 0.00575
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "enabled_current": {
+        "value": 0.00011455522458904364,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 0.0002,
+          "10pct": 0.00022000000000000003,
+          "15pct": 0.00022999999999999998
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "disabled_current": {
+        "value": 7.799534402238986e-10,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 1e-07,
+          "10pct": 1.1e-07,
+          "15pct": 1.1499999999999998e-07
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      }
+    },
+    "pass_tiers": {
+      "original": false,
+      "10pct": false,
+      "15pct": false
+    },
+    "groups": {
+      "enabled": "runs/15/20260926T035636327166Z_enabled",
+      "disabled": "runs/15/20260926T035727888977Z_disabled"
+    },
+    "run_dirs": [
+      "runs/15/20260926T035636327166Z_enabled",
+      "runs/15/20260926T035727888977Z_disabled"
+    ],
+    "terminal_voltages": {
+      "enabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 1.7761691128982218,
+            "VGD": 2.5515983534481514,
+            "VDS": 2.6232148859925624,
+            "VGB": 3.479255656131038,
+            "VDB": 1.8,
+            "VSB": 3.465112392346553
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 1.7761691128982218,
+            "VGD": 2.6232148859925624,
+            "VDS": 2.5515983534481514,
+            "VGB": 3.465112392346553,
+            "VDB": 1.8,
+            "VSB": 3.479255656131038
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.477501603602287,
+            "VDS": 1.477501603602287,
+            "VGB": 3.465112392346553,
+            "VDB": 2.088696651887955,
+            "VSB": 3.465112392346553
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.461335853677517,
+            "VDS": 1.461335853677517,
+            "VGB": 3.479255656131038,
+            "VDB": 2.088696651887955,
+            "VSB": 3.479255656131038
+          }
+        }
+      ],
+      "disabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0019565085697310636,
+            "VGD": 0.0022952701206480075,
+            "VDS": 0.0041561246813190955,
+            "VGB": 1.799026789139208,
+            "VDB": 1.8,
+            "VSB": 1.800982435346958
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0019565085697310636,
+            "VGD": 0.0041561246813190955,
+            "VDS": 0.0022952701206480075,
+            "VGB": 1.800982435346958,
+            "VDB": 1.8,
+            "VSB": 1.799026789139208
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0031965421934327942,
+            "VDS": 0.0031965421934327942,
+            "VGB": 1.800982435346958,
+            "VDB": 1.797785895394209,
+            "VSB": 1.800982435346958
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0012408951804330215,
+            "VDS": 0.0012408951804330215,
+            "VGB": 1.799026789139208,
+            "VDB": 1.797785895394209,
+            "VSB": 1.799026789139208
+          }
+        }
+      ]
+    },
+    "terminal_screen_valid": true,
+    "circuit_sha256": "6f98c8f32df699ace3370d1441557b8ac7938590a4e60ab9bb43873143fdfec5",
+    "contract_sha256": "65022ee9fd856d60a918e38ab7440c278ce2c9dd196e47013d6ae967b7fc9ad1",
+    "all_nominal_checks_complete": true,
+    "model_dimensions_valid": true,
+    "scope": "SMIC18 TT/1.8V/40C nominal representative point; independent enabled/disabled benches"
+  },
+  {
+    "case_slot": 15,
+    "generated_at": "2026-09-26T04:00:43.073015+00:00",
+    "status": "needs_iteration",
+    "values": {
+      "vout_en_avg": 2.6142399706879664,
+      "vout_en_max": 2.616261899831675,
+      "vout_en_min": 2.610941560026967,
+      "i_avdd_en_avg": 0.00029000155475865944,
+      "i_avdd_pd_avg": 7.823079962862359e-10,
+      "output_error_V": 0.11423997068796643,
+      "ripple_V": 0.005320339804708141,
+      "enabled_current_A": 0.00029000155475865944,
+      "disabled_current_A": 7.823079962862359e-10,
+      "output_last_cycle_mean_V": 2.614239970771786
+    },
+    "gates": {
+      "output_error": {
+        "value": 0.11423997068796643,
+        "unit": "V",
+        "sense": "max",
+        "limits": {
+          "original": 0.3,
+          "10pct": 0.33,
+          "15pct": 0.345
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "ripple": {
+        "value": 0.005320339804708141,
+        "unit": "Vpp",
+        "sense": "max",
+        "limits": {
+          "original": 0.005,
+          "10pct": 0.0055000000000000005,
+          "15pct": 0.00575
+        },
+        "passes": {
+          "original": false,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "enabled_current": {
+        "value": 0.00029000155475865944,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 0.0002,
+          "10pct": 0.00022000000000000003,
+          "15pct": 0.00022999999999999998
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": false
+        }
+      },
+      "disabled_current": {
+        "value": 7.823079962862359e-10,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 1e-07,
+          "10pct": 1.1e-07,
+          "15pct": 1.1499999999999998e-07
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      }
+    },
+    "pass_tiers": {
+      "original": false,
+      "10pct": false,
+      "15pct": false
+    },
+    "groups": {
+      "enabled": "runs/15/20260926T035938993552Z_enabled",
+      "disabled": "runs/15/20260926T040032853098Z_disabled"
+    },
+    "run_dirs": [
+      "runs/15/20260926T035938993552Z_enabled",
+      "runs/15/20260926T040032853098Z_disabled"
+    ],
+    "terminal_voltages": {
+      "enabled": [
+        {
+          "name": "MPRE0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 2.119937796823533,
+            "VGD": 1.4681491602933259,
+            "VDS": 1.508711941816664,
+            "VGB": 3.268149160293326,
+            "VDB": 1.8,
+            "VSB": 3.308711941816664
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 2.119937796823533,
+            "VGD": 1.508711941816664,
+            "VDS": 1.4681491602933259,
+            "VGB": 3.308711941816664,
+            "VDB": 1.8,
+            "VSB": 3.268149160293326
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.468189981338001,
+            "VDS": 1.468189981338001,
+            "VGB": 3.308711941816664,
+            "VDB": 2.616262140495294,
+            "VSB": 3.308711941816664
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.418883205785221,
+            "VDS": 1.418883205785221,
+            "VGB": 3.268149160293326,
+            "VDB": 2.616262140495294,
+            "VSB": 3.268149160293326
+          }
+        }
+      ],
+      "disabled": [
+        {
+          "name": "MPRE0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0023006718246849633,
+            "VGD": 0.001087159481335087,
+            "VDS": 0.0033826547000599394,
+            "VGB": 1.801076012704394,
+            "VDB": 1.8,
+            "VSB": 1.803345607572249
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0023006718246849633,
+            "VGD": 0.0033826547000599394,
+            "VDS": 0.001087159481335087,
+            "VGB": 1.803345607572249,
+            "VDB": 1.8,
+            "VSB": 1.801076012704394
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0033824209683579465,
+            "VDS": 0.0033824209683579465,
+            "VGB": 1.803345607572249,
+            "VDB": 1.800000197829985,
+            "VSB": 1.803345607572249
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0010869295672999435,
+            "VDS": 0.0010869295672999435,
+            "VGB": 1.801076012704394,
+            "VDB": 1.800000197829985,
+            "VSB": 1.801076012704394
+          }
+        }
+      ]
+    },
+    "terminal_screen_valid": true,
+    "circuit_sha256": "05433f1e1a478091b8cea30955a1eddccabeb790e484988300f1ab2d2ee1afd9",
+    "contract_sha256": "9c2943e0816e2719bd2c012ceb2d9ba85ee5aae2187e22b44797a9402d39aaad",
+    "all_nominal_checks_complete": true,
+    "model_dimensions_valid": true,
+    "scope": "SMIC18 TT/1.8V/40C nominal representative point; independent enabled/disabled benches"
+  },
+  {
+    "case_slot": 15,
+    "generated_at": "2026-09-26T04:02:20.744015+00:00",
+    "status": "needs_iteration",
+    "values": {
+      "vout_en_avg": 2.0621596204023667,
+      "vout_en_max": 2.064498686767331,
+      "vout_en_min": 2.058820123693129,
+      "i_avdd_en_avg": 0.00023272080486439145,
+      "i_avdd_pd_avg": 7.824156212015663e-10,
+      "output_error_V": 0.43784037959763333,
+      "ripple_V": 0.005678563074202003,
+      "enabled_current_A": 0.00023272080486439145,
+      "disabled_current_A": 7.824156212015663e-10,
+      "output_last_cycle_mean_V": 2.0621596611399764
+    },
+    "gates": {
+      "output_error": {
+        "value": 0.43784037959763333,
+        "unit": "V",
+        "sense": "max",
+        "limits": {
+          "original": 0.3,
+          "10pct": 0.33,
+          "15pct": 0.345
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": false
+        }
+      },
+      "ripple": {
+        "value": 0.005678563074202003,
+        "unit": "Vpp",
+        "sense": "max",
+        "limits": {
+          "original": 0.005,
+          "10pct": 0.0055000000000000005,
+          "15pct": 0.00575
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": true
+        }
+      },
+      "enabled_current": {
+        "value": 0.00023272080486439145,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 0.0002,
+          "10pct": 0.00022000000000000003,
+          "15pct": 0.00022999999999999998
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": false
+        }
+      },
+      "disabled_current": {
+        "value": 7.824156212015663e-10,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 1e-07,
+          "10pct": 1.1e-07,
+          "15pct": 1.1499999999999998e-07
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      }
+    },
+    "pass_tiers": {
+      "original": false,
+      "10pct": false,
+      "15pct": false
+    },
+    "groups": {
+      "enabled": "runs/15/20260926T040120266567Z_enabled",
+      "disabled": "runs/15/20260926T040211016614Z_disabled"
+    },
+    "run_dirs": [
+      "runs/15/20260926T040120266567Z_enabled",
+      "runs/15/20260926T040211016614Z_disabled"
+    ],
+    "terminal_voltages": {
+      "enabled": [
+        {
+          "name": "MPRE0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 1.913489669897177,
+            "VGD": 1.1054173844169728,
+            "VDS": 1.226665409954138,
+            "VGB": 2.905417384416973,
+            "VDB": 1.8,
+            "VSB": 3.026665409954138
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 1.913489669897177,
+            "VGD": 1.226665409954138,
+            "VDS": 1.1054173844169728,
+            "VGB": 3.026665409954138,
+            "VDB": 1.8,
+            "VSB": 2.905417384416973
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.2298814310119477,
+            "VDS": 1.2298814310119477,
+            "VGB": 3.026665409954138,
+            "VDB": 2.064498686767331,
+            "VSB": 3.026665409954138
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.9197042613593651,
+            "VDS": 0.9197042613593651,
+            "VGB": 2.905417384416973,
+            "VDB": 2.064498686767331,
+            "VSB": 2.905417384416973
+          }
+        }
+      ],
+      "disabled": [
+        {
+          "name": "MPRE0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0022855272254729275,
+            "VGD": 0.0010856522274100833,
+            "VDS": 0.003366075344074071,
+            "VGB": 1.801074358217896,
+            "VDB": 1.8,
+            "VSB": 1.803328426103409
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0022855272254729275,
+            "VGD": 0.003366075344074071,
+            "VDS": 0.0010856522274100833,
+            "VGB": 1.803328426103409,
+            "VDB": 1.8,
+            "VSB": 1.801074358217896
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0033658425296700933,
+            "VDS": 0.0033658425296700933,
+            "VGB": 1.803328426103409,
+            "VDB": 1.800000196964451,
+            "VSB": 1.803328426103409
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0010854231963119965,
+            "VDS": 0.0010854231963119965,
+            "VGB": 1.801074358217896,
+            "VDB": 1.800000196964451,
+            "VSB": 1.801074358217896
+          }
+        }
+      ]
+    },
+    "terminal_screen_valid": true,
+    "circuit_sha256": "5b713dac3f97e4217617f34eb85993378c0a97c43bf68ba48209b35e849dddee",
+    "contract_sha256": "9c2943e0816e2719bd2c012ceb2d9ba85ee5aae2187e22b44797a9402d39aaad",
+    "all_nominal_checks_complete": true,
+    "model_dimensions_valid": true,
+    "scope": "SMIC18 TT/1.8V/40C nominal representative point; independent enabled/disabled benches"
+  },
+  {
+    "case_slot": 15,
+    "generated_at": "2026-09-26T04:06:32.211324+00:00",
+    "status": "needs_iteration",
+    "values": {
+      "vout_en_avg": 3.0616083308708615,
+      "vout_en_max": 3.063022867389145,
+      "vout_en_min": 3.059257247203073,
+      "i_avdd_en_avg": 0.0002120065043804964,
+      "i_avdd_pd_avg": 7.841743068212864e-10,
+      "output_error_V": 0.5616083308708615,
+      "ripple_V": 0.0037656201860722938,
+      "enabled_current_A": 0.0002120065043804964,
+      "disabled_current_A": 7.841743068212864e-10,
+      "output_last_cycle_mean_V": 3.0616083210704836
+    },
+    "gates": {
+      "output_error": {
+        "value": 0.5616083308708615,
+        "unit": "V",
+        "sense": "max",
+        "limits": {
+          "original": 0.3,
+          "10pct": 0.33,
+          "15pct": 0.345
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": false
+        }
+      },
+      "ripple": {
+        "value": 0.0037656201860722938,
+        "unit": "Vpp",
+        "sense": "max",
+        "limits": {
+          "original": 0.005,
+          "10pct": 0.0055000000000000005,
+          "15pct": 0.00575
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "enabled_current": {
+        "value": 0.0002120065043804964,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 0.0002,
+          "10pct": 0.00022000000000000003,
+          "15pct": 0.00022999999999999998
+        },
+        "passes": {
+          "original": false,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "disabled_current": {
+        "value": 7.841743068212864e-10,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 1e-07,
+          "10pct": 1.1e-07,
+          "15pct": 1.1499999999999998e-07
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      }
+    },
+    "pass_tiers": {
+      "original": false,
+      "10pct": false,
+      "15pct": false
+    },
+    "groups": {
+      "enabled": "runs/15/20260926T040526608236Z_enabled",
+      "disabled": "runs/15/20260926T040622034258Z_disabled"
+    },
+    "run_dirs": [
+      "runs/15/20260926T040526608236Z_enabled",
+      "runs/15/20260926T040622034258Z_disabled"
+    ],
+    "terminal_voltages": {
+      "enabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.209710657239341,
+            "VGD": 2.6417345266744947,
+            "VDS": 2.6683223488841565,
+            "VGB": 3.646620173529967,
+            "VDB": 1.8,
+            "VSB": 3.654953422793795
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.209710657239341,
+            "VGD": 2.6683223488841565,
+            "VDS": 2.6417345266744947,
+            "VGB": 3.654953422793795,
+            "VDB": 1.8,
+            "VSB": 3.646620173529967
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.568905388352825,
+            "VDS": 1.568905388352825,
+            "VGB": 3.654953422793795,
+            "VDB": 3.063023113688605,
+            "VSB": 3.654953422793795
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.5744023382488421,
+            "VDS": 1.5744023382488421,
+            "VGB": 3.646620173529967,
+            "VDB": 3.063023113688605,
+            "VSB": 3.646620173529967
+          }
+        }
+      ],
+      "disabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0035580874794620687,
+            "VGD": 0.0018391421799059948,
+            "VDS": 0.00536838032968312,
+            "VGB": 1.800103245379584,
+            "VDB": 1.8,
+            "VSB": 1.803656763492988
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0035580874794620687,
+            "VGD": 0.00536838032968312,
+            "VDS": 0.0018391421799059948,
+            "VGB": 1.803656763492988,
+            "VDB": 1.8,
+            "VSB": 1.800103245379584
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0045320655988021485,
+            "VDS": 0.0045320655988021485,
+            "VGB": 1.803656763492988,
+            "VDB": 1.799124700347112,
+            "VSB": 1.803656763492988
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.000978551982103948,
+            "VDS": 0.000978551982103948,
+            "VGB": 1.800103245379584,
+            "VDB": 1.799124700347112,
+            "VSB": 1.800103245379584
+          }
+        }
+      ]
+    },
+    "terminal_screen_valid": false,
+    "circuit_sha256": "53d1f00d4427fa977a2fcd3265b2ee80cb2d54507785d765e6b298ec49eb19a6",
+    "contract_sha256": "9c2943e0816e2719bd2c012ceb2d9ba85ee5aae2187e22b44797a9402d39aaad",
+    "all_nominal_checks_complete": true,
+    "model_dimensions_valid": true,
+    "scope": "SMIC18 TT/1.8V/40C nominal representative point; independent enabled/disabled benches"
+  },
+  {
+    "case_slot": 15,
+    "generated_at": "2026-09-26T04:07:58.122190+00:00",
+    "status": "needs_iteration",
+    "values": {
+      "vout_en_avg": 2.9301774769500097,
+      "vout_en_max": 2.932010214007188,
+      "vout_en_min": 2.927672917500401,
+      "i_avdd_en_avg": 0.00018924729176556846,
+      "i_avdd_pd_avg": 7.840524181929371e-10,
+      "output_error_V": 0.43017747695000974,
+      "ripple_V": 0.004337296506787158,
+      "enabled_current_A": 0.00018924729176556846,
+      "disabled_current_A": 7.840524181929371e-10,
+      "output_last_cycle_mean_V": 2.930177478772478
+    },
+    "gates": {
+      "output_error": {
+        "value": 0.43017747695000974,
+        "unit": "V",
+        "sense": "max",
+        "limits": {
+          "original": 0.3,
+          "10pct": 0.33,
+          "15pct": 0.345
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": false
+        }
+      },
+      "ripple": {
+        "value": 0.004337296506787158,
+        "unit": "Vpp",
+        "sense": "max",
+        "limits": {
+          "original": 0.005,
+          "10pct": 0.0055000000000000005,
+          "15pct": 0.00575
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "enabled_current": {
+        "value": 0.00018924729176556846,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 0.0002,
+          "10pct": 0.00022000000000000003,
+          "15pct": 0.00022999999999999998
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "disabled_current": {
+        "value": 7.840524181929371e-10,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 1e-07,
+          "10pct": 1.1e-07,
+          "15pct": 1.1499999999999998e-07
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      }
+    },
+    "pass_tiers": {
+      "original": false,
+      "10pct": false,
+      "15pct": false
+    },
+    "groups": {
+      "enabled": "runs/15/20260926T040654024761Z_enabled",
+      "disabled": "runs/15/20260926T040747949533Z_disabled"
+    },
+    "run_dirs": [
+      "runs/15/20260926T040654024761Z_enabled",
+      "runs/15/20260926T040747949533Z_disabled"
+    ],
+    "terminal_voltages": {
+      "enabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.3227596447284,
+            "VGD": 2.6425275895248372,
+            "VDS": 2.666989702341758,
+            "VGB": 3.773035647078574,
+            "VDB": 1.8,
+            "VSB": 3.797394933554643
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.3227596447284,
+            "VGD": 2.666989702341758,
+            "VDS": 2.6425275895248372,
+            "VGB": 3.797394933554643,
+            "VDB": 1.8,
+            "VSB": 3.773035647078574
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.479113545426283,
+            "VDS": 1.479113545426283,
+            "VGB": 3.797394933554643,
+            "VDB": 2.932010220621654,
+            "VSB": 3.797394933554643
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.4551123016993441,
+            "VDS": 1.4551123016993441,
+            "VGB": 3.773035647078574,
+            "VDB": 2.932010220621654,
+            "VSB": 3.773035647078574
+          }
+        }
+      ],
+      "disabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0035394348923230012,
+            "VGD": 0.001838814944534084,
+            "VDS": 0.005350443064290111,
+            "VGB": 1.800102964829791,
+            "VDB": 1.8,
+            "VSB": 1.803637891852504
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0035394348923230012,
+            "VGD": 0.005350443064290111,
+            "VDS": 0.001838814944534084,
+            "VGB": 1.803637891852504,
+            "VDB": 1.8,
+            "VSB": 1.800102964829791
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.004513194779595997,
+            "VDS": 0.004513194779595997,
+            "VGB": 1.803637891852504,
+            "VDB": 1.799124700214588,
+            "VSB": 1.803637891852504
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0009782722619240403,
+            "VDS": 0.0009782722619240403,
+            "VGB": 1.800102964829791,
+            "VDB": 1.799124700214588,
+            "VSB": 1.800102964829791
+          }
+        }
+      ]
+    },
+    "terminal_screen_valid": false,
+    "circuit_sha256": "5c61c9e0656355ca228d6637ad054b18f4efe44b48680655921f70938bfbcc72",
+    "contract_sha256": "9c2943e0816e2719bd2c012ceb2d9ba85ee5aae2187e22b44797a9402d39aaad",
+    "all_nominal_checks_complete": true,
+    "model_dimensions_valid": true,
+    "scope": "SMIC18 TT/1.8V/40C nominal representative point; independent enabled/disabled benches"
+  },
+  {
+    "case_slot": 15,
+    "generated_at": "2026-09-26T04:10:20.122061+00:00",
+    "status": "needs_iteration",
+    "values": {
+      "vout_en_avg": 2.2533960220957017,
+      "vout_en_max": 2.272456762308119,
+      "vout_en_min": 2.233108414674209,
+      "i_avdd_en_avg": 0.0001654908794295439,
+      "i_avdd_pd_avg": 7.839632860528966e-10,
+      "output_error_V": 0.24660397790429833,
+      "ripple_V": 0.03934834763391004,
+      "enabled_current_A": 0.0001654908794295439,
+      "disabled_current_A": 7.839632860528966e-10,
+      "output_last_cycle_mean_V": 2.2705057611493307
+    },
+    "gates": {
+      "output_error": {
+        "value": 0.24660397790429833,
+        "unit": "V",
+        "sense": "max",
+        "limits": {
+          "original": 0.3,
+          "10pct": 0.33,
+          "15pct": 0.345
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "ripple": {
+        "value": 0.03934834763391004,
+        "unit": "Vpp",
+        "sense": "max",
+        "limits": {
+          "original": 0.005,
+          "10pct": 0.0055000000000000005,
+          "15pct": 0.00575
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": false
+        }
+      },
+      "enabled_current": {
+        "value": 0.0001654908794295439,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 0.0002,
+          "10pct": 0.00022000000000000003,
+          "15pct": 0.00022999999999999998
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "disabled_current": {
+        "value": 7.839632860528966e-10,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 1e-07,
+          "10pct": 1.1e-07,
+          "15pct": 1.1499999999999998e-07
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      }
+    },
+    "pass_tiers": {
+      "original": false,
+      "10pct": false,
+      "15pct": false
+    },
+    "groups": {
+      "enabled": "runs/15/20260926T040911518602Z_enabled",
+      "disabled": "runs/15/20260926T041009896725Z_disabled"
+    },
+    "run_dirs": [
+      "runs/15/20260926T040911518602Z_enabled",
+      "runs/15/20260926T041009896725Z_disabled"
+    ],
+    "terminal_voltages": {
+      "enabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.1627669023509117,
+            "VGD": 2.639731404675266,
+            "VDS": 2.6607313397998458,
+            "VGB": 3.207388906966933,
+            "VDB": 1.8,
+            "VSB": 3.279607440537744
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.1627669023509117,
+            "VGD": 2.6607313397998458,
+            "VDS": 2.639731404675266,
+            "VGB": 3.279607440537744,
+            "VDB": 1.8,
+            "VSB": 3.207388906966933
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.3296607285816093,
+            "VDS": 1.3296607285816093,
+            "VGB": 3.279607440537744,
+            "VDB": 2.272456762308119,
+            "VSB": 3.279607440537744
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.102928606654465,
+            "VDS": 1.102928606654465,
+            "VGB": 3.207388906966933,
+            "VDB": 2.272456762308119,
+            "VSB": 3.207388906966933
+          }
+        },
+        {
+          "name": "MCL0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.6607313397998458,
+            "VGD": 0.0,
+            "VDS": 2.6607313397998458,
+            "VGB": 3.279607440537744,
+            "VDB": 3.279607440537744,
+            "VSB": 1.8
+          }
+        },
+        {
+          "name": "MCL1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.639731404675266,
+            "VGD": 0.0,
+            "VDS": 2.639731404675266,
+            "VGB": 3.207388906966933,
+            "VDB": 3.207388906966933,
+            "VSB": 1.8
+          }
+        }
+      ],
+      "disabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0034641075069099525,
+            "VGD": 0.001569560652929125,
+            "VDS": 0.0050035616196790755,
+            "VGB": 1.800286501216215,
+            "VDB": 1.8,
+            "VSB": 1.803746667300341
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0034641075069099525,
+            "VGD": 0.0050035616196790755,
+            "VDS": 0.001569560652929125,
+            "VGB": 1.803746667300341,
+            "VDB": 1.8,
+            "VSB": 1.800286501216215
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.004395815137951065,
+            "VDS": 0.004395815137951065,
+            "VGB": 1.803746667300341,
+            "VDB": 1.799350855663157,
+            "VSB": 1.803746667300341
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0009356529681530112,
+            "VDS": 0.0009356529681530112,
+            "VGB": 1.800286501216215,
+            "VDB": 1.799350855663157,
+            "VSB": 1.800286501216215
+          }
+        },
+        {
+          "name": "MCL0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0050035616196790755,
+            "VGD": 0.0,
+            "VDS": 0.0050035616196790755,
+            "VGB": 1.803746667300341,
+            "VDB": 1.803746667300341,
+            "VSB": 1.8
+          }
+        },
+        {
+          "name": "MCL1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.001569560652929125,
+            "VGD": 0.0,
+            "VDS": 0.001569560652929125,
+            "VGB": 1.800286501216215,
+            "VDB": 1.800286501216215,
+            "VSB": 1.8
+          }
+        }
+      ]
+    },
+    "terminal_screen_valid": true,
+    "circuit_sha256": "2201715591b9d0722c7b6125f6ca5604229cf80eb4889e5933a79fc64dc2a3ac",
+    "contract_sha256": "9c2943e0816e2719bd2c012ceb2d9ba85ee5aae2187e22b44797a9402d39aaad",
+    "all_nominal_checks_complete": true,
+    "model_dimensions_valid": true,
+    "scope": "SMIC18 TT/1.8V/40C nominal representative point; independent enabled/disabled benches"
+  },
+  {
+    "case_slot": 15,
+    "generated_at": "2026-09-26T04:12:01.133301+00:00",
+    "status": "needs_iteration",
+    "values": {
+      "vout_en_avg": 2.839096184013257,
+      "vout_en_max": 2.840877058453498,
+      "vout_en_min": 2.836661934868244,
+      "i_avdd_en_avg": 0.00019647955147591737,
+      "i_avdd_pd_avg": 7.839053698904644e-10,
+      "output_error_V": 0.33909618401325714,
+      "ripple_V": 0.004215123585253888,
+      "enabled_current_A": 0.00019647955147591737,
+      "disabled_current_A": 7.839053698904644e-10,
+      "output_last_cycle_mean_V": 2.8390961639530783
+    },
+    "gates": {
+      "output_error": {
+        "value": 0.33909618401325714,
+        "unit": "V",
+        "sense": "max",
+        "limits": {
+          "original": 0.3,
+          "10pct": 0.33,
+          "15pct": 0.345
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": true
+        }
+      },
+      "ripple": {
+        "value": 0.004215123585253888,
+        "unit": "Vpp",
+        "sense": "max",
+        "limits": {
+          "original": 0.005,
+          "10pct": 0.0055000000000000005,
+          "15pct": 0.00575
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "enabled_current": {
+        "value": 0.00019647955147591737,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 0.0002,
+          "10pct": 0.00022000000000000003,
+          "15pct": 0.00022999999999999998
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "disabled_current": {
+        "value": 7.839053698904644e-10,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 1e-07,
+          "10pct": 1.1e-07,
+          "15pct": 1.1499999999999998e-07
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      }
+    },
+    "pass_tiers": {
+      "original": false,
+      "10pct": false,
+      "15pct": false
+    },
+    "groups": {
+      "enabled": "runs/15/20260926T041053036970Z_enabled",
+      "disabled": "runs/15/20260926T041151191148Z_disabled"
+    },
+    "run_dirs": [
+      "runs/15/20260926T041053036970Z_enabled",
+      "runs/15/20260926T041151191148Z_disabled"
+    ],
+    "terminal_voltages": {
+      "enabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.2711933825443085,
+            "VGD": 2.63929953834288,
+            "VDS": 2.6624077228296352,
+            "VGB": 3.659739321224679,
+            "VDB": 1.8,
+            "VSB": 3.696678444463169
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.2711933825443085,
+            "VGD": 2.6624077228296352,
+            "VDS": 2.63929953834288,
+            "VGB": 3.696678444463169,
+            "VDB": 1.8,
+            "VSB": 3.659739321224679
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.451531455680508,
+            "VDS": 1.451531455680508,
+            "VGB": 3.696678444463169,
+            "VDB": 2.840877282979957,
+            "VSB": 3.696678444463169
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.3987535128073108,
+            "VDS": 1.3987535128073108,
+            "VGB": 3.659739321224679,
+            "VDB": 2.840877282979957,
+            "VSB": 3.659739321224679
+          }
+        },
+        {
+          "name": "MCL0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.6624077228296352,
+            "VGD": 0.0,
+            "VDS": 2.6624077228296352,
+            "VGB": 3.696678444463169,
+            "VDB": 3.696678444463169,
+            "VSB": 1.8
+          }
+        },
+        {
+          "name": "MCL1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 2.63929953834288,
+            "VGD": 0.0,
+            "VDS": 2.63929953834288,
+            "VGB": 3.659739321224679,
+            "VDB": 3.659739321224679,
+            "VSB": 1.8
+          }
+        }
+      ],
+      "disabled": [
+        {
+          "name": "MPRE0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0034887398179641593,
+            "VGD": 0.0015699340830090946,
+            "VDS": 0.005027199937313043,
+            "VGB": 1.80028680215038,
+            "VDB": 1.8,
+            "VSB": 1.803771520015059
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0034887398179641593,
+            "VGD": 0.005027199937313043,
+            "VDS": 0.0015699340830090946,
+            "VGB": 1.803771520015059,
+            "VDB": 1.8,
+            "VSB": 1.80028680215038
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.004420666775277082,
+            "VDS": 0.004420666775277082,
+            "VGB": 1.803771520015059,
+            "VDB": 1.799350856212756,
+            "VSB": 1.803771520015059
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0009359528584980126,
+            "VDS": 0.0009359528584980126,
+            "VGB": 1.80028680215038,
+            "VDB": 1.799350856212756,
+            "VSB": 1.80028680215038
+          }
+        },
+        {
+          "name": "MCL0",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.005027199937313043,
+            "VGD": 0.0,
+            "VDS": 0.005027199937313043,
+            "VGB": 1.803771520015059,
+            "VDB": 1.803771520015059,
+            "VSB": 1.8
+          }
+        },
+        {
+          "name": "MCL1",
+          "model": "n33",
+          "peaks_V": {
+            "VGS": 0.0015699340830090946,
+            "VGD": 0.0,
+            "VDS": 0.0015699340830090946,
+            "VGB": 1.80028680215038,
+            "VDB": 1.80028680215038,
+            "VSB": 1.8
+          }
+        }
+      ]
+    },
+    "terminal_screen_valid": false,
+    "circuit_sha256": "1d785b0b99ce99b1f6e4a5f31fb99d26aa27a1f2e1c2d2ae479372a6d9704505",
+    "contract_sha256": "9c2943e0816e2719bd2c012ceb2d9ba85ee5aae2187e22b44797a9402d39aaad",
+    "all_nominal_checks_complete": true,
+    "model_dimensions_valid": true,
+    "scope": "SMIC18 TT/1.8V/40C nominal representative point; independent enabled/disabled benches"
+  },
+  {
+    "case_slot": 15,
+    "generated_at": "2026-09-26T04:14:40.275660+00:00",
+    "status": "needs_iteration",
+    "values": {
+      "vout_en_avg": 2.8308825274838756,
+      "vout_en_max": 2.832382697023362,
+      "vout_en_min": 2.828241827102688,
+      "i_avdd_en_avg": 0.000233642429302807,
+      "i_avdd_pd_avg": 7.846361744405946e-10,
+      "output_error_V": 0.3308825274838756,
+      "ripple_V": 0.004140869920674195,
+      "enabled_current_A": 0.000233642429302807,
+      "disabled_current_A": 7.846361744405946e-10,
+      "output_last_cycle_mean_V": 2.8308824439442626
+    },
+    "gates": {
+      "output_error": {
+        "value": 0.3308825274838756,
+        "unit": "V",
+        "sense": "max",
+        "limits": {
+          "original": 0.3,
+          "10pct": 0.33,
+          "15pct": 0.345
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": true
+        }
+      },
+      "ripple": {
+        "value": 0.004140869920674195,
+        "unit": "Vpp",
+        "sense": "max",
+        "limits": {
+          "original": 0.005,
+          "10pct": 0.0055000000000000005,
+          "15pct": 0.00575
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      },
+      "enabled_current": {
+        "value": 0.000233642429302807,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 0.0002,
+          "10pct": 0.00022000000000000003,
+          "15pct": 0.00022999999999999998
+        },
+        "passes": {
+          "original": false,
+          "10pct": false,
+          "15pct": false
+        }
+      },
+      "disabled_current": {
+        "value": 7.846361744405946e-10,
+        "unit": "A",
+        "sense": "max",
+        "limits": {
+          "original": 1e-07,
+          "10pct": 1.1e-07,
+          "15pct": 1.1499999999999998e-07
+        },
+        "passes": {
+          "original": true,
+          "10pct": true,
+          "15pct": true
+        }
+      }
+    },
+    "pass_tiers": {
+      "original": false,
+      "10pct": false,
+      "15pct": false
+    },
+    "groups": {
+      "enabled": "runs/15/20260926T041334054457Z_enabled",
+      "disabled": "runs/15/20260926T041430072027Z_disabled"
+    },
+    "run_dirs": [
+      "runs/15/20260926T041334054457Z_enabled",
+      "runs/15/20260926T041430072027Z_disabled"
+    ],
+    "terminal_voltages": {
+      "enabled": [
+        {
+          "name": "MPRE0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 2.6220373874292107,
+            "VGD": 2.404428860644675,
+            "VDS": 2.570676394600936,
+            "VGB": 3.455356050792195,
+            "VDB": 1.8,
+            "VSB": 3.451386528533716
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 2.6220373874292107,
+            "VGD": 2.570676394600936,
+            "VDS": 2.404428860644675,
+            "VGB": 3.451386528533716,
+            "VDB": 1.8,
+            "VSB": 3.455356050792195
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.72611292361657,
+            "VDS": 1.72611292361657,
+            "VGB": 3.451386528533716,
+            "VDB": 2.832382697023362,
+            "VSB": 3.451386528533716
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 1.7338584631167508,
+            "VDS": 1.7338584631167508,
+            "VGB": 3.455356050792195,
+            "VDB": 2.832382697023362,
+            "VSB": 3.455356050792195
+          }
+        }
+      ],
+      "disabled": [
+        {
+          "name": "MPRE0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0038446127402269603,
+            "VGD": 0.001042995311721917,
+            "VDS": 0.00487899744721898,
+            "VGB": 1.801042995311722,
+            "VDB": 1.8,
+            "VSB": 1.804849008863262
+          }
+        },
+        {
+          "name": "MPRE1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0038446127402269603,
+            "VGD": 0.00487899744721898,
+            "VDS": 0.001042995311721917,
+            "VGB": 1.804849008863262,
+            "VDB": 1.8,
+            "VSB": 1.801042995311722
+          }
+        },
+        {
+          "name": "MRECT0",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.004878690662439844,
+            "VDS": 0.004878690662439844,
+            "VGB": 1.804849008863262,
+            "VDB": 1.800000264475176,
+            "VSB": 1.804849008863262
+          }
+        },
+        {
+          "name": "MRECT1",
+          "model": "nnt33",
+          "peaks_V": {
+            "VGS": 0.0,
+            "VGD": 0.0010427442640970064,
+            "VDS": 0.0010427442640970064,
+            "VGB": 1.801042995311722,
+            "VDB": 1.800000264475176,
+            "VSB": 1.801042995311722
+          }
+        }
+      ]
+    },
+    "terminal_screen_valid": true,
+    "circuit_sha256": "59b04780b3ab2c5b9262bf7c4d97d7d7f84d35b22b301864413f00569011439f",
+    "contract_sha256": "9c2943e0816e2719bd2c012ceb2d9ba85ee5aae2187e22b44797a9402d39aaad",
+    "all_nominal_checks_complete": true,
+    "model_dimensions_valid": true,
+    "scope": "SMIC18 TT/1.8V/40C nominal representative point; independent enabled/disabled benches"
+  }
+]

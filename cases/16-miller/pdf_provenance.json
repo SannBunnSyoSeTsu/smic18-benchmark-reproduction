@@ -1,0 +1,100 @@
+{
+  "pdf": "reports/16-miller-review.pdf",
+  "sha256": "519bc3759cf923f9d1454c614e8fdcc018e2b75b9d30e5cda2ca5df612eea1a1",
+  "results_sha256": "2ece5f97105407964968c88c0aef72d3ae15c09204239154c63d70fb46e069d5",
+  "circuit_sha256": "86c144ccb47792bd6c7138674ec8c4a91ffeb98d9921b1860ba02759fdb7c971",
+  "generated_at": "2026-09-23T06:19:14.975998+00:00",
+  "pages": 7,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:19:14.978699+00:00",
+  "opening_paragraph_sha256": "421f756f1f319a75cedd94015a184d80e964118eedd50b40a9cd9cdffff71690",
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change.",
+  "body_pages": 5,
+  "schematic_pages": 2,
+  "schematic_sheets_sha256": "004af4cdf3bf3b5f815a7bed65c5b8ccad2ed1f89790cc250308dc207d1e01fe",
+  "schematic_audit_sha256": "31355cbd56b8b35b22bede85b3a665659af8949f692eb0a7ee51fab4c33b57ef",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/16-miller/16-miller-review.pdf",
+    "sha256": "ca9b2a27e0f92d76cda7deff6e3d15f99aabaee3b84bbde84e2e858d907ac625",
+    "pages": 5,
+    "previous_render_reviewed_at": "2026-09-22T07:28:38.270553+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "54fe9ff7ceb97df2b94b1c620eeddf7fac75033c2249914e1347442a25cf664a"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "b7144b7215278253653df984eeb3fd85ac7f76a993d88c8252cbabab12cc44dd"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "0f9d11444aae87bce038d25f549f2b7c37a331679da7b499f395ece1da9e0445"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "f796352524ea06281b79333f46271004f0b1fd2655811f90a4030f8d15bba3fc"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "9724dfec0ec5d60d4475cd407c82d09119479044bbc7a1fa20c019d9aa85165a"
+    },
+    {
+      "page": 6,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "b6038a1dc181df6c9a7fa7be28cdbe2e9c9bd6f9543276895a764342ee583b39",
+      "path": "reports/schematic-retrofit-renders/16-miller/page-06.png",
+      "sha256": "cf39aa2b308e5f8045480f2876f509dbf86eca641d4cd0c391dc92b2d4091468"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "e61997a3934e8c811ef77dee2bb382660da0817d21eafd1e1a7457ba778a1911",
+      "path": "reports/schematic-retrofit-renders/16-miller/page-07.png",
+      "sha256": "7723489bb447112b3a825580b39b92024bde339ac17ce60c228b531c21ec034a"
+    }
+  ]
+}

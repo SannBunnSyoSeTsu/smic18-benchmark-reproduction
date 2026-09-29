@@ -1,0 +1,112 @@
+{
+  "pdf": "reports/37-nested-miller-review.pdf",
+  "sha256": "e4c5f5d538eec57708b729ab6e3cafc55c70ebdae285bfd4551863e1826ba6b4",
+  "results_sha256": "781cf209e5aff6aaa918721cf49855383384960c94da9189d1e938a2f3560fab",
+  "circuit_sha256": "0014c2c3bce36d7ea1099c7c8c13df67508d37d3fff87a719166c916e21dcbbb",
+  "sizing_sha256": "90a5cda57aa9c1409c67189341966b93360bb6f5d9fd4cfdc491116e7c02792f",
+  "geometry_sha256": "30f47955ed2439bdb36eafa8de1111d898dbfc09e085f3e778a8cd7b1539944a",
+  "generated_at": "2026-09-23T06:27:43.168538+00:00",
+  "pages": 8,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:27:43.171946+00:00",
+  "opening_paragraph_sha256": "c77f838623e6fc7d19cdd21ac3c9f24fc4fddee826f6e898f2f4a685d5d28831",
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change.",
+  "body_pages": 6,
+  "schematic_pages": 2,
+  "schematic_sheets_sha256": "ba658065fd1aeb500924300d7b837babc7a527fe1877d66d20f02651e513211e",
+  "schematic_audit_sha256": "93f046f24273b891833b810feedbfdb332a4387ddb859dfe81de464a0621f21c",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/37-nested-miller/37-nested-miller-review.pdf",
+    "sha256": "a9cd07df00b18a19cff9b272b3cacfc8f102a98e6f7aaff1edd8820b22153dc1",
+    "pages": 6,
+    "previous_render_reviewed_at": "2026-09-22T09:57:25.564622+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "9f8da32e3207163646f288046b3dfb94f43ee47e0358586cebb141a2f5bcbaf6"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "592731028a1085d363d41f77cc66559d8ca61e7b1154a2a8234d691c2fa6813c"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "f80fa44345ec8b57b6d19fe1c9b07aaca01d3fe101b177cca450b656afd14232"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "ad6b36003034ad40e4d55e63762b6c12ee22a14cc8f30436a33ad0576cd4a8b1"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "b9b6f7026fef86488a2d49995142feb03f60beb4bb545566fd85a1f852d2aa02"
+    },
+    {
+      "page": 6,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "8e481e7e7c6db3222313ee91a63e2f4379553db944ad2211e719c0dde5423313"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "eb1fc7dd00aaa06a2038a0a351f5d22977cecf3e086212df9c14597efbd46cca",
+      "path": "reports/schematic-retrofit-renders/37-nested-miller/page-07.png",
+      "sha256": "608291888fc4c08a1707c26f2f81f19c682031994bc12347aaf8179bd41b11d5"
+    },
+    {
+      "page": 8,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "43511ba417f3cdca814421032dc632d69b5ab1ae585dafe3bd455b7a84a3ab6a",
+      "path": "reports/schematic-retrofit-renders/37-nested-miller/page-08.png",
+      "sha256": "a0013e472622d4da11a5d720f1277669883449dd867d50ac412636aae8525f5b"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+// Native thick-oxide charge transfer and unmodified HD clock logic.
+simulator lang=spectre
+subckt charge_pump_unregulate (AVDD AVSS CLK EN VOUT)
+XEN (CLK EN gated AVDD AVSS AVDD AVSS) NAND2HDV1
+XPH0 (gated ph0 AVDD AVSS AVDD AVSS) INHDV16
+XPH1 (ph0 ph1 AVDD AVSS AVDD AVSS) INHDV16
+CF0 (p0 ph0) mim w=100u l=51.49330587u
+CF1 (p1 ph1) mim w=100u l=51.49330587u
+MPRE0 (AVDD p1 p0 AVSS) nnt33 w=3.36u l=1u
+MPRE1 (AVDD p0 p1 AVSS) nnt33 w=3.36u l=1u
+MRECT0 (VOUT p0 p0 AVSS) nnt33 w=16.84u l=1u
+MRECT1 (VOUT p1 p1 AVSS) nnt33 w=16.84u l=1u
+ends charge_pump_unregulate

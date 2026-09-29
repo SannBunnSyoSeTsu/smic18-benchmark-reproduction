@@ -1,0 +1,7 @@
+// Unmodified HD library cells. Internal FF is reset; output NOR adds a fast assertion path.
+simulator lang=spectre
+subckt divide_by_2 (clk reset vdd vss clkout)
+XR (reset rdn vdd vss vdd vss) INHDV2
+XFF (clk qn qn rdn vdd vss vdd vss) DRNQNHDV1
+XOUT (qn reset clkout vdd vss vdd vss) NOR2HDV16
+ends divide_by_2

@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-09-26T05:32:57.678993+00:00",
+  "status": "passed",
+  "circuit_sha256": "45eb5290815c778d817a7b9e108994121159fdb0e952d17e8984bdd00b1af2af",
+  "hd_cells_sha256": null,
+  "renderer_sha256": "918b7c678253c59d9f19beb6d1631ff46e5c6ed49cace441bde935c284affae8",
+  "layout_file": "scripts/schematic39.py",
+  "layout_sha256": "fe197e282cddd542cc8c5849484f8bd0217ee47471f8492ca263c6ba48e789ff",
+  "instance_counts": {
+    "MOS": 22,
+    "R": 3,
+    "C": 2
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 22,
+    "R": 3,
+    "C": 2
+  },
+  "total_instances": 27,
+  "expanded_leaf_instances": 27,
+  "total_terminals": 98,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 3,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/39-line-driver/schematic/connectivity.json": "84d787299f9e255c28699a3b3124facde4de6b7e8354578ae9f6aab1778a39e4",
+    "cases/39-line-driver/schematic/full.pdf": "568559616997b7adf83488b1181a9cc255c96eb04ac77def13879c1b3b7c217f",
+    "cases/39-line-driver/schematic/full.png": "3ff1b0f7a09792e3973a1fe0088bafeb87a1005ed402be5501c6ffe50ded014f",
+    "cases/39-line-driver/schematic/full.svg": "fa7b077a8dd21ac8de4856e0395c1add6a526549236ffe6160dba2412009aaaa",
+    "cases/39-line-driver/schematic/layout_source.py": "fe197e282cddd542cc8c5849484f8bd0217ee47471f8492ca263c6ba48e789ff",
+    "cases/39-line-driver/schematic/renderer_source.py": "918b7c678253c59d9f19beb6d1631ff46e5c6ed49cace441bde935c284affae8",
+    "cases/39-line-driver/schematic/sheet-1.png": "d426c949ec9d72fd6472a9a8e8b3523ff2f5184482ae2526d27d7aeaeef0207b",
+    "cases/39-line-driver/schematic/sheet-1.svg": "a0de6558e4d854f16c01f0e747386a6f555e76521ef529af5dc9653a11e8880f",
+    "cases/39-line-driver/schematic/sheet-2.png": "3ffa8ce6dee2a2b73254349d921b7a4f3a119a54c1022339d119d72289484899",
+    "cases/39-line-driver/schematic/sheet-2.svg": "147d2fc8873fc50f2796344600fb5da13c31d511a5faca11c6e4c3d4842e119c",
+    "cases/39-line-driver/schematic/sheet-3.png": "2772d9271ae3fe34303287da8ebe1f58970902ed714350a3f49c99719250822a",
+    "cases/39-line-driver/schematic/sheet-3.svg": "76a178b97abd120ce2628cb916c17965c5aa6e9e0a02859b6de32275d63ca777",
+    "cases/39-line-driver/schematic/sheets.pdf": "c60c17ffa8d9e9a3d01236831c01e98a8de27c044952f59d9785f463e2709dc4",
+    "cases/39-line-driver/schematic/symbol_source.py": "b40da4f8a653b6d880132a5b28a9209435d767215cdba57d3682ccb27e9cee0c"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-29T04:09:09.494855+00:00",
+  "visual_review_note": "Actual visual review: corrected spectrum viewed with explicit lower dBc baseline and upward stems/bars, clear labels and limits. All11 regenerated pages and full schematic actually viewed; no clipping/layout defects."
+}

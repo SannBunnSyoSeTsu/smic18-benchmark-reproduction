@@ -1,0 +1,955 @@
+{
+  "independent_values": {
+    "pw20": {
+      "VGS_avg_V": 1.5648549597155703,
+      "power_W": 0.0030519550398148765,
+      "VGS_peak_V": 1.687833571935128,
+      "HS_peak_A": 0.6114625782372387,
+      "VBST_cap_peak_V": 1.7830026810954822,
+      "GN2_peak_V": 1.800343902596923,
+      "VBST_peak_V": 3.551543067868272,
+      "dead_HL_s": 3.0714738506285856e-09,
+      "dead_LH_s": 4.363516764489709e-09,
+      "dead_all_min_s": 3.0714734176520245e-09,
+      "dead_all_max_s": 4.363517686206398e-09,
+      "high_fraction": 0.735518106398133
+    },
+    "pw50": {
+      "VGS_avg_V": 1.567368446057982,
+      "power_W": 0.003088166874491911,
+      "VGS_peak_V": 1.705963570115689,
+      "HS_peak_A": 0.6136469447950852,
+      "VBST_cap_peak_V": 1.8014781346177637,
+      "GN2_peak_V": 1.800552727295414,
+      "VBST_peak_V": 3.569764834343438,
+      "dead_HL_s": 3.0742190787221753e-09,
+      "dead_LH_s": 4.337490656613745e-09,
+      "dead_all_min_s": 3.0742186430695195e-09,
+      "dead_all_max_s": 4.337490814660352e-09,
+      "high_fraction": 0.4355136282016439
+    },
+    "pw80": {
+      "VGS_avg_V": 1.4984721420261584,
+      "power_W": 0.0030902689362713102,
+      "VGS_peak_V": 1.70540451867124,
+      "HS_peak_A": 0.6138840538974653,
+      "VBST_cap_peak_V": 1.8126041372738302,
+      "GN2_peak_V": 1.801420125813614,
+      "VBST_peak_V": 3.56913432039544,
+      "dead_HL_s": 2.996784869209958e-09,
+      "dead_LH_s": 4.335265611179191e-09,
+      "dead_all_min_s": 2.996784771098767e-09,
+      "dead_all_max_s": 4.335265893258315e-09,
+      "high_fraction": 0.13630115638425389
+    }
+  },
+  "edges": {
+    "pw20": {
+      "HS_rise_s": [
+        5.334763085378414e-07,
+        6.334763078903359e-07,
+        7.334763072813501e-07,
+        8.334763074342289e-07,
+        9.334763074573981e-07
+      ],
+      "HS_fall_s": [
+        5.061319377318617e-07,
+        6.061319378484726e-07,
+        7.061319363250067e-07,
+        8.06131936155203e-07,
+        9.061319378269854e-07
+      ],
+      "LS_rise_s": [
+        5.092034111495137e-07,
+        6.092034116991012e-07,
+        7.092034114413514e-07,
+        8.092034110113587e-07,
+        9.092034117914341e-07
+      ],
+      "LS_fall_s": [
+        5.29112790851635e-07,
+        6.291127911258462e-07,
+        7.291127908056145e-07,
+        8.291127908335004e-07,
+        9.291127909871836e-07
+      ],
+      "source_rule": "FALL=2 to RISE=2 in the unchanged0.5–1us window; matched-index events, no nearest-edge substitution."
+    },
+    "pw50": {
+      "HS_rise_s": [
+        5.634509074976517e-07,
+        6.634509074379196e-07,
+        7.634509074034208e-07,
+        8.634509074243005e-07,
+        9.634509071154822e-07
+      ],
+      "HS_fall_s": [
+        5.061262947637797e-07,
+        6.061262949035492e-07,
+        7.061262948941106e-07,
+        8.06126294862768e-07,
+        9.061262944861941e-07
+      ],
+      "LS_rise_s": [
+        5.092005142430727e-07,
+        6.092005139822714e-07,
+        7.092005135371801e-07,
+        8.092005135074877e-07,
+        9.092005138359121e-07
+      ],
+      "LS_fall_s": [
+        5.591134166829914e-07,
+        6.591134167813059e-07,
+        7.5911341671941e-07,
+        8.591134166484268e-07,
+        9.59113416707239e-07
+      ],
+      "source_rule": "FALL=2 to RISE=2 in the unchanged0.5–1us window; matched-index events, no nearest-edge substitution."
+    },
+    "pw80": {
+      "HS_rise_s": [
+        5.934487113568494e-07,
+        6.934487114297354e-07,
+        7.934487112432636e-07,
+        8.934487116603705e-07,
+        9.934487114332852e-07
+      ],
+      "HS_fall_s": [
+        5.061911888644055e-07,
+        6.0619118855014e-07,
+        7.061911875000239e-07,
+        8.061911884957316e-07,
+        9.06191188089755e-07
+      ],
+      "LS_rise_s": [
+        5.091879736355043e-07,
+        6.091879734193499e-07,
+        7.091879733618053e-07,
+        8.091879736507952e-07,
+        9.091879733253656e-07
+      ],
+      "LS_fall_s": [
+        5.891134458643387e-07,
+        6.891134458185562e-07,
+        7.891134457661587e-07,
+        8.891134457671122e-07,
+        9.89113445805927e-07
+      ],
+      "source_rule": "FALL=2 to RISE=2 in the unchanged0.5–1us window; matched-index events, no nearest-edge substitution."
+    }
+  },
+  "independent_area_um2": 33470.81309593337,
+  "area_leaves": [
+    {
+      "instance": "XLVL3/Mlvl3_PM3",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XLVL3/Mlvl3_PM1",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XLVL3/Mlvl3_PM0",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XLVL3/XCOREINV/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XLVL3/XCOREINV/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XLVL3/Mlvl3_NM3",
+      "model": "n33",
+      "area_um2": 0.38880000000000003
+    },
+    {
+      "instance": "XLVL3/Mlvl3_NM2",
+      "model": "n33",
+      "area_um2": 1.5552000000000001
+    },
+    {
+      "instance": "XLVL3/Mlvl3_NM1",
+      "model": "n33",
+      "area_um2": 1.5552000000000001
+    },
+    {
+      "instance": "XINV34/XG/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XINV34/XG/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XINV31/XG/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XINV31/XG/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XINV17/XG/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XINV17/XG/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XBUFF12/XB0_0/MMN1",
+      "model": "n18",
+      "area_um2": 1.6847999999999999
+    },
+    {
+      "instance": "XBUFF12/XB0_0/MMP1",
+      "model": "p18",
+      "area_um2": 2.5344
+    },
+    {
+      "instance": "XBUFF12/XB1_0/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF12/XB1_0/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF12/XB2_0/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF12/XB2_0/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF12/XB2_1/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF12/XB2_1/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF12/XB3_0/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF12/XB3_0/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF12/XB3_1/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF12/XB3_1/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF12/XB3_2/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF12/XB3_2/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF12/XB3_3/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF12/XB3_3/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF12/XB3_4/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF12/XB3_4/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF12/XB3_5/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF12/XB3_5/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF12/XB3_6/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF12/XB3_6/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF12/XB3_7/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF12/XB3_7/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF11/XB0_0/MMN1",
+      "model": "n18",
+      "area_um2": 1.6847999999999999
+    },
+    {
+      "instance": "XBUFF11/XB0_0/MMP1",
+      "model": "p18",
+      "area_um2": 2.5344
+    },
+    {
+      "instance": "XBUFF11/XB1_0/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF11/XB1_0/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF11/XB2_0/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF11/XB2_0/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF11/XB2_1/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF11/XB2_1/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF11/XB3_0/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF11/XB3_0/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF11/XB3_1/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF11/XB3_1/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF11/XB3_2/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF11/XB3_2/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF11/XB3_3/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF11/XB3_3/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF11/XB3_4/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF11/XB3_4/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF11/XB3_5/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF11/XB3_5/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF11/XB3_6/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF11/XB3_6/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF11/XB3_7/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF11/XB3_7/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "Mbootstrap_driver_NM1",
+      "model": "n18",
+      "area_um2": 34.1858160018
+    },
+    {
+      "instance": "Mbootstrap_driver_NM5",
+      "model": "n33",
+      "area_um2": 0.38880000000000003
+    },
+    {
+      "instance": "Mbootstrap_driver_NM2",
+      "model": "n33",
+      "area_um2": 221.5324800108
+    },
+    {
+      "instance": "Mbootstrap_driver_PM5",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "Mbootstrap_driver_PM2",
+      "model": "p33",
+      "area_um2": 199.26359999279995
+    },
+    {
+      "instance": "CBST",
+      "model": "mim",
+      "area_um2": 899.9999999999999
+    },
+    {
+      "instance": "MBSTCAP",
+      "model": "n18",
+      "area_um2": 26112.0
+    },
+    {
+      "instance": "MTRACKP",
+      "model": "p33",
+      "area_um2": 3985.2719999280002
+    },
+    {
+      "instance": "XNON/XI5/XG/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI5/XG/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI0/XG/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI0/XG/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI3/XG/MM1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI3/XG/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI3/XG/MM0",
+      "model": "p18",
+      "area_um2": 0.2034
+    },
+    {
+      "instance": "XNON/XI3/XG/MMP1",
+      "model": "p18",
+      "area_um2": 0.2034
+    },
+    {
+      "instance": "XNON/XI1/XG/MM1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI1/XG/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI1/XG/MM0",
+      "model": "p18",
+      "area_um2": 0.2034
+    },
+    {
+      "instance": "XNON/XI1/XG/MMP1",
+      "model": "p18",
+      "area_um2": 0.2034
+    },
+    {
+      "instance": "XNON/XI4/XD0/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI4/XD0/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI4/CD0",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD1/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI4/XD1/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI4/CD1",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD2/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI4/XD2/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI4/CD2",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD3/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI4/XD3/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI4/CD3",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD4/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI4/XD4/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI4/CD4",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD5/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI4/XD5/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI4/CD5",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD6/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI4/XD6/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI4/CD6",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI4/XD7/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI4/XD7/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI4/CD7",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD0/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI2/XD0/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI2/CD0",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD1/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI2/XD1/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI2/CD1",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD2/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI2/XD2/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI2/CD2",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD3/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI2/XD3/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI2/CD3",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD4/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI2/XD4/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI2/CD4",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD5/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI2/XD5/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI2/CD5",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD6/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI2/XD6/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI2/CD6",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XNON/XI2/XD7/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XNON/XI2/XD7/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XNON/XI2/CD7",
+      "model": "mim",
+      "area_um2": 109.99999999999999
+    },
+    {
+      "instance": "XBUFF7/XB0_0/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XBUFF7/XB0_0/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XBUFF7/XB1_0/MMN1",
+      "model": "n18",
+      "area_um2": 0.42119999999999996
+    },
+    {
+      "instance": "XBUFF7/XB1_0/MMP1",
+      "model": "p18",
+      "area_um2": 0.6336
+    },
+    {
+      "instance": "XBUFF7/XB2_0/MMN1",
+      "model": "n18",
+      "area_um2": 1.6847999999999999
+    },
+    {
+      "instance": "XBUFF7/XB2_0/MMP1",
+      "model": "p18",
+      "area_um2": 2.5344
+    },
+    {
+      "instance": "XBUFF7/XB3_0/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF7/XB3_0/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFF7/XB3_1/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFF7/XB3_1/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_PM3",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_PM1",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_PM0",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XCHARGE_LS/XCOREINV/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XCHARGE_LS/XCOREINV/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_NM3",
+      "model": "n33",
+      "area_um2": 0.38880000000000003
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_NM2",
+      "model": "n33",
+      "area_um2": 1.5552000000000001
+    },
+    {
+      "instance": "XCHARGE_LS/Mlvl3_NM1",
+      "model": "n33",
+      "area_um2": 1.5552000000000001
+    },
+    {
+      "instance": "MCHN",
+      "model": "n33",
+      "area_um2": 0.38880000000000003
+    },
+    {
+      "instance": "MCHP",
+      "model": "p33",
+      "area_um2": 0.144
+    },
+    {
+      "instance": "XINVCH/XG/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XINVCH/XG/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XBUFFCH/XB0_0/MMN1",
+      "model": "n18",
+      "area_um2": 0.15120000000000003
+    },
+    {
+      "instance": "XBUFFCH/XB0_0/MMP1",
+      "model": "p18",
+      "area_um2": 0.22680000000000003
+    },
+    {
+      "instance": "XBUFFCH/XB1_0/MMN1",
+      "model": "n18",
+      "area_um2": 0.42119999999999996
+    },
+    {
+      "instance": "XBUFFCH/XB1_0/MMP1",
+      "model": "p18",
+      "area_um2": 0.6336
+    },
+    {
+      "instance": "XBUFFCH/XB2_0/MMN1",
+      "model": "n18",
+      "area_um2": 1.6847999999999999
+    },
+    {
+      "instance": "XBUFFCH/XB2_0/MMP1",
+      "model": "p18",
+      "area_um2": 2.5344
+    },
+    {
+      "instance": "XBUFFCH/XB3_0/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFFCH/XB3_0/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    },
+    {
+      "instance": "XBUFFCH/XB3_1/MMN1",
+      "model": "n18",
+      "area_um2": 3.3695999999999997
+    },
+    {
+      "instance": "XBUFFCH/XB3_1/MMP1",
+      "model": "p18",
+      "area_um2": 5.0688
+    }
+  ],
+  "selected_tier": "10pct"
+}

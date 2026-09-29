@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-09-26T05:14:34.790946+00:00",
+  "status": "passed",
+  "circuit_sha256": "ad543b3c4d9ab88b0e6f9638569f8b72543f020f027c340503828215b0110a42",
+  "results_sha256": "48dd262bcb8ac119a24bcefeaa82d962cae926e796e7bb712764ded83156d1e3",
+  "contract_sha256": "ddffdc8b76347346795e5ccb260a3a792a4cab210f5c9e4d4c24732775384c87",
+  "measurement_cross_checks": [
+    {
+      "metric": "loop_ugb_hz",
+      "report": 121770212.20411722,
+      "independent": 121770212.20411706,
+      "absolute_difference": 1.6391277313232422e-07,
+      "passed": true
+    },
+    {
+      "metric": "phase_margin_deg",
+      "report": 63.64332343661259,
+      "independent": 63.64332343661259,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "low_frequency_loop_gain_db",
+      "report": 92.5488081434745,
+      "independent": 92.5488081434745,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "closed_loop_differential_gain_db",
+      "report": 19.084645371345793,
+      "independent": 19.084645371345793,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "power_w",
+      "report": 0.005522228512275686,
+      "independent": 0.005522228512275686,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_common_mode_error_v",
+      "report": 0.022383823259518487,
+      "independent": 0.022383823259518487,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "rise_dynamic_output_v",
+      "report": 0.9023629248722386,
+      "independent": 0.9023629248722386,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "rise_dynamic_error_fraction",
+      "report": 0.002625472080265053,
+      "independent": 0.002625472080265053,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "fall_dynamic_output_v",
+      "report": -0.0029374933583432316,
+      "independent": -0.0029374933583432316,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "fall_dynamic_error_fraction",
+      "report": 0.003263881509270257,
+      "independent": 0.003263881509270257,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "high_static_output_v",
+      "report": 0.8998966868986321,
+      "independent": 0.8998966868986321,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "high_static_error_fraction",
+      "report": 0.00011479233485323093,
+      "independent": 0.00011479233485323093,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "low_static_output_v",
+      "report": 3.226957004002286e-11,
+      "independent": 3.226957004002286e-11,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "low_static_error_fraction",
+      "report": 3.5855077822247625e-11,
+      "independent": 3.5855077822247625e-11,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "rise_settling_time_s",
+      "report": 6.084336814903404e-09,
+      "independent": 6.084336814903404e-09,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "fall_settling_time_s",
+      "report": 6.113534402418578e-09,
+      "independent": 6.113534402418578e-09,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_range_min_v",
+      "report": -0.8285506828232535,
+      "independent": -0.8285506828232535,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_range_max_v",
+      "report": 0.8285506784715893,
+      "independent": 0.8285506784715893,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_range_v",
+      "report": 1.6571013612948429,
+      "independent": 1.6571013612948429,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "open_loop_gain_peak_db",
+      "report": 111.59586198975687,
+      "independent": 111.59586198975687,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_noise_vrms",
+      "report": 0.0006193559627052733,
+      "independent": 0.0006193559627052732,
+      "absolute_difference": 1.0842021724855044e-19,
+      "passed": true
+    },
+    {
+      "metric": "cmfb_static_error_v",
+      "report": 0.022383824081790293,
+      "independent": 0.022383824081790293,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "cmfb_max_deviation_v",
+      "report": 0.012821988303581833,
+      "independent": 0.012821988303581833,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "cmfb_residual_20ns_v",
+      "report": 1.3437334848086194e-05,
+      "independent": 1.3437334848086194e-05,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "cmfb_residual_100ns_v",
+      "report": 1.229221616190988e-06,
+      "independent": 1.229221616190988e-06,
+      "absolute_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "original_nominal_checks": [
+    {
+      "name": "original_nominal_functional",
+      "passed": true,
+      "detail": "PM=63.643deg static=0.0115% dynamic=0.3264% settling=6.114ns"
+    },
+    {
+      "name": "output_noise_vrms",
+      "passed": true,
+      "detail": "worst=0.000619356SI at SMIC18TT1.8V27C; limit <=0.001SI"
+    },
+    {
+      "name": "cmfb_max_deviation_v",
+      "passed": true,
+      "detail": "worst=0.012822SI at SMIC18TT1.8V27C; limit <=0.1SI"
+    },
+    {
+      "name": "cmfb_residual_20ns_v",
+      "passed": true,
+      "detail": "worst=1.34373e-05SI at SMIC18TT1.8V27C; limit <=0.005SI"
+    },
+    {
+      "name": "cmfb_residual_100ns_v",
+      "passed": true,
+      "detail": "worst=1.22922e-06SI at SMIC18TT1.8V27C; limit <=0.001SI"
+    },
+    {
+      "name": "power_w",
+      "passed": true,
+      "detail": "worst=0.00552223SI at SMIC18TT1.8V27C; limit <=0.01SI"
+    },
+    {
+      "name": "original_3dB_range",
+      "passed": false,
+      "detail": "1.65710136129V >= 1.8V"
+    }
+  ],
+  "original_model_hashes_unchanged": true,
+  "source_snapshot_hashes_verified": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "group": "loop",
+      "run": "runs/34/20260926T051410229625Z_loop",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "settling",
+      "run": "runs/34/20260926T051253347871Z_settling",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "noise",
+      "run": "runs/34/20260926T051254766475Z_noise",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "ranges",
+      "run": "runs/34/20260926T051255397974Z_ranges",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "cmfb",
+      "run": "runs/34/20260926T051255993686Z_cmfb",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "rejection",
+      "run": "runs/34/20260926T051258060672Z_rejection",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "range_resolution",
+      "run": "runs/34/20260926T051411628097Z_range_resolution",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    }
+  ],
+  "stimulus_checks": [
+    {
+      "test": "settling",
+      "initial_sources_V": [
+        0.9,
+        0.9
+      ],
+      "active_sources_V": [
+        0.95625,
+        0.84375
+      ],
+      "passed": true
+    },
+    {
+      "test": "CMFB",
+      "per_output_pulse_A": 5e-05,
+      "reference": "undisturbed identical instance",
+      "passed": true
+    }
+  ],
+  "numerical_confirmation": {
+    "generated_at": "2026-09-26T05:14:12.264246+00:00",
+    "circuit_sha256": "ad543b3c4d9ab88b0e6f9638569f8b72543f020f027c340503828215b0110a42",
+    "reason": "Derivative-based3dB output range depends on input sweep resolution; compare0.5uV original with0.25uV diagnostic",
+    "original_group": "runs/34/20260926T051255397974Z_ranges",
+    "diagnostic_run": "runs/34/20260926T051411628097Z_range_resolution",
+    "baseline_points": 81,
+    "diagnostic_points": 161,
+    "baseline_range_V": 1.6571013612948429,
+    "diagnostic_range_V": 1.6601972054967438,
+    "absolute_difference_V": 0.003095844201900899,
+    "maximum_difference_V": 0.05,
+    "same_acceptance_tiers": true,
+    "passed": true,
+    "scored_data": "Original81point sweep retained without substitution"
+  },
+  "schematic_instances": 40,
+  "schematic_terminals": 140,
+  "pdf_review_pending": false,
+  "full_upstream_signoff": false,
+  "mismatch_samples_executed": 0,
+  "method": "Independent scalar interpolation, last crossing,81point central differences and noise quadrature; unchanged upstream nominal_functional and limit_check with explicit nominal expected count1. No claim of30point PVT or20sample mismatch completion.",
+  "pdf": "reports/34-sampling-ota-gain8-review.pdf",
+  "pdf_sha256": "28687a26e87dae86e04ae7ef4d79869309c3d650c04971cf146893bd8d50e8be",
+  "pdf_pages": 12,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-26T05:24:06.053952+00:00"
+}

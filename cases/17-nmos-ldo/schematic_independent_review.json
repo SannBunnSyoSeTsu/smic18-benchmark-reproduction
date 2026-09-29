@@ -1,0 +1,139 @@
+{
+  "slot": 17,
+  "case": "cases/17-nmos-ldo",
+  "circuit_sha256": "050cce2389d138c31156a14b1bf955093cbefb0018a2ec14f29689e12d65298d",
+  "hd_cells_sha256": null,
+  "top": "nmos_pass_ldo",
+  "source_definition_count": 13,
+  "source_terminal_count": 48,
+  "source_expanded_leaf_count": 13,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "0f39f0c17fb5f53a4275b830894a6660ee1a32e67ff6c4ccd2038d5bd6a36018",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 13,
+  "schematic_expanded_leaf_count": 13,
+  "independently_traced_terminals": 48,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 11,
+    "C": 2
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "nmos_pass_ldo/MPREF",
+      "D_G_S_B": [
+        "ibias",
+        "ibias",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "nmos_pass_ldo/MPTAIL",
+      "D_G_S_B": [
+        "tail",
+        "ibias",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "nmos_pass_ldo/MPINR",
+      "D_G_S_B": [
+        "nr",
+        "vref",
+        "tail",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "nmos_pass_ldo/MPINF",
+      "D_G_S_B": [
+        "nf",
+        "vout",
+        "tail",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "nmos_pass_ldo/MNDR",
+      "D_G_S_B": [
+        "nr",
+        "nr",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "nmos_pass_ldo/MNDF",
+      "D_G_S_B": [
+        "nf",
+        "nf",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "nmos_pass_ldo/MNSINK",
+      "D_G_S_B": [
+        "pc",
+        "nf",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "nmos_pass_ldo/MNOUT",
+      "D_G_S_B": [
+        "loop_out",
+        "nr",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "nmos_pass_ldo/MPD",
+      "D_G_S_B": [
+        "pc",
+        "pc",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "nmos_pass_ldo/MPOUT",
+      "D_G_S_B": [
+        "loop_out",
+        "pc",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "nmos_pass_ldo/MPASS",
+      "D_G_S_B": [
+        "vdd",
+        "pass_gate",
+        "vout",
+        "vss"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 11,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

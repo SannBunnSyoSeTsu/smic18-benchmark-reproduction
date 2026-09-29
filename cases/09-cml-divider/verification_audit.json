@@ -1,0 +1,263 @@
+{
+  "generated_at": "2026-09-26T03:44:12.189787+00:00",
+  "status": "passed",
+  "circuit_sha256": "b92dbeb47541da5d5b1137db661ae3624ef18c87bb0e152bebb98b803b9b1a55",
+  "results_sha256": "7207bd8526baf58b322dd6e484685928f1859709157d4d2dc83bc76e240b997d",
+  "contract_sha256": "f8407b19d0dda7d2b287818cac9197d514679bb1add67997b22a8ea7cb60c68e",
+  "upstream_verifier_sha256": "6b3f7fdf224dabe243ce66e45147db2877c742b7b31eb243f32d9433099e0d1c",
+  "measurement_cross_checks": [
+    {
+      "metric": "1g:output_swing_Vpp",
+      "report": 0.7150148217537668,
+      "independent": 0.7150148217537668,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1g:minimum_cycle_swing_Vpp",
+      "report": 0.712886753854846,
+      "independent": 0.712886753854846,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1g:target_tone_Vpp",
+      "report": 0.7767860256859165,
+      "independent": 0.776786025685917,
+      "absolute_difference": 5.551115123125783e-16,
+      "passed": true
+    },
+    {
+      "metric": "1g:alternating_cycles",
+      "report": 40,
+      "independent": 40.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "2g:output_swing_Vpp",
+      "report": 0.694056739840728,
+      "independent": 0.694056739840728,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "2g:minimum_cycle_swing_Vpp",
+      "report": 0.676257211526331,
+      "independent": 0.676257211526331,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "2g:target_tone_Vpp",
+      "report": 0.7388227193331965,
+      "independent": 0.7388227193331954,
+      "absolute_difference": 1.1102230246251565e-15,
+      "passed": true
+    },
+    {
+      "metric": "2g:alternating_cycles",
+      "report": 40,
+      "independent": 40.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "5g:output_swing_Vpp",
+      "report": 0.5925204511661688,
+      "independent": 0.5925204511661688,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "5g:minimum_cycle_swing_Vpp",
+      "report": 0.536488318014746,
+      "independent": 0.536488318014746,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "5g:target_tone_Vpp",
+      "report": 0.6550958953908698,
+      "independent": 0.6550958953908703,
+      "absolute_difference": 5.551115123125783e-16,
+      "passed": true
+    },
+    {
+      "metric": "5g:alternating_cycles",
+      "report": 40,
+      "independent": 40.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "10g:output_swing_Vpp",
+      "report": 0.41691578584856503,
+      "independent": 0.41691578584856503,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "10g:minimum_cycle_swing_Vpp",
+      "report": 0.21037138755485119,
+      "independent": 0.21037138755485119,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "10g:target_tone_Vpp",
+      "report": 0.4308277096812723,
+      "independent": 0.4308277096812718,
+      "absolute_difference": 4.996003610813204e-16,
+      "passed": true
+    },
+    {
+      "metric": "10g:alternating_cycles",
+      "report": 40,
+      "independent": 40.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "quiescent VDD power",
+      "report": 0.0014553510703769494,
+      "independent": 0.0014553510703769494,
+      "absolute_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "upstream_nominal_speed_check": {
+    "name": "divide_operating_points",
+    "passed": true,
+    "detail": "required_points=1.000,2.000,5.000,10.000GHz; highest_passing_frequency=10.000GHz; min_cycle_swing=210.4mVpp (require >=200mVpp); target_tone=430.8mVpp (require >=200mVpp); failed_points=none"
+  },
+  "upstream_nominal_power_check": {
+    "passed": true,
+    "value_W": 0.0014553510703769494,
+    "strict_max_W": 0.0015
+  },
+  "stimulus_checks": [
+    {
+      "label": "1g",
+      "source_waveform_max_error_V": 1.3955503419538218e-13,
+      "source_differential_Vpp": 0.30000000000000004,
+      "common_mode_V": 0.9,
+      "cycle_count": 40,
+      "measured_output_frequency_Hz": 500000000.0000183,
+      "positive_zero_crossings": 20
+    },
+    {
+      "label": "2g",
+      "source_waveform_max_error_V": 9.536815781530095e-14,
+      "source_differential_Vpp": 0.30000000000000004,
+      "common_mode_V": 0.9,
+      "cycle_count": 40,
+      "measured_output_frequency_Hz": 999999999.9999998,
+      "positive_zero_crossings": 20
+    },
+    {
+      "label": "5g",
+      "source_waveform_max_error_V": 2.2198354265867692e-11,
+      "source_differential_Vpp": 0.30000000000000004,
+      "common_mode_V": 0.9,
+      "cycle_count": 40,
+      "measured_output_frequency_Hz": 2500000000.0000253,
+      "positive_zero_crossings": 20
+    },
+    {
+      "label": "10g",
+      "source_waveform_max_error_V": 3.3991698344948418e-12,
+      "source_differential_Vpp": 0.30000000000000004,
+      "common_mode_V": 0.9,
+      "cycle_count": 40,
+      "measured_output_frequency_Hz": 5000000000.000303,
+      "positive_zero_crossings": 20
+    }
+  ],
+  "run_provenance": [
+    {
+      "group": "10g",
+      "run": "runs/09/20260926T033542023288Z_10g",
+      "input_hashes_intact": true,
+      "models_intact": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ],
+      "diagnostic_review": "Final log has successful license check and0errors/0warnings; Bridge substring false positive retained. Earlier failed PWL deck has realCMI-2204 and is excluded.",
+      "logs": {
+        "runs/09/20260926T033542023288Z_10g/output/bench.log": "437e7f2f15f9cae4d28cfcb8196ba7a724575c396f086cd750f5c8ebaf11388c"
+      }
+    },
+    {
+      "group": "power",
+      "run": "runs/09/20260926T033543923307Z_power",
+      "input_hashes_intact": true,
+      "models_intact": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ],
+      "diagnostic_review": "Final log has successful license check and0errors/0warnings; Bridge substring false positive retained. Earlier failed PWL deck has realCMI-2204 and is excluded.",
+      "logs": {
+        "runs/09/20260926T033543923307Z_power/output/bench.log": "141e37b24913d5b361ac9cbb1fed20dacfbe66eb890a3fad8895657da3b6dc63"
+      }
+    },
+    {
+      "group": "1g",
+      "run": "runs/09/20260926T033652802398Z_1g",
+      "input_hashes_intact": true,
+      "models_intact": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ],
+      "diagnostic_review": "Final log has successful license check and0errors/0warnings; Bridge substring false positive retained. Earlier failed PWL deck has realCMI-2204 and is excluded.",
+      "logs": {
+        "runs/09/20260926T033652802398Z_1g/output/bench.log": "ea37229e20eb727468996a0d631488020d63d1ded8df1a1d4e7f018662e51124"
+      }
+    },
+    {
+      "group": "2g",
+      "run": "runs/09/20260926T033655636370Z_2g",
+      "input_hashes_intact": true,
+      "models_intact": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ],
+      "diagnostic_review": "Final log has successful license check and0errors/0warnings; Bridge substring false positive retained. Earlier failed PWL deck has realCMI-2204 and is excluded.",
+      "logs": {
+        "runs/09/20260926T033655636370Z_2g/output/bench.log": "d6e4fa33d4cb0389ee042c568231cbcdd346c0c601a3f31647fe95531bcfb05c"
+      }
+    },
+    {
+      "group": "5g",
+      "run": "runs/09/20260926T033657262874Z_5g",
+      "input_hashes_intact": true,
+      "models_intact": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ],
+      "diagnostic_review": "Final log has successful license check and0errors/0warnings; Bridge substring false positive retained. Earlier failed PWL deck has realCMI-2204 and is excluded.",
+      "logs": {
+        "runs/09/20260926T033657262874Z_5g/output/bench.log": "0a1ca386c5a62e6f3a1cbc4c7384e17562200c0fb25e126bea334bfcba6a1073"
+      }
+    }
+  ],
+  "source_snapshot_hashes_verified": true,
+  "original_model_hashes_unchanged": true,
+  "lut_hashes_unchanged": true,
+  "all_original_gates_pass": true,
+  "all_final_runs_same_circuit": true,
+  "schematic_independent_review": "cases/09-cml-divider/schematic_independent_review.json",
+  "full_upstream_signoff": false,
+  "pdf_review_pending": false,
+  "method": "Current agent independently passed actual Spectre time/outp/outn rows to unchanged upstream divider_metrics and speed_check forTT. Power independently computed from originalVDD port. No other process corners claimed.",
+  "pdf": "reports/09-cml-divider-review.pdf",
+  "pdf_sha256": "961818e57d2332d3c6eb01940f8d2bf39578688ef1044cd5558a26b4f4ce51bf",
+  "pdf_pages": 10,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-26T03:49:22.920856+00:00"
+}

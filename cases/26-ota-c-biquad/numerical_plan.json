@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-09-28T18:15:33.965617+00:00",
+  "baseline_groups": {
+    "ac": "runs/26/20260928T181306353573Z_ac",
+    "noise": "runs/26/20260928T181306989484Z_noise",
+    "thd": "runs/26/20260928T181307610709Z_thd",
+    "thd2": "runs/26/20260928T181309189545Z_thd2",
+    "thd_f0": "runs/26/20260928T181310741938Z_thd_f0",
+    "cmstep": "runs/26/20260928T181312530904Z_cmstep"
+  },
+  "baseline": {
+    "maxstep_s": 2e-09,
+    "reltol": 1e-06,
+    "ac_dec": 100,
+    "noise_dec": 80
+  },
+  "refined": {
+    "maxstep_s": 1e-09,
+    "reltol": 1e-07,
+    "ac_dec": 200,
+    "noise_dec": 160
+  },
+  "bounds": {
+    "f0_Hz": 1000,
+    "Q": 0.001,
+    "passgain_dB": 0.01,
+    "fit_error_dB": 0.002,
+    "atten20M_dB": 0.01,
+    "bp_peak_Hz": 30000,
+    "bp_peak_dB": 0.01,
+    "bp_1k_dB": 0.01,
+    "bp_200k_dB": 0.01,
+    "bp_20M_dB": 0.01,
+    "cm_error_V": 1e-05,
+    "power_W": 1e-07,
+    "noise_Vrms": 1e-06,
+    "output_amplitude_V": 0.0001,
+    "fundamental_gain": 0.001,
+    "thd_dB": 0.05,
+    "initial_error_V": 1e-05,
+    "settle_s": 3e-09,
+    "late_excursion_V": 1e-05
+  },
+  "FFT_original_N": 256
+}

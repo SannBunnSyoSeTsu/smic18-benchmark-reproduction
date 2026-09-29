@@ -1,0 +1,240 @@
+{
+  "generated_at": "2026-09-26T05:34:49.958319+00:00",
+  "status": "passed",
+  "circuit_sha256": "45eb5290815c778d817a7b9e108994121159fdb0e952d17e8984bdd00b1af2af",
+  "results_sha256": "f435ff18408d5ef4c7a4c02c1137cad331ba6b260d231063cf6c77bb25e946f4",
+  "contract_sha256": "7f156f836b3799249f786ba6b8594aa0ee96b65d37cfea325a1048d1503b8019",
+  "measurement_cross_checks": [
+    {
+      "metric": "loop_gain_10hz_db",
+      "report": 72.51271746354197,
+      "independent": 72.51271746354197,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "ugb_hz",
+      "report": 592916.6114317443,
+      "independent": 592916.6114317446,
+      "absolute_difference": 3.4924596548080444e-10,
+      "passed": true
+    },
+    {
+      "metric": "phase_margin_deg",
+      "report": 84.7699713856664,
+      "independent": 84.7699713856664,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_offset_v",
+      "report": 0.0028213308190822017,
+      "independent": 0.0028213308190822017,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "power_w",
+      "report": 0.000355813589284785,
+      "independent": 0.000355813589284785,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "quiescent_current_a",
+      "report": 0.000197674216269325,
+      "independent": 0.000197674216269325,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "closed_loop_range_vpp",
+      "report": 1.5999999999999999,
+      "independent": 1.5999999999999999,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "range_low_v",
+      "report": 0.10000000000000009,
+      "independent": 0.10000000000000009,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "range_high_v",
+      "report": 1.7,
+      "independent": 1.7,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "max_accepted_tracking_error_v",
+      "report": 0.0031823385598845066,
+      "independent": 0.0031823385598845066,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "fundamental_v",
+      "report": 0.5981050496083411,
+      "independent": 0.5981050496083415,
+      "absolute_difference": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "metric": "thd_pct",
+      "report": 0.3231229882282673,
+      "independent": 0.3231229882282666,
+      "absolute_difference": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "metric": "peak_supply_current_a",
+      "report": 0.002223546305860314,
+      "independent": 0.002223546305860314,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "drive_ratio",
+      "report": 11.248539884588697,
+      "independent": 11.248539884588697,
+      "absolute_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "original_nominal_checks": [
+    {
+      "name": "pvt_loop_gain",
+      "passed": true,
+      "detail": "worst=72.51dB at SMIC18 TT1.8V27C (min 40dB)"
+    },
+    {
+      "name": "pvt_bandwidth",
+      "passed": true,
+      "detail": "worst=0.5929MHz at SMIC18 TT1.8V27C (min 0.5MHz)"
+    },
+    {
+      "name": "pvt_phase_margin",
+      "passed": true,
+      "detail": "worst=84.77deg at SMIC18 TT1.8V27C (min 60deg)"
+    },
+    {
+      "name": "pvt_output_bias",
+      "passed": true,
+      "detail": "worst=2.821mV at SMIC18 TT1.8V27C (max 20mV)"
+    },
+    {
+      "name": "pvt_quiescent_power",
+      "passed": true,
+      "detail": "worst=355.8uW at SMIC18 TT1.8V27C (max 400uW)"
+    },
+    {
+      "name": "line_distortion",
+      "passed": true,
+      "detail": "THD_max=0.323% at SMIC18 TT1.8V27C (max 3%); fundamental_min=0.598V at SMIC18 TT1.8V27C (min 0.55V)"
+    },
+    {
+      "name": "line_drive",
+      "passed": true,
+      "detail": "ipeak_min=2.22mA at SMIC18 TT1.8V27C (min 2mA); drive_ratio_min=11.2 at SMIC18 TT1.8V27C (min 10)"
+    },
+    {
+      "name": "closed_loop_range",
+      "passed": true,
+      "detail": "worst=1.6Vpp at SMIC18 TT1.8V27C (min 1.5Vpp)"
+    }
+  ],
+  "original_model_hashes_unchanged": true,
+  "source_snapshot_hashes_verified": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "group": "loop",
+      "run": "runs/39/20260926T053218781021Z_loop",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "swing",
+      "run": "runs/39/20260926T053219419035Z_swing",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "thd",
+      "run": "runs/39/20260926T053257519087Z_thd",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "baseline_thd",
+      "run": "runs/39/20260926T053220064178Z_thd",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    }
+  ],
+  "numerical_confirmation": {
+    "generated_at": "2026-09-26T05:32:59.080246+00:00",
+    "circuit_sha256": "45eb5290815c778d817a7b9e108994121159fdb0e952d17e8984bdd00b1af2af",
+    "baseline_groups": {
+      "loop": "runs/39/20260926T053218781021Z_loop",
+      "swing": "runs/39/20260926T053219419035Z_swing",
+      "thd": "runs/39/20260926T053220064178Z_thd"
+    },
+    "final_groups": {
+      "loop": "runs/39/20260926T053218781021Z_loop",
+      "swing": "runs/39/20260926T053219419035Z_swing",
+      "thd": "runs/39/20260926T053257519087Z_thd"
+    },
+    "metrics": {
+      "thd_pct": {
+        "baseline": 0.32307975428384117,
+        "refined": 0.3231229882282673,
+        "absolute_difference": 4.323394442612427e-05,
+        "maximum_difference": 0.005,
+        "passed": true
+      },
+      "fundamental_v": {
+        "baseline": 0.598099205626206,
+        "refined": 0.5981050496083411,
+        "absolute_difference": 5.843982135100845e-06,
+        "maximum_difference": 0.0001,
+        "passed": true
+      },
+      "peak_supply_current_a": {
+        "baseline": 0.002223519965776996,
+        "refined": 0.002223546305860314,
+        "absolute_difference": 2.6340083318036195e-08,
+        "maximum_difference": 1e-06,
+        "passed": true
+      }
+    },
+    "baseline_tier": "complete_original",
+    "refined_tier": "complete_original",
+    "passed": true
+  },
+  "schematic_instances": 27,
+  "schematic_terminals": 98,
+  "pdf_review_pending": false,
+  "full_upstream_signoff": false,
+  "method": "Independent AC crossings and contiguous swing walk; unchanged original harmonic_fit and all8 check functions at explicit expected=1; alternate least-squares harmonic fit. Other44PVTpoints excluded. Native device policy and literal external300ohm/200pF loads verified.",
+  "pdf": "reports/39-line-driver-review.pdf",
+  "pdf_sha256": "c145e40386df249052c052235a5a65d8a88b81dc155847e5bdd4c75a99a977d2",
+  "pdf_pages": 11,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-29T04:09:09.496360+00:00"
+}

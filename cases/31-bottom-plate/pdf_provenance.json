@@ -1,0 +1,111 @@
+{
+  "pdf": "reports/31-bottom-plate-review.pdf",
+  "sha256": "f52b37f5504fc8d32b372938ff864e52ff1c7ea704730d506de37f4910a9c07b",
+  "results_sha256": "6f96dc4c1bb4e4af2baedc3a5ac854443f349130b9dc0f0a7d7a55dbc6851626",
+  "circuit_sha256": "aa9c00f53d8d04c120509fbc370d6ba92027551f5456a404845071ffbf3ff2ec",
+  "generated_at": "2026-09-23T06:19:21.563872+00:00",
+  "pages": 8,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:19:21.566531+00:00",
+  "all_pages_reviewed": true,
+  "render_review_method": "pdftoppm1400px; root inspected all6 pages, full wave peaks, table/netlist/font and footer separation.",
+  "body_pages": 6,
+  "schematic_pages": 2,
+  "schematic_sheets_sha256": "a4444b78848d4f89bd4e2451e57f3372bd54025ffb65dc611c712ac42b1cca25",
+  "schematic_audit_sha256": "c6b004c1700c224c998c05585add6ab37ef097c0b96cb24df0cef39a4c1c1da7",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/31-bottom-plate/31-bottom-plate-review.pdf",
+    "sha256": "2e9dca0729e5d0ea1701ba750e4826d8875b1996223936d4db62883c69cfb5cf",
+    "pages": 6,
+    "previous_render_reviewed_at": "2026-09-22T09:37:44.933257+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "acf4b52d03c24bea792df227cb5388a59a5c1ea86e6910156c3c0ba82b8bc2bf"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "739511438f31ae7d92838ea80ca7591b7f50bcedf4b7d2a3b14e752533439538"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "14847693c492e92b7ef4648972d59fc3a0d6ddfd2a64e194c7e512f51cb28e65"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "ede08729097e8639b0d2764b018a2211a08800c49f2e20af06b76be4f95632a4"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "50f3441fd3eb4903af84423eebdd3a077a3dabdd82f29db3e8fada5ff1e219a2"
+    },
+    {
+      "page": 6,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "0adccab32cbaedfb848431f3f28039929f53eeb6517757987ce75194345b2bc8"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "44d3d4184da904941dda0eba52bd20d58c8c6d9a7073e97eee6e2b82e4140faf",
+      "path": "reports/schematic-retrofit-renders/31-bottom-plate/page-07.png",
+      "sha256": "4dae153dfbba537af08171697fe24a3a4ef958757d818b2f6567d9bbe032df94"
+    },
+    {
+      "page": 8,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "9d2347b502d4a747f8b7d285989bf8f4bf0bbdc4e5c188b75fba48580490d9c3",
+      "path": "reports/schematic-retrofit-renders/31-bottom-plate/page-08.png",
+      "sha256": "edd88e24849f84a914a501d892e70ca8dd46784072ff4cb0255119f12cdd07d3"
+    }
+  ],
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change."
+}

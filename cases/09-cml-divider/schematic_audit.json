@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-09-26T03:44:10.722077+00:00",
+  "status": "passed",
+  "circuit_sha256": "b92dbeb47541da5d5b1137db661ae3624ef18c87bb0e152bebb98b803b9b1a55",
+  "hd_cells_sha256": null,
+  "renderer_sha256": "e321722ec1be608dd3d4a6374a6e8dbed3b72fa7f850daca5355754eaee0b41a",
+  "layout_file": "scripts/schematic09.py",
+  "layout_sha256": "f55e83bf90a74049b402e82cff1eee6e0de9aae1c4219d4a88bdbe223b671d85",
+  "instance_counts": {
+    "R": 4,
+    "MOS": 15
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 15,
+    "R": 4
+  },
+  "total_instances": 19,
+  "expanded_leaf_instances": 19,
+  "total_terminals": 68,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 2,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/09-cml-divider/schematic/connectivity.json": "bfd44f07e51cd2210e2b055c6e02c736b15ef0e9f70aaa2d56e871e213219ceb",
+    "cases/09-cml-divider/schematic/full.pdf": "90a3b1dda03bc3dafa342e191078b8cec6d8d4236d5c3df47ce24683eab817d6",
+    "cases/09-cml-divider/schematic/full.png": "f676c0dc9729d44ef6f1a49e8e3a6c0dedc2233d8226b92998235fbd3dfe2319",
+    "cases/09-cml-divider/schematic/full.svg": "47ec44ef14cf3c4b25e6bb9a49b1268c0d0ec07411e3274e5dc93d1e2ae4121e",
+    "cases/09-cml-divider/schematic/layout_source.py": "f55e83bf90a74049b402e82cff1eee6e0de9aae1c4219d4a88bdbe223b671d85",
+    "cases/09-cml-divider/schematic/renderer_source.py": "e321722ec1be608dd3d4a6374a6e8dbed3b72fa7f850daca5355754eaee0b41a",
+    "cases/09-cml-divider/schematic/sheet-1.png": "15b225b156d2407f0201f342a098f0bb8060624cac1736bbfb0dd6c33c0792e1",
+    "cases/09-cml-divider/schematic/sheet-1.svg": "296c17e58885451506070bd91c3caab5f24d1755247cb98183859d5c01b877a3",
+    "cases/09-cml-divider/schematic/sheet-2.png": "2b5278f1991516bf50dfb1d10442bba4d9e5dcd06eec2c5ef92c51dc1d441900",
+    "cases/09-cml-divider/schematic/sheet-2.svg": "4c94227c5a3ef3f0a1e8d9ec9a9f29974f7dddf2a55a92fa3d5e67f93bb66896",
+    "cases/09-cml-divider/schematic/sheets.pdf": "f0d2de98cec72059a324e0d18fceba33d4d46989aa87dfb3a3f2fb40e8ca8623",
+    "cases/09-cml-divider/schematic/symbol_source.py": "d835dd7a4f61c16931c947ee83a4a310707c0bbbbbc9378621c368093198fe67"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-26T03:49:22.919611+00:00",
+  "visual_review_note": "逐页查看10页最终PDF、两张完整分图和full.png总图；中文、表格、曲线、全部器件尺寸及D/G/S/B和电阻连接清楚。第6页失败迭代最小周期摆幅已按原始PSF修正并再次查看；全部正文与图纸可读，无裁切遮挡。"
+}

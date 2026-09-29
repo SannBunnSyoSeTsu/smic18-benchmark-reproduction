@@ -1,0 +1,23 @@
+// Static master-slave CML; no ideal source inside DUT.
+simulator lang=spectre
+subckt cml_div2 (vss iref vdd clkn clkp outn outp)
+MBIAS (iref iref vss vss) n18 w=37.86u l=0.36u
+RMP (mp vdd) resistor r=1200
+RMN (mn vdd) resistor r=1206
+MMDP (mp outn nmd vss) n18 w=4.06u l=0.18u
+MMDN (mn outp nmd vss) n18 w=4.06u l=0.18u
+MMTC (nmd clkp mtail vss) n18 w=13.52u l=0.18u
+MMRP (mp mn nmr vss) n18 w=4.06u l=0.18u
+MMRN (mn mp nmr vss) n18 w=4.06u l=0.18u
+MMTRC (nmr clkn mtail vss) n18 w=13.52u l=0.18u
+MMTAIL (mtail iref vss vss) n18 w=37.86u l=0.36u m=2.3
+RSP (outp vdd) resistor r=1206
+RSN (outn vdd) resistor r=1200
+MSDP (outp mp nsd vss) n18 w=4.06u l=0.18u
+MSDN (outn mn nsd vss) n18 w=4.06u l=0.18u
+MSTC (nsd clkn stail vss) n18 w=13.52u l=0.18u
+MSRP (outp outn nsr vss) n18 w=4.06u l=0.18u
+MSRN (outn outp nsr vss) n18 w=4.06u l=0.18u
+MSTRC (nsr clkp stail vss) n18 w=13.52u l=0.18u
+MSTAIL (stail iref vss vss) n18 w=37.86u l=0.36u m=2.3
+ends cml_div2

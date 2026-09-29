@@ -1,0 +1,29 @@
+{
+  "source_task": "sky130-gmr-degenerated-diff-amp-gain2-bw70m-power1p2mw-sdr60",
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "VCM_V": 0.9,
+  "load_each_F": 1e-12,
+  "IREF_A": 5e-05,
+  "ac_gain_at_hz": 1000000.0,
+  "ac_gain_target": 2,
+  "ac_gain_error_max": 0.02,
+  "bw_min_hz": 70000000.0,
+  "power_max_W": 0.0012,
+  "SDR_min_dB": 60,
+  "transient_frequency_hz": 3000000.0,
+  "differential_peak_V": 0.1,
+  "fundamental_gain_target": 2,
+  "fundamental_gain_error_max": 0.1,
+  "fit_window_s": [
+    5e-07,
+    1.5e-06
+  ],
+  "error_relaxation": "Expand error about fixed gain 2, never change gain target",
+  "power_ports": [
+    "VDD",
+    "VCM",
+    "VIN",
+    "VIP"
+  ]
+}

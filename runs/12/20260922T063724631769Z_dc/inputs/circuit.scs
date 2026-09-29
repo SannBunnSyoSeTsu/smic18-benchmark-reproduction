@@ -1,0 +1,13 @@
+// Self-biased beta multiplier; native SMIC resistor, no external bias.
+simulator lang=spectre
+subckt beta_multiplier_reference (vss vdd vref iout)
+MP1 (na na vdd vdd) p18 w=9.38u l=1u
+MP2 (vref na vdd vdd) p18 w=9.38u l=1u
+MN1 (vref vref vss vss) n18 w=3.7u l=4u
+MN2 (na vref nr vss) n18 w=3.7u l=4u m=4
+MOUT (iout vref vss vss) n18 w=3.7u l=4u m=4
+RGM (nr vss vss) rpposab_3t w=1u l=36u
+MPUP (nx vss vdd vdd) p18 w=0.24u l=4u
+MDET (nx vref vss vss) n18 w=1.46u l=1u
+MSTART (na nx vss vss) n18 w=0.38u l=4u
+ends beta_multiplier_reference

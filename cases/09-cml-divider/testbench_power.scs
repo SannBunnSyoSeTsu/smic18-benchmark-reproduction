@@ -1,0 +1,31 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/09-cml-divider/circuit.scs"
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=150u
+X (0 iref vdd clkn clkp outn outp) cml_div2
+CLP (outp 0) capacitor c=10f
+CLN (outn 0) capacitor c=10f
+simulatorOptions options temp=27 tnom=27 reltol=1e-5 vabstol=1e-8 iabstol=1e-14
+saveOptions options save=selected
+save vdd iref clkp clkn outp outn VDD:p X.mp X.mn X.nmd X.nmr X.mtail X.nsd X.nsr X.stail
+nodeset outp=1.0 outn=0.8
+VCLKP (clkp 0) vsource dc=.9
+VCLKN (clkn 0) vsource dc=.9
+save X.MBIAS:ids X.MBIAS:gm X.MBIAS:gds X.MBIAS:vgs X.MBIAS:vds X.MBIAS:vbs X.MBIAS:vdsat X.MBIAS:region
+save X.MMDP:ids X.MMDP:gm X.MMDP:gds X.MMDP:vgs X.MMDP:vds X.MMDP:vbs X.MMDP:vdsat X.MMDP:region
+save X.MMDN:ids X.MMDN:gm X.MMDN:gds X.MMDN:vgs X.MMDN:vds X.MMDN:vbs X.MMDN:vdsat X.MMDN:region
+save X.MMTC:ids X.MMTC:gm X.MMTC:gds X.MMTC:vgs X.MMTC:vds X.MMTC:vbs X.MMTC:vdsat X.MMTC:region
+save X.MMRP:ids X.MMRP:gm X.MMRP:gds X.MMRP:vgs X.MMRP:vds X.MMRP:vbs X.MMRP:vdsat X.MMRP:region
+save X.MMRN:ids X.MMRN:gm X.MMRN:gds X.MMRN:vgs X.MMRN:vds X.MMRN:vbs X.MMRN:vdsat X.MMRN:region
+save X.MMTRC:ids X.MMTRC:gm X.MMTRC:gds X.MMTRC:vgs X.MMTRC:vds X.MMTRC:vbs X.MMTRC:vdsat X.MMTRC:region
+save X.MMTAIL:ids X.MMTAIL:gm X.MMTAIL:gds X.MMTAIL:vgs X.MMTAIL:vds X.MMTAIL:vbs X.MMTAIL:vdsat X.MMTAIL:region
+save X.MSDP:ids X.MSDP:gm X.MSDP:gds X.MSDP:vgs X.MSDP:vds X.MSDP:vbs X.MSDP:vdsat X.MSDP:region
+save X.MSDN:ids X.MSDN:gm X.MSDN:gds X.MSDN:vgs X.MSDN:vds X.MSDN:vbs X.MSDN:vdsat X.MSDN:region
+save X.MSTC:ids X.MSTC:gm X.MSTC:gds X.MSTC:vgs X.MSTC:vds X.MSTC:vbs X.MSTC:vdsat X.MSTC:region
+save X.MSRP:ids X.MSRP:gm X.MSRP:gds X.MSRP:vgs X.MSRP:vds X.MSRP:vbs X.MSRP:vdsat X.MSRP:region
+save X.MSRN:ids X.MSRN:gm X.MSRN:gds X.MSRN:vgs X.MSRN:vds X.MSRN:vbs X.MSRN:vdsat X.MSRN:region
+save X.MSTRC:ids X.MSTRC:gm X.MSTRC:gds X.MSTRC:vgs X.MSTRC:vds X.MSTRC:vbs X.MSTRC:vdsat X.MSTRC:region
+save X.MSTAIL:ids X.MSTAIL:gm X.MSTAIL:gds X.MSTAIL:vgs X.MSTAIL:vds X.MSTAIL:vbs X.MSTAIL:vdsat X.MSTAIL:region
+dcOp dc

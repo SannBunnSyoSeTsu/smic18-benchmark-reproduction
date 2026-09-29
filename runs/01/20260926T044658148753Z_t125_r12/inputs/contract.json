@@ -1,0 +1,58 @@
+{
+  "source_task": "sky130-class-d-halfbridge-eff95-tt",
+  "scope": "SMIC18TT only, retain both original27/125C efficiency groups and all7loads (14points)",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "temperature_points_C": [
+    27,
+    125
+  ],
+  "pin_order": [
+    "vss",
+    "vdd",
+    "clk_in",
+    "sw"
+  ],
+  "loads_ohm": [
+    1,
+    2,
+    3,
+    6,
+    8,
+    12,
+    16
+  ],
+  "clock_Hz": 5000000.0,
+  "clock_rise_s": 2e-09,
+  "clock_fall_s": 2e-09,
+  "clock_high_plateau_s": 9.8e-08,
+  "clock_source_ohm": 50,
+  "external_L_H": 3e-06,
+  "external_C_F": 3.45e-10,
+  "transient_stop_s": 2e-05,
+  "measurement_window_s": [
+    1.8e-05,
+    2e-05
+  ],
+  "maximum_step_s": 1e-09,
+  "pin_formula": "abs(1.8*meanI_VDD)+abs(mean(VSS*I_VSS))+abs(mean(VCLK*I_VCLK)); all time weighted",
+  "pout_formula": "abs(mean(V_RLnode*I_VMEAS_RL)); independent V_RL^2/R crosscheck",
+  "efficiency_min_strict": {
+    "peak_27": 0.95,
+    "all_27": 0.85,
+    "peak_125": 0.9,
+    "all_125": 0.8
+  },
+  "output_power_min_strict_W": 0.03,
+  "output_power_guard_relaxable": false,
+  "sanity": "finite P_in>0, P_out>0, eta<=1+1e-6, no relaxed function/polarity/model eligibility",
+  "allowed_DUT": "native SMIC MOS/MIM and exact vendor HD cells only; no internal sources or ideal passives",
+  "scope_excludes": [
+    "otherprocesscorners",
+    "mismatch",
+    "otherloads/frequencies/duty cycles",
+    "layout/PEX",
+    "lifetime reliability signoff"
+  ],
+  "acceptance_policy": "/home/IC/CodeX/smic18_benchmark_repro/contracts/acceptance-policy.md"
+}

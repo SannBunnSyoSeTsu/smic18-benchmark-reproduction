@@ -1,0 +1,216 @@
+{
+  "audited_at": "2026-09-22T10:28:43.111005+00:00",
+  "status": "complete_15pct",
+  "scalar_gates": 21,
+  "counts": {
+    "DC": 9,
+    "source_loop": 17,
+    "PSRR": 9,
+    "dropout": 326,
+    "noise": 501,
+    "transient_samples": 14001,
+    "independent_main_STB": 17,
+    "local_FVF_STB": 17
+  },
+  "source_and_lut_hashes_valid": true,
+  "run_snapshots": [
+    {
+      "run": "runs/07/20260922T102553666969Z_matrix",
+      "warnings": [],
+      "snapshots_valid": true,
+      "PSF_sha256": {
+        "runs/07/20260922T102553666969Z_matrix/output/bench.raw/ac.ac": "926444f085043446e1b1f0dc20b3e41ba57d239174cbd5a72ec34040d59c76b6",
+        "runs/07/20260922T102553666969Z_matrix/output/bench.raw/dcOp.dc": "10e50778c1b1e5cba850eee60a1f4a49ab0fd2851bff05cc5bbba8e7d0960e9c"
+      }
+    },
+    {
+      "run": "runs/07/20260922T102554556954Z_stb_matrix",
+      "warnings": [],
+      "snapshots_valid": true,
+      "PSF_sha256": {
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/dcOp.dc": "9554282cf77f08731256bfc10f4a9026bfd9c102b4692cc0dcd34abb5ea8b725",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE000.margin.stb": "1cc94bd3077be949cef9cd3e2a20c5a9775a6165e7f6bf51b8acd46a82965455",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE000.stb": "9517931f026df3d6db3baeac4734d0ec774855448eadb5185b27981cb08b65bb",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE001.margin.stb": "7732d42076117815a68e2ad076512d5812fc6a189a034c937be48a89a707a043",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE001.stb": "2697d37e83bc14fccf9a0b878b725935421a06715b6f2a508efbecded6430f23",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE010.margin.stb": "ca58f6d210783ab47ed8dd872932d48a6c2858d9d45b90d56c35871fd915fd4b",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE010.stb": "ed02750a22723a1ba1f2a55270541887ebbda313780203a452930195521a0ef1",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE011.margin.stb": "573e9c916ed2e944485b6607b2c3da8857471750f43cda3252c702d1c91d4603",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE011.stb": "a8cf41ba7fb022160d438dd7e86da90b11bede5c09bd5e9dbebd99540ea3d780",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE100.margin.stb": "8c037e9c73bde5d010e817844ae78974a12708c4a2f96af6a617efbd24e055c7",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE100.stb": "11ca9783d877efda4e99319debe008deff6668f36c6c662f36945036adf36b22",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE101.margin.stb": "ce6281d3c2c8e7811e41694252dd7e9d0052292efa5d9c72a32ac412a2be1326",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE101.stb": "31e0224be90de02fdf016b25f26de030d6375ba09500875b11306bd0a72468bb",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE110.margin.stb": "31f2f087051bde1a19a9610da2b8138ebc96c19de4e32e49e79c946cf69a629a",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE110.stb": "a3c9617361407788403015f86b5b558acb8f1faf4f3869e035523c72dbdfca81",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE111.margin.stb": "617d5e98f4609f1f08acbc3a99c82a1ceaaab9b0fe257f039b1560b9d16d9577",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbE111.stb": "40e0600603f5a25e6d7879bdb2741496f6a967eaae04ed6579ff0f6b32e15a83",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL00.margin.stb": "222a316c1bfc17b395643ae7027cb7b53183c5c635af4ba491e7940c747ef6d2",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL00.stb": "87176804c9f97aa6c1d41405137a2439d05b30f0e73aa415aae34a45ee9da1bc",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL01.margin.stb": "74504fd20009588eb43311bc56769f35f19149d96e01d74dec5206d4a9f56425",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL01.stb": "879ad7564e9b09407ae9eb8c7b7dd110f5bfd5a30dba1ab77f731b5c374819f6",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL02.margin.stb": "d60551263a78619e61517632f40fccee04a3319ff385e26569925f96c1b3da27",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL02.stb": "5718d0ad45d5ebdad9f5735aea1c279a860bad70d3d6dcbde76856aa0938fa3e",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL10.margin.stb": "39c15bbac070bbf5418c1d612be92f3ea0704d56aaeeedd42967d03e631ea62c",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL10.stb": "2460397c03749b81147f68e6ec56bac4c5cacfc5700966ee967bf25d8d434e8d",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL11.margin.stb": "e8b4f08a9db36e294dd797dbded77dac0b1ffb801b2854fac983cae5c5af2e22",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL11.stb": "4e74ef1a65d1fec6b5b011a9263fe07e2c42e9cbf97837adf9f81dac81b7cf5d",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL12.margin.stb": "657331d99c2412edc6702be3d9e31860ffb47e6e2b4a5c9959d00709e1e4e0d9",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL12.stb": "7850287bab9cb25c0b9769f532207112f67f20e00b0c260f19f725d9ba9e7e14",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL20.margin.stb": "28f287ad2e4ba4089cb5ae1a1f0f4de1ab278fe6a455b24ebaa4ebfe9715e790",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL20.stb": "2b3327f421306cf206ed44d18fe823462544bf4bc08b264f1d1214bcecd85736",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL21.margin.stb": "89da46ac36038199d4b7dba710516db14fba4c3ea5553020f2918ca452bade2e",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL21.stb": "1c0acc1222133d6b0eff1c6e1764a0759adf94615c803e2d9a8f771c101efa77",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL22.margin.stb": "a98278fe2c11d3f7fab6c60c4339fcd71adcfe6560dec98ecd74361d2ffad922",
+        "runs/07/20260922T102554556954Z_stb_matrix/output/bench.raw/stbL22.stb": "b286aa2db5fddc01b4a48938cb774c7461eb345545e78c974323e265c719ba69"
+      }
+    },
+    {
+      "run": "runs/07/20260922T102555553119Z_dropout_noise",
+      "warnings": [],
+      "snapshots_valid": true,
+      "PSF_sha256": {
+        "runs/07/20260922T102555553119Z_dropout_noise/output/bench.raw/dropout.dc": "cd42d354ef4ec624581f50af1f10d7dc7c0a164e1bc370fa53200431f94b8b72",
+        "runs/07/20260922T102555553119Z_dropout_noise/output/bench.raw/noise.noise": "a724a3a07c0f665ee83d3698992cce6ec36925f038bb7d65e1801f328037aee7"
+      }
+    },
+    {
+      "run": "runs/07/20260922T102555785585Z_transient",
+      "warnings": [],
+      "snapshots_valid": true,
+      "PSF_sha256": {
+        "runs/07/20260922T102555785585Z_transient/output/bench.raw/tran.tran.tran": "5c54dd850f8e3be79a20efcb7dd9198704669b17f78a65b7f706e6bc86387041"
+      }
+    },
+    {
+      "run": "runs/07/20260922T102730830668Z_local_fvf",
+      "warnings": [],
+      "snapshots_valid": true,
+      "PSF_sha256": {
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/dcOp.dc": "5dce24094d6c459b51de9848cdd3101b0814b6a4c760ebf5312aa74e5942ffff",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE000.margin.stb": "1e64e1efa5939bc4df054e0d783c3708da262e1ff648c7d899fb6c102d6dffe9",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE000.stb": "3db1682cacba5445ee2fde9e97deb0c6b2220e3345282fb182d36fab77d1dcd6",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE001.margin.stb": "0c9bcf097cf5a6293ca7f3c49c62f8e5b382e20b04e56bcd02fb4a21dc6bfce1",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE001.stb": "6e78cfec964d7c7aaa88ea50f3feeaa72bfbc69a478c7e796a74c639f605906c",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE010.margin.stb": "a0b462059be15dccba3f0211f677de25541a4ba1ae047c75c080f1717f28e329",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE010.stb": "6e0653b9eaf025d23a763add99b4689bd7ca931dbe28b78855513e37bbef672d",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE011.margin.stb": "8960f72a7b5bf98feb9603b583a275b60a0703bf7aede4d56f8eb7ac900b4f21",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE011.stb": "07636a01259995b8425e4343d188201e6c4f06dad603fb7d68ae78e412d25e1f",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE100.margin.stb": "54ccbc6c97513132c0761869ff87660f81fe184c9dbfc58c45f87df28197fa6c",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE100.stb": "823a16ffabbb5944591b5faf8367acbd4af830384bda483bb9732a4416377404",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE101.margin.stb": "68906e705429b66c2e3c9896f7b4d033efbf4731fbc9ed26155bf72c31029bc7",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE101.stb": "ae6f9f6069616de20325fb2f3115c9d115cd542bb41f7777554d5e4a26a2a45d",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE110.margin.stb": "99442c1f5d19c9b72a76a8b21a25666c90307ee2466284573dbc1a26dc17cde4",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE110.stb": "e59e61aca8fa101c4e1f6670e553e3ef312afafd9b80e037d95766bc12274b8e",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE111.margin.stb": "581d2c27bd37cc8418d5426d7eee56ebc8ddc1e25601e98de633dd00a193450e",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localE111.stb": "892c1506e4f426c593cc7c7e088774e3bbba097482b10eb00b588870808f82b3",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL00.margin.stb": "1e8b6c6042dc59e5d7ddd071b26d3f366aabef3f46390b74efe0b249eb450571",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL00.stb": "0f7c83ee50d4492b6fae79fd3f2bf8331125fad241b8fbf99b4da080536a3d0c",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL01.margin.stb": "4006d3df9df70b70c02018f90b30cfc96104c1b688c8ecad5d1401b076e58563",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL01.stb": "4edb1f042e9710c06f36acdab6f19bece019c5988a37dd29b1d16980ed7d763f",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL02.margin.stb": "cc878c4905602681505043c267c54f4da3234972be3d18412a8fe755d67d44fb",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL02.stb": "26ef6714f658311c4539f53868a1e7ed7ad292ad8ff27482cb997278716fed42",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL10.margin.stb": "b17809ebec2dae7d1ca78b9f019ab7e0f95e23541fa208de458612bf9b958b9b",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL10.stb": "586a9971ede4c4d0acd8ae6728eb4f9ec7082184617b6f71c136b81ddec7c0d2",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL11.margin.stb": "68503936c3aab4f4f1fc6aceb1ab799302a5b60a133a1964239d8c987fb15aae",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL11.stb": "4e59a98b0c73a73c1414d553f600f46997717c443cf5b996da0a42b85ec9e99f",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL12.margin.stb": "f0337ca04ab339dc6eff3b3adb17ccf7715a38e18d6a8ac2600b98a705c9ac53",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL12.stb": "e79fc37116abff79a492edbaae423efe938098772125924217ed9b03098d9853",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL20.margin.stb": "1a12c9d468dc361c245d1496a2093245032460bd5e9d53b61886f2838004d423",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL20.stb": "e7e52c21feb2563957b378f130fd93474c21cdb8a59fe918936d8d5e3041e87b",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL21.margin.stb": "5aecacd3ecbda156064e82b96e635ea70151652999f53268486a0fbf53d763b9",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL21.stb": "f762508f6a68ebb382f4beec1ee20d0c55c33884d370eb7bf24954faf6cdf688",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL22.margin.stb": "e1528a539b2f17f179e807abb6af47bdc85c81123ff0e2f6ec2ccc582a30f512",
+        "runs/07/20260922T102730830668Z_local_fvf/output/bench.raw/localL22.stb": "55e290b466c5db3ba87eb20c36725a261477d5f7006b2bf1627cdb08247aa339"
+      }
+    }
+  ],
+  "main_loop_crossing_check": [
+    {
+      "tag": "L00",
+      "post_cross_max_dB": -0.06601323423494979
+    },
+    {
+      "tag": "L01",
+      "post_cross_max_dB": -0.03299199767004814
+    },
+    {
+      "tag": "L02",
+      "post_cross_max_dB": -0.010967168917890282
+    },
+    {
+      "tag": "L10",
+      "post_cross_max_dB": -0.2025710365367604
+    },
+    {
+      "tag": "L11",
+      "post_cross_max_dB": -0.0259308935700052
+    },
+    {
+      "tag": "L12",
+      "post_cross_max_dB": -0.09788335305322622
+    },
+    {
+      "tag": "L20",
+      "post_cross_max_dB": -0.078590872409883
+    },
+    {
+      "tag": "L21",
+      "post_cross_max_dB": -0.1305752184215844
+    },
+    {
+      "tag": "L22",
+      "post_cross_max_dB": -0.12902125511717744
+    },
+    {
+      "tag": "E000",
+      "post_cross_max_dB": -0.08455905693715543
+    },
+    {
+      "tag": "E001",
+      "post_cross_max_dB": -0.12082743308799702
+    },
+    {
+      "tag": "E010",
+      "post_cross_max_dB": -0.07910989442029845
+    },
+    {
+      "tag": "E011",
+      "post_cross_max_dB": -0.10009525515484158
+    },
+    {
+      "tag": "E100",
+      "post_cross_max_dB": -0.13535383524637634
+    },
+    {
+      "tag": "E101",
+      "post_cross_max_dB": -0.07374077069917032
+    },
+    {
+      "tag": "E110",
+      "post_cross_max_dB": -0.12918109304613515
+    },
+    {
+      "tag": "E111",
+      "post_cross_max_dB": -0.12402320523626531
+    }
+  ],
+  "local_FVF_pass": true,
+  "source_extraction": "Frozen analyze() used for voltage-injection loop, PSRR, dropout, noise and all three transient groups. DC from saved scalar PSF.",
+  "scope": "SMIC18 TT27 only; full 9 supply/load, 17 loop/output-network, 9 PSRR, 30mA dropout, noise, startup, load and line steps; supplementary true-loop STB. Other process/temperature/mismatch and SS125 output-network transients excluded.",
+  "review_pdf_sha256": "74e5a4f518a6e1eb7279a853fba83d2dc2bdc182a11b576865833d0e95617fa0",
+  "review_pdf_pages": 7,
+  "all_pages_visually_reviewed": true,
+  "knowledge_sha256": "8c52d1e5b71cc15271f354e6259c92d6c2c1e6d84c91661cffadd9c272a70c72",
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:27:35.815313+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "76e466a10c5e9913522f67b64a5f1ee7498ad43eea2858a7405edc00c12c4bee",
+    "results_sha256": "b221b57e8a908b4bb420e3c3950f631d69fc0955680b27824488db223193ac08",
+    "previous_pdf_sha256": "74e5a4f518a6e1eb7279a853fba83d2dc2bdc182a11b576865833d0e95617fa0",
+    "current_pdf_sha256": "3d6bf9abde26791479c92198d0a9177432f945bdee310ae8271fd41274241c94",
+    "schematic_audit_sha256": "e38aa3253dfc7cd87d31a9f51696a6ac6b1de18b8453b82bfa0390e5864d865c",
+    "report_pages": 9,
+    "all_merged_pages_pixel_identical_to_sources": true
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-09-22T09:03:13.867768+00:00",
+  "case_slot": 23,
+  "status": "passed",
+  "result_sha256": "2b2197317aeb0dbd6e14af7caae8238725aa60fa91c78732cffb9f4d7018aa14",
+  "circuit_sha256": "e8388c72d139da2b34832dc179379e63bfa19e1f59e8c9e2cd45f85e566f75af",
+  "pdf_sha256": "b468767db3a1778dbaa3854f6d98d64dd6f61171d40f430fc1fa02d04cc979b4",
+  "pdf_pages": 9,
+  "pdf_intro_before_verdict": true,
+  "all_final_pages_visually_reviewed": true,
+  "full_nominal_coverage": {
+    "ramp_codes": 32,
+    "positive_steps": 31,
+    "input_bit_samples": 160,
+    "major_carry_directions": 6,
+    "output_resistance_codes": 6,
+    "numerical_metrics": 9
+  },
+  "nominal_scope_exclusions": [
+    "other10 representative PVT points",
+    "8 fixed-seed local-mismatch regressions",
+    "Monte Carlo yield",
+    "PEX and layout matching"
+  ],
+  "source_hashes_match": true,
+  "HD_sizes_original": true,
+  "runs": [
+    {
+      "path": "runs/23/20260922T085255104320Z_code_ramp_refined",
+      "raw": "runs/23/20260922T085255104320Z_code_ramp_refined/output/bench.raw/tran.tran.tran",
+      "raw_bytes": 73362948,
+      "hashes_match": true,
+      "model_dimensions_valid": true,
+      "include_closure_complete": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XDAC.XINV3.MMN1:int_s.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XDAC.MSN4:int_s."
+      ]
+    },
+    {
+      "path": "runs/23/20260922T085306554939Z_major_carry_refined",
+      "raw": "runs/23/20260922T085306554939Z_major_carry_refined/output/bench.raw/tran.tran.tran",
+      "raw_bytes": 65386628,
+      "hashes_match": true,
+      "model_dimensions_valid": true,
+      "include_closure_complete": true,
+      "warnings": []
+    },
+    {
+      "path": "runs/23/20260922T085318058247Z_output_resistance_refined",
+      "raw": "runs/23/20260922T085318058247Z_output_resistance_refined/output/bench.raw/tran.tran.tran",
+      "raw_bytes": 29603543,
+      "hashes_match": true,
+      "model_dimensions_valid": true,
+      "include_closure_complete": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XDAC.XINV3.MMN1:int_s."
+      ]
+    }
+  ],
+  "knowledge_path": "cases/23-resistor-dac/knowledge.md",
+  "knowledge_sha256": "b23a99ed860fcb6b388157f32a0b07faebb926146806de51dcae2229569551b8",
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:22:21.559388+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "e8388c72d139da2b34832dc179379e63bfa19e1f59e8c9e2cd45f85e566f75af",
+    "results_sha256": "2b2197317aeb0dbd6e14af7caae8238725aa60fa91c78732cffb9f4d7018aa14",
+    "previous_pdf_sha256": "e185591e63f6e68426373d16804ce884237ab22136b41ff366ce8881ff242197",
+    "current_pdf_sha256": "b468767db3a1778dbaa3854f6d98d64dd6f61171d40f430fc1fa02d04cc979b4",
+    "schematic_audit_sha256": "ecfda9aa3ef32e6f6bc9a165fe47b080319dab77cb40d57ccfbf40d3cfb2e989",
+    "report_pages": 9,
+    "all_merged_pages_pixel_identical_to_sources": true,
+    "historical_pdf_fields": {
+      "pdf_sha256": "e185591e63f6e68426373d16804ce884237ab22136b41ff366ce8881ff242197",
+      "pdf_pages": 6
+    }
+  }
+}

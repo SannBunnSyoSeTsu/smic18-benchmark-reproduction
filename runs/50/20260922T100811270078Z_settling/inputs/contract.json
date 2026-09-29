@@ -1,0 +1,156 @@
+{
+  "source_task": "sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt",
+  "source_files": {
+    "instruction.md": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt/instruction.md",
+      "sha256": "de00f61f4be627b331a362ea326c319e9e8e78eb287e421939e0632db65e0052",
+      "frozen": "cases/50-gainboosted-folded/source/instruction.md"
+    },
+    "solution/circuit.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt/solution/circuit.spi",
+      "sha256": "1d65d90abc51e1f7c4fa130eb1d1cbb8ac294a1f8f8ba7d50fb8e47dbe6100de",
+      "frozen": "cases/50-gainboosted-folded/source/solution/circuit.spi"
+    },
+    "tests/verify.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt/tests/verify.py",
+      "sha256": "6c74f3c29d2b28aab0db159ae66f36f6175822851b52bd1a33058637bdb117ff",
+      "frozen": "cases/50-gainboosted-folded/source/tests/verify.py"
+    },
+    "tests/utils.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt/tests/utils.py",
+      "sha256": "8f9909aa283429e11d3d5b55b33d5e55d5c54f4bad33aaa599f1c8a35a99e299",
+      "frozen": "cases/50-gainboosted-folded/source/tests/utils.py"
+    },
+    "tests/reviewer_local_loops.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt/tests/reviewer_local_loops.py",
+      "sha256": "aa22f4ffe209ba57faa5fc29c97ba29210b78abc364c80c18c562eff40e08a61",
+      "frozen": "cases/50-gainboosted-folded/source/tests/reviewer_local_loops.py"
+    },
+    "tests/benches/tb_op_ac.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt/tests/benches/tb_op_ac.spi",
+      "sha256": "8ffa0126e47f53046068203026be2468050ef76816601f235b356188c896c37e",
+      "frozen": "cases/50-gainboosted-folded/source/tests/benches/tb_op_ac.spi"
+    },
+    "tests/benches/tb_noise.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt/tests/benches/tb_noise.spi",
+      "sha256": "80c57b492f575ed751542ce115876192d610b8510465578e94d476ae5dcf7b24",
+      "frozen": "cases/50-gainboosted-folded/source/tests/benches/tb_noise.spi"
+    },
+    "tests/benches/tb_closed_loop_range.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt/tests/benches/tb_closed_loop_range.spi",
+      "sha256": "293949b3cccded35ff0a77d699356701177a50dfcad9e0bd9a25d1f14f7a4d0d",
+      "frozen": "cases/50-gainboosted-folded/source/tests/benches/tb_closed_loop_range.spi"
+    },
+    "tests/benches/tb_settling.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt/tests/benches/tb_settling.spi",
+      "sha256": "5b15ce347fd0c820484d7b603c596e649a9bef7c38dbb3dc2a10b5064d8e315a",
+      "frozen": "cases/50-gainboosted-folded/source/tests/benches/tb_settling.spi"
+    },
+    "tests/reviewer_benches/tb_gpc.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt/tests/reviewer_benches/tb_gpc.spi",
+      "sha256": "1313c3418037b892b546263d19ef5fdd3b0dfa9966d168db6cc6dfb70161b01c",
+      "frozen": "cases/50-gainboosted-folded/source/tests/reviewer_benches/tb_gpc.spi"
+    },
+    "tests/reviewer_benches/tb_gnc.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-folded-cascode-ota-gain130-pm60-noise50uv-pvt/tests/reviewer_benches/tb_gnc.spi",
+      "sha256": "9826ed9bfe0105f084ec5d583e42b9ec1840248f98bf2720bc994ec2dfce944f",
+      "frozen": "cases/50-gainboosted-folded/source/tests/reviewer_benches/tb_gnc.spi"
+    }
+  },
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 5e-05,
+  "VCM_V": 0.9,
+  "load_F": 1e-12,
+  "ac": {
+    "frequency_Hz": [
+      10,
+      100000000000.0
+    ],
+    "points_per_decade": 100,
+    "return_ratio": "-Vout/Vinn with series AC1 at Vout->Vinn",
+    "gain_10Hz_min_dB": 130,
+    "ugb_min_Hz": 200000000.0,
+    "phase_margin_min_deg": 60,
+    "falling_crossings": 1,
+    "no_later_recross": true,
+    "output_error_max_V": 0.0008,
+    "power_W": [
+      0,
+      0.0054
+    ]
+  },
+  "noise": {
+    "connection": "unity feedback, VIN input referred",
+    "frequency_Hz": [
+      10,
+      10000000.0
+    ],
+    "max_Vrms": 5e-05
+  },
+  "range": {
+    "command_V": [
+      0.3,
+      1.5
+    ],
+    "step_V": 0.01,
+    "points": 121,
+    "fixed_eligibility_error_V": 0.02,
+    "min_contiguous_span_V": 0.92,
+    "boundary_interpolation": "only adjacent qualified/unqualified samples"
+  },
+  "settling": {
+    "command_V": [
+      0.85,
+      0.95,
+      0.85
+    ],
+    "rise_edge_s": [
+      2e-08,
+      2.1e-08
+    ],
+    "fall_edge_s": [
+      1.21e-07,
+      1.22e-07
+    ],
+    "reference_s": [
+      2.05e-08,
+      1.215e-07
+    ],
+    "window_end_s": [
+      1.195e-07,
+      2.4e-07
+    ],
+    "final_mean_window_s": [
+      [
+        1.145e-07,
+        1.195e-07
+      ],
+      [
+        2.35e-07,
+        2.4e-07
+      ]
+    ],
+    "fixed_band_V": 0.0007,
+    "last_entry": "first sample after which all remaining samples in that direction window satisfy fixed band",
+    "each_time_max_s": 1e-08,
+    "each_static_max_V": 0.0007,
+    "static_error_fraction_max": 0.007,
+    "step_V": 0.1
+  },
+  "local_loop_diagnostic": {
+    "scope": "both cascode-gate boosters, main unity feedback intact",
+    "min_PM_deg": 45,
+    "strictly_diagnostic": true
+  },
+  "nominal_only": true,
+  "excluded": [
+    "other26 OP/AC and noise PVT points",
+    "two nonnominal range points",
+    "two nonnominal settling points",
+    "mismatch/MC/CMRR/PSRR not in original task",
+    "layout parasitics/passive variation"
+  ],
+  "relaxation": "Project acceptance-policy; preserve full stimulus, loads, frequency/observation windows, last-entry predicate, fixed range/settling error windows and exactlyone falling crossing. Positive min*0.9/0.85,max*1.1/1.15; amplitude dB20log10(.9/.85); PM>=45deg."
+}

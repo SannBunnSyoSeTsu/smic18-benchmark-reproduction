@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-09-22T09:34:43.957372+00:00",
+  "same_circuit_sha256": "aa9c00f53d8d04c120509fbc370d6ba92027551f5456a404845071ffbf3ff2ec",
+  "coarse_run_dirs": [
+    "runs/31/20260922T091928285300Z_acquisition_hold",
+    "runs/31/20260922T091936641961Z_fft"
+  ],
+  "fine_run_dirs": [
+    "runs/31/20260922T093029941807Z_acquisition_hold",
+    "runs/31/20260922T093040811547Z_fft"
+  ],
+  "coarse_maxstep_ps": 5,
+  "fine_maxstep_ps": 2.5,
+  "reltol": 2e-06,
+  "iabstol_A": 1e-12,
+  "vabstol_V": 1e-09,
+  "coarse_values": {
+    "positive_acquisition_error_V": 0.0038634003116458926,
+    "negative_acquisition_error_V": 0.003863400311647891,
+    "hold_positive_capture_error_V": 0.0038571575894860155,
+    "hold_isolation_shift_V": 2.208329886732585e-07,
+    "negative_reacquisition_error_V": 0.0038372810887535858,
+    "sfdr_db": 105.9342106668435,
+    "gain_error": 0.004828136076389544,
+    "stored_common_mode_error_v": 0.01840264268245928,
+    "vdd_source_power_w": 0.00024318465787521133,
+    "vcm_source_power_w": 2.1305227824966022e-05,
+    "vinp_source_power_w": 1.907393391400826e-05,
+    "vinn_source_power_w": 1.9073934687610403e-05,
+    "clock_source_power_w": 8.155018259949316e-07,
+    "total_source_power_w": 0.0003034532561277909,
+    "max_gate_terminal_voltage_V": 1.941092605145748,
+    "max_drain_source_voltage_V": 1.9424337737962845
+  },
+  "fine_values": {
+    "positive_acquisition_error_V": 0.0038634016033085583,
+    "negative_acquisition_error_V": 0.00386340160330767,
+    "hold_positive_capture_error_V": 0.003857157671505629,
+    "hold_isolation_shift_V": 2.215413849038228e-07,
+    "negative_reacquisition_error_V": 0.003837278361567331,
+    "sfdr_db": 105.93358153522419,
+    "gain_error": 0.004828136309482534,
+    "stored_common_mode_error_v": 0.018402642430876026,
+    "vdd_source_power_w": 0.0002431854695086372,
+    "vcm_source_power_w": 2.130528531238945e-05,
+    "vinp_source_power_w": 1.907397519575521e-05,
+    "vinn_source_power_w": 1.9073974314535002e-05,
+    "clock_source_power_w": 8.155010634928503e-07,
+    "total_source_power_w": 0.0003034542053948097,
+    "max_gate_terminal_voltage_V": 1.9410922698004498,
+    "max_drain_source_voltage_V": 1.9424425520090711
+  },
+  "absolute_changes": {
+    "positive_acquisition_error_V": 1.2916626657144548e-09,
+    "negative_acquisition_error_V": 1.2916597791345907e-09,
+    "hold_positive_capture_error_V": 8.20196133233253e-11,
+    "hold_isolation_shift_V": 7.083962305642899e-10,
+    "negative_reacquisition_error_V": 2.727186254602998e-09,
+    "sfdr_db": 0.0006291316193056673,
+    "gain_error": 2.3309298935458855e-10,
+    "stored_common_mode_error_v": 2.5158325422935945e-10,
+    "vdd_source_power_w": 8.116334258595915e-10,
+    "vcm_source_power_w": 5.748742342822819e-11,
+    "vinp_source_power_w": 4.1281746948520614e-11,
+    "vinn_source_power_w": 3.9626924598678073e-11,
+    "clock_source_power_w": 7.62502081331877e-13,
+    "total_source_power_w": 9.492670188316135e-10,
+    "max_gate_terminal_voltage_V": 3.353452981968985e-07,
+    "max_drain_source_voltage_V": 8.778212786664241e-06
+  },
+  "both_original_pass": true,
+  "warning_note": "Both runs retain SPECTRE-16780 local LTE relaxation warnings; identical-circuit halved-step comparison confirms metric stability, not an absence of warnings."
+}

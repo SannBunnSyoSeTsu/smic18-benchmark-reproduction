@@ -1,0 +1,514 @@
+{
+  "case_slot": 37,
+  "generated_at": "2026-09-22T09:49:24.769697+00:00",
+  "status": "complete_original",
+  "values": {
+    "dc_gain_db": 119.5888703479915,
+    "ugb_hz": 451659.0602387342,
+    "phase_margin_deg": 75.62153378290475,
+    "drive_fom_khz_pf_per_uw": 370.77888125837455,
+    "output_common_mode_error_v": 0.0031553157235800766,
+    "power_w": 0.00024362717677223848,
+    "input_bias_vinp_a": 0.0,
+    "input_bias_vinn_a": 0.0,
+    "closed_loop_range_vpp": 1.068000000000001,
+    "settling_time_s": 2.3799999999999683e-06,
+    "settling_error_fraction": 0.006310631457035365,
+    "slew_rise_v_per_us": 0.3002453328310776,
+    "slew_fall_v_per_us": 0.2934531124085951
+  },
+  "gates": {
+    "dc_gain_db": {
+      "value": 119.5888703479915,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 110.0,
+        "10pct": 109.0848501887865,
+        "15pct": 108.58837851428585
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": ">="
+    },
+    "ugb_hz": {
+      "value": 451659.0602387342,
+      "unit": "Hz",
+      "sense": "min",
+      "limits": {
+        "original": 400000.0,
+        "10pct": 360000.0,
+        "15pct": 340000.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": ">="
+    },
+    "phase_margin_deg": {
+      "value": 75.62153378290475,
+      "unit": "deg",
+      "sense": "min",
+      "limits": {
+        "original": 70.0,
+        "10pct": 63.0,
+        "15pct": 59.5
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": ">="
+    },
+    "drive_fom_khz_pf_per_uw": {
+      "value": 370.77888125837455,
+      "unit": "kHz*pF/uW",
+      "sense": "min",
+      "limits": {
+        "original": 300.0,
+        "10pct": 270.0,
+        "15pct": 255.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": ">="
+    },
+    "output_common_mode_error_v": {
+      "value": 0.0031553157235800766,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.01,
+        "10pct": 0.011000000000000001,
+        "15pct": 0.0115
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": "<="
+    },
+    "power_w": {
+      "value": 0.00024362717677223848,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.0003,
+        "10pct": 0.00033,
+        "15pct": 0.00034499999999999993
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": "<"
+    },
+    "input_bias_vinp_a": {
+      "value": 0.0,
+      "unit": "A",
+      "sense": "max",
+      "limits": {
+        "original": 1e-07,
+        "10pct": 1.1e-07,
+        "15pct": 1.1499999999999998e-07
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": "<="
+    },
+    "input_bias_vinn_a": {
+      "value": 0.0,
+      "unit": "A",
+      "sense": "max",
+      "limits": {
+        "original": 1e-07,
+        "10pct": 1.1e-07,
+        "15pct": 1.1499999999999998e-07
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": "<="
+    },
+    "closed_loop_range_vpp": {
+      "value": 1.068000000000001,
+      "unit": "Vpp",
+      "sense": "min",
+      "limits": {
+        "original": 0.8,
+        "10pct": 0.7200000000000001,
+        "15pct": 0.68
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": ">="
+    },
+    "settling_time_s": {
+      "value": 2.3799999999999683e-06,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 3e-06,
+        "10pct": 3.3e-06,
+        "15pct": 3.45e-06
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": "<"
+    },
+    "settling_error_fraction": {
+      "value": 0.006310631457035365,
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.02,
+        "10pct": 0.022000000000000002,
+        "15pct": 0.023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": "<="
+    },
+    "slew_rise_v_per_us": {
+      "value": 0.3002453328310776,
+      "unit": "V/us",
+      "sense": "min",
+      "limits": {
+        "original": 0.2,
+        "10pct": 0.18000000000000002,
+        "15pct": 0.17
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": ">="
+    },
+    "slew_fall_v_per_us": {
+      "value": 0.2934531124085951,
+      "unit": "V/us",
+      "sense": "min",
+      "limits": {
+        "original": 0.2,
+        "10pct": 0.18000000000000002,
+        "15pct": 0.17
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      },
+      "comparison": ">="
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "operating_point": {
+    "MREF": {
+      "ids": 4.999999487686096e-06,
+      "gm": 7.078194604848807e-05,
+      "gds": 3.113300253866078e-07,
+      "vgs": 0.5123339635481207,
+      "vds": 0.5123339635481207,
+      "vdsat": 0.1204126846997107,
+      "region": 2.0,
+      "gmid": 14.156390660200767,
+      "gmro": 227.35342009043765,
+      "headroom_V": 0.39192127884841
+    },
+    "MTAIL": {
+      "ids": 2.370409655946652e-06,
+      "gm": 3.355836212133034e-05,
+      "gds": 2.213976977797093e-07,
+      "vgs": 0.5123339635481207,
+      "vds": 0.3454489648793293,
+      "vdsat": 0.1204115454472034,
+      "region": 2.0,
+      "gmid": 14.157199384141219,
+      "gmro": 151.57502746356877,
+      "headroom_V": 0.2250374194321259
+    },
+    "MBP1": {
+      "ids": 5.168899863792381e-06,
+      "gm": 7.26690437712319e-05,
+      "gds": 2.199837077668101e-07,
+      "vgs": 0.5123339635481207,
+      "vds": 1.195700064824358,
+      "vdsat": 0.1204175175719063,
+      "region": 2.0,
+      "gmid": 14.058899511726116,
+      "gmro": 330.3382987264832,
+      "headroom_V": 1.0752825472524519
+    },
+    "MPDM": {
+      "ids": -5.168935519888427e-06,
+      "gm": 5.058570553505143e-05,
+      "gds": 1.872108621201169e-07,
+      "vgs": -0.604299935175642,
+      "vds": -0.604299935175642,
+      "vdsat": -0.1774790958689928,
+      "region": 2.0,
+      "gmid": 9.786484149475971,
+      "gmro": 270.2071074412071,
+      "headroom_V": 0.42682083930664916
+    },
+    "MS2B": {
+      "ids": -5.283032422962806e-06,
+      "gm": 5.153048983310054e-05,
+      "gds": 1.600025805171333e-07,
+      "vgs": -0.604299935175642,
+      "vds": -1.283754754190245,
+      "vdsat": -0.1774790298739133,
+      "region": 2.0,
+      "gmid": 9.753960549082045,
+      "gmro": 322.06036719253154,
+      "headroom_V": 1.1062757243163317
+    },
+    "MVBN": {
+      "ids": 5.283033240100709e-06,
+      "gm": 7.334114011247975e-05,
+      "gds": 3.254088809085115e-07,
+      "vgs": 0.5162452458097551,
+      "vds": 0.5162452458097551,
+      "vdsat": 0.1230783830836911,
+      "region": 2.0,
+      "gmid": 13.88239232639802,
+      "gmro": 225.38149514456418,
+      "headroom_V": 0.39316686272606394
+    },
+    "MI1": {
+      "ids": 1.175332398173059e-06,
+      "gm": 2.120532790133016e-05,
+      "gds": 6.833202341584894e-08,
+      "vgs": 0.5513957193970906,
+      "vds": 0.8085467735949496,
+      "vdsat": 0.09074032886509559,
+      "region": 2.0,
+      "gmid": 18.041983641641973,
+      "gmro": 310.32782056343723,
+      "headroom_V": 0.717806444729854
+    },
+    "MI2": {
+      "ids": 1.195076529634147e-06,
+      "gm": 2.13416111176882e-05,
+      "gds": 1.509187577571979e-07,
+      "vgs": 0.5545510351206707,
+      "vds": 0.2651669084854067,
+      "vdsat": 0.09256445351135908,
+      "region": 2.0,
+      "gmid": 17.857945151195953,
+      "gmro": 141.41125619403223,
+      "headroom_V": 0.1726024549740476
+    },
+    "MP1A": {
+      "ids": -1.175332591345597e-06,
+      "gm": 9.430538376588366e-06,
+      "gds": 4.053046984809748e-08,
+      "vgs": -0.6460042615257211,
+      "vds": -0.6460042615257211,
+      "vdsat": -0.2086723573076881,
+      "region": 2.0,
+      "gmid": 8.023718942220153,
+      "gmro": 232.67774619768045,
+      "headroom_V": 0.43733190421803303
+    },
+    "MP1B": {
+      "ids": -1.195075604724965e-06,
+      "gm": 9.565009652640723e-06,
+      "gds": 3.429564151531694e-08,
+      "vgs": -0.6460042615257211,
+      "vds": -1.189384126635264,
+      "vdsat": -0.2086723988132192,
+      "region": 2.0,
+      "gmid": 8.003685804332033,
+      "gmro": 278.8986947034902,
+      "headroom_V": 0.9807117278220449
+    },
+    "MA2": {
+      "ids": 2.591062594889632e-06,
+      "gm": 1.897539672906051e-05,
+      "gds": 8.04104687377382e-08,
+      "vgs": 0.610615873364736,
+      "vds": 1.19569682558538,
+      "vdsat": 0.2240695587059723,
+      "region": 2.0,
+      "gmid": 7.323403443238228,
+      "gmro": 235.98167038360995,
+      "headroom_V": 0.9716272668794076
+    },
+    "MPD2": {
+      "ids": -2.591068520866572e-06,
+      "gm": 2.528000893514572e-05,
+      "gds": 9.400670471523262e-08,
+      "vgs": -0.6043031744146201,
+      "vds": -0.6043031744146201,
+      "vdsat": -0.1773705255492657,
+      "region": 2.0,
+      "gmid": 9.756596065121013,
+      "gmro": 268.9170842837703,
+      "headroom_V": 0.4269326488653544
+    },
+    "MPM2": {
+      "ids": -5.29212156394794e-06,
+      "gm": 5.146921009716211e-05,
+      "gds": 1.609226686318012e-07,
+      "vgs": -0.6043031744146201,
+      "vds": -1.255261169490794,
+      "vdsat": -0.1773705434573218,
+      "region": 2.0,
+      "gmid": 9.725628838118736,
+      "gmro": 319.8381591280104,
+      "headroom_V": 1.0778906260334722
+    },
+    "MS2": {
+      "ids": 5.292122302724677e-06,
+      "gm": 7.345482570198216e-05,
+      "gds": 3.13057276462036e-07,
+      "vgs": 0.5162452458097551,
+      "vds": 0.5447388305092065,
+      "vdsat": 0.1230785822539366,
+      "region": 2.0,
+      "gmid": 13.880031771783422,
+      "gmro": 234.6370176477592,
+      "headroom_V": 0.4216602482552699
+    },
+    "MA3": {
+      "ids": 0.0001096428453264837,
+      "gm": 0.001513176841780619,
+      "gds": 1.093694266555821e-05,
+      "vgs": 0.5447388305092065,
+      "vds": 0.89684468427642,
+      "vdsat": 0.1162705220769163,
+      "region": 2.0,
+      "gmid": 13.800962910756551,
+      "gmro": 138.35464700256688,
+      "headroom_V": 0.7805741621995037
+    },
+    "ML3": {
+      "ids": -0.0001096428587500699,
+      "gm": 0.001071689795387285,
+      "gds": 3.503744936794965e-06,
+      "vgs": -0.604299935175642,
+      "vds": -0.9031553157235801,
+      "vdsat": -0.1774790632329877,
+      "region": 2.0,
+      "gmid": 9.77436932605154,
+      "gmro": 305.86980922407224,
+      "headroom_V": 0.7256762524905924
+    }
+  },
+  "dc_nodes": {
+    "X.n2": 0.5447388305092065,
+    "X.nb": 1.19569682558538,
+    "X.n1": 0.610615873364736,
+    "X.na": 1.153995738474279,
+    "X.vbn": 0.5162452458097551,
+    "X.pdm": 1.195700064824358,
+    "X.tail": 0.3454489648793293,
+    "iref": 0.5123339635481207,
+    "vinp": 0.9,
+    "vinn": 0.89684468427642,
+    "vout": 0.89684468427642
+  },
+  "loop_diagnostic": {
+    "falling_crossings": 1,
+    "post_first_crossing_max_dB": -0.09048942794291366,
+    "gain_crosscheck_difference_dB": 0.0,
+    "ugb_relative_crosscheck_error": 8.881784197001252e-16,
+    "phase_crosscheck_difference_deg": 0.0
+  },
+  "measurement_detail": {
+    "range": {
+      "points": 801,
+      "valid_points": 535,
+      "largest_valid_command_V": [
+        0.1,
+        1.168000000000001
+      ],
+      "max_error_in_largest_interval_V": 0.019996611066074088,
+      "eligibility_band_V": 0.02
+    },
+    "settling": {
+      "points": 5001,
+      "sample_period_s": 9.999999999999904e-09,
+      "start_s": 0.0,
+      "end_s": 4.99999999999935e-05,
+      "final_input_V": 0.9,
+      "final_output_V": 0.8968446842714823,
+      "last_exit_bracket_from_edge_start_s": [
+        2.3699999999999684e-06,
+        2.3799999999999683e-06
+      ]
+    },
+    "slew": {
+      "points": 8201,
+      "sample_period_s": 9.999999999994822e-09,
+      "start_s": 0.0,
+      "end_s": 8.199999999998378e-05,
+      "final_input_V": 0.65,
+      "final_output_V": 0.6472068600311648
+    }
+  },
+  "source_nominal_functional": [
+    "nominal_functional",
+    true,
+    "gain=119.59dB UGB=0.452MHz PM=75.62deg settling=2.380us"
+  ],
+  "all_nominal_checks_complete": true,
+  "nonrelaxable_guards_pass": true,
+  "model_dimensions_valid": true,
+  "nominal_OP_all_16_saturation": true,
+  "run_dirs": [
+    "runs/37/20260922T094634948149Z_pvt",
+    "runs/37/20260922T094635113442Z_input_bias",
+    "runs/37/20260922T094635241732Z_swing",
+    "runs/37/20260922T094635425475Z_settling",
+    "runs/37/20260922T094635958990Z_slew"
+  ],
+  "runs_by_analysis": {
+    "pvt": "runs/37/20260922T094634948149Z_pvt",
+    "input_bias": "runs/37/20260922T094635113442Z_input_bias",
+    "swing": "runs/37/20260922T094635241732Z_swing",
+    "settling": "runs/37/20260922T094635425475Z_settling",
+    "slew": "runs/37/20260922T094635958990Z_slew"
+  },
+  "geometry_sha256": "30f47955ed2439bdb36eafa8de1111d898dbfc09e085f3e778a8cd7b1539944a",
+  "source_verifier_sha256": "24543cb440c44a24a50168336b97872aedd1f792af6f18ae6246e48c2709b124",
+  "measurement_engine": "Original frozen verifier extract_metrics receives translated PSF vectors for every group. Original45-point matrix check not invoked or spoofed. Independent AC crosscheck and nonnegative raw power check added.",
+  "scope": "SMIC18 tt1.8V27C; originalfive measurement groups and fixed200pF load. Other44 PVT points, mismatch, parasitics and passive variation excluded.",
+  "precision_limits": {
+    "ac": "100 points/decade, logarithmic interpolation at0dB; gain measured at0.1Hz. Independent extraction agrees to floating-point roundoff.",
+    "dc_range": "Full801 points,2mV command spacing. Largest fixed20mV-eligible interval0.100..1.168V; next1.170V fails. Low endpoint is the scan boundary, not a proven physical limit. Static valid range does not establish uniform bandwidth or slew across that interval.",
+    "transient": "10ns uniform output samples,5ns internal maximum timestep. Original verifier uses the first accepted sample after the last sampled excursion, not interpolated settling time. SR uses linear interpolation at0.75/1.05V thresholds.",
+    "input_current": "The independent open-loop input-bias bench gives0A for each MOS gate in this schematic model. Gate leakage/ESD/package effects are not established by this zero result."
+  }
+}

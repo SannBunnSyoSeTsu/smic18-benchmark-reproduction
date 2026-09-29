@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-09-23T06:18:42.394027+00:00",
+  "status": "passed",
+  "circuit_sha256": "383ec5c083dff63dfe2d4529615c33f22d541e3bf14d2c927e3655b98488c1a6",
+  "hd_cells_sha256": "00ae3e9a8b1b33dd6967fa92917e3938617761700999369373895b70d370bfc5",
+  "renderer_sha256": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+  "layout_file": "scripts/schematics_mixed.py",
+  "layout_sha256": "b29c004d5ad88c8fcef0913faa4cdf4a5ba34357c72ccf7b59d02b9618f68d47",
+  "instance_counts": {
+    "MOS": 9,
+    "HD": 5,
+    "C": 3
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 9,
+    "HD": 5,
+    "C": 3
+  },
+  "total_instances": 17,
+  "expanded_leaf_instances": 17,
+  "total_terminals": 72,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 1,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/14-oscillator/schematic/connectivity.json": "30896c02037a642c1993726f0d05d81152b430f889cb308b68fe324dec3e30d7",
+    "cases/14-oscillator/schematic/full.pdf": "e016009fe69967b4d2f5584fc4b50bcd232a9d599aaf8c6599af878f89f628dd",
+    "cases/14-oscillator/schematic/full.png": "1d017ece7d4dc222167426bcca757c32ade5f0b5a82895cbeec24f35256a53c9",
+    "cases/14-oscillator/schematic/full.svg": "ff39a864ee5eb24b782a1629b8d99ec60aa4735bd4290a10c1c76f5a188f8ce8",
+    "cases/14-oscillator/schematic/layout_source.py": "b29c004d5ad88c8fcef0913faa4cdf4a5ba34357c72ccf7b59d02b9618f68d47",
+    "cases/14-oscillator/schematic/renderer_source.py": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+    "cases/14-oscillator/schematic/sheet-1.png": "6e1876ec0226351b0a2720aa1a783aedc0b1706061328cd54504b57a446d6069",
+    "cases/14-oscillator/schematic/sheet-1.svg": "6af9f9d2d1bb2e64c559a940f60ec3459878d00a2f452966c4200d59e541a177",
+    "cases/14-oscillator/schematic/sheets.pdf": "6ceba35532fdd19d134bdc4c4f9029be1f0cd66e4297d5dc89df3c5bf49e36a0",
+    "cases/14-oscillator/schematic/symbol_source.py": "c65698950039c9fd48e1659d37f7fb5220517dd0dc1847b24f5b1761d0956898"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "final_source_freeze_at": "2026-09-23T06:18:42.394815+00:00",
+  "previous_visual_review": {
+    "reviewed_at": "2026-09-23T06:17:14.778717+00:00",
+    "note": "All split sheets and full overview actually viewed; connectivity, symbols, values, body ties and text readability reviewed.",
+    "reviewed_png_hashes": {
+      "cases/14-oscillator/schematic/full.png": "1d017ece7d4dc222167426bcca757c32ade5f0b5a82895cbeec24f35256a53c9",
+      "cases/14-oscillator/schematic/sheet-1.png": "6e1876ec0226351b0a2720aa1a783aedc0b1706061328cd54504b57a446d6069"
+    }
+  },
+  "rebuild_png_changes": [],
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-23T06:17:14.778717+00:00",
+  "visual_review_note": "All final sheet PNGs and full overview are byte-for-byte identical to the actually viewed artifacts; final renderer, symbols and layout sources were frozen beside the drawings."
+}

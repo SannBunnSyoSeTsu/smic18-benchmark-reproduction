@@ -1,0 +1,23 @@
+// Three gain stages, outer and inner Miller paths; source topology retained.
+// SMIC18 primitive D G S B; m scales identical parallel model units.
+simulator lang=spectre
+subckt three_stage_nmc_ota (vss iref vdd vinn vinp vout)
+MREF (iref iref vss vss) n18 w=2.34u l=1u
+MTAIL (tail iref vss vss) n18 w=2.34u l=1u m=0.48
+MBP1 (pdm iref vss vss) n18 w=2.34u l=1u
+MPDM (pdm pdm vdd vdd) p18 w=4.68u l=1u
+MS2B (vbn pdm vdd vdd) p18 w=4.68u l=1u
+MVBN (vbn vbn vss vss) n18 w=2.34u l=1u
+MI1 (na vinn tail vss) n18 w=1.24u l=1u
+MI2 (n1 vinp tail vss) n18 w=1.24u l=1u
+MP1A (na na vdd vdd) p18 w=0.72u l=1u
+MP1B (n1 na vdd vdd) p18 w=0.72u l=1u
+MA2 (nb n1 vss vss) n18 w=0.3u l=1u
+MPD2 (nb nb vdd vdd) p18 w=2.34u l=1u
+MPM2 (n2 nb vdd vdd) p18 w=2.34u l=1u m=2
+MS2 (n2 vbn vss vss) n18 w=2.34u l=1u m=1
+MA3 (vout n2 vss vss) n18 w=17.02u l=.36u
+ML3 (vout pdm vdd vdd) p18 w=4.68u l=1u m=21
+CM1 (vout n1) capacitor c=8p
+CM2 (vout n2) capacitor c=3p
+ends three_stage_nmc_ota

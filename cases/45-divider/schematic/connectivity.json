@@ -1,0 +1,1080 @@
+{
+  "generated_at": "2026-09-23T06:18:49.838756+00:00",
+  "circuit_sha256": "3225ed0ae81d4f67f378c1bab3cbff73b5e83f5c45ee7fb237eccd046f4ff846",
+  "top": "divide_by_2",
+  "subcircuit_ports": {
+    "divide_by_2": [
+      "clk",
+      "reset",
+      "vdd",
+      "vss",
+      "clkout"
+    ]
+  },
+  "instances": {
+    "divide_by_2/XR": {
+      "name": "XR",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "reset",
+        "ZN": "rdn",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XR (reset rdn vdd vss vdd vss) INHDV2",
+      "sheet": 1,
+      "origin": [
+        8,
+        17
+      ],
+      "rendered_pins": {
+        "I": [
+          5.3,
+          17.0
+        ],
+        "ZN": [
+          10.7,
+          17.0
+        ],
+        "VDD": [
+          7.2,
+          19.2
+        ],
+        "VNW": [
+          8.8,
+          19.2
+        ],
+        "VSS": [
+          7.2,
+          14.8
+        ],
+        "VPW": [
+          8.8,
+          14.8
+        ]
+      },
+      "block": "divide_by_2"
+    },
+    "divide_by_2/XFF": {
+      "name": "XFF",
+      "kind": "HD",
+      "model": "DRNQNHDV1",
+      "pins": {
+        "CK": "clk",
+        "D": "qn",
+        "QN": "qn",
+        "RDN": "rdn",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XFF (clk qn qn rdn vdd vss vdd vss) DRNQNHDV1",
+      "sheet": 1,
+      "origin": [
+        23,
+        11
+      ],
+      "rendered_pins": {
+        "CK": [
+          20.3,
+          12.0
+        ],
+        "D": [
+          20.3,
+          11.0
+        ],
+        "RDN": [
+          20.3,
+          10.0
+        ],
+        "QN": [
+          25.7,
+          11.0
+        ],
+        "VDD": [
+          22.2,
+          13.65
+        ],
+        "VNW": [
+          23.8,
+          13.65
+        ],
+        "VSS": [
+          22.2,
+          8.35
+        ],
+        "VPW": [
+          23.8,
+          8.35
+        ]
+      },
+      "block": "divide_by_2"
+    },
+    "divide_by_2/XOUT": {
+      "name": "XOUT",
+      "kind": "HD",
+      "model": "NOR2HDV16",
+      "pins": {
+        "A1": "qn",
+        "A2": "reset",
+        "ZN": "clkout",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XOUT (qn reset clkout vdd vss vdd vss) NOR2HDV16",
+      "sheet": 1,
+      "origin": [
+        37,
+        11
+      ],
+      "rendered_pins": {
+        "A1": [
+          34.3,
+          11.5
+        ],
+        "A2": [
+          34.3,
+          10.5
+        ],
+        "ZN": [
+          39.7,
+          11.0
+        ],
+        "VDD": [
+          36.2,
+          13.2
+        ],
+        "VNW": [
+          37.8,
+          13.2
+        ],
+        "VSS": [
+          36.2,
+          8.8
+        ],
+        "VPW": [
+          37.8,
+          8.8
+        ]
+      },
+      "block": "divide_by_2"
+    }
+  },
+  "expanded_leaf_instances": {
+    "XR": {
+      "name": "XR",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "reset",
+        "ZN": "rdn",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XR (reset rdn vdd vss vdd vss) INHDV2",
+      "definition": "divide_by_2/XR",
+      "path": "XR"
+    },
+    "XFF": {
+      "name": "XFF",
+      "kind": "HD",
+      "model": "DRNQNHDV1",
+      "pins": {
+        "CK": "clk",
+        "D": "qn",
+        "QN": "qn",
+        "RDN": "rdn",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XFF (clk qn qn rdn vdd vss vdd vss) DRNQNHDV1",
+      "definition": "divide_by_2/XFF",
+      "path": "XFF"
+    },
+    "XOUT": {
+      "name": "XOUT",
+      "kind": "HD",
+      "model": "NOR2HDV16",
+      "pins": {
+        "A1": "qn",
+        "A2": "reset",
+        "ZN": "clkout",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XOUT (qn reset clkout vdd vss vdd vss) NOR2HDV16",
+      "definition": "divide_by_2/XOUT",
+      "path": "XOUT"
+    }
+  },
+  "nets": {
+    "divide_by_2/reset": [
+      {
+        "instance": "divide_by_2/XR",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          5.3,
+          17.0
+        ]
+      },
+      {
+        "instance": "divide_by_2/XOUT",
+        "pin": "A2",
+        "sheet": 1,
+        "point": [
+          34.3,
+          10.5
+        ]
+      }
+    ],
+    "divide_by_2/rdn": [
+      {
+        "instance": "divide_by_2/XR",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          10.7,
+          17.0
+        ]
+      },
+      {
+        "instance": "divide_by_2/XFF",
+        "pin": "RDN",
+        "sheet": 1,
+        "point": [
+          20.3,
+          10.0
+        ]
+      }
+    ],
+    "divide_by_2/vdd": [
+      {
+        "instance": "divide_by_2/XR",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          7.2,
+          19.2
+        ]
+      },
+      {
+        "instance": "divide_by_2/XR",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          8.8,
+          19.2
+        ]
+      },
+      {
+        "instance": "divide_by_2/XFF",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          22.2,
+          13.65
+        ]
+      },
+      {
+        "instance": "divide_by_2/XFF",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          23.8,
+          13.65
+        ]
+      },
+      {
+        "instance": "divide_by_2/XOUT",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          36.2,
+          13.2
+        ]
+      },
+      {
+        "instance": "divide_by_2/XOUT",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          37.8,
+          13.2
+        ]
+      }
+    ],
+    "divide_by_2/vss": [
+      {
+        "instance": "divide_by_2/XR",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          7.2,
+          14.8
+        ]
+      },
+      {
+        "instance": "divide_by_2/XR",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          8.8,
+          14.8
+        ]
+      },
+      {
+        "instance": "divide_by_2/XFF",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          22.2,
+          8.35
+        ]
+      },
+      {
+        "instance": "divide_by_2/XFF",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          23.8,
+          8.35
+        ]
+      },
+      {
+        "instance": "divide_by_2/XOUT",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          36.2,
+          8.8
+        ]
+      },
+      {
+        "instance": "divide_by_2/XOUT",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          37.8,
+          8.8
+        ]
+      }
+    ],
+    "divide_by_2/clk": [
+      {
+        "instance": "divide_by_2/XFF",
+        "pin": "CK",
+        "sheet": 1,
+        "point": [
+          20.3,
+          12.0
+        ]
+      }
+    ],
+    "divide_by_2/qn": [
+      {
+        "instance": "divide_by_2/XFF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          20.3,
+          11.0
+        ]
+      },
+      {
+        "instance": "divide_by_2/XFF",
+        "pin": "QN",
+        "sheet": 1,
+        "point": [
+          25.7,
+          11.0
+        ]
+      },
+      {
+        "instance": "divide_by_2/XOUT",
+        "pin": "A1",
+        "sheet": 1,
+        "point": [
+          34.3,
+          11.5
+        ]
+      }
+    ],
+    "divide_by_2/clkout": [
+      {
+        "instance": "divide_by_2/XOUT",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          39.7,
+          11.0
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "XR",
+      "pin": "ZN",
+      "net": "rdn",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFF",
+      "pin": "RDN",
+      "net": "rdn",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XR",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XR",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFF",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFF",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XOUT",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XOUT",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XR",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XR",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFF",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFF",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XOUT",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XOUT",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFF",
+      "pin": "D",
+      "net": "qn",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFF",
+      "pin": "QN",
+      "net": "qn",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XOUT",
+      "pin": "A1",
+      "net": "qn",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XR",
+      "pin": "I",
+      "net": "reset",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XOUT",
+      "pin": "A2",
+      "net": "reset",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XOUT",
+      "pin": "ZN",
+      "net": "clkout",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFF",
+      "pin": "CK",
+      "net": "clk",
+      "path_to_named_net": true,
+      "block": "divide_by_2"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "divide_by_2",
+      "title": "原厂 HD 二分频与异步复位",
+      "wires": [
+        {
+          "net": "rdn",
+          "points": [
+            [
+              10.7,
+              17.0
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              16,
+              10
+            ],
+            [
+              20.3,
+              10.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "qn",
+          "points": [
+            [
+              25.7,
+              11.0
+            ],
+            [
+              28,
+              11
+            ],
+            [
+              28,
+              19
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              18,
+              11
+            ],
+            [
+              20.3,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "qn",
+          "points": [
+            [
+              28,
+              11
+            ],
+            [
+              31,
+              11
+            ],
+            [
+              31,
+              11.5
+            ],
+            [
+              34.3,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "reset",
+          "points": [
+            [
+              5.3,
+              17.0
+            ],
+            [
+              4.7,
+              17.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              7.2,
+              19.2
+            ],
+            [
+              7.2,
+              19.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8.8,
+              19.2
+            ],
+            [
+              8.8,
+              19.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7.2,
+              14.8
+            ],
+            [
+              7.2,
+              14.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8.8,
+              14.8
+            ],
+            [
+              8.8,
+              14.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "clk",
+          "points": [
+            [
+              20.3,
+              12.0
+            ],
+            [
+              19.7,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22.2,
+              13.65
+            ],
+            [
+              22.2,
+              14.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              23.8,
+              13.65
+            ],
+            [
+              23.8,
+              14.15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22.2,
+              8.35
+            ],
+            [
+              22.2,
+              7.85
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23.8,
+              8.35
+            ],
+            [
+              23.8,
+              7.85
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "reset",
+          "points": [
+            [
+              34.3,
+              10.5
+            ],
+            [
+              33.699999999999996,
+              10.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "clkout",
+          "points": [
+            [
+              39.7,
+              11.0
+            ],
+            [
+              40.300000000000004,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              36.2,
+              13.2
+            ],
+            [
+              36.2,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.8,
+              13.2
+            ],
+            [
+              37.8,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.2,
+              8.8
+            ],
+            [
+              36.2,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.8,
+              8.8
+            ],
+            [
+              37.8,
+              8.3
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "rdn",
+          "point": [
+            16,
+            15
+          ],
+          "text": "rdn",
+          "body": false
+        },
+        {
+          "net": "qn",
+          "point": [
+            23,
+            19
+          ],
+          "text": "qn",
+          "body": false
+        },
+        {
+          "net": "reset",
+          "point": [
+            4.7,
+            17.0
+          ],
+          "text": "reset",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            7.2,
+            19.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            8.8,
+            19.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            7.2,
+            14.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            8.8,
+            14.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "clk",
+          "point": [
+            19.7,
+            12.0
+          ],
+          "text": "clk",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            22.2,
+            14.15
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            23.8,
+            14.15
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            22.2,
+            7.85
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            23.8,
+            7.85
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "reset",
+          "point": [
+            33.699999999999996,
+            10.5
+          ],
+          "text": "reset",
+          "body": false
+        },
+        {
+          "net": "clkout",
+          "point": [
+            40.300000000000004,
+            11.0
+          ],
+          "text": "clkout",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            36.2,
+            13.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.8,
+            13.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            36.2,
+            8.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.8,
+            8.3
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "divide_by_2": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

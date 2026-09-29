@@ -1,0 +1,6545 @@
+{
+  "generated_at": "2026-09-23T06:18:48.108723+00:00",
+  "circuit_sha256": "aa9c00f53d8d04c120509fbc370d6ba92027551f5456a404845071ffbf3ff2ec",
+  "top": "bottom_plate_sampler",
+  "subcircuit_ports": {
+    "boot_drv": [
+      "VIN",
+      "CLK",
+      "VDD",
+      "VSS",
+      "VG"
+    ],
+    "bottom_plate_sampler": [
+      "vinp",
+      "vinn",
+      "clk",
+      "vcm",
+      "vdd",
+      "vss",
+      "vsp",
+      "vsn",
+      "vtopp",
+      "vtopn"
+    ]
+  },
+  "instances": {
+    "boot_drv/XCLKN": {
+      "name": "XCLKN",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "CLK",
+        "ZN": "CLKN",
+        "VDD": "VDD",
+        "VSS": "VSS",
+        "VNW": "VDD",
+        "VPW": "VSS"
+      },
+      "parameters": {},
+      "source_line": "XCLKN (CLK CLKN VDD VSS VDD VSS) INHDV4",
+      "sheet": 2,
+      "origin": [
+        5,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          2.3,
+          19.0
+        ],
+        "ZN": [
+          7.7,
+          19.0
+        ],
+        "VDD": [
+          4.2,
+          21.2
+        ],
+        "VNW": [
+          5.8,
+          21.2
+        ],
+        "VSS": [
+          4.2,
+          16.8
+        ],
+        "VPW": [
+          5.8,
+          16.8
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "boot_drv/XCLKP": {
+      "name": "XCLKP",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "CLKN",
+        "ZN": "CLKP",
+        "VDD": "VDD",
+        "VSS": "VSS",
+        "VNW": "VDD",
+        "VPW": "VSS"
+      },
+      "parameters": {},
+      "source_line": "XCLKP (CLKN CLKP VDD VSS VDD VSS) INHDV4",
+      "sheet": 2,
+      "origin": [
+        5,
+        11
+      ],
+      "rendered_pins": {
+        "I": [
+          2.3,
+          11.0
+        ],
+        "ZN": [
+          7.7,
+          11.0
+        ],
+        "VDD": [
+          4.2,
+          13.2
+        ],
+        "VNW": [
+          5.8,
+          13.2
+        ],
+        "VSS": [
+          4.2,
+          8.8
+        ],
+        "VPW": [
+          5.8,
+          8.8
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "boot_drv/MPRE": {
+      "name": "MPRE",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VDD",
+        "G": "CLK",
+        "S": "PRE",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRE (VDD CLK PRE VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        13,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          13,
+          6
+        ],
+        "S": [
+          13,
+          4
+        ],
+        "G": [
+          11.45,
+          5
+        ],
+        "B": [
+          13.86,
+          5
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "boot_drv/MDCHG": {
+      "name": "MDCHG",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "CBB",
+        "G": "CLKN",
+        "S": "VSS",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u"
+      },
+      "source_line": "MDCHG (CBB CLKN VSS VSS) n18 w=2.54u l=.18u",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        5,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          5
+        ],
+        "S": [
+          5,
+          3
+        ],
+        "G": [
+          3.45,
+          4
+        ],
+        "B": [
+          5.86,
+          4
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "boot_drv/MPCHG": {
+      "name": "MPCHG",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "CG",
+        "G": "CLKP",
+        "S": "VDD",
+        "B": "VDD"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MPCHG (CG CLKP VDD VDD) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        13,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          13,
+          16
+        ],
+        "S": [
+          13,
+          18
+        ],
+        "G": [
+          11.45,
+          17
+        ],
+        "B": [
+          13.86,
+          17
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "boot_drv/MGTRK": {
+      "name": "MGTRK",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "CG",
+        "G": "CLKP",
+        "S": "CBB",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MGTRK (CG CLKP CBB VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        13,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          13,
+          12
+        ],
+        "S": [
+          13,
+          10
+        ],
+        "G": [
+          11.45,
+          11
+        ],
+        "B": [
+          13.86,
+          11
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "boot_drv/MBPP": {
+      "name": "MBPP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VG",
+        "G": "CG",
+        "S": "CBT",
+        "B": "CBT"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MBPP (VG CG CBT CBT) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        27,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          16
+        ],
+        "S": [
+          27,
+          18
+        ],
+        "G": [
+          25.45,
+          17
+        ],
+        "B": [
+          27.86,
+          17
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "boot_drv/MLIM": {
+      "name": "MLIM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VDD",
+        "G": "VG",
+        "S": "CBT",
+        "B": "CBT"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MLIM (VDD VG CBT CBT) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        37,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          16
+        ],
+        "S": [
+          37,
+          18
+        ],
+        "G": [
+          35.45,
+          17
+        ],
+        "B": [
+          37.86,
+          17
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "boot_drv/MCASC": {
+      "name": "MCASC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VG",
+        "G": "VDD",
+        "S": "CLKP",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MCASC (VG VDD CLKP VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        27,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          12
+        ],
+        "S": [
+          27,
+          10
+        ],
+        "G": [
+          25.45,
+          11
+        ],
+        "B": [
+          27.86,
+          11
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "boot_drv/MPVIN": {
+      "name": "MPVIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "CBB",
+        "G": "VG",
+        "S": "VIN",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPVIN (CBB VG VIN VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        27,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          6
+        ],
+        "S": [
+          27,
+          4
+        ],
+        "G": [
+          25.45,
+          5
+        ],
+        "B": [
+          27.86,
+          5
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "boot_drv/MPRGUARD": {
+      "name": "MPRGUARD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VG",
+        "G": "VDD",
+        "S": "PRE",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRGUARD (VG VDD PRE VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        37,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          6
+        ],
+        "S": [
+          37,
+          4
+        ],
+        "G": [
+          35.45,
+          5
+        ],
+        "B": [
+          37.86,
+          5
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "boot_drv/CBOOT": {
+      "name": "CBOOT",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "CBT",
+        "2": "CBB"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBOOT (CBT CBB) capacitor c=1p",
+      "value_SI": 1e-12,
+      "sheet": 2,
+      "origin": [
+        19,
+        15
+      ],
+      "rendered_pins": {
+        "1": [
+          19,
+          15.82
+        ],
+        "2": [
+          19,
+          14.18
+        ]
+      },
+      "block": "boot_drv"
+    },
+    "bottom_plate_sampler/XCLK0": {
+      "name": "XCLK0",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "clk",
+        "ZN": "earlyb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLK0 (clk earlyb vdd vss vdd vss) INHDV4",
+      "sheet": 1,
+      "origin": [
+        5,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          2.3,
+          19.0
+        ],
+        "ZN": [
+          7.7,
+          19.0
+        ],
+        "VDD": [
+          4.2,
+          21.2
+        ],
+        "VNW": [
+          5.8,
+          21.2
+        ],
+        "VSS": [
+          4.2,
+          16.8
+        ],
+        "VPW": [
+          5.8,
+          16.8
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/XCLK1": {
+      "name": "XCLK1",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "earlyb",
+        "ZN": "early",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLK1 (earlyb early vdd vss vdd vss) INHDV4",
+      "sheet": 1,
+      "origin": [
+        15,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          12.3,
+          19.0
+        ],
+        "ZN": [
+          17.7,
+          19.0
+        ],
+        "VDD": [
+          14.2,
+          21.2
+        ],
+        "VNW": [
+          15.8,
+          21.2
+        ],
+        "VSS": [
+          14.2,
+          16.8
+        ],
+        "VPW": [
+          15.8,
+          16.8
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/XCLK2": {
+      "name": "XCLK2",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "early",
+        "ZN": "lateb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLK2 (early lateb vdd vss vdd vss) INHDV4",
+      "sheet": 1,
+      "origin": [
+        25,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          22.3,
+          19.0
+        ],
+        "ZN": [
+          27.7,
+          19.0
+        ],
+        "VDD": [
+          24.2,
+          21.2
+        ],
+        "VNW": [
+          25.8,
+          21.2
+        ],
+        "VSS": [
+          24.2,
+          16.8
+        ],
+        "VPW": [
+          25.8,
+          16.8
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/XCLK3": {
+      "name": "XCLK3",
+      "kind": "HD",
+      "model": "INHDV8",
+      "pins": {
+        "I": "lateb",
+        "ZN": "late",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLK3 (lateb late vdd vss vdd vss) INHDV8",
+      "sheet": 1,
+      "origin": [
+        35,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          32.3,
+          19.0
+        ],
+        "ZN": [
+          37.7,
+          19.0
+        ],
+        "VDD": [
+          34.2,
+          21.2
+        ],
+        "VNW": [
+          35.8,
+          21.2
+        ],
+        "VSS": [
+          34.2,
+          16.8
+        ],
+        "VPW": [
+          35.8,
+          16.8
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/CDELAY": {
+      "name": "CDELAY",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "lateb",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "20f"
+      },
+      "source_line": "CDELAY (lateb vss) capacitor c=20f",
+      "value_SI": 2.0000000000000003e-14,
+      "sheet": 1,
+      "origin": [
+        30,
+        15
+      ],
+      "rendered_pins": {
+        "1": [
+          30,
+          15.82
+        ],
+        "2": [
+          30,
+          14.18
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/XBP": {
+      "name": "XBP",
+      "kind": "SUBCKT",
+      "model": "boot_drv",
+      "pins": {
+        "VIN": "vinp",
+        "CLK": "late",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VG": "vgp"
+      },
+      "parameters": {},
+      "source_line": "XBP (vinp late vdd vss vgp) boot_drv",
+      "sheet": 1,
+      "origin": [
+        6,
+        11
+      ],
+      "rendered_pins": {
+        "VIN": [
+          3.3,
+          11.5
+        ],
+        "CLK": [
+          3.3,
+          10.5
+        ],
+        "VG": [
+          8.7,
+          11.0
+        ],
+        "VDD": [
+          5.2,
+          13.2
+        ],
+        "VSS": [
+          5.2,
+          8.8
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/XBN": {
+      "name": "XBN",
+      "kind": "SUBCKT",
+      "model": "boot_drv",
+      "pins": {
+        "VIN": "vinn",
+        "CLK": "late",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VG": "vgn"
+      },
+      "parameters": {},
+      "source_line": "XBN (vinn late vdd vss vgn) boot_drv",
+      "sheet": 1,
+      "origin": [
+        21,
+        11
+      ],
+      "rendered_pins": {
+        "VIN": [
+          18.3,
+          11.5
+        ],
+        "CLK": [
+          18.3,
+          10.5
+        ],
+        "VG": [
+          23.7,
+          11.0
+        ],
+        "VDD": [
+          20.2,
+          13.2
+        ],
+        "VSS": [
+          20.2,
+          8.8
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/XBC": {
+      "name": "XBC",
+      "kind": "SUBCKT",
+      "model": "boot_drv",
+      "pins": {
+        "VIN": "vcm",
+        "CLK": "early",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VG": "vgc"
+      },
+      "parameters": {},
+      "source_line": "XBC (vcm early vdd vss vgc) boot_drv",
+      "sheet": 1,
+      "origin": [
+        36,
+        11
+      ],
+      "rendered_pins": {
+        "VIN": [
+          33.3,
+          11.5
+        ],
+        "CLK": [
+          33.3,
+          10.5
+        ],
+        "VG": [
+          38.7,
+          11.0
+        ],
+        "VDD": [
+          35.2,
+          13.2
+        ],
+        "VSS": [
+          35.2,
+          8.8
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/MIP": {
+      "name": "MIP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vsp",
+        "G": "vgp",
+        "S": "vinp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "10.18u",
+        "l": ".18u"
+      },
+      "source_line": "MIP (vsp vgp vinp vss) n18 w=10.18u l=.18u",
+      "W_unit_um": 10.18,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        5,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          5
+        ],
+        "S": [
+          5,
+          3
+        ],
+        "G": [
+          3.45,
+          4
+        ],
+        "B": [
+          5.86,
+          4
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/MCP": {
+      "name": "MCP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vtopp",
+        "G": "vgc",
+        "S": "vcm",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": ".18u"
+      },
+      "source_line": "MCP (vtopp vgc vcm vss) n18 w=1.28u l=.18u",
+      "W_unit_um": 1.28,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        15,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          15,
+          5
+        ],
+        "S": [
+          15,
+          3
+        ],
+        "G": [
+          13.45,
+          4
+        ],
+        "B": [
+          15.86,
+          4
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/MIN": {
+      "name": "MIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vsn",
+        "G": "vgn",
+        "S": "vinn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "10.18u",
+        "l": ".18u"
+      },
+      "source_line": "MIN (vsn vgn vinn vss) n18 w=10.18u l=.18u",
+      "W_unit_um": 10.18,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        27,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          5
+        ],
+        "S": [
+          27,
+          3
+        ],
+        "G": [
+          25.45,
+          4
+        ],
+        "B": [
+          27.86,
+          4
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/MCN": {
+      "name": "MCN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vtopn",
+        "G": "vgc",
+        "S": "vcm",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": ".18u"
+      },
+      "source_line": "MCN (vtopn vgc vcm vss) n18 w=1.28u l=.18u",
+      "W_unit_um": 1.28,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        37,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          5
+        ],
+        "S": [
+          37,
+          3
+        ],
+        "G": [
+          35.45,
+          4
+        ],
+        "B": [
+          37.86,
+          4
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/MTS": {
+      "name": "MTS",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vtopp",
+        "G": "vgc",
+        "S": "vtopn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "15.28u",
+        "l": ".18u"
+      },
+      "source_line": "MTS (vtopp vgc vtopn vss) n18 w=15.28u l=.18u",
+      "W_unit_um": 15.28,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        22,
+        2.2
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          3.2
+        ],
+        "S": [
+          22,
+          1.2000000000000002
+        ],
+        "G": [
+          20.45,
+          2.2
+        ],
+        "B": [
+          22.86,
+          2.2
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/CP": {
+      "name": "CP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vsp",
+        "2": "vtopp"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CP (vsp vtopp) capacitor c=1p",
+      "value_SI": 1e-12,
+      "sheet": 1,
+      "origin": [
+        10,
+        6.4
+      ],
+      "rendered_pins": {
+        "1": [
+          9.18,
+          6.4
+        ],
+        "2": [
+          10.82,
+          6.4
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    },
+    "bottom_plate_sampler/CN": {
+      "name": "CN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vsn",
+        "2": "vtopn"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CN (vsn vtopn) capacitor c=1p",
+      "value_SI": 1e-12,
+      "sheet": 1,
+      "origin": [
+        32,
+        6.4
+      ],
+      "rendered_pins": {
+        "1": [
+          31.18,
+          6.4
+        ],
+        "2": [
+          32.82,
+          6.4
+        ]
+      },
+      "block": "bottom_plate_sampler"
+    }
+  },
+  "expanded_leaf_instances": {
+    "XCLK0": {
+      "name": "XCLK0",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "clk",
+        "ZN": "earlyb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLK0 (clk earlyb vdd vss vdd vss) INHDV4",
+      "definition": "bottom_plate_sampler/XCLK0",
+      "path": "XCLK0"
+    },
+    "XCLK1": {
+      "name": "XCLK1",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "earlyb",
+        "ZN": "early",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLK1 (earlyb early vdd vss vdd vss) INHDV4",
+      "definition": "bottom_plate_sampler/XCLK1",
+      "path": "XCLK1"
+    },
+    "XCLK2": {
+      "name": "XCLK2",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "early",
+        "ZN": "lateb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLK2 (early lateb vdd vss vdd vss) INHDV4",
+      "definition": "bottom_plate_sampler/XCLK2",
+      "path": "XCLK2"
+    },
+    "XCLK3": {
+      "name": "XCLK3",
+      "kind": "HD",
+      "model": "INHDV8",
+      "pins": {
+        "I": "lateb",
+        "ZN": "late",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLK3 (lateb late vdd vss vdd vss) INHDV8",
+      "definition": "bottom_plate_sampler/XCLK3",
+      "path": "XCLK3"
+    },
+    "CDELAY": {
+      "name": "CDELAY",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "lateb",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "20f"
+      },
+      "source_line": "CDELAY (lateb vss) capacitor c=20f",
+      "value_SI": 2.0000000000000003e-14,
+      "definition": "bottom_plate_sampler/CDELAY",
+      "path": "CDELAY"
+    },
+    "XBP/XCLKN": {
+      "name": "XCLKN",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "late",
+        "ZN": "XBP/CLKN",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLKN (CLK CLKN VDD VSS VDD VSS) INHDV4",
+      "definition": "boot_drv/XCLKN",
+      "path": "XBP/XCLKN"
+    },
+    "XBP/XCLKP": {
+      "name": "XCLKP",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "XBP/CLKN",
+        "ZN": "XBP/CLKP",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLKP (CLKN CLKP VDD VSS VDD VSS) INHDV4",
+      "definition": "boot_drv/XCLKP",
+      "path": "XBP/XCLKP"
+    },
+    "XBP/CBOOT": {
+      "name": "CBOOT",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "XBP/CBT",
+        "2": "XBP/CBB"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBOOT (CBT CBB) capacitor c=1p",
+      "value_SI": 1e-12,
+      "definition": "boot_drv/CBOOT",
+      "path": "XBP/CBOOT"
+    },
+    "XBP/MDCHG": {
+      "name": "MDCHG",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBP/CBB",
+        "G": "XBP/CLKN",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u"
+      },
+      "source_line": "MDCHG (CBB CLKN VSS VSS) n18 w=2.54u l=.18u",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MDCHG",
+      "path": "XBP/MDCHG"
+    },
+    "XBP/MPCHG": {
+      "name": "MPCHG",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "XBP/CG",
+        "G": "XBP/CLKP",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MPCHG (CG CLKP VDD VDD) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MPCHG",
+      "path": "XBP/MPCHG"
+    },
+    "XBP/MLIM": {
+      "name": "MLIM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vdd",
+        "G": "vgp",
+        "S": "XBP/CBT",
+        "B": "XBP/CBT"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MLIM (VDD VG CBT CBT) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MLIM",
+      "path": "XBP/MLIM"
+    },
+    "XBP/MPRE": {
+      "name": "MPRE",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vdd",
+        "G": "late",
+        "S": "XBP/PRE",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRE (VDD CLK PRE VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MPRE",
+      "path": "XBP/MPRE"
+    },
+    "XBP/MGTRK": {
+      "name": "MGTRK",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBP/CG",
+        "G": "XBP/CLKP",
+        "S": "XBP/CBB",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MGTRK (CG CLKP CBB VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MGTRK",
+      "path": "XBP/MGTRK"
+    },
+    "XBP/MBPP": {
+      "name": "MBPP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vgp",
+        "G": "XBP/CG",
+        "S": "XBP/CBT",
+        "B": "XBP/CBT"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MBPP (VG CG CBT CBT) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MBPP",
+      "path": "XBP/MBPP"
+    },
+    "XBP/MPVIN": {
+      "name": "MPVIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBP/CBB",
+        "G": "vgp",
+        "S": "vinp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPVIN (CBB VG VIN VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MPVIN",
+      "path": "XBP/MPVIN"
+    },
+    "XBP/MCASC": {
+      "name": "MCASC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgp",
+        "G": "vdd",
+        "S": "XBP/CLKP",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MCASC (VG VDD CLKP VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MCASC",
+      "path": "XBP/MCASC"
+    },
+    "XBP/MPRGUARD": {
+      "name": "MPRGUARD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgp",
+        "G": "vdd",
+        "S": "XBP/PRE",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRGUARD (VG VDD PRE VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MPRGUARD",
+      "path": "XBP/MPRGUARD"
+    },
+    "XBN/XCLKN": {
+      "name": "XCLKN",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "late",
+        "ZN": "XBN/CLKN",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLKN (CLK CLKN VDD VSS VDD VSS) INHDV4",
+      "definition": "boot_drv/XCLKN",
+      "path": "XBN/XCLKN"
+    },
+    "XBN/XCLKP": {
+      "name": "XCLKP",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "XBN/CLKN",
+        "ZN": "XBN/CLKP",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLKP (CLKN CLKP VDD VSS VDD VSS) INHDV4",
+      "definition": "boot_drv/XCLKP",
+      "path": "XBN/XCLKP"
+    },
+    "XBN/CBOOT": {
+      "name": "CBOOT",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "XBN/CBT",
+        "2": "XBN/CBB"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBOOT (CBT CBB) capacitor c=1p",
+      "value_SI": 1e-12,
+      "definition": "boot_drv/CBOOT",
+      "path": "XBN/CBOOT"
+    },
+    "XBN/MDCHG": {
+      "name": "MDCHG",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBN/CBB",
+        "G": "XBN/CLKN",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u"
+      },
+      "source_line": "MDCHG (CBB CLKN VSS VSS) n18 w=2.54u l=.18u",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MDCHG",
+      "path": "XBN/MDCHG"
+    },
+    "XBN/MPCHG": {
+      "name": "MPCHG",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "XBN/CG",
+        "G": "XBN/CLKP",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MPCHG (CG CLKP VDD VDD) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MPCHG",
+      "path": "XBN/MPCHG"
+    },
+    "XBN/MLIM": {
+      "name": "MLIM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vdd",
+        "G": "vgn",
+        "S": "XBN/CBT",
+        "B": "XBN/CBT"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MLIM (VDD VG CBT CBT) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MLIM",
+      "path": "XBN/MLIM"
+    },
+    "XBN/MPRE": {
+      "name": "MPRE",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vdd",
+        "G": "late",
+        "S": "XBN/PRE",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRE (VDD CLK PRE VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MPRE",
+      "path": "XBN/MPRE"
+    },
+    "XBN/MGTRK": {
+      "name": "MGTRK",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBN/CG",
+        "G": "XBN/CLKP",
+        "S": "XBN/CBB",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MGTRK (CG CLKP CBB VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MGTRK",
+      "path": "XBN/MGTRK"
+    },
+    "XBN/MBPP": {
+      "name": "MBPP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vgn",
+        "G": "XBN/CG",
+        "S": "XBN/CBT",
+        "B": "XBN/CBT"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MBPP (VG CG CBT CBT) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MBPP",
+      "path": "XBN/MBPP"
+    },
+    "XBN/MPVIN": {
+      "name": "MPVIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBN/CBB",
+        "G": "vgn",
+        "S": "vinn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPVIN (CBB VG VIN VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MPVIN",
+      "path": "XBN/MPVIN"
+    },
+    "XBN/MCASC": {
+      "name": "MCASC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgn",
+        "G": "vdd",
+        "S": "XBN/CLKP",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MCASC (VG VDD CLKP VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MCASC",
+      "path": "XBN/MCASC"
+    },
+    "XBN/MPRGUARD": {
+      "name": "MPRGUARD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgn",
+        "G": "vdd",
+        "S": "XBN/PRE",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRGUARD (VG VDD PRE VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MPRGUARD",
+      "path": "XBN/MPRGUARD"
+    },
+    "XBC/XCLKN": {
+      "name": "XCLKN",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "early",
+        "ZN": "XBC/CLKN",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLKN (CLK CLKN VDD VSS VDD VSS) INHDV4",
+      "definition": "boot_drv/XCLKN",
+      "path": "XBC/XCLKN"
+    },
+    "XBC/XCLKP": {
+      "name": "XCLKP",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "XBC/CLKN",
+        "ZN": "XBC/CLKP",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XCLKP (CLKN CLKP VDD VSS VDD VSS) INHDV4",
+      "definition": "boot_drv/XCLKP",
+      "path": "XBC/XCLKP"
+    },
+    "XBC/CBOOT": {
+      "name": "CBOOT",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "XBC/CBT",
+        "2": "XBC/CBB"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CBOOT (CBT CBB) capacitor c=1p",
+      "value_SI": 1e-12,
+      "definition": "boot_drv/CBOOT",
+      "path": "XBC/CBOOT"
+    },
+    "XBC/MDCHG": {
+      "name": "MDCHG",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBC/CBB",
+        "G": "XBC/CLKN",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u"
+      },
+      "source_line": "MDCHG (CBB CLKN VSS VSS) n18 w=2.54u l=.18u",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MDCHG",
+      "path": "XBC/MDCHG"
+    },
+    "XBC/MPCHG": {
+      "name": "MPCHG",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "XBC/CG",
+        "G": "XBC/CLKP",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MPCHG (CG CLKP VDD VDD) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MPCHG",
+      "path": "XBC/MPCHG"
+    },
+    "XBC/MLIM": {
+      "name": "MLIM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vdd",
+        "G": "vgc",
+        "S": "XBC/CBT",
+        "B": "XBC/CBT"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MLIM (VDD VG CBT CBT) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MLIM",
+      "path": "XBC/MLIM"
+    },
+    "XBC/MPRE": {
+      "name": "MPRE",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vdd",
+        "G": "early",
+        "S": "XBC/PRE",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRE (VDD CLK PRE VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MPRE",
+      "path": "XBC/MPRE"
+    },
+    "XBC/MGTRK": {
+      "name": "MGTRK",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBC/CG",
+        "G": "XBC/CLKP",
+        "S": "XBC/CBB",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MGTRK (CG CLKP CBB VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MGTRK",
+      "path": "XBC/MGTRK"
+    },
+    "XBC/MBPP": {
+      "name": "MBPP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vgc",
+        "G": "XBC/CG",
+        "S": "XBC/CBT",
+        "B": "XBC/CBT"
+      },
+      "parameters": {
+        "w": "7.4u",
+        "l": ".18u"
+      },
+      "source_line": "MBPP (VG CG CBT CBT) p18 w=7.4u l=.18u",
+      "W_unit_um": 7.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "boot_drv/MBPP",
+      "path": "XBC/MBPP"
+    },
+    "XBC/MPVIN": {
+      "name": "MPVIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "XBC/CBB",
+        "G": "vgc",
+        "S": "vcm",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPVIN (CBB VG VIN VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MPVIN",
+      "path": "XBC/MPVIN"
+    },
+    "XBC/MCASC": {
+      "name": "MCASC",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgc",
+        "G": "vdd",
+        "S": "XBC/CLKP",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MCASC (VG VDD CLKP VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MCASC",
+      "path": "XBC/MCASC"
+    },
+    "XBC/MPRGUARD": {
+      "name": "MPRGUARD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgc",
+        "G": "vdd",
+        "S": "XBC/PRE",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.54u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MPRGUARD (VG VDD PRE VSS) n18 w=2.54u l=.18u m=2",
+      "W_unit_um": 2.54,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "boot_drv/MPRGUARD",
+      "path": "XBC/MPRGUARD"
+    },
+    "MIP": {
+      "name": "MIP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vsp",
+        "G": "vgp",
+        "S": "vinp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "10.18u",
+        "l": ".18u"
+      },
+      "source_line": "MIP (vsp vgp vinp vss) n18 w=10.18u l=.18u",
+      "W_unit_um": 10.18,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "bottom_plate_sampler/MIP",
+      "path": "MIP"
+    },
+    "MCP": {
+      "name": "MCP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vtopp",
+        "G": "vgc",
+        "S": "vcm",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": ".18u"
+      },
+      "source_line": "MCP (vtopp vgc vcm vss) n18 w=1.28u l=.18u",
+      "W_unit_um": 1.28,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "bottom_plate_sampler/MCP",
+      "path": "MCP"
+    },
+    "CP": {
+      "name": "CP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vsp",
+        "2": "vtopp"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CP (vsp vtopp) capacitor c=1p",
+      "value_SI": 1e-12,
+      "definition": "bottom_plate_sampler/CP",
+      "path": "CP"
+    },
+    "MIN": {
+      "name": "MIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vsn",
+        "G": "vgn",
+        "S": "vinn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "10.18u",
+        "l": ".18u"
+      },
+      "source_line": "MIN (vsn vgn vinn vss) n18 w=10.18u l=.18u",
+      "W_unit_um": 10.18,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "bottom_plate_sampler/MIN",
+      "path": "MIN"
+    },
+    "MCN": {
+      "name": "MCN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vtopn",
+        "G": "vgc",
+        "S": "vcm",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": ".18u"
+      },
+      "source_line": "MCN (vtopn vgc vcm vss) n18 w=1.28u l=.18u",
+      "W_unit_um": 1.28,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "bottom_plate_sampler/MCN",
+      "path": "MCN"
+    },
+    "CN": {
+      "name": "CN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vsn",
+        "2": "vtopn"
+      },
+      "parameters": {
+        "c": "1p"
+      },
+      "source_line": "CN (vsn vtopn) capacitor c=1p",
+      "value_SI": 1e-12,
+      "definition": "bottom_plate_sampler/CN",
+      "path": "CN"
+    },
+    "MTS": {
+      "name": "MTS",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vtopp",
+        "G": "vgc",
+        "S": "vtopn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "15.28u",
+        "l": ".18u"
+      },
+      "source_line": "MTS (vtopp vgc vtopn vss) n18 w=15.28u l=.18u",
+      "W_unit_um": 15.28,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "bottom_plate_sampler/MTS",
+      "path": "MTS"
+    }
+  },
+  "nets": {
+    "boot_drv/CLK": [
+      {
+        "instance": "boot_drv/XCLKN",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          2.3,
+          19.0
+        ]
+      },
+      {
+        "instance": "boot_drv/MPRE",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          11.45,
+          5
+        ]
+      }
+    ],
+    "boot_drv/CLKN": [
+      {
+        "instance": "boot_drv/XCLKN",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          7.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "boot_drv/XCLKP",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          2.3,
+          11.0
+        ]
+      },
+      {
+        "instance": "boot_drv/MDCHG",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          3.45,
+          4
+        ]
+      }
+    ],
+    "boot_drv/VDD": [
+      {
+        "instance": "boot_drv/XCLKN",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          4.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "boot_drv/XCLKN",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          5.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "boot_drv/XCLKP",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          4.2,
+          13.2
+        ]
+      },
+      {
+        "instance": "boot_drv/XCLKP",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          5.8,
+          13.2
+        ]
+      },
+      {
+        "instance": "boot_drv/MPRE",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          13,
+          6
+        ]
+      },
+      {
+        "instance": "boot_drv/MPCHG",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          13,
+          18
+        ]
+      },
+      {
+        "instance": "boot_drv/MPCHG",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          13.86,
+          17
+        ]
+      },
+      {
+        "instance": "boot_drv/MLIM",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          37,
+          16
+        ]
+      },
+      {
+        "instance": "boot_drv/MCASC",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          25.45,
+          11
+        ]
+      },
+      {
+        "instance": "boot_drv/MPRGUARD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          35.45,
+          5
+        ]
+      }
+    ],
+    "boot_drv/VSS": [
+      {
+        "instance": "boot_drv/XCLKN",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          4.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "boot_drv/XCLKN",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          5.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "boot_drv/XCLKP",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          4.2,
+          8.8
+        ]
+      },
+      {
+        "instance": "boot_drv/XCLKP",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          5.8,
+          8.8
+        ]
+      },
+      {
+        "instance": "boot_drv/MPRE",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          13.86,
+          5
+        ]
+      },
+      {
+        "instance": "boot_drv/MDCHG",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          5,
+          3
+        ]
+      },
+      {
+        "instance": "boot_drv/MDCHG",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          5.86,
+          4
+        ]
+      },
+      {
+        "instance": "boot_drv/MGTRK",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          13.86,
+          11
+        ]
+      },
+      {
+        "instance": "boot_drv/MCASC",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          27.86,
+          11
+        ]
+      },
+      {
+        "instance": "boot_drv/MPVIN",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          27.86,
+          5
+        ]
+      },
+      {
+        "instance": "boot_drv/MPRGUARD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          37.86,
+          5
+        ]
+      }
+    ],
+    "boot_drv/CLKP": [
+      {
+        "instance": "boot_drv/XCLKP",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          7.7,
+          11.0
+        ]
+      },
+      {
+        "instance": "boot_drv/MPCHG",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          11.45,
+          17
+        ]
+      },
+      {
+        "instance": "boot_drv/MGTRK",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          11.45,
+          11
+        ]
+      },
+      {
+        "instance": "boot_drv/MCASC",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          27,
+          10
+        ]
+      }
+    ],
+    "boot_drv/PRE": [
+      {
+        "instance": "boot_drv/MPRE",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          13,
+          4
+        ]
+      },
+      {
+        "instance": "boot_drv/MPRGUARD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          37,
+          4
+        ]
+      }
+    ],
+    "boot_drv/CBB": [
+      {
+        "instance": "boot_drv/MDCHG",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          5,
+          5
+        ]
+      },
+      {
+        "instance": "boot_drv/MGTRK",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          13,
+          10
+        ]
+      },
+      {
+        "instance": "boot_drv/MPVIN",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          27,
+          6
+        ]
+      },
+      {
+        "instance": "boot_drv/CBOOT",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          19,
+          14.18
+        ]
+      }
+    ],
+    "boot_drv/CG": [
+      {
+        "instance": "boot_drv/MPCHG",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          13,
+          16
+        ]
+      },
+      {
+        "instance": "boot_drv/MGTRK",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          13,
+          12
+        ]
+      },
+      {
+        "instance": "boot_drv/MBPP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          25.45,
+          17
+        ]
+      }
+    ],
+    "boot_drv/VG": [
+      {
+        "instance": "boot_drv/MBPP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          27,
+          16
+        ]
+      },
+      {
+        "instance": "boot_drv/MLIM",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          35.45,
+          17
+        ]
+      },
+      {
+        "instance": "boot_drv/MCASC",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          27,
+          12
+        ]
+      },
+      {
+        "instance": "boot_drv/MPVIN",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          25.45,
+          5
+        ]
+      },
+      {
+        "instance": "boot_drv/MPRGUARD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          37,
+          6
+        ]
+      }
+    ],
+    "boot_drv/CBT": [
+      {
+        "instance": "boot_drv/MBPP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          27,
+          18
+        ]
+      },
+      {
+        "instance": "boot_drv/MBPP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          27.86,
+          17
+        ]
+      },
+      {
+        "instance": "boot_drv/MLIM",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          37,
+          18
+        ]
+      },
+      {
+        "instance": "boot_drv/MLIM",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          37.86,
+          17
+        ]
+      },
+      {
+        "instance": "boot_drv/CBOOT",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          19,
+          15.82
+        ]
+      }
+    ],
+    "boot_drv/VIN": [
+      {
+        "instance": "boot_drv/MPVIN",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          27,
+          4
+        ]
+      }
+    ],
+    "bottom_plate_sampler/clk": [
+      {
+        "instance": "bottom_plate_sampler/XCLK0",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          2.3,
+          19.0
+        ]
+      }
+    ],
+    "bottom_plate_sampler/earlyb": [
+      {
+        "instance": "bottom_plate_sampler/XCLK0",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          7.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          12.3,
+          19.0
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vdd": [
+      {
+        "instance": "bottom_plate_sampler/XCLK0",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          4.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK0",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          5.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          14.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          15.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK2",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          24.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK2",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          25.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK3",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          34.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK3",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          35.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XBP",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          5.2,
+          13.2
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XBN",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          20.2,
+          13.2
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XBC",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          35.2,
+          13.2
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vss": [
+      {
+        "instance": "bottom_plate_sampler/XCLK0",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          4.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK0",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          5.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          14.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          15.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK2",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          24.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK2",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          25.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK3",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          34.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK3",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          35.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/CDELAY",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          30,
+          14.18
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XBP",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          5.2,
+          8.8
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XBN",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          20.2,
+          8.8
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XBC",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          35.2,
+          8.8
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MIP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          5.86,
+          4
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MCP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          15.86,
+          4
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MIN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          27.86,
+          4
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MCN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          37.86,
+          4
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MTS",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          22.86,
+          2.2
+        ]
+      }
+    ],
+    "bottom_plate_sampler/early": [
+      {
+        "instance": "bottom_plate_sampler/XCLK1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          17.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK2",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          22.3,
+          19.0
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XBC",
+        "pin": "CLK",
+        "sheet": 1,
+        "point": [
+          33.3,
+          10.5
+        ]
+      }
+    ],
+    "bottom_plate_sampler/lateb": [
+      {
+        "instance": "bottom_plate_sampler/XCLK2",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          27.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XCLK3",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          32.3,
+          19.0
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/CDELAY",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          30,
+          15.82
+        ]
+      }
+    ],
+    "bottom_plate_sampler/late": [
+      {
+        "instance": "bottom_plate_sampler/XCLK3",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          37.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XBP",
+        "pin": "CLK",
+        "sheet": 1,
+        "point": [
+          3.3,
+          10.5
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/XBN",
+        "pin": "CLK",
+        "sheet": 1,
+        "point": [
+          18.3,
+          10.5
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vinp": [
+      {
+        "instance": "bottom_plate_sampler/XBP",
+        "pin": "VIN",
+        "sheet": 1,
+        "point": [
+          3.3,
+          11.5
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MIP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          5,
+          3
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vgp": [
+      {
+        "instance": "bottom_plate_sampler/XBP",
+        "pin": "VG",
+        "sheet": 1,
+        "point": [
+          8.7,
+          11.0
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MIP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          3.45,
+          4
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vinn": [
+      {
+        "instance": "bottom_plate_sampler/XBN",
+        "pin": "VIN",
+        "sheet": 1,
+        "point": [
+          18.3,
+          11.5
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MIN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          27,
+          3
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vgn": [
+      {
+        "instance": "bottom_plate_sampler/XBN",
+        "pin": "VG",
+        "sheet": 1,
+        "point": [
+          23.7,
+          11.0
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MIN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          25.45,
+          4
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vcm": [
+      {
+        "instance": "bottom_plate_sampler/XBC",
+        "pin": "VIN",
+        "sheet": 1,
+        "point": [
+          33.3,
+          11.5
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MCP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          15,
+          3
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MCN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          37,
+          3
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vgc": [
+      {
+        "instance": "bottom_plate_sampler/XBC",
+        "pin": "VG",
+        "sheet": 1,
+        "point": [
+          38.7,
+          11.0
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MCP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          13.45,
+          4
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MCN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          35.45,
+          4
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MTS",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          20.45,
+          2.2
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vsp": [
+      {
+        "instance": "bottom_plate_sampler/MIP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          5,
+          5
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/CP",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          9.18,
+          6.4
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vtopp": [
+      {
+        "instance": "bottom_plate_sampler/MCP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          15,
+          5
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MTS",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          22,
+          3.2
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/CP",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          10.82,
+          6.4
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vsn": [
+      {
+        "instance": "bottom_plate_sampler/MIN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          27,
+          5
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/CN",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          31.18,
+          6.4
+        ]
+      }
+    ],
+    "bottom_plate_sampler/vtopn": [
+      {
+        "instance": "bottom_plate_sampler/MCN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          37,
+          5
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/MTS",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          22,
+          1.2000000000000002
+        ]
+      },
+      {
+        "instance": "bottom_plate_sampler/CN",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          32.82,
+          6.4
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 2,
+      "instance": "XCLKP",
+      "pin": "ZN",
+      "net": "CLKP",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCHG",
+      "pin": "G",
+      "net": "CLKP",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MGTRK",
+      "pin": "G",
+      "net": "CLKP",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "S",
+      "net": "CLKP",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCLKN",
+      "pin": "VDD",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCLKN",
+      "pin": "VNW",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCLKP",
+      "pin": "VDD",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCLKP",
+      "pin": "VNW",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRE",
+      "pin": "D",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCHG",
+      "pin": "S",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCHG",
+      "pin": "B",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLIM",
+      "pin": "D",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "G",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRGUARD",
+      "pin": "G",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPVIN",
+      "pin": "S",
+      "net": "VIN",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCLKN",
+      "pin": "VSS",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCLKN",
+      "pin": "VPW",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCLKP",
+      "pin": "VSS",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCLKP",
+      "pin": "VPW",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRE",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDCHG",
+      "pin": "S",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDCHG",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MGTRK",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPVIN",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRGUARD",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBPP",
+      "pin": "D",
+      "net": "VG",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLIM",
+      "pin": "G",
+      "net": "VG",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCASC",
+      "pin": "D",
+      "net": "VG",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPVIN",
+      "pin": "G",
+      "net": "VG",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRGUARD",
+      "pin": "D",
+      "net": "VG",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBPP",
+      "pin": "S",
+      "net": "CBT",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBPP",
+      "pin": "B",
+      "net": "CBT",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLIM",
+      "pin": "S",
+      "net": "CBT",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLIM",
+      "pin": "B",
+      "net": "CBT",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "CBOOT",
+      "pin": "1",
+      "net": "CBT",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCLKN",
+      "pin": "ZN",
+      "net": "CLKN",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCLKP",
+      "pin": "I",
+      "net": "CLKN",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDCHG",
+      "pin": "G",
+      "net": "CLKN",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRE",
+      "pin": "S",
+      "net": "PRE",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRGUARD",
+      "pin": "S",
+      "net": "PRE",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCHG",
+      "pin": "D",
+      "net": "CG",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MGTRK",
+      "pin": "D",
+      "net": "CG",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBPP",
+      "pin": "G",
+      "net": "CG",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCLKN",
+      "pin": "I",
+      "net": "CLK",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPRE",
+      "pin": "G",
+      "net": "CLK",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MDCHG",
+      "pin": "D",
+      "net": "CBB",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MGTRK",
+      "pin": "S",
+      "net": "CBB",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPVIN",
+      "pin": "D",
+      "net": "CBB",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 2,
+      "instance": "CBOOT",
+      "pin": "2",
+      "net": "CBB",
+      "path_to_named_net": true,
+      "block": "boot_drv"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK1",
+      "pin": "ZN",
+      "net": "early",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK2",
+      "pin": "I",
+      "net": "early",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBC",
+      "pin": "CLK",
+      "net": "early",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MIP",
+      "pin": "D",
+      "net": "vsp",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "CP",
+      "pin": "1",
+      "net": "vsp",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK0",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK0",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK2",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK3",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK3",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "CDELAY",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBP",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBN",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBC",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MIP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MIN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTS",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MIN",
+      "pin": "D",
+      "net": "vsn",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "CN",
+      "pin": "1",
+      "net": "vsn",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBC",
+      "pin": "VG",
+      "net": "vgc",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCP",
+      "pin": "G",
+      "net": "vgc",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCN",
+      "pin": "G",
+      "net": "vgc",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTS",
+      "pin": "G",
+      "net": "vgc",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK0",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK0",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK2",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK3",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK3",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBP",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBN",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBC",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBP",
+      "pin": "VIN",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MIP",
+      "pin": "S",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCN",
+      "pin": "D",
+      "net": "vtopn",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTS",
+      "pin": "S",
+      "net": "vtopn",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "CN",
+      "pin": "2",
+      "net": "vtopn",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK2",
+      "pin": "ZN",
+      "net": "lateb",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK3",
+      "pin": "I",
+      "net": "lateb",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "CDELAY",
+      "pin": "1",
+      "net": "lateb",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK3",
+      "pin": "ZN",
+      "net": "late",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBP",
+      "pin": "CLK",
+      "net": "late",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBN",
+      "pin": "CLK",
+      "net": "late",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBN",
+      "pin": "VG",
+      "net": "vgn",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MIN",
+      "pin": "G",
+      "net": "vgn",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBC",
+      "pin": "VIN",
+      "net": "vcm",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCP",
+      "pin": "S",
+      "net": "vcm",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCN",
+      "pin": "S",
+      "net": "vcm",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBN",
+      "pin": "VIN",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MIN",
+      "pin": "S",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK0",
+      "pin": "ZN",
+      "net": "earlyb",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK1",
+      "pin": "I",
+      "net": "earlyb",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCP",
+      "pin": "D",
+      "net": "vtopp",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTS",
+      "pin": "D",
+      "net": "vtopp",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "CP",
+      "pin": "2",
+      "net": "vtopp",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XCLK0",
+      "pin": "I",
+      "net": "clk",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBP",
+      "pin": "VG",
+      "net": "vgp",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    },
+    {
+      "sheet": 1,
+      "instance": "MIP",
+      "pin": "G",
+      "net": "vgp",
+      "path_to_named_net": true,
+      "block": "bottom_plate_sampler"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "bottom_plate_sampler",
+      "title": "分相时钟、三路驱动与底板采样",
+      "wires": [
+        {
+          "net": "earlyb",
+          "points": [
+            [
+              7.7,
+              19.0
+            ],
+            [
+              12.3,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "early",
+          "points": [
+            [
+              17.7,
+              19.0
+            ],
+            [
+              22.3,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "lateb",
+          "points": [
+            [
+              27.7,
+              19.0
+            ],
+            [
+              32.3,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "lateb",
+          "points": [
+            [
+              30,
+              15.82
+            ],
+            [
+              30,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.86,
+              4
+            ],
+            [
+              6.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              15.86,
+              4
+            ],
+            [
+              16.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27.86,
+              4
+            ],
+            [
+              28.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.86,
+              4
+            ],
+            [
+              38.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22.86,
+              2.2
+            ],
+            [
+              23.15,
+              2.2
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vsp",
+          "points": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              6.4
+            ],
+            [
+              9.18,
+              6.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vtopp",
+          "points": [
+            [
+              10.82,
+              6.4
+            ],
+            [
+              15,
+              6.4
+            ],
+            [
+              15,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vtopp",
+          "points": [
+            [
+              15,
+              6.4
+            ],
+            [
+              22,
+              6.4
+            ],
+            [
+              22,
+              3.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vsn",
+          "points": [
+            [
+              27,
+              5
+            ],
+            [
+              27,
+              6.4
+            ],
+            [
+              31.18,
+              6.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vtopn",
+          "points": [
+            [
+              32.82,
+              6.4
+            ],
+            [
+              37,
+              6.4
+            ],
+            [
+              37,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vtopn",
+          "points": [
+            [
+              22,
+              1.2000000000000002
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              41,
+              1
+            ],
+            [
+              41,
+              6.4
+            ],
+            [
+              37,
+              6.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "clk",
+          "points": [
+            [
+              2.3,
+              19.0
+            ],
+            [
+              1.6999999999999997,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              4.2,
+              21.2
+            ],
+            [
+              4.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5.8,
+              21.2
+            ],
+            [
+              5.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.2,
+              16.8
+            ],
+            [
+              4.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.8,
+              16.8
+            ],
+            [
+              5.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              14.2,
+              21.2
+            ],
+            [
+              14.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              15.8,
+              21.2
+            ],
+            [
+              15.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              14.2,
+              16.8
+            ],
+            [
+              14.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              15.8,
+              16.8
+            ],
+            [
+              15.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              24.2,
+              21.2
+            ],
+            [
+              24.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              25.8,
+              21.2
+            ],
+            [
+              25.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24.2,
+              16.8
+            ],
+            [
+              24.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              25.8,
+              16.8
+            ],
+            [
+              25.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "late",
+          "points": [
+            [
+              37.7,
+              19.0
+            ],
+            [
+              38.300000000000004,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.2,
+              21.2
+            ],
+            [
+              34.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35.8,
+              21.2
+            ],
+            [
+              35.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.2,
+              16.8
+            ],
+            [
+              34.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35.8,
+              16.8
+            ],
+            [
+              35.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              3.3,
+              11.5
+            ],
+            [
+              2.6999999999999997,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "late",
+          "points": [
+            [
+              3.3,
+              10.5
+            ],
+            [
+              2.6999999999999997,
+              10.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgp",
+          "points": [
+            [
+              8.7,
+              11.0
+            ],
+            [
+              9.299999999999999,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5.2,
+              13.2
+            ],
+            [
+              5.2,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.2,
+              8.8
+            ],
+            [
+              5.2,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              18.3,
+              11.5
+            ],
+            [
+              17.7,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "late",
+          "points": [
+            [
+              18.3,
+              10.5
+            ],
+            [
+              17.7,
+              10.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgn",
+          "points": [
+            [
+              23.7,
+              11.0
+            ],
+            [
+              24.3,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              20.2,
+              13.2
+            ],
+            [
+              20.2,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.2,
+              8.8
+            ],
+            [
+              20.2,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcm",
+          "points": [
+            [
+              33.3,
+              11.5
+            ],
+            [
+              32.699999999999996,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "early",
+          "points": [
+            [
+              33.3,
+              10.5
+            ],
+            [
+              32.699999999999996,
+              10.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgc",
+          "points": [
+            [
+              38.7,
+              11.0
+            ],
+            [
+              39.300000000000004,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35.2,
+              13.2
+            ],
+            [
+              35.2,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35.2,
+              8.8
+            ],
+            [
+              35.2,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              30,
+              14.18
+            ],
+            [
+              30,
+              13.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              5,
+              3
+            ],
+            [
+              5,
+              2.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgp",
+          "points": [
+            [
+              3.45,
+              4
+            ],
+            [
+              2.9000000000000004,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcm",
+          "points": [
+            [
+              15,
+              3
+            ],
+            [
+              15,
+              2.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgc",
+          "points": [
+            [
+              13.45,
+              4
+            ],
+            [
+              12.899999999999999,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              27,
+              3
+            ],
+            [
+              27,
+              2.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgn",
+          "points": [
+            [
+              25.45,
+              4
+            ],
+            [
+              24.9,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcm",
+          "points": [
+            [
+              37,
+              3
+            ],
+            [
+              37,
+              2.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgc",
+          "points": [
+            [
+              35.45,
+              4
+            ],
+            [
+              34.900000000000006,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgc",
+          "points": [
+            [
+              20.45,
+              2.2
+            ],
+            [
+              19.9,
+              2.2
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "earlyb",
+          "point": [
+            10,
+            19
+          ],
+          "text": "earlyb",
+          "body": false
+        },
+        {
+          "net": "early",
+          "point": [
+            20,
+            19
+          ],
+          "text": "early",
+          "body": false
+        },
+        {
+          "net": "lateb",
+          "point": [
+            30,
+            19
+          ],
+          "text": "lateb",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            6.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            16.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            28.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            23.15,
+            2.2
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vsp",
+          "point": [
+            6.2,
+            6.4
+          ],
+          "text": "vsp",
+          "body": false
+        },
+        {
+          "net": "vtopp",
+          "point": [
+            16,
+            6.4
+          ],
+          "text": "vtopp",
+          "body": false
+        },
+        {
+          "net": "vsn",
+          "point": [
+            28,
+            6.4
+          ],
+          "text": "vsn",
+          "body": false
+        },
+        {
+          "net": "vtopn",
+          "point": [
+            34,
+            6.4
+          ],
+          "text": "vtopn",
+          "body": false
+        },
+        {
+          "net": "clk",
+          "point": [
+            1.6999999999999997,
+            19.0
+          ],
+          "text": "clk",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            4.2,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            5.8,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4.2,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.8,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            14.2,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            15.8,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            14.2,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            15.8,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            24.2,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            25.8,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            24.2,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            25.8,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "late",
+          "point": [
+            38.300000000000004,
+            19.0
+          ],
+          "text": "late",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            34.2,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.8,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.2,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.8,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            2.6999999999999997,
+            11.5
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "late",
+          "point": [
+            2.6999999999999997,
+            10.5
+          ],
+          "text": "late",
+          "body": false
+        },
+        {
+          "net": "vgp",
+          "point": [
+            9.299999999999999,
+            11.0
+          ],
+          "text": "vgp",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            5.2,
+            13.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.2,
+            8.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            17.7,
+            11.5
+          ],
+          "text": "vinn",
+          "body": false
+        },
+        {
+          "net": "late",
+          "point": [
+            17.7,
+            10.5
+          ],
+          "text": "late",
+          "body": false
+        },
+        {
+          "net": "vgn",
+          "point": [
+            24.3,
+            11.0
+          ],
+          "text": "vgn",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            20.2,
+            13.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.2,
+            8.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vcm",
+          "point": [
+            32.699999999999996,
+            11.5
+          ],
+          "text": "vcm",
+          "body": false
+        },
+        {
+          "net": "early",
+          "point": [
+            32.699999999999996,
+            10.5
+          ],
+          "text": "early",
+          "body": false
+        },
+        {
+          "net": "vgc",
+          "point": [
+            39.300000000000004,
+            11.0
+          ],
+          "text": "vgc",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.2,
+            13.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.2,
+            8.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            30,
+            13.54
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            5,
+            2.36
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "vgp",
+          "point": [
+            2.9000000000000004,
+            4
+          ],
+          "text": "vgp",
+          "body": false
+        },
+        {
+          "net": "vcm",
+          "point": [
+            15,
+            2.36
+          ],
+          "text": "vcm",
+          "body": false
+        },
+        {
+          "net": "vgc",
+          "point": [
+            12.899999999999999,
+            4
+          ],
+          "text": "vgc",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            27,
+            2.36
+          ],
+          "text": "vinn",
+          "body": false
+        },
+        {
+          "net": "vgn",
+          "point": [
+            24.9,
+            4
+          ],
+          "text": "vgn",
+          "body": false
+        },
+        {
+          "net": "vcm",
+          "point": [
+            37,
+            2.36
+          ],
+          "text": "vcm",
+          "body": false
+        },
+        {
+          "net": "vgc",
+          "point": [
+            34.900000000000006,
+            4
+          ],
+          "text": "vgc",
+          "body": false
+        },
+        {
+          "net": "vgc",
+          "point": [
+            19.9,
+            2.2
+          ],
+          "text": "vgc",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "boot_drv",
+      "title": "完整可复用 boot_drv 自举电路",
+      "wires": [
+        {
+          "net": "VSS",
+          "points": [
+            [
+              13.86,
+              5
+            ],
+            [
+              14.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              5.86,
+              4
+            ],
+            [
+              6.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              13.86,
+              17
+            ],
+            [
+              14.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              13.86,
+              11
+            ],
+            [
+              14.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "points": [
+            [
+              27.86,
+              17
+            ],
+            [
+              28.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "points": [
+            [
+              37.86,
+              17
+            ],
+            [
+              38.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              27.86,
+              11
+            ],
+            [
+              28.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              27.86,
+              5
+            ],
+            [
+              28.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              37.86,
+              5
+            ],
+            [
+              38.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "points": [
+            [
+              19,
+              15.82
+            ],
+            [
+              19,
+              21
+            ],
+            [
+              37,
+              21
+            ],
+            [
+              37,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CBT",
+          "points": [
+            [
+              27,
+              18
+            ],
+            [
+              27,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CBB",
+          "points": [
+            [
+              19,
+              14.18
+            ],
+            [
+              19,
+              7.6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CBB",
+          "points": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              7.6
+            ],
+            [
+              27,
+              7.6
+            ],
+            [
+              27,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CBB",
+          "points": [
+            [
+              13,
+              10
+            ],
+            [
+              13,
+              7.6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CG",
+          "points": [
+            [
+              13,
+              16
+            ],
+            [
+              13,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VG",
+          "points": [
+            [
+              27,
+              16
+            ],
+            [
+              27,
+              14
+            ],
+            [
+              27,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VG",
+          "points": [
+            [
+              27,
+              14
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              37,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLK",
+          "points": [
+            [
+              2.3,
+              19.0
+            ],
+            [
+              1.6999999999999997,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKN",
+          "points": [
+            [
+              7.7,
+              19.0
+            ],
+            [
+              8.3,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              4.2,
+              21.2
+            ],
+            [
+              4.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              5.8,
+              21.2
+            ],
+            [
+              5.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              4.2,
+              16.8
+            ],
+            [
+              4.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              5.8,
+              16.8
+            ],
+            [
+              5.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKN",
+          "points": [
+            [
+              2.3,
+              11.0
+            ],
+            [
+              1.6999999999999997,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "points": [
+            [
+              7.7,
+              11.0
+            ],
+            [
+              8.3,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              4.2,
+              13.2
+            ],
+            [
+              4.2,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              5.8,
+              13.2
+            ],
+            [
+              5.8,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              4.2,
+              8.8
+            ],
+            [
+              4.2,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              5.8,
+              8.8
+            ],
+            [
+              5.8,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              13,
+              6
+            ],
+            [
+              13,
+              6.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "PRE",
+          "points": [
+            [
+              13,
+              4
+            ],
+            [
+              13,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLK",
+          "points": [
+            [
+              11.45,
+              5
+            ],
+            [
+              10.899999999999999,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              5,
+              3
+            ],
+            [
+              5,
+              2.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKN",
+          "points": [
+            [
+              3.45,
+              4
+            ],
+            [
+              2.9000000000000004,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              13,
+              18
+            ],
+            [
+              13,
+              18.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "points": [
+            [
+              11.45,
+              17
+            ],
+            [
+              10.899999999999999,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "points": [
+            [
+              11.45,
+              11
+            ],
+            [
+              10.899999999999999,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CG",
+          "points": [
+            [
+              25.45,
+              17
+            ],
+            [
+              24.9,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              37,
+              16
+            ],
+            [
+              37,
+              15.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VG",
+          "points": [
+            [
+              35.45,
+              17
+            ],
+            [
+              34.900000000000006,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "points": [
+            [
+              27,
+              10
+            ],
+            [
+              27,
+              9.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              25.45,
+              11
+            ],
+            [
+              24.9,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIN",
+          "points": [
+            [
+              27,
+              4
+            ],
+            [
+              27,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VG",
+          "points": [
+            [
+              25.45,
+              5
+            ],
+            [
+              24.9,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "PRE",
+          "points": [
+            [
+              37,
+              4
+            ],
+            [
+              37,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              35.45,
+              5
+            ],
+            [
+              34.900000000000006,
+              5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "VSS",
+          "point": [
+            14.15,
+            5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            6.15,
+            4
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "point": [
+            14.15,
+            17
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            14.15,
+            11
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "point": [
+            28.15,
+            17
+          ],
+          "text": "CBT",
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "point": [
+            38.15,
+            17
+          ],
+          "text": "CBT",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            28.15,
+            11
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            28.15,
+            5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            38.15,
+            5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "CBT",
+          "point": [
+            22,
+            21
+          ],
+          "text": "CBT",
+          "body": false
+        },
+        {
+          "net": "CBB",
+          "point": [
+            17,
+            7.6
+          ],
+          "text": "CBB",
+          "body": false
+        },
+        {
+          "net": "CG",
+          "point": [
+            13,
+            14.5
+          ],
+          "text": "CG",
+          "body": false
+        },
+        {
+          "net": "VG",
+          "point": [
+            34,
+            14
+          ],
+          "text": "VG",
+          "body": false
+        },
+        {
+          "net": "CLK",
+          "point": [
+            1.6999999999999997,
+            19.0
+          ],
+          "text": "CLK",
+          "body": false
+        },
+        {
+          "net": "CLKN",
+          "point": [
+            8.3,
+            19.0
+          ],
+          "text": "CLKN",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            4.2,
+            21.7
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            5.8,
+            21.7
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "point": [
+            4.2,
+            16.3
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "point": [
+            5.8,
+            16.3
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "CLKN",
+          "point": [
+            1.6999999999999997,
+            11.0
+          ],
+          "text": "CLKN",
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "point": [
+            8.3,
+            11.0
+          ],
+          "text": "CLKP",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            4.2,
+            13.7
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            5.8,
+            13.7
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "point": [
+            4.2,
+            8.3
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "point": [
+            5.8,
+            8.3
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            13,
+            6.64
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "PRE",
+          "point": [
+            13,
+            3.36
+          ],
+          "text": "PRE",
+          "body": false
+        },
+        {
+          "net": "CLK",
+          "point": [
+            10.899999999999999,
+            5
+          ],
+          "text": "CLK",
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "point": [
+            5,
+            2.36
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "CLKN",
+          "point": [
+            2.9000000000000004,
+            4
+          ],
+          "text": "CLKN",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            13,
+            18.64
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "point": [
+            10.899999999999999,
+            17
+          ],
+          "text": "CLKP",
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "point": [
+            10.899999999999999,
+            11
+          ],
+          "text": "CLKP",
+          "body": false
+        },
+        {
+          "net": "CG",
+          "point": [
+            24.9,
+            17
+          ],
+          "text": "CG",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            37,
+            15.36
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VG",
+          "point": [
+            34.900000000000006,
+            17
+          ],
+          "text": "VG",
+          "body": false
+        },
+        {
+          "net": "CLKP",
+          "point": [
+            27,
+            9.36
+          ],
+          "text": "CLKP",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            24.9,
+            11
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VIN",
+          "point": [
+            27,
+            3.36
+          ],
+          "text": "VIN",
+          "body": false
+        },
+        {
+          "net": "VG",
+          "point": [
+            24.9,
+            5
+          ],
+          "text": "VG",
+          "body": false
+        },
+        {
+          "net": "PRE",
+          "point": [
+            37,
+            3.36
+          ],
+          "text": "PRE",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            34.900000000000006,
+            5
+          ],
+          "text": "VDD",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "boot_drv": [],
+    "bottom_plate_sampler": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

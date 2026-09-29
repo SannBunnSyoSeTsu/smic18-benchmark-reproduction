@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-09-26T05:00:05.717009+00:00",
+  "status": "passed",
+  "circuit_sha256": "05da74f7a23c1d2282c3274119e1fae0559296895141342ffc3a2b043dba1e44",
+  "results_sha256": "1d3c12bdd4009f0a8c742ced0f68b5bbb80b051d591627bca79d1a71f50938ea",
+  "contract_sha256": "493e75fc6c0d52812ced2331db139485bc7145c9eb6871ac417518872774d053",
+  "measurement_cross_checks": [
+    {
+      "metric": "loop_ugb_hz",
+      "report": 66413966.51347009,
+      "independent": 66413966.51346997,
+      "absolute_difference": 1.1920928955078125e-07,
+      "passed": true
+    },
+    {
+      "metric": "phase_margin_deg",
+      "report": 75.5187084358012,
+      "independent": 75.5187084358012,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "low_frequency_loop_gain_db",
+      "report": 106.39859337050757,
+      "independent": 106.39859337050757,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "closed_loop_differential_gain_db",
+      "report": 6.020558352887829,
+      "independent": 6.020558352887829,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "power_w",
+      "report": 0.0036307983653609756,
+      "independent": 0.0036307983653609756,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_common_mode_error_v",
+      "report": 0.0036382349404285863,
+      "independent": 0.0036382349404285863,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "rise_dynamic_output_v",
+      "report": -0.8999636426808094,
+      "independent": -0.8999636426808094,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "rise_dynamic_error_fraction",
+      "report": 4.039702132289472e-05,
+      "independent": 4.039702132289472e-05,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "fall_dynamic_output_v",
+      "report": 3.532851991929436e-07,
+      "independent": 3.532851991929436e-07,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "fall_dynamic_error_fraction",
+      "report": 3.9253911021438176e-07,
+      "independent": 3.9253911021438176e-07,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "high_static_output_v",
+      "report": -0.899987127875716,
+      "independent": -0.899987127875716,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "high_static_error_fraction",
+      "report": 1.4302360315582913e-05,
+      "independent": 1.4302360315582913e-05,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "low_static_output_v",
+      "report": -3.250716908016762e-09,
+      "independent": -3.250716908016762e-09,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "low_static_error_fraction",
+      "report": 3.61190767557418e-09,
+      "independent": 3.61190767557418e-09,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "rise_settling_time_s",
+      "report": 2.0861216029981532e-08,
+      "independent": 2.0861216029981532e-08,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "fall_settling_time_s",
+      "report": 2.2062721526071065e-08,
+      "independent": 2.2062721526071065e-08,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_range_min_v",
+      "report": -0.8495764691728263,
+      "independent": -0.8495764691728263,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_range_max_v",
+      "report": 0.84957646806079,
+      "independent": 0.84957646806079,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_range_v",
+      "report": 1.6991529372336163,
+      "independent": 1.6991529372336163,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "open_loop_gain_peak_db",
+      "report": 112.38075592330595,
+      "independent": 112.38075592330595,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_noise_vrms",
+      "report": 0.00017813029533978096,
+      "independent": 0.00017813029533978096,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "cmfb_static_error_v",
+      "report": 0.0036382349203769593,
+      "independent": 0.0036382349203769593,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "cmfb_max_deviation_v",
+      "report": 0.010005583851406152,
+      "independent": 0.010005583851406152,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "cmfb_residual_20ns_v",
+      "report": 0.00013159170503471252,
+      "independent": 0.00013159170503471252,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "cmfb_residual_100ns_v",
+      "report": 3.6563642468479203e-07,
+      "independent": 3.6563642468479203e-07,
+      "absolute_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "original_nominal_checks": [
+    {
+      "name": "original_nominal_functional",
+      "passed": true,
+      "detail": "PM=75.519deg common_mode_error=3.638mV static=0.0014% dynamic=0.0040% settling=22.063ns"
+    },
+    {
+      "name": "output_noise_vrms",
+      "passed": true,
+      "detail": "worst=0.00017813SI at SMIC18TT1.8V27C; limit <=0.0003SI"
+    },
+    {
+      "name": "cmfb_max_deviation_v",
+      "passed": true,
+      "detail": "worst=0.0100056SI at SMIC18TT1.8V27C; limit <=0.15SI"
+    },
+    {
+      "name": "cmfb_residual_20ns_v",
+      "passed": true,
+      "detail": "worst=0.000131592SI at SMIC18TT1.8V27C; limit <=0.05SI"
+    },
+    {
+      "name": "cmfb_residual_100ns_v",
+      "passed": true,
+      "detail": "worst=3.65636e-07SI at SMIC18TT1.8V27C; limit <=0.02SI"
+    },
+    {
+      "name": "power_w",
+      "passed": true,
+      "detail": "worst=0.0036308SI at SMIC18TT1.8V27C; limit <=0.005SI"
+    },
+    {
+      "name": "original_3dB_range",
+      "passed": false,
+      "detail": "1.69915293723V >= 1.8V"
+    }
+  ],
+  "original_model_hashes_unchanged": true,
+  "source_snapshot_hashes_verified": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "group": "loop",
+      "run": "runs/33/20260926T045001411009Z_loop",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "settling",
+      "run": "runs/33/20260926T045002085901Z_settling",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "noise",
+      "run": "runs/33/20260926T045003802136Z_noise",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "ranges",
+      "run": "runs/33/20260926T045004453597Z_ranges",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "cmfb",
+      "run": "runs/33/20260926T045126176631Z_cmfb",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "rejection",
+      "run": "runs/33/20260926T045127516384Z_rejection",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "group": "range_resolution",
+      "run": "runs/33/20260926T045229914424Z_range_resolution",
+      "real_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    }
+  ],
+  "stimulus_checks": [
+    {
+      "test": "settling",
+      "initial_sources_V": [
+        0.9,
+        0.9
+      ],
+      "active_sources_V": [
+        0.45,
+        1.35
+      ],
+      "passed": true
+    },
+    {
+      "test": "CMFB",
+      "per_output_pulse_A": 5e-05,
+      "reference": "undisturbed identical instance",
+      "passed": true
+    }
+  ],
+  "numerical_confirmation": {
+    "generated_at": "2026-09-26T04:52:30.540041+00:00",
+    "circuit_sha256": "05da74f7a23c1d2282c3274119e1fae0559296895141342ffc3a2b043dba1e44",
+    "reason": "Derivative-based3dB output range depends on input sweep resolution; compare0.5uV original with0.25uV diagnostic",
+    "original_group": "runs/33/20260926T045004453597Z_ranges",
+    "diagnostic_run": "runs/33/20260926T045229914424Z_range_resolution",
+    "baseline_points": 81,
+    "diagnostic_points": 161,
+    "baseline_range_V": 1.6991529372336163,
+    "diagnostic_range_V": 1.7128695650553296,
+    "absolute_difference_V": 0.013716627821713345,
+    "maximum_difference_V": 0.05,
+    "same_acceptance_tiers": true,
+    "passed": true,
+    "scored_data": "Original81point sweep retained without substitution"
+  },
+  "schematic_instances": 40,
+  "schematic_terminals": 140,
+  "pdf_review_pending": false,
+  "full_upstream_signoff": false,
+  "mismatch_samples_executed": 0,
+  "method": "Independent scalar interpolation, last crossing,81point central differences and noise quadrature; unchanged upstream nominal_functional and limit_check with explicit nominal expected count1. No claim of30point PVT or20sample mismatch completion.",
+  "pdf": "reports/33-sampling-ota-gain1-review.pdf",
+  "pdf_sha256": "4763037aec612f383452ef10d7eb952c2d139f2e81b8a0aa29f07826b2582533",
+  "pdf_pages": 12,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-26T05:06:38.366840+00:00"
+}

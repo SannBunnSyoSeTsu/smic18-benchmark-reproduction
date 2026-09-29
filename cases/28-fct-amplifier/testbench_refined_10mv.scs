@@ -1,0 +1,57 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/28-fct-amplifier/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/28-fct-amplifier/circuit.scs"
+model FCT_SW relay rclosed=.1 ropen=1e12 vth=.9 trans=1u hysteresis=.0005
+subckt fct_fixture_switch (a b vss ctrl)
+R1 (b switch_series) resistor r=1
+S1 (switch_series a ctrl vss) FCT_SW
+CA (a vss) capacitor c=100a
+CB (b vss) capacitor c=100a
+ends fct_fixture_switch
+subckt fct_fixture_sc (sam init_precharge transfer vcm vinp vinn cinn cinp vdd vss)
+CFLY_N (fly_n_output_plate fly_n_input_plate) capacitor c=400f
+CFLY_P (fly_p_output_plate fly_p_input_plate) capacitor c=400f
+XTRANSFER_COMPLEMENT_BUFFER (transfer transfer_b vdd vss vdd vss) BUFHDV16
+XSW_P_TRANSFER_CM (fly_p_input_plate vcm vss transfer) fct_fixture_switch
+XSW_N_TRANSFER_CM (vcm fly_n_input_plate vss transfer) fct_fixture_switch
+XSW_N_SAMPLE_INPUT (fly_n_input_plate vinn vss sam) fct_fixture_switch
+XSW_P_SAMPLE_CM (fly_p_output_plate vcm vss sam) fct_fixture_switch
+XSW_P_TRANSFER_OUTPUT (fly_p_output_plate cinp vss transfer_b) fct_fixture_switch
+XSW_N_SAMPLE_CM (vcm fly_n_output_plate vss sam) fct_fixture_switch
+XSW_P_SAMPLE_INPUT (vinp fly_p_input_plate vss sam) fct_fixture_switch
+XSW_N_TRANSFER_OUTPUT (cinn fly_n_output_plate vss transfer_b) fct_fixture_switch
+XINIT_SW_P_INPUT (vinp fly_p_input_plate vss init_precharge) fct_fixture_switch
+XINIT_SW_N_INPUT (fly_n_input_plate vinn vss init_precharge) fct_fixture_switch
+XINIT_SW_P_CM (fly_p_output_plate vcm vss init_precharge) fct_fixture_switch
+XINIT_SW_N_CM (vcm fly_n_output_plate vss init_precharge) fct_fixture_switch
+ends fct_fixture_sc
+VDD (vdd 0) vsource dc=1.8
+VFIXTURE (fixture_vdd 0) vsource dc=1.8
+VICM_FIXTURE (vcm_fixture 0) vsource dc=1
+VICM_DUT (vcm 0) vsource dc=1
+VOCM (vocm 0) vsource dc=.9
+VINP (vinp vcm_fixture) vsource type=sine dc=0 ampl=0.005 freq=1.40625e+08 sinephase=90
+VINN (vinn vcm_fixture) vsource type=sine dc=0 ampl=0.005 freq=1.40625e+08 sinephase=-90
+IREF (0 iref) isource dc=50u
+XSC (sam_fixture init_precharge transfer_fixture vcm_fixture vinp vinn cinn cinp fixture_vdd 0) fct_fixture_sc
+XDUT (cinn cinp coutn coutp iref sam transfer vcm vdd vdd 0 0) test_fct
+CLOADP (voutp vcm_fixture) capacitor c=50f
+CLOADN (voutn vcm_fixture) capacitor c=50f
+simulatorOptions options temp=27 tnom=27 reltol=1e-09 vabstol=1e-08 iabstol=1e-12 gmin=1e-15 max_minstep_nonconv=10000 max_approach_minstep=10000
+saveOptions options save=selected
+save vinp vinn cinn cinp coutn coutp voutp voutn sam transfer iref VDD:p VICM_DUT:p VSAM_DUT:p VTRANSFER_DUT:p XDUT.bias_n_cascode XDUT.bias_p_cascode XDUT.reservoir_hi_p XDUT.reservoir_lo_p
+VSAM_FIXTURE (sam_fixture 0) vsource type=pulse val0=0 val1=1.8 delay=1.0111111111111e-09 rise=1e-11 fall=1e-11 width=3.1111111111111e-10 period=1.1111111111111e-09
+VTRANSFER_FIXTURE (transfer_fixture 0) vsource type=pulse val0=0 val1=1.8 delay=3.1111111111111e-10 rise=1e-11 fall=1e-11 width=5e-10 period=1.1111111111111e-09
+VSAM_DUT (sam 0) vsource type=pulse val0=0 val1=1.8 delay=1.0111111111111e-09 rise=1e-11 fall=1e-11 width=3.1111111111111e-10 period=1.1111111111111e-09
+VTRANSFER_DUT (transfer 0) vsource type=pulse val0=0 val1=1.8 delay=3.1111111111111e-10 rise=1e-11 fall=1e-11 width=5e-10 period=1.1111111111111e-09
+VSAMPLE_OUT (sample_out 0) vsource type=pulse val0=0 val1=1.8 delay=8.1111111111111e-11 rise=2e-11 fall=2e-11 width=7.2e-10 period=1.1111111111111e-09
+VINIT_PRECHARGE (init_precharge 0) vsource type=pulse val0=0 val1=1.8 delay=0 rise=1e-11 fall=1e-11 width=1e-09 period=1e-06
+XPREN (vocm voutn 0 sam_fixture) fct_fixture_switch
+XPREP (vocm voutp 0 sam_fixture) fct_fixture_switch
+XINITN (vocm voutn 0 init_precharge) fct_fixture_switch
+XINITP (vocm voutp 0 init_precharge) fct_fixture_switch
+XSAMN (coutn voutn 0 sample_out) fct_fixture_switch
+XSAMP (coutp voutp 0 sample_out) fct_fixture_switch
+tran tran stop=1.0777777777778e-07 maxstep=6.25e-13 method=gear2only errpreset=conservative strobetimes=[7.1891111111111106e-08 7.1991111111111113e-08 7.3002222222222223e-08 7.310222222222223e-08 7.4113333333333326e-08 7.4213333333333333e-08 7.5224444444444443e-08 7.532444444444445e-08 7.6335555555555546e-08 7.6435555555555554e-08 7.7446666666666663e-08 7.754666666666667e-08 7.8557777777777766e-08 7.8657777777777774e-08 7.9668888888888883e-08 7.976888888888889e-08 8.0779999999999999e-08 8.0880000000000007e-08 8.1891111111111103e-08 8.199111111111111e-08 8.3002222222222219e-08 8.3102222222222227e-08 8.4113333333333323e-08 8.421333333333333e-08 8.522444444444444e-08 8.5324444444444447e-08 8.6335555555555556e-08 8.6435555555555564e-08 8.744666666666666e-08 8.7546666666666667e-08 8.8557777777777776e-08 8.8657777777777784e-08 8.966888888888888e-08 8.9768888888888887e-08 9.0779999999999996e-08 9.0880000000000004e-08 9.18911111111111e-08 9.1991111111111107e-08 9.3002222222222216e-08 9.3102222222222224e-08 9.4113333333333333e-08 9.4213333333333341e-08 9.5224444444444436e-08 9.5324444444444444e-08 9.6335555555555553e-08 9.6435555555555561e-08 9.7446666666666656e-08 9.7546666666666664e-08 9.8557777777777773e-08 9.8657777777777781e-08 9.9668888888888877e-08 9.9768888888888884e-08 1.0077999999999999e-07 1.0088e-07 1.0189111111111111e-07 1.0199111111111112e-07 1.0300222222222221e-07 1.0310222222222222e-07 1.0411333333333333e-07 1.0421333333333334e-07 1.0522444444444443e-07 1.0532444444444444e-07 1.0633555555555555e-07 1.0643555555555556e-07] strobeoutput=all

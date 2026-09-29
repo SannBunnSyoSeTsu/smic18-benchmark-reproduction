@@ -1,0 +1,72 @@
+{
+  "source_task": "sky130-bandgap-reference-pvt",
+  "scope": "TT active/BJT/resistor/MIM; nominal dynamic tests at 1.8V/27C, retained temperature-coefficient and line-regulation characterization",
+  "sections": [
+    "tt",
+    "bjt_tt",
+    "res_tt",
+    "mim_tt"
+  ],
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "load_F": 5e-12,
+  "voltage_center_V": 1.22,
+  "voltage_error_max_V": 0.04,
+  "power_max_W": 0.00015,
+  "temperatures_C": [
+    -40,
+    0,
+    27,
+    60,
+    100,
+    125
+  ],
+  "tempco_definition": "(max(VREF)-min(VREF))/(mean(VREF)*165)*1e6",
+  "tempco_max_ppm_C": 50,
+  "line_supplies_V": [
+    1.62,
+    1.8,
+    1.98
+  ],
+  "line_regulation_max_V_V": 0.02,
+  "startup_ramps_s": [
+    1e-06,
+    1e-05
+  ],
+  "startup_check_after_ramp_s": 1e-05,
+  "startup_stop_after_ramp_s": 2e-05,
+  "startup_overshoot_max_V": 0.1,
+  "startup_peak_current_max_A": 0.0015,
+  "startup_energy_max_J": 5e-09,
+  "ac_Hz": [
+    10,
+    100000000.0
+  ],
+  "supply_gain_max_V_V": 0.2,
+  "noise_Hz": [
+    10,
+    1000000.0
+  ],
+  "noise_max_Vrms": 0.0005,
+  "line_step": {
+    "initial_V": 1.8,
+    "high_V": 1.98,
+    "low_V": 1.62,
+    "up_s": 5e-06,
+    "down_s": 1.5e-05,
+    "stop_s": 3e-05,
+    "edge_s": 1e-08,
+    "band_V": 0.001,
+    "excursion_max_V": 0.1,
+    "settling_max_s": 1e-05,
+    "target": "independent DC at each final supply, not transient tail"
+  },
+  "exclusions": [
+    "non-TT process/passive corners",
+    "paired hot/low-supply and cold/high-supply dynamic stresses",
+    "Monte Carlo seeds61000..61029",
+    "layout/PEX",
+    "loaded or buffered ADC reference"
+  ],
+  "acceptance_policy": "/home/IC/CodeX/smic18_benchmark_repro/contracts/acceptance-policy.md"
+}

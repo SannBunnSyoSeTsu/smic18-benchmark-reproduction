@@ -1,0 +1,52 @@
+// 5-bit binary-weighted PDK resistor DAC; b0 is LSB.
+// HD logic definition must be included at the bench level.
+simulator lang=spectre
+subckt switched_resistor_dac_5bit (vss b0 b1 b2 b3 b4 vdd vout)
+XINV0 (b0 nb0 vdd vss vdd vss) INHDV2
+MSN0 (sw0 nb0 vss vss) n18 w=3.24u l=.18u m=1
+MSP0 (sw0 nb0 vdd vdd) p18 w=9.08u l=.18u m=1
+RB0_0 (vout sw0 vss) rpposab_3t w=1u l=96u
+XINV1 (b1 nb1 vdd vss vdd vss) INHDV4
+MSN1 (sw1 nb1 vss vss) n18 w=3.24u l=.18u m=2
+MSP1 (sw1 nb1 vdd vdd) p18 w=9.08u l=.18u m=2
+RB1_0 (vout sw1 vss) rpposab_3t w=1u l=96u
+RB1_1 (vout sw1 vss) rpposab_3t w=1u l=96u
+XINV2 (b2 nb2 vdd vss vdd vss) INHDV8
+MSN2 (sw2 nb2 vss vss) n18 w=3.24u l=.18u m=4
+MSP2 (sw2 nb2 vdd vdd) p18 w=9.08u l=.18u m=4
+RB2_0 (vout sw2 vss) rpposab_3t w=1u l=96u
+RB2_1 (vout sw2 vss) rpposab_3t w=1u l=96u
+RB2_2 (vout sw2 vss) rpposab_3t w=1u l=96u
+RB2_3 (vout sw2 vss) rpposab_3t w=1u l=96u
+XINV3 (b3 nb3 vdd vss vdd vss) INHDV16
+MSN3 (sw3 nb3 vss vss) n18 w=3.24u l=.18u m=8
+MSP3 (sw3 nb3 vdd vdd) p18 w=9.08u l=.18u m=8
+RB3_0 (vout sw3 vss) rpposab_3t w=1u l=96u
+RB3_1 (vout sw3 vss) rpposab_3t w=1u l=96u
+RB3_2 (vout sw3 vss) rpposab_3t w=1u l=96u
+RB3_3 (vout sw3 vss) rpposab_3t w=1u l=96u
+RB3_4 (vout sw3 vss) rpposab_3t w=1u l=96u
+RB3_5 (vout sw3 vss) rpposab_3t w=1u l=96u
+RB3_6 (vout sw3 vss) rpposab_3t w=1u l=96u
+RB3_7 (vout sw3 vss) rpposab_3t w=1u l=96u
+XINV4 (b4 nb4 vdd vss vdd vss) INHDV32
+MSN4 (sw4 nb4 vss vss) n18 w=3.24u l=.18u m=16
+MSP4 (sw4 nb4 vdd vdd) p18 w=9.08u l=.18u m=16
+RB4_0 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_1 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_2 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_3 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_4 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_5 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_6 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_7 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_8 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_9 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_10 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_11 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_12 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_13 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_14 (vout sw4 vss) rpposab_3t w=1u l=96u
+RB4_15 (vout sw4 vss) rpposab_3t w=1u l=96u
+RT (vout vss vss) rpposab_3t w=1u l=96u
+ends switched_resistor_dac_5bit

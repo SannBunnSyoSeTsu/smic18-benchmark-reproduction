@@ -1,0 +1,399 @@
+simulator lang=spectre
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=res_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/07-ldo-ota5/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-14
+VIND00 (vinD00 0) vsource dc=1.62
+VREFD00 (vrefD00 0) vsource dc=.8
+IBIASD00 (vinD00 ibiasD00) isource dc=50u
+ILOADD00 (voutD00 0) isource dc=0.001
+XD00 (vinD00 voutD00 0 vrefD00 ibiasD00 fbD00 gate_driveD00 gateD00) ldo_ota5
+RFBTD00 (voutD00 fbD00) resistor r=300k
+RFBBD00 (fbD00 0) resistor r=600k
+VLOOPD00 (gate_driveD00 gateD00) vsource dc=0
+RESRD00 (voutD00 vcapD00) resistor r=0.05
+COUTD00 (vcapD00 0) capacitor c=1e-06
+save vinD00 voutD00 fbD00 gate_driveD00 gateD00 ibiasD00 VIND00:p
+VIND01 (vinD01 0) vsource dc=1.62
+VREFD01 (vrefD01 0) vsource dc=.8
+IBIASD01 (vinD01 ibiasD01) isource dc=50u
+ILOADD01 (voutD01 0) isource dc=0.01
+XD01 (vinD01 voutD01 0 vrefD01 ibiasD01 fbD01 gate_driveD01 gateD01) ldo_ota5
+RFBTD01 (voutD01 fbD01) resistor r=300k
+RFBBD01 (fbD01 0) resistor r=600k
+VLOOPD01 (gate_driveD01 gateD01) vsource dc=0
+RESRD01 (voutD01 vcapD01) resistor r=0.05
+COUTD01 (vcapD01 0) capacitor c=1e-06
+save vinD01 voutD01 fbD01 gate_driveD01 gateD01 ibiasD01 VIND01:p
+VIND02 (vinD02 0) vsource dc=1.62
+VREFD02 (vrefD02 0) vsource dc=.8
+IBIASD02 (vinD02 ibiasD02) isource dc=50u
+ILOADD02 (voutD02 0) isource dc=0.03
+XD02 (vinD02 voutD02 0 vrefD02 ibiasD02 fbD02 gate_driveD02 gateD02) ldo_ota5
+RFBTD02 (voutD02 fbD02) resistor r=300k
+RFBBD02 (fbD02 0) resistor r=600k
+VLOOPD02 (gate_driveD02 gateD02) vsource dc=0
+RESRD02 (voutD02 vcapD02) resistor r=0.05
+COUTD02 (vcapD02 0) capacitor c=1e-06
+save vinD02 voutD02 fbD02 gate_driveD02 gateD02 ibiasD02 VIND02:p
+VIND10 (vinD10 0) vsource dc=1.8
+VREFD10 (vrefD10 0) vsource dc=.8
+IBIASD10 (vinD10 ibiasD10) isource dc=50u
+ILOADD10 (voutD10 0) isource dc=0.001
+XD10 (vinD10 voutD10 0 vrefD10 ibiasD10 fbD10 gate_driveD10 gateD10) ldo_ota5
+RFBTD10 (voutD10 fbD10) resistor r=300k
+RFBBD10 (fbD10 0) resistor r=600k
+VLOOPD10 (gate_driveD10 gateD10) vsource dc=0
+RESRD10 (voutD10 vcapD10) resistor r=0.05
+COUTD10 (vcapD10 0) capacitor c=1e-06
+save vinD10 voutD10 fbD10 gate_driveD10 gateD10 ibiasD10 VIND10:p
+VIND11 (vinD11 0) vsource dc=1.8
+VREFD11 (vrefD11 0) vsource dc=.8
+IBIASD11 (vinD11 ibiasD11) isource dc=50u
+ILOADD11 (voutD11 0) isource dc=0.01
+XD11 (vinD11 voutD11 0 vrefD11 ibiasD11 fbD11 gate_driveD11 gateD11) ldo_ota5
+RFBTD11 (voutD11 fbD11) resistor r=300k
+RFBBD11 (fbD11 0) resistor r=600k
+VLOOPD11 (gate_driveD11 gateD11) vsource dc=0
+RESRD11 (voutD11 vcapD11) resistor r=0.05
+COUTD11 (vcapD11 0) capacitor c=1e-06
+save vinD11 voutD11 fbD11 gate_driveD11 gateD11 ibiasD11 VIND11:p
+VIND12 (vinD12 0) vsource dc=1.8
+VREFD12 (vrefD12 0) vsource dc=.8
+IBIASD12 (vinD12 ibiasD12) isource dc=50u
+ILOADD12 (voutD12 0) isource dc=0.03
+XD12 (vinD12 voutD12 0 vrefD12 ibiasD12 fbD12 gate_driveD12 gateD12) ldo_ota5
+RFBTD12 (voutD12 fbD12) resistor r=300k
+RFBBD12 (fbD12 0) resistor r=600k
+VLOOPD12 (gate_driveD12 gateD12) vsource dc=0
+RESRD12 (voutD12 vcapD12) resistor r=0.05
+COUTD12 (vcapD12 0) capacitor c=1e-06
+save vinD12 voutD12 fbD12 gate_driveD12 gateD12 ibiasD12 VIND12:p
+VIND20 (vinD20 0) vsource dc=1.98
+VREFD20 (vrefD20 0) vsource dc=.8
+IBIASD20 (vinD20 ibiasD20) isource dc=50u
+ILOADD20 (voutD20 0) isource dc=0.001
+XD20 (vinD20 voutD20 0 vrefD20 ibiasD20 fbD20 gate_driveD20 gateD20) ldo_ota5
+RFBTD20 (voutD20 fbD20) resistor r=300k
+RFBBD20 (fbD20 0) resistor r=600k
+VLOOPD20 (gate_driveD20 gateD20) vsource dc=0
+RESRD20 (voutD20 vcapD20) resistor r=0.05
+COUTD20 (vcapD20 0) capacitor c=1e-06
+save vinD20 voutD20 fbD20 gate_driveD20 gateD20 ibiasD20 VIND20:p
+VIND21 (vinD21 0) vsource dc=1.98
+VREFD21 (vrefD21 0) vsource dc=.8
+IBIASD21 (vinD21 ibiasD21) isource dc=50u
+ILOADD21 (voutD21 0) isource dc=0.01
+XD21 (vinD21 voutD21 0 vrefD21 ibiasD21 fbD21 gate_driveD21 gateD21) ldo_ota5
+RFBTD21 (voutD21 fbD21) resistor r=300k
+RFBBD21 (fbD21 0) resistor r=600k
+VLOOPD21 (gate_driveD21 gateD21) vsource dc=0
+RESRD21 (voutD21 vcapD21) resistor r=0.05
+COUTD21 (vcapD21 0) capacitor c=1e-06
+save vinD21 voutD21 fbD21 gate_driveD21 gateD21 ibiasD21 VIND21:p
+VIND22 (vinD22 0) vsource dc=1.98
+VREFD22 (vrefD22 0) vsource dc=.8
+IBIASD22 (vinD22 ibiasD22) isource dc=50u
+ILOADD22 (voutD22 0) isource dc=0.03
+XD22 (vinD22 voutD22 0 vrefD22 ibiasD22 fbD22 gate_driveD22 gateD22) ldo_ota5
+RFBTD22 (voutD22 fbD22) resistor r=300k
+RFBBD22 (fbD22 0) resistor r=600k
+VLOOPD22 (gate_driveD22 gateD22) vsource dc=0
+RESRD22 (voutD22 vcapD22) resistor r=0.05
+COUTD22 (vcapD22 0) capacitor c=1e-06
+save vinD22 voutD22 fbD22 gate_driveD22 gateD22 ibiasD22 VIND22:p
+VINL00 (vinL00 0) vsource dc=1.62
+VREFL00 (vrefL00 0) vsource dc=.8
+IBIASL00 (vinL00 ibiasL00) isource dc=50u
+ILOADL00 (voutL00 0) isource dc=0.001
+XL00 (vinL00 voutL00 0 vrefL00 ibiasL00 fbL00 gate_driveL00 gateL00) ldo_ota5
+RFBTL00 (voutL00 fbL00) resistor r=300k
+RFBBL00 (fbL00 0) resistor r=600k
+VLOOPL00 (gate_driveL00 gateL00) vsource dc=0 mag=1
+RESRL00 (voutL00 vcapL00) resistor r=0.05
+COUTL00 (vcapL00 0) capacitor c=1e-06
+save vinL00 voutL00 fbL00 gate_driveL00 gateL00 ibiasL00 VINL00:p
+VINL01 (vinL01 0) vsource dc=1.62
+VREFL01 (vrefL01 0) vsource dc=.8
+IBIASL01 (vinL01 ibiasL01) isource dc=50u
+ILOADL01 (voutL01 0) isource dc=0.01
+XL01 (vinL01 voutL01 0 vrefL01 ibiasL01 fbL01 gate_driveL01 gateL01) ldo_ota5
+RFBTL01 (voutL01 fbL01) resistor r=300k
+RFBBL01 (fbL01 0) resistor r=600k
+VLOOPL01 (gate_driveL01 gateL01) vsource dc=0 mag=1
+RESRL01 (voutL01 vcapL01) resistor r=0.05
+COUTL01 (vcapL01 0) capacitor c=1e-06
+save vinL01 voutL01 fbL01 gate_driveL01 gateL01 ibiasL01 VINL01:p
+VINL02 (vinL02 0) vsource dc=1.62
+VREFL02 (vrefL02 0) vsource dc=.8
+IBIASL02 (vinL02 ibiasL02) isource dc=50u
+ILOADL02 (voutL02 0) isource dc=0.03
+XL02 (vinL02 voutL02 0 vrefL02 ibiasL02 fbL02 gate_driveL02 gateL02) ldo_ota5
+RFBTL02 (voutL02 fbL02) resistor r=300k
+RFBBL02 (fbL02 0) resistor r=600k
+VLOOPL02 (gate_driveL02 gateL02) vsource dc=0 mag=1
+RESRL02 (voutL02 vcapL02) resistor r=0.05
+COUTL02 (vcapL02 0) capacitor c=1e-06
+save vinL02 voutL02 fbL02 gate_driveL02 gateL02 ibiasL02 VINL02:p
+VINL10 (vinL10 0) vsource dc=1.8
+VREFL10 (vrefL10 0) vsource dc=.8
+IBIASL10 (vinL10 ibiasL10) isource dc=50u
+ILOADL10 (voutL10 0) isource dc=0.001
+XL10 (vinL10 voutL10 0 vrefL10 ibiasL10 fbL10 gate_driveL10 gateL10) ldo_ota5
+RFBTL10 (voutL10 fbL10) resistor r=300k
+RFBBL10 (fbL10 0) resistor r=600k
+VLOOPL10 (gate_driveL10 gateL10) vsource dc=0 mag=1
+RESRL10 (voutL10 vcapL10) resistor r=0.05
+COUTL10 (vcapL10 0) capacitor c=1e-06
+save vinL10 voutL10 fbL10 gate_driveL10 gateL10 ibiasL10 VINL10:p
+VINL11 (vinL11 0) vsource dc=1.8
+VREFL11 (vrefL11 0) vsource dc=.8
+IBIASL11 (vinL11 ibiasL11) isource dc=50u
+ILOADL11 (voutL11 0) isource dc=0.01
+XL11 (vinL11 voutL11 0 vrefL11 ibiasL11 fbL11 gate_driveL11 gateL11) ldo_ota5
+RFBTL11 (voutL11 fbL11) resistor r=300k
+RFBBL11 (fbL11 0) resistor r=600k
+VLOOPL11 (gate_driveL11 gateL11) vsource dc=0 mag=1
+RESRL11 (voutL11 vcapL11) resistor r=0.05
+COUTL11 (vcapL11 0) capacitor c=1e-06
+save vinL11 voutL11 fbL11 gate_driveL11 gateL11 ibiasL11 VINL11:p
+VINL12 (vinL12 0) vsource dc=1.8
+VREFL12 (vrefL12 0) vsource dc=.8
+IBIASL12 (vinL12 ibiasL12) isource dc=50u
+ILOADL12 (voutL12 0) isource dc=0.03
+XL12 (vinL12 voutL12 0 vrefL12 ibiasL12 fbL12 gate_driveL12 gateL12) ldo_ota5
+RFBTL12 (voutL12 fbL12) resistor r=300k
+RFBBL12 (fbL12 0) resistor r=600k
+VLOOPL12 (gate_driveL12 gateL12) vsource dc=0 mag=1
+RESRL12 (voutL12 vcapL12) resistor r=0.05
+COUTL12 (vcapL12 0) capacitor c=1e-06
+save vinL12 voutL12 fbL12 gate_driveL12 gateL12 ibiasL12 VINL12:p
+VINL20 (vinL20 0) vsource dc=1.98
+VREFL20 (vrefL20 0) vsource dc=.8
+IBIASL20 (vinL20 ibiasL20) isource dc=50u
+ILOADL20 (voutL20 0) isource dc=0.001
+XL20 (vinL20 voutL20 0 vrefL20 ibiasL20 fbL20 gate_driveL20 gateL20) ldo_ota5
+RFBTL20 (voutL20 fbL20) resistor r=300k
+RFBBL20 (fbL20 0) resistor r=600k
+VLOOPL20 (gate_driveL20 gateL20) vsource dc=0 mag=1
+RESRL20 (voutL20 vcapL20) resistor r=0.05
+COUTL20 (vcapL20 0) capacitor c=1e-06
+save vinL20 voutL20 fbL20 gate_driveL20 gateL20 ibiasL20 VINL20:p
+VINL21 (vinL21 0) vsource dc=1.98
+VREFL21 (vrefL21 0) vsource dc=.8
+IBIASL21 (vinL21 ibiasL21) isource dc=50u
+ILOADL21 (voutL21 0) isource dc=0.01
+XL21 (vinL21 voutL21 0 vrefL21 ibiasL21 fbL21 gate_driveL21 gateL21) ldo_ota5
+RFBTL21 (voutL21 fbL21) resistor r=300k
+RFBBL21 (fbL21 0) resistor r=600k
+VLOOPL21 (gate_driveL21 gateL21) vsource dc=0 mag=1
+RESRL21 (voutL21 vcapL21) resistor r=0.05
+COUTL21 (vcapL21 0) capacitor c=1e-06
+save vinL21 voutL21 fbL21 gate_driveL21 gateL21 ibiasL21 VINL21:p
+VINL22 (vinL22 0) vsource dc=1.98
+VREFL22 (vrefL22 0) vsource dc=.8
+IBIASL22 (vinL22 ibiasL22) isource dc=50u
+ILOADL22 (voutL22 0) isource dc=0.03
+XL22 (vinL22 voutL22 0 vrefL22 ibiasL22 fbL22 gate_driveL22 gateL22) ldo_ota5
+RFBTL22 (voutL22 fbL22) resistor r=300k
+RFBBL22 (fbL22 0) resistor r=600k
+VLOOPL22 (gate_driveL22 gateL22) vsource dc=0 mag=1
+RESRL22 (voutL22 vcapL22) resistor r=0.05
+COUTL22 (vcapL22 0) capacitor c=1e-06
+save vinL22 voutL22 fbL22 gate_driveL22 gateL22 ibiasL22 VINL22:p
+VINP00 (vinP00 0) vsource dc=1.62 mag=1
+VREFP00 (vrefP00 0) vsource dc=.8
+IBIASP00 (vinP00 ibiasP00) isource dc=50u
+ILOADP00 (voutP00 0) isource dc=0.001
+XP00 (vinP00 voutP00 0 vrefP00 ibiasP00 fbP00 gate_driveP00 gateP00) ldo_ota5
+RFBTP00 (voutP00 fbP00) resistor r=300k
+RFBBP00 (fbP00 0) resistor r=600k
+VLOOPP00 (gate_driveP00 gateP00) vsource dc=0
+RESRP00 (voutP00 vcapP00) resistor r=0.05
+COUTP00 (vcapP00 0) capacitor c=1e-06
+save vinP00 voutP00 fbP00 gate_driveP00 gateP00 ibiasP00 VINP00:p
+VINP01 (vinP01 0) vsource dc=1.62 mag=1
+VREFP01 (vrefP01 0) vsource dc=.8
+IBIASP01 (vinP01 ibiasP01) isource dc=50u
+ILOADP01 (voutP01 0) isource dc=0.01
+XP01 (vinP01 voutP01 0 vrefP01 ibiasP01 fbP01 gate_driveP01 gateP01) ldo_ota5
+RFBTP01 (voutP01 fbP01) resistor r=300k
+RFBBP01 (fbP01 0) resistor r=600k
+VLOOPP01 (gate_driveP01 gateP01) vsource dc=0
+RESRP01 (voutP01 vcapP01) resistor r=0.05
+COUTP01 (vcapP01 0) capacitor c=1e-06
+save vinP01 voutP01 fbP01 gate_driveP01 gateP01 ibiasP01 VINP01:p
+VINP02 (vinP02 0) vsource dc=1.62 mag=1
+VREFP02 (vrefP02 0) vsource dc=.8
+IBIASP02 (vinP02 ibiasP02) isource dc=50u
+ILOADP02 (voutP02 0) isource dc=0.03
+XP02 (vinP02 voutP02 0 vrefP02 ibiasP02 fbP02 gate_driveP02 gateP02) ldo_ota5
+RFBTP02 (voutP02 fbP02) resistor r=300k
+RFBBP02 (fbP02 0) resistor r=600k
+VLOOPP02 (gate_driveP02 gateP02) vsource dc=0
+RESRP02 (voutP02 vcapP02) resistor r=0.05
+COUTP02 (vcapP02 0) capacitor c=1e-06
+save vinP02 voutP02 fbP02 gate_driveP02 gateP02 ibiasP02 VINP02:p
+VINP10 (vinP10 0) vsource dc=1.8 mag=1
+VREFP10 (vrefP10 0) vsource dc=.8
+IBIASP10 (vinP10 ibiasP10) isource dc=50u
+ILOADP10 (voutP10 0) isource dc=0.001
+XP10 (vinP10 voutP10 0 vrefP10 ibiasP10 fbP10 gate_driveP10 gateP10) ldo_ota5
+RFBTP10 (voutP10 fbP10) resistor r=300k
+RFBBP10 (fbP10 0) resistor r=600k
+VLOOPP10 (gate_driveP10 gateP10) vsource dc=0
+RESRP10 (voutP10 vcapP10) resistor r=0.05
+COUTP10 (vcapP10 0) capacitor c=1e-06
+save vinP10 voutP10 fbP10 gate_driveP10 gateP10 ibiasP10 VINP10:p
+VINP11 (vinP11 0) vsource dc=1.8 mag=1
+VREFP11 (vrefP11 0) vsource dc=.8
+IBIASP11 (vinP11 ibiasP11) isource dc=50u
+ILOADP11 (voutP11 0) isource dc=0.01
+XP11 (vinP11 voutP11 0 vrefP11 ibiasP11 fbP11 gate_driveP11 gateP11) ldo_ota5
+RFBTP11 (voutP11 fbP11) resistor r=300k
+RFBBP11 (fbP11 0) resistor r=600k
+VLOOPP11 (gate_driveP11 gateP11) vsource dc=0
+RESRP11 (voutP11 vcapP11) resistor r=0.05
+COUTP11 (vcapP11 0) capacitor c=1e-06
+save vinP11 voutP11 fbP11 gate_driveP11 gateP11 ibiasP11 VINP11:p
+VINP12 (vinP12 0) vsource dc=1.8 mag=1
+VREFP12 (vrefP12 0) vsource dc=.8
+IBIASP12 (vinP12 ibiasP12) isource dc=50u
+ILOADP12 (voutP12 0) isource dc=0.03
+XP12 (vinP12 voutP12 0 vrefP12 ibiasP12 fbP12 gate_driveP12 gateP12) ldo_ota5
+RFBTP12 (voutP12 fbP12) resistor r=300k
+RFBBP12 (fbP12 0) resistor r=600k
+VLOOPP12 (gate_driveP12 gateP12) vsource dc=0
+RESRP12 (voutP12 vcapP12) resistor r=0.05
+COUTP12 (vcapP12 0) capacitor c=1e-06
+save vinP12 voutP12 fbP12 gate_driveP12 gateP12 ibiasP12 VINP12:p
+VINP20 (vinP20 0) vsource dc=1.98 mag=1
+VREFP20 (vrefP20 0) vsource dc=.8
+IBIASP20 (vinP20 ibiasP20) isource dc=50u
+ILOADP20 (voutP20 0) isource dc=0.001
+XP20 (vinP20 voutP20 0 vrefP20 ibiasP20 fbP20 gate_driveP20 gateP20) ldo_ota5
+RFBTP20 (voutP20 fbP20) resistor r=300k
+RFBBP20 (fbP20 0) resistor r=600k
+VLOOPP20 (gate_driveP20 gateP20) vsource dc=0
+RESRP20 (voutP20 vcapP20) resistor r=0.05
+COUTP20 (vcapP20 0) capacitor c=1e-06
+save vinP20 voutP20 fbP20 gate_driveP20 gateP20 ibiasP20 VINP20:p
+VINP21 (vinP21 0) vsource dc=1.98 mag=1
+VREFP21 (vrefP21 0) vsource dc=.8
+IBIASP21 (vinP21 ibiasP21) isource dc=50u
+ILOADP21 (voutP21 0) isource dc=0.01
+XP21 (vinP21 voutP21 0 vrefP21 ibiasP21 fbP21 gate_driveP21 gateP21) ldo_ota5
+RFBTP21 (voutP21 fbP21) resistor r=300k
+RFBBP21 (fbP21 0) resistor r=600k
+VLOOPP21 (gate_driveP21 gateP21) vsource dc=0
+RESRP21 (voutP21 vcapP21) resistor r=0.05
+COUTP21 (vcapP21 0) capacitor c=1e-06
+save vinP21 voutP21 fbP21 gate_driveP21 gateP21 ibiasP21 VINP21:p
+VINP22 (vinP22 0) vsource dc=1.98 mag=1
+VREFP22 (vrefP22 0) vsource dc=.8
+IBIASP22 (vinP22 ibiasP22) isource dc=50u
+ILOADP22 (voutP22 0) isource dc=0.03
+XP22 (vinP22 voutP22 0 vrefP22 ibiasP22 fbP22 gate_driveP22 gateP22) ldo_ota5
+RFBTP22 (voutP22 fbP22) resistor r=300k
+RFBBP22 (fbP22 0) resistor r=600k
+VLOOPP22 (gate_driveP22 gateP22) vsource dc=0
+RESRP22 (voutP22 vcapP22) resistor r=0.05
+COUTP22 (vcapP22 0) capacitor c=1e-06
+save vinP22 voutP22 fbP22 gate_driveP22 gateP22 ibiasP22 VINP22:p
+VINE000 (vinE000 0) vsource dc=1.8
+VREFE000 (vrefE000 0) vsource dc=.8
+IBIASE000 (vinE000 ibiasE000) isource dc=50u
+ILOADE000 (voutE000 0) isource dc=0.001
+XE000 (vinE000 voutE000 0 vrefE000 ibiasE000 fbE000 gate_driveE000 gateE000) ldo_ota5
+RFBTE000 (voutE000 fbE000) resistor r=300k
+RFBBE000 (fbE000 0) resistor r=600k
+VLOOPE000 (gate_driveE000 gateE000) vsource dc=0 mag=1
+RESRE000 (voutE000 vcapE000) resistor r=0.02
+COUTE000 (vcapE000 0) capacitor c=8e-07
+save vinE000 voutE000 fbE000 gate_driveE000 gateE000 ibiasE000 VINE000:p
+VINE001 (vinE001 0) vsource dc=1.8
+VREFE001 (vrefE001 0) vsource dc=.8
+IBIASE001 (vinE001 ibiasE001) isource dc=50u
+ILOADE001 (voutE001 0) isource dc=0.03
+XE001 (vinE001 voutE001 0 vrefE001 ibiasE001 fbE001 gate_driveE001 gateE001) ldo_ota5
+RFBTE001 (voutE001 fbE001) resistor r=300k
+RFBBE001 (fbE001 0) resistor r=600k
+VLOOPE001 (gate_driveE001 gateE001) vsource dc=0 mag=1
+RESRE001 (voutE001 vcapE001) resistor r=0.02
+COUTE001 (vcapE001 0) capacitor c=8e-07
+save vinE001 voutE001 fbE001 gate_driveE001 gateE001 ibiasE001 VINE001:p
+VINE010 (vinE010 0) vsource dc=1.8
+VREFE010 (vrefE010 0) vsource dc=.8
+IBIASE010 (vinE010 ibiasE010) isource dc=50u
+ILOADE010 (voutE010 0) isource dc=0.001
+XE010 (vinE010 voutE010 0 vrefE010 ibiasE010 fbE010 gate_driveE010 gateE010) ldo_ota5
+RFBTE010 (voutE010 fbE010) resistor r=300k
+RFBBE010 (fbE010 0) resistor r=600k
+VLOOPE010 (gate_driveE010 gateE010) vsource dc=0 mag=1
+RESRE010 (voutE010 vcapE010) resistor r=0.1
+COUTE010 (vcapE010 0) capacitor c=8e-07
+save vinE010 voutE010 fbE010 gate_driveE010 gateE010 ibiasE010 VINE010:p
+VINE011 (vinE011 0) vsource dc=1.8
+VREFE011 (vrefE011 0) vsource dc=.8
+IBIASE011 (vinE011 ibiasE011) isource dc=50u
+ILOADE011 (voutE011 0) isource dc=0.03
+XE011 (vinE011 voutE011 0 vrefE011 ibiasE011 fbE011 gate_driveE011 gateE011) ldo_ota5
+RFBTE011 (voutE011 fbE011) resistor r=300k
+RFBBE011 (fbE011 0) resistor r=600k
+VLOOPE011 (gate_driveE011 gateE011) vsource dc=0 mag=1
+RESRE011 (voutE011 vcapE011) resistor r=0.1
+COUTE011 (vcapE011 0) capacitor c=8e-07
+save vinE011 voutE011 fbE011 gate_driveE011 gateE011 ibiasE011 VINE011:p
+VINE100 (vinE100 0) vsource dc=1.8
+VREFE100 (vrefE100 0) vsource dc=.8
+IBIASE100 (vinE100 ibiasE100) isource dc=50u
+ILOADE100 (voutE100 0) isource dc=0.001
+XE100 (vinE100 voutE100 0 vrefE100 ibiasE100 fbE100 gate_driveE100 gateE100) ldo_ota5
+RFBTE100 (voutE100 fbE100) resistor r=300k
+RFBBE100 (fbE100 0) resistor r=600k
+VLOOPE100 (gate_driveE100 gateE100) vsource dc=0 mag=1
+RESRE100 (voutE100 vcapE100) resistor r=0.02
+COUTE100 (vcapE100 0) capacitor c=1.2e-06
+save vinE100 voutE100 fbE100 gate_driveE100 gateE100 ibiasE100 VINE100:p
+VINE101 (vinE101 0) vsource dc=1.8
+VREFE101 (vrefE101 0) vsource dc=.8
+IBIASE101 (vinE101 ibiasE101) isource dc=50u
+ILOADE101 (voutE101 0) isource dc=0.03
+XE101 (vinE101 voutE101 0 vrefE101 ibiasE101 fbE101 gate_driveE101 gateE101) ldo_ota5
+RFBTE101 (voutE101 fbE101) resistor r=300k
+RFBBE101 (fbE101 0) resistor r=600k
+VLOOPE101 (gate_driveE101 gateE101) vsource dc=0 mag=1
+RESRE101 (voutE101 vcapE101) resistor r=0.02
+COUTE101 (vcapE101 0) capacitor c=1.2e-06
+save vinE101 voutE101 fbE101 gate_driveE101 gateE101 ibiasE101 VINE101:p
+VINE110 (vinE110 0) vsource dc=1.8
+VREFE110 (vrefE110 0) vsource dc=.8
+IBIASE110 (vinE110 ibiasE110) isource dc=50u
+ILOADE110 (voutE110 0) isource dc=0.001
+XE110 (vinE110 voutE110 0 vrefE110 ibiasE110 fbE110 gate_driveE110 gateE110) ldo_ota5
+RFBTE110 (voutE110 fbE110) resistor r=300k
+RFBBE110 (fbE110 0) resistor r=600k
+VLOOPE110 (gate_driveE110 gateE110) vsource dc=0 mag=1
+RESRE110 (voutE110 vcapE110) resistor r=0.1
+COUTE110 (vcapE110 0) capacitor c=1.2e-06
+save vinE110 voutE110 fbE110 gate_driveE110 gateE110 ibiasE110 VINE110:p
+VINE111 (vinE111 0) vsource dc=1.8
+VREFE111 (vrefE111 0) vsource dc=.8
+IBIASE111 (vinE111 ibiasE111) isource dc=50u
+ILOADE111 (voutE111 0) isource dc=0.03
+XE111 (vinE111 voutE111 0 vrefE111 ibiasE111 fbE111 gate_driveE111 gateE111) ldo_ota5
+RFBTE111 (voutE111 fbE111) resistor r=300k
+RFBBE111 (fbE111 0) resistor r=600k
+VLOOPE111 (gate_driveE111 gateE111) vsource dc=0 mag=1
+RESRE111 (voutE111 vcapE111) resistor r=0.1
+COUTE111 (vcapE111 0) capacitor c=1.2e-06
+save vinE111 voutE111 fbE111 gate_driveE111 gateE111 ibiasE111 VINE111:p
+save XD00.MINP:ids XD00.MINP:gm XD00.MINP:gds XD00.MINP:vds XD00.MINP:vdsat XD00.MINP:vgs XD00.MINN:ids XD00.MINN:gm XD00.MINN:gds XD00.MINN:vds XD00.MINN:vdsat XD00.MINN:vgs XD00.MLOAD:ids XD00.MLOAD:gm XD00.MLOAD:gds XD00.MLOAD:vds XD00.MLOAD:vdsat XD00.MLOAD:vgs XD00.MLOUT:ids XD00.MLOUT:gm XD00.MLOUT:gds XD00.MLOUT:vds XD00.MLOUT:vdsat XD00.MLOUT:vgs XD00.MTAIL:ids XD00.MTAIL:gm XD00.MTAIL:gds XD00.MTAIL:vds XD00.MTAIL:vdsat XD00.MTAIL:vgs XD00.MREF:ids XD00.MREF:gm XD00.MREF:gds XD00.MREF:vds XD00.MREF:vdsat XD00.MREF:vgs XD00.MPASS:ids XD00.MPASS:gm XD00.MPASS:gds XD00.MPASS:vds XD00.MPASS:vdsat XD00.MPASS:vgs XD00.MPTREF:ids XD00.MPTREF:gm XD00.MPTREF:gds XD00.MPTREF:vds XD00.MPTREF:vdsat XD00.MPTREF:vgs XD00.MNPT:ids XD00.MNPT:gm XD00.MNPT:gds XD00.MNPT:vds XD00.MNPT:vdsat XD00.MNPT:vgs XD00.MSF:ids XD00.MSF:gm XD00.MSF:gds XD00.MSF:vds XD00.MSF:vdsat XD00.MSF:vgs XD00.MBUF:ids XD00.MBUF:gm XD00.MBUF:gds XD00.MBUF:vds XD00.MBUF:vdsat XD00.MBUF:vgs XD00.MNBUF:ids XD00.MNBUF:gm XD00.MNBUF:gds XD00.MNBUF:vds XD00.MNBUF:vdsat XD00.MNBUF:vgs
+save XD00.nleft XD00.tail XD00.ampout XD00.pbuf
+save XD02.MINP:ids XD02.MINP:gm XD02.MINP:gds XD02.MINP:vds XD02.MINP:vdsat XD02.MINP:vgs XD02.MINN:ids XD02.MINN:gm XD02.MINN:gds XD02.MINN:vds XD02.MINN:vdsat XD02.MINN:vgs XD02.MLOAD:ids XD02.MLOAD:gm XD02.MLOAD:gds XD02.MLOAD:vds XD02.MLOAD:vdsat XD02.MLOAD:vgs XD02.MLOUT:ids XD02.MLOUT:gm XD02.MLOUT:gds XD02.MLOUT:vds XD02.MLOUT:vdsat XD02.MLOUT:vgs XD02.MTAIL:ids XD02.MTAIL:gm XD02.MTAIL:gds XD02.MTAIL:vds XD02.MTAIL:vdsat XD02.MTAIL:vgs XD02.MREF:ids XD02.MREF:gm XD02.MREF:gds XD02.MREF:vds XD02.MREF:vdsat XD02.MREF:vgs XD02.MPASS:ids XD02.MPASS:gm XD02.MPASS:gds XD02.MPASS:vds XD02.MPASS:vdsat XD02.MPASS:vgs XD02.MPTREF:ids XD02.MPTREF:gm XD02.MPTREF:gds XD02.MPTREF:vds XD02.MPTREF:vdsat XD02.MPTREF:vgs XD02.MNPT:ids XD02.MNPT:gm XD02.MNPT:gds XD02.MNPT:vds XD02.MNPT:vdsat XD02.MNPT:vgs XD02.MSF:ids XD02.MSF:gm XD02.MSF:gds XD02.MSF:vds XD02.MSF:vdsat XD02.MSF:vgs XD02.MBUF:ids XD02.MBUF:gm XD02.MBUF:gds XD02.MBUF:vds XD02.MBUF:vdsat XD02.MBUF:vgs XD02.MNBUF:ids XD02.MNBUF:gm XD02.MNBUF:gds XD02.MNBUF:vds XD02.MNBUF:vdsat XD02.MNBUF:vgs
+save XD02.nleft XD02.tail XD02.ampout XD02.pbuf
+save XD11.MINP:ids XD11.MINP:gm XD11.MINP:gds XD11.MINP:vds XD11.MINP:vdsat XD11.MINP:vgs XD11.MINN:ids XD11.MINN:gm XD11.MINN:gds XD11.MINN:vds XD11.MINN:vdsat XD11.MINN:vgs XD11.MLOAD:ids XD11.MLOAD:gm XD11.MLOAD:gds XD11.MLOAD:vds XD11.MLOAD:vdsat XD11.MLOAD:vgs XD11.MLOUT:ids XD11.MLOUT:gm XD11.MLOUT:gds XD11.MLOUT:vds XD11.MLOUT:vdsat XD11.MLOUT:vgs XD11.MTAIL:ids XD11.MTAIL:gm XD11.MTAIL:gds XD11.MTAIL:vds XD11.MTAIL:vdsat XD11.MTAIL:vgs XD11.MREF:ids XD11.MREF:gm XD11.MREF:gds XD11.MREF:vds XD11.MREF:vdsat XD11.MREF:vgs XD11.MPASS:ids XD11.MPASS:gm XD11.MPASS:gds XD11.MPASS:vds XD11.MPASS:vdsat XD11.MPASS:vgs XD11.MPTREF:ids XD11.MPTREF:gm XD11.MPTREF:gds XD11.MPTREF:vds XD11.MPTREF:vdsat XD11.MPTREF:vgs XD11.MNPT:ids XD11.MNPT:gm XD11.MNPT:gds XD11.MNPT:vds XD11.MNPT:vdsat XD11.MNPT:vgs XD11.MSF:ids XD11.MSF:gm XD11.MSF:gds XD11.MSF:vds XD11.MSF:vdsat XD11.MSF:vgs XD11.MBUF:ids XD11.MBUF:gm XD11.MBUF:gds XD11.MBUF:vds XD11.MBUF:vdsat XD11.MBUF:vgs XD11.MNBUF:ids XD11.MNBUF:gm XD11.MNBUF:gds XD11.MNBUF:vds XD11.MNBUF:vdsat XD11.MNBUF:vgs
+save XD11.nleft XD11.tail XD11.ampout XD11.pbuf
+dcOp dc
+ac ac start=1 stop=100M dec=100

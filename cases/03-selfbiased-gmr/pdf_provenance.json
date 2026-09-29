@@ -1,0 +1,89 @@
+{
+  "pdf": "reports/03-selfbiased-gmr-review.pdf",
+  "sha256": "18aca837298c04b51f9ee4a59e1dc6fd5f34c2a376202549164870e02d5abc72",
+  "results_sha256": "70c9cb2a8a4c60a2c7b66515666d80b521f500191a625ac010c2549b4c1b0300",
+  "circuit_sha256": "d4504f8b99aae74c22d49109938ee6d187d5e83a13dbcb02ad518e93df3748cd",
+  "generated_at": "2026-09-23T06:19:08.356709+00:00",
+  "pages": 6,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:19:08.359465+00:00",
+  "body_pages": 4,
+  "schematic_pages": 2,
+  "schematic_sheets_sha256": "85462f3978d576af4dcbedd3a74db9d9e5baa282f45cd403a98f835e3dfa2e81",
+  "schematic_audit_sha256": "5e0d773f7103c1fa18117078927db5ae0719fd989fa3638ccda91198e76faf71",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/03-selfbiased-gmr/03-selfbiased-gmr-review.pdf",
+    "sha256": "34ed26f844229c4f8b42618e5c24fdfb4a19554930e96702b6d4a464bd2bdbb3",
+    "pages": 4,
+    "previous_render_reviewed_at": "2026-09-22T07:35:44.562779+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "2f30242bb7b06d6ce4bca3aa22cd4b38f319868dd06b04ea0cc5e3e3808f1383"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "f6742ab87a9d3aeae23688100c84b7bfb12ef99b914729e9a3b1f7f7a5505476"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "2e52dbebe189227a05db6cda2d04fab4d3eeedb2d1a19d78b083725e6201511e"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "140c74fc5dc6235753baee1247814e3eb6f69f1310e01b9009b22e96888b4ffe"
+    },
+    {
+      "page": 5,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "d7652ac189e4f50d900e94d48dfdea9570737947beed9ba5e07e96ea2dc32415",
+      "path": "reports/schematic-retrofit-renders/03-selfbiased-gmr/page-05.png",
+      "sha256": "7f59fda2666a5cda5ca2533303e57b369f9ab941c15ab8557def32680636e3c0"
+    },
+    {
+      "page": 6,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "5b7a13c15a6ea1b65107a523249f308e45a880973e4fec30863ec96a6c63a1ab",
+      "path": "reports/schematic-retrofit-renders/03-selfbiased-gmr/page-06.png",
+      "sha256": "1f58b7cbe6777255cb61496b46972f62731a1f6f60489bed25c0ca078b58570f"
+    }
+  ],
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change."
+}

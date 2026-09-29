@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-09-22T09:21:32.583624+00:00",
+  "case_slot": 24,
+  "status": "passed",
+  "result_sha256": "69c7d2f3932f20ec339a6405f746f420f2f20b6a529aa01ee3a5b5b1d855b017",
+  "circuit_sha256": "fc15de4598b7f285d780f50fc2a85f864935cf0bfa81dfb4d21208dfdfef662c",
+  "pdf_sha256": "2708e77ca5d9225fe9dedced2ca551cbf1f2568f52c7965dff586aaab65522e4",
+  "pdf_pages": 8,
+  "pdf_intro_before_verdict": true,
+  "all_final_pages_visually_reviewed": true,
+  "full_nominal_coverage": {
+    "control_plateaus": 4,
+    "frequency_periods_each": 5,
+    "KVCO_intervals": 3,
+    "early_late_drift_comparisons": 4,
+    "window_end_checks": 8,
+    "startup": 1,
+    "duty": 1,
+    "swing_plateaus": 4,
+    "power_window": 1,
+    "pushing_supplies": 2,
+    "numerical_gates": 13
+  },
+  "source_hashes_match": true,
+  "LUT_hashes_match": true,
+  "HD_sizes_original": true,
+  "HD_virtual_supply_and_global_wells_confirmed": true,
+  "runs": [
+    {
+      "path": "runs/24/20260922T090830797411Z_tune",
+      "raw": "runs/24/20260922T090830797411Z_tune/output/bench.raw/tran.tran.tran",
+      "raw_bytes": 163147432,
+      "hashes_match": true,
+      "model_dimensions_valid": true,
+      "include_closure_complete": true,
+      "warnings": []
+    },
+    {
+      "path": "runs/24/20260922T090846079959Z_push",
+      "raw": "runs/24/20260922T090846079959Z_push/output/bench.raw/tran.tran.tran",
+      "raw_bytes": 5656556,
+      "hashes_match": true,
+      "model_dimensions_valid": true,
+      "include_closure_complete": true,
+      "warnings": []
+    }
+  ],
+  "scope_exclusions": [
+    "other26 tuning PVT combinations",
+    "SS/FF supply-pushing tests",
+    "phase noise and jitter",
+    "mismatch/Monte Carlo",
+    "PEX"
+  ],
+  "knowledge_path": "cases/24-ring-vco/knowledge.md",
+  "knowledge_sha256": "6d4b9f8c4bf1a19ec191d59388f6245f708761c3691be2a13bdac9f90d06d9e0",
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:22:21.559644+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "fc15de4598b7f285d780f50fc2a85f864935cf0bfa81dfb4d21208dfdfef662c",
+    "results_sha256": "69c7d2f3932f20ec339a6405f746f420f2f20b6a529aa01ee3a5b5b1d855b017",
+    "previous_pdf_sha256": "c5b07cee4ed61f40f13d0007b748df0492de569eef0d44a3d2950965d970bfa3",
+    "current_pdf_sha256": "2708e77ca5d9225fe9dedced2ca551cbf1f2568f52c7965dff586aaab65522e4",
+    "schematic_audit_sha256": "b83256021881df583690357577db8fad3c7f293ad90bf4aa750c62db461e4600",
+    "report_pages": 8,
+    "all_merged_pages_pixel_identical_to_sources": true,
+    "historical_pdf_fields": {
+      "pdf_sha256": "c5b07cee4ed61f40f13d0007b748df0492de569eef0d44a3d2950965d970bfa3",
+      "pdf_pages": 6
+    }
+  }
+}

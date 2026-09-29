@@ -1,0 +1,13 @@
+simulator lang=spectre
+subckt tx_driver_28g (vss vdd iref dinp dinn voutp voutn)
+MREF (iref iref vss vss) n18 w=39.76u l=.36u m=1
+MTAIL (tail iref vss vss) n18 w=39.76u l=.36u m=200
+MPAIRP (dn gip tail vss) n18 w=0.64u l=.18u m=100
+MPAIRN (dp gin tail vss) n18 w=0.64u l=.18u m=100
+CNEUTP (dp gip) capacitor c=15f
+CNEUTN (dn gin) capacitor c=15f
+LP (dp voutp) inductor l=200p
+LN (dn voutn) inductor l=200p
+LIP (dinp gip) inductor l=200p
+LIN (dinn gin) inductor l=200p
+ends tx_driver_28g

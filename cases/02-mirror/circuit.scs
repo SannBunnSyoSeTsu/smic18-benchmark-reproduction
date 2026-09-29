@@ -1,0 +1,28 @@
+// Analog devices from target SMIC18 gm/ID LUT; exact HD decode cells.
+simulator lang=spectre
+subckt programmable_current_mirror (vss vdd icc_ref iptat_ref ratio_b0 ratio_b1 iout)
+MICC (icc_ref icc_ref vss vss) n18 w=34.78u l=1u
+MPTAT (iptat_ref iptat_ref vss vss) n18 w=34.78u l=1u
+XNB0 (ratio_b0 nb0 vdd vss vdd vss) INHDV0
+XNB1 (ratio_b1 nb1 vdd vss vdd vss) INHDV0
+XSEL0 (ratio_b0 ratio_b1 sel0 vdd vss vdd vss) NOR2HDV0
+MIC0 (pre0 icc_ref vss vss) n18 w=34.780000u l=1u m=16
+MPT0 (pre0 iptat_ref vss vss) n18 w=34.780000u l=1u m=4
+MSW0 (isum sel0 pre0 vss) n18 w=32.84u l=.18u
+XSEL1 (nb0 ratio_b1 sel1 vdd vss vdd vss) NOR2HDV0
+MIC1 (pre1 icc_ref vss vss) n18 w=34.780000u l=1u m=12
+MPT1 (pre1 iptat_ref vss vss) n18 w=34.780000u l=1u m=8
+MSW1 (isum sel1 pre1 vss) n18 w=32.84u l=.18u
+XSEL2 (ratio_b0 nb1 sel2 vdd vss vdd vss) NOR2HDV0
+MIC2 (pre2 icc_ref vss vss) n18 w=34.780000u l=1u m=8
+MPT2 (pre2 iptat_ref vss vss) n18 w=34.780000u l=1u m=12
+MSW2 (isum sel2 pre2 vss) n18 w=32.84u l=.18u
+XSEL3 (nb0 nb1 sel3 vdd vss vdd vss) NOR2HDV0
+MIC3 (pre3 icc_ref vss vss) n18 w=34.780000u l=1u m=4
+MPT3 (pre3 iptat_ref vss vss) n18 w=34.780000u l=1u m=16
+MSW3 (isum sel3 pre3 vss) n18 w=32.84u l=.18u
+MCASC (iout vcb isum vss) n18 w=2.12u l=.36u m=200
+MBC (vcb vcb vb vss) n18 w=2.12u l=.36u
+RTOP (vdd vcb) resistor r=210000
+RBOT (vb vss) resistor r=50000
+ends programmable_current_mirror

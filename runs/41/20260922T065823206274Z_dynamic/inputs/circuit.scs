@@ -1,0 +1,19 @@
+// Wide-swing cascoded input load and complementary output stage.
+simulator lang=spectre
+subckt two_stage_miller_opamp (vss iref vdd vinn vinp vout)
+MREF (iref iref vss vss) n18 w=3.22u l=1u m=5
+MTAIL (tail iref vss vss) n18 w=3.22u l=1u m=6
+MLOAD (vout iref vss vss) n18 w=3.22u l=1u m=14
+MCBN (vbp iref vss vss) n18 w=3.22u l=1u
+RB (vdd nrb) resistor r=22000
+MPCB (vbp vbp nrb vdd) p18 w=3.14u l=.36u
+MINN (nleft vinn tail vss) n18 w=30.76u l=1u
+MINP (stage1 vinp tail vss) n18 w=30.76u l=1u
+MPD (nc3 nleft vdd vdd) p18 w=3.14u l=.36u m=3
+MPM (nc4 nleft vdd vdd) p18 w=3.14u l=.36u m=3
+MCD (nleft vbp nc3 vdd) p18 w=3.14u l=.36u m=3
+MCM (stage1 vbp nc4 vdd) p18 w=3.14u l=.36u m=3
+MSECOND (vout stage1 vdd vdd) p18 w=3.14u l=.36u m=14
+RZ (stage1 comp) resistor r=700
+CC (comp vout) capacitor c=2p
+ends two_stage_miller_opamp

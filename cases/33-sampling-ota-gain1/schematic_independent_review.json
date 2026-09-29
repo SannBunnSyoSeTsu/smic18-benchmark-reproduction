@@ -1,0 +1,311 @@
+{
+  "slot": 33,
+  "case": "cases/33-sampling-ota-gain1",
+  "circuit_sha256": "05da74f7a23c1d2282c3274119e1fae0559296895141342ffc3a2b043dba1e44",
+  "hd_cells_sha256": null,
+  "top": "sampling_feedback_ota",
+  "source_definition_count": 40,
+  "source_terminal_count": 140,
+  "source_expanded_leaf_count": 40,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "ab881f3ab309d1125ab42c4694b0c8db014559c41e719931fa4c572760b06af9",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 40,
+  "schematic_expanded_leaf_count": 40,
+  "independently_traced_terminals": 140,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 30,
+    "R": 6,
+    "C": 4
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "sampling_feedback_ota/MREF",
+      "D_G_S_B": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MBN",
+      "D_G_S_B": [
+        "vbp",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MBP",
+      "D_G_S_B": [
+        "vbp",
+        "vbp",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MOBN",
+      "D_G_S_B": [
+        "vbpout",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MOBP",
+      "D_G_S_B": [
+        "vbpout",
+        "vbpout",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MNCB",
+      "D_G_S_B": [
+        "vcn",
+        "vbp",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MDN",
+      "D_G_S_B": [
+        "vcn",
+        "vcn",
+        "ncb",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MDP",
+      "D_G_S_B": [
+        "vpc",
+        "vpc",
+        "pcb",
+        "pcb"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MPCB",
+      "D_G_S_B": [
+        "vpc",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MTAIL",
+      "D_G_S_B": [
+        "tail",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MINP",
+      "D_G_S_B": [
+        "fp",
+        "vinp",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MINN",
+      "D_G_S_B": [
+        "fn",
+        "vinn",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MSP",
+      "D_G_S_B": [
+        "fp",
+        "vbp",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MSN",
+      "D_G_S_B": [
+        "fn",
+        "vbp",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MPCP",
+      "D_G_S_B": [
+        "stagep",
+        "vpc",
+        "fp",
+        "fp"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MPCN",
+      "D_G_S_B": [
+        "stagen",
+        "vpc",
+        "fn",
+        "fn"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MNCP",
+      "D_G_S_B": [
+        "stagep",
+        "vcn",
+        "sinkp",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MNCN",
+      "D_G_S_B": [
+        "stagen",
+        "vcn",
+        "sinkn",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MSINKP",
+      "D_G_S_B": [
+        "sinkp",
+        "vcmfb",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MSINKN",
+      "D_G_S_B": [
+        "sinkn",
+        "vcmfb",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MSECONDP",
+      "D_G_S_B": [
+        "voutp",
+        "stagep",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MSECONDN",
+      "D_G_S_B": [
+        "voutn",
+        "stagen",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MLOADP",
+      "D_G_S_B": [
+        "voutp",
+        "vbpout",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MLOADN",
+      "D_G_S_B": [
+        "voutn",
+        "vbpout",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MCMT",
+      "D_G_S_B": [
+        "cmt",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MCMREF",
+      "D_G_S_B": [
+        "cma",
+        "vocm",
+        "cmt",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MCMSENSE",
+      "D_G_S_B": [
+        "vcmfb",
+        "vcms",
+        "cmt",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MCMD",
+      "D_G_S_B": [
+        "cma",
+        "cma",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MCMM",
+      "D_G_S_B": [
+        "vcmfb",
+        "cma",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sampling_feedback_ota/MCMND",
+      "D_G_S_B": [
+        "vcmfb",
+        "vcmfb",
+        "vss",
+        "vss"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 27,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

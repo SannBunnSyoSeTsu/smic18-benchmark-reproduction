@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-09-28T18:13:09.190886+00:00",
+  "case_slot": 26,
+  "label": "thd2",
+  "netlist": "runs/26/20260928T181309189545Z_thd2/inputs/bench.scs",
+  "netlist_sha256": "ce87a544b118ab65c3d7fd826799fa9fbb2d01712fbd5df88fea0f00ece299d9",
+  "dependencies": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/26-ota-c-biquad/circuit.scs": {
+      "snapshot": "runs/26/20260928T181309189545Z_thd2/inputs/circuit.scs",
+      "sha256": "ca1d973f73e9bc1899742bfe7698bdb9dfd31c3b23f2dd842da9dc403d49a82d"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/26-ota-c-biquad/sizing.json": {
+      "snapshot": "runs/26/20260928T181309189545Z_thd2/inputs/sizing.json",
+      "sha256": "824512211a1afd7d5e36c3ffda936dabbc3a0df65cab4990afc9f7b51cdb1ec4"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/26-ota-c-biquad/contract.json": {
+      "snapshot": "runs/26/20260928T181309189545Z_thd2/inputs/contract.json",
+      "sha256": "0e2040784783455513b6322c6031ec0a68142f91a29881acac45edeca808af4c"
+    }
+  },
+  "models": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib": "88246a7e992cb3f5af5ac0f6a9a1c5934707ecd72e7f8f08150b44a01796c20f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.mdl": "832d378241360815f6d4009514d863f2aac9c48c312326410de9421564b1033d",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_bjt_spe.mdl": "d2d45e69a854f8d090fe3ef83041bc39ed8a0abcd9d272b8067a9db3014a9b6f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_res_spe.mdl": "173a1a7c1d8cc2f1009ac12db0f0d4f9725aebea8625cf9796a0be50f06fceb1",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_mim_spe.mdl": "02c8e7986a1c159e52c8fa403fdb52b9b4f928e00bca5522a648992528d7edff"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "status": "completed",
+  "completed_at": "2026-09-28T18:13:10.737460+00:00",
+  "errors": [
+    "license error"
+  ],
+  "warnings": [],
+  "model_dimensions_valid": true,
+  "raw_dir": "runs/26/20260928T181309189545Z_thd2/output/bench.raw"
+}

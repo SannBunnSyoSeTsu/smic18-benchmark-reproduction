@@ -1,0 +1,189 @@
+{
+  "source_task": "sky130-complementary-folded-cascode-ab-opamp-pvt",
+  "source_files": {
+    "instruction.md": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/instruction.md",
+      "sha256": "611125a5f7243c9898b79246892954124ee065bc0fcd9bd596e7643979d4c4ba",
+      "frozen": "cases/25-complementary-ab/source/instruction.md"
+    },
+    "solution/circuit.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/solution/circuit.spi",
+      "sha256": "6fdd1a53620a4ba4250207af75cdff0beaebed0a4e0ef9897168dd588f5dfa85",
+      "frozen": "cases/25-complementary-ab/source/solution/circuit.spi"
+    },
+    "tests/verify.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/tests/verify.py",
+      "sha256": "0d015757c7f0c54507e1e7777138d768a769ccb65c2af011b543a61a7453dfee",
+      "frozen": "cases/25-complementary-ab/source/tests/verify.py"
+    },
+    "tests/utils.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/tests/utils.py",
+      "sha256": "8f9909aa283429e11d3d5b55b33d5e55d5c54f4bad33aaa599f1c8a35a99e299",
+      "frozen": "cases/25-complementary-ab/source/tests/utils.py"
+    },
+    "tests/benches/tb_ac.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/tests/benches/tb_ac.spi",
+      "sha256": "b9be13dbc808749d140209081aabcda4f3494a69155445159f5420efd1553855",
+      "frozen": "cases/25-complementary-ab/source/tests/benches/tb_ac.spi"
+    },
+    "tests/benches/tb_cmrr.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/tests/benches/tb_cmrr.spi",
+      "sha256": "086136234606fcb3223f426e845ce1b4280bbcbc5aa3b9141af87a1072c52872",
+      "frozen": "cases/25-complementary-ab/source/tests/benches/tb_cmrr.spi"
+    },
+    "tests/benches/tb_noise.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/tests/benches/tb_noise.spi",
+      "sha256": "549de428f6c976b5c9a4ebda4fd1a122a4e00df0e8ea7262488eb82b5b2477f9",
+      "frozen": "cases/25-complementary-ab/source/tests/benches/tb_noise.spi"
+    },
+    "tests/benches/tb_offset.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/tests/benches/tb_offset.spi",
+      "sha256": "90fc3a6a091328377c399c861ceb86e2d779b391e42fee474c89b5f9baacb37a",
+      "frozen": "cases/25-complementary-ab/source/tests/benches/tb_offset.spi"
+    },
+    "tests/benches/tb_psrr.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/tests/benches/tb_psrr.spi",
+      "sha256": "ec610adc59446b4d766888ac4f2ed53838002a6f4be9621ee0babc492f27aba1",
+      "frozen": "cases/25-complementary-ab/source/tests/benches/tb_psrr.spi"
+    },
+    "tests/benches/tb_step.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/tests/benches/tb_step.spi",
+      "sha256": "a4ba22bdc35d338d7e87a5dcb01bd0da0279c2f1e4876091c7e908b0a3e8b3f7",
+      "frozen": "cases/25-complementary-ab/source/tests/benches/tb_step.spi"
+    },
+    "tests/benches/tb_thd.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/tests/benches/tb_thd.spi",
+      "sha256": "862d67770804633d0368a15267a3cfda9a3d553de5917e002d5cb6d248c9180e",
+      "frozen": "cases/25-complementary-ab/source/tests/benches/tb_thd.spi"
+    },
+    "tests/benches/tb_track.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-complementary-folded-cascode-ab-opamp-pvt/tests/benches/tb_track.spi",
+      "sha256": "963e33968140b97055eb3ac6747ed401ac60c6df651b4ef8ada480c9111e90f0",
+      "frozen": "cases/25-complementary-ab/source/tests/benches/tb_track.spi"
+    }
+  },
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 2e-05,
+  "load_F": 4e-12,
+  "closed_loop_load_ohm": 10000,
+  "nominal_only": true,
+  "ac": {
+    "common_modes_V": [
+      0.1,
+      0.2,
+      0.9,
+      1.6,
+      1.7
+    ],
+    "output_DC_V": 0.9,
+    "load_return_ohm": 1000000000000.0,
+    "core_gain_min_dB": 90,
+    "edge_gain_min_dB": 80,
+    "ugb_min_Hz": 1000000.0,
+    "core_PM_min_deg": 60,
+    "edge_PM_min_deg": 55,
+    "ugb_max_min_max": 2,
+    "frequency_Hz": [
+      1,
+      1000000000.0
+    ],
+    "source_dec": 20,
+    "implementation_dec": 100
+  },
+  "tracking": {
+    "sweep_V": [
+      0,
+      1.8
+    ],
+    "step_V": 0.005,
+    "core_V": [
+      0.2,
+      1.6
+    ],
+    "core_error_max_V": 0.005,
+    "band_V": [
+      0.1,
+      1.7
+    ],
+    "band_error_max_V": 0.02,
+    "icmr_fixed_error_V": 0.02,
+    "min_span_V": 1.5,
+    "max_rail_headroom_V": 0.1,
+    "power_max_W": 0.0015
+  },
+  "step": {
+    "command_V": [
+      0.2,
+      1.6
+    ],
+    "edges_s": [
+      1e-06,
+      1.01e-06,
+      3e-06,
+      3.01e-06
+    ],
+    "stop_s": 5e-06,
+    "threshold_V": [
+      0.48,
+      1.32
+    ],
+    "min_slew_V_per_us": 2,
+    "tail_windows_s": [
+      [
+        2.9e-06,
+        3e-06
+      ],
+      [
+        4.9e-06,
+        5e-06
+      ]
+    ],
+    "tail_error_max_V": 0.005
+  },
+  "noise": {
+    "common_mode_V": 0.9,
+    "band_Hz": [
+      10,
+      1000000.0
+    ],
+    "max_Vrms": 7e-05,
+    "source_topology": "DC LFB closes; AC CFB grounds negative input; use input-referred noise with original4pF//10kohm load"
+  },
+  "rejection": {
+    "common_mode_V": 0.9,
+    "CMRR_min_dB": {
+      "1kHz": 70,
+      "1MHz": 55
+    },
+    "PSRR_min_dB": {
+      "10Hz": 45,
+      "1MHz": 10
+    },
+    "source_return_ohm": 100000000.0
+  },
+  "thd": {
+    "frequency_Hz": 1000,
+    "amplitude_Vpk": 0.4,
+    "offset_V": 0.9,
+    "stop_s": 0.005,
+    "Fourier_final_period_s": [
+      0.004,
+      0.005
+    ],
+    "residual_window_s": [
+      0.0035,
+      0.005
+    ],
+    "THD_max_percent": 0.01,
+    "residual_max_fraction": 0.005
+  },
+  "exclusions": [
+    "other24PVT points",
+    "two nonnominal representative rejection/distortion points",
+    "three tt_mm seed offsets",
+    "PEX/passive/mismatch yield"
+  ],
+  "relaxation": "project acceptance-policy; all stimuli and functional dimensions fixed"
+}

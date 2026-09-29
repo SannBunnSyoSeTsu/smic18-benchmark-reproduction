@@ -1,0 +1,130 @@
+{
+  "source_task": "sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt",
+  "source_files": {
+    "instruction.md": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt/instruction.md",
+      "sha256": "83d3fda8d23b9427f12503b2df8790ff44ade25fd14bd0beeca71324029e8cf7",
+      "frozen": "cases/35-fd-miller/source/instruction.md"
+    },
+    "solution/circuit.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt/solution/circuit.spi",
+      "sha256": "c90c40295a92d9b1b9ea9c730dce33178009b24a860a3d54eaa7df11e8d9cad7",
+      "frozen": "cases/35-fd-miller/source/solution/circuit.spi"
+    },
+    "tests/verify.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt/tests/verify.py",
+      "sha256": "d6bb3e2f0735285982bf143e3749d211a0eb95f156075ebcb07a412a687c7a34",
+      "frozen": "cases/35-fd-miller/source/tests/verify.py"
+    },
+    "tests/utils.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt/tests/utils.py",
+      "sha256": "8f9909aa283429e11d3d5b55b33d5e55d5c54f4bad33aaa599f1c8a35a99e299",
+      "frozen": "cases/35-fd-miller/source/tests/utils.py"
+    },
+    "tests/benches/tb_op_ac.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt/tests/benches/tb_op_ac.spi",
+      "sha256": "b628fb22a90260a0be0eed7cd364dede508432bacac9cd725b89b769e0588d7e",
+      "frozen": "cases/35-fd-miller/source/tests/benches/tb_op_ac.spi"
+    },
+    "tests/benches/tb_noise.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt/tests/benches/tb_noise.spi",
+      "sha256": "4ca37a0116194446109ba21b7548774ca1e2a92addc6321754e583fcabb07337",
+      "frozen": "cases/35-fd-miller/source/tests/benches/tb_noise.spi"
+    },
+    "tests/benches/tb_swing.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt/tests/benches/tb_swing.spi",
+      "sha256": "6ebfd8d69f7767b360d91be50a6385dc0d4bf241a3a30a370588f1b00b5f15cb",
+      "frozen": "cases/35-fd-miller/source/tests/benches/tb_swing.spi"
+    },
+    "tests/benches/tb_settling.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt/tests/benches/tb_settling.spi",
+      "sha256": "6d1635d76c345b2344db01a1ca042dc2407985309f7a4dbea8ed3bc9296d9392",
+      "frozen": "cases/35-fd-miller/source/tests/benches/tb_settling.spi"
+    },
+    "tests/benches/tb_cm_recovery.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt/tests/benches/tb_cm_recovery.spi",
+      "sha256": "4b2e9f5c68174aae77669396aa05118330d2a1c9332123ac17d8b26f7ef17103",
+      "frozen": "cases/35-fd-miller/source/tests/benches/tb_cm_recovery.spi"
+    },
+    "tests/benches/tb_mc.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt/tests/benches/tb_mc.spi",
+      "sha256": "57cb405fc97c5b5859892c0d6bf8595daca9e25f73763c8c59145c9c76be84da",
+      "frozen": "cases/35-fd-miller/source/tests/benches/tb_mc.spi"
+    }
+  },
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 5e-05,
+  "VCM_V": 0.9,
+  "load_each_F": 1e-12,
+  "ac": {
+    "start_Hz": 10,
+    "stop_Hz": 10000000000.0,
+    "dec": 100,
+    "gain_10Hz_min_dB": 60,
+    "ugb_min_Hz": 100000000.0,
+    "pm_min_deg": 60,
+    "output_cm_error_max_V": 0.015,
+    "output_balance_error_max_V": 0.0001,
+    "power_max_W": 0.005
+  },
+  "noise": {
+    "topology": "unity differential feedback; differential output; source input referred",
+    "start_Hz": 10,
+    "stop_Hz": 15000000.0,
+    "max_Vrms": 5e-05
+  },
+  "range": {
+    "command_min_V": -0.8,
+    "command_max_V": 0.8,
+    "step_V": 0.005,
+    "points": 321,
+    "valid_tracking_band_V": 0.005,
+    "min_valid_span_Vpp": 0.8,
+    "require_contiguous_valid_interval": true
+  },
+  "settling": {
+    "command_V": [
+      -0.2,
+      0.2
+    ],
+    "edge_start_s": 2e-08,
+    "edge_end_s": 2.1e-08,
+    "stop_s": 3.2e-07,
+    "band_V": 0.002,
+    "time_origin_s": 2e-08,
+    "max_s": 1.5e-08,
+    "final_error_fraction_max": 0.01,
+    "fraction_denominator_V": 0.2,
+    "definition": "last tolerance crossing interpolation minus20ns; final instantaneous output at320ns"
+  },
+  "cm_recovery": {
+    "command_V": [
+      0.85,
+      0.95
+    ],
+    "edge_start_s": 2e-08,
+    "edge_end_s": 2.1e-08,
+    "stop_s": 1e-06,
+    "band_V": 0.015,
+    "time_origin_s": 2e-08,
+    "max_s": 1e-07,
+    "final_error_max_V": 0.01
+  },
+  "rejection": {
+    "original": "20 fixed seeds41000..41019 at nominal local mismatch;10Hz CMRR>=50dB and PSRR both rails>=40dB;1MHz characterization",
+    "this_scope": "matched nominal four excitations only, characterized and explicitly excluded from random mismatch pass claim",
+    "CMRR_min_dB": 50,
+    "PSRR_min_dB": 40,
+    "seed_samples_executed": 0
+  },
+  "nominal_only": true,
+  "exclusions": [
+    "other26 primary PVT points",
+    "two nonnominal dynamic representative points",
+    "20 fixed seed mismatch samples",
+    "post-layout/passive variation"
+  ],
+  "relaxation": "project acceptance-policy; original measurement bands and stimuli retained"
+}

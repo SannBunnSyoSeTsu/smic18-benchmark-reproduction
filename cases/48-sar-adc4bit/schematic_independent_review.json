@@ -1,0 +1,1247 @@
+{
+  "slot": 48,
+  "case": "cases/48-sar-adc4bit",
+  "circuit_sha256": "a87f8ceb7193b5c69bc95a629ca3d628484b30cb708e843db74e2d94b0687f8d",
+  "hd_cells_sha256": "10cfa72f685305a7f47e9662cef0fea2004a5c6f69b7a3a6a411e617687fe0c8",
+  "top": "sar_adc_4bit_async",
+  "source_definition_count": 60,
+  "source_terminal_count": 355,
+  "source_expanded_leaf_count": 67,
+  "hierarchy_boundaries": [
+    {
+      "path": "XCMP",
+      "definition": "sar_cmp",
+      "port_bindings": {
+        "clk": "cmpck",
+        "outn": "dcmpn",
+        "outp": "dcmpp",
+        "vss": "vss",
+        "vdd": "vdd",
+        "vinn": "vresn",
+        "vinp": "vresp"
+      }
+    },
+    {
+      "path": "XDP",
+      "definition": "sar_cdac",
+      "port_bindings": {
+        "clks": "clks",
+        "clkb": "clkc",
+        "dctrl3": "dctrlp3",
+        "dctrl2": "dctrlp2",
+        "dctrl1": "dctrlp1",
+        "vss": "vss",
+        "vdd": "vdd",
+        "vin": "vinp",
+        "vrefn": "vrefn",
+        "vrefp": "vrefp",
+        "vtop": "vresp"
+      }
+    },
+    {
+      "path": "XDP/XS",
+      "definition": "sar_sample",
+      "port_bindings": {
+        "clk": "clks",
+        "clkb": "clkc",
+        "vin": "vinp",
+        "vout": "vresp",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XDN",
+      "definition": "sar_cdac",
+      "port_bindings": {
+        "clks": "clks",
+        "clkb": "clkc",
+        "dctrl3": "dctrln3",
+        "dctrl2": "dctrln2",
+        "dctrl1": "dctrln1",
+        "vss": "vss",
+        "vdd": "vdd",
+        "vin": "vinn",
+        "vrefn": "vrefn",
+        "vrefp": "vrefp",
+        "vtop": "vresn"
+      }
+    },
+    {
+      "path": "XDN/XS",
+      "definition": "sar_sample",
+      "port_bindings": {
+        "clk": "clks",
+        "clkb": "clkc",
+        "vin": "vinn",
+        "vout": "vresn",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    },
+    {
+      "path": "XLOG",
+      "definition": "sar_logic",
+      "port_bindings": {
+        "clkc": "clkc",
+        "cmpck": "cmpck",
+        "dcmpn": "dcmpn",
+        "dcmpp": "dcmpp",
+        "dctrln3": "dctrln3",
+        "dctrln2": "dctrln2",
+        "dctrln1": "dctrln1",
+        "dctrlp3": "dctrlp3",
+        "dctrlp2": "dctrlp2",
+        "dctrlp1": "dctrlp1",
+        "do3": "dout3",
+        "do2": "dout2",
+        "do1": "dout1",
+        "do0": "dout0",
+        "vss": "vss",
+        "vdd": "vdd"
+      }
+    }
+  ],
+  "connectivity_sha256": "3d7f2e83dfebf5902af0ee7740f2062ec64f7b04fc047bea522f544eb4436344",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 60,
+  "schematic_expanded_leaf_count": 67,
+  "independently_traced_terminals": 355,
+  "expanded_leaf_counts_by_kind": {
+    "HD": 31,
+    "MOS": 27,
+    "C": 9
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "sar_cmp/MTAIL",
+      "D_G_S_B": [
+        "tail",
+        "clk",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sar_cmp/MINP",
+      "D_G_S_B": [
+        "dx",
+        "vinp",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sar_cmp/MINN",
+      "D_G_S_B": [
+        "dy",
+        "vinn",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sar_cmp/MLN",
+      "D_G_S_B": [
+        "ln",
+        "lp",
+        "dx",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sar_cmp/MLP",
+      "D_G_S_B": [
+        "lp",
+        "ln",
+        "dy",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sar_cmp/MPN",
+      "D_G_S_B": [
+        "ln",
+        "lp",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sar_cmp/MPP",
+      "D_G_S_B": [
+        "lp",
+        "ln",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sar_cmp/MRST_dx",
+      "D_G_S_B": [
+        "dx",
+        "clk",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sar_cmp/MRST_dy",
+      "D_G_S_B": [
+        "dy",
+        "clk",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sar_cmp/MRST_ln",
+      "D_G_S_B": [
+        "ln",
+        "clk",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sar_cmp/MRST_lp",
+      "D_G_S_B": [
+        "lp",
+        "clk",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sar_sample/MSN",
+      "D_G_S_B": [
+        "vout",
+        "clk",
+        "vin",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sar_sample/MSP",
+      "D_G_S_B": [
+        "vout",
+        "clkb",
+        "vin",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sar_cdac/MN1",
+      "D_G_S_B": [
+        "bot1",
+        "dctrl1",
+        "vrefn",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sar_cdac/MP1",
+      "D_G_S_B": [
+        "bot1",
+        "dctrl1",
+        "vrefp",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sar_cdac/MN2",
+      "D_G_S_B": [
+        "bot2",
+        "dctrl2",
+        "vrefn",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sar_cdac/MP2",
+      "D_G_S_B": [
+        "bot2",
+        "dctrl2",
+        "vrefp",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sar_cdac/MN3",
+      "D_G_S_B": [
+        "bot3",
+        "dctrl3",
+        "vrefn",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sar_cdac/MP3",
+      "D_G_S_B": [
+        "bot3",
+        "dctrl3",
+        "vrefp",
+        "vdd"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [
+    {
+      "instance": "sar_cmp/XON",
+      "model": "INHDV4",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "ln",
+        "ZN": "outp",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_cmp/XOP",
+      "model": "INHDV4",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "lp",
+        "ZN": "outn",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XGATE",
+      "model": "AND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "clkc",
+        "A2": "rdyb",
+        "Z": "clk_gate",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XLOOP",
+      "model": "AND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "nvalid",
+        "A2": "clk_gate",
+        "Z": "loop",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XVALID",
+      "model": "OR2HDV2",
+      "formal_order": [
+        "A1",
+        "A2",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "dcmpp",
+        "A2": "dcmpn",
+        "Z": "valid",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XNVALID",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "valid",
+        "ZN": "nvalid",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XRDY",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "clk0",
+        "ZN": "rdyb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XDELAY1",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "loop",
+        "ZN": "delay1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XDELAY2",
+      "model": "INHDV8",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "delay1",
+        "ZN": "cmpck",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XSEQ3",
+      "model": "DRNQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "RDN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "valid",
+        "D": "vdd",
+        "Q": "clk3",
+        "RDN": "clkc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XDECp3",
+      "model": "DRNQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "RDN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "clk3",
+        "D": "dcmpn",
+        "Q": "dctrlp3_raw",
+        "RDN": "clkc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XMSBp",
+      "model": "INHDV8",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "dctrlp3_raw",
+        "ZN": "dctrlp3",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XDECn3",
+      "model": "DRNQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "RDN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "clk3",
+        "D": "dcmpp",
+        "Q": "dctrln3_raw",
+        "RDN": "clkc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XMSBn",
+      "model": "INHDV8",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "dctrln3_raw",
+        "ZN": "dctrln3",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XSEQ2",
+      "model": "DRNQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "RDN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "valid",
+        "D": "clk3",
+        "Q": "clk2",
+        "RDN": "clkc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XDECp2",
+      "model": "DRNQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "RDN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "clk2",
+        "D": "dcmpp",
+        "Q": "dctrlp2",
+        "RDN": "clkc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XDECn2",
+      "model": "DRNQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "RDN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "clk2",
+        "D": "dcmpn",
+        "Q": "dctrln2",
+        "RDN": "clkc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XSEQ1",
+      "model": "DRNQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "RDN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "valid",
+        "D": "clk2",
+        "Q": "clk1",
+        "RDN": "clkc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XDECp1",
+      "model": "DRNQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "RDN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "clk1",
+        "D": "dcmpp",
+        "Q": "dctrlp1",
+        "RDN": "clkc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XDECn1",
+      "model": "DRNQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "RDN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "clk1",
+        "D": "dcmpn",
+        "Q": "dctrln1",
+        "RDN": "clkc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XSEQ0",
+      "model": "DRNQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "RDN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "valid",
+        "D": "clk1",
+        "Q": "clk0",
+        "RDN": "clkc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XDECp0",
+      "model": "DQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "clk0",
+        "D": "dcmpp",
+        "Q": "dctrlp0_raw",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XLSBp",
+      "model": "AND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "dctrlp0_raw",
+        "A2": "clk0",
+        "Z": "dctrlp0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XDECn0",
+      "model": "DQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "clk0",
+        "D": "dcmpn",
+        "Q": "dctrln0_raw",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XLSBn",
+      "model": "AND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "dctrln0_raw",
+        "A2": "clk0",
+        "Z": "dctrln0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XEOC",
+      "model": "AND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "clk0",
+        "A2": "nvalid",
+        "Z": "eoc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XOUT0",
+      "model": "DQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "eoc",
+        "D": "dctrlp0",
+        "Q": "do0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XOUT1",
+      "model": "DQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "eoc",
+        "D": "dctrlp1",
+        "Q": "do1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XOUT2",
+      "model": "DQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "eoc",
+        "D": "dctrlp2",
+        "Q": "do2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_logic/XOUT3",
+      "model": "DQHDV1",
+      "formal_order": [
+        "CK",
+        "D",
+        "Q",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "CK": "eoc",
+        "D": "dctrlp3",
+        "Q": "do3",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "sar_adc_4bit_async/XCLKC",
+      "model": "INHDV8",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "clks",
+        "ZN": "clkc",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    }
+  ],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 88,
+  "hd_models_declared": {
+    "AND2HDV1": [
+      "A1",
+      "A2",
+      "Z",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "DQHDV1": [
+      "CK",
+      "D",
+      "Q",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "DRNQHDV1": [
+      "CK",
+      "D",
+      "Q",
+      "RDN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "INHDV1": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "INHDV4": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "INHDV8": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "OR2HDV2": [
+      "A1",
+      "A2",
+      "Z",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ]
+  },
+  "HD_internal_MOS_counts": {
+    "AND2HDV1": 6,
+    "DQHDV1": 24,
+    "DRNQHDV1": 30,
+    "INHDV1": 2,
+    "INHDV4": 2,
+    "INHDV8": 2,
+    "OR2HDV2": 6
+  },
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

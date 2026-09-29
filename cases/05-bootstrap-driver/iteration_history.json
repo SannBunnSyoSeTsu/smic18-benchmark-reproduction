@@ -1,0 +1,280 @@
+[
+  {
+    "generated_at": "2026-09-29T04:47:21.219611+00:00",
+    "circuit_sha256": "51ae51fce4ab67a9ce5b7e74e61e746bf6f22c7480f2c2802fef5c3ee071cd12",
+    "parameters": {
+      "delay_fF": 110,
+      "cboot_pF": 200,
+      "chip_mim_m": 1,
+      "drive_parallel": 8,
+      "charge_scale": 0.1,
+      "instance_roles": {
+        "lvl3_PM3": {
+          "role": "hv_p",
+          "total_W_um": 0.4,
+          "parallel": 1
+        },
+        "lvl3_PM1": {
+          "role": "hv_p",
+          "total_W_um": 0.4,
+          "parallel": 1
+        },
+        "lvl3_PM0": {
+          "role": "hv_p",
+          "total_W_um": 0.4,
+          "parallel": 1
+        },
+        "lvl3_NM3": {
+          "role": "hv_n",
+          "total_W_um": 1.08,
+          "parallel": 1
+        },
+        "lvl3_NM2": {
+          "role": "hv_n",
+          "total_W_um": 4.32,
+          "parallel": 1
+        },
+        "lvl3_NM1": {
+          "role": "hv_n",
+          "total_W_um": 4.32,
+          "parallel": 1
+        },
+        "bootstrap_driver_NM1": {
+          "role": "reset_n",
+          "total_W_um": 189.9212,
+          "parallel": 3
+        },
+        "bootstrap_driver_NM5": {
+          "role": "hv_n",
+          "total_W_um": 1.08,
+          "parallel": 1
+        },
+        "bootstrap_driver_NM2": {
+          "role": "charge_n",
+          "total_W_um": 615.368,
+          "parallel": 7
+        },
+        "bootstrap_driver_PM5": {
+          "role": "hv_p",
+          "total_W_um": 0.4,
+          "parallel": 1
+        },
+        "bootstrap_driver_PM2": {
+          "role": "charge_p",
+          "total_W_um": 553.5100000000001,
+          "parallel": 7
+        },
+        "TRACKP": {
+          "role": "charge_p",
+          "total_W_um": 11070.2,
+          "parallel": 124
+        },
+        "CHN": {
+          "role": "hv_n",
+          "total_W_um": 1.08,
+          "parallel": 1
+        },
+        "CHP": {
+          "role": "hv_p",
+          "total_W_um": 0.4,
+          "parallel": 1
+        }
+      },
+      "follow_scale": 0.4,
+      "reset_scale": 0.07,
+      "moscap_m": 34,
+      "trackcap_m": 0,
+      "trackp_scale": 2,
+      "moscap_geometry_note": "Native MOS used as two-terminal storage: D/S/B=VLX,G=VBST or VSW,W80um,L9.6um. Geometry is area/capacitance sizing, not an amplifier gmID operating point. Model nonlinearity retained."
+    },
+    "status": "complete_10pct",
+    "values": {
+      "pw20": {
+        "VGS_avg_V": 1.564832076704433,
+        "power_W": 0.0030517738577110066,
+        "VGS_peak_V": 1.6877532605829189,
+        "HS_peak_A": 0.6114755841402635,
+        "VBST_cap_peak_V": 1.7828851171109785,
+        "GN2_peak_V": 1.800344174437656,
+        "VBST_peak_V": 3.551452774861813,
+        "dead_HL_s": 3.071427507333059e-09,
+        "dead_LH_s": 4.3633850359720775e-09,
+        "dead_all_min_s": 3.0714212484639927e-09,
+        "dead_all_max_s": 4.363388519830448e-09,
+        "high_fraction": 0.735535577747758
+      },
+      "pw50": {
+        "VGS_avg_V": 1.5673306407180685,
+        "power_W": 0.0030881288905136458,
+        "VGS_peak_V": 1.7059932146578083,
+        "HS_peak_A": 0.6136356344433646,
+        "VBST_cap_peak_V": 1.8014996340743086,
+        "GN2_peak_V": 1.800552852226918,
+        "VBST_peak_V": 3.569801643806141,
+        "dead_HL_s": 3.074515512348849e-09,
+        "dead_LH_s": 4.337577202621342e-09,
+        "dead_all_min_s": 3.074514936056537e-09,
+        "dead_all_max_s": 4.337577803103221e-09,
+        "high_fraction": 0.4355194334835848
+      },
+      "pw80": {
+        "VGS_avg_V": 1.4984591379365784,
+        "power_W": 0.0030902907330058334,
+        "VGS_peak_V": 1.705439037842692,
+        "HS_peak_A": 0.6138780854258263,
+        "VBST_cap_peak_V": 1.8126493658830745,
+        "GN2_peak_V": 1.801420666019696,
+        "VBST_peak_V": 3.569160189129172,
+        "dead_HL_s": 2.9968211677777677e-09,
+        "dead_LH_s": 4.335397627316918e-09,
+        "dead_all_min_s": 2.996816740567263e-09,
+        "dead_all_max_s": 4.335398946921935e-09,
+        "high_fraction": 0.13629933305314412
+      }
+    },
+    "groups": {
+      "pw20": "runs/05/20260929T044635972843Z_pw20",
+      "pw50": "runs/05/20260929T044650071170Z_pw50",
+      "pw80": "runs/05/20260929T044703977679Z_pw80"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T04:49:51.399597+00:00",
+    "circuit_sha256": "51ae51fce4ab67a9ce5b7e74e61e746bf6f22c7480f2c2802fef5c3ee071cd12",
+    "parameters": {
+      "delay_fF": 110,
+      "cboot_pF": 200,
+      "chip_mim_m": 1,
+      "drive_parallel": 8,
+      "charge_scale": 0.1,
+      "instance_roles": {
+        "lvl3_PM3": {
+          "role": "hv_p",
+          "total_W_um": 0.4,
+          "parallel": 1
+        },
+        "lvl3_PM1": {
+          "role": "hv_p",
+          "total_W_um": 0.4,
+          "parallel": 1
+        },
+        "lvl3_PM0": {
+          "role": "hv_p",
+          "total_W_um": 0.4,
+          "parallel": 1
+        },
+        "lvl3_NM3": {
+          "role": "hv_n",
+          "total_W_um": 1.08,
+          "parallel": 1
+        },
+        "lvl3_NM2": {
+          "role": "hv_n",
+          "total_W_um": 4.32,
+          "parallel": 1
+        },
+        "lvl3_NM1": {
+          "role": "hv_n",
+          "total_W_um": 4.32,
+          "parallel": 1
+        },
+        "bootstrap_driver_NM1": {
+          "role": "reset_n",
+          "total_W_um": 189.9212,
+          "parallel": 3
+        },
+        "bootstrap_driver_NM5": {
+          "role": "hv_n",
+          "total_W_um": 1.08,
+          "parallel": 1
+        },
+        "bootstrap_driver_NM2": {
+          "role": "charge_n",
+          "total_W_um": 615.368,
+          "parallel": 7
+        },
+        "bootstrap_driver_PM5": {
+          "role": "hv_p",
+          "total_W_um": 0.4,
+          "parallel": 1
+        },
+        "bootstrap_driver_PM2": {
+          "role": "charge_p",
+          "total_W_um": 553.5100000000001,
+          "parallel": 7
+        },
+        "TRACKP": {
+          "role": "charge_p",
+          "total_W_um": 11070.2,
+          "parallel": 124
+        },
+        "CHN": {
+          "role": "hv_n",
+          "total_W_um": 1.08,
+          "parallel": 1
+        },
+        "CHP": {
+          "role": "hv_p",
+          "total_W_um": 0.4,
+          "parallel": 1
+        }
+      },
+      "follow_scale": 0.4,
+      "reset_scale": 0.07,
+      "moscap_m": 34,
+      "trackcap_m": 0,
+      "trackp_scale": 2,
+      "moscap_geometry_note": "Native MOS used as two-terminal storage: D/S/B=VLX,G=VBST or VSW,W80um,L9.6um. Geometry is area/capacitance sizing, not an amplifier gmID operating point. Model nonlinearity retained."
+    },
+    "status": "complete_10pct",
+    "values": {
+      "pw20": {
+        "VGS_avg_V": 1.5648549597155703,
+        "power_W": 0.0030519550398148765,
+        "VGS_peak_V": 1.687833571935128,
+        "HS_peak_A": 0.6114625782372387,
+        "VBST_cap_peak_V": 1.7830026810954822,
+        "GN2_peak_V": 1.800343902596923,
+        "VBST_peak_V": 3.551543067868272,
+        "dead_HL_s": 3.0714738506285856e-09,
+        "dead_LH_s": 4.363516764489709e-09,
+        "dead_all_min_s": 3.0714734176520245e-09,
+        "dead_all_max_s": 4.363517686206398e-09,
+        "high_fraction": 0.735518106398133
+      },
+      "pw50": {
+        "VGS_avg_V": 1.567368446057982,
+        "power_W": 0.003088166874491911,
+        "VGS_peak_V": 1.705963570115689,
+        "HS_peak_A": 0.6136469447950852,
+        "VBST_cap_peak_V": 1.8014781346177637,
+        "GN2_peak_V": 1.800552727295414,
+        "VBST_peak_V": 3.569764834343438,
+        "dead_HL_s": 3.0742190787221753e-09,
+        "dead_LH_s": 4.337490656613745e-09,
+        "dead_all_min_s": 3.0742186430695195e-09,
+        "dead_all_max_s": 4.337490814660352e-09,
+        "high_fraction": 0.4355136282016439
+      },
+      "pw80": {
+        "VGS_avg_V": 1.4984721420261584,
+        "power_W": 0.0030902689362713107,
+        "VGS_peak_V": 1.70540451867124,
+        "HS_peak_A": 0.6138840538974653,
+        "VBST_cap_peak_V": 1.8126041372738302,
+        "GN2_peak_V": 1.801420125813614,
+        "VBST_peak_V": 3.56913432039544,
+        "dead_HL_s": 2.996784869209958e-09,
+        "dead_LH_s": 4.335265611179191e-09,
+        "dead_all_min_s": 2.996784771098767e-09,
+        "dead_all_max_s": 4.335265893258315e-09,
+        "high_fraction": 0.13630115638425389
+      }
+    },
+    "groups": {
+      "pw20": "runs/05/20260929T044821278822Z_pw20",
+      "pw50": "runs/05/20260929T044848930584Z_pw50",
+      "pw80": "runs/05/20260929T044916615613Z_pw80"
+    }
+  }
+]

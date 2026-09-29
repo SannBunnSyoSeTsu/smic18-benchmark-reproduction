@@ -1,0 +1,123 @@
+{
+  "pdf": "reports/23-resistor-dac-review.pdf",
+  "sha256": "b468767db3a1778dbaa3854f6d98d64dd6f61171d40f430fc1fa02d04cc979b4",
+  "results_sha256": "2b2197317aeb0dbd6e14af7caae8238725aa60fa91c78732cffb9f4d7018aa14",
+  "circuit_sha256": "e8388c72d139da2b34832dc179379e63bfa19e1f59e8c9e2cd45f85e566f75af",
+  "generated_at": "2026-09-23T06:19:18.725863+00:00",
+  "pages": 9,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:19:18.728963+00:00",
+  "render_review_method": "pdftoppm 120dpi; configured model visually inspected all final6 pages. Repaired page4 caption/axis collision and re-rendered; final diagrams, labels, tables and netlist readable.",
+  "all_pages_reviewed": true,
+  "body_pages": 6,
+  "schematic_pages": 3,
+  "schematic_sheets_sha256": "7e19092c25d6af74de9d2a4d10848832f6c8b0b8be88cc4404312d5412d1eb56",
+  "schematic_audit_sha256": "ecfda9aa3ef32e6f6bc9a165fe47b080319dab77cb40d57ccfbf40d3cfb2e989",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/23-resistor-dac/23-resistor-dac-review.pdf",
+    "sha256": "e185591e63f6e68426373d16804ce884237ab22136b41ff366ce8881ff242197",
+    "pages": 6,
+    "previous_render_reviewed_at": "2026-09-22T09:03:13.866633+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "cc93fecb15c04830befd6e55b783be5be214518d368fc362436c67a063d76cee"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "1cef9619216b8f649385c3eaa75c0f03a366b42c8b01e55c24b7281269502cb4"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "89bae7c56cc8f4edf44748bbc42b1f9341532a62f9734619be12f1a0e36ca60b"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "43ff8272b65eae0ed8a6f47dafcd096edc4329c206c53e219be935e6e42d059f"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "cd27c56ebad68bf3f79f6c26a46c0bd55c557e0103f4fbd4f5b16078e05bdb15"
+    },
+    {
+      "page": 6,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "0113a1f8c071c8c37711a24d2c579141b4a0ad320b0a3bb181d2a4a51e04a2a4"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "64ab9e5d180283847621204ecf658191877c4bc6e491d54737ccaa35ced3a541",
+      "path": "reports/schematic-retrofit-renders/23-resistor-dac/page-07.png",
+      "sha256": "735017c01b6646ccd7d9f9537b2a2811847fd2eeb2911251bae73c21394b5579"
+    },
+    {
+      "page": 8,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "9d1bdcfcd7192dd6212de7ffe488a2fcef81f9bd74e4afdd717ff5c34a0c4fde",
+      "path": "reports/schematic-retrofit-renders/23-resistor-dac/page-08.png",
+      "sha256": "1e41b7b685f18c2a75f1997861d945de371de0b65108bdf4bfafe19d13ff512f"
+    },
+    {
+      "page": 9,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "95821452991d9ae3ce3d040cf1b40cfde2cf1d4e0248505809dddf452c93779e",
+      "path": "reports/schematic-retrofit-renders/23-resistor-dac/page-09.png",
+      "sha256": "849f242fe826c3bb1ca00434be97fb4af255ccf1b04f81209a409353c386b702"
+    }
+  ],
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change."
+}

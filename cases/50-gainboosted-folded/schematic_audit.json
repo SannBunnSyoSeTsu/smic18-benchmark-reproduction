@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-09-23T06:26:43.004027+00:00",
+  "status": "passed",
+  "circuit_sha256": "2bd50c5eb26a20f10d7e11c3a857716e417a47b187bcd32de1d617491ee51213",
+  "hd_cells_sha256": null,
+  "renderer_sha256": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+  "layout_file": "scripts/schematics_analog.py",
+  "layout_sha256": "7c73e3169f2979ac2941dd45121ecdd56414d7765a00229c9e3bcb2a305a569d",
+  "instance_counts": {
+    "MOS": 41,
+    "R": 5,
+    "C": 3
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 41,
+    "R": 5,
+    "C": 3
+  },
+  "total_instances": 49,
+  "expanded_leaf_instances": 49,
+  "total_terminals": 180,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 4,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/50-gainboosted-folded/schematic/connectivity.json": "105f69e4942337809a4ae1842fb6d388015f0dbca850450fef5b15cac23b4d3f",
+    "cases/50-gainboosted-folded/schematic/full.pdf": "eb1a07ab8e31ee82c515a6272effec7e15419f2074853629d10ff8da1c9db4ec",
+    "cases/50-gainboosted-folded/schematic/full.png": "0a948a4d764d50c607b53bf0b9173197f1c267b26124a8a6650bd225484f71ba",
+    "cases/50-gainboosted-folded/schematic/full.svg": "84321156dbbf9f0ecaa202c64029a78b2ef1d753378f4ddddc7d6e46fffc2675",
+    "cases/50-gainboosted-folded/schematic/layout_source.py": "7c73e3169f2979ac2941dd45121ecdd56414d7765a00229c9e3bcb2a305a569d",
+    "cases/50-gainboosted-folded/schematic/renderer_source.py": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+    "cases/50-gainboosted-folded/schematic/sheet-1.png": "e88d3a6c39e73a736d1fd47a8b5c9a9d7dfdc476713b2022d2a58aa7d1bad6c4",
+    "cases/50-gainboosted-folded/schematic/sheet-1.svg": "f317ed5108afa672abcb5adc921ffd18e294a4bb2011241fb1e0e7f7d3be9144",
+    "cases/50-gainboosted-folded/schematic/sheet-2.png": "8a4386576958253214cb280a2a3e4fa89f19731b1717c248c09231489b2774af",
+    "cases/50-gainboosted-folded/schematic/sheet-2.svg": "b0a8e405a5c7eba0aae80f2639b5e16d09313835c6ae2f9dea1264c6b8bf8f8a",
+    "cases/50-gainboosted-folded/schematic/sheet-3.png": "0ace37204f663e41818af88d4c0eed8d38a0895c5ca6e160b19929f86522567d",
+    "cases/50-gainboosted-folded/schematic/sheet-3.svg": "7e23c121a40f87f45c9d4c043adf17d3e9e121483135ba52c1723978e96fbf4f",
+    "cases/50-gainboosted-folded/schematic/sheet-4.png": "86d2f4a54512117369707706bdc573c532066d2ea52033f786c588ff96520e04",
+    "cases/50-gainboosted-folded/schematic/sheet-4.svg": "032abd4864eb91e70ce947a5dbeb4b7856aaa9caaa3c455e60da04f37add7939",
+    "cases/50-gainboosted-folded/schematic/sheets.pdf": "b4a9d417335454d3045139913b39ae207099c88506648fdb7948feedeeef1f28",
+    "cases/50-gainboosted-folded/schematic/symbol_source.py": "c65698950039c9fd48e1659d37f7fb5220517dd0dc1847b24f5b1761d0956898"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "final_source_freeze_at": "2026-09-23T06:26:43.005954+00:00",
+  "previous_visual_review": {
+    "reviewed_at": "2026-09-23T06:25:51.606403+00:00",
+    "note": "All split sheets and full overview actually viewed; connectivity, symbols, values, body ties and text readability reviewed.",
+    "reviewed_png_hashes": {
+      "cases/50-gainboosted-folded/schematic/full.png": "0a948a4d764d50c607b53bf0b9173197f1c267b26124a8a6650bd225484f71ba",
+      "cases/50-gainboosted-folded/schematic/sheet-1.png": "e88d3a6c39e73a736d1fd47a8b5c9a9d7dfdc476713b2022d2a58aa7d1bad6c4",
+      "cases/50-gainboosted-folded/schematic/sheet-2.png": "8a4386576958253214cb280a2a3e4fa89f19731b1717c248c09231489b2774af",
+      "cases/50-gainboosted-folded/schematic/sheet-3.png": "0ace37204f663e41818af88d4c0eed8d38a0895c5ca6e160b19929f86522567d",
+      "cases/50-gainboosted-folded/schematic/sheet-4.png": "86d2f4a54512117369707706bdc573c532066d2ea52033f786c588ff96520e04"
+    }
+  },
+  "rebuild_png_changes": [],
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-23T06:25:51.606403+00:00",
+  "visual_review_note": "All final sheet PNGs and full overview are byte-for-byte identical to the actually viewed artifacts; final renderer, symbols and layout sources were frozen beside the drawings."
+}

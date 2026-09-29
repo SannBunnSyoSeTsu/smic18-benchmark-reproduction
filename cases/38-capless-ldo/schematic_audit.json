@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-09-28T17:44:06.104355+00:00",
+  "status": "passed",
+  "circuit_sha256": "44f175530b8c48e901aa078ddc595bec1cefd3f2487f5ea63e9d71566ec7d2d5",
+  "hd_cells_sha256": null,
+  "renderer_sha256": "30342cc8787dc7ab815e57ce3e3e32a3190fab0ad09e7373cc7e9c450dad919d",
+  "layout_file": "scripts/schematic38.py",
+  "layout_sha256": "bde670a3cbc9976a5013e95a984eb3471f5e583b1691b69c7775bcec993c9dc7",
+  "instance_counts": {
+    "MOS": 14,
+    "R": 6,
+    "C": 4
+  },
+  "expanded_leaf_instance_counts": {
+    "R": 6,
+    "MOS": 14,
+    "C": 4
+  },
+  "total_instances": 24,
+  "expanded_leaf_instances": 24,
+  "total_terminals": 76,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 3,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/38-capless-ldo/schematic/connectivity.json": "5f30d239466c8c4d40a5f2114aafd21e604d5b703ff223044cfcadf398e8921a",
+    "cases/38-capless-ldo/schematic/full.pdf": "9f77b17dd2afb38ab257bc18495bf193f8a87536e1e13564460eabe97dc20c38",
+    "cases/38-capless-ldo/schematic/full.png": "b9375193fbe41b8db584551e8eecf527c192d00b2da58025acaa723adebd99a4",
+    "cases/38-capless-ldo/schematic/full.svg": "c547504ddefa078ccf77bc7af2ed3a6321d89e136746afb3616809fe2e891bbe",
+    "cases/38-capless-ldo/schematic/layout_source.py": "bde670a3cbc9976a5013e95a984eb3471f5e583b1691b69c7775bcec993c9dc7",
+    "cases/38-capless-ldo/schematic/renderer_source.py": "30342cc8787dc7ab815e57ce3e3e32a3190fab0ad09e7373cc7e9c450dad919d",
+    "cases/38-capless-ldo/schematic/sheet-1.png": "0fdeabbc81b981b58e1acbd0bcc252a13bd72264207ce7346a63562d90a69ee7",
+    "cases/38-capless-ldo/schematic/sheet-1.svg": "920847b6a3ba5dbee0a47cbb19ea4751bc045e27b5204bf6a0e2f9229a44c169",
+    "cases/38-capless-ldo/schematic/sheet-2.png": "23060353fa81f8dba4023c2e6fd37931f05bee163084a973ccc12e8c977718a0",
+    "cases/38-capless-ldo/schematic/sheet-2.svg": "41b244ecc1135d6946613966f39116eb309947cb28a01e58dab30ea7fbec6e55",
+    "cases/38-capless-ldo/schematic/sheet-3.png": "5508309ae3bf8fd805399bf3f0857d010db1d14c06cfb5603fa6b4cbae622416",
+    "cases/38-capless-ldo/schematic/sheet-3.svg": "e9577a1f3c81747ad109bdbe7f4bf0de6106f9734da938b907c72e7f702cd679",
+    "cases/38-capless-ldo/schematic/sheets.pdf": "7c370837d46b12567eaecfed28b971768e2cf8bec289839da0b3960f58a58d5a",
+    "cases/38-capless-ldo/schematic/symbol_source.py": "b40da4f8a653b6d880132a5b28a9209435d767215cdba57d3682ccb27e9cee0c"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-28T17:56:54.575820+00:00",
+  "visual_review_note": "已实际查看最终10页PDF渲染和full.png总图；页面1至4此前检查、5至10本次检查。7页正文表格、曲线、启动峰值边界和净表均可读；三页图纸全部24实例76端子、PMOS隔离体、反馈及977pF补偿连接可读，无截断或遮挡。"
+}

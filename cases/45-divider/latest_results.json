@@ -1,0 +1,103 @@
+{
+  "case_slot": 45,
+  "generated_at": "2026-09-22T05:54:44.229303+00:00",
+  "run_dirs": [
+    "runs/45/20260922T055442345725Z_divide",
+    "runs/45/20260922T055443514982Z_reset"
+  ],
+  "values": {
+    "input_frequency_hz": 1000000016.5224836,
+    "output_frequency_hz": 500031414.85552734,
+    "output_periods_s": [
+      1.999623088137217e-09,
+      2.000000171236881e-09,
+      1.9999997860435213e-09
+    ],
+    "high_duties": [
+      0.49937640009015477,
+      0.49947052314841484,
+      0.499470756456114
+    ],
+    "low_duties": [
+      0.5006235999098453,
+      0.5005294768515851,
+      0.5005292435438861
+    ],
+    "clock_delays_s": [
+      3.0449142518657626e-10,
+      3.041145078048096e-10,
+      3.0411467758713593e-10,
+      3.0411446494862095e-10
+    ],
+    "reset_delay_s": 2.6783710733075137e-11,
+    "pre_assert_V": 1.7753383731359726,
+    "asserted_max_V": 0.008987353006527758,
+    "release_hold_max_V": 0.007656844545783295,
+    "next_edge_V": 1.792060809720468,
+    "low_samples_V": [
+      0.000152708734443698,
+      0.00015270900920594236
+    ],
+    "high_samples_V": [
+      1.800233793994748,
+      1.800233796163785
+    ]
+  },
+  "gates": {
+    "reset_delay_s": {
+      "value": 2.6783710733075137e-11,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 1e-10,
+        "10pct": 1.1000000000000001e-10,
+        "15pct": 1.1499999999999999e-10
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "clock_delay_s": {
+      "value": 3.0449142518657626e-10,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 4e-10,
+        "10pct": 4.4000000000000003e-10,
+        "15pct": 4.5999999999999996e-10
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "duty_error": {
+      "value": 0.0006235999098452849,
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.01,
+        "10pct": 0.011000000000000001,
+        "15pct": 0.0115
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "functional_checks_pass": true,
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "status": "complete_original",
+  "all_nominal_checks_complete": true,
+  "digital_implementation": "Unmodified HD standard-cell transistor models; no custom digital gate sizing",
+  "scope": "TT 1.8V 27C, original 1GHz stimulus and 20fF output load"
+}

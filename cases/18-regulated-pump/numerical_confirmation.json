@@ -1,0 +1,219 @@
+{
+  "generated_at": "2026-09-28T18:18:48.202918+00:00",
+  "baseline_groups": {
+    "load1": "runs/18/20260928T175827420444Z_load1",
+    "load25": "runs/18/20260928T180020763492Z_load25",
+    "load50": "runs/18/20260928T180215890808Z_load50",
+    "disabled": "runs/18/20260928T180414236837Z_disabled"
+  },
+  "final_groups": {
+    "load1": "runs/18/20260928T180657145570Z_load1",
+    "load25": "runs/18/20260928T181032550097Z_load25",
+    "load50": "runs/18/20260928T181411096708Z_load50",
+    "disabled": "runs/18/20260928T181752376863Z_disabled"
+  },
+  "circuit_sha256": "6fc878c0bf1ec3399b2991d1291687c0777fa5b3c642e9e8266ef6f957560e0c",
+  "metrics": [
+    {
+      "metric": "1uA_vout_avg_V",
+      "baseline": 2.338852145918617,
+      "refined": 2.338852287330478,
+      "absolute_difference": 1.4141186088778568e-07,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "1uA_vout_min_V",
+      "baseline": 2.338416569675998,
+      "refined": 2.338416553320337,
+      "absolute_difference": 1.6355660825695395e-08,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "1uA_vout_max_V",
+      "baseline": 2.339155708479985,
+      "refined": 2.339155942923119,
+      "absolute_difference": 2.3444313379528126e-07,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "1uA_enabled_current_A",
+      "baseline": 0.00011731196677573162,
+      "refined": 0.00011736970732693913,
+      "absolute_difference": 5.77405512075177e-08,
+      "maximum_difference": 2.5e-07,
+      "passed": true
+    },
+    {
+      "metric": "1uA_control_avg_V",
+      "baseline": 1.2736411575391215,
+      "refined": 1.2736526490887277,
+      "absolute_difference": 1.1491549606112983e-05,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "1uA_driver_supply_avg_V",
+      "baseline": 1.0100904769943613,
+      "refined": 1.0100683539144075,
+      "absolute_difference": 2.2123079953750846e-05,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "1uA_error_V",
+      "baseline": 0.0011478540813829596,
+      "refined": 0.0011477126695220718,
+      "absolute_difference": 1.4141186088778568e-07,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "1uA_ripple_V",
+      "baseline": 0.0007391388039872382,
+      "refined": 0.0007393896027818592,
+      "absolute_difference": 2.5079879462097665e-07,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "25uA_vout_avg_V",
+      "baseline": 2.3386309255893467,
+      "refined": 2.338631013798192,
+      "absolute_difference": 8.820884511706595e-08,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "25uA_vout_min_V",
+      "baseline": 2.337994144118334,
+      "refined": 2.337994060394534,
+      "absolute_difference": 8.372379989296519e-08,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "25uA_vout_max_V",
+      "baseline": 2.33906703722148,
+      "refined": 2.339067122407597,
+      "absolute_difference": 8.518611682717392e-08,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "25uA_enabled_current_A",
+      "baseline": 0.00016609453702943916,
+      "refined": 0.00016616570638655108,
+      "absolute_difference": 7.116935711191843e-08,
+      "maximum_difference": 2.5e-07,
+      "passed": true
+    },
+    {
+      "metric": "25uA_control_avg_V",
+      "baseline": 1.2588959861869207,
+      "refined": 1.2589036114094065,
+      "absolute_difference": 7.625222485874161e-06,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "25uA_driver_supply_avg_V",
+      "baseline": 1.1246139782572355,
+      "refined": 1.1246084599915163,
+      "absolute_difference": 5.518265719262061e-06,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "25uA_error_V",
+      "baseline": 0.0013690744106531483,
+      "refined": 0.0013689862018080312,
+      "absolute_difference": 8.820884511706595e-08,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "25uA_ripple_V",
+      "baseline": 0.0010728931031462885,
+      "refined": 0.0010730620130630086,
+      "absolute_difference": 1.689099167201391e-07,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "50uA_vout_avg_V",
+      "baseline": 2.339085857528746,
+      "refined": 2.3390864207833717,
+      "absolute_difference": 5.632546256073567e-07,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "50uA_vout_min_V",
+      "baseline": 2.338068641808515,
+      "refined": 2.338068888573302,
+      "absolute_difference": 2.4676478682650327e-07,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "50uA_vout_max_V",
+      "baseline": 2.339842412832642,
+      "refined": 2.33984319766168,
+      "absolute_difference": 7.848290382028722e-07,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "50uA_enabled_current_A",
+      "baseline": 0.0002172523491808378,
+      "refined": 0.000217336564159355,
+      "absolute_difference": 8.421497851718719e-08,
+      "maximum_difference": 2.5e-07,
+      "passed": true
+    },
+    {
+      "metric": "50uA_control_avg_V",
+      "baseline": 1.245080933748272,
+      "refined": 1.245085170619701,
+      "absolute_difference": 4.236871429030842e-06,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "50uA_driver_supply_avg_V",
+      "baseline": 1.2541093154396987,
+      "refined": 1.254120501884657,
+      "absolute_difference": 1.118644495834431e-05,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "50uA_error_V",
+      "baseline": 0.0009141424712537649,
+      "refined": 0.0009135792166281576,
+      "absolute_difference": 5.632546256073567e-07,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "50uA_ripple_V",
+      "baseline": 0.0017737710241267912,
+      "refined": 0.0017743090883781676,
+      "absolute_difference": 5.380642513763689e-07,
+      "maximum_difference": 5e-05,
+      "passed": true
+    },
+    {
+      "metric": "disabled_current_A",
+      "baseline": 1.095479732144787e-09,
+      "refined": 1.095479732144787e-09,
+      "absolute_difference": 0.0,
+      "maximum_difference": 5e-11,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

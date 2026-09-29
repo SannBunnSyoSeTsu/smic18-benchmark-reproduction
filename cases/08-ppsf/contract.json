@@ -1,0 +1,65 @@
+{
+  "source_task": "sky130-buf-ppsf-bs-gain1-sfdr90",
+  "source_hashes": {
+    "instruction.md": "e3c9449d5d4f5e8905c1c4214ee5a62dad9aec48c7f97e88eb8d83cbfb7b580f",
+    "solution/circuit.spi": "af6cf0bf484bdbd8797f5980d61aaf7dfa424b0cbee97fe6873d1fbab86945b1",
+    "tests/verify.py": "6a51e1ff5630a8e04b4882f21549f0dc51769fd344b6b96b9a5e69e54db36957",
+    "tests/utils.py": "8f9909aa283429e11d3d5b55b33d5e55d5c54f4bad33aaa599f1c8a35a99e299",
+    "tests/benches/tb_ac_power.spi": "b02265681d0f0782ab3058de067c69a5eac32b642389b0634ac0ec2799c33da3",
+    "tests/benches/tb_sfdr.spi": "acbfd466d4d512428f8d5c9dbc0fb858c992941d6f19551e3e2811720ba88916"
+  },
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 2e-05,
+  "VCM_V": 0.9,
+  "load_each_F": 1e-12,
+  "ac": {
+    "start_Hz": 1000000.0,
+    "stop_Hz": 40000000.0,
+    "dec": 100,
+    "differential_amplitude_V": 0.8,
+    "gain_min_VV": 0.99,
+    "input_current_gate_A": 2e-05,
+    "input_current_gate_relaxable": false
+  },
+  "power_W_max": 0.001,
+  "power_ports": [
+    "VDD",
+    "VCM",
+    "VIN",
+    "VIP"
+  ],
+  "dynamic": {
+    "frequency_Hz": [
+      1000000.0,
+      11000000.0,
+      41000000.0
+    ],
+    "differential_peak_V": 0.8,
+    "input_transient_offset_V": 0,
+    "input_DC_analysis_offset_V": 0.9,
+    "stop_s": 5e-05,
+    "window_s": [
+      4.9e-05,
+      5e-05
+    ],
+    "uniform_points": 1000,
+    "sample_step_s": 1e-09,
+    "SFDR_min_dB": [
+      90,
+      80,
+      70
+    ],
+    "fundamental_gain_min": 0.95,
+    "full_Nyquist": true,
+    "Nyquist_included": true
+  },
+  "nominal_only": true,
+  "excluded": [
+    "otherfourprocesscorners",
+    "otherVDD/temperatures",
+    "randommismatch",
+    "PEX"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "description": "Task-scoped supplementary SMIC18 nominal LUTs",
+  "tables": [
+    {
+      "device": "n18",
+      "corner": "tt",
+      "width_ref_um": 10,
+      "length_um": 4.0,
+      "vds_V": 0.9,
+      "npoints": 629,
+      "json": "tt/n18_L4000nm_VDS0.900.json"
+    },
+    {
+      "device": "p18",
+      "corner": "tt",
+      "width_ref_um": 10,
+      "length_um": 4.0,
+      "vds_V": 0.9,
+      "npoints": 641,
+      "json": "tt/p18_L4000nm_VDS0.900.json"
+    },
+    {
+      "device": "p18",
+      "corner": "tt",
+      "width_ref_um": 10,
+      "length_um": 4.0,
+      "vds_V": 1.8,
+      "npoints": 901,
+      "json": "tt/p18_L4000nm_VDS1.800.json"
+    },
+    {
+      "device": "p18",
+      "corner": "tt",
+      "width_ref_um": 0.24,
+      "length_um": 4.0,
+      "vds_V": 1.8,
+      "npoints": 893,
+      "json": "tt/p18_L4000nm_VDS1.800_W0.240.json"
+    },
+    {
+      "device": "n18",
+      "corner": "tt",
+      "width_ref_um": 0.24,
+      "length_um": 4.0,
+      "vds_V": 1.35,
+      "npoints": 614,
+      "json": "tt/n18_L4000nm_VDS1.350_W0.240.json"
+    },
+    {
+      "device": "n18",
+      "corner": "tt",
+      "width_ref_um": 10,
+      "length_um": 0.5,
+      "vds_V": 0.9,
+      "npoints": 603,
+      "json": "tt/n18_L500nm_VDS0.900.json"
+    },
+    {
+      "device": "n33",
+      "corner": "tt",
+      "width_ref_um": 10,
+      "length_um": 0.36,
+      "vds_V": 1.8,
+      "npoints": 753,
+      "json": "tt/n33_L360nm_VDS1.800.json"
+    },
+    {
+      "device": "nnt33",
+      "corner": "tt",
+      "width_ref_um": 10,
+      "length_um": 1,
+      "vds_V": 1.8,
+      "npoints": 276,
+      "json": "tt/nnt33_L1000nm_VDS1.800.json"
+    },
+    {
+      "device": "n18",
+      "corner": "tt",
+      "width_ref_um": 50,
+      "length_um": 0.18,
+      "vds_V": 1.8,
+      "npoints": 901,
+      "json": "tt/n18_L180nm_VDS1.800_W50.000.json"
+    },
+    {
+      "device": "p18",
+      "corner": "tt",
+      "width_ref_um": 50,
+      "length_um": 0.18,
+      "vds_V": 1.8,
+      "npoints": 901,
+      "json": "tt/p18_L180nm_VDS1.800_W50.000.json"
+    },
+    {
+      "device": "p33",
+      "corner": "tt",
+      "width_ref_um": 10,
+      "length_um": 0.36,
+      "vds_V": 1.8,
+      "npoints": 752,
+      "json": "tt/p33_L360nm_VDS1.800.json"
+    }
+  ]
+}

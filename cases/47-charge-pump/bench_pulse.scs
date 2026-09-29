@@ -1,0 +1,15 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/47-charge-pump/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/47-charge-pump/hd_cells.scs"
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=25u
+VUP (up 0) vsource type=pwl wave=[0 0 20n 0 20.2n 1.8 30n 1.8 30.2n 0 60n 0 60.2n 1.8 61n 1.8 61.2n 0 180n 0 180.2n 1.8 190n 1.8 190.2n 0 220n 0]
+VDN (dn 0) vsource type=pwl wave=[0 0 100n 0 100.2n 1.8 110n 1.8 110.2n 0 140n 0 140.2n 1.8 141n 1.8 141.2n 0 180n 0 180.2n 1.8 190n 1.8 190.2n 0 220n 0]
+VOUT (vout 0) vsource dc=.9
+XCP (0 iref up dn vdd vout) pll_charge_pump
+save up dn vout VOUT:p VDD:p XCP.upb XCP.upd XCP.dnb XCP.nc XCP.nd XCP.wu XCP.wd XCP.vbp XCP.vbpc XCP.vbnc
+tran tran stop=220n maxstep=2p strobeperiod=2p errpreset=conservative

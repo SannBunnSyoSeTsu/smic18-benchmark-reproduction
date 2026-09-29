@@ -1,0 +1,38 @@
+simulator lang=spectre
+subckt sc_2to1_converter (vss vdd clk vout)
+XRX1 (clk ckb vdd vss vdd vss) INHDV1
+XRX2 (ckb ck vdd vss vdd vss) INHDV1
+XNA (ck fb2 n1 vdd vss vdd vss) NAND2HDV1
+XA1 (n1 a1 vdd vss vdd vss) INHDV1
+XA2 (a1 a2 vdd vss vdd vss) INHDV1
+XA3 (a2 s1 vdd vss vdd vss) INHDV2
+XFB1 (s1 fb1 vdd vss vdd vss) INHDV1
+XNB (ckb fb1 n2 vdd vss vdd vss) NAND2HDV1
+XB1 (n2 b1 vdd vss vdd vss) INHDV1
+XB2 (b1 b2 vdd vss vdd vss) INHDV1
+XB3 (b2 s2 vdd vss vdd vss) INHDV2
+XFB2 (s2 fb2 vdd vss vdd vss) INHDV1
+XDPA (s1 pgA vdd vss vdd vss) INHDV16
+XDN3A1 (s1 n3pA vdd vss vdd vss) INHDV2
+XDN3A2 (n3pA ngA vdd vss vdd vss) INHDV16
+XDNPA1 (s2 nppA vdd vss vdd vss) INHDV2
+XDNPA2 (nppA npgA vdd vss vdd vss) INHDV16
+XDPB (s2 pgB vdd vss vdd vss) INHDV16
+XDN3B1 (s2 n3pB vdd vss vdd vss) INHDV2
+XDN3B2 (n3pB ngB vdd vss vdd vss) INHDV16
+XDNPB1 (s1 nppB vdd vss vdd vss) INHDV2
+XDNPB2 (nppB npgB vdd vss vdd vss) INHDV16
+MP1A (ctA pgA vdd vdd) p18 w=4.0u l=.18u m=24
+MN3A (cbA ngA vout vss) n18 w=1.36u l=.18u m=60
+MN2A (ctA npgA vout vss) n18 w=1.36u l=.18u m=60
+MN4A (cbA npgA vss vss) n18 w=2.04u l=.18u m=64
+CFA (ctA cbA) mim w=100u l=100u m=10.298661174
+CBPA (cbA vss) mim w=20u l=102.98661174u
+MP1B (ctB pgB vdd vdd) p18 w=4.0u l=.18u m=24
+MN3B (cbB ngB vout vss) n18 w=1.36u l=.18u m=60
+MN2B (ctB npgB vout vss) n18 w=1.36u l=.18u m=60
+MN4B (cbB npgB vss vss) n18 w=2.04u l=.18u m=64
+CFB (ctB cbB) mim w=100u l=100u m=10.298661174
+CBPB (cbB vss) mim w=20u l=102.98661174u
+CO (vout vss) mim w=100u l=100u m=28.8362512873
+ends sc_2to1_converter

@@ -1,0 +1,16 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/10-tia/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-7 vabstol=1e-10 iabstol=1e-16
+saveOptions options save=selected
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=20u
+VCM (vcm 0) vsource dc=.9
+X (iref in vcm vdd vout 0) tia
+CIN (in 0) capacitor c=.3p
+CL (vout 0) capacitor c=.2p
+save vout in vcm VDD:p VCM:p iref X.n1 X.nbuf
+IIN (in 0) isource type=sine dc=0 ampl=10u freq=100M
+save IIN:p
+tran tran stop=170n maxstep=5p strobeperiod=9.765625p strobeoutput=strobeonly errpreset=conservative

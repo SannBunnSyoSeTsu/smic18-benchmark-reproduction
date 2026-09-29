@@ -1,0 +1,995 @@
+{
+  "slot": 28,
+  "case": "cases/28-fct-amplifier",
+  "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+  "hd_cells_sha256": "59daf30501b62b65542ad179819b9ebdc689e089c3c3510f7d94959bea617de6",
+  "top": "test_fct",
+  "source_definition_count": 94,
+  "source_terminal_count": 372,
+  "source_expanded_leaf_count": 94,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "b1b8b1e2d41fa12db20c395939b76af740ecff7a812e7e64527537115d3aed32",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 94,
+  "schematic_expanded_leaf_count": 94,
+  "independently_traced_terminals": 372,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 68,
+    "C": 14,
+    "HD": 12
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "test_fct/MP_OUTPUT_01",
+      "D_G_S_B": [
+        "coutn",
+        "output_en_b",
+        "outn_pullup_node",
+        "reservoir_hi_n"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_INPUT_01",
+      "D_G_S_B": [
+        "bias_input_reset",
+        "reset_b_main",
+        "input_ctrl_p_a",
+        "vdddig"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_INPUT_02",
+      "D_G_S_B": [
+        "bias_input_reset",
+        "reset_b_main",
+        "input_ctrl_p_b",
+        "vdddig"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_INPUT_03",
+      "D_G_S_B": [
+        "vcm",
+        "reset_b_main",
+        "cinn",
+        "vdddig"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_RESERVOIR_01",
+      "D_G_S_B": [
+        "bias_n_cascode",
+        "reset_b_bias",
+        "reservoir_gate_lo_n",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_INPUT_04",
+      "D_G_S_B": [
+        "vcm",
+        "reset_b_main",
+        "cinp",
+        "vdddig"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_INPUT_05",
+      "D_G_S_B": [
+        "bias_reservoir_reset",
+        "reset_b_main",
+        "input_ctrl_n_a",
+        "vdddig"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_RESERVOIR_02",
+      "D_G_S_B": [
+        "bias_n_cascode",
+        "reset_b_bias",
+        "reservoir_gate_lo_p",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_RESERVOIR_03",
+      "D_G_S_B": [
+        "bias_p_cascode",
+        "reset_b_bias",
+        "reservoir_gate_hi_p",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_RESERVOIR_04",
+      "D_G_S_B": [
+        "bias_p_cascode",
+        "reset_b_bias",
+        "reservoir_gate_hi_n",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_INPUT_06",
+      "D_G_S_B": [
+        "bias_reservoir_reset",
+        "reset_b_main",
+        "input_ctrl_n_b",
+        "vdddig"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_INPUT_07",
+      "D_G_S_B": [
+        "input_branch_p",
+        "input_ctrl_n_a",
+        "cinp",
+        "cinp"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_INPUT_08",
+      "D_G_S_B": [
+        "input_branch_n",
+        "input_ctrl_n_b",
+        "cinn",
+        "cinn"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_OUTPUT_02",
+      "D_G_S_B": [
+        "outp_pullup_node",
+        "reservoir_gate_hi_n",
+        "reservoir_hi_p",
+        "reservoir_hi_p"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_OUTPUT_03",
+      "D_G_S_B": [
+        "outn_pullup_node",
+        "reservoir_gate_hi_p",
+        "reservoir_hi_n",
+        "reservoir_hi_n"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_RESERVOIR_05",
+      "D_G_S_B": [
+        "reservoir_hi_p",
+        "reset_b_res_p",
+        "vddana",
+        "vdddig"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_RESERVOIR_06",
+      "D_G_S_B": [
+        "reservoir_hi_n",
+        "reset_b_res_n",
+        "vddana",
+        "vdddig"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_RESERVOIR_07",
+      "D_G_S_B": [
+        "transfer_branch_p",
+        "transfer_en_b",
+        "reservoir_hi_p",
+        "reservoir_hi_p"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_RESERVOIR_08",
+      "D_G_S_B": [
+        "transfer_branch_n",
+        "transfer_en_b",
+        "reservoir_hi_n",
+        "reservoir_hi_n"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_INPUT_09",
+      "D_G_S_B": [
+        "bias_input_reset",
+        "bias_p_gate",
+        "vddana",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_INPUT_10",
+      "D_G_S_B": [
+        "bias_n_diode",
+        "bias_n_diode",
+        "vcm",
+        "vcm"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_BIAS_01",
+      "D_G_S_B": [
+        "bias_p_branch_1",
+        "bias_p_gate",
+        "vddana",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_BIAS_02",
+      "D_G_S_B": [
+        "bias_p_branch_2",
+        "bias_p_gate",
+        "vddana",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_BIAS_03",
+      "D_G_S_B": [
+        "bias_p_branch_3",
+        "bias_p_gate",
+        "vddana",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_BIAS_04",
+      "D_G_S_B": [
+        "bias_p_branch_4",
+        "bias_p_gate",
+        "vddana",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_BIAS_05",
+      "D_G_S_B": [
+        "bias_p_branch_4",
+        "bias_p_gate",
+        "vddana",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_BIAS_06",
+      "D_G_S_B": [
+        "bias_mid_n",
+        "bias_mid_p",
+        "bias_p_branch_3",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_BIAS_07",
+      "D_G_S_B": [
+        "bias_n_cascode",
+        "bias_mid_p",
+        "bias_p_branch_1",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_BIAS_08",
+      "D_G_S_B": [
+        "bias_p_gate",
+        "bias_mid_p",
+        "bias_p_branch_2",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_BIAS_09",
+      "D_G_S_B": [
+        "bias_mid_p",
+        "bias_mid_p",
+        "bias_p_branch_4",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_INPUT_11",
+      "D_G_S_B": [
+        "bias_reservoir_reset",
+        "bias_reservoir_reset",
+        "vcm",
+        "vcm"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_OUTPUT_04",
+      "D_G_S_B": [
+        "coutp",
+        "output_en_b",
+        "outp_pullup_node",
+        "reservoir_hi_p"
+      ]
+    },
+    {
+      "instance": "test_fct/MP_BIAS_10",
+      "D_G_S_B": [
+        "bias_p_cascode",
+        "bias_p_cascode",
+        "vddana",
+        "vddana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_OUTPUT_01",
+      "D_G_S_B": [
+        "coutn",
+        "output_en_n",
+        "outn_pulldown_node",
+        "reservoir_lo_n"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_RESERVOIR_01",
+      "D_G_S_B": [
+        "reservoir_gate_lo_p",
+        "reset_n_bias",
+        "bias_n_cascode",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_RESERVOIR_02",
+      "D_G_S_B": [
+        "reservoir_gate_hi_p",
+        "reset_n_bias",
+        "bias_p_cascode",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_01",
+      "D_G_S_B": [
+        "input_ctrl_n_b",
+        "reset_n_main",
+        "bias_reservoir_reset",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_OUTPUT_02",
+      "D_G_S_B": [
+        "coutp",
+        "output_en_n",
+        "outp_pulldown_node",
+        "reservoir_lo_p"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_02",
+      "D_G_S_B": [
+        "input_ctrl_p_b",
+        "reset_n_main",
+        "bias_input_reset",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_03",
+      "D_G_S_B": [
+        "cinn",
+        "reset_n_main",
+        "vcm",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_RESERVOIR_03",
+      "D_G_S_B": [
+        "reservoir_gate_lo_n",
+        "reset_n_bias",
+        "bias_n_cascode",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_04",
+      "D_G_S_B": [
+        "input_ctrl_n_a",
+        "reset_n_main",
+        "bias_reservoir_reset",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_05",
+      "D_G_S_B": [
+        "cinp",
+        "reset_n_main",
+        "vcm",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_06",
+      "D_G_S_B": [
+        "bias_p_branch_4",
+        "bias_p_branch_4",
+        "vcm",
+        "vcm"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_01",
+      "D_G_S_B": [
+        "ib",
+        "bias_mid_n",
+        "bias_n_branch_4",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_07",
+      "D_G_S_B": [
+        "transfer_branch_n",
+        "input_ctrl_p_b",
+        "cinp",
+        "cinp"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_08",
+      "D_G_S_B": [
+        "transfer_branch_p",
+        "input_ctrl_p_a",
+        "cinn",
+        "cinn"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_OUTPUT_03",
+      "D_G_S_B": [
+        "outp_pulldown_node",
+        "reservoir_gate_lo_p",
+        "reservoir_lo_p",
+        "reservoir_lo_p"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_OUTPUT_04",
+      "D_G_S_B": [
+        "outn_pulldown_node",
+        "reservoir_gate_lo_n",
+        "reservoir_lo_n",
+        "reservoir_lo_n"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_RESERVOIR_04",
+      "D_G_S_B": [
+        "reservoir_lo_p",
+        "reset_n_res_p",
+        "vssana",
+        "vssdig"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_RESERVOIR_05",
+      "D_G_S_B": [
+        "reservoir_lo_n",
+        "reset_n_res_n",
+        "vssana",
+        "vssdig"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_09",
+      "D_G_S_B": [
+        "input_branch_n",
+        "transfer_en_n",
+        "reservoir_lo_p",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_10",
+      "D_G_S_B": [
+        "input_branch_p",
+        "transfer_en_n",
+        "reservoir_lo_n",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_11",
+      "D_G_S_B": [
+        "input_ctrl_p_a",
+        "reset_n_main",
+        "bias_input_reset",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_INPUT_12",
+      "D_G_S_B": [
+        "bias_input_reset",
+        "bias_input_reset",
+        "vcm",
+        "vcm"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_02",
+      "D_G_S_B": [
+        "bias_n_branch_1",
+        "ib",
+        "vssana",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_03",
+      "D_G_S_B": [
+        "bias_p_gate",
+        "bias_mid_n",
+        "bias_n_branch_1",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_04",
+      "D_G_S_B": [
+        "bias_p_cascode",
+        "bias_mid_n",
+        "bias_n_branch_2",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_05",
+      "D_G_S_B": [
+        "bias_n_diode",
+        "ib",
+        "vssana",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_06",
+      "D_G_S_B": [
+        "bias_mid_n",
+        "bias_mid_n",
+        "bias_n_diode",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_07",
+      "D_G_S_B": [
+        "bias_n_branch_4",
+        "ib",
+        "vssana",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_08",
+      "D_G_S_B": [
+        "bias_mid_p",
+        "bias_mid_n",
+        "bias_n_branch_3",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_09",
+      "D_G_S_B": [
+        "bias_n_branch_3",
+        "ib",
+        "vssana",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_10",
+      "D_G_S_B": [
+        "bias_n_diode",
+        "ib",
+        "vssana",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_11",
+      "D_G_S_B": [
+        "bias_n_branch_2",
+        "ib",
+        "vssana",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_BIAS_12",
+      "D_G_S_B": [
+        "bias_n_cascode",
+        "bias_n_cascode",
+        "vssana",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_RESERVOIR_06",
+      "D_G_S_B": [
+        "bias_reservoir_reset",
+        "ib",
+        "vssana",
+        "vssana"
+      ]
+    },
+    {
+      "instance": "test_fct/MN_RESERVOIR_07",
+      "D_G_S_B": [
+        "reservoir_gate_hi_n",
+        "reset_n_bias",
+        "bias_p_cascode",
+        "vssana"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [
+    {
+      "instance": "test_fct/X_CLOCK_01",
+      "model": "BUFHDV12",
+      "formal_order": [
+        "I",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "sam",
+        "Z": "reset_n_res_n",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    },
+    {
+      "instance": "test_fct/X_CLOCK_02",
+      "model": "BUFHDV12",
+      "formal_order": [
+        "I",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "transfer",
+        "Z": "output_en_n",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    },
+    {
+      "instance": "test_fct/X_CLOCK_03",
+      "model": "BUFHDV12",
+      "formal_order": [
+        "I",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "sam",
+        "Z": "reset_n_bias",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    },
+    {
+      "instance": "test_fct/X_CLOCK_04",
+      "model": "BUFHDV12",
+      "formal_order": [
+        "I",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "sam",
+        "Z": "reset_n_res_p",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    },
+    {
+      "instance": "test_fct/X_CLOCK_05",
+      "model": "BUFHDV12",
+      "formal_order": [
+        "I",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "transfer",
+        "Z": "transfer_en_n",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    },
+    {
+      "instance": "test_fct/X_CLOCK_06",
+      "model": "BUFHDV12",
+      "formal_order": [
+        "I",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "sam",
+        "Z": "reset_n_main",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    },
+    {
+      "instance": "test_fct/X_CLOCK_07",
+      "model": "INHDV12",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "sam",
+        "ZN": "reset_b_res_n",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    },
+    {
+      "instance": "test_fct/X_CLOCK_08",
+      "model": "INHDV12",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "transfer",
+        "ZN": "output_en_b",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    },
+    {
+      "instance": "test_fct/X_CLOCK_09",
+      "model": "INHDV12",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "sam",
+        "ZN": "reset_b_bias",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    },
+    {
+      "instance": "test_fct/X_CLOCK_10",
+      "model": "INHDV12",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "transfer",
+        "ZN": "transfer_en_b",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    },
+    {
+      "instance": "test_fct/X_CLOCK_11",
+      "model": "INHDV12",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "sam",
+        "ZN": "reset_b_res_p",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    },
+    {
+      "instance": "test_fct/X_CLOCK_12",
+      "model": "INHDV12",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "sam",
+        "ZN": "reset_b_main",
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdddig",
+        "VSS": "vssdig",
+        "VNW": "vdddig",
+        "VPW": "vssdig"
+      }
+    }
+  ],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 60,
+  "hd_models_declared": {
+    "BUFHDV12": [
+      "I",
+      "Z",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "BUFHDV16": [
+      "I",
+      "Z",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "INHDV12": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ]
+  },
+  "HD_internal_MOS_counts": {
+    "BUFHDV12": 4,
+    "BUFHDV16": 4,
+    "INHDV12": 2
+  },
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

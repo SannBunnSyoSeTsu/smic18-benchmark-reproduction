@@ -1,0 +1,15 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        PH["交叉反馈非交叠时序"]
+        DRV["分级栅驱动"]
+        PWR["PMOS上管 / NMOS下管"]
+    end
+    CLK["5MHz时钟"]
+    LC["固定串联LC"]
+    LOAD["电阻负载"]
+    CLK -.->|"时钟"| PH
+    PH -.->|"互补控制"| DRV
+    DRV -.->|"栅驱动"| PWR
+    PWR -->|"开关节点"| LC
+    LC -->|"功率"| LOAD

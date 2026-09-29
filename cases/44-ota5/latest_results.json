@@ -1,0 +1,208 @@
+{
+  "generated_at": "2026-09-22T05:49:22.084248+00:00",
+  "case_slot": 44,
+  "run_dir": "runs/44/20260922T054841824289Z_ota5",
+  "scope": "SMIC18MMRF TT 1.8 V 27 C only",
+  "values": {
+    "gain_db": 43.14356803333493,
+    "ugb_hz": 173009127.30021003,
+    "phase_margin_deg": 81.52573036505729,
+    "falling_crossings": 1,
+    "power_W": 0.0004098378196847354,
+    "input_noise_Vrms": 1.9516889823033406e-05,
+    "cmrr_db": 79.92865809247499,
+    "psrr_plus_db": 42.910614104962555,
+    "psrr_minus_db": 79.90017408230119
+  },
+  "gates": {
+    "gain_db": {
+      "value": 43.14356803333493,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 40.0,
+        "10pct": 39.0848501887865,
+        "15pct": 38.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "ugb_hz": {
+      "value": 173009127.30021003,
+      "unit": "Hz",
+      "sense": "min",
+      "limits": {
+        "original": 100000000.0,
+        "10pct": 90000000.0,
+        "15pct": 85000000.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "phase_margin_deg": {
+      "value": 81.52573036505729,
+      "unit": "deg",
+      "sense": "min",
+      "limits": {
+        "original": 60.0,
+        "10pct": 54.0,
+        "15pct": 51.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power_W": {
+      "value": 0.0004098378196847354,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.0005,
+        "10pct": 0.00055,
+        "15pct": 0.000575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "input_noise_Vrms": {
+      "value": 1.9516889823033406e-05,
+      "unit": "Vrms",
+      "sense": "max",
+      "limits": {
+        "original": 5e-05,
+        "10pct": 5.500000000000001e-05,
+        "15pct": 5.7499999999999995e-05
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "cmrr_db": {
+      "value": 79.92865809247499,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 50.0,
+        "10pct": 49.0848501887865,
+        "15pct": 48.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "psrr_plus_db": {
+      "value": 42.910614104962555,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 30.0,
+        "10pct": 29.084850188786497,
+        "15pct": 28.588378514285854
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "psrr_minus_db": {
+      "value": 79.90017408230119,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 30.0,
+        "10pct": 29.084850188786497,
+        "15pct": 28.588378514285854
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "operating_point": {
+    "M1": {
+      "cgg": 5.350437659119814e-13,
+      "gds": 5.302128933928159e-06,
+      "gm": 0.001616867186015036,
+      "vdsat": 0.08945022122196972,
+      "region": 2.0,
+      "ids": 8.840548816761166e-05,
+      "vgs": 0.5546659606237803,
+      "vds": 0.7084883732662516,
+      "vbs": -0.3453340393762198,
+      "gmid": 18.289217327204277,
+      "gmro": 304.9467876325589,
+      "headroom_V": 0.6190381520442818
+    },
+    "M3": {
+      "gds": 6.178127087715073e-06,
+      "gm": 0.0005332139215214787,
+      "vdsat": -0.2735012380343219,
+      "vds": -0.7461775873575287,
+      "vgs": -0.7461775873575287,
+      "ids": -8.840548833377089e-05,
+      "region": 2.0,
+      "gmid": 6.03145722704855,
+      "gmro": 86.30672596258995,
+      "headroom_V": 0.4726763493232068
+    },
+    "M5": {
+      "gds": 1.923283802447113e-05,
+      "gm": 0.00188027998939471,
+      "vdsat": 0.1621274047230309,
+      "vds": 0.3453340393762198,
+      "vgs": 0.5717481998480787,
+      "ids": 0.000177687677431093,
+      "region": 2.0,
+      "gmid": 10.58193801944358,
+      "gmro": 97.76404225951018,
+      "headroom_V": 0.18320663465318893
+    }
+  },
+  "dc_node_voltages": {
+    "vout_ms": 1.053013510865061,
+    "vout_ps": 1.053013510865062,
+    "vinn_cm": 0.9,
+    "vinp_cm": 0.9,
+    "vout_cm": 1.053013510865062,
+    "vinn_dm": 0.9,
+    "vinp_dm": 0.9,
+    "vout_dm": 1.053013510865061,
+    "xi": 0.9010664013982279,
+    "yi": 0.9010664013982279,
+    "xv": 0.9010664013982269,
+    "yv": 0.9010664013982269,
+    "XP.nleft": 1.053822412642471,
+    "XP.tail": 0.3453340393762198,
+    "ibias_p": 0.5717481998480787,
+    "vinp_p": 0.9,
+    "vinn_p": 0.9010664013982262,
+    "vout_p": 0.9010664013982262
+  },
+  "bias_valid": true,
+  "all_nominal_checks_complete": true,
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "status": "complete_original",
+  "testbench_translation": "Upstream double voltage/current injection and natural open-loop rejection networks preserved in native Spectre; noise in is V/sqrt(Hz), integrated in quadrature from 10 Hz to 10 MHz."
+}

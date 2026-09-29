@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-09-22T09:44:52.131638+00:00",
+  "same_circuit_sha256": "496999c7be4b570b7703c9764e96497a300c7d78197c84eab4b3b99b97437152",
+  "coarse_run_dirs": [
+    "runs/22/20260922T094123800469Z_static",
+    "runs/22/20260922T094125844614Z_fft"
+  ],
+  "fine_run_dirs": [
+    "runs/22/20260922T094323883356Z_static",
+    "runs/22/20260922T094326591746Z_fft"
+  ],
+  "coarse_maxstep_ps": 5,
+  "fine_maxstep_ps": 2.5,
+  "reltol": 2e-06,
+  "iabstol_A": 1e-12,
+  "vabstol_V": 1e-09,
+  "coarse_values": {
+    "sdr_db": 72.37821550564229,
+    "minimum_midtrack_vgs_ratio": 0.8644470108797564,
+    "average_power_w": 0.00025495390438189244,
+    "positive_retained_gain": 0.974533325398587,
+    "negative_retained_gain": 0.9745333253985877,
+    "external_clock_buffer_power_W": 5.887349529057013e-05,
+    "external_clock_source_power_W": 1.9067982506702827e-06,
+    "max_gate_terminal_voltage_V": 1.8614005731750014,
+    "max_drain_source_voltage_V": 1.9131246121755388
+  },
+  "fine_values": {
+    "sdr_db": 72.37828209569778,
+    "minimum_midtrack_vgs_ratio": 0.8644470204954636,
+    "average_power_w": 0.0002549555740235459,
+    "positive_retained_gain": 0.9745333326844537,
+    "negative_retained_gain": 0.9745333326844691,
+    "external_clock_buffer_power_W": 5.887353735422074e-05,
+    "external_clock_source_power_W": 1.9067947038668163e-06,
+    "max_gate_terminal_voltage_V": 1.861415564982879,
+    "max_drain_source_voltage_V": 1.913124829384387
+  },
+  "absolute_changes": {
+    "sdr_db": 6.659005549636277e-05,
+    "minimum_midtrack_vgs_ratio": 9.615707230459236e-09,
+    "average_power_w": 1.6696416534501407e-09,
+    "positive_retained_gain": 7.285866798767415e-09,
+    "negative_retained_gain": 7.285881342689038e-09,
+    "external_clock_buffer_power_W": 4.2063650610888684e-11,
+    "external_clock_source_power_W": 3.5468034663887273e-12,
+    "max_gate_terminal_voltage_V": 1.499180787756238e-05,
+    "max_drain_source_voltage_V": 2.1720884824105724e-07
+  },
+  "both_original_pass": true,
+  "stable_SDR_check_difference_dB": 8.615614888185519e-10,
+  "warning_note": "FFT retains SPECTRE16780 local LTE-relaxation warnings; halve maximum step to confirm SDR only0.378dB above original threshold. No warnings hidden."
+}

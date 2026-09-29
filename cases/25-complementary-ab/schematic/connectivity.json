@@ -1,0 +1,10363 @@
+{
+  "generated_at": "2026-09-23T04:30:50.252631+00:00",
+  "subcircuit": "complementary_folded_cascode_ab_opamp",
+  "external_ports": [
+    "vss",
+    "iref",
+    "vdd",
+    "vinn",
+    "vinp",
+    "vout"
+  ],
+  "circuit_sha256": "96b5209db247cee7e96e92e1189b494a6d08dca1efd22237326692957ccbff80",
+  "geometry_sha256": "186f5e1db496c622235f54a7e4825e094b862339a29d3cb77126b58a86ecadf4",
+  "instances": {
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "4"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=8.64u l=4u m=4",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        3,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          3,
+          6
+        ],
+        "S": [
+          3,
+          4
+        ],
+        "G": [
+          1.45,
+          5
+        ],
+        "B": [
+          3.86,
+          5
+        ]
+      }
+    },
+    "MBP": {
+      "name": "MBP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbp",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.82u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MBP (vbp vbp vdd vdd) p18 w=42.82u l=4u m=2",
+      "W_unit_um": 42.82,
+      "L_um": 4.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        9,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          9,
+          16
+        ],
+        "S": [
+          9,
+          18
+        ],
+        "G": [
+          7.45,
+          17
+        ],
+        "B": [
+          9.86,
+          17
+        ]
+      }
+    },
+    "MBN": {
+      "name": "MBN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MBN (vbp iref vss vss) n18 w=8.64u l=4u m=2",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        9,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          9,
+          6
+        ],
+        "S": [
+          9,
+          4
+        ],
+        "G": [
+          7.45,
+          5
+        ],
+        "B": [
+          9.86,
+          5
+        ]
+      }
+    },
+    "MNCB": {
+      "name": "MNCB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vcn",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.82u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MNCB (vcn vbp vdd vdd) p18 w=42.82u l=4u m=2",
+      "W_unit_um": 42.82,
+      "L_um": 4.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        16,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          16,
+          16
+        ],
+        "S": [
+          16,
+          18
+        ],
+        "G": [
+          14.45,
+          17
+        ],
+        "B": [
+          16.86,
+          17
+        ]
+      }
+    },
+    "MND": {
+      "name": "MND",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vcn",
+        "G": "vcn",
+        "S": "ncb",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.44u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MND (vcn vcn ncb vss) n18 w=4.44u l=1u m=1",
+      "W_unit_um": 4.4399999999999995,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        16,
+        10
+      ],
+      "rendered_pins": {
+        "D": [
+          16,
+          11
+        ],
+        "S": [
+          16,
+          9
+        ],
+        "G": [
+          14.45,
+          10
+        ],
+        "B": [
+          16.86,
+          10
+        ]
+      }
+    },
+    "MPD": {
+      "name": "MPD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vcp",
+        "G": "vcp",
+        "S": "pcb",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "21.04u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPD (vcp vcp pcb vdd) p18 w=21.04u l=1u m=1",
+      "W_unit_um": 21.04,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        23,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          23,
+          13
+        ],
+        "S": [
+          23,
+          15
+        ],
+        "G": [
+          21.45,
+          14
+        ],
+        "B": [
+          23.86,
+          14
+        ]
+      }
+    },
+    "MPCB": {
+      "name": "MPCB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vcp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MPCB (vcp iref vss vss) n18 w=8.64u l=4u m=2",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        23,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          23,
+          6
+        ],
+        "S": [
+          23,
+          4
+        ],
+        "G": [
+          21.45,
+          5
+        ],
+        "B": [
+          23.86,
+          5
+        ]
+      }
+    },
+    "MNRB": {
+      "name": "MNRB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vrefn",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.82u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MNRB (vrefn vbp vdd vdd) p18 w=42.82u l=4u m=2",
+      "W_unit_um": 42.82,
+      "L_um": 4.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        30,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          30,
+          16
+        ],
+        "S": [
+          30,
+          18
+        ],
+        "G": [
+          28.45,
+          17
+        ],
+        "B": [
+          30.86,
+          17
+        ]
+      }
+    },
+    "MNREF": {
+      "name": "MNREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vrefn",
+        "G": "vrefn",
+        "S": "nrefsrc",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.98u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MNREF (vrefn vrefn nrefsrc vss) n18 w=1.98u l=1u m=1",
+      "W_unit_um": 1.9800000000000002,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        30,
+        10
+      ],
+      "rendered_pins": {
+        "D": [
+          30,
+          11
+        ],
+        "S": [
+          30,
+          9
+        ],
+        "G": [
+          28.45,
+          10
+        ],
+        "B": [
+          30.86,
+          10
+        ]
+      }
+    },
+    "MPREF": {
+      "name": "MPREF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vrefp",
+        "G": "vrefp",
+        "S": "prefsrc",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.5u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPREF (vrefp vrefp prefsrc vdd) p18 w=9.5u l=1u m=1",
+      "W_unit_um": 9.499999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        37,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          13
+        ],
+        "S": [
+          37,
+          15
+        ],
+        "G": [
+          35.45,
+          14
+        ],
+        "B": [
+          37.86,
+          14
+        ]
+      }
+    },
+    "MPRB": {
+      "name": "MPRB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vrefp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MPRB (vrefp iref vss vss) n18 w=8.64u l=4u m=2",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        37,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          6
+        ],
+        "S": [
+          37,
+          4
+        ],
+        "G": [
+          35.45,
+          5
+        ],
+        "B": [
+          37.86,
+          5
+        ]
+      }
+    },
+    "RNC": {
+      "name": "RNC",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "ncb",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "23000"
+      },
+      "source_line": "RNC (ncb vss) resistor r=23000",
+      "value_SI": 23000.0,
+      "sheet": 1,
+      "origin": [
+        16,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          16,
+          4.82
+        ],
+        "2": [
+          16,
+          3.18
+        ]
+      }
+    },
+    "RPC": {
+      "name": "RPC",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "pcb"
+      },
+      "parameters": {
+        "r": "23000"
+      },
+      "source_line": "RPC (vdd pcb) resistor r=23000",
+      "value_SI": 23000.0,
+      "sheet": 1,
+      "origin": [
+        23,
+        18
+      ],
+      "rendered_pins": {
+        "1": [
+          23,
+          18.82
+        ],
+        "2": [
+          23,
+          17.18
+        ]
+      }
+    },
+    "RNR": {
+      "name": "RNR",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "nrefsrc",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "3615.53"
+      },
+      "source_line": "RNR (nrefsrc vss) resistor r=3615.53",
+      "value_SI": 3615.53,
+      "sheet": 1,
+      "origin": [
+        30,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          30,
+          4.82
+        ],
+        "2": [
+          30,
+          3.18
+        ]
+      }
+    },
+    "RPR": {
+      "name": "RPR",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "prefsrc"
+      },
+      "parameters": {
+        "r": "1989.16"
+      },
+      "source_line": "RPR (vdd prefsrc) resistor r=1989.16",
+      "value_SI": 1989.16,
+      "sheet": 1,
+      "origin": [
+        37,
+        18
+      ],
+      "rendered_pins": {
+        "1": [
+          37,
+          18.82
+        ],
+        "2": [
+          37,
+          17.18
+        ]
+      }
+    },
+    "MNINN": {
+      "name": "MNINN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "fp1",
+        "G": "vinn",
+        "S": "ntn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "16.26u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNINN (fp1 vinn ntn vss) n18 w=16.26u l=1u m=4",
+      "W_unit_um": 16.26,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        4,
+        17.5
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          18.5
+        ],
+        "S": [
+          4,
+          16.5
+        ],
+        "G": [
+          2.45,
+          17.5
+        ],
+        "B": [
+          4.86,
+          17.5
+        ]
+      }
+    },
+    "MNINP": {
+      "name": "MNINP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "fp2",
+        "G": "vinp",
+        "S": "ntp",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "16.26u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNINP (fp2 vinp ntp vss) n18 w=16.26u l=1u m=4",
+      "W_unit_um": 16.26,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        10,
+        17.5
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          18.5
+        ],
+        "S": [
+          10,
+          16.5
+        ],
+        "G": [
+          8.45,
+          17.5
+        ],
+        "B": [
+          10.86,
+          17.5
+        ]
+      }
+    },
+    "MNT": {
+      "name": "MNT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ntail",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "8"
+      },
+      "source_line": "MNT (ntail iref vss vss) n18 w=8.64u l=4u m=8",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        7,
+        5.5
+      ],
+      "rendered_pins": {
+        "D": [
+          7,
+          6.5
+        ],
+        "S": [
+          7,
+          4.5
+        ],
+        "G": [
+          5.45,
+          5.5
+        ],
+        "B": [
+          7.86,
+          5.5
+        ]
+      }
+    },
+    "MPSD": {
+      "name": "MPSD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "swnd",
+        "G": "swnd",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.82u",
+        "l": "4u",
+        "m": "8"
+      },
+      "source_line": "MPSD (swnd swnd vdd vdd) p18 w=42.82u l=4u m=8",
+      "W_unit_um": 42.82,
+      "L_um": 4.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        18,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          18,
+          19
+        ],
+        "S": [
+          18,
+          21
+        ],
+        "G": [
+          16.45,
+          20
+        ],
+        "B": [
+          18.86,
+          20
+        ]
+      }
+    },
+    "MNSW": {
+      "name": "MNSW",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "swnd",
+        "G": "vrefn",
+        "S": "ntail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "16.26u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MNSW (swnd vrefn ntail vss) n18 w=16.26u l=1u m=8",
+      "W_unit_um": 16.26,
+      "L_um": 1.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        18,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          18,
+          15
+        ],
+        "S": [
+          18,
+          13
+        ],
+        "G": [
+          16.45,
+          14
+        ],
+        "B": [
+          18.86,
+          14
+        ]
+      }
+    },
+    "MPSM": {
+      "name": "MPSM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ptail",
+        "G": "swnd",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.82u",
+        "l": "4u",
+        "m": "8"
+      },
+      "source_line": "MPSM (ptail swnd vdd vdd) p18 w=42.82u l=4u m=8",
+      "W_unit_um": 42.82,
+      "L_um": 4.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        24,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          24,
+          19
+        ],
+        "S": [
+          24,
+          21
+        ],
+        "G": [
+          22.45,
+          20
+        ],
+        "B": [
+          24.86,
+          20
+        ]
+      }
+    },
+    "MPSW": {
+      "name": "MPSW",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "swpd",
+        "G": "vrefp",
+        "S": "ptail",
+        "B": "ptail"
+      },
+      "parameters": {
+        "w": "69.42u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MPSW (swpd vrefp ptail ptail) p18 w=69.42u l=1u m=8",
+      "W_unit_um": 69.42,
+      "L_um": 1.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        24,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          24,
+          10
+        ],
+        "S": [
+          24,
+          12
+        ],
+        "G": [
+          22.45,
+          11
+        ],
+        "B": [
+          24.86,
+          11
+        ]
+      }
+    },
+    "MNSD": {
+      "name": "MNSD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "swpd",
+        "G": "swpd",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "8"
+      },
+      "source_line": "MNSD (swpd swpd vss vss) n18 w=8.64u l=4u m=8",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        24,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          24,
+          5
+        ],
+        "S": [
+          24,
+          3
+        ],
+        "G": [
+          22.45,
+          4
+        ],
+        "B": [
+          24.86,
+          4
+        ]
+      }
+    },
+    "MNSM": {
+      "name": "MNSM",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ntail",
+        "G": "swpd",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "8"
+      },
+      "source_line": "MNSM (ntail swpd vss vss) n18 w=8.64u l=4u m=8",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        18,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          18,
+          5
+        ],
+        "S": [
+          18,
+          3
+        ],
+        "G": [
+          16.45,
+          4
+        ],
+        "B": [
+          18.86,
+          4
+        ]
+      }
+    },
+    "MPT": {
+      "name": "MPT",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ptail",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.82u",
+        "l": "4u",
+        "m": "8"
+      },
+      "source_line": "MPT (ptail vbp vdd vdd) p18 w=42.82u l=4u m=8",
+      "W_unit_um": 42.82,
+      "L_um": 4.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        35,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          35,
+          20
+        ],
+        "S": [
+          35,
+          22
+        ],
+        "G": [
+          33.45,
+          21
+        ],
+        "B": [
+          35.86,
+          21
+        ]
+      }
+    },
+    "MPINN": {
+      "name": "MPINN",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "fn1",
+        "G": "vinn",
+        "S": "ptn",
+        "B": "ptail"
+      },
+      "parameters": {
+        "w": "69.42u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPINN (fn1 vinn ptn ptail) p18 w=69.42u l=1u m=4",
+      "W_unit_um": 69.42,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        32,
+        11.5
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          10.5
+        ],
+        "S": [
+          32,
+          12.5
+        ],
+        "G": [
+          30.45,
+          11.5
+        ],
+        "B": [
+          32.86,
+          11.5
+        ]
+      }
+    },
+    "MPINP": {
+      "name": "MPINP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "fn2",
+        "G": "vinp",
+        "S": "ptp",
+        "B": "ptail"
+      },
+      "parameters": {
+        "w": "69.42u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPINP (fn2 vinp ptp ptail) p18 w=69.42u l=1u m=4",
+      "W_unit_um": 69.42,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        38,
+        11.5
+      ],
+      "rendered_pins": {
+        "D": [
+          38,
+          10.5
+        ],
+        "S": [
+          38,
+          12.5
+        ],
+        "G": [
+          36.45,
+          11.5
+        ],
+        "B": [
+          38.86,
+          11.5
+        ]
+      }
+    },
+    "RINN": {
+      "name": "RINN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "ntn",
+        "2": "ntail"
+      },
+      "parameters": {
+        "r": "500"
+      },
+      "source_line": "RINN (ntn ntail) resistor r=500",
+      "value_SI": 500.0,
+      "sheet": 2,
+      "origin": [
+        4,
+        13.5
+      ],
+      "rendered_pins": {
+        "1": [
+          4,
+          14.32
+        ],
+        "2": [
+          4,
+          12.68
+        ]
+      }
+    },
+    "RINP": {
+      "name": "RINP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "ntp",
+        "2": "ntail"
+      },
+      "parameters": {
+        "r": "500"
+      },
+      "source_line": "RINP (ntp ntail) resistor r=500",
+      "value_SI": 500.0,
+      "sheet": 2,
+      "origin": [
+        10,
+        13.5
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          14.32
+        ],
+        "2": [
+          10,
+          12.68
+        ]
+      }
+    },
+    "RIPN": {
+      "name": "RIPN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "ptail",
+        "2": "ptn"
+      },
+      "parameters": {
+        "r": "300"
+      },
+      "source_line": "RIPN (ptail ptn) resistor r=300",
+      "value_SI": 300.0,
+      "sheet": 2,
+      "origin": [
+        32,
+        15.5
+      ],
+      "rendered_pins": {
+        "1": [
+          32,
+          16.32
+        ],
+        "2": [
+          32,
+          14.68
+        ]
+      }
+    },
+    "RIPP": {
+      "name": "RIPP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "ptail",
+        "2": "ptp"
+      },
+      "parameters": {
+        "r": "300"
+      },
+      "source_line": "RIPP (ptail ptp) resistor r=300",
+      "value_SI": 300.0,
+      "sheet": 2,
+      "origin": [
+        38,
+        15.5
+      ],
+      "rendered_pins": {
+        "1": [
+          38,
+          16.32
+        ],
+        "2": [
+          38,
+          14.68
+        ]
+      }
+    },
+    "RCM1": {
+      "name": "RCM1",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vinn",
+        "2": "cmin"
+      },
+      "parameters": {
+        "r": "15000"
+      },
+      "source_line": "RCM1 (vinn cmin) resistor r=15000",
+      "value_SI": 15000.0,
+      "sheet": 2,
+      "origin": [
+        31,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          30.18,
+          5
+        ],
+        "2": [
+          31.82,
+          5
+        ]
+      }
+    },
+    "CCM1": {
+      "name": "CCM1",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "cmin",
+        "2": "ntail"
+      },
+      "parameters": {
+        "c": "4p"
+      },
+      "source_line": "CCM1 (cmin ntail) capacitor c=4p",
+      "value_SI": 4e-12,
+      "sheet": 2,
+      "origin": [
+        37,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          36.18,
+          5
+        ],
+        "2": [
+          37.82,
+          5
+        ]
+      }
+    },
+    "RCM2": {
+      "name": "RCM2",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vinp",
+        "2": "cmip"
+      },
+      "parameters": {
+        "r": "15000"
+      },
+      "source_line": "RCM2 (vinp cmip) resistor r=15000",
+      "value_SI": 15000.0,
+      "sheet": 2,
+      "origin": [
+        31,
+        2
+      ],
+      "rendered_pins": {
+        "1": [
+          30.18,
+          2
+        ],
+        "2": [
+          31.82,
+          2
+        ]
+      }
+    },
+    "CCM2": {
+      "name": "CCM2",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "cmip",
+        "2": "ntail"
+      },
+      "parameters": {
+        "c": "4p"
+      },
+      "source_line": "CCM2 (cmip ntail) capacitor c=4p",
+      "value_SI": 4e-12,
+      "sheet": 2,
+      "origin": [
+        37,
+        2
+      ],
+      "rendered_pins": {
+        "1": [
+          36.18,
+          2
+        ],
+        "2": [
+          37.82,
+          2
+        ]
+      }
+    },
+    "MFBASE": {
+      "name": "MFBASE",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbsink",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.82u",
+        "l": "4u",
+        "m": "12"
+      },
+      "source_line": "MFBASE (vbsink vbp vdd vdd) p18 w=42.82u l=4u m=12",
+      "W_unit_um": 42.82,
+      "L_um": 4.0,
+      "m": 12.0,
+      "sheet": 3,
+      "origin": [
+        4,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          18
+        ],
+        "S": [
+          4,
+          20
+        ],
+        "G": [
+          2.45,
+          19
+        ],
+        "B": [
+          4.86,
+          19
+        ]
+      }
+    },
+    "MFADD": {
+      "name": "MFADD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbsink",
+        "G": "swnd",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.82u",
+        "l": "4u",
+        "m": "4"
+      },
+      "source_line": "MFADD (vbsink swnd vdd vdd) p18 w=42.82u l=4u m=4",
+      "W_unit_um": 42.82,
+      "L_um": 4.0,
+      "m": 4.0,
+      "sheet": 3,
+      "origin": [
+        11,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          18
+        ],
+        "S": [
+          11,
+          20
+        ],
+        "G": [
+          9.45,
+          19
+        ],
+        "B": [
+          11.86,
+          19
+        ]
+      }
+    },
+    "MFSUB": {
+      "name": "MFSUB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbsink",
+        "G": "swpd",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "4"
+      },
+      "source_line": "MFSUB (vbsink swpd vss vss) n18 w=8.64u l=4u m=4",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 4.0,
+      "sheet": 3,
+      "origin": [
+        4,
+        10
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          11
+        ],
+        "S": [
+          4,
+          9
+        ],
+        "G": [
+          2.45,
+          10
+        ],
+        "B": [
+          4.86,
+          10
+        ]
+      }
+    },
+    "MFREF": {
+      "name": "MFREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbsink",
+        "G": "vbsink",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "12"
+      },
+      "source_line": "MFREF (vbsink vbsink vss vss) n18 w=8.64u l=4u m=12",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 12.0,
+      "sheet": 3,
+      "origin": [
+        11,
+        10
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          11
+        ],
+        "S": [
+          11,
+          9
+        ],
+        "G": [
+          9.45,
+          10
+        ],
+        "B": [
+          11.86,
+          10
+        ]
+      }
+    },
+    "MPM1": {
+      "name": "MPM1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "fp1",
+        "G": "ml",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "38.68u",
+        "l": "4u",
+        "m": "6"
+      },
+      "source_line": "MPM1 (fp1 ml vdd vdd) p18 w=38.68u l=4u m=6",
+      "W_unit_um": 38.67999999999999,
+      "L_um": 4.0,
+      "m": 6.0,
+      "sheet": 3,
+      "origin": [
+        22,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          20
+        ],
+        "S": [
+          22,
+          22
+        ],
+        "G": [
+          20.45,
+          21
+        ],
+        "B": [
+          22.86,
+          21
+        ]
+      }
+    },
+    "MPM2": {
+      "name": "MPM2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "fp2",
+        "G": "ml",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "38.68u",
+        "l": "4u",
+        "m": "6"
+      },
+      "source_line": "MPM2 (fp2 ml vdd vdd) p18 w=38.68u l=4u m=6",
+      "W_unit_um": 38.67999999999999,
+      "L_um": 4.0,
+      "m": 6.0,
+      "sheet": 3,
+      "origin": [
+        34,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          20
+        ],
+        "S": [
+          34,
+          22
+        ],
+        "G": [
+          32.45,
+          21
+        ],
+        "B": [
+          34.86,
+          21
+        ]
+      }
+    },
+    "MPC1": {
+      "name": "MPC1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ml",
+        "G": "vcp",
+        "S": "fp1",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "21.04u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPC1 (ml vcp fp1 vdd) p18 w=21.04u l=1u m=4",
+      "W_unit_um": 21.04,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 3,
+      "origin": [
+        22,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          16
+        ],
+        "S": [
+          22,
+          18
+        ],
+        "G": [
+          20.45,
+          17
+        ],
+        "B": [
+          22.86,
+          17
+        ]
+      }
+    },
+    "MPC2": {
+      "name": "MPC2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "gp",
+        "G": "vcp",
+        "S": "fp2",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "21.04u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPC2 (gp vcp fp2 vdd) p18 w=21.04u l=1u m=4",
+      "W_unit_um": 21.04,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 3,
+      "origin": [
+        34,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          16
+        ],
+        "S": [
+          34,
+          18
+        ],
+        "G": [
+          32.45,
+          17
+        ],
+        "B": [
+          34.86,
+          17
+        ]
+      }
+    },
+    "MNC1": {
+      "name": "MNC1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ml",
+        "G": "vcn",
+        "S": "fn1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.44u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNC1 (ml vcn fn1 vss) n18 w=4.44u l=1u m=4",
+      "W_unit_um": 4.4399999999999995,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 3,
+      "origin": [
+        22,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          12
+        ],
+        "S": [
+          22,
+          10
+        ],
+        "G": [
+          20.45,
+          11
+        ],
+        "B": [
+          22.86,
+          11
+        ]
+      }
+    },
+    "MNC2": {
+      "name": "MNC2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "gn",
+        "G": "vcn",
+        "S": "fn2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.44u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNC2 (gn vcn fn2 vss) n18 w=4.44u l=1u m=4",
+      "W_unit_um": 4.4399999999999995,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 3,
+      "origin": [
+        34,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          12
+        ],
+        "S": [
+          34,
+          10
+        ],
+        "G": [
+          32.45,
+          11
+        ],
+        "B": [
+          34.86,
+          11
+        ]
+      }
+    },
+    "MFS1": {
+      "name": "MFS1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "fn1",
+        "G": "vbsink",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "12"
+      },
+      "source_line": "MFS1 (fn1 vbsink vss vss) n18 w=8.64u l=4u m=12",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 12.0,
+      "sheet": 3,
+      "origin": [
+        22,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          8
+        ],
+        "S": [
+          22,
+          6
+        ],
+        "G": [
+          20.45,
+          7
+        ],
+        "B": [
+          22.86,
+          7
+        ]
+      }
+    },
+    "MFS2": {
+      "name": "MFS2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "fn2",
+        "G": "vbsink",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "12"
+      },
+      "source_line": "MFS2 (fn2 vbsink vss vss) n18 w=8.64u l=4u m=12",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 12.0,
+      "sheet": 3,
+      "origin": [
+        34,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          8
+        ],
+        "S": [
+          34,
+          6
+        ],
+        "G": [
+          32.45,
+          7
+        ],
+        "B": [
+          34.86,
+          7
+        ]
+      }
+    },
+    "CCP": {
+      "name": "CCP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "zp"
+      },
+      "parameters": {
+        "c": "12p"
+      },
+      "source_line": "CCP (vout zp) capacitor c=12p",
+      "value_SI": 1.2e-11,
+      "sheet": 3,
+      "origin": [
+        8,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          7.18,
+          3
+        ],
+        "2": [
+          8.82,
+          3
+        ]
+      }
+    },
+    "RZP": {
+      "name": "RZP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "zp",
+        "2": "fp2"
+      },
+      "parameters": {
+        "r": "1000"
+      },
+      "source_line": "RZP (zp fp2) resistor r=1000",
+      "value_SI": 1000.0,
+      "sheet": 3,
+      "origin": [
+        18,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          17.18,
+          3
+        ],
+        "2": [
+          18.82,
+          3
+        ]
+      }
+    },
+    "CCN": {
+      "name": "CCN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "zn"
+      },
+      "parameters": {
+        "c": "12p"
+      },
+      "source_line": "CCN (vout zn) capacitor c=12p",
+      "value_SI": 1.2e-11,
+      "sheet": 3,
+      "origin": [
+        8,
+        0.9
+      ],
+      "rendered_pins": {
+        "1": [
+          7.18,
+          0.9
+        ],
+        "2": [
+          8.82,
+          0.9
+        ]
+      }
+    },
+    "RZN": {
+      "name": "RZN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "zn",
+        "2": "fn2"
+      },
+      "parameters": {
+        "r": "1000"
+      },
+      "source_line": "RZN (zn fn2) resistor r=1000",
+      "value_SI": 1000.0,
+      "sheet": 3,
+      "origin": [
+        18,
+        0.9
+      ],
+      "rendered_pins": {
+        "1": [
+          17.18,
+          0.9
+        ],
+        "2": [
+          18.82,
+          0.9
+        ]
+      }
+    },
+    "MABNS": {
+      "name": "MABNS",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vabn",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.82u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MABNS (vabn vbp vdd vdd) p18 w=42.82u l=4u m=2",
+      "W_unit_um": 42.82,
+      "L_um": 4.0,
+      "m": 2.0,
+      "sheet": 4,
+      "origin": [
+        6,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          6,
+          19
+        ],
+        "S": [
+          6,
+          21
+        ],
+        "G": [
+          4.45,
+          20
+        ],
+        "B": [
+          6.86,
+          20
+        ]
+      }
+    },
+    "MABNU": {
+      "name": "MABNU",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vabn",
+        "G": "vabn",
+        "S": "xn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.44u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MABNU (vabn vabn xn vss) n18 w=4.44u l=1u m=1",
+      "W_unit_um": 4.4399999999999995,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 4,
+      "origin": [
+        6,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          6,
+          14
+        ],
+        "S": [
+          6,
+          12
+        ],
+        "G": [
+          4.45,
+          13
+        ],
+        "B": [
+          6.86,
+          13
+        ]
+      }
+    },
+    "MABNL": {
+      "name": "MABNL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "xn",
+        "G": "xn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.44u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MABNL (xn xn vss vss) n18 w=4.44u l=1u m=1",
+      "W_unit_um": 4.4399999999999995,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 4,
+      "origin": [
+        6,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          6,
+          7
+        ],
+        "S": [
+          6,
+          5
+        ],
+        "G": [
+          4.45,
+          6
+        ],
+        "B": [
+          6.86,
+          6
+        ]
+      }
+    },
+    "MABPL": {
+      "name": "MABPL",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "yp",
+        "G": "yp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "21.04u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MABPL (yp yp vdd vdd) p18 w=21.04u l=1u m=1",
+      "W_unit_um": 21.04,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 4,
+      "origin": [
+        17,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          17,
+          19
+        ],
+        "S": [
+          17,
+          21
+        ],
+        "G": [
+          15.45,
+          20
+        ],
+        "B": [
+          17.86,
+          20
+        ]
+      }
+    },
+    "MABPU": {
+      "name": "MABPU",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vabp",
+        "G": "vabp",
+        "S": "yp",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "21.04u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MABPU (vabp vabp yp vdd) p18 w=21.04u l=1u m=1",
+      "W_unit_um": 21.04,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 4,
+      "origin": [
+        17,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          17,
+          12
+        ],
+        "S": [
+          17,
+          14
+        ],
+        "G": [
+          15.45,
+          13
+        ],
+        "B": [
+          17.86,
+          13
+        ]
+      }
+    },
+    "MABPS": {
+      "name": "MABPS",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vabp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.64u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MABPS (vabp iref vss vss) n18 w=8.64u l=4u m=2",
+      "W_unit_um": 8.64,
+      "L_um": 4.0,
+      "m": 2.0,
+      "sheet": 4,
+      "origin": [
+        17,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          17,
+          7
+        ],
+        "S": [
+          17,
+          5
+        ],
+        "G": [
+          15.45,
+          6
+        ],
+        "B": [
+          17.86,
+          6
+        ]
+      }
+    },
+    "MABN": {
+      "name": "MABN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "gp",
+        "G": "vabn",
+        "S": "gn",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.44u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MABN (gp vabn gn vss) n18 w=4.44u l=1u m=2",
+      "W_unit_um": 4.4399999999999995,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 4,
+      "origin": [
+        27,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          15
+        ],
+        "S": [
+          27,
+          13
+        ],
+        "G": [
+          25.45,
+          14
+        ],
+        "B": [
+          27.86,
+          14
+        ]
+      }
+    },
+    "MABP": {
+      "name": "MABP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "gn",
+        "G": "vabp",
+        "S": "gp",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "21.04u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MABP (gn vabp gp vdd) p18 w=21.04u l=1u m=2",
+      "W_unit_um": 21.04,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 4,
+      "origin": [
+        33,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          33,
+          13
+        ],
+        "S": [
+          33,
+          15
+        ],
+        "G": [
+          31.45,
+          14
+        ],
+        "B": [
+          33.86,
+          14
+        ]
+      }
+    },
+    "MOUTP": {
+      "name": "MOUTP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "gp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "21.04u",
+        "l": "1u",
+        "m": "20"
+      },
+      "source_line": "MOUTP (vout gp vdd vdd) p18 w=21.04u l=1u m=20",
+      "W_unit_um": 21.04,
+      "L_um": 1.0,
+      "m": 20.0,
+      "sheet": 4,
+      "origin": [
+        40,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          40,
+          19
+        ],
+        "S": [
+          40,
+          21
+        ],
+        "G": [
+          38.45,
+          20
+        ],
+        "B": [
+          40.86,
+          20
+        ]
+      }
+    },
+    "MOUTN": {
+      "name": "MOUTN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "gn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.44u",
+        "l": "1u",
+        "m": "20"
+      },
+      "source_line": "MOUTN (vout gn vss vss) n18 w=4.44u l=1u m=20",
+      "W_unit_um": 4.4399999999999995,
+      "L_um": 1.0,
+      "m": 20.0,
+      "sheet": 4,
+      "origin": [
+        40,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          40,
+          6
+        ],
+        "S": [
+          40,
+          4
+        ],
+        "G": [
+          38.45,
+          5
+        ],
+        "B": [
+          40.86,
+          5
+        ]
+      }
+    },
+    "CGP": {
+      "name": "CGP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gp",
+        "2": "vdd"
+      },
+      "parameters": {
+        "c": "0.5p"
+      },
+      "source_line": "CGP (gp vdd) capacitor c=0.5p",
+      "value_SI": 5e-13,
+      "sheet": 4,
+      "origin": [
+        27,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          27,
+          20.18
+        ],
+        "2": [
+          27,
+          21.82
+        ]
+      }
+    },
+    "CGN": {
+      "name": "CGN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gn",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "0.5p"
+      },
+      "source_line": "CGN (gn vss) capacitor c=0.5p",
+      "value_SI": 5e-13,
+      "sheet": 4,
+      "origin": [
+        27,
+        6
+      ],
+      "rendered_pins": {
+        "1": [
+          27,
+          6.82
+        ],
+        "2": [
+          27,
+          5.18
+        ]
+      }
+    }
+  },
+  "nets": {
+    "iref": [
+      {
+        "instance": "MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          3,
+          6
+        ]
+      },
+      {
+        "instance": "MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          1.45,
+          5
+        ]
+      },
+      {
+        "instance": "MBN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          7.45,
+          5
+        ]
+      },
+      {
+        "instance": "MPCB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          21.45,
+          5
+        ]
+      },
+      {
+        "instance": "MPRB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          35.45,
+          5
+        ]
+      },
+      {
+        "instance": "MNT",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          5.45,
+          5.5
+        ]
+      },
+      {
+        "instance": "MABPS",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          15.45,
+          6
+        ]
+      }
+    ],
+    "vss": [
+      {
+        "instance": "MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          3,
+          4
+        ]
+      },
+      {
+        "instance": "MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          3.86,
+          5
+        ]
+      },
+      {
+        "instance": "MBN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          9,
+          4
+        ]
+      },
+      {
+        "instance": "MBN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          9.86,
+          5
+        ]
+      },
+      {
+        "instance": "MND",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          16.86,
+          10
+        ]
+      },
+      {
+        "instance": "RNC",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          16,
+          3.18
+        ]
+      },
+      {
+        "instance": "MPCB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          23,
+          4
+        ]
+      },
+      {
+        "instance": "MPCB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          23.86,
+          5
+        ]
+      },
+      {
+        "instance": "MNREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          30.86,
+          10
+        ]
+      },
+      {
+        "instance": "RNR",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          30,
+          3.18
+        ]
+      },
+      {
+        "instance": "MPRB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          37,
+          4
+        ]
+      },
+      {
+        "instance": "MPRB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          37.86,
+          5
+        ]
+      },
+      {
+        "instance": "MNT",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          7,
+          4.5
+        ]
+      },
+      {
+        "instance": "MNT",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          7.86,
+          5.5
+        ]
+      },
+      {
+        "instance": "MNINN",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          4.86,
+          17.5
+        ]
+      },
+      {
+        "instance": "MNINP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          10.86,
+          17.5
+        ]
+      },
+      {
+        "instance": "MNSW",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          18.86,
+          14
+        ]
+      },
+      {
+        "instance": "MNSD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          24,
+          3
+        ]
+      },
+      {
+        "instance": "MNSD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          24.86,
+          4
+        ]
+      },
+      {
+        "instance": "MNSM",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          18,
+          3
+        ]
+      },
+      {
+        "instance": "MNSM",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          18.86,
+          4
+        ]
+      },
+      {
+        "instance": "MFSUB",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          4,
+          9
+        ]
+      },
+      {
+        "instance": "MFSUB",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          4.86,
+          10
+        ]
+      },
+      {
+        "instance": "MFREF",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          11,
+          9
+        ]
+      },
+      {
+        "instance": "MFREF",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          11.86,
+          10
+        ]
+      },
+      {
+        "instance": "MFS1",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          22,
+          6
+        ]
+      },
+      {
+        "instance": "MFS1",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          22.86,
+          7
+        ]
+      },
+      {
+        "instance": "MFS2",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          34,
+          6
+        ]
+      },
+      {
+        "instance": "MFS2",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          34.86,
+          7
+        ]
+      },
+      {
+        "instance": "MNC1",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          22.86,
+          11
+        ]
+      },
+      {
+        "instance": "MNC2",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          34.86,
+          11
+        ]
+      },
+      {
+        "instance": "MABN",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          27.86,
+          14
+        ]
+      },
+      {
+        "instance": "MABNU",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          6.86,
+          13
+        ]
+      },
+      {
+        "instance": "MABNL",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          6,
+          5
+        ]
+      },
+      {
+        "instance": "MABNL",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          6.86,
+          6
+        ]
+      },
+      {
+        "instance": "MABPS",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          17,
+          5
+        ]
+      },
+      {
+        "instance": "MABPS",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          17.86,
+          6
+        ]
+      },
+      {
+        "instance": "MOUTN",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          40,
+          4
+        ]
+      },
+      {
+        "instance": "MOUTN",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          40.86,
+          5
+        ]
+      },
+      {
+        "instance": "CGN",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          27,
+          5.18
+        ]
+      }
+    ],
+    "vbp": [
+      {
+        "instance": "MBN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          9,
+          6
+        ]
+      },
+      {
+        "instance": "MBP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          9,
+          16
+        ]
+      },
+      {
+        "instance": "MBP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          7.45,
+          17
+        ]
+      },
+      {
+        "instance": "MNCB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          14.45,
+          17
+        ]
+      },
+      {
+        "instance": "MNRB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          28.45,
+          17
+        ]
+      },
+      {
+        "instance": "MPT",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          33.45,
+          21
+        ]
+      },
+      {
+        "instance": "MFBASE",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          2.45,
+          19
+        ]
+      },
+      {
+        "instance": "MABNS",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          4.45,
+          20
+        ]
+      }
+    ],
+    "vdd": [
+      {
+        "instance": "MBP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          9,
+          18
+        ]
+      },
+      {
+        "instance": "MBP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          9.86,
+          17
+        ]
+      },
+      {
+        "instance": "MNCB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          16,
+          18
+        ]
+      },
+      {
+        "instance": "MNCB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          16.86,
+          17
+        ]
+      },
+      {
+        "instance": "MPD",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          23.86,
+          14
+        ]
+      },
+      {
+        "instance": "RPC",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          23,
+          18.82
+        ]
+      },
+      {
+        "instance": "MNRB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          30,
+          18
+        ]
+      },
+      {
+        "instance": "MNRB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          30.86,
+          17
+        ]
+      },
+      {
+        "instance": "MPREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          37.86,
+          14
+        ]
+      },
+      {
+        "instance": "RPR",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          37,
+          18.82
+        ]
+      },
+      {
+        "instance": "MPT",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          35,
+          22
+        ]
+      },
+      {
+        "instance": "MPT",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          35.86,
+          21
+        ]
+      },
+      {
+        "instance": "MPSD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          18,
+          21
+        ]
+      },
+      {
+        "instance": "MPSD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          18.86,
+          20
+        ]
+      },
+      {
+        "instance": "MPSM",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          24,
+          21
+        ]
+      },
+      {
+        "instance": "MPSM",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          24.86,
+          20
+        ]
+      },
+      {
+        "instance": "MFBASE",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          4,
+          20
+        ]
+      },
+      {
+        "instance": "MFBASE",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          4.86,
+          19
+        ]
+      },
+      {
+        "instance": "MFADD",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          11,
+          20
+        ]
+      },
+      {
+        "instance": "MFADD",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          11.86,
+          19
+        ]
+      },
+      {
+        "instance": "MPM1",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          22,
+          22
+        ]
+      },
+      {
+        "instance": "MPM1",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          22.86,
+          21
+        ]
+      },
+      {
+        "instance": "MPM2",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          34,
+          22
+        ]
+      },
+      {
+        "instance": "MPM2",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          34.86,
+          21
+        ]
+      },
+      {
+        "instance": "MPC1",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          22.86,
+          17
+        ]
+      },
+      {
+        "instance": "MPC2",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          34.86,
+          17
+        ]
+      },
+      {
+        "instance": "MABP",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          33.86,
+          14
+        ]
+      },
+      {
+        "instance": "MABNS",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          6,
+          21
+        ]
+      },
+      {
+        "instance": "MABNS",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          6.86,
+          20
+        ]
+      },
+      {
+        "instance": "MABPU",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          17.86,
+          13
+        ]
+      },
+      {
+        "instance": "MABPL",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          17,
+          21
+        ]
+      },
+      {
+        "instance": "MABPL",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          17.86,
+          20
+        ]
+      },
+      {
+        "instance": "MOUTP",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          40,
+          21
+        ]
+      },
+      {
+        "instance": "MOUTP",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          40.86,
+          20
+        ]
+      },
+      {
+        "instance": "CGP",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          27,
+          21.82
+        ]
+      }
+    ],
+    "vcn": [
+      {
+        "instance": "MNCB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          16,
+          16
+        ]
+      },
+      {
+        "instance": "MND",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          16,
+          11
+        ]
+      },
+      {
+        "instance": "MND",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          14.45,
+          10
+        ]
+      },
+      {
+        "instance": "MNC1",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          20.45,
+          11
+        ]
+      },
+      {
+        "instance": "MNC2",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          32.45,
+          11
+        ]
+      }
+    ],
+    "ncb": [
+      {
+        "instance": "MND",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          16,
+          9
+        ]
+      },
+      {
+        "instance": "RNC",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          16,
+          4.82
+        ]
+      }
+    ],
+    "vcp": [
+      {
+        "instance": "MPCB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          23,
+          6
+        ]
+      },
+      {
+        "instance": "MPD",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          23,
+          13
+        ]
+      },
+      {
+        "instance": "MPD",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          21.45,
+          14
+        ]
+      },
+      {
+        "instance": "MPC1",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          20.45,
+          17
+        ]
+      },
+      {
+        "instance": "MPC2",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          32.45,
+          17
+        ]
+      }
+    ],
+    "pcb": [
+      {
+        "instance": "MPD",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          23,
+          15
+        ]
+      },
+      {
+        "instance": "RPC",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          23,
+          17.18
+        ]
+      }
+    ],
+    "vrefn": [
+      {
+        "instance": "MNRB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          30,
+          16
+        ]
+      },
+      {
+        "instance": "MNREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          30,
+          11
+        ]
+      },
+      {
+        "instance": "MNREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          28.45,
+          10
+        ]
+      },
+      {
+        "instance": "MNSW",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          16.45,
+          14
+        ]
+      }
+    ],
+    "nrefsrc": [
+      {
+        "instance": "MNREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          30,
+          9
+        ]
+      },
+      {
+        "instance": "RNR",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          30,
+          4.82
+        ]
+      }
+    ],
+    "vrefp": [
+      {
+        "instance": "MPRB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          37,
+          6
+        ]
+      },
+      {
+        "instance": "MPREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          37,
+          13
+        ]
+      },
+      {
+        "instance": "MPREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          35.45,
+          14
+        ]
+      },
+      {
+        "instance": "MPSW",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          22.45,
+          11
+        ]
+      }
+    ],
+    "prefsrc": [
+      {
+        "instance": "MPREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          37,
+          15
+        ]
+      },
+      {
+        "instance": "RPR",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          37,
+          17.18
+        ]
+      }
+    ],
+    "ntail": [
+      {
+        "instance": "MNT",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          7,
+          6.5
+        ]
+      },
+      {
+        "instance": "RINN",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          4,
+          12.68
+        ]
+      },
+      {
+        "instance": "RINP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          10,
+          12.68
+        ]
+      },
+      {
+        "instance": "MNSW",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          18,
+          13
+        ]
+      },
+      {
+        "instance": "MNSM",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          18,
+          5
+        ]
+      },
+      {
+        "instance": "CCM1",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          37.82,
+          5
+        ]
+      },
+      {
+        "instance": "CCM2",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          37.82,
+          2
+        ]
+      }
+    ],
+    "ptail": [
+      {
+        "instance": "MPT",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          35,
+          20
+        ]
+      },
+      {
+        "instance": "MPINN",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          32.86,
+          11.5
+        ]
+      },
+      {
+        "instance": "MPINP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          38.86,
+          11.5
+        ]
+      },
+      {
+        "instance": "RIPN",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          32,
+          16.32
+        ]
+      },
+      {
+        "instance": "RIPP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          38,
+          16.32
+        ]
+      },
+      {
+        "instance": "MPSM",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          24,
+          19
+        ]
+      },
+      {
+        "instance": "MPSW",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          24,
+          12
+        ]
+      },
+      {
+        "instance": "MPSW",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          24.86,
+          11
+        ]
+      }
+    ],
+    "fp1": [
+      {
+        "instance": "MNINN",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          4,
+          18.5
+        ]
+      },
+      {
+        "instance": "MPM1",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          22,
+          20
+        ]
+      },
+      {
+        "instance": "MPC1",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          22,
+          18
+        ]
+      }
+    ],
+    "vinn": [
+      {
+        "instance": "MNINN",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          2.45,
+          17.5
+        ]
+      },
+      {
+        "instance": "MPINN",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          30.45,
+          11.5
+        ]
+      },
+      {
+        "instance": "RCM1",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          30.18,
+          5
+        ]
+      }
+    ],
+    "ntn": [
+      {
+        "instance": "MNINN",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          4,
+          16.5
+        ]
+      },
+      {
+        "instance": "RINN",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          4,
+          14.32
+        ]
+      }
+    ],
+    "fp2": [
+      {
+        "instance": "MNINP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          10,
+          18.5
+        ]
+      },
+      {
+        "instance": "MPM2",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          34,
+          20
+        ]
+      },
+      {
+        "instance": "MPC2",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          34,
+          18
+        ]
+      },
+      {
+        "instance": "RZP",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          18.82,
+          3
+        ]
+      }
+    ],
+    "vinp": [
+      {
+        "instance": "MNINP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          8.45,
+          17.5
+        ]
+      },
+      {
+        "instance": "MPINP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          36.45,
+          11.5
+        ]
+      },
+      {
+        "instance": "RCM2",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          30.18,
+          2
+        ]
+      }
+    ],
+    "ntp": [
+      {
+        "instance": "MNINP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          10,
+          16.5
+        ]
+      },
+      {
+        "instance": "RINP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          10,
+          14.32
+        ]
+      }
+    ],
+    "fn1": [
+      {
+        "instance": "MPINN",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          32,
+          10.5
+        ]
+      },
+      {
+        "instance": "MFS1",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          22,
+          8
+        ]
+      },
+      {
+        "instance": "MNC1",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          22,
+          10
+        ]
+      }
+    ],
+    "ptn": [
+      {
+        "instance": "MPINN",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          32,
+          12.5
+        ]
+      },
+      {
+        "instance": "RIPN",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          32,
+          14.68
+        ]
+      }
+    ],
+    "fn2": [
+      {
+        "instance": "MPINP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          38,
+          10.5
+        ]
+      },
+      {
+        "instance": "MFS2",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          34,
+          8
+        ]
+      },
+      {
+        "instance": "MNC2",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          34,
+          10
+        ]
+      },
+      {
+        "instance": "RZN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          18.82,
+          0.9
+        ]
+      }
+    ],
+    "ptp": [
+      {
+        "instance": "MPINP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          38,
+          12.5
+        ]
+      },
+      {
+        "instance": "RIPP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          38,
+          14.68
+        ]
+      }
+    ],
+    "swnd": [
+      {
+        "instance": "MNSW",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          18,
+          15
+        ]
+      },
+      {
+        "instance": "MPSD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          18,
+          19
+        ]
+      },
+      {
+        "instance": "MPSD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          16.45,
+          20
+        ]
+      },
+      {
+        "instance": "MPSM",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          22.45,
+          20
+        ]
+      },
+      {
+        "instance": "MFADD",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          9.45,
+          19
+        ]
+      }
+    ],
+    "swpd": [
+      {
+        "instance": "MPSW",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          24,
+          10
+        ]
+      },
+      {
+        "instance": "MNSD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          24,
+          5
+        ]
+      },
+      {
+        "instance": "MNSD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          22.45,
+          4
+        ]
+      },
+      {
+        "instance": "MNSM",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          16.45,
+          4
+        ]
+      },
+      {
+        "instance": "MFSUB",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          2.45,
+          10
+        ]
+      }
+    ],
+    "vbsink": [
+      {
+        "instance": "MFBASE",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          4,
+          18
+        ]
+      },
+      {
+        "instance": "MFADD",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          11,
+          18
+        ]
+      },
+      {
+        "instance": "MFSUB",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          4,
+          11
+        ]
+      },
+      {
+        "instance": "MFREF",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          11,
+          11
+        ]
+      },
+      {
+        "instance": "MFREF",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          9.45,
+          10
+        ]
+      },
+      {
+        "instance": "MFS1",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          20.45,
+          7
+        ]
+      },
+      {
+        "instance": "MFS2",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          32.45,
+          7
+        ]
+      }
+    ],
+    "ml": [
+      {
+        "instance": "MNC1",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          22,
+          12
+        ]
+      },
+      {
+        "instance": "MPM1",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          20.45,
+          21
+        ]
+      },
+      {
+        "instance": "MPM2",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          32.45,
+          21
+        ]
+      },
+      {
+        "instance": "MPC1",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          22,
+          16
+        ]
+      }
+    ],
+    "gn": [
+      {
+        "instance": "MNC2",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          34,
+          12
+        ]
+      },
+      {
+        "instance": "MABN",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          27,
+          13
+        ]
+      },
+      {
+        "instance": "MABP",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          33,
+          13
+        ]
+      },
+      {
+        "instance": "MOUTN",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          38.45,
+          5
+        ]
+      },
+      {
+        "instance": "CGN",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          27,
+          6.82
+        ]
+      }
+    ],
+    "gp": [
+      {
+        "instance": "MPC2",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          34,
+          16
+        ]
+      },
+      {
+        "instance": "MABN",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          27,
+          15
+        ]
+      },
+      {
+        "instance": "MABP",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          33,
+          15
+        ]
+      },
+      {
+        "instance": "MOUTP",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          38.45,
+          20
+        ]
+      },
+      {
+        "instance": "CGP",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          27,
+          20.18
+        ]
+      }
+    ],
+    "vabn": [
+      {
+        "instance": "MABN",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          25.45,
+          14
+        ]
+      },
+      {
+        "instance": "MABNS",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          6,
+          19
+        ]
+      },
+      {
+        "instance": "MABNU",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          6,
+          14
+        ]
+      },
+      {
+        "instance": "MABNU",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          4.45,
+          13
+        ]
+      }
+    ],
+    "vabp": [
+      {
+        "instance": "MABP",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          31.45,
+          14
+        ]
+      },
+      {
+        "instance": "MABPS",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          17,
+          7
+        ]
+      },
+      {
+        "instance": "MABPU",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          17,
+          12
+        ]
+      },
+      {
+        "instance": "MABPU",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          15.45,
+          13
+        ]
+      }
+    ],
+    "xn": [
+      {
+        "instance": "MABNU",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          6,
+          12
+        ]
+      },
+      {
+        "instance": "MABNL",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          6,
+          7
+        ]
+      },
+      {
+        "instance": "MABNL",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          4.45,
+          6
+        ]
+      }
+    ],
+    "yp": [
+      {
+        "instance": "MABPU",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          17,
+          14
+        ]
+      },
+      {
+        "instance": "MABPL",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          17,
+          19
+        ]
+      },
+      {
+        "instance": "MABPL",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          15.45,
+          20
+        ]
+      }
+    ],
+    "vout": [
+      {
+        "instance": "MOUTN",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          40,
+          6
+        ]
+      },
+      {
+        "instance": "MOUTP",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          40,
+          19
+        ]
+      },
+      {
+        "instance": "CCP",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          7.18,
+          3
+        ]
+      },
+      {
+        "instance": "CCN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          7.18,
+          0.9
+        ]
+      }
+    ],
+    "cmin": [
+      {
+        "instance": "RCM1",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          31.82,
+          5
+        ]
+      },
+      {
+        "instance": "CCM1",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          36.18,
+          5
+        ]
+      }
+    ],
+    "cmip": [
+      {
+        "instance": "RCM2",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          31.82,
+          2
+        ]
+      },
+      {
+        "instance": "CCM2",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          36.18,
+          2
+        ]
+      }
+    ],
+    "zp": [
+      {
+        "instance": "CCP",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          8.82,
+          3
+        ]
+      },
+      {
+        "instance": "RZP",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17.18,
+          3
+        ]
+      }
+    ],
+    "zn": [
+      {
+        "instance": "CCN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          8.82,
+          0.9
+        ]
+      },
+      {
+        "instance": "RZN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17.18,
+          0.9
+        ]
+      }
+    ]
+  },
+  "net_to_sheets": {
+    "iref": [
+      1,
+      2,
+      4
+    ],
+    "vss": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "vbp": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "vdd": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "vcn": [
+      1,
+      3
+    ],
+    "ncb": [
+      1
+    ],
+    "vcp": [
+      1,
+      3
+    ],
+    "pcb": [
+      1
+    ],
+    "vrefn": [
+      1,
+      2
+    ],
+    "nrefsrc": [
+      1
+    ],
+    "vrefp": [
+      1,
+      2
+    ],
+    "prefsrc": [
+      1
+    ],
+    "ntail": [
+      2
+    ],
+    "ptail": [
+      2
+    ],
+    "fp1": [
+      2,
+      3
+    ],
+    "vinn": [
+      2
+    ],
+    "ntn": [
+      2
+    ],
+    "fp2": [
+      2,
+      3
+    ],
+    "vinp": [
+      2
+    ],
+    "ntp": [
+      2
+    ],
+    "fn1": [
+      2,
+      3
+    ],
+    "ptn": [
+      2
+    ],
+    "fn2": [
+      2,
+      3
+    ],
+    "ptp": [
+      2
+    ],
+    "swnd": [
+      2,
+      3
+    ],
+    "swpd": [
+      2,
+      3
+    ],
+    "vbsink": [
+      3
+    ],
+    "ml": [
+      3
+    ],
+    "gn": [
+      3,
+      4
+    ],
+    "gp": [
+      3,
+      4
+    ],
+    "vabn": [
+      4
+    ],
+    "vabp": [
+      4
+    ],
+    "xn": [
+      4
+    ],
+    "yp": [
+      4
+    ],
+    "vout": [
+      3,
+      4
+    ],
+    "cmin": [
+      2
+    ],
+    "cmip": [
+      2
+    ],
+    "zp": [
+      3
+    ],
+    "zn": [
+      3
+    ]
+  },
+  "cross_sheet_networks": {
+    "iref": [
+      1,
+      2,
+      4
+    ],
+    "vss": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "vbp": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "vdd": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "vcn": [
+      1,
+      3
+    ],
+    "vcp": [
+      1,
+      3
+    ],
+    "vrefn": [
+      1,
+      2
+    ],
+    "vrefp": [
+      1,
+      2
+    ],
+    "fp1": [
+      2,
+      3
+    ],
+    "fp2": [
+      2,
+      3
+    ],
+    "fn1": [
+      2,
+      3
+    ],
+    "fn2": [
+      2,
+      3
+    ],
+    "swnd": [
+      2,
+      3
+    ],
+    "swpd": [
+      2,
+      3
+    ],
+    "gn": [
+      3,
+      4
+    ],
+    "gp": [
+      3,
+      4
+    ],
+    "vout": [
+      3,
+      4
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPRB",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "D",
+      "net": "vbp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "D",
+      "net": "vbp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNRB",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "D",
+      "net": "vrefp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "G",
+      "net": "vrefp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPRB",
+      "pin": "D",
+      "net": "vrefp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "S",
+      "net": "prefsrc",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "RPR",
+      "pin": "2",
+      "net": "prefsrc",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPD",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNRB",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNRB",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "RPC",
+      "pin": "1",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "RPR",
+      "pin": "1",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPD",
+      "pin": "S",
+      "net": "pcb",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "RPC",
+      "pin": "2",
+      "net": "pcb",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPD",
+      "pin": "D",
+      "net": "vcp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPD",
+      "pin": "G",
+      "net": "vcp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "D",
+      "net": "vcp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MND",
+      "pin": "S",
+      "net": "ncb",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "RNC",
+      "pin": "1",
+      "net": "ncb",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNRB",
+      "pin": "D",
+      "net": "vrefn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNREF",
+      "pin": "D",
+      "net": "vrefn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNREF",
+      "pin": "G",
+      "net": "vrefn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNREF",
+      "pin": "S",
+      "net": "nrefsrc",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "RNR",
+      "pin": "1",
+      "net": "nrefsrc",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MND",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPRB",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MPRB",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "RNC",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "RNR",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "D",
+      "net": "vcn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MND",
+      "pin": "D",
+      "net": "vcn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 1,
+      "instance": "MND",
+      "pin": "G",
+      "net": "vcn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPINN",
+      "pin": "S",
+      "net": "ptn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RIPN",
+      "pin": "2",
+      "net": "ptn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RCM2",
+      "pin": "2",
+      "net": "cmip",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "CCM2",
+      "pin": "1",
+      "net": "cmip",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNINN",
+      "pin": "G",
+      "net": "vinn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPINN",
+      "pin": "G",
+      "net": "vinn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RCM1",
+      "pin": "1",
+      "net": "vinn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNT",
+      "pin": "D",
+      "net": "ntail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSW",
+      "pin": "S",
+      "net": "ntail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSM",
+      "pin": "D",
+      "net": "ntail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RINN",
+      "pin": "2",
+      "net": "ntail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RINP",
+      "pin": "2",
+      "net": "ntail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "CCM1",
+      "pin": "2",
+      "net": "ntail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "CCM2",
+      "pin": "2",
+      "net": "ntail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSM",
+      "pin": "D",
+      "net": "ptail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSW",
+      "pin": "S",
+      "net": "ptail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSW",
+      "pin": "B",
+      "net": "ptail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT",
+      "pin": "D",
+      "net": "ptail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPINN",
+      "pin": "B",
+      "net": "ptail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPINP",
+      "pin": "B",
+      "net": "ptail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RIPN",
+      "pin": "1",
+      "net": "ptail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RIPP",
+      "pin": "1",
+      "net": "ptail",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSD",
+      "pin": "D",
+      "net": "swnd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSD",
+      "pin": "G",
+      "net": "swnd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSW",
+      "pin": "D",
+      "net": "swnd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSM",
+      "pin": "G",
+      "net": "swnd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSW",
+      "pin": "G",
+      "net": "vrefn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNINN",
+      "pin": "D",
+      "net": "fp1",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPINN",
+      "pin": "D",
+      "net": "fn1",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPINP",
+      "pin": "D",
+      "net": "fn2",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSW",
+      "pin": "D",
+      "net": "swpd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSD",
+      "pin": "D",
+      "net": "swpd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSD",
+      "pin": "G",
+      "net": "swpd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSM",
+      "pin": "G",
+      "net": "swpd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNINP",
+      "pin": "S",
+      "net": "ntp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RINP",
+      "pin": "1",
+      "net": "ntp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNT",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSW",
+      "pin": "G",
+      "net": "vrefp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RCM1",
+      "pin": "2",
+      "net": "cmin",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "CCM1",
+      "pin": "1",
+      "net": "cmin",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNINN",
+      "pin": "S",
+      "net": "ntn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RINN",
+      "pin": "1",
+      "net": "ntn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSD",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSD",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSM",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPSM",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPT",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNINP",
+      "pin": "D",
+      "net": "fp2",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNINN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNINP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNT",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNT",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSW",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSD",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSD",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSM",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSM",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MNINP",
+      "pin": "G",
+      "net": "vinp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPINP",
+      "pin": "G",
+      "net": "vinp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RCM2",
+      "pin": "1",
+      "net": "vinp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "MPINP",
+      "pin": "S",
+      "net": "ptp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 2,
+      "instance": "RIPP",
+      "pin": "2",
+      "net": "ptp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MNC1",
+      "pin": "S",
+      "net": "fn1",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFS1",
+      "pin": "D",
+      "net": "fn1",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "CCP",
+      "pin": "2",
+      "net": "zp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "RZP",
+      "pin": "1",
+      "net": "zp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFBASE",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPC2",
+      "pin": "D",
+      "net": "gp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MNC2",
+      "pin": "D",
+      "net": "gn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MNC1",
+      "pin": "G",
+      "net": "vcn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MNC2",
+      "pin": "G",
+      "net": "vcn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MNC2",
+      "pin": "S",
+      "net": "fn2",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFS2",
+      "pin": "D",
+      "net": "fn2",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "RZN",
+      "pin": "2",
+      "net": "fn2",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "CCP",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "CCN",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFBASE",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFBASE",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFADD",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFADD",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM1",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM1",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM2",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM2",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPC1",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPC2",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFSUB",
+      "pin": "G",
+      "net": "swpd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFBASE",
+      "pin": "D",
+      "net": "vbsink",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFADD",
+      "pin": "D",
+      "net": "vbsink",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFSUB",
+      "pin": "D",
+      "net": "vbsink",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFREF",
+      "pin": "D",
+      "net": "vbsink",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFREF",
+      "pin": "G",
+      "net": "vbsink",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFS1",
+      "pin": "G",
+      "net": "vbsink",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFS2",
+      "pin": "G",
+      "net": "vbsink",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM1",
+      "pin": "G",
+      "net": "ml",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM2",
+      "pin": "G",
+      "net": "ml",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPC1",
+      "pin": "D",
+      "net": "ml",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MNC1",
+      "pin": "D",
+      "net": "ml",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFADD",
+      "pin": "G",
+      "net": "swnd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPC1",
+      "pin": "G",
+      "net": "vcp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPC2",
+      "pin": "G",
+      "net": "vcp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "CCN",
+      "pin": "2",
+      "net": "zn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "RZN",
+      "pin": "1",
+      "net": "zn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM2",
+      "pin": "D",
+      "net": "fp2",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPC2",
+      "pin": "S",
+      "net": "fp2",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "RZP",
+      "pin": "2",
+      "net": "fp2",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFSUB",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFSUB",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MNC1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MNC2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFS1",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFS1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFS2",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MFS2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM1",
+      "pin": "D",
+      "net": "fp1",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 3,
+      "instance": "MPC1",
+      "pin": "S",
+      "net": "fp1",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNS",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPS",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABN",
+      "pin": "D",
+      "net": "gp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABP",
+      "pin": "S",
+      "net": "gp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MOUTP",
+      "pin": "G",
+      "net": "gp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "CGP",
+      "pin": "1",
+      "net": "gp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABN",
+      "pin": "S",
+      "net": "gn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABP",
+      "pin": "D",
+      "net": "gn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MOUTN",
+      "pin": "G",
+      "net": "gn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "CGN",
+      "pin": "1",
+      "net": "gn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MOUTP",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MOUTN",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNS",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNS",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPL",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPL",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPU",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABP",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MOUTP",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MOUTP",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "CGP",
+      "pin": "2",
+      "net": "vdd",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNS",
+      "pin": "D",
+      "net": "vabn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNU",
+      "pin": "D",
+      "net": "vabn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNU",
+      "pin": "G",
+      "net": "vabn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABN",
+      "pin": "G",
+      "net": "vabn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPU",
+      "pin": "D",
+      "net": "vabp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPU",
+      "pin": "G",
+      "net": "vabp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPS",
+      "pin": "D",
+      "net": "vabp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABP",
+      "pin": "G",
+      "net": "vabp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPL",
+      "pin": "D",
+      "net": "yp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPL",
+      "pin": "G",
+      "net": "yp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPU",
+      "pin": "S",
+      "net": "yp",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNU",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNL",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNL",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPS",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABPS",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MOUTN",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MOUTN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "CGN",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNU",
+      "pin": "S",
+      "net": "xn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNL",
+      "pin": "D",
+      "net": "xn",
+      "path_to_named_net": true
+    },
+    {
+      "sheet": 4,
+      "instance": "MABNL",
+      "pin": "G",
+      "net": "xn",
+      "path_to_named_net": true
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "title": "参考与共栅／转向偏置",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              3.86,
+              5
+            ],
+            [
+              4.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              9.86,
+              17
+            ],
+            [
+              10.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              9.86,
+              5
+            ],
+            [
+              10.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              16.86,
+              17
+            ],
+            [
+              17.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              16.86,
+              10
+            ],
+            [
+              17.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              23.86,
+              14
+            ],
+            [
+              24.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23.86,
+              5
+            ],
+            [
+              24.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              30.86,
+              17
+            ],
+            [
+              31.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              30.86,
+              10
+            ],
+            [
+              31.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.86,
+              14
+            ],
+            [
+              38.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.86,
+              5
+            ],
+            [
+              38.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              9,
+              22.3
+            ],
+            [
+              37,
+              22.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              9,
+              18
+            ],
+            [
+              9,
+              22.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              16,
+              18
+            ],
+            [
+              16,
+              22.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              30,
+              18
+            ],
+            [
+              30,
+              22.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              23,
+              18.82
+            ],
+            [
+              23,
+              22.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37,
+              18.82
+            ],
+            [
+              37,
+              22.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              1.4
+            ],
+            [
+              37,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              9,
+              4
+            ],
+            [
+              9,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23,
+              4
+            ],
+            [
+              23,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37,
+              4
+            ],
+            [
+              37,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              16,
+              3.18
+            ],
+            [
+              16,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              30,
+              3.18
+            ],
+            [
+              30,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              3,
+              6
+            ],
+            [
+              3,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              1.45,
+              5
+            ],
+            [
+              0.9500000000000002,
+              5
+            ],
+            [
+              0.9500000000000002,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              9,
+              16
+            ],
+            [
+              9,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              7.45,
+              17
+            ],
+            [
+              6.95,
+              17
+            ],
+            [
+              6.95,
+              13
+            ],
+            [
+              9,
+              13
+            ],
+            [
+              9,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "points": [
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "points": [
+            [
+              14.45,
+              10
+            ],
+            [
+              13.95,
+              10
+            ],
+            [
+              13.95,
+              13
+            ],
+            [
+              16,
+              13
+            ],
+            [
+              16,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ncb",
+          "points": [
+            [
+              16,
+              9
+            ],
+            [
+              16,
+              4.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pcb",
+          "points": [
+            [
+              23,
+              17.18
+            ],
+            [
+              23,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "points": [
+            [
+              23,
+              13
+            ],
+            [
+              23,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "points": [
+            [
+              21.45,
+              14
+            ],
+            [
+              20.95,
+              14
+            ],
+            [
+              20.95,
+              10.5
+            ],
+            [
+              23,
+              10.5
+            ],
+            [
+              23,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vrefn",
+          "points": [
+            [
+              30,
+              16
+            ],
+            [
+              30,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vrefn",
+          "points": [
+            [
+              28.45,
+              10
+            ],
+            [
+              27.95,
+              10
+            ],
+            [
+              27.95,
+              13
+            ],
+            [
+              30,
+              13
+            ],
+            [
+              30,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nrefsrc",
+          "points": [
+            [
+              30,
+              9
+            ],
+            [
+              30,
+              4.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "prefsrc",
+          "points": [
+            [
+              37,
+              17.18
+            ],
+            [
+              37,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vrefp",
+          "points": [
+            [
+              37,
+              13
+            ],
+            [
+              37,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vrefp",
+          "points": [
+            [
+              35.45,
+              14
+            ],
+            [
+              34.95,
+              14
+            ],
+            [
+              34.95,
+              10.5
+            ],
+            [
+              37,
+              10.5
+            ],
+            [
+              37,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              7.45,
+              5
+            ],
+            [
+              6.9,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              14.45,
+              17
+            ],
+            [
+              13.899999999999999,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              21.45,
+              5
+            ],
+            [
+              20.9,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              28.45,
+              17
+            ],
+            [
+              27.9,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              35.45,
+              5
+            ],
+            [
+              34.900000000000006,
+              5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            4.15,
+            5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            10.15,
+            17
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            10.15,
+            5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            17.15,
+            17
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            17.15,
+            10
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            24.15,
+            14
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            24.15,
+            5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            31.15,
+            17
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            31.15,
+            10
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            38.15,
+            14
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.15,
+            5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            9,
+            22.3
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            3,
+            1.4
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            3,
+            10
+          ],
+          "text": "IREF",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            9,
+            11.8
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "point": [
+            16,
+            14.5
+          ],
+          "text": "vcn",
+          "body": false
+        },
+        {
+          "net": "ncb",
+          "point": [
+            16,
+            7
+          ],
+          "text": "ncb",
+          "body": false
+        },
+        {
+          "net": "pcb",
+          "point": [
+            23,
+            16.1
+          ],
+          "text": "pcb",
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "point": [
+            23,
+            8.5
+          ],
+          "text": "vcp",
+          "body": false
+        },
+        {
+          "net": "vrefn",
+          "point": [
+            30,
+            14.5
+          ],
+          "text": "vrefn",
+          "body": false
+        },
+        {
+          "net": "nrefsrc",
+          "point": [
+            30,
+            7
+          ],
+          "text": "nrefsrc",
+          "body": false
+        },
+        {
+          "net": "prefsrc",
+          "point": [
+            37,
+            16.1
+          ],
+          "text": "prefsrc",
+          "body": false
+        },
+        {
+          "net": "vrefp",
+          "point": [
+            37,
+            8.5
+          ],
+          "text": "vrefp",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            6.9,
+            5
+          ],
+          "text": "IREF",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            13.899999999999999,
+            17
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            20.9,
+            5
+          ],
+          "text": "IREF",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            27.9,
+            17
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            34.900000000000006,
+            5
+          ],
+          "text": "IREF",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "互补输入、源退化与尾电流转向",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.86,
+              17.5
+            ],
+            [
+              5.15,
+              17.5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.86,
+              17.5
+            ],
+            [
+              11.15,
+              17.5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7.86,
+              5.5
+            ],
+            [
+              8.15,
+              5.5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18.86,
+              20
+            ],
+            [
+              19.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              18.86,
+              14
+            ],
+            [
+              19.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              24.86,
+              20
+            ],
+            [
+              25.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "ptail",
+          "points": [
+            [
+              24.86,
+              11
+            ],
+            [
+              25.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24.86,
+              4
+            ],
+            [
+              25.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              18.86,
+              4
+            ],
+            [
+              19.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35.86,
+              21
+            ],
+            [
+              36.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "ptail",
+          "points": [
+            [
+              32.86,
+              11.5
+            ],
+            [
+              33.15,
+              11.5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "ptail",
+          "points": [
+            [
+              38.86,
+              11.5
+            ],
+            [
+              39.15,
+              11.5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18,
+              23
+            ],
+            [
+              38,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              24,
+              21
+            ],
+            [
+              24,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35,
+              22
+            ],
+            [
+              35,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7,
+              1
+            ],
+            [
+              24,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7,
+              4.5
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              18,
+              3
+            ],
+            [
+              18,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24,
+              3
+            ],
+            [
+              24,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ntn",
+          "points": [
+            [
+              4,
+              16.5
+            ],
+            [
+              4,
+              14.32
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ntp",
+          "points": [
+            [
+              10,
+              16.5
+            ],
+            [
+              10,
+              14.32
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ntail",
+          "points": [
+            [
+              4,
+              12.68
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              12.68
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ntail",
+          "points": [
+            [
+              7,
+              6.5
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ptn",
+          "points": [
+            [
+              32,
+              12.5
+            ],
+            [
+              32,
+              14.68
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ptp",
+          "points": [
+            [
+              38,
+              12.5
+            ],
+            [
+              38,
+              14.68
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ptail",
+          "points": [
+            [
+              32,
+              16.32
+            ],
+            [
+              32,
+              18
+            ],
+            [
+              38,
+              18
+            ],
+            [
+              38,
+              16.32
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ptail",
+          "points": [
+            [
+              35,
+              20
+            ],
+            [
+              35,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "swnd",
+          "points": [
+            [
+              18,
+              19
+            ],
+            [
+              18,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "swnd",
+          "points": [
+            [
+              16.45,
+              20
+            ],
+            [
+              15.95,
+              20
+            ],
+            [
+              15.95,
+              17
+            ],
+            [
+              18,
+              17
+            ],
+            [
+              18,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "swpd",
+          "points": [
+            [
+              24,
+              10
+            ],
+            [
+              24,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "swpd",
+          "points": [
+            [
+              22.45,
+              4
+            ],
+            [
+              21.95,
+              4
+            ],
+            [
+              21.95,
+              7
+            ],
+            [
+              24,
+              7
+            ],
+            [
+              24,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cmin",
+          "points": [
+            [
+              31.82,
+              5
+            ],
+            [
+              36.18,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cmip",
+          "points": [
+            [
+              31.82,
+              2
+            ],
+            [
+              36.18,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fp1",
+          "points": [
+            [
+              4,
+              18.5
+            ],
+            [
+              4,
+              19.14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              2.45,
+              17.5
+            ],
+            [
+              1.9000000000000001,
+              17.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fp2",
+          "points": [
+            [
+              10,
+              18.5
+            ],
+            [
+              10,
+              19.14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              8.45,
+              17.5
+            ],
+            [
+              7.8999999999999995,
+              17.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              5.45,
+              5.5
+            ],
+            [
+              4.9,
+              5.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ntail",
+          "points": [
+            [
+              18,
+              13
+            ],
+            [
+              18,
+              12.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vrefn",
+          "points": [
+            [
+              16.45,
+              14
+            ],
+            [
+              15.899999999999999,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ptail",
+          "points": [
+            [
+              24,
+              19
+            ],
+            [
+              24,
+              18.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "swnd",
+          "points": [
+            [
+              22.45,
+              20
+            ],
+            [
+              21.9,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ptail",
+          "points": [
+            [
+              24,
+              12
+            ],
+            [
+              24,
+              12.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vrefp",
+          "points": [
+            [
+              22.45,
+              11
+            ],
+            [
+              21.9,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ntail",
+          "points": [
+            [
+              18,
+              5
+            ],
+            [
+              18,
+              5.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "swpd",
+          "points": [
+            [
+              16.45,
+              4
+            ],
+            [
+              15.899999999999999,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              33.45,
+              21
+            ],
+            [
+              32.900000000000006,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fn1",
+          "points": [
+            [
+              32,
+              10.5
+            ],
+            [
+              32,
+              9.86
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              30.45,
+              11.5
+            ],
+            [
+              29.9,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fn2",
+          "points": [
+            [
+              38,
+              10.5
+            ],
+            [
+              38,
+              9.86
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              36.45,
+              11.5
+            ],
+            [
+              35.900000000000006,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              30.18,
+              5
+            ],
+            [
+              29.38,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ntail",
+          "points": [
+            [
+              37.82,
+              5
+            ],
+            [
+              38.62,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              30.18,
+              2
+            ],
+            [
+              29.38,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ntail",
+          "points": [
+            [
+              37.82,
+              2
+            ],
+            [
+              38.62,
+              2
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            17.5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.15,
+            17.5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            8.15,
+            5.5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            19.15,
+            20
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            19.15,
+            14
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            25.15,
+            20
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "ptail",
+          "point": [
+            25.15,
+            11
+          ],
+          "text": "ptail",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            25.15,
+            4
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            19.15,
+            4
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            36.15,
+            21
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "ptail",
+          "point": [
+            33.15,
+            11.5
+          ],
+          "text": "ptail",
+          "body": true
+        },
+        {
+          "net": "ptail",
+          "point": [
+            39.15,
+            11.5
+          ],
+          "text": "ptail",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            18,
+            23
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            7,
+            1
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "ntn",
+          "point": [
+            4,
+            15.0
+          ],
+          "text": "ntn",
+          "body": false
+        },
+        {
+          "net": "ntp",
+          "point": [
+            10,
+            15.0
+          ],
+          "text": "ntp",
+          "body": false
+        },
+        {
+          "net": "ntail",
+          "point": [
+            7,
+            10
+          ],
+          "text": "ntail",
+          "body": false
+        },
+        {
+          "net": "ptn",
+          "point": [
+            32,
+            13.6
+          ],
+          "text": "ptn",
+          "body": false
+        },
+        {
+          "net": "ptp",
+          "point": [
+            38,
+            13.6
+          ],
+          "text": "ptp",
+          "body": false
+        },
+        {
+          "net": "ptail",
+          "point": [
+            32,
+            18
+          ],
+          "text": "ptail",
+          "body": false
+        },
+        {
+          "net": "swnd",
+          "point": [
+            18,
+            16
+          ],
+          "text": "swnd",
+          "body": false
+        },
+        {
+          "net": "swpd",
+          "point": [
+            24,
+            8.5
+          ],
+          "text": "swpd",
+          "body": false
+        },
+        {
+          "net": "cmin",
+          "point": [
+            34.0,
+            5
+          ],
+          "text": "cmin",
+          "body": false
+        },
+        {
+          "net": "cmip",
+          "point": [
+            34.0,
+            2
+          ],
+          "text": "cmip",
+          "body": false
+        },
+        {
+          "net": "fp1",
+          "point": [
+            4,
+            19.14
+          ],
+          "text": "fp1",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            1.9000000000000001,
+            17.5
+          ],
+          "text": "VINN",
+          "body": false
+        },
+        {
+          "net": "fp2",
+          "point": [
+            10,
+            19.14
+          ],
+          "text": "fp2",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            7.8999999999999995,
+            17.5
+          ],
+          "text": "VINP",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            4.9,
+            5.5
+          ],
+          "text": "IREF",
+          "body": false
+        },
+        {
+          "net": "ntail",
+          "point": [
+            18,
+            12.36
+          ],
+          "text": "ntail",
+          "body": false
+        },
+        {
+          "net": "vrefn",
+          "point": [
+            15.899999999999999,
+            14
+          ],
+          "text": "vrefn",
+          "body": false
+        },
+        {
+          "net": "ptail",
+          "point": [
+            24,
+            18.36
+          ],
+          "text": "ptail",
+          "body": false
+        },
+        {
+          "net": "swnd",
+          "point": [
+            21.9,
+            20
+          ],
+          "text": "swnd",
+          "body": false
+        },
+        {
+          "net": "ptail",
+          "point": [
+            24,
+            12.64
+          ],
+          "text": "ptail",
+          "body": false
+        },
+        {
+          "net": "vrefp",
+          "point": [
+            21.9,
+            11
+          ],
+          "text": "vrefp",
+          "body": false
+        },
+        {
+          "net": "ntail",
+          "point": [
+            18,
+            5.64
+          ],
+          "text": "ntail",
+          "body": false
+        },
+        {
+          "net": "swpd",
+          "point": [
+            15.899999999999999,
+            4
+          ],
+          "text": "swpd",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            32.900000000000006,
+            21
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "fn1",
+          "point": [
+            32,
+            9.86
+          ],
+          "text": "fn1",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            29.9,
+            11.5
+          ],
+          "text": "VINN",
+          "body": false
+        },
+        {
+          "net": "fn2",
+          "point": [
+            38,
+            9.86
+          ],
+          "text": "fn2",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            35.900000000000006,
+            11.5
+          ],
+          "text": "VINP",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            29.38,
+            5
+          ],
+          "text": "VINN",
+          "body": false
+        },
+        {
+          "net": "ntail",
+          "point": [
+            38.62,
+            5
+          ],
+          "text": "ntail",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            29.38,
+            2
+          ],
+          "text": "VINP",
+          "body": false
+        },
+        {
+          "net": "ntail",
+          "point": [
+            38.62,
+            2
+          ],
+          "text": "ntail",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "折叠求和、镜负载与双路补偿",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              4.86,
+              19
+            ],
+            [
+              5.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11.86,
+              19
+            ],
+            [
+              12.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.86,
+              10
+            ],
+            [
+              5.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11.86,
+              10
+            ],
+            [
+              12.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22.86,
+              21
+            ],
+            [
+              23.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.86,
+              21
+            ],
+            [
+              35.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22.86,
+              17
+            ],
+            [
+              23.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.86,
+              17
+            ],
+            [
+              35.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22.86,
+              11
+            ],
+            [
+              23.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.86,
+              11
+            ],
+            [
+              35.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22.86,
+              7
+            ],
+            [
+              23.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.86,
+              7
+            ],
+            [
+              35.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              4,
+              23
+            ],
+            [
+              34,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              4,
+              20
+            ],
+            [
+              4,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11,
+              20
+            ],
+            [
+              11,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22,
+              22
+            ],
+            [
+              22,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34,
+              22
+            ],
+            [
+              34,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              4.8
+            ],
+            [
+              34,
+              4.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              9
+            ],
+            [
+              4,
+              4.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              4.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22,
+              6
+            ],
+            [
+              22,
+              4.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34,
+              6
+            ],
+            [
+              34,
+              4.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbsink",
+          "points": [
+            [
+              4,
+              18
+            ],
+            [
+              4,
+              14
+            ],
+            [
+              11,
+              14
+            ],
+            [
+              11,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbsink",
+          "points": [
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbsink",
+          "points": [
+            [
+              11,
+              11
+            ],
+            [
+              11,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbsink",
+          "points": [
+            [
+              9.45,
+              10
+            ],
+            [
+              8.95,
+              10
+            ],
+            [
+              8.95,
+              12.5
+            ],
+            [
+              11,
+              12.5
+            ],
+            [
+              11,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fp1",
+          "points": [
+            [
+              22,
+              20
+            ],
+            [
+              22,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fp2",
+          "points": [
+            [
+              34,
+              20
+            ],
+            [
+              34,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ml",
+          "points": [
+            [
+              22,
+              16
+            ],
+            [
+              22,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ml",
+          "points": [
+            [
+              20.45,
+              21
+            ],
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              14
+            ],
+            [
+              22,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fn1",
+          "points": [
+            [
+              22,
+              10
+            ],
+            [
+              22,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fn2",
+          "points": [
+            [
+              34,
+              10
+            ],
+            [
+              34,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "zp",
+          "points": [
+            [
+              8.82,
+              3
+            ],
+            [
+              17.18,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              7.18,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fp2",
+          "points": [
+            [
+              18.82,
+              3
+            ],
+            [
+              25,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "zn",
+          "points": [
+            [
+              8.82,
+              0.9
+            ],
+            [
+              17.18,
+              0.9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              7.18,
+              0.9
+            ],
+            [
+              4,
+              0.9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fn2",
+          "points": [
+            [
+              18.82,
+              0.9
+            ],
+            [
+              25,
+              0.9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              2.45,
+              19
+            ],
+            [
+              1.9000000000000001,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "swnd",
+          "points": [
+            [
+              9.45,
+              19
+            ],
+            [
+              8.899999999999999,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "swpd",
+          "points": [
+            [
+              2.45,
+              10
+            ],
+            [
+              1.9000000000000001,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ml",
+          "points": [
+            [
+              32.45,
+              21
+            ],
+            [
+              31.900000000000002,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "points": [
+            [
+              20.45,
+              17
+            ],
+            [
+              19.9,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gp",
+          "points": [
+            [
+              34,
+              16
+            ],
+            [
+              34,
+              15.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "points": [
+            [
+              32.45,
+              17
+            ],
+            [
+              31.900000000000002,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "points": [
+            [
+              20.45,
+              11
+            ],
+            [
+              19.9,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gn",
+          "points": [
+            [
+              34,
+              12
+            ],
+            [
+              34,
+              12.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "points": [
+            [
+              32.45,
+              11
+            ],
+            [
+              31.900000000000002,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbsink",
+          "points": [
+            [
+              20.45,
+              7
+            ],
+            [
+              19.9,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbsink",
+          "points": [
+            [
+              32.45,
+              7
+            ],
+            [
+              31.900000000000002,
+              7
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            5.15,
+            19
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12.15,
+            19
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            10
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            12.15,
+            10
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            23.15,
+            21
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.15,
+            21
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            23.15,
+            17
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.15,
+            17
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            23.15,
+            11
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.15,
+            11
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            23.15,
+            7
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.15,
+            7
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            4,
+            23
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4,
+            4.8
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "vbsink",
+          "point": [
+            5.2,
+            14
+          ],
+          "text": "vbsink",
+          "body": false
+        },
+        {
+          "net": "fp1",
+          "point": [
+            22,
+            19
+          ],
+          "text": "fp1",
+          "body": false
+        },
+        {
+          "net": "fp2",
+          "point": [
+            34,
+            19
+          ],
+          "text": "fp2",
+          "body": false
+        },
+        {
+          "net": "ml",
+          "point": [
+            22,
+            14
+          ],
+          "text": "ml",
+          "body": false
+        },
+        {
+          "net": "fn1",
+          "point": [
+            22,
+            9
+          ],
+          "text": "fn1",
+          "body": false
+        },
+        {
+          "net": "fn2",
+          "point": [
+            34,
+            9
+          ],
+          "text": "fn2",
+          "body": false
+        },
+        {
+          "net": "zp",
+          "point": [
+            13,
+            3
+          ],
+          "text": "zp",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            4,
+            3
+          ],
+          "text": "VOUT",
+          "body": false
+        },
+        {
+          "net": "fp2",
+          "point": [
+            25,
+            3
+          ],
+          "text": "fp2",
+          "body": false
+        },
+        {
+          "net": "zn",
+          "point": [
+            13,
+            0.9
+          ],
+          "text": "zn",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            4,
+            0.9
+          ],
+          "text": "VOUT",
+          "body": false
+        },
+        {
+          "net": "fn2",
+          "point": [
+            25,
+            0.9
+          ],
+          "text": "fn2",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            1.9000000000000001,
+            19
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "swnd",
+          "point": [
+            8.899999999999999,
+            19
+          ],
+          "text": "swnd",
+          "body": false
+        },
+        {
+          "net": "swpd",
+          "point": [
+            1.9000000000000001,
+            10
+          ],
+          "text": "swpd",
+          "body": false
+        },
+        {
+          "net": "ml",
+          "point": [
+            31.900000000000002,
+            21
+          ],
+          "text": "ml",
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "point": [
+            19.9,
+            17
+          ],
+          "text": "vcp",
+          "body": false
+        },
+        {
+          "net": "gp",
+          "point": [
+            34,
+            15.36
+          ],
+          "text": "gp",
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "point": [
+            31.900000000000002,
+            17
+          ],
+          "text": "vcp",
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "point": [
+            19.9,
+            11
+          ],
+          "text": "vcn",
+          "body": false
+        },
+        {
+          "net": "gn",
+          "point": [
+            34,
+            12.64
+          ],
+          "text": "gn",
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "point": [
+            31.900000000000002,
+            11
+          ],
+          "text": "vcn",
+          "body": false
+        },
+        {
+          "net": "vbsink",
+          "point": [
+            19.9,
+            7
+          ],
+          "text": "vbsink",
+          "body": false
+        },
+        {
+          "net": "vbsink",
+          "point": [
+            31.900000000000002,
+            7
+          ],
+          "text": "vbsink",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "浮动 Class-AB、复制偏置与输出",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6.86,
+              20
+            ],
+            [
+              7.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              6.86,
+              13
+            ],
+            [
+              7.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              6.86,
+              6
+            ],
+            [
+              7.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              17.86,
+              20
+            ],
+            [
+              18.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              17.86,
+              13
+            ],
+            [
+              18.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17.86,
+              6
+            ],
+            [
+              18.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27.86,
+              14
+            ],
+            [
+              28.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              33.86,
+              14
+            ],
+            [
+              34.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              40.86,
+              20
+            ],
+            [
+              41.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              40.86,
+              5
+            ],
+            [
+              41.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6,
+              23
+            ],
+            [
+              40,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6,
+              21
+            ],
+            [
+              6,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              17,
+              21
+            ],
+            [
+              17,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              40,
+              21
+            ],
+            [
+              40,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              27,
+              21.82
+            ],
+            [
+              27,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              6,
+              1.5
+            ],
+            [
+              40,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17,
+              5
+            ],
+            [
+              17,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              40,
+              4
+            ],
+            [
+              40,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27,
+              5.18
+            ],
+            [
+              27,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vabn",
+          "points": [
+            [
+              6,
+              19
+            ],
+            [
+              6,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vabn",
+          "points": [
+            [
+              4.45,
+              13
+            ],
+            [
+              3.95,
+              13
+            ],
+            [
+              3.95,
+              16.5
+            ],
+            [
+              6,
+              16.5
+            ],
+            [
+              6,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "xn",
+          "points": [
+            [
+              6,
+              12
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "xn",
+          "points": [
+            [
+              4.45,
+              6
+            ],
+            [
+              3.95,
+              6
+            ],
+            [
+              3.95,
+              9.5
+            ],
+            [
+              6,
+              9.5
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "yp",
+          "points": [
+            [
+              17,
+              19
+            ],
+            [
+              17,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "yp",
+          "points": [
+            [
+              15.45,
+              20
+            ],
+            [
+              14.95,
+              20
+            ],
+            [
+              14.95,
+              16.5
+            ],
+            [
+              17,
+              16.5
+            ],
+            [
+              17,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vabp",
+          "points": [
+            [
+              17,
+              12
+            ],
+            [
+              17,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vabp",
+          "points": [
+            [
+              15.45,
+              13
+            ],
+            [
+              14.95,
+              13
+            ],
+            [
+              14.95,
+              9.5
+            ],
+            [
+              17,
+              9.5
+            ],
+            [
+              17,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gp",
+          "points": [
+            [
+              27,
+              15
+            ],
+            [
+              27,
+              17
+            ],
+            [
+              33,
+              17
+            ],
+            [
+              33,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gp",
+          "points": [
+            [
+              27,
+              20.18
+            ],
+            [
+              27,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gp",
+          "points": [
+            [
+              33,
+              17
+            ],
+            [
+              36,
+              17
+            ],
+            [
+              36,
+              20
+            ],
+            [
+              38.45,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gn",
+          "points": [
+            [
+              27,
+              13
+            ],
+            [
+              27,
+              10
+            ],
+            [
+              33,
+              10
+            ],
+            [
+              33,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gn",
+          "points": [
+            [
+              27,
+              6.82
+            ],
+            [
+              27,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gn",
+          "points": [
+            [
+              33,
+              10
+            ],
+            [
+              36,
+              10
+            ],
+            [
+              36,
+              5
+            ],
+            [
+              38.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              40,
+              19
+            ],
+            [
+              40,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              4.45,
+              20
+            ],
+            [
+              3.9000000000000004,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              15.45,
+              6
+            ],
+            [
+              14.899999999999999,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vabn",
+          "points": [
+            [
+              25.45,
+              14
+            ],
+            [
+              24.9,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vabp",
+          "points": [
+            [
+              31.45,
+              14
+            ],
+            [
+              30.9,
+              14
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            7.15,
+            20
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            7.15,
+            13
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            7.15,
+            6
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            18.15,
+            20
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            18.15,
+            13
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            18.15,
+            6
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            28.15,
+            14
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            34.15,
+            14
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            41.15,
+            20
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            41.15,
+            5
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            6,
+            23
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            6,
+            1.5
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "vabn",
+          "point": [
+            6,
+            17.5
+          ],
+          "text": "vabn",
+          "body": false
+        },
+        {
+          "net": "xn",
+          "point": [
+            6,
+            10.5
+          ],
+          "text": "xn",
+          "body": false
+        },
+        {
+          "net": "yp",
+          "point": [
+            17,
+            17.5
+          ],
+          "text": "yp",
+          "body": false
+        },
+        {
+          "net": "vabp",
+          "point": [
+            17,
+            10.5
+          ],
+          "text": "vabp",
+          "body": false
+        },
+        {
+          "net": "gp",
+          "point": [
+            30,
+            17
+          ],
+          "text": "gp",
+          "body": false
+        },
+        {
+          "net": "gn",
+          "point": [
+            30,
+            10
+          ],
+          "text": "gn",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            40,
+            11.6
+          ],
+          "text": "VOUT",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            3.9000000000000004,
+            20
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            14.899999999999999,
+            6
+          ],
+          "text": "IREF",
+          "body": false
+        },
+        {
+          "net": "vabn",
+          "point": [
+            24.9,
+            14
+          ],
+          "text": "vabn",
+          "body": false
+        },
+        {
+          "net": "vabp",
+          "point": [
+            30.9,
+            14
+          ],
+          "text": "vabp",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "unconnected_crossings": [],
+  "geometric_conflicts": [],
+  "convention": "Identical labels join across/all sheets. A dot marks a junction. Orthogonal crossings without a dot do not join. Purple branches explicitly connect B pins. This is schematic mapping, not layout LVS."
+}

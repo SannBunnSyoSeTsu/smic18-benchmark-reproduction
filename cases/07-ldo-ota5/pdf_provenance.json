@@ -1,0 +1,121 @@
+{
+  "pdf": "reports/07-ldo-ota5-review.pdf",
+  "sha256": "3d6bf9abde26791479c92198d0a9177432f945bdee310ae8271fd41274241c94",
+  "results_sha256": "b221b57e8a908b4bb420e3c3950f631d69fc0955680b27824488db223193ac08",
+  "circuit_sha256": "76e466a10c5e9913522f67b64a5f1ee7498ad43eea2858a7405edc00c12c4bee",
+  "generated_at": "2026-09-23T06:27:35.811921+00:00",
+  "pages": 9,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:27:35.814837+00:00",
+  "root_visual_reviewed_at": "2026-09-22T10:34:54.867126+00:00",
+  "visual_review": "All7 pages checked; page6 re-rendered after explicit low-VIN ideal-current-load caveat; other pages unchanged.",
+  "body_pages": 7,
+  "schematic_pages": 2,
+  "schematic_sheets_sha256": "395a4af98e76b08cd4ebbe6d82ad9e6c6f4cdec49e807a96622f7aeb625306b5",
+  "schematic_audit_sha256": "e38aa3253dfc7cd87d31a9f51696a6ac6b1de18b8453b82bfa0390e5864d865c",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/07-ldo-ota5/07-ldo-ota5-review.pdf",
+    "sha256": "74e5a4f518a6e1eb7279a853fba83d2dc2bdc182a11b576865833d0e95617fa0",
+    "pages": 7,
+    "previous_render_reviewed_at": "2026-09-22T10:34:54.867093+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "93ad6a168559ac438b55608aa3fc086dc48aae2184a1a2c99f038662b64fe5b8"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "3c0cea6f4d0d363b1feb96e298f7751578f5c718ebe8b09d2110f6474a5ae25c"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "052de6b21c38b4708d7b4e61d070ce9bad616d87037016e141eda5967e6974ec"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "e9e49c9d48e3c53b543b250af57ff0e8eee4139e6803a04a02db4d76506a9c84"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "49f9d223133772732c9f7957194d0a4cd55a11cbc7f59f92312b68db856d259c"
+    },
+    {
+      "page": 6,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "66ef782e895809e2dbb301d465316fec55d9c357929d486aabbedd15267d4341"
+    },
+    {
+      "page": 7,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "6ee1a37fe742532722864156bac7403127e035ebb9740d4fc9dfa9502254d56a"
+    },
+    {
+      "page": 8,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "6579478b8460c05bccb1c95966aff2555194f0a6661c63d7c926c71a1d8ca6ab",
+      "path": "reports/schematic-retrofit-renders/07-ldo-ota5/page-08.png",
+      "sha256": "0851a4a4e9ca58e7880b3ed9b15315f453f31844cac5b5bd7660b14bf10a4bc9"
+    },
+    {
+      "page": 9,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "0a63aec453b7ded8695a28e17aa22cd93c8f9129156689df3181d188861cc5d6",
+      "path": "reports/schematic-retrofit-renders/07-ldo-ota5/page-09.png",
+      "sha256": "d55b88689dc0d03bd3bc14151db20c49577e0bad371ca17ceda38501396abb30"
+    }
+  ],
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change."
+}

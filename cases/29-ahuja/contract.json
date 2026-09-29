@@ -1,0 +1,50 @@
+{
+  "source_task": "sky130-ahuja-compensated-two-stage-load-range-pvt",
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 5e-05,
+  "VCM_V": 0.9,
+  "loads_F": [
+    2e-11,
+    6.3e-11,
+    2e-10
+  ],
+  "ac_sweep_Hz": [
+    1,
+    300000000.0
+  ],
+  "servo_R_Ohm": 500000000.0,
+  "servo_C_F": 0.05,
+  "light_gain_min_dB": 58,
+  "light_ugb_min_Hz": 6500000.0,
+  "all_PM_min_deg": 60,
+  "recross_forbidden": true,
+  "offset_max_V": 0.006,
+  "power_max_W": 0.002,
+  "step_load_F": 2e-10,
+  "step_V": [
+    0.9,
+    1.2
+  ],
+  "step_edges_s": [
+    2e-06,
+    1.201e-05
+  ],
+  "edge_duration_s": 1e-08,
+  "settling_start": "1 percent command crossing, 2.0001 us / 12.0101 us",
+  "settling_windows_s": [
+    [
+      2e-06,
+      1.2e-05
+    ],
+    [
+      1.2e-05,
+      2e-05
+    ]
+  ],
+  "settling_max_s": 2e-06,
+  "settling_tolerance_V": 0.006,
+  "final_error_max_V": 0.006,
+  "nominal_only": true
+}

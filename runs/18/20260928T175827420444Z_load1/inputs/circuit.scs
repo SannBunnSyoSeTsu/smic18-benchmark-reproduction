@@ -1,0 +1,57 @@
+simulator lang=spectre
+subckt charge_pump_regulated (AVDD AVSS CLK EN IBN1U VOUT)
+XENB (EN ENB AVDD AVSS AVDD AVSS) INHDV1
+XNAND (CLK EN gated AVDD AVSS AVDD AVSS) NAND2HDV1
+XPH0 (gated ph0 AVDD AVSS AVDD AVSS) INHDV16
+XPH1 (ph0 ph1 AVDD AVSS AVDD AVSS) INHDV16
+XDR0 (ph0 bot0 vclk AVSS AVDD AVSS) INHDV16
+XDR1 (ph1 bot1 vclk AVSS AVDD AVSS) INHDV16
+MREF (IBN1U IBN1U AVSS AVSS) n18 w=0.44u l=1u
+MTAIL (tail IBN1U AVSS AVSS) n18 w=0.44u l=1u
+MREFIN (ctrl vnr tail AVSS) n18 w=0.7000000000000001u l=.36u
+MFBIN (pd vfb tail AVSS) n18 w=0.7000000000000001u l=.36u
+MPD (pd pd AVDD AVDD) p18 w=1.04u l=1u
+MPM (ctrl pd AVDD AVDD) p18 w=1.04u l=1u
+MOFFN (IBN1U ENB AVSS AVSS) n18 w=0.38u l=.18u
+MOFFP (pd EN AVDD AVDD) p18 w=1.1400000000000001u l=.18u
+MOFFCTRL (ctrl EN AVDD AVDD) p18 w=1.1400000000000001u l=.18u
+MENREF (enr EN AVSS AVSS) n18 w=0.38u l=.18u
+MENFB (enf EN AVSS AVSS) n18 w=0.38u l=.18u
+MCTRL (vclk ctrl AVDD AVDD) p18 w=23.46u l=.36u m=4
+MPRE0 (AVDD p1 p0 AVSS) nnt33 w=3.36u l=1u
+MPRE1 (AVDD p0 p1 AVSS) nnt33 w=3.36u l=1u
+MRECT0 (VOUT p0 p0 AVSS) nnt33 w=16.84u l=1u
+MRECT1 (VOUT p1 p1 AVSS) nnt33 w=16.84u l=1u
+CF0 (p0 bot0) mim w=100u l=77.2399588054u
+CF1 (p1 bot1) mim w=100u l=77.2399588054u
+CC (cz AVDD) mim w=100u l=100u m=8.23892893924
+CN (vnr AVSS) mim w=20u l=51.4933058702u
+CP (vfb AVSS) mim w=20u l=51.4933058702u
+RZ0 (ctrl rz1 AVSS) rpposab_3t w=1u l=240u
+RZ1 (rz1 rz2 AVSS) rpposab_3t w=1u l=240u
+RZ2 (rz2 cz AVSS) rpposab_3t w=1u l=240u
+RN0_0 (AVDD RN01 AVSS) rpposab_3t w=1u l=150u
+RN0_1 (RN01 RN02 AVSS) rpposab_3t w=1u l=150u
+RN0_2 (RN02 RN03 AVSS) rpposab_3t w=1u l=150u
+RN0_3 (RN03 RN04 AVSS) rpposab_3t w=1u l=150u
+RN0_4 (RN04 RN05 AVSS) rpposab_3t w=1u l=150u
+RN0_5 (RN05 vnr AVSS) rpposab_3t w=1u l=150u
+RN1_0 (vnr RN11 AVSS) rpposab_3t w=1u l=150u
+RN1_1 (RN11 RN12 AVSS) rpposab_3t w=1u l=150u
+RN1_2 (RN12 RN13 AVSS) rpposab_3t w=1u l=150u
+RN1_3 (RN13 RN14 AVSS) rpposab_3t w=1u l=150u
+RN1_4 (RN14 RN15 AVSS) rpposab_3t w=1u l=150u
+RN1_5 (RN15 enr AVSS) rpposab_3t w=1u l=150u
+RP0_0 (VOUT RP01 AVSS) rpposab_3t w=1u l=240u
+RP0_1 (RP01 RP02 AVSS) rpposab_3t w=1u l=240u
+RP0_2 (RP02 RP03 AVSS) rpposab_3t w=1u l=240u
+RP0_3 (RP03 RP04 AVSS) rpposab_3t w=1u l=240u
+RP0_4 (RP04 RP05 AVSS) rpposab_3t w=1u l=240u
+RP0_5 (RP05 vfb AVSS) rpposab_3t w=1u l=240u
+RP1_0 (vfb RP11 AVSS) rpposab_3t w=1u l=150u
+RP1_1 (RP11 RP12 AVSS) rpposab_3t w=1u l=150u
+RP1_2 (RP12 RP13 AVSS) rpposab_3t w=1u l=150u
+RP1_3 (RP13 RP14 AVSS) rpposab_3t w=1u l=150u
+RP1_4 (RP14 RP15 AVSS) rpposab_3t w=1u l=150u
+RP1_5 (RP15 enf AVSS) rpposab_3t w=1u l=150u
+ends charge_pump_regulated

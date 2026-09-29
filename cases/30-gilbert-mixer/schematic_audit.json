@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-09-28T18:40:27.341658+00:00",
+  "status": "passed",
+  "circuit_sha256": "e405fd9038a74aff43c984389a5b0cdfbc7eb96bc6f992c541b4bea568d89879",
+  "hd_cells_sha256": null,
+  "renderer_sha256": "5de6b3973439056ceb6632aaa366311389534689a95beb3f99546c22c28aca52",
+  "layout_file": "scripts/schematic30.py",
+  "layout_sha256": "e718552d8cf0ffd10f5ebd0fb64644a9538df4b17376047fc3683a6e13816f3e",
+  "instance_counts": {
+    "MOS": 9,
+    "C": 3,
+    "R": 3
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 9,
+    "C": 3,
+    "R": 3
+  },
+  "total_instances": 15,
+  "expanded_leaf_instances": 15,
+  "total_terminals": 48,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 2,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/30-gilbert-mixer/schematic/connectivity.json": "8f5f91628b655e3eb5c508d0507e5c2602ec36410a80ae181bc301e99303278b",
+    "cases/30-gilbert-mixer/schematic/full.pdf": "8fa50119811206fa798279171352b5df0d04111af82a2f4046e01c8556a0ce47",
+    "cases/30-gilbert-mixer/schematic/full.png": "0fe1fe0792568191a50e579772954fb35a3365b37e5b9a5b163a98d0370a6b70",
+    "cases/30-gilbert-mixer/schematic/full.svg": "a24568ea7d6c60e0717530cb4f777eaaffae9c9e4670a8185e91d30584d80b82",
+    "cases/30-gilbert-mixer/schematic/layout_source.py": "e718552d8cf0ffd10f5ebd0fb64644a9538df4b17376047fc3683a6e13816f3e",
+    "cases/30-gilbert-mixer/schematic/renderer_source.py": "5de6b3973439056ceb6632aaa366311389534689a95beb3f99546c22c28aca52",
+    "cases/30-gilbert-mixer/schematic/sheet-1.png": "4c15e84a3fe4b8e18d7b30067ecc84935a4223a757dc357d8a9e9641df19f14b",
+    "cases/30-gilbert-mixer/schematic/sheet-1.svg": "26429fa2cb3e94966a57ebafa23dff00a5265724ed676d6ef3a2096894ce5e1c",
+    "cases/30-gilbert-mixer/schematic/sheet-2.png": "693fcd114fafd66a3b129596cef7d6b48373107fd916ef2a4b8001ac5ea9a361",
+    "cases/30-gilbert-mixer/schematic/sheet-2.svg": "634e980327430bda0c1087bcde50b0c421c4560b268ef77b85e4be663d377b84",
+    "cases/30-gilbert-mixer/schematic/sheets.pdf": "c3b56412551d93a05f4533ae7707efb9e56cc1c4ebefd21eddb41a90cb162e8f",
+    "cases/30-gilbert-mixer/schematic/symbol_source.py": "b40da4f8a653b6d880132a5b28a9209435d767215cdba57d3682ccb27e9cee0c"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-29T04:09:08.686573+00:00",
+  "visual_review_note": "Actual visual review: corrected spectrum viewed with explicit lower dBc baseline and upward stems/bars, clear labels and limits. Other page PNGs SHA256-identical to the archived previously fully viewed report; previous page/schematic review retained."
+}

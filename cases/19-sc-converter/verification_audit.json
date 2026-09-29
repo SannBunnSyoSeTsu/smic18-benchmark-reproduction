@@ -1,0 +1,1184 @@
+{
+  "generated_at": "2026-09-28T18:18:47.185684+00:00",
+  "status": "passed",
+  "circuit_sha256": "69f65f854aa02cd025a190dd4448aa16840e73ba6a835cdde88687dfe010f144",
+  "results_sha256": "bf240fd5b87f9cfb1b215bd00d3d15de95c4ec8b6e06f745cbedc3dd465f4098",
+  "contract_sha256": "f5422a4fecc7b136c3d157b1aa1a6a9c862a77c291b4e81a2972810b8e642a68",
+  "measurement_cross_checks": [
+    {
+      "metric": "heavy_vout_mean_V",
+      "report": 0.8350782686930445,
+      "independent": 0.8350782686930442,
+      "absolute_difference": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "metric": "heavy_vout_min_V",
+      "report": 0.8091538220637206,
+      "independent": 0.8091538220637206,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_vout_max_V",
+      "report": 0.8531511326700713,
+      "independent": 0.8531511326700713,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_supply_power_W",
+      "report": 0.0013190272544218627,
+      "independent": 0.0013190272544218683,
+      "absolute_difference": 5.637851296924623e-18,
+      "passed": true
+    },
+    {
+      "metric": "heavy_clock_power_W",
+      "report": 1.5069025210371494e-07,
+      "independent": 1.5069025210371518e-07,
+      "absolute_difference": 2.3822801641527197e-22,
+      "passed": true
+    },
+    {
+      "metric": "heavy_load_power_W",
+      "report": 0.0010257932646564362,
+      "independent": 0.0010257932646564394,
+      "absolute_difference": 3.2526065174565133e-18,
+      "passed": true
+    },
+    {
+      "metric": "heavy_conversion_ratio",
+      "report": 0.4639323714961358,
+      "independent": 0.4639323714961357,
+      "absolute_difference": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "metric": "heavy_ripple_V",
+      "report": 0.043997310606350704,
+      "independent": 0.043997310606350704,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_input_power_W",
+      "report": 0.0013191779446739664,
+      "independent": 0.001319177944673972,
+      "absolute_difference": 5.637851296924623e-18,
+      "passed": true
+    },
+    {
+      "metric": "heavy_load_current_A",
+      "report": 0.0012280562774897713,
+      "independent": 0.001228056277489771,
+      "absolute_difference": 4.336808689942018e-19,
+      "passed": true
+    },
+    {
+      "metric": "heavy_efficiency",
+      "report": 0.7776003751411718,
+      "independent": 0.7776003751411709,
+      "absolute_difference": 8.881784197001252e-16,
+      "passed": true
+    },
+    {
+      "metric": "heavy_startup_s",
+      "report": 3.167511617358945e-08,
+      "independent": 3.167511617358945e-08,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_post_startup_min_V",
+      "report": 0.8091538035504748,
+      "independent": 0.8091538035504748,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1A_VGS",
+      "report": 1.8120098188708147,
+      "independent": 1.8120098188708147,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1A_VGD",
+      "report": 1.8066201331391185,
+      "independent": 1.8066201331391185,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1A_VDS",
+      "report": 1.8,
+      "independent": 1.8,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1A_VGB",
+      "report": 1.8120098188708147,
+      "independent": 1.8120098188708147,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1A_VDB",
+      "report": 1.8,
+      "independent": 1.8,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1A_VSB",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3A_VGS",
+      "report": 1.4888056931015905,
+      "independent": 1.4888056931015905,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3A_VGD",
+      "report": 1.202220610157552,
+      "independent": 1.202220610157552,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3A_VDS",
+      "report": 0.8563764829682974,
+      "independent": 0.8563764829682974,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3A_VGB",
+      "report": 1.818830647835981,
+      "independent": 1.818830647835981,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3A_VDB",
+      "report": 1.019113874937865,
+      "independent": 1.019113874937865,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3A_VSB",
+      "report": 0.8531511326700713,
+      "independent": 0.8531511326700713,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2A_VGS",
+      "report": 1.7465364948253104,
+      "independent": 1.7465364948253104,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2A_VGD",
+      "report": 1.8066076448000274,
+      "independent": 1.8066076448000274,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2A_VDS",
+      "report": 1.1580347679345273,
+      "independent": 1.1580347679345273,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2A_VGB",
+      "report": 1.812016270503144,
+      "independent": 1.812016270503144,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2A_VDB",
+      "report": 1.806799668225184,
+      "independent": 1.806799668225184,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2A_VSB",
+      "report": 0.8531511326700713,
+      "independent": 0.8531511326700713,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4A_VGS",
+      "report": 1.812016270503144,
+      "independent": 1.812016270503144,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4A_VGD",
+      "report": 1.8535607977981878,
+      "independent": 1.8535607977981878,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4A_VDS",
+      "report": 1.019113874937865,
+      "independent": 1.019113874937865,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4A_VGB",
+      "report": 1.812016270503144,
+      "independent": 1.812016270503144,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4A_VDB",
+      "report": 1.019113874937865,
+      "independent": 1.019113874937865,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4A_VSB",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1B_VGS",
+      "report": 1.8127999128847805,
+      "independent": 1.8127999128847805,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1B_VGD",
+      "report": 1.805723012823978,
+      "independent": 1.805723012823978,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1B_VDS",
+      "report": 1.8,
+      "independent": 1.8,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1B_VGB",
+      "report": 1.8127999128847805,
+      "independent": 1.8127999128847805,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1B_VDB",
+      "report": 1.8,
+      "independent": 1.8,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MP1B_VSB",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3B_VGS",
+      "report": 1.765723332100379,
+      "independent": 1.765723332100379,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3B_VGD",
+      "report": 1.5373012899826033,
+      "independent": 1.5373012899826033,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3B_VDS",
+      "report": 0.9499035402279162,
+      "independent": 0.9499035402279162,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3B_VGB",
+      "report": 1.818831135110141,
+      "independent": 1.818831135110141,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3B_VDB",
+      "report": 0.9522141342516395,
+      "independent": 0.9522141342516395,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN3B_VSB",
+      "report": 0.8531511326700713,
+      "independent": 0.8531511326700713,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2B_VGS",
+      "report": 1.4487252140038123,
+      "independent": 1.4487252140038123,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2B_VGD",
+      "report": 1.8066086088959437,
+      "independent": 1.8066086088959437,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2B_VDS",
+      "report": 1.141110396398168,
+      "independent": 1.141110396398168,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2B_VGB",
+      "report": 1.811209142307679,
+      "independent": 1.811209142307679,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2B_VDB",
+      "report": 1.806800764178675,
+      "independent": 1.806800764178675,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN2B_VSB",
+      "report": 0.8531511326700713,
+      "independent": 0.8531511326700713,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4B_VGS",
+      "report": 1.811209142307679,
+      "independent": 1.811209142307679,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4B_VGD",
+      "report": 1.9195005156038343,
+      "independent": 1.9195005156038343,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4B_VDS",
+      "report": 0.9522141342516395,
+      "independent": 0.9522141342516395,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4B_VGB",
+      "report": 1.811209142307679,
+      "independent": 1.811209142307679,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4B_VDB",
+      "report": 0.9522141342516395,
+      "independent": 0.9522141342516395,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "heavy_MN4B_VSB",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_vout_mean_V",
+      "report": 0.8895266940232415,
+      "independent": 0.8895266940232529,
+      "absolute_difference": 1.1435297153639112e-14,
+      "passed": true
+    },
+    {
+      "metric": "light_vout_min_V",
+      "report": 0.8862766116666271,
+      "independent": 0.8862766116666271,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_vout_max_V",
+      "report": 0.8916255799837765,
+      "independent": 0.8916255799837765,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_supply_power_W",
+      "report": 0.0003364700761543637,
+      "independent": 0.0003364700761543652,
+      "absolute_difference": 1.5178830414797062e-18,
+      "passed": true
+    },
+    {
+      "metric": "light_clock_power_W",
+      "report": 1.5069022134279878e-07,
+      "independent": 1.5069022134279833e-07,
+      "absolute_difference": 4.499862532288471e-22,
+      "passed": true
+    },
+    {
+      "metric": "light_load_power_W",
+      "report": 0.0001163617898546035,
+      "independent": 0.00011636178985460272,
+      "absolute_difference": 7.724940478959219e-19,
+      "passed": true
+    },
+    {
+      "metric": "light_conversion_ratio",
+      "report": 0.49418149667957856,
+      "independent": 0.49418149667958494,
+      "absolute_difference": 6.38378239159465e-15,
+      "passed": true
+    },
+    {
+      "metric": "light_ripple_V",
+      "report": 0.005348968317149372,
+      "independent": 0.005348968317149372,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_input_power_W",
+      "report": 0.0003366207663757065,
+      "independent": 0.000336620766375708,
+      "absolute_difference": 1.5178830414797062e-18,
+      "passed": true
+    },
+    {
+      "metric": "light_load_current_A",
+      "report": 0.0001308127491210649,
+      "independent": 0.0001308127491210666,
+      "absolute_difference": 1.6805133673525319e-18,
+      "passed": true
+    },
+    {
+      "metric": "light_efficiency",
+      "report": 0.34567620740525173,
+      "independent": 0.34567620740524785,
+      "absolute_difference": 3.885780586188048e-15,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1A_VGS",
+      "report": 1.812013466352099,
+      "independent": 1.812013466352099,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1A_VGD",
+      "report": 1.811185441934341,
+      "independent": 1.811185441934341,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1A_VDS",
+      "report": 1.8,
+      "independent": 1.8,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1A_VGB",
+      "report": 1.812013466352099,
+      "independent": 1.812013466352099,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1A_VDB",
+      "report": 1.8,
+      "independent": 1.8,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1A_VSB",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3A_VGS",
+      "report": 1.4853247012843542,
+      "independent": 1.4853247012843542,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3A_VGD",
+      "report": 1.197748400668054,
+      "independent": 1.197748400668054,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3A_VDS",
+      "report": 0.9298176531554416,
+      "independent": 0.9298176531554416,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3A_VGB",
+      "report": 1.819231918026329,
+      "independent": 1.819231918026329,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3A_VDB",
+      "report": 1.019777896540026,
+      "independent": 1.019777896540026,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3A_VSB",
+      "report": 0.8916255799837765,
+      "independent": 0.8916255799837765,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2A_VGS",
+      "report": 1.7464765010179721,
+      "independent": 1.7464765010179721,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2A_VGD",
+      "report": 1.8165320834277623,
+      "independent": 1.8165320834277623,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2A_VDS",
+      "report": 1.1181237104763575,
+      "independent": 1.1181237104763575,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2A_VGB",
+      "report": 1.812042293540739,
+      "independent": 1.812042293540739,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2A_VDB",
+      "report": 1.816845621335289,
+      "independent": 1.816845621335289,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2A_VSB",
+      "report": 0.8916255799837765,
+      "independent": 0.8916255799837765,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4A_VGS",
+      "report": 1.812042293540739,
+      "independent": 1.812042293540739,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4A_VGD",
+      "report": 1.8437326236510927,
+      "independent": 1.8437326236510927,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4A_VDS",
+      "report": 1.019777896540026,
+      "independent": 1.019777896540026,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4A_VGB",
+      "report": 1.812042293540739,
+      "independent": 1.812042293540739,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4A_VDB",
+      "report": 1.019777896540026,
+      "independent": 1.019777896540026,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4A_VSB",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1B_VGS",
+      "report": 1.8128000081263547,
+      "independent": 1.8128000081263547,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1B_VGD",
+      "report": 1.811185430362514,
+      "independent": 1.811185430362514,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1B_VDS",
+      "report": 1.8,
+      "independent": 1.8,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1B_VGB",
+      "report": 1.8128000081263547,
+      "independent": 1.8128000081263547,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1B_VDB",
+      "report": 1.8,
+      "independent": 1.8,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MP1B_VSB",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3B_VGS",
+      "report": 1.7657016164400698,
+      "independent": 1.7657016164400698,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3B_VGD",
+      "report": 1.5372767976877433,
+      "independent": 1.5372767976877433,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3B_VDS",
+      "report": 0.9499022630460257,
+      "independent": 0.9499022630460257,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3B_VGB",
+      "report": 1.819232002618784,
+      "independent": 1.819232002618784,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3B_VDB",
+      "report": 0.9522138192635008,
+      "independent": 0.9522138192635008,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN3B_VSB",
+      "report": 0.8916255799837765,
+      "independent": 0.8916255799837765,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2B_VGS",
+      "report": 1.4450265851962176,
+      "independent": 1.4450265851962176,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2B_VGD",
+      "report": 1.8165338363062613,
+      "independent": 1.8165338363062613,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2B_VDS",
+      "report": 1.1401277206001423,
+      "independent": 1.1401277206001423,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2B_VGB",
+      "report": 1.811289583073684,
+      "independent": 1.811289583073684,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2B_VDB",
+      "report": 1.816847556509925,
+      "independent": 1.816847556509925,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN2B_VSB",
+      "report": 0.8916255799837765,
+      "independent": 0.8916255799837765,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4B_VGS",
+      "report": 1.811289583073684,
+      "independent": 1.811289583073684,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4B_VGD",
+      "report": 1.9184992771416614,
+      "independent": 1.9184992771416614,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4B_VDS",
+      "report": 0.9522138192635008,
+      "independent": 0.9522138192635008,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4B_VGB",
+      "report": 1.811289583073684,
+      "independent": 1.811289583073684,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4B_VDB",
+      "report": 0.9522138192635008,
+      "independent": 0.9522138192635008,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "light_MN4B_VSB",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "output_resistance_ohm",
+      "report": 49.62291772287466,
+      "independent": 49.622917722885376,
+      "absolute_difference": 1.071498445526231e-11,
+      "passed": true
+    }
+  ],
+  "original_nominal_checks": [
+    {
+      "name": "pvt_loaded_conversion_ratio",
+      "passed": true,
+      "detail": "ratio=0.46393 at tt/1.80V/+27C..0.46393 at tt/1.80V/+27C"
+    },
+    {
+      "name": "pvt_efficiency",
+      "passed": true,
+      "detail": "efficiency=77.760% at tt/1.80V/+27C..77.760% at tt/1.80V/+27C"
+    },
+    {
+      "name": "pvt_output_ripple",
+      "passed": true,
+      "detail": "ripple_max=43.997mVpp at tt/1.80V/+27C"
+    },
+    {
+      "name": "pvt_startup",
+      "passed": true,
+      "detail": "startup_max=31.675ns at tt/1.80V/+27C; post_200ns_margin_min=128.754mV at tt/1.80V/+27C"
+    },
+    {
+      "name": "pvt_light_conversion_ratio",
+      "passed": true,
+      "detail": "ratio=0.49418 at tt/1.80V/+27C..0.49418 at tt/1.80V/+27C"
+    },
+    {
+      "name": "pvt_light_overhead_power",
+      "passed": true,
+      "detail": "input_power=336.621uW at tt/1.80V/+27C..336.621uW at tt/1.80V/+27C"
+    },
+    {
+      "name": "pvt_light_efficiency",
+      "passed": true,
+      "detail": "efficiency=34.568% at tt/1.80V/+27C..34.568% at tt/1.80V/+27C"
+    },
+    {
+      "name": "pvt_output_resistance",
+      "passed": true,
+      "detail": "Rout=49.623ohm at tt/1.80V/+27C..49.623ohm at tt/1.80V/+27C"
+    }
+  ],
+  "original_model_hashes_unchanged": true,
+  "source_snapshot_hashes_verified": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "run": "runs/19/20260928T180211443851Z_heavy",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XA1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XNB.MM1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XB1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XA1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XB1.MMN1:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/19/20260928T180220087251Z_light",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XA1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MN4B:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XNB.MM1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XB1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XB1.MMN1:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/19/20260928T180312781626Z_heavy",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XB2.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XA1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XB2.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XA2.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XB1.MMN1:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/19/20260928T180328082966Z_light",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XA2.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDPB.MMP1:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XB2.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XA2.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XA2.MMN1:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    }
+  ],
+  "numerical_confirmation": {
+    "generated_at": "2026-09-28T18:03:51.510958+00:00",
+    "baseline_groups": {
+      "heavy": "runs/19/20260928T180211443851Z_heavy",
+      "light": "runs/19/20260928T180220087251Z_light"
+    },
+    "final_groups": {
+      "heavy": "runs/19/20260928T180312781626Z_heavy",
+      "light": "runs/19/20260928T180328082966Z_light"
+    },
+    "circuit_sha256": "69f65f854aa02cd025a190dd4448aa16840e73ba6a835cdde88687dfe010f144",
+    "metrics": [
+      {
+        "metric": "680ohm_vout_mean_V",
+        "baseline": 0.8350804434003168,
+        "refined": 0.8350782686930445,
+        "absolute_difference": 2.174707272373233e-06,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_vout_min_V",
+        "baseline": 0.8091542634127054,
+        "refined": 0.8091538220637206,
+        "absolute_difference": 4.413489848031915e-07,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_vout_max_V",
+        "baseline": 0.8531568721759223,
+        "refined": 0.8531511326700713,
+        "absolute_difference": 5.739505851032334e-06,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_supply_power_W",
+        "baseline": 0.0013188434989406812,
+        "refined": 0.0013190272544218627,
+        "absolute_difference": 1.8375548118147386e-07,
+        "maximum_difference": 2e-06,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_clock_power_W",
+        "baseline": 1.5068951151148805e-07,
+        "refined": 1.5069025210371494e-07,
+        "absolute_difference": 7.405922268923023e-13,
+        "maximum_difference": 2e-06,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_load_power_W",
+        "baseline": 0.0010257988120458271,
+        "refined": 0.0010257932646564362,
+        "absolute_difference": 5.547389390946414e-09,
+        "maximum_difference": 2e-06,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_conversion_ratio",
+        "baseline": 0.4639335796668427,
+        "refined": 0.4639323714961358,
+        "absolute_difference": 1.2081707068678504e-06,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_ripple_V",
+        "baseline": 0.04400260876321693,
+        "refined": 0.043997310606350704,
+        "absolute_difference": 5.298156866229142e-06,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_input_power_W",
+        "baseline": 0.0013189941884521926,
+        "refined": 0.0013191779446739664,
+        "absolute_difference": 1.837562217737402e-07,
+        "maximum_difference": 2e-06,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_load_current_A",
+        "baseline": 0.0012280594755887013,
+        "refined": 0.0012280562774897713,
+        "absolute_difference": 3.1980989299938006e-09,
+        "maximum_difference": 1e-06,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_efficiency",
+        "baseline": 0.7777129126319934,
+        "refined": 0.7776003751411718,
+        "absolute_difference": 0.00011253749082162923,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_startup_s",
+        "baseline": 3.167512767292648e-08,
+        "refined": 3.167511617358945e-08,
+        "absolute_difference": 1.1499337026676715e-14,
+        "maximum_difference": 5e-10,
+        "passed": true
+      },
+      {
+        "metric": "680ohm_post_startup_min_V",
+        "baseline": 0.8091542508903422,
+        "refined": 0.8091538035504748,
+        "absolute_difference": 4.473398673709994e-07,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "6800ohm_vout_mean_V",
+        "baseline": 0.889527408040788,
+        "refined": 0.8895266940232415,
+        "absolute_difference": 7.140175465325527e-07,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "6800ohm_vout_min_V",
+        "baseline": 0.8862765311679048,
+        "refined": 0.8862766116666271,
+        "absolute_difference": 8.049872224358268e-08,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "6800ohm_vout_max_V",
+        "baseline": 0.8916285484354202,
+        "refined": 0.8916255799837765,
+        "absolute_difference": 2.968451643714509e-06,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "6800ohm_supply_power_W",
+        "baseline": 0.00033644740326404035,
+        "refined": 0.0003364700761543637,
+        "absolute_difference": 2.267289032334332e-08,
+        "maximum_difference": 2e-06,
+        "passed": true
+      },
+      {
+        "metric": "6800ohm_clock_power_W",
+        "baseline": 1.5068945059365903e-07,
+        "refined": 1.5069022134279878e-07,
+        "absolute_difference": 7.707491397487269e-13,
+        "maximum_difference": 2e-06,
+        "passed": true
+      },
+      {
+        "metric": "6800ohm_load_power_W",
+        "baseline": 0.00011636197732013605,
+        "refined": 0.0001163617898546035,
+        "absolute_difference": 1.8746553255859135e-10,
+        "maximum_difference": 2e-06,
+        "passed": true
+      },
+      {
+        "metric": "6800ohm_conversion_ratio",
+        "baseline": 0.49418189335599333,
+        "refined": 0.49418149667957856,
+        "absolute_difference": 3.9667641477114657e-07,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "6800ohm_ripple_V",
+        "baseline": 0.00535201726751533,
+        "refined": 0.005348968317149372,
+        "absolute_difference": 3.048950365958092e-06,
+        "maximum_difference": 0.0002,
+        "passed": true
+      },
+      {
+        "metric": "6800ohm_input_power_W",
+        "baseline": 0.000336598092714634,
+        "refined": 0.0003366207663757065,
+        "absolute_difference": 2.2673661072476238e-08,
+        "maximum_difference": 2e-06,
+        "passed": true
+      },
+      {
+        "metric": "6800ohm_load_current_A",
+        "baseline": 0.0001308128541236453,
+        "refined": 0.0001308127491210649,
+        "absolute_difference": 1.0500258038818704e-10,
+        "maximum_difference": 1e-06,
+        "passed": true
+      },
+      {
+        "metric": "6800ohm_efficiency",
+        "baseline": 0.3457000495210384,
+        "refined": 0.34567620740525173,
+        "absolute_difference": 2.3842115786654183e-05,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "output_resistance_ohm",
+        "baseline": 49.62144660584414,
+        "refined": 49.62291772287466,
+        "absolute_difference": 0.0014711170305190535,
+        "maximum_difference": 0.1,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "schematic_instances": 35,
+  "schematic_terminals": 176,
+  "pdf_review_pending": false,
+  "full_upstream_signoff": false,
+  "method": "Independent per-interval integration including positive-only clock power, last rising crossing plus fixed startup hold, matched-load resistance and all6terminal differences perpowerMOS. Eight original check functions at explicitnominalpoint; no sourceorlimit edits.",
+  "pdf": "reports/19-sc-converter-review.pdf",
+  "pdf_sha256": "33b55a66461bb6c80e2ca0a38894d3efcd75f77bbf3b0565247669a7106072c1",
+  "pdf_pages": 11,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-28T18:22:37.883266+00:00"
+}

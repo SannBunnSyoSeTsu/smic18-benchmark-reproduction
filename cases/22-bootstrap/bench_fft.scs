@@ -1,0 +1,24 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/22-bootstrap/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=2e-6 vabstol=1e-9 iabstol=1e-12
+saveOptions options save=selected
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/22-bootstrap/hd_cells.scs"
+VDD (vdd 0) vsource dc=1.8
+VCLKDD (clk_vdd 0) vsource dc=1.8
+VCLKIN (clk_src 0) vsource type=pwl wave=[0 0 1e-09 0 1.05e-09 1.8 5.05e-09 1.8 5.1e-09 0 1.1e-08 0 1.105e-08 1.8 1.505e-08 1.8 1.51e-08 0 2.1e-08 0 2.105e-08 1.8 2.505e-08 1.8 2.51e-08 0 3.1e-08 0 3.105e-08 1.8 3.505e-08 1.8 3.51e-08 0 4.1e-08 0 4.105e-08 1.8 4.505e-08 1.8 4.51e-08 0 5.1e-08 0 5.105e-08 1.8 5.505e-08 1.8 5.51e-08 0 6.1e-08 0 6.105e-08 1.8 6.505e-08 1.8 6.51e-08 0 7.1e-08 0 7.105e-08 1.8 7.505e-08 1.8 7.51e-08 0 8.1e-08 0 8.105e-08 1.8 8.505e-08 1.8 8.51e-08 0 9.1e-08 0 9.105e-08 1.8 9.505e-08 1.8 9.51e-08 0 1.01e-07 0 1.0105e-07 1.8 1.0505e-07 1.8 1.051e-07 0 1.11e-07 0 1.1105e-07 1.8 1.1505e-07 1.8 1.151e-07 0 1.21e-07 0 1.2105e-07 1.8 1.2505e-07 1.8 1.251e-07 0 1.31e-07 0 1.3105e-07 1.8 1.3505e-07 1.8 1.351e-07 0 1.41e-07 0 1.4105e-07 1.8 1.4505e-07 1.8 1.451e-07 0 1.51e-07 0 1.5105e-07 1.8 1.5505e-07 1.8 1.551e-07 0 1.61e-07 0 1.6105e-07 1.8 1.6505e-07 1.8 1.651e-07 0 1.71e-07 0 1.7105e-07 1.8 1.7505e-07 1.8 1.751e-07 0 1.81e-07 0 1.8105e-07 1.8 1.8505e-07 1.8 1.851e-07 0 1.91e-07 0 1.9105e-07 1.8 1.9505e-07 1.8 1.951e-07 0 2.01e-07 0 2.0105e-07 1.8 2.0505e-07 1.8 2.051e-07 0 2.11e-07 0 2.1105e-07 1.8 2.1505e-07 1.8 2.151e-07 0 2.21e-07 0 2.2105e-07 1.8 2.2505e-07 1.8 2.251e-07 0 2.31e-07 0 2.3105e-07 1.8 2.3505e-07 1.8 2.351e-07 0 2.41e-07 0 2.4105e-07 1.8 2.4505e-07 1.8 2.451e-07 0 2.51e-07 0 2.5105e-07 1.8 2.5505e-07 1.8 2.551e-07 0 2.61e-07 0 2.6105e-07 1.8 2.6505e-07 1.8 2.651e-07 0 2.71e-07 0 2.7105e-07 1.8 2.7505e-07 1.8 2.751e-07 0 2.81e-07 0 2.8105e-07 1.8 2.8505e-07 1.8 2.851e-07 0 2.91e-07 0 2.9105e-07 1.8 2.9505e-07 1.8 2.951e-07 0 3.01e-07 0 3.0105e-07 1.8 3.0505e-07 1.8 3.051e-07 0 3.11e-07 0 3.1105e-07 1.8 3.1505e-07 1.8 3.151e-07 0 3.21e-07 0 3.2105e-07 1.8 3.2505e-07 1.8 3.251e-07 0 3.31e-07 0 3.3105e-07 1.8 3.3505e-07 1.8 3.351e-07 0 3.41e-07 0 3.4105e-07 1.8 3.4505e-07 1.8 3.451e-07 0 3.5e-07 0]
+RCLK (clk_src clk_in) resistor r=50
+XCLK1 (clk_in clk_b clk_vdd 0 clk_vdd 0) INHDV8
+XCLK2 (clk_b clk clk_vdd 0 clk_vdd 0) INHDV16
+save clk_src clk_in clk_b clk VDD:p VCLKDD:p VCLKIN:p
+VINPS (vinpS 0) vsource type=sine dc=.9 ampl=0.4 freq=46.875M
+MSWPS (voutpS gatepS vinpS 0) n18 w=64u l=.18u
+COUTPS (voutpS 0) capacitor c=1p
+VINNS (vinnS 0) vsource type=sine dc=.9 ampl=-0.4 freq=46.875M
+MSWNS (voutnS gatenS vinnS 0) n18 w=64u l=.18u
+COUTNS (voutnS 0) capacitor c=1p
+XS (vdd 0 clk vinpS vinnS gatepS gatenS) bootstrap_gate_driver
+save vinpS vinnS gatepS gatenS voutpS voutnS VINPS:p VINNS:p
+save XS.XBP.CLKP XS.XBP.CG XS.XBP.CBB XS.XBP.CBT XS.XBP.PRE XS.XBN.CLKP XS.XBN.CG XS.XBN.CBB XS.XBN.CBT XS.XBN.PRE
+tran tran stop=3.5e-07 maxstep=2.5p errpreset=conservative

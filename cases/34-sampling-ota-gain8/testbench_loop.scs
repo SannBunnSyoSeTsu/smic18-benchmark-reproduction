@@ -1,0 +1,49 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/34-sampling-ota-gain8/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-10 iabstol=1e-15
+saveOptions options save=selected
+VSS (vss 0) vsource dc=0
+VDD (vdd vss) vsource dc=1.8
+IREF (vdd iref) isource dc=50u
+VOCM (vocm vss) vsource dc=.9
+X (vss iref vdd vinn vinp vocm voutn voutp) sampling_feedback_ota
+CLP (voutp vss) capacitor c=0.361111111111p
+CLN (voutn vss) capacitor c=0.361111111111p
+save vdd vss iref vocm vinp vinn voutp voutn VDD:p
+VINP (vinp vss) vsource dc=.9 mag=.5
+VINN (vinn vss) vsource dc=.9 mag=.5 phase=180
+save X.MREF:ids X.MREF:gm X.MREF:gds X.MREF:vgs X.MREF:vds X.MREF:vdsat X.MREF:region
+save X.MBN:ids X.MBN:gm X.MBN:gds X.MBN:vgs X.MBN:vds X.MBN:vdsat X.MBN:region
+save X.MBP:ids X.MBP:gm X.MBP:gds X.MBP:vgs X.MBP:vds X.MBP:vdsat X.MBP:region
+save X.MOBN:ids X.MOBN:gm X.MOBN:gds X.MOBN:vgs X.MOBN:vds X.MOBN:vdsat X.MOBN:region
+save X.MOBP:ids X.MOBP:gm X.MOBP:gds X.MOBP:vgs X.MOBP:vds X.MOBP:vdsat X.MOBP:region
+save X.MNCB:ids X.MNCB:gm X.MNCB:gds X.MNCB:vgs X.MNCB:vds X.MNCB:vdsat X.MNCB:region
+save X.MDN:ids X.MDN:gm X.MDN:gds X.MDN:vgs X.MDN:vds X.MDN:vdsat X.MDN:region
+save X.MDP:ids X.MDP:gm X.MDP:gds X.MDP:vgs X.MDP:vds X.MDP:vdsat X.MDP:region
+save X.MPCB:ids X.MPCB:gm X.MPCB:gds X.MPCB:vgs X.MPCB:vds X.MPCB:vdsat X.MPCB:region
+save X.MTAIL:ids X.MTAIL:gm X.MTAIL:gds X.MTAIL:vgs X.MTAIL:vds X.MTAIL:vdsat X.MTAIL:region
+save X.MINP:ids X.MINP:gm X.MINP:gds X.MINP:vgs X.MINP:vds X.MINP:vdsat X.MINP:region
+save X.MINN:ids X.MINN:gm X.MINN:gds X.MINN:vgs X.MINN:vds X.MINN:vdsat X.MINN:region
+save X.MSP:ids X.MSP:gm X.MSP:gds X.MSP:vgs X.MSP:vds X.MSP:vdsat X.MSP:region
+save X.MSN:ids X.MSN:gm X.MSN:gds X.MSN:vgs X.MSN:vds X.MSN:vdsat X.MSN:region
+save X.MPCP:ids X.MPCP:gm X.MPCP:gds X.MPCP:vgs X.MPCP:vds X.MPCP:vdsat X.MPCP:region
+save X.MPCN:ids X.MPCN:gm X.MPCN:gds X.MPCN:vgs X.MPCN:vds X.MPCN:vdsat X.MPCN:region
+save X.MNCP:ids X.MNCP:gm X.MNCP:gds X.MNCP:vgs X.MNCP:vds X.MNCP:vdsat X.MNCP:region
+save X.MNCN:ids X.MNCN:gm X.MNCN:gds X.MNCN:vgs X.MNCN:vds X.MNCN:vdsat X.MNCN:region
+save X.MSINKP:ids X.MSINKP:gm X.MSINKP:gds X.MSINKP:vgs X.MSINKP:vds X.MSINKP:vdsat X.MSINKP:region
+save X.MSINKN:ids X.MSINKN:gm X.MSINKN:gds X.MSINKN:vgs X.MSINKN:vds X.MSINKN:vdsat X.MSINKN:region
+save X.MSECONDP:ids X.MSECONDP:gm X.MSECONDP:gds X.MSECONDP:vgs X.MSECONDP:vds X.MSECONDP:vdsat X.MSECONDP:region
+save X.MSECONDN:ids X.MSECONDN:gm X.MSECONDN:gds X.MSECONDN:vgs X.MSECONDN:vds X.MSECONDN:vdsat X.MSECONDN:region
+save X.MLOADP:ids X.MLOADP:gm X.MLOADP:gds X.MLOADP:vgs X.MLOADP:vds X.MLOADP:vdsat X.MLOADP:region
+save X.MLOADN:ids X.MLOADN:gm X.MLOADN:gds X.MLOADN:vgs X.MLOADN:vds X.MLOADN:vdsat X.MLOADN:region
+save X.MCMT:ids X.MCMT:gm X.MCMT:gds X.MCMT:vgs X.MCMT:vds X.MCMT:vdsat X.MCMT:region
+save X.MCMREF:ids X.MCMREF:gm X.MCMREF:gds X.MCMREF:vgs X.MCMREF:vds X.MCMREF:vdsat X.MCMREF:region
+save X.MCMSENSE:ids X.MCMSENSE:gm X.MCMSENSE:gds X.MCMSENSE:vgs X.MCMSENSE:vds X.MCMSENSE:vdsat X.MCMSENSE:region
+save X.MCMD:ids X.MCMD:gm X.MCMD:gds X.MCMD:vgs X.MCMD:vds X.MCMD:vdsat X.MCMD:region
+save X.MCMM:ids X.MCMM:gm X.MCMM:gds X.MCMM:vgs X.MCMM:vds X.MCMM:vdsat X.MCMM:region
+save X.MCMND:ids X.MCMND:gm X.MCMND:gds X.MCMND:vgs X.MCMND:vds X.MCMND:vdsat X.MCMND:region
+save X.tail X.fp X.fn X.stagep X.stagen X.sinkp X.sinkn X.vbp X.vbpout X.vcn X.vpc X.vcmfb X.vcms X.cmt X.cma X.ncb X.pcb
+dcOp dc
+ac ac start=10 stop=100G dec=80

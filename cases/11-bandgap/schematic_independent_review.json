@@ -1,0 +1,231 @@
+{
+  "slot": 11,
+  "case": "cases/11-bandgap",
+  "circuit_sha256": "35c5a82bce4de256e274a922797be82a4e0696d81bbd295a1da8830424083029",
+  "hd_cells_sha256": null,
+  "top": "bandgap_reference",
+  "source_definition_count": 27,
+  "source_terminal_count": 94,
+  "source_expanded_leaf_count": 27,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "68b5f6aa0c43ce567c5c2d6f953ccb123bf51d5e39f32f2513b8ce400e5091a2",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 27,
+  "schematic_expanded_leaf_count": 27,
+  "independently_traced_terminals": 94,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 12,
+    "BJT": 3,
+    "R": 10,
+    "C": 2
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "bandgap_reference/MP0",
+      "D_G_S_B": [
+        "va",
+        "pctrl",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/MP1",
+      "D_G_S_B": [
+        "vb",
+        "pctrl",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/MP2",
+      "D_G_S_B": [
+        "vref",
+        "pctrl",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/MNB",
+      "D_G_S_B": [
+        "nbias",
+        "nbias",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/MTAIL",
+      "D_G_S_B": [
+        "tail",
+        "nbias",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/MINA",
+      "D_G_S_B": [
+        "pctrl",
+        "va",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/MINB",
+      "D_G_S_B": [
+        "nout",
+        "vb",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/MPD",
+      "D_G_S_B": [
+        "nout",
+        "nout",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/MPM",
+      "D_G_S_B": [
+        "pctrl",
+        "nout",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/MPST",
+      "D_G_S_B": [
+        "st",
+        "vref",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/MNST",
+      "D_G_S_B": [
+        "st",
+        "vref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/MSTART",
+      "D_G_S_B": [
+        "pctrl",
+        "st",
+        "vss",
+        "vss"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [
+    {
+      "instance": "bandgap_reference/RPTAT",
+      "terminal_1_2_B": [
+        "vb",
+        "n1",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/RREF",
+      "terminal_1_2_B": [
+        "vref",
+        "vctat",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/RB0",
+      "terminal_1_2_B": [
+        "vdd",
+        "rb1",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/RB1",
+      "terminal_1_2_B": [
+        "rb1",
+        "rb2",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/RB2",
+      "terminal_1_2_B": [
+        "rb2",
+        "rb3",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/RB3",
+      "terminal_1_2_B": [
+        "rb3",
+        "rb4",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/RB4",
+      "terminal_1_2_B": [
+        "rb4",
+        "rb5",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/RB5",
+      "terminal_1_2_B": [
+        "rb5",
+        "rb6",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/RB6",
+      "terminal_1_2_B": [
+        "rb6",
+        "rb7",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bandgap_reference/RB7",
+      "terminal_1_2_B": [
+        "rb7",
+        "nbias",
+        "vss"
+      ]
+    }
+  ],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 19,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

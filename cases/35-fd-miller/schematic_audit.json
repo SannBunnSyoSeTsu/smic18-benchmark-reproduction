@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-09-23T06:26:38.360825+00:00",
+  "status": "passed",
+  "circuit_sha256": "6d9f5f72270985bfe6f78ef2b76d423773ed5271b7edac16c114f3c9b148289b",
+  "hd_cells_sha256": null,
+  "renderer_sha256": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+  "layout_file": "scripts/schematics_analog.py",
+  "layout_sha256": "7c73e3169f2979ac2941dd45121ecdd56414d7765a00229c9e3bcb2a305a569d",
+  "instance_counts": {
+    "MOS": 30,
+    "R": 6,
+    "C": 4
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 30,
+    "R": 6,
+    "C": 4
+  },
+  "total_instances": 40,
+  "expanded_leaf_instances": 40,
+  "total_terminals": 140,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 4,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/35-fd-miller/schematic/connectivity.json": "ef3ac28a52931c52082cc61a4ae7fa5c2261a60f5249b7f4b54dea1eda9b9869",
+    "cases/35-fd-miller/schematic/full.pdf": "904e4dbb68f5ec2f579d595383fda9f9956160894ebea0e3336ae64ed8db3da9",
+    "cases/35-fd-miller/schematic/full.png": "b271e2c82e99efded49c23a0137ff95240d2b6dfd6f83fc2971de737b720dde9",
+    "cases/35-fd-miller/schematic/full.svg": "7a44e6239fdb65930cc57f197f05981f69c79f086c943b246865114345bd025f",
+    "cases/35-fd-miller/schematic/layout_source.py": "7c73e3169f2979ac2941dd45121ecdd56414d7765a00229c9e3bcb2a305a569d",
+    "cases/35-fd-miller/schematic/renderer_source.py": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+    "cases/35-fd-miller/schematic/sheet-1.png": "136dbb172d90bab0ab20e2498ed0fed77b185497825e57b8dee6f3d2e384d4e3",
+    "cases/35-fd-miller/schematic/sheet-1.svg": "6a330facf9b2309cc5e5d92ec812dc437707acc9ba77e68017b48c96ba3b9381",
+    "cases/35-fd-miller/schematic/sheet-2.png": "501b74a644f4974271672875c353d239e5d526041446e22a7d9f7fcb78c0ee80",
+    "cases/35-fd-miller/schematic/sheet-2.svg": "4023645b55299548812afc52bd841a28f134b1ccebdaf1bd2fef11ef083234ab",
+    "cases/35-fd-miller/schematic/sheet-3.png": "ecb3d7179499608955d3bed6a1a4c23b8793f97386ac045172e6a8781b9e7f64",
+    "cases/35-fd-miller/schematic/sheet-3.svg": "db1dc203c295395f9287ecbbdd75d25302994431b76a79c2fae9cbdb230bb826",
+    "cases/35-fd-miller/schematic/sheet-4.png": "3e23c59e3823f1273095ee6af3ee16bfa9dc83fb26327c0d1a6a8857df693764",
+    "cases/35-fd-miller/schematic/sheet-4.svg": "d5ae675826c8d21a1fbd05221d36eb2a13b6c1b8ffa74331da5c8e76c9645aad",
+    "cases/35-fd-miller/schematic/sheets.pdf": "efdf034f2220eb7c05a41e1f31f534f4ab8ec0cf27997c66451584d066cdac5c",
+    "cases/35-fd-miller/schematic/symbol_source.py": "c65698950039c9fd48e1659d37f7fb5220517dd0dc1847b24f5b1761d0956898"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "final_source_freeze_at": "2026-09-23T06:26:38.362589+00:00",
+  "previous_visual_review": {
+    "reviewed_at": "2026-09-23T06:16:47.818275+00:00",
+    "note": "All split sheets and full overview actually viewed; connectivity, symbols, values, body ties and text readability reviewed.",
+    "reviewed_png_hashes": {
+      "cases/35-fd-miller/schematic/full.png": "b271e2c82e99efded49c23a0137ff95240d2b6dfd6f83fc2971de737b720dde9",
+      "cases/35-fd-miller/schematic/sheet-1.png": "136dbb172d90bab0ab20e2498ed0fed77b185497825e57b8dee6f3d2e384d4e3",
+      "cases/35-fd-miller/schematic/sheet-2.png": "501b74a644f4974271672875c353d239e5d526041446e22a7d9f7fcb78c0ee80",
+      "cases/35-fd-miller/schematic/sheet-3.png": "ecb3d7179499608955d3bed6a1a4c23b8793f97386ac045172e6a8781b9e7f64",
+      "cases/35-fd-miller/schematic/sheet-4.png": "3e23c59e3823f1273095ee6af3ee16bfa9dc83fb26327c0d1a6a8857df693764"
+    }
+  },
+  "rebuild_png_changes": [],
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-23T06:16:47.818275+00:00",
+  "visual_review_note": "All final sheet PNGs and full overview are byte-for-byte identical to the actually viewed artifacts; final renderer, symbols and layout sources were frozen beside the drawings."
+}

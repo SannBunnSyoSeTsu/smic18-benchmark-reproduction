@@ -1,0 +1,2939 @@
+{
+  "generated_at": "2026-09-23T06:18:48.895617+00:00",
+  "circuit_sha256": "09fc144dd0c6ea413977b2b7d0409f97aac83f192f915337a6d7dcc7af959a37",
+  "top": "two_stage_miller_opamp",
+  "subcircuit_ports": {
+    "two_stage_miller_opamp": [
+      "vss",
+      "iref",
+      "vdd",
+      "vinn",
+      "vinp",
+      "vout"
+    ]
+  },
+  "instances": {
+    "two_stage_miller_opamp/MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "5"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=3.22u l=1u m=5",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 5.0,
+      "sheet": 1,
+      "origin": [
+        4,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          5
+        ],
+        "S": [
+          4,
+          3
+        ],
+        "G": [
+          2.45,
+          4
+        ],
+        "B": [
+          4.86,
+          4
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/MCBN": {
+      "name": "MCBN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u"
+      },
+      "source_line": "MCBN (vbp iref vss vss) n18 w=3.22u l=1u",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        11,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          5
+        ],
+        "S": [
+          11,
+          3
+        ],
+        "G": [
+          9.45,
+          4
+        ],
+        "B": [
+          11.86,
+          4
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/MPCB": {
+      "name": "MPCB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbp",
+        "G": "vbp",
+        "S": "nrb",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u"
+      },
+      "source_line": "MPCB (vbp vbp nrb vdd) p18 w=3.14u l=.36u",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        11,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          12
+        ],
+        "S": [
+          11,
+          14
+        ],
+        "G": [
+          9.45,
+          13
+        ],
+        "B": [
+          11.86,
+          13
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/MPD": {
+      "name": "MPD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nc3",
+        "G": "nleft",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u",
+        "m": "3"
+      },
+      "source_line": "MPD (nc3 nleft vdd vdd) p18 w=3.14u l=.36u m=3",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 3.0,
+      "sheet": 1,
+      "origin": [
+        23,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          23,
+          20
+        ],
+        "S": [
+          23,
+          22
+        ],
+        "G": [
+          21.45,
+          21
+        ],
+        "B": [
+          23.86,
+          21
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/MPM": {
+      "name": "MPM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nc4",
+        "G": "nleft",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u",
+        "m": "3"
+      },
+      "source_line": "MPM (nc4 nleft vdd vdd) p18 w=3.14u l=.36u m=3",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 3.0,
+      "sheet": 1,
+      "origin": [
+        35,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          35,
+          20
+        ],
+        "S": [
+          35,
+          22
+        ],
+        "G": [
+          33.45,
+          21
+        ],
+        "B": [
+          35.86,
+          21
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/MCD": {
+      "name": "MCD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nleft",
+        "G": "vbp",
+        "S": "nc3",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u",
+        "m": "3"
+      },
+      "source_line": "MCD (nleft vbp nc3 vdd) p18 w=3.14u l=.36u m=3",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 3.0,
+      "sheet": 1,
+      "origin": [
+        23,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          23,
+          16
+        ],
+        "S": [
+          23,
+          18
+        ],
+        "G": [
+          21.45,
+          17
+        ],
+        "B": [
+          23.86,
+          17
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/MCM": {
+      "name": "MCM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "stage1",
+        "G": "vbp",
+        "S": "nc4",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u",
+        "m": "3"
+      },
+      "source_line": "MCM (stage1 vbp nc4 vdd) p18 w=3.14u l=.36u m=3",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 3.0,
+      "sheet": 1,
+      "origin": [
+        35,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          35,
+          16
+        ],
+        "S": [
+          35,
+          18
+        ],
+        "G": [
+          33.45,
+          17
+        ],
+        "B": [
+          35.86,
+          17
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nleft",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "30.76u",
+        "l": "1u"
+      },
+      "source_line": "MINN (nleft vinn tail vss) n18 w=30.76u l=1u",
+      "W_unit_um": 30.759999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        23,
+        10
+      ],
+      "rendered_pins": {
+        "D": [
+          23,
+          11
+        ],
+        "S": [
+          23,
+          9
+        ],
+        "G": [
+          21.45,
+          10
+        ],
+        "B": [
+          23.86,
+          10
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "stage1",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "30.76u",
+        "l": "1u"
+      },
+      "source_line": "MINP (stage1 vinp tail vss) n18 w=30.76u l=1u",
+      "W_unit_um": 30.759999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        35,
+        10
+      ],
+      "rendered_pins": {
+        "D": [
+          35,
+          11
+        ],
+        "S": [
+          35,
+          9
+        ],
+        "G": [
+          33.45,
+          10
+        ],
+        "B": [
+          35.86,
+          10
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "6"
+      },
+      "source_line": "MTAIL (tail iref vss vss) n18 w=3.22u l=1u m=6",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 6.0,
+      "sheet": 1,
+      "origin": [
+        29,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          5
+        ],
+        "S": [
+          29,
+          3
+        ],
+        "G": [
+          27.45,
+          4
+        ],
+        "B": [
+          29.86,
+          4
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/RB": {
+      "name": "RB",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "nrb"
+      },
+      "parameters": {
+        "r": "22000"
+      },
+      "source_line": "RB (vdd nrb) resistor r=22000",
+      "value_SI": 22000.0,
+      "sheet": 1,
+      "origin": [
+        11,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          11,
+          19.82
+        ],
+        "2": [
+          11,
+          18.18
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/MSECOND": {
+      "name": "MSECOND",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "stage1",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u",
+        "m": "14"
+      },
+      "source_line": "MSECOND (vout stage1 vdd vdd) p18 w=3.14u l=.36u m=14",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 14.0,
+      "sheet": 2,
+      "origin": [
+        27,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          18
+        ],
+        "S": [
+          27,
+          20
+        ],
+        "G": [
+          25.45,
+          19
+        ],
+        "B": [
+          27.86,
+          19
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/MLOAD": {
+      "name": "MLOAD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "14"
+      },
+      "source_line": "MLOAD (vout iref vss vss) n18 w=3.22u l=1u m=14",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 14.0,
+      "sheet": 2,
+      "origin": [
+        27,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          6
+        ],
+        "S": [
+          27,
+          4
+        ],
+        "G": [
+          25.45,
+          5
+        ],
+        "B": [
+          27.86,
+          5
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/RZ": {
+      "name": "RZ",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "stage1",
+        "2": "comp"
+      },
+      "parameters": {
+        "r": "700"
+      },
+      "source_line": "RZ (stage1 comp) resistor r=700",
+      "value_SI": 700.0,
+      "sheet": 2,
+      "origin": [
+        11,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          10.18,
+          11
+        ],
+        "2": [
+          11.82,
+          11
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    },
+    "two_stage_miller_opamp/CC": {
+      "name": "CC",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "comp",
+        "2": "vout"
+      },
+      "parameters": {
+        "c": "2p"
+      },
+      "source_line": "CC (comp vout) capacitor c=2p",
+      "value_SI": 2e-12,
+      "sheet": 2,
+      "origin": [
+        19,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          18.18,
+          11
+        ],
+        "2": [
+          19.82,
+          11
+        ]
+      },
+      "block": "two_stage_miller_opamp"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "5"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=3.22u l=1u m=5",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 5.0,
+      "definition": "two_stage_miller_opamp/MREF",
+      "path": "MREF"
+    },
+    "MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "6"
+      },
+      "source_line": "MTAIL (tail iref vss vss) n18 w=3.22u l=1u m=6",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 6.0,
+      "definition": "two_stage_miller_opamp/MTAIL",
+      "path": "MTAIL"
+    },
+    "MLOAD": {
+      "name": "MLOAD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "14"
+      },
+      "source_line": "MLOAD (vout iref vss vss) n18 w=3.22u l=1u m=14",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 14.0,
+      "definition": "two_stage_miller_opamp/MLOAD",
+      "path": "MLOAD"
+    },
+    "MCBN": {
+      "name": "MCBN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u"
+      },
+      "source_line": "MCBN (vbp iref vss vss) n18 w=3.22u l=1u",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "two_stage_miller_opamp/MCBN",
+      "path": "MCBN"
+    },
+    "RB": {
+      "name": "RB",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "nrb"
+      },
+      "parameters": {
+        "r": "22000"
+      },
+      "source_line": "RB (vdd nrb) resistor r=22000",
+      "value_SI": 22000.0,
+      "definition": "two_stage_miller_opamp/RB",
+      "path": "RB"
+    },
+    "MPCB": {
+      "name": "MPCB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbp",
+        "G": "vbp",
+        "S": "nrb",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u"
+      },
+      "source_line": "MPCB (vbp vbp nrb vdd) p18 w=3.14u l=.36u",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "two_stage_miller_opamp/MPCB",
+      "path": "MPCB"
+    },
+    "MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nleft",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "30.76u",
+        "l": "1u"
+      },
+      "source_line": "MINN (nleft vinn tail vss) n18 w=30.76u l=1u",
+      "W_unit_um": 30.759999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "two_stage_miller_opamp/MINN",
+      "path": "MINN"
+    },
+    "MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "stage1",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "30.76u",
+        "l": "1u"
+      },
+      "source_line": "MINP (stage1 vinp tail vss) n18 w=30.76u l=1u",
+      "W_unit_um": 30.759999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "two_stage_miller_opamp/MINP",
+      "path": "MINP"
+    },
+    "MPD": {
+      "name": "MPD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nc3",
+        "G": "nleft",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u",
+        "m": "3"
+      },
+      "source_line": "MPD (nc3 nleft vdd vdd) p18 w=3.14u l=.36u m=3",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 3.0,
+      "definition": "two_stage_miller_opamp/MPD",
+      "path": "MPD"
+    },
+    "MPM": {
+      "name": "MPM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nc4",
+        "G": "nleft",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u",
+        "m": "3"
+      },
+      "source_line": "MPM (nc4 nleft vdd vdd) p18 w=3.14u l=.36u m=3",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 3.0,
+      "definition": "two_stage_miller_opamp/MPM",
+      "path": "MPM"
+    },
+    "MCD": {
+      "name": "MCD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nleft",
+        "G": "vbp",
+        "S": "nc3",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u",
+        "m": "3"
+      },
+      "source_line": "MCD (nleft vbp nc3 vdd) p18 w=3.14u l=.36u m=3",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 3.0,
+      "definition": "two_stage_miller_opamp/MCD",
+      "path": "MCD"
+    },
+    "MCM": {
+      "name": "MCM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "stage1",
+        "G": "vbp",
+        "S": "nc4",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u",
+        "m": "3"
+      },
+      "source_line": "MCM (stage1 vbp nc4 vdd) p18 w=3.14u l=.36u m=3",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 3.0,
+      "definition": "two_stage_miller_opamp/MCM",
+      "path": "MCM"
+    },
+    "MSECOND": {
+      "name": "MSECOND",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "stage1",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.14u",
+        "l": ".36u",
+        "m": "14"
+      },
+      "source_line": "MSECOND (vout stage1 vdd vdd) p18 w=3.14u l=.36u m=14",
+      "W_unit_um": 3.14,
+      "L_um": 0.36,
+      "m": 14.0,
+      "definition": "two_stage_miller_opamp/MSECOND",
+      "path": "MSECOND"
+    },
+    "RZ": {
+      "name": "RZ",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "stage1",
+        "2": "comp"
+      },
+      "parameters": {
+        "r": "700"
+      },
+      "source_line": "RZ (stage1 comp) resistor r=700",
+      "value_SI": 700.0,
+      "definition": "two_stage_miller_opamp/RZ",
+      "path": "RZ"
+    },
+    "CC": {
+      "name": "CC",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "comp",
+        "2": "vout"
+      },
+      "parameters": {
+        "c": "2p"
+      },
+      "source_line": "CC (comp vout) capacitor c=2p",
+      "value_SI": 2e-12,
+      "definition": "two_stage_miller_opamp/CC",
+      "path": "CC"
+    }
+  },
+  "nets": {
+    "two_stage_miller_opamp/iref": [
+      {
+        "instance": "two_stage_miller_opamp/MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          4,
+          5
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          2.45,
+          4
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MCBN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          9.45,
+          4
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MTAIL",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          27.45,
+          4
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MLOAD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          25.45,
+          5
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/vss": [
+      {
+        "instance": "two_stage_miller_opamp/MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          4,
+          3
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          4.86,
+          4
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MCBN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          11,
+          3
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MCBN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          11.86,
+          4
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MINN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          23.86,
+          10
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MINP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          35.86,
+          10
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MTAIL",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          29,
+          3
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MTAIL",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          29.86,
+          4
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MLOAD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          27,
+          4
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MLOAD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          27.86,
+          5
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/vbp": [
+      {
+        "instance": "two_stage_miller_opamp/MCBN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          11,
+          5
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MPCB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          11,
+          12
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MPCB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          9.45,
+          13
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MCD",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          21.45,
+          17
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MCM",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          33.45,
+          17
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/nrb": [
+      {
+        "instance": "two_stage_miller_opamp/MPCB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          11,
+          14
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/RB",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          11,
+          18.18
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/vdd": [
+      {
+        "instance": "two_stage_miller_opamp/MPCB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          11.86,
+          13
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MPD",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          23,
+          22
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MPD",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          23.86,
+          21
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MPM",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          35,
+          22
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MPM",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          35.86,
+          21
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MCD",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          23.86,
+          17
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MCM",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          35.86,
+          17
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/RB",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          11,
+          19.82
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MSECOND",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          27,
+          20
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MSECOND",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          27.86,
+          19
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/nc3": [
+      {
+        "instance": "two_stage_miller_opamp/MPD",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          23,
+          20
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MCD",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          23,
+          18
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/nleft": [
+      {
+        "instance": "two_stage_miller_opamp/MPD",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          21.45,
+          21
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MPM",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          33.45,
+          21
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MCD",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          23,
+          16
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MINN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          23,
+          11
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/nc4": [
+      {
+        "instance": "two_stage_miller_opamp/MPM",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          35,
+          20
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MCM",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          35,
+          18
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/stage1": [
+      {
+        "instance": "two_stage_miller_opamp/MCM",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          35,
+          16
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MINP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          35,
+          11
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MSECOND",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          25.45,
+          19
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/RZ",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          10.18,
+          11
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/vinn": [
+      {
+        "instance": "two_stage_miller_opamp/MINN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          21.45,
+          10
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/tail": [
+      {
+        "instance": "two_stage_miller_opamp/MINN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          23,
+          9
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MINP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          35,
+          9
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MTAIL",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          29,
+          5
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/vinp": [
+      {
+        "instance": "two_stage_miller_opamp/MINP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          33.45,
+          10
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/vout": [
+      {
+        "instance": "two_stage_miller_opamp/MSECOND",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          27,
+          18
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/MLOAD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          27,
+          6
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/CC",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          19.82,
+          11
+        ]
+      }
+    ],
+    "two_stage_miller_opamp/comp": [
+      {
+        "instance": "two_stage_miller_opamp/RZ",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          11.82,
+          11
+        ]
+      },
+      {
+        "instance": "two_stage_miller_opamp/CC",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          18.18,
+          11
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCBN",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCBN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM",
+      "pin": "D",
+      "net": "nc4",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCM",
+      "pin": "S",
+      "net": "nc4",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "S",
+      "net": "nrb",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "RB",
+      "pin": "2",
+      "net": "nrb",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPD",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPD",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCD",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCM",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "RB",
+      "pin": "1",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINP",
+      "pin": "G",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCBN",
+      "pin": "D",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "D",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPCB",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCD",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCM",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINN",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINP",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "D",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCBN",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPD",
+      "pin": "D",
+      "net": "nc3",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCD",
+      "pin": "S",
+      "net": "nc3",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPD",
+      "pin": "G",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM",
+      "pin": "G",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCD",
+      "pin": "D",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINN",
+      "pin": "D",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINN",
+      "pin": "G",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCM",
+      "pin": "D",
+      "net": "stage1",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINP",
+      "pin": "D",
+      "net": "stage1",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLOAD",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLOAD",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSECOND",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSECOND",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLOAD",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "RZ",
+      "pin": "2",
+      "net": "comp",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "CC",
+      "pin": "1",
+      "net": "comp",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSECOND",
+      "pin": "G",
+      "net": "stage1",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "RZ",
+      "pin": "1",
+      "net": "stage1",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSECOND",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLOAD",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    },
+    {
+      "sheet": 2,
+      "instance": "CC",
+      "pin": "2",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "two_stage_miller_opamp"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "two_stage_miller_opamp",
+      "title": "共栅镜负载、输入级与低压偏置",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.86,
+              4
+            ],
+            [
+              5.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11.86,
+              4
+            ],
+            [
+              12.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11.86,
+              13
+            ],
+            [
+              12.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              23.86,
+              21
+            ],
+            [
+              24.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35.86,
+              21
+            ],
+            [
+              36.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              23.86,
+              17
+            ],
+            [
+              24.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35.86,
+              17
+            ],
+            [
+              36.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23.86,
+              10
+            ],
+            [
+              24.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35.86,
+              10
+            ],
+            [
+              36.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29.86,
+              4
+            ],
+            [
+              30.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11,
+              24
+            ],
+            [
+              35,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11,
+              19.82
+            ],
+            [
+              11,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              23,
+              22
+            ],
+            [
+              23,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35,
+              22
+            ],
+            [
+              35,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              1.3
+            ],
+            [
+              29,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              3
+            ],
+            [
+              4,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29,
+              3
+            ],
+            [
+              29,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              2.45,
+              4
+            ],
+            [
+              1.9500000000000002,
+              4
+            ],
+            [
+              1.9500000000000002,
+              7
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nrb",
+          "points": [
+            [
+              11,
+              18.18
+            ],
+            [
+              11,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              11,
+              12
+            ],
+            [
+              11,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              9.45,
+              13
+            ],
+            [
+              8.95,
+              13
+            ],
+            [
+              8.95,
+              10
+            ],
+            [
+              11,
+              10
+            ],
+            [
+              11,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nc3",
+          "points": [
+            [
+              23,
+              20
+            ],
+            [
+              23,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nc4",
+          "points": [
+            [
+              35,
+              20
+            ],
+            [
+              35,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "points": [
+            [
+              23,
+              16
+            ],
+            [
+              23,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "stage1",
+          "points": [
+            [
+              35,
+              16
+            ],
+            [
+              35,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "points": [
+            [
+              21.45,
+              21
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              20,
+              14
+            ],
+            [
+              23,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              23,
+              9
+            ],
+            [
+              23,
+              7
+            ],
+            [
+              35,
+              7
+            ],
+            [
+              35,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              29,
+              5
+            ],
+            [
+              29,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              9.45,
+              4
+            ],
+            [
+              8.899999999999999,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "points": [
+            [
+              33.45,
+              21
+            ],
+            [
+              32.900000000000006,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              21.45,
+              17
+            ],
+            [
+              20.9,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              33.45,
+              17
+            ],
+            [
+              32.900000000000006,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              21.45,
+              10
+            ],
+            [
+              20.9,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              33.45,
+              10
+            ],
+            [
+              32.900000000000006,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              27.45,
+              4
+            ],
+            [
+              26.9,
+              4
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            12.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12.15,
+            13
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            24.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            36.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            24.15,
+            17
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            36.15,
+            17
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            24.15,
+            10
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            36.15,
+            10
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            30.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            11,
+            24
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4,
+            1.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            4,
+            9
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "nrb",
+          "point": [
+            11,
+            16
+          ],
+          "text": "nrb",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            11,
+            9
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "nc3",
+          "point": [
+            23,
+            19
+          ],
+          "text": "nc3",
+          "body": false
+        },
+        {
+          "net": "nc4",
+          "point": [
+            35,
+            19
+          ],
+          "text": "nc4",
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "point": [
+            23,
+            14
+          ],
+          "text": "nleft",
+          "body": false
+        },
+        {
+          "net": "stage1",
+          "point": [
+            35,
+            14
+          ],
+          "text": "stage1",
+          "body": false
+        },
+        {
+          "net": "tail",
+          "point": [
+            29,
+            7
+          ],
+          "text": "tail",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            8.899999999999999,
+            4
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "point": [
+            32.900000000000006,
+            21
+          ],
+          "text": "nleft",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            20.9,
+            17
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            32.900000000000006,
+            17
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            20.9,
+            10
+          ],
+          "text": "vinn",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            32.900000000000006,
+            10
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            26.9,
+            4
+          ],
+          "text": "iref",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "two_stage_miller_opamp",
+      "title": "互补输出级与串联 Miller 补偿",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              27.86,
+              19
+            ],
+            [
+              28.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27.86,
+              5
+            ],
+            [
+              28.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              27,
+              20
+            ],
+            [
+              27,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27,
+              4
+            ],
+            [
+              27,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              27,
+              18
+            ],
+            [
+              27,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "comp",
+          "points": [
+            [
+              11.82,
+              11
+            ],
+            [
+              18.18,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              19.82,
+              11
+            ],
+            [
+              27,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "stage1",
+          "points": [
+            [
+              25.45,
+              19
+            ],
+            [
+              24.9,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              25.45,
+              5
+            ],
+            [
+              24.9,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "stage1",
+          "points": [
+            [
+              10.18,
+              11
+            ],
+            [
+              9.379999999999999,
+              11
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            28.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            28.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            27,
+            23
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            27,
+            1.4
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            27,
+            14
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "comp",
+          "point": [
+            15,
+            11
+          ],
+          "text": "comp",
+          "body": false
+        },
+        {
+          "net": "stage1",
+          "point": [
+            24.9,
+            19
+          ],
+          "text": "stage1",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            24.9,
+            5
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "stage1",
+          "point": [
+            9.379999999999999,
+            11
+          ],
+          "text": "stage1",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "two_stage_miller_opamp": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

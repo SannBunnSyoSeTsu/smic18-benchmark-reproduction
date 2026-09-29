@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-09-26T06:24:13.845578+00:00",
+  "circuit_sha256": "dfceb74aacbcd14aeab9a680577996f67fbf2ffc8c7b4e321f7d3658b3ace2c5",
+  "baseline_groups": {
+    "rf": "runs/43/20260926T062411488482Z_rf"
+  },
+  "final_groups": {
+    "rf": "runs/43/20260926T062412460504Z_rf"
+  },
+  "baseline_grid": {
+    "band": 101,
+    "stability": 401,
+    "noise": 101
+  },
+  "final_grid": {
+    "band": 201,
+    "stability": 1601,
+    "noise": 201
+  },
+  "metrics": {
+    "transducer_gain_db_min": {
+      "baseline": 18.552718274612072,
+      "refined": 18.552718274612072,
+      "absolute_difference": 0.0,
+      "maximum_difference": 0.05,
+      "passed": true
+    },
+    "transducer_gain_db_max": {
+      "baseline": 18.97341312418371,
+      "refined": 18.973414134422043,
+      "absolute_difference": 1.0102383320997887e-06,
+      "maximum_difference": 0.05,
+      "passed": true
+    },
+    "gain_ripple_db": {
+      "baseline": 0.42069484957163894,
+      "refined": 0.42069585980997104,
+      "absolute_difference": 1.0102383320997887e-06,
+      "maximum_difference": 0.05,
+      "passed": true
+    },
+    "s11_db_max": {
+      "baseline": -10.926463566198992,
+      "refined": -10.926463566198992,
+      "absolute_difference": 0.0,
+      "maximum_difference": 0.05,
+      "passed": true
+    },
+    "s22_db_max": {
+      "baseline": -15.769358182357793,
+      "refined": -15.769358182357793,
+      "absolute_difference": 0.0,
+      "maximum_difference": 0.05,
+      "passed": true
+    },
+    "reverse_isolation_db_max": {
+      "baseline": -38.75198929497796,
+      "refined": -38.75198929497796,
+      "absolute_difference": 0.0,
+      "maximum_difference": 0.05,
+      "passed": true
+    },
+    "noise_figure_db": {
+      "baseline": 1.6190384220289633,
+      "refined": 1.6190384220289633,
+      "absolute_difference": 0.0,
+      "maximum_difference": 0.005,
+      "passed": true
+    },
+    "stability_k_min": {
+      "baseline": 4.66095539409353,
+      "refined": 4.660687200811959,
+      "absolute_difference": 0.0002681932815704613,
+      "maximum_difference": 0.0466095539409353,
+      "passed": true
+    },
+    "stability_delta_max": {
+      "baseline": 0.99782306896062,
+      "refined": 0.99782306896062,
+      "absolute_difference": 0.0,
+      "maximum_difference": 0.0001,
+      "passed": true
+    },
+    "power_w": {
+      "baseline": 0.0068831791251831665,
+      "refined": 0.0068831791251831665,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-06,
+      "passed": true
+    },
+    "iref_voltage_v": {
+      "baseline": 0.555055199968375,
+      "refined": 0.555055199968375,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    "iref_headroom_v": {
+      "baseline": 1.244944800031625,
+      "refined": 1.244944800031625,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-05,
+      "passed": true
+    }
+  },
+  "baseline_tier": "complete_original",
+  "refined_tier": "complete_original",
+  "passed": true
+}

@@ -1,0 +1,17 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=bjt_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=res_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/21-highpsrr-bandgap/circuit.scs"
+VDD (AVDD 0) vsource dc=1.8 mag=1
+X (AVDD 0 VBG 0) bandgap
+CLOAD (VBG 0) capacitor c=1p
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+save AVDD VBG VDD:p X.vcore X.va X.vb X.n1 X.vctat X.pctrl X.nout X.tail X.nbias X.st
+save X.pc0 X.pc1 X.pc2 X.cbias
+save X.namp
+dcOp dc
+ac ac start=0.01 stop=100M dec=40

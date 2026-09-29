@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-09-26T05:32:59.080246+00:00",
+  "circuit_sha256": "45eb5290815c778d817a7b9e108994121159fdb0e952d17e8984bdd00b1af2af",
+  "baseline_groups": {
+    "loop": "runs/39/20260926T053218781021Z_loop",
+    "swing": "runs/39/20260926T053219419035Z_swing",
+    "thd": "runs/39/20260926T053220064178Z_thd"
+  },
+  "final_groups": {
+    "loop": "runs/39/20260926T053218781021Z_loop",
+    "swing": "runs/39/20260926T053219419035Z_swing",
+    "thd": "runs/39/20260926T053257519087Z_thd"
+  },
+  "metrics": {
+    "thd_pct": {
+      "baseline": 0.32307975428384117,
+      "refined": 0.3231229882282673,
+      "absolute_difference": 4.323394442612427e-05,
+      "maximum_difference": 0.005,
+      "passed": true
+    },
+    "fundamental_v": {
+      "baseline": 0.598099205626206,
+      "refined": 0.5981050496083411,
+      "absolute_difference": 5.843982135100845e-06,
+      "maximum_difference": 0.0001,
+      "passed": true
+    },
+    "peak_supply_current_a": {
+      "baseline": 0.002223519965776996,
+      "refined": 0.002223546305860314,
+      "absolute_difference": 2.6340083318036195e-08,
+      "maximum_difference": 1e-06,
+      "passed": true
+    }
+  },
+  "baseline_tier": "complete_original",
+  "refined_tier": "complete_original",
+  "passed": true
+}

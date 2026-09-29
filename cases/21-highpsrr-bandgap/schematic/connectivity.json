@@ -1,0 +1,6091 @@
+{
+  "generated_at": "2026-09-26T03:16:22.091778+00:00",
+  "circuit_sha256": "c44fb1be719bd559ccdcdeed956b61620db10de7cd08cefb35cf0b11f8f879de",
+  "top": "bandgap",
+  "subcircuit_ports": {
+    "bandgap": [
+      "AVDD",
+      "AVSS",
+      "VBG",
+      "SUB"
+    ]
+  },
+  "instances": {
+    "bandgap/MP0": {
+      "name": "MP0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pc0",
+        "G": "pctrl",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "52.02u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MP0 (pc0 pctrl AVDD AVDD) p18 w=52.02u l=4u m=2",
+      "W_unit_um": 52.02,
+      "L_um": 4.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        7,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          7,
+          19
+        ],
+        "S": [
+          7,
+          21
+        ],
+        "G": [
+          5.45,
+          20
+        ],
+        "B": [
+          7.86,
+          20
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MPC0": {
+      "name": "MPC0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "va",
+        "G": "cbias",
+        "S": "pc0",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "25.3u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPC0 (va cbias pc0 AVDD) p18 w=25.3u l=1u m=1",
+      "W_unit_um": 25.299999999999997,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        7,
+        16
+      ],
+      "rendered_pins": {
+        "D": [
+          7,
+          15
+        ],
+        "S": [
+          7,
+          17
+        ],
+        "G": [
+          5.45,
+          16
+        ],
+        "B": [
+          7.86,
+          16
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MP1": {
+      "name": "MP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pc1",
+        "G": "pctrl",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "52.02u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MP1 (pc1 pctrl AVDD AVDD) p18 w=52.02u l=4u m=2",
+      "W_unit_um": 52.02,
+      "L_um": 4.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        21,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          21,
+          19
+        ],
+        "S": [
+          21,
+          21
+        ],
+        "G": [
+          19.45,
+          20
+        ],
+        "B": [
+          21.86,
+          20
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MPC1": {
+      "name": "MPC1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vb",
+        "G": "cbias",
+        "S": "pc1",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "25.3u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPC1 (vb cbias pc1 AVDD) p18 w=25.3u l=1u m=1",
+      "W_unit_um": 25.299999999999997,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        21,
+        16
+      ],
+      "rendered_pins": {
+        "D": [
+          21,
+          15
+        ],
+        "S": [
+          21,
+          17
+        ],
+        "G": [
+          19.45,
+          16
+        ],
+        "B": [
+          21.86,
+          16
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MP2": {
+      "name": "MP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pc2",
+        "G": "pctrl",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "52.02u",
+        "l": "4u",
+        "m": "4"
+      },
+      "source_line": "MP2 (pc2 pctrl AVDD AVDD) p18 w=52.02u l=4u m=4",
+      "W_unit_um": 52.02,
+      "L_um": 4.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        35,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          35,
+          19
+        ],
+        "S": [
+          35,
+          21
+        ],
+        "G": [
+          33.45,
+          20
+        ],
+        "B": [
+          35.86,
+          20
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MPC2": {
+      "name": "MPC2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vcore",
+        "G": "cbias",
+        "S": "pc2",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "25.3u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MPC2 (vcore cbias pc2 AVDD) p18 w=25.3u l=1u m=2",
+      "W_unit_um": 25.299999999999997,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        35,
+        16
+      ],
+      "rendered_pins": {
+        "D": [
+          35,
+          15
+        ],
+        "S": [
+          35,
+          17
+        ],
+        "G": [
+          33.45,
+          16
+        ],
+        "B": [
+          35.86,
+          16
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/Q0": {
+      "name": "Q0",
+      "kind": "BJT",
+      "model": "npn18a4",
+      "pins": {
+        "C": "va",
+        "B": "va",
+        "E": "AVSS",
+        "SUB": "SUB"
+      },
+      "parameters": {
+        "area": "1"
+      },
+      "source_line": "Q0 (va va AVSS SUB) npn18a4 area=1",
+      "sheet": 1,
+      "origin": [
+        7,
+        5
+      ],
+      "rendered_pins": {
+        "C": [
+          7,
+          6
+        ],
+        "B": [
+          5.45,
+          5
+        ],
+        "E": [
+          7,
+          4
+        ],
+        "SUB": [
+          7.95,
+          5
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/Q1": {
+      "name": "Q1",
+      "kind": "BJT",
+      "model": "npn18a4",
+      "pins": {
+        "C": "n1",
+        "B": "n1",
+        "E": "AVSS",
+        "SUB": "SUB"
+      },
+      "parameters": {
+        "area": "8"
+      },
+      "source_line": "Q1 (n1 n1 AVSS SUB) npn18a4 area=8",
+      "sheet": 1,
+      "origin": [
+        21,
+        5
+      ],
+      "rendered_pins": {
+        "C": [
+          21,
+          6
+        ],
+        "B": [
+          19.45,
+          5
+        ],
+        "E": [
+          21,
+          4
+        ],
+        "SUB": [
+          21.95,
+          5
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/QREF": {
+      "name": "QREF",
+      "kind": "BJT",
+      "model": "npn18a4",
+      "pins": {
+        "C": "vctat",
+        "B": "vctat",
+        "E": "AVSS",
+        "SUB": "SUB"
+      },
+      "parameters": {
+        "area": "2"
+      },
+      "source_line": "QREF (vctat vctat AVSS SUB) npn18a4 area=2",
+      "sheet": 1,
+      "origin": [
+        35,
+        5
+      ],
+      "rendered_pins": {
+        "C": [
+          35,
+          6
+        ],
+        "B": [
+          33.45,
+          5
+        ],
+        "E": [
+          35,
+          4
+        ],
+        "SUB": [
+          35.95,
+          5
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/RPTAT": {
+      "name": "RPTAT",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vb",
+        "2": "n1",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "16.5u"
+      },
+      "source_line": "RPTAT (vb n1 SUB) rpposab_3t w=1u l=16.5u",
+      "sheet": 1,
+      "origin": [
+        21,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          21,
+          11.82
+        ],
+        "2": [
+          21,
+          10.18
+        ],
+        "B": [
+          21.7,
+          11
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/RREF": {
+      "name": "RREF",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vcore",
+        "2": "vctat",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "73.3u"
+      },
+      "source_line": "RREF (vcore vctat SUB) rpposab_3t w=1u l=73.3u",
+      "sheet": 1,
+      "origin": [
+        35,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          35,
+          11.82
+        ],
+        "2": [
+          35,
+          10.18
+        ],
+        "B": [
+          35.7,
+          11
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/CCORE": {
+      "name": "CCORE",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "vcore",
+        "2": "AVSS"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "617.91967u"
+      },
+      "source_line": "CCORE (vcore AVSS) mim w=100u l=617.91967u",
+      "sheet": 1,
+      "origin": [
+        40,
+        10
+      ],
+      "rendered_pins": {
+        "1": [
+          40,
+          10.82
+        ],
+        "2": [
+          40,
+          9.18
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MPA": {
+      "name": "MPA",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "namp",
+        "G": "pctrl",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "31.220000000000002u",
+        "l": "4u"
+      },
+      "source_line": "MPA (namp pctrl AVDD AVDD) p18 w=31.220000000000002u l=4u",
+      "W_unit_um": 31.220000000000002,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        7,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          7,
+          19
+        ],
+        "S": [
+          7,
+          21
+        ],
+        "G": [
+          5.45,
+          20
+        ],
+        "B": [
+          7.86,
+          20
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MPCA": {
+      "name": "MPCA",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nbias",
+        "G": "cbias",
+        "S": "namp",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "7.58u",
+        "l": "1u"
+      },
+      "source_line": "MPCA (nbias cbias namp AVDD) p18 w=7.58u l=1u",
+      "W_unit_um": 7.579999999999999,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        7,
+        16
+      ],
+      "rendered_pins": {
+        "D": [
+          7,
+          15
+        ],
+        "S": [
+          7,
+          17
+        ],
+        "G": [
+          5.45,
+          16
+        ],
+        "B": [
+          7.86,
+          16
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MNB": {
+      "name": "MNB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nbias",
+        "G": "nbias",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "3.46u",
+        "l": "4u"
+      },
+      "source_line": "MNB (nbias nbias AVSS AVSS) n18 w=3.46u l=4u",
+      "W_unit_um": 3.46,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        7,
+        8
+      ],
+      "rendered_pins": {
+        "D": [
+          7,
+          9
+        ],
+        "S": [
+          7,
+          7
+        ],
+        "G": [
+          5.45,
+          8
+        ],
+        "B": [
+          7.86,
+          8
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MPM": {
+      "name": "MPM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pctrl",
+        "G": "nout",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "50.72u",
+        "l": "4u"
+      },
+      "source_line": "MPM (pctrl nout AVDD AVDD) p18 w=50.72u l=4u",
+      "W_unit_um": 50.72,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        22,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          19
+        ],
+        "S": [
+          22,
+          21
+        ],
+        "G": [
+          20.45,
+          20
+        ],
+        "B": [
+          22.86,
+          20
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MPD": {
+      "name": "MPD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nout",
+        "G": "nout",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "50.72u",
+        "l": "4u"
+      },
+      "source_line": "MPD (nout nout AVDD AVDD) p18 w=50.72u l=4u",
+      "W_unit_um": 50.72,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        36,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          19
+        ],
+        "S": [
+          36,
+          21
+        ],
+        "G": [
+          34.45,
+          20
+        ],
+        "B": [
+          36.86,
+          20
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MINA": {
+      "name": "MINA",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pctrl",
+        "G": "va",
+        "S": "tail",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "48.5u",
+        "l": "4u"
+      },
+      "source_line": "MINA (pctrl va tail AVSS) n18 w=48.5u l=4u",
+      "W_unit_um": 48.5,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        22,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          12
+        ],
+        "S": [
+          22,
+          10
+        ],
+        "G": [
+          20.45,
+          11
+        ],
+        "B": [
+          22.86,
+          11
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MINB": {
+      "name": "MINB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nout",
+        "G": "vb",
+        "S": "tail",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "48.5u",
+        "l": "4u"
+      },
+      "source_line": "MINB (nout vb tail AVSS) n18 w=48.5u l=4u",
+      "W_unit_um": 48.5,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        36,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          12
+        ],
+        "S": [
+          36,
+          10
+        ],
+        "G": [
+          34.45,
+          11
+        ],
+        "B": [
+          36.86,
+          11
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "nbias",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "3.46u",
+        "l": "4u",
+        "m": "3"
+      },
+      "source_line": "MTAIL (tail nbias AVSS AVSS) n18 w=3.46u l=4u m=3",
+      "W_unit_um": 3.46,
+      "L_um": 4.0,
+      "m": 3.0,
+      "sheet": 2,
+      "origin": [
+        29,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          6
+        ],
+        "S": [
+          29,
+          4
+        ],
+        "G": [
+          27.45,
+          5
+        ],
+        "B": [
+          29.86,
+          5
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/CCOMP": {
+      "name": "CCOMP",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "pctrl",
+        "2": "AVSS"
+      },
+      "parameters": {
+        "w": "50u",
+        "l": "10.298661u"
+      },
+      "source_line": "CCOMP (pctrl AVSS) mim w=50u l=10.298661u",
+      "sheet": 2,
+      "origin": [
+        15,
+        6
+      ],
+      "rendered_pins": {
+        "1": [
+          15,
+          6.82
+        ],
+        "2": [
+          15,
+          5.18
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MPCB": {
+      "name": "MPCB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "cbias",
+        "G": "cbias",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "0.76u",
+        "l": "1u"
+      },
+      "source_line": "MPCB (cbias cbias AVDD AVDD) p18 w=0.76u l=1u",
+      "W_unit_um": 0.7599999999999999,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        8,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          19
+        ],
+        "S": [
+          8,
+          21
+        ],
+        "G": [
+          6.45,
+          20
+        ],
+        "B": [
+          8.86,
+          20
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/RCB0": {
+      "name": "RCB0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "cbias",
+        "2": "rcb1",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "200u"
+      },
+      "source_line": "RCB0 (cbias rcb1 SUB) rpposab_3t w=1u l=200u",
+      "sheet": 3,
+      "origin": [
+        8,
+        15
+      ],
+      "rendered_pins": {
+        "1": [
+          8,
+          15.82
+        ],
+        "2": [
+          8,
+          14.18
+        ],
+        "B": [
+          8.7,
+          15
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/RCB1": {
+      "name": "RCB1",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "rcb1",
+        "2": "rcb2",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "200u"
+      },
+      "source_line": "RCB1 (rcb1 rcb2 SUB) rpposab_3t w=1u l=200u",
+      "sheet": 3,
+      "origin": [
+        8,
+        12
+      ],
+      "rendered_pins": {
+        "1": [
+          8,
+          12.82
+        ],
+        "2": [
+          8,
+          11.18
+        ],
+        "B": [
+          8.7,
+          12
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/RCB2": {
+      "name": "RCB2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "rcb2",
+        "2": "rcb3",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "200u"
+      },
+      "source_line": "RCB2 (rcb2 rcb3 SUB) rpposab_3t w=1u l=200u",
+      "sheet": 3,
+      "origin": [
+        8,
+        9
+      ],
+      "rendered_pins": {
+        "1": [
+          8,
+          9.82
+        ],
+        "2": [
+          8,
+          8.18
+        ],
+        "B": [
+          8.7,
+          9
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/RCB3": {
+      "name": "RCB3",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "rcb3",
+        "2": "rcb4",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "200u"
+      },
+      "source_line": "RCB3 (rcb3 rcb4 SUB) rpposab_3t w=1u l=200u",
+      "sheet": 3,
+      "origin": [
+        8,
+        6
+      ],
+      "rendered_pins": {
+        "1": [
+          8,
+          6.82
+        ],
+        "2": [
+          8,
+          5.18
+        ],
+        "B": [
+          8.7,
+          6
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/RCB4": {
+      "name": "RCB4",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "rcb4",
+        "2": "AVSS",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "200u"
+      },
+      "source_line": "RCB4 (rcb4 AVSS SUB) rpposab_3t w=1u l=200u",
+      "sheet": 3,
+      "origin": [
+        8,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          8,
+          3.82
+        ],
+        "2": [
+          8,
+          2.18
+        ],
+        "B": [
+          8.7,
+          3
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MPST": {
+      "name": "MPST",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "st",
+        "G": "vcore",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "2.82u",
+        "l": "1u"
+      },
+      "source_line": "MPST (st vcore AVDD AVDD) p18 w=2.82u l=1u",
+      "W_unit_um": 2.82,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        27,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          19
+        ],
+        "S": [
+          27,
+          21
+        ],
+        "G": [
+          25.45,
+          20
+        ],
+        "B": [
+          27.86,
+          20
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MNST": {
+      "name": "MNST",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "st",
+        "G": "vcore",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.58u",
+        "l": "1u"
+      },
+      "source_line": "MNST (st vcore AVSS AVSS) n18 w=0.58u l=1u",
+      "W_unit_um": 0.58,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        27,
+        16
+      ],
+      "rendered_pins": {
+        "D": [
+          27,
+          17
+        ],
+        "S": [
+          27,
+          15
+        ],
+        "G": [
+          25.45,
+          16
+        ],
+        "B": [
+          27.86,
+          16
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/MSTART": {
+      "name": "MSTART",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pctrl",
+        "G": "st",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.58u",
+        "l": "1u"
+      },
+      "source_line": "MSTART (pctrl st AVSS AVSS) n18 w=0.58u l=1u",
+      "W_unit_um": 0.58,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        39,
+        16
+      ],
+      "rendered_pins": {
+        "D": [
+          39,
+          17
+        ],
+        "S": [
+          39,
+          15
+        ],
+        "G": [
+          37.45,
+          16
+        ],
+        "B": [
+          39.86,
+          16
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/RFILT": {
+      "name": "RFILT",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vcore",
+        "2": "VBG",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "30u"
+      },
+      "source_line": "RFILT (vcore VBG SUB) rpposab_3t w=1u l=30u",
+      "sheet": 3,
+      "origin": [
+        27,
+        8
+      ],
+      "rendered_pins": {
+        "1": [
+          26.18,
+          8
+        ],
+        "2": [
+          27.82,
+          8
+        ],
+        "B": [
+          27,
+          7.3
+        ]
+      },
+      "block": "bandgap"
+    },
+    "bandgap/CFILT": {
+      "name": "CFILT",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "VBG",
+        "2": "AVSS"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "205.97322u"
+      },
+      "source_line": "CFILT (VBG AVSS) mim w=100u l=205.97322u",
+      "sheet": 3,
+      "origin": [
+        38,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          38,
+          5.82
+        ],
+        "2": [
+          38,
+          4.18
+        ]
+      },
+      "block": "bandgap"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MP0": {
+      "name": "MP0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pc0",
+        "G": "pctrl",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "52.02u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MP0 (pc0 pctrl AVDD AVDD) p18 w=52.02u l=4u m=2",
+      "W_unit_um": 52.02,
+      "L_um": 4.0,
+      "m": 2.0,
+      "definition": "bandgap/MP0",
+      "path": "MP0"
+    },
+    "MP1": {
+      "name": "MP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pc1",
+        "G": "pctrl",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "52.02u",
+        "l": "4u",
+        "m": "2"
+      },
+      "source_line": "MP1 (pc1 pctrl AVDD AVDD) p18 w=52.02u l=4u m=2",
+      "W_unit_um": 52.02,
+      "L_um": 4.0,
+      "m": 2.0,
+      "definition": "bandgap/MP1",
+      "path": "MP1"
+    },
+    "MP2": {
+      "name": "MP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pc2",
+        "G": "pctrl",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "52.02u",
+        "l": "4u",
+        "m": "4"
+      },
+      "source_line": "MP2 (pc2 pctrl AVDD AVDD) p18 w=52.02u l=4u m=4",
+      "W_unit_um": 52.02,
+      "L_um": 4.0,
+      "m": 4.0,
+      "definition": "bandgap/MP2",
+      "path": "MP2"
+    },
+    "Q0": {
+      "name": "Q0",
+      "kind": "BJT",
+      "model": "npn18a4",
+      "pins": {
+        "C": "va",
+        "B": "va",
+        "E": "AVSS",
+        "SUB": "SUB"
+      },
+      "parameters": {
+        "area": "1"
+      },
+      "source_line": "Q0 (va va AVSS SUB) npn18a4 area=1",
+      "definition": "bandgap/Q0",
+      "path": "Q0"
+    },
+    "RPTAT": {
+      "name": "RPTAT",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vb",
+        "2": "n1",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "16.5u"
+      },
+      "source_line": "RPTAT (vb n1 SUB) rpposab_3t w=1u l=16.5u",
+      "definition": "bandgap/RPTAT",
+      "path": "RPTAT"
+    },
+    "Q1": {
+      "name": "Q1",
+      "kind": "BJT",
+      "model": "npn18a4",
+      "pins": {
+        "C": "n1",
+        "B": "n1",
+        "E": "AVSS",
+        "SUB": "SUB"
+      },
+      "parameters": {
+        "area": "8"
+      },
+      "source_line": "Q1 (n1 n1 AVSS SUB) npn18a4 area=8",
+      "definition": "bandgap/Q1",
+      "path": "Q1"
+    },
+    "RREF": {
+      "name": "RREF",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vcore",
+        "2": "vctat",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "73.3u"
+      },
+      "source_line": "RREF (vcore vctat SUB) rpposab_3t w=1u l=73.3u",
+      "definition": "bandgap/RREF",
+      "path": "RREF"
+    },
+    "QREF": {
+      "name": "QREF",
+      "kind": "BJT",
+      "model": "npn18a4",
+      "pins": {
+        "C": "vctat",
+        "B": "vctat",
+        "E": "AVSS",
+        "SUB": "SUB"
+      },
+      "parameters": {
+        "area": "2"
+      },
+      "source_line": "QREF (vctat vctat AVSS SUB) npn18a4 area=2",
+      "definition": "bandgap/QREF",
+      "path": "QREF"
+    },
+    "CCORE": {
+      "name": "CCORE",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "vcore",
+        "2": "AVSS"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "617.91967u"
+      },
+      "source_line": "CCORE (vcore AVSS) mim w=100u l=617.91967u",
+      "definition": "bandgap/CCORE",
+      "path": "CCORE"
+    },
+    "RFILT": {
+      "name": "RFILT",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vcore",
+        "2": "VBG",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "30u"
+      },
+      "source_line": "RFILT (vcore VBG SUB) rpposab_3t w=1u l=30u",
+      "definition": "bandgap/RFILT",
+      "path": "RFILT"
+    },
+    "CFILT": {
+      "name": "CFILT",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "VBG",
+        "2": "AVSS"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "205.97322u"
+      },
+      "source_line": "CFILT (VBG AVSS) mim w=100u l=205.97322u",
+      "definition": "bandgap/CFILT",
+      "path": "CFILT"
+    },
+    "MPC0": {
+      "name": "MPC0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "va",
+        "G": "cbias",
+        "S": "pc0",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "25.3u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPC0 (va cbias pc0 AVDD) p18 w=25.3u l=1u m=1",
+      "W_unit_um": 25.299999999999997,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "bandgap/MPC0",
+      "path": "MPC0"
+    },
+    "MPC1": {
+      "name": "MPC1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vb",
+        "G": "cbias",
+        "S": "pc1",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "25.3u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPC1 (vb cbias pc1 AVDD) p18 w=25.3u l=1u m=1",
+      "W_unit_um": 25.299999999999997,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "bandgap/MPC1",
+      "path": "MPC1"
+    },
+    "MPC2": {
+      "name": "MPC2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vcore",
+        "G": "cbias",
+        "S": "pc2",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "25.3u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MPC2 (vcore cbias pc2 AVDD) p18 w=25.3u l=1u m=2",
+      "W_unit_um": 25.299999999999997,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "bandgap/MPC2",
+      "path": "MPC2"
+    },
+    "MPCB": {
+      "name": "MPCB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "cbias",
+        "G": "cbias",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "0.76u",
+        "l": "1u"
+      },
+      "source_line": "MPCB (cbias cbias AVDD AVDD) p18 w=0.76u l=1u",
+      "W_unit_um": 0.7599999999999999,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "bandgap/MPCB",
+      "path": "MPCB"
+    },
+    "RCB0": {
+      "name": "RCB0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "cbias",
+        "2": "rcb1",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "200u"
+      },
+      "source_line": "RCB0 (cbias rcb1 SUB) rpposab_3t w=1u l=200u",
+      "definition": "bandgap/RCB0",
+      "path": "RCB0"
+    },
+    "RCB1": {
+      "name": "RCB1",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "rcb1",
+        "2": "rcb2",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "200u"
+      },
+      "source_line": "RCB1 (rcb1 rcb2 SUB) rpposab_3t w=1u l=200u",
+      "definition": "bandgap/RCB1",
+      "path": "RCB1"
+    },
+    "RCB2": {
+      "name": "RCB2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "rcb2",
+        "2": "rcb3",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "200u"
+      },
+      "source_line": "RCB2 (rcb2 rcb3 SUB) rpposab_3t w=1u l=200u",
+      "definition": "bandgap/RCB2",
+      "path": "RCB2"
+    },
+    "RCB3": {
+      "name": "RCB3",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "rcb3",
+        "2": "rcb4",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "200u"
+      },
+      "source_line": "RCB3 (rcb3 rcb4 SUB) rpposab_3t w=1u l=200u",
+      "definition": "bandgap/RCB3",
+      "path": "RCB3"
+    },
+    "RCB4": {
+      "name": "RCB4",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "rcb4",
+        "2": "AVSS",
+        "B": "SUB"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "200u"
+      },
+      "source_line": "RCB4 (rcb4 AVSS SUB) rpposab_3t w=1u l=200u",
+      "definition": "bandgap/RCB4",
+      "path": "RCB4"
+    },
+    "MPA": {
+      "name": "MPA",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "namp",
+        "G": "pctrl",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "31.220000000000002u",
+        "l": "4u"
+      },
+      "source_line": "MPA (namp pctrl AVDD AVDD) p18 w=31.220000000000002u l=4u",
+      "W_unit_um": 31.220000000000002,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "bandgap/MPA",
+      "path": "MPA"
+    },
+    "MPCA": {
+      "name": "MPCA",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nbias",
+        "G": "cbias",
+        "S": "namp",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "7.58u",
+        "l": "1u"
+      },
+      "source_line": "MPCA (nbias cbias namp AVDD) p18 w=7.58u l=1u",
+      "W_unit_um": 7.579999999999999,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "bandgap/MPCA",
+      "path": "MPCA"
+    },
+    "MNB": {
+      "name": "MNB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nbias",
+        "G": "nbias",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "3.46u",
+        "l": "4u"
+      },
+      "source_line": "MNB (nbias nbias AVSS AVSS) n18 w=3.46u l=4u",
+      "W_unit_um": 3.46,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "bandgap/MNB",
+      "path": "MNB"
+    },
+    "MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "nbias",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "3.46u",
+        "l": "4u",
+        "m": "3"
+      },
+      "source_line": "MTAIL (tail nbias AVSS AVSS) n18 w=3.46u l=4u m=3",
+      "W_unit_um": 3.46,
+      "L_um": 4.0,
+      "m": 3.0,
+      "definition": "bandgap/MTAIL",
+      "path": "MTAIL"
+    },
+    "MINA": {
+      "name": "MINA",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pctrl",
+        "G": "va",
+        "S": "tail",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "48.5u",
+        "l": "4u"
+      },
+      "source_line": "MINA (pctrl va tail AVSS) n18 w=48.5u l=4u",
+      "W_unit_um": 48.5,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "bandgap/MINA",
+      "path": "MINA"
+    },
+    "MINB": {
+      "name": "MINB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nout",
+        "G": "vb",
+        "S": "tail",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "48.5u",
+        "l": "4u"
+      },
+      "source_line": "MINB (nout vb tail AVSS) n18 w=48.5u l=4u",
+      "W_unit_um": 48.5,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "bandgap/MINB",
+      "path": "MINB"
+    },
+    "MPD": {
+      "name": "MPD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nout",
+        "G": "nout",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "50.72u",
+        "l": "4u"
+      },
+      "source_line": "MPD (nout nout AVDD AVDD) p18 w=50.72u l=4u",
+      "W_unit_um": 50.72,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "bandgap/MPD",
+      "path": "MPD"
+    },
+    "MPM": {
+      "name": "MPM",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pctrl",
+        "G": "nout",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "50.72u",
+        "l": "4u"
+      },
+      "source_line": "MPM (pctrl nout AVDD AVDD) p18 w=50.72u l=4u",
+      "W_unit_um": 50.72,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "bandgap/MPM",
+      "path": "MPM"
+    },
+    "CCOMP": {
+      "name": "CCOMP",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "pctrl",
+        "2": "AVSS"
+      },
+      "parameters": {
+        "w": "50u",
+        "l": "10.298661u"
+      },
+      "source_line": "CCOMP (pctrl AVSS) mim w=50u l=10.298661u",
+      "definition": "bandgap/CCOMP",
+      "path": "CCOMP"
+    },
+    "MPST": {
+      "name": "MPST",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "st",
+        "G": "vcore",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "2.82u",
+        "l": "1u"
+      },
+      "source_line": "MPST (st vcore AVDD AVDD) p18 w=2.82u l=1u",
+      "W_unit_um": 2.82,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "bandgap/MPST",
+      "path": "MPST"
+    },
+    "MNST": {
+      "name": "MNST",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "st",
+        "G": "vcore",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.58u",
+        "l": "1u"
+      },
+      "source_line": "MNST (st vcore AVSS AVSS) n18 w=0.58u l=1u",
+      "W_unit_um": 0.58,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "bandgap/MNST",
+      "path": "MNST"
+    },
+    "MSTART": {
+      "name": "MSTART",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pctrl",
+        "G": "st",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.58u",
+        "l": "1u"
+      },
+      "source_line": "MSTART (pctrl st AVSS AVSS) n18 w=0.58u l=1u",
+      "W_unit_um": 0.58,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "bandgap/MSTART",
+      "path": "MSTART"
+    }
+  },
+  "nets": {
+    "bandgap/pc0": [
+      {
+        "instance": "bandgap/MP0",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          7,
+          19
+        ]
+      },
+      {
+        "instance": "bandgap/MPC0",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          7,
+          17
+        ]
+      }
+    ],
+    "bandgap/pctrl": [
+      {
+        "instance": "bandgap/MP0",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          5.45,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MP1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          19.45,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MP2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          33.45,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MPA",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          5.45,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MPM",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          22,
+          19
+        ]
+      },
+      {
+        "instance": "bandgap/MINA",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          22,
+          12
+        ]
+      },
+      {
+        "instance": "bandgap/CCOMP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          15,
+          6.82
+        ]
+      },
+      {
+        "instance": "bandgap/MSTART",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          39,
+          17
+        ]
+      }
+    ],
+    "bandgap/AVDD": [
+      {
+        "instance": "bandgap/MP0",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          7,
+          21
+        ]
+      },
+      {
+        "instance": "bandgap/MP0",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          7.86,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MPC0",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          7.86,
+          16
+        ]
+      },
+      {
+        "instance": "bandgap/MP1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          21,
+          21
+        ]
+      },
+      {
+        "instance": "bandgap/MP1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          21.86,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MPC1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          21.86,
+          16
+        ]
+      },
+      {
+        "instance": "bandgap/MP2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          35,
+          21
+        ]
+      },
+      {
+        "instance": "bandgap/MP2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          35.86,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MPC2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          35.86,
+          16
+        ]
+      },
+      {
+        "instance": "bandgap/MPA",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          7,
+          21
+        ]
+      },
+      {
+        "instance": "bandgap/MPA",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          7.86,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MPCA",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          7.86,
+          16
+        ]
+      },
+      {
+        "instance": "bandgap/MPM",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          22,
+          21
+        ]
+      },
+      {
+        "instance": "bandgap/MPM",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          22.86,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MPD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          36,
+          21
+        ]
+      },
+      {
+        "instance": "bandgap/MPD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          36.86,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MPCB",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          8,
+          21
+        ]
+      },
+      {
+        "instance": "bandgap/MPCB",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          8.86,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MPST",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          27,
+          21
+        ]
+      },
+      {
+        "instance": "bandgap/MPST",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          27.86,
+          20
+        ]
+      }
+    ],
+    "bandgap/va": [
+      {
+        "instance": "bandgap/MPC0",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          7,
+          15
+        ]
+      },
+      {
+        "instance": "bandgap/Q0",
+        "pin": "C",
+        "sheet": 1,
+        "point": [
+          7,
+          6
+        ]
+      },
+      {
+        "instance": "bandgap/Q0",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          5.45,
+          5
+        ]
+      },
+      {
+        "instance": "bandgap/MINA",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          20.45,
+          11
+        ]
+      }
+    ],
+    "bandgap/cbias": [
+      {
+        "instance": "bandgap/MPC0",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          5.45,
+          16
+        ]
+      },
+      {
+        "instance": "bandgap/MPC1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          19.45,
+          16
+        ]
+      },
+      {
+        "instance": "bandgap/MPC2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          33.45,
+          16
+        ]
+      },
+      {
+        "instance": "bandgap/MPCA",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          5.45,
+          16
+        ]
+      },
+      {
+        "instance": "bandgap/MPCB",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          8,
+          19
+        ]
+      },
+      {
+        "instance": "bandgap/MPCB",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          6.45,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/RCB0",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          8,
+          15.82
+        ]
+      }
+    ],
+    "bandgap/pc1": [
+      {
+        "instance": "bandgap/MP1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          21,
+          19
+        ]
+      },
+      {
+        "instance": "bandgap/MPC1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          21,
+          17
+        ]
+      }
+    ],
+    "bandgap/vb": [
+      {
+        "instance": "bandgap/MPC1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          21,
+          15
+        ]
+      },
+      {
+        "instance": "bandgap/RPTAT",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          21,
+          11.82
+        ]
+      },
+      {
+        "instance": "bandgap/MINB",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          34.45,
+          11
+        ]
+      }
+    ],
+    "bandgap/pc2": [
+      {
+        "instance": "bandgap/MP2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          35,
+          19
+        ]
+      },
+      {
+        "instance": "bandgap/MPC2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          35,
+          17
+        ]
+      }
+    ],
+    "bandgap/vcore": [
+      {
+        "instance": "bandgap/MPC2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          35,
+          15
+        ]
+      },
+      {
+        "instance": "bandgap/RREF",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          35,
+          11.82
+        ]
+      },
+      {
+        "instance": "bandgap/CCORE",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          40,
+          10.82
+        ]
+      },
+      {
+        "instance": "bandgap/MPST",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          25.45,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MNST",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          25.45,
+          16
+        ]
+      },
+      {
+        "instance": "bandgap/RFILT",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          26.18,
+          8
+        ]
+      }
+    ],
+    "bandgap/AVSS": [
+      {
+        "instance": "bandgap/Q0",
+        "pin": "E",
+        "sheet": 1,
+        "point": [
+          7,
+          4
+        ]
+      },
+      {
+        "instance": "bandgap/Q1",
+        "pin": "E",
+        "sheet": 1,
+        "point": [
+          21,
+          4
+        ]
+      },
+      {
+        "instance": "bandgap/QREF",
+        "pin": "E",
+        "sheet": 1,
+        "point": [
+          35,
+          4
+        ]
+      },
+      {
+        "instance": "bandgap/CCORE",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          40,
+          9.18
+        ]
+      },
+      {
+        "instance": "bandgap/MNB",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          7,
+          7
+        ]
+      },
+      {
+        "instance": "bandgap/MNB",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          7.86,
+          8
+        ]
+      },
+      {
+        "instance": "bandgap/MINA",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          22.86,
+          11
+        ]
+      },
+      {
+        "instance": "bandgap/MINB",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          36.86,
+          11
+        ]
+      },
+      {
+        "instance": "bandgap/MTAIL",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          29,
+          4
+        ]
+      },
+      {
+        "instance": "bandgap/MTAIL",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          29.86,
+          5
+        ]
+      },
+      {
+        "instance": "bandgap/CCOMP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          15,
+          5.18
+        ]
+      },
+      {
+        "instance": "bandgap/RCB4",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          8,
+          2.18
+        ]
+      },
+      {
+        "instance": "bandgap/MNST",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          27,
+          15
+        ]
+      },
+      {
+        "instance": "bandgap/MNST",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          27.86,
+          16
+        ]
+      },
+      {
+        "instance": "bandgap/MSTART",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          39,
+          15
+        ]
+      },
+      {
+        "instance": "bandgap/MSTART",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          39.86,
+          16
+        ]
+      },
+      {
+        "instance": "bandgap/CFILT",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          38,
+          4.18
+        ]
+      }
+    ],
+    "bandgap/SUB": [
+      {
+        "instance": "bandgap/Q0",
+        "pin": "SUB",
+        "sheet": 1,
+        "point": [
+          7.95,
+          5
+        ]
+      },
+      {
+        "instance": "bandgap/Q1",
+        "pin": "SUB",
+        "sheet": 1,
+        "point": [
+          21.95,
+          5
+        ]
+      },
+      {
+        "instance": "bandgap/QREF",
+        "pin": "SUB",
+        "sheet": 1,
+        "point": [
+          35.95,
+          5
+        ]
+      },
+      {
+        "instance": "bandgap/RPTAT",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          21.7,
+          11
+        ]
+      },
+      {
+        "instance": "bandgap/RREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          35.7,
+          11
+        ]
+      },
+      {
+        "instance": "bandgap/RCB0",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          8.7,
+          15
+        ]
+      },
+      {
+        "instance": "bandgap/RCB1",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          8.7,
+          12
+        ]
+      },
+      {
+        "instance": "bandgap/RCB2",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          8.7,
+          9
+        ]
+      },
+      {
+        "instance": "bandgap/RCB3",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          8.7,
+          6
+        ]
+      },
+      {
+        "instance": "bandgap/RCB4",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          8.7,
+          3
+        ]
+      },
+      {
+        "instance": "bandgap/RFILT",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          27,
+          7.3
+        ]
+      }
+    ],
+    "bandgap/n1": [
+      {
+        "instance": "bandgap/Q1",
+        "pin": "C",
+        "sheet": 1,
+        "point": [
+          21,
+          6
+        ]
+      },
+      {
+        "instance": "bandgap/Q1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          19.45,
+          5
+        ]
+      },
+      {
+        "instance": "bandgap/RPTAT",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          21,
+          10.18
+        ]
+      }
+    ],
+    "bandgap/vctat": [
+      {
+        "instance": "bandgap/QREF",
+        "pin": "C",
+        "sheet": 1,
+        "point": [
+          35,
+          6
+        ]
+      },
+      {
+        "instance": "bandgap/QREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          33.45,
+          5
+        ]
+      },
+      {
+        "instance": "bandgap/RREF",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          35,
+          10.18
+        ]
+      }
+    ],
+    "bandgap/namp": [
+      {
+        "instance": "bandgap/MPA",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          7,
+          19
+        ]
+      },
+      {
+        "instance": "bandgap/MPCA",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          7,
+          17
+        ]
+      }
+    ],
+    "bandgap/nbias": [
+      {
+        "instance": "bandgap/MPCA",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          7,
+          15
+        ]
+      },
+      {
+        "instance": "bandgap/MNB",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          7,
+          9
+        ]
+      },
+      {
+        "instance": "bandgap/MNB",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          5.45,
+          8
+        ]
+      },
+      {
+        "instance": "bandgap/MTAIL",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          27.45,
+          5
+        ]
+      }
+    ],
+    "bandgap/nout": [
+      {
+        "instance": "bandgap/MPM",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          20.45,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MPD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          36,
+          19
+        ]
+      },
+      {
+        "instance": "bandgap/MPD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          34.45,
+          20
+        ]
+      },
+      {
+        "instance": "bandgap/MINB",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          36,
+          12
+        ]
+      }
+    ],
+    "bandgap/tail": [
+      {
+        "instance": "bandgap/MINA",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          22,
+          10
+        ]
+      },
+      {
+        "instance": "bandgap/MINB",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          36,
+          10
+        ]
+      },
+      {
+        "instance": "bandgap/MTAIL",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          29,
+          6
+        ]
+      }
+    ],
+    "bandgap/rcb1": [
+      {
+        "instance": "bandgap/RCB0",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          8,
+          14.18
+        ]
+      },
+      {
+        "instance": "bandgap/RCB1",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          8,
+          12.82
+        ]
+      }
+    ],
+    "bandgap/rcb2": [
+      {
+        "instance": "bandgap/RCB1",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          8,
+          11.18
+        ]
+      },
+      {
+        "instance": "bandgap/RCB2",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          8,
+          9.82
+        ]
+      }
+    ],
+    "bandgap/rcb3": [
+      {
+        "instance": "bandgap/RCB2",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          8,
+          8.18
+        ]
+      },
+      {
+        "instance": "bandgap/RCB3",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          8,
+          6.82
+        ]
+      }
+    ],
+    "bandgap/rcb4": [
+      {
+        "instance": "bandgap/RCB3",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          8,
+          5.18
+        ]
+      },
+      {
+        "instance": "bandgap/RCB4",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          8,
+          3.82
+        ]
+      }
+    ],
+    "bandgap/st": [
+      {
+        "instance": "bandgap/MPST",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          27,
+          19
+        ]
+      },
+      {
+        "instance": "bandgap/MNST",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          27,
+          17
+        ]
+      },
+      {
+        "instance": "bandgap/MSTART",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          37.45,
+          16
+        ]
+      }
+    ],
+    "bandgap/VBG": [
+      {
+        "instance": "bandgap/RFILT",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          27.82,
+          8
+        ]
+      },
+      {
+        "instance": "bandgap/CFILT",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          38,
+          5.82
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MPC0",
+      "pin": "G",
+      "net": "cbias",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC1",
+      "pin": "G",
+      "net": "cbias",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC2",
+      "pin": "G",
+      "net": "cbias",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "QREF",
+      "pin": "C",
+      "net": "vctat",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "QREF",
+      "pin": "B",
+      "net": "vctat",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "RREF",
+      "pin": "2",
+      "net": "vctat",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "D",
+      "net": "pc1",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC1",
+      "pin": "S",
+      "net": "pc1",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP0",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP0",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC0",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC1",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC2",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "Q1",
+      "pin": "C",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "Q1",
+      "pin": "B",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "RPTAT",
+      "pin": "2",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP0",
+      "pin": "G",
+      "net": "pctrl",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "G",
+      "net": "pctrl",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "G",
+      "net": "pctrl",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "Q0",
+      "pin": "SUB",
+      "net": "SUB",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "Q1",
+      "pin": "SUB",
+      "net": "SUB",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "QREF",
+      "pin": "SUB",
+      "net": "SUB",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "RPTAT",
+      "pin": "B",
+      "net": "SUB",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "RREF",
+      "pin": "B",
+      "net": "SUB",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC1",
+      "pin": "D",
+      "net": "vb",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "RPTAT",
+      "pin": "1",
+      "net": "vb",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "Q0",
+      "pin": "E",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "Q1",
+      "pin": "E",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "QREF",
+      "pin": "E",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "CCORE",
+      "pin": "2",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC0",
+      "pin": "D",
+      "net": "va",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "Q0",
+      "pin": "C",
+      "net": "va",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "Q0",
+      "pin": "B",
+      "net": "va",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC2",
+      "pin": "D",
+      "net": "vcore",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "RREF",
+      "pin": "1",
+      "net": "vcore",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "CCORE",
+      "pin": "1",
+      "net": "vcore",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP0",
+      "pin": "D",
+      "net": "pc0",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC0",
+      "pin": "S",
+      "net": "pc0",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "D",
+      "net": "pc2",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPC2",
+      "pin": "S",
+      "net": "pc2",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCA",
+      "pin": "G",
+      "net": "cbias",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINA",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINB",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "D",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM",
+      "pin": "G",
+      "net": "nout",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD",
+      "pin": "D",
+      "net": "nout",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD",
+      "pin": "G",
+      "net": "nout",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINB",
+      "pin": "D",
+      "net": "nout",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPA",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPA",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCA",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPA",
+      "pin": "G",
+      "net": "pctrl",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM",
+      "pin": "D",
+      "net": "pctrl",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINA",
+      "pin": "D",
+      "net": "pctrl",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "CCOMP",
+      "pin": "1",
+      "net": "pctrl",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPA",
+      "pin": "D",
+      "net": "namp",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCA",
+      "pin": "S",
+      "net": "namp",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINB",
+      "pin": "G",
+      "net": "vb",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNB",
+      "pin": "S",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNB",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINA",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINB",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "S",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "CCOMP",
+      "pin": "2",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINA",
+      "pin": "G",
+      "net": "va",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPCA",
+      "pin": "D",
+      "net": "nbias",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNB",
+      "pin": "D",
+      "net": "nbias",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNB",
+      "pin": "G",
+      "net": "nbias",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "G",
+      "net": "nbias",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB3",
+      "pin": "2",
+      "net": "rcb4",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB4",
+      "pin": "1",
+      "net": "rcb4",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPCB",
+      "pin": "D",
+      "net": "cbias",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPCB",
+      "pin": "G",
+      "net": "cbias",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB0",
+      "pin": "1",
+      "net": "cbias",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB2",
+      "pin": "2",
+      "net": "rcb3",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB3",
+      "pin": "1",
+      "net": "rcb3",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB1",
+      "pin": "2",
+      "net": "rcb2",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB2",
+      "pin": "1",
+      "net": "rcb2",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPCB",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPCB",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPST",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPST",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPST",
+      "pin": "D",
+      "net": "st",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNST",
+      "pin": "D",
+      "net": "st",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MSTART",
+      "pin": "G",
+      "net": "st",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MSTART",
+      "pin": "D",
+      "net": "pctrl",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB0",
+      "pin": "B",
+      "net": "SUB",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB1",
+      "pin": "B",
+      "net": "SUB",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB2",
+      "pin": "B",
+      "net": "SUB",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB3",
+      "pin": "B",
+      "net": "SUB",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB4",
+      "pin": "B",
+      "net": "SUB",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RFILT",
+      "pin": "B",
+      "net": "SUB",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB4",
+      "pin": "2",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNST",
+      "pin": "S",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNST",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MSTART",
+      "pin": "S",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MSTART",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "CFILT",
+      "pin": "2",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RFILT",
+      "pin": "2",
+      "net": "VBG",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "CFILT",
+      "pin": "1",
+      "net": "VBG",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB0",
+      "pin": "2",
+      "net": "rcb1",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RCB1",
+      "pin": "1",
+      "net": "rcb1",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPST",
+      "pin": "G",
+      "net": "vcore",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNST",
+      "pin": "G",
+      "net": "vcore",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    },
+    {
+      "sheet": 3,
+      "instance": "RFILT",
+      "pin": "1",
+      "net": "vcore",
+      "path_to_named_net": true,
+      "block": "bandgap"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "bandgap",
+      "title": "级联PTAT/CTAT核心",
+      "wires": [
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              7.86,
+              20
+            ],
+            [
+              8.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              7.86,
+              16
+            ],
+            [
+              8.15,
+              16
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              7,
+              21
+            ],
+            [
+              7,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pc0",
+          "points": [
+            [
+              7,
+              19
+            ],
+            [
+              7,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              21.86,
+              20
+            ],
+            [
+              22.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              21.86,
+              16
+            ],
+            [
+              22.15,
+              16
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              21,
+              21
+            ],
+            [
+              21,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pc1",
+          "points": [
+            [
+              21,
+              19
+            ],
+            [
+              21,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              35.86,
+              20
+            ],
+            [
+              36.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              35.86,
+              16
+            ],
+            [
+              36.15,
+              16
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              35,
+              21
+            ],
+            [
+              35,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pc2",
+          "points": [
+            [
+              35,
+              19
+            ],
+            [
+              35,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              7,
+              23
+            ],
+            [
+              35,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "points": [
+            [
+              7.95,
+              5
+            ],
+            [
+              8.3,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "va",
+          "points": [
+            [
+              7,
+              6
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              5.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              7,
+              4
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "points": [
+            [
+              21.95,
+              5
+            ],
+            [
+              22.3,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              21,
+              6
+            ],
+            [
+              21,
+              8
+            ],
+            [
+              19,
+              8
+            ],
+            [
+              19,
+              5
+            ],
+            [
+              19.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              21,
+              4
+            ],
+            [
+              21,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "points": [
+            [
+              35.95,
+              5
+            ],
+            [
+              36.3,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vctat",
+          "points": [
+            [
+              35,
+              6
+            ],
+            [
+              35,
+              8
+            ],
+            [
+              33,
+              8
+            ],
+            [
+              33,
+              5
+            ],
+            [
+              33.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              35,
+              4
+            ],
+            [
+              35,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "va",
+          "points": [
+            [
+              7,
+              15
+            ],
+            [
+              7,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "points": [
+            [
+              21.7,
+              11
+            ],
+            [
+              22.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vb",
+          "points": [
+            [
+              21,
+              15
+            ],
+            [
+              21,
+              11.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              21,
+              10.18
+            ],
+            [
+              21,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "points": [
+            [
+              35.7,
+              11
+            ],
+            [
+              36.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vcore",
+          "points": [
+            [
+              35,
+              15
+            ],
+            [
+              35,
+              11.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vctat",
+          "points": [
+            [
+              35,
+              10.18
+            ],
+            [
+              35,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcore",
+          "points": [
+            [
+              35,
+              14
+            ],
+            [
+              40,
+              14
+            ],
+            [
+              40,
+              10.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              40,
+              9.18
+            ],
+            [
+              40,
+              2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "points": [
+            [
+              5.45,
+              20
+            ],
+            [
+              4.9,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cbias",
+          "points": [
+            [
+              5.45,
+              16
+            ],
+            [
+              4.9,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "points": [
+            [
+              19.45,
+              20
+            ],
+            [
+              18.9,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cbias",
+          "points": [
+            [
+              19.45,
+              16
+            ],
+            [
+              18.9,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "points": [
+            [
+              33.45,
+              20
+            ],
+            [
+              32.900000000000006,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cbias",
+          "points": [
+            [
+              33.45,
+              16
+            ],
+            [
+              32.900000000000006,
+              16
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "AVDD",
+          "point": [
+            8.15,
+            20
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            8.15,
+            16
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "pc0",
+          "point": [
+            7,
+            18
+          ],
+          "text": "pc0",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            22.15,
+            20
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            22.15,
+            16
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "pc1",
+          "point": [
+            21,
+            18
+          ],
+          "text": "pc1",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            36.15,
+            20
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            36.15,
+            16
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "pc2",
+          "point": [
+            35,
+            18
+          ],
+          "text": "pc2",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            7,
+            23
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "point": [
+            8.3,
+            5
+          ],
+          "text": "SUB",
+          "body": true
+        },
+        {
+          "net": "va",
+          "point": [
+            7,
+            8
+          ],
+          "text": "va",
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "point": [
+            22.3,
+            5
+          ],
+          "text": "SUB",
+          "body": true
+        },
+        {
+          "net": "n1",
+          "point": [
+            21,
+            8
+          ],
+          "text": "n1",
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "point": [
+            36.3,
+            5
+          ],
+          "text": "SUB",
+          "body": true
+        },
+        {
+          "net": "vctat",
+          "point": [
+            35,
+            8
+          ],
+          "text": "vctat",
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "point": [
+            22.15,
+            11
+          ],
+          "text": "SUB",
+          "body": true
+        },
+        {
+          "net": "vb",
+          "point": [
+            21,
+            14
+          ],
+          "text": "vb",
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "point": [
+            36.15,
+            11
+          ],
+          "text": "SUB",
+          "body": true
+        },
+        {
+          "net": "vcore",
+          "point": [
+            35,
+            14
+          ],
+          "text": "vcore",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            7,
+            2
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "point": [
+            4.9,
+            20
+          ],
+          "text": "pctrl",
+          "body": false
+        },
+        {
+          "net": "cbias",
+          "point": [
+            4.9,
+            16
+          ],
+          "text": "cbias",
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "point": [
+            18.9,
+            20
+          ],
+          "text": "pctrl",
+          "body": false
+        },
+        {
+          "net": "cbias",
+          "point": [
+            18.9,
+            16
+          ],
+          "text": "cbias",
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "point": [
+            32.900000000000006,
+            20
+          ],
+          "text": "pctrl",
+          "body": false
+        },
+        {
+          "net": "cbias",
+          "point": [
+            32.900000000000006,
+            16
+          ],
+          "text": "cbias",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "bandgap",
+      "title": "自偏置误差放大器与补偿",
+      "wires": [
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              7.86,
+              20
+            ],
+            [
+              8.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              7.86,
+              16
+            ],
+            [
+              8.15,
+              16
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              7,
+              21
+            ],
+            [
+              7,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "namp",
+          "points": [
+            [
+              7,
+              19
+            ],
+            [
+              7,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              7.86,
+              8
+            ],
+            [
+              8.15,
+              8
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "nbias",
+          "points": [
+            [
+              5.45,
+              8
+            ],
+            [
+              4.95,
+              8
+            ],
+            [
+              4.95,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nbias",
+          "points": [
+            [
+              7,
+              15
+            ],
+            [
+              7,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              7,
+              7
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              22.86,
+              20
+            ],
+            [
+              23.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              22,
+              21
+            ],
+            [
+              22,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              36.86,
+              20
+            ],
+            [
+              37.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              36,
+              21
+            ],
+            [
+              36,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              7,
+              23
+            ],
+            [
+              36,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              22.86,
+              11
+            ],
+            [
+              23.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pctrl",
+          "points": [
+            [
+              22,
+              12
+            ],
+            [
+              22,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              22,
+              10
+            ],
+            [
+              22,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              36.86,
+              11
+            ],
+            [
+              37.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "nout",
+          "points": [
+            [
+              36,
+              12
+            ],
+            [
+              36,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              36,
+              10
+            ],
+            [
+              36,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              22,
+              8
+            ],
+            [
+              36,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              29.86,
+              5
+            ],
+            [
+              30.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              29,
+              6
+            ],
+            [
+              29,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              29,
+              4
+            ],
+            [
+              29,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nout",
+          "points": [
+            [
+              36,
+              17
+            ],
+            [
+              33.7,
+              17
+            ],
+            [
+              33.7,
+              20
+            ],
+            [
+              34.45,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nout",
+          "points": [
+            [
+              33.7,
+              20
+            ],
+            [
+              33.7,
+              21.9
+            ],
+            [
+              18.9,
+              21.9
+            ],
+            [
+              18.9,
+              20
+            ],
+            [
+              20.45,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "points": [
+            [
+              15,
+              6.82
+            ],
+            [
+              15,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              15,
+              5.18
+            ],
+            [
+              15,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "points": [
+            [
+              5.45,
+              20
+            ],
+            [
+              4.9,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cbias",
+          "points": [
+            [
+              5.45,
+              16
+            ],
+            [
+              4.9,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "va",
+          "points": [
+            [
+              20.45,
+              11
+            ],
+            [
+              19.9,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vb",
+          "points": [
+            [
+              34.45,
+              11
+            ],
+            [
+              33.900000000000006,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nbias",
+          "points": [
+            [
+              27.45,
+              5
+            ],
+            [
+              26.9,
+              5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "AVDD",
+          "point": [
+            8.15,
+            20
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            8.15,
+            16
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "namp",
+          "point": [
+            7,
+            18
+          ],
+          "text": "namp",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            8.15,
+            8
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "nbias",
+          "point": [
+            7,
+            13
+          ],
+          "text": "nbias",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            7,
+            3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            23.15,
+            20
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            37.15,
+            20
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            7,
+            23
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            23.15,
+            11
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "pctrl",
+          "point": [
+            22,
+            14
+          ],
+          "text": "pctrl",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            37.15,
+            11
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "nout",
+          "point": [
+            36,
+            14
+          ],
+          "text": "nout",
+          "body": false
+        },
+        {
+          "net": "tail",
+          "point": [
+            29,
+            8
+          ],
+          "text": "tail",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            30.15,
+            5
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            29,
+            2
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "point": [
+            15,
+            9
+          ],
+          "text": "pctrl",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            15,
+            3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "point": [
+            4.9,
+            20
+          ],
+          "text": "pctrl",
+          "body": false
+        },
+        {
+          "net": "cbias",
+          "point": [
+            4.9,
+            16
+          ],
+          "text": "cbias",
+          "body": false
+        },
+        {
+          "net": "va",
+          "point": [
+            19.9,
+            11
+          ],
+          "text": "va",
+          "body": false
+        },
+        {
+          "net": "vb",
+          "point": [
+            33.900000000000006,
+            11
+          ],
+          "text": "vb",
+          "body": false
+        },
+        {
+          "net": "nbias",
+          "point": [
+            26.9,
+            5
+          ],
+          "text": "nbias",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "block": "bandgap",
+      "title": "级联偏置、启动与工艺RC输出",
+      "wires": [
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              8.86,
+              20
+            ],
+            [
+              9.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "cbias",
+          "points": [
+            [
+              6.45,
+              20
+            ],
+            [
+              5.95,
+              20
+            ],
+            [
+              5.95,
+              17.5
+            ],
+            [
+              8,
+              17.5
+            ],
+            [
+              8,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              8,
+              21
+            ],
+            [
+              8,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "points": [
+            [
+              8.7,
+              15
+            ],
+            [
+              9.15,
+              15
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "SUB",
+          "points": [
+            [
+              8.7,
+              12
+            ],
+            [
+              9.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "SUB",
+          "points": [
+            [
+              8.7,
+              9
+            ],
+            [
+              9.15,
+              9
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "SUB",
+          "points": [
+            [
+              8.7,
+              6
+            ],
+            [
+              9.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "SUB",
+          "points": [
+            [
+              8.7,
+              3
+            ],
+            [
+              9.15,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "cbias",
+          "points": [
+            [
+              8,
+              19
+            ],
+            [
+              8,
+              15.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rcb1",
+          "points": [
+            [
+              8,
+              14.18
+            ],
+            [
+              8,
+              12.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rcb2",
+          "points": [
+            [
+              8,
+              11.18
+            ],
+            [
+              8,
+              9.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rcb3",
+          "points": [
+            [
+              8,
+              8.18
+            ],
+            [
+              8,
+              6.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rcb4",
+          "points": [
+            [
+              8,
+              5.18
+            ],
+            [
+              8,
+              3.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              8,
+              2.18
+            ],
+            [
+              8,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              27.86,
+              20
+            ],
+            [
+              28.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              27.86,
+              16
+            ],
+            [
+              28.15,
+              16
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              39.86,
+              16
+            ],
+            [
+              40.15,
+              16
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "st",
+          "points": [
+            [
+              27,
+              19
+            ],
+            [
+              27,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "st",
+          "points": [
+            [
+              27,
+              18
+            ],
+            [
+              35,
+              18
+            ],
+            [
+              35,
+              16
+            ],
+            [
+              37.45,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcore",
+          "points": [
+            [
+              25.45,
+              20
+            ],
+            [
+              24,
+              20
+            ],
+            [
+              24,
+              16
+            ],
+            [
+              25.45,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "points": [
+            [
+              27,
+              7.3
+            ],
+            [
+              27,
+              6.85
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vcore",
+          "points": [
+            [
+              26.18,
+              8
+            ],
+            [
+              22,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBG",
+          "points": [
+            [
+              27.82,
+              8
+            ],
+            [
+              38,
+              8
+            ],
+            [
+              38,
+              5.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              38,
+              4.18
+            ],
+            [
+              38,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              27,
+              21
+            ],
+            [
+              27,
+              21.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              27,
+              15
+            ],
+            [
+              27,
+              14.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "points": [
+            [
+              39,
+              17
+            ],
+            [
+              39,
+              17.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              39,
+              15
+            ],
+            [
+              39,
+              14.36
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "AVDD",
+          "point": [
+            9.15,
+            20
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            8,
+            23
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "cbias",
+          "point": [
+            8,
+            17.5
+          ],
+          "text": "cbias",
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "point": [
+            9.15,
+            15
+          ],
+          "text": "SUB",
+          "body": true
+        },
+        {
+          "net": "SUB",
+          "point": [
+            9.15,
+            12
+          ],
+          "text": "SUB",
+          "body": true
+        },
+        {
+          "net": "SUB",
+          "point": [
+            9.15,
+            9
+          ],
+          "text": "SUB",
+          "body": true
+        },
+        {
+          "net": "SUB",
+          "point": [
+            9.15,
+            6
+          ],
+          "text": "SUB",
+          "body": true
+        },
+        {
+          "net": "SUB",
+          "point": [
+            9.15,
+            3
+          ],
+          "text": "SUB",
+          "body": true
+        },
+        {
+          "net": "rcb1",
+          "point": [
+            8,
+            13.5
+          ],
+          "text": "rcb1",
+          "body": false
+        },
+        {
+          "net": "rcb2",
+          "point": [
+            8,
+            10.5
+          ],
+          "text": "rcb2",
+          "body": false
+        },
+        {
+          "net": "rcb3",
+          "point": [
+            8,
+            7.5
+          ],
+          "text": "rcb3",
+          "body": false
+        },
+        {
+          "net": "rcb4",
+          "point": [
+            8,
+            4.5
+          ],
+          "text": "rcb4",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            8,
+            1.5
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            28.15,
+            20
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            28.15,
+            16
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            40.15,
+            16
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "st",
+          "point": [
+            27,
+            18
+          ],
+          "text": "st",
+          "body": false
+        },
+        {
+          "net": "vcore",
+          "point": [
+            24,
+            20
+          ],
+          "text": "vcore",
+          "body": false
+        },
+        {
+          "net": "SUB",
+          "point": [
+            27,
+            6.85
+          ],
+          "text": "SUB",
+          "body": true
+        },
+        {
+          "net": "vcore",
+          "point": [
+            22,
+            8
+          ],
+          "text": "vcore",
+          "body": false
+        },
+        {
+          "net": "VBG",
+          "point": [
+            38,
+            8
+          ],
+          "text": "VBG",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            38,
+            2
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            27,
+            21.64
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            27,
+            14.36
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "pctrl",
+          "point": [
+            39,
+            17.64
+          ],
+          "text": "pctrl",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            39,
+            14.36
+          ],
+          "text": "AVSS",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [
+    {
+      "sheet": 2,
+      "nets": [
+        "AVDD",
+        "nout"
+      ],
+      "point": [
+        22,
+        21.9
+      ],
+      "junction": false
+    }
+  ],
+  "unused_ports": {
+    "bandgap": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

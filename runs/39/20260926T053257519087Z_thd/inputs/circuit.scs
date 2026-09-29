@@ -1,0 +1,30 @@
+simulator lang=spectre
+subckt low_power_line_driver (vss iref vdd vinn vinp vout)
+MREF (iref iref vss vss) n18 w=2.22u l=1u m=10
+MTAIL (tail iref vss vss) n18 w=2.22u l=1u m=4
+MBN (pb iref vss vss) n18 w=2.22u l=1u m=2
+MBP (pb pb vdd vdd) p18 w=10.52u l=1u m=2
+MABNS (vbn pb vdd vdd) p18 w=10.52u l=1u m=1
+MABNU (vbn vbn xn vss) n18 w=0.84u l=0.36u m=1
+MABNL (xn xn vss vss) n18 w=6.94u l=0.36u m=1
+MABPS (vbp iref vss vss) n18 w=2.22u l=1u m=1
+MABPU (vbp vbp yp vdd) p18 w=3.48u l=0.36u m=1
+MABPL (yp yp vdd vdd) p18 w=26.92u l=0.36u m=1
+MINP (x3 vinp tail vss) n18 w=10.32u l=1u m=1
+MINN (x5 vinn tail vss) n18 w=10.32u l=1u m=1
+MP3 (x3 x3 vdd vdd) p18 w=10.52u l=1u m=2
+MP4 (x4 x3 vdd vdd) p18 w=10.52u l=1u m=2
+MP5 (x5 x5 vdd vdd) p18 w=10.52u l=1u m=2
+MP6 (gp x5 vdd vdd) p18 w=10.52u l=1u m=2
+MN7 (x4 x4 vss vss) n18 w=2.22u l=1u m=2
+MN8 (gn x4 vss vss) n18 w=2.22u l=1u m=2
+MCN (gp vbn gn vss) n18 w=0.84u l=0.36u m=1
+MCP (gn vbp gp vdd) p18 w=3.48u l=0.36u m=1
+MOUTP (vout gp vdd vdd) p18 w=26.92u l=0.36u m=14
+MOUTN (vout gn vss vss) n18 w=6.94u l=0.36u m=14
+RBAT (gp gn) resistor r=2M
+CCP (vout zp) capacitor c=6p
+RZP (zp gp) resistor r=1000
+CCN (vout zn) capacitor c=6p
+RZN (zn gn) resistor r=1000
+ends low_power_line_driver

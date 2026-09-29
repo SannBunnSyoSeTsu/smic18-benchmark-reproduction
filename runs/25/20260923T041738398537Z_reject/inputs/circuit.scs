@@ -1,0 +1,67 @@
+// SMIC18 TT: complementary input, constant-sum tail steering, folded summing, floating Class-AB.
+simulator lang=spectre
+subckt complementary_folded_cascode_ab_opamp (vss iref vdd vinn vinp vout)
+MREF (iref iref vss vss) n18 w=8.64u l=4u m=4
+MBN (vbp iref vss vss) n18 w=8.64u l=4u m=2
+MBP (vbp vbp vdd vdd) p18 w=42.82u l=4u m=2
+MNCB (vcn vbp vdd vdd) p18 w=42.82u l=4u m=2
+MND (vcn vcn ncb vss) n18 w=4.44u l=1u m=1
+RNC (ncb vss) resistor r=23000
+MPCB (vcp iref vss vss) n18 w=8.64u l=4u m=2
+MPD (vcp vcp pcb vdd) p18 w=21.04u l=1u m=1
+RPC (vdd pcb) resistor r=23000
+MNRB (vrefn vbp vdd vdd) p18 w=42.82u l=4u m=2
+MNREF (vrefn vrefn nrefsrc vss) n18 w=1.98u l=1u m=1
+RNR (nrefsrc vss) resistor r=3615.53
+MPRB (vrefp iref vss vss) n18 w=8.64u l=4u m=2
+MPREF (vrefp vrefp prefsrc vdd) p18 w=9.5u l=1u m=1
+RPR (vdd prefsrc) resistor r=1989.16
+MNT (ntail iref vss vss) n18 w=8.64u l=4u m=8
+MPT (ptail vbp vdd vdd) p18 w=42.82u l=4u m=8
+MNINN (fp1 vinn ntn vss) n18 w=16.26u l=1u m=4
+MNINP (fp2 vinp ntp vss) n18 w=16.26u l=1u m=4
+RINN (ntn ntail) resistor r=500
+RINP (ntp ntail) resistor r=500
+MPINN (fn1 vinn ptn ptail) p18 w=69.42u l=1u m=4
+MPINP (fn2 vinp ptp ptail) p18 w=69.42u l=1u m=4
+RIPN (ptail ptn) resistor r=300
+RIPP (ptail ptp) resistor r=300
+MNSW (swnd vrefn ntail vss) n18 w=16.26u l=1u m=8
+MPSD (swnd swnd vdd vdd) p18 w=42.82u l=4u m=8
+MPSM (ptail swnd vdd vdd) p18 w=42.82u l=4u m=8
+MPSW (swpd vrefp ptail ptail) p18 w=69.42u l=1u m=8
+MNSD (swpd swpd vss vss) n18 w=8.64u l=4u m=8
+MNSM (ntail swpd vss vss) n18 w=8.64u l=4u m=8
+MFBASE (vbsink vbp vdd vdd) p18 w=42.82u l=4u m=12
+MFADD (vbsink swnd vdd vdd) p18 w=42.82u l=4u m=4
+MFSUB (vbsink swpd vss vss) n18 w=8.64u l=4u m=4
+MFREF (vbsink vbsink vss vss) n18 w=8.64u l=4u m=12
+MFS1 (fn1 vbsink vss vss) n18 w=8.64u l=4u m=12
+MFS2 (fn2 vbsink vss vss) n18 w=8.64u l=4u m=12
+MNC1 (ml vcn fn1 vss) n18 w=4.44u l=1u m=4
+MNC2 (gn vcn fn2 vss) n18 w=4.44u l=1u m=4
+MPM1 (fp1 ml vdd vdd) p18 w=38.68u l=4u m=6
+MPM2 (fp2 ml vdd vdd) p18 w=38.68u l=4u m=6
+MPC1 (ml vcp fp1 vdd) p18 w=21.04u l=1u m=4
+MPC2 (gp vcp fp2 vdd) p18 w=21.04u l=1u m=4
+MABN (gp vabn gn vss) n18 w=4.44u l=1u m=2
+MABP (gn vabp gp vdd) p18 w=21.04u l=1u m=2
+MABNS (vabn vbp vdd vdd) p18 w=42.82u l=4u m=2
+MABNU (vabn vabn xn vss) n18 w=4.44u l=1u m=1
+MABNL (xn xn vss vss) n18 w=4.44u l=1u m=1
+MABPS (vabp iref vss vss) n18 w=8.64u l=4u m=2
+MABPU (vabp vabp yp vdd) p18 w=21.04u l=1u m=1
+MABPL (yp yp vdd vdd) p18 w=21.04u l=1u m=1
+MOUTN (vout gn vss vss) n18 w=4.44u l=1u m=20
+MOUTP (vout gp vdd vdd) p18 w=21.04u l=1u m=20
+CGN (gn vss) capacitor c=0.5p
+CGP (gp vdd) capacitor c=0.5p
+RCM1 (vinn cmin) resistor r=15000
+RCM2 (vinp cmip) resistor r=15000
+CCM1 (cmin ntail) capacitor c=4p
+CCM2 (cmip ntail) capacitor c=4p
+CCP (vout zp) capacitor c=12p
+RZP (zp fp2) resistor r=1000
+CCN (vout zn) capacitor c=12p
+RZN (zn fn2) resistor r=1000
+ends complementary_folded_cascode_ab_opamp

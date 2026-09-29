@@ -1,0 +1,62 @@
+{
+  "source": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-ota-5t-gain40-pm60-noise50uv-pvt",
+  "corner": "tt",
+  "vdd_V": 1.8,
+  "temp_C": 27,
+  "load_F": 1e-12,
+  "reference_A": 5e-05,
+  "metrics": {
+    "gain_db": [
+      "min",
+      40,
+      1000
+    ],
+    "ugb_hz": [
+      "min",
+      100000000.0
+    ],
+    "phase_margin_deg": [
+      "min",
+      60
+    ],
+    "power_W": [
+      "max",
+      0.0005
+    ],
+    "input_noise_Vrms": [
+      "max",
+      5e-05,
+      10,
+      10000000.0
+    ],
+    "cmrr_db": [
+      "min",
+      50,
+      1000
+    ],
+    "psrr_plus_db": [
+      "min",
+      30,
+      1000
+    ],
+    "psrr_minus_db": [
+      "min",
+      30,
+      1000
+    ]
+  },
+  "nominal_checks_required": [
+    "OP/bias",
+    "double-injection Middlebrook gain/UGB/PM",
+    "closed-loop input-referred noise",
+    "total VDD power including reference",
+    "natural-open-loop CMRR",
+    "natural-open-loop PSRR+",
+    "natural-open-loop PSRR-"
+  ],
+  "not_in_scope": [
+    "other PVT points",
+    "Monte Carlo",
+    "layout extraction"
+  ]
+}

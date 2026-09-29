@@ -1,0 +1,19 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/24/20260922T090830797411Z_tune/inputs/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/24/20260922T090830797411Z_tune/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=2e-5 vabstol=1e-8 iabstol=1e-14
+saveOptions options save=selected
+VDD (vdd 0) vsource dc=1.8
+VCTRL (vctrl 0) vsource type=pwl wave=[0 0 50n 0 51n .9 1.051u .9 1.052u 1 2.052u 1 2.053u 1.1 3.053u 1.1 3.054u 1.2 4.054u 1.2]
+XVCO (0 vctrl vdd vout) current_starved_ring_vco
+CL (vout 0) capacitor c=20f
+save vctrl vout VDD:p XVCO.pdio XVCO.ndio XVCO.ndeg XVCO.bo1
+save XVCO.n1 XVCO.n2 XVCO.n3 XVCO.n4 XVCO.n5 XVCO.s1t XVCO.s1b
+save XVCO.MVIN:ids XVCO.MVIN:vgs XVCO.MVIN:vds XVCO.MVIN:gm XVCO.MVIN:gds XVCO.MVIN:vdsat
+save XVCO.MPDIO:ids XVCO.MPDIO:vgs XVCO.MPDIO:vds XVCO.MPDIO:gm XVCO.MPDIO:gds XVCO.MPDIO:vdsat
+save XVCO.MNDIO:ids XVCO.MNDIO:vgs XVCO.MNDIO:vds XVCO.MNDIO:gm XVCO.MNDIO:gds XVCO.MNDIO:vdsat
+save XVCO.MPS1:ids XVCO.MPS1:vgs XVCO.MPS1:vds XVCO.MPS1:gm XVCO.MPS1:gds XVCO.MPS1:vdsat
+save XVCO.MNS1:ids XVCO.MNS1:vgs XVCO.MNS1:vds XVCO.MNS1:gm XVCO.MNS1:gds XVCO.MNS1:vdsat
+tran tran stop=4.054u maxstep=100p errpreset=conservative

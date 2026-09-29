@@ -1,0 +1,1631 @@
+{
+  "generated_at": "2026-09-23T06:18:40.395079+00:00",
+  "circuit_sha256": "3e96952b371aec9580fd6fc7366ff78e08bf19958c732078db5e69c9341ff565",
+  "top": "tia",
+  "subcircuit_ports": {
+    "tia": [
+      "iref",
+      "in",
+      "vcm",
+      "vdd",
+      "vout",
+      "vss"
+    ]
+  },
+  "instances": {
+    "tia/MP1": {
+      "name": "MP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n1",
+        "G": "in",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.36u",
+        "l": ".18u",
+        "m": "15"
+      },
+      "source_line": "MP1 (n1 in vdd vdd) p18 w=2.36u l=.18u m=15",
+      "W_unit_um": 2.36,
+      "L_um": 0.18,
+      "m": 15.0,
+      "sheet": 1,
+      "origin": [
+        25,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          25,
+          16
+        ],
+        "S": [
+          25,
+          18
+        ],
+        "G": [
+          23.45,
+          17
+        ],
+        "B": [
+          25.86,
+          17
+        ]
+      },
+      "block": "tia"
+    },
+    "tia/MN1": {
+      "name": "MN1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n1",
+        "G": "in",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.76u",
+        "l": ".18u",
+        "m": "15"
+      },
+      "source_line": "MN1 (n1 in vss vss) n18 w=0.76u l=.18u m=15",
+      "W_unit_um": 0.7599999999999999,
+      "L_um": 0.18,
+      "m": 15.0,
+      "sheet": 1,
+      "origin": [
+        25,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          25,
+          8
+        ],
+        "S": [
+          25,
+          6
+        ],
+        "G": [
+          23.45,
+          7
+        ],
+        "B": [
+          25.86,
+          7
+        ]
+      },
+      "block": "tia"
+    },
+    "tia/RF1": {
+      "name": "RF1",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "n1",
+        "2": "in"
+      },
+      "parameters": {
+        "r": "4000"
+      },
+      "source_line": "RF1 (n1 in) resistor r=4000",
+      "value_SI": 4000.0,
+      "sheet": 1,
+      "origin": [
+        15,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          14.18,
+          21
+        ],
+        "2": [
+          15.82,
+          21
+        ]
+      },
+      "block": "tia"
+    },
+    "tia/MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.86u",
+        "l": "1u"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=8.86u l=1u",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        4,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          8
+        ],
+        "S": [
+          4,
+          6
+        ],
+        "G": [
+          2.45,
+          7
+        ],
+        "B": [
+          4.86,
+          7
+        ]
+      },
+      "block": "tia"
+    },
+    "tia/RB": {
+      "name": "RB",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "in",
+        "2": "vcm"
+      },
+      "parameters": {
+        "r": "1M"
+      },
+      "source_line": "RB (in vcm) resistor r=1M",
+      "value_SI": 1000000.0,
+      "sheet": 1,
+      "origin": [
+        18,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          18,
+          3.82
+        ],
+        "2": [
+          18,
+          2.18
+        ]
+      },
+      "block": "tia"
+    },
+    "tia/MP2": {
+      "name": "MP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "nbuf",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.36u",
+        "l": ".18u",
+        "m": "11"
+      },
+      "source_line": "MP2 (vout nbuf vdd vdd) p18 w=2.36u l=.18u m=11",
+      "W_unit_um": 2.36,
+      "L_um": 0.18,
+      "m": 11.0,
+      "sheet": 2,
+      "origin": [
+        25,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          25,
+          16
+        ],
+        "S": [
+          25,
+          18
+        ],
+        "G": [
+          23.45,
+          17
+        ],
+        "B": [
+          25.86,
+          17
+        ]
+      },
+      "block": "tia"
+    },
+    "tia/MN2": {
+      "name": "MN2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "nbuf",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.76u",
+        "l": ".18u",
+        "m": "11"
+      },
+      "source_line": "MN2 (vout nbuf vss vss) n18 w=0.76u l=.18u m=11",
+      "W_unit_um": 0.7599999999999999,
+      "L_um": 0.18,
+      "m": 11.0,
+      "sheet": 2,
+      "origin": [
+        25,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          25,
+          8
+        ],
+        "S": [
+          25,
+          6
+        ],
+        "G": [
+          23.45,
+          7
+        ],
+        "B": [
+          25.86,
+          7
+        ]
+      },
+      "block": "tia"
+    },
+    "tia/RFB2": {
+      "name": "RFB2",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vout",
+        "2": "nbuf"
+      },
+      "parameters": {
+        "r": "4500"
+      },
+      "source_line": "RFB2 (vout nbuf) resistor r=4500",
+      "value_SI": 4500.0,
+      "sheet": 2,
+      "origin": [
+        15,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          14.18,
+          21
+        ],
+        "2": [
+          15.82,
+          21
+        ]
+      },
+      "block": "tia"
+    },
+    "tia/RIN2": {
+      "name": "RIN2",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "n1",
+        "2": "nbuf"
+      },
+      "parameters": {
+        "r": "1500"
+      },
+      "source_line": "RIN2 (n1 nbuf) resistor r=1500",
+      "value_SI": 1500.0,
+      "sheet": 2,
+      "origin": [
+        9,
+        14
+      ],
+      "rendered_pins": {
+        "1": [
+          8.18,
+          14
+        ],
+        "2": [
+          9.82,
+          14
+        ]
+      },
+      "block": "tia"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MN1": {
+      "name": "MN1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "n1",
+        "G": "in",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.76u",
+        "l": ".18u",
+        "m": "15"
+      },
+      "source_line": "MN1 (n1 in vss vss) n18 w=0.76u l=.18u m=15",
+      "W_unit_um": 0.7599999999999999,
+      "L_um": 0.18,
+      "m": 15.0,
+      "definition": "tia/MN1",
+      "path": "MN1"
+    },
+    "MP1": {
+      "name": "MP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "n1",
+        "G": "in",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.36u",
+        "l": ".18u",
+        "m": "15"
+      },
+      "source_line": "MP1 (n1 in vdd vdd) p18 w=2.36u l=.18u m=15",
+      "W_unit_um": 2.36,
+      "L_um": 0.18,
+      "m": 15.0,
+      "definition": "tia/MP1",
+      "path": "MP1"
+    },
+    "RF1": {
+      "name": "RF1",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "n1",
+        "2": "in"
+      },
+      "parameters": {
+        "r": "4000"
+      },
+      "source_line": "RF1 (n1 in) resistor r=4000",
+      "value_SI": 4000.0,
+      "definition": "tia/RF1",
+      "path": "RF1"
+    },
+    "RB": {
+      "name": "RB",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "in",
+        "2": "vcm"
+      },
+      "parameters": {
+        "r": "1M"
+      },
+      "source_line": "RB (in vcm) resistor r=1M",
+      "value_SI": 1000000.0,
+      "definition": "tia/RB",
+      "path": "RB"
+    },
+    "MN2": {
+      "name": "MN2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "nbuf",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.76u",
+        "l": ".18u",
+        "m": "11"
+      },
+      "source_line": "MN2 (vout nbuf vss vss) n18 w=0.76u l=.18u m=11",
+      "W_unit_um": 0.7599999999999999,
+      "L_um": 0.18,
+      "m": 11.0,
+      "definition": "tia/MN2",
+      "path": "MN2"
+    },
+    "MP2": {
+      "name": "MP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "nbuf",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.36u",
+        "l": ".18u",
+        "m": "11"
+      },
+      "source_line": "MP2 (vout nbuf vdd vdd) p18 w=2.36u l=.18u m=11",
+      "W_unit_um": 2.36,
+      "L_um": 0.18,
+      "m": 11.0,
+      "definition": "tia/MP2",
+      "path": "MP2"
+    },
+    "RIN2": {
+      "name": "RIN2",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "n1",
+        "2": "nbuf"
+      },
+      "parameters": {
+        "r": "1500"
+      },
+      "source_line": "RIN2 (n1 nbuf) resistor r=1500",
+      "value_SI": 1500.0,
+      "definition": "tia/RIN2",
+      "path": "RIN2"
+    },
+    "RFB2": {
+      "name": "RFB2",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vout",
+        "2": "nbuf"
+      },
+      "parameters": {
+        "r": "4500"
+      },
+      "source_line": "RFB2 (vout nbuf) resistor r=4500",
+      "value_SI": 4500.0,
+      "definition": "tia/RFB2",
+      "path": "RFB2"
+    },
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "8.86u",
+        "l": "1u"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=8.86u l=1u",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "tia/MREF",
+      "path": "MREF"
+    }
+  },
+  "nets": {
+    "tia/n1": [
+      {
+        "instance": "tia/MP1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          25,
+          16
+        ]
+      },
+      {
+        "instance": "tia/MN1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          25,
+          8
+        ]
+      },
+      {
+        "instance": "tia/RF1",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          14.18,
+          21
+        ]
+      },
+      {
+        "instance": "tia/RIN2",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          8.18,
+          14
+        ]
+      }
+    ],
+    "tia/in": [
+      {
+        "instance": "tia/MP1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          23.45,
+          17
+        ]
+      },
+      {
+        "instance": "tia/MN1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          23.45,
+          7
+        ]
+      },
+      {
+        "instance": "tia/RF1",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          15.82,
+          21
+        ]
+      },
+      {
+        "instance": "tia/RB",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          18,
+          3.82
+        ]
+      }
+    ],
+    "tia/vdd": [
+      {
+        "instance": "tia/MP1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          25,
+          18
+        ]
+      },
+      {
+        "instance": "tia/MP1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          25.86,
+          17
+        ]
+      },
+      {
+        "instance": "tia/MP2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          25,
+          18
+        ]
+      },
+      {
+        "instance": "tia/MP2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          25.86,
+          17
+        ]
+      }
+    ],
+    "tia/vss": [
+      {
+        "instance": "tia/MN1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          25,
+          6
+        ]
+      },
+      {
+        "instance": "tia/MN1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          25.86,
+          7
+        ]
+      },
+      {
+        "instance": "tia/MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          4,
+          6
+        ]
+      },
+      {
+        "instance": "tia/MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          4.86,
+          7
+        ]
+      },
+      {
+        "instance": "tia/MN2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          25,
+          6
+        ]
+      },
+      {
+        "instance": "tia/MN2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          25.86,
+          7
+        ]
+      }
+    ],
+    "tia/iref": [
+      {
+        "instance": "tia/MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          4,
+          8
+        ]
+      },
+      {
+        "instance": "tia/MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          2.45,
+          7
+        ]
+      }
+    ],
+    "tia/vcm": [
+      {
+        "instance": "tia/RB",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          18,
+          2.18
+        ]
+      }
+    ],
+    "tia/vout": [
+      {
+        "instance": "tia/MP2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          25,
+          16
+        ]
+      },
+      {
+        "instance": "tia/MN2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          25,
+          8
+        ]
+      },
+      {
+        "instance": "tia/RFB2",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          14.18,
+          21
+        ]
+      }
+    ],
+    "tia/nbuf": [
+      {
+        "instance": "tia/MP2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          23.45,
+          17
+        ]
+      },
+      {
+        "instance": "tia/MN2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          23.45,
+          7
+        ]
+      },
+      {
+        "instance": "tia/RFB2",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          15.82,
+          21
+        ]
+      },
+      {
+        "instance": "tia/RIN2",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          9.82,
+          14
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "D",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "D",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "RF1",
+      "pin": "1",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "RB",
+      "pin": "2",
+      "net": "vcm",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "G",
+      "net": "in",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "MN1",
+      "pin": "G",
+      "net": "in",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "RF1",
+      "pin": "2",
+      "net": "in",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 1,
+      "instance": "RB",
+      "pin": "1",
+      "net": "in",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "RIN2",
+      "pin": "1",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN2",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP2",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP2",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP2",
+      "pin": "G",
+      "net": "nbuf",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN2",
+      "pin": "G",
+      "net": "nbuf",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "RFB2",
+      "pin": "2",
+      "net": "nbuf",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "RIN2",
+      "pin": "2",
+      "net": "nbuf",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "MP2",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "MN2",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "tia"
+    },
+    {
+      "sheet": 2,
+      "instance": "RFB2",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "tia"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "tia",
+      "title": "电流输入与第一级模拟反馈增益",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              25.86,
+              17
+            ],
+            [
+              26.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              25.86,
+              7
+            ],
+            [
+              26.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              25,
+              16
+            ],
+            [
+              25,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "in",
+          "points": [
+            [
+              23.45,
+              17
+            ],
+            [
+              18,
+              17
+            ],
+            [
+              18,
+              7
+            ],
+            [
+              23.45,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              14.18,
+              21
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              12,
+              12
+            ],
+            [
+              25,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "in",
+          "points": [
+            [
+              15.82,
+              21
+            ],
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              25,
+              18
+            ],
+            [
+              25,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              25,
+              6
+            ],
+            [
+              25,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.86,
+              7
+            ],
+            [
+              5.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              4,
+              8
+            ],
+            [
+              4,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              2.45,
+              7
+            ],
+            [
+              1.9500000000000002,
+              7
+            ],
+            [
+              1.9500000000000002,
+              10
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "in",
+          "points": [
+            [
+              18,
+              3.82
+            ],
+            [
+              18,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              6
+            ],
+            [
+              4,
+              5.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcm",
+          "points": [
+            [
+              18,
+              2.18
+            ],
+            [
+              18,
+              1.54
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            26.15,
+            17
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            26.15,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "n1",
+          "point": [
+            25,
+            12
+          ],
+          "text": "n1",
+          "body": false
+        },
+        {
+          "net": "in",
+          "point": [
+            18,
+            15
+          ],
+          "text": "in",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            25,
+            24
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            25,
+            1.4
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "iref",
+          "point": [
+            4,
+            12
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4,
+            5.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vcm",
+          "point": [
+            18,
+            1.54
+          ],
+          "text": "vcm",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "tia",
+      "title": "第二级模拟反馈增益与输出",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              25.86,
+              17
+            ],
+            [
+              26.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              25.86,
+              7
+            ],
+            [
+              26.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              25,
+              16
+            ],
+            [
+              25,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nbuf",
+          "points": [
+            [
+              23.45,
+              17
+            ],
+            [
+              18,
+              17
+            ],
+            [
+              18,
+              7
+            ],
+            [
+              23.45,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              14.18,
+              21
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              12,
+              12
+            ],
+            [
+              25,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nbuf",
+          "points": [
+            [
+              15.82,
+              21
+            ],
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              25,
+              18
+            ],
+            [
+              25,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              25,
+              6
+            ],
+            [
+              25,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nbuf",
+          "points": [
+            [
+              9.82,
+              14
+            ],
+            [
+              18,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              8.18,
+              14
+            ],
+            [
+              7.38,
+              14
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            26.15,
+            17
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            26.15,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vout",
+          "point": [
+            25,
+            12
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "nbuf",
+          "point": [
+            18,
+            15
+          ],
+          "text": "nbuf",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            25,
+            24
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            25,
+            1.4
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "n1",
+          "point": [
+            7.38,
+            14
+          ],
+          "text": "n1",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [
+    {
+      "sheet": 1,
+      "nets": [
+        "in",
+        "n1"
+      ],
+      "point": [
+        18,
+        12
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 2,
+      "nets": [
+        "nbuf",
+        "vout"
+      ],
+      "point": [
+        18,
+        12
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 2,
+      "nets": [
+        "vout",
+        "nbuf"
+      ],
+      "point": [
+        12,
+        14
+      ],
+      "junction": false
+    }
+  ],
+  "unused_ports": {
+    "tia": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

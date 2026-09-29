@@ -1,0 +1,211 @@
+simulator lang=spectre
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=res_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/07/20260922T102730830668Z_local_fvf/inputs/fvf_probe.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-14
+VINL00 (vinL00 0) vsource dc=1.62
+VREFL00 (vrefL00 0) vsource dc=.8
+IBIASL00 (vinL00 ibiasL00) isource dc=50u
+ILOADL00 (voutL00 0) isource dc=0.001
+XL00 (vinL00 voutL00 0 vrefL00 ibiasL00 fbL00 gate_driveL00 gateL00) ldo_ota5
+RFBTL00 (voutL00 fbL00) resistor r=300k
+RFBBL00 (fbL00 0) resistor r=600k
+VLOOPL00 (gate_driveL00 gateL00) vsource dc=0
+RESRL00 (voutL00 vcapL00) resistor r=0.05
+COUTL00 (vcapL00 0) capacitor c=1e-06
+save vinL00 voutL00 fbL00 gate_driveL00 gateL00 ibiasL00 VINL00:p
+VINL01 (vinL01 0) vsource dc=1.62
+VREFL01 (vrefL01 0) vsource dc=.8
+IBIASL01 (vinL01 ibiasL01) isource dc=50u
+ILOADL01 (voutL01 0) isource dc=0.01
+XL01 (vinL01 voutL01 0 vrefL01 ibiasL01 fbL01 gate_driveL01 gateL01) ldo_ota5
+RFBTL01 (voutL01 fbL01) resistor r=300k
+RFBBL01 (fbL01 0) resistor r=600k
+VLOOPL01 (gate_driveL01 gateL01) vsource dc=0
+RESRL01 (voutL01 vcapL01) resistor r=0.05
+COUTL01 (vcapL01 0) capacitor c=1e-06
+save vinL01 voutL01 fbL01 gate_driveL01 gateL01 ibiasL01 VINL01:p
+VINL02 (vinL02 0) vsource dc=1.62
+VREFL02 (vrefL02 0) vsource dc=.8
+IBIASL02 (vinL02 ibiasL02) isource dc=50u
+ILOADL02 (voutL02 0) isource dc=0.03
+XL02 (vinL02 voutL02 0 vrefL02 ibiasL02 fbL02 gate_driveL02 gateL02) ldo_ota5
+RFBTL02 (voutL02 fbL02) resistor r=300k
+RFBBL02 (fbL02 0) resistor r=600k
+VLOOPL02 (gate_driveL02 gateL02) vsource dc=0
+RESRL02 (voutL02 vcapL02) resistor r=0.05
+COUTL02 (vcapL02 0) capacitor c=1e-06
+save vinL02 voutL02 fbL02 gate_driveL02 gateL02 ibiasL02 VINL02:p
+VINL10 (vinL10 0) vsource dc=1.8
+VREFL10 (vrefL10 0) vsource dc=.8
+IBIASL10 (vinL10 ibiasL10) isource dc=50u
+ILOADL10 (voutL10 0) isource dc=0.001
+XL10 (vinL10 voutL10 0 vrefL10 ibiasL10 fbL10 gate_driveL10 gateL10) ldo_ota5
+RFBTL10 (voutL10 fbL10) resistor r=300k
+RFBBL10 (fbL10 0) resistor r=600k
+VLOOPL10 (gate_driveL10 gateL10) vsource dc=0
+RESRL10 (voutL10 vcapL10) resistor r=0.05
+COUTL10 (vcapL10 0) capacitor c=1e-06
+save vinL10 voutL10 fbL10 gate_driveL10 gateL10 ibiasL10 VINL10:p
+VINL11 (vinL11 0) vsource dc=1.8
+VREFL11 (vrefL11 0) vsource dc=.8
+IBIASL11 (vinL11 ibiasL11) isource dc=50u
+ILOADL11 (voutL11 0) isource dc=0.01
+XL11 (vinL11 voutL11 0 vrefL11 ibiasL11 fbL11 gate_driveL11 gateL11) ldo_ota5
+RFBTL11 (voutL11 fbL11) resistor r=300k
+RFBBL11 (fbL11 0) resistor r=600k
+VLOOPL11 (gate_driveL11 gateL11) vsource dc=0
+RESRL11 (voutL11 vcapL11) resistor r=0.05
+COUTL11 (vcapL11 0) capacitor c=1e-06
+save vinL11 voutL11 fbL11 gate_driveL11 gateL11 ibiasL11 VINL11:p
+VINL12 (vinL12 0) vsource dc=1.8
+VREFL12 (vrefL12 0) vsource dc=.8
+IBIASL12 (vinL12 ibiasL12) isource dc=50u
+ILOADL12 (voutL12 0) isource dc=0.03
+XL12 (vinL12 voutL12 0 vrefL12 ibiasL12 fbL12 gate_driveL12 gateL12) ldo_ota5
+RFBTL12 (voutL12 fbL12) resistor r=300k
+RFBBL12 (fbL12 0) resistor r=600k
+VLOOPL12 (gate_driveL12 gateL12) vsource dc=0
+RESRL12 (voutL12 vcapL12) resistor r=0.05
+COUTL12 (vcapL12 0) capacitor c=1e-06
+save vinL12 voutL12 fbL12 gate_driveL12 gateL12 ibiasL12 VINL12:p
+VINL20 (vinL20 0) vsource dc=1.98
+VREFL20 (vrefL20 0) vsource dc=.8
+IBIASL20 (vinL20 ibiasL20) isource dc=50u
+ILOADL20 (voutL20 0) isource dc=0.001
+XL20 (vinL20 voutL20 0 vrefL20 ibiasL20 fbL20 gate_driveL20 gateL20) ldo_ota5
+RFBTL20 (voutL20 fbL20) resistor r=300k
+RFBBL20 (fbL20 0) resistor r=600k
+VLOOPL20 (gate_driveL20 gateL20) vsource dc=0
+RESRL20 (voutL20 vcapL20) resistor r=0.05
+COUTL20 (vcapL20 0) capacitor c=1e-06
+save vinL20 voutL20 fbL20 gate_driveL20 gateL20 ibiasL20 VINL20:p
+VINL21 (vinL21 0) vsource dc=1.98
+VREFL21 (vrefL21 0) vsource dc=.8
+IBIASL21 (vinL21 ibiasL21) isource dc=50u
+ILOADL21 (voutL21 0) isource dc=0.01
+XL21 (vinL21 voutL21 0 vrefL21 ibiasL21 fbL21 gate_driveL21 gateL21) ldo_ota5
+RFBTL21 (voutL21 fbL21) resistor r=300k
+RFBBL21 (fbL21 0) resistor r=600k
+VLOOPL21 (gate_driveL21 gateL21) vsource dc=0
+RESRL21 (voutL21 vcapL21) resistor r=0.05
+COUTL21 (vcapL21 0) capacitor c=1e-06
+save vinL21 voutL21 fbL21 gate_driveL21 gateL21 ibiasL21 VINL21:p
+VINL22 (vinL22 0) vsource dc=1.98
+VREFL22 (vrefL22 0) vsource dc=.8
+IBIASL22 (vinL22 ibiasL22) isource dc=50u
+ILOADL22 (voutL22 0) isource dc=0.03
+XL22 (vinL22 voutL22 0 vrefL22 ibiasL22 fbL22 gate_driveL22 gateL22) ldo_ota5
+RFBTL22 (voutL22 fbL22) resistor r=300k
+RFBBL22 (fbL22 0) resistor r=600k
+VLOOPL22 (gate_driveL22 gateL22) vsource dc=0
+RESRL22 (voutL22 vcapL22) resistor r=0.05
+COUTL22 (vcapL22 0) capacitor c=1e-06
+save vinL22 voutL22 fbL22 gate_driveL22 gateL22 ibiasL22 VINL22:p
+VINE000 (vinE000 0) vsource dc=1.8
+VREFE000 (vrefE000 0) vsource dc=.8
+IBIASE000 (vinE000 ibiasE000) isource dc=50u
+ILOADE000 (voutE000 0) isource dc=0.001
+XE000 (vinE000 voutE000 0 vrefE000 ibiasE000 fbE000 gate_driveE000 gateE000) ldo_ota5
+RFBTE000 (voutE000 fbE000) resistor r=300k
+RFBBE000 (fbE000 0) resistor r=600k
+VLOOPE000 (gate_driveE000 gateE000) vsource dc=0
+RESRE000 (voutE000 vcapE000) resistor r=0.02
+COUTE000 (vcapE000 0) capacitor c=8e-07
+save vinE000 voutE000 fbE000 gate_driveE000 gateE000 ibiasE000 VINE000:p
+VINE001 (vinE001 0) vsource dc=1.8
+VREFE001 (vrefE001 0) vsource dc=.8
+IBIASE001 (vinE001 ibiasE001) isource dc=50u
+ILOADE001 (voutE001 0) isource dc=0.03
+XE001 (vinE001 voutE001 0 vrefE001 ibiasE001 fbE001 gate_driveE001 gateE001) ldo_ota5
+RFBTE001 (voutE001 fbE001) resistor r=300k
+RFBBE001 (fbE001 0) resistor r=600k
+VLOOPE001 (gate_driveE001 gateE001) vsource dc=0
+RESRE001 (voutE001 vcapE001) resistor r=0.02
+COUTE001 (vcapE001 0) capacitor c=8e-07
+save vinE001 voutE001 fbE001 gate_driveE001 gateE001 ibiasE001 VINE001:p
+VINE010 (vinE010 0) vsource dc=1.8
+VREFE010 (vrefE010 0) vsource dc=.8
+IBIASE010 (vinE010 ibiasE010) isource dc=50u
+ILOADE010 (voutE010 0) isource dc=0.001
+XE010 (vinE010 voutE010 0 vrefE010 ibiasE010 fbE010 gate_driveE010 gateE010) ldo_ota5
+RFBTE010 (voutE010 fbE010) resistor r=300k
+RFBBE010 (fbE010 0) resistor r=600k
+VLOOPE010 (gate_driveE010 gateE010) vsource dc=0
+RESRE010 (voutE010 vcapE010) resistor r=0.1
+COUTE010 (vcapE010 0) capacitor c=8e-07
+save vinE010 voutE010 fbE010 gate_driveE010 gateE010 ibiasE010 VINE010:p
+VINE011 (vinE011 0) vsource dc=1.8
+VREFE011 (vrefE011 0) vsource dc=.8
+IBIASE011 (vinE011 ibiasE011) isource dc=50u
+ILOADE011 (voutE011 0) isource dc=0.03
+XE011 (vinE011 voutE011 0 vrefE011 ibiasE011 fbE011 gate_driveE011 gateE011) ldo_ota5
+RFBTE011 (voutE011 fbE011) resistor r=300k
+RFBBE011 (fbE011 0) resistor r=600k
+VLOOPE011 (gate_driveE011 gateE011) vsource dc=0
+RESRE011 (voutE011 vcapE011) resistor r=0.1
+COUTE011 (vcapE011 0) capacitor c=8e-07
+save vinE011 voutE011 fbE011 gate_driveE011 gateE011 ibiasE011 VINE011:p
+VINE100 (vinE100 0) vsource dc=1.8
+VREFE100 (vrefE100 0) vsource dc=.8
+IBIASE100 (vinE100 ibiasE100) isource dc=50u
+ILOADE100 (voutE100 0) isource dc=0.001
+XE100 (vinE100 voutE100 0 vrefE100 ibiasE100 fbE100 gate_driveE100 gateE100) ldo_ota5
+RFBTE100 (voutE100 fbE100) resistor r=300k
+RFBBE100 (fbE100 0) resistor r=600k
+VLOOPE100 (gate_driveE100 gateE100) vsource dc=0
+RESRE100 (voutE100 vcapE100) resistor r=0.02
+COUTE100 (vcapE100 0) capacitor c=1.2e-06
+save vinE100 voutE100 fbE100 gate_driveE100 gateE100 ibiasE100 VINE100:p
+VINE101 (vinE101 0) vsource dc=1.8
+VREFE101 (vrefE101 0) vsource dc=.8
+IBIASE101 (vinE101 ibiasE101) isource dc=50u
+ILOADE101 (voutE101 0) isource dc=0.03
+XE101 (vinE101 voutE101 0 vrefE101 ibiasE101 fbE101 gate_driveE101 gateE101) ldo_ota5
+RFBTE101 (voutE101 fbE101) resistor r=300k
+RFBBE101 (fbE101 0) resistor r=600k
+VLOOPE101 (gate_driveE101 gateE101) vsource dc=0
+RESRE101 (voutE101 vcapE101) resistor r=0.02
+COUTE101 (vcapE101 0) capacitor c=1.2e-06
+save vinE101 voutE101 fbE101 gate_driveE101 gateE101 ibiasE101 VINE101:p
+VINE110 (vinE110 0) vsource dc=1.8
+VREFE110 (vrefE110 0) vsource dc=.8
+IBIASE110 (vinE110 ibiasE110) isource dc=50u
+ILOADE110 (voutE110 0) isource dc=0.001
+XE110 (vinE110 voutE110 0 vrefE110 ibiasE110 fbE110 gate_driveE110 gateE110) ldo_ota5
+RFBTE110 (voutE110 fbE110) resistor r=300k
+RFBBE110 (fbE110 0) resistor r=600k
+VLOOPE110 (gate_driveE110 gateE110) vsource dc=0
+RESRE110 (voutE110 vcapE110) resistor r=0.1
+COUTE110 (vcapE110 0) capacitor c=1.2e-06
+save vinE110 voutE110 fbE110 gate_driveE110 gateE110 ibiasE110 VINE110:p
+VINE111 (vinE111 0) vsource dc=1.8
+VREFE111 (vrefE111 0) vsource dc=.8
+IBIASE111 (vinE111 ibiasE111) isource dc=50u
+ILOADE111 (voutE111 0) isource dc=0.03
+XE111 (vinE111 voutE111 0 vrefE111 ibiasE111 fbE111 gate_driveE111 gateE111) ldo_ota5
+RFBTE111 (voutE111 fbE111) resistor r=300k
+RFBBE111 (fbE111 0) resistor r=600k
+VLOOPE111 (gate_driveE111 gateE111) vsource dc=0
+RESRE111 (voutE111 vcapE111) resistor r=0.1
+COUTE111 (vcapE111 0) capacitor c=1.2e-06
+save vinE111 voutE111 fbE111 gate_driveE111 gateE111 ibiasE111 VINE111:p
+dcOp dc
+localL00 stb start=1 stop=1G dec=100 probe=XL00.PL
+localL01 stb start=1 stop=1G dec=100 probe=XL01.PL
+localL02 stb start=1 stop=1G dec=100 probe=XL02.PL
+localL10 stb start=1 stop=1G dec=100 probe=XL10.PL
+localL11 stb start=1 stop=1G dec=100 probe=XL11.PL
+localL12 stb start=1 stop=1G dec=100 probe=XL12.PL
+localL20 stb start=1 stop=1G dec=100 probe=XL20.PL
+localL21 stb start=1 stop=1G dec=100 probe=XL21.PL
+localL22 stb start=1 stop=1G dec=100 probe=XL22.PL
+localE000 stb start=1 stop=1G dec=100 probe=XE000.PL
+localE001 stb start=1 stop=1G dec=100 probe=XE001.PL
+localE010 stb start=1 stop=1G dec=100 probe=XE010.PL
+localE011 stb start=1 stop=1G dec=100 probe=XE011.PL
+localE100 stb start=1 stop=1G dec=100 probe=XE100.PL
+localE101 stb start=1 stop=1G dec=100 probe=XE101.PL
+localE110 stb start=1 stop=1G dec=100 probe=XE110.PL
+localE111 stb start=1 stop=1G dec=100 probe=XE111.PL

@@ -1,0 +1,38 @@
+// Analog differential LC oscillator; no digital logic.
+simulator lang=spectre
+subckt lc_vco_2ghz (vss iref vctrl vdd outp outn)
+MPREFU (pbu pbu vdd vdd) p18 w=17.8u l=.18u m=4
+MPREFL (iref iref pbu vdd) p18 w=17.8u l=.18u m=4
+MPFEED (pcas pbu vdd vdd) p18 w=17.8u l=.18u m=64
+MPCAS (tankct iref pcas vdd) p18 w=17.8u l=.18u m=64
+MPVB (vrefvar pbu vdd vdd) p18 w=56.44u l=1u m=4
+MNB1 (nbmid nbmid vss vss) n18 w=5.34u l=1u
+MNB2 (vrefvar vrefvar nbmid vss) n18 w=5.34u l=1u
+MRT (rtail nbmid vss vss) n18 w=5.34u l=1u m=2
+MRI1 (ra vbias rtail vss) n18 w=5.12u l=.36u m=2
+MRI2 (rout vrefvar rtail vss) n18 w=5.12u l=.36u m=2
+MRL1 (ra ra vdd vdd) p18 w=64.02u l=1u m=2
+MRL2 (rout ra vdd vdd) p18 w=64.02u l=1u m=2
+MRPU (vbias rout vdd vdd) p18 w=9.22u l=.18u m=20
+MRPD (vbias rout vss vss) n18 w=0.28u l=.18u m=4
+XLP (outp tankct) ind_rf r=60u n=3.5
+XLN (outn tankct) ind_rf r=60u n=3.5
+XCP (outp vss) mim1_rf wr=20u lr=30u
+XCN (outn vss) mim1_rf wr=20u lr=30u
+RBP (vbias varp vss) rpposab_3t w=1u l=3u
+RBN (vbias varn vss) rpposab_3t w=1u l=3u
+RBP2 (vbias varp vss) rpposab_3t w=1u l=3u
+RBN2 (vbias varn vss) rpposab_3t w=1u l=3u
+MNP (outp outn vss vss) n18 w=24.1u l=0.18u
+MNN (outn outp vss vss) n18 w=24.1u l=0.18u
+XCCP0 (outp varp) mim1_rf wr=30u lr=30u
+XCCN0 (outn varn) mim1_rf wr=30u lr=30u
+XCCP1 (outp varp) mim1_rf wr=30u lr=30u
+XCCN1 (outn varn) mim1_rf wr=30u lr=30u
+XCCP2 (outp varp) mim1_rf wr=30u lr=30u
+XCCN2 (outn varn) mim1_rf wr=30u lr=30u
+XVP0 (vctrl varp) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20
+XVN0 (vctrl varn) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20
+XVP1 (vctrl varp) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20
+XVN1 (vctrl varn) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20
+ends lc_vco_2ghz

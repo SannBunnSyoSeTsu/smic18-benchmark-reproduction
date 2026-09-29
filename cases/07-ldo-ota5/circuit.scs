@@ -1,0 +1,17 @@
+simulator lang=spectre
+subckt ldo_ota5 (vin vout vss vref ibias fb gate_drive gate)
+MINP (nleft fb tail tail) p18 w=79.52u l=1u m=3
+MINN (ampout vref tail tail) p18 w=79.52u l=1u m=3
+MLOAD (nleft nleft vss vss) n18 w=86.32u l=4u m=1
+MLOUT (ampout nleft vss vss) n18 w=86.32u l=4u m=1
+MTAIL (tail pbias vin vin) p18 w=32.26u l=1u m=10
+MREF (ibias ibias vss vss) n18 w=23.42u l=1u m=1
+MPASS (vout gate vin vin) p18 w=49.88u l=0.18u m=60
+MPTREF (pbias pbias vin vin) p18 w=32.26u l=1u m=1
+MNPT (pbias ibias vss vss) n18 w=23.42u l=1u m=0.2
+MSF (pbuf ampout gate_drive gate_drive) p18 w=12.36u l=0.18u m=1
+MBUF (gate_drive pbuf vin vin) p18 w=0.74u l=0.18u m=1
+MNBUF (pbuf ibias vss vss) n18 w=23.42u l=1u m=0.6
+RLAG (ampout lag vss) rpposab_3t w=1u l=91.1083u
+CLAG (lag vss) mim w=30u l=30u m=228.859
+ends ldo_ota5

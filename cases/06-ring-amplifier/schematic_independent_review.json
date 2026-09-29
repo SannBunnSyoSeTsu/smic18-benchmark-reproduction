@@ -1,0 +1,366 @@
+{
+  "slot": 6,
+  "case": "cases/06-ring-amplifier",
+  "circuit_sha256": "96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1",
+  "hd_cells_sha256": null,
+  "top": "ring_amp8",
+  "source_definition_count": 50,
+  "source_terminal_count": 172,
+  "source_expanded_leaf_count": 50,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "117879dbdbf2fbf29b1db6902bd4a9a04a4134be22e3db976c2adc4b4a827811",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 50,
+  "schematic_expanded_leaf_count": 50,
+  "independently_traced_terminals": 172,
+  "expanded_leaf_counts_by_kind": {
+    "L": 2,
+    "C": 10,
+    "MOS": 36,
+    "R": 2
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "ring_amp8/MNM14",
+      "D_G_S_B": [
+        "net2",
+        "net4",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM13a",
+      "D_G_S_B": [
+        "bn2",
+        "bn2",
+        "net1",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM13b",
+      "D_G_S_B": [
+        "bn2",
+        "bn2",
+        "net1",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM13c",
+      "D_G_S_B": [
+        "bn2",
+        "bn2",
+        "net1",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM13d",
+      "D_G_S_B": [
+        "bn2",
+        "bn2",
+        "net1",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM12",
+      "D_G_S_B": [
+        "net1",
+        "net1",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM11",
+      "D_G_S_B": [
+        "bp2",
+        "bn1",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM10",
+      "D_G_S_B": [
+        "voutn",
+        "net10",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM9",
+      "D_G_S_B": [
+        "net8",
+        "bn2",
+        "net10",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM8",
+      "D_G_S_B": [
+        "net10",
+        "net13",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM7",
+      "D_G_S_B": [
+        "voutp",
+        "vgn3",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM5",
+      "D_G_S_B": [
+        "vgn3",
+        "net7",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM4",
+      "D_G_S_B": [
+        "bn1",
+        "bn1",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM15a",
+      "D_G_S_B": [
+        "vgp3",
+        "bn2",
+        "vgn3",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM15b",
+      "D_G_S_B": [
+        "vgp3",
+        "bn2",
+        "vgn3",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM15c",
+      "D_G_S_B": [
+        "vgp3",
+        "bn2",
+        "vgn3",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM15d",
+      "D_G_S_B": [
+        "vgp3",
+        "bn2",
+        "vgn3",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM3",
+      "D_G_S_B": [
+        "net2",
+        "bn1",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM2",
+      "D_G_S_B": [
+        "net2",
+        "net3",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM1",
+      "D_G_S_B": [
+        "vop1",
+        "vin",
+        "net2",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MNM0",
+      "D_G_S_B": [
+        "von1",
+        "vip",
+        "net2",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM12",
+      "D_G_S_B": [
+        "bn2",
+        "ibias",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM11",
+      "D_G_S_B": [
+        "bp2",
+        "bp2",
+        "net6",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM10",
+      "D_G_S_B": [
+        "net6",
+        "net6",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM9",
+      "D_G_S_B": [
+        "voutn",
+        "net8",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM8",
+      "D_G_S_B": [
+        "net8",
+        "net11",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM7",
+      "D_G_S_B": [
+        "net10",
+        "bp2",
+        "net8",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM6",
+      "D_G_S_B": [
+        "voutp",
+        "vgp3",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM13",
+      "D_G_S_B": [
+        "vgn3",
+        "bp2",
+        "vgp3",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM1",
+      "D_G_S_B": [
+        "vgp3",
+        "net5",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM5",
+      "D_G_S_B": [
+        "bn1",
+        "ibias",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM4",
+      "D_G_S_B": [
+        "ibias",
+        "ibias",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM0",
+      "D_G_S_B": [
+        "von1",
+        "ibias",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MPM3",
+      "D_G_S_B": [
+        "vop1",
+        "ibias",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MSTARTP",
+      "D_G_S_B": [
+        "vinp",
+        "ibias",
+        "vip",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ring_amp8/MSTARTN",
+      "D_G_S_B": [
+        "vinn",
+        "ibias",
+        "vin",
+        "vss"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 27,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "case_slot": 40,
+  "generated_at": "2026-09-29T03:53:42.035419+00:00",
+  "status": "complete_original",
+  "values": {
+    "nominal": {
+      "dc": 0.05859375,
+      "gain": 1.1625073645003396,
+      "sndr8_dB": 25.83308945913075,
+      "sndr16_dB": 34.15223459828047,
+      "sndr32_dB": 44.10051318960054,
+      "shaping_dB": 33.526439340028915,
+      "density": 0.529296875,
+      "transitions": 0.5342465753424658,
+      "invalid": 0,
+      "state_peak_V": 0.5232355438427895,
+      "source_mean_power_W": 0.0017666675580109575,
+      "time_weighted_power_W": 0.0015993260016824173,
+      "DC_error": 0.008593750000000004,
+      "coefficient_real": -0.2866405213893434,
+      "coefficient_imag": 0.19865879045293383
+    },
+    "mid_pos": {
+      "dc": 0.05859375,
+      "gain": 1.1628315143189705,
+      "sndr8_dB": 24.216182900248022,
+      "sndr16_dB": 33.757995022731095,
+      "sndr32_dB": 41.74586865083938,
+      "shaping_dB": 32.11298546760667,
+      "density": 0.529296875,
+      "transitions": 0.5772994129158513,
+      "invalid": 0,
+      "state_peak_V": 0.5077859670345206,
+      "source_mean_power_W": 0.0017675336891184949,
+      "time_weighted_power_W": 0.0015980087481085158,
+      "DC_error": 0.008593750000000004,
+      "coefficient_real": 0.20521441451236977,
+      "coefficient_imag": 0.24524567189866947
+    },
+    "mid_inv": {
+      "dc": -0.05859375,
+      "gain": 1.163014029288575,
+      "sndr8_dB": 24.03973100486704,
+      "sndr16_dB": 35.81793406475792,
+      "sndr32_dB": 43.963071035762724,
+      "shaping_dB": 34.335245852239325,
+      "density": 0.470703125,
+      "transitions": 0.5694716242661448,
+      "invalid": 0,
+      "state_peak_V": 0.48657619832317645,
+      "source_mean_power_W": 0.0017674047743156506,
+      "time_weighted_power_W": 0.001599193141141264,
+      "DC_error": 0.008593750000000004,
+      "coefficient_real": -0.20521932778861338,
+      "coefficient_imag": -0.24530700345963297
+    },
+    "suite": {
+      "polarity_amplitude_ratio": 1.0001569573642932,
+      "polarity_phase_error_deg": 0.006375908150326418,
+      "osr_improvement_dB": 9.948278591320069
+    }
+  },
+  "gates": {
+    "nominal_sndr32_dB": {
+      "value": 44.10051318960054,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 40.0,
+        "10pct": 39.0848501887865,
+        "15pct": 38.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "nominal_shaping_dB": {
+      "value": 33.526439340028915,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 10.0,
+        "10pct": 9.084850188786497,
+        "15pct": 8.588378514285855
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "nominal_source_mean_power_W": {
+      "value": 0.0017666675580109575,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.002,
+        "10pct": 0.0022,
+        "15pct": 0.0023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "nominal_time_weighted_power_W": {
+      "value": 0.0015993260016824173,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.002,
+        "10pct": 0.0022,
+        "15pct": 0.0023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "mid_pos_sndr32_dB": {
+      "value": 41.74586865083938,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 40.0,
+        "10pct": 39.0848501887865,
+        "15pct": 38.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "mid_pos_shaping_dB": {
+      "value": 32.11298546760667,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 10.0,
+        "10pct": 9.084850188786497,
+        "15pct": 8.588378514285855
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "mid_pos_source_mean_power_W": {
+      "value": 0.0017675336891184949,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.002,
+        "10pct": 0.0022,
+        "15pct": 0.0023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "mid_pos_time_weighted_power_W": {
+      "value": 0.0015980087481085158,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.002,
+        "10pct": 0.0022,
+        "15pct": 0.0023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "mid_inv_sndr32_dB": {
+      "value": 43.963071035762724,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 40.0,
+        "10pct": 39.0848501887865,
+        "15pct": 38.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "mid_inv_shaping_dB": {
+      "value": 34.335245852239325,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 10.0,
+        "10pct": 9.084850188786497,
+        "15pct": 8.588378514285855
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "mid_inv_source_mean_power_W": {
+      "value": 0.0017674047743156506,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.002,
+        "10pct": 0.0022,
+        "15pct": 0.0023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "mid_inv_time_weighted_power_W": {
+      "value": 0.001599193141141264,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.002,
+        "10pct": 0.0022,
+        "15pct": 0.0023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "first_order_gain": {
+      "value": 9.948278591320069,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 6.0,
+        "10pct": 5.084850188786498,
+        "15pct": 4.588378514285854
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "groups": {
+    "nominal": "runs/40/20260929T034938077370Z_nominal",
+    "mid_pos": "runs/40/20260929T035042992331Z_mid_pos",
+    "mid_inv": "runs/40/20260929T035151629618Z_mid_inv"
+  },
+  "run_dirs": [
+    "runs/40/20260929T034938077370Z_nominal",
+    "runs/40/20260929T035042992331Z_mid_pos",
+    "runs/40/20260929T035151629618Z_mid_inv"
+  ],
+  "circuit_sha256": "86767b3e18b29812fe33bfdfa9971c67dff4512ca22bafaa31356676d058bbf4",
+  "contract_sha256": "30e2895f1f0ebcbe58211a2c1c9de076115342816055a033fb14997473d80f60",
+  "scope": "SMIC18 TT1.8V27C all three original coherent records at10MHz, OSR32,N512. Original external transistor OTA and comparator are explicitly migrated fixtures; source-owned load, current, reset and comparator offset are retained.",
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "nonrelaxable_guards_pass": true,
+  "conversion_records_sha256": "8a8d51a7e1953e2620bcd2b5c061959046b8905160e3895aeee4e0909d2b6aa0"
+}

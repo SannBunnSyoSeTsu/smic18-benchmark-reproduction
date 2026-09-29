@@ -1,0 +1,328 @@
+{
+  "generated_at": "2026-09-26T04:36:30.491178+00:00",
+  "iterations": [
+    {
+      "label": "single_large_m_rejected",
+      "reason": "CMI-2318 removed sub-minr power-PMOS source/drain resistance; unavailable L1:p save was also rejected. Split same total geometry into m<=512 groups and use exact series VMEAS current for LC energy.",
+      "results": {
+        "case_slot": 1,
+        "generated_at": "2026-09-26T04:35:49.417915+00:00",
+        "status": "partial",
+        "values": {
+          "t27_r1": {
+            "temperature_C": 27,
+            "load_ohm": 1,
+            "p_vdd_W": 0.13499598926397896,
+            "p_vss_W": 0.0,
+            "p_clk_W": 1.4080173190343914e-08,
+            "p_in_W": 0.13499600334415215,
+            "p_out_W": 0.12177711250360962,
+            "efficiency": 0.9020793911443219,
+            "p_out_square_W": 0.12177711250360962,
+            "window_points": 24178,
+            "SW_min_V": -0.1673218796753218,
+            "SW_max_V": 2.336783916099332,
+            "gp_min_V": -0.00248801184872508,
+            "gp_max_V": 2.09041473751724,
+            "gn_min_V": -0.105800283578689,
+            "gn_max_V": 1.80233071172725,
+            "tank_energy_start_J": 3.5751420253830296e-07,
+            "tank_energy_end_J": 3.6799973966176034e-07,
+            "tank_energy_rate_W": 0.005242768561728688
+          },
+          "t27_r3": {
+            "temperature_C": 27,
+            "load_ohm": 3,
+            "p_vdd_W": 0.15733692059770513,
+            "p_vss_W": 0.0,
+            "p_clk_W": 1.409140997688812e-08,
+            "p_in_W": 0.1573369346891151,
+            "p_out_W": 0.15048910129454637,
+            "efficiency": 0.9564766314527514,
+            "p_out_square_W": 0.15048910129454637,
+            "window_points": 24601,
+            "SW_min_V": -0.005104666584637541,
+            "SW_max_V": 1.803597272153388,
+            "gp_min_V": -0.00248604531598652,
+            "gp_max_V": 1.922870575407874,
+            "gn_min_V": -0.03793200923080941,
+            "gn_max_V": 1.802323691509401,
+            "tank_energy_start_J": 1.4286494983305384e-07,
+            "tank_energy_end_J": 1.4288445941616184e-07,
+            "tank_energy_rate_W": 9.754791554002223e-06
+          },
+          "t27_r16": {
+            "temperature_C": 27,
+            "load_ohm": 16,
+            "p_vdd_W": 0.048774362659164884,
+            "p_vss_W": 0.0,
+            "p_clk_W": 1.4088535375483323e-08,
+            "p_in_W": 0.04877437674770026,
+            "p_out_W": 0.04034518570173862,
+            "efficiency": 0.8271799332349422,
+            "p_out_square_W": 0.04034518570173862,
+            "window_points": 24916,
+            "SW_min_V": -0.09742692526544308,
+            "SW_max_V": 1.903664353198571,
+            "gp_min_V": -0.002501824827039829,
+            "gp_max_V": 1.810316246541479,
+            "gn_min_V": -0.01926952962302028,
+            "gn_max_V": 1.802348882451683,
+            "tank_energy_start_J": 5.641220848499761e-09,
+            "tank_energy_end_J": 5.641224172915383e-09,
+            "tank_energy_rate_W": 1.662207811179487e-09
+          }
+        },
+        "gates": {},
+        "pass_tiers": {
+          "original": false,
+          "10pct": false,
+          "15pct": false
+        },
+        "groups": {
+          "t27_r1": "runs/01/20260926T043121274397Z_t27_r1",
+          "t27_r3": "runs/01/20260926T043214431987Z_t27_r3",
+          "t27_r16": "runs/01/20260926T043307839398Z_t27_r16"
+        },
+        "run_dirs": [
+          "runs/01/20260926T043121274397Z_t27_r1",
+          "runs/01/20260926T043214431987Z_t27_r3",
+          "runs/01/20260926T043307839398Z_t27_r16"
+        ],
+        "circuit_sha256": "b50d2deb2b7136ecb8ba38308e3bfd66457309f6106e803583dd8db7231b8bca",
+        "contract_sha256": "3c86fa7c21f32931edad39e8e0ca38119d3e7696c902f0899d03803f2edc65a4",
+        "all_nominal_checks_complete": false,
+        "model_dimensions_valid": true,
+        "model_operating_range_valid": false,
+        "disallowed_model_warnings": {
+          "t27_r1": [
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rs' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'.",
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rd' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'.",
+            "WARNING (SPECTRE-8059): `L1': `p' No such output parameter, terminal, or internal node name.",
+            "WARNING (SPECTRE-8282): In save statement, `L1:p' is not found and skipped. `L1' is not a valid instance.",
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rs' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'.",
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rd' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'."
+          ],
+          "t27_r3": [
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rs' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'.",
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rd' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'.",
+            "WARNING (SPECTRE-8059): `L1': `p' No such output parameter, terminal, or internal node name.",
+            "WARNING (SPECTRE-8282): In save statement, `L1:p' is not found and skipped. `L1' is not a valid instance.",
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rs' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'.",
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rd' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'."
+          ],
+          "t27_r16": [
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rs' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'.",
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rd' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'.",
+            "WARNING (SPECTRE-8059): `L1': `p' No such output parameter, terminal, or internal node name.",
+            "WARNING (SPECTRE-8282): In save statement, `L1:p' is not found and skipped. `L1' is not a valid instance.",
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rs' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'.",
+            "WARNING (CMI-2318): X.MPWR: Parasitic resistor `rd' has been deleted because its value of 747.715 uOhm ( R / MFactor ) was smaller than `minr'."
+          ]
+        },
+        "scope": "SMIC18TT only, retain both original27/125C efficiency groups and all7loads (14points)"
+      }
+    }
+  ],
+  "numerical_attempts": [
+    {
+      "generated_at": "2026-09-26T05:07:42.184366+00:00",
+      "circuit_sha256": "f59766bd4f72b90770dbac469f74a2494226731a573c3ce0e1a89f6b76d8f3b9",
+      "reason": "SPECTRE-16780 edge-local LTE warnings; cover resonant1ohm, near-peak3ohm and low-power16ohm at both temperatures",
+      "labels": [
+        "t27_r1",
+        "t27_r3",
+        "t27_r16",
+        "t125_r1",
+        "t125_r3",
+        "t125_r16"
+      ],
+      "baseline_groups": {
+        "t27_r1": "runs/01/20260926T043630666900Z_t27_r1",
+        "t27_r2": "runs/01/20260926T043724262670Z_t27_r2",
+        "t27_r3": "runs/01/20260926T043819356344Z_t27_r3",
+        "t27_r6": "runs/01/20260926T043916237327Z_t27_r6",
+        "t27_r8": "runs/01/20260926T044011360142Z_t27_r8",
+        "t27_r12": "runs/01/20260926T044106568103Z_t27_r12",
+        "t27_r16": "runs/01/20260926T044201786348Z_t27_r16",
+        "t125_r1": "runs/01/20260926T044256856157Z_t125_r1",
+        "t125_r2": "runs/01/20260926T044344805045Z_t125_r2",
+        "t125_r3": "runs/01/20260926T044433719402Z_t125_r3",
+        "t125_r6": "runs/01/20260926T044521183257Z_t125_r6",
+        "t125_r8": "runs/01/20260926T044609814991Z_t125_r8",
+        "t125_r12": "runs/01/20260926T044658148753Z_t125_r12",
+        "t125_r16": "runs/01/20260926T044745826549Z_t125_r16"
+      },
+      "final_groups": {
+        "t27_r1": "runs/01/20260926T045027005983Z_t27_r1",
+        "t27_r2": "runs/01/20260926T043724262670Z_t27_r2",
+        "t27_r3": "runs/01/20260926T045205854568Z_t27_r3",
+        "t27_r6": "runs/01/20260926T043916237327Z_t27_r6",
+        "t27_r8": "runs/01/20260926T044011360142Z_t27_r8",
+        "t27_r12": "runs/01/20260926T044106568103Z_t27_r12",
+        "t27_r16": "runs/01/20260926T050004086594Z_t27_r16",
+        "t125_r1": "runs/01/20260926T050141800954Z_t125_r1",
+        "t125_r2": "runs/01/20260926T044344805045Z_t125_r2",
+        "t125_r3": "runs/01/20260926T050309922924Z_t125_r3",
+        "t125_r6": "runs/01/20260926T044521183257Z_t125_r6",
+        "t125_r8": "runs/01/20260926T044609814991Z_t125_r8",
+        "t125_r12": "runs/01/20260926T044658148753Z_t125_r12",
+        "t125_r16": "runs/01/20260926T050437999480Z_t125_r16"
+      },
+      "baseline_parameters": {
+        "maxstep_s": 1e-09,
+        "reltol": 1e-05,
+        "method": "traponly"
+      },
+      "refined_parameters": {
+        "maxstep_s": 5e-10,
+        "reltol": 1e-06,
+        "method": "traponly"
+      },
+      "metrics": {
+        "t27_r1": {
+          "efficiency": {
+            "baseline": 0.9015390130365607,
+            "refined": 0.9029643794786644,
+            "absolute_difference": 0.0014253664421036705,
+            "max_absolute_difference": 0.001,
+            "passed": false
+          },
+          "p_in_W": {
+            "baseline": 0.13506017051085784,
+            "refined": 0.13559894126181105,
+            "absolute_difference": 0.0005387707509532103,
+            "max_absolute_difference": 0.0002,
+            "passed": false
+          },
+          "p_out_W": {
+            "baseline": 0.12176201282290837,
+            "refined": 0.12244101385443507,
+            "absolute_difference": 0.0006790010315266964,
+            "max_absolute_difference": 0.0002,
+            "passed": false
+          }
+        },
+        "t27_r3": {
+          "efficiency": {
+            "baseline": 0.9562367882672452,
+            "refined": 0.9561980558855413,
+            "absolute_difference": 3.8732381703932006e-05,
+            "max_absolute_difference": 0.001,
+            "passed": true
+          },
+          "p_in_W": {
+            "baseline": 0.15732097225713773,
+            "refined": 0.157677724389384,
+            "absolute_difference": 0.00035675213224625746,
+            "max_absolute_difference": 0.0002,
+            "passed": false
+          },
+          "p_out_W": {
+            "baseline": 0.15043610123824577,
+            "refined": 0.15077113351758517,
+            "absolute_difference": 0.00033503227933939783,
+            "max_absolute_difference": 0.0002,
+            "passed": false
+          }
+        },
+        "t27_r16": {
+          "efficiency": {
+            "baseline": 0.8271371395429966,
+            "refined": 0.8270195411331953,
+            "absolute_difference": 0.00011759840980130054,
+            "max_absolute_difference": 0.001,
+            "passed": true
+          },
+          "p_in_W": {
+            "baseline": 0.04877252412932025,
+            "refined": 0.04877747964900738,
+            "absolute_difference": 4.955519687134535e-06,
+            "max_absolute_difference": 0.0002,
+            "passed": true
+          },
+          "p_out_W": {
+            "baseline": 0.04034156609661773,
+            "refined": 0.040339928836955856,
+            "absolute_difference": 1.637259661874113e-06,
+            "max_absolute_difference": 0.0002,
+            "passed": true
+          }
+        },
+        "t125_r1": {
+          "efficiency": {
+            "baseline": 0.8947450830711027,
+            "refined": 0.8961292098997647,
+            "absolute_difference": 0.001384126828662069,
+            "max_absolute_difference": 0.001,
+            "passed": false
+          },
+          "p_in_W": {
+            "baseline": 0.13598047098489865,
+            "refined": 0.13651910971027612,
+            "absolute_difference": 0.0005386387253774605,
+            "max_absolute_difference": 0.0002,
+            "passed": false
+          },
+          "p_out_W": {
+            "baseline": 0.12166785780743082,
+            "refined": 0.12233876192088904,
+            "absolute_difference": 0.000670904113458215,
+            "max_absolute_difference": 0.0002,
+            "passed": false
+          }
+        },
+        "t125_r3": {
+          "efficiency": {
+            "baseline": 0.9517630714234624,
+            "refined": 0.9517315144166159,
+            "absolute_difference": 3.1557006846538727e-05,
+            "max_absolute_difference": 0.001,
+            "passed": true
+          },
+          "p_in_W": {
+            "baseline": 0.15778941656553294,
+            "refined": 0.15814226695616604,
+            "absolute_difference": 0.0003528503906330971,
+            "max_absolute_difference": 0.0002,
+            "passed": false
+          },
+          "p_out_W": {
+            "baseline": 0.15017813974852778,
+            "refined": 0.15050897922346865,
+            "absolute_difference": 0.00033083947494086385,
+            "max_absolute_difference": 0.0002,
+            "passed": false
+          }
+        },
+        "t125_r16": {
+          "efficiency": {
+            "baseline": 0.8167814849035854,
+            "refined": 0.8166732775541413,
+            "absolute_difference": 0.00010820734944405608,
+            "max_absolute_difference": 0.001,
+            "passed": true
+          },
+          "p_in_W": {
+            "baseline": 0.049367485417141796,
+            "refined": 0.04937226011647715,
+            "absolute_difference": 4.774699335352572e-06,
+            "max_absolute_difference": 0.0002,
+            "passed": true
+          },
+          "p_out_W": {
+            "baseline": 0.04032244804496917,
+            "refined": 0.040321005489579,
+            "absolute_difference": 1.4425553901686872e-06,
+            "max_absolute_difference": 0.0002,
+            "passed": true
+          }
+        }
+      },
+      "baseline_tier": "complete_10pct",
+      "refined_tier": "complete_10pct",
+      "passed": false
+    }
+  ],
+  "numerical_followup": "First1ns/1e-5 versus0.5ns/1e-6 check failed predeclared0.1percentagepoint/0.2mW bounds at1/3ohm. Retain all thresholds; rerun ALL14points at0.25ns/1e-7 and compare six representative points with0.5ns results."
+}

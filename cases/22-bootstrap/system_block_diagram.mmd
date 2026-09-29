@@ -1,0 +1,14 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        BST["两路预充 / 自举存储"]
+        GATE["跟随输入的栅驱动"]
+    end
+    CLK["采样时钟"]
+    VIN["差分输入"]
+    SW["受驱采样开关与固定负载"]
+    CLK -.->|"预充 / 跟踪"| BST
+    VIN -->|"源端跟随"| BST
+    BST -->|"提升栅压"| GATE
+    GATE -.->|"栅控制"| SW
+    VIN -->|"模拟信号"| SW

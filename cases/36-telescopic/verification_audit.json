@@ -1,0 +1,51 @@
+{
+  "audited_at": "2026-09-22T09:05:53.501238+00:00",
+  "status": "complete_original",
+  "nominal_contract_checks": 12,
+  "all_four_nominal_benches_pass": true,
+  "cm_stb_additional_diagnostic_pass": true,
+  "source_verifier_hash_valid": true,
+  "lut_hashes_valid": true,
+  "run_snapshots": [
+    {
+      "run": "runs/36/20260922T085345191248Z_ac",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true
+    },
+    {
+      "run": "runs/36/20260922T085345388089Z_range",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true
+    },
+    {
+      "run": "runs/36/20260922T085345536109Z_settling",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true
+    },
+    {
+      "run": "runs/36/20260922T085346089578Z_cm_recovery",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true
+    },
+    {
+      "run": "runs/36/20260922T085423643569Z_cmstb",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true
+    }
+  ],
+  "review_pdf_sha256": "8a7de2302024062846263208ce3d5d97185a97adfb5a04a8c9319ad12c090762",
+  "review_pdf_pages": 6,
+  "all_pages_visually_reviewed": true,
+  "limitations": "Nominal schematic only; all other PVT/mismatch/extracted/passive variation excluded.",
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:27:41.756299+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "2d4a9e9504ac804dd6b55067d359dc4d79fabc31be9e32557493978f80d8af81",
+    "results_sha256": "f4ac7e120b0e357f22f3fad5837e087bb3f037e3c2f4aa07d67233dbaf3945f1",
+    "previous_pdf_sha256": "8a7de2302024062846263208ce3d5d97185a97adfb5a04a8c9319ad12c090762",
+    "current_pdf_sha256": "6a180b36cb77f27e403056fdb9b74565bb1b0ff8a3e5749e567f6eb7d3a48dfc",
+    "schematic_audit_sha256": "dc2d78ff2819f8cb30530985332a7dcfabce668c6c2a5d35bd4b2e174c656a0e",
+    "report_pages": 9,
+    "all_merged_pages_pixel_identical_to_sources": true
+  }
+}

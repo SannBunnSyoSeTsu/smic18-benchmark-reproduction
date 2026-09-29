@@ -1,0 +1,38 @@
+{
+  "source_task": "sky130-gmr-degen-amp-constant-gm-pvt",
+  "corner": "tt",
+  "temperature_C": 27,
+  "VDD_V": 1.8,
+  "VCM_V": 0.9,
+  "load_each_F": 1e-12,
+  "IREF_A": 5e-05,
+  "gain_target": 2,
+  "gain_error_max": 0.02,
+  "gain_frequency_Hz": 1000000.0,
+  "bandwidth_min_Hz": 60000000.0,
+  "power_max_W": 0.0015,
+  "power_ports": [
+    "VDD",
+    "VCM",
+    "VIN",
+    "VIP"
+  ],
+  "SDR_min_dB": 60,
+  "sine_Hz": 3000000.0,
+  "differential_peak_V": 0.1,
+  "fundamental_gain_range": [
+    1.9,
+    2.1
+  ],
+  "fit_window_s": [
+    5e-07,
+    1.5e-06
+  ],
+  "legal_DUT_leaves": "MOS and positive resistors; no intentional capacitors",
+  "nominal_scope_excludes": [
+    "remaining14 process-temperature points",
+    "supplyvariation",
+    "mismatch",
+    "PEX"
+  ]
+}

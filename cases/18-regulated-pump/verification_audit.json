@@ -1,0 +1,540 @@
+{
+  "generated_at": "2026-09-28T18:30:07.113508+00:00",
+  "status": "passed",
+  "circuit_sha256": "6fc878c0bf1ec3399b2991d1291687c0777fa5b3c642e9e8266ef6f957560e0c",
+  "results_sha256": "ced2d111caf599c97528fe3a3111e1ab01c568fda751447d0e22e26e7c5ac3c7",
+  "contract_sha256": "c1b1195c8ddff72c683a4251c07b5873110fc469b4f0a011cbf9fc229f8dc1ea",
+  "measurement_cross_checks": [
+    {
+      "metric": "1uA_vout_avg_V",
+      "report": 2.338852287330478,
+      "independent": 2.3388522873304782,
+      "absolute_difference": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "metric": "1uA_vout_min_V",
+      "report": 2.338416553320337,
+      "independent": 2.338416553320337,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1uA_vout_max_V",
+      "report": 2.339155942923119,
+      "independent": 2.339155942923119,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1uA_enabled_current_A",
+      "report": 0.00011736970732693913,
+      "independent": 0.00011736970732693909,
+      "absolute_difference": 4.0657581468206416e-20,
+      "passed": true
+    },
+    {
+      "metric": "1uA_control_avg_V",
+      "report": 1.2736526490887277,
+      "independent": 1.2736526490887277,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "1uA_driver_supply_avg_V",
+      "report": 1.0100683539144075,
+      "independent": 1.0100683539144077,
+      "absolute_difference": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "metric": "1uA_error_V",
+      "report": 0.0011477126695220718,
+      "independent": 0.0011477126695216278,
+      "absolute_difference": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "metric": "1uA_ripple_V",
+      "report": 0.0007393896027818592,
+      "independent": 0.0007393896027818592,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "25uA_vout_avg_V",
+      "report": 2.338631013798192,
+      "independent": 2.338631013798192,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "25uA_vout_min_V",
+      "report": 2.337994060394534,
+      "independent": 2.337994060394534,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "25uA_vout_max_V",
+      "report": 2.339067122407597,
+      "independent": 2.339067122407597,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "25uA_enabled_current_A",
+      "report": 0.00016616570638655108,
+      "independent": 0.00016616570638655108,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "25uA_control_avg_V",
+      "report": 1.2589036114094065,
+      "independent": 1.2589036114094065,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "25uA_driver_supply_avg_V",
+      "report": 1.1246084599915163,
+      "independent": 1.124608459991516,
+      "absolute_difference": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "metric": "25uA_error_V",
+      "report": 0.0013689862018080312,
+      "independent": 0.0013689862018080312,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "25uA_ripple_V",
+      "report": 0.0010730620130630086,
+      "independent": 0.0010730620130630086,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "50uA_vout_avg_V",
+      "report": 2.3390864207833717,
+      "independent": 2.3390864207833713,
+      "absolute_difference": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "metric": "50uA_vout_min_V",
+      "report": 2.338068888573302,
+      "independent": 2.338068888573302,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "50uA_vout_max_V",
+      "report": 2.33984319766168,
+      "independent": 2.33984319766168,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "50uA_enabled_current_A",
+      "report": 0.000217336564159355,
+      "independent": 0.00021733656415935502,
+      "absolute_difference": 2.710505431213761e-20,
+      "passed": true
+    },
+    {
+      "metric": "50uA_control_avg_V",
+      "report": 1.245085170619701,
+      "independent": 1.2450851706197015,
+      "absolute_difference": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "metric": "50uA_driver_supply_avg_V",
+      "report": 1.254120501884657,
+      "independent": 1.2541205018846573,
+      "absolute_difference": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "metric": "50uA_error_V",
+      "report": 0.0009135792166281576,
+      "independent": 0.0009135792166286016,
+      "absolute_difference": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "metric": "50uA_ripple_V",
+      "report": 0.0017743090883781676,
+      "independent": 0.0017743090883781676,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "disabled_current_A",
+      "report": 1.095479732144787e-09,
+      "independent": 1.095479732144787e-09,
+      "absolute_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "original_nominal_checks": [
+    {
+      "name": "pvt_load_regulation",
+      "passed": true,
+      "detail": "worst VOUT=2.33863V at TT40C25uA; bounds=2.223..2.457V"
+    },
+    {
+      "name": "pvt_output_ripple",
+      "passed": true,
+      "detail": "worst=1.77431mVpp at TT40C50uA (required <=5mVpp)"
+    },
+    {
+      "name": "pvt_enabled_current",
+      "passed": false,
+      "detail": "worst=217.337uA at TT40C50uA (required <=200uA)"
+    },
+    {
+      "name": "pvt_disabled_current",
+      "passed": true,
+      "detail": "worst=1.09548nA at TT40Coff (required <=100nA)"
+    }
+  ],
+  "original_model_hashes_unchanged": true,
+  "source_snapshot_hashes_verified": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "run": "runs/18/20260928T175827420444Z_load1",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR1.MMN1:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/18/20260928T180020763492Z_load25",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR1.MMN1:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/18/20260928T180215890808Z_load50",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XPH1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XPH1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XPH1.MMN1:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/18/20260928T180414236837Z_disabled",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/18/20260928T180657145570Z_load1",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MRECT1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR0.MMN1:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/18/20260928T181032550097Z_load25",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XPH1.MMN1:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XPH1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.ctrl. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MRECT1:int_d. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/18/20260928T181411096708Z_load50",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XPH1.MMN1:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MRECT0:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MRECT1:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDR1.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MRECT0:int_d. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/18/20260928T181752376863Z_disabled",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ]
+    }
+  ],
+  "numerical_confirmation": {
+    "generated_at": "2026-09-28T18:18:48.202918+00:00",
+    "baseline_groups": {
+      "load1": "runs/18/20260928T175827420444Z_load1",
+      "load25": "runs/18/20260928T180020763492Z_load25",
+      "load50": "runs/18/20260928T180215890808Z_load50",
+      "disabled": "runs/18/20260928T180414236837Z_disabled"
+    },
+    "final_groups": {
+      "load1": "runs/18/20260928T180657145570Z_load1",
+      "load25": "runs/18/20260928T181032550097Z_load25",
+      "load50": "runs/18/20260928T181411096708Z_load50",
+      "disabled": "runs/18/20260928T181752376863Z_disabled"
+    },
+    "circuit_sha256": "6fc878c0bf1ec3399b2991d1291687c0777fa5b3c642e9e8266ef6f957560e0c",
+    "metrics": [
+      {
+        "metric": "1uA_vout_avg_V",
+        "baseline": 2.338852145918617,
+        "refined": 2.338852287330478,
+        "absolute_difference": 1.4141186088778568e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "1uA_vout_min_V",
+        "baseline": 2.338416569675998,
+        "refined": 2.338416553320337,
+        "absolute_difference": 1.6355660825695395e-08,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "1uA_vout_max_V",
+        "baseline": 2.339155708479985,
+        "refined": 2.339155942923119,
+        "absolute_difference": 2.3444313379528126e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "1uA_enabled_current_A",
+        "baseline": 0.00011731196677573162,
+        "refined": 0.00011736970732693913,
+        "absolute_difference": 5.77405512075177e-08,
+        "maximum_difference": 2.5e-07,
+        "passed": true
+      },
+      {
+        "metric": "1uA_control_avg_V",
+        "baseline": 1.2736411575391215,
+        "refined": 1.2736526490887277,
+        "absolute_difference": 1.1491549606112983e-05,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "1uA_driver_supply_avg_V",
+        "baseline": 1.0100904769943613,
+        "refined": 1.0100683539144075,
+        "absolute_difference": 2.2123079953750846e-05,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "1uA_error_V",
+        "baseline": 0.0011478540813829596,
+        "refined": 0.0011477126695220718,
+        "absolute_difference": 1.4141186088778568e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "1uA_ripple_V",
+        "baseline": 0.0007391388039872382,
+        "refined": 0.0007393896027818592,
+        "absolute_difference": 2.5079879462097665e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "25uA_vout_avg_V",
+        "baseline": 2.3386309255893467,
+        "refined": 2.338631013798192,
+        "absolute_difference": 8.820884511706595e-08,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "25uA_vout_min_V",
+        "baseline": 2.337994144118334,
+        "refined": 2.337994060394534,
+        "absolute_difference": 8.372379989296519e-08,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "25uA_vout_max_V",
+        "baseline": 2.33906703722148,
+        "refined": 2.339067122407597,
+        "absolute_difference": 8.518611682717392e-08,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "25uA_enabled_current_A",
+        "baseline": 0.00016609453702943916,
+        "refined": 0.00016616570638655108,
+        "absolute_difference": 7.116935711191843e-08,
+        "maximum_difference": 2.5e-07,
+        "passed": true
+      },
+      {
+        "metric": "25uA_control_avg_V",
+        "baseline": 1.2588959861869207,
+        "refined": 1.2589036114094065,
+        "absolute_difference": 7.625222485874161e-06,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "25uA_driver_supply_avg_V",
+        "baseline": 1.1246139782572355,
+        "refined": 1.1246084599915163,
+        "absolute_difference": 5.518265719262061e-06,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "25uA_error_V",
+        "baseline": 0.0013690744106531483,
+        "refined": 0.0013689862018080312,
+        "absolute_difference": 8.820884511706595e-08,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "25uA_ripple_V",
+        "baseline": 0.0010728931031462885,
+        "refined": 0.0010730620130630086,
+        "absolute_difference": 1.689099167201391e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "50uA_vout_avg_V",
+        "baseline": 2.339085857528746,
+        "refined": 2.3390864207833717,
+        "absolute_difference": 5.632546256073567e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "50uA_vout_min_V",
+        "baseline": 2.338068641808515,
+        "refined": 2.338068888573302,
+        "absolute_difference": 2.4676478682650327e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "50uA_vout_max_V",
+        "baseline": 2.339842412832642,
+        "refined": 2.33984319766168,
+        "absolute_difference": 7.848290382028722e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "50uA_enabled_current_A",
+        "baseline": 0.0002172523491808378,
+        "refined": 0.000217336564159355,
+        "absolute_difference": 8.421497851718719e-08,
+        "maximum_difference": 2.5e-07,
+        "passed": true
+      },
+      {
+        "metric": "50uA_control_avg_V",
+        "baseline": 1.245080933748272,
+        "refined": 1.245085170619701,
+        "absolute_difference": 4.236871429030842e-06,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "50uA_driver_supply_avg_V",
+        "baseline": 1.2541093154396987,
+        "refined": 1.254120501884657,
+        "absolute_difference": 1.118644495834431e-05,
+        "maximum_difference": 0.001,
+        "passed": true
+      },
+      {
+        "metric": "50uA_error_V",
+        "baseline": 0.0009141424712537649,
+        "refined": 0.0009135792166281576,
+        "absolute_difference": 5.632546256073567e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "50uA_ripple_V",
+        "baseline": 0.0017737710241267912,
+        "refined": 0.0017743090883781676,
+        "absolute_difference": 5.380642513763689e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "disabled_current_A",
+        "baseline": 1.095479732144787e-09,
+        "refined": 1.095479732144787e-09,
+        "absolute_difference": 0.0,
+        "maximum_difference": 5e-11,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "schematic_instances": 54,
+  "schematic_terminals": 192,
+  "pdf_review_pending": false,
+  "full_upstream_signoff": false,
+  "method": "Independent dot-product integration overexact190–200uswithendpoints, separateoffDCandallpowerMOSterminalscreen. Unmodifiedoriginal fourcheckgroups truthfullyreturnthreepass/oneenabledcurrentfail; accepted10% tierverifiedseparately. Biasupstreamofsense excludedexactlyasoriginal.",
+  "pdf": "reports/18-regulated-pump-review.pdf",
+  "pdf_sha256": "aec329a204633d586252e738f9bcd38f30c5477de167365a9059740eb02529d5",
+  "pdf_pages": 13,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-28T18:44:45.873912+00:00"
+}

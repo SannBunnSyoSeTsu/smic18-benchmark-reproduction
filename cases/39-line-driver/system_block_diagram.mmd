@@ -1,0 +1,17 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        AMP["差分输入与镜像增益级"]
+        AB["浮动Class-AB输出"]
+        COMP["双路Miller补偿"]
+    end
+    VIN["信号源 / 输入电阻"]
+    FB["外部反相反馈"]
+    LOAD["300Ω交流耦合线路与200pF负载"]
+    VIN --> AMP
+    AMP --> AB
+    AB --> LOAD
+    AB -->|"输出取样"| FB
+    FB -->|"负反馈"| AMP
+    AB --> COMP
+    COMP -->|"补偿"| AMP

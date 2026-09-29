@@ -1,0 +1,63 @@
+{
+  "source_task": "sky130-fct-residue-amplifier-900msps",
+  "scope": "SMIC18 TT1.8V27C both original10mV/bin5 and20mV/bin3 records at900MS/s; fixed400fF flying capacitors,50fF output hold loads and original startup/timing.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "fs_Hz": 900000000.0,
+  "input_diff_peak_V": [
+    0.01,
+    0.02
+  ],
+  "tone_bins": [
+    5,
+    3
+  ],
+  "N": 32,
+  "warmup_cycles": 64,
+  "period_s": 1.111111111111111e-09,
+  "held_offset_s": 8.8e-10,
+  "track_offset_s": 7.8e-10,
+  "input_cm_V": 1.0,
+  "output_precharge_V": 0.9,
+  "bias_A": 5e-05,
+  "fixture_flying_F": 4e-13,
+  "output_load_F": 5e-14,
+  "fixture_switch": {
+    "Ron_ohm": 0.1,
+    "series_ohm": 1,
+    "Roff_ohm": 1000000000000.0,
+    "Vt_V": 0.9,
+    "Vh_V": 0.0005,
+    "transition_regularization_V": 1e-06,
+    "terminal_cap_F": 1e-16
+  },
+  "fixture_clock_migration": "Fixed vendor BUFHDV16 maps the external two-inverter clock-buffer function; fixed before DUT tuning, same stimuli. Not exact Sky130 transistor delay.",
+  "startup_only_precharge_s": 1e-09,
+  "power_window_s": [
+    7.111111111111111e-08,
+    1.0666666666666667e-07
+  ],
+  "power_definition": "Signed net DUT VDD+VCM+SAM+TRANSFER+IBIAS port energy; fixture power separate and excluded as original.",
+  "gain_range": [
+    5.5,
+    6.5
+  ],
+  "sfdr_min_dB": 60,
+  "output_cm_range_V": [
+    0.3,
+    1.2
+  ],
+  "output_range_V": [
+    0.2,
+    1.6
+  ],
+  "hold_movement_max": 0.015,
+  "power_max_W": 0.005,
+  "allowed": "NativeMOS, positiveideal capacitors, exact vendorHD digital. Ideal switches only in source-owned fixture.",
+  "unmodeled": [
+    "PVT",
+    "noise",
+    "mismatch",
+    "PEX"
+  ]
+}

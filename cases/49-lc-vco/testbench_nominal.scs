@@ -1,0 +1,37 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=res_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_rf_v1p5_spe.lib" section=mim_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_rf_v1p5_var_spe.ckt"
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_rf_v1p5_spri_ind_spe.ckt"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/49-lc-vco/circuit.scs"
+simulator lang=spectre
+simulatorOptions options temp=27 tnom=27 reltol=1e-5 vabstol=1e-8 iabstol=1e-14 gmin=1e-12
+saveOptions options save=selected
+VCTRL (vctrl 0) vsource type=pwl wave=[0 0 39.9n 0 40n 0.6 79.9n 0.6 80n 1.2 119.9n 1.2 120n 1.8 160n 1.8]
+save vctrl
+VDD (vdd 0) vsource dc=1.8
+IREF (iref 0) isource dc=50u
+XVCO (0 iref vctrl vdd outp outn) lc_vco_2ghz
+CLP (outp 0) capacitor c=10f
+CLN (outn 0) capacitor c=10f
+ic outp=0.61 outn=0.59
+save vdd iref outp outn VDD:p XVCO.tankct XVCO.pbu XVCO.pcas XVCO.vbias XVCO.varp XVCO.varn XVCO.vrefvar XVCO.rout
+save XVCO.MPREFU:ids XVCO.MPREFU:gm XVCO.MPREFU:gds XVCO.MPREFU:vgs XVCO.MPREFU:vds XVCO.MPREFU:vdsat
+save XVCO.MPREFL:ids XVCO.MPREFL:gm XVCO.MPREFL:gds XVCO.MPREFL:vgs XVCO.MPREFL:vds XVCO.MPREFL:vdsat
+save XVCO.MPFEED:ids XVCO.MPFEED:gm XVCO.MPFEED:gds XVCO.MPFEED:vgs XVCO.MPFEED:vds XVCO.MPFEED:vdsat
+save XVCO.MPCAS:ids XVCO.MPCAS:gm XVCO.MPCAS:gds XVCO.MPCAS:vgs XVCO.MPCAS:vds XVCO.MPCAS:vdsat
+save XVCO.MNP:ids XVCO.MNP:gm XVCO.MNP:gds XVCO.MNP:vgs XVCO.MNP:vds XVCO.MNP:vdsat
+save XVCO.MNN:ids XVCO.MNN:gm XVCO.MNN:gds XVCO.MNN:vgs XVCO.MNN:vds XVCO.MNN:vdsat
+save XVCO.MPVB:ids XVCO.MPVB:gm XVCO.MPVB:gds XVCO.MPVB:vgs XVCO.MPVB:vds XVCO.MPVB:vdsat
+save XVCO.MNB1:ids XVCO.MNB1:gm XVCO.MNB1:gds XVCO.MNB1:vgs XVCO.MNB1:vds XVCO.MNB1:vdsat
+save XVCO.MNB2:ids XVCO.MNB2:gm XVCO.MNB2:gds XVCO.MNB2:vgs XVCO.MNB2:vds XVCO.MNB2:vdsat
+save XVCO.MRT:ids XVCO.MRT:gm XVCO.MRT:gds XVCO.MRT:vgs XVCO.MRT:vds XVCO.MRT:vdsat
+save XVCO.MRI1:ids XVCO.MRI1:gm XVCO.MRI1:gds XVCO.MRI1:vgs XVCO.MRI1:vds XVCO.MRI1:vdsat
+save XVCO.MRI2:ids XVCO.MRI2:gm XVCO.MRI2:gds XVCO.MRI2:vgs XVCO.MRI2:vds XVCO.MRI2:vdsat
+save XVCO.MRL1:ids XVCO.MRL1:gm XVCO.MRL1:gds XVCO.MRL1:vgs XVCO.MRL1:vds XVCO.MRL1:vdsat
+save XVCO.MRL2:ids XVCO.MRL2:gm XVCO.MRL2:gds XVCO.MRL2:vgs XVCO.MRL2:vds XVCO.MRL2:vdsat
+save XVCO.MRPU:ids XVCO.MRPU:gm XVCO.MRPU:gds XVCO.MRPU:vgs XVCO.MRPU:vds XVCO.MRPU:vdsat
+save XVCO.MRPD:ids XVCO.MRPD:gm XVCO.MRPD:gds XVCO.MRPD:vgs XVCO.MRPD:vds XVCO.MRPD:vdsat
+tran tran stop=160n maxstep=5p skipdc=yes errpreset=conservative method=traponly

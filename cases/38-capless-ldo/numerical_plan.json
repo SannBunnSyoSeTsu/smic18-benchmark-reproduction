@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-09-28T17:43:19.534589+00:00",
+  "baseline_groups": {
+    "dc1.5": "runs/38/20260928T174136958523Z_dc1.5",
+    "psr1.5": "runs/38/20260928T174137599693Z_psr1.5",
+    "step1.5": "runs/38/20260928T174138235882Z_step1.5",
+    "dc1.8": "runs/38/20260928T174140099329Z_dc1.8",
+    "psr1.8": "runs/38/20260928T174140729290Z_psr1.8",
+    "step1.8": "runs/38/20260928T174141347233Z_step1.8",
+    "start": "runs/38/20260928T174143141771Z_start"
+  },
+  "baseline": {
+    "step_max_s": 2e-08,
+    "start_max_s": 2e-07,
+    "reltol": 1e-06,
+    "dc_step_A": 0.0002,
+    "ac_dec": 40
+  },
+  "refined": {
+    "step_max_s": 1e-08,
+    "start_max_s": 1e-07,
+    "reltol": 1e-07,
+    "dc_step_A": 0.0001,
+    "ac_dec": 160
+  },
+  "bounds": {
+    "dc_min_V": 0.0002,
+    "dc_max_V": 0.0002,
+    "dc_error_V": 0.0002,
+    "iq_A": 1e-08,
+    "psr1k_dB": 0.01,
+    "psr100k_dB": 0.01,
+    "psr1M_dB": 0.01,
+    "droop_V": 0.0002,
+    "w1max_V": 0.0002,
+    "bump_V": 0.0002,
+    "w2min_V": 0.0002,
+    "t1min_V": 0.0002,
+    "t1max_V": 0.0002,
+    "t2min_V": 0.0002,
+    "t2max_V": 0.0002,
+    "step_excursion_V": 0.0002,
+    "step_recovery_V": 0.0002
+  },
+  "startup_voltage_difference_max_V": 0.0002
+}

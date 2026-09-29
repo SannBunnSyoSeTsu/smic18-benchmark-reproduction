@@ -1,0 +1,253 @@
+{
+  "devices": [
+    {
+      "name": "MREF",
+      "pins": [
+        "IREF",
+        "IREF",
+        "VSS",
+        "VSS"
+      ],
+      "role": "n_bias",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1
+    },
+    {
+      "name": "MBN",
+      "pins": [
+        "pb",
+        "IREF",
+        "VSS",
+        "VSS"
+      ],
+      "role": "n_bias",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1
+    },
+    {
+      "name": "MBP",
+      "pins": [
+        "pb",
+        "pb",
+        "VDD",
+        "VDD"
+      ],
+      "role": "p_bias",
+      "W_unit_um": 28.48,
+      "L_um": 1.0,
+      "m": 1
+    },
+    {
+      "name": "MPBN1",
+      "pins": [
+        "VBN1",
+        "pb",
+        "VDD",
+        "VDD"
+      ],
+      "role": "p_bias",
+      "W_unit_um": 28.48,
+      "L_um": 1.0,
+      "m": 1
+    },
+    {
+      "name": "MNBN1",
+      "pins": [
+        "VBN1",
+        "VBN1",
+        "VCM",
+        "VCM"
+      ],
+      "role": "n_in",
+      "W_unit_um": 7.96,
+      "L_um": 0.36,
+      "m": 1
+    },
+    {
+      "name": "MNBP1",
+      "pins": [
+        "VBP1",
+        "IREF",
+        "VSS",
+        "VSS"
+      ],
+      "role": "n_bias",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1
+    },
+    {
+      "name": "MPBP1",
+      "pins": [
+        "VBP1",
+        "VBP1",
+        "VCM",
+        "VCM"
+      ],
+      "role": "p_in",
+      "W_unit_um": 32.64,
+      "L_um": 0.36,
+      "m": 1
+    },
+    {
+      "name": "MPBN2",
+      "pins": [
+        "VBN2",
+        "pb",
+        "VDD",
+        "VDD"
+      ],
+      "role": "p_bias",
+      "W_unit_um": 28.48,
+      "L_um": 1.0,
+      "m": 1
+    },
+    {
+      "name": "MNBN2",
+      "pins": [
+        "VBN2",
+        "VBN2",
+        "nbs",
+        "nbs"
+      ],
+      "role": "n_cas",
+      "W_unit_um": 3.34,
+      "L_um": 0.36,
+      "m": 1
+    },
+    {
+      "name": "MNBP2",
+      "pins": [
+        "VBP2",
+        "IREF",
+        "VSS",
+        "VSS"
+      ],
+      "role": "n_bias",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1
+    },
+    {
+      "name": "MPBP2",
+      "pins": [
+        "VBP2",
+        "VBP2",
+        "pbs",
+        "pbs"
+      ],
+      "role": "p_cas",
+      "W_unit_um": 13.94,
+      "L_um": 0.36,
+      "m": 1
+    },
+    {
+      "name": "MINP",
+      "pins": [
+        "ndP",
+        "gnP",
+        "VOP",
+        "VOP"
+      ],
+      "role": "n_in",
+      "W_unit_um": 7.96,
+      "L_um": 0.36,
+      "m": 6
+    },
+    {
+      "name": "MCNP",
+      "pins": [
+        "VDD",
+        "gcnP",
+        "ndP",
+        "ndP"
+      ],
+      "role": "n_cas",
+      "W_unit_um": 3.34,
+      "L_um": 0.36,
+      "m": 6
+    },
+    {
+      "name": "MIPP",
+      "pins": [
+        "pdP",
+        "gpP",
+        "VOP",
+        "VOP"
+      ],
+      "role": "p_in",
+      "W_unit_um": 32.64,
+      "L_um": 0.36,
+      "m": 6
+    },
+    {
+      "name": "MCPP",
+      "pins": [
+        "VSS",
+        "gcpP",
+        "pdP",
+        "pdP"
+      ],
+      "role": "p_cas",
+      "W_unit_um": 13.94,
+      "L_um": 0.36,
+      "m": 6
+    },
+    {
+      "name": "MINN",
+      "pins": [
+        "ndN",
+        "gnN",
+        "VON",
+        "VON"
+      ],
+      "role": "n_in",
+      "W_unit_um": 7.96,
+      "L_um": 0.36,
+      "m": 6
+    },
+    {
+      "name": "MCNN",
+      "pins": [
+        "VDD",
+        "gcnN",
+        "ndN",
+        "ndN"
+      ],
+      "role": "n_cas",
+      "W_unit_um": 3.34,
+      "L_um": 0.36,
+      "m": 6
+    },
+    {
+      "name": "MIPN",
+      "pins": [
+        "pdN",
+        "gpN",
+        "VON",
+        "VON"
+      ],
+      "role": "p_in",
+      "W_unit_um": 32.64,
+      "L_um": 0.36,
+      "m": 6
+    },
+    {
+      "name": "MCPN",
+      "pins": [
+        "VSS",
+        "gcpN",
+        "pdN",
+        "pdN"
+      ],
+      "role": "p_cas",
+      "W_unit_um": 13.94,
+      "L_um": 0.36,
+      "m": 6
+    }
+  ],
+  "circuit_sha256": "ffeed03d880f06caf2e1bada341477edcbc75089e3eb9b2a9d0a72995ecf88ca",
+  "all_unit_widths_valid": true
+}

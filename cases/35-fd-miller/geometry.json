@@ -1,0 +1,427 @@
+{
+  "circuit_sha256": "6d9f5f72270985bfe6f78ef2b76d423773ed5271b7edac16c114f3c9b148289b",
+  "devices": [
+    {
+      "name": "MREF",
+      "pins": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 5.0,
+      "W_total_um": 23.4
+    },
+    {
+      "name": "MBN",
+      "pins": [
+        "vbp",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 4.68
+    },
+    {
+      "name": "MBP",
+      "pins": [
+        "vbp",
+        "vbp",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 9.5,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 9.5
+    },
+    {
+      "name": "MOBN",
+      "pins": [
+        "vbpout",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 4.68
+    },
+    {
+      "name": "MOBP",
+      "pins": [
+        "vbpout",
+        "vbpout",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 1.96,
+      "L_um": 0.36,
+      "m": 1.0,
+      "W_total_um": 1.96
+    },
+    {
+      "name": "MNCB",
+      "pins": [
+        "vcn",
+        "vbp",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 9.5,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 9.5
+    },
+    {
+      "name": "MDN",
+      "pins": [
+        "vcn",
+        "vcn",
+        "ncb",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 1.68,
+      "L_um": 0.36,
+      "m": 1.0,
+      "W_total_um": 1.68
+    },
+    {
+      "name": "MDP",
+      "pins": [
+        "vpc",
+        "vpc",
+        "pcb",
+        "pcb"
+      ],
+      "model": "p18",
+      "W_unit_um": 6.96,
+      "L_um": 0.36,
+      "m": 1.0,
+      "W_total_um": 6.96
+    },
+    {
+      "name": "MPCB",
+      "pins": [
+        "vpc",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 4.68
+    },
+    {
+      "name": "MTAIL",
+      "pins": [
+        "tail",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 20.0,
+      "W_total_um": 93.6
+    },
+    {
+      "name": "MINP",
+      "pins": [
+        "fp",
+        "vinp",
+        "tail",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 10.26,
+      "L_um": 1.0,
+      "m": 10.0,
+      "W_total_um": 102.6
+    },
+    {
+      "name": "MINN",
+      "pins": [
+        "fn",
+        "vinn",
+        "tail",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 10.26,
+      "L_um": 1.0,
+      "m": 10.0,
+      "W_total_um": 102.6
+    },
+    {
+      "name": "MSP",
+      "pins": [
+        "fp",
+        "vbp",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 9.5,
+      "L_um": 1.0,
+      "m": 15.0,
+      "W_total_um": 142.5
+    },
+    {
+      "name": "MSN",
+      "pins": [
+        "fn",
+        "vbp",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 9.5,
+      "L_um": 1.0,
+      "m": 15.0,
+      "W_total_um": 142.5
+    },
+    {
+      "name": "MPCP",
+      "pins": [
+        "stagep",
+        "vpc",
+        "fp",
+        "fp"
+      ],
+      "model": "p18",
+      "W_unit_um": 6.96,
+      "L_um": 0.36,
+      "m": 5.0,
+      "W_total_um": 34.8
+    },
+    {
+      "name": "MPCN",
+      "pins": [
+        "stagen",
+        "vpc",
+        "fn",
+        "fn"
+      ],
+      "model": "p18",
+      "W_unit_um": 6.96,
+      "L_um": 0.36,
+      "m": 5.0,
+      "W_total_um": 34.8
+    },
+    {
+      "name": "MNCP",
+      "pins": [
+        "stagep",
+        "vcn",
+        "sinkp",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 1.68,
+      "L_um": 0.36,
+      "m": 5.0,
+      "W_total_um": 8.4
+    },
+    {
+      "name": "MNCN",
+      "pins": [
+        "stagen",
+        "vcn",
+        "sinkn",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 1.68,
+      "L_um": 0.36,
+      "m": 5.0,
+      "W_total_um": 8.4
+    },
+    {
+      "name": "MSINKP",
+      "pins": [
+        "sinkp",
+        "vcmfb",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 5.0,
+      "W_total_um": 23.4
+    },
+    {
+      "name": "MSINKN",
+      "pins": [
+        "sinkn",
+        "vcmfb",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 5.0,
+      "W_total_um": 23.4
+    },
+    {
+      "name": "MSECONDP",
+      "pins": [
+        "voutp",
+        "stagep",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 0.3,
+      "L_um": 0.36,
+      "m": 70.0,
+      "W_total_um": 21.0
+    },
+    {
+      "name": "MSECONDN",
+      "pins": [
+        "voutn",
+        "stagen",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 0.3,
+      "L_um": 0.36,
+      "m": 70.0,
+      "W_total_um": 21.0
+    },
+    {
+      "name": "MLOADP",
+      "pins": [
+        "voutp",
+        "vbpout",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 1.96,
+      "L_um": 0.36,
+      "m": 70.0,
+      "W_total_um": 137.2
+    },
+    {
+      "name": "MLOADN",
+      "pins": [
+        "voutn",
+        "vbpout",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 1.96,
+      "L_um": 0.36,
+      "m": 70.0,
+      "W_total_um": 137.2
+    },
+    {
+      "name": "MCMT",
+      "pins": [
+        "cmt",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 10.0,
+      "W_total_um": 46.8
+    },
+    {
+      "name": "MCMREF",
+      "pins": [
+        "cma",
+        "vocm",
+        "cmt",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 1.68,
+      "L_um": 0.36,
+      "m": 5.0,
+      "W_total_um": 8.4
+    },
+    {
+      "name": "MCMSENSE",
+      "pins": [
+        "vcmfb",
+        "vcms",
+        "cmt",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 1.68,
+      "L_um": 0.36,
+      "m": 5.0,
+      "W_total_um": 8.4
+    },
+    {
+      "name": "MCMD",
+      "pins": [
+        "cma",
+        "cma",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 9.5,
+      "L_um": 1.0,
+      "m": 5.0,
+      "W_total_um": 47.5
+    },
+    {
+      "name": "MCMM",
+      "pins": [
+        "vcmfb",
+        "cma",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 9.5,
+      "L_um": 1.0,
+      "m": 10.0,
+      "W_total_um": 95.0
+    },
+    {
+      "name": "MCMND",
+      "pins": [
+        "vcmfb",
+        "vcmfb",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 5.0,
+      "W_total_um": 23.4
+    }
+  ],
+  "all_unit_widths_valid": true,
+  "HD_logic": "none"
+}

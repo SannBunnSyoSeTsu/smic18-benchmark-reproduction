@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-09-29T05:53:30.980351+00:00",
+  "baseline_groups": {
+    "10mv": "runs/28/20260929T050627252473Z_precision_refined_10mv",
+    "20mv": "runs/28/20260929T050627252251Z_precision_refined_20mv"
+  },
+  "final_groups": {
+    "10mv": "runs/28/20260929T052500800082Z_precision_refined_10mv",
+    "20mv": "runs/28/20260929T052500800011Z_precision_refined_20mv"
+  },
+  "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+  "baseline_settings": {
+    "maxstep_s": 1.25e-12,
+    "global_reltol": 1e-08,
+    "vabstol_V": 1e-08,
+    "iabstol_A": 1e-12
+  },
+  "refined_settings": {
+    "maxstep_s": 6.25e-13,
+    "global_reltol": 1e-09,
+    "vabstol_V": 1e-08,
+    "iabstol_A": 1e-12
+  },
+  "exact_original_readout_strobes": true,
+  "metrics": [
+    {
+      "metric": "10mv_gain_vv",
+      "baseline": 4.7967568861612975,
+      "refined": 4.796738397775286,
+      "absolute_difference": 1.8488386011483726e-05,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "10mv_sfdr_db",
+      "baseline": 87.59560803736844,
+      "refined": 87.87971267414265,
+      "absolute_difference": 0.2841046367742166,
+      "maximum_difference": 0.5,
+      "passed": true
+    },
+    {
+      "metric": "10mv_cm_mean_v",
+      "baseline": 1.1789567711008577,
+      "refined": 1.1789563390324003,
+      "absolute_difference": 4.320684574565803e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "10mv_output_min_v",
+      "baseline": 1.153762360729059,
+      "refined": 1.153762068537423,
+      "absolute_difference": 2.9219163599769615e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "10mv_output_max_v",
+      "baseline": 1.203227500450661,
+      "refined": 1.203226396466775,
+      "absolute_difference": 1.1039838858639683e-06,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "10mv_hold_movement_ratio",
+      "baseline": 0.016311796536376422,
+      "refined": 0.016312722958045953,
+      "absolute_difference": 9.264216695309413e-07,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "10mv_power_w",
+      "baseline": 0.004748170478733103,
+      "refined": 0.0047481655317843496,
+      "absolute_difference": 4.946948753414837e-09,
+      "maximum_difference": 5e-06,
+      "passed": true
+    },
+    {
+      "metric": "20mv_gain_vv",
+      "baseline": 4.812329525028783,
+      "refined": 4.812310695597589,
+      "absolute_difference": 1.8829431193800872e-05,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "20mv_sfdr_db",
+      "baseline": 84.67656105624818,
+      "refined": 84.99662463654323,
+      "absolute_difference": 0.32006358029505577,
+      "maximum_difference": 0.5,
+      "passed": true
+    },
+    {
+      "metric": "20mv_cm_mean_v",
+      "baseline": 1.178707631054574,
+      "refined": 1.178707263458867,
+      "absolute_difference": 3.675957072069025e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "20mv_output_min_v",
+      "baseline": 1.129012080301088,
+      "refined": 1.129012343832373,
+      "absolute_difference": 2.635312850163274e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "20mv_output_max_v",
+      "baseline": 1.226778709217638,
+      "refined": 1.22677843665755,
+      "absolute_difference": 2.7256008805487397e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "20mv_hold_movement_ratio",
+      "baseline": 0.01623403834124252,
+      "refined": 0.016234655970845457,
+      "absolute_difference": 6.176296029371253e-07,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "20mv_power_w",
+      "baseline": 0.004748237365427692,
+      "refined": 0.004748208434134922,
+      "absolute_difference": 2.8931292770338624e-08,
+      "maximum_difference": 5e-06,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

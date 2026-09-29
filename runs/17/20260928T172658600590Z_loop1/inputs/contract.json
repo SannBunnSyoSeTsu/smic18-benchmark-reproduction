@@ -1,0 +1,35 @@
+{
+  "source_task": "sky130-nmos-pass-ldo-0p4v-pvt-mc",
+  "scope": "SMIC18 TT1.8V27C, both1mA/5mA loads. Other52 PVT/load points and50 mismatch seeds excluded.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "loads_A": [
+    0.001,
+    0.005
+  ],
+  "vref_V": 0.4,
+  "bias_sink_A": 4e-05,
+  "external_cap_F": 1e-11,
+  "ac_Hz": [
+    1,
+    1000000000.0
+  ],
+  "ac_dec": 40,
+  "original_limits": {
+    "output_error_V": 0.05,
+    "iq_max_A": 0.0004,
+    "phase_margin_deg": 45,
+    "gain_margin_db": 6,
+    "psrr_1khz_db": 40,
+    "headroom_V": 0.03
+  },
+  "nonrelaxable": [
+    "finite complete both load cases",
+    "nonnegative Iq",
+    "all active MOS headroom>30mV",
+    "PM>45deg",
+    "native devices only"
+  ],
+  "measurement": "Original series return ratio -Vloop_out/Vpass_gate, first falling0dB and -180degree crossings; IQ=-IVDD-ILOAD-40uA. Independent STB added as diagnostic; weaker stability decides acceptance.",
+  "acceptance_policy": "/home/IC/CodeX/smic18_benchmark_repro/contracts/acceptance-policy.md"
+}

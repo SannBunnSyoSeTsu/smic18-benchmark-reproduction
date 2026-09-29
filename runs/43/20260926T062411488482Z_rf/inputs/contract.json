@@ -1,0 +1,47 @@
+{
+  "source_task": "sky130-inductive-lna-2p4ghz-gain12-nf2-pvt",
+  "scope": "SMIC18TT1.8V27C nominal. Other26PVT points and public0C diagnostic excluded.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 5e-05,
+  "pin_order": [
+    "vss",
+    "iref",
+    "vdd",
+    "rfin",
+    "rfout"
+  ],
+  "external_ports_ohm": 50,
+  "band_Hz": [
+    2350000000.0,
+    2450000000.0
+  ],
+  "band_points": 101,
+  "stability_Hz": [
+    100000000.0,
+    10000000000.0
+  ],
+  "stability_points_per_decade": 200,
+  "original_limits": {
+    "transducer_gain_db_min": 12,
+    "gain_ripple_db": 1.5,
+    "s11_db_max": -10,
+    "s22_db_max": -10,
+    "noise_figure_db": 2,
+    "reverse_isolation_db_max": -30,
+    "stability_k_min": 1.2,
+    "stability_delta_max": 1,
+    "power_w": 0.01,
+    "iref_voltage_v": 0.4,
+    "iref_headroom_v": 0.1
+  },
+  "noise": "Original noiseless external output50ohm, noisy input50ohm; NF=20log10(max(input_referred_density)/sqrt(4kT50)); all DUTnoise enabled",
+  "nonrelaxable": [
+    "finite all101bandpoints and401stabilitypoints",
+    "K>1 and absDelta<1 strict",
+    "bias voltage >=.4V and VDD-iref>=.1V",
+    "native physical devices and unmodified models"
+  ],
+  "relaxation": "Transducer gain, ripple and NF are power-ratio dB:10log10(.9/.85 minimum or1.1/1.15 maximum). S11/S22/S12 amplitude dB:20log10(1.1/1.15). K and power linear; stable K>1,Delta<1 and bias compliance never relaxed.",
+  "allowed_DUT": "native n18/p18 and rpposab_3t, ind_rf, mim1_rf only. No user idealR/C/L or switches. Existing PDKspiral r60um/n3.5 assembled in series/parallel with original fullsubcircuits; mutual coupling not included."
+}

@@ -1,0 +1,9289 @@
+{
+  "generated_at": "2026-09-28T18:18:37.524466+00:00",
+  "circuit_sha256": "69f65f854aa02cd025a190dd4448aa16840e73ba6a835cdde88687dfe010f144",
+  "top": "sc_2to1_converter",
+  "subcircuit_ports": {
+    "sc_2to1_converter": [
+      "vss",
+      "vdd",
+      "clk",
+      "vout"
+    ]
+  },
+  "instances": {
+    "sc_2to1_converter/XRX1": {
+      "name": "XRX1",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "clk",
+        "ZN": "ckb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XRX1 (clk ckb vdd vss vdd vss) INHDV1",
+      "sheet": 1,
+      "origin": [
+        5,
+        20
+      ],
+      "rendered_pins": {
+        "I": [
+          2.3,
+          20.0
+        ],
+        "ZN": [
+          7.7,
+          20.0
+        ],
+        "VDD": [
+          4.2,
+          22.2
+        ],
+        "VNW": [
+          5.8,
+          22.2
+        ],
+        "VSS": [
+          4.2,
+          17.8
+        ],
+        "VPW": [
+          5.8,
+          17.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XRX2": {
+      "name": "XRX2",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "ckb",
+        "ZN": "ck",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XRX2 (ckb ck vdd vss vdd vss) INHDV1",
+      "sheet": 1,
+      "origin": [
+        16,
+        20
+      ],
+      "rendered_pins": {
+        "I": [
+          13.3,
+          20.0
+        ],
+        "ZN": [
+          18.7,
+          20.0
+        ],
+        "VDD": [
+          15.2,
+          22.2
+        ],
+        "VNW": [
+          16.8,
+          22.2
+        ],
+        "VSS": [
+          15.2,
+          17.8
+        ],
+        "VPW": [
+          16.8,
+          17.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XNA": {
+      "name": "XNA",
+      "kind": "HD",
+      "model": "NAND2HDV1",
+      "pins": {
+        "A1": "ck",
+        "A2": "fb2",
+        "ZN": "n1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XNA (ck fb2 n1 vdd vss vdd vss) NAND2HDV1",
+      "sheet": 1,
+      "origin": [
+        27,
+        20
+      ],
+      "rendered_pins": {
+        "A1": [
+          24.3,
+          20.5
+        ],
+        "A2": [
+          24.3,
+          19.5
+        ],
+        "ZN": [
+          29.7,
+          20.0
+        ],
+        "VDD": [
+          26.2,
+          22.2
+        ],
+        "VNW": [
+          27.8,
+          22.2
+        ],
+        "VSS": [
+          26.2,
+          17.8
+        ],
+        "VPW": [
+          27.8,
+          17.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XNB": {
+      "name": "XNB",
+      "kind": "HD",
+      "model": "NAND2HDV1",
+      "pins": {
+        "A1": "ckb",
+        "A2": "fb1",
+        "ZN": "n2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XNB (ckb fb1 n2 vdd vss vdd vss) NAND2HDV1",
+      "sheet": 1,
+      "origin": [
+        38,
+        20
+      ],
+      "rendered_pins": {
+        "A1": [
+          35.3,
+          20.5
+        ],
+        "A2": [
+          35.3,
+          19.5
+        ],
+        "ZN": [
+          40.7,
+          20.0
+        ],
+        "VDD": [
+          37.2,
+          22.2
+        ],
+        "VNW": [
+          38.8,
+          22.2
+        ],
+        "VSS": [
+          37.2,
+          17.8
+        ],
+        "VPW": [
+          38.8,
+          17.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XA1": {
+      "name": "XA1",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "n1",
+        "ZN": "a1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XA1 (n1 a1 vdd vss vdd vss) INHDV1",
+      "sheet": 1,
+      "origin": [
+        5,
+        12
+      ],
+      "rendered_pins": {
+        "I": [
+          2.3,
+          12.0
+        ],
+        "ZN": [
+          7.7,
+          12.0
+        ],
+        "VDD": [
+          4.2,
+          14.2
+        ],
+        "VNW": [
+          5.8,
+          14.2
+        ],
+        "VSS": [
+          4.2,
+          9.8
+        ],
+        "VPW": [
+          5.8,
+          9.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XA2": {
+      "name": "XA2",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "a1",
+        "ZN": "a2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XA2 (a1 a2 vdd vss vdd vss) INHDV1",
+      "sheet": 1,
+      "origin": [
+        16,
+        12
+      ],
+      "rendered_pins": {
+        "I": [
+          13.3,
+          12.0
+        ],
+        "ZN": [
+          18.7,
+          12.0
+        ],
+        "VDD": [
+          15.2,
+          14.2
+        ],
+        "VNW": [
+          16.8,
+          14.2
+        ],
+        "VSS": [
+          15.2,
+          9.8
+        ],
+        "VPW": [
+          16.8,
+          9.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XA3": {
+      "name": "XA3",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "a2",
+        "ZN": "s1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XA3 (a2 s1 vdd vss vdd vss) INHDV2",
+      "sheet": 1,
+      "origin": [
+        27,
+        12
+      ],
+      "rendered_pins": {
+        "I": [
+          24.3,
+          12.0
+        ],
+        "ZN": [
+          29.7,
+          12.0
+        ],
+        "VDD": [
+          26.2,
+          14.2
+        ],
+        "VNW": [
+          27.8,
+          14.2
+        ],
+        "VSS": [
+          26.2,
+          9.8
+        ],
+        "VPW": [
+          27.8,
+          9.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XFB1": {
+      "name": "XFB1",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "s1",
+        "ZN": "fb1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XFB1 (s1 fb1 vdd vss vdd vss) INHDV1",
+      "sheet": 1,
+      "origin": [
+        38,
+        12
+      ],
+      "rendered_pins": {
+        "I": [
+          35.3,
+          12.0
+        ],
+        "ZN": [
+          40.7,
+          12.0
+        ],
+        "VDD": [
+          37.2,
+          14.2
+        ],
+        "VNW": [
+          38.8,
+          14.2
+        ],
+        "VSS": [
+          37.2,
+          9.8
+        ],
+        "VPW": [
+          38.8,
+          9.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XB1": {
+      "name": "XB1",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "n2",
+        "ZN": "b1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XB1 (n2 b1 vdd vss vdd vss) INHDV1",
+      "sheet": 1,
+      "origin": [
+        5,
+        4
+      ],
+      "rendered_pins": {
+        "I": [
+          2.3,
+          4.0
+        ],
+        "ZN": [
+          7.7,
+          4.0
+        ],
+        "VDD": [
+          4.2,
+          6.2
+        ],
+        "VNW": [
+          5.8,
+          6.2
+        ],
+        "VSS": [
+          4.2,
+          1.7999999999999998
+        ],
+        "VPW": [
+          5.8,
+          1.7999999999999998
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XB2": {
+      "name": "XB2",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "b1",
+        "ZN": "b2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XB2 (b1 b2 vdd vss vdd vss) INHDV1",
+      "sheet": 1,
+      "origin": [
+        16,
+        4
+      ],
+      "rendered_pins": {
+        "I": [
+          13.3,
+          4.0
+        ],
+        "ZN": [
+          18.7,
+          4.0
+        ],
+        "VDD": [
+          15.2,
+          6.2
+        ],
+        "VNW": [
+          16.8,
+          6.2
+        ],
+        "VSS": [
+          15.2,
+          1.7999999999999998
+        ],
+        "VPW": [
+          16.8,
+          1.7999999999999998
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XB3": {
+      "name": "XB3",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "b2",
+        "ZN": "s2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XB3 (b2 s2 vdd vss vdd vss) INHDV2",
+      "sheet": 1,
+      "origin": [
+        27,
+        4
+      ],
+      "rendered_pins": {
+        "I": [
+          24.3,
+          4.0
+        ],
+        "ZN": [
+          29.7,
+          4.0
+        ],
+        "VDD": [
+          26.2,
+          6.2
+        ],
+        "VNW": [
+          27.8,
+          6.2
+        ],
+        "VSS": [
+          26.2,
+          1.7999999999999998
+        ],
+        "VPW": [
+          27.8,
+          1.7999999999999998
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XFB2": {
+      "name": "XFB2",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "s2",
+        "ZN": "fb2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XFB2 (s2 fb2 vdd vss vdd vss) INHDV1",
+      "sheet": 1,
+      "origin": [
+        38,
+        4
+      ],
+      "rendered_pins": {
+        "I": [
+          35.3,
+          4.0
+        ],
+        "ZN": [
+          40.7,
+          4.0
+        ],
+        "VDD": [
+          37.2,
+          6.2
+        ],
+        "VNW": [
+          38.8,
+          6.2
+        ],
+        "VSS": [
+          37.2,
+          1.7999999999999998
+        ],
+        "VPW": [
+          38.8,
+          1.7999999999999998
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XDPA": {
+      "name": "XDPA",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "s1",
+        "ZN": "pgA",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDPA (s1 pgA vdd vss vdd vss) INHDV16",
+      "sheet": 2,
+      "origin": [
+        7,
+        20
+      ],
+      "rendered_pins": {
+        "I": [
+          4.3,
+          20.0
+        ],
+        "ZN": [
+          9.7,
+          20.0
+        ],
+        "VDD": [
+          6.2,
+          22.2
+        ],
+        "VNW": [
+          7.8,
+          22.2
+        ],
+        "VSS": [
+          6.2,
+          17.8
+        ],
+        "VPW": [
+          7.8,
+          17.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XDN3A1": {
+      "name": "XDN3A1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "s1",
+        "ZN": "n3pA",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDN3A1 (s1 n3pA vdd vss vdd vss) INHDV2",
+      "sheet": 2,
+      "origin": [
+        21,
+        20
+      ],
+      "rendered_pins": {
+        "I": [
+          18.3,
+          20.0
+        ],
+        "ZN": [
+          23.7,
+          20.0
+        ],
+        "VDD": [
+          20.2,
+          22.2
+        ],
+        "VNW": [
+          21.8,
+          22.2
+        ],
+        "VSS": [
+          20.2,
+          17.8
+        ],
+        "VPW": [
+          21.8,
+          17.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XDN3A2": {
+      "name": "XDN3A2",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "n3pA",
+        "ZN": "ngA",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDN3A2 (n3pA ngA vdd vss vdd vss) INHDV16",
+      "sheet": 2,
+      "origin": [
+        35,
+        20
+      ],
+      "rendered_pins": {
+        "I": [
+          32.3,
+          20.0
+        ],
+        "ZN": [
+          37.7,
+          20.0
+        ],
+        "VDD": [
+          34.2,
+          22.2
+        ],
+        "VNW": [
+          35.8,
+          22.2
+        ],
+        "VSS": [
+          34.2,
+          17.8
+        ],
+        "VPW": [
+          35.8,
+          17.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XDNPA1": {
+      "name": "XDNPA1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "s2",
+        "ZN": "nppA",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDNPA1 (s2 nppA vdd vss vdd vss) INHDV2",
+      "sheet": 2,
+      "origin": [
+        7,
+        8
+      ],
+      "rendered_pins": {
+        "I": [
+          4.3,
+          8.0
+        ],
+        "ZN": [
+          9.7,
+          8.0
+        ],
+        "VDD": [
+          6.2,
+          10.2
+        ],
+        "VNW": [
+          7.8,
+          10.2
+        ],
+        "VSS": [
+          6.2,
+          5.8
+        ],
+        "VPW": [
+          7.8,
+          5.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XDNPA2": {
+      "name": "XDNPA2",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "nppA",
+        "ZN": "npgA",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDNPA2 (nppA npgA vdd vss vdd vss) INHDV16",
+      "sheet": 2,
+      "origin": [
+        21,
+        8
+      ],
+      "rendered_pins": {
+        "I": [
+          18.3,
+          8.0
+        ],
+        "ZN": [
+          23.7,
+          8.0
+        ],
+        "VDD": [
+          20.2,
+          10.2
+        ],
+        "VNW": [
+          21.8,
+          10.2
+        ],
+        "VSS": [
+          20.2,
+          5.8
+        ],
+        "VPW": [
+          21.8,
+          5.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XDPB": {
+      "name": "XDPB",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "s2",
+        "ZN": "pgB",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDPB (s2 pgB vdd vss vdd vss) INHDV16",
+      "sheet": 3,
+      "origin": [
+        7,
+        20
+      ],
+      "rendered_pins": {
+        "I": [
+          4.3,
+          20.0
+        ],
+        "ZN": [
+          9.7,
+          20.0
+        ],
+        "VDD": [
+          6.2,
+          22.2
+        ],
+        "VNW": [
+          7.8,
+          22.2
+        ],
+        "VSS": [
+          6.2,
+          17.8
+        ],
+        "VPW": [
+          7.8,
+          17.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XDN3B1": {
+      "name": "XDN3B1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "s2",
+        "ZN": "n3pB",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDN3B1 (s2 n3pB vdd vss vdd vss) INHDV2",
+      "sheet": 3,
+      "origin": [
+        21,
+        20
+      ],
+      "rendered_pins": {
+        "I": [
+          18.3,
+          20.0
+        ],
+        "ZN": [
+          23.7,
+          20.0
+        ],
+        "VDD": [
+          20.2,
+          22.2
+        ],
+        "VNW": [
+          21.8,
+          22.2
+        ],
+        "VSS": [
+          20.2,
+          17.8
+        ],
+        "VPW": [
+          21.8,
+          17.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XDN3B2": {
+      "name": "XDN3B2",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "n3pB",
+        "ZN": "ngB",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDN3B2 (n3pB ngB vdd vss vdd vss) INHDV16",
+      "sheet": 3,
+      "origin": [
+        35,
+        20
+      ],
+      "rendered_pins": {
+        "I": [
+          32.3,
+          20.0
+        ],
+        "ZN": [
+          37.7,
+          20.0
+        ],
+        "VDD": [
+          34.2,
+          22.2
+        ],
+        "VNW": [
+          35.8,
+          22.2
+        ],
+        "VSS": [
+          34.2,
+          17.8
+        ],
+        "VPW": [
+          35.8,
+          17.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XDNPB1": {
+      "name": "XDNPB1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "s1",
+        "ZN": "nppB",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDNPB1 (s1 nppB vdd vss vdd vss) INHDV2",
+      "sheet": 3,
+      "origin": [
+        7,
+        8
+      ],
+      "rendered_pins": {
+        "I": [
+          4.3,
+          8.0
+        ],
+        "ZN": [
+          9.7,
+          8.0
+        ],
+        "VDD": [
+          6.2,
+          10.2
+        ],
+        "VNW": [
+          7.8,
+          10.2
+        ],
+        "VSS": [
+          6.2,
+          5.8
+        ],
+        "VPW": [
+          7.8,
+          5.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/XDNPB2": {
+      "name": "XDNPB2",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "nppB",
+        "ZN": "npgB",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDNPB2 (nppB npgB vdd vss vdd vss) INHDV16",
+      "sheet": 3,
+      "origin": [
+        21,
+        8
+      ],
+      "rendered_pins": {
+        "I": [
+          18.3,
+          8.0
+        ],
+        "ZN": [
+          23.7,
+          8.0
+        ],
+        "VDD": [
+          20.2,
+          10.2
+        ],
+        "VNW": [
+          21.8,
+          10.2
+        ],
+        "VSS": [
+          20.2,
+          5.8
+        ],
+        "VPW": [
+          21.8,
+          5.8
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/MP1A": {
+      "name": "MP1A",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ctA",
+        "G": "pgA",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.0u",
+        "l": ".18u",
+        "m": "24"
+      },
+      "source_line": "MP1A (ctA pgA vdd vdd) p18 w=4.0u l=.18u m=24",
+      "W_unit_um": 4.0,
+      "L_um": 0.18,
+      "m": 24.0,
+      "sheet": 4,
+      "origin": [
+        8,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          20
+        ],
+        "S": [
+          8,
+          22
+        ],
+        "G": [
+          6.45,
+          21
+        ],
+        "B": [
+          8.86,
+          21
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/MN2A": {
+      "name": "MN2A",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ctA",
+        "G": "npgA",
+        "S": "vout",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.36u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MN2A (ctA npgA vout vss) n18 w=1.36u l=.18u m=60",
+      "W_unit_um": 1.36,
+      "L_um": 0.18,
+      "m": 60.0,
+      "sheet": 4,
+      "origin": [
+        33,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          33,
+          22
+        ],
+        "S": [
+          33,
+          20
+        ],
+        "G": [
+          31.45,
+          21
+        ],
+        "B": [
+          33.86,
+          21
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/MN3A": {
+      "name": "MN3A",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "cbA",
+        "G": "ngA",
+        "S": "vout",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.36u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MN3A (cbA ngA vout vss) n18 w=1.36u l=.18u m=60",
+      "W_unit_um": 1.36,
+      "L_um": 0.18,
+      "m": 60.0,
+      "sheet": 4,
+      "origin": [
+        8,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          6
+        ],
+        "S": [
+          8,
+          4
+        ],
+        "G": [
+          6.45,
+          5
+        ],
+        "B": [
+          8.86,
+          5
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/MN4A": {
+      "name": "MN4A",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "cbA",
+        "G": "npgA",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": ".18u",
+        "m": "64"
+      },
+      "source_line": "MN4A (cbA npgA vss vss) n18 w=2.04u l=.18u m=64",
+      "W_unit_um": 2.04,
+      "L_um": 0.18,
+      "m": 64.0,
+      "sheet": 4,
+      "origin": [
+        33,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          33,
+          6
+        ],
+        "S": [
+          33,
+          4
+        ],
+        "G": [
+          31.45,
+          5
+        ],
+        "B": [
+          33.86,
+          5
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/CFA": {
+      "name": "CFA",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "ctA",
+        "2": "cbA"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "100u",
+        "m": "10.298661174"
+      },
+      "source_line": "CFA (ctA cbA) mim w=100u l=100u m=10.298661174",
+      "sheet": 4,
+      "origin": [
+        8,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          8,
+          13.82
+        ],
+        "2": [
+          8,
+          12.18
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/CBPA": {
+      "name": "CBPA",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "cbA",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "20u",
+        "l": "102.98661174u"
+      },
+      "source_line": "CBPA (cbA vss) mim w=20u l=102.98661174u",
+      "sheet": 4,
+      "origin": [
+        22,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          22,
+          5.82
+        ],
+        "2": [
+          22,
+          4.18
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/MP1B": {
+      "name": "MP1B",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ctB",
+        "G": "pgB",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.0u",
+        "l": ".18u",
+        "m": "24"
+      },
+      "source_line": "MP1B (ctB pgB vdd vdd) p18 w=4.0u l=.18u m=24",
+      "W_unit_um": 4.0,
+      "L_um": 0.18,
+      "m": 24.0,
+      "sheet": 5,
+      "origin": [
+        8,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          20
+        ],
+        "S": [
+          8,
+          22
+        ],
+        "G": [
+          6.45,
+          21
+        ],
+        "B": [
+          8.86,
+          21
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/MN2B": {
+      "name": "MN2B",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ctB",
+        "G": "npgB",
+        "S": "vout",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.36u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MN2B (ctB npgB vout vss) n18 w=1.36u l=.18u m=60",
+      "W_unit_um": 1.36,
+      "L_um": 0.18,
+      "m": 60.0,
+      "sheet": 5,
+      "origin": [
+        33,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          33,
+          22
+        ],
+        "S": [
+          33,
+          20
+        ],
+        "G": [
+          31.45,
+          21
+        ],
+        "B": [
+          33.86,
+          21
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/MN3B": {
+      "name": "MN3B",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "cbB",
+        "G": "ngB",
+        "S": "vout",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.36u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MN3B (cbB ngB vout vss) n18 w=1.36u l=.18u m=60",
+      "W_unit_um": 1.36,
+      "L_um": 0.18,
+      "m": 60.0,
+      "sheet": 5,
+      "origin": [
+        8,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          6
+        ],
+        "S": [
+          8,
+          4
+        ],
+        "G": [
+          6.45,
+          5
+        ],
+        "B": [
+          8.86,
+          5
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/MN4B": {
+      "name": "MN4B",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "cbB",
+        "G": "npgB",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": ".18u",
+        "m": "64"
+      },
+      "source_line": "MN4B (cbB npgB vss vss) n18 w=2.04u l=.18u m=64",
+      "W_unit_um": 2.04,
+      "L_um": 0.18,
+      "m": 64.0,
+      "sheet": 5,
+      "origin": [
+        33,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          33,
+          6
+        ],
+        "S": [
+          33,
+          4
+        ],
+        "G": [
+          31.45,
+          5
+        ],
+        "B": [
+          33.86,
+          5
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/CFB": {
+      "name": "CFB",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "ctB",
+        "2": "cbB"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "100u",
+        "m": "10.298661174"
+      },
+      "source_line": "CFB (ctB cbB) mim w=100u l=100u m=10.298661174",
+      "sheet": 5,
+      "origin": [
+        8,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          8,
+          13.82
+        ],
+        "2": [
+          8,
+          12.18
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/CBPB": {
+      "name": "CBPB",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "cbB",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "20u",
+        "l": "102.98661174u"
+      },
+      "source_line": "CBPB (cbB vss) mim w=20u l=102.98661174u",
+      "sheet": 5,
+      "origin": [
+        22,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          22,
+          5.82
+        ],
+        "2": [
+          22,
+          4.18
+        ]
+      },
+      "block": "sc_2to1_converter"
+    },
+    "sc_2to1_converter/CO": {
+      "name": "CO",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "vout",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "100u",
+        "m": "28.8362512873"
+      },
+      "source_line": "CO (vout vss) mim w=100u l=100u m=28.8362512873",
+      "sheet": 5,
+      "origin": [
+        32,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          32,
+          13.82
+        ],
+        "2": [
+          32,
+          12.18
+        ]
+      },
+      "block": "sc_2to1_converter"
+    }
+  },
+  "expanded_leaf_instances": {
+    "XRX1": {
+      "name": "XRX1",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "clk",
+        "ZN": "ckb",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XRX1 (clk ckb vdd vss vdd vss) INHDV1",
+      "definition": "sc_2to1_converter/XRX1",
+      "path": "XRX1"
+    },
+    "XRX2": {
+      "name": "XRX2",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "ckb",
+        "ZN": "ck",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XRX2 (ckb ck vdd vss vdd vss) INHDV1",
+      "definition": "sc_2to1_converter/XRX2",
+      "path": "XRX2"
+    },
+    "XNA": {
+      "name": "XNA",
+      "kind": "HD",
+      "model": "NAND2HDV1",
+      "pins": {
+        "A1": "ck",
+        "A2": "fb2",
+        "ZN": "n1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XNA (ck fb2 n1 vdd vss vdd vss) NAND2HDV1",
+      "definition": "sc_2to1_converter/XNA",
+      "path": "XNA"
+    },
+    "XA1": {
+      "name": "XA1",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "n1",
+        "ZN": "a1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XA1 (n1 a1 vdd vss vdd vss) INHDV1",
+      "definition": "sc_2to1_converter/XA1",
+      "path": "XA1"
+    },
+    "XA2": {
+      "name": "XA2",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "a1",
+        "ZN": "a2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XA2 (a1 a2 vdd vss vdd vss) INHDV1",
+      "definition": "sc_2to1_converter/XA2",
+      "path": "XA2"
+    },
+    "XA3": {
+      "name": "XA3",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "a2",
+        "ZN": "s1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XA3 (a2 s1 vdd vss vdd vss) INHDV2",
+      "definition": "sc_2to1_converter/XA3",
+      "path": "XA3"
+    },
+    "XFB1": {
+      "name": "XFB1",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "s1",
+        "ZN": "fb1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XFB1 (s1 fb1 vdd vss vdd vss) INHDV1",
+      "definition": "sc_2to1_converter/XFB1",
+      "path": "XFB1"
+    },
+    "XNB": {
+      "name": "XNB",
+      "kind": "HD",
+      "model": "NAND2HDV1",
+      "pins": {
+        "A1": "ckb",
+        "A2": "fb1",
+        "ZN": "n2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XNB (ckb fb1 n2 vdd vss vdd vss) NAND2HDV1",
+      "definition": "sc_2to1_converter/XNB",
+      "path": "XNB"
+    },
+    "XB1": {
+      "name": "XB1",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "n2",
+        "ZN": "b1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XB1 (n2 b1 vdd vss vdd vss) INHDV1",
+      "definition": "sc_2to1_converter/XB1",
+      "path": "XB1"
+    },
+    "XB2": {
+      "name": "XB2",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "b1",
+        "ZN": "b2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XB2 (b1 b2 vdd vss vdd vss) INHDV1",
+      "definition": "sc_2to1_converter/XB2",
+      "path": "XB2"
+    },
+    "XB3": {
+      "name": "XB3",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "b2",
+        "ZN": "s2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XB3 (b2 s2 vdd vss vdd vss) INHDV2",
+      "definition": "sc_2to1_converter/XB3",
+      "path": "XB3"
+    },
+    "XFB2": {
+      "name": "XFB2",
+      "kind": "HD",
+      "model": "INHDV1",
+      "pins": {
+        "I": "s2",
+        "ZN": "fb2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XFB2 (s2 fb2 vdd vss vdd vss) INHDV1",
+      "definition": "sc_2to1_converter/XFB2",
+      "path": "XFB2"
+    },
+    "XDPA": {
+      "name": "XDPA",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "s1",
+        "ZN": "pgA",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDPA (s1 pgA vdd vss vdd vss) INHDV16",
+      "definition": "sc_2to1_converter/XDPA",
+      "path": "XDPA"
+    },
+    "XDN3A1": {
+      "name": "XDN3A1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "s1",
+        "ZN": "n3pA",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDN3A1 (s1 n3pA vdd vss vdd vss) INHDV2",
+      "definition": "sc_2to1_converter/XDN3A1",
+      "path": "XDN3A1"
+    },
+    "XDN3A2": {
+      "name": "XDN3A2",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "n3pA",
+        "ZN": "ngA",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDN3A2 (n3pA ngA vdd vss vdd vss) INHDV16",
+      "definition": "sc_2to1_converter/XDN3A2",
+      "path": "XDN3A2"
+    },
+    "XDNPA1": {
+      "name": "XDNPA1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "s2",
+        "ZN": "nppA",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDNPA1 (s2 nppA vdd vss vdd vss) INHDV2",
+      "definition": "sc_2to1_converter/XDNPA1",
+      "path": "XDNPA1"
+    },
+    "XDNPA2": {
+      "name": "XDNPA2",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "nppA",
+        "ZN": "npgA",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDNPA2 (nppA npgA vdd vss vdd vss) INHDV16",
+      "definition": "sc_2to1_converter/XDNPA2",
+      "path": "XDNPA2"
+    },
+    "XDPB": {
+      "name": "XDPB",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "s2",
+        "ZN": "pgB",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDPB (s2 pgB vdd vss vdd vss) INHDV16",
+      "definition": "sc_2to1_converter/XDPB",
+      "path": "XDPB"
+    },
+    "XDN3B1": {
+      "name": "XDN3B1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "s2",
+        "ZN": "n3pB",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDN3B1 (s2 n3pB vdd vss vdd vss) INHDV2",
+      "definition": "sc_2to1_converter/XDN3B1",
+      "path": "XDN3B1"
+    },
+    "XDN3B2": {
+      "name": "XDN3B2",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "n3pB",
+        "ZN": "ngB",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDN3B2 (n3pB ngB vdd vss vdd vss) INHDV16",
+      "definition": "sc_2to1_converter/XDN3B2",
+      "path": "XDN3B2"
+    },
+    "XDNPB1": {
+      "name": "XDNPB1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "s1",
+        "ZN": "nppB",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDNPB1 (s1 nppB vdd vss vdd vss) INHDV2",
+      "definition": "sc_2to1_converter/XDNPB1",
+      "path": "XDNPB1"
+    },
+    "XDNPB2": {
+      "name": "XDNPB2",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "nppB",
+        "ZN": "npgB",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XDNPB2 (nppB npgB vdd vss vdd vss) INHDV16",
+      "definition": "sc_2to1_converter/XDNPB2",
+      "path": "XDNPB2"
+    },
+    "MP1A": {
+      "name": "MP1A",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ctA",
+        "G": "pgA",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.0u",
+        "l": ".18u",
+        "m": "24"
+      },
+      "source_line": "MP1A (ctA pgA vdd vdd) p18 w=4.0u l=.18u m=24",
+      "W_unit_um": 4.0,
+      "L_um": 0.18,
+      "m": 24.0,
+      "definition": "sc_2to1_converter/MP1A",
+      "path": "MP1A"
+    },
+    "MN3A": {
+      "name": "MN3A",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "cbA",
+        "G": "ngA",
+        "S": "vout",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.36u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MN3A (cbA ngA vout vss) n18 w=1.36u l=.18u m=60",
+      "W_unit_um": 1.36,
+      "L_um": 0.18,
+      "m": 60.0,
+      "definition": "sc_2to1_converter/MN3A",
+      "path": "MN3A"
+    },
+    "MN2A": {
+      "name": "MN2A",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ctA",
+        "G": "npgA",
+        "S": "vout",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.36u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MN2A (ctA npgA vout vss) n18 w=1.36u l=.18u m=60",
+      "W_unit_um": 1.36,
+      "L_um": 0.18,
+      "m": 60.0,
+      "definition": "sc_2to1_converter/MN2A",
+      "path": "MN2A"
+    },
+    "MN4A": {
+      "name": "MN4A",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "cbA",
+        "G": "npgA",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": ".18u",
+        "m": "64"
+      },
+      "source_line": "MN4A (cbA npgA vss vss) n18 w=2.04u l=.18u m=64",
+      "W_unit_um": 2.04,
+      "L_um": 0.18,
+      "m": 64.0,
+      "definition": "sc_2to1_converter/MN4A",
+      "path": "MN4A"
+    },
+    "CFA": {
+      "name": "CFA",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "ctA",
+        "2": "cbA"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "100u",
+        "m": "10.298661174"
+      },
+      "source_line": "CFA (ctA cbA) mim w=100u l=100u m=10.298661174",
+      "definition": "sc_2to1_converter/CFA",
+      "path": "CFA"
+    },
+    "CBPA": {
+      "name": "CBPA",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "cbA",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "20u",
+        "l": "102.98661174u"
+      },
+      "source_line": "CBPA (cbA vss) mim w=20u l=102.98661174u",
+      "definition": "sc_2to1_converter/CBPA",
+      "path": "CBPA"
+    },
+    "MP1B": {
+      "name": "MP1B",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ctB",
+        "G": "pgB",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.0u",
+        "l": ".18u",
+        "m": "24"
+      },
+      "source_line": "MP1B (ctB pgB vdd vdd) p18 w=4.0u l=.18u m=24",
+      "W_unit_um": 4.0,
+      "L_um": 0.18,
+      "m": 24.0,
+      "definition": "sc_2to1_converter/MP1B",
+      "path": "MP1B"
+    },
+    "MN3B": {
+      "name": "MN3B",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "cbB",
+        "G": "ngB",
+        "S": "vout",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.36u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MN3B (cbB ngB vout vss) n18 w=1.36u l=.18u m=60",
+      "W_unit_um": 1.36,
+      "L_um": 0.18,
+      "m": 60.0,
+      "definition": "sc_2to1_converter/MN3B",
+      "path": "MN3B"
+    },
+    "MN2B": {
+      "name": "MN2B",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ctB",
+        "G": "npgB",
+        "S": "vout",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.36u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MN2B (ctB npgB vout vss) n18 w=1.36u l=.18u m=60",
+      "W_unit_um": 1.36,
+      "L_um": 0.18,
+      "m": 60.0,
+      "definition": "sc_2to1_converter/MN2B",
+      "path": "MN2B"
+    },
+    "MN4B": {
+      "name": "MN4B",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "cbB",
+        "G": "npgB",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": ".18u",
+        "m": "64"
+      },
+      "source_line": "MN4B (cbB npgB vss vss) n18 w=2.04u l=.18u m=64",
+      "W_unit_um": 2.04,
+      "L_um": 0.18,
+      "m": 64.0,
+      "definition": "sc_2to1_converter/MN4B",
+      "path": "MN4B"
+    },
+    "CFB": {
+      "name": "CFB",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "ctB",
+        "2": "cbB"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "100u",
+        "m": "10.298661174"
+      },
+      "source_line": "CFB (ctB cbB) mim w=100u l=100u m=10.298661174",
+      "definition": "sc_2to1_converter/CFB",
+      "path": "CFB"
+    },
+    "CBPB": {
+      "name": "CBPB",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "cbB",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "20u",
+        "l": "102.98661174u"
+      },
+      "source_line": "CBPB (cbB vss) mim w=20u l=102.98661174u",
+      "definition": "sc_2to1_converter/CBPB",
+      "path": "CBPB"
+    },
+    "CO": {
+      "name": "CO",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "vout",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "100u",
+        "m": "28.8362512873"
+      },
+      "source_line": "CO (vout vss) mim w=100u l=100u m=28.8362512873",
+      "definition": "sc_2to1_converter/CO",
+      "path": "CO"
+    }
+  },
+  "nets": {
+    "sc_2to1_converter/clk": [
+      {
+        "instance": "sc_2to1_converter/XRX1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          2.3,
+          20.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/ckb": [
+      {
+        "instance": "sc_2to1_converter/XRX1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          7.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XRX2",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          13.3,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XNB",
+        "pin": "A1",
+        "sheet": 1,
+        "point": [
+          35.3,
+          20.5
+        ]
+      }
+    ],
+    "sc_2to1_converter/vdd": [
+      {
+        "instance": "sc_2to1_converter/XRX1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          4.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XRX1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          5.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XRX2",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          15.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XRX2",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          16.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XNA",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          26.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XNA",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          27.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XNB",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          37.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XNB",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          4.2,
+          14.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          5.8,
+          14.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA2",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          15.2,
+          14.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA2",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          16.8,
+          14.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA3",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          26.2,
+          14.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA3",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          27.8,
+          14.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          37.2,
+          14.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          14.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          4.2,
+          6.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          5.8,
+          6.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB2",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          15.2,
+          6.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB2",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          16.8,
+          6.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB3",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          26.2,
+          6.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB3",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          27.8,
+          6.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB2",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          37.2,
+          6.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB2",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          6.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDPA",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          6.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDPA",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          7.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3A1",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          20.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3A1",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          21.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3A2",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          34.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3A2",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          35.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPA1",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          6.2,
+          10.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPA1",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          7.8,
+          10.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPA2",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          20.2,
+          10.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPA2",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          21.8,
+          10.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDPB",
+        "pin": "VDD",
+        "sheet": 3,
+        "point": [
+          6.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDPB",
+        "pin": "VNW",
+        "sheet": 3,
+        "point": [
+          7.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3B1",
+        "pin": "VDD",
+        "sheet": 3,
+        "point": [
+          20.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3B1",
+        "pin": "VNW",
+        "sheet": 3,
+        "point": [
+          21.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3B2",
+        "pin": "VDD",
+        "sheet": 3,
+        "point": [
+          34.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3B2",
+        "pin": "VNW",
+        "sheet": 3,
+        "point": [
+          35.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPB1",
+        "pin": "VDD",
+        "sheet": 3,
+        "point": [
+          6.2,
+          10.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPB1",
+        "pin": "VNW",
+        "sheet": 3,
+        "point": [
+          7.8,
+          10.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPB2",
+        "pin": "VDD",
+        "sheet": 3,
+        "point": [
+          20.2,
+          10.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPB2",
+        "pin": "VNW",
+        "sheet": 3,
+        "point": [
+          21.8,
+          10.2
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MP1A",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          8,
+          22
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MP1A",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          8.86,
+          21
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MP1B",
+        "pin": "S",
+        "sheet": 5,
+        "point": [
+          8,
+          22
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MP1B",
+        "pin": "B",
+        "sheet": 5,
+        "point": [
+          8.86,
+          21
+        ]
+      }
+    ],
+    "sc_2to1_converter/vss": [
+      {
+        "instance": "sc_2to1_converter/XRX1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          4.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XRX1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          5.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XRX2",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          15.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XRX2",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          16.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XNA",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          26.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XNA",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          27.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XNB",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          37.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XNB",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          4.2,
+          9.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          5.8,
+          9.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA2",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          15.2,
+          9.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA2",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          16.8,
+          9.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA3",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          26.2,
+          9.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA3",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          27.8,
+          9.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          37.2,
+          9.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          9.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          4.2,
+          1.7999999999999998
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          5.8,
+          1.7999999999999998
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB2",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          15.2,
+          1.7999999999999998
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB2",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          16.8,
+          1.7999999999999998
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB3",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          26.2,
+          1.7999999999999998
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB3",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          27.8,
+          1.7999999999999998
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB2",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          37.2,
+          1.7999999999999998
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB2",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          1.7999999999999998
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDPA",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          6.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDPA",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          7.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3A1",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          20.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3A1",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          21.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3A2",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          34.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3A2",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          35.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPA1",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          6.2,
+          5.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPA1",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          7.8,
+          5.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPA2",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          20.2,
+          5.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPA2",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          21.8,
+          5.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDPB",
+        "pin": "VSS",
+        "sheet": 3,
+        "point": [
+          6.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDPB",
+        "pin": "VPW",
+        "sheet": 3,
+        "point": [
+          7.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3B1",
+        "pin": "VSS",
+        "sheet": 3,
+        "point": [
+          20.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3B1",
+        "pin": "VPW",
+        "sheet": 3,
+        "point": [
+          21.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3B2",
+        "pin": "VSS",
+        "sheet": 3,
+        "point": [
+          34.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3B2",
+        "pin": "VPW",
+        "sheet": 3,
+        "point": [
+          35.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPB1",
+        "pin": "VSS",
+        "sheet": 3,
+        "point": [
+          6.2,
+          5.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPB1",
+        "pin": "VPW",
+        "sheet": 3,
+        "point": [
+          7.8,
+          5.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPB2",
+        "pin": "VSS",
+        "sheet": 3,
+        "point": [
+          20.2,
+          5.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPB2",
+        "pin": "VPW",
+        "sheet": 3,
+        "point": [
+          21.8,
+          5.8
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN2A",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          33.86,
+          21
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN3A",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          8.86,
+          5
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN4A",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          33,
+          4
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN4A",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          33.86,
+          5
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/CBPA",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          22,
+          4.18
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN2B",
+        "pin": "B",
+        "sheet": 5,
+        "point": [
+          33.86,
+          21
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN3B",
+        "pin": "B",
+        "sheet": 5,
+        "point": [
+          8.86,
+          5
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN4B",
+        "pin": "S",
+        "sheet": 5,
+        "point": [
+          33,
+          4
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN4B",
+        "pin": "B",
+        "sheet": 5,
+        "point": [
+          33.86,
+          5
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/CBPB",
+        "pin": "2",
+        "sheet": 5,
+        "point": [
+          22,
+          4.18
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/CO",
+        "pin": "2",
+        "sheet": 5,
+        "point": [
+          32,
+          12.18
+        ]
+      }
+    ],
+    "sc_2to1_converter/ck": [
+      {
+        "instance": "sc_2to1_converter/XRX2",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          18.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XNA",
+        "pin": "A1",
+        "sheet": 1,
+        "point": [
+          24.3,
+          20.5
+        ]
+      }
+    ],
+    "sc_2to1_converter/fb2": [
+      {
+        "instance": "sc_2to1_converter/XNA",
+        "pin": "A2",
+        "sheet": 1,
+        "point": [
+          24.3,
+          19.5
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB2",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          40.7,
+          4.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/n1": [
+      {
+        "instance": "sc_2to1_converter/XNA",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          29.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          2.3,
+          12.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/fb1": [
+      {
+        "instance": "sc_2to1_converter/XNB",
+        "pin": "A2",
+        "sheet": 1,
+        "point": [
+          35.3,
+          19.5
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          40.7,
+          12.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/n2": [
+      {
+        "instance": "sc_2to1_converter/XNB",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          40.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          2.3,
+          4.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/a1": [
+      {
+        "instance": "sc_2to1_converter/XA1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          7.7,
+          12.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA2",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          13.3,
+          12.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/a2": [
+      {
+        "instance": "sc_2to1_converter/XA2",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          18.7,
+          12.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XA3",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          24.3,
+          12.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/s1": [
+      {
+        "instance": "sc_2to1_converter/XA3",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          29.7,
+          12.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          35.3,
+          12.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDPA",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          4.3,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3A1",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          18.3,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPB1",
+        "pin": "I",
+        "sheet": 3,
+        "point": [
+          4.3,
+          8.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/b1": [
+      {
+        "instance": "sc_2to1_converter/XB1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          7.7,
+          4.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB2",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          13.3,
+          4.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/b2": [
+      {
+        "instance": "sc_2to1_converter/XB2",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          18.7,
+          4.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XB3",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          24.3,
+          4.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/s2": [
+      {
+        "instance": "sc_2to1_converter/XB3",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          29.7,
+          4.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XFB2",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          35.3,
+          4.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPA1",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          4.3,
+          8.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDPB",
+        "pin": "I",
+        "sheet": 3,
+        "point": [
+          4.3,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3B1",
+        "pin": "I",
+        "sheet": 3,
+        "point": [
+          18.3,
+          20.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/pgA": [
+      {
+        "instance": "sc_2to1_converter/XDPA",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          9.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MP1A",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          6.45,
+          21
+        ]
+      }
+    ],
+    "sc_2to1_converter/n3pA": [
+      {
+        "instance": "sc_2to1_converter/XDN3A1",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          23.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3A2",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          32.3,
+          20.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/ngA": [
+      {
+        "instance": "sc_2to1_converter/XDN3A2",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          37.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN3A",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          6.45,
+          5
+        ]
+      }
+    ],
+    "sc_2to1_converter/nppA": [
+      {
+        "instance": "sc_2to1_converter/XDNPA1",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          9.7,
+          8.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPA2",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          18.3,
+          8.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/npgA": [
+      {
+        "instance": "sc_2to1_converter/XDNPA2",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          23.7,
+          8.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN2A",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          31.45,
+          21
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN4A",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          31.45,
+          5
+        ]
+      }
+    ],
+    "sc_2to1_converter/pgB": [
+      {
+        "instance": "sc_2to1_converter/XDPB",
+        "pin": "ZN",
+        "sheet": 3,
+        "point": [
+          9.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MP1B",
+        "pin": "G",
+        "sheet": 5,
+        "point": [
+          6.45,
+          21
+        ]
+      }
+    ],
+    "sc_2to1_converter/n3pB": [
+      {
+        "instance": "sc_2to1_converter/XDN3B1",
+        "pin": "ZN",
+        "sheet": 3,
+        "point": [
+          23.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDN3B2",
+        "pin": "I",
+        "sheet": 3,
+        "point": [
+          32.3,
+          20.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/ngB": [
+      {
+        "instance": "sc_2to1_converter/XDN3B2",
+        "pin": "ZN",
+        "sheet": 3,
+        "point": [
+          37.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN3B",
+        "pin": "G",
+        "sheet": 5,
+        "point": [
+          6.45,
+          5
+        ]
+      }
+    ],
+    "sc_2to1_converter/nppB": [
+      {
+        "instance": "sc_2to1_converter/XDNPB1",
+        "pin": "ZN",
+        "sheet": 3,
+        "point": [
+          9.7,
+          8.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/XDNPB2",
+        "pin": "I",
+        "sheet": 3,
+        "point": [
+          18.3,
+          8.0
+        ]
+      }
+    ],
+    "sc_2to1_converter/npgB": [
+      {
+        "instance": "sc_2to1_converter/XDNPB2",
+        "pin": "ZN",
+        "sheet": 3,
+        "point": [
+          23.7,
+          8.0
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN2B",
+        "pin": "G",
+        "sheet": 5,
+        "point": [
+          31.45,
+          21
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN4B",
+        "pin": "G",
+        "sheet": 5,
+        "point": [
+          31.45,
+          5
+        ]
+      }
+    ],
+    "sc_2to1_converter/ctA": [
+      {
+        "instance": "sc_2to1_converter/MP1A",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          8,
+          20
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN2A",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          33,
+          22
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/CFA",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          8,
+          13.82
+        ]
+      }
+    ],
+    "sc_2to1_converter/vout": [
+      {
+        "instance": "sc_2to1_converter/MN2A",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          33,
+          20
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN3A",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          8,
+          4
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN2B",
+        "pin": "S",
+        "sheet": 5,
+        "point": [
+          33,
+          20
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN3B",
+        "pin": "S",
+        "sheet": 5,
+        "point": [
+          8,
+          4
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/CO",
+        "pin": "1",
+        "sheet": 5,
+        "point": [
+          32,
+          13.82
+        ]
+      }
+    ],
+    "sc_2to1_converter/cbA": [
+      {
+        "instance": "sc_2to1_converter/MN3A",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          8,
+          6
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN4A",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          33,
+          6
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/CFA",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          8,
+          12.18
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/CBPA",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          22,
+          5.82
+        ]
+      }
+    ],
+    "sc_2to1_converter/ctB": [
+      {
+        "instance": "sc_2to1_converter/MP1B",
+        "pin": "D",
+        "sheet": 5,
+        "point": [
+          8,
+          20
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN2B",
+        "pin": "D",
+        "sheet": 5,
+        "point": [
+          33,
+          22
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/CFB",
+        "pin": "1",
+        "sheet": 5,
+        "point": [
+          8,
+          13.82
+        ]
+      }
+    ],
+    "sc_2to1_converter/cbB": [
+      {
+        "instance": "sc_2to1_converter/MN3B",
+        "pin": "D",
+        "sheet": 5,
+        "point": [
+          8,
+          6
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/MN4B",
+        "pin": "D",
+        "sheet": 5,
+        "point": [
+          33,
+          6
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/CFB",
+        "pin": "2",
+        "sheet": 5,
+        "point": [
+          8,
+          12.18
+        ]
+      },
+      {
+        "instance": "sc_2to1_converter/CBPB",
+        "pin": "1",
+        "sheet": 5,
+        "point": [
+          22,
+          5.82
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "XA3",
+      "pin": "ZN",
+      "net": "s1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB1",
+      "pin": "I",
+      "net": "s1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB3",
+      "pin": "ZN",
+      "net": "s2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB2",
+      "pin": "I",
+      "net": "s2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX1",
+      "pin": "ZN",
+      "net": "ckb",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX2",
+      "pin": "I",
+      "net": "ckb",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB",
+      "pin": "A1",
+      "net": "ckb",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNA",
+      "pin": "A2",
+      "net": "fb2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB2",
+      "pin": "ZN",
+      "net": "fb2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA2",
+      "pin": "ZN",
+      "net": "a2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA3",
+      "pin": "I",
+      "net": "a2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNA",
+      "pin": "ZN",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA1",
+      "pin": "I",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX1",
+      "pin": "I",
+      "net": "clk",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA1",
+      "pin": "ZN",
+      "net": "a1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA2",
+      "pin": "I",
+      "net": "a1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB",
+      "pin": "ZN",
+      "net": "n2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB1",
+      "pin": "I",
+      "net": "n2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB2",
+      "pin": "ZN",
+      "net": "b2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB3",
+      "pin": "I",
+      "net": "b2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB1",
+      "pin": "ZN",
+      "net": "b1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB2",
+      "pin": "I",
+      "net": "b1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX2",
+      "pin": "ZN",
+      "net": "ck",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNA",
+      "pin": "A1",
+      "net": "ck",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX2",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNA",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNA",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA2",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA3",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA3",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB2",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB3",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB3",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB2",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB",
+      "pin": "A2",
+      "net": "fb1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB1",
+      "pin": "ZN",
+      "net": "fb1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX2",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XRX2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNA",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNA",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XNB",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA2",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA3",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XA3",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB2",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB3",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XB3",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB2",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 1,
+      "instance": "XFB2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDPA",
+      "pin": "I",
+      "net": "s1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A1",
+      "pin": "I",
+      "net": "s1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA1",
+      "pin": "I",
+      "net": "s2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A2",
+      "pin": "ZN",
+      "net": "ngA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A1",
+      "pin": "ZN",
+      "net": "n3pA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A2",
+      "pin": "I",
+      "net": "n3pA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA1",
+      "pin": "ZN",
+      "net": "nppA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA2",
+      "pin": "I",
+      "net": "nppA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDPA",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDPA",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A2",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA2",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDPA",
+      "pin": "ZN",
+      "net": "pgA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA2",
+      "pin": "ZN",
+      "net": "npgA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDPA",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDPA",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A2",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDN3A2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA2",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 2,
+      "instance": "XDNPA2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB1",
+      "pin": "I",
+      "net": "s1",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDPB",
+      "pin": "I",
+      "net": "s2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B1",
+      "pin": "I",
+      "net": "s2",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDPB",
+      "pin": "ZN",
+      "net": "pgB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B1",
+      "pin": "ZN",
+      "net": "n3pB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B2",
+      "pin": "I",
+      "net": "n3pB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B2",
+      "pin": "ZN",
+      "net": "ngB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB1",
+      "pin": "ZN",
+      "net": "nppB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB2",
+      "pin": "I",
+      "net": "nppB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB2",
+      "pin": "ZN",
+      "net": "npgB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDPB",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDPB",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B2",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB2",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDPB",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDPB",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B2",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDN3B2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB2",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 3,
+      "instance": "XDNPB2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MP1A",
+      "pin": "D",
+      "net": "ctA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN2A",
+      "pin": "D",
+      "net": "ctA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "CFA",
+      "pin": "1",
+      "net": "ctA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN3A",
+      "pin": "G",
+      "net": "ngA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN2A",
+      "pin": "S",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN3A",
+      "pin": "S",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN3A",
+      "pin": "D",
+      "net": "cbA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN4A",
+      "pin": "D",
+      "net": "cbA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "CFA",
+      "pin": "2",
+      "net": "cbA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "CBPA",
+      "pin": "1",
+      "net": "cbA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MP1A",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MP1A",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MP1A",
+      "pin": "G",
+      "net": "pgA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN2A",
+      "pin": "G",
+      "net": "npgA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN4A",
+      "pin": "G",
+      "net": "npgA",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN2A",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN3A",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN4A",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "MN4A",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 4,
+      "instance": "CBPA",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MP1B",
+      "pin": "G",
+      "net": "pgB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN2B",
+      "pin": "S",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN3B",
+      "pin": "S",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "CO",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN3B",
+      "pin": "G",
+      "net": "ngB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN3B",
+      "pin": "D",
+      "net": "cbB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN4B",
+      "pin": "D",
+      "net": "cbB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "CFB",
+      "pin": "2",
+      "net": "cbB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "CBPB",
+      "pin": "1",
+      "net": "cbB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MP1B",
+      "pin": "D",
+      "net": "ctB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN2B",
+      "pin": "D",
+      "net": "ctB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "CFB",
+      "pin": "1",
+      "net": "ctB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN2B",
+      "pin": "G",
+      "net": "npgB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN4B",
+      "pin": "G",
+      "net": "npgB",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MP1B",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MP1B",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN2B",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN3B",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN4B",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "MN4B",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "CBPB",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    },
+    {
+      "sheet": 5,
+      "instance": "CO",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "sc_2to1_converter"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "sc_2to1_converter",
+      "title": "HD时钟接收与交叉反馈非交叠",
+      "wires": [
+        {
+          "net": "clk",
+          "points": [
+            [
+              2.3,
+              20.0
+            ],
+            [
+              1.6999999999999997,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ckb",
+          "points": [
+            [
+              7.7,
+              20.0
+            ],
+            [
+              8.3,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              4.2,
+              22.2
+            ],
+            [
+              4.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5.8,
+              22.2
+            ],
+            [
+              5.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.2,
+              17.8
+            ],
+            [
+              4.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.8,
+              17.8
+            ],
+            [
+              5.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ckb",
+          "points": [
+            [
+              13.3,
+              20.0
+            ],
+            [
+              12.700000000000001,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ck",
+          "points": [
+            [
+              18.7,
+              20.0
+            ],
+            [
+              19.3,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              15.2,
+              22.2
+            ],
+            [
+              15.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              16.8,
+              22.2
+            ],
+            [
+              16.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              15.2,
+              17.8
+            ],
+            [
+              15.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              16.8,
+              17.8
+            ],
+            [
+              16.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ck",
+          "points": [
+            [
+              24.3,
+              20.5
+            ],
+            [
+              23.7,
+              20.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fb2",
+          "points": [
+            [
+              24.3,
+              19.5
+            ],
+            [
+              23.7,
+              19.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              29.7,
+              20.0
+            ],
+            [
+              30.3,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              26.2,
+              22.2
+            ],
+            [
+              26.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              27.8,
+              22.2
+            ],
+            [
+              27.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              26.2,
+              17.8
+            ],
+            [
+              26.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27.8,
+              17.8
+            ],
+            [
+              27.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ckb",
+          "points": [
+            [
+              35.3,
+              20.5
+            ],
+            [
+              34.699999999999996,
+              20.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fb1",
+          "points": [
+            [
+              35.3,
+              19.5
+            ],
+            [
+              34.699999999999996,
+              19.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n2",
+          "points": [
+            [
+              40.7,
+              20.0
+            ],
+            [
+              41.300000000000004,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.2,
+              22.2
+            ],
+            [
+              37.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              38.8,
+              22.2
+            ],
+            [
+              38.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.2,
+              17.8
+            ],
+            [
+              37.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.8,
+              17.8
+            ],
+            [
+              38.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              2.3,
+              12.0
+            ],
+            [
+              1.6999999999999997,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "a1",
+          "points": [
+            [
+              7.7,
+              12.0
+            ],
+            [
+              8.3,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              4.2,
+              14.2
+            ],
+            [
+              4.2,
+              14.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5.8,
+              14.2
+            ],
+            [
+              5.8,
+              14.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.2,
+              9.8
+            ],
+            [
+              4.2,
+              9.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.8,
+              9.8
+            ],
+            [
+              5.8,
+              9.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "a1",
+          "points": [
+            [
+              13.3,
+              12.0
+            ],
+            [
+              12.700000000000001,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "a2",
+          "points": [
+            [
+              18.7,
+              12.0
+            ],
+            [
+              19.3,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              15.2,
+              14.2
+            ],
+            [
+              15.2,
+              14.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              16.8,
+              14.2
+            ],
+            [
+              16.8,
+              14.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              15.2,
+              9.8
+            ],
+            [
+              15.2,
+              9.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              16.8,
+              9.8
+            ],
+            [
+              16.8,
+              9.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "a2",
+          "points": [
+            [
+              24.3,
+              12.0
+            ],
+            [
+              23.7,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s1",
+          "points": [
+            [
+              29.7,
+              12.0
+            ],
+            [
+              30.3,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              26.2,
+              14.2
+            ],
+            [
+              26.2,
+              14.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              27.8,
+              14.2
+            ],
+            [
+              27.8,
+              14.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              26.2,
+              9.8
+            ],
+            [
+              26.2,
+              9.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27.8,
+              9.8
+            ],
+            [
+              27.8,
+              9.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s1",
+          "points": [
+            [
+              35.3,
+              12.0
+            ],
+            [
+              34.699999999999996,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fb1",
+          "points": [
+            [
+              40.7,
+              12.0
+            ],
+            [
+              41.300000000000004,
+              12.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.2,
+              14.2
+            ],
+            [
+              37.2,
+              14.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              38.8,
+              14.2
+            ],
+            [
+              38.8,
+              14.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.2,
+              9.8
+            ],
+            [
+              37.2,
+              9.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.8,
+              9.8
+            ],
+            [
+              38.8,
+              9.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n2",
+          "points": [
+            [
+              2.3,
+              4.0
+            ],
+            [
+              1.6999999999999997,
+              4.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "b1",
+          "points": [
+            [
+              7.7,
+              4.0
+            ],
+            [
+              8.3,
+              4.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              4.2,
+              6.2
+            ],
+            [
+              4.2,
+              6.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5.8,
+              6.2
+            ],
+            [
+              5.8,
+              6.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.2,
+              1.7999999999999998
+            ],
+            [
+              4.2,
+              1.2999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.8,
+              1.7999999999999998
+            ],
+            [
+              5.8,
+              1.2999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "b1",
+          "points": [
+            [
+              13.3,
+              4.0
+            ],
+            [
+              12.700000000000001,
+              4.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "b2",
+          "points": [
+            [
+              18.7,
+              4.0
+            ],
+            [
+              19.3,
+              4.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              15.2,
+              6.2
+            ],
+            [
+              15.2,
+              6.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              16.8,
+              6.2
+            ],
+            [
+              16.8,
+              6.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              15.2,
+              1.7999999999999998
+            ],
+            [
+              15.2,
+              1.2999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              16.8,
+              1.7999999999999998
+            ],
+            [
+              16.8,
+              1.2999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "b2",
+          "points": [
+            [
+              24.3,
+              4.0
+            ],
+            [
+              23.7,
+              4.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s2",
+          "points": [
+            [
+              29.7,
+              4.0
+            ],
+            [
+              30.3,
+              4.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              26.2,
+              6.2
+            ],
+            [
+              26.2,
+              6.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              27.8,
+              6.2
+            ],
+            [
+              27.8,
+              6.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              26.2,
+              1.7999999999999998
+            ],
+            [
+              26.2,
+              1.2999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27.8,
+              1.7999999999999998
+            ],
+            [
+              27.8,
+              1.2999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s2",
+          "points": [
+            [
+              35.3,
+              4.0
+            ],
+            [
+              34.699999999999996,
+              4.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fb2",
+          "points": [
+            [
+              40.7,
+              4.0
+            ],
+            [
+              41.300000000000004,
+              4.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.2,
+              6.2
+            ],
+            [
+              37.2,
+              6.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              38.8,
+              6.2
+            ],
+            [
+              38.8,
+              6.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.2,
+              1.7999999999999998
+            ],
+            [
+              37.2,
+              1.2999999999999998
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.8,
+              1.7999999999999998
+            ],
+            [
+              38.8,
+              1.2999999999999998
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "clk",
+          "point": [
+            1.6999999999999997,
+            20.0
+          ],
+          "text": "clk",
+          "body": false
+        },
+        {
+          "net": "ckb",
+          "point": [
+            8.3,
+            20.0
+          ],
+          "text": "ckb",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            4.2,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            5.8,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4.2,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.8,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ckb",
+          "point": [
+            12.700000000000001,
+            20.0
+          ],
+          "text": "ckb",
+          "body": false
+        },
+        {
+          "net": "ck",
+          "point": [
+            19.3,
+            20.0
+          ],
+          "text": "ck",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            15.2,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            16.8,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            15.2,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            16.8,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ck",
+          "point": [
+            23.7,
+            20.5
+          ],
+          "text": "ck",
+          "body": false
+        },
+        {
+          "net": "fb2",
+          "point": [
+            23.7,
+            19.5
+          ],
+          "text": "fb2",
+          "body": false
+        },
+        {
+          "net": "n1",
+          "point": [
+            30.3,
+            20.0
+          ],
+          "text": "n1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            26.2,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            27.8,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            26.2,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            27.8,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ckb",
+          "point": [
+            34.699999999999996,
+            20.5
+          ],
+          "text": "ckb",
+          "body": false
+        },
+        {
+          "net": "fb1",
+          "point": [
+            34.699999999999996,
+            19.5
+          ],
+          "text": "fb1",
+          "body": false
+        },
+        {
+          "net": "n2",
+          "point": [
+            41.300000000000004,
+            20.0
+          ],
+          "text": "n2",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.2,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            38.8,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.2,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.8,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "n1",
+          "point": [
+            1.6999999999999997,
+            12.0
+          ],
+          "text": "n1",
+          "body": false
+        },
+        {
+          "net": "a1",
+          "point": [
+            8.3,
+            12.0
+          ],
+          "text": "a1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            4.2,
+            14.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            5.8,
+            14.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4.2,
+            9.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.8,
+            9.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "a1",
+          "point": [
+            12.700000000000001,
+            12.0
+          ],
+          "text": "a1",
+          "body": false
+        },
+        {
+          "net": "a2",
+          "point": [
+            19.3,
+            12.0
+          ],
+          "text": "a2",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            15.2,
+            14.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            16.8,
+            14.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            15.2,
+            9.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            16.8,
+            9.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "a2",
+          "point": [
+            23.7,
+            12.0
+          ],
+          "text": "a2",
+          "body": false
+        },
+        {
+          "net": "s1",
+          "point": [
+            30.3,
+            12.0
+          ],
+          "text": "s1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            26.2,
+            14.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            27.8,
+            14.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            26.2,
+            9.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            27.8,
+            9.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "s1",
+          "point": [
+            34.699999999999996,
+            12.0
+          ],
+          "text": "s1",
+          "body": false
+        },
+        {
+          "net": "fb1",
+          "point": [
+            41.300000000000004,
+            12.0
+          ],
+          "text": "fb1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.2,
+            14.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            38.8,
+            14.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.2,
+            9.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.8,
+            9.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "n2",
+          "point": [
+            1.6999999999999997,
+            4.0
+          ],
+          "text": "n2",
+          "body": false
+        },
+        {
+          "net": "b1",
+          "point": [
+            8.3,
+            4.0
+          ],
+          "text": "b1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            4.2,
+            6.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            5.8,
+            6.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4.2,
+            1.2999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.8,
+            1.2999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "b1",
+          "point": [
+            12.700000000000001,
+            4.0
+          ],
+          "text": "b1",
+          "body": false
+        },
+        {
+          "net": "b2",
+          "point": [
+            19.3,
+            4.0
+          ],
+          "text": "b2",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            15.2,
+            6.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            16.8,
+            6.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            15.2,
+            1.2999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            16.8,
+            1.2999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "b2",
+          "point": [
+            23.7,
+            4.0
+          ],
+          "text": "b2",
+          "body": false
+        },
+        {
+          "net": "s2",
+          "point": [
+            30.3,
+            4.0
+          ],
+          "text": "s2",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            26.2,
+            6.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            27.8,
+            6.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            26.2,
+            1.2999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            27.8,
+            1.2999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "s2",
+          "point": [
+            34.699999999999996,
+            4.0
+          ],
+          "text": "s2",
+          "body": false
+        },
+        {
+          "net": "fb2",
+          "point": [
+            41.300000000000004,
+            4.0
+          ],
+          "text": "fb2",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.2,
+            6.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            38.8,
+            6.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.2,
+            1.2999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.8,
+            1.2999999999999998
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "sc_2to1_converter",
+      "title": "A支路全部HD栅极驱动",
+      "wires": [
+        {
+          "net": "s1",
+          "points": [
+            [
+              4.3,
+              20.0
+            ],
+            [
+              3.6999999999999997,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pgA",
+          "points": [
+            [
+              9.7,
+              20.0
+            ],
+            [
+              10.299999999999999,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6.2,
+              22.2
+            ],
+            [
+              6.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              7.8,
+              22.2
+            ],
+            [
+              7.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              6.2,
+              17.8
+            ],
+            [
+              6.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7.8,
+              17.8
+            ],
+            [
+              7.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s1",
+          "points": [
+            [
+              18.3,
+              20.0
+            ],
+            [
+              17.7,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n3pA",
+          "points": [
+            [
+              23.7,
+              20.0
+            ],
+            [
+              24.3,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              20.2,
+              22.2
+            ],
+            [
+              20.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              21.8,
+              22.2
+            ],
+            [
+              21.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.2,
+              17.8
+            ],
+            [
+              20.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21.8,
+              17.8
+            ],
+            [
+              21.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n3pA",
+          "points": [
+            [
+              32.3,
+              20.0
+            ],
+            [
+              31.699999999999996,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ngA",
+          "points": [
+            [
+              37.7,
+              20.0
+            ],
+            [
+              38.300000000000004,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.2,
+              22.2
+            ],
+            [
+              34.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35.8,
+              22.2
+            ],
+            [
+              35.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.2,
+              17.8
+            ],
+            [
+              34.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35.8,
+              17.8
+            ],
+            [
+              35.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s2",
+          "points": [
+            [
+              4.3,
+              8.0
+            ],
+            [
+              3.6999999999999997,
+              8.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nppA",
+          "points": [
+            [
+              9.7,
+              8.0
+            ],
+            [
+              10.299999999999999,
+              8.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6.2,
+              10.2
+            ],
+            [
+              6.2,
+              10.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              7.8,
+              10.2
+            ],
+            [
+              7.8,
+              10.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              6.2,
+              5.8
+            ],
+            [
+              6.2,
+              5.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7.8,
+              5.8
+            ],
+            [
+              7.8,
+              5.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nppA",
+          "points": [
+            [
+              18.3,
+              8.0
+            ],
+            [
+              17.7,
+              8.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "npgA",
+          "points": [
+            [
+              23.7,
+              8.0
+            ],
+            [
+              24.3,
+              8.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              20.2,
+              10.2
+            ],
+            [
+              20.2,
+              10.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              21.8,
+              10.2
+            ],
+            [
+              21.8,
+              10.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.2,
+              5.8
+            ],
+            [
+              20.2,
+              5.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21.8,
+              5.8
+            ],
+            [
+              21.8,
+              5.3
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "s1",
+          "point": [
+            3.6999999999999997,
+            20.0
+          ],
+          "text": "s1",
+          "body": false
+        },
+        {
+          "net": "pgA",
+          "point": [
+            10.299999999999999,
+            20.0
+          ],
+          "text": "pgA",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            6.2,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            7.8,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            6.2,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            7.8,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "s1",
+          "point": [
+            17.7,
+            20.0
+          ],
+          "text": "s1",
+          "body": false
+        },
+        {
+          "net": "n3pA",
+          "point": [
+            24.3,
+            20.0
+          ],
+          "text": "n3pA",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            20.2,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            21.8,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.2,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.8,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "n3pA",
+          "point": [
+            31.699999999999996,
+            20.0
+          ],
+          "text": "n3pA",
+          "body": false
+        },
+        {
+          "net": "ngA",
+          "point": [
+            38.300000000000004,
+            20.0
+          ],
+          "text": "ngA",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            34.2,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.8,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.2,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.8,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "s2",
+          "point": [
+            3.6999999999999997,
+            8.0
+          ],
+          "text": "s2",
+          "body": false
+        },
+        {
+          "net": "nppA",
+          "point": [
+            10.299999999999999,
+            8.0
+          ],
+          "text": "nppA",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            6.2,
+            10.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            7.8,
+            10.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            6.2,
+            5.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            7.8,
+            5.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "nppA",
+          "point": [
+            17.7,
+            8.0
+          ],
+          "text": "nppA",
+          "body": false
+        },
+        {
+          "net": "npgA",
+          "point": [
+            24.3,
+            8.0
+          ],
+          "text": "npgA",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            20.2,
+            10.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            21.8,
+            10.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.2,
+            5.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.8,
+            5.3
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "block": "sc_2to1_converter",
+      "title": "B支路全部HD栅极驱动",
+      "wires": [
+        {
+          "net": "s2",
+          "points": [
+            [
+              4.3,
+              20.0
+            ],
+            [
+              3.6999999999999997,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pgB",
+          "points": [
+            [
+              9.7,
+              20.0
+            ],
+            [
+              10.299999999999999,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6.2,
+              22.2
+            ],
+            [
+              6.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              7.8,
+              22.2
+            ],
+            [
+              7.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              6.2,
+              17.8
+            ],
+            [
+              6.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7.8,
+              17.8
+            ],
+            [
+              7.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s2",
+          "points": [
+            [
+              18.3,
+              20.0
+            ],
+            [
+              17.7,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n3pB",
+          "points": [
+            [
+              23.7,
+              20.0
+            ],
+            [
+              24.3,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              20.2,
+              22.2
+            ],
+            [
+              20.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              21.8,
+              22.2
+            ],
+            [
+              21.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.2,
+              17.8
+            ],
+            [
+              20.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21.8,
+              17.8
+            ],
+            [
+              21.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n3pB",
+          "points": [
+            [
+              32.3,
+              20.0
+            ],
+            [
+              31.699999999999996,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ngB",
+          "points": [
+            [
+              37.7,
+              20.0
+            ],
+            [
+              38.300000000000004,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.2,
+              22.2
+            ],
+            [
+              34.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35.8,
+              22.2
+            ],
+            [
+              35.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.2,
+              17.8
+            ],
+            [
+              34.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35.8,
+              17.8
+            ],
+            [
+              35.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s1",
+          "points": [
+            [
+              4.3,
+              8.0
+            ],
+            [
+              3.6999999999999997,
+              8.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nppB",
+          "points": [
+            [
+              9.7,
+              8.0
+            ],
+            [
+              10.299999999999999,
+              8.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6.2,
+              10.2
+            ],
+            [
+              6.2,
+              10.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              7.8,
+              10.2
+            ],
+            [
+              7.8,
+              10.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              6.2,
+              5.8
+            ],
+            [
+              6.2,
+              5.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7.8,
+              5.8
+            ],
+            [
+              7.8,
+              5.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nppB",
+          "points": [
+            [
+              18.3,
+              8.0
+            ],
+            [
+              17.7,
+              8.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "npgB",
+          "points": [
+            [
+              23.7,
+              8.0
+            ],
+            [
+              24.3,
+              8.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              20.2,
+              10.2
+            ],
+            [
+              20.2,
+              10.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              21.8,
+              10.2
+            ],
+            [
+              21.8,
+              10.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.2,
+              5.8
+            ],
+            [
+              20.2,
+              5.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21.8,
+              5.8
+            ],
+            [
+              21.8,
+              5.3
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "s2",
+          "point": [
+            3.6999999999999997,
+            20.0
+          ],
+          "text": "s2",
+          "body": false
+        },
+        {
+          "net": "pgB",
+          "point": [
+            10.299999999999999,
+            20.0
+          ],
+          "text": "pgB",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            6.2,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            7.8,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            6.2,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            7.8,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "s2",
+          "point": [
+            17.7,
+            20.0
+          ],
+          "text": "s2",
+          "body": false
+        },
+        {
+          "net": "n3pB",
+          "point": [
+            24.3,
+            20.0
+          ],
+          "text": "n3pB",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            20.2,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            21.8,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.2,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.8,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "n3pB",
+          "point": [
+            31.699999999999996,
+            20.0
+          ],
+          "text": "n3pB",
+          "body": false
+        },
+        {
+          "net": "ngB",
+          "point": [
+            38.300000000000004,
+            20.0
+          ],
+          "text": "ngB",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            34.2,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.8,
+            22.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.2,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.8,
+            17.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "s1",
+          "point": [
+            3.6999999999999997,
+            8.0
+          ],
+          "text": "s1",
+          "body": false
+        },
+        {
+          "net": "nppB",
+          "point": [
+            10.299999999999999,
+            8.0
+          ],
+          "text": "nppB",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            6.2,
+            10.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            7.8,
+            10.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            6.2,
+            5.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            7.8,
+            5.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "nppB",
+          "point": [
+            17.7,
+            8.0
+          ],
+          "text": "nppB",
+          "body": false
+        },
+        {
+          "net": "npgB",
+          "point": [
+            24.3,
+            8.0
+          ],
+          "text": "npgB",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            20.2,
+            10.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            21.8,
+            10.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.2,
+            5.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.8,
+            5.3
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "block": "sc_2to1_converter",
+      "title": "A支路四开关和飞跨/底板电容",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8.86,
+              21
+            ],
+            [
+              9.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33.86,
+              21
+            ],
+            [
+              34.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8.86,
+              5
+            ],
+            [
+              9.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33.86,
+              5
+            ],
+            [
+              34.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "ctA",
+          "points": [
+            [
+              8,
+              20
+            ],
+            [
+              8,
+              13.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cbA",
+          "points": [
+            [
+              8,
+              12.18
+            ],
+            [
+              8,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ctA",
+          "points": [
+            [
+              8,
+              20
+            ],
+            [
+              8,
+              17
+            ],
+            [
+              27,
+              17
+            ],
+            [
+              27,
+              24
+            ],
+            [
+              33,
+              24
+            ],
+            [
+              33,
+              22
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cbA",
+          "points": [
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              33,
+              9
+            ],
+            [
+              33,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cbA",
+          "points": [
+            [
+              22,
+              5.82
+            ],
+            [
+              22,
+              9
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22,
+              1.5
+            ],
+            [
+              33,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33,
+              4
+            ],
+            [
+              33,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22,
+              4.18
+            ],
+            [
+              22,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8,
+              22
+            ],
+            [
+              8,
+              22.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pgA",
+          "points": [
+            [
+              6.45,
+              21
+            ],
+            [
+              5.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              33,
+              20
+            ],
+            [
+              33,
+              19.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "npgA",
+          "points": [
+            [
+              31.45,
+              21
+            ],
+            [
+              30.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              8,
+              4
+            ],
+            [
+              8,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ngA",
+          "points": [
+            [
+              6.45,
+              5
+            ],
+            [
+              5.9,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "npgA",
+          "points": [
+            [
+              31.45,
+              5
+            ],
+            [
+              30.9,
+              5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            9.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.15,
+            21
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            9.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "ctA",
+          "point": [
+            8.0,
+            16.91
+          ],
+          "text": "ctA",
+          "body": false
+        },
+        {
+          "net": "cbA",
+          "point": [
+            8.0,
+            9.09
+          ],
+          "text": "cbA",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            22,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            8,
+            22.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "pgA",
+          "point": [
+            5.9,
+            21
+          ],
+          "text": "pgA",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            33,
+            19.36
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "npgA",
+          "point": [
+            30.9,
+            21
+          ],
+          "text": "npgA",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            8,
+            3.36
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "ngA",
+          "point": [
+            5.9,
+            5
+          ],
+          "text": "ngA",
+          "body": false
+        },
+        {
+          "net": "npgA",
+          "point": [
+            30.9,
+            5
+          ],
+          "text": "npgA",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "block": "sc_2to1_converter",
+      "title": "B支路四开关和飞跨/输出电容",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8.86,
+              21
+            ],
+            [
+              9.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33.86,
+              21
+            ],
+            [
+              34.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8.86,
+              5
+            ],
+            [
+              9.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33.86,
+              5
+            ],
+            [
+              34.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "ctB",
+          "points": [
+            [
+              8,
+              20
+            ],
+            [
+              8,
+              13.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cbB",
+          "points": [
+            [
+              8,
+              12.18
+            ],
+            [
+              8,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ctB",
+          "points": [
+            [
+              8,
+              20
+            ],
+            [
+              8,
+              17
+            ],
+            [
+              27,
+              17
+            ],
+            [
+              27,
+              24
+            ],
+            [
+              33,
+              24
+            ],
+            [
+              33,
+              22
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cbB",
+          "points": [
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              33,
+              9
+            ],
+            [
+              33,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "cbB",
+          "points": [
+            [
+              22,
+              5.82
+            ],
+            [
+              22,
+              9
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22,
+              1.5
+            ],
+            [
+              33,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              33,
+              4
+            ],
+            [
+              33,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22,
+              4.18
+            ],
+            [
+              22,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              32,
+              12.18
+            ],
+            [
+              39,
+              12.18
+            ],
+            [
+              39,
+              1.5
+            ],
+            [
+              33,
+              1.5
+            ],
+            [
+              33,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8,
+              22
+            ],
+            [
+              8,
+              22.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pgB",
+          "points": [
+            [
+              6.45,
+              21
+            ],
+            [
+              5.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              33,
+              20
+            ],
+            [
+              33,
+              19.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "npgB",
+          "points": [
+            [
+              31.45,
+              21
+            ],
+            [
+              30.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              8,
+              4
+            ],
+            [
+              8,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ngB",
+          "points": [
+            [
+              6.45,
+              5
+            ],
+            [
+              5.9,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "npgB",
+          "points": [
+            [
+              31.45,
+              5
+            ],
+            [
+              30.9,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              32,
+              13.82
+            ],
+            [
+              32,
+              14.46
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            9.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.15,
+            21
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            9.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "ctB",
+          "point": [
+            8.0,
+            16.91
+          ],
+          "text": "ctB",
+          "body": false
+        },
+        {
+          "net": "cbB",
+          "point": [
+            8.0,
+            9.09
+          ],
+          "text": "cbB",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            22,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            8,
+            22.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "pgB",
+          "point": [
+            5.9,
+            21
+          ],
+          "text": "pgB",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            33,
+            19.36
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "npgB",
+          "point": [
+            30.9,
+            21
+          ],
+          "text": "npgB",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            8,
+            3.36
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "ngB",
+          "point": [
+            5.9,
+            5
+          ],
+          "text": "ngB",
+          "body": false
+        },
+        {
+          "net": "npgB",
+          "point": [
+            30.9,
+            5
+          ],
+          "text": "npgB",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            32,
+            14.46
+          ],
+          "text": "vout",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "sc_2to1_converter": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

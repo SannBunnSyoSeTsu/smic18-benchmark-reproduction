@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-09-23T06:18:48.897304+00:00",
+  "status": "passed",
+  "circuit_sha256": "09fc144dd0c6ea413977b2b7d0409f97aac83f192f915337a6d7dcc7af959a37",
+  "hd_cells_sha256": null,
+  "renderer_sha256": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+  "layout_file": "scripts/schematics_core.py",
+  "layout_sha256": "e28fbcf5a01d57ea17091e3312b1f838000ac5e19fb97b869eb7a7032fd37535",
+  "instance_counts": {
+    "MOS": 12,
+    "R": 2,
+    "C": 1
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 12,
+    "R": 2,
+    "C": 1
+  },
+  "total_instances": 15,
+  "expanded_leaf_instances": 15,
+  "total_terminals": 54,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 2,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/41-lowpower-miller/schematic/connectivity.json": "d2017e3c3d95488abde94a279773f2f859c56f21b56d52b24ac8da83486317a3",
+    "cases/41-lowpower-miller/schematic/full.pdf": "902e82921ae33f296204238e3a5ed3d172c9e04f6ea46f1483b0c71e114afd13",
+    "cases/41-lowpower-miller/schematic/full.png": "e495de7fa553329a4142213d5e7c00e43e0d37ea8a21e4b5846a66a003aa8eec",
+    "cases/41-lowpower-miller/schematic/full.svg": "94b3ef38c5907dd337406921aa114d0a349939147c9edf66bffecc0a0010b82c",
+    "cases/41-lowpower-miller/schematic/layout_source.py": "e28fbcf5a01d57ea17091e3312b1f838000ac5e19fb97b869eb7a7032fd37535",
+    "cases/41-lowpower-miller/schematic/renderer_source.py": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+    "cases/41-lowpower-miller/schematic/sheet-1.png": "1aa3941b954382df7210d7892c6d6fee9271acf4571ad3be841b23a851c04fa2",
+    "cases/41-lowpower-miller/schematic/sheet-1.svg": "73b5529010f67ad40b9f88851370fd4e4b016d113f6de21c2cd3f73e388b93fb",
+    "cases/41-lowpower-miller/schematic/sheet-2.png": "7da23e6a7773226111bdb35aceee35344db105499364ed94933251f825ee7abd",
+    "cases/41-lowpower-miller/schematic/sheet-2.svg": "cef24c557a36254ca4007b96a8f326e1919cabeb6cbcb24087d835f4f4f36b91",
+    "cases/41-lowpower-miller/schematic/sheets.pdf": "df8708c733abc0bbe6a70da7ab870eeb97ef48c34585908ff2279a56e320f280",
+    "cases/41-lowpower-miller/schematic/symbol_source.py": "c65698950039c9fd48e1659d37f7fb5220517dd0dc1847b24f5b1761d0956898"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "final_source_freeze_at": "2026-09-23T06:18:48.898313+00:00",
+  "previous_visual_review": {
+    "reviewed_at": "2026-09-23T06:13:53.295906+00:00",
+    "note": "All split sheets and full overview actually viewed; connectivity, symbols, values, body ties and text readability reviewed.",
+    "reviewed_png_hashes": {
+      "cases/41-lowpower-miller/schematic/full.png": "e495de7fa553329a4142213d5e7c00e43e0d37ea8a21e4b5846a66a003aa8eec",
+      "cases/41-lowpower-miller/schematic/sheet-1.png": "1aa3941b954382df7210d7892c6d6fee9271acf4571ad3be841b23a851c04fa2",
+      "cases/41-lowpower-miller/schematic/sheet-2.png": "7da23e6a7773226111bdb35aceee35344db105499364ed94933251f825ee7abd"
+    }
+  },
+  "rebuild_png_changes": [],
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-23T06:13:53.295906+00:00",
+  "visual_review_note": "All final sheet PNGs and full overview are byte-for-byte identical to the actually viewed artifacts; final renderer, symbols and layout sources were frozen beside the drawings."
+}

@@ -1,0 +1,448 @@
+{
+  "generated_at": "2026-09-29T03:32:11.635433+00:00",
+  "status": "passed",
+  "circuit_sha256": "96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1",
+  "results_sha256": "d81e96f042d3a8601206a39b4e154cc30571ea33a70906366abbba275f9439aa",
+  "contract_sha256": "fa6fcdb8eaa808ee5c8f81f0eafc3c38926bbaee1c33aaeb78307dc2f47a5035",
+  "measurement_cross_checks": [
+    {
+      "metric": "pos20_mean_diff_V",
+      "report": 0.16069006715061548,
+      "independent": 0.1606900671506156,
+      "absolute_difference": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "metric": "pos20_static_error_fraction",
+      "report": 0.004312919691346756,
+      "independent": 0.00431291969134745,
+      "absolute_difference": 6.938893903907228e-16,
+      "passed": true
+    },
+    {
+      "metric": "pos20_cm_error_V",
+      "report": 0.007629151363719888,
+      "independent": 0.007629151363719888,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "pos20_power_W",
+      "report": 0.00029696605212667913,
+      "independent": 0.0002969660521266787,
+      "absolute_difference": 4.336808689942018e-19,
+      "passed": true
+    },
+    {
+      "metric": "pos20_settle_s",
+      "report": 3.522819265275227e-08,
+      "independent": 3.522819265275227e-08,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "pos20_ripple_V",
+      "report": 0.0004336084441476651,
+      "independent": 0.00043360844414755406,
+      "absolute_difference": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "metric": "pos10_mean_diff_V",
+      "report": 0.07775699274358268,
+      "independent": 0.0777569927435828,
+      "absolute_difference": 1.249000902703301e-16,
+      "passed": true
+    },
+    {
+      "metric": "zero_mean_diff_V",
+      "report": 0.00028274137675824595,
+      "independent": 0.00028274137675824595,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "neg20_mean_diff_V",
+      "report": -0.15901541780642953,
+      "independent": -0.1590154178064295,
+      "absolute_difference": 2.7755575615628914e-17,
+      "passed": true
+    },
+    {
+      "metric": "neg20_static_error_fraction",
+      "report": 0.00615363870981548,
+      "independent": 0.006153638709815654,
+      "absolute_difference": 1.734723475976807e-16,
+      "passed": true
+    },
+    {
+      "metric": "neg20_cm_error_V",
+      "report": 0.007594605270830779,
+      "independent": 0.007594605270830779,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "neg20_power_W",
+      "report": 0.00029692655153654423,
+      "independent": 0.00029692655153654445,
+      "absolute_difference": 2.168404344971009e-19,
+      "passed": true
+    },
+    {
+      "metric": "neg20_settle_s",
+      "report": 3.487808945088655e-08,
+      "independent": 3.487808945088655e-08,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "neg20_ripple_V",
+      "report": 0.00042932441572346436,
+      "independent": 0.0004293244157234366,
+      "absolute_difference": 2.7755575615628914e-17,
+      "passed": true
+    },
+    {
+      "metric": "transfer_positive_gain",
+      "report": 8.29330744070328,
+      "independent": 8.293307440703279,
+      "absolute_difference": 1.7763568394002505e-15,
+      "passed": true
+    },
+    {
+      "metric": "transfer_bipolar_gain",
+      "report": 7.992637123926125,
+      "independent": 7.992637123926127,
+      "absolute_difference": 2.6645352591003757e-15,
+      "passed": true
+    },
+    {
+      "metric": "transfer_zero_residual_V",
+      "report": 0.00028274137675824595,
+      "independent": 0.00028274137675824595,
+      "absolute_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "original_nominal_checks": [
+    {
+      "name": "gain_transfer",
+      "passed": true
+    },
+    {
+      "name": "gain_zero_input",
+      "passed": true
+    },
+    {
+      "name": "static_error_fraction",
+      "passed": true
+    },
+    {
+      "name": "cm_error_V",
+      "passed": true
+    },
+    {
+      "name": "power_W",
+      "passed": true
+    },
+    {
+      "name": "settle_s",
+      "passed": true
+    },
+    {
+      "name": "ripple_V",
+      "passed": true
+    }
+  ],
+  "original_model_hashes_unchanged": true,
+  "source_snapshot_hashes_verified": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "run": "runs/06/20260929T033123139402Z_pos20",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `net4' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net5' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net7' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net11' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net13' to ground.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MPM12:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MNM4:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MNM4:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/06/20260929T033124710683Z_pos10",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `net4' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net5' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net7' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net11' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net13' to ground.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MPM12:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/06/20260929T033129643852Z_zero",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `net4' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net5' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net7' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net11' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net13' to ground.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MPM12:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/06/20260929T033131011617Z_neg20",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `net4' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net5' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net7' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net11' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net13' to ground.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MPM12:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.MNM4:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/06/20260929T033134585984Z_pos20",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `net4' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net5' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net7' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net11' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net13' to ground.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: bn1. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/06/20260929T033137074976Z_pos10",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `net4' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net5' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net7' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net11' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net13' to ground."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/06/20260929T033145699191Z_zero",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `net4' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net5' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net7' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net11' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net13' to ground."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/06/20260929T033147677778Z_neg20",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-7): No DC path from node `net4' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net5' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net7' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net11' to ground.",
+        "WARNING (SPECTRE-7): No DC path from node `net13' to ground."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    }
+  ],
+  "numerical_confirmation": {
+    "generated_at": "2026-09-29T03:31:53.909431+00:00",
+    "baseline_groups": {
+      "pos20": "runs/06/20260929T033123139402Z_pos20",
+      "pos10": "runs/06/20260929T033124710683Z_pos10",
+      "zero": "runs/06/20260929T033129643852Z_zero",
+      "neg20": "runs/06/20260929T033131011617Z_neg20"
+    },
+    "final_groups": {
+      "pos20": "runs/06/20260929T033134585984Z_pos20",
+      "pos10": "runs/06/20260929T033137074976Z_pos10",
+      "zero": "runs/06/20260929T033145699191Z_zero",
+      "neg20": "runs/06/20260929T033147677778Z_neg20"
+    },
+    "circuit_sha256": "96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1",
+    "metrics": [
+      {
+        "metric": "pos20_mean_diff_V",
+        "baseline": 0.16069167454951558,
+        "refined": 0.16069006715061548,
+        "absolute_difference": 1.6073989000942035e-06,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "pos20_static_error_fraction",
+        "baseline": 0.004322965934472345,
+        "refined": 0.004312919691346756,
+        "absolute_difference": 1.0046243125588772e-05,
+        "maximum_difference": 0.0004,
+        "passed": true
+      },
+      {
+        "metric": "pos20_cm_error_V",
+        "baseline": 0.007629471514733366,
+        "refined": 0.007629151363719888,
+        "absolute_difference": 3.2015101347759867e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "pos20_power_W",
+        "baseline": 0.0002969660104335404,
+        "refined": 0.00029696605212667913,
+        "absolute_difference": 4.1693138741819014e-11,
+        "maximum_difference": 1e-06,
+        "passed": true
+      },
+      {
+        "metric": "pos20_settle_s",
+        "baseline": 3.522902771788186e-08,
+        "refined": 3.522819265275227e-08,
+        "absolute_difference": 8.350651295923266e-13,
+        "maximum_difference": 2e-10,
+        "passed": true
+      },
+      {
+        "metric": "pos20_ripple_V",
+        "baseline": 0.0004325587414128751,
+        "refined": 0.0004336084441476651,
+        "absolute_difference": 1.0497027347899923e-06,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "pos10_mean_diff_V",
+        "baseline": 0.0777665956125229,
+        "refined": 0.07775699274358268,
+        "absolute_difference": 9.602868940222775e-06,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "zero_mean_diff_V",
+        "baseline": 0.0002826566600255398,
+        "refined": 0.00028274137675824595,
+        "absolute_difference": 8.471673270613869e-08,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "neg20_mean_diff_V",
+        "baseline": -0.15901364566551107,
+        "refined": -0.15901541780642953,
+        "absolute_difference": 1.7721409184545678e-06,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "neg20_static_error_fraction",
+        "baseline": 0.006164714590555821,
+        "refined": 0.00615363870981548,
+        "absolute_difference": 1.1075880740341049e-05,
+        "maximum_difference": 0.0004,
+        "passed": true
+      },
+      {
+        "metric": "neg20_cm_error_V",
+        "baseline": 0.00759444971092349,
+        "refined": 0.007594605270830779,
+        "absolute_difference": 1.5555990728888247e-07,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "neg20_power_W",
+        "baseline": 0.0002969265327429641,
+        "refined": 0.00029692655153654423,
+        "absolute_difference": 1.8793580136133164e-11,
+        "maximum_difference": 1e-06,
+        "passed": true
+      },
+      {
+        "metric": "neg20_settle_s",
+        "baseline": 3.487871874951189e-08,
+        "refined": 3.487808945088655e-08,
+        "absolute_difference": 6.292986253354348e-13,
+        "maximum_difference": 2e-10,
+        "passed": true
+      },
+      {
+        "metric": "neg20_ripple_V",
+        "baseline": 0.00042830295615642333,
+        "refined": 0.00042932441572346436,
+        "absolute_difference": 1.0214595670410276e-06,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "transfer_positive_gain",
+        "baseline": 8.292507893699268,
+        "refined": 8.29330744070328,
+        "absolute_difference": 0.0007995470040125241,
+        "maximum_difference": 0.01,
+        "passed": true
+      },
+      {
+        "metric": "transfer_bipolar_gain",
+        "baseline": 7.992633005375666,
+        "refined": 7.992637123926125,
+        "absolute_difference": 4.118550458898085e-06,
+        "maximum_difference": 0.003,
+        "passed": true
+      },
+      {
+        "metric": "transfer_zero_residual_V",
+        "baseline": 0.0002826566600255398,
+        "refined": 0.00028274137675824595,
+        "absolute_difference": 8.471673270613869e-08,
+        "maximum_difference": 5e-05,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "schematic_instances": 50,
+  "schematic_terminals": 172,
+  "pdf_review_pending": false,
+  "full_upstream_signoff": false,
+  "method": "Independent explicit boundary interpolation and scalar trapezoid sums recompute the original external-port means, last commanded-band entry, ripple and supply power. Both gain slopes and seven published original electrical checks are evaluated independently; no design extractor is imported. Native model-based relay vth=.25/hysteresis=.1 implements original switching memory with 1uV transition regularization and unchanged 0.5V reference; vt1/vt2 alone would not implement hysteresis.",
+  "pdf": "reports/06-ring-amplifier-review.pdf",
+  "pdf_sha256": "f27c587a77d473e491a68b8df873e9a728d8da9b2a2b5002be65a620e377ba38",
+  "pdf_pages": 13,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-29T03:44:08.658419+00:00"
+}

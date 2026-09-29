@@ -1,0 +1,22 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        SH["共享差分采样保持"]
+        REFS["15个电阻参考阈值"]
+        CMP["15路动态比较器"]
+        LAT["HD锁存温度计码"]
+        ENC["HD编码与4位输出"]
+    end
+    VIN["模拟输入"]
+    REF["外部参考电压"]
+    CLK["外部时钟"]
+    OUT["数字读数"]
+    REF --> REFS
+    REFS -->|"阈值"| CMP
+    CMP -->|"判决"| LAT
+    LAT -->|"温度计码"| ENC
+    ENC -->|"二进制码"| OUT
+    CLK -.->|"评估 / 复位"| CMP
+    VIN --> SH
+    SH -->|"保持信号"| CMP
+    CLK -.->|"采样相"| SH

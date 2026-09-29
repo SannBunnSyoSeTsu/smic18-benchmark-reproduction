@@ -1,0 +1,4665 @@
+{
+  "generated_at": "2026-09-23T06:26:37.010846+00:00",
+  "circuit_sha256": "5dc44123e5a36555ed339bf528dd09696385da5df0298ee34e558f26f14423d9",
+  "top": "ahuja_ota",
+  "subcircuit_ports": {
+    "ahuja_ota": [
+      "vss",
+      "iref",
+      "vdd",
+      "vinp",
+      "vinn",
+      "vout"
+    ]
+  },
+  "instances": {
+    "ahuja_ota/MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "5"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=3.22u l=1u m=5",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 5.0,
+      "sheet": 1,
+      "origin": [
+        4,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          7
+        ],
+        "S": [
+          4,
+          5
+        ],
+        "G": [
+          2.45,
+          6
+        ],
+        "B": [
+          4.86,
+          6
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MPB": {
+      "name": "MPB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbp",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "18.76u",
+        "l": "1u"
+      },
+      "source_line": "MPB (vbp vbp vdd vdd) p18 w=18.76u l=1u",
+      "W_unit_um": 18.76,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        14,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          14,
+          18
+        ],
+        "S": [
+          14,
+          20
+        ],
+        "G": [
+          12.45,
+          19
+        ],
+        "B": [
+          14.86,
+          19
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MNB": {
+      "name": "MNB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vcp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MNB (vcp iref vss vss) n18 w=3.22u l=1u m=2",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        14,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          14,
+          7
+        ],
+        "S": [
+          14,
+          5
+        ],
+        "G": [
+          12.45,
+          6
+        ],
+        "B": [
+          14.86,
+          6
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MPNB": {
+      "name": "MPNB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vcn",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "18.76u",
+        "l": "1u"
+      },
+      "source_line": "MPNB (vcn vbp vdd vdd) p18 w=18.76u l=1u",
+      "W_unit_um": 18.76,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        30,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          30,
+          18
+        ],
+        "S": [
+          30,
+          20
+        ],
+        "G": [
+          28.45,
+          19
+        ],
+        "B": [
+          30.86,
+          19
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MNCB": {
+      "name": "MNCB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ncn",
+        "G": "ncn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.26u",
+        "l": ".36u"
+      },
+      "source_line": "MNCB (ncn ncn vss vss) n18 w=2.26u l=.36u",
+      "W_unit_um": 2.2599999999999993,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        30,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          30,
+          7
+        ],
+        "S": [
+          30,
+          5
+        ],
+        "G": [
+          28.45,
+          6
+        ],
+        "B": [
+          30.86,
+          6
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/RCP": {
+      "name": "RCP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vbp",
+        "2": "vcp"
+      },
+      "parameters": {
+        "r": "20000"
+      },
+      "source_line": "RCP (vbp vcp) resistor r=20000",
+      "value_SI": 20000.0,
+      "sheet": 1,
+      "origin": [
+        14,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          14,
+          13.82
+        ],
+        "2": [
+          14,
+          12.18
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/RCN": {
+      "name": "RCN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vcn",
+        "2": "ncn"
+      },
+      "parameters": {
+        "r": "18000"
+      },
+      "source_line": "RCN (vcn ncn) resistor r=18000",
+      "value_SI": 18000.0,
+      "sheet": 1,
+      "origin": [
+        30,
+        12
+      ],
+      "rendered_pins": {
+        "1": [
+          30,
+          12.82
+        ],
+        "2": [
+          30,
+          11.18
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/CBB": {
+      "name": "CBB",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vbp",
+        "2": "vdd"
+      },
+      "parameters": {
+        "c": "2p"
+      },
+      "source_line": "CBB (vbp vdd) capacitor c=2p",
+      "value_SI": 2e-12,
+      "sheet": 1,
+      "origin": [
+        21,
+        16
+      ],
+      "rendered_pins": {
+        "1": [
+          20.18,
+          16
+        ],
+        "2": [
+          21.82,
+          16
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/CBP": {
+      "name": "CBP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vcp",
+        "2": "vdd"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CBP (vcp vdd) capacitor c=5p",
+      "value_SI": 5e-12,
+      "sheet": 1,
+      "origin": [
+        21,
+        9
+      ],
+      "rendered_pins": {
+        "1": [
+          20.18,
+          9
+        ],
+        "2": [
+          21.82,
+          9
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/CBN": {
+      "name": "CBN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vcn",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "2p"
+      },
+      "source_line": "CBN (vcn vss) capacitor c=2p",
+      "value_SI": 2e-12,
+      "sheet": 1,
+      "origin": [
+        38,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          38,
+          13.82
+        ],
+        "2": [
+          38,
+          12.18
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "f1",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "20.5u",
+        "l": "1u"
+      },
+      "source_line": "MINN (f1 vinn tail vss) n18 w=20.5u l=1u",
+      "W_unit_um": 20.5,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        4,
+        15
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          16
+        ],
+        "S": [
+          4,
+          14
+        ],
+        "G": [
+          2.45,
+          15
+        ],
+        "B": [
+          4.86,
+          15
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "f2",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "20.5u",
+        "l": "1u"
+      },
+      "source_line": "MINP (f2 vinp tail vss) n18 w=20.5u l=1u",
+      "W_unit_um": 20.5,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        11,
+        15
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          16
+        ],
+        "S": [
+          11,
+          14
+        ],
+        "G": [
+          9.45,
+          15
+        ],
+        "B": [
+          11.86,
+          15
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MTAIL (tail iref vss vss) n18 w=3.22u l=1u m=4",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        7.5,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          7.5,
+          7
+        ],
+        "S": [
+          7.5,
+          5
+        ],
+        "G": [
+          5.95,
+          6
+        ],
+        "B": [
+          8.36,
+          6
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MFP": {
+      "name": "MFP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "f1",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "18.76u",
+        "l": "1u",
+        "m": "5"
+      },
+      "source_line": "MFP (f1 vbp vdd vdd) p18 w=18.76u l=1u m=5",
+      "W_unit_um": 18.76,
+      "L_um": 1.0,
+      "m": 5.0,
+      "sheet": 2,
+      "origin": [
+        19,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          19,
+          20
+        ],
+        "S": [
+          19,
+          22
+        ],
+        "G": [
+          17.45,
+          21
+        ],
+        "B": [
+          19.86,
+          21
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MFN": {
+      "name": "MFN",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "f2",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "18.76u",
+        "l": "1u",
+        "m": "5"
+      },
+      "source_line": "MFN (f2 vbp vdd vdd) p18 w=18.76u l=1u m=5",
+      "W_unit_um": 18.76,
+      "L_um": 1.0,
+      "m": 5.0,
+      "sheet": 2,
+      "origin": [
+        29,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          20
+        ],
+        "S": [
+          29,
+          22
+        ],
+        "G": [
+          27.45,
+          21
+        ],
+        "B": [
+          29.86,
+          21
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MFCP": {
+      "name": "MFCP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "g1",
+        "G": "vcp",
+        "S": "f1",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.38u",
+        "l": ".36u",
+        "m": "4"
+      },
+      "source_line": "MFCP (g1 vcp f1 vdd) p18 w=9.38u l=.36u m=4",
+      "W_unit_um": 9.38,
+      "L_um": 0.36,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        19,
+        15
+      ],
+      "rendered_pins": {
+        "D": [
+          19,
+          14
+        ],
+        "S": [
+          19,
+          16
+        ],
+        "G": [
+          17.45,
+          15
+        ],
+        "B": [
+          19.86,
+          15
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MFCN": {
+      "name": "MFCN",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "stage1",
+        "G": "vcp",
+        "S": "f2",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.38u",
+        "l": ".36u",
+        "m": "4"
+      },
+      "source_line": "MFCN (stage1 vcp f2 vdd) p18 w=9.38u l=.36u m=4",
+      "W_unit_um": 9.38,
+      "L_um": 0.36,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        29,
+        15
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          14
+        ],
+        "S": [
+          29,
+          16
+        ],
+        "G": [
+          27.45,
+          15
+        ],
+        "B": [
+          29.86,
+          15
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MCD": {
+      "name": "MCD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "g1",
+        "G": "vcn",
+        "S": "s5",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.26u",
+        "l": ".36u",
+        "m": "4"
+      },
+      "source_line": "MCD (g1 vcn s5 vss) n18 w=2.26u l=.36u m=4",
+      "W_unit_um": 2.2599999999999993,
+      "L_um": 0.36,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        19,
+        9
+      ],
+      "rendered_pins": {
+        "D": [
+          19,
+          10
+        ],
+        "S": [
+          19,
+          8
+        ],
+        "G": [
+          17.45,
+          9
+        ],
+        "B": [
+          19.86,
+          9
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MCO": {
+      "name": "MCO",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "stage1",
+        "G": "vcn",
+        "S": "s6",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.26u",
+        "l": ".36u",
+        "m": "4"
+      },
+      "source_line": "MCO (stage1 vcn s6 vss) n18 w=2.26u l=.36u m=4",
+      "W_unit_um": 2.2599999999999993,
+      "L_um": 0.36,
+      "m": 4.0,
+      "sheet": 2,
+      "origin": [
+        29,
+        9
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          10
+        ],
+        "S": [
+          29,
+          8
+        ],
+        "G": [
+          27.45,
+          9
+        ],
+        "B": [
+          29.86,
+          9
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MMD": {
+      "name": "MMD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s5",
+        "G": "g1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "12.3u",
+        "l": "1u"
+      },
+      "source_line": "MMD (s5 g1 vss vss) n18 w=12.3u l=1u",
+      "W_unit_um": 12.3,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        19,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          19,
+          5
+        ],
+        "S": [
+          19,
+          3
+        ],
+        "G": [
+          17.45,
+          4
+        ],
+        "B": [
+          19.86,
+          4
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MMO": {
+      "name": "MMO",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s6",
+        "G": "g1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "12.3u",
+        "l": "1u"
+      },
+      "source_line": "MMO (s6 g1 vss vss) n18 w=12.3u l=1u",
+      "W_unit_um": 12.3,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        29,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          5
+        ],
+        "S": [
+          29,
+          3
+        ],
+        "G": [
+          27.45,
+          4
+        ],
+        "B": [
+          29.86,
+          4
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MLOAD": {
+      "name": "MLOAD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "18.76u",
+        "l": "1u",
+        "m": "32.5"
+      },
+      "source_line": "MLOAD (vout vbp vdd vdd) p18 w=18.76u l=1u m=32.5",
+      "W_unit_um": 18.76,
+      "L_um": 1.0,
+      "m": 32.5,
+      "sheet": 2,
+      "origin": [
+        38,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          38,
+          19
+        ],
+        "S": [
+          38,
+          21
+        ],
+        "G": [
+          36.45,
+          20
+        ],
+        "B": [
+          38.86,
+          20
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/MSECOND": {
+      "name": "MSECOND",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "stage1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "30.82u",
+        "l": ".36u",
+        "m": "1"
+      },
+      "source_line": "MSECOND (vout stage1 vss vss) n18 w=30.82u l=.36u m=1",
+      "W_unit_um": 30.82,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        38,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          38,
+          8
+        ],
+        "S": [
+          38,
+          6
+        ],
+        "G": [
+          36.45,
+          7
+        ],
+        "B": [
+          38.86,
+          7
+        ]
+      },
+      "block": "ahuja_ota"
+    },
+    "ahuja_ota/CC": {
+      "name": "CC",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "f2"
+      },
+      "parameters": {
+        "c": "6.8p"
+      },
+      "source_line": "CC (vout f2) capacitor c=6.8p",
+      "value_SI": 6.799999999999999e-12,
+      "sheet": 2,
+      "origin": [
+        35,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          35.82,
+          4
+        ],
+        "2": [
+          34.18,
+          4
+        ]
+      },
+      "block": "ahuja_ota"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "5"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=3.22u l=1u m=5",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 5.0,
+      "definition": "ahuja_ota/MREF",
+      "path": "MREF"
+    },
+    "MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MTAIL (tail iref vss vss) n18 w=3.22u l=1u m=4",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "ahuja_ota/MTAIL",
+      "path": "MTAIL"
+    },
+    "MNB": {
+      "name": "MNB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vcp",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.22u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MNB (vcp iref vss vss) n18 w=3.22u l=1u m=2",
+      "W_unit_um": 3.22,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "ahuja_ota/MNB",
+      "path": "MNB"
+    },
+    "MPB": {
+      "name": "MPB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vbp",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "18.76u",
+        "l": "1u"
+      },
+      "source_line": "MPB (vbp vbp vdd vdd) p18 w=18.76u l=1u",
+      "W_unit_um": 18.76,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ahuja_ota/MPB",
+      "path": "MPB"
+    },
+    "RCP": {
+      "name": "RCP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vbp",
+        "2": "vcp"
+      },
+      "parameters": {
+        "r": "20000"
+      },
+      "source_line": "RCP (vbp vcp) resistor r=20000",
+      "value_SI": 20000.0,
+      "definition": "ahuja_ota/RCP",
+      "path": "RCP"
+    },
+    "CBP": {
+      "name": "CBP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vcp",
+        "2": "vdd"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CBP (vcp vdd) capacitor c=5p",
+      "value_SI": 5e-12,
+      "definition": "ahuja_ota/CBP",
+      "path": "CBP"
+    },
+    "CBB": {
+      "name": "CBB",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vbp",
+        "2": "vdd"
+      },
+      "parameters": {
+        "c": "2p"
+      },
+      "source_line": "CBB (vbp vdd) capacitor c=2p",
+      "value_SI": 2e-12,
+      "definition": "ahuja_ota/CBB",
+      "path": "CBB"
+    },
+    "MPNB": {
+      "name": "MPNB",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vcn",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "18.76u",
+        "l": "1u"
+      },
+      "source_line": "MPNB (vcn vbp vdd vdd) p18 w=18.76u l=1u",
+      "W_unit_um": 18.76,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ahuja_ota/MPNB",
+      "path": "MPNB"
+    },
+    "RCN": {
+      "name": "RCN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vcn",
+        "2": "ncn"
+      },
+      "parameters": {
+        "r": "18000"
+      },
+      "source_line": "RCN (vcn ncn) resistor r=18000",
+      "value_SI": 18000.0,
+      "definition": "ahuja_ota/RCN",
+      "path": "RCN"
+    },
+    "MNCB": {
+      "name": "MNCB",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ncn",
+        "G": "ncn",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.26u",
+        "l": ".36u"
+      },
+      "source_line": "MNCB (ncn ncn vss vss) n18 w=2.26u l=.36u",
+      "W_unit_um": 2.2599999999999993,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ahuja_ota/MNCB",
+      "path": "MNCB"
+    },
+    "CBN": {
+      "name": "CBN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vcn",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "2p"
+      },
+      "source_line": "CBN (vcn vss) capacitor c=2p",
+      "value_SI": 2e-12,
+      "definition": "ahuja_ota/CBN",
+      "path": "CBN"
+    },
+    "MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "f1",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "20.5u",
+        "l": "1u"
+      },
+      "source_line": "MINN (f1 vinn tail vss) n18 w=20.5u l=1u",
+      "W_unit_um": 20.5,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ahuja_ota/MINN",
+      "path": "MINN"
+    },
+    "MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "f2",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "20.5u",
+        "l": "1u"
+      },
+      "source_line": "MINP (f2 vinp tail vss) n18 w=20.5u l=1u",
+      "W_unit_um": 20.5,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ahuja_ota/MINP",
+      "path": "MINP"
+    },
+    "MFP": {
+      "name": "MFP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "f1",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "18.76u",
+        "l": "1u",
+        "m": "5"
+      },
+      "source_line": "MFP (f1 vbp vdd vdd) p18 w=18.76u l=1u m=5",
+      "W_unit_um": 18.76,
+      "L_um": 1.0,
+      "m": 5.0,
+      "definition": "ahuja_ota/MFP",
+      "path": "MFP"
+    },
+    "MFN": {
+      "name": "MFN",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "f2",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "18.76u",
+        "l": "1u",
+        "m": "5"
+      },
+      "source_line": "MFN (f2 vbp vdd vdd) p18 w=18.76u l=1u m=5",
+      "W_unit_um": 18.76,
+      "L_um": 1.0,
+      "m": 5.0,
+      "definition": "ahuja_ota/MFN",
+      "path": "MFN"
+    },
+    "MFCP": {
+      "name": "MFCP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "g1",
+        "G": "vcp",
+        "S": "f1",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.38u",
+        "l": ".36u",
+        "m": "4"
+      },
+      "source_line": "MFCP (g1 vcp f1 vdd) p18 w=9.38u l=.36u m=4",
+      "W_unit_um": 9.38,
+      "L_um": 0.36,
+      "m": 4.0,
+      "definition": "ahuja_ota/MFCP",
+      "path": "MFCP"
+    },
+    "MFCN": {
+      "name": "MFCN",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "stage1",
+        "G": "vcp",
+        "S": "f2",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.38u",
+        "l": ".36u",
+        "m": "4"
+      },
+      "source_line": "MFCN (stage1 vcp f2 vdd) p18 w=9.38u l=.36u m=4",
+      "W_unit_um": 9.38,
+      "L_um": 0.36,
+      "m": 4.0,
+      "definition": "ahuja_ota/MFCN",
+      "path": "MFCN"
+    },
+    "MMD": {
+      "name": "MMD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s5",
+        "G": "g1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "12.3u",
+        "l": "1u"
+      },
+      "source_line": "MMD (s5 g1 vss vss) n18 w=12.3u l=1u",
+      "W_unit_um": 12.3,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ahuja_ota/MMD",
+      "path": "MMD"
+    },
+    "MMO": {
+      "name": "MMO",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s6",
+        "G": "g1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "12.3u",
+        "l": "1u"
+      },
+      "source_line": "MMO (s6 g1 vss vss) n18 w=12.3u l=1u",
+      "W_unit_um": 12.3,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ahuja_ota/MMO",
+      "path": "MMO"
+    },
+    "MCD": {
+      "name": "MCD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "g1",
+        "G": "vcn",
+        "S": "s5",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.26u",
+        "l": ".36u",
+        "m": "4"
+      },
+      "source_line": "MCD (g1 vcn s5 vss) n18 w=2.26u l=.36u m=4",
+      "W_unit_um": 2.2599999999999993,
+      "L_um": 0.36,
+      "m": 4.0,
+      "definition": "ahuja_ota/MCD",
+      "path": "MCD"
+    },
+    "MCO": {
+      "name": "MCO",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "stage1",
+        "G": "vcn",
+        "S": "s6",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.26u",
+        "l": ".36u",
+        "m": "4"
+      },
+      "source_line": "MCO (stage1 vcn s6 vss) n18 w=2.26u l=.36u m=4",
+      "W_unit_um": 2.2599999999999993,
+      "L_um": 0.36,
+      "m": 4.0,
+      "definition": "ahuja_ota/MCO",
+      "path": "MCO"
+    },
+    "MSECOND": {
+      "name": "MSECOND",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vout",
+        "G": "stage1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "30.82u",
+        "l": ".36u",
+        "m": "1"
+      },
+      "source_line": "MSECOND (vout stage1 vss vss) n18 w=30.82u l=.36u m=1",
+      "W_unit_um": 30.82,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ahuja_ota/MSECOND",
+      "path": "MSECOND"
+    },
+    "MLOAD": {
+      "name": "MLOAD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "vbp",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "18.76u",
+        "l": "1u",
+        "m": "32.5"
+      },
+      "source_line": "MLOAD (vout vbp vdd vdd) p18 w=18.76u l=1u m=32.5",
+      "W_unit_um": 18.76,
+      "L_um": 1.0,
+      "m": 32.5,
+      "definition": "ahuja_ota/MLOAD",
+      "path": "MLOAD"
+    },
+    "CC": {
+      "name": "CC",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vout",
+        "2": "f2"
+      },
+      "parameters": {
+        "c": "6.8p"
+      },
+      "source_line": "CC (vout f2) capacitor c=6.8p",
+      "value_SI": 6.799999999999999e-12,
+      "definition": "ahuja_ota/CC",
+      "path": "CC"
+    }
+  },
+  "nets": {
+    "ahuja_ota/iref": [
+      {
+        "instance": "ahuja_ota/MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          4,
+          7
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          2.45,
+          6
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MNB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          12.45,
+          6
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MTAIL",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          5.95,
+          6
+        ]
+      }
+    ],
+    "ahuja_ota/vss": [
+      {
+        "instance": "ahuja_ota/MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          4,
+          5
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          4.86,
+          6
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MNB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          14,
+          5
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MNB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          14.86,
+          6
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MNCB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          30,
+          5
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MNCB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          30.86,
+          6
+        ]
+      },
+      {
+        "instance": "ahuja_ota/CBN",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          38,
+          12.18
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MINN",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          4.86,
+          15
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MINP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          11.86,
+          15
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MTAIL",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          7.5,
+          5
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MTAIL",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          8.36,
+          6
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MCD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          19.86,
+          9
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MCO",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          29.86,
+          9
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MMD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          19,
+          3
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MMD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          19.86,
+          4
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MMO",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          29,
+          3
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MMO",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          29.86,
+          4
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MSECOND",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          38,
+          6
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MSECOND",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          38.86,
+          7
+        ]
+      }
+    ],
+    "ahuja_ota/vbp": [
+      {
+        "instance": "ahuja_ota/MPB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          14,
+          18
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MPB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          12.45,
+          19
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MPNB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          28.45,
+          19
+        ]
+      },
+      {
+        "instance": "ahuja_ota/RCP",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          14,
+          13.82
+        ]
+      },
+      {
+        "instance": "ahuja_ota/CBB",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          20.18,
+          16
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          17.45,
+          21
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFN",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          27.45,
+          21
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MLOAD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          36.45,
+          20
+        ]
+      }
+    ],
+    "ahuja_ota/vdd": [
+      {
+        "instance": "ahuja_ota/MPB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          14,
+          20
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MPB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          14.86,
+          19
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MPNB",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          30,
+          20
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MPNB",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          30.86,
+          19
+        ]
+      },
+      {
+        "instance": "ahuja_ota/CBB",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          21.82,
+          16
+        ]
+      },
+      {
+        "instance": "ahuja_ota/CBP",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          21.82,
+          9
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          19,
+          22
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          19.86,
+          21
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFN",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          29,
+          22
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFN",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          29.86,
+          21
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFCP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          19.86,
+          15
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFCN",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          29.86,
+          15
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MLOAD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          38,
+          21
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MLOAD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          38.86,
+          20
+        ]
+      }
+    ],
+    "ahuja_ota/vcp": [
+      {
+        "instance": "ahuja_ota/MNB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          14,
+          7
+        ]
+      },
+      {
+        "instance": "ahuja_ota/RCP",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          14,
+          12.18
+        ]
+      },
+      {
+        "instance": "ahuja_ota/CBP",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          20.18,
+          9
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFCP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          17.45,
+          15
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFCN",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          27.45,
+          15
+        ]
+      }
+    ],
+    "ahuja_ota/vcn": [
+      {
+        "instance": "ahuja_ota/MPNB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          30,
+          18
+        ]
+      },
+      {
+        "instance": "ahuja_ota/RCN",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          30,
+          12.82
+        ]
+      },
+      {
+        "instance": "ahuja_ota/CBN",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          38,
+          13.82
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MCD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          17.45,
+          9
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MCO",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          27.45,
+          9
+        ]
+      }
+    ],
+    "ahuja_ota/ncn": [
+      {
+        "instance": "ahuja_ota/MNCB",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          30,
+          7
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MNCB",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          28.45,
+          6
+        ]
+      },
+      {
+        "instance": "ahuja_ota/RCN",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          30,
+          11.18
+        ]
+      }
+    ],
+    "ahuja_ota/f1": [
+      {
+        "instance": "ahuja_ota/MINN",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          4,
+          16
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          19,
+          20
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFCP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          19,
+          16
+        ]
+      }
+    ],
+    "ahuja_ota/vinn": [
+      {
+        "instance": "ahuja_ota/MINN",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          2.45,
+          15
+        ]
+      }
+    ],
+    "ahuja_ota/tail": [
+      {
+        "instance": "ahuja_ota/MINN",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          4,
+          14
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MINP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          11,
+          14
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MTAIL",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          7.5,
+          7
+        ]
+      }
+    ],
+    "ahuja_ota/f2": [
+      {
+        "instance": "ahuja_ota/MINP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          11,
+          16
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFN",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          29,
+          20
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MFCN",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          29,
+          16
+        ]
+      },
+      {
+        "instance": "ahuja_ota/CC",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          34.18,
+          4
+        ]
+      }
+    ],
+    "ahuja_ota/vinp": [
+      {
+        "instance": "ahuja_ota/MINP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          9.45,
+          15
+        ]
+      }
+    ],
+    "ahuja_ota/g1": [
+      {
+        "instance": "ahuja_ota/MFCP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          19,
+          14
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MCD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          19,
+          10
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MMD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          17.45,
+          4
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MMO",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          27.45,
+          4
+        ]
+      }
+    ],
+    "ahuja_ota/stage1": [
+      {
+        "instance": "ahuja_ota/MFCN",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          29,
+          14
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MCO",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          29,
+          10
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MSECOND",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          36.45,
+          7
+        ]
+      }
+    ],
+    "ahuja_ota/s5": [
+      {
+        "instance": "ahuja_ota/MCD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          19,
+          8
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MMD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          19,
+          5
+        ]
+      }
+    ],
+    "ahuja_ota/s6": [
+      {
+        "instance": "ahuja_ota/MCO",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          29,
+          8
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MMO",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          29,
+          5
+        ]
+      }
+    ],
+    "ahuja_ota/vout": [
+      {
+        "instance": "ahuja_ota/MLOAD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          38,
+          19
+        ]
+      },
+      {
+        "instance": "ahuja_ota/MSECOND",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          38,
+          8
+        ]
+      },
+      {
+        "instance": "ahuja_ota/CC",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          35.82,
+          4
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MPB",
+      "pin": "D",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPB",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPNB",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "RCP",
+      "pin": "1",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBB",
+      "pin": "1",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNB",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPB",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPB",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPNB",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPNB",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBB",
+      "pin": "2",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBP",
+      "pin": "2",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPNB",
+      "pin": "D",
+      "net": "vcn",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "RCN",
+      "pin": "1",
+      "net": "vcn",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBN",
+      "pin": "1",
+      "net": "vcn",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNB",
+      "pin": "D",
+      "net": "vcp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "RCP",
+      "pin": "2",
+      "net": "vcp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBP",
+      "pin": "1",
+      "net": "vcp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "D",
+      "net": "ncn",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "G",
+      "net": "ncn",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "RCN",
+      "pin": "2",
+      "net": "ncn",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNB",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNB",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNCB",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 1,
+      "instance": "CBN",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "D",
+      "net": "f2",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFN",
+      "pin": "D",
+      "net": "f2",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFCN",
+      "pin": "S",
+      "net": "f2",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "CC",
+      "pin": "2",
+      "net": "f2",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFP",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFN",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLOAD",
+      "pin": "G",
+      "net": "vbp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFP",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFP",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFN",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFN",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFCP",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFCN",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLOAD",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLOAD",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFCP",
+      "pin": "G",
+      "net": "vcp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFCN",
+      "pin": "G",
+      "net": "vcp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCD",
+      "pin": "G",
+      "net": "vcn",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCO",
+      "pin": "G",
+      "net": "vcn",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCO",
+      "pin": "S",
+      "net": "s6",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MMO",
+      "pin": "D",
+      "net": "s6",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCD",
+      "pin": "S",
+      "net": "s5",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MMD",
+      "pin": "D",
+      "net": "s5",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "D",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "G",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFCN",
+      "pin": "D",
+      "net": "stage1",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCO",
+      "pin": "D",
+      "net": "stage1",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSECOND",
+      "pin": "G",
+      "net": "stage1",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MLOAD",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSECOND",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "CC",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "G",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFCP",
+      "pin": "D",
+      "net": "g1",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCD",
+      "pin": "D",
+      "net": "g1",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MMD",
+      "pin": "G",
+      "net": "g1",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MMO",
+      "pin": "G",
+      "net": "g1",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "D",
+      "net": "f1",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFP",
+      "pin": "D",
+      "net": "f1",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MFCP",
+      "pin": "S",
+      "net": "f1",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCD",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCO",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MMD",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MMD",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MMO",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MMO",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSECOND",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSECOND",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ahuja_ota"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "ahuja_ota",
+      "title": "级联偏置与去耦网络",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.86,
+              6
+            ],
+            [
+              5.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              14.86,
+              19
+            ],
+            [
+              15.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              14.86,
+              6
+            ],
+            [
+              15.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              30.86,
+              19
+            ],
+            [
+              31.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              30.86,
+              6
+            ],
+            [
+              31.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              14,
+              18
+            ],
+            [
+              14,
+              13.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "points": [
+            [
+              14,
+              12.18
+            ],
+            [
+              14,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "points": [
+            [
+              30,
+              18
+            ],
+            [
+              30,
+              12.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ncn",
+          "points": [
+            [
+              30,
+              11.18
+            ],
+            [
+              30,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              20.18,
+              16
+            ],
+            [
+              14,
+              16
+            ],
+            [
+              14,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "points": [
+            [
+              20.18,
+              9
+            ],
+            [
+              14,
+              9
+            ],
+            [
+              14,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              21.82,
+              16
+            ],
+            [
+              25,
+              16
+            ],
+            [
+              25,
+              9
+            ],
+            [
+              21.82,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "points": [
+            [
+              30,
+              18
+            ],
+            [
+              30,
+              16.5
+            ],
+            [
+              38,
+              16.5
+            ],
+            [
+              38,
+              13.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              14,
+              23.5
+            ],
+            [
+              30,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              14,
+              20
+            ],
+            [
+              14,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              30,
+              20
+            ],
+            [
+              30,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              25,
+              16
+            ],
+            [
+              25,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              1.5
+            ],
+            [
+              38,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              14,
+              5
+            ],
+            [
+              14,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              30,
+              5
+            ],
+            [
+              30,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38,
+              12.18
+            ],
+            [
+              38,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              2.45,
+              6
+            ],
+            [
+              1.9500000000000002,
+              6
+            ],
+            [
+              1.9500000000000002,
+              8.2
+            ],
+            [
+              4,
+              8.2
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              12.45,
+              19
+            ],
+            [
+              11.95,
+              19
+            ],
+            [
+              11.95,
+              16.8
+            ],
+            [
+              14,
+              16.8
+            ],
+            [
+              14,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ncn",
+          "points": [
+            [
+              28.45,
+              6
+            ],
+            [
+              27.95,
+              6
+            ],
+            [
+              27.95,
+              8.2
+            ],
+            [
+              30,
+              8.2
+            ],
+            [
+              30,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              12.45,
+              6
+            ],
+            [
+              11.899999999999999,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              28.45,
+              19
+            ],
+            [
+              27.9,
+              19
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            15.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            15.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            31.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            31.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vbp",
+          "point": [
+            14.0,
+            15.91
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "point": [
+            14.0,
+            9.59
+          ],
+          "text": "vcp",
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "point": [
+            30.0,
+            15.41
+          ],
+          "text": "vcn",
+          "body": false
+        },
+        {
+          "net": "ncn",
+          "point": [
+            30.0,
+            9.09
+          ],
+          "text": "ncn",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            14,
+            23.5
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            3,
+            8.2
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            13,
+            16.8
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "ncn",
+          "point": [
+            29,
+            8.2
+          ],
+          "text": "ncn",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            11.899999999999999,
+            6
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            27.9,
+            19
+          ],
+          "text": "vbp",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "ahuja_ota",
+      "title": "折叠输入级、电流镜、输出级及 Ahuja 补偿",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.86,
+              15
+            ],
+            [
+              5.15,
+              15
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11.86,
+              15
+            ],
+            [
+              12.15,
+              15
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8.36,
+              6
+            ],
+            [
+              8.65,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              19.86,
+              21
+            ],
+            [
+              20.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              29.86,
+              21
+            ],
+            [
+              30.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              19.86,
+              15
+            ],
+            [
+              20.15,
+              15
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              29.86,
+              15
+            ],
+            [
+              30.15,
+              15
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              19.86,
+              9
+            ],
+            [
+              20.15,
+              9
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29.86,
+              9
+            ],
+            [
+              30.15,
+              9
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              19.86,
+              4
+            ],
+            [
+              20.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29.86,
+              4
+            ],
+            [
+              30.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              38.86,
+              20
+            ],
+            [
+              39.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.86,
+              7
+            ],
+            [
+              39.15,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "f1",
+          "points": [
+            [
+              19,
+              20
+            ],
+            [
+              19,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "g1",
+          "points": [
+            [
+              19,
+              14
+            ],
+            [
+              19,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s5",
+          "points": [
+            [
+              19,
+              8
+            ],
+            [
+              19,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "f2",
+          "points": [
+            [
+              29,
+              20
+            ],
+            [
+              29,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "stage1",
+          "points": [
+            [
+              29,
+              14
+            ],
+            [
+              29,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s6",
+          "points": [
+            [
+              29,
+              8
+            ],
+            [
+              29,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "f1",
+          "points": [
+            [
+              4,
+              16
+            ],
+            [
+              4,
+              18.5
+            ],
+            [
+              19,
+              18.5
+            ],
+            [
+              19,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "f2",
+          "points": [
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              17.5
+            ],
+            [
+              29,
+              17.5
+            ],
+            [
+              29,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              4,
+              11.5
+            ],
+            [
+              11,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              4,
+              14
+            ],
+            [
+              4,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              11,
+              14
+            ],
+            [
+              11,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              7.5,
+              7
+            ],
+            [
+              7.5,
+              11.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "g1",
+          "points": [
+            [
+              19,
+              10
+            ],
+            [
+              16,
+              10
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              17.45,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "g1",
+          "points": [
+            [
+              17.45,
+              4
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              16,
+              6.5
+            ],
+            [
+              26,
+              6.5
+            ],
+            [
+              26,
+              4
+            ],
+            [
+              27.45,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              38,
+              19
+            ],
+            [
+              38,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "stage1",
+          "points": [
+            [
+              29,
+              10
+            ],
+            [
+              29,
+              12
+            ],
+            [
+              36,
+              12
+            ],
+            [
+              36,
+              7
+            ],
+            [
+              36.45,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              35.82,
+              4
+            ],
+            [
+              43.5,
+              4
+            ],
+            [
+              43.5,
+              12
+            ],
+            [
+              38,
+              12
+            ],
+            [
+              38,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "f2",
+          "points": [
+            [
+              34.18,
+              4
+            ],
+            [
+              33,
+              4
+            ],
+            [
+              33,
+              17.5
+            ],
+            [
+              29,
+              17.5
+            ],
+            [
+              29,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              19,
+              23.5
+            ],
+            [
+              38,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              19,
+              22
+            ],
+            [
+              19,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              29,
+              22
+            ],
+            [
+              29,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              38,
+              21
+            ],
+            [
+              38,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7.5,
+              1.5
+            ],
+            [
+              38,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7.5,
+              5
+            ],
+            [
+              7.5,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              19,
+              3
+            ],
+            [
+              19,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29,
+              3
+            ],
+            [
+              29,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38,
+              6
+            ],
+            [
+              38,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              2.45,
+              15
+            ],
+            [
+              1.9000000000000001,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              9.45,
+              15
+            ],
+            [
+              8.899999999999999,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              5.95,
+              6
+            ],
+            [
+              5.4,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              17.45,
+              21
+            ],
+            [
+              16.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              27.45,
+              21
+            ],
+            [
+              26.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "points": [
+            [
+              17.45,
+              15
+            ],
+            [
+              16.9,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "points": [
+            [
+              27.45,
+              15
+            ],
+            [
+              26.9,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "points": [
+            [
+              17.45,
+              9
+            ],
+            [
+              16.9,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "points": [
+            [
+              27.45,
+              9
+            ],
+            [
+              26.9,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "points": [
+            [
+              36.45,
+              20
+            ],
+            [
+              35.900000000000006,
+              20
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            15
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            12.15,
+            15
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            8.65,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            20.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            30.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            20.15,
+            15
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            30.15,
+            15
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.15,
+            9
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            30.15,
+            9
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            30.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            39.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            39.15,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "f1",
+          "point": [
+            19.0,
+            18.0
+          ],
+          "text": "f1",
+          "body": false
+        },
+        {
+          "net": "g1",
+          "point": [
+            19.0,
+            12.0
+          ],
+          "text": "g1",
+          "body": false
+        },
+        {
+          "net": "s5",
+          "point": [
+            19.0,
+            6.5
+          ],
+          "text": "s5",
+          "body": false
+        },
+        {
+          "net": "f2",
+          "point": [
+            29.0,
+            18.0
+          ],
+          "text": "f2",
+          "body": false
+        },
+        {
+          "net": "stage1",
+          "point": [
+            29.0,
+            12.0
+          ],
+          "text": "stage1",
+          "body": false
+        },
+        {
+          "net": "s6",
+          "point": [
+            29.0,
+            6.5
+          ],
+          "text": "s6",
+          "body": false
+        },
+        {
+          "net": "tail",
+          "point": [
+            4,
+            11.5
+          ],
+          "text": "tail",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            38.0,
+            13.5
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            19,
+            23.5
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            7.5,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            1.9000000000000001,
+            15
+          ],
+          "text": "vinn",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            8.899999999999999,
+            15
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            5.4,
+            6
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            16.9,
+            21
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            26.9,
+            21
+          ],
+          "text": "vbp",
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "point": [
+            16.9,
+            15
+          ],
+          "text": "vcp",
+          "body": false
+        },
+        {
+          "net": "vcp",
+          "point": [
+            26.9,
+            15
+          ],
+          "text": "vcp",
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "point": [
+            16.9,
+            9
+          ],
+          "text": "vcn",
+          "body": false
+        },
+        {
+          "net": "vcn",
+          "point": [
+            26.9,
+            9
+          ],
+          "text": "vcn",
+          "body": false
+        },
+        {
+          "net": "vbp",
+          "point": [
+            35.900000000000006,
+            20
+          ],
+          "text": "vbp",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [
+    {
+      "sheet": 2,
+      "nets": [
+        "f1",
+        "f2"
+      ],
+      "point": [
+        19,
+        17.5
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 2,
+      "nets": [
+        "s5",
+        "g1"
+      ],
+      "point": [
+        19,
+        6.5
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 2,
+      "nets": [
+        "stage1",
+        "f2"
+      ],
+      "point": [
+        33,
+        12
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 2,
+      "nets": [
+        "vout",
+        "vss"
+      ],
+      "point": [
+        38,
+        4
+      ],
+      "junction": false
+    }
+  ],
+  "unused_ports": {
+    "ahuja_ota": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

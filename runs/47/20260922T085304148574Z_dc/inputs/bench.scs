@@ -1,0 +1,98 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/47/20260922T085304148574Z_dc/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/47/20260922T085304148574Z_dc/inputs/hd_cells.scs"
+parameters sweepout=.9
+VDDU (vddU 0) vsource dc=1.8
+IREFU (vddU irefU) isource dc=25u
+VUPU (upU 0) vsource dc=1.8
+VDNU (dnU 0) vsource dc=0
+VOUTU (voutU 0) vsource dc=sweepout
+XU (0 irefU upU dnU vddU voutU) pll_charge_pump
+save voutU VOUTU:p VDDU:p
+VDDD (vddD 0) vsource dc=1.8
+IREFD (vddD irefD) isource dc=25u
+VUPD (upD 0) vsource dc=0
+VDND (dnD 0) vsource dc=1.8
+VOUTD (voutD 0) vsource dc=sweepout
+XD (0 irefD upD dnD vddD voutD) pll_charge_pump
+save voutD VOUTD:p VDDD:p
+VDDO (vddO 0) vsource dc=1.8
+IREFO (vddO irefO) isource dc=25u
+VUPO (upO 0) vsource dc=0
+VDNO (dnO 0) vsource dc=0
+VOUTO (voutO 0) vsource dc=sweepout
+XO (0 irefO upO dnO vddO voutO) pll_charge_pump
+save voutO VOUTO:p VDDO:p
+VDDB (vddB 0) vsource dc=1.8
+IREFB (vddB irefB) isource dc=25u
+VUPB (upB 0) vsource dc=1.8
+VDNB (dnB 0) vsource dc=1.8
+VOUTB (voutB 0) vsource dc=sweepout
+XB (0 irefB upB dnB vddB voutB) pll_charge_pump
+save voutB VOUTB:p VDDB:p
+save XU.na XU.nc XU.ne XU.nd XU.n1a XU.n1b XU.vbp XU.vbpc XU.vbnc XU.wu XU.wd
+save XU.MN0:ids XU.MN0:gm XU.MN0:gds XU.MN0:vgs XU.MN0:vds XU.MN0:vdsat XU.MN0:region
+save XU.MN2:ids XU.MN2:gm XU.MN2:gds XU.MN2:vgs XU.MN2:vds XU.MN2:vdsat XU.MN2:region
+save XU.MPCB:ids XU.MPCB:gm XU.MPCB:gds XU.MPCB:vgs XU.MPCB:vds XU.MPCB:vdsat XU.MPCB:region
+save XU.MP2X:ids XU.MP2X:gm XU.MP2X:gds XU.MP2X:vgs XU.MP2X:vds XU.MP2X:vdsat XU.MP2X:region
+save XU.MNCB:ids XU.MNCB:gm XU.MNCB:gds XU.MNCB:vgs XU.MNCB:vds XU.MNCB:vdsat XU.MNCB:region
+save XU.MP0:ids XU.MP0:gm XU.MP0:gds XU.MP0:vgs XU.MP0:vds XU.MP0:vdsat XU.MP0:region
+save XU.MPC0:ids XU.MPC0:gm XU.MPC0:gds XU.MPC0:vgs XU.MPC0:vds XU.MPC0:vdsat XU.MPC0:region
+save XU.MNC1:ids XU.MNC1:gm XU.MNC1:gds XU.MNC1:vgs XU.MNC1:vds XU.MNC1:vdsat XU.MNC1:region
+save XU.MN1:ids XU.MN1:gm XU.MN1:gds XU.MN1:vgs XU.MN1:vds XU.MN1:vdsat XU.MN1:region
+save XU.MPM:ids XU.MPM:gm XU.MPM:gds XU.MPM:vgs XU.MPM:vds XU.MPM:vdsat XU.MPM:region
+save XU.MPC:ids XU.MPC:gm XU.MPC:gds XU.MPC:vgs XU.MPC:vds XU.MPC:vdsat XU.MPC:region
+save XU.MSUP:ids XU.MSUP:gm XU.MSUP:gds XU.MSUP:vgs XU.MSUP:vds XU.MSUP:vdsat XU.MSUP:region
+save XU.MSDU:ids XU.MSDU:gm XU.MSDU:gds XU.MSDU:vgs XU.MSDU:vds XU.MSDU:vdsat XU.MSDU:region
+save XU.MNWU:ids XU.MNWU:gm XU.MNWU:gds XU.MNWU:vgs XU.MNWU:vds XU.MNWU:vdsat XU.MNWU:region
+save XU.MNM:ids XU.MNM:gm XU.MNM:gds XU.MNM:vgs XU.MNM:vds XU.MNM:vdsat XU.MNM:region
+save XU.MNC:ids XU.MNC:gm XU.MNC:gds XU.MNC:vgs XU.MNC:vds XU.MNC:vdsat XU.MNC:region
+save XU.MSDN:ids XU.MSDN:gm XU.MSDN:gds XU.MSDN:vgs XU.MSDN:vds XU.MSDN:vdsat XU.MSDN:region
+save XU.MSDD:ids XU.MSDD:gm XU.MSDD:gds XU.MSDD:vgs XU.MSDD:vds XU.MSDD:vdsat XU.MSDD:region
+save XU.MNWD:ids XU.MNWD:gm XU.MNWD:gds XU.MNWD:vgs XU.MNWD:vds XU.MNWD:vdsat XU.MNWD:region
+save XD.na XD.nc XD.ne XD.nd XD.n1a XD.n1b XD.vbp XD.vbpc XD.vbnc XD.wu XD.wd
+save XD.MN0:ids XD.MN0:gm XD.MN0:gds XD.MN0:vgs XD.MN0:vds XD.MN0:vdsat XD.MN0:region
+save XD.MN2:ids XD.MN2:gm XD.MN2:gds XD.MN2:vgs XD.MN2:vds XD.MN2:vdsat XD.MN2:region
+save XD.MPCB:ids XD.MPCB:gm XD.MPCB:gds XD.MPCB:vgs XD.MPCB:vds XD.MPCB:vdsat XD.MPCB:region
+save XD.MP2X:ids XD.MP2X:gm XD.MP2X:gds XD.MP2X:vgs XD.MP2X:vds XD.MP2X:vdsat XD.MP2X:region
+save XD.MNCB:ids XD.MNCB:gm XD.MNCB:gds XD.MNCB:vgs XD.MNCB:vds XD.MNCB:vdsat XD.MNCB:region
+save XD.MP0:ids XD.MP0:gm XD.MP0:gds XD.MP0:vgs XD.MP0:vds XD.MP0:vdsat XD.MP0:region
+save XD.MPC0:ids XD.MPC0:gm XD.MPC0:gds XD.MPC0:vgs XD.MPC0:vds XD.MPC0:vdsat XD.MPC0:region
+save XD.MNC1:ids XD.MNC1:gm XD.MNC1:gds XD.MNC1:vgs XD.MNC1:vds XD.MNC1:vdsat XD.MNC1:region
+save XD.MN1:ids XD.MN1:gm XD.MN1:gds XD.MN1:vgs XD.MN1:vds XD.MN1:vdsat XD.MN1:region
+save XD.MPM:ids XD.MPM:gm XD.MPM:gds XD.MPM:vgs XD.MPM:vds XD.MPM:vdsat XD.MPM:region
+save XD.MPC:ids XD.MPC:gm XD.MPC:gds XD.MPC:vgs XD.MPC:vds XD.MPC:vdsat XD.MPC:region
+save XD.MSUP:ids XD.MSUP:gm XD.MSUP:gds XD.MSUP:vgs XD.MSUP:vds XD.MSUP:vdsat XD.MSUP:region
+save XD.MSDU:ids XD.MSDU:gm XD.MSDU:gds XD.MSDU:vgs XD.MSDU:vds XD.MSDU:vdsat XD.MSDU:region
+save XD.MNWU:ids XD.MNWU:gm XD.MNWU:gds XD.MNWU:vgs XD.MNWU:vds XD.MNWU:vdsat XD.MNWU:region
+save XD.MNM:ids XD.MNM:gm XD.MNM:gds XD.MNM:vgs XD.MNM:vds XD.MNM:vdsat XD.MNM:region
+save XD.MNC:ids XD.MNC:gm XD.MNC:gds XD.MNC:vgs XD.MNC:vds XD.MNC:vdsat XD.MNC:region
+save XD.MSDN:ids XD.MSDN:gm XD.MSDN:gds XD.MSDN:vgs XD.MSDN:vds XD.MSDN:vdsat XD.MSDN:region
+save XD.MSDD:ids XD.MSDD:gm XD.MSDD:gds XD.MSDD:vgs XD.MSDD:vds XD.MSDD:vdsat XD.MSDD:region
+save XD.MNWD:ids XD.MNWD:gm XD.MNWD:gds XD.MNWD:vgs XD.MNWD:vds XD.MNWD:vdsat XD.MNWD:region
+save XO.na XO.nc XO.ne XO.nd XO.n1a XO.n1b XO.vbp XO.vbpc XO.vbnc XO.wu XO.wd
+save XO.MN0:ids XO.MN0:gm XO.MN0:gds XO.MN0:vgs XO.MN0:vds XO.MN0:vdsat XO.MN0:region
+save XO.MN2:ids XO.MN2:gm XO.MN2:gds XO.MN2:vgs XO.MN2:vds XO.MN2:vdsat XO.MN2:region
+save XO.MPCB:ids XO.MPCB:gm XO.MPCB:gds XO.MPCB:vgs XO.MPCB:vds XO.MPCB:vdsat XO.MPCB:region
+save XO.MP2X:ids XO.MP2X:gm XO.MP2X:gds XO.MP2X:vgs XO.MP2X:vds XO.MP2X:vdsat XO.MP2X:region
+save XO.MNCB:ids XO.MNCB:gm XO.MNCB:gds XO.MNCB:vgs XO.MNCB:vds XO.MNCB:vdsat XO.MNCB:region
+save XO.MP0:ids XO.MP0:gm XO.MP0:gds XO.MP0:vgs XO.MP0:vds XO.MP0:vdsat XO.MP0:region
+save XO.MPC0:ids XO.MPC0:gm XO.MPC0:gds XO.MPC0:vgs XO.MPC0:vds XO.MPC0:vdsat XO.MPC0:region
+save XO.MNC1:ids XO.MNC1:gm XO.MNC1:gds XO.MNC1:vgs XO.MNC1:vds XO.MNC1:vdsat XO.MNC1:region
+save XO.MN1:ids XO.MN1:gm XO.MN1:gds XO.MN1:vgs XO.MN1:vds XO.MN1:vdsat XO.MN1:region
+save XO.MPM:ids XO.MPM:gm XO.MPM:gds XO.MPM:vgs XO.MPM:vds XO.MPM:vdsat XO.MPM:region
+save XO.MPC:ids XO.MPC:gm XO.MPC:gds XO.MPC:vgs XO.MPC:vds XO.MPC:vdsat XO.MPC:region
+save XO.MSUP:ids XO.MSUP:gm XO.MSUP:gds XO.MSUP:vgs XO.MSUP:vds XO.MSUP:vdsat XO.MSUP:region
+save XO.MSDU:ids XO.MSDU:gm XO.MSDU:gds XO.MSDU:vgs XO.MSDU:vds XO.MSDU:vdsat XO.MSDU:region
+save XO.MNWU:ids XO.MNWU:gm XO.MNWU:gds XO.MNWU:vgs XO.MNWU:vds XO.MNWU:vdsat XO.MNWU:region
+save XO.MNM:ids XO.MNM:gm XO.MNM:gds XO.MNM:vgs XO.MNM:vds XO.MNM:vdsat XO.MNM:region
+save XO.MNC:ids XO.MNC:gm XO.MNC:gds XO.MNC:vgs XO.MNC:vds XO.MNC:vdsat XO.MNC:region
+save XO.MSDN:ids XO.MSDN:gm XO.MSDN:gds XO.MSDN:vgs XO.MSDN:vds XO.MSDN:vdsat XO.MSDN:region
+save XO.MSDD:ids XO.MSDD:gm XO.MSDD:gds XO.MSDD:vgs XO.MSDD:vds XO.MSDD:vdsat XO.MSDD:region
+save XO.MNWD:ids XO.MNWD:gm XO.MNWD:gds XO.MNWD:vgs XO.MNWD:vds XO.MNWD:vdsat XO.MNWD:region
+dcOp dc
+compliance dc param=sweepout start=.3 stop=1.35 step=.025

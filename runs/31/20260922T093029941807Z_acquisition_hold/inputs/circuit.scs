@@ -1,0 +1,34 @@
+// Sample capacitor bottom plates disconnect before signal-input switches.
+simulator lang=spectre
+subckt boot_drv (VIN CLK VDD VSS VG)
+XCLKN (CLK CLKN VDD VSS VDD VSS) INHDV4
+XCLKP (CLKN CLKP VDD VSS VDD VSS) INHDV4
+CBOOT (CBT CBB) capacitor c=1p
+MDCHG (CBB CLKN VSS VSS) n18 w=2.54u l=.18u
+MPCHG (CG CLKP VDD VDD) p18 w=7.4u l=.18u
+MLIM (VDD VG CBT CBT) p18 w=7.4u l=.18u
+MPRE (VDD CLK PRE VSS) n18 w=2.54u l=.18u m=2
+MGTRK (CG CLKP CBB VSS) n18 w=2.54u l=.18u m=2
+MBPP (VG CG CBT CBT) p18 w=7.4u l=.18u
+MPVIN (CBB VG VIN VSS) n18 w=2.54u l=.18u m=2
+MCASC (VG VDD CLKP VSS) n18 w=2.54u l=.18u m=2
+MPRGUARD (VG VDD PRE VSS) n18 w=2.54u l=.18u m=2
+ends boot_drv
+
+subckt bottom_plate_sampler (vinp vinn clk vcm vdd vss vsp vsn vtopp vtopn)
+XCLK0 (clk earlyb vdd vss vdd vss) INHDV4
+XCLK1 (earlyb early vdd vss vdd vss) INHDV4
+XCLK2 (early lateb vdd vss vdd vss) INHDV4
+XCLK3 (lateb late vdd vss vdd vss) INHDV8
+CDELAY (lateb vss) capacitor c=20f
+XBP (vinp late vdd vss vgp) boot_drv
+XBN (vinn late vdd vss vgn) boot_drv
+XBC (vcm early vdd vss vgc) boot_drv
+MIP (vsp vgp vinp vss) n18 w=10.18u l=.18u
+MCP (vtopp vgc vcm vss) n18 w=1.28u l=.18u
+CP (vsp vtopp) capacitor c=1p
+MIN (vsn vgn vinn vss) n18 w=10.18u l=.18u
+MCN (vtopn vgc vcm vss) n18 w=1.28u l=.18u
+CN (vsn vtopn) capacitor c=1p
+MTS (vtopp vgc vtopn vss) n18 w=15.28u l=.18u
+ends bottom_plate_sampler

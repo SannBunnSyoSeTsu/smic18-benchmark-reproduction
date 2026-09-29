@@ -1,0 +1,26 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        NON["HD非交叠与延迟链"]
+        LS["低侧驱动"]
+        LVL["高侧电平转换"]
+        HS["浮动高侧驱动"]
+        BST["互锁补电 / MIM与MOS存储 / 跟随支路"]
+    end
+    CLK["输入时钟"]
+    BR["外部全NMOS半桥"]
+    LOAD["负载及封装寄生"]
+    subgraph AUX["外部储能"]
+        CAP["200pF外部自举电容"]
+    end
+    CLK -.-> NON
+    NON -.->|"低侧指令"| LS
+    NON -.->|"高侧指令"| LVL
+    LVL -.-> HS
+    LS -.->|"GN2"| BR
+    HS -.->|"GN"| BR
+    BR -->|"开关节点"| LOAD
+    NON -.->|"低侧指令互锁"| BST
+    BST -->|"浮动供电"| HS
+    CAP -->|"储能"| BST
+    BR -->|"VLX / VSW跟随"| BST

@@ -1,0 +1,26 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/34-sampling-ota-gain8/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-10 iabstol=1e-15
+saveOptions options save=selected
+VSS (vss 0) vsource dc=0
+VDD (vdd vss) vsource dc=1.8
+IREF (vdd iref) isource dc=50u
+VOCM (vocm vss) vsource dc=.9
+X (vss iref vdd vinn vinp vocm voutn voutp) sampling_feedback_ota
+CLP (voutp vss) capacitor c=0.25p
+CLN (voutn vss) capacitor c=0.25p
+save vdd vss iref vocm vinp vinn voutp voutn VDD:p
+VINP (vinp vss) vsource dc=.9
+VINN (vinn vss) vsource dc=.9
+IREFR (vdd irefr) isource dc=50u
+XR (vss irefr vdd vinn vinp vocm routn routp) sampling_feedback_ota
+CLRP (routp vss) capacitor c=250f
+CLRN (routn vss) capacitor c=250f
+VSENSEP (voutp distp) vsource dc=0
+VSENSEN (voutn distn) vsource dc=0
+IDISTP (distp vss) isource type=pulse val0=0 val1=50u delay=20n rise=100p fall=100p width=20n period=200n
+IDISTN (distn vss) isource type=pulse val0=0 val1=50u delay=20n rise=100p fall=100p width=20n period=200n
+save routp routn X.vcmfb X.stagep VSENSEP:p VSENSEN:p
+tran tran stop=150n maxstep=10p errpreset=conservative method=gear2only

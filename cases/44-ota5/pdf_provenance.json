@@ -1,0 +1,78 @@
+{
+  "pdf": "reports/44-ota5-review.pdf",
+  "sha256": "2b5fc1a68abadd27c56e42c40d52cac1a339d2f4eb42ecbdbe98e6a10c9378fb",
+  "results_sha256": "edf7b10d794294b943018c4a4625bfd27d58e3117c467756e446e55638898d2c",
+  "circuit_sha256": "053803f14ee4aa318d697793134fe613cd16978b67680028e1b3ca9152bf1ad3",
+  "generated_at": "2026-09-23T06:19:23.568398+00:00",
+  "pages": 5,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:19:23.571360+00:00",
+  "opening_paragraph_sha256": "e41d0fffc065c09ff2b7560c0bd94b61abedc3c067612b1f35f25b1995297959",
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change.",
+  "body_pages": 4,
+  "schematic_pages": 1,
+  "schematic_sheets_sha256": "6e20bb1c3c1f691de69ccb98cf530ac2db92340708bde648869d23a26554ca78",
+  "schematic_audit_sha256": "346be3d945475fd389bd7467827bd1da686ed7d403b19feec6e6f86d72dbd9b5",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/44-ota5/44-ota5-review.pdf",
+    "sha256": "a8e28a9c185923711a0dd88f797fbb3951fc765cb116a6e11e84ff9df51554ee",
+    "pages": 4,
+    "previous_render_reviewed_at": "2026-09-22T07:28:38.274922+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "0461690ff5236f96ecb781314a9d70e6c5cba644d828ad7889a14189a5567f00"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "c29f13a3ef2891b4b5733546cfd52303e91c7270d66dfa24ad5109d1771223a6"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "d7812416626fc94672aacbac4448464df6fbe11cab37071f4021c9734809a18f"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "1d3309ee72df34b6be7ff10c40dd6d0ef7be306d847d06e42a8c1862cd64c494"
+    },
+    {
+      "page": 5,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "caead84ee6959b9c0394929ec1e0952457cab42c10c5eeda138e90090ef03138",
+      "path": "reports/schematic-retrofit-renders/44-ota5/page-05.png",
+      "sha256": "efa1c0445d64577c85997c288e87567578b6cbb83363b2be14c9afa001cb0b19"
+    }
+  ]
+}

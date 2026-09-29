@@ -1,0 +1,23 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        IN["交叉输入与复位"]
+        RES["浮动电荷库与偏置复位"]
+        AMP["浮动共源共栅及输出使能"]
+        CLKD["原厂HD时钟缓冲"]
+    end
+    VIN["10 / 20mV差分输入"]
+    SC["400fF飞跨采样夹具"]
+    CLK["900MHz采样 / 转移时钟"]
+    HOLD["输出跟踪开关与50fF保持负载"]
+    VIN --> SC
+    SC -->|"采样电荷"| IN
+    IN -->|"转移"| RES
+    RES -->|"储能与驱动"| AMP
+    AMP -->|"余量输出"| HOLD
+    CLK -.-> CLKD
+    CLKD -.->|"复位 / 转移"| IN
+    CLKD -.->|"复位"| RES
+    CLKD -.->|"输出使能"| AMP
+    CLK -.->|"采样"| SC
+    CLK -.->|"原读数时序"| HOLD

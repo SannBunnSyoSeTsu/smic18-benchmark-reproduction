@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-09-26T04:52:30.540041+00:00",
+  "circuit_sha256": "05da74f7a23c1d2282c3274119e1fae0559296895141342ffc3a2b043dba1e44",
+  "reason": "Derivative-based3dB output range depends on input sweep resolution; compare0.5uV original with0.25uV diagnostic",
+  "original_group": "runs/33/20260926T045004453597Z_ranges",
+  "diagnostic_run": "runs/33/20260926T045229914424Z_range_resolution",
+  "baseline_points": 81,
+  "diagnostic_points": 161,
+  "baseline_range_V": 1.6991529372336163,
+  "diagnostic_range_V": 1.7128695650553296,
+  "absolute_difference_V": 0.013716627821713345,
+  "maximum_difference_V": 0.05,
+  "same_acceptance_tiers": true,
+  "passed": true,
+  "scored_data": "Original81point sweep retained without substitution"
+}

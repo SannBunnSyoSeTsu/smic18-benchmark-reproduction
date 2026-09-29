@@ -1,0 +1,97 @@
+simulator lang=spectre
+subckt test_fct (cinn cinp coutn coutp ib sam transfer vcm vddana vdddig vssana vssdig)
+MP_OUTPUT_01 (coutn output_en_b outn_pullup_node reservoir_hi_n) p18 w=2.1672u l=.18u m=1
+MP_INPUT_01 (bias_input_reset reset_b_main input_ctrl_p_a vdddig) p18 w=6.02u l=.18u m=1
+MP_INPUT_02 (bias_input_reset reset_b_main input_ctrl_p_b vdddig) p18 w=6.02u l=.18u m=1
+MP_INPUT_03 (vcm reset_b_main cinn vdddig) p18 w=12.04u l=.18u m=1
+MP_RESERVOIR_01 (bias_n_cascode reset_b_bias reservoir_gate_lo_n vddana) p18 w=2.408u l=.18u m=1
+MP_INPUT_04 (vcm reset_b_main cinp vdddig) p18 w=12.04u l=.18u m=1
+MP_INPUT_05 (bias_reservoir_reset reset_b_main input_ctrl_n_a vdddig) p18 w=6.02u l=.18u m=1
+MP_RESERVOIR_02 (bias_n_cascode reset_b_bias reservoir_gate_lo_p vddana) p18 w=2.408u l=.18u m=1
+MP_RESERVOIR_03 (bias_p_cascode reset_b_bias reservoir_gate_hi_p vddana) p18 w=2.408u l=.18u m=1
+MP_RESERVOIR_04 (bias_p_cascode reset_b_bias reservoir_gate_hi_n vddana) p18 w=2.408u l=.18u m=1
+MP_INPUT_06 (bias_reservoir_reset reset_b_main input_ctrl_n_b vdddig) p18 w=6.02u l=.18u m=1
+MP_INPUT_07 (input_branch_p input_ctrl_n_a cinp cinp) p18 w=27.66u l=.18u m=1
+MP_INPUT_08 (input_branch_n input_ctrl_n_b cinn cinn) p18 w=27.66u l=.18u m=1
+MP_OUTPUT_02 (outp_pullup_node reservoir_gate_hi_n reservoir_hi_p reservoir_hi_p) p18 w=34.0218u l=.18u m=1
+MP_OUTPUT_03 (outn_pullup_node reservoir_gate_hi_p reservoir_hi_n reservoir_hi_n) p18 w=34.0218u l=.18u m=1
+MP_RESERVOIR_05 (reservoir_hi_p reset_b_res_p vddana vdddig) p18 w=36.12u l=.18u m=1
+MP_RESERVOIR_06 (reservoir_hi_n reset_b_res_n vddana vdddig) p18 w=36.12u l=.18u m=1
+MP_RESERVOIR_07 (transfer_branch_p transfer_en_b reservoir_hi_p reservoir_hi_p) p18 w=11.03666667u l=.18u m=1
+MP_RESERVOIR_08 (transfer_branch_n transfer_en_b reservoir_hi_n reservoir_hi_n) p18 w=11.03666667u l=.18u m=1
+MP_INPUT_09 (bias_input_reset bias_p_gate vddana vddana) p18 w=9.22u l=.18u m=1
+MP_INPUT_10 (bias_n_diode bias_n_diode vcm vcm) p18 w=9.22u l=.18u m=1
+MP_BIAS_01 (bias_p_branch_1 bias_p_gate vddana vddana) p18 w=9.22u l=.18u m=1
+MP_BIAS_02 (bias_p_branch_2 bias_p_gate vddana vddana) p18 w=9.22u l=.18u m=1
+MP_BIAS_03 (bias_p_branch_3 bias_p_gate vddana vddana) p18 w=9.22u l=.18u m=1
+MP_BIAS_04 (bias_p_branch_4 bias_p_gate vddana vddana) p18 w=9.22u l=.18u m=1
+MP_BIAS_05 (bias_p_branch_4 bias_p_gate vddana vddana) p18 w=9.22u l=.18u m=1
+MP_BIAS_06 (bias_mid_n bias_mid_p bias_p_branch_3 vddana) p18 w=9.22u l=.18u m=1
+MP_BIAS_07 (bias_n_cascode bias_mid_p bias_p_branch_1 vddana) p18 w=9.22u l=.18u m=1
+MP_BIAS_08 (bias_p_gate bias_mid_p bias_p_branch_2 vddana) p18 w=9.22u l=.18u m=1
+MP_BIAS_09 (bias_mid_p bias_mid_p bias_p_branch_4 vddana) p18 w=9.22u l=.18u m=1
+MP_INPUT_11 (bias_reservoir_reset bias_reservoir_reset vcm vcm) p18 w=9.22u l=.18u m=1
+MP_OUTPUT_04 (coutp output_en_b outp_pullup_node reservoir_hi_p) p18 w=2.1672u l=.18u m=1
+MP_BIAS_10 (bias_p_cascode bias_p_cascode vddana vddana) p18 w=9.22u l=.18u m=1
+C_INPUT_01 (cinp input_ctrl_p_a) capacitor c=1p
+C_BIAS_01 (vddana bias_p_cascode) capacitor c=457.241f
+C_RESERVOIR_01 (reservoir_hi_p reservoir_lo_p) capacitor c=4p
+C_RESERVOIR_02 (reservoir_gate_lo_p reservoir_lo_n) capacitor c=365.955f
+C_BIAS_02 (vssana bias_n_cascode) capacitor c=457.241f
+C_INPUT_02 (cinn input_ctrl_n_a) capacitor c=1p
+C_INPUT_03 (cinn input_ctrl_p_b) capacitor c=1p
+C_RESERVOIR_03 (reservoir_hi_n reservoir_lo_n) capacitor c=4p
+C_RESERVOIR_04 (reservoir_gate_hi_n reservoir_hi_n) capacitor c=365.955f
+C_RESERVOIR_05 (reservoir_gate_hi_p reservoir_hi_p) capacitor c=365.955f
+C_RESERVOIR_06 (reservoir_gate_lo_n reservoir_lo_p) capacitor c=365.955f
+C_INPUT_04 (cinp input_ctrl_n_b) capacitor c=1p
+C_INPUT_05 (vcm bias_reservoir_reset) capacitor c=431.276f
+C_INPUT_06 (vcm bias_input_reset) capacitor c=431.276f
+X_CLOCK_01 (sam reset_n_res_n vdddig vssdig vdddig vssdig) BUFHDV12
+X_CLOCK_02 (transfer output_en_n vdddig vssdig vdddig vssdig) BUFHDV12
+X_CLOCK_03 (sam reset_n_bias vdddig vssdig vdddig vssdig) BUFHDV12
+X_CLOCK_04 (sam reset_n_res_p vdddig vssdig vdddig vssdig) BUFHDV12
+X_CLOCK_05 (transfer transfer_en_n vdddig vssdig vdddig vssdig) BUFHDV12
+X_CLOCK_06 (sam reset_n_main vdddig vssdig vdddig vssdig) BUFHDV12
+MN_OUTPUT_01 (coutn output_en_n outn_pulldown_node reservoir_lo_n) n18 w=0.68292u l=.18u m=1
+MN_RESERVOIR_01 (reservoir_gate_lo_p reset_n_bias bias_n_cascode vssana) n18 w=2.168u l=.18u m=1
+MN_RESERVOIR_02 (reservoir_gate_hi_p reset_n_bias bias_p_cascode vssana) n18 w=2.168u l=.18u m=1
+MN_INPUT_01 (input_ctrl_n_b reset_n_main bias_reservoir_reset vssana) n18 w=5.42u l=.18u m=1
+MN_OUTPUT_02 (coutp output_en_n outp_pulldown_node reservoir_lo_p) n18 w=0.68292u l=.18u m=1
+MN_INPUT_02 (input_ctrl_p_b reset_n_main bias_input_reset vssana) n18 w=5.42u l=.18u m=1
+MN_INPUT_03 (cinn reset_n_main vcm vssana) n18 w=10.84u l=.18u m=1
+MN_RESERVOIR_03 (reservoir_gate_lo_n reset_n_bias bias_n_cascode vssana) n18 w=2.168u l=.18u m=1
+MN_INPUT_04 (input_ctrl_n_a reset_n_main bias_reservoir_reset vssana) n18 w=5.42u l=.18u m=1
+MN_INPUT_05 (cinp reset_n_main vcm vssana) n18 w=10.84u l=.18u m=1
+MN_INPUT_06 (bias_p_branch_4 bias_p_branch_4 vcm vcm) n18 w=3.02u l=.18u m=1
+MN_BIAS_01 (ib bias_mid_n bias_n_branch_4 vssana) n18 w=6.98u l=.18u m=1
+MN_INPUT_07 (transfer_branch_n input_ctrl_p_b cinp cinp) n18 w=9.06u l=.18u m=1
+MN_INPUT_08 (transfer_branch_p input_ctrl_p_a cinn cinn) n18 w=9.06u l=.18u m=1
+MN_OUTPUT_03 (outp_pulldown_node reservoir_gate_lo_p reservoir_lo_p reservoir_lo_p) n18 w=14.04725u l=.18u m=1
+MN_OUTPUT_04 (outn_pulldown_node reservoir_gate_lo_n reservoir_lo_n reservoir_lo_n) n18 w=14.04725u l=.18u m=1
+MN_RESERVOIR_04 (reservoir_lo_p reset_n_res_p vssana vssdig) n18 w=32.52u l=.18u m=1
+MN_RESERVOIR_05 (reservoir_lo_n reset_n_res_n vssana vssdig) n18 w=32.52u l=.18u m=1
+MN_INPUT_09 (input_branch_n transfer_en_n reservoir_lo_p vssana) n18 w=9.936666667u l=.18u m=1
+MN_INPUT_10 (input_branch_p transfer_en_n reservoir_lo_n vssana) n18 w=9.936666667u l=.18u m=1
+MN_INPUT_11 (input_ctrl_p_a reset_n_main bias_input_reset vssana) n18 w=5.42u l=.18u m=1
+MN_INPUT_12 (bias_input_reset bias_input_reset vcm vcm) n18 w=3.02u l=.18u m=1
+MN_BIAS_02 (bias_n_branch_1 ib vssana vssana) n18 w=6.98u l=.18u m=1
+MN_BIAS_03 (bias_p_gate bias_mid_n bias_n_branch_1 vssana) n18 w=6.98u l=.18u m=1
+MN_BIAS_04 (bias_p_cascode bias_mid_n bias_n_branch_2 vssana) n18 w=6.98u l=.18u m=1
+MN_BIAS_05 (bias_n_diode ib vssana vssana) n18 w=6.98u l=.18u m=1
+MN_BIAS_06 (bias_mid_n bias_mid_n bias_n_diode vssana) n18 w=6.98u l=.18u m=1
+MN_BIAS_07 (bias_n_branch_4 ib vssana vssana) n18 w=6.98u l=.18u m=1
+MN_BIAS_08 (bias_mid_p bias_mid_n bias_n_branch_3 vssana) n18 w=6.98u l=.18u m=1
+MN_BIAS_09 (bias_n_branch_3 ib vssana vssana) n18 w=6.98u l=.18u m=1
+MN_BIAS_10 (bias_n_diode ib vssana vssana) n18 w=6.98u l=.18u m=1
+MN_BIAS_11 (bias_n_branch_2 ib vssana vssana) n18 w=6.98u l=.18u m=1
+MN_BIAS_12 (bias_n_cascode bias_n_cascode vssana vssana) n18 w=6.98u l=.18u m=1
+MN_RESERVOIR_06 (bias_reservoir_reset ib vssana vssana) n18 w=4.3625u l=.18u m=1
+MN_RESERVOIR_07 (reservoir_gate_hi_n reset_n_bias bias_p_cascode vssana) n18 w=2.168u l=.18u m=1
+X_CLOCK_07 (sam reset_b_res_n vdddig vssdig vdddig vssdig) INHDV12
+X_CLOCK_08 (transfer output_en_b vdddig vssdig vdddig vssdig) INHDV12
+X_CLOCK_09 (sam reset_b_bias vdddig vssdig vdddig vssdig) INHDV12
+X_CLOCK_10 (transfer transfer_en_b vdddig vssdig vdddig vssdig) INHDV12
+X_CLOCK_11 (sam reset_b_res_p vdddig vssdig vdddig vssdig) INHDV12
+X_CLOCK_12 (sam reset_b_main vdddig vssdig vdddig vssdig) INHDV12
+ends test_fct

@@ -1,0 +1,167 @@
+{
+  "slot": 38,
+  "case": "cases/38-capless-ldo",
+  "circuit_sha256": "44f175530b8c48e901aa078ddc595bec1cefd3f2487f5ea63e9d71566ec7d2d5",
+  "hd_cells_sha256": null,
+  "top": "capless_ldo",
+  "source_definition_count": 24,
+  "source_terminal_count": 76,
+  "source_expanded_leaf_count": 24,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "5f30d239466c8c4d40a5f2114aafd21e604d5b703ff223044cfcadf398e8921a",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 24,
+  "schematic_expanded_leaf_count": 24,
+  "independently_traced_terminals": 76,
+  "expanded_leaf_counts_by_kind": {
+    "R": 6,
+    "MOS": 14,
+    "C": 4
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "capless_ldo/MPA",
+      "D_G_S_B": [
+        "nb",
+        "pb",
+        "vin",
+        "vin"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MPB",
+      "D_G_S_B": [
+        "pb",
+        "pb",
+        "vin",
+        "vin"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MN1",
+      "D_G_S_B": [
+        "nb",
+        "nb",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MN2",
+      "D_G_S_B": [
+        "pb",
+        "nb",
+        "ns",
+        "vss"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MPT",
+      "D_G_S_B": [
+        "tail",
+        "pb",
+        "vin",
+        "vin"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MIR",
+      "D_G_S_B": [
+        "nr",
+        "vref",
+        "tail",
+        "tail"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MIF",
+      "D_G_S_B": [
+        "nf",
+        "fb",
+        "tail",
+        "tail"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MNDR",
+      "D_G_S_B": [
+        "nr",
+        "nr",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MNDF",
+      "D_G_S_B": [
+        "nf",
+        "nf",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MNOUT",
+      "D_G_S_B": [
+        "gate",
+        "nf",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MNSINK",
+      "D_G_S_B": [
+        "pc",
+        "nr",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MPD",
+      "D_G_S_B": [
+        "pc",
+        "pc",
+        "vin",
+        "vin"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MPOUT",
+      "D_G_S_B": [
+        "gate",
+        "pc",
+        "vin",
+        "vin"
+      ]
+    },
+    {
+      "instance": "capless_ldo/MPASS",
+      "D_G_S_B": [
+        "vout",
+        "gate",
+        "vin",
+        "vin"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 15,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

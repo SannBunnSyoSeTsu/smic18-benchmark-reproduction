@@ -1,0 +1,28 @@
+// Indirect compensation returns to the PMOS current-buffer source.
+simulator lang=spectre
+subckt ahuja_ota (vss iref vdd vinp vinn vout)
+MREF (iref iref vss vss) n18 w=3.22u l=1u m=5
+MTAIL (tail iref vss vss) n18 w=3.22u l=1u m=4
+MNB (vcp iref vss vss) n18 w=3.22u l=1u m=2
+MPB (vbp vbp vdd vdd) p18 w=18.76u l=1u
+RCP (vbp vcp) resistor r=20000
+CBP (vcp vdd) capacitor c=5p
+CBB (vbp vdd) capacitor c=2p
+MPNB (vcn vbp vdd vdd) p18 w=18.76u l=1u
+RCN (vcn ncn) resistor r=18000
+MNCB (ncn ncn vss vss) n18 w=2.26u l=.36u
+CBN (vcn vss) capacitor c=2p
+MINN (f1 vinn tail vss) n18 w=20.5u l=1u
+MINP (f2 vinp tail vss) n18 w=20.5u l=1u
+MFP (f1 vbp vdd vdd) p18 w=18.76u l=1u m=5
+MFN (f2 vbp vdd vdd) p18 w=18.76u l=1u m=5
+MFCP (g1 vcp f1 vdd) p18 w=9.38u l=.36u m=4
+MFCN (stage1 vcp f2 vdd) p18 w=9.38u l=.36u m=4
+MMD (s5 g1 vss vss) n18 w=12.3u l=1u
+MMO (s6 g1 vss vss) n18 w=12.3u l=1u
+MCD (g1 vcn s5 vss) n18 w=2.26u l=.36u m=4
+MCO (stage1 vcn s6 vss) n18 w=2.26u l=.36u m=4
+MSECOND (vout stage1 vss vss) n18 w=30.82u l=.36u m=1
+MLOAD (vout vbp vdd vdd) p18 w=18.76u l=1u m=32.5
+CC (vout f2) capacitor c=6.8p
+ends ahuja_ota

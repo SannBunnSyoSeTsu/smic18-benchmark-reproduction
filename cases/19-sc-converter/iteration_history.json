@@ -1,0 +1,155 @@
+[
+  {
+    "generated_at": "2026-09-28T18:01:28.438352+00:00",
+    "circuit_sha256": "9c6472bba05b6a0003a906a9fbb157139de7ff23b7002d4ba4e2806a97544a3e",
+    "parameters": {
+      "cf": 100,
+      "co": 280,
+      "nm": 60,
+      "pm": 24,
+      "lowm": 16
+    },
+    "status": "needs_iteration",
+    "values": {
+      "loads": [
+        {
+          "load_ohm": 680,
+          "vout_mean_V": 0.833121454529685,
+          "vout_min_V": 0.8080258935001277,
+          "vout_max_V": 0.849641719082214,
+          "supply_power_W": 0.0012875260400586014,
+          "clock_power_W": 1.5068953119518715e-07,
+          "load_power_W": 0.0010209619645391499,
+          "conversion_ratio": 0.46284525251649167,
+          "ripple_V": 0.04161582558208632,
+          "input_power_W": 0.0012876767295897965,
+          "load_current_A": 0.001225178609602478,
+          "efficiency": 0.7928713325932266,
+          "startup_s": 3.141175880272779e-08,
+          "post_startup_min_V": 0.8080258815458268
+        },
+        {
+          "load_ohm": 6800,
+          "vout_mean_V": 0.889531348632897,
+          "vout_min_V": 0.8865525742784339,
+          "vout_max_V": 0.8913113045714548,
+          "supply_power_W": 0.00030724116348867733,
+          "clock_power_W": 1.506896095708302e-07,
+          "load_power_W": 0.00011636293416752751,
+          "conversion_ratio": 0.4941840825738316,
+          "ripple_V": 0.004758730293020874,
+          "input_power_W": 0.00030739185309824814,
+          "load_current_A": 0.00013081343362248484,
+          "efficiency": 0.3785491807758996
+        }
+      ],
+      "output_resistance_ohm": 51.54576858012451
+    },
+    "groups": {
+      "heavy": "runs/19/20260928T180107498676Z_heavy",
+      "light": "runs/19/20260928T180115953995Z_light"
+    }
+  },
+  {
+    "generated_at": "2026-09-28T18:02:33.128295+00:00",
+    "circuit_sha256": "69f65f854aa02cd025a190dd4448aa16840e73ba6a835cdde88687dfe010f144",
+    "parameters": {
+      "cf": 100,
+      "co": 280,
+      "nm": 60,
+      "pm": 24,
+      "lowm": 64.0
+    },
+    "status": "complete_original",
+    "values": {
+      "loads": [
+        {
+          "load_ohm": 680,
+          "vout_mean_V": 0.8350804434003168,
+          "vout_min_V": 0.8091542634127054,
+          "vout_max_V": 0.8531568721759223,
+          "supply_power_W": 0.0013188434989406812,
+          "clock_power_W": 1.5068951151148805e-07,
+          "load_power_W": 0.0010257988120458271,
+          "conversion_ratio": 0.4639335796668427,
+          "ripple_V": 0.04400260876321693,
+          "input_power_W": 0.0013189941884521926,
+          "load_current_A": 0.0012280594755887013,
+          "efficiency": 0.7777129126319934,
+          "startup_s": 3.167512767292648e-08,
+          "post_startup_min_V": 0.8091542508903422
+        },
+        {
+          "load_ohm": 6800,
+          "vout_mean_V": 0.889527408040788,
+          "vout_min_V": 0.8862765311679048,
+          "vout_max_V": 0.8916285484354202,
+          "supply_power_W": 0.00033644740326404035,
+          "clock_power_W": 1.5068945059365903e-07,
+          "load_power_W": 0.00011636197732013605,
+          "conversion_ratio": 0.49418189335599333,
+          "ripple_V": 0.00535201726751533,
+          "input_power_W": 0.000336598092714634,
+          "load_current_A": 0.0001308128541236453,
+          "efficiency": 0.3457000495210384
+        }
+      ],
+      "output_resistance_ohm": 49.62144660584414
+    },
+    "groups": {
+      "heavy": "runs/19/20260928T180211443851Z_heavy",
+      "light": "runs/19/20260928T180220087251Z_light"
+    }
+  },
+  {
+    "generated_at": "2026-09-28T18:03:51.505435+00:00",
+    "circuit_sha256": "69f65f854aa02cd025a190dd4448aa16840e73ba6a835cdde88687dfe010f144",
+    "parameters": {
+      "cf": 100,
+      "co": 280,
+      "nm": 60,
+      "pm": 24,
+      "lowm": 64.0
+    },
+    "status": "complete_original",
+    "values": {
+      "loads": [
+        {
+          "load_ohm": 680,
+          "vout_mean_V": 0.8350782686930445,
+          "vout_min_V": 0.8091538220637206,
+          "vout_max_V": 0.8531511326700713,
+          "supply_power_W": 0.0013190272544218627,
+          "clock_power_W": 1.5069025210371494e-07,
+          "load_power_W": 0.0010257932646564362,
+          "conversion_ratio": 0.4639323714961358,
+          "ripple_V": 0.043997310606350704,
+          "input_power_W": 0.0013191779446739664,
+          "load_current_A": 0.0012280562774897713,
+          "efficiency": 0.7776003751411718,
+          "startup_s": 3.167511617358945e-08,
+          "post_startup_min_V": 0.8091538035504748
+        },
+        {
+          "load_ohm": 6800,
+          "vout_mean_V": 0.8895266940232415,
+          "vout_min_V": 0.8862766116666271,
+          "vout_max_V": 0.8916255799837765,
+          "supply_power_W": 0.0003364700761543637,
+          "clock_power_W": 1.5069022134279878e-07,
+          "load_power_W": 0.0001163617898546035,
+          "conversion_ratio": 0.49418149667957856,
+          "ripple_V": 0.005348968317149372,
+          "input_power_W": 0.0003366207663757065,
+          "load_current_A": 0.0001308127491210649,
+          "efficiency": 0.34567620740525173
+        }
+      ],
+      "output_resistance_ohm": 49.62291772287466
+    },
+    "groups": {
+      "heavy": "runs/19/20260928T180312781626Z_heavy",
+      "light": "runs/19/20260928T180328082966Z_light"
+    }
+  }
+]

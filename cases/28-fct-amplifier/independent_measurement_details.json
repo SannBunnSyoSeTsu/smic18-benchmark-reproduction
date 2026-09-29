@@ -1,0 +1,85 @@
+{
+  "independent_values": {
+    "10mv": {
+      "gain_vv": 4.796738397775286,
+      "sfdr_db": 87.8797126740963,
+      "cm_mean_v": 1.1789563390324,
+      "output_min_v": 1.153762068537423,
+      "output_max_v": 1.203226396466775,
+      "hold_movement_ratio": 0.01631272295805228,
+      "power_w": 0.004748165531784351
+    },
+    "20mv": {
+      "gain_vv": 4.81231069559759,
+      "sfdr_db": 84.99662463661448,
+      "cm_mean_v": 1.1787072634588671,
+      "output_min_v": 1.129012343832373,
+      "output_max_v": 1.22677843665755,
+      "hold_movement_ratio": 0.016234655970851553,
+      "power_w": 0.004748208434134923
+    }
+  },
+  "selected_tier": "15pct",
+  "original_checks": [
+    {
+      "name": "sampled_gain_pvt_10mv",
+      "passed": false,
+      "detail": "10 mV range=4.7967..4.7967V/V (5.5..6.5)"
+    },
+    {
+      "name": "sfdr_pvt_10mv",
+      "passed": true,
+      "detail": "10 mV min=87.880dB at tt (min 60dB)"
+    },
+    {
+      "name": "output_common_mode_pvt_10mv",
+      "passed": true,
+      "detail": "10 mV mean range=1.1790..1.1790V (0.3..1.2V)"
+    },
+    {
+      "name": "output_headroom_pvt_10mv",
+      "passed": true,
+      "detail": "10 mV sample range=1.1538..1.2032V (0.2..1.6V)"
+    },
+    {
+      "name": "hold_transition_movement_pvt_10mv",
+      "passed": false,
+      "detail": "10 mV max=1.6313% at tt (max 1.5%)"
+    },
+    {
+      "name": "power_pvt_10mv",
+      "passed": true,
+      "detail": "10 mV total delivered range=4.7482..4.7482mW (0..5mW)"
+    },
+    {
+      "name": "sampled_gain_pvt_20mv",
+      "passed": false,
+      "detail": "20 mV range=4.8123..4.8123V/V (5.5..6.5)"
+    },
+    {
+      "name": "sfdr_pvt_20mv",
+      "passed": true,
+      "detail": "20 mV min=84.997dB at tt (min 60dB)"
+    },
+    {
+      "name": "output_common_mode_pvt_20mv",
+      "passed": true,
+      "detail": "20 mV mean range=1.1787..1.1787V (0.3..1.2V)"
+    },
+    {
+      "name": "output_headroom_pvt_20mv",
+      "passed": true,
+      "detail": "20 mV sample range=1.1290..1.2268V (0.2..1.6V)"
+    },
+    {
+      "name": "hold_transition_movement_pvt_20mv",
+      "passed": false,
+      "detail": "20 mV max=1.6235% at tt (max 1.5%)"
+    },
+    {
+      "name": "power_pvt_20mv",
+      "passed": true,
+      "detail": "20 mV total delivered range=4.7482..4.7482mW (0..5mW)"
+    }
+  ]
+}

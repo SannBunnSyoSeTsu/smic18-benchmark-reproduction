@@ -1,0 +1,28 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/05-bootstrap-driver/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/05-bootstrap-driver/circuit.scs"
+VDD (vdd 0) vsource dc=1.8
+VDDDUT (vdd_dut vdd) vsource dc=0
+VHS (vdd_hs vdd) vsource dc=0
+VIN (src 0) vsource type=pulse val0=0 val1=1.8 delay=0 rise=3n fall=3n width=50n period=100n
+RIN (src inp) resistor r=50
+LVDD (vdd_dut vdd_pkg) inductor l=.3n
+RVDD (vdd_pkg vdd_core) resistor r=.003
+LVSS (0 vss_pkg) inductor l=.3n
+RVSS (vss_pkg vss_core) resistor r=.003
+X (hi_g lo_g inp vbst vdd_core vlx vss_core vsw) bootstrap_driver
+L0 (vbst net9) inductor l=2n
+RL0 (net9 net9b) resistor r=.005
+L1 (vlx ext_vlx) inductor l=2n
+RL1 (ext_vlx ext_vlx2) resistor r=.005
+C0 (net9b ext_vlx2) capacitor c=200p
+MHS (vdd_hs hi_g vsw ext_vlx2) n18 w=50u l=.18u m=450
+MLS (vsw lo_g 0 0) n18 w=50u l=.18u m=450
+RLOAD (vsw 0) resistor r=3.6
+simulatorOptions options temp=27 tnom=27 reltol=1e-06 vabstol=1e-7 iabstol=1e-12 gmin=1e-15
+saveOptions options save=selected
+save hi_g lo_g vbst vlx vsw inp vdd_core vss_core VDDDUT:p VHS:p X.net16 X.P1UP X.p1_int X.net028 X.charge_gate X.CHUP X.net02
+tran tran stop=1u maxstep=5e-11 method=traponly errpreset=conservative

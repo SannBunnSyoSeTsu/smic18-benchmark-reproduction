@@ -1,0 +1,78 @@
+simulator lang=spectre
+subckt ds_ota (vss iref vdd vinn vinp vocm voutn voutp)
+MREF (iref iref vss vss) n18 w=9.88u l=1u m=1
+MTAIL (tail iref vss vss) n18 w=54.34u l=1u m=2
+MINP (voutn vinp tail vss) n18 w=60.94u l=1u m=2
+MINN (voutp vinn tail vss) n18 w=60.94u l=1u m=2
+MLP (voutp vcmfb vdd vdd) p18 w=87.14u l=1u m=3
+MLN (voutn vcmfb vdd vdd) p18 w=87.14u l=1u m=3
+RAVP (voutp sense) resistor r=1Meg
+RAVN (voutn sense) resistor r=1Meg
+CAVP (voutp sense) capacitor c=400f
+CAVN (voutn sense) capacitor c=400f
+MCTAIL (ctail iref vss vss) n18 w=4.94u l=1u m=1
+MCSENSE (cmirror sense ctail vss) n18 w=2.08u l=0.36u m=1
+MCREF (vcmfb vocm ctail vss) n18 w=2.08u l=0.36u m=1
+MCLE (cmirror cmirror vdd vdd) p18 w=11.88u l=1u m=1
+MCLR (vcmfb vcmfb vdd vdd) p18 w=11.88u l=1u m=1
+ends ds_ota
+subckt ds_comparator (voutp voutn vinp vinn clk vdd vss)
+MRSTP (voutp clk vdd vdd) p18 w=6.12u l=0.18u m=1
+MRSTN (voutn clk vdd vdd) p18 w=6.12u l=0.18u m=1
+MTAIL (tail clk vss vss) n18 w=8.14u l=0.18u m=1
+MINP (voutp vinp tail vss) n18 w=9.02u l=0.18u m=1
+MINN (voutn vinn tail vss) n18 w=9.02u l=0.18u m=1
+MLP (voutp voutn vdd vdd) p18 w=6.12u l=0.18u m=1
+MLN (voutn voutp vdd vdd) p18 w=6.12u l=0.18u m=1
+CLP (voutp vss) capacitor c=200f
+CLN (voutn vss) capacitor c=200f
+ends ds_comparator
+subckt sigma_adc (vss vdd vip vin vp vn vcm ctrl_a ctrl_b c1a c1b c2a c2b intp intn inp inn)
+CSP (cspt cspb) capacitor c=200f
+CSN (csnt csnb) capacitor c=200f
+CIP (inp intp) capacitor c=450f
+CIN (inn intn) capacitor c=450f
+MHNa (hold_a c1a ctrl_a vss) n18 w=2.04u l=0.18u m=1
+MHPa (hold_a c1b ctrl_a vdd) p18 w=6.02u l=0.18u m=1
+CHa (hold_a vss) capacitor c=300f
+RHa (hold_a vss) resistor r=100G
+MHNb (hold_b c1a ctrl_b vss) n18 w=2.04u l=0.18u m=1
+MHPb (hold_b c1b ctrl_b vdd) p18 w=6.02u l=0.18u m=1
+CHb (hold_b vss) capacitor c=300f
+RHb (hold_b vss) resistor r=100G
+MDPH (dac_p hold_a vp vn) n18 w=9.02u l=0.18u m=1
+MDPHP (dac_p hold_b vp vdd) p18 w=4u l=0.18u m=1
+MDPL (dac_p hold_b vn vn) n18 w=9.02u l=0.18u m=1
+MDPLP (dac_p hold_a vn vdd) p18 w=4u l=0.18u m=1
+MDNH (dac_n hold_a vn vn) n18 w=9.02u l=0.18u m=1
+MDNHP (dac_n hold_b vn vdd) p18 w=4u l=0.18u m=1
+MDNL (dac_n hold_b vp vn) n18 w=9.02u l=0.18u m=1
+MDNLP (dac_n hold_a vp vdd) p18 w=4u l=0.18u m=1
+MS1 (cspt c1a vip vn) n18 w=9.02u l=0.18u m=1
+MS1P (cspt c1b vip vdd) p18 w=4u l=0.18u m=1
+MS2 (cspb c1a vcm vn) n18 w=9.02u l=0.18u m=1
+MS2P (cspb c1b vcm vdd) p18 w=4u l=0.18u m=1
+MS3 (csnt c1a vin vn) n18 w=9.02u l=0.18u m=1
+MS3P (csnt c1b vin vdd) p18 w=4u l=0.18u m=1
+MS4 (csnb c1a vcm vn) n18 w=9.02u l=0.18u m=1
+MS4P (csnb c1b vcm vdd) p18 w=4u l=0.18u m=1
+MI1 (cspt c2a inp vn) n18 w=9.02u l=0.18u m=1
+MI1P (cspt c2b inp vdd) p18 w=4u l=0.18u m=1
+MI2 (cspb c2a dac_p vn) n18 w=9.02u l=0.18u m=1
+MI2P (cspb c2b dac_p vdd) p18 w=4u l=0.18u m=1
+MI3 (csnt c2a inn vn) n18 w=9.02u l=0.18u m=1
+MI3P (csnt c2b inn vdd) p18 w=4u l=0.18u m=1
+MI4 (csnb c2a dac_n vn) n18 w=9.02u l=0.18u m=1
+MI4P (csnb c2b dac_n vdd) p18 w=4u l=0.18u m=1
+R_dac_p (dac_p vcm) resistor r=100G
+R_dac_n (dac_n vcm) resistor r=100G
+R_cspt (cspt vcm) resistor r=100G
+R_cspb (cspb vcm) resistor r=100G
+R_csnt (csnt vcm) resistor r=100G
+R_csnb (csnb vcm) resistor r=100G
+ends sigma_adc
+subckt sigma_system (vss vdd vip vin vp vn vcm ctrl_a ctrl_b c1a c1b c2a c2b intp intn inp inn iref vocm sa_inp sa_inn cmpclk)
+XADC (vss vdd vip vin vp vn vcm ctrl_a ctrl_b c1a c1b c2a c2b intp intn inp inn) sigma_adc
+XOTA (vss iref vdd inn inp vocm intp intn) ds_ota
+XSA (ctrl_b ctrl_a sa_inp sa_inn cmpclk vdd vss) ds_comparator
+ends sigma_system

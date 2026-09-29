@@ -1,0 +1,519 @@
+{
+  "case_slot": 11,
+  "generated_at": "2026-09-26T02:07:46.084083+00:00",
+  "status": "complete_original",
+  "values": {
+    "vref_V": 1.225072800317093,
+    "nominal_power_W": 9.708807849673181e-05,
+    "characterized_vref_min_V": 1.223566969817757,
+    "characterized_vref_max_V": 1.225692024647629,
+    "characterized_power_max_W": 0.00012418995661207574,
+    "tempco_ppm_C": 7.453173795538736,
+    "line_regulation_V_V": 0.004468536570911224,
+    "supply_gain_max": 0.032789193729705325,
+    "supply_gain_peak_Hz": 1071519.305237589,
+    "output_noise_Vrms": 0.00023249275174980338,
+    "startup": [
+      {
+        "ramp_s": 1e-06,
+        "final_V": 1.225071523620105,
+        "window_min_V": 1.224476480433206,
+        "window_max_V": 1.225071523620105,
+        "entry_after_ramp_s": 2.9600000000001343e-06,
+        "overshoot_V": 0.0,
+        "peak_current_A": 0.0005799629132694145,
+        "energy_J": 2.1232770685392355e-09,
+        "initial_V": 0.0,
+        "stop_s": 2.100000000000062e-05
+      },
+      {
+        "ramp_s": 1e-05,
+        "final_V": 1.225072696515178,
+        "window_min_V": 1.225024314646884,
+        "window_max_V": 1.225072696515178,
+        "entry_after_ramp_s": 0.0,
+        "overshoot_V": 0.0,
+        "peak_current_A": 5.546324476314112e-05,
+        "energy_J": 2.3269467529346634e-09,
+        "initial_V": 0.0,
+        "stop_s": 3.00000000000051e-05
+      }
+    ],
+    "line_step": [
+      {
+        "direction": "up",
+        "final_supply_V": 1.98,
+        "independent_dc_target_V": 1.225692024647629,
+        "excursion_V": 0.005332848504974841,
+        "verifier_last_outside_s": 2.801999999998962e-06,
+        "conservative_settling_s": 2.8029999999989625e-06,
+        "final_error_V": 1.2028074031000813e-05
+      },
+      {
+        "direction": "down",
+        "final_supply_V": 1.62,
+        "independent_dc_target_V": 1.224083351482101,
+        "excursion_V": 0.010900929486090005,
+        "verifier_last_outside_s": 3.98199999999823e-06,
+        "conservative_settling_s": 3.982999999998229e-06,
+        "final_error_V": 1.1173560219290835e-06
+      }
+    ],
+    "temperature_rows": [
+      {
+        "temperature_C": -40.0,
+        "vref_V": 1.223566969817757,
+        "power_W": 7.804137273262617e-05
+      },
+      {
+        "temperature_C": 0.0,
+        "vref_V": 1.224727700865422,
+        "power_W": 8.941264564953357e-05
+      },
+      {
+        "temperature_C": 27.0,
+        "vref_V": 1.225072792362919,
+        "power_W": 9.708807445787635e-05
+      },
+      {
+        "temperature_C": 60.0,
+        "vref_V": 1.225060208230919,
+        "power_W": 0.00010639840066877097
+      },
+      {
+        "temperature_C": 100.0,
+        "vref_V": 1.224496139312242,
+        "power_W": 0.00011742763988570248
+      },
+      {
+        "temperature_C": 125.0,
+        "vref_V": 1.223903858076555,
+        "power_W": 0.00012403456769874245
+      }
+    ],
+    "line_rows": [
+      {
+        "supply_V": 1.62,
+        "vref_V": 1.224083351482101,
+        "power_W": 8.111953399334635e-05
+      },
+      {
+        "supply_V": 1.8,
+        "vref_V": 1.225072800316983,
+        "power_W": 9.70880784967643e-05
+      },
+      {
+        "supply_V": 1.98,
+        "vref_V": 1.225692024647629,
+        "power_W": 0.00012418995661207574
+      }
+    ]
+  },
+  "gates": {
+    "reference_error_V": {
+      "value": 0.005692024647629079,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.04,
+        "10pct": 0.044000000000000004,
+        "15pct": 0.046
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power_W": {
+      "value": 0.00012418995661207574,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.00015,
+        "10pct": 0.000165,
+        "15pct": 0.00017249999999999996
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "tempco_ppm_C": {
+      "value": 7.453173795538736,
+      "unit": "ppm/C",
+      "sense": "max",
+      "limits": {
+        "original": 50.0,
+        "10pct": 55.00000000000001,
+        "15pct": 57.49999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "line_regulation_V_V": {
+      "value": 0.004468536570911224,
+      "unit": "V/V",
+      "sense": "max",
+      "limits": {
+        "original": 0.02,
+        "10pct": 0.022000000000000002,
+        "15pct": 0.023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_window_error_V": {
+      "value": 0.0050726965151779435,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.04,
+        "10pct": 0.044000000000000004,
+        "15pct": 0.046
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_entry_s": {
+      "value": 2.9600000000001343e-06,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 1e-05,
+        "10pct": 1.1000000000000001e-05,
+        "15pct": 1.15e-05
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_overshoot_V": {
+      "value": 0.0,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.1,
+        "10pct": 0.11000000000000001,
+        "15pct": 0.11499999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_peak_A": {
+      "value": 0.0005799629132694145,
+      "unit": "A",
+      "sense": "max",
+      "limits": {
+        "original": 0.0015,
+        "10pct": 0.0016500000000000002,
+        "15pct": 0.001725
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_energy_J": {
+      "value": 2.3269467529346634e-09,
+      "unit": "J",
+      "sense": "max",
+      "limits": {
+        "original": 5e-09,
+        "10pct": 5.5000000000000004e-09,
+        "15pct": 5.749999999999999e-09
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "supply_gain": {
+      "value": 0.032789193729705325,
+      "unit": "V/V",
+      "sense": "max",
+      "limits": {
+        "original": 0.2,
+        "10pct": 0.22000000000000003,
+        "15pct": 0.22999999999999998
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "noise_Vrms": {
+      "value": 0.00023249275174980338,
+      "unit": "Vrms",
+      "sense": "max",
+      "limits": {
+        "original": 0.0005,
+        "10pct": 0.00055,
+        "15pct": 0.000575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "line_step_excursion_V": {
+      "value": 0.010900929486090005,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.1,
+        "10pct": 0.11000000000000001,
+        "15pct": 0.11499999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "line_step_settling_s": {
+      "value": 3.982999999998229e-06,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 1e-05,
+        "10pct": 1.1000000000000001e-05,
+        "15pct": 1.15e-05
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "line_step_final_error_V": {
+      "value": 1.2028074031000813e-05,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.001,
+        "10pct": 0.001,
+        "15pct": 0.001
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "groups": {
+    "acnoise": "runs/11/20260926T020532404519Z_acnoise",
+    "startup1": "runs/11/20260926T020533129366Z_startup1",
+    "step": "runs/11/20260926T020534268332Z_step",
+    "static": "runs/11/20260926T020742387816Z_static",
+    "startup10": "runs/11/20260926T020743564236Z_startup10"
+  },
+  "run_dirs": [
+    "runs/11/20260926T020532404519Z_acnoise",
+    "runs/11/20260926T020533129366Z_startup1",
+    "runs/11/20260926T020534268332Z_step",
+    "runs/11/20260926T020742387816Z_static",
+    "runs/11/20260926T020743564236Z_startup10"
+  ],
+  "circuit_sha256": "35c5a82bce4de256e274a922797be82a4e0696d81bbd295a1da8830424083029",
+  "contract_sha256": "99942ca8a9b8832bc2a7e760dc7f83fb76a2f410d963795c611e9a94d51f6e6d",
+  "operating_point": {
+    "MP0": {
+      "region": 2.0,
+      "ids": -1.009331388813117e-05,
+      "vgs": -0.5195537549707752,
+      "vds": -1.052785832156515,
+      "vbs": 0.0,
+      "vdsat": -0.1146620798460054,
+      "gm": 0.0001512129224176573,
+      "gds": 3.690584970991184e-07,
+      "gmid": 14.981494095360505,
+      "gmro": 409.7261642970542,
+      "headroom_V": 0.9381237523105095
+    },
+    "MP1": {
+      "region": 2.0,
+      "ids": -1.009332937104101e-05,
+      "vgs": -0.5195537549707752,
+      "vds": -1.05282779777171,
+      "vbs": 0.0,
+      "vdsat": -0.1146620798323499,
+      "gm": 0.0001512131225133055,
+      "gds": 3.690576650394289e-07,
+      "gmid": 14.981490938674243,
+      "gmro": 409.72763022589,
+      "headroom_V": 0.9381657179393601
+    },
+    "MP2": {
+      "region": 2.0,
+      "ids": -1.982467067083614e-05,
+      "vgs": -0.5195537549707752,
+      "vds": -0.5749271996829073,
+      "vbs": 0.0,
+      "vdsat": -0.1146622418131734,
+      "gm": 0.0002976581523718112,
+      "gds": 7.985281307549267e-07,
+      "gmid": 15.01453200984029,
+      "gmro": 372.75850518929855,
+      "headroom_V": 0.46026495786973387
+    },
+    "MNB": {
+      "region": 2.0,
+      "ids": 2.939827820601902e-06,
+      "vgs": 0.5419726270861721,
+      "vds": 0.5419726270861721,
+      "vbs": 0.0,
+      "vdsat": 0.1468141765614531,
+      "gm": 3.440264934424677e-05,
+      "gds": 1.700475752530477e-07,
+      "gmid": 11.702266746085542,
+      "gmro": 202.31190767085158,
+      "headroom_V": 0.395158450524719
+    },
+    "MTAIL": {
+      "gds": 1.498860623398989e-06,
+      "gm": 0.0001002002730482597,
+      "vdsat": 0.1468121847649443,
+      "vbs": 0.0,
+      "vds": 0.2657581353080697,
+      "vgs": 0.5419726270861721,
+      "ids": 8.603899014010487e-06,
+      "region": 2.0,
+      "gmid": 11.64591458885033,
+      "gmro": 66.85096097930307,
+      "headroom_V": 0.1189459505431254
+    },
+    "MINA": {
+      "region": 3.0,
+      "ids": 4.302713863777782e-06,
+      "vgs": 0.4814560325354151,
+      "vds": 1.014688109721155,
+      "vbs": -0.2657581353080697,
+      "vdsat": 0.06425605588334556,
+      "gm": 9.467435005942719e-05,
+      "gds": 2.881255886492208e-07,
+      "gmid": 22.00340367888259,
+      "gmro": 328.5870946182732,
+      "headroom_V": 0.9504320538378095
+    },
+    "MINB": {
+      "region": 3.0,
+      "ids": 4.301183378206521e-06,
+      "vgs": 0.4814140669202208,
+      "vds": 1.02316890669006,
+      "vbs": -0.2657581353080697,
+      "vdsat": 0.06424074607894645,
+      "gm": 9.464323228012541e-05,
+      "gds": 2.876697227313273e-07,
+      "gmid": 22.003998425100658,
+      "gmro": 328.99962978905023,
+      "headroom_V": 0.9589281606111135
+    },
+    "MPD": {
+      "region": 2.0,
+      "ids": -4.301191247827791e-06,
+      "vgs": -0.5110729580018709,
+      "vds": -0.5110729580018709,
+      "vbs": 0.0,
+      "vdsat": -0.1089673742954829,
+      "gm": 6.734488159102338e-05,
+      "gds": 1.81825182771781e-07,
+      "gmid": 15.657262769944078,
+      "gmro": 370.3825870784451,
+      "headroom_V": 0.40210558370638805
+    },
+    "MPM": {
+      "region": 2.0,
+      "ids": -4.302728870700493e-06,
+      "vgs": -0.5110729580018709,
+      "vds": -0.5195537549707752,
+      "vbs": 0.0,
+      "vdsat": -0.108967373674144,
+      "gm": 6.73671680768204e-05,
+      "gds": 1.808512867752139e-07,
+      "gmid": 15.656847108252231,
+      "gmro": 372.50035251644795,
+      "headroom_V": 0.41058638129663116
+    },
+    "MPST": {
+      "region": 2.0,
+      "ids": -2.382730202468259e-06,
+      "vgs": -0.5749271996829073,
+      "vds": -1.781627673868051,
+      "vbs": 0.0,
+      "vdsat": -0.1549393135847177,
+      "gm": 2.666029169372105e-05,
+      "gds": 7.419671668175313e-08,
+      "gmid": 11.18896787647371,
+      "gmro": 359.319022269856,
+      "headroom_V": 1.6266883602833333
+    },
+    "MNST": {
+      "region": 1.0,
+      "ids": 2.382755241611316e-06,
+      "vgs": 1.225072800317093,
+      "vds": 0.01837232613194906,
+      "vbs": 0.0,
+      "vdsat": 0.637033387838687,
+      "gm": 2.346322430706993e-06,
+      "gds": 0.0001277391962972136,
+      "gmid": 0.9847097971843363,
+      "gmro": 0.01836806946278066,
+      "headroom_V": -0.618661061706738
+    },
+    "MSTART": {
+      "gds": 5.575593467476509e-13,
+      "gm": 2.007408326690978e-10,
+      "vdsat": 0.04036245706278176,
+      "region": 0.0,
+      "ids": 6.655861450730541e-12,
+      "vgs": 0.01837232613194906,
+      "vds": 1.280446245029225,
+      "vbs": 0.0,
+      "gmid": 30.16000770975554,
+      "gmro": 360.0349161753938,
+      "headroom_V": 1.2400837879664433
+    }
+  },
+  "dc_nodes": {
+    "X.st": 0.01837232613194906,
+    "X.tail": 0.2657581353080697,
+    "X.nbias": 0.5419726270861721,
+    "X.nout": 1.288927041998129,
+    "X.pctrl": 1.280446245029225,
+    "X.vctat": 0.7467326782974554,
+    "X.n1": 0.6923517984462662,
+    "X.vb": 0.7471722022282905,
+    "X.va": 0.7472141678434848,
+    "vref": 1.225072800317093,
+    "vdd": 1.8
+  },
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "scope": "TT active/BJT/resistor/MIM; nominal dynamic tests at 1.8V/27C, retained temperature-coefficient and line-regulation characterization"
+}

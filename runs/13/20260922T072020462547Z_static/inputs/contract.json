@@ -1,0 +1,65 @@
+{
+  "source_task": "sky130-constant-gm-stable-gain-amplifier-pvt",
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "VCM_V": 0.95,
+  "reference_A": 5e-05,
+  "load_each_F": 5e-13,
+  "gain_frequency_Hz": 1000000.0,
+  "gain_range": [
+    3,
+    4
+  ],
+  "bandwidth_min_Hz": 30000000.0,
+  "bandwidth_reference": "gain at1MHz / sqrt(2)",
+  "load_drop_range_V": [
+    0.15,
+    0.4
+  ],
+  "imbalance_max_V": 0.01,
+  "linearity_grid_V": [
+    -0.06,
+    0.06,
+    0.002
+  ],
+  "linearity_comparison_V": [
+    -0.06,
+    -0.03,
+    0.03,
+    0.06
+  ],
+  "central_gain_V": [
+    -0.002,
+    0.002
+  ],
+  "gain_error_max": 0.08,
+  "power_max_W": 0.0005,
+  "cold_start": "skipdc=yes, all nodes initialized to zero",
+  "vdd_vcm_ramp_s": [
+    1e-07,
+    1.1e-06
+  ],
+  "iref_ramp_s": [
+    1.2e-06,
+    1.22e-06
+  ],
+  "differential_step_V": 0.02,
+  "differential_step_ramp_s": [
+    1e-05,
+    1.002e-05
+  ],
+  "startup_zero_window_s": [
+    8e-06,
+    9e-06
+  ],
+  "startup_step_window_s": [
+    1.4e-05,
+    1.5e-05
+  ],
+  "nominal_scope_excludes": [
+    "PVT max/min gain ratio",
+    "other26 corners",
+    "statistical mismatch"
+  ]
+}

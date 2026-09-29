@@ -1,0 +1,50 @@
+{
+  "source_task": "sky130-two-stage-miller-opamp-gain60-ugb200-pm60-noise50uv-pvt",
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 5e-05,
+  "load_F": 1e-12,
+  "VCM_V": 0.9,
+  "gain_frequency_Hz": 10,
+  "gain_min_dB": 60,
+  "ugb_min_Hz": 200000000.0,
+  "phase_margin_min_deg": 60,
+  "output_error_max_V": 0.025,
+  "power_max_W": 0.002,
+  "noise_gain": 20,
+  "noise_low_Hz": 10,
+  "noise_high": "measured closed-loop -3dB bandwidth at noise gain 20",
+  "noise_max_Vrms": 5e-05,
+  "psrr_frequencies_Hz": [
+    1000.0,
+    1000000.0
+  ],
+  "psrr_min_dB": 35,
+  "cmrr_frequency_Hz": 1000.0,
+  "cmrr_min_dB": 55,
+  "swing_sweep_V": [
+    0.3,
+    1.5
+  ],
+  "tracking_error_max_V": 0.02,
+  "contiguous_swing_min_Vpp": 0.8,
+  "settling_step_V": [
+    0.85,
+    0.95
+  ],
+  "settling_max_s": 2e-08,
+  "settling_error_fraction": 0.02,
+  "settling_final_error_max_V": 0.002,
+  "slew_step_V": [
+    0.65,
+    1.15
+  ],
+  "slew_measurement_V": [
+    0.75,
+    1.05
+  ],
+  "slew_min_V_per_us": 50,
+  "recross_forbidden": true,
+  "rejection_definition": "Unity feedback external benchmarks; PSRR=-20log10|Vout| with AC rail 1V; CMRR AC unit on input and in series feedback."
+}

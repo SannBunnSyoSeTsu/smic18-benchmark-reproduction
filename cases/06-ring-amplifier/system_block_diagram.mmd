@@ -1,0 +1,20 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        IN["交流耦合输入与弱启动"]
+        MID["中间动态增益级"]
+        OUT["Class-AB输出级"]
+    end
+    VIN["差分输入"]
+    FB["采样 / 反馈电容"]
+    RST["复位与自调零夹具"]
+    LOAD["输出负载"]
+    VIN -->|"采样"| FB
+    FB -->|"误差信号"| IN
+    IN --> MID
+    MID --> OUT
+    OUT -->|"电容反馈"| FB
+    OUT --> LOAD
+    RST -.->|"自调零"| IN
+    RST -.->|"复位"| MID
+    RST -.->|"复位"| OUT

@@ -1,0 +1,16 @@
+{
+  "noise_referral_maximum_relative_difference": 5.144666381078188e-12,
+  "forward_available_input_power_W": 0.0025,
+  "traveling_wave_definition": "a=(V+50I)/(2sqrt50), b=(V-50I)/(2sqrt50)",
+  "noise_definition": "OutputnoisePSD divided by loaded source-to-output gain squared then4kT50; no subtracting DUTnoise.",
+  "baseline_points": {
+    "band": 101,
+    "stability": 401,
+    "noise": 101
+  },
+  "final_points": {
+    "band": 201,
+    "stability": 1601,
+    "noise": 201
+  }
+}

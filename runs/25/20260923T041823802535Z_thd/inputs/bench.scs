@@ -1,0 +1,16 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/25/20260923T041823802535Z_thd/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=20u
+VMID (mid 0) vsource dc=.9
+RL (vout mid) resistor r=10k
+CL (vout 0) capacitor c=4p
+X (0 iref vdd vinn vinp vout) complementary_folded_cascode_ab_opamp
+save vinp vinn vout VDD:p X.gn X.gp X.ntail X.ptail
+VIN (vinp 0) vsource type=sine dc=.9 ampl=.4 freq=1k
+RFB (vout vinn) resistor r=.001
+tran tran stop=5m maxstep=50n strobeperiod=250n strobeoutput=strobeonly errpreset=conservative

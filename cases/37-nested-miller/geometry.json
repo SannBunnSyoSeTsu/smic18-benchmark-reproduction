@@ -1,0 +1,247 @@
+{
+  "devices": [
+    {
+      "name": "MREF",
+      "pins": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 2.34,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 2.34,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MTAIL",
+      "pins": [
+        "tail",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 2.34,
+      "L_um": 1.0,
+      "m": 0.48,
+      "W_total_um": 1.1232,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MBP1",
+      "pins": [
+        "pdm",
+        "iref",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 2.34,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 2.34,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MPDM",
+      "pins": [
+        "pdm",
+        "pdm",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 4.68,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MS2B",
+      "pins": [
+        "vbn",
+        "pdm",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 4.68,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MVBN",
+      "pins": [
+        "vbn",
+        "vbn",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 2.34,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 2.34,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MI1",
+      "pins": [
+        "na",
+        "vinn",
+        "tail",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 1.24,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 1.24,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MI2",
+      "pins": [
+        "n1",
+        "vinp",
+        "tail",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 1.24,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 1.24,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MP1A",
+      "pins": [
+        "na",
+        "na",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 0.72,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 0.72,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MP1B",
+      "pins": [
+        "n1",
+        "na",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 0.72,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 0.72,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MA2",
+      "pins": [
+        "nb",
+        "n1",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 0.3,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 0.3,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MPD2",
+      "pins": [
+        "nb",
+        "nb",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 2.34,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 2.34,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MPM2",
+      "pins": [
+        "n2",
+        "nb",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 2.34,
+      "L_um": 1.0,
+      "m": 2.0,
+      "W_total_um": 4.68,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MS2",
+      "pins": [
+        "n2",
+        "vbn",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 2.34,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 2.34,
+      "unit_width_valid": true
+    },
+    {
+      "name": "MA3",
+      "pins": [
+        "vout",
+        "n2",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 17.02,
+      "L_um": 0.36,
+      "m": 1.0,
+      "W_total_um": 17.02,
+      "unit_width_valid": true
+    },
+    {
+      "name": "ML3",
+      "pins": [
+        "vout",
+        "pdm",
+        "vdd",
+        "vdd"
+      ],
+      "model": "p18",
+      "W_unit_um": 4.68,
+      "L_um": 1.0,
+      "m": 21.0,
+      "W_total_um": 98.28,
+      "unit_width_valid": true
+    }
+  ],
+  "circuit_sha256": "0014c2c3bce36d7ea1099c7c8c13df67508d37d3fff87a719166c916e21dcbbb",
+  "all_unit_widths_valid": true,
+  "interpretation": "Primitive D G S B; m scales identical legal model units. Fractional m scales current without changing the unit width. No digital cells."
+}

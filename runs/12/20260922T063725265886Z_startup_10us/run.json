@@ -1,0 +1,36 @@
+{
+  "started_at": "2026-09-22T06:37:25.266335+00:00",
+  "case_slot": 12,
+  "label": "startup_10us",
+  "netlist": "runs/12/20260922T063725265886Z_startup_10us/inputs/bench.scs",
+  "netlist_sha256": "15c083f93870705a1ddb7c3039f1a1c1485d21d56d12a8afd7c93fbdd194faee",
+  "dependencies": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/12-beta/circuit.scs": {
+      "snapshot": "runs/12/20260922T063725265886Z_startup_10us/inputs/circuit.scs",
+      "sha256": "4b835cfbbebce5f00832ddba5038e657a2d1887c6e44689f8177dc34ca5d39dd"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/12-beta/sizing.json": {
+      "snapshot": "runs/12/20260922T063725265886Z_startup_10us/inputs/sizing.json",
+      "sha256": "ac9343c397e6baf9fc20492fca33c3e3ec5ae9198ff05061538fed2baa2acc84"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/12-beta/contract.json": {
+      "snapshot": "runs/12/20260922T063725265886Z_startup_10us/inputs/contract.json",
+      "sha256": "e7f6e9957eaa47c303f836e7575c8575bd2d36ec356edfc2cc3829448441f442"
+    }
+  },
+  "models": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib": "88246a7e992cb3f5af5ac0f6a9a1c5934707ecd72e7f8f08150b44a01796c20f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.mdl": "832d378241360815f6d4009514d863f2aac9c48c312326410de9421564b1033d",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_bjt_spe.mdl": "d2d45e69a854f8d090fe3ef83041bc39ed8a0abcd9d272b8067a9db3014a9b6f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_res_spe.mdl": "173a1a7c1d8cc2f1009ac12db0f0d4f9725aebea8625cf9796a0be50f06fceb1",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_mim_spe.mdl": "02c8e7986a1c159e52c8fa403fdb52b9b4f928e00bca5522a648992528d7edff"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "status": "completed",
+  "completed_at": "2026-09-22T06:37:26.006951+00:00",
+  "errors": [],
+  "warnings": [],
+  "model_dimensions_valid": true,
+  "raw_dir": "runs/12/20260922T063725265886Z_startup_10us/output/bench.raw"
+}

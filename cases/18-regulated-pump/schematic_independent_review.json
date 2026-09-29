@@ -1,0 +1,592 @@
+{
+  "slot": 18,
+  "case": "cases/18-regulated-pump",
+  "circuit_sha256": "6fc878c0bf1ec3399b2991d1291687c0777fa5b3c642e9e8266ef6f957560e0c",
+  "hd_cells_sha256": "2c7f4a87da517df79f11495d172ddc384b8ffade6cead1559b78c7791d749d75",
+  "top": "charge_pump_regulated",
+  "source_definition_count": 54,
+  "source_terminal_count": 192,
+  "source_expanded_leaf_count": 54,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "d4b23d0f4bed1bcd9c3421fe3f8940c74bc3372e9a89a63d74d2db5614dc449a",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 54,
+  "schematic_expanded_leaf_count": 54,
+  "independently_traced_terminals": 192,
+  "expanded_leaf_counts_by_kind": {
+    "HD": 6,
+    "MOS": 16,
+    "C": 5,
+    "R": 27
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "charge_pump_regulated/MREF",
+      "D_G_S_B": [
+        "IBN1U",
+        "IBN1U",
+        "AVSS",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MTAIL",
+      "D_G_S_B": [
+        "tail",
+        "IBN1U",
+        "AVSS",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MREFIN",
+      "D_G_S_B": [
+        "ctrl",
+        "vnr",
+        "tail",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MFBIN",
+      "D_G_S_B": [
+        "pd",
+        "vfb",
+        "tail",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MPD",
+      "D_G_S_B": [
+        "pd",
+        "pd",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MPM",
+      "D_G_S_B": [
+        "ctrl",
+        "pd",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MOFFN",
+      "D_G_S_B": [
+        "IBN1U",
+        "ENB",
+        "AVSS",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MOFFP",
+      "D_G_S_B": [
+        "pd",
+        "EN",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MOFFCTRL",
+      "D_G_S_B": [
+        "ctrl",
+        "EN",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MENREF",
+      "D_G_S_B": [
+        "enr",
+        "EN",
+        "AVSS",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MENFB",
+      "D_G_S_B": [
+        "enf",
+        "EN",
+        "AVSS",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MCTRL",
+      "D_G_S_B": [
+        "vclk",
+        "ctrl",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MPRE0",
+      "D_G_S_B": [
+        "AVDD",
+        "p1",
+        "p0",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MPRE1",
+      "D_G_S_B": [
+        "AVDD",
+        "p0",
+        "p1",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MRECT0",
+      "D_G_S_B": [
+        "VOUT",
+        "p0",
+        "p0",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/MRECT1",
+      "D_G_S_B": [
+        "VOUT",
+        "p1",
+        "p1",
+        "AVSS"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [
+    {
+      "instance": "charge_pump_regulated/RZ0",
+      "terminal_1_2_B": [
+        "ctrl",
+        "rz1",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RZ1",
+      "terminal_1_2_B": [
+        "rz1",
+        "rz2",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RZ2",
+      "terminal_1_2_B": [
+        "rz2",
+        "cz",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN0_0",
+      "terminal_1_2_B": [
+        "AVDD",
+        "RN01",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN0_1",
+      "terminal_1_2_B": [
+        "RN01",
+        "RN02",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN0_2",
+      "terminal_1_2_B": [
+        "RN02",
+        "RN03",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN0_3",
+      "terminal_1_2_B": [
+        "RN03",
+        "RN04",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN0_4",
+      "terminal_1_2_B": [
+        "RN04",
+        "RN05",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN0_5",
+      "terminal_1_2_B": [
+        "RN05",
+        "vnr",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN1_0",
+      "terminal_1_2_B": [
+        "vnr",
+        "RN11",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN1_1",
+      "terminal_1_2_B": [
+        "RN11",
+        "RN12",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN1_2",
+      "terminal_1_2_B": [
+        "RN12",
+        "RN13",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN1_3",
+      "terminal_1_2_B": [
+        "RN13",
+        "RN14",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN1_4",
+      "terminal_1_2_B": [
+        "RN14",
+        "RN15",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RN1_5",
+      "terminal_1_2_B": [
+        "RN15",
+        "enr",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP0_0",
+      "terminal_1_2_B": [
+        "VOUT",
+        "RP01",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP0_1",
+      "terminal_1_2_B": [
+        "RP01",
+        "RP02",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP0_2",
+      "terminal_1_2_B": [
+        "RP02",
+        "RP03",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP0_3",
+      "terminal_1_2_B": [
+        "RP03",
+        "RP04",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP0_4",
+      "terminal_1_2_B": [
+        "RP04",
+        "RP05",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP0_5",
+      "terminal_1_2_B": [
+        "RP05",
+        "vfb",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP1_0",
+      "terminal_1_2_B": [
+        "vfb",
+        "RP11",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP1_1",
+      "terminal_1_2_B": [
+        "RP11",
+        "RP12",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP1_2",
+      "terminal_1_2_B": [
+        "RP12",
+        "RP13",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP1_3",
+      "terminal_1_2_B": [
+        "RP13",
+        "RP14",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP1_4",
+      "terminal_1_2_B": [
+        "RP14",
+        "RP15",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_regulated/RP1_5",
+      "terminal_1_2_B": [
+        "RP15",
+        "enf",
+        "AVSS"
+      ]
+    }
+  ],
+  "HD_port_checks": [
+    {
+      "instance": "charge_pump_regulated/XENB",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "EN",
+        "ZN": "ENB",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "supply_and_well_connections": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      }
+    },
+    {
+      "instance": "charge_pump_regulated/XNAND",
+      "model": "NAND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "CLK",
+        "A2": "EN",
+        "ZN": "gated",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "supply_and_well_connections": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      }
+    },
+    {
+      "instance": "charge_pump_regulated/XPH0",
+      "model": "INHDV16",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "gated",
+        "ZN": "ph0",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "supply_and_well_connections": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      }
+    },
+    {
+      "instance": "charge_pump_regulated/XPH1",
+      "model": "INHDV16",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "ph0",
+        "ZN": "ph1",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "supply_and_well_connections": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      }
+    },
+    {
+      "instance": "charge_pump_regulated/XDR0",
+      "model": "INHDV16",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "ph0",
+        "ZN": "bot0",
+        "VDD": "vclk",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vclk",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      }
+    },
+    {
+      "instance": "charge_pump_regulated/XDR1",
+      "model": "INHDV16",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "ph1",
+        "ZN": "bot1",
+        "VDD": "vclk",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vclk",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      }
+    }
+  ],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 45,
+  "hd_models_declared": {
+    "INHDV1": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "INHDV16": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "NAND2HDV1": [
+      "A1",
+      "A2",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ]
+  },
+  "HD_internal_MOS_counts": {
+    "INHDV1": 2,
+    "INHDV16": 2,
+    "NAND2HDV1": 4
+  },
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

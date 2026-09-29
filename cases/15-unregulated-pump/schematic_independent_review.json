@@ -1,0 +1,179 @@
+{
+  "slot": 15,
+  "case": "cases/15-unregulated-pump",
+  "circuit_sha256": "e04ccef10f5421ebe9f379e9baa59e99fd238fb5b7db73ba28bf47e11f07b0de",
+  "hd_cells_sha256": "2f58c53039c04edf72b6c70236c9ffc0d0c99a1beafa1f3d37e35754f06c37cd",
+  "top": "charge_pump_unregulate",
+  "source_definition_count": 9,
+  "source_terminal_count": 39,
+  "source_expanded_leaf_count": 9,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "0e303f18aa801c638252b8b1ed31e4d1d643d4a0e2a69798da529c55c0e7e94e",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 9,
+  "schematic_expanded_leaf_count": 9,
+  "independently_traced_terminals": 39,
+  "expanded_leaf_counts_by_kind": {
+    "HD": 3,
+    "C": 2,
+    "MOS": 4
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "charge_pump_unregulate/MPRE0",
+      "D_G_S_B": [
+        "AVDD",
+        "p1",
+        "p0",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_unregulate/MPRE1",
+      "D_G_S_B": [
+        "AVDD",
+        "p0",
+        "p1",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_unregulate/MRECT0",
+      "D_G_S_B": [
+        "VOUT",
+        "p0",
+        "p0",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "charge_pump_unregulate/MRECT1",
+      "D_G_S_B": [
+        "VOUT",
+        "p1",
+        "p1",
+        "AVSS"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [
+    {
+      "instance": "charge_pump_unregulate/XEN",
+      "model": "NAND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "CLK",
+        "A2": "EN",
+        "ZN": "gated",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "supply_and_well_connections": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      }
+    },
+    {
+      "instance": "charge_pump_unregulate/XPH0",
+      "model": "INHDV16",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "gated",
+        "ZN": "ph0",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "supply_and_well_connections": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      }
+    },
+    {
+      "instance": "charge_pump_unregulate/XPH1",
+      "model": "INHDV16",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "ph0",
+        "ZN": "ph1",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "supply_and_well_connections": {
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      }
+    }
+  ],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 10,
+  "hd_models_declared": {
+    "INHDV16": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "NAND2HDV1": [
+      "A1",
+      "A2",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ]
+  },
+  "HD_internal_MOS_counts": {
+    "INHDV16": 2,
+    "NAND2HDV1": 4
+  },
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

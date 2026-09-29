@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-09-23T06:26:40.272315+00:00",
+  "status": "passed",
+  "circuit_sha256": "0014c2c3bce36d7ea1099c7c8c13df67508d37d3fff87a719166c916e21dcbbb",
+  "hd_cells_sha256": null,
+  "renderer_sha256": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+  "layout_file": "scripts/schematics_analog.py",
+  "layout_sha256": "7c73e3169f2979ac2941dd45121ecdd56414d7765a00229c9e3bcb2a305a569d",
+  "instance_counts": {
+    "MOS": 16,
+    "C": 2
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 16,
+    "C": 2
+  },
+  "total_instances": 18,
+  "expanded_leaf_instances": 18,
+  "total_terminals": 68,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 2,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/37-nested-miller/schematic/connectivity.json": "2b9ee79fafc8e924d9b57c084db54653501223554d0189ff87f9aa5ae24608ef",
+    "cases/37-nested-miller/schematic/full.pdf": "d5a3f1c9b9daf1130d735a4406292617a80a46b737f307b3d7928dd0218a2e46",
+    "cases/37-nested-miller/schematic/full.png": "734782b79e08285b43636d313910a00f21039b5fa7cfa2ffac45c28a7f50eec8",
+    "cases/37-nested-miller/schematic/full.svg": "bbe70fa88584da1f66157efadeea79a59f3bb80072c32cdaced6e6d265b9a0c4",
+    "cases/37-nested-miller/schematic/layout_source.py": "7c73e3169f2979ac2941dd45121ecdd56414d7765a00229c9e3bcb2a305a569d",
+    "cases/37-nested-miller/schematic/renderer_source.py": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+    "cases/37-nested-miller/schematic/sheet-1.png": "3ea82a4be35698af42a294b33c67a0d69e4d765a27d98b5b244b8ec2c8c5889a",
+    "cases/37-nested-miller/schematic/sheet-1.svg": "ff4f3ba325c57f658b58d00dc4559cc7345bd4a4986fd42816b0d8502256b277",
+    "cases/37-nested-miller/schematic/sheet-2.png": "745cc935827dc1845d5d73a39edc4ad5f4f09526eb11ff2e9e2321734c953332",
+    "cases/37-nested-miller/schematic/sheet-2.svg": "15493f0e03734e566e30544aab5514dc7555d9c47ca07f4e028c48ba9145c18c",
+    "cases/37-nested-miller/schematic/sheets.pdf": "ba658065fd1aeb500924300d7b837babc7a527fe1877d66d20f02651e513211e",
+    "cases/37-nested-miller/schematic/symbol_source.py": "c65698950039c9fd48e1659d37f7fb5220517dd0dc1847b24f5b1761d0956898"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "final_source_freeze_at": "2026-09-23T06:26:40.273252+00:00",
+  "previous_visual_review": {
+    "reviewed_at": "2026-09-23T06:09:34.046691+00:00",
+    "note": "All split sheets and full overview actually viewed; connectivity, symbols, values, body ties and text readability reviewed.",
+    "reviewed_png_hashes": {
+      "cases/37-nested-miller/schematic/full.png": "734782b79e08285b43636d313910a00f21039b5fa7cfa2ffac45c28a7f50eec8",
+      "cases/37-nested-miller/schematic/sheet-1.png": "3ea82a4be35698af42a294b33c67a0d69e4d765a27d98b5b244b8ec2c8c5889a",
+      "cases/37-nested-miller/schematic/sheet-2.png": "745cc935827dc1845d5d73a39edc4ad5f4f09526eb11ff2e9e2321734c953332"
+    }
+  },
+  "rebuild_png_changes": [],
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-23T06:09:34.046691+00:00",
+  "visual_review_note": "All final sheet PNGs and full overview are byte-for-byte identical to the actually viewed artifacts; final renderer, symbols and layout sources were frozen beside the drawings."
+}

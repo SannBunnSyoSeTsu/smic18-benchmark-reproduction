@@ -1,0 +1,61 @@
+{
+  "source_task": "sky130-two-stage-miller-opamp-gain70-ugb20-pm60-noise50uv-pvt",
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "load_F": 2e-12,
+  "reference_A": 5e-05,
+  "VCM_V": 0.9,
+  "limits": {
+    "gain_db": 70,
+    "ugb_hz": 20000000.0,
+    "power_W": 0.0006,
+    "psrr_1k_dB": 65,
+    "psrr_1m_dB": 20,
+    "cmrr_1k_dB": 60,
+    "settling_s": 3e-08,
+    "slew_rise_V_per_us": 10,
+    "slew_fall_V_per_us": 10
+  },
+  "phase_margin_min_deg": 60,
+  "output_error_max_V": 0.025,
+  "input_noise_max_Vrms": 5e-05,
+  "noise_gain": 20,
+  "noise_frequency_range": "10Hz to measured gain-20 closed-loop -3dB bandwidth",
+  "tracking_error_max_V": 0.02,
+  "contiguous_swing_min_Vpp": 0.8,
+  "swing_sweep_V": [
+    0.3,
+    1.5
+  ],
+  "settling_step_V": [
+    0.85,
+    0.95
+  ],
+  "settling_windows_s": [
+    [
+      5e-09,
+      6.5e-08
+    ],
+    [
+      6.6e-08,
+      1.3e-07
+    ]
+  ],
+  "settling_final_error_max_V": 0.002,
+  "settling_fraction_max": 0.02,
+  "slew_input_V": [
+    0.65,
+    1.15
+  ],
+  "slew_start_s": [
+    1e-08,
+    7.1e-08
+  ],
+  "slew_measurement_V": [
+    0.75,
+    1.05
+  ],
+  "recross_forbidden": true,
+  "nominal_only": true
+}

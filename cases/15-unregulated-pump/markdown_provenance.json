@@ -1,0 +1,479 @@
+{
+  "generated_at": "2026-09-29T05:26:15.077608+00:00",
+  "status": "passed",
+  "method": "Editable text/table reconstruction from delivered vector PDF using Poppler XML; every PDF text fragment accounted for; tables rendered and shape-checked; plots and exact netlist retained.",
+  "pdf": "reports/15-unregulated-pump-review.pdf",
+  "pdf_sha256": "7b7fdc2b9e5d345db65f4aea6bca45afd48e4fe6b7aa6328bc2e95da7f3ad36e",
+  "circuit_sha256": "e04ccef10f5421ebe9f379e9baa59e99fd238fb5b7db73ba28bf47e11f07b0de",
+  "results_sha256": "dcdfcd4c3024b2d6dc103635f4c7a1491aa4ea522b43f91ed783ec57c4499852",
+  "markdown_sha256": "5116172dbd049d016e58997c9487be8607216d0a08473a962cce2e846543c805",
+  "body_pages": 8,
+  "tables": 5,
+  "pages": [
+    {
+      "page": 1,
+      "tables": [
+        {
+          "top": 489.0,
+          "headers": [
+            "指标",
+            "实测",
+            "原门槛",
+            "10%边界",
+            "15%边界",
+            "单位"
+          ],
+          "rows": [
+            [
+              "输出距2.5V误差",
+              "0.198339",
+              "≤0.3",
+              "≤0.33",
+              "≤0.345",
+              "V"
+            ],
+            [
+              "输出纹波",
+              "4.72734",
+              "≤5",
+              "≤5.5",
+              "≤5.75",
+              "mVpp"
+            ],
+            [
+              "开启平均电流",
+              "206.142",
+              "≤200",
+              "≤220",
+              "≤230",
+              "uA"
+            ],
+            [
+              "关闭平均电流",
+              "0.770041",
+              "≤100",
+              "≤110",
+              "≤115",
+              "nA"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 45,
+      "accounted_pdf_text_fragments": 45,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 2,
+      "tables": [
+        {
+          "top": 324.0,
+          "headers": [
+            "角色",
+            "器件/几何",
+            "选点/用途"
+          ],
+          "rows": [
+            [
+              "两只整流MOS",
+              "nnt33 W16.84/L1um",
+              "gm/ID=6，初算250uA"
+            ],
+            [
+              "两只预充MOS",
+              "nnt33 W3.36/L1um",
+              "gm/ID=6，初算50uA"
+            ],
+            [
+              "CF0/CF1",
+              "mim，100um×51.4933um",
+              "各名义5pF"
+            ],
+            [
+              "使能逻辑",
+              "NAND2HDV1",
+              "原厂CDL尺寸与井端"
+            ],
+            [
+              "两相驱动",
+              "INHDV16×2",
+              "原厂CDL尺寸与井端"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 33,
+      "accounted_pdf_text_fragments": 33,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 3,
+      "tables": [],
+      "total_pdf_text_fragments": 65,
+      "accounted_pdf_text_fragments": 65,
+      "plot_text_fragments": 57
+    },
+    {
+      "page": 4,
+      "tables": [],
+      "total_pdf_text_fragments": 58,
+      "accounted_pdf_text_fragments": 58,
+      "plot_text_fragments": 51
+    },
+    {
+      "page": 5,
+      "tables": [
+        {
+          "top": 222.0,
+          "headers": [
+            "指标（SI单位）",
+            "1ns / 1e-5",
+            "0.5ns / 1e-6",
+            "绝对差"
+          ],
+          "rows": [
+            [
+              "vout_en_avg",
+              "2.301675",
+              "2.301661",
+              "1.407e-05"
+            ],
+            [
+              "ripple_V",
+              "0.0047288194",
+              "0.004727337",
+              "1.482e-06"
+            ],
+            [
+              "enabled_current_A",
+              "0.0002060018",
+              "0.00020614185",
+              "1.401e-07"
+            ],
+            [
+              "disabled_current_A",
+              "7.8456306e-10",
+              "7.7004128e-10",
+              "1.452e-11"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "top": 631.0,
+          "headers": [
+            "器件",
+            "|VGS|",
+            "|VGD|",
+            "|VDS|",
+            "|VGB|",
+            "|VDB|",
+            "|VSB|"
+          ],
+          "rows": [
+            [
+              "MPRE0",
+              "2.6561",
+              "2.4111",
+              "2.5469",
+              "3.2088",
+              "1.8000",
+              "3.2088"
+            ],
+            [
+              "MPRE1",
+              "2.6561",
+              "2.5469",
+              "2.4111",
+              "3.2088",
+              "1.8000",
+              "3.2088"
+            ],
+            [
+              "MRECT0",
+              "0.0000",
+              "1.6928",
+              "1.6928",
+              "3.2088",
+              "2.3035",
+              "3.2088"
+            ],
+            [
+              "MRECT1",
+              "0.0000",
+              "1.6823",
+              "1.6823",
+              "3.2088",
+              "2.3035",
+              "3.2088"
+            ]
+          ],
+          "pdf_text_indices": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 66,
+      "accounted_pdf_text_fragments": 66,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 6,
+      "tables": [
+        {
+          "top": 223.0,
+          "headers": [
+            "预充→整流 / 电容 / 钳位",
+            "VOUT/V",
+            "纹波/mV",
+            "开启/uA"
+          ],
+          "rows": [
+            [
+              "n33→n33 /10pF /gm8",
+              "2.06235",
+              "0.9170",
+              "106.464"
+            ],
+            [
+              "n33→n33 /10pF /gm14",
+              "2.08827",
+              "1.1907",
+              "114.555"
+            ],
+            [
+              "nnt33→nnt33 /10pF /gm6",
+              "2.61424",
+              "5.3203",
+              "290.002"
+            ],
+            [
+              "nnt33→nnt33 /5pF /gm6",
+              "2.06216",
+              "5.6786",
+              "232.721"
+            ],
+            [
+              "* n33→nnt33 /10pF /gm6",
+              "3.06161",
+              "3.7656",
+              "212.007"
+            ],
+            [
+              "* n33→nnt33 /5pF /gm6",
+              "2.93018",
+              "4.3373",
+              "189.247"
+            ],
+            [
+              "* n33→nnt33 /3pF +CL",
+              "2.25340",
+              "39.3483",
+              "165.491"
+            ],
+            [
+              "* n33→nnt33 /5pF +CL",
+              "2.83910",
+              "4.2151",
+              "196.480"
+            ],
+            [
+              "nnt33→nnt33 /10pF /gm6 PRE50u",
+              "2.83088",
+              "4.1409",
+              "233.642"
+            ],
+            [
+              "最终电路",
+              "2.30166",
+              "4.7273",
+              "206.142"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 56,
+      "accounted_pdf_text_fragments": 56,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 7,
+      "tables": [],
+      "total_pdf_text_fragments": 25,
+      "accounted_pdf_text_fragments": 25,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 8,
+      "tables": [],
+      "total_pdf_text_fragments": 24,
+      "accounted_pdf_text_fragments": 24,
+      "plot_text_fragments": 0
+    }
+  ],
+  "assets": {
+    "markdown_assets/page-04.png": "49e761bb6a980eabdc1f4e6e1c663b90c8af4b195f3c2bbff3bd317f2c538f11",
+    "markdown_assets/page-02.png": "74911d20cb7c2caf6e0625e51c5fc8de3836c73f52bde6a22ad5c3d12c3d94f2",
+    "markdown_assets/page-05.png": "0e3d28f1c05f14f8f9f7f138f1c77b3fcef40e47a2b5719a7862abf44224cdf3",
+    "markdown_assets/page-08.png": "ec94671f6c6e8a7d200b93b963a44a0475753c0302eedfaa05c7528bb0356394",
+    "markdown_assets/page-01.png": "05f31e541478c9375d1baddf7896760dcdd80a35e4ed99606715a931b44b9132",
+    "markdown_assets/page-06.png": "f3803e1e5d5607a3f1f45552b62a1de3312e198ab2418686c7eb032d0f386dc0",
+    "markdown_assets/page-07.png": "bccc4314ed3f4482b50d92929f008989d43840413a4aa2441a7dc1b447d92a24",
+    "markdown_assets/page-03.png": "08e297c2222b7086b9fac7f6b9fbb4fbbbd33806b9bf81f607c198e79327d042"
+  },
+  "restored_markdown_sha256": "d3fd2e6961d36c3fca756475f325184732e830120f3e7ca24a0a687b8a98bfe2",
+  "system_diagram_sha256": "c2b1b5e67ffd504c3bd0777e646b5051179e740ca26d0d6b598897a367b9c359"
+}

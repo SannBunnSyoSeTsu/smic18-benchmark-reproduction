@@ -1,0 +1,67 @@
+{
+  "source": "/home/IC/Tech/S180MS/SCC018UG_HD_RVT_V0.3a/SCC018UG_HD_RVT_V0p3a/cdl/scc018ug_hd_rvt.cdl",
+  "source_sha256": "e6e262af41e959eca28dec1af498972f3fcb4e1239a927122baa90e3a1116b5c",
+  "cells": [
+    {
+      "name": "INHDV1",
+      "pins": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "mos_count": 2,
+      "original_block_sha256": "713f70dfc3eb5d79ee2dea29f4adf92b2ff169e6c79afb85c0a7d75bf6c5982b",
+      "source_line": 5885
+    },
+    {
+      "name": "INHDV16",
+      "pins": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "mos_count": 2,
+      "original_block_sha256": "3f6f9295e6bc196ed588010ed1c6528356b6407c2aa3d980a60303c3110909b1",
+      "source_line": 5901
+    },
+    {
+      "name": "NAND2HDV1",
+      "pins": [
+        "A1",
+        "A2",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "mos_count": 4,
+      "original_block_sha256": "fe6456ed9d1a5c9683a2983b48d9a4c7f29919b8019d223d6a74828a917ec436",
+      "source_line": 7290
+    },
+    {
+      "name": "XOR2HDV1",
+      "pins": [
+        "A1",
+        "A2",
+        "Z",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "mos_count": 12,
+      "original_block_sha256": "5376e4970f751bd0793ecb9e1f03ba02208cd8ebbb300d96669af13be53162d7",
+      "source_line": 13985
+    }
+  ],
+  "output_sha256": "2dcaa2d21d41b6e70aec2c04726ccc190e402ef1955d17a8114f10766d4758a8",
+  "sizes_modified": false,
+  "model_names_modified": false
+}

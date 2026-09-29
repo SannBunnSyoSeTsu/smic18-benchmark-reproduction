@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-09-29T03:55:24.094887+00:00",
+  "baseline_groups": {
+    "transfer": "runs/48/20260929T025757786361Z_transfer",
+    "transfer_alt": "runs/48/20260929T030111846843Z_transfer_alt",
+    "dynamic": "runs/48/20260929T030429269930Z_dynamic",
+    "dynamic_alt": "runs/48/20260929T031022700087Z_dynamic_alt"
+  },
+  "final_groups": {
+    "transfer": "runs/48/20260929T032014979173Z_transfer",
+    "transfer_alt": "runs/48/20260929T032557465554Z_transfer_alt",
+    "dynamic": "runs/48/20260929T033140508050Z_dynamic",
+    "dynamic_alt": "runs/48/20260929T034301146847Z_dynamic_alt"
+  },
+  "circuit_sha256": "a87f8ceb7193b5c69bc95a629ca3d628484b30cb708e843db74e2d94b0687f8d",
+  "metrics": [
+    {
+      "metric": "transfer_invalid_levels",
+      "baseline": 0,
+      "refined": 0,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "transfer_code_errors",
+      "baseline": 0,
+      "refined": 0,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "transfer_alt_invalid_levels",
+      "baseline": 0,
+      "refined": 0,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "transfer_alt_code_errors",
+      "baseline": 0,
+      "refined": 0,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_invalid_levels",
+      "baseline": 0,
+      "refined": 0,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_power_W",
+      "baseline": 0.0010319457909828984,
+      "refined": 0.0010319492549304182,
+      "absolute_difference": 3.463947519880689e-09,
+      "maximum_difference": 5e-06,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_alt_invalid_levels",
+      "baseline": 0,
+      "refined": 0,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_alt_power_W",
+      "baseline": 0.0010329495455817324,
+      "refined": 0.0010329546503274516,
+      "absolute_difference": 5.104745719229989e-09,
+      "maximum_difference": 5e-06,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_spectrum_sndr_dB",
+      "baseline": 27.55147276515953,
+      "refined": 27.55147276515953,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_spectrum_normalized_enob_bits",
+      "baseline": 4.317248646714115,
+      "refined": 4.317248646714115,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_spectrum_signal_power",
+      "baseline": 15652.493441676912,
+      "refined": 15652.493441676912,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_spectrum_noise_power",
+      "baseline": 27.506558323082572,
+      "refined": 27.506558323082572,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_spectrum_tone_bin",
+      "baseline": 15,
+      "refined": 15,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_alt_spectrum_sndr_dB",
+      "baseline": 27.551472765159538,
+      "refined": 27.551472765159538,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_alt_spectrum_normalized_enob_bits",
+      "baseline": 4.317248646714115,
+      "refined": 4.317248646714115,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_alt_spectrum_signal_power",
+      "baseline": 15652.49344167692,
+      "refined": 15652.49344167692,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_alt_spectrum_noise_power",
+      "baseline": 27.506558323082572,
+      "refined": 27.506558323082572,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_alt_spectrum_tone_bin",
+      "baseline": 13,
+      "refined": 13,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-09,
+      "passed": true
+    }
+  ],
+  "conversion_codes_identical": true,
+  "passed": true
+}

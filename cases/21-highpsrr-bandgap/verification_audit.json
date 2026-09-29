@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-09-26T03:20:33.544838+00:00",
+  "status": "passed",
+  "circuit_sha256": "c44fb1be719bd559ccdcdeed956b61620db10de7cd08cefb35cf0b11f8f879de",
+  "results_sha256": "53911f354fd402a0dfdb1613aa118799bf1bbee832f934ae615cafb043d6572e",
+  "contract_sha256": "3f8ab675490347e383944068cd131c400c1e63739984000aa544e5f3b2aeb219",
+  "upstream_verifier_sha256": "f0c1058365f90cacaf0430aa31336144b8853a9ce066e971651990657795e8f4",
+  "measurement_cross_checks": [
+    {
+      "metric": "vref_V",
+      "report": 1.234460773090381,
+      "independent": 1.234460773090381,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "metric": "temp_min_V",
+      "report": 1.230288770933046,
+      "independent": 1.230288770933046,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "metric": "temp_max_V",
+      "report": 1.236506041269023,
+      "independent": 1.236506041269023,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "metric": "temp_average_V",
+      "report": 1.233962072868724,
+      "independent": 1.233962072868724,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "metric": "tempco_ppm_C",
+      "report": 40.307691606910545,
+      "independent": 40.307691606910545,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "supply_gain_low_dB",
+      "report": -70.62507874971335,
+      "independent": -70.62507874971335,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "supply_gain_1MHz_dB",
+      "report": -35.39227448381825,
+      "independent": -35.392274483818255,
+      "absolute_difference": 7.105427357601002e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "startup_average_V",
+      "report": 1.2344607730728319,
+      "independent": 1.234460773072832,
+      "absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "metric": "startup_error_fraction",
+      "report": 1.421598295238829e-11,
+      "independent": 1.4215803080650146e-11,
+      "absolute_difference": 1.7987173814374717e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    }
+  ],
+  "upstream_nominal_checks": [
+    {
+      "name": "pvt_reference_voltage",
+      "passed": true,
+      "detail": "range=1.23446V at tt/1.8V/+27C .. 1.23446V at tt/1.8V/+27C (required 1.05..1.35V)"
+    },
+    {
+      "name": "pvt_temperature_drift",
+      "passed": true,
+      "detail": "worst=40.3077ppm/C at tt/1.8V/+27C (required <=50ppm/C)"
+    },
+    {
+      "name": "pvt_low_frequency_supply_gain",
+      "passed": true,
+      "detail": "worst=-70.6251dB at tt/1.8V/+27C (required <=-50dB); nominal=-70.6251dB (required <=-60dB)"
+    },
+    {
+      "name": "pvt_one_megahertz_supply_gain",
+      "passed": true,
+      "detail": "worst=-35.3923dB at tt/1.8V/+27C (required <=-30dB)"
+    },
+    {
+      "name": "pvt_startup_accuracy",
+      "passed": true,
+      "detail": "worst=1.42158e-09% at tt/1.8V/+27C (required <=1%)"
+    }
+  ],
+  "all_original_gates_pass": true,
+  "all_final_runs_same_circuit": true,
+  "source_snapshot_hashes_verified": true,
+  "source_snapshot_count": 8,
+  "original_model_hashes_unchanged": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "group": "static",
+      "run": "runs/21/20260926T031354634964Z_static",
+      "inputs_and_models_intact": true,
+      "errors": [
+        "license error"
+      ],
+      "warnings": [],
+      "diagnostic_review": "Known Bridge substring false positive: successful licensing and 0 errors/0 warnings in original Spectre logs; original metadata preserved.",
+      "logs": {
+        "runs/21/20260926T031354634964Z_static/output/bench.log": "9e354967fdd1abf0b5228ee5ee664cffad23766c1437cc59ccf36b78697e578f"
+      }
+    },
+    {
+      "group": "ac",
+      "run": "runs/21/20260926T031355779063Z_ac",
+      "inputs_and_models_intact": true,
+      "errors": [
+        "license error"
+      ],
+      "warnings": [],
+      "diagnostic_review": "Known Bridge substring false positive: successful licensing and 0 errors/0 warnings in original Spectre logs; original metadata preserved.",
+      "logs": {
+        "runs/21/20260926T031355779063Z_ac/output/bench.log": "a7342ad8683995864b37b7287c3e860c852d7339d50beec1d792a7d5610feac2"
+      }
+    },
+    {
+      "group": "startup",
+      "run": "runs/21/20260926T031356432862Z_startup",
+      "inputs_and_models_intact": true,
+      "errors": [
+        "license error"
+      ],
+      "warnings": [],
+      "diagnostic_review": "Known Bridge substring false positive: successful licensing and 0 errors/0 warnings in original Spectre logs; original metadata preserved.",
+      "logs": {
+        "runs/21/20260926T031356432862Z_startup/output/bench.log": "5955551c75675e4cdb0493695a1f3808214c162e79d43785487bf447dc087bf4"
+      }
+    }
+  ],
+  "schematic_independent_review": "cases/21-highpsrr-bandgap/schematic_independent_review.json",
+  "full_upstream_signoff": false,
+  "pdf_review_pending": false,
+  "method": "Current agent independently re-integrated actual Spectre trajectories and passed the resulting metrics to the unchanged upstream checks(rows,{NOMINAL}); no other3PVT points simulated or claimed.",
+  "pdf": "reports/21-highpsrr-bandgap-review.pdf",
+  "pdf_sha256": "e7426cd5d3ded97c3e1fb0fec10a55d8ae187f03249027b09444a0d48e25b845",
+  "pdf_pages": 11,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-26T03:25:24.069798+00:00"
+}

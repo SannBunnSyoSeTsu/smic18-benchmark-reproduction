@@ -1,0 +1,36 @@
+{
+  "method": "Independent averaging over all complete stable-window periods; no extra simulation and no changed acceptance windows.",
+  "run_dir": "runs/24/20260922T090830797411Z_tune",
+  "checks": [
+    {
+      "control_V": 0.9,
+      "complete_stable_periods": 10,
+      "contract_five_period_Hz": 16907988.270248022,
+      "all_complete_stable_periods_Hz": 16907988.2762674,
+      "relative_difference": 3.5600783026984213e-10
+    },
+    {
+      "control_V": 1.0,
+      "complete_stable_periods": 13,
+      "contract_five_period_Hz": 20983185.54790677,
+      "all_complete_stable_periods_Hz": 20983185.547904883,
+      "relative_difference": 9.001122241463497e-14
+    },
+    {
+      "control_V": 1.1,
+      "complete_stable_periods": 17,
+      "contract_five_period_Hz": 25226914.33054659,
+      "all_complete_stable_periods_Hz": 25226910.60117887,
+      "relative_difference": 1.4783289279696197e-07
+    },
+    {
+      "control_V": 1.2,
+      "complete_stable_periods": 19,
+      "contract_five_period_Hz": 29614813.825846586,
+      "all_complete_stable_periods_Hz": 29614813.825846717,
+      "relative_difference": 4.4027006623412305e-15
+    }
+  ],
+  "max_relative_difference": 1.4783289279696197e-07,
+  "note": "Nearzero drift is deterministic periodic model agreement, not physical jitter/phase-noise performance."
+}

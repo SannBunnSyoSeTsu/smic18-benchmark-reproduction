@@ -1,0 +1,99 @@
+{
+  "pdf": "reports/14-oscillator-review.pdf",
+  "sha256": "bebd71d85bbd63606b313264289e47c53567fef2595b9965244dce99009f7984",
+  "results_sha256": "901a7bf80c322c929c086204f7980eb062f7da31d130a0bf86b1a319af181299",
+  "circuit_sha256": "383ec5c083dff63dfe2d4529615c33f22d541e3bf14d2c927e3655b98488c1a6",
+  "generated_at": "2026-09-23T06:19:13.839137+00:00",
+  "pages": 7,
+  "render_review_pending": false,
+  "all_pages_reviewed": true,
+  "render_reviewed_at": "2026-09-23T06:19:13.842120+00:00",
+  "root_visual_reviewed_at": "2026-09-22T09:45:59.615921+00:00",
+  "body_pages": 6,
+  "schematic_pages": 1,
+  "schematic_sheets_sha256": "6ceba35532fdd19d134bdc4c4f9029be1f0cd66e4297d5dc89df3c5bf49e36a0",
+  "schematic_audit_sha256": "350e7ffb536763c1a93760971fd532e7172f3e9373b993db1c8c86d4f52fd05b",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/14-oscillator/14-oscillator-review.pdf",
+    "sha256": "1cd58a9e987ab39ed349127442c1e0c3cc9ecf8df2a87814756d6bbf34c306cb",
+    "pages": 6,
+    "previous_render_reviewed_at": "2026-09-22T09:42:35.470832+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "6374d58f7543b1c5ba5753e2d6b0dde6ad0b2c212db7f57ca3b1f6ec0fd57656"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "5096090264d82bb0ce57d6bcca38a906ce1bbd93f1ff85bf9843d2049f632592"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "275f6e6b03e7157f8527a95986b8ddd478584cb37c60163f82ca115800f2af34"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "27c5b856ded0b16fd5ac99f2c9ce38d72d5789e4f55bc948cef8d842f4c23886"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "0968c9e2b918f416a5930e7014d113ec2033133d7863e54fa16b435ccb8485f4"
+    },
+    {
+      "page": 6,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "82e84da2c40d57c39d521b822bd94838997ff3b6044d343aea98d5ebe2492d8b"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "7c8ff7966f9bb0d6254a7d01593826f7d24385d483167530c075c66caadb54a4",
+      "path": "reports/schematic-retrofit-renders/14-oscillator/page-07.png",
+      "sha256": "86a1feb3c0f14ae8fb954abf79bb3624cee0caef00c2a83793eecd2ad6454314"
+    }
+  ],
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change."
+}

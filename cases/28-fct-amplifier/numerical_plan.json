@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-09-29T05:25:00.798702+00:00",
+  "baseline": {
+    "maxstep_s": 1.25e-12,
+    "global_reltol": 1e-08,
+    "vabstol_V": 1e-08,
+    "iabstol_A": 1e-12
+  },
+  "refined": {
+    "maxstep_s": 6.25e-13,
+    "global_reltol": 1e-09,
+    "vabstol_V": 1e-08,
+    "iabstol_A": 1e-12
+  },
+  "absolute_difference_limits": {
+    "gain_vv": 0.01,
+    "sfdr_db": 0.5,
+    "cm_mean_v": 0.001,
+    "output_min_v": 0.001,
+    "output_max_v": 0.001,
+    "hold_movement_ratio": 0.0002,
+    "power_w": 5e-06
+  },
+  "recovery": {
+    "max_minstep_nonconv": 10000,
+    "max_approach_minstep": 10000
+  },
+  "exact_original_readout_strobes": true,
+  "reason": "Retain all original confirmation bounds, including0.5dB SFDR. The ideal-relay discontinuities exceed the default recovery-count limit at strict tolerances. Keep10nV absolute voltage tolerance in both runs;1nV attempts were stopped before the measurement window due to impractical relay recovery cost. Increase allowed recovery attempts; do not change circuit, relay, stimulus, thresholds, minstep or tolerance bounds. All actual solver warnings retained."
+}

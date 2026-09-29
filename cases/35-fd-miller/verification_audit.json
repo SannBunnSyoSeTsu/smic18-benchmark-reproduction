@@ -1,0 +1,88 @@
+{
+  "audited_at": "2026-09-22T09:32:13.419663+00:00",
+  "status": "complete_original",
+  "deterministic_nominal_gates": 13,
+  "all_source_scalar_crosschecks_pass": true,
+  "all_30_nominal_OP_saturation": true,
+  "cm_stb_diagnostic_pass": true,
+  "cm_stb_no_recross": true,
+  "source_and_lut_hashes_valid": true,
+  "run_snapshots": [
+    {
+      "run": "runs/35/20260922T091831965563Z_ac",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "PSF_sha256": {
+        "runs/35/20260922T091831965563Z_ac/output/bench.raw/dcOp.dc": "7f9d334dbc7a289640f67c53035660ea7822a81162ac0e0833efd5ec84432d78",
+        "runs/35/20260922T091831965563Z_ac/output/bench.raw/ac.ac": "7daefeb09c38b87992edf5b7ce839b5dff7b69930ee88ded97b5c99a96ea03d9"
+      }
+    },
+    {
+      "run": "runs/35/20260922T091832170295Z_noise",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "PSF_sha256": {
+        "runs/35/20260922T091832170295Z_noise/output/bench.raw/noise.noise": "6e784482b164ba69fb3ef0f38b09d0a55659ab5775dda69d0e388b8b9620c0ac"
+      }
+    },
+    {
+      "run": "runs/35/20260922T091832394130Z_range",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "PSF_sha256": {
+        "runs/35/20260922T091832394130Z_range/output/bench.raw/swing.dc": "178ec177154194b356887b77a7cffba850ee5a4ec5024fb3e4cbecf54a3b6ead"
+      }
+    },
+    {
+      "run": "runs/35/20260922T091832565378Z_settling",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "PSF_sha256": {
+        "runs/35/20260922T091832565378Z_settling/output/bench.raw/tran.tran.tran": "01efa5fe11cbfb57ed71c9ac9258718be910c8298b36a0bfc32f7dcbbd131198"
+      }
+    },
+    {
+      "run": "runs/35/20260922T091833569988Z_cm",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "PSF_sha256": {
+        "runs/35/20260922T091833569988Z_cm/output/bench.raw/tran.tran.tran": "fd5613f16ca4c7e23449b1390b21c9b73cbf51387c1f34a6e399ad204304a3ed"
+      }
+    },
+    {
+      "run": "runs/35/20260922T091835170616Z_rejection",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "PSF_sha256": {
+        "runs/35/20260922T091835170616Z_rejection/output/bench.raw/ac.ac": "f1bc5f4e09f2ee9aa6741da6cb4f152bd43df34bc3f0584d6f387e67962930bb"
+      }
+    },
+    {
+      "run": "runs/35/20260922T091835756615Z_cmstb",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "PSF_sha256": {
+        "runs/35/20260922T091835756615Z_cmstb/output/bench.raw/dcOp.dc": "13263f60ee7db78f537852b2d749b8a47f70a978689636b99949cbbee1e4576d",
+        "runs/35/20260922T091835756615Z_cmstb/output/bench.raw/cmstb.stb": "1972eec7132b98ed39b4c67e3aec4fe0266349e28d00b033f8792634d472d45b",
+        "runs/35/20260922T091835756615Z_cmstb/output/bench.raw/cmstb.margin.stb": "8918e411f3bd4aa71b41d00d2d54467e3ea78f47fb7bb68a11be9560f2f0b347"
+      }
+    }
+  ],
+  "review_pdf_sha256": "b9984c23b7dad320327c3ad282076f4b3eeb539cdfd337f199fb2e9b02130989",
+  "review_pdf_pages": 7,
+  "all_pages_visually_reviewed": true,
+  "mismatch_samples_executed": 0,
+  "mismatch_rejection_status": "excluded_from_nominal_scope_not_passed",
+  "scope": "Deterministic nominal only; remaining PVT,20 fixed mismatch seeds,extraction,passive variation not performed.",
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:27:40.171255+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "6d9f5f72270985bfe6f78ef2b76d423773ed5271b7edac16c114f3c9b148289b",
+    "results_sha256": "35ed078eafc9a26f7f26b2fbbc68e2d1eb41fc88d6f815765c4f683cf36ab0ba",
+    "previous_pdf_sha256": "b9984c23b7dad320327c3ad282076f4b3eeb539cdfd337f199fb2e9b02130989",
+    "current_pdf_sha256": "cb91052965a20f7f3d91af5fc4001cf8a04a18dbc104e5e26ca942d9105eb8f7",
+    "schematic_audit_sha256": "0d6f6c85ca91f600a5ad687dd1f0774f6dbad7c8ef086a55ba10c6b586f59543",
+    "report_pages": 11,
+    "all_merged_pages_pixel_identical_to_sources": true
+  }
+}

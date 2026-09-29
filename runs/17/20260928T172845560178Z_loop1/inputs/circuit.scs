@@ -1,0 +1,16 @@
+simulator lang=spectre
+subckt nmos_pass_ldo (vdd vout vss vref ibias loop_out pass_gate)
+MPREF (ibias ibias vdd vdd) p18 w=20.78u l=1u m=4
+MPTAIL (tail ibias vdd vdd) p18 w=20.78u l=1u m=8
+MPINR (nr vref tail vdd) p18 w=47.72u l=1u m=4
+MPINF (nf vout tail vdd) p18 w=47.72u l=1u m=4
+MNDR (nr nr vss vss) n18 w=4.38u l=1u m=4
+MNDF (nf nf vss vss) n18 w=4.38u l=1u m=4
+MNSINK (pc nf vss vss) n18 w=4.38u l=1u m=8
+MNOUT (loop_out nr vss vss) n18 w=4.38u l=1u m=8
+MPD (pc pc vdd vdd) p18 w=20.78u l=1u m=8
+MPOUT (loop_out pc vdd vdd) p18 w=20.78u l=1u m=8
+MPASS (vdd pass_gate vout vss) n18 w=4.3u l=.18u m=100
+CGATE (loop_out vss) mim w=100u l=100u m=10.298661174
+COUT (vout vss) mim w=100u l=100u m=2.05973223481
+ends nmos_pass_ldo

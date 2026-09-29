@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-09-26T06:07:59.171109+00:00",
+  "status": "passed",
+  "circuit_sha256": "4a3d75102319b904cbe4a9aabfdb373e34eb42a70c57c37fb97fb94aa7c29b91",
+  "hd_cells_sha256": null,
+  "renderer_sha256": "30342cc8787dc7ab815e57ce3e3e32a3190fab0ad09e7373cc7e9c450dad919d",
+  "layout_file": "scripts/schematic32.py",
+  "layout_sha256": "13a47df622710179c57c6ba1a06ad46b5c631cb62a67c494aff6e8b2b6f1ca47",
+  "instance_counts": {
+    "MOS": 4,
+    "L": 4,
+    "C": 2
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 4,
+    "C": 2,
+    "L": 4
+  },
+  "total_instances": 10,
+  "expanded_leaf_instances": 10,
+  "total_terminals": 28,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 1,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/32-cml-tx/schematic/connectivity.json": "0126b428ad96a7a7f271bbd340d197b643b0d2a3558cd30e67dc0ccd8552cc84",
+    "cases/32-cml-tx/schematic/full.pdf": "1d6cc921866b2db49f5d34a42032e3330de55f669038cc2b9b9b06716902f060",
+    "cases/32-cml-tx/schematic/full.png": "3f7a3bc39f639f5ef217551eff10c2244f0b7dd77169bc815c5f00980388b7ce",
+    "cases/32-cml-tx/schematic/full.svg": "e43bb363c7a8b15087a82e9782028a2d58fe7a3df5970ef46f336633753be14d",
+    "cases/32-cml-tx/schematic/layout_source.py": "13a47df622710179c57c6ba1a06ad46b5c631cb62a67c494aff6e8b2b6f1ca47",
+    "cases/32-cml-tx/schematic/renderer_source.py": "30342cc8787dc7ab815e57ce3e3e32a3190fab0ad09e7373cc7e9c450dad919d",
+    "cases/32-cml-tx/schematic/sheet-1.png": "d02ecb9bba6a72e6b156ac3ea3bb82e70d6104252ae89c6b02701f9b917f79b4",
+    "cases/32-cml-tx/schematic/sheet-1.svg": "f6fa6d530b8bb1fabaca4e9e86d8506b7527b060359e1950da3863e2fc1d0b04",
+    "cases/32-cml-tx/schematic/sheets.pdf": "057a69cd0eafb09506d0cc741812efe9eb276f2c57fa88ee06e4c0818a9b113c",
+    "cases/32-cml-tx/schematic/symbol_source.py": "b40da4f8a653b6d880132a5b28a9209435d767215cdba57d3682ccb27e9cee0c"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-26T06:15:40.136042+00:00",
+  "visual_review_note": "已实际查看11页PDF逐页渲染及完整总图；静态/动态29个边界、两种瞬态原采样、眼图、抖动、单位诊断、失败记录与数值复核均可读。页面4对数轴负号缺字已改为普通数字并重新渲染实际查看。10实例28端子逐一对应最终网表，水平电感标签间距修正后总图和附图均已复看。"
+}

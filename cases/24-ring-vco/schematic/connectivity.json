@@ -1,0 +1,5820 @@
+{
+  "generated_at": "2026-09-23T06:18:47.046938+00:00",
+  "circuit_sha256": "fc15de4598b7f285d780f50fc2a85f864935cf0bfa81dfb4d21208dfdfef662c",
+  "top": "current_starved_ring_vco",
+  "subcircuit_ports": {
+    "current_starved_ring_vco": [
+      "vss",
+      "vctrl",
+      "vdd",
+      "vout"
+    ]
+  },
+  "instances": {
+    "current_starved_ring_vco/MPDIO": {
+      "name": "MPDIO",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pdio",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPDIO (pdio pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        5,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          18
+        ],
+        "S": [
+          5,
+          20
+        ],
+        "G": [
+          3.45,
+          19
+        ],
+        "B": [
+          5.86,
+          19
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MVIN": {
+      "name": "MVIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pdio",
+        "G": "vctrl",
+        "S": "ndeg",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MVIN (pdio vctrl ndeg vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        5,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          13
+        ],
+        "S": [
+          5,
+          11
+        ],
+        "G": [
+          3.45,
+          12
+        ],
+        "B": [
+          5.86,
+          12
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MPSRC": {
+      "name": "MPSRC",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ndio",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPSRC (ndio pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        12,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          18
+        ],
+        "S": [
+          12,
+          20
+        ],
+        "G": [
+          10.45,
+          19
+        ],
+        "B": [
+          12.86,
+          19
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MNDIO": {
+      "name": "MNDIO",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ndio",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNDIO (ndio ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        12,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          6
+        ],
+        "S": [
+          12,
+          4
+        ],
+        "G": [
+          10.45,
+          5
+        ],
+        "B": [
+          12.86,
+          5
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/RDEG": {
+      "name": "RDEG",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "ndeg",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "47000"
+      },
+      "source_line": "RDEG (ndeg vss) resistor r=47000",
+      "value_SI": 47000.0,
+      "sheet": 1,
+      "origin": [
+        5,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          5,
+          5.82
+        ],
+        "2": [
+          5,
+          4.18
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MPS1": {
+      "name": "MPS1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "s1t",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPS1 (s1t pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        20.2,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          20.2,
+          18
+        ],
+        "S": [
+          20.2,
+          20
+        ],
+        "G": [
+          18.65,
+          19
+        ],
+        "B": [
+          21.06,
+          19
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/XINV1": {
+      "name": "XINV1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "n5",
+        "ZN": "n1",
+        "VDD": "s1t",
+        "VSS": "s1b",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV1 (n5 n1 s1t s1b vdd vss) INHDV2",
+      "sheet": 1,
+      "origin": [
+        21,
+        13
+      ],
+      "rendered_pins": {
+        "I": [
+          18.3,
+          13.0
+        ],
+        "ZN": [
+          23.7,
+          13.0
+        ],
+        "VDD": [
+          20.2,
+          15.2
+        ],
+        "VNW": [
+          21.8,
+          15.2
+        ],
+        "VSS": [
+          20.2,
+          10.8
+        ],
+        "VPW": [
+          21.8,
+          10.8
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MNS1": {
+      "name": "MNS1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s1b",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNS1 (s1b ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        20.2,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          20.2,
+          8
+        ],
+        "S": [
+          20.2,
+          6
+        ],
+        "G": [
+          18.65,
+          7
+        ],
+        "B": [
+          21.06,
+          7
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/CS1": {
+      "name": "CS1",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "n1",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CS1 (n1 vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "sheet": 1,
+      "origin": [
+        21,
+        2.5
+      ],
+      "rendered_pins": {
+        "1": [
+          20.18,
+          2.5
+        ],
+        "2": [
+          21.82,
+          2.5
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MPS2": {
+      "name": "MPS2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "s2t",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPS2 (s2t pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        28.2,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          28.2,
+          18
+        ],
+        "S": [
+          28.2,
+          20
+        ],
+        "G": [
+          26.65,
+          19
+        ],
+        "B": [
+          29.06,
+          19
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/XINV2": {
+      "name": "XINV2",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "n1",
+        "ZN": "n2",
+        "VDD": "s2t",
+        "VSS": "s2b",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV2 (n1 n2 s2t s2b vdd vss) INHDV2",
+      "sheet": 1,
+      "origin": [
+        29,
+        13
+      ],
+      "rendered_pins": {
+        "I": [
+          26.3,
+          13.0
+        ],
+        "ZN": [
+          31.7,
+          13.0
+        ],
+        "VDD": [
+          28.2,
+          15.2
+        ],
+        "VNW": [
+          29.8,
+          15.2
+        ],
+        "VSS": [
+          28.2,
+          10.8
+        ],
+        "VPW": [
+          29.8,
+          10.8
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MNS2": {
+      "name": "MNS2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s2b",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNS2 (s2b ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        28.2,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          28.2,
+          8
+        ],
+        "S": [
+          28.2,
+          6
+        ],
+        "G": [
+          26.65,
+          7
+        ],
+        "B": [
+          29.06,
+          7
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/CS2": {
+      "name": "CS2",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "n2",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CS2 (n2 vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "sheet": 1,
+      "origin": [
+        29,
+        2.5
+      ],
+      "rendered_pins": {
+        "1": [
+          28.18,
+          2.5
+        ],
+        "2": [
+          29.82,
+          2.5
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MPS3": {
+      "name": "MPS3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "s3t",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPS3 (s3t pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        36.2,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          36.2,
+          18
+        ],
+        "S": [
+          36.2,
+          20
+        ],
+        "G": [
+          34.650000000000006,
+          19
+        ],
+        "B": [
+          37.06,
+          19
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/XINV3": {
+      "name": "XINV3",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "n2",
+        "ZN": "n3",
+        "VDD": "s3t",
+        "VSS": "s3b",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV3 (n2 n3 s3t s3b vdd vss) INHDV2",
+      "sheet": 1,
+      "origin": [
+        37,
+        13
+      ],
+      "rendered_pins": {
+        "I": [
+          34.3,
+          13.0
+        ],
+        "ZN": [
+          39.7,
+          13.0
+        ],
+        "VDD": [
+          36.2,
+          15.2
+        ],
+        "VNW": [
+          37.8,
+          15.2
+        ],
+        "VSS": [
+          36.2,
+          10.8
+        ],
+        "VPW": [
+          37.8,
+          10.8
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MNS3": {
+      "name": "MNS3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s3b",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNS3 (s3b ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        36.2,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          36.2,
+          8
+        ],
+        "S": [
+          36.2,
+          6
+        ],
+        "G": [
+          34.650000000000006,
+          7
+        ],
+        "B": [
+          37.06,
+          7
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/CS3": {
+      "name": "CS3",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "n3",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CS3 (n3 vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "sheet": 1,
+      "origin": [
+        37,
+        2.5
+      ],
+      "rendered_pins": {
+        "1": [
+          36.18,
+          2.5
+        ],
+        "2": [
+          37.82,
+          2.5
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MPS4": {
+      "name": "MPS4",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "s4t",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPS4 (s4t pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        8.2,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          8.2,
+          18
+        ],
+        "S": [
+          8.2,
+          20
+        ],
+        "G": [
+          6.6499999999999995,
+          19
+        ],
+        "B": [
+          9.059999999999999,
+          19
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/XINV4": {
+      "name": "XINV4",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "n3",
+        "ZN": "n4",
+        "VDD": "s4t",
+        "VSS": "s4b",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV4 (n3 n4 s4t s4b vdd vss) INHDV2",
+      "sheet": 2,
+      "origin": [
+        9,
+        13
+      ],
+      "rendered_pins": {
+        "I": [
+          6.3,
+          13.0
+        ],
+        "ZN": [
+          11.7,
+          13.0
+        ],
+        "VDD": [
+          8.2,
+          15.2
+        ],
+        "VNW": [
+          9.8,
+          15.2
+        ],
+        "VSS": [
+          8.2,
+          10.8
+        ],
+        "VPW": [
+          9.8,
+          10.8
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MNS4": {
+      "name": "MNS4",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s4b",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNS4 (s4b ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        8.2,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          8.2,
+          8
+        ],
+        "S": [
+          8.2,
+          6
+        ],
+        "G": [
+          6.6499999999999995,
+          7
+        ],
+        "B": [
+          9.059999999999999,
+          7
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/CS4": {
+      "name": "CS4",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "n4",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CS4 (n4 vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "sheet": 2,
+      "origin": [
+        9,
+        2.5
+      ],
+      "rendered_pins": {
+        "1": [
+          8.18,
+          2.5
+        ],
+        "2": [
+          9.82,
+          2.5
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MPS5": {
+      "name": "MPS5",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "s5t",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPS5 (s5t pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        21.2,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          21.2,
+          18
+        ],
+        "S": [
+          21.2,
+          20
+        ],
+        "G": [
+          19.65,
+          19
+        ],
+        "B": [
+          22.06,
+          19
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/XINV5": {
+      "name": "XINV5",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "n4",
+        "ZN": "n5",
+        "VDD": "s5t",
+        "VSS": "s5b",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV5 (n4 n5 s5t s5b vdd vss) INHDV2",
+      "sheet": 2,
+      "origin": [
+        22,
+        13
+      ],
+      "rendered_pins": {
+        "I": [
+          19.3,
+          13.0
+        ],
+        "ZN": [
+          24.7,
+          13.0
+        ],
+        "VDD": [
+          21.2,
+          15.2
+        ],
+        "VNW": [
+          22.8,
+          15.2
+        ],
+        "VSS": [
+          21.2,
+          10.8
+        ],
+        "VPW": [
+          22.8,
+          10.8
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/MNS5": {
+      "name": "MNS5",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s5b",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNS5 (s5b ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        21.2,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          21.2,
+          8
+        ],
+        "S": [
+          21.2,
+          6
+        ],
+        "G": [
+          19.65,
+          7
+        ],
+        "B": [
+          22.06,
+          7
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/CS5": {
+      "name": "CS5",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "n5",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CS5 (n5 vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "sheet": 2,
+      "origin": [
+        22,
+        2.5
+      ],
+      "rendered_pins": {
+        "1": [
+          21.18,
+          2.5
+        ],
+        "2": [
+          22.82,
+          2.5
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/XBUF0": {
+      "name": "XBUF0",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "n5",
+        "ZN": "bo1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XBUF0 (n5 bo1 vdd vss vdd vss) INHDV0",
+      "sheet": 2,
+      "origin": [
+        35,
+        18
+      ],
+      "rendered_pins": {
+        "I": [
+          32.3,
+          18.0
+        ],
+        "ZN": [
+          37.7,
+          18.0
+        ],
+        "VDD": [
+          34.2,
+          20.2
+        ],
+        "VNW": [
+          35.8,
+          20.2
+        ],
+        "VSS": [
+          34.2,
+          15.8
+        ],
+        "VPW": [
+          35.8,
+          15.8
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    },
+    "current_starved_ring_vco/XBUF1": {
+      "name": "XBUF1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "bo1",
+        "ZN": "vout",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XBUF1 (bo1 vout vdd vss vdd vss) INHDV2",
+      "sheet": 2,
+      "origin": [
+        35,
+        8
+      ],
+      "rendered_pins": {
+        "I": [
+          32.3,
+          8.0
+        ],
+        "ZN": [
+          37.7,
+          8.0
+        ],
+        "VDD": [
+          34.2,
+          10.2
+        ],
+        "VNW": [
+          35.8,
+          10.2
+        ],
+        "VSS": [
+          34.2,
+          5.8
+        ],
+        "VPW": [
+          35.8,
+          5.8
+        ]
+      },
+      "block": "current_starved_ring_vco"
+    }
+  },
+  "expanded_leaf_instances": {
+    "RDEG": {
+      "name": "RDEG",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "ndeg",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "47000"
+      },
+      "source_line": "RDEG (ndeg vss) resistor r=47000",
+      "value_SI": 47000.0,
+      "definition": "current_starved_ring_vco/RDEG",
+      "path": "RDEG"
+    },
+    "MVIN": {
+      "name": "MVIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pdio",
+        "G": "vctrl",
+        "S": "ndeg",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MVIN (pdio vctrl ndeg vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MVIN",
+      "path": "MVIN"
+    },
+    "MPDIO": {
+      "name": "MPDIO",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pdio",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPDIO (pdio pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MPDIO",
+      "path": "MPDIO"
+    },
+    "MPSRC": {
+      "name": "MPSRC",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ndio",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPSRC (ndio pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MPSRC",
+      "path": "MPSRC"
+    },
+    "MNDIO": {
+      "name": "MNDIO",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ndio",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNDIO (ndio ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MNDIO",
+      "path": "MNDIO"
+    },
+    "MPS1": {
+      "name": "MPS1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "s1t",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPS1 (s1t pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MPS1",
+      "path": "MPS1"
+    },
+    "XINV1": {
+      "name": "XINV1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "n5",
+        "ZN": "n1",
+        "VDD": "s1t",
+        "VSS": "s1b",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV1 (n5 n1 s1t s1b vdd vss) INHDV2",
+      "definition": "current_starved_ring_vco/XINV1",
+      "path": "XINV1"
+    },
+    "MNS1": {
+      "name": "MNS1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s1b",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNS1 (s1b ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MNS1",
+      "path": "MNS1"
+    },
+    "CS1": {
+      "name": "CS1",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "n1",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CS1 (n1 vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "definition": "current_starved_ring_vco/CS1",
+      "path": "CS1"
+    },
+    "MPS2": {
+      "name": "MPS2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "s2t",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPS2 (s2t pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MPS2",
+      "path": "MPS2"
+    },
+    "XINV2": {
+      "name": "XINV2",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "n1",
+        "ZN": "n2",
+        "VDD": "s2t",
+        "VSS": "s2b",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV2 (n1 n2 s2t s2b vdd vss) INHDV2",
+      "definition": "current_starved_ring_vco/XINV2",
+      "path": "XINV2"
+    },
+    "MNS2": {
+      "name": "MNS2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s2b",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNS2 (s2b ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MNS2",
+      "path": "MNS2"
+    },
+    "CS2": {
+      "name": "CS2",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "n2",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CS2 (n2 vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "definition": "current_starved_ring_vco/CS2",
+      "path": "CS2"
+    },
+    "MPS3": {
+      "name": "MPS3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "s3t",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPS3 (s3t pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MPS3",
+      "path": "MPS3"
+    },
+    "XINV3": {
+      "name": "XINV3",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "n2",
+        "ZN": "n3",
+        "VDD": "s3t",
+        "VSS": "s3b",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV3 (n2 n3 s3t s3b vdd vss) INHDV2",
+      "definition": "current_starved_ring_vco/XINV3",
+      "path": "XINV3"
+    },
+    "MNS3": {
+      "name": "MNS3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s3b",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNS3 (s3b ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MNS3",
+      "path": "MNS3"
+    },
+    "CS3": {
+      "name": "CS3",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "n3",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CS3 (n3 vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "definition": "current_starved_ring_vco/CS3",
+      "path": "CS3"
+    },
+    "MPS4": {
+      "name": "MPS4",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "s4t",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPS4 (s4t pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MPS4",
+      "path": "MPS4"
+    },
+    "XINV4": {
+      "name": "XINV4",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "n3",
+        "ZN": "n4",
+        "VDD": "s4t",
+        "VSS": "s4b",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV4 (n3 n4 s4t s4b vdd vss) INHDV2",
+      "definition": "current_starved_ring_vco/XINV4",
+      "path": "XINV4"
+    },
+    "MNS4": {
+      "name": "MNS4",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s4b",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNS4 (s4b ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MNS4",
+      "path": "MNS4"
+    },
+    "CS4": {
+      "name": "CS4",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "n4",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CS4 (n4 vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "definition": "current_starved_ring_vco/CS4",
+      "path": "CS4"
+    },
+    "MPS5": {
+      "name": "MPS5",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "s5t",
+        "G": "pdio",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "8.52u",
+        "l": "0.36u"
+      },
+      "source_line": "MPS5 (s5t pdio vdd vdd) p18 w=8.52u l=0.36u",
+      "W_unit_um": 8.52,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MPS5",
+      "path": "MPS5"
+    },
+    "XINV5": {
+      "name": "XINV5",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "n4",
+        "ZN": "n5",
+        "VDD": "s5t",
+        "VSS": "s5b",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV5 (n4 n5 s5t s5b vdd vss) INHDV2",
+      "definition": "current_starved_ring_vco/XINV5",
+      "path": "XINV5"
+    },
+    "MNS5": {
+      "name": "MNS5",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "s5b",
+        "G": "ndio",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.04u",
+        "l": "0.36u"
+      },
+      "source_line": "MNS5 (s5b ndio vss vss) n18 w=2.04u l=0.36u",
+      "W_unit_um": 2.04,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "current_starved_ring_vco/MNS5",
+      "path": "MNS5"
+    },
+    "CS5": {
+      "name": "CS5",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "n5",
+        "2": "vss"
+      },
+      "parameters": {
+        "c": "30f"
+      },
+      "source_line": "CS5 (n5 vss) capacitor c=30f",
+      "value_SI": 3.0000000000000005e-14,
+      "definition": "current_starved_ring_vco/CS5",
+      "path": "CS5"
+    },
+    "XBUF0": {
+      "name": "XBUF0",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "n5",
+        "ZN": "bo1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XBUF0 (n5 bo1 vdd vss vdd vss) INHDV0",
+      "definition": "current_starved_ring_vco/XBUF0",
+      "path": "XBUF0"
+    },
+    "XBUF1": {
+      "name": "XBUF1",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "bo1",
+        "ZN": "vout",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XBUF1 (bo1 vout vdd vss vdd vss) INHDV2",
+      "definition": "current_starved_ring_vco/XBUF1",
+      "path": "XBUF1"
+    }
+  },
+  "nets": {
+    "current_starved_ring_vco/pdio": [
+      {
+        "instance": "current_starved_ring_vco/MPDIO",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          5,
+          18
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPDIO",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          3.45,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MVIN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          5,
+          13
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPSRC",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          10.45,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          18.65,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          26.65,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS3",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          34.650000000000006,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS4",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          6.6499999999999995,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS5",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          19.65,
+          19
+        ]
+      }
+    ],
+    "current_starved_ring_vco/vdd": [
+      {
+        "instance": "current_starved_ring_vco/MPDIO",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          5,
+          20
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPDIO",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          5.86,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPSRC",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          12,
+          20
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPSRC",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          12.86,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          20.2,
+          20
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          21.06,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          21.8,
+          15.2
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          28.2,
+          20
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          29.06,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV2",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          29.8,
+          15.2
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS3",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          36.2,
+          20
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS3",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          37.06,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV3",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          37.8,
+          15.2
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS4",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          8.2,
+          20
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS4",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          9.059999999999999,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV4",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          9.8,
+          15.2
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS5",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          21.2,
+          20
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MPS5",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          22.06,
+          19
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV5",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          22.8,
+          15.2
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XBUF0",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          34.2,
+          20.2
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XBUF0",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          35.8,
+          20.2
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XBUF1",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          34.2,
+          10.2
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XBUF1",
+        "pin": "VNW",
+        "sheet": 2,
+        "point": [
+          35.8,
+          10.2
+        ]
+      }
+    ],
+    "current_starved_ring_vco/vctrl": [
+      {
+        "instance": "current_starved_ring_vco/MVIN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          3.45,
+          12
+        ]
+      }
+    ],
+    "current_starved_ring_vco/ndeg": [
+      {
+        "instance": "current_starved_ring_vco/MVIN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          5,
+          11
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/RDEG",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          5,
+          5.82
+        ]
+      }
+    ],
+    "current_starved_ring_vco/vss": [
+      {
+        "instance": "current_starved_ring_vco/MVIN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          5.86,
+          12
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNDIO",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          12,
+          4
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNDIO",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          12.86,
+          5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/RDEG",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          5,
+          4.18
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          21.8,
+          10.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          20.2,
+          6
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          21.06,
+          7
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/CS1",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          21.82,
+          2.5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV2",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          29.8,
+          10.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          28.2,
+          6
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          29.06,
+          7
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/CS2",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          29.82,
+          2.5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV3",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          37.8,
+          10.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS3",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          36.2,
+          6
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS3",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          37.06,
+          7
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/CS3",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          37.82,
+          2.5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV4",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          9.8,
+          10.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS4",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          8.2,
+          6
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS4",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          9.059999999999999,
+          7
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/CS4",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          9.82,
+          2.5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV5",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          22.8,
+          10.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS5",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          21.2,
+          6
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS5",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          22.06,
+          7
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/CS5",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          22.82,
+          2.5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XBUF0",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          34.2,
+          15.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XBUF0",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          35.8,
+          15.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XBUF1",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          34.2,
+          5.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XBUF1",
+        "pin": "VPW",
+        "sheet": 2,
+        "point": [
+          35.8,
+          5.8
+        ]
+      }
+    ],
+    "current_starved_ring_vco/ndio": [
+      {
+        "instance": "current_starved_ring_vco/MPSRC",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          12,
+          18
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNDIO",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          12,
+          6
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNDIO",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          10.45,
+          5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          18.65,
+          7
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          26.65,
+          7
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS3",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          34.650000000000006,
+          7
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS4",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          6.6499999999999995,
+          7
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS5",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          19.65,
+          7
+        ]
+      }
+    ],
+    "current_starved_ring_vco/s1t": [
+      {
+        "instance": "current_starved_ring_vco/MPS1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          20.2,
+          18
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          20.2,
+          15.2
+        ]
+      }
+    ],
+    "current_starved_ring_vco/n5": [
+      {
+        "instance": "current_starved_ring_vco/XINV1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          18.3,
+          13.0
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV5",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          24.7,
+          13.0
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/CS5",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          21.18,
+          2.5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XBUF0",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          32.3,
+          18.0
+        ]
+      }
+    ],
+    "current_starved_ring_vco/n1": [
+      {
+        "instance": "current_starved_ring_vco/XINV1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          23.7,
+          13.0
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/CS1",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          20.18,
+          2.5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV2",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          26.3,
+          13.0
+        ]
+      }
+    ],
+    "current_starved_ring_vco/s1b": [
+      {
+        "instance": "current_starved_ring_vco/XINV1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          20.2,
+          10.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          20.2,
+          8
+        ]
+      }
+    ],
+    "current_starved_ring_vco/s2t": [
+      {
+        "instance": "current_starved_ring_vco/MPS2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          28.2,
+          18
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV2",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          28.2,
+          15.2
+        ]
+      }
+    ],
+    "current_starved_ring_vco/n2": [
+      {
+        "instance": "current_starved_ring_vco/XINV2",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          31.7,
+          13.0
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/CS2",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          28.18,
+          2.5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV3",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          34.3,
+          13.0
+        ]
+      }
+    ],
+    "current_starved_ring_vco/s2b": [
+      {
+        "instance": "current_starved_ring_vco/XINV2",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          28.2,
+          10.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          28.2,
+          8
+        ]
+      }
+    ],
+    "current_starved_ring_vco/s3t": [
+      {
+        "instance": "current_starved_ring_vco/MPS3",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          36.2,
+          18
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV3",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          36.2,
+          15.2
+        ]
+      }
+    ],
+    "current_starved_ring_vco/n3": [
+      {
+        "instance": "current_starved_ring_vco/XINV3",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          39.7,
+          13.0
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/CS3",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          36.18,
+          2.5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV4",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          6.3,
+          13.0
+        ]
+      }
+    ],
+    "current_starved_ring_vco/s3b": [
+      {
+        "instance": "current_starved_ring_vco/XINV3",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          36.2,
+          10.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS3",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          36.2,
+          8
+        ]
+      }
+    ],
+    "current_starved_ring_vco/s4t": [
+      {
+        "instance": "current_starved_ring_vco/MPS4",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          8.2,
+          18
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV4",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          8.2,
+          15.2
+        ]
+      }
+    ],
+    "current_starved_ring_vco/n4": [
+      {
+        "instance": "current_starved_ring_vco/XINV4",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          11.7,
+          13.0
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/CS4",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          8.18,
+          2.5
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV5",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          19.3,
+          13.0
+        ]
+      }
+    ],
+    "current_starved_ring_vco/s4b": [
+      {
+        "instance": "current_starved_ring_vco/XINV4",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          8.2,
+          10.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS4",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          8.2,
+          8
+        ]
+      }
+    ],
+    "current_starved_ring_vco/s5t": [
+      {
+        "instance": "current_starved_ring_vco/MPS5",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          21.2,
+          18
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XINV5",
+        "pin": "VDD",
+        "sheet": 2,
+        "point": [
+          21.2,
+          15.2
+        ]
+      }
+    ],
+    "current_starved_ring_vco/s5b": [
+      {
+        "instance": "current_starved_ring_vco/XINV5",
+        "pin": "VSS",
+        "sheet": 2,
+        "point": [
+          21.2,
+          10.8
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/MNS5",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          21.2,
+          8
+        ]
+      }
+    ],
+    "current_starved_ring_vco/bo1": [
+      {
+        "instance": "current_starved_ring_vco/XBUF0",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          37.7,
+          18.0
+        ]
+      },
+      {
+        "instance": "current_starved_ring_vco/XBUF1",
+        "pin": "I",
+        "sheet": 2,
+        "point": [
+          32.3,
+          8.0
+        ]
+      }
+    ],
+    "current_starved_ring_vco/vout": [
+      {
+        "instance": "current_starved_ring_vco/XBUF1",
+        "pin": "ZN",
+        "sheet": 2,
+        "point": [
+          37.7,
+          8.0
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VSS",
+      "net": "s3b",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS3",
+      "pin": "D",
+      "net": "s3b",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "ZN",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "CS1",
+      "pin": "1",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "I",
+      "net": "n1",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "ZN",
+      "net": "n3",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "CS3",
+      "pin": "1",
+      "net": "n3",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MVIN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDIO",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDIO",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "RDEG",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS1",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "CS1",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS2",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "CS2",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS3",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS3",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "CS3",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS2",
+      "pin": "D",
+      "net": "s2t",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VDD",
+      "net": "s2t",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MVIN",
+      "pin": "S",
+      "net": "ndeg",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "RDEG",
+      "pin": "1",
+      "net": "ndeg",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VSS",
+      "net": "s2b",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS2",
+      "pin": "D",
+      "net": "s2b",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDIO",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDIO",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPSRC",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPSRC",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS1",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS1",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS2",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS2",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS3",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS3",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "ZN",
+      "net": "n2",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "CS2",
+      "pin": "1",
+      "net": "n2",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "I",
+      "net": "n2",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MVIN",
+      "pin": "G",
+      "net": "vctrl",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS3",
+      "pin": "D",
+      "net": "s3t",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VDD",
+      "net": "s3t",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDIO",
+      "pin": "D",
+      "net": "pdio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDIO",
+      "pin": "G",
+      "net": "pdio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MVIN",
+      "pin": "D",
+      "net": "pdio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPSRC",
+      "pin": "G",
+      "net": "pdio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS1",
+      "pin": "G",
+      "net": "pdio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS2",
+      "pin": "G",
+      "net": "pdio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS3",
+      "pin": "G",
+      "net": "pdio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VSS",
+      "net": "s1b",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS1",
+      "pin": "D",
+      "net": "s1b",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPSRC",
+      "pin": "D",
+      "net": "ndio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDIO",
+      "pin": "D",
+      "net": "ndio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDIO",
+      "pin": "G",
+      "net": "ndio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS1",
+      "pin": "G",
+      "net": "ndio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS2",
+      "pin": "G",
+      "net": "ndio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS3",
+      "pin": "G",
+      "net": "ndio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "I",
+      "net": "n5",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS1",
+      "pin": "D",
+      "net": "s1t",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VDD",
+      "net": "s1t",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV4",
+      "pin": "I",
+      "net": "n3",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV4",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNS4",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNS4",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "CS4",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV5",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNS5",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNS5",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "CS5",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF0",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF0",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF1",
+      "pin": "ZN",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV5",
+      "pin": "VSS",
+      "net": "s5b",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNS5",
+      "pin": "D",
+      "net": "s5b",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF0",
+      "pin": "ZN",
+      "net": "bo1",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF1",
+      "pin": "I",
+      "net": "bo1",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPS4",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPS4",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV4",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPS5",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPS5",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV5",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF0",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF0",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPS4",
+      "pin": "G",
+      "net": "pdio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPS5",
+      "pin": "G",
+      "net": "pdio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNS4",
+      "pin": "G",
+      "net": "ndio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNS5",
+      "pin": "G",
+      "net": "ndio",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPS5",
+      "pin": "D",
+      "net": "s5t",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV5",
+      "pin": "VDD",
+      "net": "s5t",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV5",
+      "pin": "ZN",
+      "net": "n5",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "CS5",
+      "pin": "1",
+      "net": "n5",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XBUF0",
+      "pin": "I",
+      "net": "n5",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPS4",
+      "pin": "D",
+      "net": "s4t",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV4",
+      "pin": "VDD",
+      "net": "s4t",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV4",
+      "pin": "ZN",
+      "net": "n4",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "CS4",
+      "pin": "1",
+      "net": "n4",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV5",
+      "pin": "I",
+      "net": "n4",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "XINV4",
+      "pin": "VSS",
+      "net": "s4b",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNS4",
+      "pin": "D",
+      "net": "s4b",
+      "path_to_named_net": true,
+      "block": "current_starved_ring_vco"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "current_starved_ring_vco",
+      "title": "控制偏置与环形级 1–3",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5.86,
+              19
+            ],
+            [
+              6.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.86,
+              12
+            ],
+            [
+              6.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12.86,
+              19
+            ],
+            [
+              13.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.86,
+              5
+            ],
+            [
+              13.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pdio",
+          "points": [
+            [
+              5,
+              18
+            ],
+            [
+              5,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "points": [
+            [
+              3.45,
+              19
+            ],
+            [
+              2.95,
+              19
+            ],
+            [
+              2.95,
+              16
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              5,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ndeg",
+          "points": [
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              5.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "points": [
+            [
+              12,
+              18
+            ],
+            [
+              12,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "points": [
+            [
+              10.45,
+              5
+            ],
+            [
+              9.95,
+              5
+            ],
+            [
+              9.95,
+              8
+            ],
+            [
+              12,
+              8
+            ],
+            [
+              12,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              21.06,
+              19
+            ],
+            [
+              21.349999999999998,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21.06,
+              7
+            ],
+            [
+              21.349999999999998,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "s1t",
+          "points": [
+            [
+              20.2,
+              18
+            ],
+            [
+              20.2,
+              15.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s1b",
+          "points": [
+            [
+              20.2,
+              8
+            ],
+            [
+              20.2,
+              10.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              29.06,
+              19
+            ],
+            [
+              29.349999999999998,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29.06,
+              7
+            ],
+            [
+              29.349999999999998,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "s2t",
+          "points": [
+            [
+              28.2,
+              18
+            ],
+            [
+              28.2,
+              15.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s2b",
+          "points": [
+            [
+              28.2,
+              8
+            ],
+            [
+              28.2,
+              10.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.06,
+              19
+            ],
+            [
+              37.35,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.06,
+              7
+            ],
+            [
+              37.35,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "s3t",
+          "points": [
+            [
+              36.2,
+              18
+            ],
+            [
+              36.2,
+              15.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s3b",
+          "points": [
+            [
+              36.2,
+              8
+            ],
+            [
+              36.2,
+              10.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n5",
+          "points": [
+            [
+              18.3,
+              13.0
+            ],
+            [
+              17.7,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              23.7,
+              13.0
+            ],
+            [
+              24.3,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              21.8,
+              15.2
+            ],
+            [
+              21.8,
+              15.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21.8,
+              10.8
+            ],
+            [
+              21.8,
+              10.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              26.3,
+              13.0
+            ],
+            [
+              25.7,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n2",
+          "points": [
+            [
+              31.7,
+              13.0
+            ],
+            [
+              32.3,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              29.8,
+              15.2
+            ],
+            [
+              29.8,
+              15.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29.8,
+              10.8
+            ],
+            [
+              29.8,
+              10.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n2",
+          "points": [
+            [
+              34.3,
+              13.0
+            ],
+            [
+              33.699999999999996,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n3",
+          "points": [
+            [
+              39.7,
+              13.0
+            ],
+            [
+              40.300000000000004,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37.8,
+              15.2
+            ],
+            [
+              37.8,
+              15.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.8,
+              10.8
+            ],
+            [
+              37.8,
+              10.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5,
+              20
+            ],
+            [
+              5,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vctrl",
+          "points": [
+            [
+              3.45,
+              12
+            ],
+            [
+              2.9000000000000004,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12,
+              20
+            ],
+            [
+              12,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "points": [
+            [
+              10.45,
+              19
+            ],
+            [
+              9.899999999999999,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12,
+              4
+            ],
+            [
+              12,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5,
+              4.18
+            ],
+            [
+              5,
+              3.5399999999999996
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              20.2,
+              20
+            ],
+            [
+              20.2,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "points": [
+            [
+              18.65,
+              19
+            ],
+            [
+              18.099999999999998,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.2,
+              6
+            ],
+            [
+              20.2,
+              5.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "points": [
+            [
+              18.65,
+              7
+            ],
+            [
+              18.099999999999998,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n1",
+          "points": [
+            [
+              20.18,
+              2.5
+            ],
+            [
+              19.38,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21.82,
+              2.5
+            ],
+            [
+              22.62,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              28.2,
+              20
+            ],
+            [
+              28.2,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "points": [
+            [
+              26.65,
+              19
+            ],
+            [
+              26.099999999999998,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.2,
+              6
+            ],
+            [
+              28.2,
+              5.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "points": [
+            [
+              26.65,
+              7
+            ],
+            [
+              26.099999999999998,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n2",
+          "points": [
+            [
+              28.18,
+              2.5
+            ],
+            [
+              27.38,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29.82,
+              2.5
+            ],
+            [
+              30.62,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              36.2,
+              20
+            ],
+            [
+              36.2,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "points": [
+            [
+              34.650000000000006,
+              19
+            ],
+            [
+              34.10000000000001,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.2,
+              6
+            ],
+            [
+              36.2,
+              5.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "points": [
+            [
+              34.650000000000006,
+              7
+            ],
+            [
+              34.10000000000001,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n3",
+          "points": [
+            [
+              36.18,
+              2.5
+            ],
+            [
+              35.38,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.82,
+              2.5
+            ],
+            [
+              38.62,
+              2.5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            6.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            6.15,
+            12
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            13.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            13.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "pdio",
+          "point": [
+            5,
+            14.5
+          ],
+          "text": "pdio",
+          "body": false
+        },
+        {
+          "net": "ndeg",
+          "point": [
+            5,
+            8.2
+          ],
+          "text": "ndeg",
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "point": [
+            12,
+            12
+          ],
+          "text": "ndio",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            21.349999999999998,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.349999999999998,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "s1t",
+          "point": [
+            20.2,
+            17
+          ],
+          "text": "s1t",
+          "body": false
+        },
+        {
+          "net": "s1b",
+          "point": [
+            20.2,
+            9.4
+          ],
+          "text": "s1b",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            29.349999999999998,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            29.349999999999998,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "s2t",
+          "point": [
+            28.2,
+            17
+          ],
+          "text": "s2t",
+          "body": false
+        },
+        {
+          "net": "s2b",
+          "point": [
+            28.2,
+            9.4
+          ],
+          "text": "s2b",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.35,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.35,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "s3t",
+          "point": [
+            36.2,
+            17
+          ],
+          "text": "s3t",
+          "body": false
+        },
+        {
+          "net": "s3b",
+          "point": [
+            36.2,
+            9.4
+          ],
+          "text": "s3b",
+          "body": false
+        },
+        {
+          "net": "n5",
+          "point": [
+            17.7,
+            13.0
+          ],
+          "text": "n5",
+          "body": false
+        },
+        {
+          "net": "n1",
+          "point": [
+            24.3,
+            13.0
+          ],
+          "text": "n1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            21.8,
+            15.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.8,
+            10.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "n1",
+          "point": [
+            25.7,
+            13.0
+          ],
+          "text": "n1",
+          "body": false
+        },
+        {
+          "net": "n2",
+          "point": [
+            32.3,
+            13.0
+          ],
+          "text": "n2",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            29.8,
+            15.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            29.8,
+            10.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "n2",
+          "point": [
+            33.699999999999996,
+            13.0
+          ],
+          "text": "n2",
+          "body": false
+        },
+        {
+          "net": "n3",
+          "point": [
+            40.300000000000004,
+            13.0
+          ],
+          "text": "n3",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.8,
+            15.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.8,
+            10.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            5,
+            20.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vctrl",
+          "point": [
+            2.9000000000000004,
+            12
+          ],
+          "text": "vctrl",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12,
+            20.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "point": [
+            9.899999999999999,
+            19
+          ],
+          "text": "pdio",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            12,
+            3.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5,
+            3.5399999999999996
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            20.2,
+            20.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "point": [
+            18.099999999999998,
+            19
+          ],
+          "text": "pdio",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.2,
+            5.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "point": [
+            18.099999999999998,
+            7
+          ],
+          "text": "ndio",
+          "body": false
+        },
+        {
+          "net": "n1",
+          "point": [
+            19.38,
+            2.5
+          ],
+          "text": "n1",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            22.62,
+            2.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            28.2,
+            20.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "point": [
+            26.099999999999998,
+            19
+          ],
+          "text": "pdio",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            28.2,
+            5.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "point": [
+            26.099999999999998,
+            7
+          ],
+          "text": "ndio",
+          "body": false
+        },
+        {
+          "net": "n2",
+          "point": [
+            27.38,
+            2.5
+          ],
+          "text": "n2",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            30.62,
+            2.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            36.2,
+            20.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "point": [
+            34.10000000000001,
+            19
+          ],
+          "text": "pdio",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            36.2,
+            5.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "point": [
+            34.10000000000001,
+            7
+          ],
+          "text": "ndio",
+          "body": false
+        },
+        {
+          "net": "n3",
+          "point": [
+            35.38,
+            2.5
+          ],
+          "text": "n3",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.62,
+            2.5
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "current_starved_ring_vco",
+      "title": "环形级 4–5 与 HD 输出缓冲",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              9.059999999999999,
+              19
+            ],
+            [
+              9.35,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              9.059999999999999,
+              7
+            ],
+            [
+              9.35,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "s4t",
+          "points": [
+            [
+              8.2,
+              18
+            ],
+            [
+              8.2,
+              15.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s4b",
+          "points": [
+            [
+              8.2,
+              8
+            ],
+            [
+              8.2,
+              10.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22.06,
+              19
+            ],
+            [
+              22.349999999999998,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22.06,
+              7
+            ],
+            [
+              22.349999999999998,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "s5t",
+          "points": [
+            [
+              21.2,
+              18
+            ],
+            [
+              21.2,
+              15.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "s5b",
+          "points": [
+            [
+              21.2,
+              8
+            ],
+            [
+              21.2,
+              10.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n3",
+          "points": [
+            [
+              6.3,
+              13.0
+            ],
+            [
+              5.7,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n4",
+          "points": [
+            [
+              11.7,
+              13.0
+            ],
+            [
+              12.299999999999999,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              9.8,
+              15.2
+            ],
+            [
+              9.8,
+              15.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              9.8,
+              10.8
+            ],
+            [
+              9.8,
+              10.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n4",
+          "points": [
+            [
+              19.3,
+              13.0
+            ],
+            [
+              18.7,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n5",
+          "points": [
+            [
+              24.7,
+              13.0
+            ],
+            [
+              25.3,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22.8,
+              15.2
+            ],
+            [
+              22.8,
+              15.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22.8,
+              10.8
+            ],
+            [
+              22.8,
+              10.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n5",
+          "points": [
+            [
+              32.3,
+              18.0
+            ],
+            [
+              31.699999999999996,
+              18.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bo1",
+          "points": [
+            [
+              37.7,
+              18.0
+            ],
+            [
+              38.300000000000004,
+              18.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.2,
+              20.2
+            ],
+            [
+              34.2,
+              20.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35.8,
+              20.2
+            ],
+            [
+              35.8,
+              20.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.2,
+              15.8
+            ],
+            [
+              34.2,
+              15.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35.8,
+              15.8
+            ],
+            [
+              35.8,
+              15.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bo1",
+          "points": [
+            [
+              32.3,
+              8.0
+            ],
+            [
+              31.699999999999996,
+              8.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              37.7,
+              8.0
+            ],
+            [
+              38.300000000000004,
+              8.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.2,
+              10.2
+            ],
+            [
+              34.2,
+              10.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35.8,
+              10.2
+            ],
+            [
+              35.8,
+              10.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.2,
+              5.8
+            ],
+            [
+              34.2,
+              5.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35.8,
+              5.8
+            ],
+            [
+              35.8,
+              5.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8.2,
+              20
+            ],
+            [
+              8.2,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "points": [
+            [
+              6.6499999999999995,
+              19
+            ],
+            [
+              6.1,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8.2,
+              6
+            ],
+            [
+              8.2,
+              5.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "points": [
+            [
+              6.6499999999999995,
+              7
+            ],
+            [
+              6.1,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n4",
+          "points": [
+            [
+              8.18,
+              2.5
+            ],
+            [
+              7.38,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              9.82,
+              2.5
+            ],
+            [
+              10.620000000000001,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              21.2,
+              20
+            ],
+            [
+              21.2,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "points": [
+            [
+              19.65,
+              19
+            ],
+            [
+              19.099999999999998,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21.2,
+              6
+            ],
+            [
+              21.2,
+              5.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "points": [
+            [
+              19.65,
+              7
+            ],
+            [
+              19.099999999999998,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "n5",
+          "points": [
+            [
+              21.18,
+              2.5
+            ],
+            [
+              20.38,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22.82,
+              2.5
+            ],
+            [
+              23.62,
+              2.5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            9.35,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            9.35,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "s4t",
+          "point": [
+            8.2,
+            17
+          ],
+          "text": "s4t",
+          "body": false
+        },
+        {
+          "net": "s4b",
+          "point": [
+            8.2,
+            9.4
+          ],
+          "text": "s4b",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            22.349999999999998,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            22.349999999999998,
+            7
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "s5t",
+          "point": [
+            21.2,
+            17
+          ],
+          "text": "s5t",
+          "body": false
+        },
+        {
+          "net": "s5b",
+          "point": [
+            21.2,
+            9.4
+          ],
+          "text": "s5b",
+          "body": false
+        },
+        {
+          "net": "n3",
+          "point": [
+            5.7,
+            13.0
+          ],
+          "text": "n3",
+          "body": false
+        },
+        {
+          "net": "n4",
+          "point": [
+            12.299999999999999,
+            13.0
+          ],
+          "text": "n4",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            9.8,
+            15.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            9.8,
+            10.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "n4",
+          "point": [
+            18.7,
+            13.0
+          ],
+          "text": "n4",
+          "body": false
+        },
+        {
+          "net": "n5",
+          "point": [
+            25.3,
+            13.0
+          ],
+          "text": "n5",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            22.8,
+            15.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            22.8,
+            10.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "n5",
+          "point": [
+            31.699999999999996,
+            18.0
+          ],
+          "text": "n5",
+          "body": false
+        },
+        {
+          "net": "bo1",
+          "point": [
+            38.300000000000004,
+            18.0
+          ],
+          "text": "bo1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            34.2,
+            20.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.8,
+            20.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.2,
+            15.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.8,
+            15.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "bo1",
+          "point": [
+            31.699999999999996,
+            8.0
+          ],
+          "text": "bo1",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            38.300000000000004,
+            8.0
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            34.2,
+            10.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.8,
+            10.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            34.2,
+            5.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.8,
+            5.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            8.2,
+            20.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "point": [
+            6.1,
+            19
+          ],
+          "text": "pdio",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            8.2,
+            5.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "point": [
+            6.1,
+            7
+          ],
+          "text": "ndio",
+          "body": false
+        },
+        {
+          "net": "n4",
+          "point": [
+            7.38,
+            2.5
+          ],
+          "text": "n4",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            10.620000000000001,
+            2.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            21.2,
+            20.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "pdio",
+          "point": [
+            19.099999999999998,
+            19
+          ],
+          "text": "pdio",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.2,
+            5.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ndio",
+          "point": [
+            19.099999999999998,
+            7
+          ],
+          "text": "ndio",
+          "body": false
+        },
+        {
+          "net": "n5",
+          "point": [
+            20.38,
+            2.5
+          ],
+          "text": "n5",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            23.62,
+            2.5
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "current_starved_ring_vco": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

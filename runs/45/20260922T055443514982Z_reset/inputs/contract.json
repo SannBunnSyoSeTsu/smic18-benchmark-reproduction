@@ -1,0 +1,34 @@
+{
+  "source_task": "sky130-transistor-divide-by-2",
+  "corner": "tt",
+  "vdd_V": 1.8,
+  "temperature_C": 27,
+  "frequency_hz": 1000000000.0,
+  "load_F": 2e-14,
+  "source_resistance_ohm": 20,
+  "clock_rise_fall_s": 1e-11,
+  "reset_edge_s": 5e-12,
+  "relaxation": {
+    "reset_delay_s": [
+      1e-10,
+      1.1e-10,
+      1.15e-10
+    ],
+    "clock_delay_s": [
+      4e-10,
+      4.4e-10,
+      4.6e-10
+    ],
+    "duty_error_fraction": [
+      0.01,
+      0.011,
+      0.0115
+    ]
+  },
+  "functional_invariants": [
+    "Divide ratio exactly 2 within original +/-1%",
+    "High >=1.44V, low <=0.36V",
+    "Internal reset state cleared",
+    "No output rise at asynchronous release before next clock edge"
+  ]
+}

@@ -1,0 +1,32 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/37-nested-miller/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=5u
+X (0 iref vdd vinn vinp vout) three_stage_nmc_ota
+CL (vout 0) capacitor c=200p
+save vout vinn vinp VDD:p iref
+VIN (vinp 0) vsource dc=.9
+VTEST (vout vinn) vsource dc=0 mag=1
+save X.tail X.pdm X.vbn X.na X.n1 X.nb X.n2
+save X.MREF:ids X.MREF:gm X.MREF:gds X.MREF:vgs X.MREF:vds X.MREF:vdsat X.MREF:region
+save X.MTAIL:ids X.MTAIL:gm X.MTAIL:gds X.MTAIL:vgs X.MTAIL:vds X.MTAIL:vdsat X.MTAIL:region
+save X.MBP1:ids X.MBP1:gm X.MBP1:gds X.MBP1:vgs X.MBP1:vds X.MBP1:vdsat X.MBP1:region
+save X.MPDM:ids X.MPDM:gm X.MPDM:gds X.MPDM:vgs X.MPDM:vds X.MPDM:vdsat X.MPDM:region
+save X.MS2B:ids X.MS2B:gm X.MS2B:gds X.MS2B:vgs X.MS2B:vds X.MS2B:vdsat X.MS2B:region
+save X.MVBN:ids X.MVBN:gm X.MVBN:gds X.MVBN:vgs X.MVBN:vds X.MVBN:vdsat X.MVBN:region
+save X.MI1:ids X.MI1:gm X.MI1:gds X.MI1:vgs X.MI1:vds X.MI1:vdsat X.MI1:region
+save X.MI2:ids X.MI2:gm X.MI2:gds X.MI2:vgs X.MI2:vds X.MI2:vdsat X.MI2:region
+save X.MP1A:ids X.MP1A:gm X.MP1A:gds X.MP1A:vgs X.MP1A:vds X.MP1A:vdsat X.MP1A:region
+save X.MP1B:ids X.MP1B:gm X.MP1B:gds X.MP1B:vgs X.MP1B:vds X.MP1B:vdsat X.MP1B:region
+save X.MA2:ids X.MA2:gm X.MA2:gds X.MA2:vgs X.MA2:vds X.MA2:vdsat X.MA2:region
+save X.MPD2:ids X.MPD2:gm X.MPD2:gds X.MPD2:vgs X.MPD2:vds X.MPD2:vdsat X.MPD2:region
+save X.MPM2:ids X.MPM2:gm X.MPM2:gds X.MPM2:vgs X.MPM2:vds X.MPM2:vdsat X.MPM2:region
+save X.MS2:ids X.MS2:gm X.MS2:gds X.MS2:vgs X.MS2:vds X.MS2:vdsat X.MS2:region
+save X.MA3:ids X.MA3:gm X.MA3:gds X.MA3:vgs X.MA3:vds X.MA3:vdsat X.MA3:region
+save X.ML3:ids X.ML3:gm X.ML3:gds X.ML3:vgs X.ML3:vds X.ML3:vdsat X.ML3:region
+dcOp dc
+ac ac start=.01 stop=100M dec=100

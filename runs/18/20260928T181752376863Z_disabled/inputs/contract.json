@@ -1,0 +1,39 @@
+{
+  "source_task": "sky130-regulated-charge-pump-10mhz-pvt",
+  "scope": "SMIC18 TT1.8V40C, all three enabled loads1/25/50uA and independent disabled DC. Other5enabled and4disabled PVT points excluded.",
+  "VDD_V": 1.8,
+  "temperature_C": 40,
+  "enabled_loads_A": [
+    1e-06,
+    2.5e-05,
+    5e-05
+  ],
+  "output_target_V": 2.34,
+  "output_error_V": 0.117,
+  "ripple_max_V": 0.005,
+  "enabled_current_max_A": 0.0002,
+  "disabled_current_max_A": 1e-07,
+  "clock": {
+    "Hz": 10000000.0,
+    "rise_fall_s": 1e-09,
+    "low_plateau_s": 4.9e-08,
+    "period_s": 1e-07,
+    "initial_V": 1.8
+  },
+  "source_ohm": 50,
+  "bias_A": 1e-06,
+  "output_cap_F": 1e-09,
+  "stop_s": 0.0002,
+  "window_s": [
+    0.00019,
+    0.0002
+  ],
+  "disabled": "Independent DC withCLK=0,EN=0,no load; separate supplysense. Bias current upstream ofAVDDsense, excluded bysourcecontract.",
+  "allowed_DUT": "NativeMOS/MIM/polyresistors and exactHDcells; no idealuserpassives/sources.",
+  "terminal_screen_V": {
+    "n18": 1.98,
+    "p18": 1.98,
+    "nnt33": 3.63
+  },
+  "terminal_screen_scope": "Engineering screening on saved samples, not foundry lifetime or exhaustiveintermediate-timebound; middletime outputdecimated only, integration windowfull."
+}

@@ -1,0 +1,269 @@
+{
+  "slot": 21,
+  "case": "cases/21-highpsrr-bandgap",
+  "circuit_sha256": "c44fb1be719bd559ccdcdeed956b61620db10de7cd08cefb35cf0b11f8f879de",
+  "hd_cells_sha256": null,
+  "top": "bandgap",
+  "source_definition_count": 32,
+  "source_terminal_count": 114,
+  "source_expanded_leaf_count": 32,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "b6a4be16bc41b9767ec4609b9e4d82487a8fef4a572aee1e5796c0ee685c9f5d",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 32,
+  "schematic_expanded_leaf_count": 32,
+  "independently_traced_terminals": 114,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 18,
+    "BJT": 3,
+    "R": 8,
+    "C": 3
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "bandgap/MP0",
+      "D_G_S_B": [
+        "pc0",
+        "pctrl",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MP1",
+      "D_G_S_B": [
+        "pc1",
+        "pctrl",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MP2",
+      "D_G_S_B": [
+        "pc2",
+        "pctrl",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MPC0",
+      "D_G_S_B": [
+        "va",
+        "cbias",
+        "pc0",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MPC1",
+      "D_G_S_B": [
+        "vb",
+        "cbias",
+        "pc1",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MPC2",
+      "D_G_S_B": [
+        "vcore",
+        "cbias",
+        "pc2",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MPCB",
+      "D_G_S_B": [
+        "cbias",
+        "cbias",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MPA",
+      "D_G_S_B": [
+        "namp",
+        "pctrl",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MPCA",
+      "D_G_S_B": [
+        "nbias",
+        "cbias",
+        "namp",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MNB",
+      "D_G_S_B": [
+        "nbias",
+        "nbias",
+        "AVSS",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "bandgap/MTAIL",
+      "D_G_S_B": [
+        "tail",
+        "nbias",
+        "AVSS",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "bandgap/MINA",
+      "D_G_S_B": [
+        "pctrl",
+        "va",
+        "tail",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "bandgap/MINB",
+      "D_G_S_B": [
+        "nout",
+        "vb",
+        "tail",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "bandgap/MPD",
+      "D_G_S_B": [
+        "nout",
+        "nout",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MPM",
+      "D_G_S_B": [
+        "pctrl",
+        "nout",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MPST",
+      "D_G_S_B": [
+        "st",
+        "vcore",
+        "AVDD",
+        "AVDD"
+      ]
+    },
+    {
+      "instance": "bandgap/MNST",
+      "D_G_S_B": [
+        "st",
+        "vcore",
+        "AVSS",
+        "AVSS"
+      ]
+    },
+    {
+      "instance": "bandgap/MSTART",
+      "D_G_S_B": [
+        "pctrl",
+        "st",
+        "AVSS",
+        "AVSS"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [
+    {
+      "instance": "bandgap/RPTAT",
+      "terminal_1_2_B": [
+        "vb",
+        "n1",
+        "SUB"
+      ]
+    },
+    {
+      "instance": "bandgap/RREF",
+      "terminal_1_2_B": [
+        "vcore",
+        "vctat",
+        "SUB"
+      ]
+    },
+    {
+      "instance": "bandgap/RFILT",
+      "terminal_1_2_B": [
+        "vcore",
+        "VBG",
+        "SUB"
+      ]
+    },
+    {
+      "instance": "bandgap/RCB0",
+      "terminal_1_2_B": [
+        "cbias",
+        "rcb1",
+        "SUB"
+      ]
+    },
+    {
+      "instance": "bandgap/RCB1",
+      "terminal_1_2_B": [
+        "rcb1",
+        "rcb2",
+        "SUB"
+      ]
+    },
+    {
+      "instance": "bandgap/RCB2",
+      "terminal_1_2_B": [
+        "rcb2",
+        "rcb3",
+        "SUB"
+      ]
+    },
+    {
+      "instance": "bandgap/RCB3",
+      "terminal_1_2_B": [
+        "rcb3",
+        "rcb4",
+        "SUB"
+      ]
+    },
+    {
+      "instance": "bandgap/RCB4",
+      "terminal_1_2_B": [
+        "rcb4",
+        "AVSS",
+        "SUB"
+      ]
+    }
+  ],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 23,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

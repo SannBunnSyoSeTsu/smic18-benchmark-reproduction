@@ -1,0 +1,128 @@
+{
+  "audited_at": "2026-09-22T10:51:05.223865+00:00",
+  "status": "complete_15pct",
+  "nominal_groups": [
+    "ac",
+    "noise",
+    "sfdr"
+  ],
+  "nominal_scalar_gates": 7,
+  "original_source_group_checks": [
+    [
+      "pvt_transimpedance",
+      true,
+      "worst=8.26372 kOhm at tt/+27C/1.80V (requirement >8)"
+    ],
+    [
+      "pvt_bandwidth",
+      false,
+      "worst=649.627 MHz at tt/+27C/1.80V (requirement >750)"
+    ],
+    [
+      "pvt_power",
+      true,
+      "worst=4.68857 mW at tt/+27C/1.80V (requirement <5)"
+    ],
+    [
+      "pvt_noise_density",
+      true,
+      "worst=3.34686 pA/sqrt(Hz) at tt/+27C/1.80V (requirement <5)"
+    ],
+    [
+      "pvt_integrated_noise",
+      true,
+      "worst=0.0666648 uA rms at tt/+27C/1.80V (requirement <0.1)"
+    ],
+    [
+      "pvt_sfdr",
+      true,
+      "minimum SFDR=70.6750 dBc at tt/+27C/1.80V (>70); minimum large-signal ZT=8.16773 kOhm at tt/+27C/1.80V (>8)"
+    ]
+  ],
+  "pass_tiers": {
+    "original": false,
+    "10pct": false,
+    "15pct": true
+  },
+  "only_relaxed_metric": "bandwidth_hz",
+  "original_15_PT_matrix_executed": false,
+  "full_stimulus_and_windows_preserved": true,
+  "all_5_nominal_OP_saturation": true,
+  "all_unit_widths_valid": true,
+  "source_and_lut_and_model_hashes_valid": true,
+  "run_snapshots": [
+    {
+      "group": "ac",
+      "run": "runs/10/20260922T103416916168Z_ac",
+      "snapshot_consistent": true,
+      "current_circuit_and_contract_and_sizing_match": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/10/20260922T103416916168Z_ac/output/bench.raw/dcOp.dc": "915ff556aa5a85d16c79fd78fc2173c942b0ad72ef68a4d6dfb3572910d51175",
+        "runs/10/20260922T103416916168Z_ac/output/bench.raw/ac.ac": "f78bac000ab392b01428ec01e685231e2f26cc9c4ba6264987e3c73ad62fbd83"
+      },
+      "run_metadata_sha256": "059de3e23241c0c396414ef422844a76fe7e86279dadfacf09053f27d51388fc"
+    },
+    {
+      "group": "noise",
+      "run": "runs/10/20260922T103417040905Z_noise",
+      "snapshot_consistent": true,
+      "current_circuit_and_contract_and_sizing_match": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "PSF_sha256": {
+        "runs/10/20260922T103417040905Z_noise/output/bench.raw/noise.noise": "2c2d89aeefea7809a2b6844ea9e1bb92d5e02c36374e1bc99644c746482f8703"
+      },
+      "run_metadata_sha256": "46f09a9c21fa4704f5f936d9deab25c867d62d89ed4a3ea282b8d203afb44e7b"
+    },
+    {
+      "group": "sfdr",
+      "run": "runs/10/20260922T103417174989Z_sfdr",
+      "snapshot_consistent": true,
+      "current_circuit_and_contract_and_sizing_match": true,
+      "model_dimensions_valid": true,
+      "warnings": [
+        "WARNING (SPECTRE-8059): `IIN': `p' No such output parameter, terminal, or internal node name.",
+        "WARNING (SPECTRE-8287): Ignoring invalid item `IIN:p' in save statement."
+      ],
+      "PSF_sha256": {
+        "runs/10/20260922T103417174989Z_sfdr/output/bench.raw/tran.tran.tran": "26928e7f55bcb8b73311c22ebd77efeda6bf6d0485b34c392ff7b01262a0b50c"
+      },
+      "run_metadata_sha256": "52efc306c8df14a17aa292320846c61fd33a507b14988b8cffef5df70fa77692"
+    }
+  ],
+  "AC_points": 401,
+  "noise_points": 171,
+  "sfdr_saved_samples": 17409,
+  "sfdr_FFT_samples": 16384,
+  "source_sfdr_metrics_directly_reused": true,
+  "current_script_change": "Only CLI and design defaults changed to final1500/1100uA,RF1=4000,RIN2=1500,RFB2=4500. Frozen execution scripts unchanged.",
+  "warning_assessment": "Only formal SFDR has two warnings: invalid diagnostic save IIN:p is ignored. Frozen ideal-source stimulus100MHz/10uA remains active and VOUT is complete. No saved source-current waveform is claimed. No model dimension warnings or electrical errors.",
+  "review_pdf_sha256": "f002834c724ff70faaba00831f7c3d3e82323a24273a4d9f804a163d50dfcb71",
+  "review_pdf_pages": 6,
+  "all_pages_visually_reviewed": true,
+  "knowledge_sha256": "9b46ee08692df952156676bedcf4370a86392acbc8247a706e07696fd1c1c496",
+  "numerical_review_sha256": "d21594cbe98462832c01f6d6c7db98a13c3fd992eea0272afc986ea599f89d8b",
+  "precision_limits": {
+    "ac": "100points/decade; linear vs log frequency BW differs0.0051716%, not enough to change15%status.",
+    "noise": "171points10..500MHz; trapezoidal vs piecewise power-law PSD integral differs0.00028947%.",
+    "sfdr": "9.765625ps strobe and5ps maxstep; original all-bin16cycle FFT. Native100/200MHz least-squares ratio differs1.26e-10dB. No additional timestep convergence sweep; SFDR nominal original margin0.675dB.",
+    "scope": "Only tt1.8V27C; other14PT points,supply variation,extra photodiodeC,statistical mismatch,extracted and passive parasitics excluded."
+  },
+  "static_knowledge_scope_review": {
+    "case10": "Explicit nominal15%label, originalBWfailure,14otherPTpoints unexecuted, and both ignored-save warnings disclosed.",
+    "case50": "Read-only review: four nominalgroups plus two nominalbooster diagnostics;56otheroriginalPVTanalyses and mismatch/parasitics excluded. Finalrun warning arrays empty. No false PVT/model-diagnostic pass statement found."
+  },
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:22:21.557884+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "3e96952b371aec9580fd6fc7366ff78e08bf19958c732078db5e69c9341ff565",
+    "results_sha256": "b0d7c5bef8fa70cfb8143ca661f1480b62d43aa52385f34b272e60f9fecba2b3",
+    "previous_pdf_sha256": "f002834c724ff70faaba00831f7c3d3e82323a24273a4d9f804a163d50dfcb71",
+    "current_pdf_sha256": "6f1982d6ba509e6c72abdf2204657dc7ae20485336e8979bcef19cec588858af",
+    "schematic_audit_sha256": "33300ca9527204c0d810f2a404e2b23371e17130bbac99bc9a129d2f6a71e4d3",
+    "report_pages": 8,
+    "all_merged_pages_pixel_identical_to_sources": true
+  }
+}

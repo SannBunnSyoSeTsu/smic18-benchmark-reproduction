@@ -1,0 +1,298 @@
+{
+  "generated_at": "2026-09-26T06:27:14.574784+00:00",
+  "status": "passed",
+  "circuit_sha256": "dfceb74aacbcd14aeab9a680577996f67fbf2ffc8c7b4e321f7d3658b3ace2c5",
+  "results_sha256": "8dc1b78c976fdad12f4d42d93cb942fe1cc7c02d7a595b1798fdfc8e37d11f3f",
+  "contract_sha256": "43795aabfd96f49ab03cb2257e4e7c14e46a68c093320028f05f53c65519e46a",
+  "measurement_cross_checks": [
+    {
+      "metric": "transducer_gain_db_min",
+      "report": 18.552718274612072,
+      "independent": 18.552718274612072,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "transducer_gain_db_max",
+      "report": 18.973414134422043,
+      "independent": 18.973414134422043,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "gain_ripple_db",
+      "report": 0.42069585980997104,
+      "independent": 0.42069585980997104,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "s11_db_max",
+      "report": -10.926463566198992,
+      "independent": -10.926463566198992,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "s22_db_max",
+      "report": -15.769358182357793,
+      "independent": -15.769358182357793,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "reverse_isolation_db_max",
+      "report": -38.75198929497796,
+      "independent": -38.75198929497796,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "stability_k_min",
+      "report": 4.660687200811959,
+      "independent": 4.660687200811959,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "stability_delta_max",
+      "report": 0.99782306896062,
+      "independent": 0.9978230689606201,
+      "absolute_difference": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "metric": "input_noise_density_max_vrthz",
+      "report": 1.09692701941093e-09,
+      "independent": 1.0969270194117348e-09,
+      "absolute_difference": 8.048467360140959e-22,
+      "passed": true
+    },
+    {
+      "metric": "noise_figure_db",
+      "report": 1.6190384220289633,
+      "independent": 1.6190384220353362,
+      "absolute_difference": 6.3729022059533236e-12,
+      "passed": true
+    },
+    {
+      "metric": "power_w",
+      "report": 0.0068831791251831665,
+      "independent": 0.0068831791251831665,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "iref_voltage_v",
+      "report": 0.555055199968375,
+      "independent": 0.555055199968375,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "iref_headroom_v",
+      "report": 1.244944800031625,
+      "independent": 1.244944800031625,
+      "absolute_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "original_nominal_checks": [
+    {
+      "name": "band_transducer_gain",
+      "passed": true,
+      "detail": "gain_min=18.6dB at SMIC18 TT1.8V27C; gain_max=19dB; ripple_max=0.421dB at SMIC18 TT1.8V27C"
+    },
+    {
+      "name": "input_match",
+      "passed": true,
+      "detail": "S11_worst=-10.9dB at SMIC18 TT1.8V27C"
+    },
+    {
+      "name": "output_match",
+      "passed": true,
+      "detail": "S22_worst=-15.8dB at SMIC18 TT1.8V27C"
+    },
+    {
+      "name": "noise_figure",
+      "passed": true,
+      "detail": "NF_worst=1.619dB at SMIC18 TT1.8V27C"
+    },
+    {
+      "name": "reverse_isolation",
+      "passed": true,
+      "detail": "S12_worst=-38.8dB at SMIC18 TT1.8V27C"
+    },
+    {
+      "name": "unconditional_stability",
+      "passed": true,
+      "detail": "K_min=4.661 at SMIC18 TT1.8V27C; delta_max=0.9978 at SMIC18 TT1.8V27C"
+    },
+    {
+      "name": "power_and_bias_compliance",
+      "passed": true,
+      "detail": "power_max=6.883mW at SMIC18 TT1.8V27C; iref_min=0.5551V; headroom_min=1.245V"
+    }
+  ],
+  "original_model_hashes_unchanged": true,
+  "rf_model_hashes_unchanged": true,
+  "source_snapshot_hashes_verified": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "group": "final",
+      "run": "runs/43/20260926T062412460504Z_rf",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ],
+      "fixtures_verified": true
+    },
+    {
+      "group": "baseline",
+      "run": "runs/43/20260926T062411488482Z_rf",
+      "actual_error_free": true,
+      "warnings": [],
+      "bridge_errors": [
+        "license error"
+      ],
+      "fixtures_verified": true
+    }
+  ],
+  "numerical_confirmation": {
+    "generated_at": "2026-09-26T06:24:13.845578+00:00",
+    "circuit_sha256": "dfceb74aacbcd14aeab9a680577996f67fbf2ffc8c7b4e321f7d3658b3ace2c5",
+    "baseline_groups": {
+      "rf": "runs/43/20260926T062411488482Z_rf"
+    },
+    "final_groups": {
+      "rf": "runs/43/20260926T062412460504Z_rf"
+    },
+    "baseline_grid": {
+      "band": 101,
+      "stability": 401,
+      "noise": 101
+    },
+    "final_grid": {
+      "band": 201,
+      "stability": 1601,
+      "noise": 201
+    },
+    "metrics": {
+      "transducer_gain_db_min": {
+        "baseline": 18.552718274612072,
+        "refined": 18.552718274612072,
+        "absolute_difference": 0.0,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      "transducer_gain_db_max": {
+        "baseline": 18.97341312418371,
+        "refined": 18.973414134422043,
+        "absolute_difference": 1.0102383320997887e-06,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      "gain_ripple_db": {
+        "baseline": 0.42069484957163894,
+        "refined": 0.42069585980997104,
+        "absolute_difference": 1.0102383320997887e-06,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      "s11_db_max": {
+        "baseline": -10.926463566198992,
+        "refined": -10.926463566198992,
+        "absolute_difference": 0.0,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      "s22_db_max": {
+        "baseline": -15.769358182357793,
+        "refined": -15.769358182357793,
+        "absolute_difference": 0.0,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      "reverse_isolation_db_max": {
+        "baseline": -38.75198929497796,
+        "refined": -38.75198929497796,
+        "absolute_difference": 0.0,
+        "maximum_difference": 0.05,
+        "passed": true
+      },
+      "noise_figure_db": {
+        "baseline": 1.6190384220289633,
+        "refined": 1.6190384220289633,
+        "absolute_difference": 0.0,
+        "maximum_difference": 0.005,
+        "passed": true
+      },
+      "stability_k_min": {
+        "baseline": 4.66095539409353,
+        "refined": 4.660687200811959,
+        "absolute_difference": 0.0002681932815704613,
+        "maximum_difference": 0.0466095539409353,
+        "passed": true
+      },
+      "stability_delta_max": {
+        "baseline": 0.99782306896062,
+        "refined": 0.99782306896062,
+        "absolute_difference": 0.0,
+        "maximum_difference": 0.0001,
+        "passed": true
+      },
+      "power_w": {
+        "baseline": 0.0068831791251831665,
+        "refined": 0.0068831791251831665,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-06,
+        "passed": true
+      },
+      "iref_voltage_v": {
+        "baseline": 0.555055199968375,
+        "refined": 0.555055199968375,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-05,
+        "passed": true
+      },
+      "iref_headroom_v": {
+        "baseline": 1.244944800031625,
+        "refined": 1.244944800031625,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-05,
+        "passed": true
+      }
+    },
+    "baseline_tier": "complete_original",
+    "refined_tier": "complete_original",
+    "passed": true
+  },
+  "schematic_instances": 39,
+  "schematic_terminals": 95,
+  "pdf_review_pending": false,
+  "full_upstream_signoff": false,
+  "independent_details": {
+    "noise_referral_maximum_relative_difference": 5.144666381078188e-12,
+    "forward_available_input_power_W": 0.0025,
+    "traveling_wave_definition": "a=(V+50I)/(2sqrt50), b=(V-50I)/(2sqrt50)",
+    "noise_definition": "OutputnoisePSD divided by loaded source-to-output gain squared then4kT50; no subtracting DUTnoise.",
+    "baseline_points": {
+      "band": 101,
+      "stability": 401,
+      "noise": 101
+    },
+    "final_points": {
+      "band": 201,
+      "stability": 1601,
+      "noise": 201
+    }
+  },
+  "method": "Traveling-wave voltage/current construction and available/loaded power ratio independently reproduce allSparams/gain; outputnoise andACgain independently reconstruct inputreferral/NF; original7checks on explicitnominalpoint only. Finegrid includesalloriginalfrequencies. NativeRFmodel/source/LUT hashes verified; noPDKalteration.",
+  "pdf": "reports/43-inductive-lna-review.pdf",
+  "pdf_sha256": "e53a6d373176010f665d528a9356b2f5803004bb56fe8a23ce22c2d133592aff",
+  "pdf_pages": 11,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-26T06:38:27.033270+00:00"
+}

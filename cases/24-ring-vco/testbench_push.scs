@@ -1,0 +1,17 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/24-ring-vco/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/24-ring-vco/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=2e-5 vabstol=1e-8 iabstol=1e-14
+saveOptions options save=selected
+VCTRL (vctrl 0) vsource type=pwl wave=[0 0 50n 0 51n 1.1 1u 1.1]
+VDDLOW (vddLOW 0) vsource dc=1.71
+XLOW (0 vctrl vddLOW outLOW) current_starved_ring_vco
+CLLOW (outLOW 0) capacitor c=20f
+save outLOW VDDLOW:p
+VDDHIGH (vddHIGH 0) vsource dc=1.89
+XHIGH (0 vctrl vddHIGH outHIGH) current_starved_ring_vco
+CLHIGH (outHIGH 0) capacitor c=20f
+save outHIGH VDDHIGH:p
+tran tran stop=1u maxstep=100p errpreset=conservative

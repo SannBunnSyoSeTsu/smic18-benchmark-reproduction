@@ -1,0 +1,53 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/31/20260922T091928285300Z_acquisition_hold/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=2e-06 vabstol=1e-9 iabstol=1e-12
+saveOptions options save=selected
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/31/20260922T091928285300Z_acquisition_hold/inputs/hd_cells.scs"
+VDDP (vddP 0) vsource dc=1.8
+VCMP (vcmP 0) vsource dc=.9
+VCLKP (clk_srcP 0) vsource type=pwl wave=[0 0 2e-09 0 2.05e-09 1.8 7.05e-09 1.8 7.1e-09 0 1.2e-08 0 1.205e-08 1.8 1.705e-08 1.8 1.71e-08 0 2.2e-08 0 2.205e-08 1.8 2.705e-08 1.8 2.71e-08 0 3e-08 0]
+RCLKP (clk_srcP clkP) resistor r=50
+VINPP (vinpP 0) vsource dc=1.3
+VINNP (vinnP 0) vsource dc=0.5
+XP (vinpP vinnP clkP vcmP vddP 0 vspP vsnP vtoppP vtopnP) bottom_plate_sampler
+save vinpP vinnP clkP clk_srcP vcmP vspP vsnP vtoppP vtopnP
+save VDDP:p VCMP:p VINPP:p VINNP:p VCLKP:p
+save XP.early XP.earlyb XP.late XP.lateb
+save XP.vgp XP.vgn XP.vgc
+save XP.XBP.CBT XP.XBP.CBB XP.XBP.CG XP.XBP.CLKP XP.XBP.CLKN
+save XP.XBN.CBT XP.XBN.CBB XP.XBN.CG XP.XBN.CLKP XP.XBN.CLKN
+save XP.XBC.CBT XP.XBC.CBB XP.XBC.CG XP.XBC.CLKP XP.XBC.CLKN
+save XP.XBP.PRE XP.XBN.PRE XP.XBC.PRE
+VDDN (vddN 0) vsource dc=1.8
+VCMN (vcmN 0) vsource dc=.9
+VCLKN (clk_srcN 0) vsource type=pwl wave=[0 0 2e-09 0 2.05e-09 1.8 7.05e-09 1.8 7.1e-09 0 1.2e-08 0 1.205e-08 1.8 1.705e-08 1.8 1.71e-08 0 2.2e-08 0 2.205e-08 1.8 2.705e-08 1.8 2.71e-08 0 3e-08 0]
+RCLKN (clk_srcN clkN) resistor r=50
+VINPN (vinpN 0) vsource dc=0.5
+VINNN (vinnN 0) vsource dc=1.3
+XN (vinpN vinnN clkN vcmN vddN 0 vspN vsnN vtoppN vtopnN) bottom_plate_sampler
+save vinpN vinnN clkN clk_srcN vcmN vspN vsnN vtoppN vtopnN
+save VDDN:p VCMN:p VINPN:p VINNN:p VCLKN:p
+save XN.early XN.earlyb XN.late XN.lateb
+save XN.vgp XN.vgn XN.vgc
+save XN.XBP.CBT XN.XBP.CBB XN.XBP.CG XN.XBP.CLKP XN.XBP.CLKN
+save XN.XBN.CBT XN.XBN.CBB XN.XBN.CG XN.XBN.CLKP XN.XBN.CLKN
+save XN.XBC.CBT XN.XBC.CBB XN.XBC.CG XN.XBC.CLKP XN.XBC.CLKN
+save XN.XBP.PRE XN.XBN.PRE XN.XBC.PRE
+VDDH (vddH 0) vsource dc=1.8
+VCMH (vcmH 0) vsource dc=.9
+VCLKH (clk_srcH 0) vsource type=pwl wave=[0 0 2e-09 0 2.05e-09 1.8 7.05e-09 1.8 7.1e-09 0 1.2e-08 0 1.205e-08 1.8 1.705e-08 1.8 1.71e-08 0 2.2e-08 0 2.205e-08 1.8 2.705e-08 1.8 2.71e-08 0 3e-08 0]
+RCLKH (clk_srcH clkH) resistor r=50
+VINPH (vinpH 0) vsource type=pwl wave=[0 1.3 8n 1.3 8.1n 0.5 30n 0.5]
+VINNH (vinnH 0) vsource type=pwl wave=[0 0.5 8n 0.5 8.1n 1.3 30n 1.3]
+XH (vinpH vinnH clkH vcmH vddH 0 vspH vsnH vtoppH vtopnH) bottom_plate_sampler
+save vinpH vinnH clkH clk_srcH vcmH vspH vsnH vtoppH vtopnH
+save VDDH:p VCMH:p VINPH:p VINNH:p VCLKH:p
+save XH.early XH.earlyb XH.late XH.lateb
+save XH.vgp XH.vgn XH.vgc
+save XH.XBP.CBT XH.XBP.CBB XH.XBP.CG XH.XBP.CLKP XH.XBP.CLKN
+save XH.XBN.CBT XH.XBN.CBB XH.XBN.CG XH.XBN.CLKP XH.XBN.CLKN
+save XH.XBC.CBT XH.XBC.CBB XH.XBC.CG XH.XBC.CLKP XH.XBC.CLKN
+save XH.XBP.PRE XH.XBN.PRE XH.XBC.PRE
+tran tran stop=30n maxstep=5p errpreset=conservative

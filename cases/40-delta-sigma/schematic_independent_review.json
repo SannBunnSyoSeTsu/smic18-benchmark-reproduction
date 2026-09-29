@@ -1,0 +1,506 @@
+{
+  "slot": 40,
+  "case": "cases/40-delta-sigma",
+  "circuit_sha256": "86767b3e18b29812fe33bfdfa9971c67dff4512ca22bafaa31356676d058bbf4",
+  "hd_cells_sha256": null,
+  "top": "sigma_system",
+  "source_definition_count": 69,
+  "source_terminal_count": 256,
+  "source_expanded_leaf_count": 66,
+  "hierarchy_boundaries": [
+    {
+      "path": "XADC",
+      "definition": "sigma_adc",
+      "port_bindings": {
+        "vss": "vss",
+        "vdd": "vdd",
+        "vip": "vip",
+        "vin": "vin",
+        "vp": "vp",
+        "vn": "vn",
+        "vcm": "vcm",
+        "ctrl_a": "ctrl_a",
+        "ctrl_b": "ctrl_b",
+        "c1a": "c1a",
+        "c1b": "c1b",
+        "c2a": "c2a",
+        "c2b": "c2b",
+        "intp": "intp",
+        "intn": "intn",
+        "inp": "inp",
+        "inn": "inn"
+      }
+    },
+    {
+      "path": "XOTA",
+      "definition": "ds_ota",
+      "port_bindings": {
+        "vss": "vss",
+        "iref": "iref",
+        "vdd": "vdd",
+        "vinn": "inn",
+        "vinp": "inp",
+        "vocm": "vocm",
+        "voutn": "intp",
+        "voutp": "intn"
+      }
+    },
+    {
+      "path": "XSA",
+      "definition": "ds_comparator",
+      "port_bindings": {
+        "voutp": "ctrl_b",
+        "voutn": "ctrl_a",
+        "vinp": "sa_inp",
+        "vinn": "sa_inn",
+        "clk": "cmpclk",
+        "vdd": "vdd",
+        "vss": "vss"
+      }
+    }
+  ],
+  "connectivity_sha256": "e3a5d1f555eaa4f30ef1f9c7ec66d6f05fa94a5a3ce16611ed7a94d1e9cbe52b",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 69,
+  "schematic_expanded_leaf_count": 66,
+  "independently_traced_terminals": 256,
+  "expanded_leaf_counts_by_kind": {
+    "C": 10,
+    "MOS": 46,
+    "R": 10
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "ds_ota/MREF",
+      "D_G_S_B": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ds_ota/MTAIL",
+      "D_G_S_B": [
+        "tail",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ds_ota/MINP",
+      "D_G_S_B": [
+        "voutn",
+        "vinp",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ds_ota/MINN",
+      "D_G_S_B": [
+        "voutp",
+        "vinn",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ds_ota/MLP",
+      "D_G_S_B": [
+        "voutp",
+        "vcmfb",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ds_ota/MLN",
+      "D_G_S_B": [
+        "voutn",
+        "vcmfb",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ds_ota/MCTAIL",
+      "D_G_S_B": [
+        "ctail",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ds_ota/MCSENSE",
+      "D_G_S_B": [
+        "cmirror",
+        "sense",
+        "ctail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ds_ota/MCREF",
+      "D_G_S_B": [
+        "vcmfb",
+        "vocm",
+        "ctail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ds_ota/MCLE",
+      "D_G_S_B": [
+        "cmirror",
+        "cmirror",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ds_ota/MCLR",
+      "D_G_S_B": [
+        "vcmfb",
+        "vcmfb",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ds_comparator/MRSTP",
+      "D_G_S_B": [
+        "voutp",
+        "clk",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ds_comparator/MRSTN",
+      "D_G_S_B": [
+        "voutn",
+        "clk",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ds_comparator/MTAIL",
+      "D_G_S_B": [
+        "tail",
+        "clk",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ds_comparator/MINP",
+      "D_G_S_B": [
+        "voutp",
+        "vinp",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ds_comparator/MINN",
+      "D_G_S_B": [
+        "voutn",
+        "vinn",
+        "tail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "ds_comparator/MLP",
+      "D_G_S_B": [
+        "voutp",
+        "voutn",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "ds_comparator/MLN",
+      "D_G_S_B": [
+        "voutn",
+        "voutp",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MHNa",
+      "D_G_S_B": [
+        "hold_a",
+        "c1a",
+        "ctrl_a",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MHPa",
+      "D_G_S_B": [
+        "hold_a",
+        "c1b",
+        "ctrl_a",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MHNb",
+      "D_G_S_B": [
+        "hold_b",
+        "c1a",
+        "ctrl_b",
+        "vss"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MHPb",
+      "D_G_S_B": [
+        "hold_b",
+        "c1b",
+        "ctrl_b",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MDPH",
+      "D_G_S_B": [
+        "dac_p",
+        "hold_a",
+        "vp",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MDPHP",
+      "D_G_S_B": [
+        "dac_p",
+        "hold_b",
+        "vp",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MDPL",
+      "D_G_S_B": [
+        "dac_p",
+        "hold_b",
+        "vn",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MDPLP",
+      "D_G_S_B": [
+        "dac_p",
+        "hold_a",
+        "vn",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MDNH",
+      "D_G_S_B": [
+        "dac_n",
+        "hold_a",
+        "vn",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MDNHP",
+      "D_G_S_B": [
+        "dac_n",
+        "hold_b",
+        "vn",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MDNL",
+      "D_G_S_B": [
+        "dac_n",
+        "hold_b",
+        "vp",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MDNLP",
+      "D_G_S_B": [
+        "dac_n",
+        "hold_a",
+        "vp",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MS1",
+      "D_G_S_B": [
+        "cspt",
+        "c1a",
+        "vip",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MS1P",
+      "D_G_S_B": [
+        "cspt",
+        "c1b",
+        "vip",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MS2",
+      "D_G_S_B": [
+        "cspb",
+        "c1a",
+        "vcm",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MS2P",
+      "D_G_S_B": [
+        "cspb",
+        "c1b",
+        "vcm",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MS3",
+      "D_G_S_B": [
+        "csnt",
+        "c1a",
+        "vin",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MS3P",
+      "D_G_S_B": [
+        "csnt",
+        "c1b",
+        "vin",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MS4",
+      "D_G_S_B": [
+        "csnb",
+        "c1a",
+        "vcm",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MS4P",
+      "D_G_S_B": [
+        "csnb",
+        "c1b",
+        "vcm",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MI1",
+      "D_G_S_B": [
+        "cspt",
+        "c2a",
+        "inp",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MI1P",
+      "D_G_S_B": [
+        "cspt",
+        "c2b",
+        "inp",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MI2",
+      "D_G_S_B": [
+        "cspb",
+        "c2a",
+        "dac_p",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MI2P",
+      "D_G_S_B": [
+        "cspb",
+        "c2b",
+        "dac_p",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MI3",
+      "D_G_S_B": [
+        "csnt",
+        "c2a",
+        "inn",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MI3P",
+      "D_G_S_B": [
+        "csnt",
+        "c2b",
+        "inn",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MI4",
+      "D_G_S_B": [
+        "csnb",
+        "c2a",
+        "dac_n",
+        "vn"
+      ]
+    },
+    {
+      "instance": "sigma_adc/MI4P",
+      "D_G_S_B": [
+        "csnb",
+        "c2b",
+        "dac_n",
+        "vdd"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 68,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

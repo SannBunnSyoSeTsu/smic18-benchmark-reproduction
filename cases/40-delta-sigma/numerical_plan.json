@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-09-29T03:56:10.028604+00:00",
+  "baseline_groups": {
+    "nominal": "runs/40/20260929T034938077370Z_nominal",
+    "mid_pos": "runs/40/20260929T035042992331Z_mid_pos",
+    "mid_inv": "runs/40/20260929T035151629618Z_mid_inv"
+  },
+  "baseline": {
+    "maxstep_s": 1e-09,
+    "global_reltol": 1e-05,
+    "effective_conservative_reltol": 1e-06
+  },
+  "refined": {
+    "maxstep_s": 5e-10,
+    "global_reltol": 1e-06,
+    "effective_conservative_reltol": 1e-07
+  },
+  "absolute_difference_limits": {
+    "dc": 0.00390625,
+    "gain": 0.005,
+    "sndr8_dB": 0.75,
+    "sndr16_dB": 0.75,
+    "sndr32_dB": 0.75,
+    "shaping_dB": 0.75,
+    "density": 0.001953125,
+    "transitions": 0.008,
+    "invalid": 0,
+    "state_peak_V": 0.005,
+    "source_mean_power_W": 7.5e-05,
+    "time_weighted_power_W": 1e-05,
+    "DC_error": 0.00390625,
+    "coefficient_real": 0.002,
+    "coefficient_imag": 0.002,
+    "polarity_amplitude_ratio": 0.005,
+    "polarity_phase_error_deg": 0.3,
+    "osr_improvement_dB": 1.0
+  },
+  "bitstream_difference_fraction_max": 0.02,
+  "rationale": "SC loop finite512-bit spectrum may move with individual decisions; require stable original pass,sub-dB spectra,half-percent gain,onecode density and2%bitstream bound. Original sample-mean current depends on adaptive step distribution; physical time-weighted current held to10uW."
+}

@@ -1,0 +1,257 @@
+{
+  "generated_at": "2026-09-26T02:18:21.819529+00:00",
+  "status": "passed",
+  "circuit_sha256": "35c5a82bce4de256e274a922797be82a4e0696d81bbd295a1da8830424083029",
+  "results_sha256": "75166d6aea0ec6450b2cf699079b6763ec4c26d2f1a3ecabb847b31b60e51b31",
+  "contract_sha256": "99942ca8a9b8832bc2a7e760dc7f83fb76a2f410d963795c611e9a94d51f6e6d",
+  "upstream_verifier_sha256": "aedee1875b07657f585fa827bf058225bf59f5aba007aa8fb86cd0981eeb9567",
+  "measurement_cross_checks": [
+    {
+      "name": "startup1:window_min_V",
+      "report": 1.224476480433206,
+      "independent": 1.2244764804332062,
+      "absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "startup1:window_max_V",
+      "report": 1.225071523620105,
+      "independent": 1.225071523620105,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "startup1:final_V",
+      "report": 1.225071523620105,
+      "independent": 1.225071523620105,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "startup1:overshoot_V",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "startup1:peak_current_A",
+      "report": 0.0005799629132694145,
+      "independent": 0.0005799629132694145,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "startup1:energy_J",
+      "report": 2.1232770685392355e-09,
+      "independent": 2.1232770685392298e-09,
+      "absolute_difference": 5.790264287871194e-24,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "startup10:window_min_V",
+      "report": 1.225024314646884,
+      "independent": 1.225024314646884,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "startup10:window_max_V",
+      "report": 1.225072696515178,
+      "independent": 1.225072696515178,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "startup10:final_V",
+      "report": 1.225072696515178,
+      "independent": 1.225072696515178,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "startup10:overshoot_V",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "startup10:peak_current_A",
+      "report": 5.546324476314112e-05,
+      "independent": 5.546324476314112e-05,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "startup10:energy_J",
+      "report": 2.3269467529346634e-09,
+      "independent": 2.326946752934658e-09,
+      "absolute_difference": 5.37667398159468e-24,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "AC maximum",
+      "report": 0.032789193729705325,
+      "independent": 0.032789193729705325,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Output noise integral",
+      "report": 0.00023249275174980338,
+      "independent": 0.00023249275174980338,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "step up peak",
+      "report": 0.005332848504974841,
+      "independent": 0.005332848504974841,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "step up last outside",
+      "report": 2.801999999998962e-06,
+      "independent": 2.801999999998962e-06,
+      "absolute_difference": 0.0,
+      "tolerance": 2.1e-09,
+      "passed": true
+    },
+    {
+      "name": "step down peak",
+      "report": 0.010900929486090005,
+      "independent": 0.010900929486090005,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "step down last outside",
+      "report": 3.98199999999823e-06,
+      "independent": 3.98199999999823e-06,
+      "absolute_difference": 0.0,
+      "tolerance": 2.1e-09,
+      "passed": true
+    },
+    {
+      "name": "temperature coefficient",
+      "report": 7.453173795538736,
+      "independent": 7.453173795538736,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "line regulation",
+      "report": 0.004468536570911224,
+      "independent": 0.004468536570911224,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    }
+  ],
+  "schematic_independent_review": "cases/11-bandgap/schematic_independent_review.json",
+  "run_provenance": [
+    {
+      "label": "acnoise",
+      "run": "runs/11/20260926T020532404519Z_acnoise",
+      "warnings": [],
+      "inputs_intact": true,
+      "models_intact": true,
+      "bridge_diagnostic": [
+        "license error"
+      ],
+      "diagnostic_review": "Bridge runner.py combines any occurrence of license with any occurrence of error, including the final 0 errors message. Raw Spectre reports successful licensing and zero errors/warnings; completed data and inputs independently verified. Original metadata preserved.",
+      "log_files": {
+        "runs/11/20260926T020532404519Z_acnoise/output/bench.log": "a11dd20b3820c9cf9d7c13247ed790932adcfae6996ad28f9ef20b3b11398466"
+      }
+    },
+    {
+      "label": "startup1",
+      "run": "runs/11/20260926T020533129366Z_startup1",
+      "warnings": [],
+      "inputs_intact": true,
+      "models_intact": true,
+      "bridge_diagnostic": [
+        "license error"
+      ],
+      "diagnostic_review": "Bridge runner.py combines any occurrence of license with any occurrence of error, including the final 0 errors message. Raw Spectre reports successful licensing and zero errors/warnings; completed data and inputs independently verified. Original metadata preserved.",
+      "log_files": {
+        "runs/11/20260926T020533129366Z_startup1/output/bench.log": "3fb5f62a6e39ac2fefaf7c96ef966147ec9b29eda623288809a740169e623d67"
+      }
+    },
+    {
+      "label": "step",
+      "run": "runs/11/20260926T020534268332Z_step",
+      "warnings": [],
+      "inputs_intact": true,
+      "models_intact": true,
+      "bridge_diagnostic": [
+        "license error"
+      ],
+      "diagnostic_review": "Bridge runner.py combines any occurrence of license with any occurrence of error, including the final 0 errors message. Raw Spectre reports successful licensing and zero errors/warnings; completed data and inputs independently verified. Original metadata preserved.",
+      "log_files": {
+        "runs/11/20260926T020534268332Z_step/output/bench.log": "39136f830140bdb64e10e8d98efc23bf05b9e5b4a522dc71e1e5f1df32507f14"
+      }
+    },
+    {
+      "label": "static",
+      "run": "runs/11/20260926T020742387816Z_static",
+      "warnings": [],
+      "inputs_intact": true,
+      "models_intact": true,
+      "bridge_diagnostic": [
+        "license error"
+      ],
+      "diagnostic_review": "Bridge runner.py combines any occurrence of license with any occurrence of error, including the final 0 errors message. Raw Spectre reports successful licensing and zero errors/warnings; completed data and inputs independently verified. Original metadata preserved.",
+      "log_files": {
+        "runs/11/20260926T020742387816Z_static/output/bench.log": "2e4e6706d24b8e8d78d2604eb303c2748e92818362ac6898b30e74445775b068"
+      }
+    },
+    {
+      "label": "startup10",
+      "run": "runs/11/20260926T020743564236Z_startup10",
+      "warnings": [],
+      "inputs_intact": true,
+      "models_intact": true,
+      "bridge_diagnostic": [
+        "license error"
+      ],
+      "diagnostic_review": "Bridge runner.py combines any occurrence of license with any occurrence of error, including the final 0 errors message. Raw Spectre reports successful licensing and zero errors/warnings; completed data and inputs independently verified. Original metadata preserved.",
+      "log_files": {
+        "runs/11/20260926T020743564236Z_startup10/output/bench.log": "09a15ce27b903d2d1658d569de4799af0fef4c5747a3246488328e17071ba578"
+      }
+    }
+  ],
+  "all_final_runs_same_circuit": true,
+  "original_model_hashes_unchanged": true,
+  "lut_hashes_unchanged": true,
+  "all_original_gates_pass": true,
+  "full_upstream_signoff": false,
+  "pdf_review_pending": false,
+  "method": "Current agent independent calculation pass. Actual Spectre waveforms adapted in memory to the original verifier Plot interface; upstream analyze executes unchanged. Original full-PVT score function was not invoked.",
+  "pdf": "reports/11-bandgap-review.pdf",
+  "pdf_sha256": "280f487b5ee1785fb20c5e5fc5d36f8d40e6c26ebdacc6e2261e5bb0669d0fdf",
+  "pdf_pages": 11,
+  "delivery_reviewed_at": "2026-09-26T02:27:59.631641+00:00",
+  "source_snapshot_hashes_verified": true,
+  "source_snapshot_count": 9,
+  "schematic_visual_review_complete": true
+}

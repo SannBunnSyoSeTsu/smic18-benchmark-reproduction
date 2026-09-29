@@ -1,0 +1,19 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        CTRL["HD控制反相"]
+        S1["第一级4个2:1传输门选择"]
+        S2["第二级2个2:1选择"]
+        S3["第三级1个2:1选择"]
+    end
+    VIN["8路模拟输入"]
+    SEL["3位地址"]
+    OUT["输出及负载"]
+    VIN --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> OUT
+    SEL -.-> CTRL
+    CTRL -.->|"最低位"| S1
+    CTRL -.->|"中间位"| S2
+    CTRL -.->|"最高位"| S3

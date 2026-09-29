@@ -1,0 +1,40 @@
+simulator lang=spectre
+subckt buf_ppsf_bs (IREF VCM VDD VIN VIP VON VOP VSS)
+MREF (IREF IREF VSS VSS) n18 w=8.86u l=1u m=1
+MBN (pb IREF VSS VSS) n18 w=8.86u l=1u m=1
+MBP (pb pb VDD VDD) p18 w=28.48u l=1u m=1
+MPBN1 (VBN1 pb VDD VDD) p18 w=28.48u l=1u m=1
+MNBN1 (VBN1 VBN1 VCM VCM) n18 w=7.96u l=0.36u m=1
+MNBP1 (VBP1 IREF VSS VSS) n18 w=8.86u l=1u m=1
+MPBP1 (VBP1 VBP1 VCM VCM) p18 w=32.64u l=0.36u m=1
+MPBN2 (VBN2 pb VDD VDD) p18 w=28.48u l=1u m=1
+MNBN2 (VBN2 VBN2 nbs nbs) n18 w=3.34u l=0.36u m=1
+MNBP2 (VBP2 IREF VSS VSS) n18 w=8.86u l=1u m=1
+MPBP2 (VBP2 VBP2 pbs pbs) p18 w=13.94u l=0.36u m=1
+RNB (nbs VCM) resistor r=8999.999999999998
+RPB (VCM pbs) resistor r=8999.999999999998
+MINP (ndP gnP VOP VOP) n18 w=7.96u l=0.36u m=6
+MCNP (VDD gcnP ndP ndP) n18 w=3.34u l=0.36u m=6
+MIPP (pdP gpP VOP VOP) p18 w=32.64u l=0.36u m=6
+MCPP (VSS gcpP pdP pdP) p18 w=13.94u l=0.36u m=6
+RgnP (VBN1 gnP) resistor r=1Meg
+CgnP (gnP VIP) capacitor c=5p
+RgpP (VBP1 gpP) resistor r=1Meg
+CgpP (gpP VIP) capacitor c=5p
+RgcnP (VBN2 gcnP) resistor r=1Meg
+CgcnP (gcnP VOP) capacitor c=5p
+RgcpP (VBP2 gcpP) resistor r=1Meg
+CgcpP (gcpP VOP) capacitor c=5p
+MINN (ndN gnN VON VON) n18 w=7.96u l=0.36u m=6
+MCNN (VDD gcnN ndN ndN) n18 w=3.34u l=0.36u m=6
+MIPN (pdN gpN VON VON) p18 w=32.64u l=0.36u m=6
+MCPN (VSS gcpN pdN pdN) p18 w=13.94u l=0.36u m=6
+RgnN (VBN1 gnN) resistor r=1Meg
+CgnN (gnN VIN) capacitor c=5p
+RgpN (VBP1 gpN) resistor r=1Meg
+CgpN (gpN VIN) capacitor c=5p
+RgcnN (VBN2 gcnN) resistor r=1Meg
+CgcnN (gcnN VON) capacitor c=5p
+RgcpN (VBP2 gcpN) resistor r=1Meg
+CgcpN (gcpN VON) capacitor c=5p
+ends buf_ppsf_bs

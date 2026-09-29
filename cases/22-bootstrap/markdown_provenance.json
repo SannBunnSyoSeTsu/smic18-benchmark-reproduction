@@ -1,0 +1,293 @@
+{
+  "generated_at": "2026-09-29T05:26:16.330337+00:00",
+  "status": "passed",
+  "method": "Editable text/table reconstruction from delivered vector PDF using Poppler XML; every PDF text fragment accounted for; tables rendered and shape-checked; plots and exact netlist retained.",
+  "pdf": "reports/22-bootstrap-review.pdf",
+  "pdf_sha256": "07abab300682755a37411d38889fcdfda6f58acee369530299fd14287fe01968",
+  "circuit_sha256": "496999c7be4b570b7703c9764e96497a300c7d78197c84eab4b3b99b97437152",
+  "results_sha256": "93c9afb135c47da08a3eefccc33f8e27eb4cce8a036c3963b7047e4d980c61c6",
+  "markdown_sha256": "ef960564a64bf113ac903df54b71b3b1157a50e7bd7ee2ee64920a1b305cec04",
+  "body_pages": 5,
+  "tables": 4,
+  "pages": [
+    {
+      "page": 1,
+      "tables": [
+        {
+          "top": 459.0,
+          "headers": [
+            "指标",
+            "实测",
+            "原门槛",
+            "10%边界",
+            "15%边界",
+            "单位"
+          ],
+          "rows": [
+            [
+              "采样SDR",
+              "72.37828",
+              "≥72",
+              "≥71.085",
+              "≥70.588",
+              "dB"
+            ],
+            [
+              "最小mid-track VGS",
+              "0.864447",
+              "≥0.8",
+              "≥0.72",
+              "≥0.68",
+              "VDD"
+            ],
+            [
+              "正样本保留增益",
+              "0.9745333",
+              "≥0.9",
+              "≥0.81",
+              "≥0.765",
+              "V/V"
+            ],
+            [
+              "负样本保留增益",
+              "0.9745333",
+              "≥0.9",
+              "≥0.81",
+              "≥0.765",
+              "V/V"
+            ],
+            [
+              "DUT供电功耗",
+              "254.9556",
+              "≤500",
+              "≤550",
+              "≤575",
+              "uW"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 54,
+      "accounted_pdf_text_fragments": 54,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 2,
+      "tables": [
+        {
+          "top": 537.0,
+          "headers": [
+            "角色",
+            "模型",
+            "单位W/L (um)",
+            "LUT gm/ID",
+            "选点电流"
+          ],
+          "rows": [
+            [
+              "自举NMOS单位",
+              "n18",
+              "5.1/0.18",
+              "8",
+              "200 uA"
+            ],
+            [
+              "自举PMOS单位",
+              "p18",
+              "14.8/0.18",
+              "8",
+              "200 uA"
+            ],
+            [
+              "固定外部采样管",
+              "n18",
+              "64/0.18",
+              "8，反查",
+              "2.51228 mA"
+            ]
+          ],
+          "pdf_text_indices": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 41,
+      "accounted_pdf_text_fragments": 41,
+      "plot_text_fragments": 9
+    },
+    {
+      "page": 3,
+      "tables": [],
+      "total_pdf_text_fragments": 54,
+      "accounted_pdf_text_fragments": 54,
+      "plot_text_fragments": 47
+    },
+    {
+      "page": 4,
+      "tables": [
+        {
+          "top": 575.0,
+          "headers": [
+            "端口",
+            "平均功率/uW",
+            "边界"
+          ],
+          "rows": [
+            [
+              "DUT VDD",
+              "254.955574",
+              "原500 uW门槛使用此项"
+            ],
+            [
+              "外部HD缓冲供电",
+              "58.873537",
+              "按原合同排除，另列"
+            ],
+            [
+              "50 Ω前时钟源",
+              "1.906795",
+              "诊断；不是DUT VDD"
+            ]
+          ],
+          "pdf_text_indices": [
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+          ]
+        },
+        {
+          "top": 875.0,
+          "headers": [
+            "指标",
+            "最大步5 ps",
+            "最大步2.5 ps",
+            "绝对差"
+          ],
+          "rows": [
+            [
+              "SDR / dB",
+              "72.3782155",
+              "72.3782821",
+              "6.659e-05"
+            ],
+            [
+              "最小VGS / VDD",
+              "0.864447011",
+              "0.86444702",
+              "9.616e-09"
+            ],
+            [
+              "DUT功耗 / uW",
+              "254.953904",
+              "254.955574",
+              "0.00167"
+            ]
+          ],
+          "pdf_text_indices": [
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 59,
+      "accounted_pdf_text_fragments": 59,
+      "plot_text_fragments": 23
+    },
+    {
+      "page": 5,
+      "tables": [],
+      "total_pdf_text_fragments": 35,
+      "accounted_pdf_text_fragments": 35,
+      "plot_text_fragments": 0
+    }
+  ],
+  "assets": {
+    "markdown_assets/page-04.png": "9076bd39b8b0be3c6d4ef4ebcaf05280e0c3c1baf10422c6991fa3bd5030c5e7",
+    "markdown_assets/page-02.png": "0e0e9054120ffe01c6eaa558d6a67021dffd013981120d54585b96865ede1afe",
+    "markdown_assets/page-05.png": "aa4ed778096ba5fcff05cdeefa2cdfde1393d2f3771ee586c10ddd45752fa9dd",
+    "markdown_assets/page-01.png": "c9c6667c1fd6ae5290bc13cb6874e707d98b7b4d00bc7c7caaa99ecad3d99641",
+    "markdown_assets/page-03.png": "fec804a0c5e7ece21827e817a04f87bdae3f74e9d567088cea78c2d06196a413"
+  },
+  "restored_markdown_sha256": "79b981278acd1c92315612e2510dd10ba64bbf9b735a689809351ca315b1ea7b",
+  "system_diagram_sha256": "35f7b2ccfafe83b5a8e223b7073ff9d1c41d00eb1c4a15569105ab5c461693d8"
+}

@@ -1,0 +1,8 @@
+{
+  "stopped_at": "2026-09-29T05:06:21.930132+00:00",
+  "runs": [
+    "20260929T050135279650Z_precision_refined_10mv",
+    "20260929T050135279841Z_precision_refined_20mv"
+  ],
+  "reason": "At1nV absolute tolerance the two runs reached only~7ns of107.78ns after several minutes, dominated by ideal-relay solver recovery. No scored measurement window was reached. Retain10nV absolute tolerance already completed on both baseline inputs; still halve maxstep and tighten global reltol by10. Original metric comparison bounds remain unchanged."
+}

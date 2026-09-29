@@ -1,0 +1,84 @@
+{
+  "source_task": "sky130-lc-vco-2ghz-pvt",
+  "process": "SMIC18MMRF",
+  "corner": "tt",
+  "temperature_C": 27,
+  "nominal_VDD_V": 1.8,
+  "pushing_VDD_V": [
+    1.62,
+    1.98
+  ],
+  "reference_sink_A": 5e-05,
+  "load_each_F": 1e-14,
+  "controls_V": [
+    0,
+    0.6,
+    1.2,
+    1.8
+  ],
+  "control_step_end_s": [
+    0,
+    4e-08,
+    8e-08,
+    1.2e-07
+  ],
+  "control_ramp_s": 1e-10,
+  "measurement_windows_s": [
+    [
+      2e-08,
+      3.9e-08
+    ],
+    [
+      6e-08,
+      7.9e-08
+    ],
+    [
+      1e-07,
+      1.19e-07
+    ],
+    [
+      1.4e-07,
+      1.59e-07
+    ]
+  ],
+  "stop_s": 1.6e-07,
+  "max_step_s": 5e-12,
+  "initial_voltages_V": {
+    "outp": 0.61,
+    "outn": 0.59
+  },
+  "skip_DC": true,
+  "frequency_definition": "19/(crossing20-crossing1), differential rising zero crossings counted from each fixedwindow start; crossing20 must remain insidewindow",
+  "limits": {
+    "frequency0_min_Hz": 2080000000.0,
+    "frequency1p8_max_Hz": 1720000000.0,
+    "tuning_ratio_min": 1.25,
+    "step_drop_min_Hz": 8000000.0,
+    "swing_min_Vpp": 0.3,
+    "startup_max_s": 1.4e-08,
+    "startup_threshold_V": 0.2,
+    "output_min_V": -0.05,
+    "output_max_VDD": 0.75,
+    "commonmode_min_VDD": 0.18,
+    "commonmode_max_VDD": 0.48,
+    "reference_min_V": 0.22,
+    "reference_headroom_min_V": 0.9,
+    "power_max_W": 0.0024,
+    "pushing_max_pct_per_V": 0.6
+  },
+  "power_window_s": [
+    2e-08,
+    1.59e-07
+  ],
+  "power_definition": "-VDD*timeweighted mean(I(VDD)), includes all3 tuning transitions and reference branch",
+  "pushing_definition": "100*abs(f1.98-f1.62)/mean(f1.98,f1.62)/0.36, each of4 controls,TT27C",
+  "coverage_2GHz_functional": true,
+  "scope_excludes": [
+    "remaining26 fullPVT rows",
+    "SS/FF and non27C pushing",
+    "phase noise/jitter (not an original metric)",
+    "mismatch/MonteCarlo",
+    "PEX"
+  ],
+  "structure": "Sourceverifierimposespublished electrical behavior; fullnativeRFpassives retained here withoutideal tank substitution. No digital logic."
+}

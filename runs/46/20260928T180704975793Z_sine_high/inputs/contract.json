@@ -1,0 +1,97 @@
+{
+  "source_task": "sky130-flash-adc-3bit-pvt",
+  "scope": "SMIC18 TT1.8V27C: fullspeed ramp,26code transition stress, coherent bins1and7 at original212/279.25degree phases. Sine functional stimuli moved toTTnominal; original four other static/transition PVT andtwo dynamic PVT conditions notclaimed.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "references_V": [
+    0.6,
+    1.4
+  ],
+  "LSB_V": 0.1,
+  "clock": {
+    "Hz": 50000000.0,
+    "delay_s": 1e-08,
+    "rise_fall_s": 3e-10,
+    "width_s": 9.4e-09,
+    "source_ohm": 50
+  },
+  "output_load_F": 1.5e-14,
+  "ideal_input_drive_ohm": 0,
+  "sample_offset_s": 1.9e-08,
+  "stable_window_after_edge_s": [
+    9.5e-09,
+    1.9e-08
+  ],
+  "transition_codes": [
+    0,
+    7,
+    3,
+    5,
+    1,
+    6,
+    2,
+    4,
+    7,
+    0,
+    4,
+    2,
+    6,
+    1,
+    5,
+    3,
+    7,
+    0,
+    2,
+    5,
+    0,
+    7,
+    1,
+    6,
+    3,
+    4
+  ],
+  "transition_stop_s": 5.4e-07,
+  "ramp_stop_s": 2.2e-06,
+  "ramp_V": [
+    0.55,
+    1.45
+  ],
+  "ramp_s": [
+    1e-07,
+    2.1e-06
+  ],
+  "sine": {
+    "Hz": [
+      3125000.0,
+      21875000.0
+    ],
+    "phase_deg": [
+      212,
+      279.25
+    ],
+    "offset_V": 1,
+    "amplitude_V": 0.39,
+    "N": 16,
+    "first_edge_s": 5e-08
+  },
+  "dnl_inl_absolute_error_max_LSB": 0.3,
+  "delay_max_s": 9.5e-09,
+  "core_reference_power_max_W": 0.001,
+  "clock_positive_power_max_W": 0.00025,
+  "power_window_s": [
+    1e-07,
+    5e-07
+  ],
+  "sndr_min_dB": 17,
+  "sfdr_min_dB": 21,
+  "normalized_ENOB_min": 2.5,
+  "nonrelaxable": "allcodes/thresholds,monotonic,correcttransitions,requiredcrossings,valid0.2/0.8VDDlevels,9.5-to19ns stability",
+  "allowed": "nativeMOS,positiveidealR/C,exactHDcells; no behavioralsources",
+  "unmodeled": [
+    "device noise",
+    "mismatch",
+    "metastability statistics",
+    "PEX",
+    "nonidealreference/inputdrivers"
+  ]
+}

@@ -1,0 +1,64 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/44/20260922T054841824289Z_ota5/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=2e-5 vabstol=1e-8 iabstol=1e-14 gmin=1e-14
+// Power/noise copy, same closed DC unity feedback as upstream.
+VDDP (vddp 0) vsource dc=1.8
+IBIASP (vddp ibias_p) isource dc=50u
+VINP (vinp_p 0) vsource dc=.9 mag=1
+VTESTP (vout_p vinn_p) vsource dc=0
+XP (0 ibias_p vddp vinn_p vinp_p vout_p) ota_5t
+CLP (vout_p 0) capacitor c=1p
+// Voltage injection.
+VDDV (vddv 0) vsource dc=1.8
+IBIASV (vddv ibias_v) isource dc=50u
+VINV (vinp_v 0) vsource dc=.9
+VXV (mv xv) vsource dc=0
+VYV (mv yv) vsource dc=0 mag=1
+XV (0 ibias_v vddv xv vinp_v yv) ota_5t
+CLV (yv 0) capacitor c=1p
+// Current injection.
+VDDI (vddi 0) vsource dc=1.8
+IBIASI (vddi ibias_i) isource dc=50u
+VINI (vinp_i 0) vsource dc=.9
+VXI (mi xi) vsource dc=0
+VYI (mi yi) vsource dc=0
+ITI (0 mi) isource dc=0 mag=1
+XI (0 ibias_i vddi xi vinp_i yi) ota_5t
+CLI (yi 0) capacitor c=1p
+// Natural open-loop differential/common-mode reference, no output clamp.
+VDDR (vddr 0) vsource dc=1.8
+IBIASDM (vddr ibias_dm) isource dc=50u
+VDMP (vinp_dm 0) vsource dc=.9 mag=.5
+VDMN (vinn_dm 0) vsource dc=.9 mag=.5 phase=180
+XDM (0 ibias_dm vddr vinn_dm vinp_dm vout_dm) ota_5t
+CLDM (vout_dm 0) capacitor c=1p
+IBIASCM (vddr ibias_cm) isource dc=50u
+VCMP (vinp_cm 0) vsource dc=.9 mag=1
+VCMN (vinn_cm 0) vsource dc=.9 mag=1
+XCM (0 ibias_cm vddr vinn_cm vinp_cm vout_cm) ota_5t
+CLCM (vout_cm 0) capacitor c=1p
+// Positive rail rejection, inputs fixed relative to ground.
+VDDPS (vddps 0) vsource dc=1.8 mag=1
+IBIASPS (vddps ibias_ps) isource dc=50u
+VPSP (vinp_ps 0) vsource dc=.9
+VPSN (vinn_ps 0) vsource dc=.9
+XPS (0 ibias_ps vddps vinn_ps vinp_ps vout_ps) ota_5t
+CLPS (vout_ps 0) capacitor c=1p
+// Negative rail rejection, VDD and inputs fixed to absolute ground.
+VSSMS (vssms 0) vsource dc=0 mag=1
+VDDMS (vddms 0) vsource dc=1.8
+IBIASMS (vddms ibias_ms) isource dc=50u
+VMSP (vinp_ms 0) vsource dc=.9
+VMSN (vinn_ms 0) vsource dc=.9
+XMS (vssms ibias_ms vddms vinn_ms vinp_ms vout_ms) ota_5t
+CLMS (vout_ms 0) capacitor c=1p
+saveOptions options save=selected
+save vout_p vinn_p vinp_p ibias_p XP.tail XP.nleft VDDP:p yv xv yi xi VXI:p VYI:p vout_dm vinp_dm vinn_dm vout_cm vinp_cm vinn_cm vout_ps vout_ms
+save XP.M1:ids XP.M1:gm XP.M1:gds XP.M1:vgs XP.M1:vds XP.M1:vbs XP.M1:vdsat XP.M1:cgg XP.M1:region
+save XP.M3:ids XP.M3:gm XP.M3:gds XP.M3:vgs XP.M3:vds XP.M3:vdsat XP.M3:region
+save XP.M5:ids XP.M5:gm XP.M5:gds XP.M5:vgs XP.M5:vds XP.M5:vdsat XP.M5:region
+dcOp dc
+ac ac start=10 stop=10G dec=100
+noise (vout_p 0) noise iprobe=VINP start=10 stop=10M dec=100

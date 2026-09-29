@@ -1,0 +1,165 @@
+simulator lang=spectre
+subckt fa_comp (clk vinp vinn outp outn vdd vss)
+MTAIL (tail clk vss vss) n18 w=8.14u l=.18u
+MIN1 (dx vinp tail vss) n18 w=9.02u l=.18u
+MIN2 (dy vinn tail vss) n18 w=9.02u l=.18u
+MNL1 (outn outp dx vss) n18 w=4.06u l=.18u
+MNL2 (outp outn dy vss) n18 w=4.06u l=.18u
+MPL1 (outn outp vdd vdd) p18 w=6.12u l=.18u
+MPL2 (outp outn vdd vdd) p18 w=6.12u l=.18u
+MPC1 (outn clk vdd vdd) p18 w=6.12u l=.18u
+MPC2 (outp clk vdd vdd) p18 w=6.12u l=.18u
+MPC3 (dx clk vdd vdd) p18 w=6.12u l=.18u
+MPC4 (dy clk vdd vdd) p18 w=6.12u l=.18u
+ends fa_comp
+subckt fa_sr (sn rn q qb vdd vss)
+XG1 (sn qb q vdd vss vdd vss) NAND2HDV1
+XG2 (rn q qb vdd vss vdd vss) NAND2HDV1
+ends fa_sr
+subckt fa_sample (a b en enb vdd vss)
+MN (a en b vss) n18 w=13.565u l=.18u m=4
+MP (a enb b vdd) p18 w=40.07u l=.18u m=4
+ends fa_sample
+subckt flash_adc_4bit (clk dout3 dout2 dout1 dout0 vss vdd vinn vinp vrefn vrefp)
+XCLK (clk clks vdd vss vdd vss) INHDV16
+XSP (vinp vhp clks clk vdd vss) fa_sample
+XSN (vinn vhn clks clk vdd vss) fa_sample
+CHP (vhp s8) capacitor c=20p
+CHN (vhn s8) capacitor c=20p
+RL1 (s1 vrefn) resistor r=100
+RL2 (s2 s1) resistor r=100
+RL3 (s3 s2) resistor r=100
+RL4 (s4 s3) resistor r=100
+RL5 (s5 s4) resistor r=100
+RL6 (s6 s5) resistor r=100
+RL7 (s7 s6) resistor r=100
+RL8 (s8 s7) resistor r=100
+RL9 (s9 s8) resistor r=100
+RL10 (s10 s9) resistor r=100
+RL11 (s11 s10) resistor r=100
+RL12 (s12 s11) resistor r=100
+RL13 (s13 s12) resistor r=100
+RL14 (s14 s13) resistor r=100
+RL15 (s15 s14) resistor r=100
+RL16 (vrefp s15) resistor r=100
+R1pA (vhp vp1) resistor r=200000
+R1pB (s15 vp1) resistor r=200000
+R1nA (vhn vn1) resistor r=200000
+R1nB (s1 vn1) resistor r=200000
+XC1 (clk vp1 vn1 cp1 cn1 vdd vss) fa_comp
+XS1 (cn1 cp1 q1 qb1 vdd vss) fa_sr
+R2pA (vhp vp2) resistor r=200000
+R2pB (s14 vp2) resistor r=200000
+R2nA (vhn vn2) resistor r=200000
+R2nB (s2 vn2) resistor r=200000
+XC2 (clk vp2 vn2 cp2 cn2 vdd vss) fa_comp
+XS2 (cn2 cp2 q2 qb2 vdd vss) fa_sr
+R3pA (vhp vp3) resistor r=200000
+R3pB (s13 vp3) resistor r=200000
+R3nA (vhn vn3) resistor r=200000
+R3nB (s3 vn3) resistor r=200000
+XC3 (clk vp3 vn3 cp3 cn3 vdd vss) fa_comp
+XS3 (cn3 cp3 q3 qb3 vdd vss) fa_sr
+R4pA (vhp vp4) resistor r=200000
+R4pB (s12 vp4) resistor r=200000
+R4nA (vhn vn4) resistor r=200000
+R4nB (s4 vn4) resistor r=200000
+XC4 (clk vp4 vn4 cp4 cn4 vdd vss) fa_comp
+XS4 (cn4 cp4 q4 qb4 vdd vss) fa_sr
+R5pA (vhp vp5) resistor r=200000
+R5pB (s11 vp5) resistor r=200000
+R5nA (vhn vn5) resistor r=200000
+R5nB (s5 vn5) resistor r=200000
+XC5 (clk vp5 vn5 cp5 cn5 vdd vss) fa_comp
+XS5 (cn5 cp5 q5 qb5 vdd vss) fa_sr
+R6pA (vhp vp6) resistor r=200000
+R6pB (s10 vp6) resistor r=200000
+R6nA (vhn vn6) resistor r=200000
+R6nB (s6 vn6) resistor r=200000
+XC6 (clk vp6 vn6 cp6 cn6 vdd vss) fa_comp
+XS6 (cn6 cp6 q6 qb6 vdd vss) fa_sr
+R7pA (vhp vp7) resistor r=200000
+R7pB (s9 vp7) resistor r=200000
+R7nA (vhn vn7) resistor r=200000
+R7nB (s7 vn7) resistor r=200000
+XC7 (clk vp7 vn7 cp7 cn7 vdd vss) fa_comp
+XS7 (cn7 cp7 q7 qb7 vdd vss) fa_sr
+R8pA (vhp vp8) resistor r=200000
+R8pB (s8 vp8) resistor r=200000
+R8nA (vhn vn8) resistor r=200000
+R8nB (s8 vn8) resistor r=200000
+XC8 (clk vp8 vn8 cp8 cn8 vdd vss) fa_comp
+XS8 (cn8 cp8 q8 qb8 vdd vss) fa_sr
+R9pA (vhp vp9) resistor r=200000
+R9pB (s7 vp9) resistor r=200000
+R9nA (vhn vn9) resistor r=200000
+R9nB (s9 vn9) resistor r=200000
+XC9 (clk vp9 vn9 cp9 cn9 vdd vss) fa_comp
+XS9 (cn9 cp9 q9 qb9 vdd vss) fa_sr
+R10pA (vhp vp10) resistor r=200000
+R10pB (s6 vp10) resistor r=200000
+R10nA (vhn vn10) resistor r=200000
+R10nB (s10 vn10) resistor r=200000
+XC10 (clk vp10 vn10 cp10 cn10 vdd vss) fa_comp
+XS10 (cn10 cp10 q10 qb10 vdd vss) fa_sr
+R11pA (vhp vp11) resistor r=200000
+R11pB (s5 vp11) resistor r=200000
+R11nA (vhn vn11) resistor r=200000
+R11nB (s11 vn11) resistor r=200000
+XC11 (clk vp11 vn11 cp11 cn11 vdd vss) fa_comp
+XS11 (cn11 cp11 q11 qb11 vdd vss) fa_sr
+R12pA (vhp vp12) resistor r=200000
+R12pB (s4 vp12) resistor r=200000
+R12nA (vhn vn12) resistor r=200000
+R12nB (s12 vn12) resistor r=200000
+XC12 (clk vp12 vn12 cp12 cn12 vdd vss) fa_comp
+XS12 (cn12 cp12 q12 qb12 vdd vss) fa_sr
+R13pA (vhp vp13) resistor r=200000
+R13pB (s3 vp13) resistor r=200000
+R13nA (vhn vn13) resistor r=200000
+R13nB (s13 vn13) resistor r=200000
+XC13 (clk vp13 vn13 cp13 cn13 vdd vss) fa_comp
+XS13 (cn13 cp13 q13 qb13 vdd vss) fa_sr
+R14pA (vhp vp14) resistor r=200000
+R14pB (s2 vp14) resistor r=200000
+R14nA (vhn vn14) resistor r=200000
+R14nB (s14 vn14) resistor r=200000
+XC14 (clk vp14 vn14 cp14 cn14 vdd vss) fa_comp
+XS14 (cn14 cp14 q14 qb14 vdd vss) fa_sr
+R15pA (vhp vp15) resistor r=200000
+R15pB (s1 vp15) resistor r=200000
+R15nA (vhn vn15) resistor r=200000
+R15nB (s15 vn15) resistor r=200000
+XC15 (clk vp15 vn15 cp15 cn15 vdd vss) fa_comp
+XS15 (cn15 cp15 q15 qb15 vdd vss) fa_sr
+XE0_0_0 (q1 q2 b0l0n0 vdd vss vdd vss) XOR2HDV1
+XE0_0_2 (q3 q4 b0l0n1 vdd vss vdd vss) XOR2HDV1
+XE0_0_4 (q5 q6 b0l0n2 vdd vss vdd vss) XOR2HDV1
+XE0_0_6 (q7 q8 b0l0n3 vdd vss vdd vss) XOR2HDV1
+XE0_0_8 (q9 q10 b0l0n4 vdd vss vdd vss) XOR2HDV1
+XE0_0_10 (q11 q12 b0l0n5 vdd vss vdd vss) XOR2HDV1
+XE0_0_12 (q13 q14 b0l0n6 vdd vss vdd vss) XOR2HDV1
+XE0_1_0 (b0l0n0 b0l0n1 b0l1n0 vdd vss vdd vss) XOR2HDV1
+XE0_1_2 (b0l0n2 b0l0n3 b0l1n1 vdd vss vdd vss) XOR2HDV1
+XE0_1_4 (b0l0n4 b0l0n5 b0l1n2 vdd vss vdd vss) XOR2HDV1
+XE0_1_6 (b0l0n6 q15 b0l1n3 vdd vss vdd vss) XOR2HDV1
+XE0_2_0 (b0l1n0 b0l1n1 b0l2n0 vdd vss vdd vss) XOR2HDV1
+XE0_2_2 (b0l1n2 b0l1n3 b0l2n1 vdd vss vdd vss) XOR2HDV1
+XE0_3_0 (b0l2n0 b0l2n1 b0l3n0 vdd vss vdd vss) XOR2HDV1
+XB0a (b0l3n0 outb0 vdd vss vdd vss) INHDV1
+XB0b (outb0 dout0 vdd vss vdd vss) INHDV1
+XE1_0_0 (q2 q4 b1l0n0 vdd vss vdd vss) XOR2HDV1
+XE1_0_2 (q6 q8 b1l0n1 vdd vss vdd vss) XOR2HDV1
+XE1_0_4 (q10 q12 b1l0n2 vdd vss vdd vss) XOR2HDV1
+XE1_1_0 (b1l0n0 b1l0n1 b1l1n0 vdd vss vdd vss) XOR2HDV1
+XE1_1_2 (b1l0n2 q14 b1l1n1 vdd vss vdd vss) XOR2HDV1
+XE1_2_0 (b1l1n0 b1l1n1 b1l2n0 vdd vss vdd vss) XOR2HDV1
+XB1a (b1l2n0 outb1 vdd vss vdd vss) INHDV1
+XB1b (outb1 dout1 vdd vss vdd vss) INHDV1
+XE2_0_0 (q4 q8 b2l0n0 vdd vss vdd vss) XOR2HDV1
+XE2_1_0 (b2l0n0 q12 b2l1n0 vdd vss vdd vss) XOR2HDV1
+XB2a (b2l1n0 outb2 vdd vss vdd vss) INHDV1
+XB2b (outb2 dout2 vdd vss vdd vss) INHDV1
+XB3a (q8 outb3 vdd vss vdd vss) INHDV1
+XB3b (outb3 dout3 vdd vss vdd vss) INHDV1
+ends flash_adc_4bit

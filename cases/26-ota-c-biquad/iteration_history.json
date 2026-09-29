@@ -1,0 +1,130 @@
+[
+  {
+    "generated_at": "2026-09-28T18:13:14.812237+00:00",
+    "circuit_sha256": "ca1d973f73e9bc1899742bfe7698bdb9dfd31c3b23f2dd842da9dc403d49a82d",
+    "parameters": {
+      "rdeg": 19100,
+      "rq": 8000,
+      "c1": 8,
+      "c2": 4,
+      "current": 20,
+      "input_gmid": 22,
+      "bpratio": 1.5
+    },
+    "status": "complete_original",
+    "values": {
+      "ac": {
+        "f0_Hz": 1924716.0495768413,
+        "Q": 0.6903099752318919,
+        "passgain_dB": -0.5612860701955268,
+        "fit_error_dB": 0.001834967318313886,
+        "atten20M_dB": 40.61721585079481,
+        "bp_peak_Hz": 1905460.717963228,
+        "bp_peak_dB": -6.406214197755924,
+        "bp_1k_dB": 23.751969121118716,
+        "bp_200k_dB": 15.740878341505177,
+        "bp_20M_dB": 17.107434887313705,
+        "cm_error_V": 0.0018250585352632687,
+        "power_W": 0.000393439730232396
+      },
+      "noise_Vrms": 0.0002956745708519624,
+      "thd": {
+        "output_amplitude_V": 0.2803044668816652,
+        "fundamental_gain": 0.9343482229388841,
+        "thd_dB": -54.50220475302026
+      },
+      "thd2": {
+        "output_amplitude_V": 0.41816106668294295,
+        "fundamental_gain": 0.9292468148509843,
+        "thd_dB": -44.445141607073204
+      },
+      "thd_f0": {
+        "output_amplitude_V": 0.2818266493307176,
+        "fundamental_gain": 0.6262814429571503,
+        "thd_dB": -59.85195247953265
+      },
+      "thd_f0_bp": {
+        "output_amplitude_V": 0.2176175164755414,
+        "fundamental_gain": 0.4835944810567586,
+        "thd_dB": -52.776515561130836
+      },
+      "cmstep": {
+        "initial_error_V": 0.002072876713431815,
+        "settle_s": 6.809507861291767e-08,
+        "late_excursion_V": 0.001729430619820449
+      }
+    },
+    "groups": {
+      "ac": "runs/26/20260928T181306353573Z_ac",
+      "noise": "runs/26/20260928T181306989484Z_noise",
+      "thd": "runs/26/20260928T181307610709Z_thd",
+      "thd2": "runs/26/20260928T181309189545Z_thd2",
+      "thd_f0": "runs/26/20260928T181310741938Z_thd_f0",
+      "cmstep": "runs/26/20260928T181312530904Z_cmstep"
+    }
+  },
+  {
+    "generated_at": "2026-09-28T18:15:48.067594+00:00",
+    "circuit_sha256": "ca1d973f73e9bc1899742bfe7698bdb9dfd31c3b23f2dd842da9dc403d49a82d",
+    "parameters": {
+      "rdeg": 19100,
+      "rq": 8000,
+      "c1": 8,
+      "c2": 4,
+      "current": 20,
+      "input_gmid": 22,
+      "bpratio": 1.5
+    },
+    "status": "complete_original",
+    "values": {
+      "ac": {
+        "f0_Hz": 1924718.0146987296,
+        "Q": 0.6903208807375485,
+        "passgain_dB": -0.5613358011599383,
+        "fit_error_dB": 0.0017873385039630801,
+        "atten20M_dB": 40.61716611983165,
+        "bp_peak_Hz": 1927524.913191025,
+        "bp_peak_dB": -6.405610324761575,
+        "bp_1k_dB": 23.752572994113066,
+        "bp_200k_dB": 15.741482214499241,
+        "bp_20M_dB": 17.108038760308677,
+        "cm_error_V": 0.0018250585352632687,
+        "power_W": 0.000393439730232396
+      },
+      "noise_Vrms": 0.0002956622851616086,
+      "thd": {
+        "output_amplitude_V": 0.28030457838422806,
+        "fundamental_gain": 0.9343485946140936,
+        "thd_dB": -54.50217941553218
+      },
+      "thd2": {
+        "output_amplitude_V": 0.41816123331139954,
+        "fundamental_gain": 0.9292471851364434,
+        "thd_dB": -44.44511136783645
+      },
+      "thd_f0": {
+        "output_amplitude_V": 0.2818691485716363,
+        "fundamental_gain": 0.6263758857147473,
+        "thd_dB": -59.89619675809011
+      },
+      "thd_f0_bp": {
+        "output_amplitude_V": 0.21762687255871066,
+        "fundamental_gain": 0.48361527235269036,
+        "thd_dB": -52.783332993931225
+      },
+      "cmstep": {
+        "initial_error_V": 0.002072876713432259,
+        "settle_s": 6.810258401985645e-08,
+        "late_excursion_V": 0.0017294306198274434
+      }
+    },
+    "groups": {
+      "ac": "runs/26/20260928T181533966305Z_ac",
+      "noise": "runs/26/20260928T181534633008Z_noise",
+      "thd": "runs/26/20260928T181535297678Z_thd",
+      "thd2": "runs/26/20260928T181538051207Z_thd2",
+      "thd_f0": "runs/26/20260928T181541028707Z_thd_f0",
+      "cmstep": "runs/26/20260928T181544167057Z_cmstep"
+    }
+  }
+]

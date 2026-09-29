@@ -1,0 +1,11 @@
+// SMIC18MMRF 5T signal core plus bias replica.
+// Dimensions are from sizing.json target-PDK gm/ID LUT, not scaled Sky130 widths.
+simulator lang=spectre
+subckt ota_5t (vss ibias vdd vinn vinp vout)
+M1 (nleft vinp tail vss) n18 w=92.9600u l=1u
+M2 (vout vinn tail vss) n18 w=92.9600u l=1u
+M3 (nleft nleft vdd vdd) p18 w=10.5200u l=0.36u
+M4 (vout nleft vdd vdd) p18 w=10.5200u l=0.36u
+M5 (tail ibias vss vss) n18 w=39.9200u l=1u
+M6 (ibias ibias vss vss) n18 w=11.1000u l=1u
+ends ota_5t

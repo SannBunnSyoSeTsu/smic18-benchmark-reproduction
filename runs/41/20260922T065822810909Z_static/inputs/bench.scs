@@ -1,0 +1,50 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/41/20260922T065822810909Z_static/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+parameters sweepin=.9
+VDDL (vddl 0) vsource dc=1.8
+IREFL (vddl irefl) isource dc=50u
+VINL (vinpl 0) vsource dc=.9
+VTEST (voutl vinnl) vsource dc=0 mag=1
+XL (0 irefl vddl vinnl vinpl voutl) two_stage_miller_opamp
+CLL (voutl 0) capacitor c=2p
+VDDN (vddn 0) vsource dc=1.8
+IREFN (vddn irefn) isource dc=50u
+VINN (vinpn 0) vsource dc=.9 mag=1
+VCMN (vcmn 0) vsource dc=.9
+EFB (vinnn vcmn voutn vcmn) vcvs gain=.05
+XN (0 irefn vddn vinnn vinpn voutn) two_stage_miller_opamp
+CLN (voutn 0) capacitor c=2p
+VDDP (vddp 0) vsource dc=1.8 mag=1
+IREFP (vddp irefp) isource dc=50u
+VINP (vinpp 0) vsource dc=.9
+XP (0 irefp vddp voutp vinpp voutp) two_stage_miller_opamp
+CLP (voutp 0) capacitor c=2p
+VDDC (vddc 0) vsource dc=1.8
+IREFC (vddc irefc) isource dc=50u
+VINC (vinpc 0) vsource dc=.9 mag=1
+VFBC (vinnc voutc) vsource dc=0 mag=1
+XC (0 irefc vddc vinnc vinpc voutc) two_stage_miller_opamp
+CLC (voutc 0) capacitor c=2p
+VDDS (vdds 0) vsource dc=1.8
+IREFS (vdds irefs) isource dc=50u
+VINS (vinps 0) vsource dc=sweepin
+XS (0 irefs vdds vouts vinps vouts) two_stage_miller_opamp
+CLS (vouts 0) capacitor c=2p
+save voutl vinnl vinpl voutn vinnn vinpn voutp voutc vouts vinps VDDL:p XL.tail XL.stage1 XL.nleft XL.vbp irefl
+save XL.MINP:ids XL.MINP:gm XL.MINP:gds XL.MINP:vgs XL.MINP:vds XL.MINP:vdsat XL.MINP:region
+save XL.MINN:ids XL.MINN:gm XL.MINN:gds XL.MINN:vgs XL.MINN:vds XL.MINN:vdsat XL.MINN:region
+save XL.MPM:ids XL.MPM:gm XL.MPM:gds XL.MPM:vgs XL.MPM:vds XL.MPM:vdsat XL.MPM:region
+save XL.MTAIL:ids XL.MTAIL:gm XL.MTAIL:gds XL.MTAIL:vgs XL.MTAIL:vds XL.MTAIL:vdsat XL.MTAIL:region
+save XL.MSECOND:ids XL.MSECOND:gm XL.MSECOND:gds XL.MSECOND:vgs XL.MSECOND:vds XL.MSECOND:vdsat XL.MSECOND:region
+save XL.MLOAD:ids XL.MLOAD:gm XL.MLOAD:gds XL.MLOAD:vgs XL.MLOAD:vds XL.MLOAD:vdsat XL.MLOAD:region
+dcOp dc
+ac ac start=10 stop=10G dec=100
+swing dc param=sweepin start=.3 stop=1.5 step=.01
+save XL.MCD:ids XL.MCD:gm XL.MCD:gds XL.MCD:vgs XL.MCD:vds XL.MCD:vdsat XL.MCD:region
+save XL.MCM:ids XL.MCM:gm XL.MCM:gds XL.MCM:vgs XL.MCM:vds XL.MCM:vdsat XL.MCM:region
+save XL.MPCB:ids XL.MPCB:gm XL.MPCB:gds XL.MPCB:vgs XL.MPCB:vds XL.MPCB:vdsat XL.MPCB:region
+save XL.vbp XL.nrb XL.nc3 XL.nc4

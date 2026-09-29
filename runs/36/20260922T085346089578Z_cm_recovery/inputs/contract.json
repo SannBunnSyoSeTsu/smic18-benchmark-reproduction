@@ -1,0 +1,111 @@
+{
+  "source_task": "sky130-telescopic-cascode-ota-pvt-fix",
+  "source_files": {
+    "instruction.md": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-telescopic-cascode-ota-pvt-fix/instruction.md",
+      "sha256": "34d3f42923fef89154c68f4f161b2d98d7bcb091e43a5fb05d5308c85583b805",
+      "frozen": "cases/36-telescopic/source/instruction.md"
+    },
+    "solution/circuit.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-telescopic-cascode-ota-pvt-fix/solution/circuit.spi",
+      "sha256": "5d3e17a4bf921136eea04d6c97fea83bf9b52ce57d522cd2caed780c1cd0aff1",
+      "frozen": "cases/36-telescopic/source/solution/circuit.spi"
+    },
+    "tests/verify.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-telescopic-cascode-ota-pvt-fix/tests/verify.py",
+      "sha256": "0108328a5f6d349412da802ecbc531e6048c3a6202b999f62407ee044fbfa840",
+      "frozen": "cases/36-telescopic/source/tests/verify.py"
+    },
+    "tests/benches/tb_pvt.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-telescopic-cascode-ota-pvt-fix/tests/benches/tb_pvt.spi",
+      "sha256": "5b20e252fa3c82fba15da33771c8bc2199b1cef6136beefe12fa14b4717ecb91",
+      "frozen": "cases/36-telescopic/source/tests/benches/tb_pvt.spi"
+    },
+    "tests/benches/tb_swing.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-telescopic-cascode-ota-pvt-fix/tests/benches/tb_swing.spi",
+      "sha256": "36eeb1fcd94e8a5de4f16fb42f07686d2813f69c9b8762899dff5d2888f4735b",
+      "frozen": "cases/36-telescopic/source/tests/benches/tb_swing.spi"
+    },
+    "tests/benches/tb_settling.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-telescopic-cascode-ota-pvt-fix/tests/benches/tb_settling.spi",
+      "sha256": "5e5d4c2c4e04a0e969f45a59ae83207fe285462884070264eba13af4d0eacd1c",
+      "frozen": "cases/36-telescopic/source/tests/benches/tb_settling.spi"
+    },
+    "tests/benches/tb_cm_recovery.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-telescopic-cascode-ota-pvt-fix/tests/benches/tb_cm_recovery.spi",
+      "sha256": "9a26a5b2bda930e2a3fac88d776967110d642904a17afcb7abd833de6f70b1f1",
+      "frozen": "cases/36-telescopic/source/tests/benches/tb_cm_recovery.spi"
+    }
+  },
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 5e-05,
+  "input_common_mode_V": 0.9,
+  "output_common_mode_V": 0.9,
+  "load_each_F": 2e-12,
+  "ac": {
+    "frequency_Hz": [
+      1,
+      10000000000.0
+    ],
+    "points_per_decade": 100,
+    "gain_1Hz_min_dB": 60,
+    "ugb_min_Hz": 50000000.0,
+    "phase_margin_min_deg": 60,
+    "falling_crossings": 1,
+    "no_recross": true,
+    "cm_error_max_V": 0.005,
+    "power_W": [
+      0,
+      0.001
+    ]
+  },
+  "range": {
+    "command_V": [
+      -0.45,
+      0.45
+    ],
+    "step_V": 0.005,
+    "points": 181,
+    "full_command_span_V": 0.9,
+    "tracking_error_max_V": 0.005,
+    "cm_error_max_V": 0.005
+  },
+  "settling": {
+    "command_V": [
+      -0.05,
+      0.05
+    ],
+    "edge_start_s": 2e-08,
+    "edge_end_s": 2.1e-08,
+    "end_s": 1.4e-07,
+    "band_V": 0.001,
+    "last_entry_max_s": 1e-08,
+    "final_mean_window_s": 1e-08,
+    "static_error_max_V": 0.0001,
+    "static_fraction_max": 0.01
+  },
+  "cm_recovery": {
+    "command_V": [
+      0.85,
+      0.95
+    ],
+    "edge_start_s": 2e-08,
+    "edge_end_s": 2.1e-08,
+    "end_s": 1.6e-07,
+    "band_V": 0.005,
+    "last_entry_max_s": 4e-08,
+    "final_mean_window_s": 2e-08,
+    "static_error_max_V": 0.005
+  },
+  "relaxation": "Positive min *0.9/0.85, max *1.1/1.15; amplitude dB adds 20log10(0.9/0.85), PM min >=45deg. Same stimuli, full 181-point span, error-band definitions, crossing count and finite/nonnegative guards are not relaxed.",
+  "nominal_only": true,
+  "excluded": [
+    "remaining 26 PVT points",
+    "mismatch/Monte Carlo",
+    "noise/CMRR/PSRR",
+    "extracted parasitics",
+    "passive variation"
+  ]
+}

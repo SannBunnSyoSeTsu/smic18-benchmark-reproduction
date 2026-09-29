@@ -1,0 +1,21 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=res_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/18-regulated-pump/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/18-regulated-pump/circuit.scs"
+VDD (src 0) vsource dc=1.8
+VSENSE (src AVDD) vsource dc=0
+IBIAS (src IBN1U) isource dc=1u
+VEN (ensrc 0) vsource dc=1.8
+REN (ensrc EN) resistor r=50
+VCLK (clksrc 0) vsource type=pulse val0=1.8 val1=0 delay=0 rise=1n fall=1n width=49n period=100n
+RCLK (clksrc CLK) resistor r=50
+CLOAD (VOUT 0) capacitor c=1n
+X (AVDD 0 CLK EN IBN1U VOUT) charge_pump_regulated
+simulatorOptions options temp=40 tnom=27 reltol=1e-06 vabstol=1e-8 iabstol=1e-14
+saveOptions options save=selected
+save AVDD VOUT CLK EN IBN1U VSENSE:p VDD:p clksrc ensrc X.ENB X.gated X.ph0 X.ph1 X.bot0 X.bot1 X.p0 X.p1 X.vclk X.ctrl X.tail X.pd X.vnr X.vfb X.enr X.enf
+ILOAD (VOUT 0) isource dc=2.5e-05
+tran tran stop=200u maxstep=5e-10 method=gear2only errpreset=conservative skipstart=2u skipstop=180u skipcount=100

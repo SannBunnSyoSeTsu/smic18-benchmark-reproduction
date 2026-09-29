@@ -1,0 +1,18 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/26-ota-c-biquad/circuit.scs"
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=20u
+VOCM (vocm 0) vsource dc=.9
+X (0 iref vdd vinp vinn vocm vbpp vbpn voutp voutn) fd_ota_c_biquad
+CLP (voutp 0) capacitor c=250f
+CLN (voutn 0) capacitor c=250f
+CBP (vbpp 0) capacitor c=250f
+CBN (vbpn 0) capacitor c=250f
+simulatorOptions options temp=27 tnom=27 reltol=1e-07 vabstol=1e-9 iabstol=1e-14
+saveOptions options save=selected
+save vdd iref vinp vinn vocm voutp voutn vbpp vbpn VDD:p X.vc1 X.vc2 X.sense1 X.sense2
+VINP (vinp 0) vsource dc=.9 type=sine ampl=0.225 freq=2e+06 sinephase=0
+VINN (vinn 0) vsource dc=.9 type=sine ampl=0.225 freq=2e+06 sinephase=180
+tran tran stop=30u maxstep=1e-09 method=gear2only errpreset=conservative

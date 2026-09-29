@@ -1,0 +1,175 @@
+{
+  "slot": 9,
+  "case": "cases/09-cml-divider",
+  "circuit_sha256": "b92dbeb47541da5d5b1137db661ae3624ef18c87bb0e152bebb98b803b9b1a55",
+  "hd_cells_sha256": null,
+  "top": "cml_div2",
+  "source_definition_count": 19,
+  "source_terminal_count": 68,
+  "source_expanded_leaf_count": 19,
+  "hierarchy_boundaries": [],
+  "connectivity_sha256": "bfd44f07e51cd2210e2b055c6e02c736b15ef0e9f70aaa2d56e871e213219ceb",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 19,
+  "schematic_expanded_leaf_count": 19,
+  "independently_traced_terminals": 68,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 15,
+    "R": 4
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "cml_div2/MBIAS",
+      "D_G_S_B": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MMDP",
+      "D_G_S_B": [
+        "mp",
+        "outn",
+        "nmd",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MMDN",
+      "D_G_S_B": [
+        "mn",
+        "outp",
+        "nmd",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MMTC",
+      "D_G_S_B": [
+        "nmd",
+        "clkp",
+        "mtail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MMRP",
+      "D_G_S_B": [
+        "mp",
+        "mn",
+        "nmr",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MMRN",
+      "D_G_S_B": [
+        "mn",
+        "mp",
+        "nmr",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MMTRC",
+      "D_G_S_B": [
+        "nmr",
+        "clkn",
+        "mtail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MMTAIL",
+      "D_G_S_B": [
+        "mtail",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MSDP",
+      "D_G_S_B": [
+        "outp",
+        "mp",
+        "nsd",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MSDN",
+      "D_G_S_B": [
+        "outn",
+        "mn",
+        "nsd",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MSTC",
+      "D_G_S_B": [
+        "nsd",
+        "clkn",
+        "stail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MSRP",
+      "D_G_S_B": [
+        "outp",
+        "outn",
+        "nsr",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MSRN",
+      "D_G_S_B": [
+        "outn",
+        "outp",
+        "nsr",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MSTRC",
+      "D_G_S_B": [
+        "nsr",
+        "clkp",
+        "stail",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cml_div2/MSTAIL",
+      "D_G_S_B": [
+        "stail",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 15,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

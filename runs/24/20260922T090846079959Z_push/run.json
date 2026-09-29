@@ -1,0 +1,48 @@
+{
+  "started_at": "2026-09-22T09:08:46.080681+00:00",
+  "case_slot": 24,
+  "label": "push",
+  "netlist": "runs/24/20260922T090846079959Z_push/inputs/bench.scs",
+  "netlist_sha256": "8b079d39e2fa78eaf71f749ffb9b1cd75ba4961f0506e0c32ae74784ca27a760",
+  "dependencies": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/24-ring-vco/circuit.scs": {
+      "snapshot": "runs/24/20260922T090846079959Z_push/inputs/circuit.scs",
+      "sha256": "fc15de4598b7f285d780f50fc2a85f864935cf0bfa81dfb4d21208dfdfef662c"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/24-ring-vco/hd_cells.scs": {
+      "snapshot": "runs/24/20260922T090846079959Z_push/inputs/hd_cells.scs",
+      "sha256": "3b2e92d833d5e19f9a24476e8bfb07e03c8b05024c038bdb734ae9a805889e2a"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/24-ring-vco/sizing.json": {
+      "snapshot": "runs/24/20260922T090846079959Z_push/inputs/sizing.json",
+      "sha256": "33b9ede3f5e4449b48b029313ce068ccbdfb63bd90f083cd8b8312a8d32454f3"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/24-ring-vco/contract.json": {
+      "snapshot": "runs/24/20260922T090846079959Z_push/inputs/contract.json",
+      "sha256": "6bb9fcd1c77e387d6a0883832079b12e2a368e6eeddff4f7cfd7225fd2d21a73"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/24-ring-vco/hd_cells_manifest.json": {
+      "snapshot": "runs/24/20260922T090846079959Z_push/inputs/hd_cells_manifest.json",
+      "sha256": "f533bc85d0bc0a95fbdf38ead18fbcdaca4f6944ce214700e04f85cf56ed14a7"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/24-ring-vco/source_provenance.json": {
+      "snapshot": "runs/24/20260922T090846079959Z_push/inputs/source_provenance.json",
+      "sha256": "dbdd4bab237dd50bc430c28a4213d09423994519979dc90493490c336b585323"
+    }
+  },
+  "models": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib": "88246a7e992cb3f5af5ac0f6a9a1c5934707ecd72e7f8f08150b44a01796c20f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.mdl": "832d378241360815f6d4009514d863f2aac9c48c312326410de9421564b1033d",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_bjt_spe.mdl": "d2d45e69a854f8d090fe3ef83041bc39ed8a0abcd9d272b8067a9db3014a9b6f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_res_spe.mdl": "173a1a7c1d8cc2f1009ac12db0f0d4f9725aebea8625cf9796a0be50f06fceb1",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_mim_spe.mdl": "02c8e7986a1c159e52c8fa403fdb52b9b4f928e00bca5522a648992528d7edff"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "status": "completed",
+  "completed_at": "2026-09-22T09:08:49.877623+00:00",
+  "errors": [],
+  "warnings": [],
+  "model_dimensions_valid": true,
+  "raw_dir": "runs/24/20260922T090846079959Z_push/output/bench.raw"
+}

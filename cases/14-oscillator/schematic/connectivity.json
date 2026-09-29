@@ -1,0 +1,3827 @@
+{
+  "generated_at": "2026-09-23T06:18:42.392172+00:00",
+  "circuit_sha256": "383ec5c083dff63dfe2d4529615c33f22d541e3bf14d2c927e3655b98488c1a6",
+  "top": "osc_2m",
+  "subcircuit_ports": {
+    "osc_2m": [
+      "AVDD",
+      "AVSS",
+      "CLKO",
+      "IBN2U"
+    ]
+  },
+  "instances": {
+    "osc_2m/MNREF": {
+      "name": "MNREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "IBN2U",
+        "G": "IBN2U",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNREF (IBN2U IBN2U AVSS AVSS) n18 w=0.28u l=1u m=4",
+      "W_unit_um": 0.28,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        4,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          5
+        ],
+        "S": [
+          4,
+          3
+        ],
+        "G": [
+          2.45,
+          4
+        ],
+        "B": [
+          4.86,
+          4
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/MPREF": {
+      "name": "MPREF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VBP",
+        "G": "VBP",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "1u"
+      },
+      "source_line": "MPREF (VBP VBP AVDD AVDD) p18 w=1.28u l=1u",
+      "W_unit_um": 1.28,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        11,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          18
+        ],
+        "S": [
+          11,
+          20
+        ],
+        "G": [
+          9.45,
+          19
+        ],
+        "B": [
+          11.86,
+          19
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/MNBP": {
+      "name": "MNBP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VBP",
+        "G": "IBN2U",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": "1u"
+      },
+      "source_line": "MNBP (VBP IBN2U AVSS AVSS) n18 w=0.28u l=1u",
+      "W_unit_um": 0.28,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        11,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          6
+        ],
+        "S": [
+          11,
+          4
+        ],
+        "G": [
+          9.45,
+          5
+        ],
+        "B": [
+          11.86,
+          5
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/XBUF0": {
+      "name": "XBUF0",
+      "kind": "HD",
+      "model": "INHDVL",
+      "pins": {
+        "I": "N3",
+        "ZN": "B1",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XBUF0 (N3 B1 AVDD AVSS AVDD AVSS) INHDVL",
+      "sheet": 1,
+      "origin": [
+        4,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          1.2999999999999998,
+          19.0
+        ],
+        "ZN": [
+          6.7,
+          19.0
+        ],
+        "VDD": [
+          3.2,
+          21.2
+        ],
+        "VNW": [
+          4.8,
+          21.2
+        ],
+        "VSS": [
+          3.2,
+          16.8
+        ],
+        "VPW": [
+          4.8,
+          16.8
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/XBUF1": {
+      "name": "XBUF1",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "B1",
+        "ZN": "CLKO",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XBUF1 (B1 CLKO AVDD AVSS AVDD AVSS) INHDV0",
+      "sheet": 1,
+      "origin": [
+        4,
+        11
+      ],
+      "rendered_pins": {
+        "I": [
+          1.2999999999999998,
+          11.0
+        ],
+        "ZN": [
+          6.7,
+          11.0
+        ],
+        "VDD": [
+          3.2,
+          13.2
+        ],
+        "VNW": [
+          4.8,
+          13.2
+        ],
+        "VSS": [
+          3.2,
+          8.8
+        ],
+        "VPW": [
+          4.8,
+          8.8
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/MPS1": {
+      "name": "MPS1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "P1",
+        "G": "VBP",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MPS1 (P1 VBP AVDD AVDD) p18 w=1.28u l=1u m=2",
+      "W_unit_um": 1.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        19.2,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          19.2,
+          18
+        ],
+        "S": [
+          19.2,
+          20
+        ],
+        "G": [
+          17.65,
+          19
+        ],
+        "B": [
+          20.06,
+          19
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/XINV1": {
+      "name": "XINV1",
+      "kind": "HD",
+      "model": "INHDVL",
+      "pins": {
+        "I": "N3",
+        "ZN": "N1",
+        "VDD": "P1",
+        "VSS": "Q1",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV1 (N3 N1 P1 Q1 AVDD AVSS) INHDVL",
+      "sheet": 1,
+      "origin": [
+        20,
+        13
+      ],
+      "rendered_pins": {
+        "I": [
+          17.3,
+          13.0
+        ],
+        "ZN": [
+          22.7,
+          13.0
+        ],
+        "VDD": [
+          19.2,
+          15.2
+        ],
+        "VNW": [
+          20.8,
+          15.2
+        ],
+        "VSS": [
+          19.2,
+          10.8
+        ],
+        "VPW": [
+          20.8,
+          10.8
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/MNS1": {
+      "name": "MNS1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "Q1",
+        "G": "IBN2U",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MNS1 (Q1 IBN2U AVSS AVSS) n18 w=0.28u l=1u m=2",
+      "W_unit_um": 0.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        19.2,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          19.2,
+          8
+        ],
+        "S": [
+          19.2,
+          6
+        ],
+        "G": [
+          17.65,
+          7
+        ],
+        "B": [
+          20.06,
+          7
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/CT1": {
+      "name": "CT1",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "N1",
+        "2": "AVDD"
+      },
+      "parameters": {
+        "w": "10u",
+        "l": "7.75u"
+      },
+      "source_line": "CT1 (N1 AVDD) mim w=10u l=7.75u",
+      "sheet": 1,
+      "origin": [
+        20,
+        2.5
+      ],
+      "rendered_pins": {
+        "1": [
+          19.18,
+          2.5
+        ],
+        "2": [
+          20.82,
+          2.5
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/MPS2": {
+      "name": "MPS2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "P2",
+        "G": "VBP",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MPS2 (P2 VBP AVDD AVDD) p18 w=1.28u l=1u m=2",
+      "W_unit_um": 1.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        28.2,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          28.2,
+          18
+        ],
+        "S": [
+          28.2,
+          20
+        ],
+        "G": [
+          26.65,
+          19
+        ],
+        "B": [
+          29.06,
+          19
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/XINV2": {
+      "name": "XINV2",
+      "kind": "HD",
+      "model": "INHDVL",
+      "pins": {
+        "I": "N1",
+        "ZN": "N2",
+        "VDD": "P2",
+        "VSS": "Q2",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV2 (N1 N2 P2 Q2 AVDD AVSS) INHDVL",
+      "sheet": 1,
+      "origin": [
+        29,
+        13
+      ],
+      "rendered_pins": {
+        "I": [
+          26.3,
+          13.0
+        ],
+        "ZN": [
+          31.7,
+          13.0
+        ],
+        "VDD": [
+          28.2,
+          15.2
+        ],
+        "VNW": [
+          29.8,
+          15.2
+        ],
+        "VSS": [
+          28.2,
+          10.8
+        ],
+        "VPW": [
+          29.8,
+          10.8
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/MNS2": {
+      "name": "MNS2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "Q2",
+        "G": "IBN2U",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MNS2 (Q2 IBN2U AVSS AVSS) n18 w=0.28u l=1u m=2",
+      "W_unit_um": 0.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        28.2,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          28.2,
+          8
+        ],
+        "S": [
+          28.2,
+          6
+        ],
+        "G": [
+          26.65,
+          7
+        ],
+        "B": [
+          29.06,
+          7
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/CT2": {
+      "name": "CT2",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "N2",
+        "2": "AVSS"
+      },
+      "parameters": {
+        "w": "10u",
+        "l": "7.75u"
+      },
+      "source_line": "CT2 (N2 AVSS) mim w=10u l=7.75u",
+      "sheet": 1,
+      "origin": [
+        29,
+        2.5
+      ],
+      "rendered_pins": {
+        "1": [
+          28.18,
+          2.5
+        ],
+        "2": [
+          29.82,
+          2.5
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/MPS3": {
+      "name": "MPS3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "P3",
+        "G": "VBP",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MPS3 (P3 VBP AVDD AVDD) p18 w=1.28u l=1u m=2",
+      "W_unit_um": 1.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        37.2,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          37.2,
+          18
+        ],
+        "S": [
+          37.2,
+          20
+        ],
+        "G": [
+          35.650000000000006,
+          19
+        ],
+        "B": [
+          38.06,
+          19
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/XINV3": {
+      "name": "XINV3",
+      "kind": "HD",
+      "model": "INHDVL",
+      "pins": {
+        "I": "N2",
+        "ZN": "N3",
+        "VDD": "P3",
+        "VSS": "Q3",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV3 (N2 N3 P3 Q3 AVDD AVSS) INHDVL",
+      "sheet": 1,
+      "origin": [
+        38,
+        13
+      ],
+      "rendered_pins": {
+        "I": [
+          35.3,
+          13.0
+        ],
+        "ZN": [
+          40.7,
+          13.0
+        ],
+        "VDD": [
+          37.2,
+          15.2
+        ],
+        "VNW": [
+          38.8,
+          15.2
+        ],
+        "VSS": [
+          37.2,
+          10.8
+        ],
+        "VPW": [
+          38.8,
+          10.8
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/MNS3": {
+      "name": "MNS3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "Q3",
+        "G": "IBN2U",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MNS3 (Q3 IBN2U AVSS AVSS) n18 w=0.28u l=1u m=2",
+      "W_unit_um": 0.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        37.2,
+        7
+      ],
+      "rendered_pins": {
+        "D": [
+          37.2,
+          8
+        ],
+        "S": [
+          37.2,
+          6
+        ],
+        "G": [
+          35.650000000000006,
+          7
+        ],
+        "B": [
+          38.06,
+          7
+        ]
+      },
+      "block": "osc_2m"
+    },
+    "osc_2m/CT3": {
+      "name": "CT3",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "N3",
+        "2": "AVSS"
+      },
+      "parameters": {
+        "w": "10u",
+        "l": "7.75u"
+      },
+      "source_line": "CT3 (N3 AVSS) mim w=10u l=7.75u",
+      "sheet": 1,
+      "origin": [
+        38,
+        2.5
+      ],
+      "rendered_pins": {
+        "1": [
+          37.18,
+          2.5
+        ],
+        "2": [
+          38.82,
+          2.5
+        ]
+      },
+      "block": "osc_2m"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MNREF": {
+      "name": "MNREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "IBN2U",
+        "G": "IBN2U",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNREF (IBN2U IBN2U AVSS AVSS) n18 w=0.28u l=1u m=4",
+      "W_unit_um": 0.28,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "osc_2m/MNREF",
+      "path": "MNREF"
+    },
+    "MNBP": {
+      "name": "MNBP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VBP",
+        "G": "IBN2U",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": "1u"
+      },
+      "source_line": "MNBP (VBP IBN2U AVSS AVSS) n18 w=0.28u l=1u",
+      "W_unit_um": 0.28,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "osc_2m/MNBP",
+      "path": "MNBP"
+    },
+    "MPREF": {
+      "name": "MPREF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VBP",
+        "G": "VBP",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "1u"
+      },
+      "source_line": "MPREF (VBP VBP AVDD AVDD) p18 w=1.28u l=1u",
+      "W_unit_um": 1.28,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "osc_2m/MPREF",
+      "path": "MPREF"
+    },
+    "MPS1": {
+      "name": "MPS1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "P1",
+        "G": "VBP",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MPS1 (P1 VBP AVDD AVDD) p18 w=1.28u l=1u m=2",
+      "W_unit_um": 1.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "osc_2m/MPS1",
+      "path": "MPS1"
+    },
+    "XINV1": {
+      "name": "XINV1",
+      "kind": "HD",
+      "model": "INHDVL",
+      "pins": {
+        "I": "N3",
+        "ZN": "N1",
+        "VDD": "P1",
+        "VSS": "Q1",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV1 (N3 N1 P1 Q1 AVDD AVSS) INHDVL",
+      "definition": "osc_2m/XINV1",
+      "path": "XINV1"
+    },
+    "MNS1": {
+      "name": "MNS1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "Q1",
+        "G": "IBN2U",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MNS1 (Q1 IBN2U AVSS AVSS) n18 w=0.28u l=1u m=2",
+      "W_unit_um": 0.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "osc_2m/MNS1",
+      "path": "MNS1"
+    },
+    "CT1": {
+      "name": "CT1",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "N1",
+        "2": "AVDD"
+      },
+      "parameters": {
+        "w": "10u",
+        "l": "7.75u"
+      },
+      "source_line": "CT1 (N1 AVDD) mim w=10u l=7.75u",
+      "definition": "osc_2m/CT1",
+      "path": "CT1"
+    },
+    "MPS2": {
+      "name": "MPS2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "P2",
+        "G": "VBP",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MPS2 (P2 VBP AVDD AVDD) p18 w=1.28u l=1u m=2",
+      "W_unit_um": 1.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "osc_2m/MPS2",
+      "path": "MPS2"
+    },
+    "XINV2": {
+      "name": "XINV2",
+      "kind": "HD",
+      "model": "INHDVL",
+      "pins": {
+        "I": "N1",
+        "ZN": "N2",
+        "VDD": "P2",
+        "VSS": "Q2",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV2 (N1 N2 P2 Q2 AVDD AVSS) INHDVL",
+      "definition": "osc_2m/XINV2",
+      "path": "XINV2"
+    },
+    "MNS2": {
+      "name": "MNS2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "Q2",
+        "G": "IBN2U",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MNS2 (Q2 IBN2U AVSS AVSS) n18 w=0.28u l=1u m=2",
+      "W_unit_um": 0.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "osc_2m/MNS2",
+      "path": "MNS2"
+    },
+    "CT2": {
+      "name": "CT2",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "N2",
+        "2": "AVSS"
+      },
+      "parameters": {
+        "w": "10u",
+        "l": "7.75u"
+      },
+      "source_line": "CT2 (N2 AVSS) mim w=10u l=7.75u",
+      "definition": "osc_2m/CT2",
+      "path": "CT2"
+    },
+    "MPS3": {
+      "name": "MPS3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "P3",
+        "G": "VBP",
+        "S": "AVDD",
+        "B": "AVDD"
+      },
+      "parameters": {
+        "w": "1.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MPS3 (P3 VBP AVDD AVDD) p18 w=1.28u l=1u m=2",
+      "W_unit_um": 1.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "osc_2m/MPS3",
+      "path": "MPS3"
+    },
+    "XINV3": {
+      "name": "XINV3",
+      "kind": "HD",
+      "model": "INHDVL",
+      "pins": {
+        "I": "N2",
+        "ZN": "N3",
+        "VDD": "P3",
+        "VSS": "Q3",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XINV3 (N2 N3 P3 Q3 AVDD AVSS) INHDVL",
+      "definition": "osc_2m/XINV3",
+      "path": "XINV3"
+    },
+    "MNS3": {
+      "name": "MNS3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "Q3",
+        "G": "IBN2U",
+        "S": "AVSS",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "0.28u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MNS3 (Q3 IBN2U AVSS AVSS) n18 w=0.28u l=1u m=2",
+      "W_unit_um": 0.28,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "osc_2m/MNS3",
+      "path": "MNS3"
+    },
+    "CT3": {
+      "name": "CT3",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "N3",
+        "2": "AVSS"
+      },
+      "parameters": {
+        "w": "10u",
+        "l": "7.75u"
+      },
+      "source_line": "CT3 (N3 AVSS) mim w=10u l=7.75u",
+      "definition": "osc_2m/CT3",
+      "path": "CT3"
+    },
+    "XBUF0": {
+      "name": "XBUF0",
+      "kind": "HD",
+      "model": "INHDVL",
+      "pins": {
+        "I": "N3",
+        "ZN": "B1",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XBUF0 (N3 B1 AVDD AVSS AVDD AVSS) INHDVL",
+      "definition": "osc_2m/XBUF0",
+      "path": "XBUF0"
+    },
+    "XBUF1": {
+      "name": "XBUF1",
+      "kind": "HD",
+      "model": "INHDV0",
+      "pins": {
+        "I": "B1",
+        "ZN": "CLKO",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XBUF1 (B1 CLKO AVDD AVSS AVDD AVSS) INHDV0",
+      "definition": "osc_2m/XBUF1",
+      "path": "XBUF1"
+    }
+  },
+  "nets": {
+    "osc_2m/IBN2U": [
+      {
+        "instance": "osc_2m/MNREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          4,
+          5
+        ]
+      },
+      {
+        "instance": "osc_2m/MNREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          2.45,
+          4
+        ]
+      },
+      {
+        "instance": "osc_2m/MNBP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          9.45,
+          5
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          17.65,
+          7
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          26.65,
+          7
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS3",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          35.650000000000006,
+          7
+        ]
+      }
+    ],
+    "osc_2m/AVSS": [
+      {
+        "instance": "osc_2m/MNREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          4,
+          3
+        ]
+      },
+      {
+        "instance": "osc_2m/MNREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          4.86,
+          4
+        ]
+      },
+      {
+        "instance": "osc_2m/MNBP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          11,
+          4
+        ]
+      },
+      {
+        "instance": "osc_2m/MNBP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          11.86,
+          5
+        ]
+      },
+      {
+        "instance": "osc_2m/XBUF0",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          3.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "osc_2m/XBUF0",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          4.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "osc_2m/XBUF1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          3.2,
+          8.8
+        ]
+      },
+      {
+        "instance": "osc_2m/XBUF1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          4.8,
+          8.8
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          20.8,
+          10.8
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          19.2,
+          6
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          20.06,
+          7
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV2",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          29.8,
+          10.8
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          28.2,
+          6
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          29.06,
+          7
+        ]
+      },
+      {
+        "instance": "osc_2m/CT2",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          29.82,
+          2.5
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV3",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          10.8
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS3",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          37.2,
+          6
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS3",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          38.06,
+          7
+        ]
+      },
+      {
+        "instance": "osc_2m/CT3",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          38.82,
+          2.5
+        ]
+      }
+    ],
+    "osc_2m/VBP": [
+      {
+        "instance": "osc_2m/MPREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          11,
+          18
+        ]
+      },
+      {
+        "instance": "osc_2m/MPREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          9.45,
+          19
+        ]
+      },
+      {
+        "instance": "osc_2m/MNBP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          11,
+          6
+        ]
+      },
+      {
+        "instance": "osc_2m/MPS1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          17.65,
+          19
+        ]
+      },
+      {
+        "instance": "osc_2m/MPS2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          26.65,
+          19
+        ]
+      },
+      {
+        "instance": "osc_2m/MPS3",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          35.650000000000006,
+          19
+        ]
+      }
+    ],
+    "osc_2m/AVDD": [
+      {
+        "instance": "osc_2m/MPREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          11,
+          20
+        ]
+      },
+      {
+        "instance": "osc_2m/MPREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          11.86,
+          19
+        ]
+      },
+      {
+        "instance": "osc_2m/XBUF0",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          3.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "osc_2m/XBUF0",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          4.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "osc_2m/XBUF1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          3.2,
+          13.2
+        ]
+      },
+      {
+        "instance": "osc_2m/XBUF1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          4.8,
+          13.2
+        ]
+      },
+      {
+        "instance": "osc_2m/MPS1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          19.2,
+          20
+        ]
+      },
+      {
+        "instance": "osc_2m/MPS1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          20.06,
+          19
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          20.8,
+          15.2
+        ]
+      },
+      {
+        "instance": "osc_2m/CT1",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          20.82,
+          2.5
+        ]
+      },
+      {
+        "instance": "osc_2m/MPS2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          28.2,
+          20
+        ]
+      },
+      {
+        "instance": "osc_2m/MPS2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          29.06,
+          19
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV2",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          29.8,
+          15.2
+        ]
+      },
+      {
+        "instance": "osc_2m/MPS3",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          37.2,
+          20
+        ]
+      },
+      {
+        "instance": "osc_2m/MPS3",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          38.06,
+          19
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV3",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          15.2
+        ]
+      }
+    ],
+    "osc_2m/N3": [
+      {
+        "instance": "osc_2m/XBUF0",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          1.2999999999999998,
+          19.0
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          17.3,
+          13.0
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV3",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          40.7,
+          13.0
+        ]
+      },
+      {
+        "instance": "osc_2m/CT3",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          37.18,
+          2.5
+        ]
+      }
+    ],
+    "osc_2m/B1": [
+      {
+        "instance": "osc_2m/XBUF0",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          6.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "osc_2m/XBUF1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          1.2999999999999998,
+          11.0
+        ]
+      }
+    ],
+    "osc_2m/CLKO": [
+      {
+        "instance": "osc_2m/XBUF1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          6.7,
+          11.0
+        ]
+      }
+    ],
+    "osc_2m/P1": [
+      {
+        "instance": "osc_2m/MPS1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          19.2,
+          18
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          19.2,
+          15.2
+        ]
+      }
+    ],
+    "osc_2m/N1": [
+      {
+        "instance": "osc_2m/XINV1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          22.7,
+          13.0
+        ]
+      },
+      {
+        "instance": "osc_2m/CT1",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          19.18,
+          2.5
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV2",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          26.3,
+          13.0
+        ]
+      }
+    ],
+    "osc_2m/Q1": [
+      {
+        "instance": "osc_2m/XINV1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          19.2,
+          10.8
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          19.2,
+          8
+        ]
+      }
+    ],
+    "osc_2m/P2": [
+      {
+        "instance": "osc_2m/MPS2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          28.2,
+          18
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV2",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          28.2,
+          15.2
+        ]
+      }
+    ],
+    "osc_2m/N2": [
+      {
+        "instance": "osc_2m/XINV2",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          31.7,
+          13.0
+        ]
+      },
+      {
+        "instance": "osc_2m/CT2",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          28.18,
+          2.5
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV3",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          35.3,
+          13.0
+        ]
+      }
+    ],
+    "osc_2m/Q2": [
+      {
+        "instance": "osc_2m/XINV2",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          28.2,
+          10.8
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          28.2,
+          8
+        ]
+      }
+    ],
+    "osc_2m/P3": [
+      {
+        "instance": "osc_2m/MPS3",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          37.2,
+          18
+        ]
+      },
+      {
+        "instance": "osc_2m/XINV3",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          37.2,
+          15.2
+        ]
+      }
+    ],
+    "osc_2m/Q3": [
+      {
+        "instance": "osc_2m/XINV3",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          37.2,
+          10.8
+        ]
+      },
+      {
+        "instance": "osc_2m/MNS3",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          37.2,
+          8
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "XBUF0",
+      "pin": "ZN",
+      "net": "B1",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBUF1",
+      "pin": "I",
+      "net": "B1",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBUF0",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBUF0",
+      "pin": "VNW",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBUF1",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBUF1",
+      "pin": "VNW",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS1",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS1",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VNW",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "CT1",
+      "pin": "2",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS2",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS2",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VNW",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS3",
+      "pin": "S",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS3",
+      "pin": "B",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VNW",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "D",
+      "net": "VBP",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "G",
+      "net": "VBP",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP",
+      "pin": "D",
+      "net": "VBP",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS1",
+      "pin": "G",
+      "net": "VBP",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS2",
+      "pin": "G",
+      "net": "VBP",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS3",
+      "pin": "G",
+      "net": "VBP",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VSS",
+      "net": "Q3",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS3",
+      "pin": "D",
+      "net": "Q3",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS1",
+      "pin": "D",
+      "net": "P1",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VDD",
+      "net": "P1",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNREF",
+      "pin": "D",
+      "net": "IBN2U",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNREF",
+      "pin": "G",
+      "net": "IBN2U",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP",
+      "pin": "G",
+      "net": "IBN2U",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS1",
+      "pin": "G",
+      "net": "IBN2U",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS2",
+      "pin": "G",
+      "net": "IBN2U",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS3",
+      "pin": "G",
+      "net": "IBN2U",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "ZN",
+      "net": "N1",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "CT1",
+      "pin": "1",
+      "net": "N1",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "I",
+      "net": "N1",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS2",
+      "pin": "D",
+      "net": "P2",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VDD",
+      "net": "P2",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VSS",
+      "net": "Q2",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS2",
+      "pin": "D",
+      "net": "Q2",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPS3",
+      "pin": "D",
+      "net": "P3",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VDD",
+      "net": "P3",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBUF0",
+      "pin": "I",
+      "net": "N3",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "I",
+      "net": "N3",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "ZN",
+      "net": "N3",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "CT3",
+      "pin": "1",
+      "net": "N3",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBUF1",
+      "pin": "ZN",
+      "net": "CLKO",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "ZN",
+      "net": "N2",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "CT2",
+      "pin": "1",
+      "net": "N2",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "I",
+      "net": "N2",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VSS",
+      "net": "Q1",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS1",
+      "pin": "D",
+      "net": "Q1",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNREF",
+      "pin": "S",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNREF",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP",
+      "pin": "S",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBUF0",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBUF0",
+      "pin": "VPW",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBUF1",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XBUF1",
+      "pin": "VPW",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VPW",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS1",
+      "pin": "S",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS1",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VPW",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS2",
+      "pin": "S",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS2",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "CT2",
+      "pin": "2",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VPW",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS3",
+      "pin": "S",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNS3",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    },
+    {
+      "sheet": 1,
+      "instance": "CT3",
+      "pin": "2",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "osc_2m"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "osc_2m",
+      "title": "参考偏置、三级限流环及 HD 输出缓冲",
+      "wires": [
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              4.86,
+              4
+            ],
+            [
+              5.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "IBN2U",
+          "points": [
+            [
+              2.45,
+              4
+            ],
+            [
+              1.9500000000000002,
+              4
+            ],
+            [
+              1.9500000000000002,
+              6.6
+            ],
+            [
+              4,
+              6.6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              11.86,
+              19
+            ],
+            [
+              12.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              11.86,
+              5
+            ],
+            [
+              12.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VBP",
+          "points": [
+            [
+              11,
+              18
+            ],
+            [
+              11,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP",
+          "points": [
+            [
+              9.45,
+              19
+            ],
+            [
+              8.95,
+              19
+            ],
+            [
+              8.95,
+              16
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              20.06,
+              19
+            ],
+            [
+              20.349999999999998,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              20.06,
+              7
+            ],
+            [
+              20.349999999999998,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "P1",
+          "points": [
+            [
+              19.2,
+              18
+            ],
+            [
+              19.2,
+              15.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "Q1",
+          "points": [
+            [
+              19.2,
+              8
+            ],
+            [
+              19.2,
+              10.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              29.06,
+              19
+            ],
+            [
+              29.349999999999998,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              29.06,
+              7
+            ],
+            [
+              29.349999999999998,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "P2",
+          "points": [
+            [
+              28.2,
+              18
+            ],
+            [
+              28.2,
+              15.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "Q2",
+          "points": [
+            [
+              28.2,
+              8
+            ],
+            [
+              28.2,
+              10.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              38.06,
+              19
+            ],
+            [
+              38.35,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              38.06,
+              7
+            ],
+            [
+              38.35,
+              7
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "P3",
+          "points": [
+            [
+              37.2,
+              18
+            ],
+            [
+              37.2,
+              15.2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "Q3",
+          "points": [
+            [
+              37.2,
+              8
+            ],
+            [
+              37.2,
+              10.8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "N3",
+          "points": [
+            [
+              1.2999999999999998,
+              19.0
+            ],
+            [
+              0.6999999999999998,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "B1",
+          "points": [
+            [
+              6.7,
+              19.0
+            ],
+            [
+              7.3,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              3.2,
+              21.2
+            ],
+            [
+              3.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              4.8,
+              21.2
+            ],
+            [
+              4.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              3.2,
+              16.8
+            ],
+            [
+              3.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              4.8,
+              16.8
+            ],
+            [
+              4.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "B1",
+          "points": [
+            [
+              1.2999999999999998,
+              11.0
+            ],
+            [
+              0.6999999999999998,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLKO",
+          "points": [
+            [
+              6.7,
+              11.0
+            ],
+            [
+              7.3,
+              11.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              3.2,
+              13.2
+            ],
+            [
+              3.2,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              4.8,
+              13.2
+            ],
+            [
+              4.8,
+              13.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              3.2,
+              8.8
+            ],
+            [
+              3.2,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              4.8,
+              8.8
+            ],
+            [
+              4.8,
+              8.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "N3",
+          "points": [
+            [
+              17.3,
+              13.0
+            ],
+            [
+              16.7,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "N1",
+          "points": [
+            [
+              22.7,
+              13.0
+            ],
+            [
+              23.3,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              20.8,
+              15.2
+            ],
+            [
+              20.8,
+              15.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              20.8,
+              10.8
+            ],
+            [
+              20.8,
+              10.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "N1",
+          "points": [
+            [
+              26.3,
+              13.0
+            ],
+            [
+              25.7,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "N2",
+          "points": [
+            [
+              31.7,
+              13.0
+            ],
+            [
+              32.3,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              29.8,
+              15.2
+            ],
+            [
+              29.8,
+              15.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              29.8,
+              10.8
+            ],
+            [
+              29.8,
+              10.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "N2",
+          "points": [
+            [
+              35.3,
+              13.0
+            ],
+            [
+              34.699999999999996,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "N3",
+          "points": [
+            [
+              40.7,
+              13.0
+            ],
+            [
+              41.300000000000004,
+              13.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              38.8,
+              15.2
+            ],
+            [
+              38.8,
+              15.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              38.8,
+              10.8
+            ],
+            [
+              38.8,
+              10.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              4,
+              3
+            ],
+            [
+              4,
+              2.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              11,
+              20
+            ],
+            [
+              11,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "IBN2U",
+          "points": [
+            [
+              9.45,
+              5
+            ],
+            [
+              8.899999999999999,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              19.2,
+              20
+            ],
+            [
+              19.2,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP",
+          "points": [
+            [
+              17.65,
+              19
+            ],
+            [
+              17.099999999999998,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              19.2,
+              6
+            ],
+            [
+              19.2,
+              5.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "IBN2U",
+          "points": [
+            [
+              17.65,
+              7
+            ],
+            [
+              17.099999999999998,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "N1",
+          "points": [
+            [
+              19.18,
+              2.5
+            ],
+            [
+              18.38,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              20.82,
+              2.5
+            ],
+            [
+              21.62,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              28.2,
+              20
+            ],
+            [
+              28.2,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP",
+          "points": [
+            [
+              26.65,
+              19
+            ],
+            [
+              26.099999999999998,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              28.2,
+              6
+            ],
+            [
+              28.2,
+              5.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "IBN2U",
+          "points": [
+            [
+              26.65,
+              7
+            ],
+            [
+              26.099999999999998,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "N2",
+          "points": [
+            [
+              28.18,
+              2.5
+            ],
+            [
+              27.38,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              29.82,
+              2.5
+            ],
+            [
+              30.62,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              37.2,
+              20
+            ],
+            [
+              37.2,
+              20.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP",
+          "points": [
+            [
+              35.650000000000006,
+              19
+            ],
+            [
+              35.10000000000001,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              37.2,
+              6
+            ],
+            [
+              37.2,
+              5.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "IBN2U",
+          "points": [
+            [
+              35.650000000000006,
+              7
+            ],
+            [
+              35.10000000000001,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "N3",
+          "points": [
+            [
+              37.18,
+              2.5
+            ],
+            [
+              36.38,
+              2.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              38.82,
+              2.5
+            ],
+            [
+              39.62,
+              2.5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "AVSS",
+          "point": [
+            5.15,
+            4
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "IBN2U",
+          "point": [
+            4,
+            6.6
+          ],
+          "text": "IBN2U",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            12.15,
+            19
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            12.15,
+            5
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "VBP",
+          "point": [
+            11,
+            11
+          ],
+          "text": "VBP",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            20.349999999999998,
+            19
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            20.349999999999998,
+            7
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "P1",
+          "point": [
+            19.2,
+            17
+          ],
+          "text": "P1",
+          "body": false
+        },
+        {
+          "net": "Q1",
+          "point": [
+            19.2,
+            9.4
+          ],
+          "text": "Q1",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            29.349999999999998,
+            19
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            29.349999999999998,
+            7
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "P2",
+          "point": [
+            28.2,
+            17
+          ],
+          "text": "P2",
+          "body": false
+        },
+        {
+          "net": "Q2",
+          "point": [
+            28.2,
+            9.4
+          ],
+          "text": "Q2",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            38.35,
+            19
+          ],
+          "text": "AVDD",
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            38.35,
+            7
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "P3",
+          "point": [
+            37.2,
+            17
+          ],
+          "text": "P3",
+          "body": false
+        },
+        {
+          "net": "Q3",
+          "point": [
+            37.2,
+            9.4
+          ],
+          "text": "Q3",
+          "body": false
+        },
+        {
+          "net": "N3",
+          "point": [
+            0.6999999999999998,
+            19.0
+          ],
+          "text": "N3",
+          "body": false
+        },
+        {
+          "net": "B1",
+          "point": [
+            7.3,
+            19.0
+          ],
+          "text": "B1",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            3.2,
+            21.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            4.8,
+            21.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            3.2,
+            16.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            4.8,
+            16.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "B1",
+          "point": [
+            0.6999999999999998,
+            11.0
+          ],
+          "text": "B1",
+          "body": false
+        },
+        {
+          "net": "CLKO",
+          "point": [
+            7.3,
+            11.0
+          ],
+          "text": "CLKO",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            3.2,
+            13.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            4.8,
+            13.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            3.2,
+            8.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            4.8,
+            8.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "N3",
+          "point": [
+            16.7,
+            13.0
+          ],
+          "text": "N3",
+          "body": false
+        },
+        {
+          "net": "N1",
+          "point": [
+            23.3,
+            13.0
+          ],
+          "text": "N1",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            20.8,
+            15.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            20.8,
+            10.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "N1",
+          "point": [
+            25.7,
+            13.0
+          ],
+          "text": "N1",
+          "body": false
+        },
+        {
+          "net": "N2",
+          "point": [
+            32.3,
+            13.0
+          ],
+          "text": "N2",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            29.8,
+            15.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            29.8,
+            10.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "N2",
+          "point": [
+            34.699999999999996,
+            13.0
+          ],
+          "text": "N2",
+          "body": false
+        },
+        {
+          "net": "N3",
+          "point": [
+            41.300000000000004,
+            13.0
+          ],
+          "text": "N3",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            38.8,
+            15.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            38.8,
+            10.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            4,
+            2.36
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            11,
+            20.64
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            11,
+            3.36
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "IBN2U",
+          "point": [
+            8.899999999999999,
+            5
+          ],
+          "text": "IBN2U",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            19.2,
+            20.64
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "VBP",
+          "point": [
+            17.099999999999998,
+            19
+          ],
+          "text": "VBP",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            19.2,
+            5.36
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "IBN2U",
+          "point": [
+            17.099999999999998,
+            7
+          ],
+          "text": "IBN2U",
+          "body": false
+        },
+        {
+          "net": "N1",
+          "point": [
+            18.38,
+            2.5
+          ],
+          "text": "N1",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            21.62,
+            2.5
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            28.2,
+            20.64
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "VBP",
+          "point": [
+            26.099999999999998,
+            19
+          ],
+          "text": "VBP",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            28.2,
+            5.36
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "IBN2U",
+          "point": [
+            26.099999999999998,
+            7
+          ],
+          "text": "IBN2U",
+          "body": false
+        },
+        {
+          "net": "N2",
+          "point": [
+            27.38,
+            2.5
+          ],
+          "text": "N2",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            30.62,
+            2.5
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            37.2,
+            20.64
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "VBP",
+          "point": [
+            35.10000000000001,
+            19
+          ],
+          "text": "VBP",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            37.2,
+            5.36
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "IBN2U",
+          "point": [
+            35.10000000000001,
+            7
+          ],
+          "text": "IBN2U",
+          "body": false
+        },
+        {
+          "net": "N3",
+          "point": [
+            36.38,
+            2.5
+          ],
+          "text": "N3",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            39.62,
+            2.5
+          ],
+          "text": "AVSS",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "osc_2m": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

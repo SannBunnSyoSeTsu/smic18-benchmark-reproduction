@@ -1,0 +1,19 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        PH["HD非交叠相位"]
+        A["A组开关与飞跨电容"]
+        B["B组交错开关与飞跨电容"]
+        OUT["输出汇流 / 存储"]
+    end
+    CLK["20MHz时钟"]
+    VDD["输入电源"]
+    LOAD["轻 / 重负载"]
+    CLK -.-> PH
+    PH -.->|"串充 / 并放"| A
+    PH -.->|"交错两相"| B
+    VDD --> A
+    VDD --> B
+    A --> OUT
+    B --> OUT
+    OUT -->|"约Vin的一半"| LOAD

@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-09-26T03:13:54.636513+00:00",
+  "case_slot": 21,
+  "label": "static",
+  "netlist": "runs/21/20260926T031354634964Z_static/inputs/bench.scs",
+  "netlist_sha256": "fc5e0c5cc893a08c451cf7e90029b83fd28fc24d91068e8c478131b4b75af000",
+  "dependencies": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/21-highpsrr-bandgap/circuit.scs": {
+      "snapshot": "runs/21/20260926T031354634964Z_static/inputs/circuit.scs",
+      "sha256": "c44fb1be719bd559ccdcdeed956b61620db10de7cd08cefb35cf0b11f8f879de"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/21-highpsrr-bandgap/sizing.json": {
+      "snapshot": "runs/21/20260926T031354634964Z_static/inputs/sizing.json",
+      "sha256": "8fabfb7590fa6c0c79f3470cf04f370935448191103c0970623ba960b24367b2"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/21-highpsrr-bandgap/contract.json": {
+      "snapshot": "runs/21/20260926T031354634964Z_static/inputs/contract.json",
+      "sha256": "3f8ab675490347e383944068cd131c400c1e63739984000aa544e5f3b2aeb219"
+    }
+  },
+  "models": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib": "88246a7e992cb3f5af5ac0f6a9a1c5934707ecd72e7f8f08150b44a01796c20f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.mdl": "832d378241360815f6d4009514d863f2aac9c48c312326410de9421564b1033d",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_bjt_spe.mdl": "d2d45e69a854f8d090fe3ef83041bc39ed8a0abcd9d272b8067a9db3014a9b6f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_res_spe.mdl": "173a1a7c1d8cc2f1009ac12db0f0d4f9725aebea8625cf9796a0be50f06fceb1",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_mim_spe.mdl": "02c8e7986a1c159e52c8fa403fdb52b9b4f928e00bca5522a648992528d7edff"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "status": "completed",
+  "completed_at": "2026-09-26T03:13:55.778594+00:00",
+  "errors": [
+    "license error"
+  ],
+  "warnings": [],
+  "model_dimensions_valid": true,
+  "raw_dir": "runs/21/20260926T031354634964Z_static/output/bench.raw"
+}

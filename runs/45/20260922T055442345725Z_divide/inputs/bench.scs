@@ -1,0 +1,16 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/45/20260922T055442345725Z_divide/inputs/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/45/20260922T055442345725Z_divide/inputs/circuit.scs"
+simulatorOptions options temp=27 reltol=1e-5 vabstol=1e-8 iabstol=1e-14 method=gear2only
+VDD (vdd 0) vsource dc=1.8
+VCLK (clk_src 0) vsource type=pulse val0=0 val1=1.8 delay=.2n rise=10p fall=10p width=.49n period=1n
+VRESET (reset_src 0) vsource type=pwl wave=[0 1.8 .945n 1.8 .95n 0 9n 0]
+RCLK (clk_src clk) resistor r=20
+RRESET (reset_src reset) resistor r=20
+CL (clkout 0) capacitor c=20f
+XDUT (clk reset vdd 0 clkout) divide_by_2
+saveOptions options save=selected
+save clk reset clkout XDUT.qn XDUT.rdn VDD:p
+tran tran stop=9n maxstep=1p errpreset=conservative

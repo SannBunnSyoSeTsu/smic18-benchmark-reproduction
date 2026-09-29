@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-09-29T04:50:40.176880+00:00",
+  "baseline_groups": {
+    "10mv": "runs/28/20260929T044720744995Z_10mv",
+    "20mv": "runs/28/20260929T044759412817Z_20mv"
+  },
+  "final_groups": {
+    "10mv": "runs/28/20260929T044850676802Z_10mv",
+    "20mv": "runs/28/20260929T044939226581Z_20mv"
+  },
+  "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+  "baseline_settings": {
+    "maxstep_s": 2.5e-12,
+    "global_reltol": 1e-06,
+    "vabstol_V": 1e-06,
+    "iabstol_A": 1e-12
+  },
+  "refined_settings": {
+    "maxstep_s": 1.25e-12,
+    "global_reltol": 1e-07,
+    "vabstol_V": 1e-06,
+    "iabstol_A": 1e-12
+  },
+  "exact_original_readout_strobes": true,
+  "metrics": [
+    {
+      "metric": "10mv_gain_vv",
+      "baseline": 4.79682566130089,
+      "refined": 4.796801326116932,
+      "absolute_difference": 2.4335183957724382e-05,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "10mv_sfdr_db",
+      "baseline": 85.47595853551601,
+      "refined": 87.1202732261741,
+      "absolute_difference": 1.644314690658092,
+      "maximum_difference": 0.5,
+      "passed": false
+    },
+    {
+      "metric": "10mv_cm_mean_v",
+      "baseline": 1.178961838648275,
+      "refined": 1.1789627464082821,
+      "absolute_difference": 9.077600071627501e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "10mv_output_min_v",
+      "baseline": 1.153767805812177,
+      "refined": 1.153768033421048,
+      "absolute_difference": 2.2760887108397299e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "10mv_output_max_v",
+      "baseline": 1.2032329798026,
+      "refined": 1.203232382044081,
+      "absolute_difference": 5.97758519127467e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "10mv_hold_movement_ratio",
+      "baseline": 0.016309566180743282,
+      "refined": 0.016312519159977744,
+      "absolute_difference": 2.9529792344613892e-06,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "10mv_power_w",
+      "baseline": 0.00474859024074475,
+      "refined": 0.0047483966834994725,
+      "absolute_difference": 1.9355724527759383e-07,
+      "maximum_difference": 5e-06,
+      "passed": true
+    },
+    {
+      "metric": "20mv_gain_vv",
+      "baseline": 4.812402441762913,
+      "refined": 4.812233838848472,
+      "absolute_difference": 0.00016860291444142916,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "20mv_sfdr_db",
+      "baseline": 84.69560750905467,
+      "refined": 83.66209607322202,
+      "absolute_difference": 1.0335114358326507,
+      "maximum_difference": 0.5,
+      "passed": false
+    },
+    {
+      "metric": "20mv_cm_mean_v",
+      "baseline": 1.1787128479262314,
+      "refined": 1.17871297935904,
+      "absolute_difference": 1.3143280863658902e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "20mv_output_min_v",
+      "baseline": 1.12901558219729,
+      "refined": 1.129018101831812,
+      "absolute_difference": 2.5196345219136163e-06,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "20mv_output_max_v",
+      "baseline": 1.226785680492561,
+      "refined": 1.226784748445323,
+      "absolute_difference": 9.320472380558442e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "20mv_hold_movement_ratio",
+      "baseline": 0.016231202723724487,
+      "refined": 0.016234174690564922,
+      "absolute_difference": 2.9719668404350197e-06,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "20mv_power_w",
+      "baseline": 0.004748569193960363,
+      "refined": 0.00474846629295918,
+      "absolute_difference": 1.0290100118260509e-07,
+      "maximum_difference": 5e-06,
+      "passed": true
+    }
+  ],
+  "passed": false
+}

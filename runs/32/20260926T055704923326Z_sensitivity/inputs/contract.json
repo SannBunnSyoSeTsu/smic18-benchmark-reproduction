@@ -1,0 +1,71 @@
+{
+  "source_task": "sky130-cml-tx-driver-28g-nrz-pvt",
+  "scope": "SMIC18TT/1.8V/27C nominal only. Otherpairedss1.62V-40C andff1.98V125C points excluded, not passed.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 0.0001,
+  "pin_order": [
+    "vss",
+    "vdd",
+    "iref",
+    "dinp",
+    "dinn",
+    "voutp",
+    "voutn"
+  ],
+  "input": {
+    "common_mode_V": 1.17,
+    "static_symbols_V": [
+      0.15,
+      -0.15,
+      0
+    ],
+    "source_resistance_ohm_each": 50,
+    "pad_cap_F_each": 3e-14,
+    "source_edge_20_80_s": 5e-12
+  },
+  "output": {
+    "termination_ohm_to_VDD_each": 50,
+    "load_F_each": 1e-13
+  },
+  "ac": {
+    "start_Hz": 10000000.0,
+    "stop_Hz": 50000000000.0,
+    "points_per_decade": 50,
+    "gain_reference_Hz": 100000000.0,
+    "peaking_band_Hz": [
+      100000000.0,
+      22000000000.0
+    ],
+    "group_delay_band_Hz": [
+      1000000000.0,
+      14000000000.0
+    ],
+    "phase": "physical phase in radians differentiated versus angular frequency; originalPython parser expects degrees and is supplied explicitdegree data"
+  },
+  "prbs7": {
+    "UI_s": 3.5714285714285714e-11,
+    "period_bits": 127,
+    "periods": 2,
+    "stop_s": 9.0714286e-09,
+    "maxstep_s": 2e-13,
+    "symbol_center": "original delay-compensated(n+.5)*UI+mean_zero_crossing_offset",
+    "measurement_period": 2,
+    "power": "Original raw-sample mean retained; time-weighted mean independently reported and also required to meet power limit"
+  },
+  "sensitivity": {
+    "UIs": 12,
+    "warmup_UIs": 4,
+    "differential_Vpp": 0.2,
+    "stop_s": 4.285714e-10
+  },
+  "allowed_DUT": "native SMIC MOS and positive idealR/C/L as original permits; no sources/behavioral logic/ideal switches; no internal50ohm output termination",
+  "nonrelaxable": [
+    "correctsign every symbol",
+    "all expectedtransitions and edge counts",
+    "allscalarsfinite",
+    "output rail limits",
+    "originalsourcefixtureandstimuli"
+  ],
+  "acceptance_policy": "/home/IC/CodeX/smic18_benchmark_repro/contracts/acceptance-policy.md"
+}

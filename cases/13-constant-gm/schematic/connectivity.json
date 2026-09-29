@@ -1,0 +1,2337 @@
+{
+  "generated_at": "2026-09-23T06:18:41.687145+00:00",
+  "circuit_sha256": "ddae3c2eeb075e2861029154ff9555db01c3092a7860f44e7bc7d70b9d597090",
+  "top": "cgm_amp",
+  "subcircuit_ports": {
+    "cgm_amp": [
+      "vss",
+      "iref",
+      "vdd",
+      "vinp",
+      "vinn",
+      "voutp",
+      "voutn"
+    ]
+  },
+  "instances": {
+    "cgm_amp/MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "14.88u",
+        "l": "1u"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=14.88u l=1u",
+      "W_unit_um": 14.879999999999999,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        4,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          7
+        ],
+        "S": [
+          4,
+          5
+        ],
+        "G": [
+          2.45,
+          6
+        ],
+        "B": [
+          4.86,
+          6
+        ]
+      },
+      "block": "cgm_amp"
+    },
+    "cgm_amp/MST": {
+      "name": "MST",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nc",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.24u",
+        "l": "4u"
+      },
+      "source_line": "MST (nc iref vss vss) n18 w=0.24u l=4u",
+      "W_unit_um": 0.24,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        12,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          7
+        ],
+        "S": [
+          12,
+          5
+        ],
+        "G": [
+          10.45,
+          6
+        ],
+        "B": [
+          12.86,
+          6
+        ]
+      },
+      "block": "cgm_amp"
+    },
+    "cgm_amp/MB1": {
+      "name": "MB1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nb",
+        "G": "nb",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "19.94u",
+        "l": "1u"
+      },
+      "source_line": "MB1 (nb nb vss vss) n18 w=19.94u l=1u",
+      "W_unit_um": 19.939999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        23,
+        8
+      ],
+      "rendered_pins": {
+        "D": [
+          23,
+          9
+        ],
+        "S": [
+          23,
+          7
+        ],
+        "G": [
+          21.45,
+          8
+        ],
+        "B": [
+          23.86,
+          8
+        ]
+      },
+      "block": "cgm_amp"
+    },
+    "cgm_amp/MB2": {
+      "name": "MB2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nc",
+        "G": "nb",
+        "S": "rb2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "19.94u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MB2 (nc nb rb2 vss) n18 w=19.94u l=1u m=4",
+      "W_unit_um": 19.939999999999998,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        35,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          35,
+          12
+        ],
+        "S": [
+          35,
+          10
+        ],
+        "G": [
+          33.45,
+          11
+        ],
+        "B": [
+          35.86,
+          11
+        ]
+      },
+      "block": "cgm_amp"
+    },
+    "cgm_amp/MP1": {
+      "name": "MP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nb",
+        "G": "nc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.2u",
+        "l": "1u"
+      },
+      "source_line": "MP1 (nb nc vdd vdd) p18 w=42.2u l=1u",
+      "W_unit_um": 42.2,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        23,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          23,
+          18
+        ],
+        "S": [
+          23,
+          20
+        ],
+        "G": [
+          21.45,
+          19
+        ],
+        "B": [
+          23.86,
+          19
+        ]
+      },
+      "block": "cgm_amp"
+    },
+    "cgm_amp/MP2": {
+      "name": "MP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nc",
+        "G": "nc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.2u",
+        "l": "1u"
+      },
+      "source_line": "MP2 (nc nc vdd vdd) p18 w=42.2u l=1u",
+      "W_unit_um": 42.2,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        35,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          35,
+          18
+        ],
+        "S": [
+          35,
+          20
+        ],
+        "G": [
+          33.45,
+          19
+        ],
+        "B": [
+          35.86,
+          19
+        ]
+      },
+      "block": "cgm_amp"
+    },
+    "cgm_amp/RB": {
+      "name": "RB",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "rb2",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "1450"
+      },
+      "source_line": "RB (rb2 vss) resistor r=1450",
+      "value_SI": 1450.0,
+      "sheet": 1,
+      "origin": [
+        35,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          35,
+          5.82
+        ],
+        "2": [
+          35,
+          4.18
+        ]
+      },
+      "block": "cgm_amp"
+    },
+    "cgm_amp/MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "voutp",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "19.94u",
+        "l": "1u"
+      },
+      "source_line": "MINN (voutp vinn tail vss) n18 w=19.94u l=1u",
+      "W_unit_um": 19.939999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        12,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          12
+        ],
+        "S": [
+          12,
+          10
+        ],
+        "G": [
+          10.45,
+          11
+        ],
+        "B": [
+          12.86,
+          11
+        ]
+      },
+      "block": "cgm_amp"
+    },
+    "cgm_amp/MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "voutn",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "19.94u",
+        "l": "1u"
+      },
+      "source_line": "MINP (voutn vinp tail vss) n18 w=19.94u l=1u",
+      "W_unit_um": 19.939999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        28,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          28,
+          12
+        ],
+        "S": [
+          28,
+          10
+        ],
+        "G": [
+          26.45,
+          11
+        ],
+        "B": [
+          28.86,
+          11
+        ]
+      },
+      "block": "cgm_amp"
+    },
+    "cgm_amp/RLN": {
+      "name": "RLN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "voutn"
+      },
+      "parameters": {
+        "r": "5600"
+      },
+      "source_line": "RLN (vdd voutn) resistor r=5600",
+      "value_SI": 5600.0,
+      "sheet": 2,
+      "origin": [
+        28,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          28,
+          20.82
+        ],
+        "2": [
+          28,
+          19.18
+        ]
+      },
+      "block": "cgm_amp"
+    },
+    "cgm_amp/RLP": {
+      "name": "RLP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "voutp"
+      },
+      "parameters": {
+        "r": "5600"
+      },
+      "source_line": "RLP (vdd voutp) resistor r=5600",
+      "value_SI": 5600.0,
+      "sheet": 2,
+      "origin": [
+        12,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          12,
+          20.82
+        ],
+        "2": [
+          12,
+          19.18
+        ]
+      },
+      "block": "cgm_amp"
+    },
+    "cgm_amp/MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "nb",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "19.94u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MTAIL (tail nb vss vss) n18 w=19.94u l=1u m=2",
+      "W_unit_um": 19.939999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "sheet": 2,
+      "origin": [
+        20.0,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          20.0,
+          5
+        ],
+        "S": [
+          20.0,
+          3
+        ],
+        "G": [
+          18.45,
+          4
+        ],
+        "B": [
+          20.86,
+          4
+        ]
+      },
+      "block": "cgm_amp"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "14.88u",
+        "l": "1u"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=14.88u l=1u",
+      "W_unit_um": 14.879999999999999,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "cgm_amp/MREF",
+      "path": "MREF"
+    },
+    "MST": {
+      "name": "MST",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nc",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.24u",
+        "l": "4u"
+      },
+      "source_line": "MST (nc iref vss vss) n18 w=0.24u l=4u",
+      "W_unit_um": 0.24,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "cgm_amp/MST",
+      "path": "MST"
+    },
+    "MB1": {
+      "name": "MB1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nb",
+        "G": "nb",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "19.94u",
+        "l": "1u"
+      },
+      "source_line": "MB1 (nb nb vss vss) n18 w=19.94u l=1u",
+      "W_unit_um": 19.939999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "cgm_amp/MB1",
+      "path": "MB1"
+    },
+    "MB2": {
+      "name": "MB2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nc",
+        "G": "nb",
+        "S": "rb2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "19.94u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MB2 (nc nb rb2 vss) n18 w=19.94u l=1u m=4",
+      "W_unit_um": 19.939999999999998,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "cgm_amp/MB2",
+      "path": "MB2"
+    },
+    "RB": {
+      "name": "RB",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "rb2",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "1450"
+      },
+      "source_line": "RB (rb2 vss) resistor r=1450",
+      "value_SI": 1450.0,
+      "definition": "cgm_amp/RB",
+      "path": "RB"
+    },
+    "MP1": {
+      "name": "MP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nb",
+        "G": "nc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.2u",
+        "l": "1u"
+      },
+      "source_line": "MP1 (nb nc vdd vdd) p18 w=42.2u l=1u",
+      "W_unit_um": 42.2,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "cgm_amp/MP1",
+      "path": "MP1"
+    },
+    "MP2": {
+      "name": "MP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nc",
+        "G": "nc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "42.2u",
+        "l": "1u"
+      },
+      "source_line": "MP2 (nc nc vdd vdd) p18 w=42.2u l=1u",
+      "W_unit_um": 42.2,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "cgm_amp/MP2",
+      "path": "MP2"
+    },
+    "MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "nb",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "19.94u",
+        "l": "1u",
+        "m": "2"
+      },
+      "source_line": "MTAIL (tail nb vss vss) n18 w=19.94u l=1u m=2",
+      "W_unit_um": 19.939999999999998,
+      "L_um": 1.0,
+      "m": 2.0,
+      "definition": "cgm_amp/MTAIL",
+      "path": "MTAIL"
+    },
+    "MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "voutn",
+        "G": "vinp",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "19.94u",
+        "l": "1u"
+      },
+      "source_line": "MINP (voutn vinp tail vss) n18 w=19.94u l=1u",
+      "W_unit_um": 19.939999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "cgm_amp/MINP",
+      "path": "MINP"
+    },
+    "MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "voutp",
+        "G": "vinn",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "19.94u",
+        "l": "1u"
+      },
+      "source_line": "MINN (voutp vinn tail vss) n18 w=19.94u l=1u",
+      "W_unit_um": 19.939999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "cgm_amp/MINN",
+      "path": "MINN"
+    },
+    "RLP": {
+      "name": "RLP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "voutp"
+      },
+      "parameters": {
+        "r": "5600"
+      },
+      "source_line": "RLP (vdd voutp) resistor r=5600",
+      "value_SI": 5600.0,
+      "definition": "cgm_amp/RLP",
+      "path": "RLP"
+    },
+    "RLN": {
+      "name": "RLN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "vdd",
+        "2": "voutn"
+      },
+      "parameters": {
+        "r": "5600"
+      },
+      "source_line": "RLN (vdd voutn) resistor r=5600",
+      "value_SI": 5600.0,
+      "definition": "cgm_amp/RLN",
+      "path": "RLN"
+    }
+  },
+  "nets": {
+    "cgm_amp/iref": [
+      {
+        "instance": "cgm_amp/MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          4,
+          7
+        ]
+      },
+      {
+        "instance": "cgm_amp/MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          2.45,
+          6
+        ]
+      },
+      {
+        "instance": "cgm_amp/MST",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          10.45,
+          6
+        ]
+      }
+    ],
+    "cgm_amp/vss": [
+      {
+        "instance": "cgm_amp/MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          4,
+          5
+        ]
+      },
+      {
+        "instance": "cgm_amp/MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          4.86,
+          6
+        ]
+      },
+      {
+        "instance": "cgm_amp/MST",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          12,
+          5
+        ]
+      },
+      {
+        "instance": "cgm_amp/MST",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          12.86,
+          6
+        ]
+      },
+      {
+        "instance": "cgm_amp/MB1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          23,
+          7
+        ]
+      },
+      {
+        "instance": "cgm_amp/MB1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          23.86,
+          8
+        ]
+      },
+      {
+        "instance": "cgm_amp/MB2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          35.86,
+          11
+        ]
+      },
+      {
+        "instance": "cgm_amp/RB",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          35,
+          4.18
+        ]
+      },
+      {
+        "instance": "cgm_amp/MINN",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          12.86,
+          11
+        ]
+      },
+      {
+        "instance": "cgm_amp/MINP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          28.86,
+          11
+        ]
+      },
+      {
+        "instance": "cgm_amp/MTAIL",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          20.0,
+          3
+        ]
+      },
+      {
+        "instance": "cgm_amp/MTAIL",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          20.86,
+          4
+        ]
+      }
+    ],
+    "cgm_amp/nc": [
+      {
+        "instance": "cgm_amp/MST",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          12,
+          7
+        ]
+      },
+      {
+        "instance": "cgm_amp/MB2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          35,
+          12
+        ]
+      },
+      {
+        "instance": "cgm_amp/MP1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          21.45,
+          19
+        ]
+      },
+      {
+        "instance": "cgm_amp/MP2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          35,
+          18
+        ]
+      },
+      {
+        "instance": "cgm_amp/MP2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          33.45,
+          19
+        ]
+      }
+    ],
+    "cgm_amp/nb": [
+      {
+        "instance": "cgm_amp/MB1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          23,
+          9
+        ]
+      },
+      {
+        "instance": "cgm_amp/MB1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          21.45,
+          8
+        ]
+      },
+      {
+        "instance": "cgm_amp/MB2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          33.45,
+          11
+        ]
+      },
+      {
+        "instance": "cgm_amp/MP1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          23,
+          18
+        ]
+      },
+      {
+        "instance": "cgm_amp/MTAIL",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          18.45,
+          4
+        ]
+      }
+    ],
+    "cgm_amp/rb2": [
+      {
+        "instance": "cgm_amp/MB2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          35,
+          10
+        ]
+      },
+      {
+        "instance": "cgm_amp/RB",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          35,
+          5.82
+        ]
+      }
+    ],
+    "cgm_amp/vdd": [
+      {
+        "instance": "cgm_amp/MP1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          23,
+          20
+        ]
+      },
+      {
+        "instance": "cgm_amp/MP1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          23.86,
+          19
+        ]
+      },
+      {
+        "instance": "cgm_amp/MP2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          35,
+          20
+        ]
+      },
+      {
+        "instance": "cgm_amp/MP2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          35.86,
+          19
+        ]
+      },
+      {
+        "instance": "cgm_amp/RLN",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          28,
+          20.82
+        ]
+      },
+      {
+        "instance": "cgm_amp/RLP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          12,
+          20.82
+        ]
+      }
+    ],
+    "cgm_amp/voutp": [
+      {
+        "instance": "cgm_amp/MINN",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          12,
+          12
+        ]
+      },
+      {
+        "instance": "cgm_amp/RLP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          12,
+          19.18
+        ]
+      }
+    ],
+    "cgm_amp/vinn": [
+      {
+        "instance": "cgm_amp/MINN",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          10.45,
+          11
+        ]
+      }
+    ],
+    "cgm_amp/tail": [
+      {
+        "instance": "cgm_amp/MINN",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          12,
+          10
+        ]
+      },
+      {
+        "instance": "cgm_amp/MINP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          28,
+          10
+        ]
+      },
+      {
+        "instance": "cgm_amp/MTAIL",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          20.0,
+          5
+        ]
+      }
+    ],
+    "cgm_amp/voutn": [
+      {
+        "instance": "cgm_amp/MINP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          28,
+          12
+        ]
+      },
+      {
+        "instance": "cgm_amp/RLN",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          28,
+          19.18
+        ]
+      }
+    ],
+    "cgm_amp/vinp": [
+      {
+        "instance": "cgm_amp/MINP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          26.45,
+          11
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MST",
+      "pin": "D",
+      "net": "nc",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MB2",
+      "pin": "D",
+      "net": "nc",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "G",
+      "net": "nc",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "D",
+      "net": "nc",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "G",
+      "net": "nc",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MB1",
+      "pin": "D",
+      "net": "nb",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MB1",
+      "pin": "G",
+      "net": "nb",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MB2",
+      "pin": "G",
+      "net": "nb",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "D",
+      "net": "nb",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MST",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MST",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MB1",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MB1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MB2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "RB",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MB2",
+      "pin": "S",
+      "net": "rb2",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "RB",
+      "pin": "1",
+      "net": "rb2",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP1",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MP2",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 1,
+      "instance": "MST",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "G",
+      "net": "nb",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "RLN",
+      "pin": "1",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "RLP",
+      "pin": "1",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "G",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MTAIL",
+      "pin": "D",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "D",
+      "net": "voutp",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "RLP",
+      "pin": "2",
+      "net": "voutp",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINN",
+      "pin": "G",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "D",
+      "net": "voutn",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    },
+    {
+      "sheet": 2,
+      "instance": "RLN",
+      "pin": "2",
+      "net": "voutn",
+      "path_to_named_net": true,
+      "block": "cgm_amp"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "cgm_amp",
+      "title": "自偏置 β 倍增与启动支路",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.86,
+              6
+            ],
+            [
+              5.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.86,
+              6
+            ],
+            [
+              13.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23.86,
+              8
+            ],
+            [
+              24.15,
+              8
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35.86,
+              11
+            ],
+            [
+              36.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              23.86,
+              19
+            ],
+            [
+              24.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35.86,
+              19
+            ],
+            [
+              36.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              23,
+              23
+            ],
+            [
+              35,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              23,
+              20
+            ],
+            [
+              23,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35,
+              20
+            ],
+            [
+              35,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              1.3
+            ],
+            [
+              35,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12,
+              5
+            ],
+            [
+              12,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              23,
+              7
+            ],
+            [
+              23,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35,
+              4.18
+            ],
+            [
+              35,
+              1.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              4,
+              7
+            ],
+            [
+              4,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              2.45,
+              6
+            ],
+            [
+              1.9500000000000002,
+              6
+            ],
+            [
+              1.9500000000000002,
+              9
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb",
+          "points": [
+            [
+              23,
+              18
+            ],
+            [
+              23,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb",
+          "points": [
+            [
+              21.45,
+              8
+            ],
+            [
+              20.95,
+              8
+            ],
+            [
+              20.95,
+              14
+            ],
+            [
+              23,
+              14
+            ],
+            [
+              23,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nc",
+          "points": [
+            [
+              35,
+              18
+            ],
+            [
+              35,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nc",
+          "points": [
+            [
+              33.45,
+              19
+            ],
+            [
+              32.95,
+              19
+            ],
+            [
+              32.95,
+              16
+            ],
+            [
+              35,
+              16
+            ],
+            [
+              35,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rb2",
+          "points": [
+            [
+              35,
+              10
+            ],
+            [
+              35,
+              5.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nc",
+          "points": [
+            [
+              12,
+              7
+            ],
+            [
+              12,
+              7.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              10.45,
+              6
+            ],
+            [
+              9.899999999999999,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb",
+          "points": [
+            [
+              33.45,
+              11
+            ],
+            [
+              32.900000000000006,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nc",
+          "points": [
+            [
+              21.45,
+              19
+            ],
+            [
+              20.9,
+              19
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            13.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            24.15,
+            8
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            36.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            24.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            36.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            23,
+            23
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4,
+            1.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            4,
+            11
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "nb",
+          "point": [
+            23,
+            13
+          ],
+          "text": "nb",
+          "body": false
+        },
+        {
+          "net": "nc",
+          "point": [
+            35,
+            15
+          ],
+          "text": "nc",
+          "body": false
+        },
+        {
+          "net": "rb2",
+          "point": [
+            35,
+            8
+          ],
+          "text": "rb2",
+          "body": false
+        },
+        {
+          "net": "nc",
+          "point": [
+            12,
+            7.64
+          ],
+          "text": "nc",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            9.899999999999999,
+            6
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "nb",
+          "point": [
+            32.900000000000006,
+            11
+          ],
+          "text": "nb",
+          "body": false
+        },
+        {
+          "net": "nc",
+          "point": [
+            20.9,
+            19
+          ],
+          "text": "nc",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "cgm_amp",
+      "title": "恒 gm 电阻负载差分信号通路",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.86,
+              11
+            ],
+            [
+              13.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.86,
+              11
+            ],
+            [
+              29.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "voutn",
+          "points": [
+            [
+              28,
+              19.18
+            ],
+            [
+              28,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "voutp",
+          "points": [
+            [
+              12,
+              19.18
+            ],
+            [
+              12,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.86,
+              4
+            ],
+            [
+              21.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              12,
+              10
+            ],
+            [
+              12,
+              8
+            ],
+            [
+              28,
+              8
+            ],
+            [
+              28,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              20.0,
+              5
+            ],
+            [
+              20.0,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12,
+              23
+            ],
+            [
+              28,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              28,
+              20.82
+            ],
+            [
+              28,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12,
+              20.82
+            ],
+            [
+              12,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.0,
+              3
+            ],
+            [
+              20.0,
+              1.4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              10.45,
+              11
+            ],
+            [
+              9.899999999999999,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              26.45,
+              11
+            ],
+            [
+              25.9,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb",
+          "points": [
+            [
+              18.45,
+              4
+            ],
+            [
+              17.9,
+              4
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            13.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            29.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "voutn",
+          "point": [
+            28,
+            17
+          ],
+          "text": "voutn",
+          "body": false
+        },
+        {
+          "net": "voutp",
+          "point": [
+            12,
+            17
+          ],
+          "text": "voutp",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "tail",
+          "point": [
+            20.0,
+            8
+          ],
+          "text": "tail",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12,
+            23
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.0,
+            1.4
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            9.899999999999999,
+            11
+          ],
+          "text": "vinn",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            25.9,
+            11
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "nb",
+          "point": [
+            17.9,
+            4
+          ],
+          "text": "nb",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "cgm_amp": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

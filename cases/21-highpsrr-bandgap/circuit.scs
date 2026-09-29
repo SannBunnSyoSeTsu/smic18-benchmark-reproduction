@@ -1,0 +1,36 @@
+// Long-channel closed-loop bandgap plus physical RC output isolation.
+simulator lang=spectre
+subckt bandgap (AVDD AVSS VBG SUB)
+MP0 (pc0 pctrl AVDD AVDD) p18 w=52.02u l=4u m=2
+MP1 (pc1 pctrl AVDD AVDD) p18 w=52.02u l=4u m=2
+MP2 (pc2 pctrl AVDD AVDD) p18 w=52.02u l=4u m=4
+Q0 (va va AVSS SUB) npn18a4 area=1
+RPTAT (vb n1 SUB) rpposab_3t w=1u l=16.5u
+Q1 (n1 n1 AVSS SUB) npn18a4 area=8
+RREF (vcore vctat SUB) rpposab_3t w=1u l=73.3u
+QREF (vctat vctat AVSS SUB) npn18a4 area=2
+CCORE (vcore AVSS) mim w=100u l=617.91967u
+RFILT (vcore VBG SUB) rpposab_3t w=1u l=30u
+CFILT (VBG AVSS) mim w=100u l=205.97322u
+MPC0 (va cbias pc0 AVDD) p18 w=25.3u l=1u m=1
+MPC1 (vb cbias pc1 AVDD) p18 w=25.3u l=1u m=1
+MPC2 (vcore cbias pc2 AVDD) p18 w=25.3u l=1u m=2
+MPCB (cbias cbias AVDD AVDD) p18 w=0.76u l=1u
+RCB0 (cbias rcb1 SUB) rpposab_3t w=1u l=200u
+RCB1 (rcb1 rcb2 SUB) rpposab_3t w=1u l=200u
+RCB2 (rcb2 rcb3 SUB) rpposab_3t w=1u l=200u
+RCB3 (rcb3 rcb4 SUB) rpposab_3t w=1u l=200u
+RCB4 (rcb4 AVSS SUB) rpposab_3t w=1u l=200u
+MPA (namp pctrl AVDD AVDD) p18 w=31.220000000000002u l=4u
+MPCA (nbias cbias namp AVDD) p18 w=7.58u l=1u
+MNB (nbias nbias AVSS AVSS) n18 w=3.46u l=4u
+MTAIL (tail nbias AVSS AVSS) n18 w=3.46u l=4u m=3
+MINA (pctrl va tail AVSS) n18 w=48.5u l=4u
+MINB (nout vb tail AVSS) n18 w=48.5u l=4u
+MPD (nout nout AVDD AVDD) p18 w=50.72u l=4u
+MPM (pctrl nout AVDD AVDD) p18 w=50.72u l=4u
+CCOMP (pctrl AVSS) mim w=50u l=10.298661u
+MPST (st vcore AVDD AVDD) p18 w=2.82u l=1u
+MNST (st vcore AVSS AVSS) n18 w=0.58u l=1u
+MSTART (pctrl st AVSS AVSS) n18 w=0.58u l=1u
+ends bandgap

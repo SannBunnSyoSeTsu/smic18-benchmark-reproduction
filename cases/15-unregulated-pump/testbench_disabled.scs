@@ -1,0 +1,18 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/15-unregulated-pump/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/15-unregulated-pump/circuit.scs"
+VDD (vsrc 0) vsource dc=1.8
+VSENSE (vsrc AVDD) vsource dc=0
+VCLK (clksrc 0) vsource type=pulse val0=1.8 val1=0 delay=0 rise=1p fall=1p width=50n period=100n
+RCLK (clksrc CLK) resistor r=50
+VEN (ensrc 0) vsource dc=0
+REN (ensrc EN) resistor r=50
+X (AVDD 0 CLK EN VOUT) charge_pump_unregulate
+CLOAD (VOUT 0) capacitor c=1n
+simulatorOptions options temp=40 tnom=27 reltol=1e-06 vabstol=1e-8 iabstol=1e-14
+saveOptions options save=selected
+save AVDD VOUT CLK EN clksrc ensrc VDD:p VSENSE:p X.p0 X.p1 X.ph0 X.ph1 X.gated
+tran tran stop=1e-05 maxstep=0.5n errpreset=conservative method=gear2only 

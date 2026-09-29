@@ -1,0 +1,132 @@
+{
+  "case_slot": 27,
+  "generated_at": "2026-09-29T03:10:04.566777+00:00",
+  "status": "complete_original",
+  "values": {
+    "transfer": {
+      "invalid_levels": 0,
+      "code_errors": 0,
+      "missing_codes": 0
+    },
+    "linearity": {
+      "invalid_levels": 0,
+      "linearity_valid": true,
+      "transition_count": 15,
+      "missing_codes": 0,
+      "monotonic": true,
+      "inl_LSB": 0.08433734939758968,
+      "dnl_LSB": 0.156626506024096
+    },
+    "dynamic": {
+      "invalid_levels": 0,
+      "sndr_dB": 26.277333000102555,
+      "sfdr_dB": 29.531366789444267,
+      "power_W": 0.0024219882588713167,
+      "clock_power_W": 0.00021705306730793067
+    }
+  },
+  "gates": {
+    "inl_LSB": {
+      "value": 0.08433734939758968,
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 0.5,
+        "10pct": 0.55,
+        "15pct": 0.575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "dnl_LSB": {
+      "value": 0.156626506024096,
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 0.5,
+        "10pct": 0.55,
+        "15pct": 0.575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "sndr_dB": {
+      "value": 26.277333000102555,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 22.0,
+        "10pct": 21.084850188786497,
+        "15pct": 20.588378514285854
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "sfdr_dB": {
+      "value": 29.531366789444267,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 26.0,
+        "10pct": 25.084850188786497,
+        "15pct": 24.588378514285854
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power": {
+      "value": 0.0024219882588713167,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "groups": {
+    "transfer": "runs/27/20260929T030037242752Z_transfer",
+    "linearity": "runs/27/20260929T030155717833Z_linearity",
+    "dynamic": "runs/27/20260929T030610778996Z_dynamic"
+  },
+  "run_dirs": [
+    "runs/27/20260929T030037242752Z_transfer",
+    "runs/27/20260929T030155717833Z_linearity",
+    "runs/27/20260929T030610778996Z_dynamic"
+  ],
+  "circuit_sha256": "3b70836f6c1c5d9bd5affd551b9be5fa04763a168d4a5a936beba835fb24c620",
+  "contract_sha256": "b89af79aec1c2fe718c7bef7362703e243137ad0134324251e1619f0d9291c8c",
+  "scope": "SMIC18 TT1.8V27C complete original nominal 16-code transfer, 90-point linearity and 32-point coherent dynamic records.",
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "nonrelaxable_guards_pass": true,
+  "disallowed_warnings": {
+    "transfer": [],
+    "linearity": [],
+    "dynamic": []
+  },
+  "conversion_records_sha256": "84199e2e676de5947174641cf206ed908534faf56bf6d2a69fe2534014d80998"
+}

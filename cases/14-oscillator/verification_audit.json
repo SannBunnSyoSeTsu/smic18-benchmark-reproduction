@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-09-22T09:42:35.470270+00:00",
+  "case_slot": 14,
+  "status": "passed",
+  "result_sha256": "901a7bf80c322c929c086204f7980eb062f7da31d130a0bf86b1a319af181299",
+  "circuit_sha256": "383ec5c083dff63dfe2d4529615c33f22d541e3bf14d2c927e3655b98488c1a6",
+  "pdf_sha256": "bebd71d85bbd63606b313264289e47c53567fef2595b9965244dce99009f7984",
+  "pdf_pages": 7,
+  "pdf_intro_before_verdict": true,
+  "all_final_pages_visually_reviewed": true,
+  "rendered_pages": [
+    {
+      "page": 1,
+      "path": "reports/14-review-page-1.png",
+      "sha256": "93d7a2f194322288bd2795b43d8c12bf39c65039e3aa7b2248f4393ed0f3022a"
+    },
+    {
+      "page": 2,
+      "path": "reports/14-review-page-2.png",
+      "sha256": "0a58720dc82f58d68669bce96f8a69d2b92036e98145daf99e8000c655ce8db3"
+    },
+    {
+      "page": 3,
+      "path": "reports/14-review-page-3.png",
+      "sha256": "e16aa2ae1762d7ade5c606f9e3b4d812cf4476e0bff49554e8f543527b57f01b"
+    },
+    {
+      "page": 4,
+      "path": "reports/14-review-page-4.png",
+      "sha256": "98a3b56a6ab64d34eaa4fc9ccc1a4c30f4333bbc66ccfc2fb4aa84d4eb3477d0"
+    },
+    {
+      "page": 5,
+      "path": "reports/14-review-page-5.png",
+      "sha256": "4adb20dac07b34c193066d14f90a8825b1e6970460717af1730ef0cca07ebab5"
+    },
+    {
+      "page": 6,
+      "path": "reports/14-review-page-6.png",
+      "sha256": "c066d534da2c97c29bcd32a2d346e993bd912bc8a1f9147c2f4ea33e0874fe35"
+    }
+  ],
+  "full_nominal_coverage": {
+    "PVT_points_in_scope": 1,
+    "PVT_points_disclosed": 5,
+    "supply_ramp_us": 1,
+    "external_bias_uA": 2,
+    "load_pF": 1,
+    "startup_by_us": 10,
+    "measurement_interval_us": [
+      10,
+      20
+    ],
+    "frequency_periods": 10,
+    "selected_edge_count": 11,
+    "frequency_window_complete": true,
+    "frequency_bounds": 2,
+    "swing_bounds": 2,
+    "power_bound": 1
+  },
+  "source_hashes_match": true,
+  "LUT_hashes_match": true,
+  "HD_sizes_models_and_connections_original": true,
+  "HD_virtual_supply_and_global_wells_confirmed": true,
+  "stage1_minimum_virtual_rail_difference_V": 0.7557943662779971,
+  "DUT_native_passives_only": true,
+  "bias_positive_saturation_headroom": true,
+  "runs": [
+    {
+      "path": "runs/14/20260922T092645492642Z_ramp",
+      "raw": "runs/14/20260922T092645492642Z_ramp/output/bench.raw/tran.tran.tran",
+      "raw_bytes": 76162541,
+      "hashes_match": true,
+      "model_dimensions_valid": true,
+      "include_closure_complete": true,
+      "warnings": [],
+      "status": "partial"
+    },
+    {
+      "path": "runs/14/20260922T093001598106Z_ramp",
+      "raw": "runs/14/20260922T093001598106Z_ramp/output/bench.raw/tran.tran.tran",
+      "raw_bytes": 76891677,
+      "hashes_match": true,
+      "model_dimensions_valid": true,
+      "include_closure_complete": true,
+      "warnings": [],
+      "status": "complete_10pct"
+    },
+    {
+      "path": "runs/14/20260922T093117787976Z_ramp",
+      "raw": "runs/14/20260922T093117787976Z_ramp/output/bench.raw/tran.tran.tran",
+      "raw_bytes": 77323974,
+      "hashes_match": true,
+      "model_dimensions_valid": true,
+      "include_closure_complete": true,
+      "warnings": [],
+      "status": "complete_original"
+    }
+  ],
+  "scope_exclusions": [
+    "other4 disclosed representative PVT points",
+    "other ramp profiles",
+    "other loads",
+    "phase noise/jitter",
+    "mismatch/Monte Carlo",
+    "PEX"
+  ],
+  "knowledge_path": "cases/14-oscillator/knowledge.md",
+  "knowledge_sha256": "848db895cfb06f34cc9f668e2c1ba647983fb56cb4cf1699a69da2df1c7d8433",
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:22:21.558580+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "383ec5c083dff63dfe2d4529615c33f22d541e3bf14d2c927e3655b98488c1a6",
+    "results_sha256": "901a7bf80c322c929c086204f7980eb062f7da31d130a0bf86b1a319af181299",
+    "previous_pdf_sha256": "1cd58a9e987ab39ed349127442c1e0c3cc9ecf8df2a87814756d6bbf34c306cb",
+    "current_pdf_sha256": "bebd71d85bbd63606b313264289e47c53567fef2595b9965244dce99009f7984",
+    "schematic_audit_sha256": "350e7ffb536763c1a93760971fd532e7172f3e9373b993db1c8c86d4f52fd05b",
+    "report_pages": 7,
+    "all_merged_pages_pixel_identical_to_sources": true,
+    "historical_pdf_fields": {
+      "pdf_sha256": "1cd58a9e987ab39ed349127442c1e0c3cc9ecf8df2a87814756d6bbf34c306cb",
+      "pdf_pages": 6
+    }
+  }
+}

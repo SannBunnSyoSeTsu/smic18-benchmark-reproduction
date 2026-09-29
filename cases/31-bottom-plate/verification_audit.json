@@ -1,0 +1,60 @@
+{
+  "audited_at": "2026-09-22T09:37:44.934255+00:00",
+  "status": "passed",
+  "case_slot": 31,
+  "all_final_pages_visually_reviewed": true,
+  "pdf_pages": 8,
+  "pdf_sha256": "f52b37f5504fc8d32b372938ff864e52ff1c7ea704730d506de37f4910a9c07b",
+  "circuit_sha256": "aa9c00f53d8d04c120509fbc370d6ba92027551f5456a404845071ffbf3ff2ec",
+  "results_sha256": "6f96dc4c1bb4e4af2baedc3a5ac854443f349130b9dc0f0a7d7a55dbc6851626",
+  "source_and_lut_hashes_match": true,
+  "HD_original_sizes": true,
+  "full_nominal_checks_complete": true,
+  "terminal_device_checks": 208,
+  "original_pass": true,
+  "numerical_confirmation_sha256": "284fa76d11c18198698260a5c3c33ba1034bf38799d7d040ab8cc17f19dd7741",
+  "knowledge_sha256": "130a9ac4fba4706fdec83442ed9304d44bb3706b8cd934b7e24235fbca22e1bb",
+  "runs": [
+    {
+      "path": "runs/31/20260922T093029941807Z_acquisition_hold",
+      "input_hashes_match": true,
+      "model_dimensions_valid": true,
+      "raw_sha256": "a1bfedf17608b8b69f3ae5d006aa18ff56aba9a364ea8cdd8fc5d36899902645",
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XH.XCLK3.MMN1:int_s.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XP.XBP.XCLKN.MMN1:int_s.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XN.XBC.MGTRK:int_s.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XH.XCLK1.MMN1:int_s.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XH.XBC.XCLKP.MMN1:int_s."
+      ]
+    },
+    {
+      "path": "runs/31/20260922T093040811547Z_fft",
+      "input_hashes_match": true,
+      "model_dimensions_valid": true,
+      "raw_sha256": "8b4084fe9af39ad212103e6c69d4b58e9289802ae1c8beb668700970a742ff36",
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XS.XBC.XCLKN.MMN1:int_s.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XS.XBC.XCLKN.MMN1:int_s.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XS.XBC.XCLKN.MMN1:int_s.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XS.XBC.XCLKN.MMN1:int_s.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XS.XBC.MDCHG:int_s."
+      ]
+    }
+  ],
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:22:21.559994+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "aa9c00f53d8d04c120509fbc370d6ba92027551f5456a404845071ffbf3ff2ec",
+    "results_sha256": "6f96dc4c1bb4e4af2baedc3a5ac854443f349130b9dc0f0a7d7a55dbc6851626",
+    "previous_pdf_sha256": "2e9dca0729e5d0ea1701ba750e4826d8875b1996223936d4db62883c69cfb5cf",
+    "current_pdf_sha256": "f52b37f5504fc8d32b372938ff864e52ff1c7ea704730d506de37f4910a9c07b",
+    "schematic_audit_sha256": "c6b004c1700c224c998c05585add6ab37ef097c0b96cb24df0cef39a4c1c1da7",
+    "report_pages": 8,
+    "all_merged_pages_pixel_identical_to_sources": true,
+    "historical_pdf_fields": {
+      "pdf_sha256": "2e9dca0729e5d0ea1701ba750e4826d8875b1996223936d4db62883c69cfb5cf",
+      "pdf_pages": 6
+    }
+  }
+}

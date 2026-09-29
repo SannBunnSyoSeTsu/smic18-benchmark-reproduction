@@ -1,0 +1,573 @@
+{
+  "generated_at": "2026-09-29T04:37:04.610447+00:00",
+  "roles": {
+    "nbias": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 6.970738469566139,
+      "Id_A": 5e-05,
+      "Vgs_V": 0.5249959535675496,
+      "Vov_V": 0.04285768338194176,
+      "gmid": 16.0,
+      "gm_S": 0.0008,
+      "ft_Hz": 11370379130.301497,
+      "gmro": 32.93512077854812,
+      "id_w_Apm": 7.172841187242536,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 562
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L180nm_VDS0p450.json",
+      "lut_sha256": "23de3e3b54740ba12d20048280e7beea451a0066bbf05af9bfc5cd978a029495",
+      "rounded_W_um": 6.98
+    },
+    "pbias": {
+      "model": "p18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 9.210910830863867,
+      "Id_A": 5e-05,
+      "Vgs_V": 0.612119757082393,
+      "Vov_V": 0.12800346208378774,
+      "gmid": 12.0,
+      "gm_S": 0.0006000000000000001,
+      "ft_Hz": 6222931699.667184,
+      "gmro": 31.638973361372347,
+      "id_w_Apm": 5.428344809555673,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "p18",
+        "polarity": "pmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 511
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/p18_L180nm_VDS0p450.json",
+      "lut_sha256": "113c19ac21a0a84e3e33dfcac26a018500c04084b2100eba007648140f48b449",
+      "rounded_W_um": 9.22
+    },
+    "ninput": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 3.012906315783383,
+      "Id_A": 5e-05,
+      "Vgs_V": 0.5853332913661611,
+      "Vov_V": 0.10314498898941982,
+      "gmid": 12.0,
+      "gm_S": 0.0006000000000000001,
+      "ft_Hz": 18100154407.73515,
+      "gmro": 28.574611614951433,
+      "id_w_Apm": 16.59527205942995,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 562
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L180nm_VDS0p450.json",
+      "lut_sha256": "23de3e3b54740ba12d20048280e7beea451a0066bbf05af9bfc5cd978a029495",
+      "rounded_W_um": 3.02
+    },
+    "pinput": {
+      "model": "p18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 9.210910830863867,
+      "Id_A": 5e-05,
+      "Vgs_V": 0.612119757082393,
+      "Vov_V": 0.12800346208378774,
+      "gmid": 12.0,
+      "gm_S": 0.0006000000000000001,
+      "ft_Hz": 6222931699.667184,
+      "gmro": 31.638973361372347,
+      "id_w_Apm": 5.428344809555673,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "p18",
+        "polarity": "pmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 511
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/p18_L180nm_VDS0p450.json",
+      "lut_sha256": "113c19ac21a0a84e3e33dfcac26a018500c04084b2100eba007648140f48b449",
+      "rounded_W_um": 9.22
+    },
+    "nswitch": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 5.426328317362296,
+      "Id_A": 0.0002,
+      "Vgs_V": 0.6668903674390376,
+      "Vov_V": 0.18459449028778402,
+      "gmid": 8.0,
+      "gm_S": 0.0016,
+      "ft_Hz": 25869467424.052082,
+      "gmro": 21.66193814934847,
+      "id_w_Apm": 36.85733488703071,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 562
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L180nm_VDS0p450.json",
+      "lut_sha256": "23de3e3b54740ba12d20048280e7beea451a0066bbf05af9bfc5cd978a029495",
+      "rounded_W_um": 5.42
+    },
+    "pswitch": {
+      "model": "p18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 6.010719839966558,
+      "Id_A": 7.5e-05,
+      "Vgs_V": 0.6968916802889926,
+      "Vov_V": 0.21273614214837727,
+      "gmid": 8.0,
+      "gm_S": 0.0006,
+      "ft_Hz": 9176296100.170815,
+      "gmro": 23.293600707617188,
+      "id_w_Apm": 12.477706829938905,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "p18",
+        "polarity": "pmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.45,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 511
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/p18_L180nm_VDS0p450.json",
+      "lut_sha256": "113c19ac21a0a84e3e33dfcac26a018500c04084b2100eba007648140f48b449",
+      "rounded_W_um": 6.0200000000000005
+    }
+  },
+  "parameters": {
+    "input_scale": 0.3,
+    "output_n_scale": 2.3,
+    "output_p_scale": 1.23,
+    "reservoir_pF": 4,
+    "clock_drive": 12,
+    "instance_roles": {
+      "XP_OUTPUT_01": {
+        "role": "pswitch",
+        "total_W_um": 2.1672000000000002,
+        "parallel": 1
+      },
+      "XP_INPUT_01": {
+        "role": "pswitch",
+        "total_W_um": 6.0200000000000005,
+        "parallel": 1
+      },
+      "XP_INPUT_02": {
+        "role": "pswitch",
+        "total_W_um": 6.0200000000000005,
+        "parallel": 1
+      },
+      "XP_INPUT_03": {
+        "role": "pswitch",
+        "total_W_um": 12.040000000000001,
+        "parallel": 1
+      },
+      "XP_RESERVOIR_01": {
+        "role": "pswitch",
+        "total_W_um": 2.408,
+        "parallel": 1
+      },
+      "XP_INPUT_04": {
+        "role": "pswitch",
+        "total_W_um": 12.040000000000001,
+        "parallel": 1
+      },
+      "XP_INPUT_05": {
+        "role": "pswitch",
+        "total_W_um": 6.0200000000000005,
+        "parallel": 1
+      },
+      "XP_RESERVOIR_02": {
+        "role": "pswitch",
+        "total_W_um": 2.408,
+        "parallel": 1
+      },
+      "XP_RESERVOIR_03": {
+        "role": "pswitch",
+        "total_W_um": 2.408,
+        "parallel": 1
+      },
+      "XP_RESERVOIR_04": {
+        "role": "pswitch",
+        "total_W_um": 2.408,
+        "parallel": 1
+      },
+      "XP_INPUT_06": {
+        "role": "pswitch",
+        "total_W_um": 6.0200000000000005,
+        "parallel": 1
+      },
+      "XP_INPUT_07": {
+        "role": "pinput",
+        "total_W_um": 27.660000000000004,
+        "parallel": 1
+      },
+      "XP_INPUT_08": {
+        "role": "pinput",
+        "total_W_um": 27.660000000000004,
+        "parallel": 1
+      },
+      "XP_OUTPUT_02": {
+        "role": "pbias",
+        "total_W_um": 34.0218,
+        "parallel": 1
+      },
+      "XP_OUTPUT_03": {
+        "role": "pbias",
+        "total_W_um": 34.0218,
+        "parallel": 1
+      },
+      "XP_RESERVOIR_05": {
+        "role": "pswitch",
+        "total_W_um": 36.120000000000005,
+        "parallel": 1
+      },
+      "XP_RESERVOIR_06": {
+        "role": "pswitch",
+        "total_W_um": 36.120000000000005,
+        "parallel": 1
+      },
+      "XP_RESERVOIR_07": {
+        "role": "pswitch",
+        "total_W_um": 11.036666666666667,
+        "parallel": 1
+      },
+      "XP_RESERVOIR_08": {
+        "role": "pswitch",
+        "total_W_um": 11.036666666666667,
+        "parallel": 1
+      },
+      "XP_INPUT_09": {
+        "role": "pbias",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_INPUT_10": {
+        "role": "pinput",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_BIAS_01": {
+        "role": "pbias",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_BIAS_02": {
+        "role": "pbias",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_BIAS_03": {
+        "role": "pbias",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_BIAS_04": {
+        "role": "pbias",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_BIAS_05": {
+        "role": "pbias",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_BIAS_06": {
+        "role": "pbias",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_BIAS_07": {
+        "role": "pbias",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_BIAS_08": {
+        "role": "pbias",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_BIAS_09": {
+        "role": "pbias",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_INPUT_11": {
+        "role": "pinput",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XP_OUTPUT_04": {
+        "role": "pswitch",
+        "total_W_um": 2.1672000000000002,
+        "parallel": 1
+      },
+      "XP_BIAS_10": {
+        "role": "pbias",
+        "total_W_um": 9.22,
+        "parallel": 1
+      },
+      "XN_OUTPUT_01": {
+        "role": "nswitch",
+        "total_W_um": 0.68292,
+        "parallel": 1
+      },
+      "XN_RESERVOIR_01": {
+        "role": "nswitch",
+        "total_W_um": 2.1679999999999997,
+        "parallel": 1
+      },
+      "XN_RESERVOIR_02": {
+        "role": "nswitch",
+        "total_W_um": 2.1679999999999997,
+        "parallel": 1
+      },
+      "XN_INPUT_01": {
+        "role": "nswitch",
+        "total_W_um": 5.42,
+        "parallel": 1
+      },
+      "XN_OUTPUT_02": {
+        "role": "nswitch",
+        "total_W_um": 0.68292,
+        "parallel": 1
+      },
+      "XN_INPUT_02": {
+        "role": "nswitch",
+        "total_W_um": 5.42,
+        "parallel": 1
+      },
+      "XN_INPUT_03": {
+        "role": "nswitch",
+        "total_W_um": 10.84,
+        "parallel": 1
+      },
+      "XN_RESERVOIR_03": {
+        "role": "nswitch",
+        "total_W_um": 2.1679999999999997,
+        "parallel": 1
+      },
+      "XN_INPUT_04": {
+        "role": "nswitch",
+        "total_W_um": 5.42,
+        "parallel": 1
+      },
+      "XN_INPUT_05": {
+        "role": "nswitch",
+        "total_W_um": 10.84,
+        "parallel": 1
+      },
+      "XN_INPUT_06": {
+        "role": "ninput",
+        "total_W_um": 3.02,
+        "parallel": 1
+      },
+      "XN_BIAS_01": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_INPUT_07": {
+        "role": "ninput",
+        "total_W_um": 9.06,
+        "parallel": 1
+      },
+      "XN_INPUT_08": {
+        "role": "ninput",
+        "total_W_um": 9.06,
+        "parallel": 1
+      },
+      "XN_OUTPUT_03": {
+        "role": "nbias",
+        "total_W_um": 14.047249999999998,
+        "parallel": 1
+      },
+      "XN_OUTPUT_04": {
+        "role": "nbias",
+        "total_W_um": 14.047249999999998,
+        "parallel": 1
+      },
+      "XN_RESERVOIR_04": {
+        "role": "nswitch",
+        "total_W_um": 32.519999999999996,
+        "parallel": 1
+      },
+      "XN_RESERVOIR_05": {
+        "role": "nswitch",
+        "total_W_um": 32.519999999999996,
+        "parallel": 1
+      },
+      "XN_INPUT_09": {
+        "role": "nswitch",
+        "total_W_um": 9.936666666666666,
+        "parallel": 1
+      },
+      "XN_INPUT_10": {
+        "role": "nswitch",
+        "total_W_um": 9.936666666666666,
+        "parallel": 1
+      },
+      "XN_INPUT_11": {
+        "role": "nswitch",
+        "total_W_um": 5.42,
+        "parallel": 1
+      },
+      "XN_INPUT_12": {
+        "role": "ninput",
+        "total_W_um": 3.02,
+        "parallel": 1
+      },
+      "XN_BIAS_02": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_BIAS_03": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_BIAS_04": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_BIAS_05": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_BIAS_06": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_BIAS_07": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_BIAS_08": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_BIAS_09": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_BIAS_10": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_BIAS_11": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_BIAS_12": {
+        "role": "nbias",
+        "total_W_um": 6.98,
+        "parallel": 1
+      },
+      "XN_RESERVOIR_06": {
+        "role": "nbias",
+        "total_W_um": 4.362500000000001,
+        "parallel": 1
+      },
+      "XN_RESERVOIR_07": {
+        "role": "nswitch",
+        "total_W_um": 2.1679999999999997,
+        "parallel": 1
+      }
+    },
+    "output_switch_scale": 0.6
+  },
+  "rationale": "Original FCT signal topology and reservoir,reset,bias capacitor connections retained. Native gmID roles set bias,input and switch widths with source current/finger ratios; output-pull balance remains an explicit design parameter. All12 digital clock cells mapped to unmodifiedHD. Fixture remains fixed outsideDUT.",
+  "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988"
+}

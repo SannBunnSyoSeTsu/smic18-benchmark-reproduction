@@ -1,0 +1,158 @@
+{
+  "independent_rows": [
+    {
+      "group": "ac",
+      "corner": "tt",
+      "vdd": 1.8,
+      "temp_c": 27,
+      "passband_gain_db": -0.5613358011598241,
+      "f0_hz": 1924718.014698717,
+      "q": 0.6903208807375475,
+      "fit_error_db_rms": 0.001787338504018739,
+      "attenuation_20mhz_db": 40.61716611983176,
+      "bp_peak_frequency_hz": 1927524.913191025,
+      "bp_peak_gain_db": -6.405610324761576,
+      "bp_low_frequency_attenuation_db": 23.752572994113066,
+      "bp_low_attenuation_db": 15.741482214499241,
+      "bp_high_attenuation_db": 17.108038760308677,
+      "output_cm_error_v": 0.0018250585352632687,
+      "power_w": 0.000393439730232396
+    },
+    {
+      "group": "noise",
+      "corner": "tt",
+      "vdd": 1.8,
+      "temp_c": 27,
+      "output_noise_vrms": 0.0002956622851616086
+    },
+    {
+      "group": "thd",
+      "corner": "tt",
+      "vdd": 1.8,
+      "temp_c": 27,
+      "output_amplitude_v": 0.28030457838422806,
+      "fundamental_gain": 0.9343485946140936,
+      "thd_db": -54.502179415532694
+    },
+    {
+      "group": "thd2",
+      "corner": "tt",
+      "vdd": 1.8,
+      "temp_c": 27,
+      "output_amplitude_v": 0.41816123331139954,
+      "fundamental_gain": 0.9292471851364434,
+      "thd_db": -44.44511136783663
+    },
+    {
+      "group": "thd_f0",
+      "corner": "tt",
+      "vdd": 1.8,
+      "temp_c": 27,
+      "lowpass_output_amplitude_v": 0.28186914857163636,
+      "lowpass_fundamental_gain": 0.6263758857147474,
+      "lowpass_thd_db": -59.896196758091136,
+      "bandpass_output_amplitude_v": 0.21762687255871066,
+      "bandpass_fundamental_gain": 0.48361527235269036,
+      "bandpass_thd_db": -52.78333299393097
+    },
+    {
+      "group": "cmstep",
+      "corner": "tt",
+      "vdd": 1.8,
+      "temp_c": 27,
+      "cm_initial_error_v": 0.002072876713432259,
+      "cm_settle_time_s": 6.81025840198556e-08,
+      "cm_late_excursion_v": 0.0017294306198274434
+    }
+  ],
+  "original_score": {
+    "summary": {
+      "tests": 16,
+      "passed": 16,
+      "failed": 0
+    },
+    "tests": [
+      {
+        "name": "complete_signoff",
+        "status": "passed",
+        "message": "runs=6/6 failed=0"
+      },
+      {
+        "name": "pvt_center_frequency",
+        "status": "passed",
+        "message": "fitted f0 1.925..1.925 MHz (band 1.8..2.2)"
+      },
+      {
+        "name": "pvt_quality_factor",
+        "status": "passed",
+        "message": "fitted Q 0.690..0.690 (band 0.65..0.75)"
+      },
+      {
+        "name": "pvt_passband_gain",
+        "status": "passed",
+        "message": "passband gain -0.561..-0.561 dB (band -1..1)"
+      },
+      {
+        "name": "pvt_second_order_fit",
+        "status": "passed",
+        "message": "second-order fit RMS error 0.002 dB (max 0.5)"
+      },
+      {
+        "name": "pvt_stopband_attenuation",
+        "status": "passed",
+        "message": "attenuation at 20 MHz 40.62 dB (min 35)"
+      },
+      {
+        "name": "pvt_bandpass_output",
+        "status": "passed",
+        "message": "BP peak 1.928..1.928 MHz, gain -6.41..-6.41 dB, worst decade-edge attenuation 15.74 dB"
+      },
+      {
+        "name": "pvt_bandpass_low_frequency_rejection",
+        "status": "passed",
+        "message": "1 kHz rejection from BP peak 23.75 dB (min 18)"
+      },
+      {
+        "name": "pvt_output_common_mode",
+        "status": "passed",
+        "message": "output common-mode error 2.07 mV on both node pairs (max 10 mV)"
+      },
+      {
+        "name": "pvt_power",
+        "status": "passed",
+        "message": "supply power 393.4 uW (max 500)"
+      },
+      {
+        "name": "stress_thd_nominal",
+        "status": "passed",
+        "message": "THD -54.50 dB, fundamental gain 0.934 at 0.6 Vpp diff"
+      },
+      {
+        "name": "stress_thd_large_signal",
+        "status": "passed",
+        "message": "THD -44.45 dB, fundamental gain 0.929 at 0.9 Vpp diff"
+      },
+      {
+        "name": "stress_thd_near_f0",
+        "status": "passed",
+        "message": "at 2 MHz and 0.9 Vpp: LP THD -59.90 dB / gain 0.626, BP THD -52.78 dB / gain 0.484"
+      },
+      {
+        "name": "pvt_output_noise",
+        "status": "passed",
+        "message": "integrated output noise 295.7 uVrms over 1 kHz..4 MHz (max 500)"
+      },
+      {
+        "name": "stress_cmfb_settling",
+        "status": "passed",
+        "message": "common-mode step settling 0.068 us on both loops (max 1)"
+      },
+      {
+        "name": "stress_cmfb_damping",
+        "status": "passed",
+        "message": "late common-mode excursion 1.73 mV (max 10 mV)"
+      }
+    ]
+  },
+  "noise_adapter": "Spectreoutputdensity squared; independentpiecewiselinearPSD integration providedtooriginalintegrated-noisePlot"
+}

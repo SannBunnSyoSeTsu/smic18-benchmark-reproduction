@@ -1,0 +1,112 @@
+{
+  "source_task": "sky130-fd-sampling-feedback-ota-gain8-settling10ns-noise1mv-pvt-mc",
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 5e-05,
+  "VCM_V": 0.9,
+  "pin_order": [
+    "vss",
+    "iref",
+    "vdd",
+    "vinn",
+    "vinp",
+    "vocm",
+    "voutn",
+    "voutp"
+  ],
+  "feedback": {
+    "Cs_F": 1e-12,
+    "Cf_F": 1.25e-13,
+    "CL_each_F": 2.5e-13,
+    "DC_bias_L_H": 1000000000.0,
+    "beta": 0.111111111111
+  },
+  "loop": {
+    "start_Hz": 10,
+    "stop_Hz": 100000000000.0,
+    "points_per_decade": 80,
+    "return_ratio": "0.111111111111*(voutp-voutn); CL_eff=0.361111111111pF per output",
+    "nominal_closed_loop_numerator": "A/(1+0.111111111111*A) at10Hz"
+  },
+  "settling": {
+    "step_V": 0.9,
+    "start_s": [
+      2.5e-08,
+      6.5e-08
+    ],
+    "physical_edge_s": 5e-11,
+    "pulse_plateau_s": 4e-08,
+    "period_s": 1e-07,
+    "stop_s": 1.05e-07,
+    "tolerance_V": 0.009,
+    "windows_s": [
+      [
+        2.5e-08,
+        6.4e-08
+      ],
+      [
+        6.5e-08,
+        1.05e-07
+      ]
+    ],
+    "static_read_s": [
+      6.4e-08,
+      1.04e-07
+    ],
+    "dynamic_read_s": [
+      3.5e-08,
+      7.5e-08
+    ],
+    "target_differential_V": [
+      0.9,
+      0
+    ]
+  },
+  "ranges": {
+    "input_start_V": -2e-05,
+    "input_stop_V": 2e-05,
+    "input_step_V": 5e-07,
+    "definition": "Open-loop differential-output span at two local DC gain crossings3dB below peak; not a closed-loop command sweep"
+  },
+  "noise": {
+    "start_Hz": 10,
+    "stop_Hz": 10000000000.0,
+    "points_per_decade": 80,
+    "quantity": "differential output Vrms; integrated squared output spectral amplitude, not input noise"
+  },
+  "cmfb": {
+    "sink_each_A": 5e-05,
+    "pulse_start_s": 2e-08,
+    "rise_fall_s": 1e-10,
+    "plateau_s": 2e-08,
+    "period_s": 2e-07,
+    "stop_s": 1.5e-07,
+    "peak_window_s": [
+      2e-08,
+      4.5e-08
+    ],
+    "residual_read_s": [
+      6.02e-08,
+      1.402e-07
+    ],
+    "reference": "separate undisturbed identical DUT"
+  },
+  "limits": {
+    "phase_margin_deg": 60,
+    "cm_error_V": 0.025,
+    "power_W": 0.01,
+    "static_error_fraction": 0.01,
+    "dynamic_error_fraction": 0.01,
+    "settling_s": 1e-08,
+    "range_V": 1.8,
+    "noise_Vrms": 0.001,
+    "cmfb_peak_V": 0.1,
+    "cmfb_20ns_V": 0.005,
+    "cmfb_100ns_V": 0.001
+  },
+  "allowed_DUT": "native SMIC MOS and idealR/C allowed by original task; no internal sources or behavioral elements",
+  "scope": "Deterministic matched TT/1.8V/27C nominal only; retain both settling edges, full noise band, open-loop range and common-mode disturbance. Other29PVTpoints, two nonnominal CMFBpoints and20local-mismatch samples excluded, not passed.",
+  "mismatch_samples_executed": 0,
+  "acceptance_policy": "/home/IC/CodeX/smic18_benchmark_repro/contracts/acceptance-policy.md"
+}

@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-09-28T17:28:45.559526+00:00",
+  "baseline_groups": {
+    "loop1": "runs/17/20260928T172658600590Z_loop1",
+    "psrr1": "runs/17/20260928T172659789947Z_psrr1",
+    "loop5": "runs/17/20260928T172700408431Z_loop5",
+    "psrr5": "runs/17/20260928T172701054011Z_psrr5"
+  },
+  "baseline_dec": 40,
+  "refined_dec": 160,
+  "baseline_reltol": 1e-06,
+  "refined_reltol": 1e-07,
+  "bounds": {
+    "vout_V": 1e-06,
+    "iq_A": 1e-08,
+    "loop_ugb_Hz": 6000,
+    "phase_margin_deg": 0.05,
+    "gain_margin_db": 0.05,
+    "stb_ugb_Hz": 6000,
+    "stb_phase_margin_deg": 0.05,
+    "stb_gain_margin_db": 0.05,
+    "psrr_1k_dB": 0.01,
+    "min_active_headroom_V": 1e-06
+  },
+  "same_circuit_sha256": "050cce2389d138c31156a14b1bf955093cbefb0018a2ec14f29689e12d65298d"
+}

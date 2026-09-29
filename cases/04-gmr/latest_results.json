@@ -1,0 +1,136 @@
+{
+  "case_slot": 4,
+  "generated_at": "2026-09-22T06:20:26.194487+00:00",
+  "run_dir": "runs/04/20260922T062025898382Z_gmr",
+  "values": {
+    "gain_1MHz": 2.0026871569692157,
+    "bandwidth_Hz": 74269546.46549278,
+    "power_W": 0.0009588642966753338,
+    "SDR_dB": 63.8823918284922,
+    "fundamental_gain": 1.9973939983000135,
+    "fit_samples": 1001,
+    "fit_offset_V": -1.585851566719371e-08,
+    "fit_residual_rms_V": 9.032940537222878e-05
+  },
+  "gates": {
+    "gain_error": {
+      "value": 0.0026871569692157316,
+      "unit": "V/V",
+      "sense": "max",
+      "limits": {
+        "original": 0.02,
+        "10pct": 0.022000000000000002,
+        "15pct": 0.023
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "bandwidth_Hz": {
+      "value": 74269546.46549278,
+      "unit": "Hz",
+      "sense": "min",
+      "limits": {
+        "original": 70000000.0,
+        "10pct": 63000000.0,
+        "15pct": 59500000.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power_W": {
+      "value": 0.0009588642966753338,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.0012,
+        "10pct": 0.00132,
+        "15pct": 0.0013799999999999997
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "SDR_dB": {
+      "value": 63.8823918284922,
+      "unit": "dB",
+      "sense": "min",
+      "limits": {
+        "original": 60.0,
+        "10pct": 59.0848501887865,
+        "15pct": 58.58837851428586
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "fundamental_gain_error": {
+      "value": 0.002606001699986482,
+      "unit": "V/V",
+      "sense": "max",
+      "limits": {
+        "original": 0.1,
+        "10pct": 0.11000000000000001,
+        "15pct": 0.11499999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "operating_point": {
+    "MINP": {
+      "gmbs": 0.001073442732058287,
+      "gds": 3.216458160577615e-05,
+      "gm": 0.004418711730016693,
+      "vdsat": 0.08377639851311217,
+      "vds": 0.9914089443739849,
+      "region": 2.0,
+      "ids": 0.0002413514272548864,
+      "vgs": 0.571456468287106,
+      "gmid": 18.308206337434168,
+      "headroom_V": 0.9076325458608727
+    },
+    "MTAIL": {
+      "gm": 0.007793149265771004,
+      "vdsat": 0.1022881728970339,
+      "vds": 0.1837329654647938,
+      "ids": 0.0004827018760186771,
+      "region": 2.0,
+      "gmid": 16.144849757056807,
+      "headroom_V": 0.08144479256775991
+    }
+  },
+  "dc_nodes": {
+    "XDUT.sp": 0.3285435317128941,
+    "XDUT.sn": 0.3285435317128948,
+    "XDUT.tail": 0.1837329654647938,
+    "iref": 0.485229671545821,
+    "vop": 1.319952476086879,
+    "von": 1.319952476086877,
+    "vip": 0.9,
+    "vin": 0.9,
+    "vcm": 0.9,
+    "vdd": 1.8
+  },
+  "bias_valid": true,
+  "all_nominal_checks_complete": true,
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "status": "complete_original",
+  "scope": "SMIC18 nominal only; original input/load/power boundary and sine-fit SDR definition"
+}

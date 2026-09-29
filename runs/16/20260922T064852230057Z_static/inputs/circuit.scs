@@ -1,0 +1,16 @@
+// Two-stage Miller amplifier, SMIC18 target-PDK gm/ID dimensions.
+simulator lang=spectre
+subckt two_stage_miller_opamp (vss iref vdd vinn vinp vout)
+MREF (iref iref vss vss) n18 w=3.22u l=1u m=5
+MTAIL (tail iref vss vss) n18 w=3.22u l=1u m=14
+MINN (nleft vinn tail vss) n18 w=71.76u l=1u
+MINP (stage1 vinp tail vss) n18 w=71.76u l=1u
+MPD (nleft nleft vdd vdd) p18 w=17.86u l=1u
+MPM (stage1 nleft vdd vdd) p18 w=17.86u l=1u
+MBN (obias iref vss vss) n18 w=3.22u l=1u m=5
+MBP (obias obias vdd vdd) p18 w=46.9u l=1u
+MSECOND (vout stage1 vss vss) n18 w=13.040000000000001u l=.36u
+MLOAD (vout obias vdd vdd) p18 w=46.9u l=1u m=12
+RZ (stage1 comp) resistor r=1500
+CC (comp vout) capacitor c=0.7p
+ends two_stage_miller_opamp

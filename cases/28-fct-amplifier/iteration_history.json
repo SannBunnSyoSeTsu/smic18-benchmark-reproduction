@@ -1,0 +1,3034 @@
+[
+  {
+    "generated_at": "2026-09-29T04:38:13.366619+00:00",
+    "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+    "parameters": {
+      "input_scale": 0.3,
+      "output_n_scale": 2.3,
+      "output_p_scale": 1.23,
+      "reservoir_pF": 4,
+      "clock_drive": 12,
+      "instance_roles": {
+        "XP_OUTPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_INPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_02": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_03": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_01": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_INPUT_05": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_02": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_03": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_04": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_06": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_07": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_INPUT_08": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_OUTPUT_02": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_OUTPUT_03": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_05": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_06": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_07": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_08": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_INPUT_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_10": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_01": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_02": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_03": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_04": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_05": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_06": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_07": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_08": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_11": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_OUTPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_BIAS_10": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XN_OUTPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_01": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_02": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_OUTPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_INPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_03": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_03": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_04": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_05": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_INPUT_06": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_01": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_INPUT_07": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_INPUT_08": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_OUTPUT_03": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_OUTPUT_04": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_04": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_05": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_INPUT_09": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_10": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_11": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_12": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_02": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_03": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_04": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_05": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_06": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_07": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_08": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_09": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_10": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_11": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_12": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_06": {
+          "role": "nbias",
+          "total_W_um": 4.362500000000001,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_07": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        }
+      },
+      "output_switch_scale": 0.6
+    },
+    "status": "complete_15pct",
+    "values": {
+      "10mv": {
+        "gain_vv": 4.798293010164775,
+        "sfdr_db": 86.7542133529725,
+        "cm_mean_v": 1.1789715267917262,
+        "output_min_v": 1.1537690295262502,
+        "output_max_v": 1.2032504832754556,
+        "hold_movement_ratio": 0.016307072334637268,
+        "power_w": 0.004748810712317537
+      },
+      "20mv": {
+        "gain_vv": 4.813847671845356,
+        "sfdr_db": 83.22357512868365,
+        "cm_mean_v": 1.1787200116667351,
+        "output_min_v": 1.1290148030113665,
+        "output_max_v": 1.226805933355065,
+        "hold_movement_ratio": 0.0162225900912789,
+        "power_w": 0.004748936531473982
+      }
+    },
+    "groups": {
+      "10mv": "runs/28/20260929T043704614909Z_10mv",
+      "20mv": "runs/28/20260929T043734912432Z_20mv"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T04:41:09.013322+00:00",
+    "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+    "parameters": {
+      "input_scale": 0.3,
+      "output_n_scale": 2.3,
+      "output_p_scale": 1.23,
+      "reservoir_pF": 4,
+      "clock_drive": 12,
+      "instance_roles": {
+        "XP_OUTPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_INPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_02": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_03": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_01": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_INPUT_05": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_02": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_03": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_04": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_06": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_07": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_INPUT_08": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_OUTPUT_02": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_OUTPUT_03": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_05": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_06": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_07": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_08": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_INPUT_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_10": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_01": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_02": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_03": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_04": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_05": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_06": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_07": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_08": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_11": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_OUTPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_BIAS_10": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XN_OUTPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_01": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_02": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_OUTPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_INPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_03": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_03": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_04": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_05": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_INPUT_06": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_01": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_INPUT_07": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_INPUT_08": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_OUTPUT_03": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_OUTPUT_04": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_04": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_05": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_INPUT_09": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_10": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_11": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_12": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_02": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_03": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_04": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_05": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_06": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_07": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_08": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_09": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_10": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_11": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_12": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_06": {
+          "role": "nbias",
+          "total_W_um": 4.362500000000001,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_07": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        }
+      },
+      "output_switch_scale": 0.6
+    },
+    "status": "complete_15pct",
+    "values": {
+      "10mv": {
+        "gain_vv": 4.797170782560141,
+        "sfdr_db": 85.4945201883087,
+        "cm_mean_v": 1.1789605317569212,
+        "output_min_v": 1.1537635220923868,
+        "output_max_v": 1.20323041318989,
+        "hold_movement_ratio": 0.01630596442958949,
+        "power_w": 0.004748445616395875
+      },
+      "20mv": {
+        "gain_vv": 4.812799617218158,
+        "sfdr_db": 86.72891753100878,
+        "cm_mean_v": 1.1787113772896176,
+        "output_min_v": 1.1290110365918042,
+        "output_max_v": 1.226787811675833,
+        "hold_movement_ratio": 0.016225943858046578,
+        "power_w": 0.004748469981879242
+      }
+    },
+    "groups": {
+      "10mv": "runs/28/20260929T043941545436Z_10mv",
+      "20mv": "runs/28/20260929T044020223275Z_20mv"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T04:48:50.675138+00:00",
+    "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+    "parameters": {
+      "input_scale": 0.3,
+      "output_n_scale": 2.3,
+      "output_p_scale": 1.23,
+      "reservoir_pF": 4,
+      "clock_drive": 12,
+      "instance_roles": {
+        "XP_OUTPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_INPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_02": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_03": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_01": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_INPUT_05": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_02": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_03": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_04": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_06": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_07": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_INPUT_08": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_OUTPUT_02": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_OUTPUT_03": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_05": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_06": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_07": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_08": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_INPUT_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_10": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_01": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_02": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_03": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_04": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_05": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_06": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_07": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_08": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_11": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_OUTPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_BIAS_10": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XN_OUTPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_01": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_02": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_OUTPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_INPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_03": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_03": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_04": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_05": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_INPUT_06": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_01": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_INPUT_07": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_INPUT_08": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_OUTPUT_03": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_OUTPUT_04": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_04": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_05": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_INPUT_09": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_10": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_11": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_12": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_02": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_03": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_04": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_05": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_06": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_07": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_08": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_09": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_10": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_11": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_12": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_06": {
+          "role": "nbias",
+          "total_W_um": 4.362500000000001,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_07": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        }
+      },
+      "output_switch_scale": 0.6
+    },
+    "status": "complete_15pct",
+    "values": {
+      "10mv": {
+        "gain_vv": 4.79682566130089,
+        "sfdr_db": 85.47595853551601,
+        "cm_mean_v": 1.178961838648275,
+        "output_min_v": 1.153767805812177,
+        "output_max_v": 1.2032329798026,
+        "hold_movement_ratio": 0.016309566180743282,
+        "power_w": 0.00474859024074475
+      },
+      "20mv": {
+        "gain_vv": 4.812402441762913,
+        "sfdr_db": 84.69560750905467,
+        "cm_mean_v": 1.1787128479262314,
+        "output_min_v": 1.12901558219729,
+        "output_max_v": 1.226785680492561,
+        "hold_movement_ratio": 0.016231202723724487,
+        "power_w": 0.004748569193960363
+      }
+    },
+    "groups": {
+      "10mv": "runs/28/20260929T044720744995Z_10mv",
+      "20mv": "runs/28/20260929T044759412817Z_20mv"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T04:50:40.175366+00:00",
+    "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+    "parameters": {
+      "input_scale": 0.3,
+      "output_n_scale": 2.3,
+      "output_p_scale": 1.23,
+      "reservoir_pF": 4,
+      "clock_drive": 12,
+      "instance_roles": {
+        "XP_OUTPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_INPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_02": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_03": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_01": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_INPUT_05": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_02": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_03": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_04": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_06": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_07": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_INPUT_08": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_OUTPUT_02": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_OUTPUT_03": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_05": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_06": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_07": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_08": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_INPUT_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_10": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_01": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_02": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_03": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_04": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_05": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_06": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_07": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_08": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_11": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_OUTPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_BIAS_10": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XN_OUTPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_01": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_02": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_OUTPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_INPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_03": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_03": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_04": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_05": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_INPUT_06": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_01": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_INPUT_07": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_INPUT_08": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_OUTPUT_03": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_OUTPUT_04": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_04": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_05": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_INPUT_09": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_10": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_11": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_12": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_02": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_03": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_04": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_05": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_06": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_07": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_08": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_09": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_10": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_11": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_12": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_06": {
+          "role": "nbias",
+          "total_W_um": 4.362500000000001,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_07": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        }
+      },
+      "output_switch_scale": 0.6
+    },
+    "status": "complete_15pct",
+    "values": {
+      "10mv": {
+        "gain_vv": 4.796801326116932,
+        "sfdr_db": 87.1202732261741,
+        "cm_mean_v": 1.1789627464082821,
+        "output_min_v": 1.153768033421048,
+        "output_max_v": 1.203232382044081,
+        "hold_movement_ratio": 0.016312519159977744,
+        "power_w": 0.0047483966834994725
+      },
+      "20mv": {
+        "gain_vv": 4.812233838848472,
+        "sfdr_db": 83.66209607322202,
+        "cm_mean_v": 1.17871297935904,
+        "output_min_v": 1.129018101831812,
+        "output_max_v": 1.226784748445323,
+        "hold_movement_ratio": 0.016234174690564922,
+        "power_w": 0.00474846629295918
+      }
+    },
+    "groups": {
+      "10mv": "runs/28/20260929T044850676802Z_10mv",
+      "20mv": "runs/28/20260929T044939226581Z_20mv"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T05:21:49.157689+00:00",
+    "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+    "parameters": {
+      "input_scale": 0.3,
+      "output_n_scale": 2.3,
+      "output_p_scale": 1.23,
+      "reservoir_pF": 4,
+      "clock_drive": 12,
+      "instance_roles": {
+        "XP_OUTPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_INPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_02": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_03": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_01": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_INPUT_05": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_02": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_03": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_04": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_06": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_07": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_INPUT_08": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_OUTPUT_02": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_OUTPUT_03": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_05": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_06": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_07": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_08": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_INPUT_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_10": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_01": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_02": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_03": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_04": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_05": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_06": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_07": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_08": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_11": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_OUTPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_BIAS_10": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XN_OUTPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_01": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_02": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_OUTPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_INPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_03": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_03": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_04": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_05": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_INPUT_06": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_01": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_INPUT_07": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_INPUT_08": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_OUTPUT_03": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_OUTPUT_04": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_04": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_05": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_INPUT_09": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_10": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_11": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_12": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_02": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_03": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_04": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_05": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_06": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_07": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_08": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_09": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_10": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_11": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_12": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_06": {
+          "role": "nbias",
+          "total_W_um": 4.362500000000001,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_07": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        }
+      },
+      "output_switch_scale": 0.6
+    },
+    "status": "complete_15pct",
+    "values": {
+      "10mv": {
+        "gain_vv": 4.796826882376545,
+        "sfdr_db": 88.8453503283543,
+        "cm_mean_v": 1.178956953715042,
+        "output_min_v": 1.153762282084477,
+        "output_max_v": 1.203227415486884,
+        "hold_movement_ratio": 0.016309173298658188,
+        "power_w": 0.0047482312792353635
+      },
+      "20mv": {
+        "gain_vv": 4.812391044986499,
+        "sfdr_db": 85.12816694312689,
+        "cm_mean_v": 1.178707562563946,
+        "output_min_v": 1.129011752101746,
+        "output_max_v": 1.22677969174362,
+        "hold_movement_ratio": 0.016231586187142336,
+        "power_w": 0.0047482997745100525
+      }
+    },
+    "groups": {
+      "10mv": "runs/28/20260929T050135278768Z_precision_baseline_10mv",
+      "20mv": "runs/28/20260929T045836976381Z_precision_retry_20mv"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T05:22:53.129678+00:00",
+    "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+    "parameters": {
+      "input_scale": 0.3,
+      "output_n_scale": 2.3,
+      "output_p_scale": 1.23,
+      "reservoir_pF": 4,
+      "clock_drive": 12,
+      "instance_roles": {
+        "XP_OUTPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_INPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_02": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_03": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_01": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_INPUT_05": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_02": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_03": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_04": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_06": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_07": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_INPUT_08": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_OUTPUT_02": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_OUTPUT_03": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_05": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_06": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_07": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_08": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_INPUT_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_10": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_01": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_02": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_03": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_04": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_05": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_06": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_07": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_08": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_11": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_OUTPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_BIAS_10": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XN_OUTPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_01": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_02": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_OUTPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_INPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_03": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_03": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_04": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_05": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_INPUT_06": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_01": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_INPUT_07": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_INPUT_08": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_OUTPUT_03": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_OUTPUT_04": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_04": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_05": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_INPUT_09": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_10": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_11": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_12": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_02": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_03": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_04": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_05": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_06": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_07": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_08": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_09": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_10": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_11": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_12": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_06": {
+          "role": "nbias",
+          "total_W_um": 4.362500000000001,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_07": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        }
+      },
+      "output_switch_scale": 0.6
+    },
+    "status": "complete_15pct",
+    "values": {
+      "10mv": {
+        "gain_vv": 4.7967568861612975,
+        "sfdr_db": 87.59560803736844,
+        "cm_mean_v": 1.1789567711008577,
+        "output_min_v": 1.153762360729059,
+        "output_max_v": 1.203227500450661,
+        "hold_movement_ratio": 0.016311796536376422,
+        "power_w": 0.004748170478733103
+      },
+      "20mv": {
+        "gain_vv": 4.812329525028783,
+        "sfdr_db": 84.67656105624818,
+        "cm_mean_v": 1.178707631054574,
+        "output_min_v": 1.129012080301088,
+        "output_max_v": 1.226778709217638,
+        "hold_movement_ratio": 0.01623403834124252,
+        "power_w": 0.004748237365427692
+      }
+    },
+    "groups": {
+      "10mv": "runs/28/20260929T050627252473Z_precision_refined_10mv",
+      "20mv": "runs/28/20260929T050627252251Z_precision_refined_20mv"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T05:52:24.033381+00:00",
+    "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+    "parameters": {
+      "input_scale": 0.3,
+      "output_n_scale": 2.3,
+      "output_p_scale": 1.23,
+      "reservoir_pF": 4,
+      "clock_drive": 12,
+      "instance_roles": {
+        "XP_OUTPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_INPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_02": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_03": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_01": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_INPUT_05": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_02": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_03": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_04": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_06": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_07": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_INPUT_08": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_OUTPUT_02": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_OUTPUT_03": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_05": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_06": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_07": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_08": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_INPUT_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_10": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_01": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_02": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_03": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_04": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_05": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_06": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_07": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_08": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_11": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_OUTPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_BIAS_10": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XN_OUTPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_01": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_02": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_OUTPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_INPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_03": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_03": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_04": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_05": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_INPUT_06": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_01": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_INPUT_07": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_INPUT_08": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_OUTPUT_03": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_OUTPUT_04": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_04": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_05": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_INPUT_09": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_10": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_11": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_12": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_02": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_03": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_04": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_05": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_06": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_07": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_08": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_09": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_10": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_11": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_12": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_06": {
+          "role": "nbias",
+          "total_W_um": 4.362500000000001,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_07": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        }
+      },
+      "output_switch_scale": 0.6
+    },
+    "status": "complete_15pct",
+    "values": {
+      "10mv": {
+        "gain_vv": 4.7967568861612975,
+        "sfdr_db": 87.59560803736844,
+        "cm_mean_v": 1.1789567711008577,
+        "output_min_v": 1.153762360729059,
+        "output_max_v": 1.203227500450661,
+        "hold_movement_ratio": 0.016311796536376422,
+        "power_w": 0.004748170478733103
+      },
+      "20mv": {
+        "gain_vv": 4.812329525028783,
+        "sfdr_db": 84.67656105624818,
+        "cm_mean_v": 1.178707631054574,
+        "output_min_v": 1.129012080301088,
+        "output_max_v": 1.226778709217638,
+        "hold_movement_ratio": 0.01623403834124252,
+        "power_w": 0.004748237365427692
+      }
+    },
+    "groups": {
+      "10mv": "runs/28/20260929T050627252473Z_precision_refined_10mv",
+      "20mv": "runs/28/20260929T050627252251Z_precision_refined_20mv"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T05:53:30.976043+00:00",
+    "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+    "parameters": {
+      "input_scale": 0.3,
+      "output_n_scale": 2.3,
+      "output_p_scale": 1.23,
+      "reservoir_pF": 4,
+      "clock_drive": 12,
+      "instance_roles": {
+        "XP_OUTPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_INPUT_01": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_02": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_03": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_01": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 12.040000000000001,
+          "parallel": 1
+        },
+        "XP_INPUT_05": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_02": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_03": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_04": {
+          "role": "pswitch",
+          "total_W_um": 2.408,
+          "parallel": 1
+        },
+        "XP_INPUT_06": {
+          "role": "pswitch",
+          "total_W_um": 6.0200000000000005,
+          "parallel": 1
+        },
+        "XP_INPUT_07": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_INPUT_08": {
+          "role": "pinput",
+          "total_W_um": 27.660000000000004,
+          "parallel": 1
+        },
+        "XP_OUTPUT_02": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_OUTPUT_03": {
+          "role": "pbias",
+          "total_W_um": 34.0218,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_05": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_06": {
+          "role": "pswitch",
+          "total_W_um": 36.120000000000005,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_07": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_RESERVOIR_08": {
+          "role": "pswitch",
+          "total_W_um": 11.036666666666667,
+          "parallel": 1
+        },
+        "XP_INPUT_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_10": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_01": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_02": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_03": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_04": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_05": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_06": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_07": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_08": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_BIAS_09": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_INPUT_11": {
+          "role": "pinput",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XP_OUTPUT_04": {
+          "role": "pswitch",
+          "total_W_um": 2.1672000000000002,
+          "parallel": 1
+        },
+        "XP_BIAS_10": {
+          "role": "pbias",
+          "total_W_um": 9.22,
+          "parallel": 1
+        },
+        "XN_OUTPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_01": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_02": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_01": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_OUTPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 0.68292,
+          "parallel": 1
+        },
+        "XN_INPUT_02": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_03": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_03": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        },
+        "XN_INPUT_04": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_05": {
+          "role": "nswitch",
+          "total_W_um": 10.84,
+          "parallel": 1
+        },
+        "XN_INPUT_06": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_01": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_INPUT_07": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_INPUT_08": {
+          "role": "ninput",
+          "total_W_um": 9.06,
+          "parallel": 1
+        },
+        "XN_OUTPUT_03": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_OUTPUT_04": {
+          "role": "nbias",
+          "total_W_um": 14.047249999999998,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_04": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_05": {
+          "role": "nswitch",
+          "total_W_um": 32.519999999999996,
+          "parallel": 1
+        },
+        "XN_INPUT_09": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_10": {
+          "role": "nswitch",
+          "total_W_um": 9.936666666666666,
+          "parallel": 1
+        },
+        "XN_INPUT_11": {
+          "role": "nswitch",
+          "total_W_um": 5.42,
+          "parallel": 1
+        },
+        "XN_INPUT_12": {
+          "role": "ninput",
+          "total_W_um": 3.02,
+          "parallel": 1
+        },
+        "XN_BIAS_02": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_03": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_04": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_05": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_06": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_07": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_08": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_09": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_10": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_11": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_BIAS_12": {
+          "role": "nbias",
+          "total_W_um": 6.98,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_06": {
+          "role": "nbias",
+          "total_W_um": 4.362500000000001,
+          "parallel": 1
+        },
+        "XN_RESERVOIR_07": {
+          "role": "nswitch",
+          "total_W_um": 2.1679999999999997,
+          "parallel": 1
+        }
+      },
+      "output_switch_scale": 0.6
+    },
+    "status": "complete_15pct",
+    "values": {
+      "10mv": {
+        "gain_vv": 4.796738397775286,
+        "sfdr_db": 87.87971267414265,
+        "cm_mean_v": 1.1789563390324003,
+        "output_min_v": 1.153762068537423,
+        "output_max_v": 1.203226396466775,
+        "hold_movement_ratio": 0.016312722958045953,
+        "power_w": 0.0047481655317843496
+      },
+      "20mv": {
+        "gain_vv": 4.812310695597589,
+        "sfdr_db": 84.99662463654323,
+        "cm_mean_v": 1.178707263458867,
+        "output_min_v": 1.129012343832373,
+        "output_max_v": 1.22677843665755,
+        "hold_movement_ratio": 0.016234655970845457,
+        "power_w": 0.004748208434134922
+      }
+    },
+    "groups": {
+      "10mv": "runs/28/20260929T052500800082Z_precision_refined_10mv",
+      "20mv": "runs/28/20260929T052500800011Z_precision_refined_20mv"
+    }
+  }
+]

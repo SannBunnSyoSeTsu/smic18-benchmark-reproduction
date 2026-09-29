@@ -1,0 +1,111 @@
+{
+  "pdf": "reports/24-ring-vco-review.pdf",
+  "sha256": "2708e77ca5d9225fe9dedced2ca551cbf1f2568f52c7965dff586aaab65522e4",
+  "results_sha256": "69c7d2f3932f20ec339a6405f746f420f2f20b6a529aa01ee3a5b5b1d855b017",
+  "circuit_sha256": "fc15de4598b7f285d780f50fc2a85f864935cf0bfa81dfb4d21208dfdfef662c",
+  "generated_at": "2026-09-23T06:19:20.168931+00:00",
+  "pages": 8,
+  "render_review_pending": false,
+  "render_reviewed_at": "2026-09-23T06:19:20.171919+00:00",
+  "render_review_method": "pdftoppm120dpi, configured model inspected all6 final pages. Page5 lower paragraph moved clear of footer; circuit, plots, labels, tables and netlist readable.",
+  "all_pages_reviewed": true,
+  "body_pages": 6,
+  "schematic_pages": 2,
+  "schematic_sheets_sha256": "cd387f48f2603bb30e2aae630f1849d8560c48e4d5cace0b20be63f7b007458a",
+  "schematic_audit_sha256": "b83256021881df583690357577db8fad3c7f293ad90bf4aa750c62db461e4600",
+  "all_pages_visually_reviewed": true,
+  "documentation_only": true,
+  "previous_body_pdf": {
+    "path": "reports/pre-schematic-20260923/24-ring-vco/24-ring-vco-review.pdf",
+    "sha256": "c5b07cee4ed61f40f13d0007b748df0492de569eef0d44a3d2950965d970bfa3",
+    "pages": 6,
+    "previous_render_reviewed_at": "2026-09-22T09:21:32.582748+00:00"
+  },
+  "page_merge_checks": [
+    {
+      "page": 1,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "809a914c2e9f94260cb30f2725a70839ef4aa271f2e25222dddf45c470cdf5c4"
+    },
+    {
+      "page": 2,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "202d5265d5109dfb2f26040e9d54b42cb0e0d12a824af1a90d530d39272a15ce"
+    },
+    {
+      "page": 3,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "e9046b885ea93108fcf8b27867777696f579cffb82308491cb27cc83a8e91023"
+    },
+    {
+      "page": 4,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "f0feb856c55893ea74afce19243cbd08a85039bc13ead1e4354d04119e7951c0"
+    },
+    {
+      "page": 5,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "d02bcb229997920b8d9959fc5ac25d30163c78a2f84e34a7ba82cb43dce028b1"
+    },
+    {
+      "page": 6,
+      "kind": "preserved_body",
+      "pixel_identical": true,
+      "size": [
+        745,
+        1053
+      ],
+      "rgb_sha256": "b90bdea8c4b2c9d555632a9fd507cbb55ae7f693f9ea22a955c3a9b44919250f"
+    },
+    {
+      "page": 7,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "522ee7802d2a763cda8bcc3e05543cc065310ffb571f67055fe7590f43c9407b",
+      "path": "reports/schematic-retrofit-renders/24-ring-vco/page-07.png",
+      "sha256": "818868f79b0835b223566c23377add73b5064adac226f5af195a3bcfeb2abd97"
+    },
+    {
+      "page": 8,
+      "kind": "schematic_appendix",
+      "pixel_identical": true,
+      "size": [
+        1053,
+        745
+      ],
+      "rgb_sha256": "afb483c16b993d7fe8865e28dface67a8bd7270e2c10bcc6590c4801789c080e",
+      "path": "reports/schematic-retrofit-renders/24-ring-vco/page-08.png",
+      "sha256": "ff4ccc107dfbd95a0de561dc3040f713778ccdc5f22712541cca7045002b3d17"
+    }
+  ],
+  "render_review_note": "Previously reviewed body pages preserved. New schematic sheets and full overview actually inspected by the drawing reviewer. All body and appended pages were independently rendered with Poppler and pixel-compared to their pre-merge source PDFs; every page is identical. No electrical rerun or result change."
+}

@@ -1,0 +1,35 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=res_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_rf_v1p5_spe.lib" section=mim_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_rf_v1p5_spri_ind_spe.ckt"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/43-inductive-lna/circuit.scs"
+simulator lang=spectre
+simulatorOptions options temp=27 tnom=27 reltol=1e-07 vabstol=1e-9 iabstol=1e-14
+saveOptions options save=selected
+VDDF (vddf 0) vsource dc=1.8
+IREFF (vddf ireff) isource dc=50u
+VSF (srcf 0) vsource dc=0 mag=1
+RSF (srcf rfinf) resistor r=50
+RLF (rfoutf 0) resistor r=50 isnoisy=no
+XF (0 ireff vddf rfinf rfoutf) inductive_lna
+VDDR (vddr 0) vsource dc=1.8
+IREFR (vddr irefr) isource dc=50u
+VSR (srcr 0) vsource dc=0 mag=1
+RSR (srcr rfoutr) resistor r=50
+RINR (rfinr 0) resistor r=50
+XR (0 irefr vddr rfinr rfoutr) inductive_lna
+save vddf ireff rfinf rfoutf rfinr rfoutr VDDF:p XF.ng XF.ns XF.nx XF.nd XF.vcas XF.vbias XF.pgate
+save XF.MREF:ids XF.MREF:gm XF.MREF:gds XF.MREF:vgs XF.MREF:vds XF.MREF:vdsat XF.MREF:region XF.MREF:cgs XF.MREF:cgd
+save XF.MNSINK:ids XF.MNSINK:gm XF.MNSINK:gds XF.MNSINK:vgs XF.MNSINK:vds XF.MNSINK:vdsat XF.MNSINK:region XF.MNSINK:cgs XF.MNSINK:cgd
+save XF.MPDIO:ids XF.MPDIO:gm XF.MPDIO:gds XF.MPDIO:vgs XF.MPDIO:vds XF.MPDIO:vdsat XF.MPDIO:region XF.MPDIO:cgs XF.MPDIO:cgd
+save XF.MPMIR:ids XF.MPMIR:gm XF.MPMIR:gds XF.MPMIR:vgs XF.MPMIR:vds XF.MPMIR:vdsat XF.MPMIR:region XF.MPMIR:cgs XF.MPMIR:cgd
+save XF.MCBOT:ids XF.MCBOT:gm XF.MCBOT:gds XF.MCBOT:vgs XF.MCBOT:vds XF.MCBOT:vdsat XF.MCBOT:region XF.MCBOT:cgs XF.MCBOT:cgd
+save XF.MCTOP:ids XF.MCTOP:gm XF.MCTOP:gds XF.MCTOP:vgs XF.MCTOP:vds XF.MCTOP:vdsat XF.MCTOP:region XF.MCTOP:cgs XF.MCTOP:cgd
+save XF.MIN:ids XF.MIN:gm XF.MIN:gds XF.MIN:vgs XF.MIN:vds XF.MIN:vdsat XF.MIN:region XF.MIN:cgs XF.MIN:cgd
+save XF.MCAS:ids XF.MCAS:gm XF.MCAS:gds XF.MCAS:vgs XF.MCAS:vds XF.MCAS:vdsat XF.MCAS:region XF.MCAS:cgs XF.MCAS:cgd
+dcOp dc
+band ac start=2.35G stop=2.45G lin=200
+wide ac start=100M stop=10G dec=800
+noise (rfoutf 0) noise iprobe=VSF start=2.35G stop=2.45G lin=200

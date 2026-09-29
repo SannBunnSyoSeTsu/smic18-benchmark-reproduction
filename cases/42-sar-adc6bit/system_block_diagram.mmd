@@ -1,0 +1,24 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        S["差分自举采样"]
+        D["双支路电容DAC"]
+        C["动态比较器"]
+        L["HD异步控制与判决寄存"]
+        R["完成后锁存6位输出"]
+    end
+    VIN["差分输入"]
+    REF["参考电压"]
+    CLK["外部采样时钟"]
+    OUT["数字读数"]
+    VIN --> S
+    S -->|"采样电荷"| D
+    REF --> D
+    D -->|"差分余量"| C
+    C -->|"判决 / valid"| L
+    L -.->|"逐位试探"| D
+    L -.->|"内部比较时钟"| C
+    L -.->|"EOC / 判决位"| R
+    R --> OUT
+    CLK -.->|"采样"| S
+    CLK -.->|"复位 / 转换启动"| L

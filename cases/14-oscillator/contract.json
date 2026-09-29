@@ -1,0 +1,38 @@
+{
+  "source_task": "sky130-low-power-oscillator-2mhz-pvt",
+  "corner": "tt",
+  "capacitor_corner": "mim_tt",
+  "temperature_C": 27,
+  "VDD_V": 1.8,
+  "supply_ramp_s": 1e-06,
+  "external_bias_A": 2e-06,
+  "bias_connection": "From measured AVDD to IBN2U, exactly as original bench, included in VSENSE current",
+  "load_F": 1e-12,
+  "stop_s": 2e-05,
+  "measurement_window_s": [
+    1e-05,
+    2e-05
+  ],
+  "frequency_center_Hz": 2000000.0,
+  "frequency_error_max_Hz": 200000.0,
+  "frequency_error_10pct_Hz": 220000.0,
+  "frequency_error_15pct_Hz": 230000.0,
+  "frequency_definition": "10/(rising edge12 minus rising edge2), after10us, half-supply threshold0.9V",
+  "swing_center_VDD": 1.0,
+  "swing_error_max_VDD": 0.05,
+  "swing_error_10pct_VDD": 0.055,
+  "swing_error_15pct_VDD": 0.0575,
+  "swing_definition": "(max(CLKO)-min(CLKO))/VDD over10–20us",
+  "power_max_W": 2e-05,
+  "power_definition": "VDD*abs(time-weighted mean current through VSENSE),10–20us, includes external2uA bias and full output driver",
+  "startup_scope": "Supply ramps0→1.8V in1us; must sustain required oscillation by10us. No extra deadline before10us; first full-supply half-threshold crossing is diagnostic only.",
+  "prohibited_DUT": "Ideal R/C, sources, behavioral elements, ideal switches, local models; DUT leaves are nativeMOS, nativeMIM and originalHDMOS",
+  "nominal_scope_excludes": [
+    "other4 disclosed representative PVT points",
+    "other ramp profiles",
+    "other loads",
+    "phase noise/jitter",
+    "mismatch/Monte Carlo",
+    "PEX"
+  ]
+}

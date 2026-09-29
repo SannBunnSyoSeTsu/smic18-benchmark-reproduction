@@ -1,0 +1,318 @@
+{
+  "generated_at": "2026-09-29T05:26:50.181527+00:00",
+  "status": "passed",
+  "method": "Editable text/table reconstruction from delivered vector PDF using Poppler XML; every PDF text fragment accounted for; tables rendered and shape-checked; plots and exact netlist retained.",
+  "pdf": "reports/46-flash-adc3bit-review.pdf",
+  "pdf_sha256": "e72b841b0b1c9bebcda5abc606354029f3d06b92d014067144c5ee2653098b78",
+  "circuit_sha256": "932079bd1b52f635b8632deb2e396f31044070eec8bb522322982af2f83ff7bd",
+  "results_sha256": "5e66dacd7f4579d250a4518ae07e24d2f3386cc5ea7c4a691455fd8af1131706",
+  "markdown_sha256": "fb6c4cb962cd310e02061a5ae540c0b1e6ca489e82a2e113d94b29f666d85b71",
+  "body_pages": 7,
+  "tables": 2,
+  "pages": [
+    {
+      "page": 1,
+      "tables": [
+        {
+          "top": 487.0,
+          "headers": [
+            "指标",
+            "实测",
+            "原",
+            "10%",
+            "15%"
+          ],
+          "rows": [
+            [
+              "时钟到输出/ns",
+              "0.690804",
+              "≤9.5",
+              "≤9.5",
+              "≤9.5"
+            ],
+            [
+              "核心和参考/uW",
+              "326.612",
+              "≤1000",
+              "≤1100",
+              "≤1150"
+            ],
+            [
+              "正向时钟/uW",
+              "43.6328",
+              "≤250",
+              "≤275",
+              "≤287.5"
+            ],
+            [
+              "DNL/LSB",
+              "0.1",
+              "≤0.3",
+              "≤0.33",
+              "≤0.345"
+            ],
+            [
+              "INL/LSB",
+              "0.09",
+              "≤0.3",
+              "≤0.33",
+              "≤0.345"
+            ],
+            [
+              "绝对误差/LSB",
+              "0.19",
+              "≤0.3",
+              "≤0.33",
+              "≤0.345"
+            ],
+            [
+              "低频SNDR/dB",
+              "20.0123",
+              "≥17",
+              "≥16.085",
+              "≥15.588"
+            ],
+            [
+              "低频SFDR/dB",
+              "26.537",
+              "≥21",
+              "≥20.085",
+              "≥19.588"
+            ],
+            [
+              "低频归一ENOB",
+              "3.12425",
+              "≥2.5",
+              "≥2.25",
+              "≥2.125"
+            ],
+            [
+              "高频SNDR/dB",
+              "22.4154",
+              "≥17",
+              "≥16.085",
+              "≥15.588"
+            ],
+            [
+              "高频SFDR/dB",
+              "28.0535",
+              "≥21",
+              "≥20.085",
+              "≥19.588"
+            ],
+            [
+              "高频归一ENOB",
+              "3.55823",
+              "≥2.5",
+              "≥2.25",
+              "≥2.125"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 78,
+      "accounted_pdf_text_fragments": 78,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 2,
+      "tables": [
+        {
+          "top": 213.0,
+          "headers": [
+            "角色",
+            "模型",
+            "W/L um",
+            "gm/ID初算",
+            "I初算/uA"
+          ],
+          "rows": [
+            [
+              "input",
+              "n18",
+              "9.02/0.18",
+              "14",
+              "100"
+            ],
+            [
+              "tail",
+              "n18",
+              "8.14/0.18",
+              "8",
+              "300"
+            ],
+            [
+              "latch_n",
+              "n18",
+              "4.06/0.18",
+              "10",
+              "100"
+            ],
+            [
+              "latch_p",
+              "p18",
+              "6.12/0.18",
+              "10",
+              "50"
+            ],
+            [
+              "precharge",
+              "p18",
+              "6.12/0.18",
+              "10",
+              "50"
+            ]
+          ],
+          "pdf_text_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ]
+        }
+      ],
+      "total_pdf_text_fragments": 42,
+      "accounted_pdf_text_fragments": 42,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 3,
+      "tables": [],
+      "total_pdf_text_fragments": 70,
+      "accounted_pdf_text_fragments": 70,
+      "plot_text_fragments": 64
+    },
+    {
+      "page": 4,
+      "tables": [],
+      "total_pdf_text_fragments": 14,
+      "accounted_pdf_text_fragments": 14,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 5,
+      "tables": [],
+      "total_pdf_text_fragments": 37,
+      "accounted_pdf_text_fragments": 37,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 6,
+      "tables": [],
+      "total_pdf_text_fragments": 36,
+      "accounted_pdf_text_fragments": 36,
+      "plot_text_fragments": 0
+    },
+    {
+      "page": 7,
+      "tables": [],
+      "total_pdf_text_fragments": 15,
+      "accounted_pdf_text_fragments": 15,
+      "plot_text_fragments": 0
+    }
+  ],
+  "assets": {
+    "markdown_assets/page-04.png": "738101800c440a8b73585923c56a9c81bc1d49563b00707419b011f68cc1234c",
+    "markdown_assets/page-02.png": "27317fc171e284897572798a3f8a3d9d0ce1ecd66ef40e9b6104a195d4a9dec7",
+    "markdown_assets/page-05.png": "dd6dc1476cf11af05a983c5f276b2e4cc65cfa5ba3783e605de803f6c9e2d285",
+    "markdown_assets/page-01.png": "98eccd189fbeb1a06351860e52d37e54b7ace47b547e1880da977705bec39f33",
+    "markdown_assets/page-06.png": "f3452c4ee573175fa57f2f2f550f267d5d6d6ca39a448ac7b98f9d5bec1ebbb8",
+    "markdown_assets/page-07.png": "5d00264422ce07763b60d26b01b9c992fa843b1e0765daca6bc6765e4f11c5f4",
+    "markdown_assets/page-03.png": "d9e1901ec00a00ea8f4f46aeca5a17ab6843a92f12f48823ec088cd60aec7ad6"
+  },
+  "restored_markdown_sha256": "7f436637a4d36bba786485079e0d851785d3999f914713dcef4faebbc9b2b588",
+  "system_diagram_sha256": "385f30c52592819c693aa40cf7fd9cf9937189f3433dc791ef4f44b413e218af"
+}

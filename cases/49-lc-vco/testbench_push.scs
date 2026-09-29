@@ -1,0 +1,28 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=res_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_rf_v1p5_spe.lib" section=mim_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_rf_v1p5_var_spe.ckt"
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_rf_v1p5_spri_ind_spe.ckt"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/49-lc-vco/circuit.scs"
+simulator lang=spectre
+simulatorOptions options temp=27 tnom=27 reltol=1e-5 vabstol=1e-8 iabstol=1e-14 gmin=1e-12
+saveOptions options save=selected
+VCTRL (vctrl 0) vsource type=pwl wave=[0 0 39.9n 0 40n 0.6 79.9n 0.6 80n 1.2 119.9n 1.2 120n 1.8 160n 1.8]
+save vctrl
+VDD_LOW (vdd_LOW 0) vsource dc=1.62
+IREF_LOW (iref_LOW 0) isource dc=50u
+XVCO_LOW (0 iref_LOW vctrl vdd_LOW outp_LOW outn_LOW) lc_vco_2ghz
+CLP_LOW (outp_LOW 0) capacitor c=10f
+CLN_LOW (outn_LOW 0) capacitor c=10f
+ic outp_LOW=0.61 outn_LOW=0.59
+save vdd_LOW iref_LOW outp_LOW outn_LOW VDD_LOW:p XVCO_LOW.tankct XVCO_LOW.pbu XVCO_LOW.pcas XVCO_LOW.vbias XVCO_LOW.varp XVCO_LOW.varn XVCO_LOW.vrefvar XVCO_LOW.rout
+VDD_HIGH (vdd_HIGH 0) vsource dc=1.98
+IREF_HIGH (iref_HIGH 0) isource dc=50u
+XVCO_HIGH (0 iref_HIGH vctrl vdd_HIGH outp_HIGH outn_HIGH) lc_vco_2ghz
+CLP_HIGH (outp_HIGH 0) capacitor c=10f
+CLN_HIGH (outn_HIGH 0) capacitor c=10f
+ic outp_HIGH=0.61 outn_HIGH=0.59
+save vdd_HIGH iref_HIGH outp_HIGH outn_HIGH VDD_HIGH:p XVCO_HIGH.tankct XVCO_HIGH.pbu XVCO_HIGH.pcas XVCO_HIGH.vbias XVCO_HIGH.varp XVCO_HIGH.varn XVCO_HIGH.vrefvar XVCO_HIGH.rout
+tran tran stop=160n maxstep=5p skipdc=yes errpreset=conservative method=traponly

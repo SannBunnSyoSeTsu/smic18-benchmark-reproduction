@@ -1,0 +1,47 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/35-fd-miller/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+VSSD (vssD 0) vsource dc=0 mag=0 phase=0
+VDDD (vddD vssD) vsource dc=1.8 mag=0 phase=0
+IREFD (vddD irefD) isource dc=50u
+VOCMD (vocmD vssD) vsource dc=.9
+VIPD (vinpD vssD) vsource dc=.9 mag=0.5 phase=0
+VIND (vinnD vssD) vsource dc=.9 mag=0.5 phase=180
+XD (vssD irefD vddD vinnD vinpD vocmD voutnD voutpD) fd_two_stage_miller_opamp
+CLPD (voutpD vssD) capacitor c=1p
+CLND (voutnD vssD) capacitor c=1p
+save voutpD voutnD vddD vssD
+VSSC (vssC 0) vsource dc=0 mag=0 phase=0
+VDDC (vddC vssC) vsource dc=1.8 mag=0 phase=0
+IREFC (vddC irefC) isource dc=50u
+VOCMC (vocmC vssC) vsource dc=.9
+VIPC (vinpC vssC) vsource dc=.9 mag=1 phase=0
+VINC (vinnC vssC) vsource dc=.9 mag=1 phase=0
+XC (vssC irefC vddC vinnC vinpC vocmC voutnC voutpC) fd_two_stage_miller_opamp
+CLPC (voutpC vssC) capacitor c=1p
+CLNC (voutnC vssC) capacitor c=1p
+save voutpC voutnC vddC vssC
+VSSP (vssP 0) vsource dc=0 mag=0 phase=0
+VDDP (vddP vssP) vsource dc=1.8 mag=1 phase=0
+IREFP (vddP irefP) isource dc=50u
+VOCMP (vocmP vssP) vsource dc=.9
+VIPP (vinpP vssP) vsource dc=.9 mag=0 phase=0
+VINP (vinnP vssP) vsource dc=.9 mag=0 phase=0
+XP (vssP irefP vddP vinnP vinpP vocmP voutnP voutpP) fd_two_stage_miller_opamp
+CLPP (voutpP vssP) capacitor c=1p
+CLNP (voutnP vssP) capacitor c=1p
+save voutpP voutnP vddP vssP
+VSSN (vssN 0) vsource dc=0 mag=1 phase=0
+VDDN (vddN vssN) vsource dc=1.8 mag=1 phase=180
+IREFN (vddN irefN) isource dc=50u
+VOCMN (vocmN vssN) vsource dc=.9
+VIPN (vinpN vssN) vsource dc=.9 mag=0 phase=0
+VINN (vinnN vssN) vsource dc=.9 mag=0 phase=0
+XN (vssN irefN vddN vinnN vinpN vocmN voutnN voutpN) fd_two_stage_miller_opamp
+CLPN (voutpN vssN) capacitor c=1p
+CLNN (voutnN vssN) capacitor c=1p
+save voutpN voutnN vddN vssN
+ac ac start=10 stop=10M dec=100

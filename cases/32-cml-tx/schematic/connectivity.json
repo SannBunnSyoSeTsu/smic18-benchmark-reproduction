@@ -1,0 +1,1615 @@
+{
+  "generated_at": "2026-09-26T06:07:59.169560+00:00",
+  "circuit_sha256": "4a3d75102319b904cbe4a9aabfdb373e34eb42a70c57c37fb97fb94aa7c29b91",
+  "top": "tx_driver_28g",
+  "subcircuit_ports": {
+    "tx_driver_28g": [
+      "vss",
+      "vdd",
+      "iref",
+      "dinp",
+      "dinn",
+      "voutp",
+      "voutn"
+    ]
+  },
+  "instances": {
+    "tx_driver_28g/MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "39.76u",
+        "l": ".36u",
+        "m": "1"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=39.76u l=.36u m=1",
+      "W_unit_um": 39.76,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        4,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          6
+        ],
+        "S": [
+          4,
+          4
+        ],
+        "G": [
+          2.45,
+          5
+        ],
+        "B": [
+          4.86,
+          5
+        ]
+      },
+      "block": "tx_driver_28g"
+    },
+    "tx_driver_28g/MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "39.76u",
+        "l": ".36u",
+        "m": "200"
+      },
+      "source_line": "MTAIL (tail iref vss vss) n18 w=39.76u l=.36u m=200",
+      "W_unit_um": 39.76,
+      "L_um": 0.36,
+      "m": 200.0,
+      "sheet": 1,
+      "origin": [
+        21,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          21,
+          6
+        ],
+        "S": [
+          21,
+          4
+        ],
+        "G": [
+          19.45,
+          5
+        ],
+        "B": [
+          21.86,
+          5
+        ]
+      },
+      "block": "tx_driver_28g"
+    },
+    "tx_driver_28g/MPAIRP": {
+      "name": "MPAIRP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "dn",
+        "G": "gip",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.64u",
+        "l": ".18u",
+        "m": "100"
+      },
+      "source_line": "MPAIRP (dn gip tail vss) n18 w=0.64u l=.18u m=100",
+      "W_unit_um": 0.64,
+      "L_um": 0.18,
+      "m": 100.0,
+      "sheet": 1,
+      "origin": [
+        13,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          13,
+          14
+        ],
+        "S": [
+          13,
+          12
+        ],
+        "G": [
+          11.45,
+          13
+        ],
+        "B": [
+          13.86,
+          13
+        ]
+      },
+      "block": "tx_driver_28g"
+    },
+    "tx_driver_28g/MPAIRN": {
+      "name": "MPAIRN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "dp",
+        "G": "gin",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.64u",
+        "l": ".18u",
+        "m": "100"
+      },
+      "source_line": "MPAIRN (dp gin tail vss) n18 w=0.64u l=.18u m=100",
+      "W_unit_um": 0.64,
+      "L_um": 0.18,
+      "m": 100.0,
+      "sheet": 1,
+      "origin": [
+        29,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          14
+        ],
+        "S": [
+          29,
+          12
+        ],
+        "G": [
+          27.45,
+          13
+        ],
+        "B": [
+          29.86,
+          13
+        ]
+      },
+      "block": "tx_driver_28g"
+    },
+    "tx_driver_28g/LN": {
+      "name": "LN",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "dn",
+        "2": "voutn"
+      },
+      "parameters": {
+        "l": "200p"
+      },
+      "source_line": "LN (dn voutn) inductor l=200p",
+      "sheet": 1,
+      "origin": [
+        13,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          13,
+          19.18
+        ],
+        "2": [
+          13,
+          20.82
+        ]
+      },
+      "block": "tx_driver_28g"
+    },
+    "tx_driver_28g/LP": {
+      "name": "LP",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "dp",
+        "2": "voutp"
+      },
+      "parameters": {
+        "l": "200p"
+      },
+      "source_line": "LP (dp voutp) inductor l=200p",
+      "sheet": 1,
+      "origin": [
+        29,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          29,
+          19.18
+        ],
+        "2": [
+          29,
+          20.82
+        ]
+      },
+      "block": "tx_driver_28g"
+    },
+    "tx_driver_28g/LIP": {
+      "name": "LIP",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "dinp",
+        "2": "gip"
+      },
+      "parameters": {
+        "l": "200p"
+      },
+      "source_line": "LIP (dinp gip) inductor l=200p",
+      "sheet": 1,
+      "origin": [
+        5,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          4.18,
+          13
+        ],
+        "2": [
+          5.82,
+          13
+        ]
+      },
+      "block": "tx_driver_28g"
+    },
+    "tx_driver_28g/LIN": {
+      "name": "LIN",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "dinn",
+        "2": "gin"
+      },
+      "parameters": {
+        "l": "200p"
+      },
+      "source_line": "LIN (dinn gin) inductor l=200p",
+      "sheet": 1,
+      "origin": [
+        21,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          20.18,
+          13
+        ],
+        "2": [
+          21.82,
+          13
+        ]
+      },
+      "block": "tx_driver_28g"
+    },
+    "tx_driver_28g/CNEUTP": {
+      "name": "CNEUTP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "dp",
+        "2": "gip"
+      },
+      "parameters": {
+        "c": "15f"
+      },
+      "source_line": "CNEUTP (dp gip) capacitor c=15f",
+      "value_SI": 1.5000000000000002e-14,
+      "sheet": 1,
+      "origin": [
+        6,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          6,
+          20.82
+        ],
+        "2": [
+          6,
+          19.18
+        ]
+      },
+      "block": "tx_driver_28g"
+    },
+    "tx_driver_28g/CNEUTN": {
+      "name": "CNEUTN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "dn",
+        "2": "gin"
+      },
+      "parameters": {
+        "c": "15f"
+      },
+      "source_line": "CNEUTN (dn gin) capacitor c=15f",
+      "value_SI": 1.5000000000000002e-14,
+      "sheet": 1,
+      "origin": [
+        39,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          39,
+          20.82
+        ],
+        "2": [
+          39,
+          19.18
+        ]
+      },
+      "block": "tx_driver_28g"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "39.76u",
+        "l": ".36u",
+        "m": "1"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=39.76u l=.36u m=1",
+      "W_unit_um": 39.76,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "tx_driver_28g/MREF",
+      "path": "MREF"
+    },
+    "MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "tail",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "39.76u",
+        "l": ".36u",
+        "m": "200"
+      },
+      "source_line": "MTAIL (tail iref vss vss) n18 w=39.76u l=.36u m=200",
+      "W_unit_um": 39.76,
+      "L_um": 0.36,
+      "m": 200.0,
+      "definition": "tx_driver_28g/MTAIL",
+      "path": "MTAIL"
+    },
+    "MPAIRP": {
+      "name": "MPAIRP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "dn",
+        "G": "gip",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.64u",
+        "l": ".18u",
+        "m": "100"
+      },
+      "source_line": "MPAIRP (dn gip tail vss) n18 w=0.64u l=.18u m=100",
+      "W_unit_um": 0.64,
+      "L_um": 0.18,
+      "m": 100.0,
+      "definition": "tx_driver_28g/MPAIRP",
+      "path": "MPAIRP"
+    },
+    "MPAIRN": {
+      "name": "MPAIRN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "dp",
+        "G": "gin",
+        "S": "tail",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.64u",
+        "l": ".18u",
+        "m": "100"
+      },
+      "source_line": "MPAIRN (dp gin tail vss) n18 w=0.64u l=.18u m=100",
+      "W_unit_um": 0.64,
+      "L_um": 0.18,
+      "m": 100.0,
+      "definition": "tx_driver_28g/MPAIRN",
+      "path": "MPAIRN"
+    },
+    "CNEUTP": {
+      "name": "CNEUTP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "dp",
+        "2": "gip"
+      },
+      "parameters": {
+        "c": "15f"
+      },
+      "source_line": "CNEUTP (dp gip) capacitor c=15f",
+      "value_SI": 1.5000000000000002e-14,
+      "definition": "tx_driver_28g/CNEUTP",
+      "path": "CNEUTP"
+    },
+    "CNEUTN": {
+      "name": "CNEUTN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "dn",
+        "2": "gin"
+      },
+      "parameters": {
+        "c": "15f"
+      },
+      "source_line": "CNEUTN (dn gin) capacitor c=15f",
+      "value_SI": 1.5000000000000002e-14,
+      "definition": "tx_driver_28g/CNEUTN",
+      "path": "CNEUTN"
+    },
+    "LP": {
+      "name": "LP",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "dp",
+        "2": "voutp"
+      },
+      "parameters": {
+        "l": "200p"
+      },
+      "source_line": "LP (dp voutp) inductor l=200p",
+      "definition": "tx_driver_28g/LP",
+      "path": "LP"
+    },
+    "LN": {
+      "name": "LN",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "dn",
+        "2": "voutn"
+      },
+      "parameters": {
+        "l": "200p"
+      },
+      "source_line": "LN (dn voutn) inductor l=200p",
+      "definition": "tx_driver_28g/LN",
+      "path": "LN"
+    },
+    "LIP": {
+      "name": "LIP",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "dinp",
+        "2": "gip"
+      },
+      "parameters": {
+        "l": "200p"
+      },
+      "source_line": "LIP (dinp gip) inductor l=200p",
+      "definition": "tx_driver_28g/LIP",
+      "path": "LIP"
+    },
+    "LIN": {
+      "name": "LIN",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "dinn",
+        "2": "gin"
+      },
+      "parameters": {
+        "l": "200p"
+      },
+      "source_line": "LIN (dinn gin) inductor l=200p",
+      "definition": "tx_driver_28g/LIN",
+      "path": "LIN"
+    }
+  },
+  "nets": {
+    "tx_driver_28g/iref": [
+      {
+        "instance": "tx_driver_28g/MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          4,
+          6
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          2.45,
+          5
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/MTAIL",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          19.45,
+          5
+        ]
+      }
+    ],
+    "tx_driver_28g/vss": [
+      {
+        "instance": "tx_driver_28g/MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          4,
+          4
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          4.86,
+          5
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/MTAIL",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          21,
+          4
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/MTAIL",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          21.86,
+          5
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/MPAIRP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          13.86,
+          13
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/MPAIRN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          29.86,
+          13
+        ]
+      }
+    ],
+    "tx_driver_28g/tail": [
+      {
+        "instance": "tx_driver_28g/MTAIL",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          21,
+          6
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/MPAIRP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          13,
+          12
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/MPAIRN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          29,
+          12
+        ]
+      }
+    ],
+    "tx_driver_28g/dn": [
+      {
+        "instance": "tx_driver_28g/MPAIRP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          13,
+          14
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/LN",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          13,
+          19.18
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/CNEUTN",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          39,
+          20.82
+        ]
+      }
+    ],
+    "tx_driver_28g/gip": [
+      {
+        "instance": "tx_driver_28g/MPAIRP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          11.45,
+          13
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/LIP",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          5.82,
+          13
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/CNEUTP",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          6,
+          19.18
+        ]
+      }
+    ],
+    "tx_driver_28g/dp": [
+      {
+        "instance": "tx_driver_28g/MPAIRN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          29,
+          14
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/LP",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          29,
+          19.18
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/CNEUTP",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          6,
+          20.82
+        ]
+      }
+    ],
+    "tx_driver_28g/gin": [
+      {
+        "instance": "tx_driver_28g/MPAIRN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          27.45,
+          13
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/LIN",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          21.82,
+          13
+        ]
+      },
+      {
+        "instance": "tx_driver_28g/CNEUTN",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          39,
+          19.18
+        ]
+      }
+    ],
+    "tx_driver_28g/voutn": [
+      {
+        "instance": "tx_driver_28g/LN",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          13,
+          20.82
+        ]
+      }
+    ],
+    "tx_driver_28g/voutp": [
+      {
+        "instance": "tx_driver_28g/LP",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          29,
+          20.82
+        ]
+      }
+    ],
+    "tx_driver_28g/dinp": [
+      {
+        "instance": "tx_driver_28g/LIP",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          4.18,
+          13
+        ]
+      }
+    ],
+    "tx_driver_28g/dinn": [
+      {
+        "instance": "tx_driver_28g/LIN",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          20.18,
+          13
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "LN",
+      "pin": "2",
+      "net": "voutn",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "LP",
+      "pin": "2",
+      "net": "voutp",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPAIRP",
+      "pin": "D",
+      "net": "dn",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "LN",
+      "pin": "1",
+      "net": "dn",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "CNEUTN",
+      "pin": "1",
+      "net": "dn",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPAIRP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPAIRN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "LIP",
+      "pin": "1",
+      "net": "dinp",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPAIRP",
+      "pin": "G",
+      "net": "gip",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "LIP",
+      "pin": "2",
+      "net": "gip",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "CNEUTP",
+      "pin": "2",
+      "net": "gip",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPAIRN",
+      "pin": "G",
+      "net": "gin",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "LIN",
+      "pin": "2",
+      "net": "gin",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "CNEUTN",
+      "pin": "2",
+      "net": "gin",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "D",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPAIRP",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPAIRN",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "LIN",
+      "pin": "1",
+      "net": "dinn",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPAIRN",
+      "pin": "D",
+      "net": "dp",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "LP",
+      "pin": "1",
+      "net": "dp",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    },
+    {
+      "sheet": 1,
+      "instance": "CNEUTP",
+      "pin": "1",
+      "net": "dp",
+      "path_to_named_net": true,
+      "block": "tx_driver_28g"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "tx_driver_28g",
+      "title": "CML输出对、输入/输出串联峰化与交叉中和",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.86,
+              5
+            ],
+            [
+              5.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21.86,
+              5
+            ],
+            [
+              22.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              13.86,
+              13
+            ],
+            [
+              14.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29.86,
+              13
+            ],
+            [
+              30.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "dn",
+          "points": [
+            [
+              13,
+              19.18
+            ],
+            [
+              13,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "dp",
+          "points": [
+            [
+              29,
+              19.18
+            ],
+            [
+              29,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gip",
+          "points": [
+            [
+              5.82,
+              13
+            ],
+            [
+              11.45,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gin",
+          "points": [
+            [
+              21.82,
+              13
+            ],
+            [
+              27.45,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              13,
+              9
+            ],
+            [
+              29,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              13,
+              12
+            ],
+            [
+              13,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              29,
+              12
+            ],
+            [
+              29,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              21,
+              6
+            ],
+            [
+              21,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              1.5
+            ],
+            [
+              21,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              4
+            ],
+            [
+              4,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21,
+              4
+            ],
+            [
+              21,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              2.45,
+              5
+            ],
+            [
+              1.9500000000000002,
+              5
+            ],
+            [
+              1.9500000000000002,
+              7.2
+            ],
+            [
+              4,
+              7.2
+            ],
+            [
+              4,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              19.45,
+              5
+            ],
+            [
+              18.9,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "voutn",
+          "points": [
+            [
+              13,
+              20.82
+            ],
+            [
+              13,
+              21.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "voutp",
+          "points": [
+            [
+              29,
+              20.82
+            ],
+            [
+              29,
+              21.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "dinp",
+          "points": [
+            [
+              4.18,
+              13
+            ],
+            [
+              3.38,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "dinn",
+          "points": [
+            [
+              20.18,
+              13
+            ],
+            [
+              19.38,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "dp",
+          "points": [
+            [
+              6,
+              20.82
+            ],
+            [
+              6,
+              21.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gip",
+          "points": [
+            [
+              6,
+              19.18
+            ],
+            [
+              6,
+              18.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "dn",
+          "points": [
+            [
+              39,
+              20.82
+            ],
+            [
+              39,
+              21.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gin",
+          "points": [
+            [
+              39,
+              19.18
+            ],
+            [
+              39,
+              18.54
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            22.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            14.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            30.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "dn",
+          "point": [
+            13.0,
+            16.59
+          ],
+          "text": "dn",
+          "body": false
+        },
+        {
+          "net": "dp",
+          "point": [
+            29.0,
+            16.59
+          ],
+          "text": "dp",
+          "body": false
+        },
+        {
+          "net": "gip",
+          "point": [
+            8.635,
+            13.0
+          ],
+          "text": "gip",
+          "body": false
+        },
+        {
+          "net": "gin",
+          "point": [
+            24.634999999999998,
+            13.0
+          ],
+          "text": "gin",
+          "body": false
+        },
+        {
+          "net": "tail",
+          "point": [
+            13,
+            9
+          ],
+          "text": "tail",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            3,
+            7.2
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            18.9,
+            5
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "voutn",
+          "point": [
+            13,
+            21.46
+          ],
+          "text": "voutn",
+          "body": false
+        },
+        {
+          "net": "voutp",
+          "point": [
+            29,
+            21.46
+          ],
+          "text": "voutp",
+          "body": false
+        },
+        {
+          "net": "dinp",
+          "point": [
+            3.38,
+            13
+          ],
+          "text": "dinp",
+          "body": false
+        },
+        {
+          "net": "dinn",
+          "point": [
+            19.38,
+            13
+          ],
+          "text": "dinn",
+          "body": false
+        },
+        {
+          "net": "dp",
+          "point": [
+            6,
+            21.46
+          ],
+          "text": "dp",
+          "body": false
+        },
+        {
+          "net": "gip",
+          "point": [
+            6,
+            18.54
+          ],
+          "text": "gip",
+          "body": false
+        },
+        {
+          "net": "dn",
+          "point": [
+            39,
+            21.46
+          ],
+          "text": "dn",
+          "body": false
+        },
+        {
+          "net": "gin",
+          "point": [
+            39,
+            18.54
+          ],
+          "text": "gin",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "tx_driver_28g": [
+      "vdd"
+    ]
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

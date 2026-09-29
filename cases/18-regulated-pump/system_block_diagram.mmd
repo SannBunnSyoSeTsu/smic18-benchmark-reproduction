@@ -1,0 +1,21 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        CLKG["HD使能 / 两相逻辑"]
+        DRV["可调幅度时钟驱动"]
+        PUMP["飞跨电容与整流"]
+        FB["输出分压"]
+        EA["误差放大及PMOS调节"]
+    end
+    CLK["时钟 / EN"]
+    VDD["1.8V电源与参考"]
+    LOAD["约2.34V输出 / 三档负载"]
+    CLK -.-> CLKG
+    CLKG -.->|"双相"| DRV
+    EA -->|"vclk供电调幅"| DRV
+    VDD -->|"电源 / 参考"| EA
+    VDD -->|"充电"| PUMP
+    DRV -->|"搬运电荷"| PUMP
+    PUMP --> LOAD
+    LOAD --> FB
+    FB -->|"负反馈"| EA

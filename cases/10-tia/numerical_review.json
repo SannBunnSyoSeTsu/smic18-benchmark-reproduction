@@ -1,0 +1,52 @@
+{
+  "ac_points": 401,
+  "ac_frequency_Hz": [
+    1000000.0,
+    10100000000.0
+  ],
+  "input_impedance_1MHz_ohm": 431.61238076086613,
+  "stage1_loaded_zt_1MHz_ohm": 3566.6537737911044,
+  "stage2_loaded_gain_1MHz": 2.316940562596126,
+  "small_signal_zt_100MHz_ohm": 8171.70597917595,
+  "large_signal_relative_change_at100MHz": -0.0004871077516309663,
+  "tran_saved_samples": 17409,
+  "tran_window_s": [
+    0.0,
+    1.699999999999499e-07
+  ],
+  "tran_max_strobe_gap_s": 9.765625000021413e-12,
+  "tran_saved_signals": [
+    "time",
+    "VDD:p",
+    "VCM:p",
+    "vcm",
+    "iref",
+    "X.n1",
+    "X.nbuf",
+    "in",
+    "vout"
+  ],
+  "formal_input_source_verified_from_frozen_bench": "IIN (in 0) isource type=sine dc=0 ampl=10u freq=100M",
+  "IIN_p_not_saved": true,
+  "noise_points": 171,
+  "noise_density_min_A_per_sqrtHz": 2.836670064973993e-12,
+  "bandwidth_degradation_percent": 13.383082655057077,
+  "full_original_gate_rerun_passes": {
+    "zt_1m_ohm": true,
+    "bandwidth_hz": false,
+    "power_w": true,
+    "noise_density_a_per_rt_hz": true,
+    "integrated_noise_a_rms": true,
+    "large_signal_zt_ohm": true,
+    "sfdr_db": true
+  },
+  "source_SFDR_function_crosscheck": true,
+  "native_strobe_harmonic_least_squares": {
+    "window": "last16384saved samples excluding stop",
+    "fundamental_V": 0.08167725477850024,
+    "second_harmonic_V": 2.3897371850333045e-05,
+    "ratio_dBc": 70.67501982090852,
+    "difference_from_frozen_SFDR_dB": -1.256239556823857e-10,
+    "purpose": "diagnostic only, not a replacement for all-bin frozen FFT"
+  }
+}

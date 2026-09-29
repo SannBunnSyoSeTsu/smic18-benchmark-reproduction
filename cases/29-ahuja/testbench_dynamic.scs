@@ -1,0 +1,13 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/29-ahuja/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=50u
+VIN (vin 0) vsource type=pwl wave=[0 .9 2u .9 2.01u 1.2 12.01u 1.2 12.02u .9 20u .9]
+X (0 iref vdd vin out out) ahuja_ota
+CL (out 0) capacitor c=200p
+save vin out VDD:p
+tran tran stop=20u maxstep=500p strobeperiod=1n strobeoutput=strobeonly errpreset=conservative

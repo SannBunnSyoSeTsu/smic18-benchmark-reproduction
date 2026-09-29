@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-09-29T04:43:11.630702+00:00",
+  "baseline_groups": {
+    "10mv": "runs/28/20260929T043941545436Z_10mv",
+    "20mv": "runs/28/20260929T044020223275Z_20mv"
+  },
+  "initial_baseline": {
+    "maxstep_s": 5e-12,
+    "global_reltol": 1e-06,
+    "vabstol_V": 1e-06,
+    "iabstol_A": 1e-12
+  },
+  "refinement_ladder": [
+    {
+      "maxstep_s": 2.5e-12,
+      "global_reltol": 1e-07,
+      "vabstol_V": 1e-07,
+      "iabstol_A": 1e-13
+    },
+    {
+      "maxstep_s": 1.25e-12,
+      "global_reltol": 1e-08,
+      "vabstol_V": 1e-08,
+      "iabstol_A": 1e-14
+    }
+  ],
+  "absolute_difference_limits": {
+    "gain_vv": 0.01,
+    "sfdr_db": 0.5,
+    "cm_mean_v": 0.001,
+    "output_min_v": 0.001,
+    "output_max_v": 0.001,
+    "hold_movement_ratio": 0.0002,
+    "power_w": 5e-06
+  },
+  "reason": "Initial 10ps to5ps check failed the original 0.5dB SFDR difference bound; keep that bound and tighten absolute as well as relative tolerances."
+}

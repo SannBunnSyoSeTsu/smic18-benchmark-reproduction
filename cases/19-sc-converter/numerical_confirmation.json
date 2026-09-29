@@ -1,0 +1,215 @@
+{
+  "generated_at": "2026-09-28T18:03:51.510958+00:00",
+  "baseline_groups": {
+    "heavy": "runs/19/20260928T180211443851Z_heavy",
+    "light": "runs/19/20260928T180220087251Z_light"
+  },
+  "final_groups": {
+    "heavy": "runs/19/20260928T180312781626Z_heavy",
+    "light": "runs/19/20260928T180328082966Z_light"
+  },
+  "circuit_sha256": "69f65f854aa02cd025a190dd4448aa16840e73ba6a835cdde88687dfe010f144",
+  "metrics": [
+    {
+      "metric": "680ohm_vout_mean_V",
+      "baseline": 0.8350804434003168,
+      "refined": 0.8350782686930445,
+      "absolute_difference": 2.174707272373233e-06,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_vout_min_V",
+      "baseline": 0.8091542634127054,
+      "refined": 0.8091538220637206,
+      "absolute_difference": 4.413489848031915e-07,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_vout_max_V",
+      "baseline": 0.8531568721759223,
+      "refined": 0.8531511326700713,
+      "absolute_difference": 5.739505851032334e-06,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_supply_power_W",
+      "baseline": 0.0013188434989406812,
+      "refined": 0.0013190272544218627,
+      "absolute_difference": 1.8375548118147386e-07,
+      "maximum_difference": 2e-06,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_clock_power_W",
+      "baseline": 1.5068951151148805e-07,
+      "refined": 1.5069025210371494e-07,
+      "absolute_difference": 7.405922268923023e-13,
+      "maximum_difference": 2e-06,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_load_power_W",
+      "baseline": 0.0010257988120458271,
+      "refined": 0.0010257932646564362,
+      "absolute_difference": 5.547389390946414e-09,
+      "maximum_difference": 2e-06,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_conversion_ratio",
+      "baseline": 0.4639335796668427,
+      "refined": 0.4639323714961358,
+      "absolute_difference": 1.2081707068678504e-06,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_ripple_V",
+      "baseline": 0.04400260876321693,
+      "refined": 0.043997310606350704,
+      "absolute_difference": 5.298156866229142e-06,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_input_power_W",
+      "baseline": 0.0013189941884521926,
+      "refined": 0.0013191779446739664,
+      "absolute_difference": 1.837562217737402e-07,
+      "maximum_difference": 2e-06,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_load_current_A",
+      "baseline": 0.0012280594755887013,
+      "refined": 0.0012280562774897713,
+      "absolute_difference": 3.1980989299938006e-09,
+      "maximum_difference": 1e-06,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_efficiency",
+      "baseline": 0.7777129126319934,
+      "refined": 0.7776003751411718,
+      "absolute_difference": 0.00011253749082162923,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_startup_s",
+      "baseline": 3.167512767292648e-08,
+      "refined": 3.167511617358945e-08,
+      "absolute_difference": 1.1499337026676715e-14,
+      "maximum_difference": 5e-10,
+      "passed": true
+    },
+    {
+      "metric": "680ohm_post_startup_min_V",
+      "baseline": 0.8091542508903422,
+      "refined": 0.8091538035504748,
+      "absolute_difference": 4.473398673709994e-07,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "6800ohm_vout_mean_V",
+      "baseline": 0.889527408040788,
+      "refined": 0.8895266940232415,
+      "absolute_difference": 7.140175465325527e-07,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "6800ohm_vout_min_V",
+      "baseline": 0.8862765311679048,
+      "refined": 0.8862766116666271,
+      "absolute_difference": 8.049872224358268e-08,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "6800ohm_vout_max_V",
+      "baseline": 0.8916285484354202,
+      "refined": 0.8916255799837765,
+      "absolute_difference": 2.968451643714509e-06,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "6800ohm_supply_power_W",
+      "baseline": 0.00033644740326404035,
+      "refined": 0.0003364700761543637,
+      "absolute_difference": 2.267289032334332e-08,
+      "maximum_difference": 2e-06,
+      "passed": true
+    },
+    {
+      "metric": "6800ohm_clock_power_W",
+      "baseline": 1.5068945059365903e-07,
+      "refined": 1.5069022134279878e-07,
+      "absolute_difference": 7.707491397487269e-13,
+      "maximum_difference": 2e-06,
+      "passed": true
+    },
+    {
+      "metric": "6800ohm_load_power_W",
+      "baseline": 0.00011636197732013605,
+      "refined": 0.0001163617898546035,
+      "absolute_difference": 1.8746553255859135e-10,
+      "maximum_difference": 2e-06,
+      "passed": true
+    },
+    {
+      "metric": "6800ohm_conversion_ratio",
+      "baseline": 0.49418189335599333,
+      "refined": 0.49418149667957856,
+      "absolute_difference": 3.9667641477114657e-07,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "6800ohm_ripple_V",
+      "baseline": 0.00535201726751533,
+      "refined": 0.005348968317149372,
+      "absolute_difference": 3.048950365958092e-06,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "6800ohm_input_power_W",
+      "baseline": 0.000336598092714634,
+      "refined": 0.0003366207663757065,
+      "absolute_difference": 2.2673661072476238e-08,
+      "maximum_difference": 2e-06,
+      "passed": true
+    },
+    {
+      "metric": "6800ohm_load_current_A",
+      "baseline": 0.0001308128541236453,
+      "refined": 0.0001308127491210649,
+      "absolute_difference": 1.0500258038818704e-10,
+      "maximum_difference": 1e-06,
+      "passed": true
+    },
+    {
+      "metric": "6800ohm_efficiency",
+      "baseline": 0.3457000495210384,
+      "refined": 0.34567620740525173,
+      "absolute_difference": 2.3842115786654183e-05,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "output_resistance_ohm",
+      "baseline": 49.62144660584414,
+      "refined": 49.62291772287466,
+      "absolute_difference": 0.0014711170305190535,
+      "maximum_difference": 0.1,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

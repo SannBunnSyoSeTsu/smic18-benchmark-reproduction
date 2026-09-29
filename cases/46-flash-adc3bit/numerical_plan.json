@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-09-28T18:08:52.276141+00:00",
+  "baseline_groups": {
+    "transition": "runs/46/20260928T180537281650Z_transition",
+    "ramp": "runs/46/20260928T180557513778Z_ramp",
+    "sine_low": "runs/46/20260928T180652513372Z_sine_low",
+    "sine_high": "runs/46/20260928T180704975793Z_sine_high"
+  },
+  "baseline": {
+    "maxstep_s": 1e-10,
+    "reltol": 1e-06
+  },
+  "refined": {
+    "maxstep_s": 5e-11,
+    "reltol": 1e-07
+  },
+  "transition_bounds": {
+    "clock_to_output_s": 5e-11,
+    "core_reference_power_w": 2e-06,
+    "clock_delivery_power_w": 1e-06,
+    "clock_peak_current_a": 5e-05
+  },
+  "remaining_scalar_difference_max": 1e-10,
+  "conversion_codes_must_be_identical": true
+}

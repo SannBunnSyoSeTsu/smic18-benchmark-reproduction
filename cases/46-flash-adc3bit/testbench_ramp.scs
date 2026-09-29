@@ -1,0 +1,19 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/46-flash-adc3bit/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/46-flash-adc3bit/circuit.scs"
+VDD (vdd 0) vsource dc=1.8
+VREFP (vrefp 0) vsource dc=1.4
+VREFN (vrefn 0) vsource dc=.6
+VCLK (clk_src 0) vsource type=pulse val0=0 val1=1.8 delay=10n rise=.3n fall=.3n width=9.4n period=20n
+RCLK (clk_src clk) resistor r=50
+CB2 (b2 0) capacitor c=15f
+CB1 (b1 0) capacitor c=15f
+CB0 (b0 0) capacitor c=15f
+X (0 vdd vrefn vrefp clk vin b2 b1 b0) flash_adc_3bit
+simulatorOptions options temp=27 tnom=27 reltol=1e-07 vabstol=1e-8 iabstol=1e-14 gmin=1e-15
+saveOptions options save=selected
+save vin vdd clk_src clk b2 b1 b0 VDD:p VREFP:p VREFN:p VCLK:p X.t1 X.t2 X.t3 X.t4 X.t5 X.t6 X.t7
+VIN (vin 0) vsource type=pwl wave=[0 .55 100n .55 2100n 1.45 2200n 1.45]
+tran tran stop=2.2e-06 maxstep=5e-11 method=gear2only errpreset=conservative

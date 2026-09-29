@@ -1,0 +1,48 @@
+{
+  "started_at": "2026-09-22T08:53:06.557059+00:00",
+  "case_slot": 23,
+  "label": "major_carry_refined",
+  "netlist": "runs/23/20260922T085306554939Z_major_carry_refined/inputs/bench.scs",
+  "netlist_sha256": "1718a7cb8d4595b9de550c261c44ce5e118c18d649baab217ea81639a157d999",
+  "dependencies": {
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/23-resistor-dac/circuit.scs": {
+      "snapshot": "runs/23/20260922T085306554939Z_major_carry_refined/inputs/circuit.scs",
+      "sha256": "e8388c72d139da2b34832dc179379e63bfa19e1f59e8c9e2cd45f85e566f75af"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/23-resistor-dac/hd_cells.scs": {
+      "snapshot": "runs/23/20260922T085306554939Z_major_carry_refined/inputs/hd_cells.scs",
+      "sha256": "0f8c505b345afc2e6636edc5819ca2484dd040f2b38c0446fb8a28e40e0dc997"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/23-resistor-dac/sizing.json": {
+      "snapshot": "runs/23/20260922T085306554939Z_major_carry_refined/inputs/sizing.json",
+      "sha256": "e6deb34dfe498518b46750156c667e5ec2579639f7f7cb4b7315c1d92c423ea1"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/23-resistor-dac/contract.json": {
+      "snapshot": "runs/23/20260922T085306554939Z_major_carry_refined/inputs/contract.json",
+      "sha256": "ded368a4f8fbbfab26190e869bd5c2c41644a674c099690f4d3df5670f32cca3"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/23-resistor-dac/hd_cells_manifest.json": {
+      "snapshot": "runs/23/20260922T085306554939Z_major_carry_refined/inputs/hd_cells_manifest.json",
+      "sha256": "8f76ac343d7fe394501a1ffca18260467222defc3b44722f80083b39c0bacc60"
+    },
+    "/home/IC/CodeX/smic18_benchmark_repro/cases/23-resistor-dac/source_provenance.json": {
+      "snapshot": "runs/23/20260922T085306554939Z_major_carry_refined/inputs/source_provenance.json",
+      "sha256": "ad28a282530ab33aa3f99a8565f02aedb0140cb7ed2289ad8918ea8700f31734"
+    }
+  },
+  "models": {
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib": "88246a7e992cb3f5af5ac0f6a9a1c5934707ecd72e7f8f08150b44a01796c20f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.mdl": "832d378241360815f6d4009514d863f2aac9c48c312326410de9421564b1033d",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_bjt_spe.mdl": "d2d45e69a854f8d090fe3ef83041bc39ed8a0abcd9d272b8067a9db3014a9b6f",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_res_spe.mdl": "173a1a7c1d8cc2f1009ac12db0f0d4f9725aebea8625cf9796a0be50f06fceb1",
+    "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_mim_spe.mdl": "02c8e7986a1c159e52c8fa403fdb52b9b4f928e00bca5522a648992528d7edff"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "status": "completed",
+  "completed_at": "2026-09-22T08:53:18.021984+00:00",
+  "errors": [],
+  "warnings": [],
+  "model_dimensions_valid": true,
+  "raw_dir": "runs/23/20260922T085306554939Z_major_carry_refined/output/bench.raw"
+}

@@ -1,0 +1,2712 @@
+{
+  "generated_at": "2026-09-28T17:35:27.424733+00:00",
+  "circuit_sha256": "050cce2389d138c31156a14b1bf955093cbefb0018a2ec14f29689e12d65298d",
+  "top": "nmos_pass_ldo",
+  "subcircuit_ports": {
+    "nmos_pass_ldo": [
+      "vdd",
+      "vout",
+      "vss",
+      "vref",
+      "ibias",
+      "loop_out",
+      "pass_gate"
+    ]
+  },
+  "instances": {
+    "nmos_pass_ldo/MPREF": {
+      "name": "MPREF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ibias",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "20.78u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPREF (ibias ibias vdd vdd) p18 w=20.78u l=1u m=4",
+      "W_unit_um": 20.78,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        5,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          18
+        ],
+        "S": [
+          5,
+          20
+        ],
+        "G": [
+          3.45,
+          19
+        ],
+        "B": [
+          5.86,
+          19
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/MPTAIL": {
+      "name": "MPTAIL",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "tail",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "20.78u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MPTAIL (tail ibias vdd vdd) p18 w=20.78u l=1u m=8",
+      "W_unit_um": 20.78,
+      "L_um": 1.0,
+      "m": 8.0,
+      "sheet": 1,
+      "origin": [
+        24,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          24,
+          20
+        ],
+        "S": [
+          24,
+          22
+        ],
+        "G": [
+          22.45,
+          21
+        ],
+        "B": [
+          24.86,
+          21
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/MPINR": {
+      "name": "MPINR",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nr",
+        "G": "vref",
+        "S": "tail",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "47.72u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPINR (nr vref tail vdd) p18 w=47.72u l=1u m=4",
+      "W_unit_um": 47.72,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        18,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          18,
+          12
+        ],
+        "S": [
+          18,
+          14
+        ],
+        "G": [
+          16.45,
+          13
+        ],
+        "B": [
+          18.86,
+          13
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/MPINF": {
+      "name": "MPINF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nf",
+        "G": "vout",
+        "S": "tail",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "47.72u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPINF (nf vout tail vdd) p18 w=47.72u l=1u m=4",
+      "W_unit_um": 47.72,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        31,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          31,
+          12
+        ],
+        "S": [
+          31,
+          14
+        ],
+        "G": [
+          29.45,
+          13
+        ],
+        "B": [
+          31.86,
+          13
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/MNDR": {
+      "name": "MNDR",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nr",
+        "G": "nr",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.38u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNDR (nr nr vss vss) n18 w=4.38u l=1u m=4",
+      "W_unit_um": 4.38,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        18,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          18,
+          6
+        ],
+        "S": [
+          18,
+          4
+        ],
+        "G": [
+          16.45,
+          5
+        ],
+        "B": [
+          18.86,
+          5
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/MNDF": {
+      "name": "MNDF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nf",
+        "G": "nf",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.38u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNDF (nf nf vss vss) n18 w=4.38u l=1u m=4",
+      "W_unit_um": 4.38,
+      "L_um": 1.0,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        31,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          31,
+          6
+        ],
+        "S": [
+          31,
+          4
+        ],
+        "G": [
+          29.45,
+          5
+        ],
+        "B": [
+          31.86,
+          5
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/MPD": {
+      "name": "MPD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pc",
+        "G": "pc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "20.78u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MPD (pc pc vdd vdd) p18 w=20.78u l=1u m=8",
+      "W_unit_um": 20.78,
+      "L_um": 1.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        8,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          19
+        ],
+        "S": [
+          8,
+          21
+        ],
+        "G": [
+          6.45,
+          20
+        ],
+        "B": [
+          8.86,
+          20
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/MNSINK": {
+      "name": "MNSINK",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pc",
+        "G": "nf",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.38u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MNSINK (pc nf vss vss) n18 w=4.38u l=1u m=8",
+      "W_unit_um": 4.38,
+      "L_um": 1.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        8,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          7
+        ],
+        "S": [
+          8,
+          5
+        ],
+        "G": [
+          6.45,
+          6
+        ],
+        "B": [
+          8.86,
+          6
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/MPOUT": {
+      "name": "MPOUT",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "loop_out",
+        "G": "pc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "20.78u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MPOUT (loop_out pc vdd vdd) p18 w=20.78u l=1u m=8",
+      "W_unit_um": 20.78,
+      "L_um": 1.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        22,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          19
+        ],
+        "S": [
+          22,
+          21
+        ],
+        "G": [
+          20.45,
+          20
+        ],
+        "B": [
+          22.86,
+          20
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/MNOUT": {
+      "name": "MNOUT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "loop_out",
+        "G": "nr",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.38u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MNOUT (loop_out nr vss vss) n18 w=4.38u l=1u m=8",
+      "W_unit_um": 4.38,
+      "L_um": 1.0,
+      "m": 8.0,
+      "sheet": 2,
+      "origin": [
+        22,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          22,
+          7
+        ],
+        "S": [
+          22,
+          5
+        ],
+        "G": [
+          20.45,
+          6
+        ],
+        "B": [
+          22.86,
+          6
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/MPASS": {
+      "name": "MPASS",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vdd",
+        "G": "pass_gate",
+        "S": "vout",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.3u",
+        "l": ".18u",
+        "m": "100"
+      },
+      "source_line": "MPASS (vdd pass_gate vout vss) n18 w=4.3u l=.18u m=100",
+      "W_unit_um": 4.3,
+      "L_um": 0.18,
+      "m": 100.0,
+      "sheet": 2,
+      "origin": [
+        37,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          37,
+          18
+        ],
+        "S": [
+          37,
+          16
+        ],
+        "G": [
+          35.45,
+          17
+        ],
+        "B": [
+          37.86,
+          17
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/CGATE": {
+      "name": "CGATE",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "loop_out",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "100u",
+        "m": "10.298661174"
+      },
+      "source_line": "CGATE (loop_out vss) mim w=100u l=100u m=10.298661174",
+      "sheet": 2,
+      "origin": [
+        29,
+        8
+      ],
+      "rendered_pins": {
+        "1": [
+          29,
+          8.82
+        ],
+        "2": [
+          29,
+          7.18
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    },
+    "nmos_pass_ldo/COUT": {
+      "name": "COUT",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "vout",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "100u",
+        "m": "2.05973223481"
+      },
+      "source_line": "COUT (vout vss) mim w=100u l=100u m=2.05973223481",
+      "sheet": 2,
+      "origin": [
+        37,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          37,
+          5.82
+        ],
+        "2": [
+          37,
+          4.18
+        ]
+      },
+      "block": "nmos_pass_ldo"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MPREF": {
+      "name": "MPREF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ibias",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "20.78u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPREF (ibias ibias vdd vdd) p18 w=20.78u l=1u m=4",
+      "W_unit_um": 20.78,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "nmos_pass_ldo/MPREF",
+      "path": "MPREF"
+    },
+    "MPTAIL": {
+      "name": "MPTAIL",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "tail",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "20.78u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MPTAIL (tail ibias vdd vdd) p18 w=20.78u l=1u m=8",
+      "W_unit_um": 20.78,
+      "L_um": 1.0,
+      "m": 8.0,
+      "definition": "nmos_pass_ldo/MPTAIL",
+      "path": "MPTAIL"
+    },
+    "MPINR": {
+      "name": "MPINR",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nr",
+        "G": "vref",
+        "S": "tail",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "47.72u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPINR (nr vref tail vdd) p18 w=47.72u l=1u m=4",
+      "W_unit_um": 47.72,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "nmos_pass_ldo/MPINR",
+      "path": "MPINR"
+    },
+    "MPINF": {
+      "name": "MPINF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nf",
+        "G": "vout",
+        "S": "tail",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "47.72u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MPINF (nf vout tail vdd) p18 w=47.72u l=1u m=4",
+      "W_unit_um": 47.72,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "nmos_pass_ldo/MPINF",
+      "path": "MPINF"
+    },
+    "MNDR": {
+      "name": "MNDR",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nr",
+        "G": "nr",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.38u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNDR (nr nr vss vss) n18 w=4.38u l=1u m=4",
+      "W_unit_um": 4.38,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "nmos_pass_ldo/MNDR",
+      "path": "MNDR"
+    },
+    "MNDF": {
+      "name": "MNDF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nf",
+        "G": "nf",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.38u",
+        "l": "1u",
+        "m": "4"
+      },
+      "source_line": "MNDF (nf nf vss vss) n18 w=4.38u l=1u m=4",
+      "W_unit_um": 4.38,
+      "L_um": 1.0,
+      "m": 4.0,
+      "definition": "nmos_pass_ldo/MNDF",
+      "path": "MNDF"
+    },
+    "MNSINK": {
+      "name": "MNSINK",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pc",
+        "G": "nf",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.38u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MNSINK (pc nf vss vss) n18 w=4.38u l=1u m=8",
+      "W_unit_um": 4.38,
+      "L_um": 1.0,
+      "m": 8.0,
+      "definition": "nmos_pass_ldo/MNSINK",
+      "path": "MNSINK"
+    },
+    "MNOUT": {
+      "name": "MNOUT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "loop_out",
+        "G": "nr",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.38u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MNOUT (loop_out nr vss vss) n18 w=4.38u l=1u m=8",
+      "W_unit_um": 4.38,
+      "L_um": 1.0,
+      "m": 8.0,
+      "definition": "nmos_pass_ldo/MNOUT",
+      "path": "MNOUT"
+    },
+    "MPD": {
+      "name": "MPD",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pc",
+        "G": "pc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "20.78u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MPD (pc pc vdd vdd) p18 w=20.78u l=1u m=8",
+      "W_unit_um": 20.78,
+      "L_um": 1.0,
+      "m": 8.0,
+      "definition": "nmos_pass_ldo/MPD",
+      "path": "MPD"
+    },
+    "MPOUT": {
+      "name": "MPOUT",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "loop_out",
+        "G": "pc",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "20.78u",
+        "l": "1u",
+        "m": "8"
+      },
+      "source_line": "MPOUT (loop_out pc vdd vdd) p18 w=20.78u l=1u m=8",
+      "W_unit_um": 20.78,
+      "L_um": 1.0,
+      "m": 8.0,
+      "definition": "nmos_pass_ldo/MPOUT",
+      "path": "MPOUT"
+    },
+    "MPASS": {
+      "name": "MPASS",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vdd",
+        "G": "pass_gate",
+        "S": "vout",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.3u",
+        "l": ".18u",
+        "m": "100"
+      },
+      "source_line": "MPASS (vdd pass_gate vout vss) n18 w=4.3u l=.18u m=100",
+      "W_unit_um": 4.3,
+      "L_um": 0.18,
+      "m": 100.0,
+      "definition": "nmos_pass_ldo/MPASS",
+      "path": "MPASS"
+    },
+    "CGATE": {
+      "name": "CGATE",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "loop_out",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "100u",
+        "m": "10.298661174"
+      },
+      "source_line": "CGATE (loop_out vss) mim w=100u l=100u m=10.298661174",
+      "definition": "nmos_pass_ldo/CGATE",
+      "path": "CGATE"
+    },
+    "COUT": {
+      "name": "COUT",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "vout",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "100u",
+        "m": "2.05973223481"
+      },
+      "source_line": "COUT (vout vss) mim w=100u l=100u m=2.05973223481",
+      "definition": "nmos_pass_ldo/COUT",
+      "path": "COUT"
+    }
+  },
+  "nets": {
+    "nmos_pass_ldo/ibias": [
+      {
+        "instance": "nmos_pass_ldo/MPREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          5,
+          18
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          3.45,
+          19
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPTAIL",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          22.45,
+          21
+        ]
+      }
+    ],
+    "nmos_pass_ldo/vdd": [
+      {
+        "instance": "nmos_pass_ldo/MPREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          5,
+          20
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          5.86,
+          19
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPTAIL",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          24,
+          22
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPTAIL",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          24.86,
+          21
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPINR",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          18.86,
+          13
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPINF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          31.86,
+          13
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPD",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          8,
+          21
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPD",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          8.86,
+          20
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPOUT",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          22,
+          21
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPOUT",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          22.86,
+          20
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPASS",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          37,
+          18
+        ]
+      }
+    ],
+    "nmos_pass_ldo/tail": [
+      {
+        "instance": "nmos_pass_ldo/MPTAIL",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          24,
+          20
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPINR",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          18,
+          14
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPINF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          31,
+          14
+        ]
+      }
+    ],
+    "nmos_pass_ldo/nr": [
+      {
+        "instance": "nmos_pass_ldo/MPINR",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          18,
+          12
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNDR",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          18,
+          6
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNDR",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          16.45,
+          5
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNOUT",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          20.45,
+          6
+        ]
+      }
+    ],
+    "nmos_pass_ldo/vref": [
+      {
+        "instance": "nmos_pass_ldo/MPINR",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          16.45,
+          13
+        ]
+      }
+    ],
+    "nmos_pass_ldo/nf": [
+      {
+        "instance": "nmos_pass_ldo/MPINF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          31,
+          12
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNDF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          31,
+          6
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNDF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          29.45,
+          5
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNSINK",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          6.45,
+          6
+        ]
+      }
+    ],
+    "nmos_pass_ldo/vout": [
+      {
+        "instance": "nmos_pass_ldo/MPINF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          29.45,
+          13
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPASS",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          37,
+          16
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/COUT",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          37,
+          5.82
+        ]
+      }
+    ],
+    "nmos_pass_ldo/vss": [
+      {
+        "instance": "nmos_pass_ldo/MNDR",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          18,
+          4
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNDR",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          18.86,
+          5
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNDF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          31,
+          4
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNDF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          31.86,
+          5
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNSINK",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          8,
+          5
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNSINK",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          8.86,
+          6
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNOUT",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          22,
+          5
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNOUT",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          22.86,
+          6
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPASS",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          37.86,
+          17
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/CGATE",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          29,
+          7.18
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/COUT",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          37,
+          4.18
+        ]
+      }
+    ],
+    "nmos_pass_ldo/pc": [
+      {
+        "instance": "nmos_pass_ldo/MPD",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          8,
+          19
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPD",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          6.45,
+          20
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNSINK",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          8,
+          7
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MPOUT",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          20.45,
+          20
+        ]
+      }
+    ],
+    "nmos_pass_ldo/loop_out": [
+      {
+        "instance": "nmos_pass_ldo/MPOUT",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          22,
+          19
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/MNOUT",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          22,
+          7
+        ]
+      },
+      {
+        "instance": "nmos_pass_ldo/CGATE",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          29,
+          8.82
+        ]
+      }
+    ],
+    "nmos_pass_ldo/pass_gate": [
+      {
+        "instance": "nmos_pass_ldo/MPASS",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          35.45,
+          17
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MPTAIL",
+      "pin": "D",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPINR",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPINF",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPINF",
+      "pin": "D",
+      "net": "nf",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDF",
+      "pin": "D",
+      "net": "nf",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDF",
+      "pin": "G",
+      "net": "nf",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "D",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPTAIL",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPINF",
+      "pin": "G",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDR",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDR",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPREF",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPTAIL",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPTAIL",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPINR",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPINF",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPINR",
+      "pin": "D",
+      "net": "nr",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDR",
+      "pin": "D",
+      "net": "nr",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNDR",
+      "pin": "G",
+      "net": "nr",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPINR",
+      "pin": "G",
+      "net": "vref",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSINK",
+      "pin": "G",
+      "net": "nf",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPOUT",
+      "pin": "D",
+      "net": "loop_out",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNOUT",
+      "pin": "D",
+      "net": "loop_out",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "CGATE",
+      "pin": "1",
+      "net": "loop_out",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPASS",
+      "pin": "S",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "COUT",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPASS",
+      "pin": "G",
+      "net": "pass_gate",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD",
+      "pin": "D",
+      "net": "pc",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD",
+      "pin": "G",
+      "net": "pc",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSINK",
+      "pin": "D",
+      "net": "pc",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPOUT",
+      "pin": "G",
+      "net": "pc",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSINK",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNSINK",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNOUT",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNOUT",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPASS",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "CGATE",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "COUT",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPD",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPOUT",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPOUT",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPASS",
+      "pin": "D",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNOUT",
+      "pin": "G",
+      "net": "nr",
+      "path_to_named_net": true,
+      "block": "nmos_pass_ldo"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "nmos_pass_ldo",
+      "title": "参考镜、PMOS差分输入与NMOS二极管",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5.86,
+              19
+            ],
+            [
+              6.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              24.86,
+              21
+            ],
+            [
+              25.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              18.86,
+              13
+            ],
+            [
+              19.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              31.86,
+              13
+            ],
+            [
+              32.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              18.86,
+              5
+            ],
+            [
+              19.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              31.86,
+              5
+            ],
+            [
+              32.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "nr",
+          "points": [
+            [
+              18,
+              12
+            ],
+            [
+              18,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nf",
+          "points": [
+            [
+              31,
+              12
+            ],
+            [
+              31,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              18,
+              17
+            ],
+            [
+              31,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              24,
+              20
+            ],
+            [
+              24,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              18,
+              14
+            ],
+            [
+              18,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              31,
+              14
+            ],
+            [
+              31,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5,
+              24
+            ],
+            [
+              24,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              5,
+              20
+            ],
+            [
+              5,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              24,
+              22
+            ],
+            [
+              24,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              18,
+              1.5
+            ],
+            [
+              31,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              18,
+              4
+            ],
+            [
+              18,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              31,
+              4
+            ],
+            [
+              31,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              3.45,
+              19
+            ],
+            [
+              2.95,
+              19
+            ],
+            [
+              2.95,
+              16.8
+            ],
+            [
+              5,
+              16.8
+            ],
+            [
+              5,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nr",
+          "points": [
+            [
+              16.45,
+              5
+            ],
+            [
+              15.95,
+              5
+            ],
+            [
+              15.95,
+              7.2
+            ],
+            [
+              18,
+              7.2
+            ],
+            [
+              18,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nf",
+          "points": [
+            [
+              29.45,
+              5
+            ],
+            [
+              28.95,
+              5
+            ],
+            [
+              28.95,
+              7.2
+            ],
+            [
+              31,
+              7.2
+            ],
+            [
+              31,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              22.45,
+              21
+            ],
+            [
+              21.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vref",
+          "points": [
+            [
+              16.45,
+              13
+            ],
+            [
+              15.899999999999999,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              29.45,
+              13
+            ],
+            [
+              28.9,
+              13
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            6.15,
+            19
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            25.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            19.15,
+            13
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            32.15,
+            13
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            19.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            32.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "nr",
+          "point": [
+            18.0,
+            9.0
+          ],
+          "text": "nr",
+          "body": false
+        },
+        {
+          "net": "nf",
+          "point": [
+            31.0,
+            9.0
+          ],
+          "text": "nf",
+          "body": false
+        },
+        {
+          "net": "tail",
+          "point": [
+            18,
+            17
+          ],
+          "text": "tail",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            5,
+            24
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            18,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            4,
+            16.8
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "nr",
+          "point": [
+            17,
+            7.2
+          ],
+          "text": "nr",
+          "body": false
+        },
+        {
+          "net": "nf",
+          "point": [
+            30,
+            7.2
+          ],
+          "text": "nf",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            21.9,
+            21
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "vref",
+          "point": [
+            15.899999999999999,
+            13
+          ],
+          "text": "vref",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            28.9,
+            13
+          ],
+          "text": "vout",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "nmos_pass_ldo",
+      "title": "镜像输出、NMOS功率管与原生MIM补偿",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8.86,
+              20
+            ],
+            [
+              9.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8.86,
+              6
+            ],
+            [
+              9.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22.86,
+              20
+            ],
+            [
+              23.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22.86,
+              6
+            ],
+            [
+              23.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37.86,
+              17
+            ],
+            [
+              38.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pc",
+          "points": [
+            [
+              8,
+              19
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "loop_out",
+          "points": [
+            [
+              22,
+              19
+            ],
+            [
+              22,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "loop_out",
+          "points": [
+            [
+              22,
+              19
+            ],
+            [
+              22,
+              13
+            ],
+            [
+              29,
+              13
+            ],
+            [
+              29,
+              8.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              37,
+              16
+            ],
+            [
+              37,
+              5.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8,
+              24
+            ],
+            [
+              37,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8,
+              21
+            ],
+            [
+              8,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              22,
+              21
+            ],
+            [
+              22,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              37,
+              18
+            ],
+            [
+              37,
+              24
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8,
+              1.5
+            ],
+            [
+              37,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              22,
+              5
+            ],
+            [
+              22,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29,
+              7.18
+            ],
+            [
+              29,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              37,
+              4.18
+            ],
+            [
+              37,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pc",
+          "points": [
+            [
+              6.45,
+              20
+            ],
+            [
+              5.95,
+              20
+            ],
+            [
+              5.95,
+              17.8
+            ],
+            [
+              8,
+              17.8
+            ],
+            [
+              8,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nf",
+          "points": [
+            [
+              6.45,
+              6
+            ],
+            [
+              5.9,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pc",
+          "points": [
+            [
+              20.45,
+              20
+            ],
+            [
+              19.9,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nr",
+          "points": [
+            [
+              20.45,
+              6
+            ],
+            [
+              19.9,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pass_gate",
+          "points": [
+            [
+              35.45,
+              17
+            ],
+            [
+              34.900000000000006,
+              17
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            9.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            9.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            23.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            23.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            38.15,
+            17
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "pc",
+          "point": [
+            8.0,
+            13.0
+          ],
+          "text": "pc",
+          "body": false
+        },
+        {
+          "net": "loop_out",
+          "point": [
+            22.0,
+            13.0
+          ],
+          "text": "loop_out",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            37.0,
+            10.91
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            8,
+            24
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            8,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "pc",
+          "point": [
+            7,
+            17.8
+          ],
+          "text": "pc",
+          "body": false
+        },
+        {
+          "net": "nf",
+          "point": [
+            5.9,
+            6
+          ],
+          "text": "nf",
+          "body": false
+        },
+        {
+          "net": "pc",
+          "point": [
+            19.9,
+            20
+          ],
+          "text": "pc",
+          "body": false
+        },
+        {
+          "net": "nr",
+          "point": [
+            19.9,
+            6
+          ],
+          "text": "nr",
+          "body": false
+        },
+        {
+          "net": "pass_gate",
+          "point": [
+            34.900000000000006,
+            17
+          ],
+          "text": "pass_gate",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "nmos_pass_ldo": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

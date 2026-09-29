@@ -1,0 +1,55 @@
+{
+  "source_task": "sky130-ring-amp-3stage-gain8-400uw",
+  "scope": "SMIC18 TT1.8V27C, all four original independent SC records +20,+10,0,-20mV with fixed 25uA sink, 10pF/side output load and bench-owned reset switches.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "bias_sink_A": 2.5e-05,
+  "input_cm_V": 0.9,
+  "output_cm_V": 0.9,
+  "input_diff_V": [
+    0.02,
+    0.01,
+    0,
+    -0.02
+  ],
+  "period_s": 5e-07,
+  "reset_duration_s": 5e-08,
+  "input_edge_s": 2e-11,
+  "output_load_per_side_F": 1e-11,
+  "reset_switch": {
+    "Ron_ohm": 100,
+    "Roff_ohm": 1000000000000.0,
+    "threshold_V": 0.25,
+    "hysteresis_V": 0.1,
+    "transition_width_V": 1e-06,
+    "reference_V": 0.5
+  },
+  "stop_s": 1.5e-06,
+  "output_mean_window_s": [
+    1.4e-06,
+    1.45e-06
+  ],
+  "power_window_s": [
+    1.2e-06,
+    1.45e-06
+  ],
+  "settling_start_s": 1.05e-06,
+  "settling_band_fraction": 0.1,
+  "target_gain": 8,
+  "gain_tolerance": 0.8,
+  "zero_max_V": 0.005,
+  "static_error_max_fraction": 0.01,
+  "output_cm_error_max_V": 0.05,
+  "power_max_W": 0.0004,
+  "settle_max_s": 5e-08,
+  "ripple_max_V": 0.005,
+  "nonrelaxable": "Four transfer records required, both polarity targets and zero-input recovery; finite transient and actual settling-band entry.",
+  "allowed": "NativeMOS plus positiveidealRCL; fixture-owned idealreset switches.",
+  "unmodeled": [
+    "PVT",
+    "mismatch",
+    "device noise",
+    "PEX"
+  ],
+  "reset_translation_correction": "Spectre relay uses model hysteresis=.1, vth=.25, trans=1u. Prior vt1/vt2-only translation superseded; same DUT circuit. Finite transition width1uV corresponds to20attoseconds at20ps input edges."
+}

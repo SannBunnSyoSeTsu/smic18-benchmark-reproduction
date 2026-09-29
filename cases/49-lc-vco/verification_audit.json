@@ -1,0 +1,388 @@
+{
+  "generated_at": "2026-09-22T10:56:29.697195+00:00",
+  "case_slot": 49,
+  "status": "passed",
+  "acceptance_tier": "15pct",
+  "result_sha256": "cbed80a7cae8804d0e7ba56960d082716a94c896f43898017a6fa9b223499df3",
+  "circuit_sha256": "56f91d72cc942ead964ed387c001590690600315d999f535cc6f0f26940c4753",
+  "pdf_sha256": "356fae232d8ee4b7577a97cde2d4029c404c0dc1e6a1094fb14f08e7c2f9cebf",
+  "pdf_pages": 11,
+  "pdf_intro_before_verdict": true,
+  "all_final_pages_visually_reviewed": true,
+  "rendered_pages": [
+    {
+      "page": 1,
+      "path": "reports/49-review-page-1.png",
+      "sha256": "84b6483fcfd6039c1a5e4aa78d16d6eba4ce48f2dde97e5b4806b5337af556df"
+    },
+    {
+      "page": 2,
+      "path": "reports/49-review-page-2.png",
+      "sha256": "511fdd2eb57ffcdd3e1201563ed69f8f3d6b7427be62266923da92eded926cf1"
+    },
+    {
+      "page": 3,
+      "path": "reports/49-review-page-3.png",
+      "sha256": "5ddad3d9dd3b0758742b97fa8c7837e6ba20c62b12c2bd9e790107c3eaa2f2a7"
+    },
+    {
+      "page": 4,
+      "path": "reports/49-review-page-4.png",
+      "sha256": "5c18722985feb1c49aae951bba1aa230eacfa3fb0273fa37094b0c26eff0fe03"
+    },
+    {
+      "page": 5,
+      "path": "reports/49-review-page-5.png",
+      "sha256": "6691ce22738085de8b8931de2bb7d38b7dab44382e3260dc0eb9ead4cdb5c67f"
+    },
+    {
+      "page": 6,
+      "path": "reports/49-review-page-6.png",
+      "sha256": "f3abdef068624e12695823e58ad1f3eb20d8d67f8764047e2f5332c84ce694a6"
+    },
+    {
+      "page": 7,
+      "path": "reports/49-review-page-7.png",
+      "sha256": "a83d48561a6fa6138be76f29e04369f10d414ef44362279cad3599e823e6f23f"
+    }
+  ],
+  "nominal_scalar_gates": 14,
+  "all_nominal_gates_pass": true,
+  "unrelaxed_monotonicity_and_2GHz_coverage": true,
+  "source_hashes_match": true,
+  "LUT_hashes_match": true,
+  "native_RF_models_unmodified": true,
+  "DUT_analog_MOS_count": 16,
+  "digital_cells": 0,
+  "no_ideal_DUT_sources_or_passives": true,
+  "all_bias_saturation_headroom_positive": true,
+  "pushing_all_controls_original_pass": true,
+  "edge_windows": [
+    {
+      "VDD_V": 1.8,
+      "control_V": 0,
+      "first_s": 2.0377950965815275e-08,
+      "twentieth_s": 2.940974507712469e-08,
+      "count": 40
+    },
+    {
+      "VDD_V": 1.8,
+      "control_V": 0.6,
+      "first_s": 6.030021172629899e-08,
+      "twentieth_s": 6.955361233699918e-08,
+      "count": 39
+    },
+    {
+      "VDD_V": 1.8,
+      "control_V": 1.2,
+      "first_s": 1.0018149495579164e-07,
+      "twentieth_s": 1.099042346418878e-07,
+      "count": 37
+    },
+    {
+      "VDD_V": 1.8,
+      "control_V": 1.8,
+      "first_s": 1.4036476336533565e-07,
+      "twentieth_s": 1.5014964883885717e-07,
+      "count": 37
+    },
+    {
+      "VDD_V": 1.62,
+      "control_V": 0,
+      "first_s": 2.0126273658742442e-08,
+      "twentieth_s": 2.9157157373745712e-08,
+      "count": 40
+    },
+    {
+      "VDD_V": 1.62,
+      "control_V": 0.6,
+      "first_s": 6.004739545048877e-08,
+      "twentieth_s": 6.930251077846733e-08,
+      "count": 39
+    },
+    {
+      "VDD_V": 1.62,
+      "control_V": 1.2,
+      "first_s": 1.0044597852662526e-07,
+      "twentieth_s": 1.1017559836079782e-07,
+      "count": 37
+    },
+    {
+      "VDD_V": 1.62,
+      "control_V": 1.8,
+      "first_s": 1.4011424532702602e-07,
+      "twentieth_s": 1.4989054201006943e-07,
+      "count": 37
+    },
+    {
+      "VDD_V": 1.98,
+      "control_V": 0,
+      "first_s": 2.0232783063531905e-08,
+      "twentieth_s": 2.9264139902297097e-08,
+      "count": 40
+    },
+    {
+      "VDD_V": 1.98,
+      "control_V": 0.6,
+      "first_s": 6.015422703554898e-08,
+      "twentieth_s": 6.940661590124036e-08,
+      "count": 39
+    },
+    {
+      "VDD_V": 1.98,
+      "control_V": 1.2,
+      "first_s": 1.0001049369183908e-07,
+      "twentieth_s": 1.097298302321446e-07,
+      "count": 38
+    },
+    {
+      "VDD_V": 1.98,
+      "control_V": 1.8,
+      "first_s": 1.4019195044526128e-07,
+      "twentieth_s": 1.4998014934650634e-07,
+      "count": 37
+    }
+  ],
+  "max_nominal_allperiod_frequency_relative_difference": 0.00018538902609877006,
+  "runs": [
+    {
+      "path": "runs/49/20260922T095251627004Z_nominal",
+      "label": "nominal",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T095251627004Z_nominal/output/bench.raw/tran.tran.tran",
+          "bytes": 80486317
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T095555011296Z_varactor_ac",
+      "label": "varactor_ac",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T095555011296Z_varactor_ac/output/bench.raw/ac.ac",
+          "bytes": 10578
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T100204375282Z_varactor_tran",
+      "label": "varactor_tran",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T100204375282Z_varactor_tran/output/bench.raw/tran.tran.tran",
+          "bytes": 90337656
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T101013502925Z_nominal",
+      "label": "nominal",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T101013502925Z_nominal/output/bench.raw/tran.tran.tran",
+          "bytes": 114137649
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T101723866000Z_nominal",
+      "label": "nominal",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T101723866000Z_nominal/output/bench.raw/tran.tran.tran",
+          "bytes": 216574214
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T102147639729Z_nominal",
+      "label": "nominal",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T102147639729Z_nominal/output/bench.raw/tran.tran.tran",
+          "bytes": 208211686
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T102404706855Z_push",
+      "label": "push",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T102404706855Z_push/output/bench.raw/tran.tran.tran",
+          "bytes": 53498994
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T102525977758Z_nominal",
+      "label": "nominal",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T102525977758Z_nominal/output/bench.raw/tran.tran.tran",
+          "bytes": 194488670
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T102604324917Z_push",
+      "label": "push",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T102604324917Z_push/output/bench.raw/tran.tran.tran",
+          "bytes": 50869342
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T103220127694Z_nominal",
+      "label": "nominal",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T103220127694Z_nominal/output/bench.raw/tran.tran.tran",
+          "bytes": 179029055
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T103314324157Z_push",
+      "label": "push",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T103314324157Z_push/output/bench.raw/tran.tran.tran",
+          "bytes": 46434969
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T103912514657Z_nominal",
+      "label": "nominal",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T103912514657Z_nominal/output/bench.raw/tran.tran.tran",
+          "bytes": 218935410
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T104001562142Z_push",
+      "label": "push",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T104001562142Z_push/output/bench.raw/tran.tran.tran",
+          "bytes": 57336575
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T104209025109Z_nominal",
+      "label": "nominal",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T104209025109Z_nominal/output/bench.raw/tran.tran.tran",
+          "bytes": 201076974
+        }
+      ]
+    },
+    {
+      "path": "runs/49/20260922T104247199846Z_push",
+      "label": "push",
+      "hashes_match": true,
+      "include_closure_complete": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "raw_files": [
+        {
+          "path": "runs/49/20260922T104247199846Z_push/output/bench.raw/tran.tran.tran",
+          "bytes": 53201572
+        }
+      ]
+    }
+  ],
+  "scope_exclusions": [
+    "remaining26 fullPVT rows",
+    "SS/FF and non27C pushing",
+    "phase noise/jitter (not an original metric)",
+    "mismatch/MonteCarlo",
+    "PEX"
+  ],
+  "pushing_endpoints_full_PVT_not_claimed": true,
+  "endpoint_diagnostics": {
+    "startup_1p62_s": 1.4267873801636635e-08,
+    "power_1p98_W": 0.002935670959356214
+  },
+  "knowledge_path": "cases/49-lc-vco/knowledge.md",
+  "knowledge_sha256": "42106019ab0ec6cc1bbe457ae7f6c6ce70c19c19d73eaa8f9d2b04139b90001d",
+  "documentation_update": {
+    "updated_at": "2026-09-23T06:22:21.560652+00:00",
+    "scope": "Append complete schematic pages only; existing electrical evidence unchanged",
+    "circuit_sha256": "56f91d72cc942ead964ed387c001590690600315d999f535cc6f0f26940c4753",
+    "results_sha256": "cbed80a7cae8804d0e7ba56960d082716a94c896f43898017a6fa9b223499df3",
+    "previous_pdf_sha256": "369810fe5538bc8afb90f765d995083022d2f2aca9d40578e98d26b6308f46cd",
+    "current_pdf_sha256": "356fae232d8ee4b7577a97cde2d4029c404c0dc1e6a1094fb14f08e7c2f9cebf",
+    "schematic_audit_sha256": "788b25032c6449fa35957499f251d36079644e4e2646d84aba156232a49d9a95",
+    "report_pages": 11,
+    "all_merged_pages_pixel_identical_to_sources": true,
+    "historical_pdf_fields": {
+      "pdf_sha256": "369810fe5538bc8afb90f765d995083022d2f2aca9d40578e98d26b6308f46cd",
+      "pdf_pages": 7
+    }
+  }
+}

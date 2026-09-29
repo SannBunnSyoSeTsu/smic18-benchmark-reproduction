@@ -1,0 +1,256 @@
+{
+  "case_slot": 46,
+  "generated_at": "2026-09-28T18:07:29.006089+00:00",
+  "status": "complete_original",
+  "values": {
+    "transition": {
+      "transition_errors": 0,
+      "missing_expected_transitions": 0,
+      "late_transitions": 0,
+      "invalid_output_levels": 0,
+      "stable_level_violations": 0,
+      "clock_to_output_s": 6.908067779122534e-10,
+      "core_reference_power_w": 0.0003266099063089952,
+      "clock_delivery_power_w": 4.363302416064873e-05,
+      "clock_peak_current_a": 0.003698845599962661
+    },
+    "ramp": {
+      "dnl_lsb": 0.0999999999999992,
+      "inl_lsb": 0.09000000000000119,
+      "absolute_error_lsb": 0.19000000000000128,
+      "monotonic": true,
+      "codes_present": 8,
+      "thresholds_found": 7,
+      "invalid_output_levels": 0,
+      "stable_level_violations": 0
+    },
+    "sine_low": {
+      "codes_present": 7,
+      "invalid_output_levels": 0,
+      "stable_level_violations": 0,
+      "sndr_db": 20.012330916340176,
+      "sfdr_db": 26.537022145577915,
+      "normalized_enob_bits": 3.1242538838074037
+    },
+    "sine_high": {
+      "codes_present": 7,
+      "invalid_output_levels": 0,
+      "stable_level_violations": 0,
+      "sndr_db": 22.415351535468652,
+      "sfdr_db": 28.053528550786496,
+      "normalized_enob_bits": 3.55823246062442
+    }
+  },
+  "gates": {
+    "clock_to_output_s": {
+      "value": 6.908067779122534e-10,
+      "unit": "s/W",
+      "sense": "max",
+      "limits": {
+        "original": 9.5e-09,
+        "10pct": 9.5e-09,
+        "15pct": 9.5e-09
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "core_reference_power_w": {
+      "value": 0.0003266099063089952,
+      "unit": "s/W",
+      "sense": "max",
+      "limits": {
+        "original": 0.001,
+        "10pct": 0.0011,
+        "15pct": 0.00115
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "clock_delivery_power_w": {
+      "value": 4.363302416064873e-05,
+      "unit": "s/W",
+      "sense": "max",
+      "limits": {
+        "original": 0.00025,
+        "10pct": 0.000275,
+        "15pct": 0.0002875
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "dnl_lsb": {
+      "value": 0.0999999999999992,
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 0.3,
+        "10pct": 0.33,
+        "15pct": 0.345
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "inl_lsb": {
+      "value": 0.09000000000000119,
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 0.3,
+        "10pct": 0.33,
+        "15pct": 0.345
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "absolute_error_lsb": {
+      "value": 0.19000000000000128,
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 0.3,
+        "10pct": 0.33,
+        "15pct": 0.345
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "sine_low_sndr_db": {
+      "value": 20.012330916340176,
+      "unit": "dB/bit",
+      "sense": "min",
+      "limits": {
+        "original": 17.0,
+        "10pct": 16.084850188786497,
+        "15pct": 15.588378514285855
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "sine_low_sfdr_db": {
+      "value": 26.537022145577915,
+      "unit": "dB/bit",
+      "sense": "min",
+      "limits": {
+        "original": 21.0,
+        "10pct": 20.084850188786497,
+        "15pct": 19.588378514285854
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "sine_low_normalized_enob_bits": {
+      "value": 3.1242538838074037,
+      "unit": "dB/bit",
+      "sense": "min",
+      "limits": {
+        "original": 2.5,
+        "10pct": 2.25,
+        "15pct": 2.125
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "sine_high_sndr_db": {
+      "value": 22.415351535468652,
+      "unit": "dB/bit",
+      "sense": "min",
+      "limits": {
+        "original": 17.0,
+        "10pct": 16.084850188786497,
+        "15pct": 15.588378514285855
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "sine_high_sfdr_db": {
+      "value": 28.053528550786496,
+      "unit": "dB/bit",
+      "sense": "min",
+      "limits": {
+        "original": 21.0,
+        "10pct": 20.084850188786497,
+        "15pct": 19.588378514285854
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "sine_high_normalized_enob_bits": {
+      "value": 3.55823246062442,
+      "unit": "dB/bit",
+      "sense": "min",
+      "limits": {
+        "original": 2.5,
+        "10pct": 2.25,
+        "15pct": 2.125
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "groups": {
+    "transition": "runs/46/20260928T180537281650Z_transition",
+    "ramp": "runs/46/20260928T180557513778Z_ramp",
+    "sine_low": "runs/46/20260928T180652513372Z_sine_low",
+    "sine_high": "runs/46/20260928T180704975793Z_sine_high"
+  },
+  "run_dirs": [
+    "runs/46/20260928T180537281650Z_transition",
+    "runs/46/20260928T180557513778Z_ramp",
+    "runs/46/20260928T180652513372Z_sine_low",
+    "runs/46/20260928T180704975793Z_sine_high"
+  ],
+  "circuit_sha256": "932079bd1b52f635b8632deb2e396f31044070eec8bb522322982af2f83ff7bd",
+  "contract_sha256": "1840c4fd76d9fc5bd032a2bfd96471865ab3c14f685c67413b4040e921eec942",
+  "scope": "SMIC18 TT1.8V27C: fullspeed ramp,26code transition stress, coherent bins1and7 at original212/279.25degree phases. Sine functional stimuli moved toTTnominal; original four other static/transition PVT andtwo dynamic PVT conditions notclaimed.",
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "nonrelaxable_guards_pass": true,
+  "disallowed_warnings": {
+    "transition": [],
+    "ramp": [],
+    "sine_low": [],
+    "sine_high": []
+  },
+  "conversion_records_sha256": "a6df3c137b748a321164880e6a1d844888178e316a9ab5c21f8f06fbb8b93755"
+}

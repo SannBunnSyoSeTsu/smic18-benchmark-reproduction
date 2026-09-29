@@ -1,0 +1,9040 @@
+{
+  "generated_at": "2026-09-23T06:18:46.045450+00:00",
+  "circuit_sha256": "e8388c72d139da2b34832dc179379e63bfa19e1f59e8c9e2cd45f85e566f75af",
+  "top": "switched_resistor_dac_5bit",
+  "subcircuit_ports": {
+    "switched_resistor_dac_5bit": [
+      "vss",
+      "b0",
+      "b1",
+      "b2",
+      "b3",
+      "b4",
+      "vdd",
+      "vout"
+    ]
+  },
+  "instances": {
+    "switched_resistor_dac_5bit/XINV0": {
+      "name": "XINV0",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "b0",
+        "ZN": "nb0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV0 (b0 nb0 vdd vss vdd vss) INHDV2",
+      "sheet": 1,
+      "origin": [
+        4,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          1.2999999999999998,
+          19.0
+        ],
+        "ZN": [
+          6.7,
+          19.0
+        ],
+        "VDD": [
+          3.2,
+          21.2
+        ],
+        "VNW": [
+          4.8,
+          21.2
+        ],
+        "VSS": [
+          3.2,
+          16.8
+        ],
+        "VPW": [
+          4.8,
+          16.8
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/MSP0": {
+      "name": "MSP0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "sw0",
+        "G": "nb0",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.08u",
+        "l": ".18u",
+        "m": "1"
+      },
+      "source_line": "MSP0 (sw0 nb0 vdd vdd) p18 w=9.08u l=.18u m=1",
+      "W_unit_um": 9.08,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        4,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          11
+        ],
+        "S": [
+          4,
+          13
+        ],
+        "G": [
+          2.45,
+          12
+        ],
+        "B": [
+          4.86,
+          12
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/MSN0": {
+      "name": "MSN0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "sw0",
+        "G": "nb0",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.24u",
+        "l": ".18u",
+        "m": "1"
+      },
+      "source_line": "MSN0 (sw0 nb0 vss vss) n18 w=3.24u l=.18u m=1",
+      "W_unit_um": 3.2399999999999998,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        4,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          4,
+          6
+        ],
+        "S": [
+          4,
+          4
+        ],
+        "G": [
+          2.45,
+          5
+        ],
+        "B": [
+          4.86,
+          5
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/XINV1": {
+      "name": "XINV1",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "b1",
+        "ZN": "nb1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV1 (b1 nb1 vdd vss vdd vss) INHDV4",
+      "sheet": 1,
+      "origin": [
+        12,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          9.3,
+          19.0
+        ],
+        "ZN": [
+          14.7,
+          19.0
+        ],
+        "VDD": [
+          11.2,
+          21.2
+        ],
+        "VNW": [
+          12.8,
+          21.2
+        ],
+        "VSS": [
+          11.2,
+          16.8
+        ],
+        "VPW": [
+          12.8,
+          16.8
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/MSP1": {
+      "name": "MSP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "sw1",
+        "G": "nb1",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.08u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MSP1 (sw1 nb1 vdd vdd) p18 w=9.08u l=.18u m=2",
+      "W_unit_um": 9.08,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        12,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          11
+        ],
+        "S": [
+          12,
+          13
+        ],
+        "G": [
+          10.45,
+          12
+        ],
+        "B": [
+          12.86,
+          12
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/MSN1": {
+      "name": "MSN1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "sw1",
+        "G": "nb1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.24u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MSN1 (sw1 nb1 vss vss) n18 w=3.24u l=.18u m=2",
+      "W_unit_um": 3.2399999999999998,
+      "L_um": 0.18,
+      "m": 2.0,
+      "sheet": 1,
+      "origin": [
+        12,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          12,
+          6
+        ],
+        "S": [
+          12,
+          4
+        ],
+        "G": [
+          10.45,
+          5
+        ],
+        "B": [
+          12.86,
+          5
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/XINV2": {
+      "name": "XINV2",
+      "kind": "HD",
+      "model": "INHDV8",
+      "pins": {
+        "I": "b2",
+        "ZN": "nb2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV2 (b2 nb2 vdd vss vdd vss) INHDV8",
+      "sheet": 1,
+      "origin": [
+        20,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          17.3,
+          19.0
+        ],
+        "ZN": [
+          22.7,
+          19.0
+        ],
+        "VDD": [
+          19.2,
+          21.2
+        ],
+        "VNW": [
+          20.8,
+          21.2
+        ],
+        "VSS": [
+          19.2,
+          16.8
+        ],
+        "VPW": [
+          20.8,
+          16.8
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/MSP2": {
+      "name": "MSP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "sw2",
+        "G": "nb2",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.08u",
+        "l": ".18u",
+        "m": "4"
+      },
+      "source_line": "MSP2 (sw2 nb2 vdd vdd) p18 w=9.08u l=.18u m=4",
+      "W_unit_um": 9.08,
+      "L_um": 0.18,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        20,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          20,
+          11
+        ],
+        "S": [
+          20,
+          13
+        ],
+        "G": [
+          18.45,
+          12
+        ],
+        "B": [
+          20.86,
+          12
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/MSN2": {
+      "name": "MSN2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "sw2",
+        "G": "nb2",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.24u",
+        "l": ".18u",
+        "m": "4"
+      },
+      "source_line": "MSN2 (sw2 nb2 vss vss) n18 w=3.24u l=.18u m=4",
+      "W_unit_um": 3.2399999999999998,
+      "L_um": 0.18,
+      "m": 4.0,
+      "sheet": 1,
+      "origin": [
+        20,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          20,
+          6
+        ],
+        "S": [
+          20,
+          4
+        ],
+        "G": [
+          18.45,
+          5
+        ],
+        "B": [
+          20.86,
+          5
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/XINV3": {
+      "name": "XINV3",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "b3",
+        "ZN": "nb3",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV3 (b3 nb3 vdd vss vdd vss) INHDV16",
+      "sheet": 1,
+      "origin": [
+        28,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          25.3,
+          19.0
+        ],
+        "ZN": [
+          30.7,
+          19.0
+        ],
+        "VDD": [
+          27.2,
+          21.2
+        ],
+        "VNW": [
+          28.8,
+          21.2
+        ],
+        "VSS": [
+          27.2,
+          16.8
+        ],
+        "VPW": [
+          28.8,
+          16.8
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/MSP3": {
+      "name": "MSP3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "sw3",
+        "G": "nb3",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.08u",
+        "l": ".18u",
+        "m": "8"
+      },
+      "source_line": "MSP3 (sw3 nb3 vdd vdd) p18 w=9.08u l=.18u m=8",
+      "W_unit_um": 9.08,
+      "L_um": 0.18,
+      "m": 8.0,
+      "sheet": 1,
+      "origin": [
+        28,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          28,
+          11
+        ],
+        "S": [
+          28,
+          13
+        ],
+        "G": [
+          26.45,
+          12
+        ],
+        "B": [
+          28.86,
+          12
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/MSN3": {
+      "name": "MSN3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "sw3",
+        "G": "nb3",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.24u",
+        "l": ".18u",
+        "m": "8"
+      },
+      "source_line": "MSN3 (sw3 nb3 vss vss) n18 w=3.24u l=.18u m=8",
+      "W_unit_um": 3.2399999999999998,
+      "L_um": 0.18,
+      "m": 8.0,
+      "sheet": 1,
+      "origin": [
+        28,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          28,
+          6
+        ],
+        "S": [
+          28,
+          4
+        ],
+        "G": [
+          26.45,
+          5
+        ],
+        "B": [
+          28.86,
+          5
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/XINV4": {
+      "name": "XINV4",
+      "kind": "HD",
+      "model": "INHDV32",
+      "pins": {
+        "I": "b4",
+        "ZN": "nb4",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV4 (b4 nb4 vdd vss vdd vss) INHDV32",
+      "sheet": 1,
+      "origin": [
+        36,
+        19
+      ],
+      "rendered_pins": {
+        "I": [
+          33.3,
+          19.0
+        ],
+        "ZN": [
+          38.7,
+          19.0
+        ],
+        "VDD": [
+          35.2,
+          21.2
+        ],
+        "VNW": [
+          36.8,
+          21.2
+        ],
+        "VSS": [
+          35.2,
+          16.8
+        ],
+        "VPW": [
+          36.8,
+          16.8
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/MSP4": {
+      "name": "MSP4",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "sw4",
+        "G": "nb4",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.08u",
+        "l": ".18u",
+        "m": "16"
+      },
+      "source_line": "MSP4 (sw4 nb4 vdd vdd) p18 w=9.08u l=.18u m=16",
+      "W_unit_um": 9.08,
+      "L_um": 0.18,
+      "m": 16.0,
+      "sheet": 1,
+      "origin": [
+        36,
+        12
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          11
+        ],
+        "S": [
+          36,
+          13
+        ],
+        "G": [
+          34.45,
+          12
+        ],
+        "B": [
+          36.86,
+          12
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/MSN4": {
+      "name": "MSN4",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "sw4",
+        "G": "nb4",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.24u",
+        "l": ".18u",
+        "m": "16"
+      },
+      "source_line": "MSN4 (sw4 nb4 vss vss) n18 w=3.24u l=.18u m=16",
+      "W_unit_um": 3.2399999999999998,
+      "L_um": 0.18,
+      "m": 16.0,
+      "sheet": 1,
+      "origin": [
+        36,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          6
+        ],
+        "S": [
+          36,
+          4
+        ],
+        "G": [
+          34.45,
+          5
+        ],
+        "B": [
+          36.86,
+          5
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB0_0": {
+      "name": "RB0_0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw0",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB0_0 (vout sw0 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        4,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          4,
+          19.82
+        ],
+        "2": [
+          4,
+          18.18
+        ],
+        "B": [
+          4.7,
+          19
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB1_0": {
+      "name": "RB1_0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB1_0 (vout sw1 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        12,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          12,
+          19.82
+        ],
+        "2": [
+          12,
+          18.18
+        ],
+        "B": [
+          12.7,
+          19
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB1_1": {
+      "name": "RB1_1",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB1_1 (vout sw1 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        20,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          20,
+          19.82
+        ],
+        "2": [
+          20,
+          18.18
+        ],
+        "B": [
+          20.7,
+          19
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB2_0": {
+      "name": "RB2_0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB2_0 (vout sw2 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        28,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          28,
+          19.82
+        ],
+        "2": [
+          28,
+          18.18
+        ],
+        "B": [
+          28.7,
+          19
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB2_1": {
+      "name": "RB2_1",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB2_1 (vout sw2 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        36,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          36,
+          19.82
+        ],
+        "2": [
+          36,
+          18.18
+        ],
+        "B": [
+          36.7,
+          19
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB2_2": {
+      "name": "RB2_2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB2_2 (vout sw2 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        4,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          4,
+          11.82
+        ],
+        "2": [
+          4,
+          10.18
+        ],
+        "B": [
+          4.7,
+          11
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB2_3": {
+      "name": "RB2_3",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB2_3 (vout sw2 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        12,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          12,
+          11.82
+        ],
+        "2": [
+          12,
+          10.18
+        ],
+        "B": [
+          12.7,
+          11
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB3_0": {
+      "name": "RB3_0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_0 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        20,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          20,
+          11.82
+        ],
+        "2": [
+          20,
+          10.18
+        ],
+        "B": [
+          20.7,
+          11
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB3_1": {
+      "name": "RB3_1",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_1 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        28,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          28,
+          11.82
+        ],
+        "2": [
+          28,
+          10.18
+        ],
+        "B": [
+          28.7,
+          11
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB3_2": {
+      "name": "RB3_2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_2 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        36,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          36,
+          11.82
+        ],
+        "2": [
+          36,
+          10.18
+        ],
+        "B": [
+          36.7,
+          11
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB3_3": {
+      "name": "RB3_3",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_3 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        4,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          4,
+          3.82
+        ],
+        "2": [
+          4,
+          2.18
+        ],
+        "B": [
+          4.7,
+          3
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB3_4": {
+      "name": "RB3_4",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_4 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        12,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          12,
+          3.82
+        ],
+        "2": [
+          12,
+          2.18
+        ],
+        "B": [
+          12.7,
+          3
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB3_5": {
+      "name": "RB3_5",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_5 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        20,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          20,
+          3.82
+        ],
+        "2": [
+          20,
+          2.18
+        ],
+        "B": [
+          20.7,
+          3
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB3_6": {
+      "name": "RB3_6",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_6 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        28,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          28,
+          3.82
+        ],
+        "2": [
+          28,
+          2.18
+        ],
+        "B": [
+          28.7,
+          3
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB3_7": {
+      "name": "RB3_7",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_7 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "sheet": 2,
+      "origin": [
+        36,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          36,
+          3.82
+        ],
+        "2": [
+          36,
+          2.18
+        ],
+        "B": [
+          36.7,
+          3
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_0": {
+      "name": "RB4_0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_0 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        3,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          3,
+          19.82
+        ],
+        "2": [
+          3,
+          18.18
+        ],
+        "B": [
+          3.7,
+          19
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_1": {
+      "name": "RB4_1",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_1 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        10,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          19.82
+        ],
+        "2": [
+          10,
+          18.18
+        ],
+        "B": [
+          10.7,
+          19
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_2": {
+      "name": "RB4_2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_2 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        17,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          17,
+          19.82
+        ],
+        "2": [
+          17,
+          18.18
+        ],
+        "B": [
+          17.7,
+          19
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_3": {
+      "name": "RB4_3",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_3 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        24,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          24,
+          19.82
+        ],
+        "2": [
+          24,
+          18.18
+        ],
+        "B": [
+          24.7,
+          19
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_4": {
+      "name": "RB4_4",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_4 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        31,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          31,
+          19.82
+        ],
+        "2": [
+          31,
+          18.18
+        ],
+        "B": [
+          31.7,
+          19
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_5": {
+      "name": "RB4_5",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_5 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        38,
+        19
+      ],
+      "rendered_pins": {
+        "1": [
+          38,
+          19.82
+        ],
+        "2": [
+          38,
+          18.18
+        ],
+        "B": [
+          38.7,
+          19
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_6": {
+      "name": "RB4_6",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_6 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        3,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          3,
+          11.82
+        ],
+        "2": [
+          3,
+          10.18
+        ],
+        "B": [
+          3.7,
+          11
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_7": {
+      "name": "RB4_7",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_7 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        10,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          11.82
+        ],
+        "2": [
+          10,
+          10.18
+        ],
+        "B": [
+          10.7,
+          11
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_8": {
+      "name": "RB4_8",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_8 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        17,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          17,
+          11.82
+        ],
+        "2": [
+          17,
+          10.18
+        ],
+        "B": [
+          17.7,
+          11
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_9": {
+      "name": "RB4_9",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_9 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        24,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          24,
+          11.82
+        ],
+        "2": [
+          24,
+          10.18
+        ],
+        "B": [
+          24.7,
+          11
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_10": {
+      "name": "RB4_10",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_10 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        31,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          31,
+          11.82
+        ],
+        "2": [
+          31,
+          10.18
+        ],
+        "B": [
+          31.7,
+          11
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_11": {
+      "name": "RB4_11",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_11 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        38,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          38,
+          11.82
+        ],
+        "2": [
+          38,
+          10.18
+        ],
+        "B": [
+          38.7,
+          11
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_12": {
+      "name": "RB4_12",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_12 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        3,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          3,
+          3.82
+        ],
+        "2": [
+          3,
+          2.18
+        ],
+        "B": [
+          3.7,
+          3
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_13": {
+      "name": "RB4_13",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_13 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        10,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          3.82
+        ],
+        "2": [
+          10,
+          2.18
+        ],
+        "B": [
+          10.7,
+          3
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_14": {
+      "name": "RB4_14",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_14 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        17,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          17,
+          3.82
+        ],
+        "2": [
+          17,
+          2.18
+        ],
+        "B": [
+          17.7,
+          3
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RB4_15": {
+      "name": "RB4_15",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_15 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        24,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          24,
+          3.82
+        ],
+        "2": [
+          24,
+          2.18
+        ],
+        "B": [
+          24.7,
+          3
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    },
+    "switched_resistor_dac_5bit/RT": {
+      "name": "RT",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RT (vout vss vss) rpposab_3t w=1u l=96u",
+      "sheet": 3,
+      "origin": [
+        31,
+        3
+      ],
+      "rendered_pins": {
+        "1": [
+          31,
+          3.82
+        ],
+        "2": [
+          31,
+          2.18
+        ],
+        "B": [
+          31.7,
+          3
+        ]
+      },
+      "block": "switched_resistor_dac_5bit"
+    }
+  },
+  "expanded_leaf_instances": {
+    "XINV0": {
+      "name": "XINV0",
+      "kind": "HD",
+      "model": "INHDV2",
+      "pins": {
+        "I": "b0",
+        "ZN": "nb0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV0 (b0 nb0 vdd vss vdd vss) INHDV2",
+      "definition": "switched_resistor_dac_5bit/XINV0",
+      "path": "XINV0"
+    },
+    "MSN0": {
+      "name": "MSN0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "sw0",
+        "G": "nb0",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.24u",
+        "l": ".18u",
+        "m": "1"
+      },
+      "source_line": "MSN0 (sw0 nb0 vss vss) n18 w=3.24u l=.18u m=1",
+      "W_unit_um": 3.2399999999999998,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "switched_resistor_dac_5bit/MSN0",
+      "path": "MSN0"
+    },
+    "MSP0": {
+      "name": "MSP0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "sw0",
+        "G": "nb0",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.08u",
+        "l": ".18u",
+        "m": "1"
+      },
+      "source_line": "MSP0 (sw0 nb0 vdd vdd) p18 w=9.08u l=.18u m=1",
+      "W_unit_um": 9.08,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "switched_resistor_dac_5bit/MSP0",
+      "path": "MSP0"
+    },
+    "RB0_0": {
+      "name": "RB0_0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw0",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB0_0 (vout sw0 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB0_0",
+      "path": "RB0_0"
+    },
+    "XINV1": {
+      "name": "XINV1",
+      "kind": "HD",
+      "model": "INHDV4",
+      "pins": {
+        "I": "b1",
+        "ZN": "nb1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV1 (b1 nb1 vdd vss vdd vss) INHDV4",
+      "definition": "switched_resistor_dac_5bit/XINV1",
+      "path": "XINV1"
+    },
+    "MSN1": {
+      "name": "MSN1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "sw1",
+        "G": "nb1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.24u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MSN1 (sw1 nb1 vss vss) n18 w=3.24u l=.18u m=2",
+      "W_unit_um": 3.2399999999999998,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "switched_resistor_dac_5bit/MSN1",
+      "path": "MSN1"
+    },
+    "MSP1": {
+      "name": "MSP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "sw1",
+        "G": "nb1",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.08u",
+        "l": ".18u",
+        "m": "2"
+      },
+      "source_line": "MSP1 (sw1 nb1 vdd vdd) p18 w=9.08u l=.18u m=2",
+      "W_unit_um": 9.08,
+      "L_um": 0.18,
+      "m": 2.0,
+      "definition": "switched_resistor_dac_5bit/MSP1",
+      "path": "MSP1"
+    },
+    "RB1_0": {
+      "name": "RB1_0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB1_0 (vout sw1 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB1_0",
+      "path": "RB1_0"
+    },
+    "RB1_1": {
+      "name": "RB1_1",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB1_1 (vout sw1 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB1_1",
+      "path": "RB1_1"
+    },
+    "XINV2": {
+      "name": "XINV2",
+      "kind": "HD",
+      "model": "INHDV8",
+      "pins": {
+        "I": "b2",
+        "ZN": "nb2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV2 (b2 nb2 vdd vss vdd vss) INHDV8",
+      "definition": "switched_resistor_dac_5bit/XINV2",
+      "path": "XINV2"
+    },
+    "MSN2": {
+      "name": "MSN2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "sw2",
+        "G": "nb2",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.24u",
+        "l": ".18u",
+        "m": "4"
+      },
+      "source_line": "MSN2 (sw2 nb2 vss vss) n18 w=3.24u l=.18u m=4",
+      "W_unit_um": 3.2399999999999998,
+      "L_um": 0.18,
+      "m": 4.0,
+      "definition": "switched_resistor_dac_5bit/MSN2",
+      "path": "MSN2"
+    },
+    "MSP2": {
+      "name": "MSP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "sw2",
+        "G": "nb2",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.08u",
+        "l": ".18u",
+        "m": "4"
+      },
+      "source_line": "MSP2 (sw2 nb2 vdd vdd) p18 w=9.08u l=.18u m=4",
+      "W_unit_um": 9.08,
+      "L_um": 0.18,
+      "m": 4.0,
+      "definition": "switched_resistor_dac_5bit/MSP2",
+      "path": "MSP2"
+    },
+    "RB2_0": {
+      "name": "RB2_0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB2_0 (vout sw2 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB2_0",
+      "path": "RB2_0"
+    },
+    "RB2_1": {
+      "name": "RB2_1",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB2_1 (vout sw2 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB2_1",
+      "path": "RB2_1"
+    },
+    "RB2_2": {
+      "name": "RB2_2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB2_2 (vout sw2 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB2_2",
+      "path": "RB2_2"
+    },
+    "RB2_3": {
+      "name": "RB2_3",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB2_3 (vout sw2 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB2_3",
+      "path": "RB2_3"
+    },
+    "XINV3": {
+      "name": "XINV3",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "b3",
+        "ZN": "nb3",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV3 (b3 nb3 vdd vss vdd vss) INHDV16",
+      "definition": "switched_resistor_dac_5bit/XINV3",
+      "path": "XINV3"
+    },
+    "MSN3": {
+      "name": "MSN3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "sw3",
+        "G": "nb3",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.24u",
+        "l": ".18u",
+        "m": "8"
+      },
+      "source_line": "MSN3 (sw3 nb3 vss vss) n18 w=3.24u l=.18u m=8",
+      "W_unit_um": 3.2399999999999998,
+      "L_um": 0.18,
+      "m": 8.0,
+      "definition": "switched_resistor_dac_5bit/MSN3",
+      "path": "MSN3"
+    },
+    "MSP3": {
+      "name": "MSP3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "sw3",
+        "G": "nb3",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.08u",
+        "l": ".18u",
+        "m": "8"
+      },
+      "source_line": "MSP3 (sw3 nb3 vdd vdd) p18 w=9.08u l=.18u m=8",
+      "W_unit_um": 9.08,
+      "L_um": 0.18,
+      "m": 8.0,
+      "definition": "switched_resistor_dac_5bit/MSP3",
+      "path": "MSP3"
+    },
+    "RB3_0": {
+      "name": "RB3_0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_0 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB3_0",
+      "path": "RB3_0"
+    },
+    "RB3_1": {
+      "name": "RB3_1",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_1 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB3_1",
+      "path": "RB3_1"
+    },
+    "RB3_2": {
+      "name": "RB3_2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_2 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB3_2",
+      "path": "RB3_2"
+    },
+    "RB3_3": {
+      "name": "RB3_3",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_3 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB3_3",
+      "path": "RB3_3"
+    },
+    "RB3_4": {
+      "name": "RB3_4",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_4 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB3_4",
+      "path": "RB3_4"
+    },
+    "RB3_5": {
+      "name": "RB3_5",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_5 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB3_5",
+      "path": "RB3_5"
+    },
+    "RB3_6": {
+      "name": "RB3_6",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_6 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB3_6",
+      "path": "RB3_6"
+    },
+    "RB3_7": {
+      "name": "RB3_7",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB3_7 (vout sw3 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB3_7",
+      "path": "RB3_7"
+    },
+    "XINV4": {
+      "name": "XINV4",
+      "kind": "HD",
+      "model": "INHDV32",
+      "pins": {
+        "I": "b4",
+        "ZN": "nb4",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "parameters": {},
+      "source_line": "XINV4 (b4 nb4 vdd vss vdd vss) INHDV32",
+      "definition": "switched_resistor_dac_5bit/XINV4",
+      "path": "XINV4"
+    },
+    "MSN4": {
+      "name": "MSN4",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "sw4",
+        "G": "nb4",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "3.24u",
+        "l": ".18u",
+        "m": "16"
+      },
+      "source_line": "MSN4 (sw4 nb4 vss vss) n18 w=3.24u l=.18u m=16",
+      "W_unit_um": 3.2399999999999998,
+      "L_um": 0.18,
+      "m": 16.0,
+      "definition": "switched_resistor_dac_5bit/MSN4",
+      "path": "MSN4"
+    },
+    "MSP4": {
+      "name": "MSP4",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "sw4",
+        "G": "nb4",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "9.08u",
+        "l": ".18u",
+        "m": "16"
+      },
+      "source_line": "MSP4 (sw4 nb4 vdd vdd) p18 w=9.08u l=.18u m=16",
+      "W_unit_um": 9.08,
+      "L_um": 0.18,
+      "m": 16.0,
+      "definition": "switched_resistor_dac_5bit/MSP4",
+      "path": "MSP4"
+    },
+    "RB4_0": {
+      "name": "RB4_0",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_0 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_0",
+      "path": "RB4_0"
+    },
+    "RB4_1": {
+      "name": "RB4_1",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_1 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_1",
+      "path": "RB4_1"
+    },
+    "RB4_2": {
+      "name": "RB4_2",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_2 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_2",
+      "path": "RB4_2"
+    },
+    "RB4_3": {
+      "name": "RB4_3",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_3 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_3",
+      "path": "RB4_3"
+    },
+    "RB4_4": {
+      "name": "RB4_4",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_4 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_4",
+      "path": "RB4_4"
+    },
+    "RB4_5": {
+      "name": "RB4_5",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_5 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_5",
+      "path": "RB4_5"
+    },
+    "RB4_6": {
+      "name": "RB4_6",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_6 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_6",
+      "path": "RB4_6"
+    },
+    "RB4_7": {
+      "name": "RB4_7",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_7 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_7",
+      "path": "RB4_7"
+    },
+    "RB4_8": {
+      "name": "RB4_8",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_8 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_8",
+      "path": "RB4_8"
+    },
+    "RB4_9": {
+      "name": "RB4_9",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_9 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_9",
+      "path": "RB4_9"
+    },
+    "RB4_10": {
+      "name": "RB4_10",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_10 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_10",
+      "path": "RB4_10"
+    },
+    "RB4_11": {
+      "name": "RB4_11",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_11 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_11",
+      "path": "RB4_11"
+    },
+    "RB4_12": {
+      "name": "RB4_12",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_12 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_12",
+      "path": "RB4_12"
+    },
+    "RB4_13": {
+      "name": "RB4_13",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_13 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_13",
+      "path": "RB4_13"
+    },
+    "RB4_14": {
+      "name": "RB4_14",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_14 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_14",
+      "path": "RB4_14"
+    },
+    "RB4_15": {
+      "name": "RB4_15",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "sw4",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RB4_15 (vout sw4 vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RB4_15",
+      "path": "RB4_15"
+    },
+    "RT": {
+      "name": "RT",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "vout",
+        "2": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "96u"
+      },
+      "source_line": "RT (vout vss vss) rpposab_3t w=1u l=96u",
+      "definition": "switched_resistor_dac_5bit/RT",
+      "path": "RT"
+    }
+  },
+  "nets": {
+    "switched_resistor_dac_5bit/b0": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV0",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          1.2999999999999998,
+          19.0
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/nb0": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV0",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          6.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP0",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          2.45,
+          12
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN0",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          2.45,
+          5
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/vdd": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV0",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          3.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV0",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          4.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP0",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          4,
+          13
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP0",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          4.86,
+          12
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          11.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          12.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          12,
+          13
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          12.86,
+          12
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV2",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          19.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV2",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          20.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          20,
+          13
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          20.86,
+          12
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV3",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          27.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV3",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          28.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP3",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          28,
+          13
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP3",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          28.86,
+          12
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV4",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          35.2,
+          21.2
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV4",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          36.8,
+          21.2
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP4",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          36,
+          13
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP4",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          36.86,
+          12
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/vss": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV0",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          3.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV0",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          4.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN0",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          4,
+          4
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN0",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          4.86,
+          5
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          11.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          12.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          12,
+          4
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          12.86,
+          5
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV2",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          19.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV2",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          20.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          20,
+          4
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          20.86,
+          5
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV3",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          27.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV3",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          28.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN3",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          28,
+          4
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN3",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          28.86,
+          5
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV4",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          35.2,
+          16.8
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/XINV4",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          36.8,
+          16.8
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN4",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          36,
+          4
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN4",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          36.86,
+          5
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB0_0",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          4.7,
+          19
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB1_0",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          12.7,
+          19
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB1_1",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          20.7,
+          19
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_0",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          28.7,
+          19
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_1",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          36.7,
+          19
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          4.7,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_3",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          12.7,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_0",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          20.7,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_1",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          28.7,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          36.7,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_3",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          4.7,
+          3
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_4",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          12.7,
+          3
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_5",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          20.7,
+          3
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_6",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          28.7,
+          3
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_7",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          36.7,
+          3
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_0",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          3.7,
+          19
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_1",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          10.7,
+          19
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_2",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          17.7,
+          19
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_3",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          24.7,
+          19
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_4",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          31.7,
+          19
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_5",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          38.7,
+          19
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_6",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          3.7,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_7",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          10.7,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_8",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          17.7,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_9",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          24.7,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_10",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          31.7,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_11",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          38.7,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_12",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          3.7,
+          3
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_13",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          10.7,
+          3
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_14",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          17.7,
+          3
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_15",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          24.7,
+          3
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RT",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          31,
+          2.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RT",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          31.7,
+          3
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/sw0": [
+      {
+        "instance": "switched_resistor_dac_5bit/MSP0",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          4,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN0",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          4,
+          6
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB0_0",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          4,
+          18.18
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/b1": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          9.3,
+          19.0
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/nb1": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          14.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          10.45,
+          12
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          10.45,
+          5
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/sw1": [
+      {
+        "instance": "switched_resistor_dac_5bit/MSP1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          12,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          12,
+          6
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB1_0",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          12,
+          18.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB1_1",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          20,
+          18.18
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/b2": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV2",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          17.3,
+          19.0
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/nb2": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV2",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          22.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          18.45,
+          12
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          18.45,
+          5
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/sw2": [
+      {
+        "instance": "switched_resistor_dac_5bit/MSP2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          20,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          20,
+          6
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_0",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          28,
+          18.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_1",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          36,
+          18.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_2",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          4,
+          10.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_3",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          12,
+          10.18
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/b3": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV3",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          25.3,
+          19.0
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/nb3": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV3",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          30.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP3",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          26.45,
+          12
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN3",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          26.45,
+          5
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/sw3": [
+      {
+        "instance": "switched_resistor_dac_5bit/MSP3",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          28,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN3",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          28,
+          6
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_0",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          20,
+          10.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_1",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          28,
+          10.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_2",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          36,
+          10.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_3",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          4,
+          2.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_4",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          12,
+          2.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_5",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          20,
+          2.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_6",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          28,
+          2.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_7",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          36,
+          2.18
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/b4": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV4",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          33.3,
+          19.0
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/nb4": [
+      {
+        "instance": "switched_resistor_dac_5bit/XINV4",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          38.7,
+          19.0
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSP4",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          34.45,
+          12
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN4",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          34.45,
+          5
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/sw4": [
+      {
+        "instance": "switched_resistor_dac_5bit/MSP4",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          36,
+          11
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/MSN4",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          36,
+          6
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_0",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          3,
+          18.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_1",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          10,
+          18.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_2",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          17,
+          18.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_3",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          24,
+          18.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_4",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          31,
+          18.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_5",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          38,
+          18.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_6",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          3,
+          10.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_7",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          10,
+          10.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_8",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          17,
+          10.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_9",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          24,
+          10.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_10",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          31,
+          10.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_11",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          38,
+          10.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_12",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          3,
+          2.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_13",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          10,
+          2.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_14",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          17,
+          2.18
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_15",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          24,
+          2.18
+        ]
+      }
+    ],
+    "switched_resistor_dac_5bit/vout": [
+      {
+        "instance": "switched_resistor_dac_5bit/RB0_0",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          4,
+          19.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB1_0",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          12,
+          19.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB1_1",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          20,
+          19.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_0",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          28,
+          19.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_1",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          36,
+          19.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_2",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          4,
+          11.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB2_3",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          12,
+          11.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_0",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          20,
+          11.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_1",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          28,
+          11.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_2",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          36,
+          11.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_3",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          4,
+          3.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_4",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          12,
+          3.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_5",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          20,
+          3.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_6",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          28,
+          3.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB3_7",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          36,
+          3.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_0",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          3,
+          19.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_1",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          10,
+          19.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_2",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17,
+          19.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_3",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          24,
+          19.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_4",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          31,
+          19.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_5",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          38,
+          19.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_6",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          3,
+          11.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_7",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          10,
+          11.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_8",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17,
+          11.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_9",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          24,
+          11.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_10",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          31,
+          11.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_11",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          38,
+          11.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_12",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          3,
+          3.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_13",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          10,
+          3.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_14",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17,
+          3.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RB4_15",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          24,
+          3.82
+        ]
+      },
+      {
+        "instance": "switched_resistor_dac_5bit/RT",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          31,
+          3.82
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "XINV4",
+      "pin": "I",
+      "net": "b4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP2",
+      "pin": "D",
+      "net": "sw2",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN2",
+      "pin": "D",
+      "net": "sw2",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "ZN",
+      "net": "nb1",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP1",
+      "pin": "G",
+      "net": "nb1",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN1",
+      "pin": "G",
+      "net": "nb1",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV0",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV0",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN0",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN0",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN1",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN2",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN3",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN3",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV4",
+      "pin": "VSS",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV4",
+      "pin": "VPW",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN4",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN4",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP3",
+      "pin": "D",
+      "net": "sw3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN3",
+      "pin": "D",
+      "net": "sw3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV0",
+      "pin": "I",
+      "net": "b0",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV0",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV0",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP0",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP0",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP1",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP1",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP2",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP2",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP3",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP3",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV4",
+      "pin": "VDD",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV4",
+      "pin": "VNW",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP4",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP4",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "ZN",
+      "net": "nb2",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP2",
+      "pin": "G",
+      "net": "nb2",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN2",
+      "pin": "G",
+      "net": "nb2",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV1",
+      "pin": "I",
+      "net": "b1",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "I",
+      "net": "b3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV3",
+      "pin": "ZN",
+      "net": "nb3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP3",
+      "pin": "G",
+      "net": "nb3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN3",
+      "pin": "G",
+      "net": "nb3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP1",
+      "pin": "D",
+      "net": "sw1",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN1",
+      "pin": "D",
+      "net": "sw1",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV0",
+      "pin": "ZN",
+      "net": "nb0",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP0",
+      "pin": "G",
+      "net": "nb0",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN0",
+      "pin": "G",
+      "net": "nb0",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV4",
+      "pin": "ZN",
+      "net": "nb4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP4",
+      "pin": "G",
+      "net": "nb4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN4",
+      "pin": "G",
+      "net": "nb4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP4",
+      "pin": "D",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN4",
+      "pin": "D",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "XINV2",
+      "pin": "I",
+      "net": "b2",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSP0",
+      "pin": "D",
+      "net": "sw0",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 1,
+      "instance": "MSN0",
+      "pin": "D",
+      "net": "sw0",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_0",
+      "pin": "2",
+      "net": "sw2",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_1",
+      "pin": "2",
+      "net": "sw2",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_2",
+      "pin": "2",
+      "net": "sw2",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_3",
+      "pin": "2",
+      "net": "sw2",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB0_0",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB1_0",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB1_1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_0",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_3",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_0",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_3",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_4",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_5",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_6",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_7",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_0",
+      "pin": "2",
+      "net": "sw3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_1",
+      "pin": "2",
+      "net": "sw3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_2",
+      "pin": "2",
+      "net": "sw3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_3",
+      "pin": "2",
+      "net": "sw3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_4",
+      "pin": "2",
+      "net": "sw3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_5",
+      "pin": "2",
+      "net": "sw3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_6",
+      "pin": "2",
+      "net": "sw3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_7",
+      "pin": "2",
+      "net": "sw3",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB1_0",
+      "pin": "2",
+      "net": "sw1",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB1_1",
+      "pin": "2",
+      "net": "sw1",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB0_0",
+      "pin": "2",
+      "net": "sw0",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB0_0",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB1_0",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB1_1",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_0",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_1",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_2",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB2_3",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_0",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_1",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_2",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_3",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_4",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_5",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_6",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 2,
+      "instance": "RB3_7",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_0",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_1",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_2",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_3",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_4",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_5",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_6",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_7",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_8",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_9",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_10",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_11",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_12",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_13",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_14",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_15",
+      "pin": "2",
+      "net": "sw4",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_0",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_1",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_2",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_3",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_4",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_5",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_6",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_7",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_8",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_9",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_10",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_11",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_12",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_13",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_14",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_15",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RT",
+      "pin": "1",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_0",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_3",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_4",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_5",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_6",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_7",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_8",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_9",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_10",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_11",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_12",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_13",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_14",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RB4_15",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RT",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    },
+    {
+      "sheet": 3,
+      "instance": "RT",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "switched_resistor_dac_5bit"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "switched_resistor_dac_5bit",
+      "title": "五位 HD 控制与互补 MOS 开关",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              4.86,
+              12
+            ],
+            [
+              5.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.86,
+              5
+            ],
+            [
+              5.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "nb0",
+          "points": [
+            [
+              6.7,
+              19.0
+            ],
+            [
+              7.1,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw0",
+          "points": [
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb0",
+          "points": [
+            [
+              2.45,
+              12
+            ],
+            [
+              1.6,
+              12
+            ],
+            [
+              1.6,
+              5
+            ],
+            [
+              2.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12.86,
+              12
+            ],
+            [
+              13.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.86,
+              5
+            ],
+            [
+              13.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "nb1",
+          "points": [
+            [
+              14.7,
+              19.0
+            ],
+            [
+              15.1,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw1",
+          "points": [
+            [
+              12,
+              11
+            ],
+            [
+              12,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb1",
+          "points": [
+            [
+              10.45,
+              12
+            ],
+            [
+              9.6,
+              12
+            ],
+            [
+              9.6,
+              5
+            ],
+            [
+              10.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              20.86,
+              12
+            ],
+            [
+              21.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.86,
+              5
+            ],
+            [
+              21.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "nb2",
+          "points": [
+            [
+              22.7,
+              19.0
+            ],
+            [
+              23.1,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw2",
+          "points": [
+            [
+              20,
+              11
+            ],
+            [
+              20,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb2",
+          "points": [
+            [
+              18.45,
+              12
+            ],
+            [
+              17.6,
+              12
+            ],
+            [
+              17.6,
+              5
+            ],
+            [
+              18.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              28.86,
+              12
+            ],
+            [
+              29.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.86,
+              5
+            ],
+            [
+              29.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "nb3",
+          "points": [
+            [
+              30.7,
+              19.0
+            ],
+            [
+              31.1,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "points": [
+            [
+              28,
+              11
+            ],
+            [
+              28,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb3",
+          "points": [
+            [
+              26.45,
+              12
+            ],
+            [
+              25.6,
+              12
+            ],
+            [
+              25.6,
+              5
+            ],
+            [
+              26.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              36.86,
+              12
+            ],
+            [
+              37.15,
+              12
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.86,
+              5
+            ],
+            [
+              37.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "nb4",
+          "points": [
+            [
+              38.7,
+              19.0
+            ],
+            [
+              39.1,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              36,
+              11
+            ],
+            [
+              36,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nb4",
+          "points": [
+            [
+              34.45,
+              12
+            ],
+            [
+              33.6,
+              12
+            ],
+            [
+              33.6,
+              5
+            ],
+            [
+              34.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "b0",
+          "points": [
+            [
+              1.2999999999999998,
+              19.0
+            ],
+            [
+              0.6999999999999998,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              3.2,
+              21.2
+            ],
+            [
+              3.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              4.8,
+              21.2
+            ],
+            [
+              4.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3.2,
+              16.8
+            ],
+            [
+              3.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.8,
+              16.8
+            ],
+            [
+              4.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "b1",
+          "points": [
+            [
+              9.3,
+              19.0
+            ],
+            [
+              8.700000000000001,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              11.2,
+              21.2
+            ],
+            [
+              11.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12.8,
+              21.2
+            ],
+            [
+              12.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11.2,
+              16.8
+            ],
+            [
+              11.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.8,
+              16.8
+            ],
+            [
+              12.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "b2",
+          "points": [
+            [
+              17.3,
+              19.0
+            ],
+            [
+              16.7,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              19.2,
+              21.2
+            ],
+            [
+              19.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              20.8,
+              21.2
+            ],
+            [
+              20.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              19.2,
+              16.8
+            ],
+            [
+              19.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.8,
+              16.8
+            ],
+            [
+              20.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "b3",
+          "points": [
+            [
+              25.3,
+              19.0
+            ],
+            [
+              24.7,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              27.2,
+              21.2
+            ],
+            [
+              27.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              28.8,
+              21.2
+            ],
+            [
+              28.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              27.2,
+              16.8
+            ],
+            [
+              27.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.8,
+              16.8
+            ],
+            [
+              28.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "b4",
+          "points": [
+            [
+              33.3,
+              19.0
+            ],
+            [
+              32.699999999999996,
+              19.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              35.2,
+              21.2
+            ],
+            [
+              35.2,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              36.8,
+              21.2
+            ],
+            [
+              36.8,
+              21.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35.2,
+              16.8
+            ],
+            [
+              35.2,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.8,
+              16.8
+            ],
+            [
+              36.8,
+              16.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              4,
+              13
+            ],
+            [
+              4,
+              13.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4,
+              4
+            ],
+            [
+              4,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              12,
+              13
+            ],
+            [
+              12,
+              13.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12,
+              4
+            ],
+            [
+              12,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              20,
+              13
+            ],
+            [
+              20,
+              13.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20,
+              4
+            ],
+            [
+              20,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              28,
+              13
+            ],
+            [
+              28,
+              13.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28,
+              4
+            ],
+            [
+              28,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              36,
+              13
+            ],
+            [
+              36,
+              13.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36,
+              4
+            ],
+            [
+              36,
+              3.36
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            5.15,
+            12
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "nb0",
+          "point": [
+            7.1,
+            19
+          ],
+          "text": "nb0",
+          "body": false
+        },
+        {
+          "net": "sw0",
+          "point": [
+            4,
+            8.5
+          ],
+          "text": "sw0",
+          "body": false
+        },
+        {
+          "net": "nb0",
+          "point": [
+            1.6,
+            8.5
+          ],
+          "text": "nb0",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            13.15,
+            12
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            13.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "nb1",
+          "point": [
+            15.1,
+            19
+          ],
+          "text": "nb1",
+          "body": false
+        },
+        {
+          "net": "sw1",
+          "point": [
+            12,
+            8.5
+          ],
+          "text": "sw1",
+          "body": false
+        },
+        {
+          "net": "nb1",
+          "point": [
+            9.6,
+            8.5
+          ],
+          "text": "nb1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            21.15,
+            12
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "nb2",
+          "point": [
+            23.1,
+            19
+          ],
+          "text": "nb2",
+          "body": false
+        },
+        {
+          "net": "sw2",
+          "point": [
+            20,
+            8.5
+          ],
+          "text": "sw2",
+          "body": false
+        },
+        {
+          "net": "nb2",
+          "point": [
+            17.6,
+            8.5
+          ],
+          "text": "nb2",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            29.15,
+            12
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            29.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "nb3",
+          "point": [
+            31.1,
+            19
+          ],
+          "text": "nb3",
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "point": [
+            28,
+            8.5
+          ],
+          "text": "sw3",
+          "body": false
+        },
+        {
+          "net": "nb3",
+          "point": [
+            25.6,
+            8.5
+          ],
+          "text": "nb3",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.15,
+            12
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "nb4",
+          "point": [
+            39.1,
+            19
+          ],
+          "text": "nb4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            36,
+            8.5
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "nb4",
+          "point": [
+            33.6,
+            8.5
+          ],
+          "text": "nb4",
+          "body": false
+        },
+        {
+          "net": "b0",
+          "point": [
+            0.6999999999999998,
+            19.0
+          ],
+          "text": "b0",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            3.2,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            4.8,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            3.2,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4.8,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "b1",
+          "point": [
+            8.700000000000001,
+            19.0
+          ],
+          "text": "b1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            11.2,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12.8,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.2,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            12.8,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "b2",
+          "point": [
+            16.7,
+            19.0
+          ],
+          "text": "b2",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            19.2,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            20.8,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            19.2,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            20.8,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "b3",
+          "point": [
+            24.7,
+            19.0
+          ],
+          "text": "b3",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            27.2,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            28.8,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            27.2,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            28.8,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "b4",
+          "point": [
+            32.699999999999996,
+            19.0
+          ],
+          "text": "b4",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.2,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            36.8,
+            21.7
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.2,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            36.8,
+            16.3
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            4,
+            13.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4,
+            3.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            12,
+            13.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            12,
+            3.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            20,
+            13.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            20,
+            3.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            28,
+            13.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            28,
+            3.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            36,
+            13.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            36,
+            3.36
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "switched_resistor_dac_5bit",
+      "title": "低四位全部三端电阻",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.7,
+              19
+            ],
+            [
+              5.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              4,
+              19.82
+            ],
+            [
+              4,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.7,
+              19
+            ],
+            [
+              13.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              12,
+              19.82
+            ],
+            [
+              12,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.7,
+              19
+            ],
+            [
+              21.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              20,
+              19.82
+            ],
+            [
+              20,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.7,
+              19
+            ],
+            [
+              29.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              28,
+              19.82
+            ],
+            [
+              28,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.7,
+              19
+            ],
+            [
+              37.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              36,
+              19.82
+            ],
+            [
+              36,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              4,
+              21.1
+            ],
+            [
+              36,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.7,
+              11
+            ],
+            [
+              5.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              4,
+              11.82
+            ],
+            [
+              4,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.7,
+              11
+            ],
+            [
+              13.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              12,
+              11.82
+            ],
+            [
+              12,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.7,
+              11
+            ],
+            [
+              21.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              20,
+              11.82
+            ],
+            [
+              20,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.7,
+              11
+            ],
+            [
+              29.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              28,
+              11.82
+            ],
+            [
+              28,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.7,
+              11
+            ],
+            [
+              37.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              36,
+              11.82
+            ],
+            [
+              36,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              4,
+              13.1
+            ],
+            [
+              36,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              4.7,
+              3
+            ],
+            [
+              5.15,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              4,
+              3.82
+            ],
+            [
+              4,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              12.7,
+              3
+            ],
+            [
+              13.15,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              12,
+              3.82
+            ],
+            [
+              12,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              20.7,
+              3
+            ],
+            [
+              21.15,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              20,
+              3.82
+            ],
+            [
+              20,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              28.7,
+              3
+            ],
+            [
+              29.15,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              28,
+              3.82
+            ],
+            [
+              28,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.7,
+              3
+            ],
+            [
+              37.15,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              36,
+              3.82
+            ],
+            [
+              36,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              4,
+              5.1
+            ],
+            [
+              36,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw0",
+          "points": [
+            [
+              4,
+              18.18
+            ],
+            [
+              4,
+              17.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw1",
+          "points": [
+            [
+              12,
+              18.18
+            ],
+            [
+              12,
+              17.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw1",
+          "points": [
+            [
+              20,
+              18.18
+            ],
+            [
+              20,
+              17.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw2",
+          "points": [
+            [
+              28,
+              18.18
+            ],
+            [
+              28,
+              17.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw2",
+          "points": [
+            [
+              36,
+              18.18
+            ],
+            [
+              36,
+              17.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw2",
+          "points": [
+            [
+              4,
+              10.18
+            ],
+            [
+              4,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw2",
+          "points": [
+            [
+              12,
+              10.18
+            ],
+            [
+              12,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "points": [
+            [
+              20,
+              10.18
+            ],
+            [
+              20,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "points": [
+            [
+              28,
+              10.18
+            ],
+            [
+              28,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "points": [
+            [
+              36,
+              10.18
+            ],
+            [
+              36,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "points": [
+            [
+              4,
+              2.18
+            ],
+            [
+              4,
+              1.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "points": [
+            [
+              12,
+              2.18
+            ],
+            [
+              12,
+              1.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "points": [
+            [
+              20,
+              2.18
+            ],
+            [
+              20,
+              1.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "points": [
+            [
+              28,
+              2.18
+            ],
+            [
+              28,
+              1.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "points": [
+            [
+              36,
+              2.18
+            ],
+            [
+              36,
+              1.54
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            13.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            29.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vout",
+          "point": [
+            4,
+            21.1
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            13.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            29.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vout",
+          "point": [
+            4,
+            13.1
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5.15,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            13.15,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            21.15,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            29.15,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.15,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vout",
+          "point": [
+            4,
+            5.1
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "sw0",
+          "point": [
+            4,
+            17.54
+          ],
+          "text": "sw0",
+          "body": false
+        },
+        {
+          "net": "sw1",
+          "point": [
+            12,
+            17.54
+          ],
+          "text": "sw1",
+          "body": false
+        },
+        {
+          "net": "sw1",
+          "point": [
+            20,
+            17.54
+          ],
+          "text": "sw1",
+          "body": false
+        },
+        {
+          "net": "sw2",
+          "point": [
+            28,
+            17.54
+          ],
+          "text": "sw2",
+          "body": false
+        },
+        {
+          "net": "sw2",
+          "point": [
+            36,
+            17.54
+          ],
+          "text": "sw2",
+          "body": false
+        },
+        {
+          "net": "sw2",
+          "point": [
+            4,
+            9.54
+          ],
+          "text": "sw2",
+          "body": false
+        },
+        {
+          "net": "sw2",
+          "point": [
+            12,
+            9.54
+          ],
+          "text": "sw2",
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "point": [
+            20,
+            9.54
+          ],
+          "text": "sw3",
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "point": [
+            28,
+            9.54
+          ],
+          "text": "sw3",
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "point": [
+            36,
+            9.54
+          ],
+          "text": "sw3",
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "point": [
+            4,
+            1.54
+          ],
+          "text": "sw3",
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "point": [
+            12,
+            1.54
+          ],
+          "text": "sw3",
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "point": [
+            20,
+            1.54
+          ],
+          "text": "sw3",
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "point": [
+            28,
+            1.54
+          ],
+          "text": "sw3",
+          "body": false
+        },
+        {
+          "net": "sw3",
+          "point": [
+            36,
+            1.54
+          ],
+          "text": "sw3",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "block": "switched_resistor_dac_5bit",
+      "title": "最高位全部三端电阻与终端",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              3.7,
+              19
+            ],
+            [
+              4.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              3,
+              19.82
+            ],
+            [
+              3,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.7,
+              19
+            ],
+            [
+              11.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              10,
+              19.82
+            ],
+            [
+              10,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17.7,
+              19
+            ],
+            [
+              18.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              17,
+              19.82
+            ],
+            [
+              17,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24.7,
+              19
+            ],
+            [
+              25.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              24,
+              19.82
+            ],
+            [
+              24,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              31.7,
+              19
+            ],
+            [
+              32.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              31,
+              19.82
+            ],
+            [
+              31,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.7,
+              19
+            ],
+            [
+              39.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              38,
+              19.82
+            ],
+            [
+              38,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              3,
+              21.1
+            ],
+            [
+              38,
+              21.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3.7,
+              11
+            ],
+            [
+              4.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              3,
+              11.82
+            ],
+            [
+              3,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.7,
+              11
+            ],
+            [
+              11.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              10,
+              11.82
+            ],
+            [
+              10,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17.7,
+              11
+            ],
+            [
+              18.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              17,
+              11.82
+            ],
+            [
+              17,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24.7,
+              11
+            ],
+            [
+              25.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              24,
+              11.82
+            ],
+            [
+              24,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              31.7,
+              11
+            ],
+            [
+              32.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              31,
+              11.82
+            ],
+            [
+              31,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.7,
+              11
+            ],
+            [
+              39.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              38,
+              11.82
+            ],
+            [
+              38,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              3,
+              13.1
+            ],
+            [
+              38,
+              13.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3.7,
+              3
+            ],
+            [
+              4.15,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              3,
+              3.82
+            ],
+            [
+              3,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.7,
+              3
+            ],
+            [
+              11.15,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              10,
+              3.82
+            ],
+            [
+              10,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17.7,
+              3
+            ],
+            [
+              18.15,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              17,
+              3.82
+            ],
+            [
+              17,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24.7,
+              3
+            ],
+            [
+              25.15,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              24,
+              3.82
+            ],
+            [
+              24,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              31.7,
+              3
+            ],
+            [
+              32.15,
+              3
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              31,
+              3.82
+            ],
+            [
+              31,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              3,
+              5.1
+            ],
+            [
+              31,
+              5.1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              3,
+              18.18
+            ],
+            [
+              3,
+              17.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              10,
+              18.18
+            ],
+            [
+              10,
+              17.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              17,
+              18.18
+            ],
+            [
+              17,
+              17.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              24,
+              18.18
+            ],
+            [
+              24,
+              17.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              31,
+              18.18
+            ],
+            [
+              31,
+              17.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              38,
+              18.18
+            ],
+            [
+              38,
+              17.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              3,
+              10.18
+            ],
+            [
+              3,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              10,
+              10.18
+            ],
+            [
+              10,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              17,
+              10.18
+            ],
+            [
+              17,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              24,
+              10.18
+            ],
+            [
+              24,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              31,
+              10.18
+            ],
+            [
+              31,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              38,
+              10.18
+            ],
+            [
+              38,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              3,
+              2.18
+            ],
+            [
+              3,
+              1.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              10,
+              2.18
+            ],
+            [
+              10,
+              1.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              17,
+              2.18
+            ],
+            [
+              17,
+              1.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "points": [
+            [
+              24,
+              2.18
+            ],
+            [
+              24,
+              1.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              31,
+              2.18
+            ],
+            [
+              31,
+              1.54
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            4.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            18.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            25.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            32.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            39.15,
+            19
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vout",
+          "point": [
+            3,
+            21.1
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            18.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            25.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            32.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            39.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vout",
+          "point": [
+            3,
+            13.1
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            4.15,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.15,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            18.15,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            25.15,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            32.15,
+            3
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vout",
+          "point": [
+            3,
+            5.1
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            3,
+            17.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            10,
+            17.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            17,
+            17.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            24,
+            17.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            31,
+            17.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            38,
+            17.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            3,
+            9.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            10,
+            9.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            17,
+            9.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            24,
+            9.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            31,
+            9.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            38,
+            9.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            3,
+            1.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            10,
+            1.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            17,
+            1.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "sw4",
+          "point": [
+            24,
+            1.54
+          ],
+          "text": "sw4",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            31,
+            1.54
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "switched_resistor_dac_5bit": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

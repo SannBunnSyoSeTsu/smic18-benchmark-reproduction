@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-09-22T08:52:55.102669+00:00",
+  "roles": {
+    "n18": {
+      "model": "n18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 3.2415401696088386,
+      "Id_A": 0.00019999999999999998,
+      "Vgs_V": 0.7254754513767837,
+      "Vov_V": 0.249198771721435,
+      "gmid": 6.0,
+      "gm_S": 0.0012,
+      "ft_Hz": 32215185802.995247,
+      "gmro": 32.90332607830052,
+      "id_w_Apm": 61.69906573273602,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "n18",
+        "polarity": "nmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.9,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 570
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/n18_L180nm_VDS0p900.json",
+      "lut_sha256": "62e4cceb85cc7dc8da45f8b4a3f8d0d3afa192bd08f7298ca49aecd93d26ae5c",
+      "rounded_W_um": 3.24
+    },
+    "p18": {
+      "model": "p18",
+      "corner": "tt",
+      "width_ref_um": 10.0,
+      "L_um": 0.18,
+      "W_um": 9.081566402717923,
+      "Id_A": 0.00019999999999999998,
+      "Vgs_V": 0.7624296554741613,
+      "Vov_V": 0.2846794554052909,
+      "gmid": 6.0,
+      "gm_S": 0.0012,
+      "ft_Hz": 11999782520.5754,
+      "gmro": 30.185542921642185,
+      "id_w_Apm": 22.022632564812184,
+      "lut_metadata": {
+        "schema_version": 1,
+        "process_library": "smic18mmrf",
+        "device": "p18",
+        "polarity": "pmos",
+        "corner": "tt",
+        "temperature_C": 27,
+        "vdd_V": 1.8,
+        "body_bias_V": 0.0,
+        "width_ref_um": 10.0,
+        "length_um": 0.18,
+        "vds_V": 0.9,
+        "simulator": "Cadence Spectre via Virtuoso Bridge",
+        "model_library": "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib",
+        "sign_convention": "positive magnitudes: |VGS/VSG|, |VDS/VSD|, |ID|",
+        "operating_region": "saturation only: |VDS/VSD| >= |VDSAT|",
+        "npoints": 612
+      },
+      "lut_path": "/home/IC/CodeX/gmoverid_smic18/lut/tt/p18_L180nm_VDS0p900.json",
+      "lut_sha256": "a0a33ea7b77bf2ffd643aab07b6c2e56e63633b4d9965f969021bcfff0b85577",
+      "rounded_W_um": 9.08
+    }
+  },
+  "unit_current_uA": 200,
+  "branch_switch_m": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "receiver_scale": 1,
+  "receiver_cells": [
+    "INHDV2",
+    "INHDV4",
+    "INHDV8",
+    "INHDV16",
+    "INHDV32"
+  ],
+  "dut_HD_count": 5,
+  "external_driver_cells": [
+    "INHDV3",
+    "INHDV32"
+  ],
+  "external_driver_stages": 2,
+  "external_driver_note": "Original two-stage finite-strength Sky130 buffer is migrated to exact vendor SMIC HD cells. INHDV3 total W=4.4um and INHDV32 total W=46.88um; source edge and both stages retained. Driver supply measured separately from DUT, as original.",
+  "resistor": {
+    "model": "rpposab_3t",
+    "W_um": 1,
+    "L_um": 96,
+    "unit_count": 32,
+    "groups": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      1
+    ],
+    "unit_R_estimate_Ohm": 31610.74677385234,
+    "ideal_Rout_estimate_Ohm": 987.8358366828857,
+    "ideal_avg_static_power_estimate_W": 0.0005461156967756183,
+    "substrate": "vss",
+    "parallel_unit_reason": "Identical dimensions preserve integer conductance weights including etch, substrate capacitance and voltage coefficient."
+  },
+  "internal_mim_area_um2": 0,
+  "lut_temperature_C": 27,
+  "verification_temperature_C": 27,
+  "rationale": "Runit/32 near 1kOhm balances 1pF settling and the 1mW DUT power limit. gm/ID=6, L=.18um is a strong-inversion speed starting point. At 200uA reference the switches are 3.24/9.08um, multiplied with bit conductance to hold fractional switch resistance roughly constant. This LUT reference current is not a bias current. Rail-connected switches actually operate predominantly in triode with full rail gate drive; actual waveform and rail-drop measurements validate them."
+}

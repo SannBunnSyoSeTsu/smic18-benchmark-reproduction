@@ -1,0 +1,95 @@
+{
+  "source_task": "sky130-tia-zt8k-bw750m-noise5p-sfdr70-power5m-pt",
+  "source_files": {
+    "instruction.md": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-tia-zt8k-bw750m-noise5p-sfdr70-power5m-pt/instruction.md",
+      "sha256": "42818a16fd043bbe9f1a0c54e8f001fdb8818cce9d69f28259a86b8b0baa5ec6",
+      "frozen": "cases/10-tia/source/instruction.md"
+    },
+    "solution/circuit.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-tia-zt8k-bw750m-noise5p-sfdr70-power5m-pt/solution/circuit.spi",
+      "sha256": "794f38e6c78eb2ed7daefc72a06522c2f44acc68882d1a4e0039db3ba8c39911",
+      "frozen": "cases/10-tia/source/solution/circuit.spi"
+    },
+    "tests/verify.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-tia-zt8k-bw750m-noise5p-sfdr70-power5m-pt/tests/verify.py",
+      "sha256": "189bf23abe81b23eefef0c7c7fcf2806e01bc97d12533c127873fd802b04ecf2",
+      "frozen": "cases/10-tia/source/tests/verify.py"
+    },
+    "tests/utils.py": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-tia-zt8k-bw750m-noise5p-sfdr70-power5m-pt/tests/utils.py",
+      "sha256": "8f9909aa283429e11d3d5b55b33d5e55d5c54f4bad33aaa599f1c8a35a99e299",
+      "frozen": "cases/10-tia/source/tests/utils.py"
+    },
+    "tests/benches/tb_ac_power.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-tia-zt8k-bw750m-noise5p-sfdr70-power5m-pt/tests/benches/tb_ac_power.spi",
+      "sha256": "f985b79b868e4fce19c5d20e1517720cbeeefe446b13ccb204d6829cb417e6ab",
+      "frozen": "cases/10-tia/source/tests/benches/tb_ac_power.spi"
+    },
+    "tests/benches/tb_noise.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-tia-zt8k-bw750m-noise5p-sfdr70-power5m-pt/tests/benches/tb_noise.spi",
+      "sha256": "af5d1d9bfd95794464a880f2266468e5dbd1d29839bab50dc40e4bed64a2d60f",
+      "frozen": "cases/10-tia/source/tests/benches/tb_noise.spi"
+    },
+    "tests/benches/tb_sfdr.spi": {
+      "path": "/home/IC/CodeX/Analog-Circuit-Knowledge-Base/Analog-Design-Bench-V2-Lessons/sources/upstream/tasks/sky130-tia-zt8k-bw750m-noise5p-sfdr70-power5m-pt/tests/benches/tb_sfdr.spi",
+      "sha256": "1183a1aee285b010658ed667520f8513e248c7b763d22a69bd5a745e4ca07639",
+      "frozen": "cases/10-tia/source/tests/benches/tb_sfdr.spi"
+    }
+  },
+  "corner": "tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "reference_A": 2e-05,
+  "VCM_V": 0.9,
+  "input_cap_F": 3e-13,
+  "output_cap_F": 2e-13,
+  "DUT_elements": "target MOS and finite positive resistors only",
+  "ac": {
+    "frequency_Hz": [
+      1000000.0,
+      10100000000.0
+    ],
+    "points_per_decade": 100,
+    "zt_at1MHz_min_ohm": 8000,
+    "bandwidth_min_Hz": 750000000.0,
+    "bandwidth_definition": "first upper falling crossing of |ZT(1MHz)|/sqrt(2); report lower bound10GHz only if no crossing and response at10GHz still above threshold",
+    "power_max_W": 0.005,
+    "power_definition": "abs(VDD*I(VDD))+abs(VCM*I(VCM)); IREF drawn fromVDD already"
+  },
+  "noise": {
+    "band_Hz": [
+      10000000.0,
+      500000000.0
+    ],
+    "max_density_A_per_sqrtHz": 5e-12,
+    "integrated_max_Arms": 1e-07,
+    "maximum_at_every_saved_frequency": true
+  },
+  "sfdr": {
+    "input_sine_Hz": 100000000.0,
+    "input_peak_A": 1e-05,
+    "public_diagnostic_peak_A": 5e-06,
+    "official_peak_used_A": 1e-05,
+    "stop_s": 1.7e-07,
+    "final_cycles": 16,
+    "period_s": 1e-08,
+    "samples_per_cycle": 1024,
+    "FFT_samples": 16384,
+    "window_s": [
+      1e-08,
+      1.7e-07
+    ],
+    "SFDR_min_dBc": 70,
+    "large_signal_ZT_min_ohm": 8000,
+    "definition": "Frozen sfdr_metrics: uniform np.interp resample,remove mean,2|rFFT|/N; bin16 fundamental; largest remaining nonDC line anywhere; fundamental_amplitude/10uA"
+  },
+  "nominal_only": true,
+  "excluded": [
+    "other14 process/temperature points",
+    "supply-voltage variation",
+    "extra photodiode capacitance",
+    "extracted parasitics/statistical mismatch"
+  ],
+  "relaxation": "All original comparisons are strict. Positive min*0.9/0.85,max*1.1/1.15; SFDR is amplitude fundamental/spur ratio and dB limits add20log10(.9/.85). Original load/stimulus/noise/FFT windows unchanged."
+}

@@ -1,0 +1,49 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/32-cml-tx/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-06 vabstol=1e-9 iabstol=1e-14
+saveOptions options save=selected
+VDDone (vddone 0) vsource dc=1.8
+IREFone (vddone irefone) isource dc=100u
+RQPone (voutpone vddone) resistor r=50
+RQNone (voutnone vddone) resistor r=50
+CQPone (voutpone 0) capacitor c=100f
+CQNone (voutnone 0) capacitor c=100f
+Xone (0 vddone irefone dinpone dinnone voutpone voutnone) tx_driver_28g
+save voutpone voutnone dinpone dinnone irefone VDDone:p Xone.tail
+VPone (dinpone 0) vsource dc=1.245
+VNone (dinnone 0) vsource dc=1.095
+save Xone.MREF:ids Xone.MREF:gm Xone.MREF:gds Xone.MREF:vgs Xone.MREF:vds Xone.MREF:vdsat Xone.MREF:region
+save Xone.MTAIL:ids Xone.MTAIL:gm Xone.MTAIL:gds Xone.MTAIL:vgs Xone.MTAIL:vds Xone.MTAIL:vdsat Xone.MTAIL:region
+save Xone.MPAIRP:ids Xone.MPAIRP:gm Xone.MPAIRP:gds Xone.MPAIRP:vgs Xone.MPAIRP:vds Xone.MPAIRP:vdsat Xone.MPAIRP:region
+save Xone.MPAIRN:ids Xone.MPAIRN:gm Xone.MPAIRN:gds Xone.MPAIRN:vgs Xone.MPAIRN:vds Xone.MPAIRN:vdsat Xone.MPAIRN:region
+VDDzero (vddzero 0) vsource dc=1.8
+IREFzero (vddzero irefzero) isource dc=100u
+RQPzero (voutpzero vddzero) resistor r=50
+RQNzero (voutnzero vddzero) resistor r=50
+CQPzero (voutpzero 0) capacitor c=100f
+CQNzero (voutnzero 0) capacitor c=100f
+Xzero (0 vddzero irefzero dinpzero dinnzero voutpzero voutnzero) tx_driver_28g
+save voutpzero voutnzero dinpzero dinnzero irefzero VDDzero:p Xzero.tail
+VPzero (dinpzero 0) vsource dc=1.095
+VNzero (dinnzero 0) vsource dc=1.245
+save Xzero.MREF:ids Xzero.MREF:gm Xzero.MREF:gds Xzero.MREF:vgs Xzero.MREF:vds Xzero.MREF:vdsat Xzero.MREF:region
+save Xzero.MTAIL:ids Xzero.MTAIL:gm Xzero.MTAIL:gds Xzero.MTAIL:vgs Xzero.MTAIL:vds Xzero.MTAIL:vdsat Xzero.MTAIL:region
+save Xzero.MPAIRP:ids Xzero.MPAIRP:gm Xzero.MPAIRP:gds Xzero.MPAIRP:vgs Xzero.MPAIRP:vds Xzero.MPAIRP:vdsat Xzero.MPAIRP:region
+save Xzero.MPAIRN:ids Xzero.MPAIRN:gm Xzero.MPAIRN:gds Xzero.MPAIRN:vgs Xzero.MPAIRN:vds Xzero.MPAIRN:vdsat Xzero.MPAIRN:region
+VDDoff (vddoff 0) vsource dc=1.8
+IREFoff (vddoff irefoff) isource dc=100u
+RQPoff (voutpoff vddoff) resistor r=50
+RQNoff (voutnoff vddoff) resistor r=50
+CQPoff (voutpoff 0) capacitor c=100f
+CQNoff (voutnoff 0) capacitor c=100f
+Xoff (0 vddoff irefoff dinpoff dinnoff voutpoff voutnoff) tx_driver_28g
+save voutpoff voutnoff dinpoff dinnoff irefoff VDDoff:p Xoff.tail
+VPoff (dinpoff 0) vsource dc=1.17
+VNoff (dinnoff 0) vsource dc=1.17
+save Xoff.MREF:ids Xoff.MREF:gm Xoff.MREF:gds Xoff.MREF:vgs Xoff.MREF:vds Xoff.MREF:vdsat Xoff.MREF:region
+save Xoff.MTAIL:ids Xoff.MTAIL:gm Xoff.MTAIL:gds Xoff.MTAIL:vgs Xoff.MTAIL:vds Xoff.MTAIL:vdsat Xoff.MTAIL:region
+save Xoff.MPAIRP:ids Xoff.MPAIRP:gm Xoff.MPAIRP:gds Xoff.MPAIRP:vgs Xoff.MPAIRP:vds Xoff.MPAIRP:vdsat Xoff.MPAIRP:region
+save Xoff.MPAIRN:ids Xoff.MPAIRN:gm Xoff.MPAIRN:gds Xoff.MPAIRN:vgs Xoff.MPAIRN:vds Xoff.MPAIRN:vdsat Xoff.MPAIRN:region
+dcOp dc

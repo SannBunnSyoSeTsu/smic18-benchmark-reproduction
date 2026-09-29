@@ -1,0 +1,22 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        OTA["折叠输入与对称第二级"]
+        CM["连续共模反馈"]
+    end
+    VIN["差分采样输入"]
+    CS["采样电容Cs"]
+    CF["反馈电容Cf"]
+    CLK["采样 / 复位开关夹具"]
+    LOAD["差分输出与负载"]
+    REF["共模参考"]
+    VIN -->|"采样"| CS
+    CS -->|"差分误差"| OTA
+    OTA --> LOAD
+    LOAD -->|"输出取样"| CF
+    CF -->|"Cs/Cf=8"| OTA
+    CLK -.->|"采样 / 复位"| CS
+    CLK -.->|"复位"| CF
+    LOAD -->|"平均值"| CM
+    REF -.-> CM
+    CM -.->|"共模控制"| OTA

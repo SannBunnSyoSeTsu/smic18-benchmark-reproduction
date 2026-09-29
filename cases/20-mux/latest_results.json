@@ -1,0 +1,2051 @@
+{
+  "case_slot": 20,
+  "generated_at": "2026-09-22T07:40:28.334450+00:00",
+  "run_dir": "runs/20/20260922T074025982055Z_matrix",
+  "status": "complete_original",
+  "values": {
+    "selected_gain_error_dB": 2.6057708000561632e-05,
+    "worst_off_dc_dB": -116.9803912986162,
+    "worst_off_1mhz_dB": -117.01550967120124,
+    "min_bandwidth_Hz": 24970970.6579498,
+    "max_supply_current_A": 1.370839061428022e-10
+  },
+  "gates": {
+    "selected_gain_error_dB": {
+      "value": 2.6057708000561632e-05,
+      "unit": "dB error",
+      "sense": "max",
+      "limits": {
+        "original": 0.001,
+        "10pct": 0.0011,
+        "15pct": 0.00115
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "worst_off_dc_dB": {
+      "value": -116.9803912986162,
+      "unit": "dB",
+      "sense": "max",
+      "limits": {
+        "original": -80.0,
+        "10pct": -79.17214629683549,
+        "15pct": -78.78604319292776
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "worst_off_1mhz_dB": {
+      "value": -117.01550967120124,
+      "unit": "dB",
+      "sense": "max",
+      "limits": {
+        "original": -80.0,
+        "10pct": -79.17214629683549,
+        "15pct": -78.78604319292776
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "min_bandwidth_Hz": {
+      "value": 24970970.6579498,
+      "unit": "Hz",
+      "sense": "min",
+      "limits": {
+        "original": 5000000.0,
+        "10pct": 4500000.0,
+        "15pct": 4250000.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "max_supply_current_A": {
+      "value": 1.370839061428022e-10,
+      "unit": "A",
+      "sense": "max",
+      "limits": {
+        "original": 5e-06,
+        "10pct": 5.500000000000001e-06,
+        "15pct": 5.75e-06
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "states": [
+    {
+      "common_mode_V": 0,
+      "select": 0,
+      "selected_gain_dc_dB": -2.6057708000561632e-05,
+      "selected_gain_1mhz_dB": -0.0012159706234406442,
+      "worst_off_dc": {
+        "common_mode_V": 0,
+        "select": 0,
+        "excited_input": 4,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.13524003628923
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0,
+        "select": 0,
+        "excited_input": 4,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.13524003628923
+      },
+      "bandwidth_Hz": 60292621.19897553,
+      "supply_current_A": 1.370839061428022e-10,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0,
+      "select": 1,
+      "selected_gain_dc_dB": -2.6057708000561632e-05,
+      "selected_gain_1mhz_dB": -0.0012159706234406442,
+      "worst_off_dc": {
+        "common_mode_V": 0,
+        "select": 1,
+        "excited_input": 5,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.10599259992003
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0,
+        "select": 1,
+        "excited_input": 5,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.10599259992003
+      },
+      "bandwidth_Hz": 60294435.865578465,
+      "supply_current_A": 1.049683418780363e-10,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0,
+      "select": 2,
+      "selected_gain_dc_dB": -2.6057708000561632e-05,
+      "selected_gain_1mhz_dB": -0.0012159706234406442,
+      "worst_off_dc": {
+        "common_mode_V": 0,
+        "select": 2,
+        "excited_input": 6,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.07765029418611
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0,
+        "select": 2,
+        "excited_input": 6,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.07765029418611
+      },
+      "bandwidth_Hz": 60295547.6103297,
+      "supply_current_A": 1.049683418780363e-10,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0,
+      "select": 3,
+      "selected_gain_dc_dB": -2.6057708000561632e-05,
+      "selected_gain_1mhz_dB": -0.0012159706234406442,
+      "worst_off_dc": {
+        "common_mode_V": 0,
+        "select": 3,
+        "excited_input": 7,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.05008025584883
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0,
+        "select": 3,
+        "excited_input": 7,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.05008025584883
+      },
+      "bandwidth_Hz": 60297362.93365537,
+      "supply_current_A": 7.285277853513352e-11,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0,
+      "select": 4,
+      "selected_gain_dc_dB": -2.6057708000561632e-05,
+      "selected_gain_1mhz_dB": -0.0012159706234406442,
+      "worst_off_dc": {
+        "common_mode_V": 0,
+        "select": 4,
+        "excited_input": 0,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.09653522361768
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0,
+        "select": 4,
+        "excited_input": 0,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.09653522361768
+      },
+      "bandwidth_Hz": 60296172.88629993,
+      "supply_current_A": 1.049683418780363e-10,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0,
+      "select": 5,
+      "selected_gain_dc_dB": -2.6057708000561632e-05,
+      "selected_gain_1mhz_dB": -0.0012159706234406442,
+      "worst_off_dc": {
+        "common_mode_V": 0,
+        "select": 5,
+        "excited_input": 1,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.06927719945435
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0,
+        "select": 5,
+        "excited_input": 1,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.06927719945435
+      },
+      "bandwidth_Hz": 60297889.37249263,
+      "supply_current_A": 7.285277853513352e-11,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0,
+      "select": 6,
+      "selected_gain_dc_dB": -2.6057708000561632e-05,
+      "selected_gain_1mhz_dB": -0.0012159706234406442,
+      "worst_off_dc": {
+        "common_mode_V": 0,
+        "select": 6,
+        "excited_input": 2,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.04117784975008
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0,
+        "select": 6,
+        "excited_input": 2,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.04117784975008
+      },
+      "bandwidth_Hz": 60298998.45770809,
+      "supply_current_A": 7.285277853513352e-11,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0,
+      "select": 7,
+      "selected_gain_dc_dB": -2.6057708000561632e-05,
+      "selected_gain_1mhz_dB": -0.0012159706234406442,
+      "worst_off_dc": {
+        "common_mode_V": 0,
+        "select": 7,
+        "excited_input": 3,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.01550967120124
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0,
+        "select": 7,
+        "excited_input": 3,
+        "gain_dc_dB": -116.9803912986162,
+        "gain_1mhz_dB": -117.01550967120124
+      },
+      "bandwidth_Hz": 60300693.231820434,
+      "supply_current_A": 4.073721611409381e-11,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 0,
+      "selected_gain_dc_dB": 0.0,
+      "selected_gain_1mhz_dB": -0.006921808244719201,
+      "worst_off_dc": {
+        "common_mode_V": 0.9,
+        "select": 0,
+        "excited_input": 4,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -144.73005828278662
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0.9,
+        "select": 0,
+        "excited_input": 4,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -144.73005828278662
+      },
+      "bandwidth_Hz": 24972758.424670696,
+      "supply_current_A": 1.370839061428022e-10,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 1,
+      "selected_gain_dc_dB": 0.0,
+      "selected_gain_1mhz_dB": -0.006921808244719201,
+      "worst_off_dc": {
+        "common_mode_V": 0.9,
+        "select": 1,
+        "excited_input": 5,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -143.86244478122066
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0.9,
+        "select": 1,
+        "excited_input": 5,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -143.86244478122066
+      },
+      "bandwidth_Hz": 24972563.3809388,
+      "supply_current_A": 1.049683418780363e-10,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 2,
+      "selected_gain_dc_dB": 0.0,
+      "selected_gain_1mhz_dB": -0.006921808244719201,
+      "worst_off_dc": {
+        "common_mode_V": 0.9,
+        "select": 2,
+        "excited_input": 6,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -141.32200889800225
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0.9,
+        "select": 2,
+        "excited_input": 6,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -141.32200889800225
+      },
+      "bandwidth_Hz": 24972095.96593214,
+      "supply_current_A": 1.049683418780363e-10,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 3,
+      "selected_gain_dc_dB": 0.0,
+      "selected_gain_1mhz_dB": -0.006921808244719201,
+      "worst_off_dc": {
+        "common_mode_V": 0.9,
+        "select": 3,
+        "excited_input": 7,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -140.67842932290856
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0.9,
+        "select": 3,
+        "excited_input": 7,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -140.67842932290856
+      },
+      "bandwidth_Hz": 24971893.329763558,
+      "supply_current_A": 7.285277853513352e-11,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 4,
+      "selected_gain_dc_dB": 0.0,
+      "selected_gain_1mhz_dB": -0.006921808244719201,
+      "worst_off_dc": {
+        "common_mode_V": 0.9,
+        "select": 4,
+        "excited_input": 0,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -147.10834676895155
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0.9,
+        "select": 4,
+        "excited_input": 0,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -147.10834676895155
+      },
+      "bandwidth_Hz": 24971887.14075319,
+      "supply_current_A": 1.049683418780363e-10,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 5,
+      "selected_gain_dc_dB": 0.0,
+      "selected_gain_1mhz_dB": -0.006921808244719201,
+      "worst_off_dc": {
+        "common_mode_V": 0.9,
+        "select": 5,
+        "excited_input": 1,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -145.87652649862346
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0.9,
+        "select": 5,
+        "excited_input": 1,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -145.87652649862346
+      },
+      "bandwidth_Hz": 24971684.50873952,
+      "supply_current_A": 7.285277853513352e-11,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 6,
+      "selected_gain_dc_dB": 0.0,
+      "selected_gain_1mhz_dB": -0.006921808244719201,
+      "worst_off_dc": {
+        "common_mode_V": 0.9,
+        "select": 6,
+        "excited_input": 2,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -142.77068374641615
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0.9,
+        "select": 6,
+        "excited_input": 2,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -142.77068374641615
+      },
+      "bandwidth_Hz": 24971217.06151391,
+      "supply_current_A": 7.285277853513352e-11,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 7,
+      "selected_gain_dc_dB": 0.0,
+      "selected_gain_1mhz_dB": -0.006921808244719201,
+      "worst_off_dc": {
+        "common_mode_V": 0.9,
+        "select": 7,
+        "excited_input": 3,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -141.94672483279572
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 0.9,
+        "select": 7,
+        "excited_input": 3,
+        "gain_dc_dB": -158.44573953701922,
+        "gain_1mhz_dB": -141.94672483279572
+      },
+      "bandwidth_Hz": 24970970.6579498,
+      "supply_current_A": 4.073721611409381e-11,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 0,
+      "selected_gain_dc_dB": -1.737179664746772e-05,
+      "selected_gain_1mhz_dB": -0.0014207244972048148,
+      "worst_off_dc": {
+        "common_mode_V": 1.8,
+        "select": 0,
+        "excited_input": 4,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.39932417084661
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 1.8,
+        "select": 0,
+        "excited_input": 4,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.39932417084661
+      },
+      "bandwidth_Hz": 55568589.289960526,
+      "supply_current_A": 1.370833192215165e-10,
+      "dc_copies_current_spread_A": 1.0339757656912846e-25
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 1,
+      "selected_gain_dc_dB": -1.737179664746772e-05,
+      "selected_gain_1mhz_dB": -0.0014207244972048148,
+      "worst_off_dc": {
+        "common_mode_V": 1.8,
+        "select": 1,
+        "excited_input": 5,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.46045425170718
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 1.8,
+        "select": 1,
+        "excited_input": 5,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.46045425170718
+      },
+      "bandwidth_Hz": 55566265.737631164,
+      "supply_current_A": 1.049677549567924e-10,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 2,
+      "selected_gain_dc_dB": -1.737179664746772e-05,
+      "selected_gain_1mhz_dB": -0.0014207244972048148,
+      "worst_off_dc": {
+        "common_mode_V": 1.8,
+        "select": 2,
+        "excited_input": 6,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.58956376087755
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 1.8,
+        "select": 2,
+        "excited_input": 6,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.58956376087755
+      },
+      "bandwidth_Hz": 55562684.26011005,
+      "supply_current_A": 1.049677549567924e-10,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 3,
+      "selected_gain_dc_dB": -1.737179664746772e-05,
+      "selected_gain_1mhz_dB": -0.0014207244972048148,
+      "worst_off_dc": {
+        "common_mode_V": 1.8,
+        "select": 3,
+        "excited_input": 7,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.65255043524121
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 1.8,
+        "select": 3,
+        "excited_input": 7,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.65255043524121
+      },
+      "bandwidth_Hz": 55560361.69829668,
+      "supply_current_A": 7.285219161393164e-11,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 4,
+      "selected_gain_dc_dB": -1.737179664746772e-05,
+      "selected_gain_1mhz_dB": -0.0014207244972048148,
+      "worst_off_dc": {
+        "common_mode_V": 1.8,
+        "select": 4,
+        "excited_input": 0,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.37408713424908
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 1.8,
+        "select": 4,
+        "excited_input": 0,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.37408713424908
+      },
+      "bandwidth_Hz": 55560912.1982935,
+      "supply_current_A": 1.049677549567924e-10,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 5,
+      "selected_gain_dc_dB": -1.737179664746772e-05,
+      "selected_gain_1mhz_dB": -0.0014207244972048148,
+      "worst_off_dc": {
+        "common_mode_V": 1.8,
+        "select": 5,
+        "excited_input": 1,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.43569025786425
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 1.8,
+        "select": 5,
+        "excited_input": 1,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.43569025786425
+      },
+      "bandwidth_Hz": 55558589.81148583,
+      "supply_current_A": 7.285219161393164e-11,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 6,
+      "selected_gain_dc_dB": -1.737179664746772e-05,
+      "selected_gain_1mhz_dB": -0.0014207244972048148,
+      "worst_off_dc": {
+        "common_mode_V": 1.8,
+        "select": 6,
+        "excited_input": 2,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.5645951972451
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 1.8,
+        "select": 6,
+        "excited_input": 2,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.5645951972451
+      },
+      "bandwidth_Hz": 55555010.097194314,
+      "supply_current_A": 7.285219161393164e-11,
+      "dc_copies_current_spread_A": 0.0
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 7,
+      "selected_gain_dc_dB": -1.737179664746772e-05,
+      "selected_gain_1mhz_dB": -0.0014207244972048148,
+      "worst_off_dc": {
+        "common_mode_V": 1.8,
+        "select": 7,
+        "excited_input": 3,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.62798280779127
+      },
+      "worst_off_1mhz": {
+        "common_mode_V": 1.8,
+        "select": 7,
+        "excited_input": 3,
+        "gain_dc_dB": -119.21298688029978,
+        "gain_1mhz_dB": -119.62798280779127
+      },
+      "bandwidth_Hz": 55552653.51933866,
+      "supply_current_A": 4.073662919293712e-11,
+      "dc_copies_current_spread_A": 0.0
+    }
+  ],
+  "transfers": [
+    {
+      "common_mode_V": 0,
+      "select": 0,
+      "excited_input": 0,
+      "gain_dc_dB": -2.6057708000561632e-05,
+      "gain_1mhz_dB": -0.0012159706234406442,
+      "bandwidth_Hz": 60292621.19897553
+    },
+    {
+      "common_mode_V": 0,
+      "select": 0,
+      "excited_input": 1,
+      "gain_dc_dB": -126.18686560818583,
+      "gain_1mhz_dB": -126.22874757511524
+    },
+    {
+      "common_mode_V": 0,
+      "select": 0,
+      "excited_input": 2,
+      "gain_dc_dB": -120.41699366640265,
+      "gain_1mhz_dB": -120.51853278293775
+    },
+    {
+      "common_mode_V": 0,
+      "select": 0,
+      "excited_input": 3,
+      "gain_dc_dB": -246.60384748700142,
+      "gain_1mhz_dB": -172.795134402598
+    },
+    {
+      "common_mode_V": 0,
+      "select": 0,
+      "excited_input": 4,
+      "gain_dc_dB": -116.9803912986162,
+      "gain_1mhz_dB": -117.13524003628923
+    },
+    {
+      "common_mode_V": 0,
+      "select": 0,
+      "excited_input": 5,
+      "gain_dc_dB": -243.16723038553397,
+      "gain_1mhz_dB": -172.79596820288114
+    },
+    {
+      "common_mode_V": 0,
+      "select": 0,
+      "excited_input": 6,
+      "gain_dc_dB": -237.3973789913555,
+      "gain_1mhz_dB": -159.21467023961418
+    },
+    {
+      "common_mode_V": 0,
+      "select": 0,
+      "excited_input": 7,
+      "gain_dc_dB": -363.58420486904043,
+      "gain_1mhz_dB": -172.79335338667974
+    },
+    {
+      "common_mode_V": 0,
+      "select": 1,
+      "excited_input": 0,
+      "gain_dc_dB": -126.18686560818583,
+      "gain_1mhz_dB": -126.20014335247126
+    },
+    {
+      "common_mode_V": 0,
+      "select": 1,
+      "excited_input": 1,
+      "gain_dc_dB": -2.6057708000561632e-05,
+      "gain_1mhz_dB": -0.0012159706234406442,
+      "bandwidth_Hz": 60294435.865578465
+    },
+    {
+      "common_mode_V": 0,
+      "select": 1,
+      "excited_input": 2,
+      "gain_dc_dB": -246.60384748700142,
+      "gain_1mhz_dB": -183.32947124247772
+    },
+    {
+      "common_mode_V": 0,
+      "select": 1,
+      "excited_input": 3,
+      "gain_dc_dB": -120.41699366640265,
+      "gain_1mhz_dB": -120.47709731491682
+    },
+    {
+      "common_mode_V": 0,
+      "select": 1,
+      "excited_input": 4,
+      "gain_dc_dB": -243.16723038553397,
+      "gain_1mhz_dB": -183.33227557050373
+    },
+    {
+      "common_mode_V": 0,
+      "select": 1,
+      "excited_input": 5,
+      "gain_dc_dB": -116.9803912986162,
+      "gain_1mhz_dB": -117.10599259992003
+    },
+    {
+      "common_mode_V": 0,
+      "select": 1,
+      "excited_input": 6,
+      "gain_dc_dB": -363.58420486904043,
+      "gain_1mhz_dB": -183.3235087289049
+    },
+    {
+      "common_mode_V": 0,
+      "select": 1,
+      "excited_input": 7,
+      "gain_dc_dB": -237.3973789913555,
+      "gain_1mhz_dB": -163.82044953294297
+    },
+    {
+      "common_mode_V": 0,
+      "select": 2,
+      "excited_input": 0,
+      "gain_dc_dB": -120.41699366640265,
+      "gain_1mhz_dB": -120.48481037123027
+    },
+    {
+      "common_mode_V": 0,
+      "select": 2,
+      "excited_input": 1,
+      "gain_dc_dB": -246.60382890869096,
+      "gain_1mhz_dB": -173.33972446165996
+    },
+    {
+      "common_mode_V": 0,
+      "select": 2,
+      "excited_input": 2,
+      "gain_dc_dB": -2.6057708000561632e-05,
+      "gain_1mhz_dB": -0.0012159706234406442,
+      "bandwidth_Hz": 60295547.6103297
+    },
+    {
+      "common_mode_V": 0,
+      "select": 2,
+      "excited_input": 3,
+      "gain_dc_dB": -126.18686560818583,
+      "gain_1mhz_dB": -126.22627430963004
+    },
+    {
+      "common_mode_V": 0,
+      "select": 2,
+      "excited_input": 4,
+      "gain_dc_dB": -237.3973789913555,
+      "gain_1mhz_dB": -162.75563016807376
+    },
+    {
+      "common_mode_V": 0,
+      "select": 2,
+      "excited_input": 5,
+      "gain_dc_dB": -363.58420486904043,
+      "gain_1mhz_dB": -173.3378282167836
+    },
+    {
+      "common_mode_V": 0,
+      "select": 2,
+      "excited_input": 6,
+      "gain_dc_dB": -116.9803912986162,
+      "gain_1mhz_dB": -117.07765029418611
+    },
+    {
+      "common_mode_V": 0,
+      "select": 2,
+      "excited_input": 7,
+      "gain_dc_dB": -243.16723038553397,
+      "gain_1mhz_dB": -173.34061222323575
+    },
+    {
+      "common_mode_V": 0,
+      "select": 3,
+      "excited_input": 0,
+      "gain_dc_dB": -246.60382890869096,
+      "gain_1mhz_dB": -184.477143712449
+    },
+    {
+      "common_mode_V": 0,
+      "select": 3,
+      "excited_input": 1,
+      "gain_dc_dB": -120.41699366640265,
+      "gain_1mhz_dB": -120.44526316567458
+    },
+    {
+      "common_mode_V": 0,
+      "select": 3,
+      "excited_input": 2,
+      "gain_dc_dB": -126.18686560818583,
+      "gain_1mhz_dB": -126.19863582427544
+    },
+    {
+      "common_mode_V": 0,
+      "select": 3,
+      "excited_input": 3,
+      "gain_dc_dB": -2.6057708000561632e-05,
+      "gain_1mhz_dB": -0.0012159706234406442,
+      "bandwidth_Hz": 60297362.93365537
+    },
+    {
+      "common_mode_V": 0,
+      "select": 3,
+      "excited_input": 4,
+      "gain_dc_dB": -363.5841917463096,
+      "gain_1mhz_dB": -184.47035379648418
+    },
+    {
+      "common_mode_V": 0,
+      "select": 3,
+      "excited_input": 5,
+      "gain_dc_dB": -237.3973789913555,
+      "gain_1mhz_dB": -170.55706746617824
+    },
+    {
+      "common_mode_V": 0,
+      "select": 3,
+      "excited_input": 6,
+      "gain_dc_dB": -243.16723038553397,
+      "gain_1mhz_dB": -184.48038790141615
+    },
+    {
+      "common_mode_V": 0,
+      "select": 3,
+      "excited_input": 7,
+      "gain_dc_dB": -116.9803912986162,
+      "gain_1mhz_dB": -117.05008025584883
+    },
+    {
+      "common_mode_V": 0,
+      "select": 4,
+      "excited_input": 0,
+      "gain_dc_dB": -116.9803912986162,
+      "gain_1mhz_dB": -117.09653522361768
+    },
+    {
+      "common_mode_V": 0,
+      "select": 4,
+      "excited_input": 1,
+      "gain_dc_dB": -243.16723038553397,
+      "gain_1mhz_dB": -173.67275450431623
+    },
+    {
+      "common_mode_V": 0,
+      "select": 4,
+      "excited_input": 2,
+      "gain_dc_dB": -237.3973789913555,
+      "gain_1mhz_dB": -159.94497812661237
+    },
+    {
+      "common_mode_V": 0,
+      "select": 4,
+      "excited_input": 3,
+      "gain_dc_dB": -363.58420486904043,
+      "gain_1mhz_dB": -173.66986199613288
+    },
+    {
+      "common_mode_V": 0,
+      "select": 4,
+      "excited_input": 4,
+      "gain_dc_dB": -2.6057708000561632e-05,
+      "gain_1mhz_dB": -0.0012159706234406442,
+      "bandwidth_Hz": 60296172.88629993
+    },
+    {
+      "common_mode_V": 0,
+      "select": 4,
+      "excited_input": 5,
+      "gain_dc_dB": -126.18686560818583,
+      "gain_1mhz_dB": -126.22483340163642
+    },
+    {
+      "common_mode_V": 0,
+      "select": 4,
+      "excited_input": 6,
+      "gain_dc_dB": -120.41699366640265,
+      "gain_1mhz_dB": -120.51040314878938
+    },
+    {
+      "common_mode_V": 0,
+      "select": 4,
+      "excited_input": 7,
+      "gain_dc_dB": -246.60384748700142,
+      "gain_1mhz_dB": -173.67183213985595
+    },
+    {
+      "common_mode_V": 0,
+      "select": 5,
+      "excited_input": 0,
+      "gain_dc_dB": -243.16723038553397,
+      "gain_1mhz_dB": -185.22280168568932
+    },
+    {
+      "common_mode_V": 0,
+      "select": 5,
+      "excited_input": 1,
+      "gain_dc_dB": -116.9803912986162,
+      "gain_1mhz_dB": -117.06927719945435
+    },
+    {
+      "common_mode_V": 0,
+      "select": 5,
+      "excited_input": 2,
+      "gain_dc_dB": -363.5841917463096,
+      "gain_1mhz_dB": -185.21187278191329
+    },
+    {
+      "common_mode_V": 0,
+      "select": 5,
+      "excited_input": 3,
+      "gain_dc_dB": -237.3973789913555,
+      "gain_1mhz_dB": -164.69972027712348
+    },
+    {
+      "common_mode_V": 0,
+      "select": 5,
+      "excited_input": 4,
+      "gain_dc_dB": -126.18686560818583,
+      "gain_1mhz_dB": -126.19776691019098
+    },
+    {
+      "common_mode_V": 0,
+      "select": 5,
+      "excited_input": 5,
+      "gain_dc_dB": -2.6057708000561632e-05,
+      "gain_1mhz_dB": -0.0012159706234406442,
+      "bandwidth_Hz": 60297889.37249263
+    },
+    {
+      "common_mode_V": 0,
+      "select": 5,
+      "excited_input": 6,
+      "gain_dc_dB": -246.60384748700142,
+      "gain_1mhz_dB": -185.2192839065569
+    },
+    {
+      "common_mode_V": 0,
+      "select": 5,
+      "excited_input": 7,
+      "gain_dc_dB": -120.41699366640265,
+      "gain_1mhz_dB": -120.47140902558473
+    },
+    {
+      "common_mode_V": 0,
+      "select": 6,
+      "excited_input": 0,
+      "gain_dc_dB": -237.3973789913555,
+      "gain_1mhz_dB": -163.76104692121925
+    },
+    {
+      "common_mode_V": 0,
+      "select": 6,
+      "excited_input": 1,
+      "gain_dc_dB": -363.5841917463096,
+      "gain_1mhz_dB": -174.2742497520832
+    },
+    {
+      "common_mode_V": 0,
+      "select": 6,
+      "excited_input": 2,
+      "gain_dc_dB": -116.9803912986162,
+      "gain_1mhz_dB": -117.04117784975008
+    },
+    {
+      "common_mode_V": 0,
+      "select": 6,
+      "excited_input": 3,
+      "gain_dc_dB": -243.16723038553397,
+      "gain_1mhz_dB": -174.27735074156624
+    },
+    {
+      "common_mode_V": 0,
+      "select": 6,
+      "excited_input": 4,
+      "gain_dc_dB": -120.41699366640265,
+      "gain_1mhz_dB": -120.4775015226224
+    },
+    {
+      "common_mode_V": 0,
+      "select": 6,
+      "excited_input": 5,
+      "gain_dc_dB": -246.60382890869096,
+      "gain_1mhz_dB": -174.27636189091226
+    },
+    {
+      "common_mode_V": 0,
+      "select": 6,
+      "excited_input": 6,
+      "gain_dc_dB": -2.6057708000561632e-05,
+      "gain_1mhz_dB": -0.0012159706234406442,
+      "bandwidth_Hz": 60298998.45770809
+    },
+    {
+      "common_mode_V": 0,
+      "select": 6,
+      "excited_input": 7,
+      "gain_dc_dB": -126.18686560818583,
+      "gain_1mhz_dB": -126.22236125305614
+    },
+    {
+      "common_mode_V": 0,
+      "select": 7,
+      "excited_input": 0,
+      "gain_dc_dB": -363.5841917463096,
+      "gain_1mhz_dB": -186.66167299707715
+    },
+    {
+      "common_mode_V": 0,
+      "select": 7,
+      "excited_input": 1,
+      "gain_dc_dB": -237.3973789913555,
+      "gain_1mhz_dB": -172.2789570287032
+    },
+    {
+      "common_mode_V": 0,
+      "select": 7,
+      "excited_input": 2,
+      "gain_dc_dB": -243.16723038553397,
+      "gain_1mhz_dB": -186.67464484767387
+    },
+    {
+      "common_mode_V": 0,
+      "select": 7,
+      "excited_input": 3,
+      "gain_dc_dB": -116.9803912986162,
+      "gain_1mhz_dB": -117.01550967120124
+    },
+    {
+      "common_mode_V": 0,
+      "select": 7,
+      "excited_input": 4,
+      "gain_dc_dB": -246.60382890869096,
+      "gain_1mhz_dB": -186.67041233730353
+    },
+    {
+      "common_mode_V": 0,
+      "select": 7,
+      "excited_input": 5,
+      "gain_dc_dB": -120.41699366640265,
+      "gain_1mhz_dB": -120.44038161212046
+    },
+    {
+      "common_mode_V": 0,
+      "select": 7,
+      "excited_input": 6,
+      "gain_dc_dB": -126.18686560818583,
+      "gain_1mhz_dB": -126.19627751889053
+    },
+    {
+      "common_mode_V": 0,
+      "select": 7,
+      "excited_input": 7,
+      "gain_dc_dB": -2.6057708000561632e-05,
+      "gain_1mhz_dB": -0.0012159706234406442,
+      "bandwidth_Hz": 60300693.231820434
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 0,
+      "excited_input": 0,
+      "gain_dc_dB": 0.0,
+      "gain_1mhz_dB": -0.006921808244719201,
+      "bandwidth_Hz": 24972758.424670696
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 0,
+      "excited_input": 1,
+      "gain_dc_dB": -167.84410360977705,
+      "gain_1mhz_dB": -172.92159502340644
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 0,
+      "excited_input": 2,
+      "gain_dc_dB": -161.93133026756755,
+      "gain_1mhz_dB": -152.57989271668052
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 0,
+      "excited_input": 3,
+      "gain_dc_dB": -329.7754383114539,
+      "gain_1mhz_dB": -164.00083863388653
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 0,
+      "excited_input": 4,
+      "gain_dc_dB": -158.44573953701922,
+      "gain_1mhz_dB": -144.73005828278662
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 0,
+      "excited_input": 5,
+      "gain_dc_dB": -326.2898586670909,
+      "gain_1mhz_dB": -164.00083863388653
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 0,
+      "excited_input": 6,
+      "gain_dc_dB": -320.37707013432725,
+      "gain_1mhz_dB": -150.03472506085527
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 0,
+      "excited_input": 7,
+      "gain_dc_dB": -487.7508583631924,
+      "gain_1mhz_dB": -164.00083863388653
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 1,
+      "excited_input": 0,
+      "gain_dc_dB": -167.84412503967107,
+      "gain_1mhz_dB": -177.51343568132842
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 1,
+      "excited_input": 1,
+      "gain_dc_dB": 0.0,
+      "gain_1mhz_dB": -0.006921808244719201,
+      "bandwidth_Hz": 24972563.3809388
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 1,
+      "excited_input": 2,
+      "gain_dc_dB": -329.7754383114539,
+      "gain_1mhz_dB": -171.31346309214953
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 1,
+      "excited_input": 3,
+      "gain_dc_dB": -161.93133026756755,
+      "gain_1mhz_dB": -150.42998249209316
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 1,
+      "excited_input": 4,
+      "gain_dc_dB": -326.2898586670909,
+      "gain_1mhz_dB": -171.31346309214953
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 1,
+      "excited_input": 5,
+      "gain_dc_dB": -158.44573953701922,
+      "gain_1mhz_dB": -143.86244478122066
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 1,
+      "excited_input": 6,
+      "gain_dc_dB": -488.2817015166649,
+      "gain_1mhz_dB": -171.31346309214953
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 1,
+      "excited_input": 7,
+      "gain_dc_dB": -320.37707013432725,
+      "gain_1mhz_dB": -148.38256287756943
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 2,
+      "excited_input": 0,
+      "gain_dc_dB": -161.93133026756755,
+      "gain_1mhz_dB": -156.20395959236606
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 2,
+      "excited_input": 1,
+      "gain_dc_dB": -329.7754383114539,
+      "gain_1mhz_dB": -164.50522084517266
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 2,
+      "excited_input": 2,
+      "gain_dc_dB": 0.0,
+      "gain_1mhz_dB": -0.006921808244719201,
+      "bandwidth_Hz": 24972095.96593214
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 2,
+      "excited_input": 3,
+      "gain_dc_dB": -167.84410360977705,
+      "gain_1mhz_dB": -174.41072727586524
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 2,
+      "excited_input": 4,
+      "gain_dc_dB": -320.37707013432725,
+      "gain_1mhz_dB": -152.58563334850092
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 2,
+      "excited_input": 5,
+      "gain_dc_dB": -487.778681849752,
+      "gain_1mhz_dB": -164.50522084517266
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 2,
+      "excited_input": 6,
+      "gain_dc_dB": -158.44573953701922,
+      "gain_1mhz_dB": -141.32200889800225
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 2,
+      "excited_input": 7,
+      "gain_dc_dB": -326.2898586670909,
+      "gain_1mhz_dB": -164.50522084517266
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 3,
+      "excited_input": 0,
+      "gain_dc_dB": -329.7754383114539,
+      "gain_1mhz_dB": -172.0845953443509
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 3,
+      "excited_input": 1,
+      "gain_dc_dB": -161.93133026756755,
+      "gain_1mhz_dB": -152.958740136583
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 3,
+      "excited_input": 2,
+      "gain_dc_dB": -167.84412503967107,
+      "gain_1mhz_dB": -176.12418981730332
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 3,
+      "excited_input": 3,
+      "gain_dc_dB": 0.0,
+      "gain_1mhz_dB": -0.006921808244719201,
+      "bandwidth_Hz": 24971893.329763558
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 3,
+      "excited_input": 4,
+      "gain_dc_dB": -488.2754608094154,
+      "gain_1mhz_dB": -172.0845953443509
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 3,
+      "excited_input": 5,
+      "gain_dc_dB": -320.37707013432725,
+      "gain_1mhz_dB": -150.3157702067218
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 3,
+      "excited_input": 6,
+      "gain_dc_dB": -326.2898586670909,
+      "gain_1mhz_dB": -172.0845953443509
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 3,
+      "excited_input": 7,
+      "gain_dc_dB": -158.44573953701922,
+      "gain_1mhz_dB": -140.67842932290856
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 4,
+      "excited_input": 0,
+      "gain_dc_dB": -158.44573953701922,
+      "gain_1mhz_dB": -147.10834676895155
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 4,
+      "excited_input": 1,
+      "gain_dc_dB": -326.2898586670909,
+      "gain_1mhz_dB": -164.81719513827247
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 4,
+      "excited_input": 2,
+      "gain_dc_dB": -320.37707013432725,
+      "gain_1mhz_dB": -150.76058260830823
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 4,
+      "excited_input": 3,
+      "gain_dc_dB": -487.753694397854,
+      "gain_1mhz_dB": -164.81719513827247
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 4,
+      "excited_input": 4,
+      "gain_dc_dB": 0.0,
+      "gain_1mhz_dB": -0.006921808244719201,
+      "bandwidth_Hz": 24971887.14075319
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 4,
+      "excited_input": 5,
+      "gain_dc_dB": -167.84410360977705,
+      "gain_1mhz_dB": -175.42641911105082
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 4,
+      "excited_input": 6,
+      "gain_dc_dB": -161.93133026756755,
+      "gain_1mhz_dB": -153.56740773518277
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 4,
+      "excited_input": 7,
+      "gain_dc_dB": -329.7754383114539,
+      "gain_1mhz_dB": -164.81719513827247
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 5,
+      "excited_input": 0,
+      "gain_dc_dB": -326.2898586670909,
+      "gain_1mhz_dB": -172.57392678868857
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 5,
+      "excited_input": 1,
+      "gain_dc_dB": -158.44573953701922,
+      "gain_1mhz_dB": -145.87652649862346
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 5,
+      "excited_input": 2,
+      "gain_dc_dB": -488.2730827344077,
+      "gain_1mhz_dB": -172.57392680367738
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 5,
+      "excited_input": 3,
+      "gain_dc_dB": -320.37707013432725,
+      "gain_1mhz_dB": -148.8385736514782
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 5,
+      "excited_input": 4,
+      "gain_dc_dB": -167.84412503967107,
+      "gain_1mhz_dB": -175.3978280449612
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 5,
+      "excited_input": 5,
+      "gain_dc_dB": 0.0,
+      "gain_1mhz_dB": -0.006921808244719201,
+      "bandwidth_Hz": 24971684.50873952
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 5,
+      "excited_input": 6,
+      "gain_dc_dB": -329.7754383114539,
+      "gain_1mhz_dB": -172.57392680367738
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 5,
+      "excited_input": 7,
+      "gain_dc_dB": -161.93133026756755,
+      "gain_1mhz_dB": -151.01134713453138
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 6,
+      "excited_input": 0,
+      "gain_dc_dB": -320.37707013432725,
+      "gain_1mhz_dB": -153.49188299170504
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 6,
+      "excited_input": 1,
+      "gain_dc_dB": -487.7811235456539,
+      "gain_1mhz_dB": -165.37290437051357
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 6,
+      "excited_input": 2,
+      "gain_dc_dB": -158.44573953701922,
+      "gain_1mhz_dB": -142.77068374641615
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 6,
+      "excited_input": 3,
+      "gain_dc_dB": -326.2898586670909,
+      "gain_1mhz_dB": -165.37290437051357
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 6,
+      "excited_input": 4,
+      "gain_dc_dB": -161.93133026756755,
+      "gain_1mhz_dB": -157.61833902154217
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 6,
+      "excited_input": 5,
+      "gain_dc_dB": -329.7754383114539,
+      "gain_1mhz_dB": -165.37290437051357
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 6,
+      "excited_input": 6,
+      "gain_dc_dB": 0.0,
+      "gain_1mhz_dB": -0.006921808244719201,
+      "bandwidth_Hz": 24971217.06151391
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 6,
+      "excited_input": 7,
+      "gain_dc_dB": -167.84410360977705,
+      "gain_1mhz_dB": -177.47630357979057
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 7,
+      "excited_input": 0,
+      "gain_dc_dB": -488.2666423494197,
+      "gain_1mhz_dB": -173.47191922115653
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 7,
+      "excited_input": 1,
+      "gain_dc_dB": -320.37707013432725,
+      "gain_1mhz_dB": -150.82901175879252
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 7,
+      "excited_input": 2,
+      "gain_dc_dB": -326.2898586670909,
+      "gain_1mhz_dB": -173.47191922115653
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 7,
+      "excited_input": 3,
+      "gain_dc_dB": -158.44573953701922,
+      "gain_1mhz_dB": -141.94672483279572
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 7,
+      "excited_input": 4,
+      "gain_dc_dB": -329.7754383114539,
+      "gain_1mhz_dB": -173.47191922115653
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 7,
+      "excited_input": 5,
+      "gain_dc_dB": -161.93133026756755,
+      "gain_1mhz_dB": -153.66208337242415
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 7,
+      "excited_input": 6,
+      "gain_dc_dB": -167.84412503967107,
+      "gain_1mhz_dB": -174.29064602963228
+    },
+    {
+      "common_mode_V": 0.9,
+      "select": 7,
+      "excited_input": 7,
+      "gain_dc_dB": 0.0,
+      "gain_1mhz_dB": -0.006921808244719201,
+      "bandwidth_Hz": 24970970.6579498
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 0,
+      "excited_input": 0,
+      "gain_dc_dB": -1.737179664746772e-05,
+      "gain_1mhz_dB": -0.0014207244972048148,
+      "bandwidth_Hz": 55568589.289960526
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 0,
+      "excited_input": 1,
+      "gain_dc_dB": -128.4363648653468,
+      "gain_1mhz_dB": -128.50046008409979
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 0,
+      "excited_input": 2,
+      "gain_dc_dB": -122.65392722090306,
+      "gain_1mhz_dB": -122.79629646453716
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 0,
+      "excited_input": 3,
+      "gain_dc_dB": -251.09028230563442,
+      "gain_1mhz_dB": -170.43358017128983
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 0,
+      "excited_input": 4,
+      "gain_dc_dB": -119.21298688029978,
+      "gain_1mhz_dB": -119.39932417084661
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 0,
+      "excited_input": 5,
+      "gain_dc_dB": -247.64929975378527,
+      "gain_1mhz_dB": -170.43395505186092
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 0,
+      "excited_input": 6,
+      "gain_dc_dB": -241.86687872076178,
+      "gain_1mhz_dB": -158.1185079919385
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 0,
+      "excited_input": 7,
+      "gain_dc_dB": -370.30321662769376,
+      "gain_1mhz_dB": -170.4327727862941
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 1,
+      "excited_input": 0,
+      "gain_dc_dB": -128.43638780744445,
+      "gain_1mhz_dB": -128.47303988921257
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 1,
+      "excited_input": 1,
+      "gain_dc_dB": -1.737179664746772e-05,
+      "gain_1mhz_dB": -0.0014207244972048148,
+      "bandwidth_Hz": 55566265.737631164
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 1,
+      "excited_input": 2,
+      "gain_dc_dB": -251.09031344639394,
+      "gain_1mhz_dB": -174.80981999049203
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 1,
+      "excited_input": 3,
+      "gain_dc_dB": -122.65392722090306,
+      "gain_1mhz_dB": -122.88869951412322
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 1,
+      "excited_input": 4,
+      "gain_dc_dB": -247.6493416630786,
+      "gain_1mhz_dB": -174.81044045049805
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 1,
+      "excited_input": 5,
+      "gain_dc_dB": -119.21298688029978,
+      "gain_1mhz_dB": -119.46045425170718
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 1,
+      "excited_input": 6,
+      "gain_dc_dB": -370.30324507072316,
+      "gain_1mhz_dB": -174.80848372971454
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 1,
+      "excited_input": 7,
+      "gain_dc_dB": -241.86687872076178,
+      "gain_1mhz_dB": -153.93869168967936
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 2,
+      "excited_input": 0,
+      "gain_dc_dB": -122.6539625907196,
+      "gain_1mhz_dB": -122.77256573254654
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 2,
+      "excited_input": 1,
+      "gain_dc_dB": -251.09031344639394,
+      "gain_1mhz_dB": -170.7427585185151
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 2,
+      "excited_input": 2,
+      "gain_dc_dB": -1.737179664746772e-05,
+      "gain_1mhz_dB": -0.0014207244972048148,
+      "bandwidth_Hz": 55562684.26011005
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 2,
+      "excited_input": 3,
+      "gain_dc_dB": -128.4363648653468,
+      "gain_1mhz_dB": -128.49803512543264
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 2,
+      "excited_input": 4,
+      "gain_dc_dB": -241.8669110265473,
+      "gain_1mhz_dB": -159.63272934818966
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 2,
+      "excited_input": 5,
+      "gain_dc_dB": -370.30324507072305,
+      "gain_1mhz_dB": -170.74192187216903
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 2,
+      "excited_input": 6,
+      "gain_dc_dB": -119.21298688029978,
+      "gain_1mhz_dB": -119.58956376087755
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 2,
+      "excited_input": 7,
+      "gain_dc_dB": -247.6493207084067,
+      "gain_1mhz_dB": -170.74311707400582
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 3,
+      "excited_input": 0,
+      "gain_dc_dB": -251.09034458726512,
+      "gain_1mhz_dB": -175.17877919036846
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 3,
+      "excited_input": 1,
+      "gain_dc_dB": -122.6539625907196,
+      "gain_1mhz_dB": -122.86539178429139
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 3,
+      "excited_input": 2,
+      "gain_dc_dB": -128.43638780744445,
+      "gain_1mhz_dB": -128.471290124446
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 3,
+      "excited_input": 3,
+      "gain_dc_dB": -1.737179664746772e-05,
+      "gain_1mhz_dB": -0.0014207244972048148,
+      "bandwidth_Hz": 55560361.69829668
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 3,
+      "excited_input": 4,
+      "gain_dc_dB": -370.3032735138456,
+      "gain_1mhz_dB": -175.17738495766287
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 3,
+      "excited_input": 5,
+      "gain_dc_dB": -241.8669110265473,
+      "gain_1mhz_dB": -154.8161470774507
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 3,
+      "excited_input": 6,
+      "gain_dc_dB": -247.6493416630786,
+      "gain_1mhz_dB": -175.1793767385326
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 3,
+      "excited_input": 7,
+      "gain_dc_dB": -119.21298688029978,
+      "gain_1mhz_dB": -119.65255043524121
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 4,
+      "excited_input": 0,
+      "gain_dc_dB": -119.21298688029978,
+      "gain_1mhz_dB": -119.37408713424908
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 4,
+      "excited_input": 1,
+      "gain_dc_dB": -247.6493416630786,
+      "gain_1mhz_dB": -170.9092852910373
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 4,
+      "excited_input": 2,
+      "gain_dc_dB": -241.8669110265473,
+      "gain_1mhz_dB": -158.59233859624126
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 4,
+      "excited_input": 3,
+      "gain_dc_dB": -370.30324507072305,
+      "gain_1mhz_dB": -170.90800604080428
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 4,
+      "excited_input": 4,
+      "gain_dc_dB": -1.737179664746772e-05,
+      "gain_1mhz_dB": -0.0014207244972048148,
+      "bandwidth_Hz": 55560912.1982935
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 4,
+      "excited_input": 5,
+      "gain_dc_dB": -128.4363648653468,
+      "gain_1mhz_dB": -128.49676514913062
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 4,
+      "excited_input": 6,
+      "gain_dc_dB": -122.65392722090306,
+      "gain_1mhz_dB": -122.78839491246572
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 4,
+      "excited_input": 7,
+      "gain_dc_dB": -251.09028230563442,
+      "gain_1mhz_dB": -170.90885883836532
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 5,
+      "excited_input": 0,
+      "gain_dc_dB": -247.64938357257418,
+      "gain_1mhz_dB": -175.3787381171511
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 5,
+      "excited_input": 1,
+      "gain_dc_dB": -119.21298688029978,
+      "gain_1mhz_dB": -119.43569025786425
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 5,
+      "excited_input": 2,
+      "gain_dc_dB": -370.3032735138456,
+      "gain_1mhz_dB": -175.37664911802074
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 5,
+      "excited_input": 3,
+      "gain_dc_dB": -241.8669110265473,
+      "gain_1mhz_dB": -154.20004128717792
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 5,
+      "excited_input": 4,
+      "gain_dc_dB": -128.43638780744445,
+      "gain_1mhz_dB": -128.47039234200903
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 5,
+      "excited_input": 5,
+      "gain_dc_dB": -1.737179664746772e-05,
+      "gain_1mhz_dB": -0.0014207244972048148,
+      "bandwidth_Hz": 55558589.81148583
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 5,
+      "excited_input": 6,
+      "gain_dc_dB": -251.09031344639394,
+      "gain_1mhz_dB": -175.37802469772956
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 5,
+      "excited_input": 7,
+      "gain_dc_dB": -122.65392722090306,
+      "gain_1mhz_dB": -122.88148769220257
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 6,
+      "excited_input": 0,
+      "gain_dc_dB": -241.86694333245296,
+      "gain_1mhz_dB": -160.1597977964226
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 6,
+      "excited_input": 1,
+      "gain_dc_dB": -370.3032735138456,
+      "gain_1mhz_dB": -171.23487210133655
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 6,
+      "excited_input": 2,
+      "gain_dc_dB": -119.21298688029978,
+      "gain_1mhz_dB": -119.5645951972451
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 6,
+      "excited_input": 3,
+      "gain_dc_dB": -247.6493416630786,
+      "gain_1mhz_dB": -171.2361687567824
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 6,
+      "excited_input": 4,
+      "gain_dc_dB": -122.6539625907196,
+      "gain_1mhz_dB": -122.76523469123819
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 6,
+      "excited_input": 5,
+      "gain_dc_dB": -251.09031344639394,
+      "gain_1mhz_dB": -171.23575759885702
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 6,
+      "excited_input": 6,
+      "gain_dc_dB": -1.737179664746772e-05,
+      "gain_1mhz_dB": -0.0014207244972048148,
+      "bandwidth_Hz": 55555010.097194314
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 6,
+      "excited_input": 7,
+      "gain_dc_dB": -128.4363648653468,
+      "gain_1mhz_dB": -128.49434122007605
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 7,
+      "excited_input": 0,
+      "gain_dc_dB": -370.3033019570613,
+      "gain_1mhz_dB": -175.77100896366636
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 7,
+      "excited_input": 1,
+      "gain_dc_dB": -241.86694333245296,
+      "gain_1mhz_dB": -155.08347214367967
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 7,
+      "excited_input": 2,
+      "gain_dc_dB": -247.64938357257418,
+      "gain_1mhz_dB": -175.77314165520963
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 7,
+      "excited_input": 3,
+      "gain_dc_dB": -119.21298688029978,
+      "gain_1mhz_dB": -119.62798280779127
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 7,
+      "excited_input": 4,
+      "gain_dc_dB": -251.09034458726512,
+      "gain_1mhz_dB": -175.7725018321924
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 7,
+      "excited_input": 5,
+      "gain_dc_dB": -122.6539625907196,
+      "gain_1mhz_dB": -122.85874208500441
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 7,
+      "excited_input": 6,
+      "gain_dc_dB": -128.43638780744445,
+      "gain_1mhz_dB": -128.46864311438026
+    },
+    {
+      "common_mode_V": 1.8,
+      "select": 7,
+      "excited_input": 7,
+      "gain_dc_dB": -1.737179664746772e-05,
+      "gain_1mhz_dB": -0.0014207244972048148,
+      "bandwidth_Hz": 55552653.51933866
+    }
+  ],
+  "on_resistance": [
+    {
+      "common_mode_V": 0,
+      "stage_Ron_Ohm": [
+        823.3234145692785,
+        823.3234145692777,
+        823.3234145692508
+      ],
+      "path_Ron_Ohm": 2469.970243707807
+    },
+    {
+      "common_mode_V": 0.9,
+      "stage_Ron_Ohm": [
+        1974.209954296225,
+        1974.209954293289,
+        1974.20995429062
+      ],
+      "path_Ron_Ohm": 5922.629862880134
+    },
+    {
+      "common_mode_V": 1.8,
+      "stage_Ron_Ohm": [
+        870.8092883343439,
+        870.8092883348544,
+        870.8092883350014
+      ],
+      "path_Ron_Ohm": 2612.4278650041997
+    }
+  ],
+  "all_nominal_checks_complete": true,
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "model_dimensions_valid": true,
+  "scope": "TT/1.8V/40C, all3 common modes, all8 selects, all8 independent transfers each. Other4PVT rows not run."
+}

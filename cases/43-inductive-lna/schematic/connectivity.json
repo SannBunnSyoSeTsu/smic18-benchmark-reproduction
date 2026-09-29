@@ -1,0 +1,5436 @@
+{
+  "generated_at": "2026-09-26T06:27:14.051779+00:00",
+  "circuit_sha256": "dfceb74aacbcd14aeab9a680577996f67fbf2ffc8c7b4e321f7d3658b3ace2c5",
+  "top": "inductive_lna",
+  "subcircuit_ports": {
+    "inductive_lna": [
+      "vss",
+      "iref",
+      "vdd",
+      "rfin",
+      "rfout"
+    ]
+  },
+  "instances": {
+    "inductive_lna/MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.3u",
+        "l": ".18u"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=4.3u l=.18u",
+      "W_unit_um": 4.3,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        5,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          5,
+          7
+        ],
+        "S": [
+          5,
+          5
+        ],
+        "G": [
+          3.45,
+          6
+        ],
+        "B": [
+          5.86,
+          6
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/MNSINK": {
+      "name": "MNSINK",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pgate",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.3u",
+        "l": ".18u",
+        "m": "6"
+      },
+      "source_line": "MNSINK (pgate iref vss vss) n18 w=4.3u l=.18u m=6",
+      "W_unit_um": 4.3,
+      "L_um": 0.18,
+      "m": 6.0,
+      "sheet": 1,
+      "origin": [
+        17,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          17,
+          7
+        ],
+        "S": [
+          17,
+          5
+        ],
+        "G": [
+          15.45,
+          6
+        ],
+        "B": [
+          17.86,
+          6
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/MPDIO": {
+      "name": "MPDIO",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pgate",
+        "G": "pgate",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "33.94u",
+        "l": ".36u",
+        "m": "6"
+      },
+      "source_line": "MPDIO (pgate pgate vdd vdd) p18 w=33.94u l=.36u m=6",
+      "W_unit_um": 33.94,
+      "L_um": 0.36,
+      "m": 6.0,
+      "sheet": 1,
+      "origin": [
+        17,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          17,
+          19
+        ],
+        "S": [
+          17,
+          21
+        ],
+        "G": [
+          15.45,
+          20
+        ],
+        "B": [
+          17.86,
+          20
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/MPMIR": {
+      "name": "MPMIR",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vcas",
+        "G": "pgate",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "33.94u",
+        "l": ".36u",
+        "m": "6"
+      },
+      "source_line": "MPMIR (vcas pgate vdd vdd) p18 w=33.94u l=.36u m=6",
+      "W_unit_um": 33.94,
+      "L_um": 0.36,
+      "m": 6.0,
+      "sheet": 1,
+      "origin": [
+        34,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          19
+        ],
+        "S": [
+          34,
+          21
+        ],
+        "G": [
+          32.45,
+          20
+        ],
+        "B": [
+          34.86,
+          20
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/MCTOP": {
+      "name": "MCTOP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vcas",
+        "G": "vcas",
+        "S": "vbias",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.92u",
+        "l": ".18u",
+        "m": "6"
+      },
+      "source_line": "MCTOP (vcas vcas vbias vss) n18 w=1.92u l=.18u m=6",
+      "W_unit_um": 1.92,
+      "L_um": 0.18,
+      "m": 6.0,
+      "sheet": 1,
+      "origin": [
+        34,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          14
+        ],
+        "S": [
+          34,
+          12
+        ],
+        "G": [
+          32.45,
+          13
+        ],
+        "B": [
+          34.86,
+          13
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/MCBOT": {
+      "name": "MCBOT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbias",
+        "G": "vbias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.92u",
+        "l": ".18u",
+        "m": "6"
+      },
+      "source_line": "MCBOT (vbias vbias vss vss) n18 w=1.92u l=.18u m=6",
+      "W_unit_um": 1.92,
+      "L_um": 0.18,
+      "m": 6.0,
+      "sheet": 1,
+      "origin": [
+        34,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          34,
+          7
+        ],
+        "S": [
+          34,
+          5
+        ],
+        "G": [
+          32.45,
+          6
+        ],
+        "B": [
+          34.86,
+          6
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/RBIAS": {
+      "name": "RBIAS",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "iref",
+        "2": "ng",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "150u"
+      },
+      "source_line": "RBIAS (iref ng vss) rpposab_3t w=1u l=150u",
+      "sheet": 1,
+      "origin": [
+        5,
+        18
+      ],
+      "rendered_pins": {
+        "1": [
+          5,
+          18.82
+        ],
+        "2": [
+          5,
+          17.18
+        ],
+        "B": [
+          5.7,
+          18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/MIN": {
+      "name": "MIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nx",
+        "G": "ng",
+        "S": "ns",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.3u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MIN (nx ng ns vss) n18 w=4.3u l=.18u m=60",
+      "W_unit_um": 4.3,
+      "L_um": 0.18,
+      "m": 60.0,
+      "sheet": 2,
+      "origin": [
+        25,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          25,
+          12
+        ],
+        "S": [
+          25,
+          10
+        ],
+        "G": [
+          23.45,
+          11
+        ],
+        "B": [
+          25.86,
+          11
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/MCAS": {
+      "name": "MCAS",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nd",
+        "G": "vcas",
+        "S": "nx",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.92u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MCAS (nd vcas nx vss) n18 w=1.92u l=.18u m=60",
+      "W_unit_um": 1.92,
+      "L_um": 0.18,
+      "m": 60.0,
+      "sheet": 2,
+      "origin": [
+        25,
+        16
+      ],
+      "rendered_pins": {
+        "D": [
+          25,
+          17
+        ],
+        "S": [
+          25,
+          15
+        ],
+        "G": [
+          23.45,
+          16
+        ],
+        "B": [
+          25.86,
+          16
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XLG0": {
+      "name": "XLG0",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "nin",
+        "2": "lg1"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLG0 (nin lg1) ind_rf r=60u n=3.5",
+      "sheet": 2,
+      "origin": [
+        3,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          2.18,
+          11
+        ],
+        "2": [
+          3.82,
+          11
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XLG1": {
+      "name": "XLG1",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "lg1",
+        "2": "lg2"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLG1 (lg1 lg2) ind_rf r=60u n=3.5",
+      "sheet": 2,
+      "origin": [
+        10,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          9.18,
+          11
+        ],
+        "2": [
+          10.82,
+          11
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XLG2": {
+      "name": "XLG2",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "lg2",
+        "2": "ng"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLG2 (lg2 ng) ind_rf r=60u n=3.5",
+      "sheet": 2,
+      "origin": [
+        17,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          16.18,
+          11
+        ],
+        "2": [
+          17.82,
+          11
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XLD0": {
+      "name": "XLD0",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "vdd",
+        "2": "ld1"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLD0 (vdd ld1) ind_rf r=60u n=3.5",
+      "sheet": 2,
+      "origin": [
+        25,
+        23
+      ],
+      "rendered_pins": {
+        "1": [
+          25,
+          23.82
+        ],
+        "2": [
+          25,
+          22.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XLD1": {
+      "name": "XLD1",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ld1",
+        "2": "nd"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLD1 (ld1 nd) ind_rf r=60u n=3.5",
+      "sheet": 2,
+      "origin": [
+        25,
+        20
+      ],
+      "rendered_pins": {
+        "1": [
+          25,
+          20.82
+        ],
+        "2": [
+          25,
+          19.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCOUT0": {
+      "name": "XCOUT0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "nd",
+        "2": "rfout"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "21.8333333333u"
+      },
+      "source_line": "XCOUT0 (nd rfout) mim1_rf wr=30u lr=21.8333333333u",
+      "sheet": 2,
+      "origin": [
+        34,
+        18
+      ],
+      "rendered_pins": {
+        "1": [
+          33.18,
+          18
+        ],
+        "2": [
+          34.82,
+          18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCMATCH0": {
+      "name": "XCMATCH0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfout",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "26.4566666667u"
+      },
+      "source_line": "XCMATCH0 (rfout vss) mim1_rf wr=30u lr=26.4566666667u",
+      "sheet": 2,
+      "origin": [
+        34,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          34,
+          11.82
+        ],
+        "2": [
+          34,
+          10.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCMATCH1": {
+      "name": "XCMATCH1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfout",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "26.4566666667u"
+      },
+      "source_line": "XCMATCH1 (rfout vss) mim1_rf wr=30u lr=26.4566666667u",
+      "sheet": 2,
+      "origin": [
+        40,
+        11
+      ],
+      "rendered_pins": {
+        "1": [
+          40,
+          11.82
+        ],
+        "2": [
+          40,
+          10.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XLS0": {
+      "name": "XLS0",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS0 (ns vss) ind_rf r=60u n=3.5",
+      "sheet": 2,
+      "origin": [
+        3,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          3,
+          4.82
+        ],
+        "2": [
+          3,
+          3.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XLS1": {
+      "name": "XLS1",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS1 (ns vss) ind_rf r=60u n=3.5",
+      "sheet": 2,
+      "origin": [
+        10,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          4.82
+        ],
+        "2": [
+          10,
+          3.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XLS2": {
+      "name": "XLS2",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS2 (ns vss) ind_rf r=60u n=3.5",
+      "sheet": 2,
+      "origin": [
+        17,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          17,
+          4.82
+        ],
+        "2": [
+          17,
+          3.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XLS3": {
+      "name": "XLS3",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS3 (ns vss) ind_rf r=60u n=3.5",
+      "sheet": 2,
+      "origin": [
+        24,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          24,
+          4.82
+        ],
+        "2": [
+          24,
+          3.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XLS4": {
+      "name": "XLS4",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS4 (ns vss) ind_rf r=60u n=3.5",
+      "sheet": 2,
+      "origin": [
+        31,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          31,
+          4.82
+        ],
+        "2": [
+          31,
+          3.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XLS5": {
+      "name": "XLS5",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS5 (ns vss) ind_rf r=60u n=3.5",
+      "sheet": 2,
+      "origin": [
+        38,
+        4
+      ],
+      "rendered_pins": {
+        "1": [
+          38,
+          4.82
+        ],
+        "2": [
+          38,
+          3.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCIN0": {
+      "name": "XCIN0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN0 (rfin nin) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        3,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          3,
+          21.82
+        ],
+        "2": [
+          3,
+          20.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCIN1": {
+      "name": "XCIN1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN1 (rfin nin) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        10,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          21.82
+        ],
+        "2": [
+          10,
+          20.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCIN2": {
+      "name": "XCIN2",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN2 (rfin nin) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        17,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          17,
+          21.82
+        ],
+        "2": [
+          17,
+          20.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCIN3": {
+      "name": "XCIN3",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN3 (rfin nin) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        24,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          24,
+          21.82
+        ],
+        "2": [
+          24,
+          20.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCIN4": {
+      "name": "XCIN4",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN4 (rfin nin) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        31,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          31,
+          21.82
+        ],
+        "2": [
+          31,
+          20.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCIN5": {
+      "name": "XCIN5",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN5 (rfin nin) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        38,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          38,
+          21.82
+        ],
+        "2": [
+          38,
+          20.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCBN0": {
+      "name": "XCBN0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN0 (iref vss) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        3,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          3,
+          13.82
+        ],
+        "2": [
+          3,
+          12.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCBN1": {
+      "name": "XCBN1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN1 (iref vss) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        10,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          13.82
+        ],
+        "2": [
+          10,
+          12.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCBN2": {
+      "name": "XCBN2",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN2 (iref vss) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        17,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          17,
+          13.82
+        ],
+        "2": [
+          17,
+          12.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCBN3": {
+      "name": "XCBN3",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN3 (iref vss) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        24,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          24,
+          13.82
+        ],
+        "2": [
+          24,
+          12.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCBN4": {
+      "name": "XCBN4",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN4 (iref vss) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        31,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          31,
+          13.82
+        ],
+        "2": [
+          31,
+          12.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCBN5": {
+      "name": "XCBN5",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN5 (iref vss) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        38,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          38,
+          13.82
+        ],
+        "2": [
+          38,
+          12.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCBC0": {
+      "name": "XCBC0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "vcas",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBC0 (vcas vss) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        3,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          3,
+          5.82
+        ],
+        "2": [
+          3,
+          4.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCBC1": {
+      "name": "XCBC1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "vcas",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBC1 (vcas vss) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        10,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          5.82
+        ],
+        "2": [
+          10,
+          4.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCBC2": {
+      "name": "XCBC2",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "vcas",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBC2 (vcas vss) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        17,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          17,
+          5.82
+        ],
+        "2": [
+          17,
+          4.18
+        ]
+      },
+      "block": "inductive_lna"
+    },
+    "inductive_lna/XCBC3": {
+      "name": "XCBC3",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "vcas",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBC3 (vcas vss) mim1_rf wr=30u lr=30u",
+      "sheet": 3,
+      "origin": [
+        24,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          24,
+          5.82
+        ],
+        "2": [
+          24,
+          4.18
+        ]
+      },
+      "block": "inductive_lna"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "iref",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.3u",
+        "l": ".18u"
+      },
+      "source_line": "MREF (iref iref vss vss) n18 w=4.3u l=.18u",
+      "W_unit_um": 4.3,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "inductive_lna/MREF",
+      "path": "MREF"
+    },
+    "MNSINK": {
+      "name": "MNSINK",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pgate",
+        "G": "iref",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.3u",
+        "l": ".18u",
+        "m": "6"
+      },
+      "source_line": "MNSINK (pgate iref vss vss) n18 w=4.3u l=.18u m=6",
+      "W_unit_um": 4.3,
+      "L_um": 0.18,
+      "m": 6.0,
+      "definition": "inductive_lna/MNSINK",
+      "path": "MNSINK"
+    },
+    "MPDIO": {
+      "name": "MPDIO",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pgate",
+        "G": "pgate",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "33.94u",
+        "l": ".36u",
+        "m": "6"
+      },
+      "source_line": "MPDIO (pgate pgate vdd vdd) p18 w=33.94u l=.36u m=6",
+      "W_unit_um": 33.94,
+      "L_um": 0.36,
+      "m": 6.0,
+      "definition": "inductive_lna/MPDIO",
+      "path": "MPDIO"
+    },
+    "MPMIR": {
+      "name": "MPMIR",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vcas",
+        "G": "pgate",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "33.94u",
+        "l": ".36u",
+        "m": "6"
+      },
+      "source_line": "MPMIR (vcas pgate vdd vdd) p18 w=33.94u l=.36u m=6",
+      "W_unit_um": 33.94,
+      "L_um": 0.36,
+      "m": 6.0,
+      "definition": "inductive_lna/MPMIR",
+      "path": "MPMIR"
+    },
+    "MCBOT": {
+      "name": "MCBOT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vbias",
+        "G": "vbias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.92u",
+        "l": ".18u",
+        "m": "6"
+      },
+      "source_line": "MCBOT (vbias vbias vss vss) n18 w=1.92u l=.18u m=6",
+      "W_unit_um": 1.92,
+      "L_um": 0.18,
+      "m": 6.0,
+      "definition": "inductive_lna/MCBOT",
+      "path": "MCBOT"
+    },
+    "MCTOP": {
+      "name": "MCTOP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vcas",
+        "G": "vcas",
+        "S": "vbias",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.92u",
+        "l": ".18u",
+        "m": "6"
+      },
+      "source_line": "MCTOP (vcas vcas vbias vss) n18 w=1.92u l=.18u m=6",
+      "W_unit_um": 1.92,
+      "L_um": 0.18,
+      "m": 6.0,
+      "definition": "inductive_lna/MCTOP",
+      "path": "MCTOP"
+    },
+    "MIN": {
+      "name": "MIN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nx",
+        "G": "ng",
+        "S": "ns",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "4.3u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MIN (nx ng ns vss) n18 w=4.3u l=.18u m=60",
+      "W_unit_um": 4.3,
+      "L_um": 0.18,
+      "m": 60.0,
+      "definition": "inductive_lna/MIN",
+      "path": "MIN"
+    },
+    "MCAS": {
+      "name": "MCAS",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nd",
+        "G": "vcas",
+        "S": "nx",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.92u",
+        "l": ".18u",
+        "m": "60"
+      },
+      "source_line": "MCAS (nd vcas nx vss) n18 w=1.92u l=.18u m=60",
+      "W_unit_um": 1.92,
+      "L_um": 0.18,
+      "m": 60.0,
+      "definition": "inductive_lna/MCAS",
+      "path": "MCAS"
+    },
+    "RBIAS": {
+      "name": "RBIAS",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "iref",
+        "2": "ng",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "150u"
+      },
+      "source_line": "RBIAS (iref ng vss) rpposab_3t w=1u l=150u",
+      "definition": "inductive_lna/RBIAS",
+      "path": "RBIAS"
+    },
+    "XCIN0": {
+      "name": "XCIN0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN0 (rfin nin) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCIN0",
+      "path": "XCIN0"
+    },
+    "XCIN1": {
+      "name": "XCIN1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN1 (rfin nin) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCIN1",
+      "path": "XCIN1"
+    },
+    "XCIN2": {
+      "name": "XCIN2",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN2 (rfin nin) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCIN2",
+      "path": "XCIN2"
+    },
+    "XCIN3": {
+      "name": "XCIN3",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN3 (rfin nin) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCIN3",
+      "path": "XCIN3"
+    },
+    "XCIN4": {
+      "name": "XCIN4",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN4 (rfin nin) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCIN4",
+      "path": "XCIN4"
+    },
+    "XCIN5": {
+      "name": "XCIN5",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfin",
+        "2": "nin"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCIN5 (rfin nin) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCIN5",
+      "path": "XCIN5"
+    },
+    "XCBN0": {
+      "name": "XCBN0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN0 (iref vss) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCBN0",
+      "path": "XCBN0"
+    },
+    "XCBN1": {
+      "name": "XCBN1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN1 (iref vss) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCBN1",
+      "path": "XCBN1"
+    },
+    "XCBN2": {
+      "name": "XCBN2",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN2 (iref vss) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCBN2",
+      "path": "XCBN2"
+    },
+    "XCBN3": {
+      "name": "XCBN3",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN3 (iref vss) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCBN3",
+      "path": "XCBN3"
+    },
+    "XCBN4": {
+      "name": "XCBN4",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN4 (iref vss) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCBN4",
+      "path": "XCBN4"
+    },
+    "XCBN5": {
+      "name": "XCBN5",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "iref",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBN5 (iref vss) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCBN5",
+      "path": "XCBN5"
+    },
+    "XCBC0": {
+      "name": "XCBC0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "vcas",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBC0 (vcas vss) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCBC0",
+      "path": "XCBC0"
+    },
+    "XCBC1": {
+      "name": "XCBC1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "vcas",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBC1 (vcas vss) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCBC1",
+      "path": "XCBC1"
+    },
+    "XCBC2": {
+      "name": "XCBC2",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "vcas",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBC2 (vcas vss) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCBC2",
+      "path": "XCBC2"
+    },
+    "XCBC3": {
+      "name": "XCBC3",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "vcas",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "30u"
+      },
+      "source_line": "XCBC3 (vcas vss) mim1_rf wr=30u lr=30u",
+      "definition": "inductive_lna/XCBC3",
+      "path": "XCBC3"
+    },
+    "XCOUT0": {
+      "name": "XCOUT0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "nd",
+        "2": "rfout"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "21.8333333333u"
+      },
+      "source_line": "XCOUT0 (nd rfout) mim1_rf wr=30u lr=21.8333333333u",
+      "definition": "inductive_lna/XCOUT0",
+      "path": "XCOUT0"
+    },
+    "XCMATCH0": {
+      "name": "XCMATCH0",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfout",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "26.4566666667u"
+      },
+      "source_line": "XCMATCH0 (rfout vss) mim1_rf wr=30u lr=26.4566666667u",
+      "definition": "inductive_lna/XCMATCH0",
+      "path": "XCMATCH0"
+    },
+    "XCMATCH1": {
+      "name": "XCMATCH1",
+      "kind": "C",
+      "model": "mim1_rf",
+      "pins": {
+        "1": "rfout",
+        "2": "vss"
+      },
+      "parameters": {
+        "wr": "30u",
+        "lr": "26.4566666667u"
+      },
+      "source_line": "XCMATCH1 (rfout vss) mim1_rf wr=30u lr=26.4566666667u",
+      "definition": "inductive_lna/XCMATCH1",
+      "path": "XCMATCH1"
+    },
+    "XLG0": {
+      "name": "XLG0",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "nin",
+        "2": "lg1"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLG0 (nin lg1) ind_rf r=60u n=3.5",
+      "definition": "inductive_lna/XLG0",
+      "path": "XLG0"
+    },
+    "XLG1": {
+      "name": "XLG1",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "lg1",
+        "2": "lg2"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLG1 (lg1 lg2) ind_rf r=60u n=3.5",
+      "definition": "inductive_lna/XLG1",
+      "path": "XLG1"
+    },
+    "XLG2": {
+      "name": "XLG2",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "lg2",
+        "2": "ng"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLG2 (lg2 ng) ind_rf r=60u n=3.5",
+      "definition": "inductive_lna/XLG2",
+      "path": "XLG2"
+    },
+    "XLD0": {
+      "name": "XLD0",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "vdd",
+        "2": "ld1"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLD0 (vdd ld1) ind_rf r=60u n=3.5",
+      "definition": "inductive_lna/XLD0",
+      "path": "XLD0"
+    },
+    "XLD1": {
+      "name": "XLD1",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ld1",
+        "2": "nd"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLD1 (ld1 nd) ind_rf r=60u n=3.5",
+      "definition": "inductive_lna/XLD1",
+      "path": "XLD1"
+    },
+    "XLS0": {
+      "name": "XLS0",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS0 (ns vss) ind_rf r=60u n=3.5",
+      "definition": "inductive_lna/XLS0",
+      "path": "XLS0"
+    },
+    "XLS1": {
+      "name": "XLS1",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS1 (ns vss) ind_rf r=60u n=3.5",
+      "definition": "inductive_lna/XLS1",
+      "path": "XLS1"
+    },
+    "XLS2": {
+      "name": "XLS2",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS2 (ns vss) ind_rf r=60u n=3.5",
+      "definition": "inductive_lna/XLS2",
+      "path": "XLS2"
+    },
+    "XLS3": {
+      "name": "XLS3",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS3 (ns vss) ind_rf r=60u n=3.5",
+      "definition": "inductive_lna/XLS3",
+      "path": "XLS3"
+    },
+    "XLS4": {
+      "name": "XLS4",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS4 (ns vss) ind_rf r=60u n=3.5",
+      "definition": "inductive_lna/XLS4",
+      "path": "XLS4"
+    },
+    "XLS5": {
+      "name": "XLS5",
+      "kind": "L",
+      "model": "ind_rf",
+      "pins": {
+        "1": "ns",
+        "2": "vss"
+      },
+      "parameters": {
+        "r": "60u",
+        "n": "3.5"
+      },
+      "source_line": "XLS5 (ns vss) ind_rf r=60u n=3.5",
+      "definition": "inductive_lna/XLS5",
+      "path": "XLS5"
+    }
+  },
+  "nets": {
+    "inductive_lna/iref": [
+      {
+        "instance": "inductive_lna/MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          5,
+          7
+        ]
+      },
+      {
+        "instance": "inductive_lna/MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          3.45,
+          6
+        ]
+      },
+      {
+        "instance": "inductive_lna/MNSINK",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          15.45,
+          6
+        ]
+      },
+      {
+        "instance": "inductive_lna/RBIAS",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          5,
+          18.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN0",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          3,
+          13.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN1",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          10,
+          13.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN2",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17,
+          13.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN3",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          24,
+          13.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN4",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          31,
+          13.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN5",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          38,
+          13.82
+        ]
+      }
+    ],
+    "inductive_lna/vss": [
+      {
+        "instance": "inductive_lna/MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          5,
+          5
+        ]
+      },
+      {
+        "instance": "inductive_lna/MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          5.86,
+          6
+        ]
+      },
+      {
+        "instance": "inductive_lna/MNSINK",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          17,
+          5
+        ]
+      },
+      {
+        "instance": "inductive_lna/MNSINK",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          17.86,
+          6
+        ]
+      },
+      {
+        "instance": "inductive_lna/MCTOP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          34.86,
+          13
+        ]
+      },
+      {
+        "instance": "inductive_lna/MCBOT",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          34,
+          5
+        ]
+      },
+      {
+        "instance": "inductive_lna/MCBOT",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          34.86,
+          6
+        ]
+      },
+      {
+        "instance": "inductive_lna/RBIAS",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          5.7,
+          18
+        ]
+      },
+      {
+        "instance": "inductive_lna/MIN",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          25.86,
+          11
+        ]
+      },
+      {
+        "instance": "inductive_lna/MCAS",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          25.86,
+          16
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCMATCH0",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          34,
+          10.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCMATCH1",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          40,
+          10.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS0",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          3,
+          3.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS1",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          10,
+          3.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS2",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          17,
+          3.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS3",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          24,
+          3.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS4",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          31,
+          3.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS5",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          38,
+          3.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN0",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          3,
+          12.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN1",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          10,
+          12.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN2",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          17,
+          12.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN3",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          24,
+          12.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN4",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          31,
+          12.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBN5",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          38,
+          12.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBC0",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          3,
+          4.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBC1",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          10,
+          4.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBC2",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          17,
+          4.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBC3",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          24,
+          4.18
+        ]
+      }
+    ],
+    "inductive_lna/pgate": [
+      {
+        "instance": "inductive_lna/MNSINK",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          17,
+          7
+        ]
+      },
+      {
+        "instance": "inductive_lna/MPDIO",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          17,
+          19
+        ]
+      },
+      {
+        "instance": "inductive_lna/MPDIO",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          15.45,
+          20
+        ]
+      },
+      {
+        "instance": "inductive_lna/MPMIR",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          32.45,
+          20
+        ]
+      }
+    ],
+    "inductive_lna/vdd": [
+      {
+        "instance": "inductive_lna/MPDIO",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          17,
+          21
+        ]
+      },
+      {
+        "instance": "inductive_lna/MPDIO",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          17.86,
+          20
+        ]
+      },
+      {
+        "instance": "inductive_lna/MPMIR",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          34,
+          21
+        ]
+      },
+      {
+        "instance": "inductive_lna/MPMIR",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          34.86,
+          20
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLD0",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          25,
+          23.82
+        ]
+      }
+    ],
+    "inductive_lna/vcas": [
+      {
+        "instance": "inductive_lna/MPMIR",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          34,
+          19
+        ]
+      },
+      {
+        "instance": "inductive_lna/MCTOP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          34,
+          14
+        ]
+      },
+      {
+        "instance": "inductive_lna/MCTOP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          32.45,
+          13
+        ]
+      },
+      {
+        "instance": "inductive_lna/MCAS",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          23.45,
+          16
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBC0",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          3,
+          5.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBC1",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          10,
+          5.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBC2",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17,
+          5.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCBC3",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          24,
+          5.82
+        ]
+      }
+    ],
+    "inductive_lna/vbias": [
+      {
+        "instance": "inductive_lna/MCTOP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          34,
+          12
+        ]
+      },
+      {
+        "instance": "inductive_lna/MCBOT",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          34,
+          7
+        ]
+      },
+      {
+        "instance": "inductive_lna/MCBOT",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          32.45,
+          6
+        ]
+      }
+    ],
+    "inductive_lna/ng": [
+      {
+        "instance": "inductive_lna/RBIAS",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          5,
+          17.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/MIN",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          23.45,
+          11
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLG2",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          17.82,
+          11
+        ]
+      }
+    ],
+    "inductive_lna/nx": [
+      {
+        "instance": "inductive_lna/MIN",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          25,
+          12
+        ]
+      },
+      {
+        "instance": "inductive_lna/MCAS",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          25,
+          15
+        ]
+      }
+    ],
+    "inductive_lna/ns": [
+      {
+        "instance": "inductive_lna/MIN",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          25,
+          10
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS0",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          3,
+          4.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS1",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          10,
+          4.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS2",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          17,
+          4.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS3",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          24,
+          4.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS4",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          31,
+          4.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLS5",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          38,
+          4.82
+        ]
+      }
+    ],
+    "inductive_lna/nd": [
+      {
+        "instance": "inductive_lna/MCAS",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          25,
+          17
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLD1",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          25,
+          19.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCOUT0",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          33.18,
+          18
+        ]
+      }
+    ],
+    "inductive_lna/nin": [
+      {
+        "instance": "inductive_lna/XLG0",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          2.18,
+          11
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCIN0",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          3,
+          20.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCIN1",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          10,
+          20.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCIN2",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          17,
+          20.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCIN3",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          24,
+          20.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCIN4",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          31,
+          20.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCIN5",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          38,
+          20.18
+        ]
+      }
+    ],
+    "inductive_lna/lg1": [
+      {
+        "instance": "inductive_lna/XLG0",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          3.82,
+          11
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLG1",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          9.18,
+          11
+        ]
+      }
+    ],
+    "inductive_lna/lg2": [
+      {
+        "instance": "inductive_lna/XLG1",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          10.82,
+          11
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLG2",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          16.18,
+          11
+        ]
+      }
+    ],
+    "inductive_lna/ld1": [
+      {
+        "instance": "inductive_lna/XLD0",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          25,
+          22.18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XLD1",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          25,
+          20.82
+        ]
+      }
+    ],
+    "inductive_lna/rfout": [
+      {
+        "instance": "inductive_lna/XCOUT0",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          34.82,
+          18
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCMATCH0",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          34,
+          11.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCMATCH1",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          40,
+          11.82
+        ]
+      }
+    ],
+    "inductive_lna/rfin": [
+      {
+        "instance": "inductive_lna/XCIN0",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          3,
+          21.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCIN1",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          10,
+          21.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCIN2",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17,
+          21.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCIN3",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          24,
+          21.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCIN4",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          31,
+          21.82
+        ]
+      },
+      {
+        "instance": "inductive_lna/XCIN5",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          38,
+          21.82
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MCTOP",
+      "pin": "S",
+      "net": "vbias",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCBOT",
+      "pin": "D",
+      "net": "vbias",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCBOT",
+      "pin": "G",
+      "net": "vbias",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPMIR",
+      "pin": "D",
+      "net": "vcas",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCTOP",
+      "pin": "D",
+      "net": "vcas",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCTOP",
+      "pin": "G",
+      "net": "vcas",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDIO",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDIO",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPMIR",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPMIR",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNSINK",
+      "pin": "G",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "RBIAS",
+      "pin": "1",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNSINK",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNSINK",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCTOP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCBOT",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MCBOT",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "RBIAS",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNSINK",
+      "pin": "D",
+      "net": "pgate",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDIO",
+      "pin": "D",
+      "net": "pgate",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPDIO",
+      "pin": "G",
+      "net": "pgate",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPMIR",
+      "pin": "G",
+      "net": "pgate",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 1,
+      "instance": "RBIAS",
+      "pin": "2",
+      "net": "ng",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCOUT0",
+      "pin": "2",
+      "net": "rfout",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCMATCH0",
+      "pin": "1",
+      "net": "rfout",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCMATCH1",
+      "pin": "1",
+      "net": "rfout",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCAS",
+      "pin": "G",
+      "net": "vcas",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLD0",
+      "pin": "1",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLD0",
+      "pin": "2",
+      "net": "ld1",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLD1",
+      "pin": "1",
+      "net": "ld1",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLG0",
+      "pin": "2",
+      "net": "lg1",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLG1",
+      "pin": "1",
+      "net": "lg1",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCAS",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCMATCH0",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCMATCH1",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS0",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS1",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS2",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS3",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS4",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS5",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLG0",
+      "pin": "1",
+      "net": "nin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLG1",
+      "pin": "2",
+      "net": "lg2",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLG2",
+      "pin": "1",
+      "net": "lg2",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIN",
+      "pin": "D",
+      "net": "nx",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCAS",
+      "pin": "S",
+      "net": "nx",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCAS",
+      "pin": "D",
+      "net": "nd",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLD1",
+      "pin": "2",
+      "net": "nd",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XCOUT0",
+      "pin": "1",
+      "net": "nd",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIN",
+      "pin": "G",
+      "net": "ng",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLG2",
+      "pin": "2",
+      "net": "ng",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIN",
+      "pin": "S",
+      "net": "ns",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS0",
+      "pin": "1",
+      "net": "ns",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS1",
+      "pin": "1",
+      "net": "ns",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS2",
+      "pin": "1",
+      "net": "ns",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS3",
+      "pin": "1",
+      "net": "ns",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS4",
+      "pin": "1",
+      "net": "ns",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 2,
+      "instance": "XLS5",
+      "pin": "1",
+      "net": "ns",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBC0",
+      "pin": "1",
+      "net": "vcas",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBC1",
+      "pin": "1",
+      "net": "vcas",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBC2",
+      "pin": "1",
+      "net": "vcas",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBC3",
+      "pin": "1",
+      "net": "vcas",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN0",
+      "pin": "1",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN1",
+      "pin": "1",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN2",
+      "pin": "1",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN3",
+      "pin": "1",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN4",
+      "pin": "1",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN5",
+      "pin": "1",
+      "net": "iref",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN0",
+      "pin": "1",
+      "net": "rfin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN1",
+      "pin": "1",
+      "net": "rfin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN2",
+      "pin": "1",
+      "net": "rfin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN3",
+      "pin": "1",
+      "net": "rfin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN4",
+      "pin": "1",
+      "net": "rfin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN5",
+      "pin": "1",
+      "net": "rfin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN0",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN1",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN2",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN3",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN4",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBN5",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBC0",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBC1",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBC2",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCBC3",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN0",
+      "pin": "2",
+      "net": "nin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN1",
+      "pin": "2",
+      "net": "nin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN2",
+      "pin": "2",
+      "net": "nin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN3",
+      "pin": "2",
+      "net": "nin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN4",
+      "pin": "2",
+      "net": "nin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    },
+    {
+      "sheet": 3,
+      "instance": "XCIN5",
+      "pin": "2",
+      "net": "nin",
+      "path_to_named_net": true,
+      "block": "inductive_lna"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "inductive_lna",
+      "title": "电流镜与共栅偏置复制",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.86,
+              6
+            ],
+            [
+              6.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17.86,
+              6
+            ],
+            [
+              18.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              17.86,
+              20
+            ],
+            [
+              18.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34.86,
+              20
+            ],
+            [
+              35.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.86,
+              13
+            ],
+            [
+              35.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34.86,
+              6
+            ],
+            [
+              35.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pgate",
+          "points": [
+            [
+              17,
+              19
+            ],
+            [
+              17,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "points": [
+            [
+              34,
+              19
+            ],
+            [
+              34,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbias",
+          "points": [
+            [
+              34,
+              12
+            ],
+            [
+              34,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              17,
+              23.5
+            ],
+            [
+              34,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              17,
+              21
+            ],
+            [
+              17,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              34,
+              21
+            ],
+            [
+              34,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5,
+              2
+            ],
+            [
+              34,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17,
+              5
+            ],
+            [
+              17,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34,
+              5
+            ],
+            [
+              34,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              5.7,
+              18
+            ],
+            [
+              6.15,
+              18
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              3.45,
+              6
+            ],
+            [
+              2.95,
+              6
+            ],
+            [
+              2.95,
+              8.2
+            ],
+            [
+              5,
+              8.2
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pgate",
+          "points": [
+            [
+              15.45,
+              20
+            ],
+            [
+              14.95,
+              20
+            ],
+            [
+              14.95,
+              17.8
+            ],
+            [
+              17,
+              17.8
+            ],
+            [
+              17,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "points": [
+            [
+              32.45,
+              13
+            ],
+            [
+              31.95,
+              13
+            ],
+            [
+              31.95,
+              15.2
+            ],
+            [
+              34,
+              15.2
+            ],
+            [
+              34,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vbias",
+          "points": [
+            [
+              32.45,
+              6
+            ],
+            [
+              31.95,
+              6
+            ],
+            [
+              31.95,
+              8.2
+            ],
+            [
+              34,
+              8.2
+            ],
+            [
+              34,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              15.45,
+              6
+            ],
+            [
+              14.899999999999999,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pgate",
+          "points": [
+            [
+              32.45,
+              20
+            ],
+            [
+              31.900000000000002,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              5,
+              18.82
+            ],
+            [
+              5,
+              19.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ng",
+          "points": [
+            [
+              5,
+              17.18
+            ],
+            [
+              5,
+              16.54
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            6.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            18.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            18.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            35.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            35.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "pgate",
+          "point": [
+            17.0,
+            13.0
+          ],
+          "text": "pgate",
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "point": [
+            34.0,
+            16.5
+          ],
+          "text": "vcas",
+          "body": false
+        },
+        {
+          "net": "vbias",
+          "point": [
+            34.0,
+            9.5
+          ],
+          "text": "vbias",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            17,
+            23.5
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            5,
+            2
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            6.15,
+            18
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "iref",
+          "point": [
+            4,
+            8.2
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "pgate",
+          "point": [
+            16,
+            17.8
+          ],
+          "text": "pgate",
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "point": [
+            33,
+            15.2
+          ],
+          "text": "vcas",
+          "body": false
+        },
+        {
+          "net": "vbias",
+          "point": [
+            33,
+            8.2
+          ],
+          "text": "vbias",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            14.899999999999999,
+            6
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "pgate",
+          "point": [
+            31.900000000000002,
+            20
+          ],
+          "text": "pgate",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            5,
+            19.46
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "ng",
+          "point": [
+            5,
+            16.54
+          ],
+          "text": "ng",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "inductive_lna",
+      "title": "输入、共栅、源退化与输出匹配",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              25.86,
+              11
+            ],
+            [
+              26.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              25.86,
+              16
+            ],
+            [
+              26.15,
+              16
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "nx",
+          "points": [
+            [
+              25,
+              12
+            ],
+            [
+              25,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "lg1",
+          "points": [
+            [
+              3.82,
+              11
+            ],
+            [
+              9.18,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "lg2",
+          "points": [
+            [
+              10.82,
+              11
+            ],
+            [
+              16.18,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ng",
+          "points": [
+            [
+              17.82,
+              11
+            ],
+            [
+              23.45,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ld1",
+          "points": [
+            [
+              25,
+              22.18
+            ],
+            [
+              25,
+              20.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nd",
+          "points": [
+            [
+              25,
+              19.18
+            ],
+            [
+              25,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nd",
+          "points": [
+            [
+              25,
+              17
+            ],
+            [
+              25,
+              18
+            ],
+            [
+              33.18,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfout",
+          "points": [
+            [
+              34,
+              15
+            ],
+            [
+              40,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfout",
+          "points": [
+            [
+              34.82,
+              18
+            ],
+            [
+              34.82,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfout",
+          "points": [
+            [
+              34,
+              11.82
+            ],
+            [
+              34,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfout",
+          "points": [
+            [
+              40,
+              11.82
+            ],
+            [
+              40,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ns",
+          "points": [
+            [
+              3,
+              7
+            ],
+            [
+              38,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ns",
+          "points": [
+            [
+              3,
+              4.82
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ns",
+          "points": [
+            [
+              10,
+              4.82
+            ],
+            [
+              10,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ns",
+          "points": [
+            [
+              17,
+              4.82
+            ],
+            [
+              17,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ns",
+          "points": [
+            [
+              24,
+              4.82
+            ],
+            [
+              24,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ns",
+          "points": [
+            [
+              31,
+              4.82
+            ],
+            [
+              31,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ns",
+          "points": [
+            [
+              38,
+              4.82
+            ],
+            [
+              38,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ns",
+          "points": [
+            [
+              25,
+              10
+            ],
+            [
+              25,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              1
+            ],
+            [
+              38,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              3.18
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              3.18
+            ],
+            [
+              10,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17,
+              3.18
+            ],
+            [
+              17,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24,
+              3.18
+            ],
+            [
+              24,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              31,
+              3.18
+            ],
+            [
+              31,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38,
+              3.18
+            ],
+            [
+              38,
+              1
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "points": [
+            [
+              23.45,
+              16
+            ],
+            [
+              22.9,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nin",
+          "points": [
+            [
+              2.18,
+              11
+            ],
+            [
+              1.3800000000000001,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              25,
+              23.82
+            ],
+            [
+              25,
+              24.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              34,
+              10.18
+            ],
+            [
+              34,
+              9.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              40,
+              10.18
+            ],
+            [
+              40,
+              9.54
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            26.15,
+            11
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            26.15,
+            16
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "nx",
+          "point": [
+            25.0,
+            13.5
+          ],
+          "text": "nx",
+          "body": false
+        },
+        {
+          "net": "lg1",
+          "point": [
+            6.5,
+            11.0
+          ],
+          "text": "lg1",
+          "body": false
+        },
+        {
+          "net": "lg2",
+          "point": [
+            13.5,
+            11.0
+          ],
+          "text": "lg2",
+          "body": false
+        },
+        {
+          "net": "ng",
+          "point": [
+            20.634999999999998,
+            11.0
+          ],
+          "text": "ng",
+          "body": false
+        },
+        {
+          "net": "ld1",
+          "point": [
+            25.0,
+            21.5
+          ],
+          "text": "ld1",
+          "body": false
+        },
+        {
+          "net": "nd",
+          "point": [
+            25.0,
+            18.09
+          ],
+          "text": "nd",
+          "body": false
+        },
+        {
+          "net": "rfout",
+          "point": [
+            34,
+            15
+          ],
+          "text": "rfout",
+          "body": false
+        },
+        {
+          "net": "ns",
+          "point": [
+            3,
+            7
+          ],
+          "text": "ns",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            3,
+            1
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "point": [
+            22.9,
+            16
+          ],
+          "text": "vcas",
+          "body": false
+        },
+        {
+          "net": "nin",
+          "point": [
+            1.3800000000000001,
+            11
+          ],
+          "text": "nin",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            25,
+            24.46
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            34,
+            9.54
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            40,
+            9.54
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "block": "inductive_lna",
+      "title": "输入耦合及两组完整去耦电容",
+      "wires": [
+        {
+          "net": "rfin",
+          "points": [
+            [
+              3,
+              23
+            ],
+            [
+              38,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfin",
+          "points": [
+            [
+              3,
+              21.82
+            ],
+            [
+              3,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfin",
+          "points": [
+            [
+              10,
+              21.82
+            ],
+            [
+              10,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfin",
+          "points": [
+            [
+              17,
+              21.82
+            ],
+            [
+              17,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfin",
+          "points": [
+            [
+              24,
+              21.82
+            ],
+            [
+              24,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfin",
+          "points": [
+            [
+              31,
+              21.82
+            ],
+            [
+              31,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "rfin",
+          "points": [
+            [
+              38,
+              21.82
+            ],
+            [
+              38,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nin",
+          "points": [
+            [
+              3,
+              19
+            ],
+            [
+              38,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nin",
+          "points": [
+            [
+              3,
+              20.18
+            ],
+            [
+              3,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nin",
+          "points": [
+            [
+              10,
+              20.18
+            ],
+            [
+              10,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nin",
+          "points": [
+            [
+              17,
+              20.18
+            ],
+            [
+              17,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nin",
+          "points": [
+            [
+              24,
+              20.18
+            ],
+            [
+              24,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nin",
+          "points": [
+            [
+              31,
+              20.18
+            ],
+            [
+              31,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nin",
+          "points": [
+            [
+              38,
+              20.18
+            ],
+            [
+              38,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              3,
+              15
+            ],
+            [
+              38,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              3,
+              13.82
+            ],
+            [
+              3,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              10,
+              13.82
+            ],
+            [
+              10,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              17,
+              13.82
+            ],
+            [
+              17,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              24,
+              13.82
+            ],
+            [
+              24,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              31,
+              13.82
+            ],
+            [
+              31,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "iref",
+          "points": [
+            [
+              38,
+              13.82
+            ],
+            [
+              38,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              11
+            ],
+            [
+              38,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              12.18
+            ],
+            [
+              3,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              12.18
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17,
+              12.18
+            ],
+            [
+              17,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24,
+              12.18
+            ],
+            [
+              24,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              31,
+              12.18
+            ],
+            [
+              31,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38,
+              12.18
+            ],
+            [
+              38,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "points": [
+            [
+              3,
+              7
+            ],
+            [
+              24,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "points": [
+            [
+              3,
+              5.82
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "points": [
+            [
+              10,
+              5.82
+            ],
+            [
+              10,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "points": [
+            [
+              17,
+              5.82
+            ],
+            [
+              17,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "points": [
+            [
+              24,
+              5.82
+            ],
+            [
+              24,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              3
+            ],
+            [
+              24,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              4.18
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              4.18
+            ],
+            [
+              10,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17,
+              4.18
+            ],
+            [
+              17,
+              3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24,
+              4.18
+            ],
+            [
+              24,
+              3
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "rfin",
+          "point": [
+            3,
+            23
+          ],
+          "text": "rfin",
+          "body": false
+        },
+        {
+          "net": "nin",
+          "point": [
+            3,
+            19
+          ],
+          "text": "nin",
+          "body": false
+        },
+        {
+          "net": "iref",
+          "point": [
+            3,
+            15
+          ],
+          "text": "iref",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            3,
+            11
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vcas",
+          "point": [
+            3,
+            7
+          ],
+          "text": "vcas",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            3,
+            3
+          ],
+          "text": "vss",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "inductive_lna": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

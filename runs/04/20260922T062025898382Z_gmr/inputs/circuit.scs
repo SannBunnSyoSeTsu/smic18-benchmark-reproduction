@@ -1,0 +1,12 @@
+// SMIC18 source-degenerated differential amplifier. VCM port is unused.
+simulator lang=spectre
+subckt gmr_degen (IREF VCM VDD VIN VIP VON VOP VSS)
+MREF (IREF IREF VSS VSS) n18 w=34.7800u l=1u
+MTAIL (tail IREF VSS VSS) n18 w=34.7800u l=1u m=10
+MINN (VON VIN sn VSS) n18 w=97.5000u l=.36u
+MINP (VOP VIP sp VSS) n18 w=97.5000u l=.36u
+RSN (sn tail) resistor r=600
+RSP (sp tail) resistor r=600
+RLN (VDD VON) resistor r=1989
+RLP (VDD VOP) resistor r=1989
+ends gmr_degen

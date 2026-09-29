@@ -1,0 +1,45 @@
+// Fully differential folded-cascode first stage and symmetric second stage.
+// D G S B. Legal unit widths use m replication; no internal sources.
+simulator lang=spectre
+subckt sampling_feedback_ota (vss iref vdd vinn vinp vocm voutn voutp)
+MREF (iref iref vss vss) n18 w=4.68u l=1u m=5
+MBN (vbp iref vss vss) n18 w=4.68u l=1u
+MBP (vbp vbp vdd vdd) p18 w=9.5u l=1u
+MOBN (vbpout iref vss vss) n18 w=4.68u l=1u
+MOBP (vbpout vbpout vdd vdd) p18 w=1.96u l=.36u
+MNCB (vcn vbp vdd vdd) p18 w=9.5u l=1u
+MDN (vcn vcn ncb vss) n18 w=1.68u l=.36u
+RNB (ncb vss) resistor r=28000
+RPC (vdd pcb) resistor r=40000
+MDP (vpc vpc pcb pcb) p18 w=6.96u l=.36u
+MPCB (vpc iref vss vss) n18 w=4.68u l=1u
+MTAIL (tail iref vss vss) n18 w=4.68u l=1u m=120
+MINP (fp vinp tail vss) n18 w=1.94u l=1u m=60
+MINN (fn vinn tail vss) n18 w=1.94u l=1u m=60
+MSP (fp vbp vdd vdd) p18 w=9.5u l=1u m=65
+MSN (fn vbp vdd vdd) p18 w=9.5u l=1u m=65
+MPCP (stagep vpc fp fp) p18 w=6.96u l=.36u m=5
+MPCN (stagen vpc fn fn) p18 w=6.96u l=.36u m=5
+MNCP (stagep vcn sinkp vss) n18 w=1.68u l=.36u m=5
+MNCN (stagen vcn sinkn vss) n18 w=1.68u l=.36u m=5
+MSINKP (sinkp vcmfb vss vss) n18 w=4.68u l=1u m=5
+MSINKN (sinkn vcmfb vss vss) n18 w=4.68u l=1u m=5
+MSECONDP (voutp stagep vss vss) n18 w=0.3u l=.36u m=70
+MSECONDN (voutn stagen vss vss) n18 w=0.3u l=.36u m=70
+MLOADP (voutp vbpout vdd vdd) p18 w=1.96u l=.36u m=70
+MLOADN (voutn vbpout vdd vdd) p18 w=1.96u l=.36u m=70
+RZP (stagep zp) resistor r=1000
+CCP (zp voutp) capacitor c=0.64p
+RZN (stagen zn) resistor r=1000
+CCN (zn voutn) capacitor c=0.64p
+RCMP (voutp vcms) resistor r=100k
+RCMN (voutn vcms) resistor r=100k
+CCMP (voutp vcms) capacitor c=100f
+CCMN (voutn vcms) capacitor c=100f
+MCMT (cmt iref vss vss) n18 w=4.68u l=1u m=10
+MCMREF (cma vocm cmt vss) n18 w=1.68u l=.36u m=5
+MCMSENSE (vcmfb vcms cmt vss) n18 w=1.68u l=.36u m=5
+MCMD (cma cma vdd vdd) p18 w=9.5u l=1u m=5
+MCMM (vcmfb cma vdd vdd) p18 w=9.5u l=1u m=10
+MCMND (vcmfb vcmfb vss vss) n18 w=4.68u l=1u m=5
+ends sampling_feedback_ota

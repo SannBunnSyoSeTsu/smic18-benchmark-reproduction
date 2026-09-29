@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-09-23T06:26:41.384192+00:00",
+  "status": "passed",
+  "circuit_sha256": "b17085a791dade0dd8a9d9543708ea5a9f3f81de25cc1314296b773d5124aa93",
+  "hd_cells_sha256": "be6756a96a26c408f83b3861473e87796a9c9bc1d64e420a07093decd45cab6d",
+  "renderer_sha256": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+  "layout_file": "scripts/schematics_analog.py",
+  "layout_sha256": "7c73e3169f2979ac2941dd45121ecdd56414d7765a00229c9e3bcb2a305a569d",
+  "instance_counts": {
+    "MOS": 19,
+    "C": 8,
+    "HD": 3
+  },
+  "expanded_leaf_instance_counts": {
+    "MOS": 19,
+    "HD": 3,
+    "C": 8
+  },
+  "total_instances": 30,
+  "expanded_leaf_instances": 30,
+  "total_terminals": 110,
+  "all_instances_drawn_exactly_once_per_definition": true,
+  "all_terminals_mapped": true,
+  "all_body_connections_explicit": true,
+  "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+  "all_values_read_from_netlist": true,
+  "all_internal_nets_preserved": true,
+  "geometric_wire_conflicts": [],
+  "sheets": 3,
+  "sheet_page_size": "A4 landscape",
+  "render_review_pending": false,
+  "artifacts": {
+    "cases/47-charge-pump/schematic/connectivity.json": "0618777fc05508d253551926da525f5b97b2579263fae68c81fa67dfb399e7b1",
+    "cases/47-charge-pump/schematic/full.pdf": "4d16ae9596f5eac1b900aeac52bd435d0ecf4ba033d7da743f4bbe2102976130",
+    "cases/47-charge-pump/schematic/full.png": "896a88faf0edb54859d936ac4ace154c749d69b27661fa44a625275a34d6a821",
+    "cases/47-charge-pump/schematic/full.svg": "69d763ad700aa9f601e4f4eeec84850d0bf81f511530eca537236821718b6def",
+    "cases/47-charge-pump/schematic/layout_source.py": "7c73e3169f2979ac2941dd45121ecdd56414d7765a00229c9e3bcb2a305a569d",
+    "cases/47-charge-pump/schematic/renderer_source.py": "ccb98d5092f8565fb8b90bfe4ab82e889108240b8f7eff7834f0bd7539c2e7af",
+    "cases/47-charge-pump/schematic/sheet-1.png": "a5f1437831aa4d2513a13d18e9bef2e4ad2a8b9a3baf5b1a23cc3974b0d314d0",
+    "cases/47-charge-pump/schematic/sheet-1.svg": "60c239d1db6b890cdff56983dac154dc61c7615f7b468380b8a2f1743bc0360c",
+    "cases/47-charge-pump/schematic/sheet-2.png": "809f7c1859673e281d5e0314d6bb8440e58d195d1b86362a0c69bc11b4f81af3",
+    "cases/47-charge-pump/schematic/sheet-2.svg": "82aaefaf0b9f59d108c26b4d82a81084a7e6297174c42f9defdd07c0dcc19359",
+    "cases/47-charge-pump/schematic/sheet-3.png": "2474f5f863348e158d9722c45fa21d75a2b29403c4fa24ab3f5b100e9e3b634c",
+    "cases/47-charge-pump/schematic/sheet-3.svg": "a7670819d5c32ceb2baf85a844ca4b7fd456e4e364c5b9e9d46ec014f2bde6a5",
+    "cases/47-charge-pump/schematic/sheets.pdf": "aa472c57a5fefb6232081554ab0e03018095955af9346267d0bc2b43759d8375",
+    "cases/47-charge-pump/schematic/symbol_source.py": "c65698950039c9fd48e1659d37f7fb5220517dd0dc1847b24f5b1761d0956898"
+  },
+  "scope": "Documentation-only schematic generation and static connectivity checks. No circuit changes or simulation.",
+  "final_source_freeze_at": "2026-09-23T06:26:41.385398+00:00",
+  "previous_visual_review": {
+    "reviewed_at": "2026-09-23T06:25:51.604734+00:00",
+    "note": "All split sheets and full overview actually viewed; connectivity, symbols, values, body ties and text readability reviewed.",
+    "reviewed_png_hashes": {
+      "cases/47-charge-pump/schematic/full.png": "896a88faf0edb54859d936ac4ace154c749d69b27661fa44a625275a34d6a821",
+      "cases/47-charge-pump/schematic/sheet-1.png": "a5f1437831aa4d2513a13d18e9bef2e4ad2a8b9a3baf5b1a23cc3974b0d314d0",
+      "cases/47-charge-pump/schematic/sheet-2.png": "809f7c1859673e281d5e0314d6bb8440e58d195d1b86362a0c69bc11b4f81af3",
+      "cases/47-charge-pump/schematic/sheet-3.png": "2474f5f863348e158d9722c45fa21d75a2b29403c4fa24ab3f5b100e9e3b634c"
+    }
+  },
+  "rebuild_png_changes": [],
+  "all_pages_visually_reviewed": true,
+  "visual_reviewed_at": "2026-09-23T06:25:51.604734+00:00",
+  "visual_review_note": "All final sheet PNGs and full overview are byte-for-byte identical to the actually viewed artifacts; final renderer, symbols and layout sources were frozen beside the drawings."
+}

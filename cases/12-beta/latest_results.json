@@ -1,0 +1,303 @@
+{
+  "case_slot": 12,
+  "generated_at": "2026-09-22T06:37:26.434296+00:00",
+  "run_dirs": [
+    "runs/12/20260922T063724631769Z_dc",
+    "runs/12/20260922T063724757608Z_startup_1us",
+    "runs/12/20260922T063725265886Z_startup_10us"
+  ],
+  "status": "complete_original",
+  "values": {
+    "output_current_A": 3.916314304827095e-05,
+    "vref_V": 0.6563350560355902,
+    "power_W": 7.553301810325929e-05,
+    "compliance_flatness": 0.026133886870742067,
+    "compliance_min_A": 3.863673843136738e-05,
+    "compliance_max_A": 3.966166360536725e-05,
+    "core_resistance_Ohm": 11850.233738449975,
+    "startup": [
+      {
+        "ramp_s": 1e-06,
+        "final_current_A": 3.916314304844565e-05,
+        "final_vref_V": 0.6563350560359301,
+        "settling_s": 0.0,
+        "overshoot_ratio": 1.0114735568783497,
+        "peak_supply_current_A": 2.261147081565856e-05,
+        "positive_vdd_energy_J": 4.1622004459078634e-10,
+        "initial_vdd_V": 0.0,
+        "initial_vref_V": 0.0,
+        "observed_stop_s": 1.1e-05
+      },
+      {
+        "ramp_s": 1e-05,
+        "final_current_A": 3.916314304844468e-05,
+        "final_vref_V": 0.6563350560359273,
+        "settling_s": 0.0,
+        "overshoot_ratio": 1.0011409390758583,
+        "peak_supply_current_A": 2.240417523261471e-05,
+        "positive_vdd_energy_J": 5.570911706828745e-10,
+        "initial_vdd_V": 0.0,
+        "initial_vref_V": 0.0,
+        "observed_stop_s": 2e-05
+      }
+    ]
+  },
+  "gates": {
+    "current_error_A": {
+      "value": 8.368569517290504e-07,
+      "unit": "A",
+      "sense": "max",
+      "limits": {
+        "original": 5e-06,
+        "10pct": 5.500000000000001e-06,
+        "15pct": 5.75e-06
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "vref_error_V": {
+      "value": 0.018664943964409875,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.075,
+        "10pct": 0.0825,
+        "15pct": 0.08625
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "power_W": {
+      "value": 7.553301810325929e-05,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.0001,
+        "10pct": 0.00011000000000000002,
+        "15pct": 0.00011499999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "compliance_flatness": {
+      "value": 0.026133886870742067,
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.08,
+        "10pct": 0.08800000000000001,
+        "15pct": 0.092
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_current_error_A": {
+      "value": 8.368569515553205e-07,
+      "unit": "A",
+      "sense": "max",
+      "limits": {
+        "original": 2e-05,
+        "10pct": 2.2000000000000003e-05,
+        "15pct": 2.3e-05
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_vref_error_V": {
+      "value": 0.0186649439640727,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.075,
+        "10pct": 0.0825,
+        "15pct": 0.08625
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_settling_s": {
+      "value": 0.0,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 1e-05,
+        "10pct": 1.1000000000000001e-05,
+        "15pct": 1.15e-05
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_overshoot": {
+      "value": 1.0114735568783497,
+      "unit": "ratio",
+      "sense": "max",
+      "limits": {
+        "original": 1.5,
+        "10pct": 1.6500000000000001,
+        "15pct": 1.7249999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_peak_current_A": {
+      "value": 2.261147081565856e-05,
+      "unit": "A",
+      "sense": "max",
+      "limits": {
+        "original": 0.0001,
+        "10pct": 0.00011000000000000002,
+        "15pct": 0.00011499999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_energy_J": {
+      "value": 5.570911706828745e-10,
+      "unit": "J",
+      "sense": "max",
+      "limits": {
+        "original": 1e-09,
+        "10pct": 1.1000000000000001e-09,
+        "15pct": 1.15e-09
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "operating_point": {
+    "MP1": {
+      "region": 2.0,
+      "ids": -9.567462864321193e-06,
+      "vgs": -0.5964636870917215,
+      "vds": -0.5964636870917215,
+      "vdsat": -0.171462859692103,
+      "gm": 9.734589768176067e-05,
+      "gds": 3.502954192538501e-07,
+      "gmid": 10.174682573870362,
+      "headroom_V": 0.4250008273996185
+    },
+    "MP2": {
+      "region": 2.0,
+      "ids": -9.741540945549775e-06,
+      "vgs": -0.5964636870917215,
+      "vds": -1.14366494396441,
+      "vdsat": -0.1714626851129182,
+      "gm": 9.886156301030545e-05,
+      "gds": 3.034651318791189e-07,
+      "gmid": 10.14845223798688,
+      "headroom_V": 0.9722022588514918
+    },
+    "MN1": {
+      "region": 2.0,
+      "ids": 9.741541437717357e-06,
+      "vgs": 0.6563350560355902,
+      "vds": 0.6563350560355902,
+      "vdsat": 0.2431344065102232,
+      "gm": 6.839309271951855e-05,
+      "gds": 2.236417325363351e-07,
+      "gmid": 7.02076700661702,
+      "headroom_V": 0.41320064952536695
+    },
+    "MN2": {
+      "region": 2.0,
+      "ids": 9.567442974493612e-06,
+      "vgs": 0.5429586205085497,
+      "vds": 1.090159877381238,
+      "vdsat": 0.1314493543059297,
+      "gm": 0.00012844825273905,
+      "gds": 2.472660929755946e-07,
+      "gmid": 13.425557181943752,
+      "headroom_V": 0.9587105230753084
+    },
+    "MOUT": {
+      "region": 2.0,
+      "ids": 3.916314193420963e-05,
+      "vgs": 0.6563350560355902,
+      "vds": 0.9,
+      "vdsat": 0.243134303465847,
+      "gm": 0.0002747484727650428,
+      "gds": 7.548374908706061e-07,
+      "gmid": 7.015485969603619,
+      "headroom_V": 0.656865696534153
+    },
+    "MPUP": {
+      "region": 2.0,
+      "ids": -3.072208986193572e-06,
+      "vgs": -1.8,
+      "vds": -1.770140349135998,
+      "vdsat": -1.088756445348261,
+      "gm": 3.927492261757176e-06,
+      "gds": 2.13126740385353e-08,
+      "gmid": 1.2783935856600983,
+      "headroom_V": 0.6813839037877369
+    },
+    "MDET": {
+      "region": 1.0,
+      "ids": 3.072210726416673e-06,
+      "vgs": 0.6563350560355902,
+      "vds": 0.02985965086400233,
+      "vdsat": 0.2270286824811727,
+      "gm": 1.34617489633017e-05,
+      "gds": 9.521878243913454e-05,
+      "gmid": 4.381779168840755,
+      "headroom_V": -0.19716903161717036
+    },
+    "MSTART": {
+      "gds": 1.170462790042794e-13,
+      "gm": 9.987846378628239e-11,
+      "vdsat": 0.0394522598027229,
+      "vds": 1.203536312908279,
+      "vgs": 0.02985965086400233,
+      "ids": 3.305084761742426e-12,
+      "region": 0.0,
+      "gmid": 30.21963761486919,
+      "headroom_V": 1.164084053105556
+    }
+  },
+  "dc_nodes": {
+    "XDUT.nx": 0.02985965086400233,
+    "XDUT.nr": 0.1133764355270404,
+    "XDUT.na": 1.203536312908279,
+    "iout": 0.9,
+    "vref": 0.6563350560355902,
+    "vdd": 1.8
+  },
+  "all_nominal_checks_complete": true,
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "model_dimensions_valid": true,
+  "scope": "SMIC18 tt/res_tt 27C 1.8V; nominal current, 121-point output compliance, power including output, cold-start 1us and 10us ramps"
+}

@@ -1,0 +1,16 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        M["主CML锁存器"]
+        S["从CML锁存器"]
+        BIAS["尾电流偏置"]
+    end
+    CLK["差分输入时钟"]
+    OUT["差分除二输出及负载"]
+    CLK -.->|"一相"| M
+    CLK -.->|"另一相"| S
+    M -->|"差分状态"| S
+    S -->|"反相反馈"| M
+    S --> OUT
+    BIAS -.->|"尾电流"| M
+    BIAS -.->|"尾电流"| S

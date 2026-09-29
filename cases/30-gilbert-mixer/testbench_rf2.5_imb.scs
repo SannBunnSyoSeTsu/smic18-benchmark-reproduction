@@ -1,0 +1,31 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/30-gilbert-mixer/circuit.scs"
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=50u
+X (0 iref vdd lop lon rfp rfn ifoutp ifoutn) gilbert_mixer
+CIFP (ifoutp 0) capacitor c=200f
+CIFN (ifoutn 0) capacitor c=200f
+simulatorOptions options temp=27 tnom=27 reltol=1e-07 vabstol=1e-9 iabstol=1e-14
+saveOptions options save=selected
+save vdd iref lop lon rfp rfn ifoutp ifoutn VDD:p X.stp X.stn X.drfp X.drfn
+VLOP (losp 0) vsource dc=.9 type=sine ampl=0.3535 freq=2.3e+09 sinephase=0
+RLOP (losp lop) resistor r=50
+VRFP (rfsp 0) vsource dc=.9 type=sine ampl=0.0202 freq=2.5e+09 sinephase=0
+RRFP (rfsp rfp) resistor r=50
+VLON (losn 0) vsource dc=.9 type=sine ampl=0.3465 freq=2.3e+09 sinephase=178
+RLON (losn lon) resistor r=50
+VRFN (rfsn 0) vsource dc=.9 type=sine ampl=0.0198 freq=2.5e+09 sinephase=180
+RRFN (rfsn rfn) resistor r=50
+save X.MREF:ids X.MREF:gm X.MREF:vgs X.MREF:vds X.MREF:vdsat
+save X.MTAILP:ids X.MTAILP:gm X.MTAILP:vgs X.MTAILP:vds X.MTAILP:vdsat
+save X.MTAILN:ids X.MTAILN:gm X.MTAILN:vgs X.MTAILN:vds X.MTAILN:vdsat
+save X.MRFP:ids X.MRFP:gm X.MRFP:vgs X.MRFP:vds X.MRFP:vdsat
+save X.MRFN:ids X.MRFN:gm X.MRFN:vgs X.MRFN:vds X.MRFN:vdsat
+save X.MQ1:ids X.MQ1:gm X.MQ1:vgs X.MQ1:vds X.MQ1:vdsat
+save X.MQ2:ids X.MQ2:gm X.MQ2:vgs X.MQ2:vds X.MQ2:vdsat
+save X.MQ3:ids X.MQ3:gm X.MQ3:vgs X.MQ3:vds X.MQ3:vdsat
+save X.MQ4:ids X.MQ4:gm X.MQ4:vgs X.MQ4:vds X.MQ4:vdsat
+dcOp dc
+tran tran stop=15n maxstep=1.5e-12 method=traponly errpreset=conservative

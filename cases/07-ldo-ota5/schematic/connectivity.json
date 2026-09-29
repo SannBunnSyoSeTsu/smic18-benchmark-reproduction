@@ -1,0 +1,2966 @@
+{
+  "generated_at": "2026-09-23T06:26:35.091866+00:00",
+  "circuit_sha256": "76e466a10c5e9913522f67b64a5f1ee7498ad43eea2858a7405edc00c12c4bee",
+  "top": "ldo_ota5",
+  "subcircuit_ports": {
+    "ldo_ota5": [
+      "vin",
+      "vout",
+      "vss",
+      "vref",
+      "ibias",
+      "fb",
+      "gate_drive",
+      "gate"
+    ]
+  },
+  "instances": {
+    "ldo_ota5/MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ibias",
+        "G": "ibias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "23.42u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MREF (ibias ibias vss vss) n18 w=23.42u l=1u m=1",
+      "W_unit_um": 23.419999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        3,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          3,
+          6
+        ],
+        "S": [
+          3,
+          4
+        ],
+        "G": [
+          1.45,
+          5
+        ],
+        "B": [
+          3.86,
+          5
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/MPTREF": {
+      "name": "MPTREF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pbias",
+        "G": "pbias",
+        "S": "vin",
+        "B": "vin"
+      },
+      "parameters": {
+        "w": "32.26u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPTREF (pbias pbias vin vin) p18 w=32.26u l=1u m=1",
+      "W_unit_um": 32.26,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        11,
+        18
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          17
+        ],
+        "S": [
+          11,
+          19
+        ],
+        "G": [
+          9.45,
+          18
+        ],
+        "B": [
+          11.86,
+          18
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/MNPT": {
+      "name": "MNPT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pbias",
+        "G": "ibias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "23.42u",
+        "l": "1u",
+        "m": "0.2"
+      },
+      "source_line": "MNPT (pbias ibias vss vss) n18 w=23.42u l=1u m=0.2",
+      "W_unit_um": 23.419999999999998,
+      "L_um": 1.0,
+      "m": 0.2,
+      "sheet": 1,
+      "origin": [
+        11,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          11,
+          6
+        ],
+        "S": [
+          11,
+          4
+        ],
+        "G": [
+          9.45,
+          5
+        ],
+        "B": [
+          11.86,
+          5
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "tail",
+        "G": "pbias",
+        "S": "vin",
+        "B": "vin"
+      },
+      "parameters": {
+        "w": "32.26u",
+        "l": "1u",
+        "m": "10"
+      },
+      "source_line": "MTAIL (tail pbias vin vin) p18 w=32.26u l=1u m=10",
+      "W_unit_um": 32.26,
+      "L_um": 1.0,
+      "m": 10.0,
+      "sheet": 1,
+      "origin": [
+        29,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          20
+        ],
+        "S": [
+          29,
+          22
+        ],
+        "G": [
+          27.45,
+          21
+        ],
+        "B": [
+          29.86,
+          21
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nleft",
+        "G": "fb",
+        "S": "tail",
+        "B": "tail"
+      },
+      "parameters": {
+        "w": "79.52u",
+        "l": "1u",
+        "m": "3"
+      },
+      "source_line": "MINP (nleft fb tail tail) p18 w=79.52u l=1u m=3",
+      "W_unit_um": 79.52,
+      "L_um": 1.0,
+      "m": 3.0,
+      "sheet": 1,
+      "origin": [
+        24,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          24,
+          12
+        ],
+        "S": [
+          24,
+          14
+        ],
+        "G": [
+          22.45,
+          13
+        ],
+        "B": [
+          24.86,
+          13
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ampout",
+        "G": "vref",
+        "S": "tail",
+        "B": "tail"
+      },
+      "parameters": {
+        "w": "79.52u",
+        "l": "1u",
+        "m": "3"
+      },
+      "source_line": "MINN (ampout vref tail tail) p18 w=79.52u l=1u m=3",
+      "W_unit_um": 79.52,
+      "L_um": 1.0,
+      "m": 3.0,
+      "sheet": 1,
+      "origin": [
+        36,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          12
+        ],
+        "S": [
+          36,
+          14
+        ],
+        "G": [
+          34.45,
+          13
+        ],
+        "B": [
+          36.86,
+          13
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/MLOAD": {
+      "name": "MLOAD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nleft",
+        "G": "nleft",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "86.32u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MLOAD (nleft nleft vss vss) n18 w=86.32u l=4u m=1",
+      "W_unit_um": 86.32,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        24,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          24,
+          6
+        ],
+        "S": [
+          24,
+          4
+        ],
+        "G": [
+          22.45,
+          5
+        ],
+        "B": [
+          24.86,
+          5
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/MLOUT": {
+      "name": "MLOUT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ampout",
+        "G": "nleft",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "86.32u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MLOUT (ampout nleft vss vss) n18 w=86.32u l=4u m=1",
+      "W_unit_um": 86.32,
+      "L_um": 4.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        36,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          6
+        ],
+        "S": [
+          36,
+          4
+        ],
+        "G": [
+          34.45,
+          5
+        ],
+        "B": [
+          36.86,
+          5
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/MBUF": {
+      "name": "MBUF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "gate_drive",
+        "G": "pbuf",
+        "S": "vin",
+        "B": "vin"
+      },
+      "parameters": {
+        "w": "0.74u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MBUF (gate_drive pbuf vin vin) p18 w=0.74u l=0.18u m=1",
+      "W_unit_um": 0.74,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        10,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          19
+        ],
+        "S": [
+          10,
+          21
+        ],
+        "G": [
+          8.45,
+          20
+        ],
+        "B": [
+          10.86,
+          20
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/MSF": {
+      "name": "MSF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pbuf",
+        "G": "ampout",
+        "S": "gate_drive",
+        "B": "gate_drive"
+      },
+      "parameters": {
+        "w": "12.36u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MSF (pbuf ampout gate_drive gate_drive) p18 w=12.36u l=0.18u m=1",
+      "W_unit_um": 12.36,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        10,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          12
+        ],
+        "S": [
+          10,
+          14
+        ],
+        "G": [
+          8.45,
+          13
+        ],
+        "B": [
+          10.86,
+          13
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/MNBUF": {
+      "name": "MNBUF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pbuf",
+        "G": "ibias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "23.42u",
+        "l": "1u",
+        "m": "0.6"
+      },
+      "source_line": "MNBUF (pbuf ibias vss vss) n18 w=23.42u l=1u m=0.6",
+      "W_unit_um": 23.419999999999998,
+      "L_um": 1.0,
+      "m": 0.6,
+      "sheet": 2,
+      "origin": [
+        10,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          7
+        ],
+        "S": [
+          10,
+          5
+        ],
+        "G": [
+          8.45,
+          6
+        ],
+        "B": [
+          10.86,
+          6
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/MPASS": {
+      "name": "MPASS",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "gate",
+        "S": "vin",
+        "B": "vin"
+      },
+      "parameters": {
+        "w": "49.88u",
+        "l": "0.18u",
+        "m": "60"
+      },
+      "source_line": "MPASS (vout gate vin vin) p18 w=49.88u l=0.18u m=60",
+      "W_unit_um": 49.88,
+      "L_um": 0.18,
+      "m": 60.0,
+      "sheet": 2,
+      "origin": [
+        29,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          29,
+          18
+        ],
+        "S": [
+          29,
+          20
+        ],
+        "G": [
+          27.45,
+          19
+        ],
+        "B": [
+          29.86,
+          19
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/RLAG": {
+      "name": "RLAG",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "ampout",
+        "2": "lag",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "91.1083u"
+      },
+      "source_line": "RLAG (ampout lag vss) rpposab_3t w=1u l=91.1083u",
+      "sheet": 2,
+      "origin": [
+        29,
+        10
+      ],
+      "rendered_pins": {
+        "1": [
+          29,
+          10.82
+        ],
+        "2": [
+          29,
+          9.18
+        ],
+        "B": [
+          29.7,
+          10
+        ]
+      },
+      "block": "ldo_ota5"
+    },
+    "ldo_ota5/CLAG": {
+      "name": "CLAG",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "lag",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "30u",
+        "l": "30u",
+        "m": "228.859"
+      },
+      "source_line": "CLAG (lag vss) mim w=30u l=30u m=228.859",
+      "sheet": 2,
+      "origin": [
+        29,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          29,
+          5.82
+        ],
+        "2": [
+          29,
+          4.18
+        ]
+      },
+      "block": "ldo_ota5"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "nleft",
+        "G": "fb",
+        "S": "tail",
+        "B": "tail"
+      },
+      "parameters": {
+        "w": "79.52u",
+        "l": "1u",
+        "m": "3"
+      },
+      "source_line": "MINP (nleft fb tail tail) p18 w=79.52u l=1u m=3",
+      "W_unit_um": 79.52,
+      "L_um": 1.0,
+      "m": 3.0,
+      "definition": "ldo_ota5/MINP",
+      "path": "MINP"
+    },
+    "MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ampout",
+        "G": "vref",
+        "S": "tail",
+        "B": "tail"
+      },
+      "parameters": {
+        "w": "79.52u",
+        "l": "1u",
+        "m": "3"
+      },
+      "source_line": "MINN (ampout vref tail tail) p18 w=79.52u l=1u m=3",
+      "W_unit_um": 79.52,
+      "L_um": 1.0,
+      "m": 3.0,
+      "definition": "ldo_ota5/MINN",
+      "path": "MINN"
+    },
+    "MLOAD": {
+      "name": "MLOAD",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "nleft",
+        "G": "nleft",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "86.32u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MLOAD (nleft nleft vss vss) n18 w=86.32u l=4u m=1",
+      "W_unit_um": 86.32,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "ldo_ota5/MLOAD",
+      "path": "MLOAD"
+    },
+    "MLOUT": {
+      "name": "MLOUT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ampout",
+        "G": "nleft",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "86.32u",
+        "l": "4u",
+        "m": "1"
+      },
+      "source_line": "MLOUT (ampout nleft vss vss) n18 w=86.32u l=4u m=1",
+      "W_unit_um": 86.32,
+      "L_um": 4.0,
+      "m": 1.0,
+      "definition": "ldo_ota5/MLOUT",
+      "path": "MLOUT"
+    },
+    "MTAIL": {
+      "name": "MTAIL",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "tail",
+        "G": "pbias",
+        "S": "vin",
+        "B": "vin"
+      },
+      "parameters": {
+        "w": "32.26u",
+        "l": "1u",
+        "m": "10"
+      },
+      "source_line": "MTAIL (tail pbias vin vin) p18 w=32.26u l=1u m=10",
+      "W_unit_um": 32.26,
+      "L_um": 1.0,
+      "m": 10.0,
+      "definition": "ldo_ota5/MTAIL",
+      "path": "MTAIL"
+    },
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ibias",
+        "G": "ibias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "23.42u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MREF (ibias ibias vss vss) n18 w=23.42u l=1u m=1",
+      "W_unit_um": 23.419999999999998,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ldo_ota5/MREF",
+      "path": "MREF"
+    },
+    "MPASS": {
+      "name": "MPASS",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vout",
+        "G": "gate",
+        "S": "vin",
+        "B": "vin"
+      },
+      "parameters": {
+        "w": "49.88u",
+        "l": "0.18u",
+        "m": "60"
+      },
+      "source_line": "MPASS (vout gate vin vin) p18 w=49.88u l=0.18u m=60",
+      "W_unit_um": 49.88,
+      "L_um": 0.18,
+      "m": 60.0,
+      "definition": "ldo_ota5/MPASS",
+      "path": "MPASS"
+    },
+    "MPTREF": {
+      "name": "MPTREF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pbias",
+        "G": "pbias",
+        "S": "vin",
+        "B": "vin"
+      },
+      "parameters": {
+        "w": "32.26u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPTREF (pbias pbias vin vin) p18 w=32.26u l=1u m=1",
+      "W_unit_um": 32.26,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ldo_ota5/MPTREF",
+      "path": "MPTREF"
+    },
+    "MNPT": {
+      "name": "MNPT",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pbias",
+        "G": "ibias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "23.42u",
+        "l": "1u",
+        "m": "0.2"
+      },
+      "source_line": "MNPT (pbias ibias vss vss) n18 w=23.42u l=1u m=0.2",
+      "W_unit_um": 23.419999999999998,
+      "L_um": 1.0,
+      "m": 0.2,
+      "definition": "ldo_ota5/MNPT",
+      "path": "MNPT"
+    },
+    "MSF": {
+      "name": "MSF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pbuf",
+        "G": "ampout",
+        "S": "gate_drive",
+        "B": "gate_drive"
+      },
+      "parameters": {
+        "w": "12.36u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MSF (pbuf ampout gate_drive gate_drive) p18 w=12.36u l=0.18u m=1",
+      "W_unit_um": 12.36,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ldo_ota5/MSF",
+      "path": "MSF"
+    },
+    "MBUF": {
+      "name": "MBUF",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "gate_drive",
+        "G": "pbuf",
+        "S": "vin",
+        "B": "vin"
+      },
+      "parameters": {
+        "w": "0.74u",
+        "l": "0.18u",
+        "m": "1"
+      },
+      "source_line": "MBUF (gate_drive pbuf vin vin) p18 w=0.74u l=0.18u m=1",
+      "W_unit_um": 0.74,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ldo_ota5/MBUF",
+      "path": "MBUF"
+    },
+    "MNBUF": {
+      "name": "MNBUF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pbuf",
+        "G": "ibias",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "23.42u",
+        "l": "1u",
+        "m": "0.6"
+      },
+      "source_line": "MNBUF (pbuf ibias vss vss) n18 w=23.42u l=1u m=0.6",
+      "W_unit_um": 23.419999999999998,
+      "L_um": 1.0,
+      "m": 0.6,
+      "definition": "ldo_ota5/MNBUF",
+      "path": "MNBUF"
+    },
+    "RLAG": {
+      "name": "RLAG",
+      "kind": "R",
+      "model": "rpposab_3t",
+      "pins": {
+        "1": "ampout",
+        "2": "lag",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1u",
+        "l": "91.1083u"
+      },
+      "source_line": "RLAG (ampout lag vss) rpposab_3t w=1u l=91.1083u",
+      "definition": "ldo_ota5/RLAG",
+      "path": "RLAG"
+    },
+    "CLAG": {
+      "name": "CLAG",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "lag",
+        "2": "vss"
+      },
+      "parameters": {
+        "w": "30u",
+        "l": "30u",
+        "m": "228.859"
+      },
+      "source_line": "CLAG (lag vss) mim w=30u l=30u m=228.859",
+      "definition": "ldo_ota5/CLAG",
+      "path": "CLAG"
+    }
+  },
+  "nets": {
+    "ldo_ota5/ibias": [
+      {
+        "instance": "ldo_ota5/MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          3,
+          6
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          1.45,
+          5
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MNPT",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          9.45,
+          5
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MNBUF",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          8.45,
+          6
+        ]
+      }
+    ],
+    "ldo_ota5/vss": [
+      {
+        "instance": "ldo_ota5/MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          3,
+          4
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          3.86,
+          5
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MNPT",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          11,
+          4
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MNPT",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          11.86,
+          5
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MLOAD",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          24,
+          4
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MLOAD",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          24.86,
+          5
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MLOUT",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          36,
+          4
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MLOUT",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          36.86,
+          5
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MNBUF",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          10,
+          5
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MNBUF",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          10.86,
+          6
+        ]
+      },
+      {
+        "instance": "ldo_ota5/RLAG",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          29.7,
+          10
+        ]
+      },
+      {
+        "instance": "ldo_ota5/CLAG",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          29,
+          4.18
+        ]
+      }
+    ],
+    "ldo_ota5/pbias": [
+      {
+        "instance": "ldo_ota5/MPTREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          11,
+          17
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MPTREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          9.45,
+          18
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MNPT",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          11,
+          6
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MTAIL",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          27.45,
+          21
+        ]
+      }
+    ],
+    "ldo_ota5/vin": [
+      {
+        "instance": "ldo_ota5/MPTREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          11,
+          19
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MPTREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          11.86,
+          18
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MTAIL",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          29,
+          22
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MTAIL",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          29.86,
+          21
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MBUF",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          10,
+          21
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MBUF",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          10.86,
+          20
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MPASS",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          29,
+          20
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MPASS",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          29.86,
+          19
+        ]
+      }
+    ],
+    "ldo_ota5/tail": [
+      {
+        "instance": "ldo_ota5/MTAIL",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          29,
+          20
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MINP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          24,
+          14
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MINP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          24.86,
+          13
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MINN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          36,
+          14
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MINN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          36.86,
+          13
+        ]
+      }
+    ],
+    "ldo_ota5/nleft": [
+      {
+        "instance": "ldo_ota5/MINP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          24,
+          12
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MLOAD",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          24,
+          6
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MLOAD",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          22.45,
+          5
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MLOUT",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          34.45,
+          5
+        ]
+      }
+    ],
+    "ldo_ota5/fb": [
+      {
+        "instance": "ldo_ota5/MINP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          22.45,
+          13
+        ]
+      }
+    ],
+    "ldo_ota5/ampout": [
+      {
+        "instance": "ldo_ota5/MINN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          36,
+          12
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MLOUT",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          36,
+          6
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MSF",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          8.45,
+          13
+        ]
+      },
+      {
+        "instance": "ldo_ota5/RLAG",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          29,
+          10.82
+        ]
+      }
+    ],
+    "ldo_ota5/vref": [
+      {
+        "instance": "ldo_ota5/MINN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          34.45,
+          13
+        ]
+      }
+    ],
+    "ldo_ota5/gate_drive": [
+      {
+        "instance": "ldo_ota5/MBUF",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          10,
+          19
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MSF",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          10,
+          14
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MSF",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          10.86,
+          13
+        ]
+      }
+    ],
+    "ldo_ota5/pbuf": [
+      {
+        "instance": "ldo_ota5/MBUF",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          8.45,
+          20
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MSF",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          10,
+          12
+        ]
+      },
+      {
+        "instance": "ldo_ota5/MNBUF",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          10,
+          7
+        ]
+      }
+    ],
+    "ldo_ota5/vout": [
+      {
+        "instance": "ldo_ota5/MPASS",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          29,
+          18
+        ]
+      }
+    ],
+    "ldo_ota5/gate": [
+      {
+        "instance": "ldo_ota5/MPASS",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          27.45,
+          19
+        ]
+      }
+    ],
+    "ldo_ota5/lag": [
+      {
+        "instance": "ldo_ota5/RLAG",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          29,
+          9.18
+        ]
+      },
+      {
+        "instance": "ldo_ota5/CLAG",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          29,
+          5.82
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MPTREF",
+      "pin": "S",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPTREF",
+      "pin": "B",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "S",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "B",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNPT",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINN",
+      "pin": "G",
+      "net": "vref",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPTREF",
+      "pin": "D",
+      "net": "pbias",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPTREF",
+      "pin": "G",
+      "net": "pbias",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNPT",
+      "pin": "D",
+      "net": "pbias",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "G",
+      "net": "pbias",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MTAIL",
+      "pin": "D",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINP",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINP",
+      "pin": "B",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINN",
+      "pin": "S",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINN",
+      "pin": "B",
+      "net": "tail",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINN",
+      "pin": "D",
+      "net": "ampout",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MLOUT",
+      "pin": "D",
+      "net": "ampout",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINP",
+      "pin": "D",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MLOAD",
+      "pin": "D",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MLOAD",
+      "pin": "G",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MLOUT",
+      "pin": "G",
+      "net": "nleft",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNPT",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNPT",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MLOAD",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MLOAD",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MLOUT",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MLOUT",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 1,
+      "instance": "MINP",
+      "pin": "G",
+      "net": "fb",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBUF",
+      "pin": "S",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBUF",
+      "pin": "B",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPASS",
+      "pin": "S",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPASS",
+      "pin": "B",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNBUF",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBUF",
+      "pin": "D",
+      "net": "gate_drive",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSF",
+      "pin": "S",
+      "net": "gate_drive",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSF",
+      "pin": "B",
+      "net": "gate_drive",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "RLAG",
+      "pin": "2",
+      "net": "lag",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "CLAG",
+      "pin": "1",
+      "net": "lag",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MBUF",
+      "pin": "G",
+      "net": "pbuf",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSF",
+      "pin": "D",
+      "net": "pbuf",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNBUF",
+      "pin": "D",
+      "net": "pbuf",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MSF",
+      "pin": "G",
+      "net": "ampout",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "RLAG",
+      "pin": "1",
+      "net": "ampout",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPASS",
+      "pin": "G",
+      "net": "gate",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPASS",
+      "pin": "D",
+      "net": "vout",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNBUF",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNBUF",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "RLAG",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    },
+    {
+      "sheet": 2,
+      "instance": "CLAG",
+      "pin": "2",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ldo_ota5"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "ldo_ota5",
+      "title": "偏置与五管误差放大器",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              3.86,
+              5
+            ],
+            [
+              4.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              11.86,
+              18
+            ],
+            [
+              12.15,
+              18
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11.86,
+              5
+            ],
+            [
+              12.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              29.86,
+              21
+            ],
+            [
+              30.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              24.86,
+              13
+            ],
+            [
+              25.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              36.86,
+              13
+            ],
+            [
+              37.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24.86,
+              5
+            ],
+            [
+              25.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.86,
+              5
+            ],
+            [
+              37.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pbias",
+          "points": [
+            [
+              11,
+              17
+            ],
+            [
+              11,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "points": [
+            [
+              24,
+              12
+            ],
+            [
+              24,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ampout",
+          "points": [
+            [
+              36,
+              12
+            ],
+            [
+              36,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              24,
+              17
+            ],
+            [
+              36,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              29,
+              20
+            ],
+            [
+              29,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              24,
+              14
+            ],
+            [
+              24,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "tail",
+          "points": [
+            [
+              36,
+              14
+            ],
+            [
+              36,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              11,
+              23.5
+            ],
+            [
+              29,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              11,
+              19
+            ],
+            [
+              11,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              29,
+              22
+            ],
+            [
+              29,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              1.5
+            ],
+            [
+              36,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24,
+              4
+            ],
+            [
+              24,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36,
+              4
+            ],
+            [
+              36,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "points": [
+            [
+              24,
+              6
+            ],
+            [
+              24,
+              9
+            ],
+            [
+              32.5,
+              9
+            ],
+            [
+              32.5,
+              5
+            ],
+            [
+              34.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              1.45,
+              5
+            ],
+            [
+              0.9500000000000002,
+              5
+            ],
+            [
+              0.9500000000000002,
+              7.2
+            ],
+            [
+              3,
+              7.2
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pbias",
+          "points": [
+            [
+              9.45,
+              18
+            ],
+            [
+              8.95,
+              18
+            ],
+            [
+              8.95,
+              15.8
+            ],
+            [
+              11,
+              15.8
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "points": [
+            [
+              22.45,
+              5
+            ],
+            [
+              21.95,
+              5
+            ],
+            [
+              21.95,
+              7.2
+            ],
+            [
+              24,
+              7.2
+            ],
+            [
+              24,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              9.45,
+              5
+            ],
+            [
+              8.899999999999999,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pbias",
+          "points": [
+            [
+              27.45,
+              21
+            ],
+            [
+              26.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "fb",
+          "points": [
+            [
+              22.45,
+              13
+            ],
+            [
+              21.9,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vref",
+          "points": [
+            [
+              34.45,
+              13
+            ],
+            [
+              33.900000000000006,
+              13
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            4.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vin",
+          "point": [
+            12.15,
+            18
+          ],
+          "text": "vin",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            12.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vin",
+          "point": [
+            30.15,
+            21
+          ],
+          "text": "vin",
+          "body": true
+        },
+        {
+          "net": "tail",
+          "point": [
+            25.15,
+            13
+          ],
+          "text": "tail",
+          "body": true
+        },
+        {
+          "net": "tail",
+          "point": [
+            37.15,
+            13
+          ],
+          "text": "tail",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            25.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "pbias",
+          "point": [
+            11.0,
+            11.5
+          ],
+          "text": "pbias",
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "point": [
+            24.0,
+            9.0
+          ],
+          "text": "nleft",
+          "body": false
+        },
+        {
+          "net": "ampout",
+          "point": [
+            36.0,
+            9.0
+          ],
+          "text": "ampout",
+          "body": false
+        },
+        {
+          "net": "tail",
+          "point": [
+            24,
+            17
+          ],
+          "text": "tail",
+          "body": false
+        },
+        {
+          "net": "vin",
+          "point": [
+            11,
+            23.5
+          ],
+          "text": "vin",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            3,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            2,
+            7.2
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "pbias",
+          "point": [
+            10,
+            15.8
+          ],
+          "text": "pbias",
+          "body": false
+        },
+        {
+          "net": "nleft",
+          "point": [
+            23,
+            7.2
+          ],
+          "text": "nleft",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            8.899999999999999,
+            5
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "pbias",
+          "point": [
+            26.9,
+            21
+          ],
+          "text": "pbias",
+          "body": false
+        },
+        {
+          "net": "fb",
+          "point": [
+            21.9,
+            13
+          ],
+          "text": "fb",
+          "body": false
+        },
+        {
+          "net": "vref",
+          "point": [
+            33.900000000000006,
+            13
+          ],
+          "text": "vref",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "ldo_ota5",
+      "title": "栅极缓冲、PMOS 调整管与工艺 RC 补偿",
+      "wires": [
+        {
+          "net": "vin",
+          "points": [
+            [
+              10.86,
+              20
+            ],
+            [
+              11.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "gate_drive",
+          "points": [
+            [
+              10.86,
+              13
+            ],
+            [
+              11.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.86,
+              6
+            ],
+            [
+              11.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              29.86,
+              19
+            ],
+            [
+              30.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "gate_drive",
+          "points": [
+            [
+              10,
+              19
+            ],
+            [
+              10,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pbuf",
+          "points": [
+            [
+              10,
+              12
+            ],
+            [
+              10,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pbuf",
+          "points": [
+            [
+              10,
+              12
+            ],
+            [
+              6.2,
+              12
+            ],
+            [
+              6.2,
+              20
+            ],
+            [
+              8.45,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              10,
+              23
+            ],
+            [
+              29,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              29,
+              20
+            ],
+            [
+              29,
+              23
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29.7,
+              10
+            ],
+            [
+              30.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "lag",
+          "points": [
+            [
+              29,
+              9.18
+            ],
+            [
+              29,
+              5.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              1.5
+            ],
+            [
+              29,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              5
+            ],
+            [
+              10,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              29,
+              4.18
+            ],
+            [
+              29,
+              1.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ampout",
+          "points": [
+            [
+              8.45,
+              13
+            ],
+            [
+              7.8999999999999995,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              8.45,
+              6
+            ],
+            [
+              7.8999999999999995,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vout",
+          "points": [
+            [
+              29,
+              18
+            ],
+            [
+              29,
+              17.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gate",
+          "points": [
+            [
+              27.45,
+              19
+            ],
+            [
+              26.9,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ampout",
+          "points": [
+            [
+              29,
+              10.82
+            ],
+            [
+              29,
+              11.46
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vin",
+          "point": [
+            11.15,
+            20
+          ],
+          "text": "vin",
+          "body": true
+        },
+        {
+          "net": "gate_drive",
+          "point": [
+            11.15,
+            13
+          ],
+          "text": "gate_drive",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vin",
+          "point": [
+            30.15,
+            19
+          ],
+          "text": "vin",
+          "body": true
+        },
+        {
+          "net": "gate_drive",
+          "point": [
+            10.0,
+            16.5
+          ],
+          "text": "gate_drive",
+          "body": false
+        },
+        {
+          "net": "pbuf",
+          "point": [
+            10.0,
+            9.5
+          ],
+          "text": "pbuf",
+          "body": false
+        },
+        {
+          "net": "vin",
+          "point": [
+            10,
+            23
+          ],
+          "text": "vin",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            30.15,
+            10
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "lag",
+          "point": [
+            29.0,
+            7.5
+          ],
+          "text": "lag",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            10,
+            1.5
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "ampout",
+          "point": [
+            7.8999999999999995,
+            13
+          ],
+          "text": "ampout",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            7.8999999999999995,
+            6
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "vout",
+          "point": [
+            29,
+            17.36
+          ],
+          "text": "vout",
+          "body": false
+        },
+        {
+          "net": "gate",
+          "point": [
+            26.9,
+            19
+          ],
+          "text": "gate",
+          "body": false
+        },
+        {
+          "net": "ampout",
+          "point": [
+            29,
+            11.46
+          ],
+          "text": "ampout",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "ldo_ota5": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

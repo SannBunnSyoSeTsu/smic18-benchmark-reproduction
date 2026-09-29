@@ -1,0 +1,15 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        EN["HD使能门控与双相驱动"]
+        FLY["飞跨电容与交叉预充"]
+        RECT["双相整流及输出存储"]
+    end
+    CLK["时钟 / EN"]
+    VDD["1.8V电源"]
+    LOAD["固定负载及Vout"]
+    CLK -.-> EN
+    EN -.->|"两相驱动"| FLY
+    VDD -->|"充电"| FLY
+    FLY -->|"电荷转移"| RECT
+    RECT -->|"升压输出"| LOAD

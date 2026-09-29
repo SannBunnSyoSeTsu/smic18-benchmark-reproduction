@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-09-29T05:22:53.131942+00:00",
+  "baseline_groups": {
+    "10mv": "runs/28/20260929T050135278768Z_precision_baseline_10mv",
+    "20mv": "runs/28/20260929T045836976381Z_precision_retry_20mv"
+  },
+  "final_groups": {
+    "10mv": "runs/28/20260929T050627252473Z_precision_refined_10mv",
+    "20mv": "runs/28/20260929T050627252251Z_precision_refined_20mv"
+  },
+  "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+  "baseline_settings": {
+    "maxstep_s": 2.5e-12,
+    "global_reltol": 1e-07,
+    "vabstol_V": 1e-08,
+    "iabstol_A": 1e-12
+  },
+  "refined_settings": {
+    "maxstep_s": 1.25e-12,
+    "global_reltol": 1e-08,
+    "vabstol_V": 1e-08,
+    "iabstol_A": 1e-12
+  },
+  "exact_original_readout_strobes": true,
+  "metrics": [
+    {
+      "metric": "10mv_gain_vv",
+      "baseline": 4.796826882376545,
+      "refined": 4.7967568861612975,
+      "absolute_difference": 6.999621524794719e-05,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "10mv_sfdr_db",
+      "baseline": 88.8453503283543,
+      "refined": 87.59560803736844,
+      "absolute_difference": 1.2497422909858642,
+      "maximum_difference": 0.5,
+      "passed": false
+    },
+    {
+      "metric": "10mv_cm_mean_v",
+      "baseline": 1.178956953715042,
+      "refined": 1.1789567711008577,
+      "absolute_difference": 1.8261418421872122e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "10mv_output_min_v",
+      "baseline": 1.153762282084477,
+      "refined": 1.153762360729059,
+      "absolute_difference": 7.864458195783186e-08,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "10mv_output_max_v",
+      "baseline": 1.203227415486884,
+      "refined": 1.203227500450661,
+      "absolute_difference": 8.496377690292434e-08,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "10mv_hold_movement_ratio",
+      "baseline": 0.016309173298658188,
+      "refined": 0.016311796536376422,
+      "absolute_difference": 2.623237718234195e-06,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "10mv_power_w",
+      "baseline": 0.0047482312792353635,
+      "refined": 0.004748170478733103,
+      "absolute_difference": 6.080050226047601e-08,
+      "maximum_difference": 5e-06,
+      "passed": true
+    },
+    {
+      "metric": "20mv_gain_vv",
+      "baseline": 4.812391044986499,
+      "refined": 4.812329525028783,
+      "absolute_difference": 6.15199577156389e-05,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "20mv_sfdr_db",
+      "baseline": 85.12816694312689,
+      "refined": 84.67656105624818,
+      "absolute_difference": 0.45160588687870984,
+      "maximum_difference": 0.5,
+      "passed": true
+    },
+    {
+      "metric": "20mv_cm_mean_v",
+      "baseline": 1.178707562563946,
+      "refined": 1.178707631054574,
+      "absolute_difference": 6.849062805791561e-08,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "20mv_output_min_v",
+      "baseline": 1.129011752101746,
+      "refined": 1.129012080301088,
+      "absolute_difference": 3.2819934192573896e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "20mv_output_max_v",
+      "baseline": 1.22677969174362,
+      "refined": 1.226778709217638,
+      "absolute_difference": 9.825259819074006e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "20mv_hold_movement_ratio",
+      "baseline": 0.016231586187142336,
+      "refined": 0.01623403834124252,
+      "absolute_difference": 2.452154100184012e-06,
+      "maximum_difference": 0.0002,
+      "passed": true
+    },
+    {
+      "metric": "20mv_power_w",
+      "baseline": 0.0047482997745100525,
+      "refined": 0.004748237365427692,
+      "absolute_difference": 6.240908236032627e-08,
+      "maximum_difference": 5e-06,
+      "passed": true
+    }
+  ],
+  "passed": false
+}

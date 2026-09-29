@@ -1,0 +1,223 @@
+[
+  {
+    "generated_at": "2026-09-29T03:38:35.172778+00:00",
+    "circuit_sha256": "f52044e3eb2fecb3be754b67ce0553ee237d302f632987b7e988c7220065c3ef",
+    "parameters": {
+      "switch_scale": 2,
+      "ci_fF": 450,
+      "fixture_native_sizes_fixed": true
+    },
+    "status": "needs_iteration",
+    "values": {
+      "nominal": {
+        "dc": 0.06640625,
+        "gain": 1.3007089457535537,
+        "sndr8_dB": 24.930619986924544,
+        "sndr16_dB": 32.76599951136995,
+        "sndr32_dB": 41.261314667534435,
+        "shaping_dB": 29.33622728325907,
+        "density": 0.533203125,
+        "transitions": 0.5009784735812133,
+        "invalid": 0,
+        "state_peak_V": 0.5603436522672643,
+        "source_mean_power_W": 0.0017100845965516906,
+        "time_weighted_power_W": 0.0015801076795813657,
+        "DC_error": 0.016406250000000004,
+        "coefficient_real": -0.318573255153337,
+        "coefficient_imag": 0.22533756819870432
+      },
+      "mid_pos": {
+        "dc": 0.06640625,
+        "gain": 1.3068003192482112,
+        "sndr8_dB": 25.717169720154086,
+        "sndr16_dB": 33.439886556290205,
+        "sndr32_dB": 38.68944783214716,
+        "shaping_dB": 27.748264996934985,
+        "density": 0.533203125,
+        "transitions": 0.5401174168297456,
+        "invalid": 0,
+        "state_peak_V": 0.537791088982148,
+        "source_mean_power_W": 0.0017131985671547279,
+        "time_weighted_power_W": 0.0015854084303432532,
+        "DC_error": 0.016406250000000004,
+        "coefficient_real": 0.23174302016368448,
+        "coefficient_imag": 0.2746671305525073
+      },
+      "mid_inv": {
+        "dc": -0.06640625,
+        "gain": 1.30475771314064,
+        "sndr8_dB": 26.42379633600791,
+        "sndr16_dB": 34.89672882473855,
+        "sndr32_dB": 38.253646161193615,
+        "shaping_dB": 27.340173050727596,
+        "density": 0.466796875,
+        "transitions": 0.5362035225048923,
+        "invalid": 0,
+        "state_peak_V": 0.5450432354618168,
+        "source_mean_power_W": 0.0017120350608742863,
+        "time_weighted_power_W": 0.001583878546976426,
+        "DC_error": 0.016406250000000004,
+        "coefficient_real": -0.23146911656168065,
+        "coefficient_imag": -0.27416326387648027
+      },
+      "suite": {
+        "polarity_amplitude_ratio": 0.9984369409178397,
+        "polarity_phase_error_deg": 0.01845589766418879,
+        "osr_improvement_dB": 8.495315156164487
+      }
+    },
+    "groups": {
+      "nominal": "runs/40/20260929T033501124865Z_nominal",
+      "mid_pos": "runs/40/20260929T033600850360Z_mid_pos",
+      "mid_inv": "runs/40/20260929T033700390245Z_mid_inv"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T03:53:42.035419+00:00",
+    "circuit_sha256": "86767b3e18b29812fe33bfdfa9971c67dff4512ca22bafaa31356676d058bbf4",
+    "parameters": {
+      "switch_scale": 1,
+      "ci_fF": 450,
+      "hold_fF": 300,
+      "fixture_native_sizes_fixed": true
+    },
+    "status": "complete_original",
+    "values": {
+      "nominal": {
+        "dc": 0.05859375,
+        "gain": 1.1625073645003396,
+        "sndr8_dB": 25.83308945913075,
+        "sndr16_dB": 34.15223459828047,
+        "sndr32_dB": 44.10051318960054,
+        "shaping_dB": 33.526439340028915,
+        "density": 0.529296875,
+        "transitions": 0.5342465753424658,
+        "invalid": 0,
+        "state_peak_V": 0.5232355438427895,
+        "source_mean_power_W": 0.0017666675580109575,
+        "time_weighted_power_W": 0.0015993260016824173,
+        "DC_error": 0.008593750000000004,
+        "coefficient_real": -0.2866405213893434,
+        "coefficient_imag": 0.19865879045293383
+      },
+      "mid_pos": {
+        "dc": 0.05859375,
+        "gain": 1.1628315143189705,
+        "sndr8_dB": 24.216182900248022,
+        "sndr16_dB": 33.757995022731095,
+        "sndr32_dB": 41.74586865083938,
+        "shaping_dB": 32.11298546760667,
+        "density": 0.529296875,
+        "transitions": 0.5772994129158513,
+        "invalid": 0,
+        "state_peak_V": 0.5077859670345206,
+        "source_mean_power_W": 0.0017675336891184949,
+        "time_weighted_power_W": 0.0015980087481085158,
+        "DC_error": 0.008593750000000004,
+        "coefficient_real": 0.20521441451236977,
+        "coefficient_imag": 0.24524567189866947
+      },
+      "mid_inv": {
+        "dc": -0.05859375,
+        "gain": 1.163014029288575,
+        "sndr8_dB": 24.03973100486704,
+        "sndr16_dB": 35.81793406475792,
+        "sndr32_dB": 43.963071035762724,
+        "shaping_dB": 34.335245852239325,
+        "density": 0.470703125,
+        "transitions": 0.5694716242661448,
+        "invalid": 0,
+        "state_peak_V": 0.48657619832317645,
+        "source_mean_power_W": 0.0017674047743156506,
+        "time_weighted_power_W": 0.001599193141141264,
+        "DC_error": 0.008593750000000004,
+        "coefficient_real": -0.20521932778861338,
+        "coefficient_imag": -0.24530700345963297
+      },
+      "suite": {
+        "polarity_amplitude_ratio": 1.0001569573642932,
+        "polarity_phase_error_deg": 0.006375908150326418,
+        "osr_improvement_dB": 9.948278591320069
+      }
+    },
+    "groups": {
+      "nominal": "runs/40/20260929T034938077370Z_nominal",
+      "mid_pos": "runs/40/20260929T035042992331Z_mid_pos",
+      "mid_inv": "runs/40/20260929T035151629618Z_mid_inv"
+    }
+  },
+  {
+    "generated_at": "2026-09-29T04:04:31.127122+00:00",
+    "circuit_sha256": "86767b3e18b29812fe33bfdfa9971c67dff4512ca22bafaa31356676d058bbf4",
+    "parameters": {
+      "switch_scale": 1,
+      "ci_fF": 450,
+      "hold_fF": 300,
+      "fixture_native_sizes_fixed": true
+    },
+    "status": "complete_original",
+    "values": {
+      "nominal": {
+        "dc": 0.05859375,
+        "gain": 1.1625073645003396,
+        "sndr8_dB": 25.83308945913075,
+        "sndr16_dB": 34.15223459828047,
+        "sndr32_dB": 44.10051318960054,
+        "shaping_dB": 33.526439340028915,
+        "density": 0.529296875,
+        "transitions": 0.5342465753424658,
+        "invalid": 0,
+        "state_peak_V": 0.5232726939227184,
+        "source_mean_power_W": 0.0017588572344561773,
+        "time_weighted_power_W": 0.0015993243222307248,
+        "DC_error": 0.008593750000000004,
+        "coefficient_real": -0.2866405213893434,
+        "coefficient_imag": 0.19865879045293383
+      },
+      "mid_pos": {
+        "dc": 0.05859375,
+        "gain": 1.1628315143189705,
+        "sndr8_dB": 24.216182900248022,
+        "sndr16_dB": 33.757995022731095,
+        "sndr32_dB": 41.74586865083938,
+        "shaping_dB": 32.11298546760667,
+        "density": 0.529296875,
+        "transitions": 0.5772994129158513,
+        "invalid": 0,
+        "state_peak_V": 0.5077893983514431,
+        "source_mean_power_W": 0.0017596637255929805,
+        "time_weighted_power_W": 0.001598005308715282,
+        "DC_error": 0.008593750000000004,
+        "coefficient_real": 0.20521441451236977,
+        "coefficient_imag": 0.24524567189866947
+      },
+      "mid_inv": {
+        "dc": -0.05859375,
+        "gain": 1.163014029288575,
+        "sndr8_dB": 24.03973100486704,
+        "sndr16_dB": 35.81793406475792,
+        "sndr32_dB": 43.963071035762724,
+        "shaping_dB": 34.335245852239325,
+        "density": 0.470703125,
+        "transitions": 0.5694716242661448,
+        "invalid": 0,
+        "state_peak_V": 0.4866491829502376,
+        "source_mean_power_W": 0.0017595728448170384,
+        "time_weighted_power_W": 0.0015991899213068774,
+        "DC_error": 0.008593750000000004,
+        "coefficient_real": -0.20521932778861338,
+        "coefficient_imag": -0.24530700345963297
+      },
+      "suite": {
+        "polarity_amplitude_ratio": 1.0001569573642932,
+        "polarity_phase_error_deg": 0.006375908150326418,
+        "osr_improvement_dB": 9.948278591320069
+      }
+    },
+    "groups": {
+      "nominal": "runs/40/20260929T035610029934Z_nominal",
+      "mid_pos": "runs/40/20260929T035825582019Z_mid_pos",
+      "mid_inv": "runs/40/20260929T040035071823Z_mid_inv"
+    }
+  }
+]

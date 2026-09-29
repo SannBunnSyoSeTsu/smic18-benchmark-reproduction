@@ -1,0 +1,24 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/42-sar-adc6bit/hd_cells.scs"
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/42-sar-adc6bit/circuit.scs"
+VDD (vdd 0) vsource dc=1.8
+VREFP (vrefp 0) vsource dc=1.8
+VCLKS (clks_src 0) vsource type=pulse val0=0 val1=1.8 delay=1p rise=20p fall=20p width=1.98n period=10n
+RCLKS (clks_src clks) resistor r=50
+X (clks d5 d4 d3 d2 d1 d0 0 vdd vinn vinp 0 vrefp) sar_adc_6bit_async
+simulatorOptions options temp=27 tnom=27 reltol=1e-06 vabstol=1e-8 iabstol=1e-14 gmin=1e-15
+saveOptions options save=selected
+save clks_src clks vinp vinn vcm d0 d1 d2 d3 d4 d5 VDD:p VREFP:p VINP:p VINN:p VCLKS:p
+C0 (d0 0) capacitor c=10f
+C1 (d1 0) capacitor c=10f
+C2 (d2 0) capacitor c=10f
+C3 (d3 0) capacitor c=10f
+C4 (d4 0) capacitor c=10f
+C5 (d5 0) capacitor c=10f
+VCM (vcm 0) vsource dc=.9
+VINP (vinp vcm) vsource dc=0 type=sine ampl=.85 freq=4.84375e+07 sinephase=270
+VINN (vinn vcm) vsource dc=0 type=sine ampl=.85 freq=4.84375e+07 sinephase=450
+save VCM:p
+tran tran stop=1.795e-07 maxstep=2.5e-11 method=gear2only errpreset=conservative

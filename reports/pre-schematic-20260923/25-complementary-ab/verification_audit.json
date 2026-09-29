@@ -1,0 +1,355 @@
+{
+  "audited_at": "2026-09-23T04:38:11.740139+00:00",
+  "status": "complete_original",
+  "nominal_groups": [
+    "ac",
+    "track",
+    "noise",
+    "reject",
+    "step",
+    "thd"
+  ],
+  "nominal_scalar_gates": 37,
+  "original_function_checks_nominal_scope": {
+    "pvt_gain_10hz": [
+      "pvt_gain_10hz",
+      true,
+      "core worst=110.42dB at SMIC18 TT/1.8V/27C, VCM=1.600V (min 90dB); near-rail worst=110.44dB at SMIC18 TT/1.8V/27C, VCM=1.700V (min 80dB)"
+    ],
+    "pvt_ugbw": [
+      "pvt_ugbw",
+      true,
+      "worst=3.485MHz at SMIC18 TT/1.8V/27C (min 1MHz)"
+    ],
+    "pvt_phase_margin": [
+      "pvt_phase_margin",
+      true,
+      "core worst=86.72deg at SMIC18 TT/1.8V/27C, VCM=0.900V (min 60deg); near-rail worst=86.82deg at SMIC18 TT/1.8V/27C, VCM=0.100V (min 55deg)"
+    ],
+    "pvt_ugbw_pvt_flatness": [
+      "pvt_ugbw_pvt_flatness",
+      true,
+      "complete PVT/VCM max/min=1.330; maximum at tt/1.80V/+27C (max 2)"
+    ],
+    "pvt_static_power": [
+      "pvt_static_power",
+      true,
+      "max=1083.0uW at SMIC18 nominal during 0..VDD tracking sweep (max 1500uW)"
+    ],
+    "pvt_input_common_mode_range": [
+      "pvt_input_common_mode_range",
+      true,
+      "worst low edge=0.000V at SMIC18 nominal (max 0.1V); worst high headroom=0.005V at SMIC18 nominal (max 0.1V); worst span=1.795V at SMIC18 nominal (min 1.5V)"
+    ],
+    "pvt_rail_tracking": [
+      "pvt_rail_tracking",
+      true,
+      "core=0.053mV at SMIC18 nominal (max 5mV); full=0.053mV at SMIC18 nominal (max 20mV)"
+    ],
+    "pvt_slew_rate": [
+      "pvt_slew_rate",
+      true,
+      "slew_worst=2.627V/us slew_up_v_per_us at SMIC18 nominal (min 2V/us); tail_error_worst=0.052mV at SMIC18 nominal (max 5mV)"
+    ]
+  },
+  "source_scope_changes": "In-memory PVT=(tt1.8V27C), expected AC rows5 only; original source files unchanged. Source names containing pvt do not assert full PVT.",
+  "source_and_model_and_lut_hashes_valid": true,
+  "geometry": {
+    "MOS": 45,
+    "R": 12,
+    "C": 6,
+    "max_unit_width_um": 69.42,
+    "all_valid": true
+  },
+  "all_nominal_runs_same_circuit": true,
+  "run_snapshots": [
+    {
+      "run": "runs/25/20260923T041729784311Z_ac",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [
+        "WARNING (SPECTRE-294): Too many saved signals [ 1480 ]. Slow initialization is expected!",
+        "WARNING (SPECTRE-294): Too many saved signals [ 1480 ]. Slow initialization is expected!"
+      ],
+      "netlist_sha256": "a3105b84915c9f82fdd45d44a83bae3ef210ea3c01e489f7ed463237d4d3ad34",
+      "psf_files": {
+        "runs/25/20260923T041729784311Z_ac/output/bench.raw/logFile": "b499dc4e4794c934cf30e49beeb4db4db4852c997b78b1639a7c7205477139d1",
+        "runs/25/20260923T041729784311Z_ac/output/bench.raw/logStatus": "e203c6cdfa4a3e364f53b80512e72dcf0d28388fd468d49d6f1e939cce62f4cc",
+        "runs/25/20260923T041729784311Z_ac/output/bench.raw/dcOp.dc": "a4535995b6c7006bee109a64f4696d069ac90a078cc8acc11df22ff70f9ba3e7",
+        "runs/25/20260923T041729784311Z_ac/output/bench.raw/ac.ac": "c1dd282fc5da36ad3cd3c210b7edaf7b7750b99bbbcdba3a05b3a7e4438cd508"
+      }
+    },
+    {
+      "run": "runs/25/20260923T041737996305Z_track",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "netlist_sha256": "955a2ff869e26431d966dc7581c9dd232d683f5cf2d91c2b1975c23fe009e6ef",
+      "psf_files": {
+        "runs/25/20260923T041737996305Z_track/output/bench.raw/logFile": "329fa06043c126e6748916bb552e7503b00c26ad83c8e017a3bafe42bf84e89d",
+        "runs/25/20260923T041737996305Z_track/output/bench.raw/logStatus": "ed05682b89144cde57f16937b4df4b1497e458544808788fb3d8dfde4b30eeb0",
+        "runs/25/20260923T041737996305Z_track/output/bench.raw/dcOp.dc": "1a1967ce4b3b5bc7a304ce93b7e52787519de573aab24dc7682d8e769c9e2c02",
+        "runs/25/20260923T041737996305Z_track/output/bench.raw/track.dc": "7f0e6dbd0c3efa4456f9cc67cf5fa57da4e02610dc9e3b05698e5d1d61f92c89"
+      }
+    },
+    {
+      "run": "runs/25/20260923T041738178168Z_noise",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "netlist_sha256": "e6c77d6f1ae312d80554edf9915dd4a0b16569000f6d332b81717cc383cd172f",
+      "psf_files": {
+        "runs/25/20260923T041738178168Z_noise/output/bench.raw/logFile": "5a5bb79a9714d52ca61cd102811495458da8cf3ce9f509f61ff840923d1055b8",
+        "runs/25/20260923T041738178168Z_noise/output/bench.raw/logStatus": "9910bc4c1fc37bd83645d8e05300be7f5e30847497743b7c538ef16c7636d1a5",
+        "runs/25/20260923T041738178168Z_noise/output/bench.raw/noise.noise": "bd6b6800510910a71f59838e4cf62f9c3efa8ea6617ffa9050c23d4991c94707"
+      }
+    },
+    {
+      "run": "runs/25/20260923T041738398537Z_reject",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "netlist_sha256": "32cf23802bd82a195299cfb02831dd50f842bc599ef907e2fc952cc94bbfeb41",
+      "psf_files": {
+        "runs/25/20260923T041738398537Z_reject/output/bench.raw/logFile": "108bba32085870b88cca030403b23fbd413b47c3bca1c6462ab6d202185f5fa6",
+        "runs/25/20260923T041738398537Z_reject/output/bench.raw/logStatus": "530e688a192d73890733095054ea7728eecc8812d5a267330ba26a03a37da18c",
+        "runs/25/20260923T041738398537Z_reject/output/bench.raw/ac.ac": "5b6a218b79bdbca4a74c0ffdffe44d03ed7f52a1bef984ec5b2cf30ed0a6492e"
+      }
+    },
+    {
+      "run": "runs/25/20260923T041738565376Z_step",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "netlist_sha256": "0533625a450f3e04423a99d731ed15a3024d6a9b8fc71c5124189330f24143a3",
+      "psf_files": {
+        "runs/25/20260923T041738565376Z_step/output/bench.raw/logFile": "1bd28bab76bce41685f0dca2c616d2bf3ecb7e786bbd9f4f2c89e98ed0073e05",
+        "runs/25/20260923T041738565376Z_step/output/bench.raw/logStatus": "ea0af7c9f37b73bbdb06d973eee1e20975302bb1d7004b65857690c70ec6f60a",
+        "runs/25/20260923T041738565376Z_step/output/bench.raw/tran.tran.tran": "ef8b49c7e1a8b76b03ec9cb9a85f9b8890ac2b10e6b2970870bf6f0f95074cce"
+      }
+    },
+    {
+      "run": "runs/25/20260923T041823802535Z_thd",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [],
+      "netlist_sha256": "1376eac5a38b7e56192fa3ca31b6c7a738867b0528f7a3c5573cdc57fa6cd5c2",
+      "psf_files": {
+        "runs/25/20260923T041823802535Z_thd/output/bench.raw/logFile": "c1ea2af747436c889dc373dcee1b9831414f3c185253cb6a3ab45592bb7c6e43",
+        "runs/25/20260923T041823802535Z_thd/output/bench.raw/logStatus": "0740f35c528154cb158524e369426518adafe8fe7772626e85b612a5bef1ecb8",
+        "runs/25/20260923T041823802535Z_thd/output/bench.raw/tran.tran.tran": "61d2d28b5e4eff0cfbc2307f3bcae2b4966545b61eb53a20cdc36c8017da4ba6"
+      }
+    },
+    {
+      "run": "runs/25/20260923T041937248892Z_stb",
+      "snapshot_consistent": true,
+      "model_dimensions_valid": true,
+      "warnings": [
+        "WARNING (SPECTRE-294): Too many saved signals [ 1480 ]. Slow initialization is expected!",
+        "WARNING (SPECTRE-294): Too many saved signals [ 1480 ]. Slow initialization is expected!"
+      ],
+      "netlist_sha256": "076bb3c4d6712b891d3e3abdf44568d02280fd4d54e911cb52799aefcd980b4c",
+      "psf_files": {
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/logFile": "3254629ffb065734515680936e938560d21b9995e9fcb082f720514700e6ddf5",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/logStatus": "8706b7ca29182461ec06c8afc632084c0d96c8b6186103131fef2d82ee6b8afa",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/dcOp.dc": "2360854144f2f0f17d6aa1a2614c0ffa19424190d1b86b59d655601055db3d79",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/stb0.stb": "9fe8a63dfd5bae3bd8ebf1415aec766be7d9a2e36c55ab0c42209ed875217a92",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/stb0.margin.stb": "10ee1563c050c444ccd6e844233fd624c8f442791a5457bc18c80f2398295460",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/stb1.stb": "c9fa79ed40c26440fad7448dc78298ba1b54aff31d9e8c29dde51efe3b066c1c",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/stb1.margin.stb": "fc86785f7e8f0a9ace9b1f274d652636cb7631516a9766c12f66bbb75729ff40",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/stb2.stb": "b406b0cf2189fa38cf967bad292515b96a7ead06c558d950879b1102b2e1283b",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/stb2.margin.stb": "f9b483c52061c9e2b5fdbc03f78ea733dca3e600e62ff7c694118769956bcca4",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/stb3.stb": "14b97cf3dec360473f63c1e0268d21c0ed5f7f6650cf19a35c3c1c5b30500df5",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/stb3.margin.stb": "708462e4d7fc33d3be49baebb6de6c5e092102a8feeb59464d7dff7cdce41e2a",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/stb4.stb": "845b45312bcbc181866d19df897383d4d97e74f12f41a0a088856339806f324a",
+        "runs/25/20260923T041937248892Z_stb/output/bench.raw/stb4.margin.stb": "b5da026446ab782e2b7605f4971cb830d39a57e3679c5228643438858b6a7f2f"
+      }
+    }
+  ],
+  "measurement_dimensions": {
+    "ac": {
+      "points": 901,
+      "axis": "freq",
+      "start": 1.0,
+      "stop": 1000000000.0
+    },
+    "track": {
+      "points": 361,
+      "axis": "vinp",
+      "start": 0.0,
+      "stop": 1.8
+    },
+    "noise": {
+      "points": 501,
+      "axis": "freq",
+      "start": 10.0,
+      "stop": 1000000.0
+    },
+    "reject": {
+      "points": 701,
+      "axis": "freq",
+      "start": 10.0,
+      "stop": 100000000.0
+    },
+    "step": {
+      "points": 5001,
+      "axis": "time",
+      "start": 0.0,
+      "stop": 5.000000000000481e-06
+    },
+    "thd": {
+      "points": 20001,
+      "axis": "time",
+      "start": 0.0,
+      "stop": 0.004999999999997437
+    }
+  },
+  "native_stb_five_points_pass": true,
+  "source_and_result_sha256": {
+    "circuit": "96b5209db247cee7e96e92e1189b494a6d08dca1efd22237326692957ccbff80",
+    "results": "7ba9784f02f8b31783e1a4f3615e46b7d10623ef9111984f309c5dc20bb8a3a8",
+    "contract": "eb6eef3ca13ed645a2d5ab17cb55f811283e1f61f547da72111ae5541df589c9",
+    "sizing": "c0cdf8604a43a3ba3bfae6bb956140a7b774e5dde1c86f10e9d67f296c559dd3",
+    "knowledge": "42599174561b3383255761ebd6042d65db88dc96802502f53ff0241ca0e4c9dc",
+    "measurement_review": "6f7ef90df979915fa615ab8cb86db294cca9fd408edd8eba6c5bb7c21a69fe24"
+  },
+  "pdf": {
+    "pdf": "reports/25-complementary-ab-review.pdf",
+    "sha256": "db92da4b77bf2533e7aa8f2ec0f2eb126ebceec5b0d538c5b4b446802bfb8d12",
+    "results_sha256": "7ba9784f02f8b31783e1a4f3615e46b7d10623ef9111984f309c5dc20bb8a3a8",
+    "circuit_sha256": "96b5209db247cee7e96e92e1189b494a6d08dca1efd22237326692957ccbff80",
+    "sizing_sha256": "c0cdf8604a43a3ba3bfae6bb956140a7b774e5dde1c86f10e9d67f296c559dd3",
+    "geometry_sha256": "186f5e1db496c622235f54a7e4825e094b862339a29d3cb77126b58a86ecadf4",
+    "generated_at": "2026-09-23T04:33:28.692498+00:00",
+    "pages": 12,
+    "body_pages": 8,
+    "schematic_pages": 4,
+    "schematic_sheets_sha256": "6ed00250b37b68a35cb7469ce1e44abb9bffcaa567086fc3df2d9b27b256dfe3",
+    "render_review_pending": false,
+    "render_reviewed_at": "2026-09-23T04:38:11.287444+00:00",
+    "all_pages_visually_reviewed": true,
+    "render_review_images": [
+      {
+        "page": 1,
+        "path": "reports/25-final-page-01.png",
+        "sha256": "43adc420e5a05f0b13f9b2cbbb451e4e8fd51bcc49f2c83eb1223059ab77b7b1"
+      },
+      {
+        "page": 2,
+        "path": "reports/25-final-page-02.png",
+        "sha256": "75138b4a9c4f71710c7d018c16bf700e88a4249bbd69b0de5a9772d1d1994046"
+      },
+      {
+        "page": 3,
+        "path": "reports/25-final-page-03.png",
+        "sha256": "1e1cfa4be6ae8d847d4c2c672f65cc2d3f81989f7740d66601375a015a2bcc59"
+      },
+      {
+        "page": 4,
+        "path": "reports/25-final-page-04.png",
+        "sha256": "c53a1b1bfe4168659fa989e5d8dc369e2ee8146198d1a1d4805386ded88092fc"
+      },
+      {
+        "page": 5,
+        "path": "reports/25-final-page-05.png",
+        "sha256": "e15e36430b680b6df116ca0655bef9405afafe20defb2375efada475937fdded"
+      },
+      {
+        "page": 6,
+        "path": "reports/25-final-page-06.png",
+        "sha256": "9eec5bc04f910037d7464f68b0b0ceb48b7c1f51a9f5398ecd6e0dca39725a6d"
+      },
+      {
+        "page": 7,
+        "path": "reports/25-final-page-07.png",
+        "sha256": "294fde9e054faefa19b0e36cb1e3cbeca7383e148e6a8ad7de6521bbc1d51f40"
+      },
+      {
+        "page": 8,
+        "path": "reports/25-final-page-08.png",
+        "sha256": "752671e960d0f4b867154b280e5a688fce97768f181d042a931da177d8d72470"
+      },
+      {
+        "page": 9,
+        "path": "reports/25-final-page-09.png",
+        "sha256": "9043d07a8ef6990b721ef7727863346c14dca2f049d50830905ba6eb3fb64af3"
+      },
+      {
+        "page": 10,
+        "path": "reports/25-final-page-10.png",
+        "sha256": "4bf5c78fb0eca384921ea251581034d46db016d99ddb1f67fc7b14ff0ceb3cb4"
+      },
+      {
+        "page": 11,
+        "path": "reports/25-final-page-11.png",
+        "sha256": "82110594e283e7641108f0e313fde1993c8fdf415d8d6a5ec35a13b61d5f7cce"
+      },
+      {
+        "page": 12,
+        "path": "reports/25-final-page-12.png",
+        "sha256": "8c43cf712cd78a396e07798f84025a1eb0348f2a296b892a84a4b06b235b0514"
+      }
+    ],
+    "render_review_note": "Root visually inspected all 12 final PDF page renders. Chinese text, metric tables, all plots, exact netlist and four transistor schematic sheets are legible; corrected width, footer spacing, harmonic bars and reproduction CLI reviewed."
+  },
+  "schematic_audit": {
+    "generated_at": "2026-09-23T04:30:50.257904+00:00",
+    "status": "passed",
+    "circuit_sha256": "96b5209db247cee7e96e92e1189b494a6d08dca1efd22237326692957ccbff80",
+    "geometry_sha256": "186f5e1db496c622235f54a7e4825e094b862339a29d3cb77126b58a86ecadf4",
+    "renderer_sha256": "c65698950039c9fd48e1659d37f7fb5220517dd0dc1847b24f5b1761d0956898",
+    "instance_counts": {
+      "MOS": 45,
+      "R": 12,
+      "C": 6
+    },
+    "total_instances": 63,
+    "drawn_instances": 63,
+    "total_terminals": 216,
+    "all_instances_drawn_exactly_once_per_complete_view": true,
+    "all_terminals_mapped": true,
+    "all_rendered_pins_have_drawn_path_to_correct_net_label": true,
+    "all_45_body_connections_explicit": true,
+    "all_R_C_values_read_from_netlist": true,
+    "geometry_matches_netlist": true,
+    "all_unit_widths_valid": true,
+    "all_external_ports_present": true,
+    "all_internal_nets_preserved": true,
+    "total_nets": 39,
+    "geometric_wire_conflicts": [],
+    "crossings_without_junction_count": 0,
+    "sheets": 4,
+    "sheet_page_size": "A4 landscape",
+    "full_page_size": "A2 landscape",
+    "render_review_pending": false,
+    "artifacts": {
+      "cases/25-complementary-ab/schematic/connectivity.json": "2a099d5e5742db05322b393d058b8e3f39ae2681801b9790df834acfd5993edc",
+      "cases/25-complementary-ab/schematic/full.pdf": "e05f6da32fffa1978158cca43ca3ac78f406749f745aec49f735c59a687ce44b",
+      "cases/25-complementary-ab/schematic/full.png": "c729cdd75bdc4562a58b96d49a0c3cdefe72d614269f402754d377caa73756a1",
+      "cases/25-complementary-ab/schematic/full.svg": "ec01bbd462cb39b41185e7e42d743d5a97491b767c43187d26377daf7ec6158d",
+      "cases/25-complementary-ab/schematic/sheet-1.png": "5f2fad94ea8194e3b6a9bebf262a1d7deea2c2d9cb7d9d8a68833b3db14734d2",
+      "cases/25-complementary-ab/schematic/sheet-1.svg": "fbc8a046307efff2cc45341e4c780ffeb7d8b11fe02c80dfd0d8b516e8f86ab4",
+      "cases/25-complementary-ab/schematic/sheet-2.png": "44bb1cc3ffec5e3679c59bdb51f9673ae27693186ec5e18f96aa2c382abc4c65",
+      "cases/25-complementary-ab/schematic/sheet-2.svg": "c25a360d7a92e05487ba213d4ee4872ca7275da4d9e3d03e2ef7cc6607432644",
+      "cases/25-complementary-ab/schematic/sheet-3.png": "8d8237e66966fff2dc5ad85d36051f3a72a929a2b1a46141dc4ba246f6f477e9",
+      "cases/25-complementary-ab/schematic/sheet-3.svg": "59002a140a42f203c64d305112db778123b8ec40b6b2a4f780c9074de8eedab7",
+      "cases/25-complementary-ab/schematic/sheet-4.png": "509a5bfcc8540607a6e1c66ca27fd0b14e6ff3a4e82df41b2fe8758393af0286",
+      "cases/25-complementary-ab/schematic/sheet-4.svg": "893f5f0822a9d4d576d374f6d859b93cf6573e06b866c7fa85b088282f895cbc",
+      "cases/25-complementary-ab/schematic/sheets.pdf": "6ed00250b37b68a35cb7469ce1e44abb9bffcaa567086fc3df2d9b27b256dfe3"
+    },
+    "scope": "Only transistor-level schematic generation and static coverage. No circuit edit, performance extraction, external model call or simulation.",
+    "rebuild": "Existing Bridge Python scripts/schematic25.py; after viewing all five PNGs, scripts/schematic25.py --confirm-visual",
+    "all_pages_visually_reviewed": true,
+    "visual_reviewed_at": "2026-09-23T04:31:37.244519+00:00",
+    "visual_review_note": "Four split PNG pages and full A2 PNG actually inspected; transistor polarity, D/G/S/B, bulk labels, passive values, local connections, cross-page names and text readability reviewed.",
+    "root_visual_reviewed_at": "2026-09-23T04:33:26.489606+00:00",
+    "root_visual_review_note": "Root viewed sheets1..4 and fullA2; checked MOS polarity, explicit bulk nets, floating AB parallel gp-to-gn path, compensation return nodes, matching network labels and values; no clipping."
+  },
+  "unexecuted": [
+    "24otherPVTpoints",
+    "2otherrepresentative rejection/distortion points",
+    "3fixedmismatchseeds",
+    "PEX/passivetolerance"
+  ],
+  "warning_assessment": "AC/STB each have two SPECTRE-294 many-saved-signals performance notices only; all other final runs no warnings. No model dimension or simulator failures."
+}

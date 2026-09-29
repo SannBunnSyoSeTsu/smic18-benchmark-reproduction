@@ -1,0 +1,59 @@
+{
+  "source_task": "sky130-high-psrr-bandgap-reference-pvt",
+  "scope": "SMIC18 TT nominal representative point; retain full1C-step temperature characterization at1.8V",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "load_F": 1e-12,
+  "sections": [
+    "tt",
+    "bjt_tt",
+    "res_tt",
+    "mim_tt"
+  ],
+  "pin_order": [
+    "AVDD",
+    "AVSS",
+    "VBG",
+    "SUB"
+  ],
+  "reference_center_V": 1.2,
+  "reference_error_max_V": 0.15,
+  "temperature_sweep": {
+    "start_C": -40,
+    "stop_C": 85,
+    "step_C": 1,
+    "mean": "trapezoidal temperature average, matching original .measure dc AVG"
+  },
+  "tempco_max_ppm_C": 50,
+  "ac": {
+    "start_Hz": 0.01,
+    "stop_Hz": 100000000.0,
+    "points_per_decade": 40,
+    "excitation_V": 1,
+    "low_frequency_Hz": 0.01,
+    "nominal_low_gain_max_dB": -60,
+    "one_MHz_gain_max_dB": -30
+  },
+  "startup": {
+    "ramp_s": 1e-06,
+    "stop_s": 0.0001,
+    "average_window_s": [
+      9e-05,
+      0.0001
+    ],
+    "error_max_fraction": 0.01,
+    "target": "independent DC at27C from the temperature sweep",
+    "initial_supply_V": 0
+  },
+  "power_limit_W": null,
+  "allowed_DUT": "native SMIC MOS, BJT and physical passives only; no ideal source or ideal R/C",
+  "exclusions": [
+    "other3representative PVT points",
+    "full Cartesian PVT",
+    "mismatch",
+    "noise",
+    "layout/PEX",
+    "loaded/buffered reference"
+  ],
+  "acceptance_policy": "/home/IC/CodeX/smic18_benchmark_repro/contracts/acceptance-policy.md"
+}

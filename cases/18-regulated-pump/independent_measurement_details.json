@@ -1,0 +1,364 @@
+{
+  "original_checks": [
+    {
+      "name": "pvt_load_regulation",
+      "passed": true,
+      "detail": "worst VOUT=2.33863V at TT40C25uA; bounds=2.223..2.457V"
+    },
+    {
+      "name": "pvt_output_ripple",
+      "passed": true,
+      "detail": "worst=1.77431mVpp at TT40C50uA (required <=5mVpp)"
+    },
+    {
+      "name": "pvt_enabled_current",
+      "passed": false,
+      "detail": "worst=217.337uA at TT40C50uA (required <=200uA)"
+    },
+    {
+      "name": "pvt_disabled_current",
+      "passed": true,
+      "detail": "worst=1.09548nA at TT40Coff (required <=100nA)"
+    }
+  ],
+  "accepted_10pct": true,
+  "only_relaxed_metric": "50uA enabledAVDDcurrent",
+  "terminal_devices": [
+    {
+      "load_uA": 1,
+      "device": "MREF",
+      "max_V": 0.4902723496234622,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MTAIL",
+      "max_V": 0.5289713898704864,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MREFIN",
+      "max_V": 1.319488015335031,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MFBIN",
+      "max_V": 1.29412258424245,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MPD",
+      "max_V": 0.597278158593602,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MPM",
+      "max_V": 1.633446705199977,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MOFFN",
+      "max_V": 0.4902723496234622,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MOFFP",
+      "max_V": 0.597278408768066,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MOFFCTRL",
+      "max_V": 1.6335215664701526,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MENREF",
+      "max_V": 1.800082806313601,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MENFB",
+      "max_V": 1.800082806313601,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MCTRL",
+      "max_V": 1.633446705199977,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MPRE0",
+      "max_V": 3.394151321282107,
+      "limit_V": 3.63,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MPRE1",
+      "max_V": 3.394151321282107,
+      "limit_V": 3.63,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MRECT0",
+      "max_V": 3.392695574135159,
+      "limit_V": 3.63,
+      "passed": true
+    },
+    {
+      "load_uA": 1,
+      "device": "MRECT1",
+      "max_V": 3.394151321282107,
+      "limit_V": 3.63,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MREF",
+      "max_V": 0.4903456333698353,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MTAIL",
+      "max_V": 0.4942328251054694,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MREFIN",
+      "max_V": 1.300439192197488,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MFBIN",
+      "max_V": 1.29780659288686,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MPD",
+      "max_V": 0.616616955690855,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MPM",
+      "max_V": 1.711241092403708,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MOFFN",
+      "max_V": 0.4903456333698353,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MOFFP",
+      "max_V": 0.616617273790397,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MOFFCTRL",
+      "max_V": 1.711316194681588,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MENREF",
+      "max_V": 1.800082139002828,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MENFB",
+      "max_V": 1.800082139002828,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MCTRL",
+      "max_V": 1.711241092403708,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MPRE0",
+      "max_V": 3.344597907152069,
+      "limit_V": 3.63,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MPRE1",
+      "max_V": 3.344597907152069,
+      "limit_V": 3.63,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MRECT0",
+      "max_V": 3.343318922870306,
+      "limit_V": 3.63,
+      "passed": true
+    },
+    {
+      "load_uA": 25,
+      "device": "MRECT1",
+      "max_V": 3.344597907152069,
+      "limit_V": 3.63,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MREF",
+      "max_V": 0.4913670599302188,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MTAIL",
+      "max_V": 0.5322300810247597,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MREFIN",
+      "max_V": 1.28538810692486,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MFBIN",
+      "max_V": 1.4772248414433216,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MPD",
+      "max_V": 0.64581985851683,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MPM",
+      "max_V": 1.8562247840261783,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MOFFN",
+      "max_V": 0.4913670599302188,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MOFFP",
+      "max_V": 0.645820164735551,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MOFFCTRL",
+      "max_V": 1.8563015233191182,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MENREF",
+      "max_V": 1.800081481665939,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MENFB",
+      "max_V": 1.800081481665939,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MCTRL",
+      "max_V": 1.8562247840261783,
+      "limit_V": 1.98,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MPRE0",
+      "max_V": 3.292026709182851,
+      "limit_V": 3.63,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MPRE1",
+      "max_V": 3.292026709182851,
+      "limit_V": 3.63,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MRECT0",
+      "max_V": 3.290605596847662,
+      "limit_V": 3.63,
+      "passed": true
+    },
+    {
+      "load_uA": 50,
+      "device": "MRECT1",
+      "max_V": 3.292026709182851,
+      "limit_V": 3.63,
+      "passed": true
+    }
+  ]
+}

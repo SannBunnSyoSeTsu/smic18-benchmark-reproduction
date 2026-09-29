@@ -1,0 +1,18 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        ERR["5T误差放大器"]
+        DRV["栅极缓冲及补偿"]
+        PASS["PMOS功率管"]
+        FB["输出反馈网络"]
+    end
+    REF["参考电压"]
+    SUP["输入电源"]
+    LOAD["1.2V输出与指定负载"]
+    REF -->|"设定值"| ERR
+    ERR -->|"误差"| DRV
+    DRV -.->|"栅控制"| PASS
+    SUP -->|"供能"| PASS
+    PASS -->|"稳压输出"| LOAD
+    LOAD -->|"取样"| FB
+    FB -->|"负反馈"| ERR

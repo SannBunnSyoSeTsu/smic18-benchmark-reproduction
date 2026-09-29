@@ -1,0 +1,18 @@
+simulator lang=spectre
+subckt gilbert_mixer (vss iref vdd lop lon rfp rfn ifoutp ifoutn)
+MREF (iref iref vss vss) n18 w=51.64u l=1u
+MTAILP (stp iref vss vss) n18 w=51.64u l=1u m=6.5
+MTAILN (stn iref vss vss) n18 w=51.64u l=1u m=6.5
+CBIAS (iref vss) capacitor c=1p
+MRFP (drfp rfp stp vss) n18 w=3.02u l=.18u m=6.5
+MRFN (drfn rfn stn vss) n18 w=3.02u l=.18u m=6.5
+RDEG (stp stn) resistor r=650
+MQ1 (ifoutp lop drfp vss) n18 w=11.52u l=.18u m=6.5
+MQ2 (ifoutn lon drfp vss) n18 w=11.52u l=.18u m=6.5
+MQ3 (ifoutn lop drfn vss) n18 w=11.52u l=.18u m=6.5
+MQ4 (ifoutp lon drfn vss) n18 w=11.52u l=.18u m=6.5
+RLP (vdd ifoutp) resistor r=3300
+RLN (vdd ifoutn) resistor r=3300
+COUTP (ifoutp vss) capacitor c=75f
+COUTN (ifoutn vss) capacitor c=75f
+ends gilbert_mixer

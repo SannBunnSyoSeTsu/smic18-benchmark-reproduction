@@ -1,0 +1,34 @@
+// Current steering charge pump; only PDK MOS and bias capacitors in DUT.
+simulator lang=spectre
+subckt pll_charge_pump (vss iref up dn vdd vout)
+MN0 (iref iref vss vss) n18 w=14.44u l=4u m=2
+MN2 (vbpc iref vss vss) n18 w=14.44u l=4u m=1
+MPCB (vbpc vbpc vdd vdd) p18 w=10.68u l=4u m=1
+MP2X (vbnc vbpc vdd vdd) p18 w=10.68u l=4u m=1
+MNCB (vbnc vbnc vss vss) n18 w=2.04u l=4u m=1
+MP0 (n1a vbp vdd vdd) p18 w=29u l=4u m=2.5
+MPC0 (vbp vbpc n1a vdd) p18 w=39.1u l=1u m=1
+MNC1 (vbp vbnc n1b vss) n18 w=8.32u l=1u m=1
+MN1 (n1b iref vss vss) n18 w=14.44u l=4u m=1
+MPM (na vbp vdd vdd) p18 w=29u l=4u m=10
+MPC (nc vbpc na vdd) p18 w=39.1u l=1u m=4
+MSUP (vout upb nc vdd) p18 w=3.7u l=0.18u m=1
+MSDU (wu upd nc vdd) p18 w=3.7u l=0.18u m=1
+MNWU (wu wu vss vss) n18 w=1.46u l=1u m=1
+MNM (ne iref vss vss) n18 w=14.44u l=4u m=4
+MNC (nd vbnc ne vss) n18 w=8.32u l=1u m=4
+MSDN (vout dn nd vss) n18 w=1.28u l=0.18u m=1
+MSDD (wd dnb nd vss) n18 w=1.28u l=0.18u m=1
+MNWD (vdd vdd wd vss) n18 w=2.64u l=1u m=1
+XUP (up upb vdd vss vdd vss) INHDV8
+XUPD (upb upd vdd vss vdd vss) INHDV2
+XDN (dn dnb vdd vss vdd vss) INHDV4
+CBP (vbp vdd) capacitor c=1p
+CBPC (vbpc vdd) capacitor c=1p
+CBNC (vbnc vss) capacitor c=1p
+CIR (iref vss) capacitor c=.8p
+CWU (wu vss) capacitor c=.4p
+CWD (wd vdd) capacitor c=.4p
+CNC (nc vss) capacitor c=30f
+CND (nd vss) capacitor c=30f
+ends pll_charge_pump

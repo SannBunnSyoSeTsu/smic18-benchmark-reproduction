@@ -1,0 +1,403 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/25/20260923T041729784311Z_ac/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+VDD0 (vdd0 0) vsource dc=1.8
+IR0 (vdd0 iref0) isource dc=20u
+VIN0 (vinp0 0) vsource dc=0.1
+LFB0 (out0 fb0) inductor l=1e15
+SHIFT0 (vinn0 fb0) vsource dc=-0.8
+CFB0 (vinn0 vac0) capacitor c=1e6
+VAC0 (vac0 0) vsource dc=0 mag=1
+VMID0 (mid0 0) vsource dc=.9
+RDC0 (out0 mid0) resistor r=1e12
+CL0 (out0 0) capacitor c=4p
+X0 (0 iref0 vdd0 vinn0 vinp0 out0) complementary_folded_cascode_ab_opamp
+save out0 vinn0 vinp0 VDD0:p
+save iref0
+save X0.vbp
+save X0.vcn
+save X0.vcp
+save X0.vrefn
+save X0.vrefp
+save X0.ntail
+save X0.ptail
+save X0.swnd
+save X0.swpd
+save X0.fp1
+save X0.fp2
+save X0.fn1
+save X0.fn2
+save X0.ml
+save X0.gn
+save X0.gp
+save X0.vabn
+save X0.vabp
+save X0.xn
+save X0.yp
+save X0.vbsink
+save X0.MREF:ids X0.MREF:gm X0.MREF:gds X0.MREF:vgs X0.MREF:vds X0.MREF:vdsat
+save X0.MBN:ids X0.MBN:gm X0.MBN:gds X0.MBN:vgs X0.MBN:vds X0.MBN:vdsat
+save X0.MBP:ids X0.MBP:gm X0.MBP:gds X0.MBP:vgs X0.MBP:vds X0.MBP:vdsat
+save X0.MNCB:ids X0.MNCB:gm X0.MNCB:gds X0.MNCB:vgs X0.MNCB:vds X0.MNCB:vdsat
+save X0.MND:ids X0.MND:gm X0.MND:gds X0.MND:vgs X0.MND:vds X0.MND:vdsat
+save X0.MPCB:ids X0.MPCB:gm X0.MPCB:gds X0.MPCB:vgs X0.MPCB:vds X0.MPCB:vdsat
+save X0.MPD:ids X0.MPD:gm X0.MPD:gds X0.MPD:vgs X0.MPD:vds X0.MPD:vdsat
+save X0.MNRB:ids X0.MNRB:gm X0.MNRB:gds X0.MNRB:vgs X0.MNRB:vds X0.MNRB:vdsat
+save X0.MNREF:ids X0.MNREF:gm X0.MNREF:gds X0.MNREF:vgs X0.MNREF:vds X0.MNREF:vdsat
+save X0.MPRB:ids X0.MPRB:gm X0.MPRB:gds X0.MPRB:vgs X0.MPRB:vds X0.MPRB:vdsat
+save X0.MPREF:ids X0.MPREF:gm X0.MPREF:gds X0.MPREF:vgs X0.MPREF:vds X0.MPREF:vdsat
+save X0.MNT:ids X0.MNT:gm X0.MNT:gds X0.MNT:vgs X0.MNT:vds X0.MNT:vdsat
+save X0.MPT:ids X0.MPT:gm X0.MPT:gds X0.MPT:vgs X0.MPT:vds X0.MPT:vdsat
+save X0.MNINN:ids X0.MNINN:gm X0.MNINN:gds X0.MNINN:vgs X0.MNINN:vds X0.MNINN:vdsat
+save X0.MNINP:ids X0.MNINP:gm X0.MNINP:gds X0.MNINP:vgs X0.MNINP:vds X0.MNINP:vdsat
+save X0.MPINN:ids X0.MPINN:gm X0.MPINN:gds X0.MPINN:vgs X0.MPINN:vds X0.MPINN:vdsat
+save X0.MPINP:ids X0.MPINP:gm X0.MPINP:gds X0.MPINP:vgs X0.MPINP:vds X0.MPINP:vdsat
+save X0.MNSW:ids X0.MNSW:gm X0.MNSW:gds X0.MNSW:vgs X0.MNSW:vds X0.MNSW:vdsat
+save X0.MPSD:ids X0.MPSD:gm X0.MPSD:gds X0.MPSD:vgs X0.MPSD:vds X0.MPSD:vdsat
+save X0.MPSM:ids X0.MPSM:gm X0.MPSM:gds X0.MPSM:vgs X0.MPSM:vds X0.MPSM:vdsat
+save X0.MPSW:ids X0.MPSW:gm X0.MPSW:gds X0.MPSW:vgs X0.MPSW:vds X0.MPSW:vdsat
+save X0.MNSD:ids X0.MNSD:gm X0.MNSD:gds X0.MNSD:vgs X0.MNSD:vds X0.MNSD:vdsat
+save X0.MNSM:ids X0.MNSM:gm X0.MNSM:gds X0.MNSM:vgs X0.MNSM:vds X0.MNSM:vdsat
+save X0.MFBASE:ids X0.MFBASE:gm X0.MFBASE:gds X0.MFBASE:vgs X0.MFBASE:vds X0.MFBASE:vdsat
+save X0.MFADD:ids X0.MFADD:gm X0.MFADD:gds X0.MFADD:vgs X0.MFADD:vds X0.MFADD:vdsat
+save X0.MFSUB:ids X0.MFSUB:gm X0.MFSUB:gds X0.MFSUB:vgs X0.MFSUB:vds X0.MFSUB:vdsat
+save X0.MFREF:ids X0.MFREF:gm X0.MFREF:gds X0.MFREF:vgs X0.MFREF:vds X0.MFREF:vdsat
+save X0.MFS1:ids X0.MFS1:gm X0.MFS1:gds X0.MFS1:vgs X0.MFS1:vds X0.MFS1:vdsat
+save X0.MFS2:ids X0.MFS2:gm X0.MFS2:gds X0.MFS2:vgs X0.MFS2:vds X0.MFS2:vdsat
+save X0.MNC1:ids X0.MNC1:gm X0.MNC1:gds X0.MNC1:vgs X0.MNC1:vds X0.MNC1:vdsat
+save X0.MNC2:ids X0.MNC2:gm X0.MNC2:gds X0.MNC2:vgs X0.MNC2:vds X0.MNC2:vdsat
+save X0.MPM1:ids X0.MPM1:gm X0.MPM1:gds X0.MPM1:vgs X0.MPM1:vds X0.MPM1:vdsat
+save X0.MPM2:ids X0.MPM2:gm X0.MPM2:gds X0.MPM2:vgs X0.MPM2:vds X0.MPM2:vdsat
+save X0.MPC1:ids X0.MPC1:gm X0.MPC1:gds X0.MPC1:vgs X0.MPC1:vds X0.MPC1:vdsat
+save X0.MPC2:ids X0.MPC2:gm X0.MPC2:gds X0.MPC2:vgs X0.MPC2:vds X0.MPC2:vdsat
+save X0.MABN:ids X0.MABN:gm X0.MABN:gds X0.MABN:vgs X0.MABN:vds X0.MABN:vdsat
+save X0.MABP:ids X0.MABP:gm X0.MABP:gds X0.MABP:vgs X0.MABP:vds X0.MABP:vdsat
+save X0.MABNS:ids X0.MABNS:gm X0.MABNS:gds X0.MABNS:vgs X0.MABNS:vds X0.MABNS:vdsat
+save X0.MABNU:ids X0.MABNU:gm X0.MABNU:gds X0.MABNU:vgs X0.MABNU:vds X0.MABNU:vdsat
+save X0.MABNL:ids X0.MABNL:gm X0.MABNL:gds X0.MABNL:vgs X0.MABNL:vds X0.MABNL:vdsat
+save X0.MABPS:ids X0.MABPS:gm X0.MABPS:gds X0.MABPS:vgs X0.MABPS:vds X0.MABPS:vdsat
+save X0.MABPU:ids X0.MABPU:gm X0.MABPU:gds X0.MABPU:vgs X0.MABPU:vds X0.MABPU:vdsat
+save X0.MABPL:ids X0.MABPL:gm X0.MABPL:gds X0.MABPL:vgs X0.MABPL:vds X0.MABPL:vdsat
+save X0.MOUTN:ids X0.MOUTN:gm X0.MOUTN:gds X0.MOUTN:vgs X0.MOUTN:vds X0.MOUTN:vdsat
+save X0.MOUTP:ids X0.MOUTP:gm X0.MOUTP:gds X0.MOUTP:vgs X0.MOUTP:vds X0.MOUTP:vdsat
+VDD1 (vdd1 0) vsource dc=1.8
+IR1 (vdd1 iref1) isource dc=20u
+VIN1 (vinp1 0) vsource dc=0.2
+LFB1 (out1 fb1) inductor l=1e15
+SHIFT1 (vinn1 fb1) vsource dc=-0.7
+CFB1 (vinn1 vac1) capacitor c=1e6
+VAC1 (vac1 0) vsource dc=0 mag=1
+VMID1 (mid1 0) vsource dc=.9
+RDC1 (out1 mid1) resistor r=1e12
+CL1 (out1 0) capacitor c=4p
+X1 (0 iref1 vdd1 vinn1 vinp1 out1) complementary_folded_cascode_ab_opamp
+save out1 vinn1 vinp1 VDD1:p
+save iref1
+save X1.vbp
+save X1.vcn
+save X1.vcp
+save X1.vrefn
+save X1.vrefp
+save X1.ntail
+save X1.ptail
+save X1.swnd
+save X1.swpd
+save X1.fp1
+save X1.fp2
+save X1.fn1
+save X1.fn2
+save X1.ml
+save X1.gn
+save X1.gp
+save X1.vabn
+save X1.vabp
+save X1.xn
+save X1.yp
+save X1.vbsink
+save X1.MREF:ids X1.MREF:gm X1.MREF:gds X1.MREF:vgs X1.MREF:vds X1.MREF:vdsat
+save X1.MBN:ids X1.MBN:gm X1.MBN:gds X1.MBN:vgs X1.MBN:vds X1.MBN:vdsat
+save X1.MBP:ids X1.MBP:gm X1.MBP:gds X1.MBP:vgs X1.MBP:vds X1.MBP:vdsat
+save X1.MNCB:ids X1.MNCB:gm X1.MNCB:gds X1.MNCB:vgs X1.MNCB:vds X1.MNCB:vdsat
+save X1.MND:ids X1.MND:gm X1.MND:gds X1.MND:vgs X1.MND:vds X1.MND:vdsat
+save X1.MPCB:ids X1.MPCB:gm X1.MPCB:gds X1.MPCB:vgs X1.MPCB:vds X1.MPCB:vdsat
+save X1.MPD:ids X1.MPD:gm X1.MPD:gds X1.MPD:vgs X1.MPD:vds X1.MPD:vdsat
+save X1.MNRB:ids X1.MNRB:gm X1.MNRB:gds X1.MNRB:vgs X1.MNRB:vds X1.MNRB:vdsat
+save X1.MNREF:ids X1.MNREF:gm X1.MNREF:gds X1.MNREF:vgs X1.MNREF:vds X1.MNREF:vdsat
+save X1.MPRB:ids X1.MPRB:gm X1.MPRB:gds X1.MPRB:vgs X1.MPRB:vds X1.MPRB:vdsat
+save X1.MPREF:ids X1.MPREF:gm X1.MPREF:gds X1.MPREF:vgs X1.MPREF:vds X1.MPREF:vdsat
+save X1.MNT:ids X1.MNT:gm X1.MNT:gds X1.MNT:vgs X1.MNT:vds X1.MNT:vdsat
+save X1.MPT:ids X1.MPT:gm X1.MPT:gds X1.MPT:vgs X1.MPT:vds X1.MPT:vdsat
+save X1.MNINN:ids X1.MNINN:gm X1.MNINN:gds X1.MNINN:vgs X1.MNINN:vds X1.MNINN:vdsat
+save X1.MNINP:ids X1.MNINP:gm X1.MNINP:gds X1.MNINP:vgs X1.MNINP:vds X1.MNINP:vdsat
+save X1.MPINN:ids X1.MPINN:gm X1.MPINN:gds X1.MPINN:vgs X1.MPINN:vds X1.MPINN:vdsat
+save X1.MPINP:ids X1.MPINP:gm X1.MPINP:gds X1.MPINP:vgs X1.MPINP:vds X1.MPINP:vdsat
+save X1.MNSW:ids X1.MNSW:gm X1.MNSW:gds X1.MNSW:vgs X1.MNSW:vds X1.MNSW:vdsat
+save X1.MPSD:ids X1.MPSD:gm X1.MPSD:gds X1.MPSD:vgs X1.MPSD:vds X1.MPSD:vdsat
+save X1.MPSM:ids X1.MPSM:gm X1.MPSM:gds X1.MPSM:vgs X1.MPSM:vds X1.MPSM:vdsat
+save X1.MPSW:ids X1.MPSW:gm X1.MPSW:gds X1.MPSW:vgs X1.MPSW:vds X1.MPSW:vdsat
+save X1.MNSD:ids X1.MNSD:gm X1.MNSD:gds X1.MNSD:vgs X1.MNSD:vds X1.MNSD:vdsat
+save X1.MNSM:ids X1.MNSM:gm X1.MNSM:gds X1.MNSM:vgs X1.MNSM:vds X1.MNSM:vdsat
+save X1.MFBASE:ids X1.MFBASE:gm X1.MFBASE:gds X1.MFBASE:vgs X1.MFBASE:vds X1.MFBASE:vdsat
+save X1.MFADD:ids X1.MFADD:gm X1.MFADD:gds X1.MFADD:vgs X1.MFADD:vds X1.MFADD:vdsat
+save X1.MFSUB:ids X1.MFSUB:gm X1.MFSUB:gds X1.MFSUB:vgs X1.MFSUB:vds X1.MFSUB:vdsat
+save X1.MFREF:ids X1.MFREF:gm X1.MFREF:gds X1.MFREF:vgs X1.MFREF:vds X1.MFREF:vdsat
+save X1.MFS1:ids X1.MFS1:gm X1.MFS1:gds X1.MFS1:vgs X1.MFS1:vds X1.MFS1:vdsat
+save X1.MFS2:ids X1.MFS2:gm X1.MFS2:gds X1.MFS2:vgs X1.MFS2:vds X1.MFS2:vdsat
+save X1.MNC1:ids X1.MNC1:gm X1.MNC1:gds X1.MNC1:vgs X1.MNC1:vds X1.MNC1:vdsat
+save X1.MNC2:ids X1.MNC2:gm X1.MNC2:gds X1.MNC2:vgs X1.MNC2:vds X1.MNC2:vdsat
+save X1.MPM1:ids X1.MPM1:gm X1.MPM1:gds X1.MPM1:vgs X1.MPM1:vds X1.MPM1:vdsat
+save X1.MPM2:ids X1.MPM2:gm X1.MPM2:gds X1.MPM2:vgs X1.MPM2:vds X1.MPM2:vdsat
+save X1.MPC1:ids X1.MPC1:gm X1.MPC1:gds X1.MPC1:vgs X1.MPC1:vds X1.MPC1:vdsat
+save X1.MPC2:ids X1.MPC2:gm X1.MPC2:gds X1.MPC2:vgs X1.MPC2:vds X1.MPC2:vdsat
+save X1.MABN:ids X1.MABN:gm X1.MABN:gds X1.MABN:vgs X1.MABN:vds X1.MABN:vdsat
+save X1.MABP:ids X1.MABP:gm X1.MABP:gds X1.MABP:vgs X1.MABP:vds X1.MABP:vdsat
+save X1.MABNS:ids X1.MABNS:gm X1.MABNS:gds X1.MABNS:vgs X1.MABNS:vds X1.MABNS:vdsat
+save X1.MABNU:ids X1.MABNU:gm X1.MABNU:gds X1.MABNU:vgs X1.MABNU:vds X1.MABNU:vdsat
+save X1.MABNL:ids X1.MABNL:gm X1.MABNL:gds X1.MABNL:vgs X1.MABNL:vds X1.MABNL:vdsat
+save X1.MABPS:ids X1.MABPS:gm X1.MABPS:gds X1.MABPS:vgs X1.MABPS:vds X1.MABPS:vdsat
+save X1.MABPU:ids X1.MABPU:gm X1.MABPU:gds X1.MABPU:vgs X1.MABPU:vds X1.MABPU:vdsat
+save X1.MABPL:ids X1.MABPL:gm X1.MABPL:gds X1.MABPL:vgs X1.MABPL:vds X1.MABPL:vdsat
+save X1.MOUTN:ids X1.MOUTN:gm X1.MOUTN:gds X1.MOUTN:vgs X1.MOUTN:vds X1.MOUTN:vdsat
+save X1.MOUTP:ids X1.MOUTP:gm X1.MOUTP:gds X1.MOUTP:vgs X1.MOUTP:vds X1.MOUTP:vdsat
+VDD2 (vdd2 0) vsource dc=1.8
+IR2 (vdd2 iref2) isource dc=20u
+VIN2 (vinp2 0) vsource dc=0.9
+LFB2 (out2 fb2) inductor l=1e15
+SHIFT2 (vinn2 fb2) vsource dc=0
+CFB2 (vinn2 vac2) capacitor c=1e6
+VAC2 (vac2 0) vsource dc=0 mag=1
+VMID2 (mid2 0) vsource dc=.9
+RDC2 (out2 mid2) resistor r=1e12
+CL2 (out2 0) capacitor c=4p
+X2 (0 iref2 vdd2 vinn2 vinp2 out2) complementary_folded_cascode_ab_opamp
+save out2 vinn2 vinp2 VDD2:p
+save iref2
+save X2.vbp
+save X2.vcn
+save X2.vcp
+save X2.vrefn
+save X2.vrefp
+save X2.ntail
+save X2.ptail
+save X2.swnd
+save X2.swpd
+save X2.fp1
+save X2.fp2
+save X2.fn1
+save X2.fn2
+save X2.ml
+save X2.gn
+save X2.gp
+save X2.vabn
+save X2.vabp
+save X2.xn
+save X2.yp
+save X2.vbsink
+save X2.MREF:ids X2.MREF:gm X2.MREF:gds X2.MREF:vgs X2.MREF:vds X2.MREF:vdsat
+save X2.MBN:ids X2.MBN:gm X2.MBN:gds X2.MBN:vgs X2.MBN:vds X2.MBN:vdsat
+save X2.MBP:ids X2.MBP:gm X2.MBP:gds X2.MBP:vgs X2.MBP:vds X2.MBP:vdsat
+save X2.MNCB:ids X2.MNCB:gm X2.MNCB:gds X2.MNCB:vgs X2.MNCB:vds X2.MNCB:vdsat
+save X2.MND:ids X2.MND:gm X2.MND:gds X2.MND:vgs X2.MND:vds X2.MND:vdsat
+save X2.MPCB:ids X2.MPCB:gm X2.MPCB:gds X2.MPCB:vgs X2.MPCB:vds X2.MPCB:vdsat
+save X2.MPD:ids X2.MPD:gm X2.MPD:gds X2.MPD:vgs X2.MPD:vds X2.MPD:vdsat
+save X2.MNRB:ids X2.MNRB:gm X2.MNRB:gds X2.MNRB:vgs X2.MNRB:vds X2.MNRB:vdsat
+save X2.MNREF:ids X2.MNREF:gm X2.MNREF:gds X2.MNREF:vgs X2.MNREF:vds X2.MNREF:vdsat
+save X2.MPRB:ids X2.MPRB:gm X2.MPRB:gds X2.MPRB:vgs X2.MPRB:vds X2.MPRB:vdsat
+save X2.MPREF:ids X2.MPREF:gm X2.MPREF:gds X2.MPREF:vgs X2.MPREF:vds X2.MPREF:vdsat
+save X2.MNT:ids X2.MNT:gm X2.MNT:gds X2.MNT:vgs X2.MNT:vds X2.MNT:vdsat
+save X2.MPT:ids X2.MPT:gm X2.MPT:gds X2.MPT:vgs X2.MPT:vds X2.MPT:vdsat
+save X2.MNINN:ids X2.MNINN:gm X2.MNINN:gds X2.MNINN:vgs X2.MNINN:vds X2.MNINN:vdsat
+save X2.MNINP:ids X2.MNINP:gm X2.MNINP:gds X2.MNINP:vgs X2.MNINP:vds X2.MNINP:vdsat
+save X2.MPINN:ids X2.MPINN:gm X2.MPINN:gds X2.MPINN:vgs X2.MPINN:vds X2.MPINN:vdsat
+save X2.MPINP:ids X2.MPINP:gm X2.MPINP:gds X2.MPINP:vgs X2.MPINP:vds X2.MPINP:vdsat
+save X2.MNSW:ids X2.MNSW:gm X2.MNSW:gds X2.MNSW:vgs X2.MNSW:vds X2.MNSW:vdsat
+save X2.MPSD:ids X2.MPSD:gm X2.MPSD:gds X2.MPSD:vgs X2.MPSD:vds X2.MPSD:vdsat
+save X2.MPSM:ids X2.MPSM:gm X2.MPSM:gds X2.MPSM:vgs X2.MPSM:vds X2.MPSM:vdsat
+save X2.MPSW:ids X2.MPSW:gm X2.MPSW:gds X2.MPSW:vgs X2.MPSW:vds X2.MPSW:vdsat
+save X2.MNSD:ids X2.MNSD:gm X2.MNSD:gds X2.MNSD:vgs X2.MNSD:vds X2.MNSD:vdsat
+save X2.MNSM:ids X2.MNSM:gm X2.MNSM:gds X2.MNSM:vgs X2.MNSM:vds X2.MNSM:vdsat
+save X2.MFBASE:ids X2.MFBASE:gm X2.MFBASE:gds X2.MFBASE:vgs X2.MFBASE:vds X2.MFBASE:vdsat
+save X2.MFADD:ids X2.MFADD:gm X2.MFADD:gds X2.MFADD:vgs X2.MFADD:vds X2.MFADD:vdsat
+save X2.MFSUB:ids X2.MFSUB:gm X2.MFSUB:gds X2.MFSUB:vgs X2.MFSUB:vds X2.MFSUB:vdsat
+save X2.MFREF:ids X2.MFREF:gm X2.MFREF:gds X2.MFREF:vgs X2.MFREF:vds X2.MFREF:vdsat
+save X2.MFS1:ids X2.MFS1:gm X2.MFS1:gds X2.MFS1:vgs X2.MFS1:vds X2.MFS1:vdsat
+save X2.MFS2:ids X2.MFS2:gm X2.MFS2:gds X2.MFS2:vgs X2.MFS2:vds X2.MFS2:vdsat
+save X2.MNC1:ids X2.MNC1:gm X2.MNC1:gds X2.MNC1:vgs X2.MNC1:vds X2.MNC1:vdsat
+save X2.MNC2:ids X2.MNC2:gm X2.MNC2:gds X2.MNC2:vgs X2.MNC2:vds X2.MNC2:vdsat
+save X2.MPM1:ids X2.MPM1:gm X2.MPM1:gds X2.MPM1:vgs X2.MPM1:vds X2.MPM1:vdsat
+save X2.MPM2:ids X2.MPM2:gm X2.MPM2:gds X2.MPM2:vgs X2.MPM2:vds X2.MPM2:vdsat
+save X2.MPC1:ids X2.MPC1:gm X2.MPC1:gds X2.MPC1:vgs X2.MPC1:vds X2.MPC1:vdsat
+save X2.MPC2:ids X2.MPC2:gm X2.MPC2:gds X2.MPC2:vgs X2.MPC2:vds X2.MPC2:vdsat
+save X2.MABN:ids X2.MABN:gm X2.MABN:gds X2.MABN:vgs X2.MABN:vds X2.MABN:vdsat
+save X2.MABP:ids X2.MABP:gm X2.MABP:gds X2.MABP:vgs X2.MABP:vds X2.MABP:vdsat
+save X2.MABNS:ids X2.MABNS:gm X2.MABNS:gds X2.MABNS:vgs X2.MABNS:vds X2.MABNS:vdsat
+save X2.MABNU:ids X2.MABNU:gm X2.MABNU:gds X2.MABNU:vgs X2.MABNU:vds X2.MABNU:vdsat
+save X2.MABNL:ids X2.MABNL:gm X2.MABNL:gds X2.MABNL:vgs X2.MABNL:vds X2.MABNL:vdsat
+save X2.MABPS:ids X2.MABPS:gm X2.MABPS:gds X2.MABPS:vgs X2.MABPS:vds X2.MABPS:vdsat
+save X2.MABPU:ids X2.MABPU:gm X2.MABPU:gds X2.MABPU:vgs X2.MABPU:vds X2.MABPU:vdsat
+save X2.MABPL:ids X2.MABPL:gm X2.MABPL:gds X2.MABPL:vgs X2.MABPL:vds X2.MABPL:vdsat
+save X2.MOUTN:ids X2.MOUTN:gm X2.MOUTN:gds X2.MOUTN:vgs X2.MOUTN:vds X2.MOUTN:vdsat
+save X2.MOUTP:ids X2.MOUTP:gm X2.MOUTP:gds X2.MOUTP:vgs X2.MOUTP:vds X2.MOUTP:vdsat
+VDD3 (vdd3 0) vsource dc=1.8
+IR3 (vdd3 iref3) isource dc=20u
+VIN3 (vinp3 0) vsource dc=1.6
+LFB3 (out3 fb3) inductor l=1e15
+SHIFT3 (vinn3 fb3) vsource dc=0.7
+CFB3 (vinn3 vac3) capacitor c=1e6
+VAC3 (vac3 0) vsource dc=0 mag=1
+VMID3 (mid3 0) vsource dc=.9
+RDC3 (out3 mid3) resistor r=1e12
+CL3 (out3 0) capacitor c=4p
+X3 (0 iref3 vdd3 vinn3 vinp3 out3) complementary_folded_cascode_ab_opamp
+save out3 vinn3 vinp3 VDD3:p
+save iref3
+save X3.vbp
+save X3.vcn
+save X3.vcp
+save X3.vrefn
+save X3.vrefp
+save X3.ntail
+save X3.ptail
+save X3.swnd
+save X3.swpd
+save X3.fp1
+save X3.fp2
+save X3.fn1
+save X3.fn2
+save X3.ml
+save X3.gn
+save X3.gp
+save X3.vabn
+save X3.vabp
+save X3.xn
+save X3.yp
+save X3.vbsink
+save X3.MREF:ids X3.MREF:gm X3.MREF:gds X3.MREF:vgs X3.MREF:vds X3.MREF:vdsat
+save X3.MBN:ids X3.MBN:gm X3.MBN:gds X3.MBN:vgs X3.MBN:vds X3.MBN:vdsat
+save X3.MBP:ids X3.MBP:gm X3.MBP:gds X3.MBP:vgs X3.MBP:vds X3.MBP:vdsat
+save X3.MNCB:ids X3.MNCB:gm X3.MNCB:gds X3.MNCB:vgs X3.MNCB:vds X3.MNCB:vdsat
+save X3.MND:ids X3.MND:gm X3.MND:gds X3.MND:vgs X3.MND:vds X3.MND:vdsat
+save X3.MPCB:ids X3.MPCB:gm X3.MPCB:gds X3.MPCB:vgs X3.MPCB:vds X3.MPCB:vdsat
+save X3.MPD:ids X3.MPD:gm X3.MPD:gds X3.MPD:vgs X3.MPD:vds X3.MPD:vdsat
+save X3.MNRB:ids X3.MNRB:gm X3.MNRB:gds X3.MNRB:vgs X3.MNRB:vds X3.MNRB:vdsat
+save X3.MNREF:ids X3.MNREF:gm X3.MNREF:gds X3.MNREF:vgs X3.MNREF:vds X3.MNREF:vdsat
+save X3.MPRB:ids X3.MPRB:gm X3.MPRB:gds X3.MPRB:vgs X3.MPRB:vds X3.MPRB:vdsat
+save X3.MPREF:ids X3.MPREF:gm X3.MPREF:gds X3.MPREF:vgs X3.MPREF:vds X3.MPREF:vdsat
+save X3.MNT:ids X3.MNT:gm X3.MNT:gds X3.MNT:vgs X3.MNT:vds X3.MNT:vdsat
+save X3.MPT:ids X3.MPT:gm X3.MPT:gds X3.MPT:vgs X3.MPT:vds X3.MPT:vdsat
+save X3.MNINN:ids X3.MNINN:gm X3.MNINN:gds X3.MNINN:vgs X3.MNINN:vds X3.MNINN:vdsat
+save X3.MNINP:ids X3.MNINP:gm X3.MNINP:gds X3.MNINP:vgs X3.MNINP:vds X3.MNINP:vdsat
+save X3.MPINN:ids X3.MPINN:gm X3.MPINN:gds X3.MPINN:vgs X3.MPINN:vds X3.MPINN:vdsat
+save X3.MPINP:ids X3.MPINP:gm X3.MPINP:gds X3.MPINP:vgs X3.MPINP:vds X3.MPINP:vdsat
+save X3.MNSW:ids X3.MNSW:gm X3.MNSW:gds X3.MNSW:vgs X3.MNSW:vds X3.MNSW:vdsat
+save X3.MPSD:ids X3.MPSD:gm X3.MPSD:gds X3.MPSD:vgs X3.MPSD:vds X3.MPSD:vdsat
+save X3.MPSM:ids X3.MPSM:gm X3.MPSM:gds X3.MPSM:vgs X3.MPSM:vds X3.MPSM:vdsat
+save X3.MPSW:ids X3.MPSW:gm X3.MPSW:gds X3.MPSW:vgs X3.MPSW:vds X3.MPSW:vdsat
+save X3.MNSD:ids X3.MNSD:gm X3.MNSD:gds X3.MNSD:vgs X3.MNSD:vds X3.MNSD:vdsat
+save X3.MNSM:ids X3.MNSM:gm X3.MNSM:gds X3.MNSM:vgs X3.MNSM:vds X3.MNSM:vdsat
+save X3.MFBASE:ids X3.MFBASE:gm X3.MFBASE:gds X3.MFBASE:vgs X3.MFBASE:vds X3.MFBASE:vdsat
+save X3.MFADD:ids X3.MFADD:gm X3.MFADD:gds X3.MFADD:vgs X3.MFADD:vds X3.MFADD:vdsat
+save X3.MFSUB:ids X3.MFSUB:gm X3.MFSUB:gds X3.MFSUB:vgs X3.MFSUB:vds X3.MFSUB:vdsat
+save X3.MFREF:ids X3.MFREF:gm X3.MFREF:gds X3.MFREF:vgs X3.MFREF:vds X3.MFREF:vdsat
+save X3.MFS1:ids X3.MFS1:gm X3.MFS1:gds X3.MFS1:vgs X3.MFS1:vds X3.MFS1:vdsat
+save X3.MFS2:ids X3.MFS2:gm X3.MFS2:gds X3.MFS2:vgs X3.MFS2:vds X3.MFS2:vdsat
+save X3.MNC1:ids X3.MNC1:gm X3.MNC1:gds X3.MNC1:vgs X3.MNC1:vds X3.MNC1:vdsat
+save X3.MNC2:ids X3.MNC2:gm X3.MNC2:gds X3.MNC2:vgs X3.MNC2:vds X3.MNC2:vdsat
+save X3.MPM1:ids X3.MPM1:gm X3.MPM1:gds X3.MPM1:vgs X3.MPM1:vds X3.MPM1:vdsat
+save X3.MPM2:ids X3.MPM2:gm X3.MPM2:gds X3.MPM2:vgs X3.MPM2:vds X3.MPM2:vdsat
+save X3.MPC1:ids X3.MPC1:gm X3.MPC1:gds X3.MPC1:vgs X3.MPC1:vds X3.MPC1:vdsat
+save X3.MPC2:ids X3.MPC2:gm X3.MPC2:gds X3.MPC2:vgs X3.MPC2:vds X3.MPC2:vdsat
+save X3.MABN:ids X3.MABN:gm X3.MABN:gds X3.MABN:vgs X3.MABN:vds X3.MABN:vdsat
+save X3.MABP:ids X3.MABP:gm X3.MABP:gds X3.MABP:vgs X3.MABP:vds X3.MABP:vdsat
+save X3.MABNS:ids X3.MABNS:gm X3.MABNS:gds X3.MABNS:vgs X3.MABNS:vds X3.MABNS:vdsat
+save X3.MABNU:ids X3.MABNU:gm X3.MABNU:gds X3.MABNU:vgs X3.MABNU:vds X3.MABNU:vdsat
+save X3.MABNL:ids X3.MABNL:gm X3.MABNL:gds X3.MABNL:vgs X3.MABNL:vds X3.MABNL:vdsat
+save X3.MABPS:ids X3.MABPS:gm X3.MABPS:gds X3.MABPS:vgs X3.MABPS:vds X3.MABPS:vdsat
+save X3.MABPU:ids X3.MABPU:gm X3.MABPU:gds X3.MABPU:vgs X3.MABPU:vds X3.MABPU:vdsat
+save X3.MABPL:ids X3.MABPL:gm X3.MABPL:gds X3.MABPL:vgs X3.MABPL:vds X3.MABPL:vdsat
+save X3.MOUTN:ids X3.MOUTN:gm X3.MOUTN:gds X3.MOUTN:vgs X3.MOUTN:vds X3.MOUTN:vdsat
+save X3.MOUTP:ids X3.MOUTP:gm X3.MOUTP:gds X3.MOUTP:vgs X3.MOUTP:vds X3.MOUTP:vdsat
+VDD4 (vdd4 0) vsource dc=1.8
+IR4 (vdd4 iref4) isource dc=20u
+VIN4 (vinp4 0) vsource dc=1.7
+LFB4 (out4 fb4) inductor l=1e15
+SHIFT4 (vinn4 fb4) vsource dc=0.8
+CFB4 (vinn4 vac4) capacitor c=1e6
+VAC4 (vac4 0) vsource dc=0 mag=1
+VMID4 (mid4 0) vsource dc=.9
+RDC4 (out4 mid4) resistor r=1e12
+CL4 (out4 0) capacitor c=4p
+X4 (0 iref4 vdd4 vinn4 vinp4 out4) complementary_folded_cascode_ab_opamp
+save out4 vinn4 vinp4 VDD4:p
+save iref4
+save X4.vbp
+save X4.vcn
+save X4.vcp
+save X4.vrefn
+save X4.vrefp
+save X4.ntail
+save X4.ptail
+save X4.swnd
+save X4.swpd
+save X4.fp1
+save X4.fp2
+save X4.fn1
+save X4.fn2
+save X4.ml
+save X4.gn
+save X4.gp
+save X4.vabn
+save X4.vabp
+save X4.xn
+save X4.yp
+save X4.vbsink
+save X4.MREF:ids X4.MREF:gm X4.MREF:gds X4.MREF:vgs X4.MREF:vds X4.MREF:vdsat
+save X4.MBN:ids X4.MBN:gm X4.MBN:gds X4.MBN:vgs X4.MBN:vds X4.MBN:vdsat
+save X4.MBP:ids X4.MBP:gm X4.MBP:gds X4.MBP:vgs X4.MBP:vds X4.MBP:vdsat
+save X4.MNCB:ids X4.MNCB:gm X4.MNCB:gds X4.MNCB:vgs X4.MNCB:vds X4.MNCB:vdsat
+save X4.MND:ids X4.MND:gm X4.MND:gds X4.MND:vgs X4.MND:vds X4.MND:vdsat
+save X4.MPCB:ids X4.MPCB:gm X4.MPCB:gds X4.MPCB:vgs X4.MPCB:vds X4.MPCB:vdsat
+save X4.MPD:ids X4.MPD:gm X4.MPD:gds X4.MPD:vgs X4.MPD:vds X4.MPD:vdsat
+save X4.MNRB:ids X4.MNRB:gm X4.MNRB:gds X4.MNRB:vgs X4.MNRB:vds X4.MNRB:vdsat
+save X4.MNREF:ids X4.MNREF:gm X4.MNREF:gds X4.MNREF:vgs X4.MNREF:vds X4.MNREF:vdsat
+save X4.MPRB:ids X4.MPRB:gm X4.MPRB:gds X4.MPRB:vgs X4.MPRB:vds X4.MPRB:vdsat
+save X4.MPREF:ids X4.MPREF:gm X4.MPREF:gds X4.MPREF:vgs X4.MPREF:vds X4.MPREF:vdsat
+save X4.MNT:ids X4.MNT:gm X4.MNT:gds X4.MNT:vgs X4.MNT:vds X4.MNT:vdsat
+save X4.MPT:ids X4.MPT:gm X4.MPT:gds X4.MPT:vgs X4.MPT:vds X4.MPT:vdsat
+save X4.MNINN:ids X4.MNINN:gm X4.MNINN:gds X4.MNINN:vgs X4.MNINN:vds X4.MNINN:vdsat
+save X4.MNINP:ids X4.MNINP:gm X4.MNINP:gds X4.MNINP:vgs X4.MNINP:vds X4.MNINP:vdsat
+save X4.MPINN:ids X4.MPINN:gm X4.MPINN:gds X4.MPINN:vgs X4.MPINN:vds X4.MPINN:vdsat
+save X4.MPINP:ids X4.MPINP:gm X4.MPINP:gds X4.MPINP:vgs X4.MPINP:vds X4.MPINP:vdsat
+save X4.MNSW:ids X4.MNSW:gm X4.MNSW:gds X4.MNSW:vgs X4.MNSW:vds X4.MNSW:vdsat
+save X4.MPSD:ids X4.MPSD:gm X4.MPSD:gds X4.MPSD:vgs X4.MPSD:vds X4.MPSD:vdsat
+save X4.MPSM:ids X4.MPSM:gm X4.MPSM:gds X4.MPSM:vgs X4.MPSM:vds X4.MPSM:vdsat
+save X4.MPSW:ids X4.MPSW:gm X4.MPSW:gds X4.MPSW:vgs X4.MPSW:vds X4.MPSW:vdsat
+save X4.MNSD:ids X4.MNSD:gm X4.MNSD:gds X4.MNSD:vgs X4.MNSD:vds X4.MNSD:vdsat
+save X4.MNSM:ids X4.MNSM:gm X4.MNSM:gds X4.MNSM:vgs X4.MNSM:vds X4.MNSM:vdsat
+save X4.MFBASE:ids X4.MFBASE:gm X4.MFBASE:gds X4.MFBASE:vgs X4.MFBASE:vds X4.MFBASE:vdsat
+save X4.MFADD:ids X4.MFADD:gm X4.MFADD:gds X4.MFADD:vgs X4.MFADD:vds X4.MFADD:vdsat
+save X4.MFSUB:ids X4.MFSUB:gm X4.MFSUB:gds X4.MFSUB:vgs X4.MFSUB:vds X4.MFSUB:vdsat
+save X4.MFREF:ids X4.MFREF:gm X4.MFREF:gds X4.MFREF:vgs X4.MFREF:vds X4.MFREF:vdsat
+save X4.MFS1:ids X4.MFS1:gm X4.MFS1:gds X4.MFS1:vgs X4.MFS1:vds X4.MFS1:vdsat
+save X4.MFS2:ids X4.MFS2:gm X4.MFS2:gds X4.MFS2:vgs X4.MFS2:vds X4.MFS2:vdsat
+save X4.MNC1:ids X4.MNC1:gm X4.MNC1:gds X4.MNC1:vgs X4.MNC1:vds X4.MNC1:vdsat
+save X4.MNC2:ids X4.MNC2:gm X4.MNC2:gds X4.MNC2:vgs X4.MNC2:vds X4.MNC2:vdsat
+save X4.MPM1:ids X4.MPM1:gm X4.MPM1:gds X4.MPM1:vgs X4.MPM1:vds X4.MPM1:vdsat
+save X4.MPM2:ids X4.MPM2:gm X4.MPM2:gds X4.MPM2:vgs X4.MPM2:vds X4.MPM2:vdsat
+save X4.MPC1:ids X4.MPC1:gm X4.MPC1:gds X4.MPC1:vgs X4.MPC1:vds X4.MPC1:vdsat
+save X4.MPC2:ids X4.MPC2:gm X4.MPC2:gds X4.MPC2:vgs X4.MPC2:vds X4.MPC2:vdsat
+save X4.MABN:ids X4.MABN:gm X4.MABN:gds X4.MABN:vgs X4.MABN:vds X4.MABN:vdsat
+save X4.MABP:ids X4.MABP:gm X4.MABP:gds X4.MABP:vgs X4.MABP:vds X4.MABP:vdsat
+save X4.MABNS:ids X4.MABNS:gm X4.MABNS:gds X4.MABNS:vgs X4.MABNS:vds X4.MABNS:vdsat
+save X4.MABNU:ids X4.MABNU:gm X4.MABNU:gds X4.MABNU:vgs X4.MABNU:vds X4.MABNU:vdsat
+save X4.MABNL:ids X4.MABNL:gm X4.MABNL:gds X4.MABNL:vgs X4.MABNL:vds X4.MABNL:vdsat
+save X4.MABPS:ids X4.MABPS:gm X4.MABPS:gds X4.MABPS:vgs X4.MABPS:vds X4.MABPS:vdsat
+save X4.MABPU:ids X4.MABPU:gm X4.MABPU:gds X4.MABPU:vgs X4.MABPU:vds X4.MABPU:vdsat
+save X4.MABPL:ids X4.MABPL:gm X4.MABPL:gds X4.MABPL:vgs X4.MABPL:vds X4.MABPL:vdsat
+save X4.MOUTN:ids X4.MOUTN:gm X4.MOUTN:gds X4.MOUTN:vgs X4.MOUTN:vds X4.MOUTN:vdsat
+save X4.MOUTP:ids X4.MOUTP:gm X4.MOUTP:gds X4.MOUTP:vgs X4.MOUTP:vds X4.MOUTP:vdsat
+dcOp dc
+ac ac start=1 stop=1G dec=100

@@ -1,0 +1,655 @@
+{
+  "generated_at": "2026-09-28T18:53:58.048919+00:00",
+  "status": "passed",
+  "circuit_sha256": "932079bd1b52f635b8632deb2e396f31044070eec8bb522322982af2f83ff7bd",
+  "results_sha256": "5e66dacd7f4579d250a4518ae07e24d2f3386cc5ea7c4a691455fd8af1131706",
+  "contract_sha256": "1840c4fd76d9fc5bd032a2bfd96471865ab3c14f685c67413b4040e921eec942",
+  "measurement_cross_checks": [
+    {
+      "metric": "transition_transition_errors",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "transition_missing_expected_transitions",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "transition_late_transitions",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "transition_invalid_output_levels",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "transition_stable_level_violations",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "transition_clock_to_output_s",
+      "report": 6.908039939063852e-10,
+      "independent": 6.908039939063322e-10,
+      "absolute_difference": 5.293955920339377e-23,
+      "passed": true
+    },
+    {
+      "metric": "transition_core_reference_power_w",
+      "report": 0.0003266122347381317,
+      "independent": 0.00032661223473813556,
+      "absolute_difference": 3.848917712323541e-18,
+      "passed": true
+    },
+    {
+      "metric": "transition_clock_delivery_power_w",
+      "report": 4.363281918559468e-05,
+      "independent": 4.36328191855951e-05,
+      "absolute_difference": 4.2012834183813297e-19,
+      "passed": true
+    },
+    {
+      "metric": "transition_clock_peak_current_a",
+      "report": 0.003698856831841585,
+      "independent": 0.003698856831841585,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "ramp_dnl_lsb",
+      "report": 0.0999999999999992,
+      "independent": 0.10000000000000031,
+      "absolute_difference": 1.1102230246251565e-15,
+      "passed": true
+    },
+    {
+      "metric": "ramp_inl_lsb",
+      "report": 0.09000000000000119,
+      "independent": 0.0900000000000023,
+      "absolute_difference": 1.1102230246251565e-15,
+      "passed": true
+    },
+    {
+      "metric": "ramp_absolute_error_lsb",
+      "report": 0.19000000000000128,
+      "independent": 0.18999999999999684,
+      "absolute_difference": 4.440892098500626e-15,
+      "passed": true
+    },
+    {
+      "metric": "ramp_monotonic",
+      "report": 1.0,
+      "independent": 1.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "ramp_codes_present",
+      "report": 8.0,
+      "independent": 8.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "ramp_thresholds_found",
+      "report": 7.0,
+      "independent": 7.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "ramp_invalid_output_levels",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "ramp_stable_level_violations",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "sine_low_codes_present",
+      "report": 7.0,
+      "independent": 7.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "sine_low_invalid_output_levels",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "sine_low_stable_level_violations",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "sine_low_sndr_db",
+      "report": 20.012330916340176,
+      "independent": 20.012330916340176,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "sine_low_sfdr_db",
+      "report": 26.537022145577915,
+      "independent": 26.537022145577915,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "sine_low_normalized_enob_bits",
+      "report": 3.1242538838074037,
+      "independent": 3.124253883807403,
+      "absolute_difference": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "metric": "sine_high_codes_present",
+      "report": 7.0,
+      "independent": 7.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "sine_high_invalid_output_levels",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "sine_high_stable_level_violations",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "sine_high_sndr_db",
+      "report": 22.415351535468652,
+      "independent": 22.41535153546865,
+      "absolute_difference": 3.552713678800501e-15,
+      "passed": true
+    },
+    {
+      "metric": "sine_high_sfdr_db",
+      "report": 28.053528550786496,
+      "independent": 28.05352855078649,
+      "absolute_difference": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "metric": "sine_high_normalized_enob_bits",
+      "report": 3.55823246062442,
+      "independent": 3.558232460624419,
+      "absolute_difference": 8.881784197001252e-16,
+      "passed": true
+    }
+  ],
+  "original_nominal_checks": [
+    {
+      "name": "valid_output_levels",
+      "passed": true,
+      "detail": "runs=4/4 unique=4 failures=0 finite=True invalid_levels=0 at transition_TT1.8V27C stable_level_violations=0 at transition_TT1.8V27C"
+    },
+    {
+      "name": "pvt_code_progression",
+      "passed": true,
+      "detail": "monotonic=1 codes=8/8 thresholds=7/7 at ramp_TT1.8V27C"
+    },
+    {
+      "name": "pvt_dnl",
+      "passed": true,
+      "detail": "worst=0.100 LSB at ramp_TT1.8V27C (<= 0.30)"
+    },
+    {
+      "name": "pvt_inl",
+      "passed": true,
+      "detail": "worst=0.090 LSB at ramp_TT1.8V27C (<= 0.30)"
+    },
+    {
+      "name": "pvt_absolute_threshold_error",
+      "passed": true,
+      "detail": "worst=0.190 LSB at ramp_TT1.8V27C (<= 0.30)"
+    },
+    {
+      "name": "hidden_transition_sequence",
+      "passed": true,
+      "detail": "code_errors=0 at transition_TT1.8V27C missing_expected_transitions=0 at transition_TT1.8V27C stable_level_violations=0 at transition_TT1.8V27C"
+    },
+    {
+      "name": "pvt_clock_to_output_delay",
+      "passed": true,
+      "detail": "last_crossing=0.691 ns at transition_TT1.8V27C late_crossings=0 at transition_TT1.8V27C"
+    },
+    {
+      "name": "pvt_core_reference_power",
+      "passed": true,
+      "detail": "worst=0.327 mW at transition_TT1.8V27C (<= 1.00)"
+    },
+    {
+      "name": "pvt_clock_delivery_power",
+      "passed": true,
+      "detail": "positive-delivery average=0.044 mW at transition_TT1.8V27C (<= 0.25)"
+    },
+    {
+      "name": "low_frequency_sndr",
+      "passed": true,
+      "detail": "SNDR=20.012 dB, diagnostic codes=7/8 at sine_low_TT1.8V27C (>= 17.0)"
+    },
+    {
+      "name": "high_frequency_sndr",
+      "passed": true,
+      "detail": "SNDR=22.415 dB, diagnostic codes=7/8 at sine_high_TT1.8V27C (>= 17.0)"
+    },
+    {
+      "name": "dynamic_sfdr",
+      "passed": true,
+      "detail": "worst=26.537 dB at sine_low_TT1.8V27C (>= 21.0)"
+    },
+    {
+      "name": "dynamic_normalized_enob",
+      "passed": true,
+      "detail": "worst=3.124 bit at sine_low_TT1.8V27C (>= 2.50)"
+    }
+  ],
+  "original_model_hashes_unchanged": true,
+  "source_snapshot_hashes_verified": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "run": "runs/46/20260928T180537281650Z_transition",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE3.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE4.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC5.MPC4:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE4.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC2.MTAIL:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/46/20260928T180557513778Z_ramp",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE4.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC7.MNL2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC6.MNL2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC2.MTAIL:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC4.MTAIL:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/46/20260928T180652513372Z_sine_low",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC1.MTAIL:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC6.MNL2:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/46/20260928T180704975793Z_sine_high",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE4.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE3.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC7.MIN1:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC1.MTAIL:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE4.MMN1:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/46/20260928T180852276960Z_transition",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC6.MPC1:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC4.MNL2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC1.MPC4:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE5.MM0:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC2.MTAIL:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/46/20260928T180930749182Z_ramp",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XS2.XG2.MM1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE8.MM1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC7.MPL2:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC3.MPC4:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC3.MPC4:int_d. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/46/20260928T181118452556Z_sine_low",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE10.MM3:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC7.MPC1:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE3.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC2.MPC2:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC3.MPC3:int_d. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/46/20260928T181141726685Z_sine_high",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC7.MNL2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC3.MNL1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC6.MPC1:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XE8.MMN1:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XC7.MPC3:int_d. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    }
+  ],
+  "numerical_confirmation": {
+    "generated_at": "2026-09-28T18:12:27.177755+00:00",
+    "baseline_groups": {
+      "transition": "runs/46/20260928T180537281650Z_transition",
+      "ramp": "runs/46/20260928T180557513778Z_ramp",
+      "sine_low": "runs/46/20260928T180652513372Z_sine_low",
+      "sine_high": "runs/46/20260928T180704975793Z_sine_high"
+    },
+    "final_groups": {
+      "transition": "runs/46/20260928T180852276960Z_transition",
+      "ramp": "runs/46/20260928T180930749182Z_ramp",
+      "sine_low": "runs/46/20260928T181118452556Z_sine_low",
+      "sine_high": "runs/46/20260928T181141726685Z_sine_high"
+    },
+    "circuit_sha256": "932079bd1b52f635b8632deb2e396f31044070eec8bb522322982af2f83ff7bd",
+    "metrics": [
+      {
+        "metric": "transition_transition_errors",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "transition_missing_expected_transitions",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "transition_late_transitions",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "transition_invalid_output_levels",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "transition_stable_level_violations",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "transition_clock_to_output_s",
+        "baseline": 6.908067779122534e-10,
+        "refined": 6.908039939063852e-10,
+        "absolute_difference": 2.7840058681788057e-15,
+        "maximum_difference": 5e-11,
+        "passed": true
+      },
+      {
+        "metric": "transition_core_reference_power_w",
+        "baseline": 0.0003266099063089952,
+        "refined": 0.0003266122347381317,
+        "absolute_difference": 2.328429136511708e-09,
+        "maximum_difference": 2e-06,
+        "passed": true
+      },
+      {
+        "metric": "transition_clock_delivery_power_w",
+        "baseline": 4.363302416064873e-05,
+        "refined": 4.363281918559468e-05,
+        "absolute_difference": 2.0497505404701126e-10,
+        "maximum_difference": 1e-06,
+        "passed": true
+      },
+      {
+        "metric": "transition_clock_peak_current_a",
+        "baseline": 0.003698845599962661,
+        "refined": 0.003698856831841585,
+        "absolute_difference": 1.1231878924329586e-08,
+        "maximum_difference": 5e-05,
+        "passed": true
+      },
+      {
+        "metric": "ramp_dnl_lsb",
+        "baseline": 0.0999999999999992,
+        "refined": 0.0999999999999992,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "ramp_inl_lsb",
+        "baseline": 0.09000000000000119,
+        "refined": 0.09000000000000119,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "ramp_absolute_error_lsb",
+        "baseline": 0.19000000000000128,
+        "refined": 0.19000000000000128,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "ramp_monotonic",
+        "baseline": true,
+        "refined": true,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "ramp_codes_present",
+        "baseline": 8,
+        "refined": 8,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "ramp_thresholds_found",
+        "baseline": 7,
+        "refined": 7,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "ramp_invalid_output_levels",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "ramp_stable_level_violations",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_low_codes_present",
+        "baseline": 7,
+        "refined": 7,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_low_invalid_output_levels",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_low_stable_level_violations",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_low_sndr_db",
+        "baseline": 20.012330916340176,
+        "refined": 20.012330916340176,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_low_sfdr_db",
+        "baseline": 26.537022145577915,
+        "refined": 26.537022145577915,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_low_normalized_enob_bits",
+        "baseline": 3.1242538838074037,
+        "refined": 3.1242538838074037,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_high_codes_present",
+        "baseline": 7,
+        "refined": 7,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_high_invalid_output_levels",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_high_stable_level_violations",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_high_sndr_db",
+        "baseline": 22.415351535468652,
+        "refined": 22.415351535468652,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_high_sfdr_db",
+        "baseline": 28.053528550786496,
+        "refined": 28.053528550786496,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      },
+      {
+        "metric": "sine_high_normalized_enob_bits",
+        "baseline": 3.55823246062442,
+        "refined": 3.55823246062442,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-10,
+        "passed": true
+      }
+    ],
+    "conversion_codes_identical": true,
+    "passed": true
+  },
+  "schematic_instances": 54,
+  "schematic_terminals": 259,
+  "pdf_review_pending": false,
+  "full_upstream_signoff": false,
+  "method": "Independent original Python analyzer receives actualSpectre traces throughpuredata Plot adapter. Staticramp, last-crossing/missingedge/stableband, signedcore/referencepower, positiveclockpower and originalrecursiveDFT(all16codes) recomputed. Original13checkfunctions at explicitfourTTfunctionalrecords; originalsourceunmodified.",
+  "pdf": "reports/46-flash-adc3bit-review.pdf",
+  "pdf_sha256": "e72b841b0b1c9bebcda5abc606354029f3d06b92d014067144c5ee2653098b78",
+  "pdf_pages": 13,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-29T04:09:10.333271+00:00"
+}

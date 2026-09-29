@@ -1,0 +1,254 @@
+{
+  "case_slot": 6,
+  "generated_at": "2026-09-29T03:31:53.907295+00:00",
+  "status": "complete_original",
+  "values": {
+    "pos20": {
+      "mean_diff_V": 0.16069006715061548,
+      "static_error_fraction": 0.004312919691346756,
+      "cm_error_V": 0.007629151363719888,
+      "power_W": 0.00029696605212667913,
+      "settle_s": 3.522819265275227e-08,
+      "ripple_V": 0.0004336084441476651
+    },
+    "pos10": {
+      "mean_diff_V": 0.07775699274358268
+    },
+    "zero": {
+      "mean_diff_V": 0.00028274137675824595
+    },
+    "neg20": {
+      "mean_diff_V": -0.15901541780642953,
+      "static_error_fraction": 0.00615363870981548,
+      "cm_error_V": 0.007594605270830779,
+      "power_W": 0.00029692655153654423,
+      "settle_s": 3.487808945088655e-08,
+      "ripple_V": 0.00042932441572346436
+    },
+    "transfer": {
+      "positive_gain": 8.29330744070328,
+      "bipolar_gain": 7.992637123926125,
+      "zero_residual_V": 0.00028274137675824595
+    }
+  },
+  "gates": {
+    "pos20_static_error_fraction": {
+      "value": 0.004312919691346756,
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.01,
+        "10pct": 0.011000000000000001,
+        "15pct": 0.0115
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "pos20_cm_error_V": {
+      "value": 0.007629151363719888,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.05,
+        "10pct": 0.05500000000000001,
+        "15pct": 0.057499999999999996
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "pos20_power_W": {
+      "value": 0.00029696605212667913,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.0004,
+        "10pct": 0.00044000000000000007,
+        "15pct": 0.00045999999999999996
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "pos20_settle_s": {
+      "value": 3.522819265275227e-08,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 5e-08,
+        "10pct": 5.5e-08,
+        "15pct": 5.749999999999999e-08
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "pos20_ripple_V": {
+      "value": 0.0004336084441476651,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "neg20_static_error_fraction": {
+      "value": 0.00615363870981548,
+      "unit": "fraction",
+      "sense": "max",
+      "limits": {
+        "original": 0.01,
+        "10pct": 0.011000000000000001,
+        "15pct": 0.0115
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "neg20_cm_error_V": {
+      "value": 0.007594605270830779,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.05,
+        "10pct": 0.05500000000000001,
+        "15pct": 0.057499999999999996
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "neg20_power_W": {
+      "value": 0.00029692655153654423,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.0004,
+        "10pct": 0.00044000000000000007,
+        "15pct": 0.00045999999999999996
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "neg20_settle_s": {
+      "value": 3.487808945088655e-08,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 5e-08,
+        "10pct": 5.5e-08,
+        "15pct": 5.749999999999999e-08
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "neg20_ripple_V": {
+      "value": 0.00042932441572346436,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "gain_positive_error": {
+      "value": 0.2933074407032805,
+      "unit": "V/V",
+      "sense": "max",
+      "limits": {
+        "original": 0.8,
+        "10pct": 0.8800000000000001,
+        "15pct": 0.9199999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "gain_bipolar_error": {
+      "value": 0.007362876073875313,
+      "unit": "V/V",
+      "sense": "max",
+      "limits": {
+        "original": 0.8,
+        "10pct": 0.8800000000000001,
+        "15pct": 0.9199999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "zero_residual": {
+      "value": 0.00028274137675824595,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "groups": {
+    "pos20": "runs/06/20260929T033134585984Z_pos20",
+    "pos10": "runs/06/20260929T033137074976Z_pos10",
+    "zero": "runs/06/20260929T033145699191Z_zero",
+    "neg20": "runs/06/20260929T033147677778Z_neg20"
+  },
+  "run_dirs": [
+    "runs/06/20260929T033134585984Z_pos20",
+    "runs/06/20260929T033137074976Z_pos10",
+    "runs/06/20260929T033145699191Z_zero",
+    "runs/06/20260929T033147677778Z_neg20"
+  ],
+  "circuit_sha256": "96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1",
+  "contract_sha256": "fa6fcdb8eaa808ee5c8f81f0eafc3c38926bbaee1c33aaeb78307dc2f47a5035",
+  "scope": "SMIC18 TT1.8V27C, all four original independent SC records +20,+10,0,-20mV with fixed 25uA sink, 10pF/side output load and bench-owned reset switches.",
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "nonrelaxable_guards_pass": true
+}

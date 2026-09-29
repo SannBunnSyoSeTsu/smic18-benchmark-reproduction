@@ -1,0 +1,413 @@
+{
+  "generated_at": "2026-09-29T04:19:10.035645+00:00",
+  "status": "passed",
+  "circuit_sha256": "a87f8ceb7193b5c69bc95a629ca3d628484b30cb708e843db74e2d94b0687f8d",
+  "results_sha256": "931956409e838d4bab83dc466db4061f2959390f4cf4c8d98ab756d8e651c867",
+  "contract_sha256": "169595e1d80b420f0cbe4d336a71d61477f23c0321edb05345a14c93db4c9c47",
+  "measurement_cross_checks": [
+    {
+      "metric": "transfer_invalid_levels",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "transfer_code_errors",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "transfer_alt_invalid_levels",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "transfer_alt_code_errors",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_invalid_levels",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_power_W",
+      "report": 0.0010319492549304182,
+      "independent": 0.0010319492549304182,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_alt_invalid_levels",
+      "report": 0.0,
+      "independent": 0.0,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_alt_power_W",
+      "report": 0.0010329546503274516,
+      "independent": 0.0010329546503274516,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_sndr_dB",
+      "report": 27.55147276515953,
+      "independent": 27.551472765159538,
+      "absolute_difference": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_normalized_enob_bits",
+      "report": 4.317248646714115,
+      "independent": 4.317248646714115,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_alt_sndr_dB",
+      "report": 27.551472765159538,
+      "independent": 27.551472765159538,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "dynamic_alt_normalized_enob_bits",
+      "report": 4.317248646714115,
+      "independent": 4.317248646714115,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "maximum_record_power_W",
+      "report": 0.0010329546503274516,
+      "independent": 0.0010329546503274516,
+      "absolute_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "original_nominal_checks": [
+    {
+      "name": "sample_hold_16_codes",
+      "passed": true,
+      "detail": "transfer=[0, 11, 4, 15, 2, 9, 6, 13, 1, 8, 5, 14, 3, 10, 7, 12]; transfer_alt=[15, 0, 8, 7, 3, 12, 5, 10, 1, 14, 6, 9, 2, 13, 4, 11]"
+    },
+    {
+      "name": "sndr",
+      "passed": true,
+      "detail": "worst=27.5515dB at dynamic (> 24dB)"
+    },
+    {
+      "name": "normalized_enob",
+      "passed": true,
+      "detail": "worst=4.31725 bit at dynamic (> 3.9 bit)"
+    },
+    {
+      "name": "power",
+      "passed": true,
+      "detail": "worst=1.03295mW at dynamic_alt (max 5mW)"
+    }
+  ],
+  "original_model_hashes_unchanged": true,
+  "source_snapshot_hashes_verified": true,
+  "lut_hashes_unchanged": true,
+  "run_provenance": [
+    {
+      "run": "runs/48/20260929T025757786361Z_transfer",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XOUT2.MM24:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XDECp3.MM17:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XSEQ3.MM10:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XSEQ2.MM4:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XDECn0.MM0:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/48/20260929T030111846843Z_transfer_alt",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XOUT0.MM27:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XVALID.MM2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XDECp2.MM4:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XNVALID.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XDECn3.MM1:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/48/20260929T030429269930Z_dynamic",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDN.MN3:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.dctrlp2. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XSEQ0.MM14:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XSEQ3.MM22:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XVALID.MM2:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/48/20260929T031022700087Z_dynamic_alt",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XDECn3.MM1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XVALID.MM2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XDECp0.MM11:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XDECn1.MM22:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XEOC.MMN1:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/48/20260929T032014979173Z_transfer",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XLSBn.MM3:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XDECp3.MM17:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDP.MN3:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XLOOP.MM2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XCMP.XON.MMN1:int_d. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/48/20260929T032557465554Z_transfer_alt",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XCMP.XON.MMN1:int_d. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XCMP.XON.MMN1:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XDECn3.MM12:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XSEQ3.MM10:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XSEQ2.MM4:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/48/20260929T033140508050Z_dynamic",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDN.MN3:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XLOOP.MM2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XLOOP.MM2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XSEQ1.MM12:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XCMP.MTAIL:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    },
+    {
+      "run": "runs/48/20260929T034301146847Z_dynamic_alt",
+      "actual_error_free": true,
+      "warnings": [
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XDN.MN3:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XLOOP.MM2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XVALID.MM2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XLOOP.MM2:int_s. Check the design or use '+diagnose' to get more information.",
+        "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: X.XLOG.XSEQ3.MM0:int_s. Check the design or use '+diagnose' to get more information."
+      ],
+      "bridge_errors": [
+        "license error"
+      ]
+    }
+  ],
+  "numerical_confirmation": {
+    "generated_at": "2026-09-29T03:55:24.094887+00:00",
+    "baseline_groups": {
+      "transfer": "runs/48/20260929T025757786361Z_transfer",
+      "transfer_alt": "runs/48/20260929T030111846843Z_transfer_alt",
+      "dynamic": "runs/48/20260929T030429269930Z_dynamic",
+      "dynamic_alt": "runs/48/20260929T031022700087Z_dynamic_alt"
+    },
+    "final_groups": {
+      "transfer": "runs/48/20260929T032014979173Z_transfer",
+      "transfer_alt": "runs/48/20260929T032557465554Z_transfer_alt",
+      "dynamic": "runs/48/20260929T033140508050Z_dynamic",
+      "dynamic_alt": "runs/48/20260929T034301146847Z_dynamic_alt"
+    },
+    "circuit_sha256": "a87f8ceb7193b5c69bc95a629ca3d628484b30cb708e843db74e2d94b0687f8d",
+    "metrics": [
+      {
+        "metric": "transfer_invalid_levels",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "transfer_code_errors",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "transfer_alt_invalid_levels",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "transfer_alt_code_errors",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_invalid_levels",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_power_W",
+        "baseline": 0.0010319457909828984,
+        "refined": 0.0010319492549304182,
+        "absolute_difference": 3.463947519880689e-09,
+        "maximum_difference": 5e-06,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_alt_invalid_levels",
+        "baseline": 0,
+        "refined": 0,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_alt_power_W",
+        "baseline": 0.0010329495455817324,
+        "refined": 0.0010329546503274516,
+        "absolute_difference": 5.104745719229989e-09,
+        "maximum_difference": 5e-06,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_spectrum_sndr_dB",
+        "baseline": 27.55147276515953,
+        "refined": 27.55147276515953,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_spectrum_normalized_enob_bits",
+        "baseline": 4.317248646714115,
+        "refined": 4.317248646714115,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_spectrum_signal_power",
+        "baseline": 15652.493441676912,
+        "refined": 15652.493441676912,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_spectrum_noise_power",
+        "baseline": 27.506558323082572,
+        "refined": 27.506558323082572,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_spectrum_tone_bin",
+        "baseline": 15,
+        "refined": 15,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_alt_spectrum_sndr_dB",
+        "baseline": 27.551472765159538,
+        "refined": 27.551472765159538,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_alt_spectrum_normalized_enob_bits",
+        "baseline": 4.317248646714115,
+        "refined": 4.317248646714115,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_alt_spectrum_signal_power",
+        "baseline": 15652.49344167692,
+        "refined": 15652.49344167692,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_alt_spectrum_noise_power",
+        "baseline": 27.506558323082572,
+        "refined": 27.506558323082572,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      },
+      {
+        "metric": "dynamic_alt_spectrum_tone_bin",
+        "baseline": 13,
+        "refined": 13,
+        "absolute_difference": 0.0,
+        "maximum_difference": 1e-09,
+        "passed": true
+      }
+    ],
+    "conversion_codes_identical": true,
+    "passed": true
+  },
+  "schematic_instances": 60,
+  "schematic_terminals": 355,
+  "pdf_review_pending": false,
+  "full_upstream_signoff": false,
+  "method": "Actual traces independently interpolated at the original fixed conversion times; original unmodified decoder, recursiveFFT and four electrical checks retained. Signed six-source clipped energy independently integrated. Original TT main and alternate dynamic records retained; SS/FF source corners outside nominal scope.",
+  "pdf": "reports/48-sar-adc4bit-review.pdf",
+  "pdf_sha256": "0ab83c8f9ac407316837c45091628cbe67547c87e6ae836c245a12b9b2a8e063",
+  "pdf_pages": 20,
+  "schematic_visual_review_complete": true,
+  "delivery_reviewed_at": "2026-09-29T04:22:34.652696+00:00"
+}

@@ -1,0 +1,92 @@
+{
+  "source_task": "sky130-ldo-ota5-robust-pvt-mc",
+  "source_hashes": {
+    "instruction.md": "82ded59f9133b766ef8f22c34f763f0ec02012b18bf171855f07a770f3264984",
+    "solution/circuit.spi": "40f5806d0eee86e3d9f4f7b78196c03e8e4fcc2443e66d2e6e346f38df3b2658",
+    "tests/verify.py": "33909bf718bcce4be2bb5359718a3b90df5c92b39b2d2726abb7ce9f522fb2a3",
+    "tests/benches/tb_dropout.spi": "fa6325c9c187a370f2424021689347dd97bdd80e79fdf5c9d39b82863a9b0a56",
+    "tests/benches/tb_line_tran.spi": "5e9fdd9a0fec80a585428b4f0198f6cf5230a52273b281e20287a48d63a2e963",
+    "tests/benches/tb_load_tran.spi": "4f5ede8b269ac230ed33f8715b2587b2bbb0cad841bad22654cdfc854763ee92",
+    "tests/benches/tb_loop.spi": "e618108c610ac4a6bbbac03f3456debaa32dbfeaf66b87a8049cbcc9ccaa0b13",
+    "tests/benches/tb_noise.spi": "d44766f3990c0fbd2fa926ab155258c31ee25d5f6d6631e88a7b929715497b39",
+    "tests/benches/tb_op.spi": "be5eb48df24558949385fa46c08d25ca22c1360f3bfd772899b1b01b526b829b",
+    "tests/benches/tb_psrr.spi": "5b81b87d30d776961c9e10e98f7ccc488a1bbac78fb2cee89a07e4121cbdb80d",
+    "tests/benches/tb_pvt_dc.spi": "82e92892776bd8bf2f950e7f6b5c60ff09681153231e6e452f3d5bfbe27802dc",
+    "tests/benches/tb_startup.spi": "5704d8d7ef38cd01596b01340ee064d1ef25d38489238991468a5ac870c384ad"
+  },
+  "corner": "tt",
+  "temperature_C": 27,
+  "VDD_V": 1.8,
+  "reference_V": 0.8,
+  "reference_A": 5e-05,
+  "target_V": 1.2,
+  "feedback_Ohm": [
+    300000.0,
+    600000.0
+  ],
+  "DC_supply_V": [
+    1.62,
+    1.8,
+    1.98
+  ],
+  "DC_load_A": [
+    0.001,
+    0.01,
+    0.03
+  ],
+  "loop_nominal_supply_load_points": 9,
+  "loop_network_extreme_points": 8,
+  "network_extremes_at_V": 1.8,
+  "network_cap_F": [
+    8e-07,
+    1.2e-06
+  ],
+  "network_ESR_Ohm": [
+    0.02,
+    0.1
+  ],
+  "network_extreme_load_A": [
+    0.001,
+    0.03
+  ],
+  "nominal_cap_F": 1e-06,
+  "nominal_ESR_Ohm": 0.05,
+  "dropout_sweep_V": [
+    1.15,
+    1.8,
+    0.002
+  ],
+  "dropout_load_A": 0.03,
+  "dropout_regulation_fraction": 0.99,
+  "loop": "-V(gate_drive)/V(gate), differential series injection",
+  "loop_freq_Hz": [
+    1,
+    100000000.0
+  ],
+  "noise_band_Hz": [
+    10,
+    1000000.0
+  ],
+  "noise_load_A": 0.01,
+  "startup": "0to1.8V ramp1to21us; Rload120ohm; observe70us",
+  "load_step": "1to25to1mA,20us and40.2us starts,200ns edges",
+  "line_step": "1.98to1.62to1.98V,20us and40.2us starts,200ns edges,10mA",
+  "settling_band_V": 0.015,
+  "transient_windows_s": [
+    [
+      2e-05,
+      4.02e-05
+    ],
+    [
+      4.02e-05,
+      6.5e-05
+    ]
+  ],
+  "scope_excludes": [
+    "otherprocesscorners",
+    "temperaturesotherthan27C",
+    "SS125networktransients",
+    "30process+mismatchruns",
+    "PEX"
+  ]
+}

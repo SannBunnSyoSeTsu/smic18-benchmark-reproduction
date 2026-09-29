@@ -1,0 +1,46 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/cases/29-ahuja/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+VDDL (vddL 0) vsource dc=1.8
+IREFL (vddL irefL) isource dc=50u
+VINL (vinL 0) vsource dc=.9 mag=1
+RSL (outL fbL) resistor r=500M
+CSL (fbL 0) capacitor c=50m
+XL (0 irefL vddL vinL fbL outL) ahuja_ota
+CLL (outL 0) capacitor c=20p
+save outL fbL VDDL:p
+VDDM (vddM 0) vsource dc=1.8
+IREFM (vddM irefM) isource dc=50u
+VINM (vinM 0) vsource dc=.9 mag=1
+RSM (outM fbM) resistor r=500M
+CSM (fbM 0) capacitor c=50m
+XM (0 irefM vddM vinM fbM outM) ahuja_ota
+CLM (outM 0) capacitor c=63p
+save outM fbM VDDM:p
+VDDH (vddH 0) vsource dc=1.8
+IREFH (vddH irefH) isource dc=50u
+VINH (vinH 0) vsource dc=.9 mag=1
+RSH (outH fbH) resistor r=500M
+CSH (fbH 0) capacitor c=50m
+XH (0 irefH vddH vinH fbH outH) ahuja_ota
+CLH (outH 0) capacitor c=200p
+save outH fbH VDDH:p
+save XL.tail XL.vbp XL.vcp XL.vcn XL.ncn XL.f1 XL.f2 XL.g1 XL.stage1 XL.s5 XL.s6 irefL
+save XL.MINP:ids XL.MINP:gm XL.MINP:gds XL.MINP:vgs XL.MINP:vds XL.MINP:vdsat XL.MINP:region
+save XL.MINN:ids XL.MINN:gm XL.MINN:gds XL.MINN:vgs XL.MINN:vds XL.MINN:vdsat XL.MINN:region
+save XL.MTAIL:ids XL.MTAIL:gm XL.MTAIL:gds XL.MTAIL:vgs XL.MTAIL:vds XL.MTAIL:vdsat XL.MTAIL:region
+save XL.MFP:ids XL.MFP:gm XL.MFP:gds XL.MFP:vgs XL.MFP:vds XL.MFP:vdsat XL.MFP:region
+save XL.MFN:ids XL.MFN:gm XL.MFN:gds XL.MFN:vgs XL.MFN:vds XL.MFN:vdsat XL.MFN:region
+save XL.MFCP:ids XL.MFCP:gm XL.MFCP:gds XL.MFCP:vgs XL.MFCP:vds XL.MFCP:vdsat XL.MFCP:region
+save XL.MFCN:ids XL.MFCN:gm XL.MFCN:gds XL.MFCN:vgs XL.MFCN:vds XL.MFCN:vdsat XL.MFCN:region
+save XL.MMD:ids XL.MMD:gm XL.MMD:gds XL.MMD:vgs XL.MMD:vds XL.MMD:vdsat XL.MMD:region
+save XL.MMO:ids XL.MMO:gm XL.MMO:gds XL.MMO:vgs XL.MMO:vds XL.MMO:vdsat XL.MMO:region
+save XL.MCD:ids XL.MCD:gm XL.MCD:gds XL.MCD:vgs XL.MCD:vds XL.MCD:vdsat XL.MCD:region
+save XL.MCO:ids XL.MCO:gm XL.MCO:gds XL.MCO:vgs XL.MCO:vds XL.MCO:vdsat XL.MCO:region
+save XL.MSECOND:ids XL.MSECOND:gm XL.MSECOND:gds XL.MSECOND:vgs XL.MSECOND:vds XL.MSECOND:vdsat XL.MSECOND:region
+save XL.MLOAD:ids XL.MLOAD:gm XL.MLOAD:gds XL.MLOAD:vgs XL.MLOAD:vds XL.MLOAD:vdsat XL.MLOAD:region
+dcOp dc
+ac ac start=1 stop=300M dec=120

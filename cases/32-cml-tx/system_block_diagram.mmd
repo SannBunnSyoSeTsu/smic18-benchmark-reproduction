@@ -1,0 +1,17 @@
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        INL["输入串联峰化"]
+        CORE["单级差分电流转向"]
+        OUTL["输出串联峰化与中和"]
+        BIAS["原生尾电流偏置"]
+    end
+    NRZ["差分NRZ输入"]
+    TERM["两路50Ω上拉终端"]
+    OUT["固定负载与眼图测量"]
+    NRZ -->|"28Gb/s"| INL
+    INL --> CORE
+    BIAS -.->|"尾电流"| CORE
+    CORE --> OUTL
+    TERM -->|"终端负载"| OUTL
+    OUTL -->|"差分输出"| OUT

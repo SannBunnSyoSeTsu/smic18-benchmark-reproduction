@@ -1,0 +1,247 @@
+{
+  "generated_at": "2026-09-28T18:15:48.068625+00:00",
+  "baseline_groups": {
+    "ac": "runs/26/20260928T181306353573Z_ac",
+    "noise": "runs/26/20260928T181306989484Z_noise",
+    "thd": "runs/26/20260928T181307610709Z_thd",
+    "thd2": "runs/26/20260928T181309189545Z_thd2",
+    "thd_f0": "runs/26/20260928T181310741938Z_thd_f0",
+    "cmstep": "runs/26/20260928T181312530904Z_cmstep"
+  },
+  "final_groups": {
+    "ac": "runs/26/20260928T181533966305Z_ac",
+    "noise": "runs/26/20260928T181534633008Z_noise",
+    "thd": "runs/26/20260928T181535297678Z_thd",
+    "thd2": "runs/26/20260928T181538051207Z_thd2",
+    "thd_f0": "runs/26/20260928T181541028707Z_thd_f0",
+    "cmstep": "runs/26/20260928T181544167057Z_cmstep"
+  },
+  "circuit_sha256": "ca1d973f73e9bc1899742bfe7698bdb9dfd31c3b23f2dd842da9dc403d49a82d",
+  "metrics": [
+    {
+      "metric": "ac_f0_Hz",
+      "baseline": 1924716.0495768413,
+      "refined": 1924718.0146987296,
+      "absolute_difference": 1.9651218883227557,
+      "maximum_difference": 1000,
+      "passed": true
+    },
+    {
+      "metric": "ac_Q",
+      "baseline": 0.6903099752318919,
+      "refined": 0.6903208807375485,
+      "absolute_difference": 1.0905505656633174e-05,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "ac_passgain_dB",
+      "baseline": -0.5612860701955268,
+      "refined": -0.5613358011599383,
+      "absolute_difference": 4.9730964411520695e-05,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "ac_fit_error_dB",
+      "baseline": 0.001834967318313886,
+      "refined": 0.0017873385039630801,
+      "absolute_difference": 4.7628814350805836e-05,
+      "maximum_difference": 0.002,
+      "passed": true
+    },
+    {
+      "metric": "ac_atten20M_dB",
+      "baseline": 40.61721585079481,
+      "refined": 40.61716611983165,
+      "absolute_difference": 4.973096315552539e-05,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "ac_bp_peak_Hz",
+      "baseline": 1905460.717963228,
+      "refined": 1927524.913191025,
+      "absolute_difference": 22064.19522779691,
+      "maximum_difference": 30000,
+      "passed": true
+    },
+    {
+      "metric": "ac_bp_peak_dB",
+      "baseline": -6.406214197755924,
+      "refined": -6.405610324761575,
+      "absolute_difference": 0.0006038729943487198,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "ac_bp_1k_dB",
+      "baseline": 23.751969121118716,
+      "refined": 23.752572994113066,
+      "absolute_difference": 0.0006038729943504961,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "ac_bp_200k_dB",
+      "baseline": 15.740878341505177,
+      "refined": 15.741482214499241,
+      "absolute_difference": 0.0006038729940645027,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "ac_bp_20M_dB",
+      "baseline": 17.107434887313705,
+      "refined": 17.108038760308677,
+      "absolute_difference": 0.000603872994972221,
+      "maximum_difference": 0.01,
+      "passed": true
+    },
+    {
+      "metric": "ac_cm_error_V",
+      "baseline": 0.0018250585352632687,
+      "refined": 0.0018250585352632687,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "ac_power_W",
+      "baseline": 0.000393439730232396,
+      "refined": 0.000393439730232396,
+      "absolute_difference": 0.0,
+      "maximum_difference": 1e-07,
+      "passed": true
+    },
+    {
+      "metric": "noise_Vrms_noise_Vrms",
+      "baseline": 0.0002956745708519624,
+      "refined": 0.0002956622851616086,
+      "absolute_difference": 1.2285690353778817e-08,
+      "maximum_difference": 1e-06,
+      "passed": true
+    },
+    {
+      "metric": "thd_output_amplitude_V",
+      "baseline": 0.2803044668816652,
+      "refined": 0.28030457838422806,
+      "absolute_difference": 1.1150256284953031e-07,
+      "maximum_difference": 0.0001,
+      "passed": true
+    },
+    {
+      "metric": "thd_fundamental_gain",
+      "baseline": 0.9343482229388841,
+      "refined": 0.9343485946140936,
+      "absolute_difference": 3.7167520949843436e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "thd_thd_dB",
+      "baseline": -54.50220475302026,
+      "refined": -54.50217941553218,
+      "absolute_difference": 2.5337488075649617e-05,
+      "maximum_difference": 0.05,
+      "passed": true
+    },
+    {
+      "metric": "thd2_output_amplitude_V",
+      "baseline": 0.41816106668294295,
+      "refined": 0.41816123331139954,
+      "absolute_difference": 1.6662845658821368e-07,
+      "maximum_difference": 0.0001,
+      "passed": true
+    },
+    {
+      "metric": "thd2_fundamental_gain",
+      "baseline": 0.9292468148509843,
+      "refined": 0.9292471851364434,
+      "absolute_difference": 3.702854591836058e-07,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "thd2_thd_dB",
+      "baseline": -44.445141607073204,
+      "refined": -44.44511136783645,
+      "absolute_difference": 3.0239236757267918e-05,
+      "maximum_difference": 0.05,
+      "passed": true
+    },
+    {
+      "metric": "thd_f0_output_amplitude_V",
+      "baseline": 0.2818266493307176,
+      "refined": 0.2818691485716363,
+      "absolute_difference": 4.249924091870305e-05,
+      "maximum_difference": 0.0001,
+      "passed": true
+    },
+    {
+      "metric": "thd_f0_fundamental_gain",
+      "baseline": 0.6262814429571503,
+      "refined": 0.6263758857147473,
+      "absolute_difference": 9.444275759706855e-05,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "thd_f0_thd_dB",
+      "baseline": -59.85195247953265,
+      "refined": -59.89619675809011,
+      "absolute_difference": 0.044244278557464156,
+      "maximum_difference": 0.05,
+      "passed": true
+    },
+    {
+      "metric": "thd_f0_bp_output_amplitude_V",
+      "baseline": 0.2176175164755414,
+      "refined": 0.21762687255871066,
+      "absolute_difference": 9.356083169265172e-06,
+      "maximum_difference": 0.0001,
+      "passed": true
+    },
+    {
+      "metric": "thd_f0_bp_fundamental_gain",
+      "baseline": 0.4835944810567586,
+      "refined": 0.48361527235269036,
+      "absolute_difference": 2.079129593174356e-05,
+      "maximum_difference": 0.001,
+      "passed": true
+    },
+    {
+      "metric": "thd_f0_bp_thd_dB",
+      "baseline": -52.776515561130836,
+      "refined": -52.783332993931225,
+      "absolute_difference": 0.006817432800389156,
+      "maximum_difference": 0.05,
+      "passed": true
+    },
+    {
+      "metric": "cmstep_initial_error_V",
+      "baseline": 0.002072876713431815,
+      "refined": 0.002072876713432259,
+      "absolute_difference": 4.440892098500626e-16,
+      "maximum_difference": 1e-05,
+      "passed": true
+    },
+    {
+      "metric": "cmstep_settle_s",
+      "baseline": 6.809507861291767e-08,
+      "refined": 6.810258401985645e-08,
+      "absolute_difference": 7.505406938781707e-12,
+      "maximum_difference": 3e-09,
+      "passed": true
+    },
+    {
+      "metric": "cmstep_late_excursion_V",
+      "baseline": 0.001729430619820449,
+      "refined": 0.0017294306198274434,
+      "absolute_difference": 6.994405055138486e-15,
+      "maximum_difference": 1e-05,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

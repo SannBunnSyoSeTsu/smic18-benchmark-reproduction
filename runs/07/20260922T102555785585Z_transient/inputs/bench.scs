@@ -1,0 +1,40 @@
+simulator lang=spectre
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=res_tt
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=mim_tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/07/20260922T102555785585Z_transient/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-14
+VINS (vinS 0) vsource type=pwl wave=[0 0 1u 0 21u 1.8 70u 1.8]
+VREFS (vrefS 0) vsource dc=.8
+IBIASS (vinS ibiasS) isource dc=50u
+RLOADS (voutS 0) resistor r=120
+XS (vinS voutS 0 vrefS ibiasS fbS gate_driveS gateS) ldo_ota5
+RFBTS (voutS fbS) resistor r=300k
+RFBBS (fbS 0) resistor r=600k
+VLOOPS (gate_driveS gateS) vsource dc=0
+RESRS (voutS vcapS) resistor r=0.05
+COUTS (vcapS 0) capacitor c=1e-06
+save vinS voutS fbS gate_driveS gateS ibiasS VINS:p
+VINT (vinT 0) vsource dc=1.8
+VREFT (vrefT 0) vsource dc=.8
+IBIAST (vinT ibiasT) isource dc=50u
+ILOADT (voutT 0) isource type=pwl wave=[0 .001 20u .001 20.2u .025 40.2u .025 40.4u .001 70u .001]
+XT (vinT voutT 0 vrefT ibiasT fbT gate_driveT gateT) ldo_ota5
+RFBTT (voutT fbT) resistor r=300k
+RFBBT (fbT 0) resistor r=600k
+VLOOPT (gate_driveT gateT) vsource dc=0
+RESRT (voutT vcapT) resistor r=0.05
+COUTT (vcapT 0) capacitor c=1e-06
+save vinT voutT fbT gate_driveT gateT ibiasT VINT:p
+VINL (vinL 0) vsource type=pwl wave=[0 1.98 20u 1.98 20.2u 1.62 40.2u 1.62 40.4u 1.98 70u 1.98]
+VREFL (vrefL 0) vsource dc=.8
+IBIASL (vinL ibiasL) isource dc=50u
+ILOADL (voutL 0) isource dc=0.01
+XL (vinL voutL 0 vrefL ibiasL fbL gate_driveL gateL) ldo_ota5
+RFBTL (voutL fbL) resistor r=300k
+RFBBL (fbL 0) resistor r=600k
+VLOOPL (gate_driveL gateL) vsource dc=0
+RESRL (voutL vcapL) resistor r=0.05
+COUTL (vcapL 0) capacitor c=1e-06
+save vinL voutL fbL gate_driveL gateL ibiasL VINL:p
+tran tran stop=70u maxstep=2n strobeperiod=5n strobeoutput=strobeonly errpreset=conservative

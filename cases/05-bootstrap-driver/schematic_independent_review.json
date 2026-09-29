@@ -1,0 +1,1141 @@
+{
+  "slot": 5,
+  "case": "cases/05-bootstrap-driver",
+  "circuit_sha256": "51ae51fce4ab67a9ce5b7e74e61e746bf6f22c7480f2c2802fef5c3ee071cd12",
+  "hd_cells_sha256": "4da12ec9bfb321046dee2e322faf1b93ea767006e10ccc1dbbf13c7e62159c96",
+  "top": "bootstrap_driver",
+  "source_definition_count": 69,
+  "source_terminal_count": 320,
+  "source_expanded_leaf_count": 98,
+  "hierarchy_boundaries": [
+    {
+      "path": "XLVL3",
+      "definition": "lvl3",
+      "port_bindings": {
+        "in": "p1_int",
+        "out": "P1UP",
+        "vdd1": "VDD",
+        "vdd2": "VBST",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XINV34",
+      "definition": "inv",
+      "port_bindings": {
+        "in": "net03",
+        "out": "net016",
+        "vdd": "VBST",
+        "vss": "VLX"
+      }
+    },
+    {
+      "path": "XINV31",
+      "definition": "inv",
+      "port_bindings": {
+        "in": "net028",
+        "out": "net02",
+        "vdd": "VDD",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XINV17",
+      "definition": "inv",
+      "port_bindings": {
+        "in": "net08",
+        "out": "p1_int",
+        "vdd": "VDD",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XBUFF12",
+      "definition": "buffer",
+      "port_bindings": {
+        "in": "net028",
+        "out": "GN2",
+        "vdd": "VDD",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XBUFF11",
+      "definition": "buffer",
+      "port_bindings": {
+        "in": "net016",
+        "out": "GN",
+        "vdd": "VBST",
+        "vss": "VLX"
+      }
+    },
+    {
+      "path": "XNON",
+      "definition": "non_overlap",
+      "port_bindings": {
+        "clk": "IN",
+        "p1": "net08",
+        "p2": "net028",
+        "vdd": "VDD",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XNON/XI5",
+      "definition": "inv",
+      "port_bindings": {
+        "in": "XNON/net03",
+        "out": "net028",
+        "vdd": "VDD",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XNON/XI0",
+      "definition": "inv",
+      "port_bindings": {
+        "in": "IN",
+        "out": "XNON/net5",
+        "vdd": "VDD",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XNON/XI3",
+      "definition": "nand",
+      "port_bindings": {
+        "a": "net08",
+        "b": "IN",
+        "q": "XNON/net4",
+        "vdd": "VDD",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XNON/XI1",
+      "definition": "nand",
+      "port_bindings": {
+        "a": "XNON/net5",
+        "b": "XNON/net03",
+        "q": "XNON/net6",
+        "vdd": "VDD",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XNON/XI4",
+      "definition": "delay_chain",
+      "port_bindings": {
+        "in": "XNON/net4",
+        "out": "XNON/net03",
+        "vdd": "VDD",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XNON/XI2",
+      "definition": "delay_chain",
+      "port_bindings": {
+        "in": "XNON/net6",
+        "out": "net08",
+        "vdd": "VDD",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XBUFF7",
+      "definition": "buffers",
+      "port_bindings": {
+        "in": "net028",
+        "out": "net16",
+        "vdd": "VDD",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XCHARGE_LS",
+      "definition": "lvl3",
+      "port_bindings": {
+        "in": "net02",
+        "out": "CHUP",
+        "vdd1": "VDD",
+        "vdd2": "VBST",
+        "vss": "VSS"
+      }
+    },
+    {
+      "path": "XINVCH",
+      "definition": "inv",
+      "port_bindings": {
+        "in": "charge_inv",
+        "out": "charge_noninv",
+        "vdd": "VBST",
+        "vss": "VLX"
+      }
+    },
+    {
+      "path": "XBUFFCH",
+      "definition": "buffers",
+      "port_bindings": {
+        "in": "charge_noninv",
+        "out": "charge_gate",
+        "vdd": "VBST",
+        "vss": "VLX"
+      }
+    }
+  ],
+  "connectivity_sha256": "c935a65a6d2ca4f227f41a59ee551968fab0a29d2748cab5a8088ba71d624c0b",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 69,
+  "schematic_expanded_leaf_count": 98,
+  "independently_traced_terminals": 320,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 21,
+    "HD": 60,
+    "C": 17
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "lvl3/Mlvl3_PM3",
+      "D_G_S_B": [
+        "out",
+        "net14",
+        "vdd2",
+        "vdd2"
+      ]
+    },
+    {
+      "instance": "lvl3/Mlvl3_PM1",
+      "D_G_S_B": [
+        "net3",
+        "net14",
+        "vdd2",
+        "vdd2"
+      ]
+    },
+    {
+      "instance": "lvl3/Mlvl3_PM0",
+      "D_G_S_B": [
+        "net14",
+        "net3",
+        "vdd2",
+        "vdd2"
+      ]
+    },
+    {
+      "instance": "lvl3/Mlvl3_NM3",
+      "D_G_S_B": [
+        "out",
+        "net14",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "lvl3/Mlvl3_NM2",
+      "D_G_S_B": [
+        "net14",
+        "in",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "lvl3/Mlvl3_NM1",
+      "D_G_S_B": [
+        "net3",
+        "net1",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "bootstrap_driver/Mbootstrap_driver_NM1",
+      "D_G_S_B": [
+        "VLX",
+        "net16",
+        "VSS",
+        "VSS"
+      ]
+    },
+    {
+      "instance": "bootstrap_driver/Mbootstrap_driver_NM5",
+      "D_G_S_B": [
+        "net03",
+        "P1UP",
+        "VLX",
+        "VLX"
+      ]
+    },
+    {
+      "instance": "bootstrap_driver/Mbootstrap_driver_NM2",
+      "D_G_S_B": [
+        "VSW",
+        "GN",
+        "VLX",
+        "VSS"
+      ]
+    },
+    {
+      "instance": "bootstrap_driver/Mbootstrap_driver_PM5",
+      "D_G_S_B": [
+        "net03",
+        "P1UP",
+        "VBST",
+        "VBST"
+      ]
+    },
+    {
+      "instance": "bootstrap_driver/Mbootstrap_driver_PM2",
+      "D_G_S_B": [
+        "VDD",
+        "charge_gate",
+        "VBST",
+        "VBST"
+      ]
+    },
+    {
+      "instance": "bootstrap_driver/MBSTCAP",
+      "D_G_S_B": [
+        "VLX",
+        "VBST",
+        "VLX",
+        "VLX"
+      ]
+    },
+    {
+      "instance": "bootstrap_driver/MTRACKP",
+      "D_G_S_B": [
+        "VSW",
+        "VSS",
+        "VLX",
+        "VLX"
+      ]
+    },
+    {
+      "instance": "bootstrap_driver/MCHN",
+      "D_G_S_B": [
+        "charge_inv",
+        "CHUP",
+        "VLX",
+        "VLX"
+      ]
+    },
+    {
+      "instance": "bootstrap_driver/MCHP",
+      "D_G_S_B": [
+        "charge_inv",
+        "CHUP",
+        "VBST",
+        "VBST"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [
+    {
+      "instance": "inv/XG",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "in",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "nand/XG",
+      "model": "NAND2HDV1",
+      "formal_order": [
+        "A1",
+        "A2",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "A1": "a",
+        "A2": "b",
+        "ZN": "q",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "delay_chain/XD0",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "in",
+        "ZN": "d0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "delay_chain/XD1",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "d0",
+        "ZN": "d1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "delay_chain/XD2",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "d1",
+        "ZN": "d2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "delay_chain/XD3",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "d2",
+        "ZN": "d3",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "delay_chain/XD4",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "d3",
+        "ZN": "d4",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "delay_chain/XD5",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "d4",
+        "ZN": "d5",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "delay_chain/XD6",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "d5",
+        "ZN": "d6",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "delay_chain/XD7",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "d6",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB0_0",
+      "model": "INHDV16",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "in",
+        "ZN": "b0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB1_0",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b0",
+        "ZN": "b1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB2_0",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b1",
+        "ZN": "b2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB2_1",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b1",
+        "ZN": "b2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB3_0",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b2",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB3_1",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b2",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB3_2",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b2",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB3_3",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b2",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB3_4",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b2",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB3_5",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b2",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB3_6",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b2",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffer/XB3_7",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b2",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffers/XB0_0",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "in",
+        "ZN": "b0",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffers/XB1_0",
+      "model": "INHDV4",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b0",
+        "ZN": "b1",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffers/XB2_0",
+      "model": "INHDV16",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b1",
+        "ZN": "b2",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffers/XB3_0",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b2",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "buffers/XB3_1",
+      "model": "INHDV32",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "b2",
+        "ZN": "out",
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd",
+        "VSS": "vss",
+        "VNW": "vdd",
+        "VPW": "vss"
+      }
+    },
+    {
+      "instance": "lvl3/XCOREINV",
+      "model": "INHDV1",
+      "formal_order": [
+        "I",
+        "ZN",
+        "VDD",
+        "VSS",
+        "VNW",
+        "VPW"
+      ],
+      "all_connections": {
+        "I": "in",
+        "ZN": "net1",
+        "VDD": "vdd1",
+        "VSS": "vss",
+        "VNW": "vdd1",
+        "VPW": "vss"
+      },
+      "supply_and_well_connections": {
+        "VDD": "vdd1",
+        "VSS": "vss",
+        "VNW": "vdd1",
+        "VPW": "vss"
+      }
+    }
+  ],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 71,
+  "hd_models_declared": {
+    "INHDV1": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "INHDV16": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "INHDV32": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "INHDV4": [
+      "I",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "NAND2HDV1": [
+      "A1",
+      "A2",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ],
+    "NOR2HDV1": [
+      "A1",
+      "A2",
+      "ZN",
+      "VDD",
+      "VSS",
+      "VNW",
+      "VPW"
+    ]
+  },
+  "HD_internal_MOS_counts": {
+    "INHDV1": 2,
+    "INHDV16": 2,
+    "INHDV32": 2,
+    "INHDV4": 2,
+    "NAND2HDV1": 4,
+    "NOR2HDV1": 4
+  },
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

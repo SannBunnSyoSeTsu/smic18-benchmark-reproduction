@@ -1,0 +1,75 @@
+{
+  "source_task": "sky130-gilbert-cell-mixer-2p4ghz-pvt-mismatch",
+  "scope": "SMIC18 TT1.8V27C: RF2.3/2.4/2.5GHz eachbalanced and2%RF/LOamplitude+2degreeLOimbalance; alloriginal nominaltwo-tone/compression. OtherPVT and10mismatchseeds excluded, nofullupstreamsignoff.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "bias_A": 5e-05,
+  "input_common_V": 0.9,
+  "LO_amplitude_each_V": 0.35,
+  "RF_amplitude_each_V": 0.02,
+  "RF_Hz": [
+    2300000000.0,
+    2400000000.0,
+    2500000000.0
+  ],
+  "IF_Hz": 200000000.0,
+  "source_each_ohm": 50,
+  "external_load_each_F": 2e-13,
+  "imbalance": {
+    "RF": 0.02,
+    "LO": 0.02,
+    "LO_phase_error_deg": 2
+  },
+  "rf_window_s": [
+    5e-09,
+    1.5e-08
+  ],
+  "rf_spur_bands_Hz": [
+    [
+      25000000.0,
+      175000000.0
+    ],
+    [
+      225000000.0,
+      3000000000.0
+    ]
+  ],
+  "linearity_window_s": [
+    1e-08,
+    3e-08
+  ],
+  "two_tone_Hz": [
+    2400000000.0,
+    2450000000.0
+  ],
+  "two_tone_amplitudes_each_V": [
+    0.01,
+    0.02
+  ],
+  "compression_amplitudes_each_V": [
+    0.02,
+    0.08
+  ],
+  "spectrum": "Rectangularcoherent2048samplesinoriginalwindow, excludeendpoint; exact100MHzRF/50MHzlinearitybins, nozero-padding/leakagewindow. Report physicaldifferentialpeak amplitudes.",
+  "limits": {
+    "gain_min_dB": 3,
+    "isolation_max_dB": -45,
+    "spur_max_dBc": -30,
+    "offset_max_V": 0.03,
+    "cm_min_V": 0.45,
+    "headroom_min_V": 0.2,
+    "power_max_W": 0.002,
+    "IIP3_min_dBm": -4,
+    "fundamental_slope": [
+      0.8,
+      1.2
+    ],
+    "IM3_slope": [
+      1.8,
+      4
+    ],
+    "tone_gain_difference_max_dB": 1.5,
+    "compression_max_dB": 2
+  },
+  "allowed_DUT": "nativeMOS andpositiveidealR/C; no behavioralorcontrolledsources"
+}

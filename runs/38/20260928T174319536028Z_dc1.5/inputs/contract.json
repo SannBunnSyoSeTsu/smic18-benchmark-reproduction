@@ -1,0 +1,83 @@
+{
+  "source_task": "sky130-capless-ldo-1v0-20ma-pvt",
+  "scope": "SMIC18 TT27C, both1.5V/1.8V functional line conditions: full0..20mA DC,20mA PSR and0.5..20mA loadsteps; startupTT1.8V. Other28DC/step,8PSR,3startup PVTpoints excluded.",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "supplies_V": [
+    1.5,
+    1.8
+  ],
+  "vref_V": 0.4,
+  "output_target_V": 1,
+  "dc_loads_A": [
+    0,
+    0.02,
+    0.0002
+  ],
+  "psr_Hz": [
+    1000.0,
+    100000.0,
+    1000000.0
+  ],
+  "psr_limits_dB": {
+    "1.5": [
+      30,
+      20,
+      10
+    ],
+    "1.8": [
+      35,
+      20,
+      10
+    ]
+  },
+  "cap_budget_F": 1e-09,
+  "original_limits": {
+    "dc_error_V": 0.03,
+    "iq_A": 0.0001,
+    "step_excursion_V": 0.15,
+    "step_recovery_V": 0.03,
+    "startup_peak_V": 1.05,
+    "startup_tail_error_V": 0.02
+  },
+  "step_windows_s": [
+    [
+      2e-05,
+      4.1e-05
+    ],
+    [
+      6e-05,
+      8.1e-05
+    ],
+    [
+      4.1e-05,
+      6e-05
+    ],
+    [
+      8.1e-05,
+      0.0001
+    ]
+  ],
+  "startup": {
+    "ramp_s": 0.0001,
+    "stop_s": 0.0004,
+    "load_ohm": 2000,
+    "tail_s": [
+      0.0002,
+      0.0004
+    ]
+  },
+  "nonrelaxable": [
+    "finite waveforms",
+    "PMOSpass with voltage-modefeedback",
+    "internal divider",
+    "positive RC",
+    "totalC<=1nF",
+    "no artificial externaloutputcapacitor"
+  ],
+  "ideal_passives": [
+    "R",
+    "C"
+  ],
+  "current_definition": "No-load abs(IVIN), includes divider; idealVREF current explicitly free in original contract."
+}

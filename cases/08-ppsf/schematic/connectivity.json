@@ -1,0 +1,6418 @@
+{
+  "generated_at": "2026-09-23T06:26:36.143243+00:00",
+  "circuit_sha256": "ffeed03d880f06caf2e1bada341477edcbc75089e3eb9b2a9d0a72995ecf88ca",
+  "top": "buf_ppsf_bs",
+  "subcircuit_ports": {
+    "buf_ppsf_bs": [
+      "IREF",
+      "VCM",
+      "VDD",
+      "VIN",
+      "VIP",
+      "VON",
+      "VOP",
+      "VSS"
+    ]
+  },
+  "instances": {
+    "buf_ppsf_bs/MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "IREF",
+        "G": "IREF",
+        "S": "VSS",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "8.86u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MREF (IREF IREF VSS VSS) n18 w=8.86u l=1u m=1",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        3,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          3,
+          7
+        ],
+        "S": [
+          3,
+          5
+        ],
+        "G": [
+          1.45,
+          6
+        ],
+        "B": [
+          3.86,
+          6
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MBP": {
+      "name": "MBP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pb",
+        "G": "pb",
+        "S": "VDD",
+        "B": "VDD"
+      },
+      "parameters": {
+        "w": "28.48u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MBP (pb pb VDD VDD) p18 w=28.48u l=1u m=1",
+      "W_unit_um": 28.479999999999997,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        10,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          18
+        ],
+        "S": [
+          10,
+          20
+        ],
+        "G": [
+          8.45,
+          19
+        ],
+        "B": [
+          10.86,
+          19
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MBN": {
+      "name": "MBN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pb",
+        "G": "IREF",
+        "S": "VSS",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "8.86u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MBN (pb IREF VSS VSS) n18 w=8.86u l=1u m=1",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        10,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          7
+        ],
+        "S": [
+          10,
+          5
+        ],
+        "G": [
+          8.45,
+          6
+        ],
+        "B": [
+          10.86,
+          6
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MPBN1": {
+      "name": "MPBN1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VBN1",
+        "G": "pb",
+        "S": "VDD",
+        "B": "VDD"
+      },
+      "parameters": {
+        "w": "28.48u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPBN1 (VBN1 pb VDD VDD) p18 w=28.48u l=1u m=1",
+      "W_unit_um": 28.479999999999997,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        17,
+        19
+      ],
+      "rendered_pins": {
+        "D": [
+          17,
+          18
+        ],
+        "S": [
+          17,
+          20
+        ],
+        "G": [
+          15.45,
+          19
+        ],
+        "B": [
+          17.86,
+          19
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MNBN1": {
+      "name": "MNBN1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VBN1",
+        "G": "VBN1",
+        "S": "VCM",
+        "B": "VCM"
+      },
+      "parameters": {
+        "w": "7.96u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MNBN1 (VBN1 VBN1 VCM VCM) n18 w=7.96u l=0.36u m=1",
+      "W_unit_um": 7.96,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        17,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          17,
+          12
+        ],
+        "S": [
+          17,
+          10
+        ],
+        "G": [
+          15.45,
+          11
+        ],
+        "B": [
+          17.86,
+          11
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MPBP1": {
+      "name": "MPBP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VBP1",
+        "G": "VBP1",
+        "S": "VCM",
+        "B": "VCM"
+      },
+      "parameters": {
+        "w": "32.64u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MPBP1 (VBP1 VBP1 VCM VCM) p18 w=32.64u l=0.36u m=1",
+      "W_unit_um": 32.64,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        24,
+        17
+      ],
+      "rendered_pins": {
+        "D": [
+          24,
+          16
+        ],
+        "S": [
+          24,
+          18
+        ],
+        "G": [
+          22.45,
+          17
+        ],
+        "B": [
+          24.86,
+          17
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MNBP1": {
+      "name": "MNBP1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VBP1",
+        "G": "IREF",
+        "S": "VSS",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "8.86u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MNBP1 (VBP1 IREF VSS VSS) n18 w=8.86u l=1u m=1",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        24,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          24,
+          7
+        ],
+        "S": [
+          24,
+          5
+        ],
+        "G": [
+          22.45,
+          6
+        ],
+        "B": [
+          24.86,
+          6
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MPBN2": {
+      "name": "MPBN2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VBN2",
+        "G": "pb",
+        "S": "VDD",
+        "B": "VDD"
+      },
+      "parameters": {
+        "w": "28.48u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPBN2 (VBN2 pb VDD VDD) p18 w=28.48u l=1u m=1",
+      "W_unit_um": 28.479999999999997,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        31,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          31,
+          20
+        ],
+        "S": [
+          31,
+          22
+        ],
+        "G": [
+          29.45,
+          21
+        ],
+        "B": [
+          31.86,
+          21
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MNBN2": {
+      "name": "MNBN2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VBN2",
+        "G": "VBN2",
+        "S": "nbs",
+        "B": "nbs"
+      },
+      "parameters": {
+        "w": "3.34u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MNBN2 (VBN2 VBN2 nbs nbs) n18 w=3.34u l=0.36u m=1",
+      "W_unit_um": 3.34,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        31,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          31,
+          15
+        ],
+        "S": [
+          31,
+          13
+        ],
+        "G": [
+          29.45,
+          14
+        ],
+        "B": [
+          31.86,
+          14
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MPBP2": {
+      "name": "MPBP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VBP2",
+        "G": "VBP2",
+        "S": "pbs",
+        "B": "pbs"
+      },
+      "parameters": {
+        "w": "13.94u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MPBP2 (VBP2 VBP2 pbs pbs) p18 w=13.94u l=0.36u m=1",
+      "W_unit_um": 13.94,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        38,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          38,
+          13
+        ],
+        "S": [
+          38,
+          15
+        ],
+        "G": [
+          36.45,
+          14
+        ],
+        "B": [
+          38.86,
+          14
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MNBP2": {
+      "name": "MNBP2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VBP2",
+        "G": "IREF",
+        "S": "VSS",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "8.86u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MNBP2 (VBP2 IREF VSS VSS) n18 w=8.86u l=1u m=1",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        38,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          38,
+          7
+        ],
+        "S": [
+          38,
+          5
+        ],
+        "G": [
+          36.45,
+          6
+        ],
+        "B": [
+          38.86,
+          6
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/RNB": {
+      "name": "RNB",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "nbs",
+        "2": "VCM"
+      },
+      "parameters": {
+        "r": "8999.999999999998"
+      },
+      "source_line": "RNB (nbs VCM) resistor r=8999.999999999998",
+      "value_SI": 8999.999999999998,
+      "sheet": 1,
+      "origin": [
+        31,
+        8
+      ],
+      "rendered_pins": {
+        "1": [
+          31,
+          8.82
+        ],
+        "2": [
+          31,
+          7.18
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/RPB": {
+      "name": "RPB",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VCM",
+        "2": "pbs"
+      },
+      "parameters": {
+        "r": "8999.999999999998"
+      },
+      "source_line": "RPB (VCM pbs) resistor r=8999.999999999998",
+      "value_SI": 8999.999999999998,
+      "sheet": 1,
+      "origin": [
+        38,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          38,
+          21.82
+        ],
+        "2": [
+          38,
+          20.18
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MCNP": {
+      "name": "MCNP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VDD",
+        "G": "gcnP",
+        "S": "ndP",
+        "B": "ndP"
+      },
+      "parameters": {
+        "w": "3.34u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MCNP (VDD gcnP ndP ndP) n18 w=3.34u l=0.36u m=6",
+      "W_unit_um": 3.34,
+      "L_um": 0.36,
+      "m": 6.0,
+      "sheet": 2,
+      "origin": [
+        32,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          22
+        ],
+        "S": [
+          32,
+          20
+        ],
+        "G": [
+          30.45,
+          21
+        ],
+        "B": [
+          32.86,
+          21
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ndP",
+        "G": "gnP",
+        "S": "VOP",
+        "B": "VOP"
+      },
+      "parameters": {
+        "w": "7.96u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MINP (ndP gnP VOP VOP) n18 w=7.96u l=0.36u m=6",
+      "W_unit_um": 7.96,
+      "L_um": 0.36,
+      "m": 6.0,
+      "sheet": 2,
+      "origin": [
+        32,
+        16
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          17
+        ],
+        "S": [
+          32,
+          15
+        ],
+        "G": [
+          30.45,
+          16
+        ],
+        "B": [
+          32.86,
+          16
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MIPP": {
+      "name": "MIPP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pdP",
+        "G": "gpP",
+        "S": "VOP",
+        "B": "VOP"
+      },
+      "parameters": {
+        "w": "32.64u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MIPP (pdP gpP VOP VOP) p18 w=32.64u l=0.36u m=6",
+      "W_unit_um": 32.64,
+      "L_um": 0.36,
+      "m": 6.0,
+      "sheet": 2,
+      "origin": [
+        32,
+        10
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          9
+        ],
+        "S": [
+          32,
+          11
+        ],
+        "G": [
+          30.45,
+          10
+        ],
+        "B": [
+          32.86,
+          10
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MCPP": {
+      "name": "MCPP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VSS",
+        "G": "gcpP",
+        "S": "pdP",
+        "B": "pdP"
+      },
+      "parameters": {
+        "w": "13.94u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MCPP (VSS gcpP pdP pdP) p18 w=13.94u l=0.36u m=6",
+      "W_unit_um": 13.94,
+      "L_um": 0.36,
+      "m": 6.0,
+      "sheet": 2,
+      "origin": [
+        32,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          4
+        ],
+        "S": [
+          32,
+          6
+        ],
+        "G": [
+          30.45,
+          5
+        ],
+        "B": [
+          32.86,
+          5
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/RgcnP": {
+      "name": "RgcnP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBN2",
+        "2": "gcnP"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgcnP (VBN2 gcnP) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "sheet": 2,
+      "origin": [
+        8,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          7.18,
+          21
+        ],
+        "2": [
+          8.82,
+          21
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/CgcnP": {
+      "name": "CgcnP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gcnP",
+        "2": "VOP"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgcnP (gcnP VOP) capacitor c=5p",
+      "value_SI": 5e-12,
+      "sheet": 2,
+      "origin": [
+        18,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          17.18,
+          21
+        ],
+        "2": [
+          18.82,
+          21
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/RgnP": {
+      "name": "RgnP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBN1",
+        "2": "gnP"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgnP (VBN1 gnP) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "sheet": 2,
+      "origin": [
+        8,
+        16
+      ],
+      "rendered_pins": {
+        "1": [
+          7.18,
+          16
+        ],
+        "2": [
+          8.82,
+          16
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/CgnP": {
+      "name": "CgnP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gnP",
+        "2": "VIP"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgnP (gnP VIP) capacitor c=5p",
+      "value_SI": 5e-12,
+      "sheet": 2,
+      "origin": [
+        18,
+        16
+      ],
+      "rendered_pins": {
+        "1": [
+          17.18,
+          16
+        ],
+        "2": [
+          18.82,
+          16
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/RgpP": {
+      "name": "RgpP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBP1",
+        "2": "gpP"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgpP (VBP1 gpP) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "sheet": 2,
+      "origin": [
+        8,
+        10
+      ],
+      "rendered_pins": {
+        "1": [
+          7.18,
+          10
+        ],
+        "2": [
+          8.82,
+          10
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/CgpP": {
+      "name": "CgpP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gpP",
+        "2": "VIP"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgpP (gpP VIP) capacitor c=5p",
+      "value_SI": 5e-12,
+      "sheet": 2,
+      "origin": [
+        18,
+        10
+      ],
+      "rendered_pins": {
+        "1": [
+          17.18,
+          10
+        ],
+        "2": [
+          18.82,
+          10
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/RgcpP": {
+      "name": "RgcpP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBP2",
+        "2": "gcpP"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgcpP (VBP2 gcpP) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "sheet": 2,
+      "origin": [
+        8,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          7.18,
+          5
+        ],
+        "2": [
+          8.82,
+          5
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/CgcpP": {
+      "name": "CgcpP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gcpP",
+        "2": "VOP"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgcpP (gcpP VOP) capacitor c=5p",
+      "value_SI": 5e-12,
+      "sheet": 2,
+      "origin": [
+        18,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          17.18,
+          5
+        ],
+        "2": [
+          18.82,
+          5
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MCNN": {
+      "name": "MCNN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VDD",
+        "G": "gcnN",
+        "S": "ndN",
+        "B": "ndN"
+      },
+      "parameters": {
+        "w": "3.34u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MCNN (VDD gcnN ndN ndN) n18 w=3.34u l=0.36u m=6",
+      "W_unit_um": 3.34,
+      "L_um": 0.36,
+      "m": 6.0,
+      "sheet": 3,
+      "origin": [
+        32,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          22
+        ],
+        "S": [
+          32,
+          20
+        ],
+        "G": [
+          30.45,
+          21
+        ],
+        "B": [
+          32.86,
+          21
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ndN",
+        "G": "gnN",
+        "S": "VON",
+        "B": "VON"
+      },
+      "parameters": {
+        "w": "7.96u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MINN (ndN gnN VON VON) n18 w=7.96u l=0.36u m=6",
+      "W_unit_um": 7.96,
+      "L_um": 0.36,
+      "m": 6.0,
+      "sheet": 3,
+      "origin": [
+        32,
+        16
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          17
+        ],
+        "S": [
+          32,
+          15
+        ],
+        "G": [
+          30.45,
+          16
+        ],
+        "B": [
+          32.86,
+          16
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MIPN": {
+      "name": "MIPN",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pdN",
+        "G": "gpN",
+        "S": "VON",
+        "B": "VON"
+      },
+      "parameters": {
+        "w": "32.64u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MIPN (pdN gpN VON VON) p18 w=32.64u l=0.36u m=6",
+      "W_unit_um": 32.64,
+      "L_um": 0.36,
+      "m": 6.0,
+      "sheet": 3,
+      "origin": [
+        32,
+        10
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          9
+        ],
+        "S": [
+          32,
+          11
+        ],
+        "G": [
+          30.45,
+          10
+        ],
+        "B": [
+          32.86,
+          10
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/MCPN": {
+      "name": "MCPN",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VSS",
+        "G": "gcpN",
+        "S": "pdN",
+        "B": "pdN"
+      },
+      "parameters": {
+        "w": "13.94u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MCPN (VSS gcpN pdN pdN) p18 w=13.94u l=0.36u m=6",
+      "W_unit_um": 13.94,
+      "L_um": 0.36,
+      "m": 6.0,
+      "sheet": 3,
+      "origin": [
+        32,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          4
+        ],
+        "S": [
+          32,
+          6
+        ],
+        "G": [
+          30.45,
+          5
+        ],
+        "B": [
+          32.86,
+          5
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/RgcnN": {
+      "name": "RgcnN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBN2",
+        "2": "gcnN"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgcnN (VBN2 gcnN) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "sheet": 3,
+      "origin": [
+        8,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          7.18,
+          21
+        ],
+        "2": [
+          8.82,
+          21
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/CgcnN": {
+      "name": "CgcnN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gcnN",
+        "2": "VON"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgcnN (gcnN VON) capacitor c=5p",
+      "value_SI": 5e-12,
+      "sheet": 3,
+      "origin": [
+        18,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          17.18,
+          21
+        ],
+        "2": [
+          18.82,
+          21
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/RgnN": {
+      "name": "RgnN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBN1",
+        "2": "gnN"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgnN (VBN1 gnN) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "sheet": 3,
+      "origin": [
+        8,
+        16
+      ],
+      "rendered_pins": {
+        "1": [
+          7.18,
+          16
+        ],
+        "2": [
+          8.82,
+          16
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/CgnN": {
+      "name": "CgnN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gnN",
+        "2": "VIN"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgnN (gnN VIN) capacitor c=5p",
+      "value_SI": 5e-12,
+      "sheet": 3,
+      "origin": [
+        18,
+        16
+      ],
+      "rendered_pins": {
+        "1": [
+          17.18,
+          16
+        ],
+        "2": [
+          18.82,
+          16
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/RgpN": {
+      "name": "RgpN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBP1",
+        "2": "gpN"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgpN (VBP1 gpN) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "sheet": 3,
+      "origin": [
+        8,
+        10
+      ],
+      "rendered_pins": {
+        "1": [
+          7.18,
+          10
+        ],
+        "2": [
+          8.82,
+          10
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/CgpN": {
+      "name": "CgpN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gpN",
+        "2": "VIN"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgpN (gpN VIN) capacitor c=5p",
+      "value_SI": 5e-12,
+      "sheet": 3,
+      "origin": [
+        18,
+        10
+      ],
+      "rendered_pins": {
+        "1": [
+          17.18,
+          10
+        ],
+        "2": [
+          18.82,
+          10
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/RgcpN": {
+      "name": "RgcpN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBP2",
+        "2": "gcpN"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgcpN (VBP2 gcpN) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "sheet": 3,
+      "origin": [
+        8,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          7.18,
+          5
+        ],
+        "2": [
+          8.82,
+          5
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    },
+    "buf_ppsf_bs/CgcpN": {
+      "name": "CgcpN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gcpN",
+        "2": "VON"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgcpN (gcpN VON) capacitor c=5p",
+      "value_SI": 5e-12,
+      "sheet": 3,
+      "origin": [
+        18,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          17.18,
+          5
+        ],
+        "2": [
+          18.82,
+          5
+        ]
+      },
+      "block": "buf_ppsf_bs"
+    }
+  },
+  "expanded_leaf_instances": {
+    "MREF": {
+      "name": "MREF",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "IREF",
+        "G": "IREF",
+        "S": "VSS",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "8.86u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MREF (IREF IREF VSS VSS) n18 w=8.86u l=1u m=1",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "buf_ppsf_bs/MREF",
+      "path": "MREF"
+    },
+    "MBN": {
+      "name": "MBN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "pb",
+        "G": "IREF",
+        "S": "VSS",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "8.86u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MBN (pb IREF VSS VSS) n18 w=8.86u l=1u m=1",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "buf_ppsf_bs/MBN",
+      "path": "MBN"
+    },
+    "MBP": {
+      "name": "MBP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pb",
+        "G": "pb",
+        "S": "VDD",
+        "B": "VDD"
+      },
+      "parameters": {
+        "w": "28.48u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MBP (pb pb VDD VDD) p18 w=28.48u l=1u m=1",
+      "W_unit_um": 28.479999999999997,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "buf_ppsf_bs/MBP",
+      "path": "MBP"
+    },
+    "MPBN1": {
+      "name": "MPBN1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VBN1",
+        "G": "pb",
+        "S": "VDD",
+        "B": "VDD"
+      },
+      "parameters": {
+        "w": "28.48u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPBN1 (VBN1 pb VDD VDD) p18 w=28.48u l=1u m=1",
+      "W_unit_um": 28.479999999999997,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "buf_ppsf_bs/MPBN1",
+      "path": "MPBN1"
+    },
+    "MNBN1": {
+      "name": "MNBN1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VBN1",
+        "G": "VBN1",
+        "S": "VCM",
+        "B": "VCM"
+      },
+      "parameters": {
+        "w": "7.96u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MNBN1 (VBN1 VBN1 VCM VCM) n18 w=7.96u l=0.36u m=1",
+      "W_unit_um": 7.96,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "buf_ppsf_bs/MNBN1",
+      "path": "MNBN1"
+    },
+    "MNBP1": {
+      "name": "MNBP1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VBP1",
+        "G": "IREF",
+        "S": "VSS",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "8.86u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MNBP1 (VBP1 IREF VSS VSS) n18 w=8.86u l=1u m=1",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "buf_ppsf_bs/MNBP1",
+      "path": "MNBP1"
+    },
+    "MPBP1": {
+      "name": "MPBP1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VBP1",
+        "G": "VBP1",
+        "S": "VCM",
+        "B": "VCM"
+      },
+      "parameters": {
+        "w": "32.64u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MPBP1 (VBP1 VBP1 VCM VCM) p18 w=32.64u l=0.36u m=1",
+      "W_unit_um": 32.64,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "buf_ppsf_bs/MPBP1",
+      "path": "MPBP1"
+    },
+    "MPBN2": {
+      "name": "MPBN2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VBN2",
+        "G": "pb",
+        "S": "VDD",
+        "B": "VDD"
+      },
+      "parameters": {
+        "w": "28.48u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MPBN2 (VBN2 pb VDD VDD) p18 w=28.48u l=1u m=1",
+      "W_unit_um": 28.479999999999997,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "buf_ppsf_bs/MPBN2",
+      "path": "MPBN2"
+    },
+    "MNBN2": {
+      "name": "MNBN2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VBN2",
+        "G": "VBN2",
+        "S": "nbs",
+        "B": "nbs"
+      },
+      "parameters": {
+        "w": "3.34u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MNBN2 (VBN2 VBN2 nbs nbs) n18 w=3.34u l=0.36u m=1",
+      "W_unit_um": 3.34,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "buf_ppsf_bs/MNBN2",
+      "path": "MNBN2"
+    },
+    "MNBP2": {
+      "name": "MNBP2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VBP2",
+        "G": "IREF",
+        "S": "VSS",
+        "B": "VSS"
+      },
+      "parameters": {
+        "w": "8.86u",
+        "l": "1u",
+        "m": "1"
+      },
+      "source_line": "MNBP2 (VBP2 IREF VSS VSS) n18 w=8.86u l=1u m=1",
+      "W_unit_um": 8.86,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "buf_ppsf_bs/MNBP2",
+      "path": "MNBP2"
+    },
+    "MPBP2": {
+      "name": "MPBP2",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VBP2",
+        "G": "VBP2",
+        "S": "pbs",
+        "B": "pbs"
+      },
+      "parameters": {
+        "w": "13.94u",
+        "l": "0.36u",
+        "m": "1"
+      },
+      "source_line": "MPBP2 (VBP2 VBP2 pbs pbs) p18 w=13.94u l=0.36u m=1",
+      "W_unit_um": 13.94,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "buf_ppsf_bs/MPBP2",
+      "path": "MPBP2"
+    },
+    "RNB": {
+      "name": "RNB",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "nbs",
+        "2": "VCM"
+      },
+      "parameters": {
+        "r": "8999.999999999998"
+      },
+      "source_line": "RNB (nbs VCM) resistor r=8999.999999999998",
+      "value_SI": 8999.999999999998,
+      "definition": "buf_ppsf_bs/RNB",
+      "path": "RNB"
+    },
+    "RPB": {
+      "name": "RPB",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VCM",
+        "2": "pbs"
+      },
+      "parameters": {
+        "r": "8999.999999999998"
+      },
+      "source_line": "RPB (VCM pbs) resistor r=8999.999999999998",
+      "value_SI": 8999.999999999998,
+      "definition": "buf_ppsf_bs/RPB",
+      "path": "RPB"
+    },
+    "MINP": {
+      "name": "MINP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ndP",
+        "G": "gnP",
+        "S": "VOP",
+        "B": "VOP"
+      },
+      "parameters": {
+        "w": "7.96u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MINP (ndP gnP VOP VOP) n18 w=7.96u l=0.36u m=6",
+      "W_unit_um": 7.96,
+      "L_um": 0.36,
+      "m": 6.0,
+      "definition": "buf_ppsf_bs/MINP",
+      "path": "MINP"
+    },
+    "MCNP": {
+      "name": "MCNP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VDD",
+        "G": "gcnP",
+        "S": "ndP",
+        "B": "ndP"
+      },
+      "parameters": {
+        "w": "3.34u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MCNP (VDD gcnP ndP ndP) n18 w=3.34u l=0.36u m=6",
+      "W_unit_um": 3.34,
+      "L_um": 0.36,
+      "m": 6.0,
+      "definition": "buf_ppsf_bs/MCNP",
+      "path": "MCNP"
+    },
+    "MIPP": {
+      "name": "MIPP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pdP",
+        "G": "gpP",
+        "S": "VOP",
+        "B": "VOP"
+      },
+      "parameters": {
+        "w": "32.64u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MIPP (pdP gpP VOP VOP) p18 w=32.64u l=0.36u m=6",
+      "W_unit_um": 32.64,
+      "L_um": 0.36,
+      "m": 6.0,
+      "definition": "buf_ppsf_bs/MIPP",
+      "path": "MIPP"
+    },
+    "MCPP": {
+      "name": "MCPP",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VSS",
+        "G": "gcpP",
+        "S": "pdP",
+        "B": "pdP"
+      },
+      "parameters": {
+        "w": "13.94u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MCPP (VSS gcpP pdP pdP) p18 w=13.94u l=0.36u m=6",
+      "W_unit_um": 13.94,
+      "L_um": 0.36,
+      "m": 6.0,
+      "definition": "buf_ppsf_bs/MCPP",
+      "path": "MCPP"
+    },
+    "RgnP": {
+      "name": "RgnP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBN1",
+        "2": "gnP"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgnP (VBN1 gnP) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "definition": "buf_ppsf_bs/RgnP",
+      "path": "RgnP"
+    },
+    "CgnP": {
+      "name": "CgnP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gnP",
+        "2": "VIP"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgnP (gnP VIP) capacitor c=5p",
+      "value_SI": 5e-12,
+      "definition": "buf_ppsf_bs/CgnP",
+      "path": "CgnP"
+    },
+    "RgpP": {
+      "name": "RgpP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBP1",
+        "2": "gpP"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgpP (VBP1 gpP) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "definition": "buf_ppsf_bs/RgpP",
+      "path": "RgpP"
+    },
+    "CgpP": {
+      "name": "CgpP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gpP",
+        "2": "VIP"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgpP (gpP VIP) capacitor c=5p",
+      "value_SI": 5e-12,
+      "definition": "buf_ppsf_bs/CgpP",
+      "path": "CgpP"
+    },
+    "RgcnP": {
+      "name": "RgcnP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBN2",
+        "2": "gcnP"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgcnP (VBN2 gcnP) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "definition": "buf_ppsf_bs/RgcnP",
+      "path": "RgcnP"
+    },
+    "CgcnP": {
+      "name": "CgcnP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gcnP",
+        "2": "VOP"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgcnP (gcnP VOP) capacitor c=5p",
+      "value_SI": 5e-12,
+      "definition": "buf_ppsf_bs/CgcnP",
+      "path": "CgcnP"
+    },
+    "RgcpP": {
+      "name": "RgcpP",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBP2",
+        "2": "gcpP"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgcpP (VBP2 gcpP) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "definition": "buf_ppsf_bs/RgcpP",
+      "path": "RgcpP"
+    },
+    "CgcpP": {
+      "name": "CgcpP",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gcpP",
+        "2": "VOP"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgcpP (gcpP VOP) capacitor c=5p",
+      "value_SI": 5e-12,
+      "definition": "buf_ppsf_bs/CgcpP",
+      "path": "CgcpP"
+    },
+    "MINN": {
+      "name": "MINN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "ndN",
+        "G": "gnN",
+        "S": "VON",
+        "B": "VON"
+      },
+      "parameters": {
+        "w": "7.96u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MINN (ndN gnN VON VON) n18 w=7.96u l=0.36u m=6",
+      "W_unit_um": 7.96,
+      "L_um": 0.36,
+      "m": 6.0,
+      "definition": "buf_ppsf_bs/MINN",
+      "path": "MINN"
+    },
+    "MCNN": {
+      "name": "MCNN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "VDD",
+        "G": "gcnN",
+        "S": "ndN",
+        "B": "ndN"
+      },
+      "parameters": {
+        "w": "3.34u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MCNN (VDD gcnN ndN ndN) n18 w=3.34u l=0.36u m=6",
+      "W_unit_um": 3.34,
+      "L_um": 0.36,
+      "m": 6.0,
+      "definition": "buf_ppsf_bs/MCNN",
+      "path": "MCNN"
+    },
+    "MIPN": {
+      "name": "MIPN",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "pdN",
+        "G": "gpN",
+        "S": "VON",
+        "B": "VON"
+      },
+      "parameters": {
+        "w": "32.64u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MIPN (pdN gpN VON VON) p18 w=32.64u l=0.36u m=6",
+      "W_unit_um": 32.64,
+      "L_um": 0.36,
+      "m": 6.0,
+      "definition": "buf_ppsf_bs/MIPN",
+      "path": "MIPN"
+    },
+    "MCPN": {
+      "name": "MCPN",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "VSS",
+        "G": "gcpN",
+        "S": "pdN",
+        "B": "pdN"
+      },
+      "parameters": {
+        "w": "13.94u",
+        "l": "0.36u",
+        "m": "6"
+      },
+      "source_line": "MCPN (VSS gcpN pdN pdN) p18 w=13.94u l=0.36u m=6",
+      "W_unit_um": 13.94,
+      "L_um": 0.36,
+      "m": 6.0,
+      "definition": "buf_ppsf_bs/MCPN",
+      "path": "MCPN"
+    },
+    "RgnN": {
+      "name": "RgnN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBN1",
+        "2": "gnN"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgnN (VBN1 gnN) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "definition": "buf_ppsf_bs/RgnN",
+      "path": "RgnN"
+    },
+    "CgnN": {
+      "name": "CgnN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gnN",
+        "2": "VIN"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgnN (gnN VIN) capacitor c=5p",
+      "value_SI": 5e-12,
+      "definition": "buf_ppsf_bs/CgnN",
+      "path": "CgnN"
+    },
+    "RgpN": {
+      "name": "RgpN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBP1",
+        "2": "gpN"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgpN (VBP1 gpN) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "definition": "buf_ppsf_bs/RgpN",
+      "path": "RgpN"
+    },
+    "CgpN": {
+      "name": "CgpN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gpN",
+        "2": "VIN"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgpN (gpN VIN) capacitor c=5p",
+      "value_SI": 5e-12,
+      "definition": "buf_ppsf_bs/CgpN",
+      "path": "CgpN"
+    },
+    "RgcnN": {
+      "name": "RgcnN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBN2",
+        "2": "gcnN"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgcnN (VBN2 gcnN) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "definition": "buf_ppsf_bs/RgcnN",
+      "path": "RgcnN"
+    },
+    "CgcnN": {
+      "name": "CgcnN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gcnN",
+        "2": "VON"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgcnN (gcnN VON) capacitor c=5p",
+      "value_SI": 5e-12,
+      "definition": "buf_ppsf_bs/CgcnN",
+      "path": "CgcnN"
+    },
+    "RgcpN": {
+      "name": "RgcpN",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "VBP2",
+        "2": "gcpN"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "RgcpN (VBP2 gcpN) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "definition": "buf_ppsf_bs/RgcpN",
+      "path": "RgcpN"
+    },
+    "CgcpN": {
+      "name": "CgcpN",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "gcpN",
+        "2": "VON"
+      },
+      "parameters": {
+        "c": "5p"
+      },
+      "source_line": "CgcpN (gcpN VON) capacitor c=5p",
+      "value_SI": 5e-12,
+      "definition": "buf_ppsf_bs/CgcpN",
+      "path": "CgcpN"
+    }
+  },
+  "nets": {
+    "buf_ppsf_bs/IREF": [
+      {
+        "instance": "buf_ppsf_bs/MREF",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          3,
+          7
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MREF",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          1.45,
+          6
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MBN",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          8.45,
+          6
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBP1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          22.45,
+          6
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBP2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          36.45,
+          6
+        ]
+      }
+    ],
+    "buf_ppsf_bs/VSS": [
+      {
+        "instance": "buf_ppsf_bs/MREF",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          3,
+          5
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MREF",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          3.86,
+          6
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MBN",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          10,
+          5
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MBN",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          10.86,
+          6
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBP1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          24,
+          5
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBP1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          24.86,
+          6
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBP2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          38,
+          5
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBP2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          38.86,
+          6
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MCPP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          32,
+          4
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MCPN",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          32,
+          4
+        ]
+      }
+    ],
+    "buf_ppsf_bs/pb": [
+      {
+        "instance": "buf_ppsf_bs/MBP",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          10,
+          18
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MBP",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          8.45,
+          19
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MBN",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          10,
+          7
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MPBN1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          15.45,
+          19
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MPBN2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          29.45,
+          21
+        ]
+      }
+    ],
+    "buf_ppsf_bs/VDD": [
+      {
+        "instance": "buf_ppsf_bs/MBP",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          10,
+          20
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MBP",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          10.86,
+          19
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MPBN1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          17,
+          20
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MPBN1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          17.86,
+          19
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MPBN2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          31,
+          22
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MPBN2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          31.86,
+          21
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MCNP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          32,
+          22
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MCNN",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          32,
+          22
+        ]
+      }
+    ],
+    "buf_ppsf_bs/VBN1": [
+      {
+        "instance": "buf_ppsf_bs/MPBN1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          17,
+          18
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBN1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          17,
+          12
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBN1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          15.45,
+          11
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgnP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          7.18,
+          16
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgnN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          7.18,
+          16
+        ]
+      }
+    ],
+    "buf_ppsf_bs/VCM": [
+      {
+        "instance": "buf_ppsf_bs/MNBN1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          17,
+          10
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBN1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          17.86,
+          11
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MPBP1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          24,
+          18
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MPBP1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          24.86,
+          17
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RNB",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          31,
+          7.18
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RPB",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          38,
+          21.82
+        ]
+      }
+    ],
+    "buf_ppsf_bs/VBP1": [
+      {
+        "instance": "buf_ppsf_bs/MPBP1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          24,
+          16
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MPBP1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          22.45,
+          17
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBP1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          24,
+          7
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgpP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          7.18,
+          10
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgpN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          7.18,
+          10
+        ]
+      }
+    ],
+    "buf_ppsf_bs/VBN2": [
+      {
+        "instance": "buf_ppsf_bs/MPBN2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          31,
+          20
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBN2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          31,
+          15
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBN2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          29.45,
+          14
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgcnP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          7.18,
+          21
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgcnN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          7.18,
+          21
+        ]
+      }
+    ],
+    "buf_ppsf_bs/nbs": [
+      {
+        "instance": "buf_ppsf_bs/MNBN2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          31,
+          13
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBN2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          31.86,
+          14
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RNB",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          31,
+          8.82
+        ]
+      }
+    ],
+    "buf_ppsf_bs/VBP2": [
+      {
+        "instance": "buf_ppsf_bs/MPBP2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          38,
+          13
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MPBP2",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          36.45,
+          14
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MNBP2",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          38,
+          7
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgcpP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          7.18,
+          5
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgcpN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          7.18,
+          5
+        ]
+      }
+    ],
+    "buf_ppsf_bs/pbs": [
+      {
+        "instance": "buf_ppsf_bs/MPBP2",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          38,
+          15
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MPBP2",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          38.86,
+          14
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RPB",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          38,
+          20.18
+        ]
+      }
+    ],
+    "buf_ppsf_bs/gcnP": [
+      {
+        "instance": "buf_ppsf_bs/MCNP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          30.45,
+          21
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgcnP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          8.82,
+          21
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgcnP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          17.18,
+          21
+        ]
+      }
+    ],
+    "buf_ppsf_bs/ndP": [
+      {
+        "instance": "buf_ppsf_bs/MCNP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          32,
+          20
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MCNP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          32.86,
+          21
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MINP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          32,
+          17
+        ]
+      }
+    ],
+    "buf_ppsf_bs/gnP": [
+      {
+        "instance": "buf_ppsf_bs/MINP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          30.45,
+          16
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgnP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          8.82,
+          16
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgnP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          17.18,
+          16
+        ]
+      }
+    ],
+    "buf_ppsf_bs/VOP": [
+      {
+        "instance": "buf_ppsf_bs/MINP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          32,
+          15
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MINP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          32.86,
+          16
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MIPP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          32,
+          11
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MIPP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          32.86,
+          10
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgcnP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          18.82,
+          21
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgcpP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          18.82,
+          5
+        ]
+      }
+    ],
+    "buf_ppsf_bs/pdP": [
+      {
+        "instance": "buf_ppsf_bs/MIPP",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          32,
+          9
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MCPP",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          32,
+          6
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MCPP",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          32.86,
+          5
+        ]
+      }
+    ],
+    "buf_ppsf_bs/gpP": [
+      {
+        "instance": "buf_ppsf_bs/MIPP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          30.45,
+          10
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgpP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          8.82,
+          10
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgpP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          17.18,
+          10
+        ]
+      }
+    ],
+    "buf_ppsf_bs/gcpP": [
+      {
+        "instance": "buf_ppsf_bs/MCPP",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          30.45,
+          5
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgcpP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          8.82,
+          5
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgcpP",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          17.18,
+          5
+        ]
+      }
+    ],
+    "buf_ppsf_bs/VIP": [
+      {
+        "instance": "buf_ppsf_bs/CgnP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          18.82,
+          16
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgpP",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          18.82,
+          10
+        ]
+      }
+    ],
+    "buf_ppsf_bs/gcnN": [
+      {
+        "instance": "buf_ppsf_bs/MCNN",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          30.45,
+          21
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgcnN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          8.82,
+          21
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgcnN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17.18,
+          21
+        ]
+      }
+    ],
+    "buf_ppsf_bs/ndN": [
+      {
+        "instance": "buf_ppsf_bs/MCNN",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          32,
+          20
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MCNN",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          32.86,
+          21
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MINN",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          32,
+          17
+        ]
+      }
+    ],
+    "buf_ppsf_bs/gnN": [
+      {
+        "instance": "buf_ppsf_bs/MINN",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          30.45,
+          16
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgnN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          8.82,
+          16
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgnN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17.18,
+          16
+        ]
+      }
+    ],
+    "buf_ppsf_bs/VON": [
+      {
+        "instance": "buf_ppsf_bs/MINN",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          32,
+          15
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MINN",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          32.86,
+          16
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MIPN",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          32,
+          11
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MIPN",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          32.86,
+          10
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgcnN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          18.82,
+          21
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgcpN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          18.82,
+          5
+        ]
+      }
+    ],
+    "buf_ppsf_bs/pdN": [
+      {
+        "instance": "buf_ppsf_bs/MIPN",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          32,
+          9
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MCPN",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          32,
+          6
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/MCPN",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          32.86,
+          5
+        ]
+      }
+    ],
+    "buf_ppsf_bs/gpN": [
+      {
+        "instance": "buf_ppsf_bs/MIPN",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          30.45,
+          10
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgpN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          8.82,
+          10
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgpN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17.18,
+          10
+        ]
+      }
+    ],
+    "buf_ppsf_bs/gcpN": [
+      {
+        "instance": "buf_ppsf_bs/MCPN",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          30.45,
+          5
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/RgcpN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          8.82,
+          5
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgcpN",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          17.18,
+          5
+        ]
+      }
+    ],
+    "buf_ppsf_bs/VIN": [
+      {
+        "instance": "buf_ppsf_bs/CgnN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          18.82,
+          16
+        ]
+      },
+      {
+        "instance": "buf_ppsf_bs/CgpN",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          18.82,
+          10
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "D",
+      "net": "IREF",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "G",
+      "net": "IREF",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "G",
+      "net": "IREF",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP1",
+      "pin": "G",
+      "net": "IREF",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP2",
+      "pin": "G",
+      "net": "IREF",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBN1",
+      "pin": "S",
+      "net": "VCM",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBN1",
+      "pin": "B",
+      "net": "VCM",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBP1",
+      "pin": "S",
+      "net": "VCM",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBP1",
+      "pin": "B",
+      "net": "VCM",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "RNB",
+      "pin": "2",
+      "net": "VCM",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "RPB",
+      "pin": "1",
+      "net": "VCM",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "S",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MREF",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "S",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP1",
+      "pin": "S",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP1",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP2",
+      "pin": "S",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP2",
+      "pin": "B",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "D",
+      "net": "pb",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "G",
+      "net": "pb",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBN",
+      "pin": "D",
+      "net": "pb",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBN1",
+      "pin": "G",
+      "net": "pb",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBN2",
+      "pin": "G",
+      "net": "pb",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBP2",
+      "pin": "S",
+      "net": "pbs",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBP2",
+      "pin": "B",
+      "net": "pbs",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "RPB",
+      "pin": "2",
+      "net": "pbs",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBN2",
+      "pin": "S",
+      "net": "nbs",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBN2",
+      "pin": "B",
+      "net": "nbs",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "RNB",
+      "pin": "1",
+      "net": "nbs",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "S",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MBP",
+      "pin": "B",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBN1",
+      "pin": "S",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBN1",
+      "pin": "B",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBN2",
+      "pin": "S",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBN2",
+      "pin": "B",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBP2",
+      "pin": "D",
+      "net": "VBP2",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBP2",
+      "pin": "G",
+      "net": "VBP2",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP2",
+      "pin": "D",
+      "net": "VBP2",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBN2",
+      "pin": "D",
+      "net": "VBN2",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBN2",
+      "pin": "D",
+      "net": "VBN2",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBN2",
+      "pin": "G",
+      "net": "VBN2",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBP1",
+      "pin": "D",
+      "net": "VBP1",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBP1",
+      "pin": "G",
+      "net": "VBP1",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBP1",
+      "pin": "D",
+      "net": "VBP1",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPBN1",
+      "pin": "D",
+      "net": "VBN1",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBN1",
+      "pin": "D",
+      "net": "VBN1",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNBN1",
+      "pin": "G",
+      "net": "VBN1",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIPP",
+      "pin": "D",
+      "net": "pdP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCPP",
+      "pin": "S",
+      "net": "pdP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCPP",
+      "pin": "B",
+      "net": "pdP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCNP",
+      "pin": "G",
+      "net": "gcnP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "RgcnP",
+      "pin": "2",
+      "net": "gcnP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "CgcnP",
+      "pin": "1",
+      "net": "gcnP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCNP",
+      "pin": "S",
+      "net": "ndP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCNP",
+      "pin": "B",
+      "net": "ndP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "D",
+      "net": "ndP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCPP",
+      "pin": "D",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "RgcpP",
+      "pin": "1",
+      "net": "VBP2",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCPP",
+      "pin": "G",
+      "net": "gcpP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "RgcpP",
+      "pin": "2",
+      "net": "gcpP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "CgcpP",
+      "pin": "1",
+      "net": "gcpP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MCNP",
+      "pin": "D",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "RgpP",
+      "pin": "1",
+      "net": "VBP1",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "G",
+      "net": "gnP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "RgnP",
+      "pin": "2",
+      "net": "gnP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "CgnP",
+      "pin": "1",
+      "net": "gnP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "CgnP",
+      "pin": "2",
+      "net": "VIP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "CgpP",
+      "pin": "2",
+      "net": "VIP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "RgcnP",
+      "pin": "1",
+      "net": "VBN2",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "S",
+      "net": "VOP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MINP",
+      "pin": "B",
+      "net": "VOP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIPP",
+      "pin": "S",
+      "net": "VOP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIPP",
+      "pin": "B",
+      "net": "VOP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "CgcnP",
+      "pin": "2",
+      "net": "VOP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "CgcpP",
+      "pin": "2",
+      "net": "VOP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "RgnP",
+      "pin": "1",
+      "net": "VBN1",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "MIPP",
+      "pin": "G",
+      "net": "gpP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "RgpP",
+      "pin": "2",
+      "net": "gpP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 2,
+      "instance": "CgpP",
+      "pin": "1",
+      "net": "gpP",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCNN",
+      "pin": "S",
+      "net": "ndN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCNN",
+      "pin": "B",
+      "net": "ndN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MINN",
+      "pin": "D",
+      "net": "ndN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MINN",
+      "pin": "G",
+      "net": "gnN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "RgnN",
+      "pin": "2",
+      "net": "gnN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "CgnN",
+      "pin": "1",
+      "net": "gnN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCPN",
+      "pin": "D",
+      "net": "VSS",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "CgnN",
+      "pin": "2",
+      "net": "VIN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "CgpN",
+      "pin": "2",
+      "net": "VIN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "RgcpN",
+      "pin": "1",
+      "net": "VBP2",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "RgpN",
+      "pin": "1",
+      "net": "VBP1",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCNN",
+      "pin": "D",
+      "net": "VDD",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MIPN",
+      "pin": "G",
+      "net": "gpN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "RgpN",
+      "pin": "2",
+      "net": "gpN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "CgpN",
+      "pin": "1",
+      "net": "gpN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCPN",
+      "pin": "G",
+      "net": "gcpN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "RgcpN",
+      "pin": "2",
+      "net": "gcpN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "CgcpN",
+      "pin": "1",
+      "net": "gcpN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MINN",
+      "pin": "S",
+      "net": "VON",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MINN",
+      "pin": "B",
+      "net": "VON",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MIPN",
+      "pin": "S",
+      "net": "VON",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MIPN",
+      "pin": "B",
+      "net": "VON",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "CgcnN",
+      "pin": "2",
+      "net": "VON",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "CgcpN",
+      "pin": "2",
+      "net": "VON",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCNN",
+      "pin": "G",
+      "net": "gcnN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "RgcnN",
+      "pin": "2",
+      "net": "gcnN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "CgcnN",
+      "pin": "1",
+      "net": "gcnN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "RgcnN",
+      "pin": "1",
+      "net": "VBN2",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "RgnN",
+      "pin": "1",
+      "net": "VBN1",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MIPN",
+      "pin": "D",
+      "net": "pdN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCPN",
+      "pin": "S",
+      "net": "pdN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    },
+    {
+      "sheet": 3,
+      "instance": "MCPN",
+      "pin": "B",
+      "net": "pdN",
+      "path_to_named_net": true,
+      "block": "buf_ppsf_bs"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "buf_ppsf_bs",
+      "title": "互补输入与级联管的四路偏置",
+      "wires": [
+        {
+          "net": "VSS",
+          "points": [
+            [
+              3.86,
+              6
+            ],
+            [
+              4.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              10.86,
+              19
+            ],
+            [
+              11.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              10.86,
+              6
+            ],
+            [
+              11.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              17.86,
+              19
+            ],
+            [
+              18.15,
+              19
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VCM",
+          "points": [
+            [
+              17.86,
+              11
+            ],
+            [
+              18.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VCM",
+          "points": [
+            [
+              24.86,
+              17
+            ],
+            [
+              25.15,
+              17
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              24.86,
+              6
+            ],
+            [
+              25.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              31.86,
+              21
+            ],
+            [
+              32.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "nbs",
+          "points": [
+            [
+              31.86,
+              14
+            ],
+            [
+              32.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pbs",
+          "points": [
+            [
+              38.86,
+              14
+            ],
+            [
+              39.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              38.86,
+              6
+            ],
+            [
+              39.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pb",
+          "points": [
+            [
+              10,
+              18
+            ],
+            [
+              10,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBN1",
+          "points": [
+            [
+              17,
+              18
+            ],
+            [
+              17,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP1",
+          "points": [
+            [
+              24,
+              16
+            ],
+            [
+              24,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBN2",
+          "points": [
+            [
+              31,
+              20
+            ],
+            [
+              31,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP2",
+          "points": [
+            [
+              38,
+              13
+            ],
+            [
+              38,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "nbs",
+          "points": [
+            [
+              31,
+              13
+            ],
+            [
+              31,
+              8.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pbs",
+          "points": [
+            [
+              38,
+              20.18
+            ],
+            [
+              38,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              10,
+              23.5
+            ],
+            [
+              31,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              10,
+              20
+            ],
+            [
+              10,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              17,
+              20
+            ],
+            [
+              17,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              31,
+              22
+            ],
+            [
+              31,
+              23.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              3,
+              2
+            ],
+            [
+              38,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              10,
+              5
+            ],
+            [
+              10,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              24,
+              5
+            ],
+            [
+              24,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              38,
+              5
+            ],
+            [
+              38,
+              2
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "IREF",
+          "points": [
+            [
+              1.45,
+              6
+            ],
+            [
+              0.9500000000000002,
+              6
+            ],
+            [
+              0.9500000000000002,
+              8.2
+            ],
+            [
+              3,
+              8.2
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pb",
+          "points": [
+            [
+              8.45,
+              19
+            ],
+            [
+              7.95,
+              19
+            ],
+            [
+              7.95,
+              16.8
+            ],
+            [
+              10,
+              16.8
+            ],
+            [
+              10,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBN1",
+          "points": [
+            [
+              15.45,
+              11
+            ],
+            [
+              14.95,
+              11
+            ],
+            [
+              14.95,
+              13.2
+            ],
+            [
+              17,
+              13.2
+            ],
+            [
+              17,
+              12
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP1",
+          "points": [
+            [
+              22.45,
+              17
+            ],
+            [
+              21.95,
+              17
+            ],
+            [
+              21.95,
+              14.8
+            ],
+            [
+              24,
+              14.8
+            ],
+            [
+              24,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBN2",
+          "points": [
+            [
+              29.45,
+              14
+            ],
+            [
+              28.95,
+              14
+            ],
+            [
+              28.95,
+              16.2
+            ],
+            [
+              31,
+              16.2
+            ],
+            [
+              31,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP2",
+          "points": [
+            [
+              36.45,
+              14
+            ],
+            [
+              35.95,
+              14
+            ],
+            [
+              35.95,
+              11.8
+            ],
+            [
+              38,
+              11.8
+            ],
+            [
+              38,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "IREF",
+          "points": [
+            [
+              8.45,
+              6
+            ],
+            [
+              7.8999999999999995,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pb",
+          "points": [
+            [
+              15.45,
+              19
+            ],
+            [
+              14.899999999999999,
+              19
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VCM",
+          "points": [
+            [
+              17,
+              10
+            ],
+            [
+              17,
+              9.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VCM",
+          "points": [
+            [
+              24,
+              18
+            ],
+            [
+              24,
+              18.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "IREF",
+          "points": [
+            [
+              22.45,
+              6
+            ],
+            [
+              21.9,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pb",
+          "points": [
+            [
+              29.45,
+              21
+            ],
+            [
+              28.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "IREF",
+          "points": [
+            [
+              36.45,
+              6
+            ],
+            [
+              35.900000000000006,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VCM",
+          "points": [
+            [
+              31,
+              7.18
+            ],
+            [
+              31,
+              6.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VCM",
+          "points": [
+            [
+              38,
+              21.82
+            ],
+            [
+              38,
+              22.46
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "VSS",
+          "point": [
+            4.15,
+            6
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "point": [
+            11.15,
+            19
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            11.15,
+            6
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "point": [
+            18.15,
+            19
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "VCM",
+          "point": [
+            18.15,
+            11
+          ],
+          "text": "VCM",
+          "body": true
+        },
+        {
+          "net": "VCM",
+          "point": [
+            25.15,
+            17
+          ],
+          "text": "VCM",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            25.15,
+            6
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "VDD",
+          "point": [
+            32.15,
+            21
+          ],
+          "text": "VDD",
+          "body": true
+        },
+        {
+          "net": "nbs",
+          "point": [
+            32.15,
+            14
+          ],
+          "text": "nbs",
+          "body": true
+        },
+        {
+          "net": "pbs",
+          "point": [
+            39.15,
+            14
+          ],
+          "text": "pbs",
+          "body": true
+        },
+        {
+          "net": "VSS",
+          "point": [
+            39.15,
+            6
+          ],
+          "text": "VSS",
+          "body": true
+        },
+        {
+          "net": "pb",
+          "point": [
+            10.0,
+            12.5
+          ],
+          "text": "pb",
+          "body": false
+        },
+        {
+          "net": "VBN1",
+          "point": [
+            17.0,
+            15.0
+          ],
+          "text": "VBN1",
+          "body": false
+        },
+        {
+          "net": "VBP1",
+          "point": [
+            24.0,
+            11.5
+          ],
+          "text": "VBP1",
+          "body": false
+        },
+        {
+          "net": "VBN2",
+          "point": [
+            31.0,
+            17.5
+          ],
+          "text": "VBN2",
+          "body": false
+        },
+        {
+          "net": "VBP2",
+          "point": [
+            38.0,
+            10.0
+          ],
+          "text": "VBP2",
+          "body": false
+        },
+        {
+          "net": "nbs",
+          "point": [
+            31.0,
+            10.91
+          ],
+          "text": "nbs",
+          "body": false
+        },
+        {
+          "net": "pbs",
+          "point": [
+            38.0,
+            17.59
+          ],
+          "text": "pbs",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            10,
+            23.5
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "point": [
+            3,
+            2
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "IREF",
+          "point": [
+            2,
+            8.2
+          ],
+          "text": "IREF",
+          "body": false
+        },
+        {
+          "net": "pb",
+          "point": [
+            9,
+            16.8
+          ],
+          "text": "pb",
+          "body": false
+        },
+        {
+          "net": "VBN1",
+          "point": [
+            16,
+            13.2
+          ],
+          "text": "VBN1",
+          "body": false
+        },
+        {
+          "net": "VBP1",
+          "point": [
+            23,
+            14.8
+          ],
+          "text": "VBP1",
+          "body": false
+        },
+        {
+          "net": "VBN2",
+          "point": [
+            30,
+            16.2
+          ],
+          "text": "VBN2",
+          "body": false
+        },
+        {
+          "net": "VBP2",
+          "point": [
+            37,
+            11.8
+          ],
+          "text": "VBP2",
+          "body": false
+        },
+        {
+          "net": "IREF",
+          "point": [
+            7.8999999999999995,
+            6
+          ],
+          "text": "IREF",
+          "body": false
+        },
+        {
+          "net": "pb",
+          "point": [
+            14.899999999999999,
+            19
+          ],
+          "text": "pb",
+          "body": false
+        },
+        {
+          "net": "VCM",
+          "point": [
+            17,
+            9.36
+          ],
+          "text": "VCM",
+          "body": false
+        },
+        {
+          "net": "VCM",
+          "point": [
+            24,
+            18.64
+          ],
+          "text": "VCM",
+          "body": false
+        },
+        {
+          "net": "IREF",
+          "point": [
+            21.9,
+            6
+          ],
+          "text": "IREF",
+          "body": false
+        },
+        {
+          "net": "pb",
+          "point": [
+            28.9,
+            21
+          ],
+          "text": "pb",
+          "body": false
+        },
+        {
+          "net": "IREF",
+          "point": [
+            35.900000000000006,
+            6
+          ],
+          "text": "IREF",
+          "body": false
+        },
+        {
+          "net": "VCM",
+          "point": [
+            31,
+            6.54
+          ],
+          "text": "VCM",
+          "body": false
+        },
+        {
+          "net": "VCM",
+          "point": [
+            38,
+            22.46
+          ],
+          "text": "VCM",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "buf_ppsf_bs",
+      "title": "VIP → VOP 推挽源跟随与自举网络",
+      "wires": [
+        {
+          "net": "ndP",
+          "points": [
+            [
+              32.86,
+              21
+            ],
+            [
+              33.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VOP",
+          "points": [
+            [
+              32.86,
+              16
+            ],
+            [
+              33.15,
+              16
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VOP",
+          "points": [
+            [
+              32.86,
+              10
+            ],
+            [
+              33.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pdP",
+          "points": [
+            [
+              32.86,
+              5
+            ],
+            [
+              33.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "ndP",
+          "points": [
+            [
+              32,
+              20
+            ],
+            [
+              32,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VOP",
+          "points": [
+            [
+              32,
+              15
+            ],
+            [
+              32,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdP",
+          "points": [
+            [
+              32,
+              9
+            ],
+            [
+              32,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gcnP",
+          "points": [
+            [
+              8.82,
+              21
+            ],
+            [
+              17.18,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gcnP",
+          "points": [
+            [
+              8.82,
+              21
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              12,
+              23
+            ],
+            [
+              27,
+              23
+            ],
+            [
+              27,
+              21
+            ],
+            [
+              30.45,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gnP",
+          "points": [
+            [
+              8.82,
+              16
+            ],
+            [
+              17.18,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gnP",
+          "points": [
+            [
+              8.82,
+              16
+            ],
+            [
+              12,
+              16
+            ],
+            [
+              12,
+              18
+            ],
+            [
+              27,
+              18
+            ],
+            [
+              27,
+              16
+            ],
+            [
+              30.45,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gpP",
+          "points": [
+            [
+              8.82,
+              10
+            ],
+            [
+              17.18,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gpP",
+          "points": [
+            [
+              8.82,
+              10
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              12,
+              12
+            ],
+            [
+              27,
+              12
+            ],
+            [
+              27,
+              10
+            ],
+            [
+              30.45,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gcpP",
+          "points": [
+            [
+              8.82,
+              5
+            ],
+            [
+              17.18,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gcpP",
+          "points": [
+            [
+              8.82,
+              5
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              12,
+              7
+            ],
+            [
+              27,
+              7
+            ],
+            [
+              27,
+              5
+            ],
+            [
+              30.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIP",
+          "points": [
+            [
+              18.82,
+              16
+            ],
+            [
+              22,
+              16
+            ],
+            [
+              22,
+              10
+            ],
+            [
+              18.82,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VOP",
+          "points": [
+            [
+              18.82,
+              21
+            ],
+            [
+              25,
+              21
+            ],
+            [
+              25,
+              5
+            ],
+            [
+              18.82,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VOP",
+          "points": [
+            [
+              18.82,
+              5
+            ],
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              13
+            ],
+            [
+              32,
+              13
+            ],
+            [
+              32,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              32,
+              22
+            ],
+            [
+              32,
+              22.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              32,
+              4
+            ],
+            [
+              32,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBN2",
+          "points": [
+            [
+              7.18,
+              21
+            ],
+            [
+              6.38,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBN1",
+          "points": [
+            [
+              7.18,
+              16
+            ],
+            [
+              6.38,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP1",
+          "points": [
+            [
+              7.18,
+              10
+            ],
+            [
+              6.38,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP2",
+          "points": [
+            [
+              7.18,
+              5
+            ],
+            [
+              6.38,
+              5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "ndP",
+          "point": [
+            33.15,
+            21
+          ],
+          "text": "ndP",
+          "body": true
+        },
+        {
+          "net": "VOP",
+          "point": [
+            33.15,
+            16
+          ],
+          "text": "VOP",
+          "body": true
+        },
+        {
+          "net": "VOP",
+          "point": [
+            33.15,
+            10
+          ],
+          "text": "VOP",
+          "body": true
+        },
+        {
+          "net": "pdP",
+          "point": [
+            33.15,
+            5
+          ],
+          "text": "pdP",
+          "body": true
+        },
+        {
+          "net": "ndP",
+          "point": [
+            32.0,
+            18.5
+          ],
+          "text": "ndP",
+          "body": false
+        },
+        {
+          "net": "VOP",
+          "point": [
+            32.0,
+            13.0
+          ],
+          "text": "VOP",
+          "body": false
+        },
+        {
+          "net": "pdP",
+          "point": [
+            32.0,
+            7.5
+          ],
+          "text": "pdP",
+          "body": false
+        },
+        {
+          "net": "gcnP",
+          "point": [
+            13.0,
+            21.0
+          ],
+          "text": "gcnP",
+          "body": false
+        },
+        {
+          "net": "gnP",
+          "point": [
+            13.0,
+            16.0
+          ],
+          "text": "gnP",
+          "body": false
+        },
+        {
+          "net": "gpP",
+          "point": [
+            13.0,
+            10.0
+          ],
+          "text": "gpP",
+          "body": false
+        },
+        {
+          "net": "gcpP",
+          "point": [
+            13.0,
+            5.0
+          ],
+          "text": "gcpP",
+          "body": false
+        },
+        {
+          "net": "VIP",
+          "point": [
+            20.41,
+            16.0
+          ],
+          "text": "VIP",
+          "body": false
+        },
+        {
+          "net": "VOP",
+          "point": [
+            21.91,
+            21.0
+          ],
+          "text": "VOP",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            32,
+            22.64
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "point": [
+            32,
+            3.36
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "VBN2",
+          "point": [
+            6.38,
+            21
+          ],
+          "text": "VBN2",
+          "body": false
+        },
+        {
+          "net": "VBN1",
+          "point": [
+            6.38,
+            16
+          ],
+          "text": "VBN1",
+          "body": false
+        },
+        {
+          "net": "VBP1",
+          "point": [
+            6.38,
+            10
+          ],
+          "text": "VBP1",
+          "body": false
+        },
+        {
+          "net": "VBP2",
+          "point": [
+            6.38,
+            5
+          ],
+          "text": "VBP2",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "block": "buf_ppsf_bs",
+      "title": "VIN → VON 推挽源跟随与自举网络",
+      "wires": [
+        {
+          "net": "ndN",
+          "points": [
+            [
+              32.86,
+              21
+            ],
+            [
+              33.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VON",
+          "points": [
+            [
+              32.86,
+              16
+            ],
+            [
+              33.15,
+              16
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "VON",
+          "points": [
+            [
+              32.86,
+              10
+            ],
+            [
+              33.15,
+              10
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "pdN",
+          "points": [
+            [
+              32.86,
+              5
+            ],
+            [
+              33.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "ndN",
+          "points": [
+            [
+              32,
+              20
+            ],
+            [
+              32,
+              17
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VON",
+          "points": [
+            [
+              32,
+              15
+            ],
+            [
+              32,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "pdN",
+          "points": [
+            [
+              32,
+              9
+            ],
+            [
+              32,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gcnN",
+          "points": [
+            [
+              8.82,
+              21
+            ],
+            [
+              17.18,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gcnN",
+          "points": [
+            [
+              8.82,
+              21
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              12,
+              23
+            ],
+            [
+              27,
+              23
+            ],
+            [
+              27,
+              21
+            ],
+            [
+              30.45,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gnN",
+          "points": [
+            [
+              8.82,
+              16
+            ],
+            [
+              17.18,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gnN",
+          "points": [
+            [
+              8.82,
+              16
+            ],
+            [
+              12,
+              16
+            ],
+            [
+              12,
+              18
+            ],
+            [
+              27,
+              18
+            ],
+            [
+              27,
+              16
+            ],
+            [
+              30.45,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gpN",
+          "points": [
+            [
+              8.82,
+              10
+            ],
+            [
+              17.18,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gpN",
+          "points": [
+            [
+              8.82,
+              10
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              12,
+              12
+            ],
+            [
+              27,
+              12
+            ],
+            [
+              27,
+              10
+            ],
+            [
+              30.45,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gcpN",
+          "points": [
+            [
+              8.82,
+              5
+            ],
+            [
+              17.18,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "gcpN",
+          "points": [
+            [
+              8.82,
+              5
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              12,
+              7
+            ],
+            [
+              27,
+              7
+            ],
+            [
+              27,
+              5
+            ],
+            [
+              30.45,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VIN",
+          "points": [
+            [
+              18.82,
+              16
+            ],
+            [
+              22,
+              16
+            ],
+            [
+              22,
+              10
+            ],
+            [
+              18.82,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VON",
+          "points": [
+            [
+              18.82,
+              21
+            ],
+            [
+              25,
+              21
+            ],
+            [
+              25,
+              5
+            ],
+            [
+              18.82,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VON",
+          "points": [
+            [
+              18.82,
+              5
+            ],
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              13
+            ],
+            [
+              32,
+              13
+            ],
+            [
+              32,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "points": [
+            [
+              32,
+              22
+            ],
+            [
+              32,
+              22.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "points": [
+            [
+              32,
+              4
+            ],
+            [
+              32,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBN2",
+          "points": [
+            [
+              7.18,
+              21
+            ],
+            [
+              6.38,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBN1",
+          "points": [
+            [
+              7.18,
+              16
+            ],
+            [
+              6.38,
+              16
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP1",
+          "points": [
+            [
+              7.18,
+              10
+            ],
+            [
+              6.38,
+              10
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VBP2",
+          "points": [
+            [
+              7.18,
+              5
+            ],
+            [
+              6.38,
+              5
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "ndN",
+          "point": [
+            33.15,
+            21
+          ],
+          "text": "ndN",
+          "body": true
+        },
+        {
+          "net": "VON",
+          "point": [
+            33.15,
+            16
+          ],
+          "text": "VON",
+          "body": true
+        },
+        {
+          "net": "VON",
+          "point": [
+            33.15,
+            10
+          ],
+          "text": "VON",
+          "body": true
+        },
+        {
+          "net": "pdN",
+          "point": [
+            33.15,
+            5
+          ],
+          "text": "pdN",
+          "body": true
+        },
+        {
+          "net": "ndN",
+          "point": [
+            32.0,
+            18.5
+          ],
+          "text": "ndN",
+          "body": false
+        },
+        {
+          "net": "VON",
+          "point": [
+            32.0,
+            13.0
+          ],
+          "text": "VON",
+          "body": false
+        },
+        {
+          "net": "pdN",
+          "point": [
+            32.0,
+            7.5
+          ],
+          "text": "pdN",
+          "body": false
+        },
+        {
+          "net": "gcnN",
+          "point": [
+            13.0,
+            21.0
+          ],
+          "text": "gcnN",
+          "body": false
+        },
+        {
+          "net": "gnN",
+          "point": [
+            13.0,
+            16.0
+          ],
+          "text": "gnN",
+          "body": false
+        },
+        {
+          "net": "gpN",
+          "point": [
+            13.0,
+            10.0
+          ],
+          "text": "gpN",
+          "body": false
+        },
+        {
+          "net": "gcpN",
+          "point": [
+            13.0,
+            5.0
+          ],
+          "text": "gcpN",
+          "body": false
+        },
+        {
+          "net": "VIN",
+          "point": [
+            20.41,
+            16.0
+          ],
+          "text": "VIN",
+          "body": false
+        },
+        {
+          "net": "VON",
+          "point": [
+            21.91,
+            21.0
+          ],
+          "text": "VON",
+          "body": false
+        },
+        {
+          "net": "VDD",
+          "point": [
+            32,
+            22.64
+          ],
+          "text": "VDD",
+          "body": false
+        },
+        {
+          "net": "VSS",
+          "point": [
+            32,
+            3.36
+          ],
+          "text": "VSS",
+          "body": false
+        },
+        {
+          "net": "VBN2",
+          "point": [
+            6.38,
+            21
+          ],
+          "text": "VBN2",
+          "body": false
+        },
+        {
+          "net": "VBN1",
+          "point": [
+            6.38,
+            16
+          ],
+          "text": "VBN1",
+          "body": false
+        },
+        {
+          "net": "VBP1",
+          "point": [
+            6.38,
+            10
+          ],
+          "text": "VBP1",
+          "body": false
+        },
+        {
+          "net": "VBP2",
+          "point": [
+            6.38,
+            5
+          ],
+          "text": "VBP2",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [
+    {
+      "sheet": 2,
+      "nets": [
+        "gnP",
+        "VOP"
+      ],
+      "point": [
+        25,
+        18
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 2,
+      "nets": [
+        "gpP",
+        "VIP"
+      ],
+      "point": [
+        22,
+        12
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 2,
+      "nets": [
+        "gpP",
+        "VOP"
+      ],
+      "point": [
+        25,
+        12
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 2,
+      "nets": [
+        "gpP",
+        "VOP"
+      ],
+      "point": [
+        25,
+        12
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 2,
+      "nets": [
+        "gcpP",
+        "VOP"
+      ],
+      "point": [
+        25,
+        7
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 2,
+      "nets": [
+        "gcpP",
+        "VOP"
+      ],
+      "point": [
+        25,
+        7
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 3,
+      "nets": [
+        "gnN",
+        "VON"
+      ],
+      "point": [
+        25,
+        18
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 3,
+      "nets": [
+        "gpN",
+        "VIN"
+      ],
+      "point": [
+        22,
+        12
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 3,
+      "nets": [
+        "gpN",
+        "VON"
+      ],
+      "point": [
+        25,
+        12
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 3,
+      "nets": [
+        "gpN",
+        "VON"
+      ],
+      "point": [
+        25,
+        12
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 3,
+      "nets": [
+        "gcpN",
+        "VON"
+      ],
+      "point": [
+        25,
+        7
+      ],
+      "junction": false
+    },
+    {
+      "sheet": 3,
+      "nets": [
+        "gcpN",
+        "VON"
+      ],
+      "point": [
+        25,
+        7
+      ],
+      "junction": false
+    }
+  ],
+  "unused_ports": {
+    "buf_ppsf_bs": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

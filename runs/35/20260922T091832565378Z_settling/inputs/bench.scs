@@ -1,0 +1,19 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/35/20260922T091832565378Z_settling/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-6 vabstol=1e-9 iabstol=1e-15
+saveOptions options save=selected
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=50u
+X (0 iref vdd vinn vinp vocm voutn voutp) fd_two_stage_miller_opamp
+CLP (voutp 0) capacitor c=1p
+CLN (voutn 0) capacitor c=1p
+save voutp voutn vinp vinn vocm iref VDD:p
+VOCM (vocm 0) vsource dc=.9
+VCMD (src 0) vsource type=pwl wave=[0 -.2 20n -.2 21n .2 320n .2]
+EFB (err src voutp voutn) vcvs gain=-1
+EINP (vinp vocm err 0) vcvs gain=.5
+EINN (vinn vocm err 0) vcvs gain=-.5
+save src err
+tran tran stop=320n maxstep=25p strobeperiod=50p strobeoutput=strobeonly errpreset=conservative

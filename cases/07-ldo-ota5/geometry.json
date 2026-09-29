@@ -1,0 +1,192 @@
+{
+  "circuit_sha256": "76e466a10c5e9913522f67b64a5f1ee7498ad43eea2858a7405edc00c12c4bee",
+  "devices": [
+    {
+      "name": "MINP",
+      "pins": [
+        "nleft",
+        "fb",
+        "tail",
+        "tail"
+      ],
+      "model": "p18",
+      "W_unit_um": 79.52,
+      "L_um": 1.0,
+      "m": 3.0,
+      "W_total_um": 238.56
+    },
+    {
+      "name": "MINN",
+      "pins": [
+        "ampout",
+        "vref",
+        "tail",
+        "tail"
+      ],
+      "model": "p18",
+      "W_unit_um": 79.52,
+      "L_um": 1.0,
+      "m": 3.0,
+      "W_total_um": 238.56
+    },
+    {
+      "name": "MLOAD",
+      "pins": [
+        "nleft",
+        "nleft",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 86.32,
+      "L_um": 4.0,
+      "m": 1.0,
+      "W_total_um": 86.32
+    },
+    {
+      "name": "MLOUT",
+      "pins": [
+        "ampout",
+        "nleft",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 86.32,
+      "L_um": 4.0,
+      "m": 1.0,
+      "W_total_um": 86.32
+    },
+    {
+      "name": "MTAIL",
+      "pins": [
+        "tail",
+        "pbias",
+        "vin",
+        "vin"
+      ],
+      "model": "p18",
+      "W_unit_um": 32.26,
+      "L_um": 1.0,
+      "m": 10.0,
+      "W_total_um": 322.59999999999997
+    },
+    {
+      "name": "MREF",
+      "pins": [
+        "ibias",
+        "ibias",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 23.42,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 23.42
+    },
+    {
+      "name": "MPASS",
+      "pins": [
+        "vout",
+        "gate",
+        "vin",
+        "vin"
+      ],
+      "model": "p18",
+      "W_unit_um": 49.88,
+      "L_um": 0.18,
+      "m": 60.0,
+      "W_total_um": 2992.8
+    },
+    {
+      "name": "MPTREF",
+      "pins": [
+        "pbias",
+        "pbias",
+        "vin",
+        "vin"
+      ],
+      "model": "p18",
+      "W_unit_um": 32.26,
+      "L_um": 1.0,
+      "m": 1.0,
+      "W_total_um": 32.26
+    },
+    {
+      "name": "MNPT",
+      "pins": [
+        "pbias",
+        "ibias",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 23.42,
+      "L_um": 1.0,
+      "m": 0.2,
+      "W_total_um": 4.684
+    },
+    {
+      "name": "MSF",
+      "pins": [
+        "pbuf",
+        "ampout",
+        "gate_drive",
+        "gate_drive"
+      ],
+      "model": "p18",
+      "W_unit_um": 12.36,
+      "L_um": 0.18,
+      "m": 1.0,
+      "W_total_um": 12.36
+    },
+    {
+      "name": "MBUF",
+      "pins": [
+        "gate_drive",
+        "pbuf",
+        "vin",
+        "vin"
+      ],
+      "model": "p18",
+      "W_unit_um": 0.74,
+      "L_um": 0.18,
+      "m": 1.0,
+      "W_total_um": 0.74
+    },
+    {
+      "name": "MNBUF",
+      "pins": [
+        "pbuf",
+        "ibias",
+        "vss",
+        "vss"
+      ],
+      "model": "n18",
+      "W_unit_um": 23.42,
+      "L_um": 1.0,
+      "m": 0.6,
+      "W_total_um": 14.052000000000001
+    }
+  ],
+  "all_unit_widths_valid": true,
+  "m_interpretation": "Schematic parallel multiplier, fractional .2/.6 preserved; not a completed layout array.",
+  "passives": {
+    "RLAG": {
+      "model": "rpposab_3t",
+      "W_um": 1,
+      "L_um": 91.1083,
+      "target_Ohm": 30000
+    },
+    "CLAG": {
+      "model": "mim",
+      "W_um": 30,
+      "L_um": 30,
+      "m": 228.859,
+      "target_pF": 200,
+      "nominal_area_um2": 205973.1
+    }
+  },
+  "body_ties": "Input PMOS pair share isolated well tied to tail; MSF own well tied to gate_drive; remaining PMOS bulk VIN; NMOS bulk VSS."
+}

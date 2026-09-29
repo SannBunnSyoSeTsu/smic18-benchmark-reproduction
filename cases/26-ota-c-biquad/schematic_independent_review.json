@@ -1,0 +1,327 @@
+{
+  "slot": 26,
+  "case": "cases/26-ota-c-biquad",
+  "circuit_sha256": "ca1d973f73e9bc1899742bfe7698bdb9dfd31c3b23f2dd842da9dc403d49a82d",
+  "hd_cells_sha256": null,
+  "top": "fd_ota_c_biquad",
+  "source_definition_count": 42,
+  "source_terminal_count": 160,
+  "source_expanded_leaf_count": 51,
+  "hierarchy_boundaries": [
+    {
+      "path": "XGIN",
+      "definition": "gmc_core_bp",
+      "port_bindings": {
+        "vss": "vss",
+        "vdd": "vdd",
+        "vbn": "iref",
+        "vctrl": "vc1",
+        "inp": "vinp",
+        "inn": "vinn",
+        "outp": "vbpp",
+        "outn": "vbpn"
+      }
+    },
+    {
+      "path": "XGF",
+      "definition": "gmc_core",
+      "port_bindings": {
+        "vss": "vss",
+        "vdd": "vdd",
+        "vbn": "iref",
+        "vctrl": "vc2",
+        "inp": "vbpp",
+        "inn": "vbpn",
+        "outp": "voutp",
+        "outn": "voutn"
+      }
+    },
+    {
+      "path": "XGB",
+      "definition": "gmc_core_bp",
+      "port_bindings": {
+        "vss": "vss",
+        "vdd": "vdd",
+        "vbn": "iref",
+        "vctrl": "vc1",
+        "inp": "voutp",
+        "inn": "voutn",
+        "outp": "vbpn",
+        "outn": "vbpp"
+      }
+    },
+    {
+      "path": "XGQ",
+      "definition": "gmc_sink",
+      "port_bindings": {
+        "vss": "vss",
+        "vbn": "iref",
+        "inp": "vbpp",
+        "inn": "vbpn",
+        "outp": "vbpn",
+        "outn": "vbpp"
+      }
+    },
+    {
+      "path": "XCM1",
+      "definition": "cmfb_amp",
+      "port_bindings": {
+        "vss": "vss",
+        "vdd": "vdd",
+        "vbn": "iref",
+        "vocm": "vocm",
+        "vsense": "sense1",
+        "vctrl": "vc1"
+      }
+    },
+    {
+      "path": "XCM2",
+      "definition": "cmfb_amp",
+      "port_bindings": {
+        "vss": "vss",
+        "vdd": "vdd",
+        "vbn": "iref",
+        "vocm": "vocm",
+        "vsense": "sense2",
+        "vctrl": "vc2"
+      }
+    }
+  ],
+  "connectivity_sha256": "d33d2f292cf756a455b046e04dc62b293e3cda8c62dff286b2eab3e53e3b66b3",
+  "status": "passed",
+  "errors": [],
+  "schematic_definition_count": 42,
+  "schematic_expanded_leaf_count": 51,
+  "independently_traced_terminals": 160,
+  "expanded_leaf_counts_by_kind": {
+    "MOS": 35,
+    "R": 10,
+    "C": 6
+  },
+  "MOS_terminal_order_checks": [
+    {
+      "instance": "gmc_core/MTA",
+      "D_G_S_B": [
+        "ta",
+        "vbn",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gmc_core/MTB",
+      "D_G_S_B": [
+        "tb",
+        "vbn",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gmc_core/MA",
+      "D_G_S_B": [
+        "outn",
+        "inp",
+        "ta",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gmc_core/MB",
+      "D_G_S_B": [
+        "outp",
+        "inn",
+        "tb",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gmc_core/MLA",
+      "D_G_S_B": [
+        "outn",
+        "vctrl",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "gmc_core/MLB",
+      "D_G_S_B": [
+        "outp",
+        "vctrl",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "gmc_core_bp/MTA",
+      "D_G_S_B": [
+        "ta",
+        "vbn",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gmc_core_bp/MTB",
+      "D_G_S_B": [
+        "tb",
+        "vbn",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gmc_core_bp/MA",
+      "D_G_S_B": [
+        "outn",
+        "inp",
+        "ta",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gmc_core_bp/MB",
+      "D_G_S_B": [
+        "outp",
+        "inn",
+        "tb",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gmc_core_bp/MLA",
+      "D_G_S_B": [
+        "outn",
+        "vctrl",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "gmc_core_bp/MLB",
+      "D_G_S_B": [
+        "outp",
+        "vctrl",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "gmc_sink/MTA",
+      "D_G_S_B": [
+        "ta",
+        "vbn",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gmc_sink/MTB",
+      "D_G_S_B": [
+        "tb",
+        "vbn",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gmc_sink/MA",
+      "D_G_S_B": [
+        "outn",
+        "inp",
+        "ta",
+        "vss"
+      ]
+    },
+    {
+      "instance": "gmc_sink/MB",
+      "D_G_S_B": [
+        "outp",
+        "inn",
+        "tb",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cmfb_amp/MCTA",
+      "D_G_S_B": [
+        "cta",
+        "vbn",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cmfb_amp/MCTB",
+      "D_G_S_B": [
+        "ctb",
+        "vbn",
+        "vss",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cmfb_amp/MC1",
+      "D_G_S_B": [
+        "cd",
+        "vsense",
+        "cta",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cmfb_amp/MC2",
+      "D_G_S_B": [
+        "vctrl",
+        "vocm",
+        "ctb",
+        "vss"
+      ]
+    },
+    {
+      "instance": "cmfb_amp/MCL1",
+      "D_G_S_B": [
+        "cd",
+        "cd",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "cmfb_amp/MCL2",
+      "D_G_S_B": [
+        "vctrl",
+        "vctrl",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "instance": "fd_ota_c_biquad/MREF",
+      "D_G_S_B": [
+        "iref",
+        "iref",
+        "vss",
+        "vss"
+      ]
+    }
+  ],
+  "PDK_three_terminal_resistor_checks": [],
+  "HD_port_checks": [],
+  "parameters_compared": "Exact parameter-key/value dictionaries, plus independently converted MOS W/L/m labels",
+  "scoped_net_count": 51,
+  "hd_models_declared": {},
+  "HD_internal_MOS_counts": {},
+  "checks": {
+    "definitions_and_model_names": true,
+    "all_parameter_dicts": true,
+    "all_terminal_networks_and_order": true,
+    "MOS_D_G_S_B_order": true,
+    "resistor_third_terminal": true,
+    "HD_formal_supply_and_well_pins": true,
+    "hierarchy_expansion": true,
+    "net_index_membership": true,
+    "drawn_path_to_matching_net_label": true
+  }
+}

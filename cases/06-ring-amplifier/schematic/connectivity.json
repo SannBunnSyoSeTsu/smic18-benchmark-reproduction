@@ -1,0 +1,9617 @@
+{
+  "generated_at": "2026-09-29T03:12:27.264772+00:00",
+  "circuit_sha256": "96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1",
+  "top": "ring_amp8",
+  "subcircuit_ports": {
+    "ring_amp8": [
+      "vss",
+      "vdd",
+      "vinp",
+      "vinn",
+      "voutp",
+      "voutn",
+      "ibias",
+      "bn1",
+      "net4",
+      "net5",
+      "net7",
+      "net11",
+      "net13"
+    ]
+  },
+  "instances": {
+    "ring_amp8/MPM4": {
+      "name": "MPM4",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ibias",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM4 (ibias ibias vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        6,
+        22
+      ],
+      "rendered_pins": {
+        "D": [
+          6,
+          21
+        ],
+        "S": [
+          6,
+          23
+        ],
+        "G": [
+          4.45,
+          22
+        ],
+        "B": [
+          6.86,
+          22
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM5": {
+      "name": "MPM5",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "bn1",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM5 (bn1 ibias vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        16,
+        22
+      ],
+      "rendered_pins": {
+        "D": [
+          16,
+          21
+        ],
+        "S": [
+          16,
+          23
+        ],
+        "G": [
+          14.45,
+          22
+        ],
+        "B": [
+          16.86,
+          22
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM12": {
+      "name": "MPM12",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "bn2",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.344u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM12 (bn2 ibias vdd vdd) p18 w=2.344u l=0.36u",
+      "W_unit_um": 2.344,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        26,
+        22
+      ],
+      "rendered_pins": {
+        "D": [
+          26,
+          21
+        ],
+        "S": [
+          26,
+          23
+        ],
+        "G": [
+          24.45,
+          22
+        ],
+        "B": [
+          26.86,
+          22
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM10": {
+      "name": "MPM10",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "net6",
+        "G": "net6",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.36u",
+        "l": "0.18u"
+      },
+      "source_line": "MPM10 (net6 net6 vdd vdd) p18 w=4.36u l=0.18u",
+      "W_unit_um": 4.359999999999999,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        36,
+        22
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          21
+        ],
+        "S": [
+          36,
+          23
+        ],
+        "G": [
+          34.45,
+          22
+        ],
+        "B": [
+          36.86,
+          22
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM11": {
+      "name": "MPM11",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "bp2",
+        "G": "bp2",
+        "S": "net6",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.18u",
+        "l": "0.18u"
+      },
+      "source_line": "MPM11 (bp2 bp2 net6 vdd) p18 w=2.18u l=0.18u",
+      "W_unit_um": 2.1799999999999997,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        6,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          6,
+          13
+        ],
+        "S": [
+          6,
+          15
+        ],
+        "G": [
+          4.45,
+          14
+        ],
+        "B": [
+          6.86,
+          14
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM4": {
+      "name": "MNM4",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bn1",
+        "G": "bn1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.9u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM4 (bn1 bn1 vss vss) n18 w=1.9u l=0.36u",
+      "W_unit_um": 1.9,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        16,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          16,
+          15
+        ],
+        "S": [
+          16,
+          13
+        ],
+        "G": [
+          14.45,
+          14
+        ],
+        "B": [
+          16.86,
+          14
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM11": {
+      "name": "MNM11",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bp2",
+        "G": "bn1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.38u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM11 (bp2 bn1 vss vss) n18 w=0.38u l=0.36u",
+      "W_unit_um": 0.37999999999999995,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        26,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          26,
+          15
+        ],
+        "S": [
+          26,
+          13
+        ],
+        "G": [
+          24.45,
+          14
+        ],
+        "B": [
+          26.86,
+          14
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM12": {
+      "name": "MNM12",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net1",
+        "G": "net1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.8u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM12 (net1 net1 vss vss) n18 w=2.8u l=0.18u",
+      "W_unit_um": 2.8,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        36,
+        14
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          15
+        ],
+        "S": [
+          36,
+          13
+        ],
+        "G": [
+          34.45,
+          14
+        ],
+        "B": [
+          36.86,
+          14
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM13a": {
+      "name": "MNM13a",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bn2",
+        "G": "bn2",
+        "S": "net1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM13a (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        6,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          6,
+          7
+        ],
+        "S": [
+          6,
+          5
+        ],
+        "G": [
+          4.45,
+          6
+        ],
+        "B": [
+          6.86,
+          6
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM13b": {
+      "name": "MNM13b",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bn2",
+        "G": "bn2",
+        "S": "net1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM13b (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        16,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          16,
+          7
+        ],
+        "S": [
+          16,
+          5
+        ],
+        "G": [
+          14.45,
+          6
+        ],
+        "B": [
+          16.86,
+          6
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM13c": {
+      "name": "MNM13c",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bn2",
+        "G": "bn2",
+        "S": "net1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM13c (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        26,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          26,
+          7
+        ],
+        "S": [
+          26,
+          5
+        ],
+        "G": [
+          24.45,
+          6
+        ],
+        "B": [
+          26.86,
+          6
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM13d": {
+      "name": "MNM13d",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bn2",
+        "G": "bn2",
+        "S": "net1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM13d (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        36,
+        6
+      ],
+      "rendered_pins": {
+        "D": [
+          36,
+          7
+        ],
+        "S": [
+          36,
+          5
+        ],
+        "G": [
+          34.45,
+          6
+        ],
+        "B": [
+          36.86,
+          6
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM3": {
+      "name": "MPM3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vop1",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM3 (vop1 ibias vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        10,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          20
+        ],
+        "S": [
+          10,
+          22
+        ],
+        "G": [
+          8.45,
+          21
+        ],
+        "B": [
+          10.86,
+          21
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM0": {
+      "name": "MPM0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "von1",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM0 (von1 ibias vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        32,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          20
+        ],
+        "S": [
+          32,
+          22
+        ],
+        "G": [
+          30.45,
+          21
+        ],
+        "B": [
+          32.86,
+          21
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM1": {
+      "name": "MNM1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vop1",
+        "G": "vin",
+        "S": "net2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "9.94u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM1 (vop1 vin net2 vss) n18 w=9.94u l=0.36u",
+      "W_unit_um": 9.94,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        10,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          14
+        ],
+        "S": [
+          10,
+          12
+        ],
+        "G": [
+          8.45,
+          13
+        ],
+        "B": [
+          10.86,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM0": {
+      "name": "MNM0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "von1",
+        "G": "vip",
+        "S": "net2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "9.94u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM0 (von1 vip net2 vss) n18 w=9.94u l=0.36u",
+      "W_unit_um": 9.94,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        32,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          14
+        ],
+        "S": [
+          32,
+          12
+        ],
+        "G": [
+          30.45,
+          13
+        ],
+        "B": [
+          32.86,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM3": {
+      "name": "MNM3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net2",
+        "G": "bn1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.33u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM3 (net2 bn1 vss vss) n18 w=1.33u l=0.36u",
+      "W_unit_um": 1.33,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        7,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          7,
+          5
+        ],
+        "S": [
+          7,
+          3
+        ],
+        "G": [
+          5.45,
+          4
+        ],
+        "B": [
+          7.86,
+          4
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM14": {
+      "name": "MNM14",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net2",
+        "G": "net4",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.33u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM14 (net2 net4 vss vss) n18 w=1.33u l=0.36u",
+      "W_unit_um": 1.33,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        21,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          21,
+          5
+        ],
+        "S": [
+          21,
+          3
+        ],
+        "G": [
+          19.45,
+          4
+        ],
+        "B": [
+          21.86,
+          4
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM2": {
+      "name": "MNM2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net2",
+        "G": "net3",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.9u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM2 (net2 net3 vss vss) n18 w=1.9u l=0.36u",
+      "W_unit_um": 1.9,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 2,
+      "origin": [
+        35,
+        4
+      ],
+      "rendered_pins": {
+        "D": [
+          35,
+          5
+        ],
+        "S": [
+          35,
+          3
+        ],
+        "G": [
+          33.45,
+          4
+        ],
+        "B": [
+          35.86,
+          4
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/R3": {
+      "name": "R3",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "net3",
+        "2": "vop1"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "R3 (net3 vop1) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "sheet": 2,
+      "origin": [
+        18,
+        18
+      ],
+      "rendered_pins": {
+        "1": [
+          18.82,
+          18
+        ],
+        "2": [
+          17.18,
+          18
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/R1": {
+      "name": "R1",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "von1",
+        "2": "net3"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "R1 (von1 net3) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "sheet": 2,
+      "origin": [
+        25,
+        18
+      ],
+      "rendered_pins": {
+        "1": [
+          25.82,
+          18
+        ],
+        "2": [
+          24.18,
+          18
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM1": {
+      "name": "MPM1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vgp3",
+        "G": "net5",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM1 (vgp3 net5 vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        8,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          20
+        ],
+        "S": [
+          8,
+          22
+        ],
+        "G": [
+          6.45,
+          21
+        ],
+        "B": [
+          8.86,
+          21
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM13": {
+      "name": "MPM13",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vgn3",
+        "G": "bp2",
+        "S": "vgp3",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.18u",
+        "l": "0.18u"
+      },
+      "source_line": "MPM13 (vgn3 bp2 vgp3 vdd) p18 w=2.18u l=0.18u",
+      "W_unit_um": 2.1799999999999997,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        8,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          12
+        ],
+        "S": [
+          8,
+          14
+        ],
+        "G": [
+          6.45,
+          13
+        ],
+        "B": [
+          8.86,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM5": {
+      "name": "MNM5",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgn3",
+        "G": "net7",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.9u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM5 (vgn3 net7 vss vss) n18 w=1.9u l=0.36u",
+      "W_unit_um": 1.9,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        8,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          8,
+          6
+        ],
+        "S": [
+          8,
+          4
+        ],
+        "G": [
+          6.45,
+          5
+        ],
+        "B": [
+          8.86,
+          5
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM15a": {
+      "name": "MNM15a",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgp3",
+        "G": "bn2",
+        "S": "vgn3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM15a (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        17,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          17,
+          14
+        ],
+        "S": [
+          17,
+          12
+        ],
+        "G": [
+          15.45,
+          13
+        ],
+        "B": [
+          17.86,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM15b": {
+      "name": "MNM15b",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgp3",
+        "G": "bn2",
+        "S": "vgn3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM15b (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        24,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          24,
+          14
+        ],
+        "S": [
+          24,
+          12
+        ],
+        "G": [
+          22.45,
+          13
+        ],
+        "B": [
+          24.86,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM15c": {
+      "name": "MNM15c",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgp3",
+        "G": "bn2",
+        "S": "vgn3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM15c (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        31,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          31,
+          14
+        ],
+        "S": [
+          31,
+          12
+        ],
+        "G": [
+          29.45,
+          13
+        ],
+        "B": [
+          31.86,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM15d": {
+      "name": "MNM15d",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgp3",
+        "G": "bn2",
+        "S": "vgn3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM15d (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 3,
+      "origin": [
+        38,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          38,
+          14
+        ],
+        "S": [
+          38,
+          12
+        ],
+        "G": [
+          36.45,
+          13
+        ],
+        "B": [
+          38.86,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/C0": {
+      "name": "C0",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vop1",
+        "2": "net5"
+      },
+      "parameters": {
+        "c": "100f"
+      },
+      "source_line": "C0 (vop1 net5) capacitor c=100f",
+      "value_SI": 1e-13,
+      "sheet": 3,
+      "origin": [
+        21,
+        22
+      ],
+      "rendered_pins": {
+        "1": [
+          21,
+          22.82
+        ],
+        "2": [
+          21,
+          21.18
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/C1": {
+      "name": "C1",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vop1",
+        "2": "net7"
+      },
+      "parameters": {
+        "c": "100f"
+      },
+      "source_line": "C1 (vop1 net7) capacitor c=100f",
+      "value_SI": 1e-13,
+      "sheet": 3,
+      "origin": [
+        36,
+        22
+      ],
+      "rendered_pins": {
+        "1": [
+          36,
+          22.82
+        ],
+        "2": [
+          36,
+          21.18
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM8": {
+      "name": "MPM8",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "net8",
+        "G": "net11",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM8 (net8 net11 vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 4,
+      "origin": [
+        10,
+        21
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          20
+        ],
+        "S": [
+          10,
+          22
+        ],
+        "G": [
+          8.45,
+          21
+        ],
+        "B": [
+          10.86,
+          21
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM7": {
+      "name": "MPM7",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "net10",
+        "G": "bp2",
+        "S": "net8",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.18u",
+        "l": "0.18u"
+      },
+      "source_line": "MPM7 (net10 bp2 net8 vdd) p18 w=2.18u l=0.18u",
+      "W_unit_um": 2.1799999999999997,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 4,
+      "origin": [
+        10,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          12
+        ],
+        "S": [
+          10,
+          14
+        ],
+        "G": [
+          8.45,
+          13
+        ],
+        "B": [
+          10.86,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM8": {
+      "name": "MNM8",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net10",
+        "G": "net13",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.9u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM8 (net10 net13 vss vss) n18 w=1.9u l=0.36u",
+      "W_unit_um": 1.9,
+      "L_um": 0.36,
+      "m": 1.0,
+      "sheet": 4,
+      "origin": [
+        10,
+        5
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          6
+        ],
+        "S": [
+          10,
+          4
+        ],
+        "G": [
+          8.45,
+          5
+        ],
+        "B": [
+          10.86,
+          5
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM9": {
+      "name": "MNM9",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net8",
+        "G": "bn2",
+        "S": "net10",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.4u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM9 (net8 bn2 net10 vss) n18 w=1.4u l=0.18u",
+      "W_unit_um": 1.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "sheet": 4,
+      "origin": [
+        30,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          30,
+          14
+        ],
+        "S": [
+          30,
+          12
+        ],
+        "G": [
+          28.45,
+          13
+        ],
+        "B": [
+          30.86,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/C2": {
+      "name": "C2",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "von1",
+        "2": "net11"
+      },
+      "parameters": {
+        "c": "100f"
+      },
+      "source_line": "C2 (von1 net11) capacitor c=100f",
+      "value_SI": 1e-13,
+      "sheet": 4,
+      "origin": [
+        26,
+        22
+      ],
+      "rendered_pins": {
+        "1": [
+          26,
+          22.82
+        ],
+        "2": [
+          26,
+          21.18
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/C3": {
+      "name": "C3",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "von1",
+        "2": "net13"
+      },
+      "parameters": {
+        "c": "100f"
+      },
+      "source_line": "C3 (von1 net13) capacitor c=100f",
+      "value_SI": 1e-13,
+      "sheet": 4,
+      "origin": [
+        38,
+        22
+      ],
+      "rendered_pins": {
+        "1": [
+          38,
+          22.82
+        ],
+        "2": [
+          38,
+          21.18
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM6": {
+      "name": "MPM6",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "voutp",
+        "G": "vgp3",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.648u",
+        "l": "1u"
+      },
+      "source_line": "MPM6 (voutp vgp3 vdd vdd) p18 w=3.648u l=1u",
+      "W_unit_um": 3.648,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 5,
+      "origin": [
+        10,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          19
+        ],
+        "S": [
+          10,
+          21
+        ],
+        "G": [
+          8.45,
+          20
+        ],
+        "B": [
+          10.86,
+          20
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM7": {
+      "name": "MNM7",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "voutp",
+        "G": "vgn3",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.768u",
+        "l": "1u"
+      },
+      "source_line": "MNM7 (voutp vgn3 vss vss) n18 w=0.768u l=1u",
+      "W_unit_um": 0.768,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 5,
+      "origin": [
+        10,
+        8
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          9
+        ],
+        "S": [
+          10,
+          7
+        ],
+        "G": [
+          8.45,
+          8
+        ],
+        "B": [
+          10.86,
+          8
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MPM9": {
+      "name": "MPM9",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "voutn",
+        "G": "net8",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.648u",
+        "l": "1u"
+      },
+      "source_line": "MPM9 (voutn net8 vdd vdd) p18 w=3.648u l=1u",
+      "W_unit_um": 3.648,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 5,
+      "origin": [
+        32,
+        20
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          19
+        ],
+        "S": [
+          32,
+          21
+        ],
+        "G": [
+          30.45,
+          20
+        ],
+        "B": [
+          32.86,
+          20
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MNM10": {
+      "name": "MNM10",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "voutn",
+        "G": "net10",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.768u",
+        "l": "1u"
+      },
+      "source_line": "MNM10 (voutn net10 vss vss) n18 w=0.768u l=1u",
+      "W_unit_um": 0.768,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 5,
+      "origin": [
+        32,
+        8
+      ],
+      "rendered_pins": {
+        "D": [
+          32,
+          9
+        ],
+        "S": [
+          32,
+          7
+        ],
+        "G": [
+          30.45,
+          8
+        ],
+        "B": [
+          32.86,
+          8
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/C10": {
+      "name": "C10",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "net4",
+        "2": "voutp"
+      },
+      "parameters": {
+        "c": "500f"
+      },
+      "source_line": "C10 (net4 voutp) capacitor c=500f",
+      "value_SI": 5e-13,
+      "sheet": 5,
+      "origin": [
+        19,
+        14
+      ],
+      "rendered_pins": {
+        "1": [
+          19,
+          14.82
+        ],
+        "2": [
+          19,
+          13.18
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/C11": {
+      "name": "C11",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "net4",
+        "2": "voutn"
+      },
+      "parameters": {
+        "c": "500f"
+      },
+      "source_line": "C11 (net4 voutn) capacitor c=500f",
+      "value_SI": 5e-13,
+      "sheet": 5,
+      "origin": [
+        25,
+        14
+      ],
+      "rendered_pins": {
+        "1": [
+          25,
+          14.82
+        ],
+        "2": [
+          25,
+          13.18
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/L0": {
+      "name": "L0",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "vinp",
+        "2": "vip"
+      },
+      "parameters": {
+        "l": "1G"
+      },
+      "source_line": "L0 (vinp vip) inductor l=1G",
+      "sheet": 6,
+      "origin": [
+        7,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          6.18,
+          21
+        ],
+        "2": [
+          7.82,
+          21
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/L1": {
+      "name": "L1",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "vinn",
+        "2": "vin"
+      },
+      "parameters": {
+        "l": "1G"
+      },
+      "source_line": "L1 (vinn vin) inductor l=1G",
+      "sheet": 6,
+      "origin": [
+        31,
+        21
+      ],
+      "rendered_pins": {
+        "1": [
+          30.18,
+          21
+        ],
+        "2": [
+          31.82,
+          21
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/C4": {
+      "name": "C4",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vinp",
+        "2": "vip"
+      },
+      "parameters": {
+        "c": "800f"
+      },
+      "source_line": "C4 (vinp vip) capacitor c=800f",
+      "value_SI": 8e-13,
+      "sheet": 6,
+      "origin": [
+        7,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          6.18,
+          13
+        ],
+        "2": [
+          7.82,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/C5": {
+      "name": "C5",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vinn",
+        "2": "vin"
+      },
+      "parameters": {
+        "c": "800f"
+      },
+      "source_line": "C5 (vinn vin) capacitor c=800f",
+      "value_SI": 8e-13,
+      "sheet": 6,
+      "origin": [
+        31,
+        13
+      ],
+      "rendered_pins": {
+        "1": [
+          30.18,
+          13
+        ],
+        "2": [
+          31.82,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/C6": {
+      "name": "C6",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vip",
+        "2": "voutn"
+      },
+      "parameters": {
+        "c": "109.5f"
+      },
+      "source_line": "C6 (vip voutn) capacitor c=109.5f",
+      "value_SI": 1.0950000000000001e-13,
+      "sheet": 6,
+      "origin": [
+        7,
+        6
+      ],
+      "rendered_pins": {
+        "1": [
+          6.18,
+          6
+        ],
+        "2": [
+          7.82,
+          6
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/C7": {
+      "name": "C7",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vin",
+        "2": "voutp"
+      },
+      "parameters": {
+        "c": "109.5f"
+      },
+      "source_line": "C7 (vin voutp) capacitor c=109.5f",
+      "value_SI": 1.0950000000000001e-13,
+      "sheet": 6,
+      "origin": [
+        31,
+        6
+      ],
+      "rendered_pins": {
+        "1": [
+          30.18,
+          6
+        ],
+        "2": [
+          31.82,
+          6
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MSTARTP": {
+      "name": "MSTARTP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vinp",
+        "G": "ibias",
+        "S": "vip",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": ".5u",
+        "l": "1u"
+      },
+      "source_line": "MSTARTP (vinp ibias vip vss) n18 w=.5u l=1u",
+      "W_unit_um": 0.5,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 6,
+      "origin": [
+        17,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          17,
+          14
+        ],
+        "S": [
+          17,
+          12
+        ],
+        "G": [
+          15.45,
+          13
+        ],
+        "B": [
+          17.86,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    },
+    "ring_amp8/MSTARTN": {
+      "name": "MSTARTN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vinn",
+        "G": "ibias",
+        "S": "vin",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": ".5u",
+        "l": "1u"
+      },
+      "source_line": "MSTARTN (vinn ibias vin vss) n18 w=.5u l=1u",
+      "W_unit_um": 0.5,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 6,
+      "origin": [
+        41,
+        13
+      ],
+      "rendered_pins": {
+        "D": [
+          41,
+          14
+        ],
+        "S": [
+          41,
+          12
+        ],
+        "G": [
+          39.45,
+          13
+        ],
+        "B": [
+          41.86,
+          13
+        ]
+      },
+      "block": "ring_amp8"
+    }
+  },
+  "expanded_leaf_instances": {
+    "L0": {
+      "name": "L0",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "vinp",
+        "2": "vip"
+      },
+      "parameters": {
+        "l": "1G"
+      },
+      "source_line": "L0 (vinp vip) inductor l=1G",
+      "definition": "ring_amp8/L0",
+      "path": "L0"
+    },
+    "L1": {
+      "name": "L1",
+      "kind": "L",
+      "model": "inductor",
+      "pins": {
+        "1": "vinn",
+        "2": "vin"
+      },
+      "parameters": {
+        "l": "1G"
+      },
+      "source_line": "L1 (vinn vin) inductor l=1G",
+      "definition": "ring_amp8/L1",
+      "path": "L1"
+    },
+    "C11": {
+      "name": "C11",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "net4",
+        "2": "voutn"
+      },
+      "parameters": {
+        "c": "500f"
+      },
+      "source_line": "C11 (net4 voutn) capacitor c=500f",
+      "value_SI": 5e-13,
+      "definition": "ring_amp8/C11",
+      "path": "C11"
+    },
+    "C10": {
+      "name": "C10",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "net4",
+        "2": "voutp"
+      },
+      "parameters": {
+        "c": "500f"
+      },
+      "source_line": "C10 (net4 voutp) capacitor c=500f",
+      "value_SI": 5e-13,
+      "definition": "ring_amp8/C10",
+      "path": "C10"
+    },
+    "C7": {
+      "name": "C7",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vin",
+        "2": "voutp"
+      },
+      "parameters": {
+        "c": "109.5f"
+      },
+      "source_line": "C7 (vin voutp) capacitor c=109.5f",
+      "value_SI": 1.0950000000000001e-13,
+      "definition": "ring_amp8/C7",
+      "path": "C7"
+    },
+    "C6": {
+      "name": "C6",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vip",
+        "2": "voutn"
+      },
+      "parameters": {
+        "c": "109.5f"
+      },
+      "source_line": "C6 (vip voutn) capacitor c=109.5f",
+      "value_SI": 1.0950000000000001e-13,
+      "definition": "ring_amp8/C6",
+      "path": "C6"
+    },
+    "C5": {
+      "name": "C5",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vinn",
+        "2": "vin"
+      },
+      "parameters": {
+        "c": "800f"
+      },
+      "source_line": "C5 (vinn vin) capacitor c=800f",
+      "value_SI": 8e-13,
+      "definition": "ring_amp8/C5",
+      "path": "C5"
+    },
+    "C4": {
+      "name": "C4",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vinp",
+        "2": "vip"
+      },
+      "parameters": {
+        "c": "800f"
+      },
+      "source_line": "C4 (vinp vip) capacitor c=800f",
+      "value_SI": 8e-13,
+      "definition": "ring_amp8/C4",
+      "path": "C4"
+    },
+    "C3": {
+      "name": "C3",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "von1",
+        "2": "net13"
+      },
+      "parameters": {
+        "c": "100f"
+      },
+      "source_line": "C3 (von1 net13) capacitor c=100f",
+      "value_SI": 1e-13,
+      "definition": "ring_amp8/C3",
+      "path": "C3"
+    },
+    "C2": {
+      "name": "C2",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "von1",
+        "2": "net11"
+      },
+      "parameters": {
+        "c": "100f"
+      },
+      "source_line": "C2 (von1 net11) capacitor c=100f",
+      "value_SI": 1e-13,
+      "definition": "ring_amp8/C2",
+      "path": "C2"
+    },
+    "C1": {
+      "name": "C1",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vop1",
+        "2": "net7"
+      },
+      "parameters": {
+        "c": "100f"
+      },
+      "source_line": "C1 (vop1 net7) capacitor c=100f",
+      "value_SI": 1e-13,
+      "definition": "ring_amp8/C1",
+      "path": "C1"
+    },
+    "C0": {
+      "name": "C0",
+      "kind": "C",
+      "model": "capacitor",
+      "pins": {
+        "1": "vop1",
+        "2": "net5"
+      },
+      "parameters": {
+        "c": "100f"
+      },
+      "source_line": "C0 (vop1 net5) capacitor c=100f",
+      "value_SI": 1e-13,
+      "definition": "ring_amp8/C0",
+      "path": "C0"
+    },
+    "MNM14": {
+      "name": "MNM14",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net2",
+        "G": "net4",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.33u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM14 (net2 net4 vss vss) n18 w=1.33u l=0.36u",
+      "W_unit_um": 1.33,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM14",
+      "path": "MNM14"
+    },
+    "MNM13a": {
+      "name": "MNM13a",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bn2",
+        "G": "bn2",
+        "S": "net1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM13a (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM13a",
+      "path": "MNM13a"
+    },
+    "MNM13b": {
+      "name": "MNM13b",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bn2",
+        "G": "bn2",
+        "S": "net1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM13b (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM13b",
+      "path": "MNM13b"
+    },
+    "MNM13c": {
+      "name": "MNM13c",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bn2",
+        "G": "bn2",
+        "S": "net1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM13c (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM13c",
+      "path": "MNM13c"
+    },
+    "MNM13d": {
+      "name": "MNM13d",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bn2",
+        "G": "bn2",
+        "S": "net1",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM13d (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM13d",
+      "path": "MNM13d"
+    },
+    "MNM12": {
+      "name": "MNM12",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net1",
+        "G": "net1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "2.8u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM12 (net1 net1 vss vss) n18 w=2.8u l=0.18u",
+      "W_unit_um": 2.8,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM12",
+      "path": "MNM12"
+    },
+    "MNM11": {
+      "name": "MNM11",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bp2",
+        "G": "bn1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.38u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM11 (bp2 bn1 vss vss) n18 w=0.38u l=0.36u",
+      "W_unit_um": 0.37999999999999995,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM11",
+      "path": "MNM11"
+    },
+    "MNM10": {
+      "name": "MNM10",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "voutn",
+        "G": "net10",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.768u",
+        "l": "1u"
+      },
+      "source_line": "MNM10 (voutn net10 vss vss) n18 w=0.768u l=1u",
+      "W_unit_um": 0.768,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM10",
+      "path": "MNM10"
+    },
+    "MNM9": {
+      "name": "MNM9",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net8",
+        "G": "bn2",
+        "S": "net10",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.4u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM9 (net8 bn2 net10 vss) n18 w=1.4u l=0.18u",
+      "W_unit_um": 1.4,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM9",
+      "path": "MNM9"
+    },
+    "MNM8": {
+      "name": "MNM8",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net10",
+        "G": "net13",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.9u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM8 (net10 net13 vss vss) n18 w=1.9u l=0.36u",
+      "W_unit_um": 1.9,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM8",
+      "path": "MNM8"
+    },
+    "MNM7": {
+      "name": "MNM7",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "voutp",
+        "G": "vgn3",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.768u",
+        "l": "1u"
+      },
+      "source_line": "MNM7 (voutp vgn3 vss vss) n18 w=0.768u l=1u",
+      "W_unit_um": 0.768,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM7",
+      "path": "MNM7"
+    },
+    "MNM5": {
+      "name": "MNM5",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgn3",
+        "G": "net7",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.9u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM5 (vgn3 net7 vss vss) n18 w=1.9u l=0.36u",
+      "W_unit_um": 1.9,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM5",
+      "path": "MNM5"
+    },
+    "MNM4": {
+      "name": "MNM4",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "bn1",
+        "G": "bn1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.9u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM4 (bn1 bn1 vss vss) n18 w=1.9u l=0.36u",
+      "W_unit_um": 1.9,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM4",
+      "path": "MNM4"
+    },
+    "MNM15a": {
+      "name": "MNM15a",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgp3",
+        "G": "bn2",
+        "S": "vgn3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM15a (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM15a",
+      "path": "MNM15a"
+    },
+    "MNM15b": {
+      "name": "MNM15b",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgp3",
+        "G": "bn2",
+        "S": "vgn3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM15b (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM15b",
+      "path": "MNM15b"
+    },
+    "MNM15c": {
+      "name": "MNM15c",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgp3",
+        "G": "bn2",
+        "S": "vgn3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM15c (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM15c",
+      "path": "MNM15c"
+    },
+    "MNM15d": {
+      "name": "MNM15d",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vgp3",
+        "G": "bn2",
+        "S": "vgn3",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "0.35u",
+        "l": "0.18u"
+      },
+      "source_line": "MNM15d (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u",
+      "W_unit_um": 0.35,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM15d",
+      "path": "MNM15d"
+    },
+    "MNM3": {
+      "name": "MNM3",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net2",
+        "G": "bn1",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.33u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM3 (net2 bn1 vss vss) n18 w=1.33u l=0.36u",
+      "W_unit_um": 1.33,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM3",
+      "path": "MNM3"
+    },
+    "MNM2": {
+      "name": "MNM2",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "net2",
+        "G": "net3",
+        "S": "vss",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "1.9u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM2 (net2 net3 vss vss) n18 w=1.9u l=0.36u",
+      "W_unit_um": 1.9,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM2",
+      "path": "MNM2"
+    },
+    "MNM1": {
+      "name": "MNM1",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vop1",
+        "G": "vin",
+        "S": "net2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "9.94u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM1 (vop1 vin net2 vss) n18 w=9.94u l=0.36u",
+      "W_unit_um": 9.94,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM1",
+      "path": "MNM1"
+    },
+    "MNM0": {
+      "name": "MNM0",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "von1",
+        "G": "vip",
+        "S": "net2",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": "9.94u",
+        "l": "0.36u"
+      },
+      "source_line": "MNM0 (von1 vip net2 vss) n18 w=9.94u l=0.36u",
+      "W_unit_um": 9.94,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MNM0",
+      "path": "MNM0"
+    },
+    "MPM12": {
+      "name": "MPM12",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "bn2",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.344u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM12 (bn2 ibias vdd vdd) p18 w=2.344u l=0.36u",
+      "W_unit_um": 2.344,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM12",
+      "path": "MPM12"
+    },
+    "MPM11": {
+      "name": "MPM11",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "bp2",
+        "G": "bp2",
+        "S": "net6",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.18u",
+        "l": "0.18u"
+      },
+      "source_line": "MPM11 (bp2 bp2 net6 vdd) p18 w=2.18u l=0.18u",
+      "W_unit_um": 2.1799999999999997,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM11",
+      "path": "MPM11"
+    },
+    "MPM10": {
+      "name": "MPM10",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "net6",
+        "G": "net6",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "4.36u",
+        "l": "0.18u"
+      },
+      "source_line": "MPM10 (net6 net6 vdd vdd) p18 w=4.36u l=0.18u",
+      "W_unit_um": 4.359999999999999,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM10",
+      "path": "MPM10"
+    },
+    "MPM9": {
+      "name": "MPM9",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "voutn",
+        "G": "net8",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.648u",
+        "l": "1u"
+      },
+      "source_line": "MPM9 (voutn net8 vdd vdd) p18 w=3.648u l=1u",
+      "W_unit_um": 3.648,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM9",
+      "path": "MPM9"
+    },
+    "MPM8": {
+      "name": "MPM8",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "net8",
+        "G": "net11",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM8 (net8 net11 vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM8",
+      "path": "MPM8"
+    },
+    "MPM7": {
+      "name": "MPM7",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "net10",
+        "G": "bp2",
+        "S": "net8",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.18u",
+        "l": "0.18u"
+      },
+      "source_line": "MPM7 (net10 bp2 net8 vdd) p18 w=2.18u l=0.18u",
+      "W_unit_um": 2.1799999999999997,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM7",
+      "path": "MPM7"
+    },
+    "MPM6": {
+      "name": "MPM6",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "voutp",
+        "G": "vgp3",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "3.648u",
+        "l": "1u"
+      },
+      "source_line": "MPM6 (voutp vgp3 vdd vdd) p18 w=3.648u l=1u",
+      "W_unit_um": 3.648,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM6",
+      "path": "MPM6"
+    },
+    "MPM13": {
+      "name": "MPM13",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vgn3",
+        "G": "bp2",
+        "S": "vgp3",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "2.18u",
+        "l": "0.18u"
+      },
+      "source_line": "MPM13 (vgn3 bp2 vgp3 vdd) p18 w=2.18u l=0.18u",
+      "W_unit_um": 2.1799999999999997,
+      "L_um": 0.18,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM13",
+      "path": "MPM13"
+    },
+    "MPM1": {
+      "name": "MPM1",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vgp3",
+        "G": "net5",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM1 (vgp3 net5 vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM1",
+      "path": "MPM1"
+    },
+    "MPM5": {
+      "name": "MPM5",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "bn1",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM5 (bn1 ibias vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM5",
+      "path": "MPM5"
+    },
+    "MPM4": {
+      "name": "MPM4",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "ibias",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM4 (ibias ibias vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM4",
+      "path": "MPM4"
+    },
+    "MPM0": {
+      "name": "MPM0",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "von1",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM0 (von1 ibias vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM0",
+      "path": "MPM0"
+    },
+    "MPM3": {
+      "name": "MPM3",
+      "kind": "MOS",
+      "model": "p18",
+      "pins": {
+        "D": "vop1",
+        "G": "ibias",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "parameters": {
+        "w": "11.72u",
+        "l": "0.36u"
+      },
+      "source_line": "MPM3 (vop1 ibias vdd vdd) p18 w=11.72u l=0.36u",
+      "W_unit_um": 11.719999999999999,
+      "L_um": 0.36,
+      "m": 1.0,
+      "definition": "ring_amp8/MPM3",
+      "path": "MPM3"
+    },
+    "R3": {
+      "name": "R3",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "net3",
+        "2": "vop1"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "R3 (net3 vop1) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "definition": "ring_amp8/R3",
+      "path": "R3"
+    },
+    "R1": {
+      "name": "R1",
+      "kind": "R",
+      "model": "resistor",
+      "pins": {
+        "1": "von1",
+        "2": "net3"
+      },
+      "parameters": {
+        "r": "1Meg"
+      },
+      "source_line": "R1 (von1 net3) resistor r=1Meg",
+      "value_SI": 1000000.0,
+      "definition": "ring_amp8/R1",
+      "path": "R1"
+    },
+    "MSTARTP": {
+      "name": "MSTARTP",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vinp",
+        "G": "ibias",
+        "S": "vip",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": ".5u",
+        "l": "1u"
+      },
+      "source_line": "MSTARTP (vinp ibias vip vss) n18 w=.5u l=1u",
+      "W_unit_um": 0.5,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ring_amp8/MSTARTP",
+      "path": "MSTARTP"
+    },
+    "MSTARTN": {
+      "name": "MSTARTN",
+      "kind": "MOS",
+      "model": "n18",
+      "pins": {
+        "D": "vinn",
+        "G": "ibias",
+        "S": "vin",
+        "B": "vss"
+      },
+      "parameters": {
+        "w": ".5u",
+        "l": "1u"
+      },
+      "source_line": "MSTARTN (vinn ibias vin vss) n18 w=.5u l=1u",
+      "W_unit_um": 0.5,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "ring_amp8/MSTARTN",
+      "path": "MSTARTN"
+    }
+  },
+  "nets": {
+    "ring_amp8/ibias": [
+      {
+        "instance": "ring_amp8/MPM4",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          6,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM4",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          4.45,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM5",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          14.45,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM12",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          24.45,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM3",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          8.45,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM0",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          30.45,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MSTARTP",
+        "pin": "G",
+        "sheet": 6,
+        "point": [
+          15.45,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MSTARTN",
+        "pin": "G",
+        "sheet": 6,
+        "point": [
+          39.45,
+          13
+        ]
+      }
+    ],
+    "ring_amp8/vdd": [
+      {
+        "instance": "ring_amp8/MPM4",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          6,
+          23
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM4",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          6.86,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM5",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          16,
+          23
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM5",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          16.86,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM12",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          26,
+          23
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM12",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          26.86,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM10",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          36,
+          23
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM10",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          36.86,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM11",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          6.86,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM3",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          10,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM3",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          10.86,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM0",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          32,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM0",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          32.86,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM1",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          8,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM1",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          8.86,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM13",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          8.86,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM8",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          10,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM8",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          10.86,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM7",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          10.86,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM6",
+        "pin": "S",
+        "sheet": 5,
+        "point": [
+          10,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM6",
+        "pin": "B",
+        "sheet": 5,
+        "point": [
+          10.86,
+          20
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM9",
+        "pin": "S",
+        "sheet": 5,
+        "point": [
+          32,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM9",
+        "pin": "B",
+        "sheet": 5,
+        "point": [
+          32.86,
+          20
+        ]
+      }
+    ],
+    "ring_amp8/bn1": [
+      {
+        "instance": "ring_amp8/MPM5",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          16,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM4",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          16,
+          15
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM4",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          14.45,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM11",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          24.45,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM3",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          5.45,
+          4
+        ]
+      }
+    ],
+    "ring_amp8/bn2": [
+      {
+        "instance": "ring_amp8/MPM12",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          26,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13a",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          6,
+          7
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13a",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          4.45,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13b",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          16,
+          7
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13b",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          14.45,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13c",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          26,
+          7
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13c",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          24.45,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13d",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          36,
+          7
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13d",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          34.45,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15a",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          15.45,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15b",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          22.45,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15c",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          29.45,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15d",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          36.45,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM9",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          28.45,
+          13
+        ]
+      }
+    ],
+    "ring_amp8/net6": [
+      {
+        "instance": "ring_amp8/MPM10",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          36,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM10",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          34.45,
+          22
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM11",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          6,
+          15
+        ]
+      }
+    ],
+    "ring_amp8/bp2": [
+      {
+        "instance": "ring_amp8/MPM11",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          6,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM11",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          4.45,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM11",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          26,
+          15
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM13",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          6.45,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM7",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          8.45,
+          13
+        ]
+      }
+    ],
+    "ring_amp8/vss": [
+      {
+        "instance": "ring_amp8/MNM4",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          16,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM4",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          16.86,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM11",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          26,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM11",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          26.86,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM12",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          36,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM12",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          36.86,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13a",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          6.86,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13b",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          16.86,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13c",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          26.86,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13d",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          36.86,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM1",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          10.86,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM0",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          32.86,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM3",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          7,
+          3
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM3",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          7.86,
+          4
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM14",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          21,
+          3
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM14",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          21.86,
+          4
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM2",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          35,
+          3
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM2",
+        "pin": "B",
+        "sheet": 2,
+        "point": [
+          35.86,
+          4
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM5",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          8,
+          4
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM5",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          8.86,
+          5
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15a",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          17.86,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15b",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          24.86,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15c",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          31.86,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15d",
+        "pin": "B",
+        "sheet": 3,
+        "point": [
+          38.86,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM8",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          10,
+          4
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM8",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          10.86,
+          5
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM9",
+        "pin": "B",
+        "sheet": 4,
+        "point": [
+          30.86,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM7",
+        "pin": "S",
+        "sheet": 5,
+        "point": [
+          10,
+          7
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM7",
+        "pin": "B",
+        "sheet": 5,
+        "point": [
+          10.86,
+          8
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM10",
+        "pin": "S",
+        "sheet": 5,
+        "point": [
+          32,
+          7
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM10",
+        "pin": "B",
+        "sheet": 5,
+        "point": [
+          32.86,
+          8
+        ]
+      },
+      {
+        "instance": "ring_amp8/MSTARTP",
+        "pin": "B",
+        "sheet": 6,
+        "point": [
+          17.86,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MSTARTN",
+        "pin": "B",
+        "sheet": 6,
+        "point": [
+          41.86,
+          13
+        ]
+      }
+    ],
+    "ring_amp8/net1": [
+      {
+        "instance": "ring_amp8/MNM12",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          36,
+          15
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM12",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          34.45,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13a",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          6,
+          5
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13b",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          16,
+          5
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13c",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          26,
+          5
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM13d",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          36,
+          5
+        ]
+      }
+    ],
+    "ring_amp8/vop1": [
+      {
+        "instance": "ring_amp8/MPM3",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          10,
+          20
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM1",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          10,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/R3",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          17.18,
+          18
+        ]
+      },
+      {
+        "instance": "ring_amp8/C0",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          21,
+          22.82
+        ]
+      },
+      {
+        "instance": "ring_amp8/C1",
+        "pin": "1",
+        "sheet": 3,
+        "point": [
+          36,
+          22.82
+        ]
+      }
+    ],
+    "ring_amp8/von1": [
+      {
+        "instance": "ring_amp8/MPM0",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          32,
+          20
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM0",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          32,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/R1",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          25.82,
+          18
+        ]
+      },
+      {
+        "instance": "ring_amp8/C2",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          26,
+          22.82
+        ]
+      },
+      {
+        "instance": "ring_amp8/C3",
+        "pin": "1",
+        "sheet": 4,
+        "point": [
+          38,
+          22.82
+        ]
+      }
+    ],
+    "ring_amp8/vin": [
+      {
+        "instance": "ring_amp8/MNM1",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          8.45,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/L1",
+        "pin": "2",
+        "sheet": 6,
+        "point": [
+          31.82,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/C5",
+        "pin": "2",
+        "sheet": 6,
+        "point": [
+          31.82,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/C7",
+        "pin": "1",
+        "sheet": 6,
+        "point": [
+          30.18,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MSTARTN",
+        "pin": "S",
+        "sheet": 6,
+        "point": [
+          41,
+          12
+        ]
+      }
+    ],
+    "ring_amp8/net2": [
+      {
+        "instance": "ring_amp8/MNM1",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          10,
+          12
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM0",
+        "pin": "S",
+        "sheet": 2,
+        "point": [
+          32,
+          12
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM3",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          7,
+          5
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM14",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          21,
+          5
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM2",
+        "pin": "D",
+        "sheet": 2,
+        "point": [
+          35,
+          5
+        ]
+      }
+    ],
+    "ring_amp8/vip": [
+      {
+        "instance": "ring_amp8/MNM0",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          30.45,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/L0",
+        "pin": "2",
+        "sheet": 6,
+        "point": [
+          7.82,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/C4",
+        "pin": "2",
+        "sheet": 6,
+        "point": [
+          7.82,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/C6",
+        "pin": "1",
+        "sheet": 6,
+        "point": [
+          6.18,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MSTARTP",
+        "pin": "S",
+        "sheet": 6,
+        "point": [
+          17,
+          12
+        ]
+      }
+    ],
+    "ring_amp8/net4": [
+      {
+        "instance": "ring_amp8/MNM14",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          19.45,
+          4
+        ]
+      },
+      {
+        "instance": "ring_amp8/C10",
+        "pin": "1",
+        "sheet": 5,
+        "point": [
+          19,
+          14.82
+        ]
+      },
+      {
+        "instance": "ring_amp8/C11",
+        "pin": "1",
+        "sheet": 5,
+        "point": [
+          25,
+          14.82
+        ]
+      }
+    ],
+    "ring_amp8/net3": [
+      {
+        "instance": "ring_amp8/MNM2",
+        "pin": "G",
+        "sheet": 2,
+        "point": [
+          33.45,
+          4
+        ]
+      },
+      {
+        "instance": "ring_amp8/R3",
+        "pin": "1",
+        "sheet": 2,
+        "point": [
+          18.82,
+          18
+        ]
+      },
+      {
+        "instance": "ring_amp8/R1",
+        "pin": "2",
+        "sheet": 2,
+        "point": [
+          24.18,
+          18
+        ]
+      }
+    ],
+    "ring_amp8/vgp3": [
+      {
+        "instance": "ring_amp8/MPM1",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          8,
+          20
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM13",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          8,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15a",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          17,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15b",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          24,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15c",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          31,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15d",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          38,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM6",
+        "pin": "G",
+        "sheet": 5,
+        "point": [
+          8.45,
+          20
+        ]
+      }
+    ],
+    "ring_amp8/net5": [
+      {
+        "instance": "ring_amp8/MPM1",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          6.45,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/C0",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          21,
+          21.18
+        ]
+      }
+    ],
+    "ring_amp8/vgn3": [
+      {
+        "instance": "ring_amp8/MPM13",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          8,
+          12
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM5",
+        "pin": "D",
+        "sheet": 3,
+        "point": [
+          8,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15a",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          17,
+          12
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15b",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          24,
+          12
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15c",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          31,
+          12
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM15d",
+        "pin": "S",
+        "sheet": 3,
+        "point": [
+          38,
+          12
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM7",
+        "pin": "G",
+        "sheet": 5,
+        "point": [
+          8.45,
+          8
+        ]
+      }
+    ],
+    "ring_amp8/net7": [
+      {
+        "instance": "ring_amp8/MNM5",
+        "pin": "G",
+        "sheet": 3,
+        "point": [
+          6.45,
+          5
+        ]
+      },
+      {
+        "instance": "ring_amp8/C1",
+        "pin": "2",
+        "sheet": 3,
+        "point": [
+          36,
+          21.18
+        ]
+      }
+    ],
+    "ring_amp8/net8": [
+      {
+        "instance": "ring_amp8/MPM8",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          10,
+          20
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM7",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          10,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM9",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          30,
+          14
+        ]
+      },
+      {
+        "instance": "ring_amp8/MPM9",
+        "pin": "G",
+        "sheet": 5,
+        "point": [
+          30.45,
+          20
+        ]
+      }
+    ],
+    "ring_amp8/net11": [
+      {
+        "instance": "ring_amp8/MPM8",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          8.45,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/C2",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          26,
+          21.18
+        ]
+      }
+    ],
+    "ring_amp8/net10": [
+      {
+        "instance": "ring_amp8/MPM7",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          10,
+          12
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM8",
+        "pin": "D",
+        "sheet": 4,
+        "point": [
+          10,
+          6
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM9",
+        "pin": "S",
+        "sheet": 4,
+        "point": [
+          30,
+          12
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM10",
+        "pin": "G",
+        "sheet": 5,
+        "point": [
+          30.45,
+          8
+        ]
+      }
+    ],
+    "ring_amp8/net13": [
+      {
+        "instance": "ring_amp8/MNM8",
+        "pin": "G",
+        "sheet": 4,
+        "point": [
+          8.45,
+          5
+        ]
+      },
+      {
+        "instance": "ring_amp8/C3",
+        "pin": "2",
+        "sheet": 4,
+        "point": [
+          38,
+          21.18
+        ]
+      }
+    ],
+    "ring_amp8/voutp": [
+      {
+        "instance": "ring_amp8/MPM6",
+        "pin": "D",
+        "sheet": 5,
+        "point": [
+          10,
+          19
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM7",
+        "pin": "D",
+        "sheet": 5,
+        "point": [
+          10,
+          9
+        ]
+      },
+      {
+        "instance": "ring_amp8/C10",
+        "pin": "2",
+        "sheet": 5,
+        "point": [
+          19,
+          13.18
+        ]
+      },
+      {
+        "instance": "ring_amp8/C7",
+        "pin": "2",
+        "sheet": 6,
+        "point": [
+          31.82,
+          6
+        ]
+      }
+    ],
+    "ring_amp8/voutn": [
+      {
+        "instance": "ring_amp8/MPM9",
+        "pin": "D",
+        "sheet": 5,
+        "point": [
+          32,
+          19
+        ]
+      },
+      {
+        "instance": "ring_amp8/MNM10",
+        "pin": "D",
+        "sheet": 5,
+        "point": [
+          32,
+          9
+        ]
+      },
+      {
+        "instance": "ring_amp8/C11",
+        "pin": "2",
+        "sheet": 5,
+        "point": [
+          25,
+          13.18
+        ]
+      },
+      {
+        "instance": "ring_amp8/C6",
+        "pin": "2",
+        "sheet": 6,
+        "point": [
+          7.82,
+          6
+        ]
+      }
+    ],
+    "ring_amp8/vinp": [
+      {
+        "instance": "ring_amp8/L0",
+        "pin": "1",
+        "sheet": 6,
+        "point": [
+          6.18,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/C4",
+        "pin": "1",
+        "sheet": 6,
+        "point": [
+          6.18,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MSTARTP",
+        "pin": "D",
+        "sheet": 6,
+        "point": [
+          17,
+          14
+        ]
+      }
+    ],
+    "ring_amp8/vinn": [
+      {
+        "instance": "ring_amp8/L1",
+        "pin": "1",
+        "sheet": 6,
+        "point": [
+          30.18,
+          21
+        ]
+      },
+      {
+        "instance": "ring_amp8/C5",
+        "pin": "1",
+        "sheet": 6,
+        "point": [
+          30.18,
+          13
+        ]
+      },
+      {
+        "instance": "ring_amp8/MSTARTN",
+        "pin": "D",
+        "sheet": 6,
+        "point": [
+          41,
+          14
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MPM4",
+      "pin": "D",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM4",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM5",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM12",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM12",
+      "pin": "D",
+      "net": "net1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM12",
+      "pin": "G",
+      "net": "net1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13a",
+      "pin": "S",
+      "net": "net1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13b",
+      "pin": "S",
+      "net": "net1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13c",
+      "pin": "S",
+      "net": "net1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13d",
+      "pin": "S",
+      "net": "net1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM5",
+      "pin": "D",
+      "net": "bn1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM4",
+      "pin": "D",
+      "net": "bn1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM4",
+      "pin": "G",
+      "net": "bn1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM11",
+      "pin": "G",
+      "net": "bn1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM10",
+      "pin": "D",
+      "net": "net6",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM10",
+      "pin": "G",
+      "net": "net6",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM11",
+      "pin": "S",
+      "net": "net6",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM12",
+      "pin": "D",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13a",
+      "pin": "D",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13a",
+      "pin": "G",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13b",
+      "pin": "D",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13b",
+      "pin": "G",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13c",
+      "pin": "D",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13c",
+      "pin": "G",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13d",
+      "pin": "D",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13d",
+      "pin": "G",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM4",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM4",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM11",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM11",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM12",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM12",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13a",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13b",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13c",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM13d",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM11",
+      "pin": "D",
+      "net": "bp2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM11",
+      "pin": "G",
+      "net": "bp2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MNM11",
+      "pin": "D",
+      "net": "bp2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM4",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM4",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM5",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM5",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM12",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM12",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM10",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM10",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPM11",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM2",
+      "pin": "G",
+      "net": "net3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "R3",
+      "pin": "1",
+      "net": "net3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "R1",
+      "pin": "2",
+      "net": "net3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM0",
+      "pin": "G",
+      "net": "vip",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM3",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM0",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM3",
+      "pin": "G",
+      "net": "bn1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM1",
+      "pin": "S",
+      "net": "net2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM0",
+      "pin": "S",
+      "net": "net2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM3",
+      "pin": "D",
+      "net": "net2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM14",
+      "pin": "D",
+      "net": "net2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM2",
+      "pin": "D",
+      "net": "net2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM1",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM0",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM3",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM3",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM14",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM14",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM2",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM2",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM3",
+      "pin": "D",
+      "net": "vop1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM1",
+      "pin": "D",
+      "net": "vop1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "R3",
+      "pin": "2",
+      "net": "vop1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM1",
+      "pin": "G",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM3",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM3",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM0",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM0",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM14",
+      "pin": "G",
+      "net": "net4",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MPM0",
+      "pin": "D",
+      "net": "von1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "MNM0",
+      "pin": "D",
+      "net": "von1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 2,
+      "instance": "R1",
+      "pin": "1",
+      "net": "von1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM1",
+      "pin": "G",
+      "net": "net5",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "C0",
+      "pin": "2",
+      "net": "net5",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15a",
+      "pin": "G",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15b",
+      "pin": "G",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15c",
+      "pin": "G",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15d",
+      "pin": "G",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM5",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM5",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15a",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15b",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15c",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15d",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "C0",
+      "pin": "1",
+      "net": "vop1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "C1",
+      "pin": "1",
+      "net": "vop1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM13",
+      "pin": "G",
+      "net": "bp2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM13",
+      "pin": "D",
+      "net": "vgn3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM5",
+      "pin": "D",
+      "net": "vgn3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15a",
+      "pin": "S",
+      "net": "vgn3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15b",
+      "pin": "S",
+      "net": "vgn3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15c",
+      "pin": "S",
+      "net": "vgn3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15d",
+      "pin": "S",
+      "net": "vgn3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM1",
+      "pin": "D",
+      "net": "vgp3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM13",
+      "pin": "S",
+      "net": "vgp3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15a",
+      "pin": "D",
+      "net": "vgp3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15b",
+      "pin": "D",
+      "net": "vgp3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15c",
+      "pin": "D",
+      "net": "vgp3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM15d",
+      "pin": "D",
+      "net": "vgp3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM1",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM1",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MPM13",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "MNM5",
+      "pin": "G",
+      "net": "net7",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 3,
+      "instance": "C1",
+      "pin": "2",
+      "net": "net7",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MPM8",
+      "pin": "D",
+      "net": "net8",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MPM7",
+      "pin": "S",
+      "net": "net8",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MNM9",
+      "pin": "D",
+      "net": "net8",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MPM7",
+      "pin": "D",
+      "net": "net10",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MNM8",
+      "pin": "D",
+      "net": "net10",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MNM9",
+      "pin": "S",
+      "net": "net10",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MNM8",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MNM8",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MNM9",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MNM8",
+      "pin": "G",
+      "net": "net13",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "C3",
+      "pin": "2",
+      "net": "net13",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MPM7",
+      "pin": "G",
+      "net": "bp2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MNM9",
+      "pin": "G",
+      "net": "bn2",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MPM8",
+      "pin": "G",
+      "net": "net11",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "C2",
+      "pin": "2",
+      "net": "net11",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MPM8",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MPM8",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "MPM7",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "C2",
+      "pin": "1",
+      "net": "von1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 4,
+      "instance": "C3",
+      "pin": "1",
+      "net": "von1",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MPM9",
+      "pin": "G",
+      "net": "net8",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MPM9",
+      "pin": "D",
+      "net": "voutn",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MNM10",
+      "pin": "D",
+      "net": "voutn",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "C11",
+      "pin": "2",
+      "net": "voutn",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MNM10",
+      "pin": "G",
+      "net": "net10",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MNM7",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MNM7",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MNM10",
+      "pin": "S",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MNM10",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MPM6",
+      "pin": "D",
+      "net": "voutp",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MNM7",
+      "pin": "D",
+      "net": "voutp",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "C10",
+      "pin": "2",
+      "net": "voutp",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MNM7",
+      "pin": "G",
+      "net": "vgn3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MPM6",
+      "pin": "G",
+      "net": "vgp3",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MPM6",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MPM6",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MPM9",
+      "pin": "S",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "MPM9",
+      "pin": "B",
+      "net": "vdd",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "C10",
+      "pin": "1",
+      "net": "net4",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 5,
+      "instance": "C11",
+      "pin": "1",
+      "net": "net4",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "L0",
+      "pin": "2",
+      "net": "vip",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "C4",
+      "pin": "2",
+      "net": "vip",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "C6",
+      "pin": "1",
+      "net": "vip",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "MSTARTP",
+      "pin": "S",
+      "net": "vip",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "MSTARTP",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "MSTARTN",
+      "pin": "G",
+      "net": "ibias",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "L0",
+      "pin": "1",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "C4",
+      "pin": "1",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "MSTARTP",
+      "pin": "D",
+      "net": "vinp",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "C6",
+      "pin": "2",
+      "net": "voutn",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "MSTARTP",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "MSTARTN",
+      "pin": "B",
+      "net": "vss",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "C7",
+      "pin": "2",
+      "net": "voutp",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "L1",
+      "pin": "2",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "C5",
+      "pin": "2",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "C7",
+      "pin": "1",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "MSTARTN",
+      "pin": "S",
+      "net": "vin",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "L1",
+      "pin": "1",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "C5",
+      "pin": "1",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    },
+    {
+      "sheet": 6,
+      "instance": "MSTARTN",
+      "pin": "D",
+      "net": "vinn",
+      "path_to_named_net": true,
+      "block": "ring_amp8"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "ring_amp8",
+      "title": "基准电流与双极性级联偏置",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6.86,
+              22
+            ],
+            [
+              7.15,
+              22
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              16.86,
+              22
+            ],
+            [
+              17.15,
+              22
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              26.86,
+              22
+            ],
+            [
+              27.15,
+              22
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              36.86,
+              22
+            ],
+            [
+              37.15,
+              22
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6.86,
+              14
+            ],
+            [
+              7.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              16.86,
+              14
+            ],
+            [
+              17.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              26.86,
+              14
+            ],
+            [
+              27.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.86,
+              14
+            ],
+            [
+              37.15,
+              14
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              6.86,
+              6
+            ],
+            [
+              7.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              16.86,
+              6
+            ],
+            [
+              17.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              26.86,
+              6
+            ],
+            [
+              27.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36.86,
+              6
+            ],
+            [
+              37.15,
+              6
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              4.45,
+              22
+            ],
+            [
+              3.95,
+              22
+            ],
+            [
+              3.95,
+              19.8
+            ],
+            [
+              6,
+              19.8
+            ],
+            [
+              6,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net6",
+          "points": [
+            [
+              34.45,
+              22
+            ],
+            [
+              33.95,
+              22
+            ],
+            [
+              33.95,
+              19.8
+            ],
+            [
+              36,
+              19.8
+            ],
+            [
+              36,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bp2",
+          "points": [
+            [
+              4.45,
+              14
+            ],
+            [
+              3.95,
+              14
+            ],
+            [
+              3.95,
+              11.8
+            ],
+            [
+              6,
+              11.8
+            ],
+            [
+              6,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn1",
+          "points": [
+            [
+              14.45,
+              14
+            ],
+            [
+              13.95,
+              14
+            ],
+            [
+              13.95,
+              16.2
+            ],
+            [
+              16,
+              16.2
+            ],
+            [
+              16,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net1",
+          "points": [
+            [
+              34.45,
+              14
+            ],
+            [
+              33.95,
+              14
+            ],
+            [
+              33.95,
+              16.2
+            ],
+            [
+              36,
+              16.2
+            ],
+            [
+              36,
+              15
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "points": [
+            [
+              4.45,
+              6
+            ],
+            [
+              3.95,
+              6
+            ],
+            [
+              3.95,
+              8.2
+            ],
+            [
+              6,
+              8.2
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "points": [
+            [
+              14.45,
+              6
+            ],
+            [
+              13.95,
+              6
+            ],
+            [
+              13.95,
+              8.2
+            ],
+            [
+              16,
+              8.2
+            ],
+            [
+              16,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "points": [
+            [
+              24.45,
+              6
+            ],
+            [
+              23.95,
+              6
+            ],
+            [
+              23.95,
+              8.2
+            ],
+            [
+              26,
+              8.2
+            ],
+            [
+              26,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "points": [
+            [
+              34.45,
+              6
+            ],
+            [
+              33.95,
+              6
+            ],
+            [
+              33.95,
+              8.2
+            ],
+            [
+              36,
+              8.2
+            ],
+            [
+              36,
+              7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              6,
+              23
+            ],
+            [
+              6,
+              23.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn1",
+          "points": [
+            [
+              16,
+              21
+            ],
+            [
+              16,
+              20.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              16,
+              23
+            ],
+            [
+              16,
+              23.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              14.45,
+              22
+            ],
+            [
+              13.899999999999999,
+              22
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "points": [
+            [
+              26,
+              21
+            ],
+            [
+              26,
+              20.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              26,
+              23
+            ],
+            [
+              26,
+              23.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              24.45,
+              22
+            ],
+            [
+              23.9,
+              22
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              36,
+              23
+            ],
+            [
+              36,
+              23.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net6",
+          "points": [
+            [
+              6,
+              15
+            ],
+            [
+              6,
+              15.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              16,
+              13
+            ],
+            [
+              16,
+              12.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bp2",
+          "points": [
+            [
+              26,
+              15
+            ],
+            [
+              26,
+              15.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              26,
+              13
+            ],
+            [
+              26,
+              12.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn1",
+          "points": [
+            [
+              24.45,
+              14
+            ],
+            [
+              23.9,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              36,
+              13
+            ],
+            [
+              36,
+              12.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net1",
+          "points": [
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              4.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net1",
+          "points": [
+            [
+              16,
+              5
+            ],
+            [
+              16,
+              4.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net1",
+          "points": [
+            [
+              26,
+              5
+            ],
+            [
+              26,
+              4.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net1",
+          "points": [
+            [
+              36,
+              5
+            ],
+            [
+              36,
+              4.36
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            7.15,
+            22
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            17.15,
+            22
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            27.15,
+            22
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            37.15,
+            22
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            7.15,
+            14
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            17.15,
+            14
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            27.15,
+            14
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.15,
+            14
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            7.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            17.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            27.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            37.15,
+            6
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "ibias",
+          "point": [
+            5,
+            19.8
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "net6",
+          "point": [
+            35,
+            19.8
+          ],
+          "text": "net6",
+          "body": false
+        },
+        {
+          "net": "bp2",
+          "point": [
+            5,
+            11.8
+          ],
+          "text": "bp2",
+          "body": false
+        },
+        {
+          "net": "bn1",
+          "point": [
+            15,
+            16.2
+          ],
+          "text": "bn1",
+          "body": false
+        },
+        {
+          "net": "net1",
+          "point": [
+            35,
+            16.2
+          ],
+          "text": "net1",
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "point": [
+            5,
+            8.2
+          ],
+          "text": "bn2",
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "point": [
+            15,
+            8.2
+          ],
+          "text": "bn2",
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "point": [
+            25,
+            8.2
+          ],
+          "text": "bn2",
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "point": [
+            35,
+            8.2
+          ],
+          "text": "bn2",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            6,
+            23.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "bn1",
+          "point": [
+            16,
+            20.36
+          ],
+          "text": "bn1",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            16,
+            23.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            13.899999999999999,
+            22
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "point": [
+            26,
+            20.36
+          ],
+          "text": "bn2",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            26,
+            23.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            23.9,
+            22
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            36,
+            23.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "net6",
+          "point": [
+            6,
+            15.64
+          ],
+          "text": "net6",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            16,
+            12.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "bp2",
+          "point": [
+            26,
+            15.64
+          ],
+          "text": "bp2",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            26,
+            12.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "bn1",
+          "point": [
+            23.9,
+            14
+          ],
+          "text": "bn1",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            36,
+            12.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "net1",
+          "point": [
+            6,
+            4.36
+          ],
+          "text": "net1",
+          "body": false
+        },
+        {
+          "net": "net1",
+          "point": [
+            16,
+            4.36
+          ],
+          "text": "net1",
+          "body": false
+        },
+        {
+          "net": "net1",
+          "point": [
+            26,
+            4.36
+          ],
+          "text": "net1",
+          "body": false
+        },
+        {
+          "net": "net1",
+          "point": [
+            36,
+            4.36
+          ],
+          "text": "net1",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "block": "ring_amp8",
+      "title": "第一级差分输入、镜负载及共模检测",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10.86,
+              21
+            ],
+            [
+              11.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              32.86,
+              21
+            ],
+            [
+              33.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.86,
+              13
+            ],
+            [
+              11.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              32.86,
+              13
+            ],
+            [
+              33.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7.86,
+              4
+            ],
+            [
+              8.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21.86,
+              4
+            ],
+            [
+              22.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35.86,
+              4
+            ],
+            [
+              36.15,
+              4
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vop1",
+          "points": [
+            [
+              10,
+              20
+            ],
+            [
+              10,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "von1",
+          "points": [
+            [
+              32,
+              20
+            ],
+            [
+              32,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net2",
+          "points": [
+            [
+              7,
+              8
+            ],
+            [
+              35,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net2",
+          "points": [
+            [
+              7,
+              5
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net2",
+          "points": [
+            [
+              21,
+              5
+            ],
+            [
+              21,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net2",
+          "points": [
+            [
+              35,
+              5
+            ],
+            [
+              35,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net2",
+          "points": [
+            [
+              10,
+              12
+            ],
+            [
+              10,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net2",
+          "points": [
+            [
+              32,
+              12
+            ],
+            [
+              32,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net3",
+          "points": [
+            [
+              18.82,
+              18
+            ],
+            [
+              24.18,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10,
+              22
+            ],
+            [
+              10,
+              22.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              8.45,
+              21
+            ],
+            [
+              7.8999999999999995,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              32,
+              22
+            ],
+            [
+              32,
+              22.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              30.45,
+              21
+            ],
+            [
+              29.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              8.45,
+              13
+            ],
+            [
+              7.8999999999999995,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vip",
+          "points": [
+            [
+              30.45,
+              13
+            ],
+            [
+              29.9,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              7,
+              3
+            ],
+            [
+              7,
+              2.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn1",
+          "points": [
+            [
+              5.45,
+              4
+            ],
+            [
+              4.9,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              21,
+              3
+            ],
+            [
+              21,
+              2.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net4",
+          "points": [
+            [
+              19.45,
+              4
+            ],
+            [
+              18.9,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              35,
+              3
+            ],
+            [
+              35,
+              2.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net3",
+          "points": [
+            [
+              33.45,
+              4
+            ],
+            [
+              32.900000000000006,
+              4
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vop1",
+          "points": [
+            [
+              17.18,
+              18
+            ],
+            [
+              16.38,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "von1",
+          "points": [
+            [
+              25.82,
+              18
+            ],
+            [
+              26.62,
+              18
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            11.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            33.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            33.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            8.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            22.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            36.15,
+            4
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vop1",
+          "point": [
+            10.0,
+            17.0
+          ],
+          "text": "vop1",
+          "body": false
+        },
+        {
+          "net": "von1",
+          "point": [
+            32.0,
+            17.0
+          ],
+          "text": "von1",
+          "body": false
+        },
+        {
+          "net": "net2",
+          "point": [
+            7,
+            8
+          ],
+          "text": "net2",
+          "body": false
+        },
+        {
+          "net": "net3",
+          "point": [
+            21.5,
+            18.0
+          ],
+          "text": "net3",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            10,
+            22.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            7.8999999999999995,
+            21
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            32,
+            22.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            29.9,
+            21
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "vin",
+          "point": [
+            7.8999999999999995,
+            13
+          ],
+          "text": "vin",
+          "body": false
+        },
+        {
+          "net": "vip",
+          "point": [
+            29.9,
+            13
+          ],
+          "text": "vip",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            7,
+            2.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "bn1",
+          "point": [
+            4.9,
+            4
+          ],
+          "text": "bn1",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            21,
+            2.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "net4",
+          "point": [
+            18.9,
+            4
+          ],
+          "text": "net4",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            35,
+            2.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "net3",
+          "point": [
+            32.900000000000006,
+            4
+          ],
+          "text": "net3",
+          "body": false
+        },
+        {
+          "net": "vop1",
+          "point": [
+            16.38,
+            18
+          ],
+          "text": "vop1",
+          "body": false
+        },
+        {
+          "net": "von1",
+          "point": [
+            26.62,
+            18
+          ],
+          "text": "von1",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "block": "ring_amp8",
+      "title": "第二级正支路与自调零存储",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8.86,
+              21
+            ],
+            [
+              9.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8.86,
+              13
+            ],
+            [
+              9.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8.86,
+              5
+            ],
+            [
+              9.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              17.86,
+              13
+            ],
+            [
+              18.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              24.86,
+              13
+            ],
+            [
+              25.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              31.86,
+              13
+            ],
+            [
+              32.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              38.86,
+              13
+            ],
+            [
+              39.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vgp3",
+          "points": [
+            [
+              8,
+              20
+            ],
+            [
+              8,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgn3",
+          "points": [
+            [
+              8,
+              12
+            ],
+            [
+              8,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgp3",
+          "points": [
+            [
+              17,
+              18
+            ],
+            [
+              38,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgp3",
+          "points": [
+            [
+              17,
+              14
+            ],
+            [
+              17,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgp3",
+          "points": [
+            [
+              24,
+              14
+            ],
+            [
+              24,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgp3",
+          "points": [
+            [
+              31,
+              14
+            ],
+            [
+              31,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgp3",
+          "points": [
+            [
+              38,
+              14
+            ],
+            [
+              38,
+              18
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgn3",
+          "points": [
+            [
+              17,
+              8
+            ],
+            [
+              38,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgn3",
+          "points": [
+            [
+              17,
+              12
+            ],
+            [
+              17,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgn3",
+          "points": [
+            [
+              24,
+              12
+            ],
+            [
+              24,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgn3",
+          "points": [
+            [
+              31,
+              12
+            ],
+            [
+              31,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgn3",
+          "points": [
+            [
+              38,
+              12
+            ],
+            [
+              38,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              8,
+              22
+            ],
+            [
+              8,
+              22.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net5",
+          "points": [
+            [
+              6.45,
+              21
+            ],
+            [
+              5.9,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bp2",
+          "points": [
+            [
+              6.45,
+              13
+            ],
+            [
+              5.9,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              8,
+              4
+            ],
+            [
+              8,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net7",
+          "points": [
+            [
+              6.45,
+              5
+            ],
+            [
+              5.9,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "points": [
+            [
+              15.45,
+              13
+            ],
+            [
+              14.899999999999999,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "points": [
+            [
+              22.45,
+              13
+            ],
+            [
+              21.9,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "points": [
+            [
+              29.45,
+              13
+            ],
+            [
+              28.9,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "points": [
+            [
+              36.45,
+              13
+            ],
+            [
+              35.900000000000006,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vop1",
+          "points": [
+            [
+              21,
+              22.82
+            ],
+            [
+              21,
+              23.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net5",
+          "points": [
+            [
+              21,
+              21.18
+            ],
+            [
+              21,
+              20.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vop1",
+          "points": [
+            [
+              36,
+              22.82
+            ],
+            [
+              36,
+              23.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net7",
+          "points": [
+            [
+              36,
+              21.18
+            ],
+            [
+              36,
+              20.54
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            9.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            9.15,
+            13
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            9.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            18.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            25.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            32.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            39.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vgp3",
+          "point": [
+            8.0,
+            17.0
+          ],
+          "text": "vgp3",
+          "body": false
+        },
+        {
+          "net": "vgn3",
+          "point": [
+            8.0,
+            9.0
+          ],
+          "text": "vgn3",
+          "body": false
+        },
+        {
+          "net": "vgp3",
+          "point": [
+            17,
+            18
+          ],
+          "text": "vgp3",
+          "body": false
+        },
+        {
+          "net": "vgn3",
+          "point": [
+            17,
+            8
+          ],
+          "text": "vgn3",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            8,
+            22.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "net5",
+          "point": [
+            5.9,
+            21
+          ],
+          "text": "net5",
+          "body": false
+        },
+        {
+          "net": "bp2",
+          "point": [
+            5.9,
+            13
+          ],
+          "text": "bp2",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            8,
+            3.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "net7",
+          "point": [
+            5.9,
+            5
+          ],
+          "text": "net7",
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "point": [
+            14.899999999999999,
+            13
+          ],
+          "text": "bn2",
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "point": [
+            21.9,
+            13
+          ],
+          "text": "bn2",
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "point": [
+            28.9,
+            13
+          ],
+          "text": "bn2",
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "point": [
+            35.900000000000006,
+            13
+          ],
+          "text": "bn2",
+          "body": false
+        },
+        {
+          "net": "vop1",
+          "point": [
+            21,
+            23.46
+          ],
+          "text": "vop1",
+          "body": false
+        },
+        {
+          "net": "net5",
+          "point": [
+            21,
+            20.54
+          ],
+          "text": "net5",
+          "body": false
+        },
+        {
+          "net": "vop1",
+          "point": [
+            36,
+            23.46
+          ],
+          "text": "vop1",
+          "body": false
+        },
+        {
+          "net": "net7",
+          "point": [
+            36,
+            20.54
+          ],
+          "text": "net7",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "block": "ring_amp8",
+      "title": "第二级负支路与自调零存储",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10.86,
+              21
+            ],
+            [
+              11.15,
+              21
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10.86,
+              13
+            ],
+            [
+              11.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.86,
+              5
+            ],
+            [
+              11.15,
+              5
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              30.86,
+              13
+            ],
+            [
+              31.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "net8",
+          "points": [
+            [
+              10,
+              20
+            ],
+            [
+              10,
+              14
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net10",
+          "points": [
+            [
+              10,
+              12
+            ],
+            [
+              10,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net8",
+          "points": [
+            [
+              30,
+              14
+            ],
+            [
+              30,
+              18
+            ],
+            [
+              10,
+              18
+            ],
+            [
+              10,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net10",
+          "points": [
+            [
+              30,
+              12
+            ],
+            [
+              30,
+              8
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10,
+              22
+            ],
+            [
+              10,
+              22.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net11",
+          "points": [
+            [
+              8.45,
+              21
+            ],
+            [
+              7.8999999999999995,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bp2",
+          "points": [
+            [
+              8.45,
+              13
+            ],
+            [
+              7.8999999999999995,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              4
+            ],
+            [
+              10,
+              3.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net13",
+          "points": [
+            [
+              8.45,
+              5
+            ],
+            [
+              7.8999999999999995,
+              5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "points": [
+            [
+              28.45,
+              13
+            ],
+            [
+              27.9,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "von1",
+          "points": [
+            [
+              26,
+              22.82
+            ],
+            [
+              26,
+              23.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net11",
+          "points": [
+            [
+              26,
+              21.18
+            ],
+            [
+              26,
+              20.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "von1",
+          "points": [
+            [
+              38,
+              22.82
+            ],
+            [
+              38,
+              23.46
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net13",
+          "points": [
+            [
+              38,
+              21.18
+            ],
+            [
+              38,
+              20.54
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            11.15,
+            21
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            11.15,
+            13
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.15,
+            5
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            31.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "net8",
+          "point": [
+            10.0,
+            17.0
+          ],
+          "text": "net8",
+          "body": false
+        },
+        {
+          "net": "net10",
+          "point": [
+            10.0,
+            9.0
+          ],
+          "text": "net10",
+          "body": false
+        },
+        {
+          "net": "net8",
+          "point": [
+            30.0,
+            16.0
+          ],
+          "text": "net8",
+          "body": false
+        },
+        {
+          "net": "net10",
+          "point": [
+            30.0,
+            10.0
+          ],
+          "text": "net10",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            10,
+            22.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "net11",
+          "point": [
+            7.8999999999999995,
+            21
+          ],
+          "text": "net11",
+          "body": false
+        },
+        {
+          "net": "bp2",
+          "point": [
+            7.8999999999999995,
+            13
+          ],
+          "text": "bp2",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            10,
+            3.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "net13",
+          "point": [
+            7.8999999999999995,
+            5
+          ],
+          "text": "net13",
+          "body": false
+        },
+        {
+          "net": "bn2",
+          "point": [
+            27.9,
+            13
+          ],
+          "text": "bn2",
+          "body": false
+        },
+        {
+          "net": "von1",
+          "point": [
+            26,
+            23.46
+          ],
+          "text": "von1",
+          "body": false
+        },
+        {
+          "net": "net11",
+          "point": [
+            26,
+            20.54
+          ],
+          "text": "net11",
+          "body": false
+        },
+        {
+          "net": "von1",
+          "point": [
+            38,
+            23.46
+          ],
+          "text": "von1",
+          "body": false
+        },
+        {
+          "net": "net13",
+          "point": [
+            38,
+            20.54
+          ],
+          "text": "net13",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "block": "ring_amp8",
+      "title": "互补输出级与输出共模电容反馈",
+      "wires": [
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10.86,
+              20
+            ],
+            [
+              11.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10.86,
+              8
+            ],
+            [
+              11.15,
+              8
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              32.86,
+              20
+            ],
+            [
+              33.15,
+              20
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              32.86,
+              8
+            ],
+            [
+              33.15,
+              8
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "voutp",
+          "points": [
+            [
+              10,
+              19
+            ],
+            [
+              10,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "voutn",
+          "points": [
+            [
+              32,
+              19
+            ],
+            [
+              32,
+              9
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net4",
+          "points": [
+            [
+              19,
+              14.82
+            ],
+            [
+              19,
+              17
+            ],
+            [
+              25,
+              17
+            ],
+            [
+              25,
+              14.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              21.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgp3",
+          "points": [
+            [
+              8.45,
+              20
+            ],
+            [
+              7.8999999999999995,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vgn3",
+          "points": [
+            [
+              8.45,
+              8
+            ],
+            [
+              7.8999999999999995,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "points": [
+            [
+              32,
+              21
+            ],
+            [
+              32,
+              21.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net8",
+          "points": [
+            [
+              30.45,
+              20
+            ],
+            [
+              29.9,
+              20
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              32,
+              7
+            ],
+            [
+              32,
+              6.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "net10",
+          "points": [
+            [
+              30.45,
+              8
+            ],
+            [
+              29.9,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "voutp",
+          "points": [
+            [
+              19,
+              13.18
+            ],
+            [
+              19,
+              12.54
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "voutn",
+          "points": [
+            [
+              25,
+              13.18
+            ],
+            [
+              25,
+              12.54
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vdd",
+          "point": [
+            11.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            11.15,
+            8
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vdd",
+          "point": [
+            33.15,
+            20
+          ],
+          "text": "vdd",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            33.15,
+            8
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "voutp",
+          "point": [
+            10.0,
+            14.0
+          ],
+          "text": "voutp",
+          "body": false
+        },
+        {
+          "net": "voutn",
+          "point": [
+            32.0,
+            14.0
+          ],
+          "text": "voutn",
+          "body": false
+        },
+        {
+          "net": "net4",
+          "point": [
+            19.0,
+            15.91
+          ],
+          "text": "net4",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            10,
+            21.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "vgp3",
+          "point": [
+            7.8999999999999995,
+            20
+          ],
+          "text": "vgp3",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            10,
+            6.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "vgn3",
+          "point": [
+            7.8999999999999995,
+            8
+          ],
+          "text": "vgn3",
+          "body": false
+        },
+        {
+          "net": "vdd",
+          "point": [
+            32,
+            21.64
+          ],
+          "text": "vdd",
+          "body": false
+        },
+        {
+          "net": "net8",
+          "point": [
+            29.9,
+            20
+          ],
+          "text": "net8",
+          "body": false
+        },
+        {
+          "net": "vss",
+          "point": [
+            32,
+            6.36
+          ],
+          "text": "vss",
+          "body": false
+        },
+        {
+          "net": "net10",
+          "point": [
+            29.9,
+            8
+          ],
+          "text": "net10",
+          "body": false
+        },
+        {
+          "net": "voutp",
+          "point": [
+            19,
+            12.54
+          ],
+          "text": "voutp",
+          "body": false
+        },
+        {
+          "net": "voutn",
+          "point": [
+            25,
+            12.54
+          ],
+          "text": "voutn",
+          "body": false
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "block": "ring_amp8",
+      "title": "交流耦合、反馈电容与弱启动支路",
+      "wires": [
+        {
+          "net": "vss",
+          "points": [
+            [
+              17.86,
+              13
+            ],
+            [
+              18.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vss",
+          "points": [
+            [
+              41.86,
+              13
+            ],
+            [
+              42.15,
+              13
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              6.18,
+              21
+            ],
+            [
+              5.38,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vip",
+          "points": [
+            [
+              7.82,
+              21
+            ],
+            [
+              8.620000000000001,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              30.18,
+              21
+            ],
+            [
+              29.38,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              31.82,
+              21
+            ],
+            [
+              32.62,
+              21
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              6.18,
+              13
+            ],
+            [
+              5.38,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vip",
+          "points": [
+            [
+              7.82,
+              13
+            ],
+            [
+              8.620000000000001,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              30.18,
+              13
+            ],
+            [
+              29.38,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              31.82,
+              13
+            ],
+            [
+              32.62,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vip",
+          "points": [
+            [
+              6.18,
+              6
+            ],
+            [
+              5.38,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "voutn",
+          "points": [
+            [
+              7.82,
+              6
+            ],
+            [
+              8.620000000000001,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              30.18,
+              6
+            ],
+            [
+              29.38,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "voutp",
+          "points": [
+            [
+              31.82,
+              6
+            ],
+            [
+              32.62,
+              6
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "points": [
+            [
+              17,
+              14
+            ],
+            [
+              17,
+              14.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vip",
+          "points": [
+            [
+              17,
+              12
+            ],
+            [
+              17,
+              11.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              15.45,
+              13
+            ],
+            [
+              14.899999999999999,
+              13
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "points": [
+            [
+              41,
+              14
+            ],
+            [
+              41,
+              14.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "vin",
+          "points": [
+            [
+              41,
+              12
+            ],
+            [
+              41,
+              11.36
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "points": [
+            [
+              39.45,
+              13
+            ],
+            [
+              38.900000000000006,
+              13
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "vss",
+          "point": [
+            18.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vss",
+          "point": [
+            42.15,
+            13
+          ],
+          "text": "vss",
+          "body": true
+        },
+        {
+          "net": "vinp",
+          "point": [
+            5.38,
+            21
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "vip",
+          "point": [
+            8.620000000000001,
+            21
+          ],
+          "text": "vip",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            29.38,
+            21
+          ],
+          "text": "vinn",
+          "body": false
+        },
+        {
+          "net": "vin",
+          "point": [
+            32.62,
+            21
+          ],
+          "text": "vin",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            5.38,
+            13
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "vip",
+          "point": [
+            8.620000000000001,
+            13
+          ],
+          "text": "vip",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            29.38,
+            13
+          ],
+          "text": "vinn",
+          "body": false
+        },
+        {
+          "net": "vin",
+          "point": [
+            32.62,
+            13
+          ],
+          "text": "vin",
+          "body": false
+        },
+        {
+          "net": "vip",
+          "point": [
+            5.38,
+            6
+          ],
+          "text": "vip",
+          "body": false
+        },
+        {
+          "net": "voutn",
+          "point": [
+            8.620000000000001,
+            6
+          ],
+          "text": "voutn",
+          "body": false
+        },
+        {
+          "net": "vin",
+          "point": [
+            29.38,
+            6
+          ],
+          "text": "vin",
+          "body": false
+        },
+        {
+          "net": "voutp",
+          "point": [
+            32.62,
+            6
+          ],
+          "text": "voutp",
+          "body": false
+        },
+        {
+          "net": "vinp",
+          "point": [
+            17,
+            14.64
+          ],
+          "text": "vinp",
+          "body": false
+        },
+        {
+          "net": "vip",
+          "point": [
+            17,
+            11.36
+          ],
+          "text": "vip",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            14.899999999999999,
+            13
+          ],
+          "text": "ibias",
+          "body": false
+        },
+        {
+          "net": "vinn",
+          "point": [
+            41,
+            14.64
+          ],
+          "text": "vinn",
+          "body": false
+        },
+        {
+          "net": "vin",
+          "point": [
+            41,
+            11.36
+          ],
+          "text": "vin",
+          "body": false
+        },
+        {
+          "net": "ibias",
+          "point": [
+            38.900000000000006,
+            13
+          ],
+          "text": "ibias",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "ring_amp8": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

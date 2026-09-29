@@ -1,0 +1,53 @@
+simulator lang=spectre
+subckt ring_amp8 (vss vdd vinp vinn voutp voutn ibias bn1 net4 net5 net7 net11 net13)
+L0 (vinp vip) inductor l=1G
+L1 (vinn vin) inductor l=1G
+C11 (net4 voutn) capacitor c=500f
+C10 (net4 voutp) capacitor c=500f
+C7 (vin voutp) capacitor c=109.5f
+C6 (vip voutn) capacitor c=109.5f
+C5 (vinn vin) capacitor c=800f
+C4 (vinp vip) capacitor c=800f
+C3 (von1 net13) capacitor c=100f
+C2 (von1 net11) capacitor c=100f
+C1 (vop1 net7) capacitor c=100f
+C0 (vop1 net5) capacitor c=100f
+MNM14 (net2 net4 vss vss) n18 w=1.33u l=0.36u
+MNM13a (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u
+MNM13b (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u
+MNM13c (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u
+MNM13d (bn2 bn2 net1 vss) n18 w=0.35u l=0.18u
+MNM12 (net1 net1 vss vss) n18 w=2.8u l=0.18u
+MNM11 (bp2 bn1 vss vss) n18 w=0.38u l=0.36u
+MNM10 (voutn net10 vss vss) n18 w=0.768u l=1u
+MNM9 (net8 bn2 net10 vss) n18 w=1.4u l=0.18u
+MNM8 (net10 net13 vss vss) n18 w=1.9u l=0.36u
+MNM7 (voutp vgn3 vss vss) n18 w=0.768u l=1u
+MNM5 (vgn3 net7 vss vss) n18 w=1.9u l=0.36u
+MNM4 (bn1 bn1 vss vss) n18 w=1.9u l=0.36u
+MNM15a (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u
+MNM15b (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u
+MNM15c (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u
+MNM15d (vgp3 bn2 vgn3 vss) n18 w=0.35u l=0.18u
+MNM3 (net2 bn1 vss vss) n18 w=1.33u l=0.36u
+MNM2 (net2 net3 vss vss) n18 w=1.9u l=0.36u
+MNM1 (vop1 vin net2 vss) n18 w=9.94u l=0.36u
+MNM0 (von1 vip net2 vss) n18 w=9.94u l=0.36u
+MPM12 (bn2 ibias vdd vdd) p18 w=2.344u l=0.36u
+MPM11 (bp2 bp2 net6 vdd) p18 w=2.18u l=0.18u
+MPM10 (net6 net6 vdd vdd) p18 w=4.36u l=0.18u
+MPM9 (voutn net8 vdd vdd) p18 w=3.648u l=1u
+MPM8 (net8 net11 vdd vdd) p18 w=11.72u l=0.36u
+MPM7 (net10 bp2 net8 vdd) p18 w=2.18u l=0.18u
+MPM6 (voutp vgp3 vdd vdd) p18 w=3.648u l=1u
+MPM13 (vgn3 bp2 vgp3 vdd) p18 w=2.18u l=0.18u
+MPM1 (vgp3 net5 vdd vdd) p18 w=11.72u l=0.36u
+MPM5 (bn1 ibias vdd vdd) p18 w=11.72u l=0.36u
+MPM4 (ibias ibias vdd vdd) p18 w=11.72u l=0.36u
+MPM0 (von1 ibias vdd vdd) p18 w=11.72u l=0.36u
+MPM3 (vop1 ibias vdd vdd) p18 w=11.72u l=0.36u
+R3 (net3 vop1) resistor r=1Meg
+R1 (von1 net3) resistor r=1Meg
+MSTARTP (vinp ibias vip vss) n18 w=.5u l=1u
+MSTARTN (vinn ibias vin vss) n18 w=.5u l=1u
+ends ring_amp8

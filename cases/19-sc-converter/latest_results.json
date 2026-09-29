@@ -1,0 +1,454 @@
+{
+  "case_slot": 19,
+  "generated_at": "2026-09-28T18:03:51.505435+00:00",
+  "status": "complete_original",
+  "values": {
+    "loads": [
+      {
+        "load_ohm": 680,
+        "vout_mean_V": 0.8350782686930445,
+        "vout_min_V": 0.8091538220637206,
+        "vout_max_V": 0.8531511326700713,
+        "supply_power_W": 0.0013190272544218627,
+        "clock_power_W": 1.5069025210371494e-07,
+        "load_power_W": 0.0010257932646564362,
+        "conversion_ratio": 0.4639323714961358,
+        "ripple_V": 0.043997310606350704,
+        "input_power_W": 0.0013191779446739664,
+        "load_current_A": 0.0012280562774897713,
+        "efficiency": 0.7776003751411718,
+        "startup_s": 3.167511617358945e-08,
+        "post_startup_min_V": 0.8091538035504748
+      },
+      {
+        "load_ohm": 6800,
+        "vout_mean_V": 0.8895266940232415,
+        "vout_min_V": 0.8862766116666271,
+        "vout_max_V": 0.8916255799837765,
+        "supply_power_W": 0.0003364700761543637,
+        "clock_power_W": 1.5069022134279878e-07,
+        "load_power_W": 0.0001163617898546035,
+        "conversion_ratio": 0.49418149667957856,
+        "ripple_V": 0.005348968317149372,
+        "input_power_W": 0.0003366207663757065,
+        "load_current_A": 0.0001308127491210649,
+        "efficiency": 0.34567620740525173
+      }
+    ],
+    "output_resistance_ohm": 49.62291772287466
+  },
+  "gates": {
+    "heavy_conversion_ratio_min": {
+      "value": 0.4639323714961358,
+      "unit": "ratio",
+      "sense": "min",
+      "limits": {
+        "original": 0.42,
+        "10pct": 0.378,
+        "15pct": 0.357
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "heavy_efficiency_min": {
+      "value": 0.7776003751411718,
+      "unit": "ratio",
+      "sense": "min",
+      "limits": {
+        "original": 0.7,
+        "10pct": 0.63,
+        "15pct": 0.595
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "heavy_conversion_ratio_max": {
+      "value": 0.4639323714961358,
+      "unit": "ratio",
+      "sense": "max",
+      "limits": {
+        "original": 0.51,
+        "10pct": 0.561,
+        "15pct": 0.5864999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "heavy_efficiency_max": {
+      "value": 0.7776003751411718,
+      "unit": "ratio",
+      "sense": "max",
+      "limits": {
+        "original": 1.0,
+        "10pct": 1.0,
+        "15pct": 1.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "heavy_ripple_V": {
+      "value": 0.043997310606350704,
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.08,
+        "10pct": 0.08800000000000001,
+        "15pct": 0.092
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_s": {
+      "value": 3.167511617358945e-08,
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 2e-07,
+        "10pct": 2.2e-07,
+        "15pct": 2.2999999999999997e-07
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "startup_hold_V": {
+      "value": 0.8091538035504748,
+      "unit": "V",
+      "sense": "min",
+      "limits": {
+        "original": 0.6804,
+        "10pct": 0.6804,
+        "15pct": 0.6804
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "light_conversion_ratio_min": {
+      "value": 0.49418149667957856,
+      "unit": "ratio",
+      "sense": "min",
+      "limits": {
+        "original": 0.45,
+        "10pct": 0.405,
+        "15pct": 0.3825
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "light_efficiency_min": {
+      "value": 0.34567620740525173,
+      "unit": "ratio",
+      "sense": "min",
+      "limits": {
+        "original": 0.3,
+        "10pct": 0.27,
+        "15pct": 0.255
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "light_conversion_ratio_max": {
+      "value": 0.49418149667957856,
+      "unit": "ratio",
+      "sense": "max",
+      "limits": {
+        "original": 0.51,
+        "10pct": 0.561,
+        "15pct": 0.5864999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "light_efficiency_max": {
+      "value": 0.34567620740525173,
+      "unit": "ratio",
+      "sense": "max",
+      "limits": {
+        "original": 1.0,
+        "10pct": 1.0,
+        "15pct": 1.0
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "light_input_power_W": {
+      "value": 0.0003366207663757065,
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.0005,
+        "10pct": 0.00055,
+        "15pct": 0.000575
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    },
+    "output_resistance_ohm": {
+      "value": 49.62291772287466,
+      "unit": "ohm",
+      "sense": "max",
+      "limits": {
+        "original": 100.0,
+        "10pct": 110.00000000000001,
+        "15pct": 114.99999999999999
+      },
+      "passes": {
+        "original": true,
+        "10pct": true,
+        "15pct": true
+      }
+    }
+  },
+  "pass_tiers": {
+    "original": true,
+    "10pct": true,
+    "15pct": true
+  },
+  "groups": {
+    "heavy": "runs/19/20260928T180312781626Z_heavy",
+    "light": "runs/19/20260928T180328082966Z_light"
+  },
+  "run_dirs": [
+    "runs/19/20260928T180312781626Z_heavy",
+    "runs/19/20260928T180328082966Z_light"
+  ],
+  "circuit_sha256": "69f65f854aa02cd025a190dd4448aa16840e73ba6a835cdde88687dfe010f144",
+  "contract_sha256": "f5422a4fecc7b136c3d157b1aa1a6a9c862a77c291b4e81a2972810b8e642a68",
+  "scope": "SMIC18 TT1.8V27C, matched680/6800ohm loads with all original nominal checks. Other44active and2passive corners excluded.",
+  "all_nominal_checks_complete": true,
+  "model_dimensions_valid": true,
+  "nonrelaxable_guards_pass": true,
+  "terminal_voltages": [
+    {
+      "load": "heavy",
+      "device": "MP1A",
+      "peaks_V": {
+        "VGS": 1.8120098188708147,
+        "VGD": 1.8066201331391185,
+        "VDS": 1.8,
+        "VGB": 1.8120098188708147,
+        "VDB": 1.8,
+        "VSB": 0.0
+      }
+    },
+    {
+      "load": "heavy",
+      "device": "MN3A",
+      "peaks_V": {
+        "VGS": 1.4888056931015905,
+        "VGD": 1.202220610157552,
+        "VDS": 0.8563764829682974,
+        "VGB": 1.818830647835981,
+        "VDB": 1.019113874937865,
+        "VSB": 0.8531511326700713
+      }
+    },
+    {
+      "load": "heavy",
+      "device": "MN2A",
+      "peaks_V": {
+        "VGS": 1.7465364948253104,
+        "VGD": 1.8066076448000274,
+        "VDS": 1.1580347679345273,
+        "VGB": 1.812016270503144,
+        "VDB": 1.806799668225184,
+        "VSB": 0.8531511326700713
+      }
+    },
+    {
+      "load": "heavy",
+      "device": "MN4A",
+      "peaks_V": {
+        "VGS": 1.812016270503144,
+        "VGD": 1.8535607977981878,
+        "VDS": 1.019113874937865,
+        "VGB": 1.812016270503144,
+        "VDB": 1.019113874937865,
+        "VSB": 0.0
+      }
+    },
+    {
+      "load": "heavy",
+      "device": "MP1B",
+      "peaks_V": {
+        "VGS": 1.8127999128847805,
+        "VGD": 1.805723012823978,
+        "VDS": 1.8,
+        "VGB": 1.8127999128847805,
+        "VDB": 1.8,
+        "VSB": 0.0
+      }
+    },
+    {
+      "load": "heavy",
+      "device": "MN3B",
+      "peaks_V": {
+        "VGS": 1.765723332100379,
+        "VGD": 1.5373012899826033,
+        "VDS": 0.9499035402279162,
+        "VGB": 1.818831135110141,
+        "VDB": 0.9522141342516395,
+        "VSB": 0.8531511326700713
+      }
+    },
+    {
+      "load": "heavy",
+      "device": "MN2B",
+      "peaks_V": {
+        "VGS": 1.4487252140038123,
+        "VGD": 1.8066086088959437,
+        "VDS": 1.141110396398168,
+        "VGB": 1.811209142307679,
+        "VDB": 1.806800764178675,
+        "VSB": 0.8531511326700713
+      }
+    },
+    {
+      "load": "heavy",
+      "device": "MN4B",
+      "peaks_V": {
+        "VGS": 1.811209142307679,
+        "VGD": 1.9195005156038343,
+        "VDS": 0.9522141342516395,
+        "VGB": 1.811209142307679,
+        "VDB": 0.9522141342516395,
+        "VSB": 0.0
+      }
+    },
+    {
+      "load": "light",
+      "device": "MP1A",
+      "peaks_V": {
+        "VGS": 1.812013466352099,
+        "VGD": 1.811185441934341,
+        "VDS": 1.8,
+        "VGB": 1.812013466352099,
+        "VDB": 1.8,
+        "VSB": 0.0
+      }
+    },
+    {
+      "load": "light",
+      "device": "MN3A",
+      "peaks_V": {
+        "VGS": 1.4853247012843542,
+        "VGD": 1.197748400668054,
+        "VDS": 0.9298176531554416,
+        "VGB": 1.819231918026329,
+        "VDB": 1.019777896540026,
+        "VSB": 0.8916255799837765
+      }
+    },
+    {
+      "load": "light",
+      "device": "MN2A",
+      "peaks_V": {
+        "VGS": 1.7464765010179721,
+        "VGD": 1.8165320834277623,
+        "VDS": 1.1181237104763575,
+        "VGB": 1.812042293540739,
+        "VDB": 1.816845621335289,
+        "VSB": 0.8916255799837765
+      }
+    },
+    {
+      "load": "light",
+      "device": "MN4A",
+      "peaks_V": {
+        "VGS": 1.812042293540739,
+        "VGD": 1.8437326236510927,
+        "VDS": 1.019777896540026,
+        "VGB": 1.812042293540739,
+        "VDB": 1.019777896540026,
+        "VSB": 0.0
+      }
+    },
+    {
+      "load": "light",
+      "device": "MP1B",
+      "peaks_V": {
+        "VGS": 1.8128000081263547,
+        "VGD": 1.811185430362514,
+        "VDS": 1.8,
+        "VGB": 1.8128000081263547,
+        "VDB": 1.8,
+        "VSB": 0.0
+      }
+    },
+    {
+      "load": "light",
+      "device": "MN3B",
+      "peaks_V": {
+        "VGS": 1.7657016164400698,
+        "VGD": 1.5372767976877433,
+        "VDS": 0.9499022630460257,
+        "VGB": 1.819232002618784,
+        "VDB": 0.9522138192635008,
+        "VSB": 0.8916255799837765
+      }
+    },
+    {
+      "load": "light",
+      "device": "MN2B",
+      "peaks_V": {
+        "VGS": 1.4450265851962176,
+        "VGD": 1.8165338363062613,
+        "VDS": 1.1401277206001423,
+        "VGB": 1.811289583073684,
+        "VDB": 1.816847556509925,
+        "VSB": 0.8916255799837765
+      }
+    },
+    {
+      "load": "light",
+      "device": "MN4B",
+      "peaks_V": {
+        "VGS": 1.811289583073684,
+        "VGD": 1.9184992771416614,
+        "VDS": 0.9522138192635008,
+        "VGB": 1.811289583073684,
+        "VDB": 0.9522138192635008,
+        "VSB": 0.0
+      }
+    }
+  ],
+  "disallowed_warnings": {
+    "heavy": [],
+    "light": []
+  }
+}

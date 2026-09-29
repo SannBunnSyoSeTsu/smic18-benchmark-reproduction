@@ -1,0 +1,20 @@
+simulator lang=spectre
+global 0
+include "/home/IC/Tech/smic_018mmrf-OA/SMIC_018_MMRF/models/spectre/ms018_v1p7_spe.lib" section=tt
+include "/home/IC/CodeX/smic18_benchmark_repro/runs/04/20260922T062025898382Z_gmr/inputs/circuit.scs"
+simulatorOptions options temp=27 tnom=27 reltol=1e-5 vabstol=1e-9 iabstol=1e-14
+VDD (vdd 0) vsource dc=1.8
+IREF (vdd iref) isource dc=50u
+VCM (vcm 0) vsource dc=.9
+VIP (vip 0) vsource dc=.9 mag=.5 type=sine ampl=50m freq=3M
+VIN (vin 0) vsource dc=.9 mag=.5 phase=180 type=sine ampl=50m freq=3M sinephase=180
+XDUT (iref vcm vdd vin vip von vop 0) gmr_degen
+CLP (vop 0) capacitor c=1p
+CLN (von 0) capacitor c=1p
+saveOptions options save=selected
+save vdd vcm vin vip von vop iref XDUT.tail XDUT.sn XDUT.sp VDD:p VCM:p VIN:p VIP:p
+save XDUT.MINP:ids XDUT.MINP:gm XDUT.MINP:gmbs XDUT.MINP:gds XDUT.MINP:vgs XDUT.MINP:vds XDUT.MINP:vdsat XDUT.MINP:region
+save XDUT.MTAIL:ids XDUT.MTAIL:gm XDUT.MTAIL:vds XDUT.MTAIL:vdsat XDUT.MTAIL:region
+dcOp dc
+ac ac start=100k stop=11G dec=150
+tran tran stop=1.5u maxstep=500p strobeperiod=1n strobeoutput=strobeonly errpreset=conservative

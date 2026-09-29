@@ -1,0 +1,2061 @@
+{
+  "generated_at": "2026-09-26T04:17:06.990979+00:00",
+  "circuit_sha256": "e04ccef10f5421ebe9f379e9baa59e99fd238fb5b7db73ba28bf47e11f07b0de",
+  "top": "charge_pump_unregulate",
+  "subcircuit_ports": {
+    "charge_pump_unregulate": [
+      "AVDD",
+      "AVSS",
+      "CLK",
+      "EN",
+      "VOUT"
+    ]
+  },
+  "instances": {
+    "charge_pump_unregulate/XEN": {
+      "name": "XEN",
+      "kind": "HD",
+      "model": "NAND2HDV1",
+      "pins": {
+        "A1": "CLK",
+        "A2": "EN",
+        "ZN": "gated",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XEN (CLK EN gated AVDD AVSS AVDD AVSS) NAND2HDV1",
+      "sheet": 1,
+      "origin": [
+        7,
+        20
+      ],
+      "rendered_pins": {
+        "A1": [
+          4.3,
+          20.5
+        ],
+        "A2": [
+          4.3,
+          19.5
+        ],
+        "ZN": [
+          9.7,
+          20.0
+        ],
+        "VDD": [
+          6.2,
+          22.2
+        ],
+        "VNW": [
+          7.8,
+          22.2
+        ],
+        "VSS": [
+          6.2,
+          17.8
+        ],
+        "VPW": [
+          7.8,
+          17.8
+        ]
+      },
+      "block": "charge_pump_unregulate"
+    },
+    "charge_pump_unregulate/XPH0": {
+      "name": "XPH0",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "gated",
+        "ZN": "ph0",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XPH0 (gated ph0 AVDD AVSS AVDD AVSS) INHDV16",
+      "sheet": 1,
+      "origin": [
+        23,
+        20
+      ],
+      "rendered_pins": {
+        "I": [
+          20.3,
+          20.0
+        ],
+        "ZN": [
+          25.7,
+          20.0
+        ],
+        "VDD": [
+          22.2,
+          22.2
+        ],
+        "VNW": [
+          23.8,
+          22.2
+        ],
+        "VSS": [
+          22.2,
+          17.8
+        ],
+        "VPW": [
+          23.8,
+          17.8
+        ]
+      },
+      "block": "charge_pump_unregulate"
+    },
+    "charge_pump_unregulate/XPH1": {
+      "name": "XPH1",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "ph0",
+        "ZN": "ph1",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XPH1 (ph0 ph1 AVDD AVSS AVDD AVSS) INHDV16",
+      "sheet": 1,
+      "origin": [
+        38,
+        20
+      ],
+      "rendered_pins": {
+        "I": [
+          35.3,
+          20.0
+        ],
+        "ZN": [
+          40.7,
+          20.0
+        ],
+        "VDD": [
+          37.2,
+          22.2
+        ],
+        "VNW": [
+          38.8,
+          22.2
+        ],
+        "VSS": [
+          37.2,
+          17.8
+        ],
+        "VPW": [
+          38.8,
+          17.8
+        ]
+      },
+      "block": "charge_pump_unregulate"
+    },
+    "charge_pump_unregulate/MPRE0": {
+      "name": "MPRE0",
+      "kind": "MOS",
+      "model": "nnt33",
+      "pins": {
+        "D": "AVDD",
+        "G": "p1",
+        "S": "p0",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "3.36u",
+        "l": "1u"
+      },
+      "source_line": "MPRE0 (AVDD p1 p0 AVSS) nnt33 w=3.36u l=1u",
+      "W_unit_um": 3.3599999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        10,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          10,
+          12
+        ],
+        "S": [
+          10,
+          10
+        ],
+        "G": [
+          8.45,
+          11
+        ],
+        "B": [
+          10.86,
+          11
+        ]
+      },
+      "block": "charge_pump_unregulate"
+    },
+    "charge_pump_unregulate/MRECT0": {
+      "name": "MRECT0",
+      "kind": "MOS",
+      "model": "nnt33",
+      "pins": {
+        "D": "VOUT",
+        "G": "p0",
+        "S": "p0",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "16.84u",
+        "l": "1u"
+      },
+      "source_line": "MRECT0 (VOUT p0 p0 AVSS) nnt33 w=16.84u l=1u",
+      "W_unit_um": 16.839999999999996,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        20,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          20,
+          12
+        ],
+        "S": [
+          20,
+          10
+        ],
+        "G": [
+          18.45,
+          11
+        ],
+        "B": [
+          20.86,
+          11
+        ]
+      },
+      "block": "charge_pump_unregulate"
+    },
+    "charge_pump_unregulate/CF0": {
+      "name": "CF0",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "p0",
+        "2": "ph0"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "51.49330587u"
+      },
+      "source_line": "CF0 (p0 ph0) mim w=100u l=51.49330587u",
+      "sheet": 1,
+      "origin": [
+        10,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          10,
+          5.82
+        ],
+        "2": [
+          10,
+          4.18
+        ]
+      },
+      "block": "charge_pump_unregulate"
+    },
+    "charge_pump_unregulate/MPRE1": {
+      "name": "MPRE1",
+      "kind": "MOS",
+      "model": "nnt33",
+      "pins": {
+        "D": "AVDD",
+        "G": "p0",
+        "S": "p1",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "3.36u",
+        "l": "1u"
+      },
+      "source_line": "MPRE1 (AVDD p0 p1 AVSS) nnt33 w=3.36u l=1u",
+      "W_unit_um": 3.3599999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        31,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          31,
+          12
+        ],
+        "S": [
+          31,
+          10
+        ],
+        "G": [
+          29.45,
+          11
+        ],
+        "B": [
+          31.86,
+          11
+        ]
+      },
+      "block": "charge_pump_unregulate"
+    },
+    "charge_pump_unregulate/MRECT1": {
+      "name": "MRECT1",
+      "kind": "MOS",
+      "model": "nnt33",
+      "pins": {
+        "D": "VOUT",
+        "G": "p1",
+        "S": "p1",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "16.84u",
+        "l": "1u"
+      },
+      "source_line": "MRECT1 (VOUT p1 p1 AVSS) nnt33 w=16.84u l=1u",
+      "W_unit_um": 16.839999999999996,
+      "L_um": 1.0,
+      "m": 1.0,
+      "sheet": 1,
+      "origin": [
+        41,
+        11
+      ],
+      "rendered_pins": {
+        "D": [
+          41,
+          12
+        ],
+        "S": [
+          41,
+          10
+        ],
+        "G": [
+          39.45,
+          11
+        ],
+        "B": [
+          41.86,
+          11
+        ]
+      },
+      "block": "charge_pump_unregulate"
+    },
+    "charge_pump_unregulate/CF1": {
+      "name": "CF1",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "p1",
+        "2": "ph1"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "51.49330587u"
+      },
+      "source_line": "CF1 (p1 ph1) mim w=100u l=51.49330587u",
+      "sheet": 1,
+      "origin": [
+        31,
+        5
+      ],
+      "rendered_pins": {
+        "1": [
+          31,
+          5.82
+        ],
+        "2": [
+          31,
+          4.18
+        ]
+      },
+      "block": "charge_pump_unregulate"
+    }
+  },
+  "expanded_leaf_instances": {
+    "XEN": {
+      "name": "XEN",
+      "kind": "HD",
+      "model": "NAND2HDV1",
+      "pins": {
+        "A1": "CLK",
+        "A2": "EN",
+        "ZN": "gated",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XEN (CLK EN gated AVDD AVSS AVDD AVSS) NAND2HDV1",
+      "definition": "charge_pump_unregulate/XEN",
+      "path": "XEN"
+    },
+    "XPH0": {
+      "name": "XPH0",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "gated",
+        "ZN": "ph0",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XPH0 (gated ph0 AVDD AVSS AVDD AVSS) INHDV16",
+      "definition": "charge_pump_unregulate/XPH0",
+      "path": "XPH0"
+    },
+    "XPH1": {
+      "name": "XPH1",
+      "kind": "HD",
+      "model": "INHDV16",
+      "pins": {
+        "I": "ph0",
+        "ZN": "ph1",
+        "VDD": "AVDD",
+        "VSS": "AVSS",
+        "VNW": "AVDD",
+        "VPW": "AVSS"
+      },
+      "parameters": {},
+      "source_line": "XPH1 (ph0 ph1 AVDD AVSS AVDD AVSS) INHDV16",
+      "definition": "charge_pump_unregulate/XPH1",
+      "path": "XPH1"
+    },
+    "CF0": {
+      "name": "CF0",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "p0",
+        "2": "ph0"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "51.49330587u"
+      },
+      "source_line": "CF0 (p0 ph0) mim w=100u l=51.49330587u",
+      "definition": "charge_pump_unregulate/CF0",
+      "path": "CF0"
+    },
+    "CF1": {
+      "name": "CF1",
+      "kind": "C",
+      "model": "mim",
+      "pins": {
+        "1": "p1",
+        "2": "ph1"
+      },
+      "parameters": {
+        "w": "100u",
+        "l": "51.49330587u"
+      },
+      "source_line": "CF1 (p1 ph1) mim w=100u l=51.49330587u",
+      "definition": "charge_pump_unregulate/CF1",
+      "path": "CF1"
+    },
+    "MPRE0": {
+      "name": "MPRE0",
+      "kind": "MOS",
+      "model": "nnt33",
+      "pins": {
+        "D": "AVDD",
+        "G": "p1",
+        "S": "p0",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "3.36u",
+        "l": "1u"
+      },
+      "source_line": "MPRE0 (AVDD p1 p0 AVSS) nnt33 w=3.36u l=1u",
+      "W_unit_um": 3.3599999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "charge_pump_unregulate/MPRE0",
+      "path": "MPRE0"
+    },
+    "MPRE1": {
+      "name": "MPRE1",
+      "kind": "MOS",
+      "model": "nnt33",
+      "pins": {
+        "D": "AVDD",
+        "G": "p0",
+        "S": "p1",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "3.36u",
+        "l": "1u"
+      },
+      "source_line": "MPRE1 (AVDD p0 p1 AVSS) nnt33 w=3.36u l=1u",
+      "W_unit_um": 3.3599999999999994,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "charge_pump_unregulate/MPRE1",
+      "path": "MPRE1"
+    },
+    "MRECT0": {
+      "name": "MRECT0",
+      "kind": "MOS",
+      "model": "nnt33",
+      "pins": {
+        "D": "VOUT",
+        "G": "p0",
+        "S": "p0",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "16.84u",
+        "l": "1u"
+      },
+      "source_line": "MRECT0 (VOUT p0 p0 AVSS) nnt33 w=16.84u l=1u",
+      "W_unit_um": 16.839999999999996,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "charge_pump_unregulate/MRECT0",
+      "path": "MRECT0"
+    },
+    "MRECT1": {
+      "name": "MRECT1",
+      "kind": "MOS",
+      "model": "nnt33",
+      "pins": {
+        "D": "VOUT",
+        "G": "p1",
+        "S": "p1",
+        "B": "AVSS"
+      },
+      "parameters": {
+        "w": "16.84u",
+        "l": "1u"
+      },
+      "source_line": "MRECT1 (VOUT p1 p1 AVSS) nnt33 w=16.84u l=1u",
+      "W_unit_um": 16.839999999999996,
+      "L_um": 1.0,
+      "m": 1.0,
+      "definition": "charge_pump_unregulate/MRECT1",
+      "path": "MRECT1"
+    }
+  },
+  "nets": {
+    "charge_pump_unregulate/CLK": [
+      {
+        "instance": "charge_pump_unregulate/XEN",
+        "pin": "A1",
+        "sheet": 1,
+        "point": [
+          4.3,
+          20.5
+        ]
+      }
+    ],
+    "charge_pump_unregulate/EN": [
+      {
+        "instance": "charge_pump_unregulate/XEN",
+        "pin": "A2",
+        "sheet": 1,
+        "point": [
+          4.3,
+          19.5
+        ]
+      }
+    ],
+    "charge_pump_unregulate/gated": [
+      {
+        "instance": "charge_pump_unregulate/XEN",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          9.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XPH0",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          20.3,
+          20.0
+        ]
+      }
+    ],
+    "charge_pump_unregulate/AVDD": [
+      {
+        "instance": "charge_pump_unregulate/XEN",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          6.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XEN",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          7.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XPH0",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          22.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XPH0",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          23.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XPH1",
+        "pin": "VDD",
+        "sheet": 1,
+        "point": [
+          37.2,
+          22.2
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XPH1",
+        "pin": "VNW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          22.2
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MPRE0",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          10,
+          12
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MPRE1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          31,
+          12
+        ]
+      }
+    ],
+    "charge_pump_unregulate/AVSS": [
+      {
+        "instance": "charge_pump_unregulate/XEN",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          6.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XEN",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          7.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XPH0",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          22.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XPH0",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          23.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XPH1",
+        "pin": "VSS",
+        "sheet": 1,
+        "point": [
+          37.2,
+          17.8
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XPH1",
+        "pin": "VPW",
+        "sheet": 1,
+        "point": [
+          38.8,
+          17.8
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MPRE0",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          10.86,
+          11
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MRECT0",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          20.86,
+          11
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MPRE1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          31.86,
+          11
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MRECT1",
+        "pin": "B",
+        "sheet": 1,
+        "point": [
+          41.86,
+          11
+        ]
+      }
+    ],
+    "charge_pump_unregulate/ph0": [
+      {
+        "instance": "charge_pump_unregulate/XPH0",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          25.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/XPH1",
+        "pin": "I",
+        "sheet": 1,
+        "point": [
+          35.3,
+          20.0
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/CF0",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          10,
+          4.18
+        ]
+      }
+    ],
+    "charge_pump_unregulate/ph1": [
+      {
+        "instance": "charge_pump_unregulate/XPH1",
+        "pin": "ZN",
+        "sheet": 1,
+        "point": [
+          40.7,
+          20.0
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/CF1",
+        "pin": "2",
+        "sheet": 1,
+        "point": [
+          31,
+          4.18
+        ]
+      }
+    ],
+    "charge_pump_unregulate/p1": [
+      {
+        "instance": "charge_pump_unregulate/MPRE0",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          8.45,
+          11
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MPRE1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          31,
+          10
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MRECT1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          39.45,
+          11
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MRECT1",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          41,
+          10
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/CF1",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          31,
+          5.82
+        ]
+      }
+    ],
+    "charge_pump_unregulate/p0": [
+      {
+        "instance": "charge_pump_unregulate/MPRE0",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          10,
+          10
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MRECT0",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          18.45,
+          11
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MRECT0",
+        "pin": "S",
+        "sheet": 1,
+        "point": [
+          20,
+          10
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/CF0",
+        "pin": "1",
+        "sheet": 1,
+        "point": [
+          10,
+          5.82
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MPRE1",
+        "pin": "G",
+        "sheet": 1,
+        "point": [
+          29.45,
+          11
+        ]
+      }
+    ],
+    "charge_pump_unregulate/VOUT": [
+      {
+        "instance": "charge_pump_unregulate/MRECT0",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          20,
+          12
+        ]
+      },
+      {
+        "instance": "charge_pump_unregulate/MRECT1",
+        "pin": "D",
+        "sheet": 1,
+        "point": [
+          41,
+          12
+        ]
+      }
+    ]
+  },
+  "routed_pin_checks": [
+    {
+      "sheet": 1,
+      "instance": "MPRE0",
+      "pin": "G",
+      "net": "p1",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPRE1",
+      "pin": "S",
+      "net": "p1",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRECT1",
+      "pin": "S",
+      "net": "p1",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRECT1",
+      "pin": "G",
+      "net": "p1",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "CF1",
+      "pin": "1",
+      "net": "p1",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XEN",
+      "pin": "A2",
+      "net": "EN",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH1",
+      "pin": "ZN",
+      "net": "ph1",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "CF1",
+      "pin": "2",
+      "net": "ph1",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XEN",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XEN",
+      "pin": "VNW",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH0",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH0",
+      "pin": "VNW",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH1",
+      "pin": "VDD",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH1",
+      "pin": "VNW",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPRE0",
+      "pin": "D",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPRE1",
+      "pin": "D",
+      "net": "AVDD",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XEN",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XEN",
+      "pin": "VPW",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH0",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH0",
+      "pin": "VPW",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH1",
+      "pin": "VSS",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH1",
+      "pin": "VPW",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPRE0",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRECT0",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPRE1",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRECT1",
+      "pin": "B",
+      "net": "AVSS",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XEN",
+      "pin": "ZN",
+      "net": "gated",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH0",
+      "pin": "I",
+      "net": "gated",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPRE0",
+      "pin": "S",
+      "net": "p0",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRECT0",
+      "pin": "S",
+      "net": "p0",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRECT0",
+      "pin": "G",
+      "net": "p0",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "CF0",
+      "pin": "1",
+      "net": "p0",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MPRE1",
+      "pin": "G",
+      "net": "p0",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRECT0",
+      "pin": "D",
+      "net": "VOUT",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "MRECT1",
+      "pin": "D",
+      "net": "VOUT",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH0",
+      "pin": "ZN",
+      "net": "ph0",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XPH1",
+      "pin": "I",
+      "net": "ph0",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "CF0",
+      "pin": "2",
+      "net": "ph0",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    },
+    {
+      "sheet": 1,
+      "instance": "XEN",
+      "pin": "A1",
+      "net": "CLK",
+      "path_to_named_net": true,
+      "block": "charge_pump_unregulate"
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "block": "charge_pump_unregulate",
+      "title": "HD时钟门控、交叉耦合预充与双相整流",
+      "wires": [
+        {
+          "net": "gated",
+          "points": [
+            [
+              9.7,
+              20.0
+            ],
+            [
+              20.3,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ph0",
+          "points": [
+            [
+              25.7,
+              20.0
+            ],
+            [
+              35.3,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              10.86,
+              11
+            ],
+            [
+              11.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              20.86,
+              11
+            ],
+            [
+              21.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "p0",
+          "points": [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              5.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "p0",
+          "points": [
+            [
+              20,
+              10
+            ],
+            [
+              20,
+              8
+            ],
+            [
+              10,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "p0",
+          "points": [
+            [
+              18.45,
+              11
+            ],
+            [
+              17.95,
+              11
+            ],
+            [
+              17.95,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              31.86,
+              11
+            ],
+            [
+              32.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              41.86,
+              11
+            ],
+            [
+              42.15,
+              11
+            ]
+          ],
+          "body": true
+        },
+        {
+          "net": "p1",
+          "points": [
+            [
+              31,
+              10
+            ],
+            [
+              31,
+              8
+            ],
+            [
+              31,
+              5.82
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "p1",
+          "points": [
+            [
+              41,
+              10
+            ],
+            [
+              41,
+              8
+            ],
+            [
+              31,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "p1",
+          "points": [
+            [
+              39.45,
+              11
+            ],
+            [
+              38.95,
+              11
+            ],
+            [
+              38.95,
+              8
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "CLK",
+          "points": [
+            [
+              4.3,
+              20.5
+            ],
+            [
+              3.6999999999999997,
+              20.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "EN",
+          "points": [
+            [
+              4.3,
+              19.5
+            ],
+            [
+              3.6999999999999997,
+              19.5
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              6.2,
+              22.2
+            ],
+            [
+              6.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              7.8,
+              22.2
+            ],
+            [
+              7.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              6.2,
+              17.8
+            ],
+            [
+              6.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              7.8,
+              17.8
+            ],
+            [
+              7.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              22.2,
+              22.2
+            ],
+            [
+              22.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              23.8,
+              22.2
+            ],
+            [
+              23.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              22.2,
+              17.8
+            ],
+            [
+              22.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              23.8,
+              17.8
+            ],
+            [
+              23.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ph1",
+          "points": [
+            [
+              40.7,
+              20.0
+            ],
+            [
+              41.300000000000004,
+              20.0
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              37.2,
+              22.2
+            ],
+            [
+              37.2,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              38.8,
+              22.2
+            ],
+            [
+              38.8,
+              22.7
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              37.2,
+              17.8
+            ],
+            [
+              37.2,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "points": [
+            [
+              38.8,
+              17.8
+            ],
+            [
+              38.8,
+              17.3
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              10,
+              12
+            ],
+            [
+              10,
+              12.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "p1",
+          "points": [
+            [
+              8.45,
+              11
+            ],
+            [
+              7.8999999999999995,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VOUT",
+          "points": [
+            [
+              20,
+              12
+            ],
+            [
+              20,
+              12.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ph0",
+          "points": [
+            [
+              10,
+              4.18
+            ],
+            [
+              10,
+              3.5399999999999996
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "points": [
+            [
+              31,
+              12
+            ],
+            [
+              31,
+              12.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "p0",
+          "points": [
+            [
+              29.45,
+              11
+            ],
+            [
+              28.9,
+              11
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "VOUT",
+          "points": [
+            [
+              41,
+              12
+            ],
+            [
+              41,
+              12.64
+            ]
+          ],
+          "body": false
+        },
+        {
+          "net": "ph1",
+          "points": [
+            [
+              31,
+              4.18
+            ],
+            [
+              31,
+              3.5399999999999996
+            ]
+          ],
+          "body": false
+        }
+      ],
+      "net_labels": [
+        {
+          "net": "gated",
+          "point": [
+            14,
+            20
+          ],
+          "text": "gated",
+          "body": false
+        },
+        {
+          "net": "ph0",
+          "point": [
+            30,
+            20
+          ],
+          "text": "ph0",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            11.15,
+            11
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            21.15,
+            11
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "p0",
+          "point": [
+            13,
+            8
+          ],
+          "text": "p0",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            32.15,
+            11
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            42.15,
+            11
+          ],
+          "text": "AVSS",
+          "body": true
+        },
+        {
+          "net": "p1",
+          "point": [
+            34,
+            8
+          ],
+          "text": "p1",
+          "body": false
+        },
+        {
+          "net": "CLK",
+          "point": [
+            3.6999999999999997,
+            20.5
+          ],
+          "text": "CLK",
+          "body": false
+        },
+        {
+          "net": "EN",
+          "point": [
+            3.6999999999999997,
+            19.5
+          ],
+          "text": "EN",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            6.2,
+            22.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            7.8,
+            22.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            6.2,
+            17.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            7.8,
+            17.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            22.2,
+            22.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            23.8,
+            22.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            22.2,
+            17.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            23.8,
+            17.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "ph1",
+          "point": [
+            41.300000000000004,
+            20.0
+          ],
+          "text": "ph1",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            37.2,
+            22.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            38.8,
+            22.7
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            37.2,
+            17.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVSS",
+          "point": [
+            38.8,
+            17.3
+          ],
+          "text": "AVSS",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            10,
+            12.64
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "p1",
+          "point": [
+            7.8999999999999995,
+            11
+          ],
+          "text": "p1",
+          "body": false
+        },
+        {
+          "net": "VOUT",
+          "point": [
+            20,
+            12.64
+          ],
+          "text": "VOUT",
+          "body": false
+        },
+        {
+          "net": "ph0",
+          "point": [
+            10,
+            3.5399999999999996
+          ],
+          "text": "ph0",
+          "body": false
+        },
+        {
+          "net": "AVDD",
+          "point": [
+            31,
+            12.64
+          ],
+          "text": "AVDD",
+          "body": false
+        },
+        {
+          "net": "p0",
+          "point": [
+            28.9,
+            11
+          ],
+          "text": "p0",
+          "body": false
+        },
+        {
+          "net": "VOUT",
+          "point": [
+            41,
+            12.64
+          ],
+          "text": "VOUT",
+          "body": false
+        },
+        {
+          "net": "ph1",
+          "point": [
+            31,
+            3.5399999999999996
+          ],
+          "text": "ph1",
+          "body": false
+        }
+      ]
+    }
+  ],
+  "geometric_conflicts": [],
+  "unconnected_crossings": [],
+  "unused_ports": {
+    "charge_pump_unregulate": []
+  },
+  "convention": "Nets are scoped by subcircuit. Identical local labels join across its sheets. Local analog subcircuits have complete definition drawings. HD leaf cells keep all formal supply/well pins. This is static schematic coverage, not layout LVS."
+}

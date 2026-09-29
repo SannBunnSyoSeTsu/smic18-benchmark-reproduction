@@ -1,0 +1,91 @@
+{
+  "reason": "Baseline ramp/output-resistance logs reported SPECTRE-16780 temporary LTE tolerance relaxation. Repeat all three benches with maxstep reduced5x and reltol tightened10x, same circuit/load/stimuli.",
+  "base_runs": [
+    "runs/23/20260922T085106383584Z_code_ramp",
+    "runs/23/20260922T085109208290Z_major_carry",
+    "runs/23/20260922T085111200437Z_output_resistance"
+  ],
+  "refined_runs": [
+    "runs/23/20260922T085255104320Z_code_ramp_refined",
+    "runs/23/20260922T085306554939Z_major_carry_refined",
+    "runs/23/20260922T085318058247Z_output_resistance_refined"
+  ],
+  "comparisons": [
+    {
+      "metric": "inl_lsb_max",
+      "base": 0.05359925439614921,
+      "refined": 0.05360129707967776,
+      "absolute_change": 2.0426835285469735e-06,
+      "relative_change": 3.811029745767748e-05
+    },
+    {
+      "metric": "dnl_lsb_max",
+      "base": 0.051476903464007906,
+      "refined": 0.05147895226984034,
+      "absolute_change": 2.048805832433054e-06,
+      "relative_change": 3.980048710322206e-05
+    },
+    {
+      "metric": "zero_code_error_V",
+      "base": 0.00011658242670610619,
+      "refined": 0.00011658691820903037,
+      "absolute_change": 4.4915029241845246e-09,
+      "relative_change": 3.852641475294728e-05
+    },
+    {
+      "metric": "full_scale_error_V",
+      "base": 0.0032985783066479257,
+      "refined": 0.0032986987842953397,
+      "absolute_change": 1.204776474139635e-07,
+      "relative_change": 3.652411318268658e-05
+    },
+    {
+      "metric": "power_avg_W",
+      "base": 0.0006452490341669819,
+      "refined": 0.0006452535336576371,
+      "absolute_change": 4.4994906551716965e-09,
+      "relative_change": 6.97326213123364e-06
+    },
+    {
+      "metric": "settling_time_s",
+      "base": 3.0838625239247083e-09,
+      "refined": 3.0838934278507755e-09,
+      "absolute_change": 3.090392606711756e-14,
+      "relative_change": 1.0021175012622603e-05
+    },
+    {
+      "metric": "settling_end_error_lsb_max",
+      "base": 0.048899711761222084,
+      "refined": 0.04890162137675544,
+      "absolute_change": 1.9096155333547804e-06,
+      "relative_change": 3.905167258816284e-05
+    },
+    {
+      "metric": "excursion_lsb_max",
+      "base": 0.8656344810870169,
+      "refined": 0.8657252550591288,
+      "absolute_change": 9.077397211187943e-05,
+      "relative_change": 0.00010486408997697318
+    },
+    {
+      "metric": "rout_max_Ohm",
+      "base": 993.872639250326,
+      "refined": 993.8723850009267,
+      "absolute_change": -0.00025424939929052925,
+      "relative_change": 2.5581688161001046e-07
+    }
+  ],
+  "circuit_sha256": "e8388c72d139da2b34832dc179379e63bfa19e1f59e8c9e2cd45f85e566f75af",
+  "max_relative_metric_change": 0.00010486408997697318,
+  "both_complete_original": true,
+  "refined_run_warnings": {
+    "runs/23/20260922T085255104320Z_code_ramp_refined": [
+      "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XDAC.XINV3.MMN1:int_s.",
+      "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XDAC.MSN4:int_s."
+    ],
+    "runs/23/20260922T085306554939Z_major_carry_refined": [],
+    "runs/23/20260922T085318058247Z_output_resistance_refined": [
+      "WARNING (SPECTRE-16780): LTE tolerance was temporarily relaxed to step over a discontinuity in the signal: XDAC.XINV3.MMN1:int_s."
+    ]
+  }
+}

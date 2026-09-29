@@ -1,0 +1,250 @@
+{
+  "source_task": "sky130-cmos-switched-resistor-dac-5bit-pvt",
+  "corner": "tt",
+  "resistor_corner": "res_tt",
+  "capacitor_corner": "mim_tt",
+  "VDD_V": 1.8,
+  "temperature_C": 27,
+  "load_F": 1e-12,
+  "bit_order": "b0 LSB, b4 MSB",
+  "ideal_code_V": "k*VDD/32",
+  "code_rate_Hz": 200000000.0,
+  "source_edge_s": 5e-11,
+  "ramp_codes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "ramp_sample_times_s": [
+    7.000000000000001e-09,
+    1.2000000000000002e-08,
+    1.7e-08,
+    2.2000000000000002e-08,
+    2.7e-08,
+    3.2e-08,
+    3.7e-08,
+    4.2000000000000006e-08,
+    4.7000000000000004e-08,
+    5.2e-08,
+    5.7e-08,
+    6.2e-08,
+    6.7e-08,
+    7.200000000000001e-08,
+    7.7e-08,
+    8.2e-08,
+    8.700000000000001e-08,
+    9.2e-08,
+    9.700000000000001e-08,
+    1.02e-07,
+    1.07e-07,
+    1.1200000000000001e-07,
+    1.17e-07,
+    1.22e-07,
+    1.27e-07,
+    1.3200000000000002e-07,
+    1.37e-07,
+    1.42e-07,
+    1.47e-07,
+    1.52e-07,
+    1.5700000000000002e-07,
+    1.6200000000000002e-07
+  ],
+  "power_window_s": [
+    2.5e-09,
+    1.625e-07
+  ],
+  "power_port": "DUT VDD only, excluding separately supplied external two-stage bit drivers as original verifier",
+  "transitions": [
+    {
+      "label": "34u",
+      "start": 3,
+      "stop": 4,
+      "time_s": 2e-08,
+      "window_s": 5e-09,
+      "end_sample_offset_s": 4.99e-09
+    },
+    {
+      "label": "34d",
+      "start": 4,
+      "stop": 3,
+      "time_s": 2.5000000000000002e-08,
+      "window_s": 5e-09,
+      "end_sample_offset_s": 4.99e-09
+    },
+    {
+      "label": "78u",
+      "start": 7,
+      "stop": 8,
+      "time_s": 4.5000000000000006e-08,
+      "window_s": 5e-09,
+      "end_sample_offset_s": 4.99e-09
+    },
+    {
+      "label": "78d",
+      "start": 8,
+      "stop": 7,
+      "time_s": 5.0000000000000004e-08,
+      "window_s": 5e-09,
+      "end_sample_offset_s": 4.99e-09
+    },
+    {
+      "label": "1516u",
+      "start": 15,
+      "stop": 16,
+      "time_s": 7e-08,
+      "window_s": 5e-09,
+      "end_sample_offset_s": 4.99e-09
+    },
+    {
+      "label": "1516d",
+      "start": 16,
+      "stop": 15,
+      "time_s": 7.500000000000001e-08,
+      "window_s": 5e-09,
+      "end_sample_offset_s": 4.99e-09
+    }
+  ],
+  "settling_definition": "Original last |Vout-target|=0.25*VDD/32 crossing within the fixed 5ns window; independently require end error <=0.25LSB and last crossing must enter the band. All crossing times are retained. Input/observation windows are not relaxed.",
+  "rout_codes": [
+    0,
+    4,
+    15,
+    16,
+    28,
+    31
+  ],
+  "perturbation_A": 5e-06,
+  "rout_direction": "Code0 injects into output; other codes draw from output",
+  "rout_sample_offsets_s": [
+    1.4e-08,
+    2.9e-08
+  ],
+  "specs": {
+    "inl_lsb_max": {
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 0.25,
+        "10pct": 0.275,
+        "15pct": 0.2875
+      }
+    },
+    "dnl_lsb_max": {
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 0.25,
+        "10pct": 0.275,
+        "15pct": 0.2875
+      }
+    },
+    "zero_code_error_V": {
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.002,
+        "10pct": 0.0022,
+        "15pct": 0.0023
+      }
+    },
+    "full_scale_error_V": {
+      "unit": "V",
+      "sense": "max",
+      "limits": {
+        "original": 0.005,
+        "10pct": 0.0055000000000000005,
+        "15pct": 0.00575
+      }
+    },
+    "power_avg_W": {
+      "unit": "W",
+      "sense": "max",
+      "limits": {
+        "original": 0.001,
+        "10pct": 0.0011,
+        "15pct": 0.00115
+      }
+    },
+    "settling_time_s": {
+      "unit": "s",
+      "sense": "max",
+      "limits": {
+        "original": 5e-09,
+        "10pct": 5.5000000000000004e-09,
+        "15pct": 5.749999999999999e-09
+      }
+    },
+    "settling_end_error_lsb_max": {
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 0.25,
+        "10pct": 0.275,
+        "15pct": 0.2875
+      }
+    },
+    "excursion_lsb_max": {
+      "unit": "LSB",
+      "sense": "max",
+      "limits": {
+        "original": 1.0,
+        "10pct": 1.1,
+        "15pct": 1.15
+      }
+    },
+    "rout_max_Ohm": {
+      "unit": "Ohm",
+      "sense": "max",
+      "limits": {
+        "original": 2000.0,
+        "10pct": 2200.0,
+        "15pct": 2300.0
+      }
+    }
+  },
+  "functional_nonrelaxable": [
+    "32 finite sampled voltages",
+    "all31 steps positive",
+    "nonnegative DUT power",
+    "all6 output resistances nonnegative",
+    "finite last-crossing and end-error evidence for all6 transitions",
+    "model geometry valid"
+  ],
+  "nominal_scope_excludes": [
+    "other10 representative PVT points",
+    "8 fixed-seed local-mismatch regressions",
+    "Monte Carlo yield",
+    "PEX and layout matching"
+  ],
+  "passives": "Native PDK resistor, optional native PDK MIM; no ideal passive inside DUT",
+  "source_stimuli": "VC0..VC4 and injected load are mechanically translated from frozen public verifier benches; same PULSE/PWL times and levels. HD driver is the documented process migration."
+}
