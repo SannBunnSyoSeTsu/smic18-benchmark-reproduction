@@ -1,16 +1,14 @@
-# 37-nested-miller 审查报告
+# 37 · 三级嵌套 Miller OTA 审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 37 | 三级嵌套 Miller OTA 审查
+## 验收结果
 
 本模块通过三级放大提供高开环增益和负载驱动能力，用嵌套Miller补偿协调多个高阻节点的极点。相比基础两级Miller结构，额外一级可提高增益并分配各级驱动任务，同时增加稳定性和建立时间设计的难度。芯片中可用作高精度信号调理、ADC驱动或其他闭环模拟系统的误差放大器。
 
 结论：五组 nominal 检查全部达到原门槛，未用性能放宽；其余44个PVT点未执行。
 
-条件：SMIC18MMRF / tt / 1.8 V / 27°C，5 uA参考，输入共模和输出目标0.9 V，理想负载200 pF。16只M OS与8 pF/3 pF嵌套电容，所有偏置从iref产生。
+条件：SMIC18MMRF / tt / 1.8 V / 27°C，5 uA参考，输入共模和输出目标0.9 V，理想负载200 pF。16只MOS与8 pF/3 pF嵌套电容，所有偏置从iref产生。
 
 | 指标 | 实测 | 原门槛 | 10%边界 | 15%边界 | 单位 |
 | --- | --- | --- | --- | --- | --- |
@@ -34,9 +32,7 @@ AC从0.01 Hz至100 MHz只有一次下降0 dB交越，之后不回穿。中心OP�
 
 范围边界：仅nominal原理图；其余PVT、局部失配、寄生、封装、老化和无源容差未运行。原任务也未要求局部失配；本报告不声称完成原45点PVT签核。
 
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 三级增益链、嵌套补偿与LUT
+## 三级增益链、嵌套补偿与LUT
 
 保留参考架构：A1反相、A2非反相、A3反相；从VINP到输出总极性为正。
 
@@ -56,31 +52,11 @@ AC从0.01 Hz至100 MHz只有一次下降0 dB交越，之后不回穿。中心OP�
 
 LUT采用既有SMIC18 tt表，Wref=10 um、零体偏置；每项VDS、尺寸、源路径与SHA-256均在sizing.json。实际OP吸收体效应和窄宽偏差；未改PDK或原LUT，无需补扫。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![三级增益链、嵌套补偿与LUT](markdown_assets/figure-02-01.png)
 
-```text
-VOUT
-CL200pF
-n1
-n2
-A1 NMOS差分对
-A2 NMOS共源
-A3 NMOS共源
-PMOS镜负载
-PMOS电流镜
-PMOS固定源
-C2 = 3 pF
-iref 5 uA
-NMOS/PMOS bias mirrors
-C1 = 8 pF: VOUT <-> n1
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 中心工作点与手算闭合
+## 中心工作点与手算闭合
 
 余量定义为|VDS|−|VDSAT|；以下是0.9 V输入目标、单位反馈、200 pF负载的实际OP。
 
@@ -111,9 +87,7 @@ C1 = 8 pF: VOUT <-> n1
 
 119 dB增益来自三个有限增益级，8 pF/3 pF嵌套反馈安排极点。保持微功耗同时得到200 pF驱动，需要共同预算带宽、输出静态电流、补偿电容和压摆率。
 
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 返回比与完整直流扫描
+## 返回比与完整直流扫描
 
 返回比T=−V(vout)/V(vinn)，由输出与反相端之间的AC1串联电压源提取。
 
@@ -121,98 +95,11 @@ AC：100点/十倍频，增益取0.1 Hz，首个下降交越按对数频率插�
 
 1.168 V命令误差19.9966 mV，下一点1.170 V误差20.7050 mV，不再合格。0.100 V是扫描下界，未声称物理极限；低输入电压时偏置可能很弱，静态跟踪区间不代表整个区间均具相同带宽或压摆能力。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![返回比与完整直流扫描](markdown_assets/figure-04-01.png)
 
-```text
-125
-0
-100
--50
-75
--100
-50
-25
--150
-0
-Return ratio (dB)
--200
-Return phase (deg)
--25
--250
--50
--75
--300
-−2
-0
-2
-4
-6
-8
-−2
-0
-2
-4
-6
-8
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-Frequency (Hz)
-30
-Command
-Output
-1.6
-20
-1.4
-1.2
-10
-1.0
-0
-0.8
-Output (V)
--10
-0.6
-Tracking error, zoom (mV)
-0.4
--20
-0.2
--30
-0.2
-0.4
-0.6
-0.8
-1.0
-1.2
-1.4
-1.6
-0.2
-0.4
-0.6
-0.8
-1.0
-1.2
-1.4
-1.6
-Unity-feedback command (V)
-Unity-feedback command (V)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 固定建立窗口与双向压摆
+## 固定建立窗口与双向压摆
 
 时间从原刺激边沿开始计；建立容差中心固定0.9 V，不随实际终值0.896845 V平移。
 
@@ -220,122 +107,30 @@ Unity-feedback command (V)
 
 压摆：0.65↔1.15 V，边沿100 ns，下降边沿开始42.1 us；原算法从42 us搜索。固定0.75/1.05 V输出交越线性插值得0.30025/0.29345 V/us。输出采样10 ns，内部最大步长5 ns；没有把采样精度当作连续时间精确值。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![固定建立窗口与双向压摆](markdown_assets/figure-05-01.png)
 
-```text
-20
-0.9
-15
-0.8
-10
-5
-0.7
-0
-0.6
--5
-Settling output (V)
--10
-0.5
-Fixed-target error, zoom (mV)
--15
-Command
-0.4
-Output
--20
-0
-1
-2
-3
-4
-5
-6
-0
-10
-20
-30
-40
-Time after2us edge start (us)
-Time after2us edge start (us)
-Command
-Output
-1.1
-1.1
-1.0
-1.0
-0.9
-0.9
-Rising output (V)
-Falling output (V)
-0.8
-0.8
-0.7
-0.7
-Command
-Output
-0
-1
-2
-3
-4
-5
-0
-1
-2
-3
-4
-5
-Time after command edge (us)
-Time after command edge (us)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 精确网表、测量来源与复现
+## 精确网表、测量来源与复现
 
 DUT仅使用16个目标工艺MOS与两个正电容；独立刺激和理想200 pF负载均在bench中。
-
-```text
-simulator lang=spectre
-subckt three_stage_nmc_ota (vss iref vdd vinn vinp vout)
-MREF (iref iref vss vss) n18 w=2.34u l=1u
-MTAIL (tail iref vss vss) n18 w=2.34u l=1u m=0.48
-MBP1 (pdm iref vss vss) n18 w=2.34u l=1u
-MPDM (pdm pdm vdd vdd) p18 w=4.68u l=1u
-MS2B (vbn pdm vdd vdd) p18 w=4.68u l=1u
-MVBN (vbn vbn vss vss) n18 w=2.34u l=1u
-MI1 (na vinn tail vss) n18 w=1.24u l=1u
-MI2 (n1 vinp tail vss) n18 w=1.24u l=1u
-MP1A (na na vdd vdd) p18 w=0.72u l=1u
-MP1B (n1 na vdd vdd) p18 w=0.72u l=1u
-MA2 (nb n1 vss vss) n18 w=0.3u l=1u
-MPD2 (nb nb vdd vdd) p18 w=2.34u l=1u
-MPM2 (n2 nb vdd vdd) p18 w=2.34u l=1u m=2
-MS2 (n2 vbn vss vss) n18 w=2.34u l=1u m=1
-MA3 (vout n2 vss vss) n18 w=17.02u l=.36u
-ML3 (vout pdm vdd vdd) p18 w=4.68u l=1u m=21
-CM1 (vout n1) capacitor c=8p
-CM2 (vout n2) capacitor c=3p
-ends three_stage_nmc_ota
-```
 
 原instruction、参考solution、verify.py、utils.py和五套bench已冻结。将真实PSF向量适配为原Plot结构，直接调用extract\_metrics；原nominal\_functional也通过。未调用或伪造45点矩阵检查。
 
 输入偏置另用两输入独立固定0.9 V、开环输出的原bench；两输入电流均读0 A。该bench输出约7.88 mV，不用于0.9 V静态输出门槛；后者在单位反馈AC/OP bench测量。0 A不能证明ESD、栅泄漏或封装漏电也为零。
 
-复现（工程根目录）：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case37\_nested\_miller.py同一Python运行 scripts/review\_pdf.py 37 生成PDF。源任务：sky130-three-stage-nested-miller-ota-pvt
+复现（工程根目录）： /home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case37\_nested\_miller.py 同一Python运行 scripts/review\_pdf.py 37 生成PDF。 源任务：sky130-three-stage-nested-miller-ota-pvt
 
 正式运行（依次AC/OP、输入偏置、DC范围、建立、压摆）：runs/37/20260922T094634948149Z\_pvt runs/37/20260922T094635113442Z\_input\_bias runs/37/20260922T094635241732Z\_swing runs/37/20260922T094635425475Z\_settling runs/37/20260922T094635958990Z\_slew
 
 各run保留inputs、原始PSF、模型与网表哈希。精确电路SHA-256：0014c2c3bce36d7ea1099c7c8c13df67508d37d3fff87a719166c916e21dcbbb
 
-![第6页原图与排版](markdown_assets/page-06.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Three gain stages, outer and inner Miller paths; source topology retained.
@@ -363,10 +158,12 @@ CM2 (vout n2) capacitor c=3p
 ends three_stage_nmc_ota
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

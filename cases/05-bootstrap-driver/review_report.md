@@ -86,7 +86,9 @@ DUT展开WLm面积33470.813096um²≤35000um²，外接自举电容200pF≤100nF
 
 三种输入脉宽的换向波形。输入高电平对应低侧命令，所以20ns输入组的高侧导通时间较长；波形没有更改原控制极性。
 
-![三种输入脉宽的换向波形。输入高电平对应低侧命令，所以20ns输入组的高侧导通时间较长；波形没有更改原控制极性。](pdf_review/page-03.png)
+![三种输入脉宽的换向波形。输入高电平对应低侧命令，所以20ns输入组的高侧导通时间较长；波形没有更改原控制极性。](markdown_assets/figure-03-01.png)
+
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
 原死区判定取固定窗口内第2次下降与第2次上升跨越0.9V；同时确认每侧各5次升/降沿且全部非交叠。
 
@@ -123,9 +125,12 @@ maxstep100→50ps，全局reltol1e-5→1e-6，conservative实际相对容差1e-6
 没有进行全端子应力、可靠性寿命、PVT、失配或PEX签核。电路SHA-256：
 51ae51fce4ab67a9ce5b7e74e61e746bf6f22c7480f2c2802fef5c3ee071cd12
 
-## 完整最终网表 1/2
+## 完整网表与电路图
 
-所有实例、尺寸和连接原样列出。HD内部器件见随附原厂CDL提取。PDF长行仅作视觉折行，MD保留原始行。
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
+
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 simulator lang=spectre
@@ -176,13 +181,6 @@ XB3_6 (b2 out vdd vss vdd vss) INHDV32
 XB3_7 (b2 out vdd vss vdd vss) INHDV32
 ends buffer
 subckt buffers (in out vdd vss)
-```
-
-## 完整最终网表 2/2
-
-所有实例、尺寸和连接原样列出。HD内部器件见随附原厂CDL提取。PDF长行仅作视觉折行，MD保留原始行。
-
-```spectre
 XB0_0 (in b0 vdd vss vdd vss) INHDV1
 XB1_0 (b0 b1 vdd vss vdd vss) INHDV4
 XB2_0 (b1 b2 vdd vss vdd vss) INHDV16
@@ -223,36 +221,34 @@ XBUFFCH (charge_noninv charge_gate VBST VLX) buffers
 ends bootstrap_driver
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接审计](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![sheet-3](schematic/sheet-3.png)
+![电路分图 4](schematic/sheet-4.png)
 
-![sheet-4](schematic/sheet-4.png)
+![电路分图 5](schematic/sheet-5.png)
 
-![sheet-5](schematic/sheet-5.png)
+![电路分图 6](schematic/sheet-6.png)
 
-![sheet-6](schematic/sheet-6.png)
+![电路分图 7](schematic/sheet-7.png)
 
-![sheet-7](schematic/sheet-7.png)
+![电路分图 8](schematic/sheet-8.png)
 
-![sheet-8](schematic/sheet-8.png)
+![电路分图 9](schematic/sheet-9.png)
 
-![sheet-9](schematic/sheet-9.png)
+![电路分图 10](schematic/sheet-10.png)
 
-![sheet-10](schematic/sheet-10.png)
+![电路分图 11](schematic/sheet-11.png)
 
-![sheet-11](schematic/sheet-11.png)
+![电路分图 12](schematic/sheet-12.png)
 
-![sheet-12](schematic/sheet-12.png)
+![电路分图 13](schematic/sheet-13.png)
 
-![sheet-13](schematic/sheet-13.png)
+![电路分图 14](schematic/sheet-14.png)
 
-![sheet-14](schematic/sheet-14.png)
-
-![sheet-15](schematic/sheet-15.png)
+![电路分图 15](schematic/sheet-15.png)

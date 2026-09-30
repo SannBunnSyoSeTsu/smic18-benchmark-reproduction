@@ -1,8 +1,30 @@
-# 32-cml-tx 审查报告
+# 32 · 28Gb/s CML发送器审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
+## 验收结果
+
+本模块把差分NRZ输入转换为高速电流转向输出，驱动两路接至电源的50Ω终端。单级CML差分对减少级联传播延迟，输入和输出串联电感补偿电容负载，交叉电容减轻栅漏反馈；代价是持续偏置功耗、较大的电流镜及电感面积和损耗。芯片中可用于高速串行发送器的末级驱动，本次验证28Gb/s固定负载下的标称眼图与抖动，不包含信道均衡或物理互连。
+
+结论：10%范围内完成；带宽与低摆幅输出需放宽，其余原门槛通过。
+
+SMIC18MMRF TT / 1.8V / 27°C，外部100uA参考；输入共模1.17V。每腿输入50Ω源阻抗、30fF焊盘，输出50Ω到VDD及100fF到地。原PRBS7和低摆幅PWL激励全文保留。
+
+| 验收量 | 实测 | 原门槛 | 10%边界 | 15%边界 | 单位 |
+| --- | --- | --- | --- | --- | --- |
+| 差分摆幅下限 | 409.7 | ≥400 | ≥360 | ≥340 | mV |
+| -3dB带宽 | 20.0267 | ≥22 | ≥19.8 | ≥18.7 | GHz |
+| 1–14GHz群延迟变化 | 2.83271 | ≤8 | ≤8.8 | ≤9.2 | ps |
+| PRBS眼高 | 338.949 | ≥320 | ≥288 | ≥272 | mV |
+| 确定性抖动峰峰值 | 0.260573 | ≤5 | ≤5.5 | ≤5.75 | ps |
+| 时间加权平均功耗 | 33.8593 | ≤45 | ≤49.5 | ≤51.75 | mW |
+| 低摆幅输出 | 228.107 | ≥250 | ≥225 | ≥212.5 | mV |
+
+PRBS第二周期127个采样、63个跳变（31升/32降）及低摆幅8个采样、4升/4降全部满足；符号错误均为0。功能、测量完整性、有限值和输出轨范围保持原要求。
+
+只运行TT标称；原题另外两个配对点ss/1.62V/-40°C与ff/1.98V/125°C未执行。无随机噪声或失配仿真，不能把这里的确定性抖动当作总抖动或误码率。
+
+四只原生n18、两只15fF电容及四只200pH理想电感；正值理想R/C/L为原题明确允许。电感损耗、面积、耦合与PEX尚未验证。
 
 <!-- SYSTEM-BLOCK-DIAGRAM -->
 ## 系统框图
@@ -34,33 +56,7 @@ flowchart TB
 [独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
 <!-- END-SYSTEM-BLOCK-DIAGRAM -->
 
-## 第1页 · 32 | 28Gb/s CML发送器审查
-
-本模块把差分NRZ输入转换为高速电流转向输出，驱动两路接至电源的50Ω终端。单级CML差分对减少级联传播延迟，输入和输出串联电感补偿电容负载，交叉电容减轻栅漏反馈；代价是持续偏置功耗、较大的电流镜及电感面积和损耗。芯片中可用于高速串行发送器的末级驱动，本次验证28Gb/s固定负载下的标称眼图与抖动，不包含信道均衡或物理互连。
-
-结论：10%范围内完成；带宽与低摆幅输出需放宽，其余原门槛通过。
-
-SMIC18MMRF TT / 1.8V / 27°C，外部100uA参考；输入共模1.17V。每腿输入50Ω源阻抗、30fF焊盘，输出50Ω到VDD及100fF到地。原PRBS7和低摆幅PWL激励全文保留。
-
-| 验收量 | 实测 | 原门槛 | 10%边界 | 15%边界 | 单位 |
-| --- | --- | --- | --- | --- | --- |
-| 差分摆幅下限 | 409.7 | ≥400 | ≥360 | ≥340 | mV |
-| -3dB带宽 | 20.0267 | ≥22 | ≥19.8 | ≥18.7 | GHz |
-| 1–14GHz群延迟变化 | 2.83271 | ≤8 | ≤8.8 | ≤9.2 | ps |
-| PRBS眼高 | 338.949 | ≥320 | ≥288 | ≥272 | mV |
-| 确定性抖动峰峰值 | 0.260573 | ≤5 | ≤5.5 | ≤5.75 | ps |
-| 时间加权平均功耗 | 33.8593 | ≤45 | ≤49.5 | ≤51.75 | mW |
-| 低摆幅输出 | 228.107 | ≥250 | ≥225 | ≥212.5 | mV |
-
-PRBS第二周期127个采样、63个跳变（31升/32降）及低摆幅8个采样、4升/4降全部满足；符号错误均为0。功能、测量完整性、有限值和输出轨范围保持原要求。
-
-只运行TT标称；原题另外两个配对点ss/1.62V/-40°C与ff/1.98V/125°C未执行。无随机噪声或失配仿真，不能把这里的确定性抖动当作总抖动或误码率。
-
-四只原生n18、两只15fF电容及四只200pH理想电感；正值理想R/C/L为原题明确允许。电感损耗、面积、耦合与PEX尚未验证。
-
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 结构、gm/ID尺寸与实际偏置
+## 结构、gm/ID尺寸与实际偏置
 
 跨接漏端使正差分输入对应正差分输出；无内部重复终端或理想偏置源。
 
@@ -87,9 +83,7 @@ off为零差分，one为+150mV差分。实际尾电流18.707–18.713mA，低于
 
 使用既有TT LUT：输入L0.18um/VDS0.9V、参考L0.36um/VDS0.45V，按单位100uA查询并保留路径/哈希。四只MOS均有正VDS余量；对称结果不代表失配下零失调。
 
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 完整静态及AC验收门槛
+## 完整静态及AC验收门槛
 
 14个标量边界；\*为不放宽的输出轨检查，数值均来自最终电路。
 
@@ -114,9 +108,7 @@ off为零差分，one为+150mV差分。实际尾电流18.707–18.713mA，低于
 
 AC用两路幅度0.5V、相差180°的源构成1V差分激励；源端定义增益，50Ω/30fF输入网络计入传递函数。带宽按原算法在幅度轴与频率轴线性插值首个-3dB交越。
 
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 幅频、相位与群延迟
+## 幅频、相位与群延迟
 
 10MHz–50GHz，每十倍频50点；群延迟变化仅在1–14GHz统计。
 
@@ -124,76 +116,11 @@ AC用两路幅度0.5V、相差180°的源构成1V差分激励；源端定义增�
 
 真实群延迟变化2.832706ps；误将弧度当度会得到0.049440ps，该错误单位诊断不参与评分。通带峰化0dB也不表示绝对传播延迟为零。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![幅频、相位与群延迟](markdown_assets/figure-04-01.png)
 
-```text
-1.4
-0
-1.3
--50
-1.2
--100
-1.1
--150
-1.0
-Gain (V/V)
--200
-0.9
-Unwrapped phase (degree)
--250
-0.8
-0.7
--300
-0.01
-0.1
-1
-10
-0.01
-0.1
-1
-10
-Frequency (GHz)
-Frequency (GHz)
-0.0
-18.0
--0.5
-17.5
--1.0
-17.0
--1.5
--2.0
-16.5
--2.5
-Relative gain (dB)
-16.0
--3.0
-Physical group delay (ps)
--3.5
-15.5
--4.0
-2
-4
-6
-8
-10
-12
-14
-0
-5
-10
-15
-20
-25
-Frequency (GHz)
-Frequency (GHz)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 原PRBS7眼图与确定性抖动
+## 原PRBS7眼图与确定性抖动
 
 28Gb/s，UI=35.7142857ps；运行两个127位周期，只验收第二周期。
 
@@ -201,67 +128,11 @@ Frequency (GHz)
 
 峰峰值/RMS抖动取过零误差减均值后统计；DCD为上、下沿平均偏移之差。眼图仅用于可视化；评分使用原始自适应轨迹和原检查器，不从画图重采样结果计算。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![原PRBS7眼图与确定性抖动](markdown_assets/figure-05-01.png)
 
-```text
-200
-200
-100
-100
-0
-0
--100
-Eye differential (mV)
--100
-Differential voltage (mV)
--200
--200
-0
-100
-200
-300
-400
--0.5
-0.0
-0.5
-1.0
-1.5
-From second-period start (ps)
-Delay-compensated time (UI)
-200
-0.10
-100
-0.05
-0.00
-0
--0.05
--100
-Center samples (mV)
--0.10
-Mean-removed timing error (ps)
--200
-140
-160
-180
-200
-220
-240
-140
-160
-180
-200
-220
-240
-Original bit index
-Transition bit index
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 完整瞬态验收门槛
+## 完整瞬态验收门槛
 
 15个标量边界，加功能计数与零符号错误；所有原始门槛及两档边界均列出。
 
@@ -283,64 +154,23 @@ Transition bit index
 | 低摆幅最坏上升 | 7.74205 | ≤17 | ≤18.7 | ≤19.55 | ps |
 | 低摆幅最坏下降 | 7.7427 | ≤17 | ≤18.7 | ≤19.55 | ps |
 
-PRBS 20–80%边沿阈值来自独立静态两电平，不按动态峰值重新缩放。过冲和欠冲分别为1.916018/1.915712 mV，按静态409.700132mV摆幅归一化；动态共模偏移以静态共模为基准。
+PRBS 20–80%边沿阈值来自独立静态两电平，不按动态峰值重新缩放。过冲和欠冲分别为1.916018/1.915712mV，按静态409.700132mV摆幅归一化；动态共模偏移以静态共模为基准。
 
 原验收功耗为自适应原样点IDD算术均值×1.8V；另按第二周期真实时间加权积分，同样检查45mW上限。两者含参考电流和输出终端的VDD功耗，按原合同不计输入信号源。
 
-![第6页原图与排版](markdown_assets/page-06.png)
-
-## 第7页 · 200mVpp差分输入敏感性
+## 200mVpp差分输入敏感性
 
 12UI交替码，前4UI预热；后8个延迟补偿中心样点验收，原PWL未改。
 
 低摆幅平均传播偏移16.271085ps。输出取min(ones)-max(zeros)=228.107321mV，低于原250mV、达到10%边界225mV；8个符号均正确，4升/4降均完整测得。
 
-低摆幅边沿阈值按该测试中心样点的高/低平均电平定义，保留原分析器规则；最坏上/下沿7.742050/7.742 701ps。没有增加输入振幅、移除50Ω/30fF或放宽功能计数。
+低摆幅边沿阈值按该测试中心样点的高/低平均电平定义，保留原分析器规则；最坏上/下沿7.742050/7.742701ps。没有增加输入振幅、移除50Ω/30fF或放宽功能计数。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![200mVpp差分输入敏感性](markdown_assets/figure-07-01.png)
 
-```text
-100
-50
-Source
-0
-Output
-8 score samples
--50
-Differential voltage (mV)
--100
--150
-0
-100
-200
-300
-400
-Time (ps)
-1.40
-1.38
-1.36
-1.34
-VOUTP
-VOUTN
-1.32
-Output voltage (V)
-1.30
-1.28
-1.26
-0
-100
-200
-300
-400
-Time (ps)
-```
+[查看矢量图](markdown_assets/figure-07-01.svg)
 
-</details>
-
-![第7页原图与排版](markdown_assets/page-07.png)
-
-## 第8页 · 固定界限的数值精度对照
+## 固定界限的数值精度对照
 
 两个瞬态从0.2ps/1e-6收紧至0.1ps/1e-7，gear2only；最终使用细步长轨迹。
 
@@ -363,9 +193,7 @@ Time (ps)
 
 最终四组及两个瞬态基线均0错误/0警告；检查实际Spectre完成日志、输入快照及模型/LUT哈希。10实例28端子另用独立解析器核对，全部体端明确。
 
-![第8页原图与排版](markdown_assets/page-08.png)
-
-## 第9页 · 失败迭代与最终精确网表
+## 失败迭代与最终精确网表
 
 保留AC成功但功能失败的候选；没有改变原采样算法来制造通过。
 
@@ -379,33 +207,15 @@ Time (ps)
 
 早期绝对传播偏移约19ps，超过半UI；原分析器按最近过零搜索，在交替码下可能选到相邻边沿，造成眼中心错误。群延迟变化小和AC带宽通过都不能替代原瞬态功能检查。
 
-```text
-simulator lang=spectre
-subckt tx_driver_28g (vss vdd iref dinp dinn voutp voutn)
-MREF (iref iref vss vss) n18 w=39.76u l=.36u m=1
-MTAIL (tail iref vss vss) n18 w=39.76u l=.36u m=200
-MPAIRP (dn gip tail vss) n18 w=0.64u l=.18u m=100
-MPAIRN (dp gin tail vss) n18 w=0.64u l=.18u m=100
-CNEUTP (dp gip) capacitor c=15f
-CNEUTN (dn gin) capacitor c=15f
-LP (dp voutp) inductor l=200p
-LN (dn voutn) inductor l=200p
-LIP (dinp gip) inductor l=200p
-LIN (dinn gin) inductor l=200p
-ends tx_driver_28g
-```
-
 所有电感为200pH、所有中和电容为15fF，均为正值理想无源；无行为源、开关或传递函数。每腿外部50Ω终端/100fF负载仅在测试台，DUT中不重复。
 
-![第9页原图与排版](markdown_assets/page-09.png)
-
-## 第10页 · 复现入口、证据与适用边界
+## 复现入口、证据与适用边界
 
 图纸、PDF、源快照、数值对照与知识笔记绑定同一最终电路。
 
-复现（工程根目录，既有Bridge Python）：python scripts/case32\_tx.py python scripts/confirm32.py python scripts/schematic32.py python scripts/audit32.py python scripts/review32.py重新生成报告后须重新逐页查看及核对完整总图。
+复现（工程根目录，既有Bridge Python）： python scripts/case32\_tx.py python scripts/confirm32.py python scripts/schematic32.py python scripts/audit32.py python scripts/review32.py 重新生成报告后须重新逐页查看及核对完整总图。
 
-latest\_results.json：29个边界、原/放宽结果及三种静态输入OP。verification\_audit.json：37个独立标量与23组原检查。numerical\_confirmation.json：两种瞬态的细步长对照。source/：原instruction、solution、benches和分析器冻结副本。iteration\_history.json：未采用候选、功能失败与原运行路径。schematic/：完整晶体管图、参数及端子连接映射。implementation/：生成、审计和报告脚本快照。
+latest\_results.json：29个边界、原/放宽结果及三种静态输入OP。 verification\_audit.json：37个独立标量与23组原检查。 numerical\_confirmation.json：两种瞬态的细步长对照。 source/：原instruction、solution、benches和分析器冻结副本。 iteration\_history.json：未采用候选、功能失败与原运行路径。 schematic/：完整晶体管图、参数及端子连接映射。 implementation/：生成、审计和报告脚本快照。
 
 本次是给定负载下的28Gb/s单级CML标称验证；其余ss/ff配对点、失配、噪声、通道/封装、驱动静电防护、电感有限Q、版图面积及PEX未执行。理想电感获得的提速不能直接换算为实芯片性能。
 
@@ -413,11 +223,12 @@ latest\_results.json：29个边界、原/放宽结果及三种静态输入OP。v
 
 DUT SHA-256：4a3d75102319b904cbe4a9aabfdb373e34eb42a70c57c37fb97fb94aa7c29b91
 
-![第10页原图与排版](markdown_assets/page-10.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 simulator lang=spectre
@@ -435,8 +246,10 @@ LIN (dinn gin) inductor l=200p
 ends tx_driver_28g
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

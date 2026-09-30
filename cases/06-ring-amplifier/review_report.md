@@ -85,7 +85,9 @@ gm/ID LUT提供器件角色的起点，各实例的镜像倍率、输出驱动�
 
 双极性建立、完整四点传输、共模恢复与零输入残差。
 
-![双极性建立、完整四点传输、共模恢复与零输入残差。](pdf_review/page-03.png)
+![双极性建立、完整四点传输、共模恢复与零输入残差。](markdown_assets/figure-03-01.png)
+
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
 建立时间以进入并保持在固定±160mV目标的±10%带内为准；不是以最终实测输出重新定义目标。
 
@@ -118,9 +120,12 @@ case06_ring_amp.py → confirm06.py → schematic06.py → audit06.py → review
 电路SHA-256：
 96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1
 
-## 完整最终网表 1/2
+## 完整网表与电路图
 
-所有实例、尺寸和连接原样列出；HD内部器件见随附原厂CDL提取。
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
+
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 simulator lang=spectre
@@ -171,13 +176,6 @@ MPM5 (bn1 ibias vdd vdd) p18 w=11.72u l=0.36u
 MPM4 (ibias ibias vdd vdd) p18 w=11.72u l=0.36u
 MPM0 (von1 ibias vdd vdd) p18 w=11.72u l=0.36u
 MPM3 (vop1 ibias vdd vdd) p18 w=11.72u l=0.36u
-```
-
-## 完整最终网表 2/2
-
-所有实例、尺寸和连接原样列出；HD内部器件见随附原厂CDL提取。
-
-```spectre
 R3 (net3 vop1) resistor r=1Meg
 R1 (von1 net3) resistor r=1Meg
 MSTARTP (vinp ibias vip vss) n18 w=.5u l=1u
@@ -185,18 +183,16 @@ MSTARTN (vinn ibias vin vss) n18 w=.5u l=1u
 ends ring_amp8
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接审计](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![sheet-3](schematic/sheet-3.png)
+![电路分图 4](schematic/sheet-4.png)
 
-![sheet-4](schematic/sheet-4.png)
+![电路分图 5](schematic/sheet-5.png)
 
-![sheet-5](schematic/sheet-5.png)
-
-![sheet-6](schematic/sheet-6.png)
+![电路分图 6](schematic/sheet-6.png)

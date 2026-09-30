@@ -1,10 +1,8 @@
-# 10-tia 审查报告
+# 10 · 跨阻放大器 TIA 审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 10 | 跨阻放大器 TIA 审查
+## 验收结果
 
 本模块把输入电流转换为输出电压，便于后续电压放大或数据转换。跨阻反馈可降低输入端阻抗，并在设定电流到电压增益的同时控制带宽；相比直接用大电阻读出电流，它更有利于处理输入端电容，但需要协调噪声与稳定性。芯片中常用于光电探测、传感器电流读出和接收机模拟前端。
 
@@ -30,9 +28,7 @@
 
 本报告仅覆盖一个nominal点的AC/功耗、噪声和正式SFDR三组测量；原15点PT矩阵的其余14点、失配和版图寄生均未执行。
 
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 模拟反相器结构、gm/ID与工作点
+## 模拟反相器结构、gm/ID与工作点
 
 保留原两级电阻反馈结构；NMOS与PMOS同时导通，属于模拟增益级。
 
@@ -52,97 +48,25 @@
 
 LUT以100 uA模拟单位管起步，取n/p的gm/ID=3.4/3.9，使栅压约0.9 V。低gm/ID对应强反型与较高速度；最终第一/二级复制15/11份，目标1.5/1.1 mA。实际偏置1.4912/1.0936 mA，所有单位W≤8.86 um，均在模型范围内。
 
-反馈电阻完成直流自偏置：IN=0.895220 V，N1=0.895201 V，VOUT=0.895258 V。MREF只以二极管连接终止2 0 uA端口，未镜像到两级。三份既有TT LUT只读使用；5只管均饱和，最小余量0.3935 V。DUT仅5只MOS与4只正电阻。
+反馈电阻完成直流自偏置：IN=0.895220 V，N1=0.895201 V，VOUT=0.895258 V。MREF只以二极管连接终止20 uA端口，未镜像到两级。三份既有TT LUT只读使用；5只管均饱和，最小余量0.3935 V。DUT仅5只MOS与4只正电阻。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![模拟反相器结构、gm/ID与工作点](markdown_assets/figure-02-01.png)
 
-```text
-RF1 4k
-RFB2 4.5k
-IN
-VOUT
-N1
-NBUF
-MN1 + MP1
-MN2 + MP2
-RIN2 1.5k
-模拟反相器
-模拟反相器
-CIN 0.3pF / RB 1M→VCM
-CL 0.2pF
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 固定负载下的跨阻带宽与噪声
+## 固定负载下的跨阻带宽与噪声
 
 带宽参考1 MHz跨阻；应用噪声频带固定为10–500 MHz。
 
-AC共401点，1 MHz–10.1 GHz、100点/十倍频程；按原fall=1取首个下降−3 dB交越。线性频率插值得649.62 69 MHz，改用对数频率为649.5933 MHz，差0.00517%。10 GHz跨阻10.0018 Ω，因此本例不使用“≥10 GHz”下界分支。
+AC共401点，1 MHz–10.1 GHz、100点/十倍频程；按原fall=1取首个下降−3 dB交越。线性频率插值得649.6269 MHz，改用对数频率为649.5933 MHz，差0.00517%。10 GHz跨阻10.0018 Ω，因此本例不使用“≥10 GHz”下界分支。
 
 噪声171点覆盖10–500 MHz，每点输入电流谱均低于5 pA/√Hz，最坏点为500 MHz。对谱密度平方积分再开根号：66.66484 nArms；分段幂律积分66.66503 nArms，差0.000289%。未随实际带宽改变积分终点。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![固定负载下的跨阻带宽与噪声](markdown_assets/figure-03-01.png)
 
-```text
-80
-70
-60
-50
-40
-Transimpedance (dB ohm)
-30
-Measured |ZT|
-ZT(1 MHz) / sqrt(2)
-BW 649.63 MHz
-20
-Original 750 MHz
-6
-7
-8
-9
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-5
-100
-4
-80
-3
-60
-2
-40
-Input noise (pA/sqrt(Hz))
-10 MHz to f noise (nArms)
-1
-20
-0
-0
-7
-8
-7
-8
-10
-10
-10
-10
-Frequency (Hz)
-Integration endpoint (Hz)
-```
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
-</details>
-
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 正式10 uA正弦与全谱SFDR
+## 正式10 uA正弦与全谱SFDR
 
 仅移除均值与基波；所有剩余非DC FFT频点均参与最大杂散搜索。
 
@@ -154,46 +78,11 @@ Integration endpoint (Hz)
 
 save IIN:p被Spectre忽略并产生两条警告；理想电流源仍按冻结bench的100 MHz/10 uA运行，VOUT完整。没有保存IIN电流波形，因此不声称对该波形另作实测。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![正式10 uA正弦与全谱SFDR](markdown_assets/figure-04-01.png)
 
-```text
-0.95
-0.90
-VOUT (V)
-0.85
-150.0
-152.5
-155.0
-157.5
-160.0
-162.5
-165.0
-167.5
-170.0
-Time (ns)
-0
--50
--100
--150
--200
-Amplitude / fundamental (dBc)
-7
-8
-9
-10
-10
-10
-10
-10
-All non-DC FFT bins (Hz)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 原合同映射与设计权衡
+## 原合同映射与设计权衡
 
 同一正式刺激、负载、功率端口和观察窗口；原函数保留其nominal单点集合。
 
@@ -218,44 +107,28 @@ All non-DC FFT bins (Hz)
 
 完整候选的基波ZT=7.9622 kΩ，比原门槛低0.473%；最终只把RF1从3.9k改到4.0k，恢复两项ZT原门槛，带宽由661.35降至649.63 MHz，SFDR由70.874降至70.675 dBc。停止进一步优化并明确保存带宽放宽标签。
 
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 精确电路与可复现证据
+## 精确电路与可复现证据
 
 端口顺序 IREF IN VCM VDD VOUT VSS；MOS端序D G S B，体端接对应电源。
 
-```text
-simulator lang=spectre
-subckt tia (iref in vcm vdd vout vss)
-MN1 (n1 in vss vss) n18 w=0.76u l=.18u m=15
-MP1 (n1 in vdd vdd) p18 w=2.36u l=.18u m=15
-RF1 (n1 in) resistor r=4000
-RB (in vcm) resistor r=1M
-MN2 (vout nbuf vss vss) n18 w=0.76u l=.18u m=11
-MP2 (vout nbuf vdd vdd) p18 w=2.36u l=.18u m=11
-RIN2 (n1 nbuf) resistor r=1500
-RFB2 (vout nbuf) resistor r=4500
-MREF (iref iref vss vss) n18 w=8.86u l=1u
-ends tia
-```
-
 MOS模型：SMIC\_018\_MMRF/models/spectre/ms018\_v1p7\_spe.lib，section=tt。NMOS与PMOS模拟级采用既有TT gm/ID LUT初值，LUT路径、偏置、尺寸、模型与源文件SHA-256均在case与run快照中。单位宽度合法，无新数字电路或额外DUT电容。
 
-复现：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case10\_tia.py报告：同一Python运行 scripts/review\_pdf.py 10。当前脚本默认值已固定最终版本；历史执行脚本保留在各run的inputs中，电路与合同逐字对应。
+复现：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case10\_tia.py 报告：同一Python运行 scripts/review\_pdf.py 10。当前脚本默认值已固定最终版本；历史执行脚本保留在各run的inputs中，电路与合同逐字对应。
 
 最终正式运行：runs/10/20260922T103416916168Z\_ac runs/10/20260922T103417040905Z\_noise runs/10/20260922T103417174989Z\_sfdr
 
-源任务：sky130-tia-zt8k-bw750m-noise5p-sfdr70-power5m-pt。instruction、reference与三份正式benc h、verify.py及utils.py已冻结在cases/10-tia/source。latest\_results、numerical\_review、verificat ion\_audit、pdf\_provenance与knowledge.md构成审查入口。
+源任务：sky130-tia-zt8k-bw750m-noise5p-sfdr70-power5m-pt。instruction、reference与三份正式bench、verify.py及utils.py已冻结在cases/10-tia/source。latest\_results、numerical\_review、verification\_audit、pdf\_provenance与knowledge.md构成审查入口。
 
 限制：仅tt/1.8 V/27°C，理想正电阻与测试电容；未验证其余PT、供电变化、额外光电二极管电容、失配、提取互连或电阻版图寄生。SFDR原门槛余量0.675 dB，不能推广为角落或硅后裕量。
 
 精确电路SHA-256：3e96952b371aec9580fd6fc7366ff78e08bf19958c732078db5e69c9341ff565
 
-![第6页原图与排版](markdown_assets/page-06.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Analog inverters in two resistor-feedback gain stages, not digital gates.
@@ -274,10 +147,12 @@ MREF (iref iref vss vss) n18 w=8.86u l=1u
 ends tia
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

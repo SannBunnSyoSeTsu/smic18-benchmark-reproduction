@@ -1,10 +1,8 @@
-# 03-selfbiased-gmr 审查报告
+# 03 · 自偏置退化 GM-R 审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 03 | 自偏置退化 GM-R 审查
+## 验收结果
 
 本模块提供约两倍差分电压增益，并结合自偏置与源极退化来控制跨导和失真。相比直接固定电流偏置的差分对，β倍增环使跨导与电阻相关，源极电阻进一步削弱器件非线性的影响。芯片中可用作模拟前端或连续时间信号通路的线性增益级；跨工艺温度的稳定性仍需另行验证。
 
@@ -26,9 +24,7 @@
 
 本题原目标为15个工艺温度点，当前只完成指定nominal点。未运行其余14点、供电变化、失配或寄生提取；也未额外宣称冷启动斜坡通过。
 
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 自偏置连接与gm/ID工作点
+## 自偏置连接与gm/ID工作点
 
 输入与主偏置使用同一n18单元，按并联倍数扩展电流。
 
@@ -53,23 +49,11 @@
 
 MB2的gm/ID约21，进入弱反型区；其VDS仍远大于VDSAT。不能把β倍增所有器件都视作强反型平方律器件。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![自偏置连接与gm/ID工作点](markdown_assets/figure-02-01.png)
 
-```text
-IREF参考
-源极退化差分对
-β倍增环
-弱启动下拉
-K=4, RB=3 kΩ
-RS500 Ω / RL1770 Ω
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 差分频响与拟合失真
+## 差分频响与拟合失真
 
 SDR只针对指定确定性正弦响应，不等同于含随机噪声的SNR。
 
@@ -77,110 +61,30 @@ SDR只针对指定确定性正弦响应，不等同于含随机噪声的SNR。
 
 带宽以1 MHz实测增益的1/√2为门槛；AC扫描100 kHz–11 GHz，包含原10 GHz检查点。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![差分频响与拟合失真](markdown_assets/figure-03-01.png)
 
-```text
-2.00
-1.75
-1.50
-1.25
-1.00
-Gain (V/V)
-0.75
-0.50
-0.25
-0.00
-5
-6
-7
-8
-9
-10
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-0.20
-Output
-DC + sine + cosine fit
-0.15
-0.10
-0.05
-0.00
--0.05
--0.10
-Differential output (V)
--0.15
--0.20
-0.6
-0.8
-1.0
-1.2
-1.4
-Time (us)
-150
-100
-50
-0
--50
-Fit residual (uV)
--100
--150
-0.6
-0.8
-1.0
-1.2
-1.4
-Time (us)
-```
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
-</details>
-
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 精确网表、迭代与复现
+## 精确网表、迭代与复现
 
 自偏置改变偏置生成方式，不能自动证明跨PVT恒定增益。
-
-```text
-simulator lang=spectre
-subckt gmr_degen (IREF VCM VDD VIN VIP VON VOP VSS)
-MREF (IREF IREF VSS VSS) n18 w=14.88u l=1u
-MST (nc IREF VSS VSS) n18 w=0.24u l=4u
-MB1 (nb nb VSS VSS) n18 w=5.04u l=.36u
-MB2 (nc nb rb2 VSS) n18 w=5.04u l=.36u m=4
-RB (rb2 VSS) resistor r=3000
-MP1 (nb nc VDD VDD) p18 w=18.76u l=1u
-MP2 (nc nc VDD VDD) p18 w=18.76u l=1u
-MTAIL (tail nb VSS VSS) n18 w=5.04u l=.36u m=25
-MINN (VON VIN sn VSS) n18 w=5.04u l=.36u m=12.5
-MINP (VOP VIP sp VSS) n18 w=5.04u l=.36u m=12.5
-RSN (sn tail) resistor r=500
-RSP (sp tail) resistor r=500
-RLN (VDD VON) resistor r=1770
-RLP (VDD VOP) resistor r=1770
-ends gmr_degen
-```
 
 初版RL=1900 Ω时AC增益2.14485、基波增益2.13841，超出合同；保持偏置与RS，仅将RL改为1770 Ω，得到2.00086和1.99503，带宽80.25→86.06 MHz。SDR保持约61.98 dB。
 
 主管22.07 uA并不直接保证每个尾源单元也流22.07 uA：二者VDS为0.522和0.179 V，尾电流实际505.94 uA。保留镜像误差和尾源余量，比只记并联倍数更有用。启动支路0.372 uA持续导通，包含在功耗中。
 
-复现：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case03\_selfbiased\_gmr.py PDF：同一Python运行 scripts/review\_pdf.py 3
+复现：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python  scripts/case03\_selfbiased\_gmr.py PDF：同一Python运行 scripts/review\_pdf.py 3
 
 最终运行：runs/03/20260922T073138775167Z\_gmr每次运行保留精确网表、LUT查询与模型哈希；当前无模型尺寸越界。
 
 原任务：sky130-gmr-degen-amp-constant-gm-pvt。输入/负载/功耗/SDR定义与原nominal合同一致；结构是本次目标工艺实现，不冒充原参考电路的逐管尺寸迁移。
 
-![第4页原图与排版](markdown_assets/page-04.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Beta-biased source-degenerated GM-R; VCM is a compatibility port.
@@ -203,10 +107,12 @@ RLP (VDD VOP) resistor r=1770
 ends gmr_degen
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

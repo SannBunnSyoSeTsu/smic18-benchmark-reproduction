@@ -1,10 +1,8 @@
-# 49-lc-vco 审查报告
+# 49 · 2 GHz 差分 LC VCO 审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 49 | 2 GHz 差分 LC VCO 审查
+## 验收结果
 
 本模块利用电感和可调电容构成谐振腔，将控制电压转换为射频振荡频率。相比依靠门延迟的环形振荡器，LC结构通常能借助谐振腔储能改善相位噪声，但需要更大的无源器件面积并受品质因数约束。芯片中主要承担射频PLL本振、收发机频率合成和高速时钟源功能。
 
@@ -35,9 +33,7 @@ TT / 27°C；nominal为1.8 V，pushing端点1.62/1.98 V；唯一外部偏置IREF
 
 未执行其余PVT、MC、PEX及相噪/抖动。供电端点用于pushing与振荡数据完整性，不代表所有供电角落的频率、起振和功耗指标均通过。
 
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 原厂 RF 谐振腔与真实偏置调节
+## 原厂 RF 谐振腔与真实偏置调节
 
 DUT：16只模拟MOS、2只电感、8只RF MIM、4只RF变容与4只工艺电阻。
 
@@ -52,37 +48,17 @@ DUT：16只模拟MOS、2只电感、8只RF MIM、4只RF变容与4只工艺电阻
 
 RF readme明确给出上述电感、变容和30×30 um² MIM示例。原厂模型包含导体损耗、衬底和寄生；串联Q只作初值估算，不是完整器件实测Q。未修改任何原厂内部器件。
 
-关键诊断：RF变容内含浮置源漏。UIC加控制阶跃时，0.55 V直流偏置下，四档Ceff约1.087/1.745/1.470/1.524 pF，并不单调。独立2GHz瞬态特征验证了内部节点跟随再钳位的历史效应。
+关键诊断：RF变容内含浮置源漏。UIC加控制阶跃时，0.55 V直流偏置下， 四档Ceff约1.087/1.745/1.470/1.524 pF，并不单调。 独立2GHz瞬态特征验证了内部节点跟随再钳位的历史效应。
 
 最终把变容直流偏置提升至约1.47 V，并用原厂MIM隔离输出的约0.56 V共模。参考、充电及调谐电荷吸收均由真实MOS电路提供，只有原接口50 uA为外部偏置。
 
 无数字逻辑；模拟推挽输出级跟随连续误差，不是数字反相器。DUT内没有理想R/L/C或隐藏电流、行为振荡源。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![原厂 RF 谐振腔与真实偏置调节](markdown_assets/figure-02-01.png)
 
-```text
-IREF 50 uA
-两只原厂ind_rf
-差分outp/outn
-PMOS级联镜 ×16
-交叉耦合n18负阻对
-各10 fF负载
-2.7 pF耦合/边
-MPVB + 两只n18二极管
-5管OTA + 模拟推挽
-两边RF变容
-VREFVAR
-真实VBias调节器
-端口1直接接VCTRL
-VBias经每边2只并联工艺电阻连接变容；OTA作连续模拟反馈。
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · gm/ID 单元尺寸与动态工作点
+## gm/ID 单元尺寸与动态工作点
 
 既有SMIC18 LUT只读；TT/27°C，参考W=10 um、VBS=0、|VDS|=0.45 V。
 
@@ -117,9 +93,7 @@ PMOS参考用L=0.18 um/gmID=20以减小启动节点电容；长L=1 um的变容�
 
 最终四个窗口全部偏置/调节器MOS饱和余量为正。负阻对按真实周期变化解释，LUT用于初始尺寸，不强求整周期工作点恒定。
 
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 原初值起振与四档固定窗口
+## 原初值起振与四档固定窗口
 
 skipdc=yes；只设outp=0.61 V、outn=0.59 V，无额外kick或人工预充电。
 
@@ -134,53 +108,11 @@ skipdc=yes；只设outp=0.61 V、outn=0.59 V，无额外kick或人工预充电�
 
 全窗全部完整周期频率与首20沿合同值的最大相对差约0.01854%；它反映有限窗口与建立轨迹，不是随机相噪或抖动测量。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![原初值起振与四档固定窗口](markdown_assets/figure-04-01.png)
 
-```text
-0.4
-0.2
-0.0
-Vdiff (V)
--0.2
--0.4
-0.0
-2.5
-5.0
-7.5
-10.0
-12.5
-15.0
-17.5
-20.0
-Time (ns)
-VCTRL=0V
-VCTRL=1.2V
-0.2
-VCTRL=0.6V
-VCTRL=1.8V
-0.1
-0.0
-Vdiff (V)
--0.1
--0.2
-0.00
-0.25
-0.50
-0.75
-1.00
-1.25
-1.50
-1.75
-2.00
-Time after window start (ns)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 四档供电 pushing 与完整 VDD 功耗
+## 四档供电 pushing 与完整 VDD 功耗
 
 同一冻结电路、相同控制序列/初值/10 fF负载；两个端点在单bench独立实例运行。
 
@@ -197,47 +129,15 @@ Time after window start (ns)
 
 端点诊断：1.62 V起振14.2679 ns，1.98 V功耗2.93567 mW。端点只服务pushing，不能据此宣称全供电PVT通过。VCTRL外部驱动功耗不属于源题VDD指标。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![四档供电 pushing 与完整 VDD 功耗](markdown_assets/figure-05-01.png)
 
-```text
-2.100
-1.62V
-1.80V
-2.075
-1.98V
-2.050
-2.025
-2.000
-Frequency (GHz)
-1.975
-1.950
-0.0
-0.6
-1.2
-1.8
-VCTRL (V)
-1.4
-1.3
-1.2
-1.1
-139 ns mean
-1 ns mean current (mA)
-20
-40
-60
-80
-100
-120
-140
-Time (ns)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
+![四档供电 pushing 与完整 VDD 功耗](markdown_assets/figure-05-02.png)
 
-![第5页原图与排版](markdown_assets/page-05.png)
+[查看矢量图](markdown_assets/figure-05-02.svg)
 
-## 第6页 · 保留失败迭代与证据核验
+## 保留失败迭代与证据核验
 
 八轮nominal及对应pushing/变容诊断都保留真实PSF，未把单项通过计作完整成功。
 
@@ -252,7 +152,7 @@ Time (ns)
 | 7 | 2.09297 | 1.93874 | 1.07956 | 2.48945 | 1.37668 |
 | 8 | 2.10368 | 1.94177 | 1.08338 | 2.46503 | 0.33798 |
 
-1–3轮：直接变容或偏置尚未建立，频率非单调。4–6轮：提升变容偏置、缩短PMOS参考L并增强调节器后nom inal改善，但pushing仍约4.05/1.96/1.26 %/V，不能验收。
+1–3轮：直接变容或偏置尚未建立，频率非单调。4–6轮：提升变容偏置、缩短PMOS参考L并增强调节器后nominal改善，但pushing仍约4.05/1.96/1.26 %/V，不能验收。
 
 第7轮：每边耦合缩到2.7 pF，前三档pushing通过，但末档1.377 %/V；实测低供电vbias仍在140–150 ns恢复，且末两档差仅3.76 MHz。第8轮下拉m=4、核心800 uA，补足电荷吸收并控制总功耗。
 
@@ -268,67 +168,26 @@ Time (ns)
 
 知识草稿：cases/49-lc-vco/knowledge.md；机器审计：verification\_audit.json。
 
-![第6页原图与排版](markdown_assets/page-06.png)
-
-## 第7页 · 完整 DUT 与可重放证据
+## 完整 DUT 与可重放证据
 
 模型include均位于bench层；下列电路不含任何隐藏激励或理想谐振元件。
 
-```text
-simulator lang=spectre
-subckt lc_vco_2ghz (vss iref vctrl vdd outp outn)
-MPREFU (pbu pbu vdd vdd) p18 w=17.8u l=.18u m=4
-MPREFL (iref iref pbu vdd) p18 w=17.8u l=.18u m=4
-MPFEED (pcas pbu vdd vdd) p18 w=17.8u l=.18u m=64
-MPCAS (tankct iref pcas vdd) p18 w=17.8u l=.18u m=64
-MPVB (vrefvar pbu vdd vdd) p18 w=56.44u l=1u m=4
-MNB1 (nbmid nbmid vss vss) n18 w=5.34u l=1u
-MNB2 (vrefvar vrefvar nbmid vss) n18 w=5.34u l=1u
-MRT (rtail nbmid vss vss) n18 w=5.34u l=1u m=2
-MRI1 (ra vbias rtail vss) n18 w=5.12u l=.36u m=2
-MRI2 (rout vrefvar rtail vss) n18 w=5.12u l=.36u m=2
-MRL1 (ra ra vdd vdd) p18 w=64.02u l=1u m=2
-MRL2 (rout ra vdd vdd) p18 w=64.02u l=1u m=2
-MRPU (vbias rout vdd vdd) p18 w=9.22u l=.18u m=20
-MRPD (vbias rout vss vss) n18 w=0.28u l=.18u m=4
-XLP (outp tankct) ind_rf r=60u n=3.5
-XLN (outn tankct) ind_rf r=60u n=3.5
-XCP (outp vss) mim1_rf wr=20u lr=30u
-XCN (outn vss) mim1_rf wr=20u lr=30u
-RBP (vbias varp vss) rpposab_3t w=1u l=3u
-RBN (vbias varn vss) rpposab_3t w=1u l=3u
-RBP2 (vbias varp vss) rpposab_3t w=1u l=3u
-RBN2 (vbias varn vss) rpposab_3t w=1u l=3u
-MNP (outp outn vss vss) n18 w=24.1u l=0.18u
-MNN (outn outp vss vss) n18 w=24.1u l=0.18u
-XCCP0 (outp varp) mim1_rf wr=30u lr=30u
-XCCN0 (outn varn) mim1_rf wr=30u lr=30u
-XCCP1 (outp varp) mim1_rf wr=30u lr=30u
-XCCN1 (outn varn) mim1_rf wr=30u lr=30u
-XCCP2 (outp varp) mim1_rf wr=30u lr=30u
-XCCN2 (outn varn) mim1_rf wr=30u lr=30u
-XVP0 (vctrl varp) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20
-XVN0 (vctrl varn) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20
-XVP1 (vctrl varp) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20
-XVN1 (vctrl varn) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20
-ends lc_vco_2ghz
-```
-
-运行：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case49\_lc\_vco.py随后同一命令加 --mode push；PDF执行 scripts/review\_pdf.py 49。
+运行：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python  scripts/case49\_lc\_vco.py 随后同一命令加 --mode push；PDF执行 scripts/review\_pdf.py 49。
 
 最终nominal：runs/49/20260922T104209025109Z\_nominal最终pushing：runs/49/20260922T104247199846Z\_push
 
 每个run含inputs/bench.scs、电路/合同/尺寸/RF模型快照，run.json记录基础模型递归哈希与额外RF哈希，output/bench.raw保存PSF，measurements.json保存实际测量。
 
-原任务材料见cases/49-lc-vco/source/，LUT/PDK/Bridge均未修改；PDF与全部渲染页哈希见pdf\_provenan ce.json。
+原任务材料见cases/49-lc-vco/source/，LUT/PDK/Bridge均未修改；PDF与全部渲染页哈希见pdf\_provenance.json。
 
 电路SHA256：56f91d72cc942ead964ed387c001590690600315d999f535cc6f0f26940c4753
 
-![第7页原图与排版](markdown_assets/page-07.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Analog differential LC oscillator; no digital logic.
@@ -371,14 +230,16 @@ XVN1 (vctrl varn) pvar18w10l1_ckt_rf wr=10u lr=1u nf=20
 ends lc_vco_2ghz
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![电路分图 sheet-3](schematic/sheet-3.png)
+![电路分图 4](schematic/sheet-4.png)
 
-![电路分图 sheet-4](schematic/sheet-4.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

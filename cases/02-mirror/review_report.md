@@ -1,8 +1,35 @@
-# 02-mirror 审查报告
+# 02 · 可编程电流镜审查报告
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
+## 验收结果
+
+本模块把两路参考电流按数字码选择的权重相加，生成可编程偏置电流。相比固定比例电流镜，它可调节两路参考的贡献，并用共栅级降低输出电压对电流的影响。芯片中常用于偏置分配、温度补偿权重调整和校准；本次只验证给定参考电流的nominal行为。
+
+结论：四个控制码、参考扰动及完整输出范围均通过原nominal指标。条件：SMIC18MMRF / tt / 1.8 V / 27°C；ICC、IPTAT各50 uA；输出电压名义0.9 V。代码改变两个参考的贡献比例，名义总目标始终为1 mA。
+
+| 最坏指标 | 实测 | 原门槛 | 10%边界 | 15%边界 | 单位 |
+| --- | --- | --- | --- | --- | --- |
+| 输出电流误差 | 2.6461 | ≤8.000 | ≤8.800 | ≤9.200 | % |
+| 独立权重误差 | 4.4974 | ≤10.000 | ≤11.000 | ≤11.500 | % |
+| 贡献比例误差 | 0.0058 | ≤10.000 | ≤11.000 | ≤11.500 | % |
+| 参考扰动耦合 | 0.0000 | ≤25.000 | ≤27.500 | ≤28.750 | mV |
+| 切码参考偏移 | 0.0000 | ≤50.000 | ≤55.000 | ≤57.500 | mV |
+| 辅助VDD电流 | 4.8147 | ≤100.000 | ≤110.000 | ≤115.000 | uA |
+| 数字引脚电流 | 0.0000 | ≤1.000 | ≤1.100 | ≤1.150 | uA |
+| 输出全范围变化 | 0.0809 | ≤3.000 | ≤3.300 | ≤3.450 | % |
+| 最小输出电阻 | 815.3336 | ≥100.000 | ≥90.000 | ≥85.000 | kΩ |
+
+| 控制码 | 目标ACC/APTAT | Iout/uA | ACC实测 | APTAT实测 |
+| --- | --- | --- | --- | --- |
+| 00 | 16 / 4 | 973.539 | 15.2804 | 3.8203 |
+| 01 | 12 / 8 | 973.539 | 11.4606 | 7.6405 |
+| 10 | 8 / 12 | 973.539 | 7.6405 | 11.4606 |
+| 11 | 4 / 16 | 973.539 | 3.8203 | 15.2804 |
+
+两参考引脚在名义及±5 uA独立扰动下均为0.47885–0.49117 V，满足0.20–1.10 V；所有输出电流均为正。隔离/数字电流的零值是本次模型和数值精度下的结果，不表示真实器件不存在漏电。
+
+辅助VDD电流已扣除两个强制参考电流；输出由外部电压源供电，不计入DUT辅助支路。
 
 <!-- SYSTEM-BLOCK-DIAGRAM -->
 ## 系统框图
@@ -34,38 +61,7 @@ flowchart TB
 [独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
 <!-- END-SYSTEM-BLOCK-DIAGRAM -->
 
-## 第1页 · 02 | 可编程电流镜审查报告
-
-本模块把两路参考电流按数字码选择的权重相加，生成可编程偏置电流。相比固定比例电流镜，它可调节两路参考的贡献，并用共栅级降低输出电压对电流的影响。芯片中常用于偏置分配、温度补偿权重调整和校准；本次只验证给定参考电流的nominal行为。
-
-结论：四个控制码、参考扰动及完整输出范围均通过原nominal指标。条件：SMIC18MMRF / tt / 1.8 V / 27°C；ICC、IPTAT各50 uA；输出电压名义0.9 V。代码改变两个参考的贡献比例，名义总目标始终为1 mA。
-
-| 最坏指标 | 实测 | 原门槛 | 10%边界 | 15%边界 | 单位 |
-| --- | --- | --- | --- | --- | --- |
-| 输出电流误差 | 2.6461 | ≤8.000 | ≤8.800 | ≤9.200 | % |
-| 独立权重误差 | 4.4974 | ≤10.000 | ≤11.000 | ≤11.500 | % |
-| 贡献比例误差 | 0.0058 | ≤10.000 | ≤11.000 | ≤11.500 | % |
-| 参考扰动耦合 | 0.0000 | ≤25.000 | ≤27.500 | ≤28.750 | mV |
-| 切码参考偏移 | 0.0000 | ≤50.000 | ≤55.000 | ≤57.500 | mV |
-| 辅助VDD电流 | 4.8147 | ≤100.000 | ≤110.000 | ≤115.000 | uA |
-| 数字引脚电流 | 0.0000 | ≤1.000 | ≤1.100 | ≤1.150 | uA |
-| 输出全范围变化 | 0.0809 | ≤3.000 | ≤3.300 | ≤3.450 | % |
-| 最小输出电阻 | 815.3336 | ≥100.000 | ≥90.000 | ≥85.000 | kΩ |
-
-| 控制码 | 目标ACC/APTAT | Iout/uA | ACC实测 | APTAT实测 |
-| --- | --- | --- | --- | --- |
-| 00 | 16 / 4 | 973.539 | 15.2804 | 3.8203 |
-| 01 | 12 / 8 | 973.539 | 11.4606 | 7.6405 |
-| 10 | 8 / 12 | 973.539 | 7.6405 | 11.4606 |
-| 11 | 4 / 16 | 973.539 | 3.8203 | 15.2804 |
-
-两参考引脚在名义及±5 uA独立扰动下均为0.47885–0.49117 V，满足0.20–1.10 V；所有输出电流均为正。隔离/数字电流的零值是本次模型和数值精度下的结果，不表示真实器件不存在漏电。
-
-辅助VDD电流已扣除两个强制参考电流；输出由外部电压源供电，不计入DUT辅助支路。
-
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 结构、gm/ID与实际工作点
+## 结构、gm/ID与实际工作点
 
 电流镜使用相同W/L单元复制；译码只用未修改的HD标准单元。
 
@@ -87,133 +83,23 @@ flowchart TB
 
 模拟开关有意工作在线性区，实测Ron约23.36 Ω；不能要求它保持饱和。gm/ID用于给出初始宽度，实际导通压降与完整外部合同共同确认尺寸。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![结构、gm/ID与实际工作点](markdown_assets/figure-02-01.png)
 
-```text
-IOUT
-ICC / IPTAT
-二极管参考
-四组权重镜支路
-选择开关
-(16,4) … (4,16)
-共享共栅管
-HD译码
-b1:b0 →
-2×IN + 4×NOR
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 全范围电流与独立权重
+## 全范围电流与独立权重
 
 每码41个均匀电压点，含0.45 V与1.60 V；权重使用±5 uA中心差分。
 
 四条名义电流曲线几乎重合，这是相同单元复制与互补总权重20的结果。输出电阻按0.895/0.905 V中心差分，不以全范围斜率替代局部输出电阻。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![全范围电流与独立权重](markdown_assets/figure-03-01.png)
 
-```text
-974.4
-00
-01
-10
-11
-974.2
-974.0
-973.8
-973.6
-973.4
-Iout (uA)
-973.2
-973.0
-972.8
-0.4
-0.6
-0.8
-1.0
-1.2
-1.4
-1.6
-Output voltage (V)
-0.08
-0.06
-0.04
-0.02
-0.00
--0.02
--0.04
-Deviation from 0.9V (%)
--0.06
--0.08
-0.4
-0.6
-0.8
-1.0
-1.2
-1.4
-1.6
-Output voltage (V)
-16
-Target
-Measured ICC
-Measured IPTAT
-14
-12
-10
-8
-6
-Partial current gain
-4
-2
-0
-00
-01
-10
-11
-Ratio code
-```
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
-</details>
-
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 精确连接与复现路径
+## 精确连接与复现路径
 
 内核没有独立源、受控源或理想开关；HD内部器件尺寸保留原库。
-
-```text
-simulator lang=spectre
-subckt programmable_current_mirror (vss vdd icc_ref iptat_ref ratio_b0 ratio_b1 iout)
-MICC (icc_ref icc_ref vss vss) n18 w=34.78u l=1u
-MPTAT (iptat_ref iptat_ref vss vss) n18 w=34.78u l=1u
-XNB0 (ratio_b0 nb0 vdd vss vdd vss) INHDV0
-XNB1 (ratio_b1 nb1 vdd vss vdd vss) INHDV0
-XSEL0 (ratio_b0 ratio_b1 sel0 vdd vss vdd vss) NOR2HDV0
-MIC0 (pre0 icc_ref vss vss) n18 w=34.780000u l=1u m=16
-MPT0 (pre0 iptat_ref vss vss) n18 w=34.780000u l=1u m=4
-MSW0 (isum sel0 pre0 vss) n18 w=32.84u l=.18u
-XSEL1 (nb0 ratio_b1 sel1 vdd vss vdd vss) NOR2HDV0
-MIC1 (pre1 icc_ref vss vss) n18 w=34.780000u l=1u m=12
-MPT1 (pre1 iptat_ref vss vss) n18 w=34.780000u l=1u m=8
-MSW1 (isum sel1 pre1 vss) n18 w=32.84u l=.18u
-XSEL2 (ratio_b0 nb1 sel2 vdd vss vdd vss) NOR2HDV0
-MIC2 (pre2 icc_ref vss vss) n18 w=34.780000u l=1u m=8
-MPT2 (pre2 iptat_ref vss vss) n18 w=34.780000u l=1u m=12
-MSW2 (isum sel2 pre2 vss) n18 w=32.84u l=.18u
-XSEL3 (nb0 nb1 sel3 vdd vss vdd vss) NOR2HDV0
-MIC3 (pre3 icc_ref vss vss) n18 w=34.780000u l=1u m=4
-MPT3 (pre3 iptat_ref vss vss) n18 w=34.780000u l=1u m=16
-MSW3 (isum sel3 pre3 vss) n18 w=32.84u l=.18u
-MCASC (iout vcb isum vss) n18 w=2.12u l=.36u m=200
-MBC (vcb vcb vb vss) n18 w=2.12u l=.36u
-RTOP (vdd vcb) resistor r=210000
-RBOT (vb vss) resistor r=50000
-ends programmable_current_mirror
-```
 
 早期宽度直接乘权重的版本曾触发CMI-2441尺寸越界，已撤回。最终采用同尺寸单元的m复制，日志无该警告。gm/ID文件哈希、HD原CDL哈希、完整单元网表、测试台与模型哈希均随运行保存。
 
@@ -223,11 +109,12 @@ ends programmable_current_mirror
 
 原任务：sky130-programmable-icc-iptat-current-mirror-pvt
 
-![第4页原图与排版](markdown_assets/page-04.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Analog devices from target SMIC18 gm/ID LUT; exact HD decode cells.
@@ -260,10 +147,12 @@ RBOT (vb vss) resistor r=50000
 ends programmable_current_mirror
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

@@ -1,10 +1,8 @@
-# 16-miller 审查报告
+# 16 · 两级 Miller 运放审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 16 | 两级 Miller 运放审查
+## 验收结果
 
 本模块通过两级电压放大获得较高开环增益，再用Miller补偿稳定负反馈。相比单级5T OTA，第二级提供额外增益和输出驱动能力，代价是额外电流与更复杂的补偿。芯片中常用于传感器读出、ADC驱动、开关电容电路和闭环放大；本例侧重速度与失调的联合取舍。
 
@@ -31,9 +29,7 @@
 
 最终100 mV阶跃跟踪误差1.201 mV，等于阶跃幅度的1.201%，同时满足2 mV与2%两个原条件。未以放宽后的噪声带宽或负载制造通过。
 
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 电路结构、LUT尺寸与OP
+## 电路结构、LUT尺寸与OP
 
 两级电压放大，电流偏置，串联RC跨级补偿。
 
@@ -58,25 +54,11 @@
 
 尾源、参考、输出负载用单位管并联；模型日志无尺寸越界警告。没有新增数字逻辑。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![电路结构、LUT尺寸与OP](markdown_assets/figure-02-01.png)
 
-```text
-VIN±
-VOUT
-stage1
-NMOS差分对
-NMOS共源
-PMOS镜负载
-PMOS电流源
-RZ 1.5 kΩ + CC 0.7 pF
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 环路、抑制比与噪声
+## 环路、抑制比与噪声
 
 闭环噪声频带由独立AC测得；抑制比保持上游闭环注入方式。
 
@@ -84,201 +66,40 @@ RZ 1.5 kΩ + CC 0.7 pF
 
 输入噪声为PSF的V/sqrt(Hz)，平方后对频率积分再开根号。没有用开环UGB作为积分终点。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![环路、抑制比与噪声](markdown_assets/figure-03-01.png)
 
-```text
-80
-0
-60
--20
--40
-40
--60
-20
-Loop gain (dB)
-Loop phase (deg)
--80
-0
--100
--20
--120
-2
-4
-6
-8
-10
-2
-4
-6
-8
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-Frequency (Hz)
-60
-50
-2
-10
-40
-30
-Input noise (nV/sqrt(Hz))
-Closed-loop rejection (dB)
-20
-1
-10
-PSRR+
-10
-CMRR
-1
-2
-3
-4
-5
-6
-7
-3
-4
-5
-6
-7
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-Frequency (Hz)
-```
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
-</details>
-
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 阶跃、压摆与连续范围
+## 阶跃、压摆与连续范围
 
 负载始终1 pF；同时验收正负两个方向，DC范围须围绕0.9 V连续。
 
 输出连续范围0.300–1.386 V，共1.086 Vpp；低端受原扫描0.3 V边界限制，未声称0.3 V以下可用。建立时间从5/66 ns阶跃开始到最后进入2 mV误差窗，终值分别在65/130 ns检查。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![阶跃、压摆与连续范围](markdown_assets/figure-04-01.png)
 
-```text
-0.85 V ↔ 0.95 V
-Input
-Output
-0.94
-0.92
-0.90
-Voltage (V)
-0.88
-0.86
-0
-20
-40
-60
-80
-100
-120
-Time (ns)
-0.65 V ↔ 1.15 V; slew measured 0.75–1.05 V
-1.2
-1.1
-1.0
-0.9
-Voltage (V)
-0.8
-0.7
-Input
-Output
-25
-50
-75
-100
-125
-150
-175
-200
-225
-Time (ns)
-Contiguous DC tracking range
-80
-70
-60
-50
-40
-30
-20
-Tracking error (mV)
-10
-0
-0.4
-0.6
-0.8
-1.0
-1.2
-1.4
-Input / requested output (V)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 精确电路、权衡与复现
+## 精确电路、权衡与复现
 
 一次第二级gm/ID调整同时改变速度、相位与输入失调。
-
-```text
-simulator lang=spectre
-subckt two_stage_miller_opamp (vss iref vdd vinn vinp vout)
-MREF (iref iref vss vss) n18 w=3.22u l=1u m=5
-MTAIL (tail iref vss vss) n18 w=3.22u l=1u m=14
-MINN (nleft vinn tail vss) n18 w=71.76u l=1u
-MINP (stage1 vinp tail vss) n18 w=71.76u l=1u
-MPD (nleft nleft vdd vdd) p18 w=17.86u l=1u
-MPM (stage1 nleft vdd vdd) p18 w=17.86u l=1u
-MBN (obias iref vss vss) n18 w=3.22u l=1u m=5
-MBP (obias obias vdd vdd) p18 w=46.9u l=1u
-MSECOND (vout stage1 vss vss) n18 w=13.040000000000001u l=.36u
-MLOAD (vout obias vdd vdd) p18 w=46.9u l=1u m=12
-RZ (stage1 comp) resistor r=1500
-CC (comp vout) capacitor c=0.7p
-ends two_stage_miller_opamp
-```
 
 初版第二级gm/ID=3时UGB150.90 MHz，低于15%放宽后的170 MHz下限。保持电流、补偿和其他尺寸，仅改到gm/ID=5，UGB升至198.96 MHz、PM由57.49°升至71.34°。输出静态误差从0.127增至1.165 mV，仍满足动态终值要求。
 
 原因：第二级跨导增大、输出极点与补偿零点改变；其栅压从约0.991降到0.790 V，输入对漏压不再接近相等。因此速度提升同时增加系统失调并降低CMRR，必须联合验收，不能只看UGB。
 
-复现：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case16\_miller.py生成PDF：同一Python运行 scripts/review\_pdf.py 16
+复现： /home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case16\_miller.py 生成PDF：同一Python运行 scripts/review\_pdf.py 16
 
 静态：runs/16/20260922T064852230057Z\_static噪声：runs/16/20260922T064852421079Z\_noise动态：runs/16/20260922T064852632282Z\_dynamic
 
 原任务：sky130-two-stage-miller-opamp-gain60-ugb200-pm60-noise50uv-pvt。未执行其余PVT点、另外两个代表性动态角落、失配或版图验证。198.96 MHz必须保留10%放宽通过标签。
 
-![第5页原图与排版](markdown_assets/page-05.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Two-stage Miller amplifier, SMIC18 target-PDK gm/ID dimensions.
@@ -299,10 +120,12 @@ CC (comp vout) capacitor c=0.7p
 ends two_stage_miller_opamp
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

@@ -1,10 +1,8 @@
-# 04-gmr 审查报告
+# 04 · GM-R 放大器审查报告
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 04 | GM-R 放大器审查报告
+## 验收结果
 
 本模块把差分电压放大为差分电压，利用源极电阻退化改善线性度并设定跨导。相比未退化差分对，它降低跨导非线性和对晶体管参数的敏感度，代价是增益与电压余量。芯片中常用作模拟前端、ADC前置放大和连续时间滤波器的增益级。
 
@@ -20,31 +18,13 @@
 
 AC差分增益@1 MHz = 2.002687 V/V；3 MHz正弦基波增益 = 1.997394 V/V。输入为100 mV差分峰值，不能通过减小振幅改善SDR。增益容差围绕目标2扩大，目标值保持2。
 
-MREF二极管连接，从IREF生成尾管栅压；图中省略体端与参考支路，精确端序见第4页。VCM端口保留，DUT内部不使用。
+MREF二极管连接，从IREF生成尾管栅压；图中省略体端与参考支路，精确端序见文末完整网表。VCM端口保留，DUT内部不使用。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![GM-R 放大器审查报告](markdown_assets/figure-01-01.png)
 
-```text
-VDD = 1.8 V
-RL = 1989 Ω
-RL = 1989 Ω
-VON
-VOP
-VIN
-n18
-VIP
-n18
-RS = 600 Ω
-RS = 600 Ω
-MTAIL：482.70 uA
-```
+[查看矢量图](markdown_assets/figure-01-01.svg)
 
-</details>
-
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · gm/ID尺寸与体效应
+## gm/ID尺寸与体效应
 
 LUT给出初值，实际工作点决定退化跨导和余量。
 
@@ -61,100 +41,25 @@ LUT给出初值，实际工作点决定退化跨导和余量。
 
 输入管gm=4.419 mS、gmb=1.073 mS，体效应占gm约24%。带退化且忽略ro时，gm\_eff≈gm/[1+(gm+gmb)RS]；不能只用gm/(1+gm·RS)。负载与输出电容构成主极点，增大RL提高增益，同时压低带宽。
 
-输入管实际源压0.3285 V，LUT采用零体偏置；尾节点0.1837 V，尾管VDS−VDSAT约81 mV。输入实际gm/ID=1 8.31，尾管16.14。记录体偏置与有限ro的误差，避免把LUT查询值直接当成完整电路工作点。
+输入管实际源压0.3285 V，LUT采用零体偏置；尾节点0.1837 V，尾管VDS−VDSAT约81 mV。输入实际gm/ID=18.31，尾管16.14。记录体偏置与有限ro的误差，避免把LUT查询值直接当成完整电路工作点。
 
 尾管由10个W=34.78 um、L=1 um的参考单元并联，避免超过PDK的单实例W≤100 um范围。实际尾电流482.70 uA，输出共模1.3200 V。旧版W=347.8 um单管结果已撤回；最终运行没有模型尺寸越界警告。
 
 所有LUT文件路径、SHA-256、目标点和单元并联信息保存在sizing.json。模型范围检查已成为后续每次运行的门槛；本结果不外推到PVT。
 
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 频响、正弦与残差证据
+## 频响、正弦与残差证据
 
 SDR按上游正弦拟合定义；1001个等间隔采样点，0.5–1.5 us。
 
 SDR=10log10[(a²+b²)/2 / mean(residual²)]；拟合含DC、sin与cos项。残差RMS=90.329 uV。此值是指定振幅/频率下的失真比，不包含随机噪声，也不等同于噪声动态范围。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![频响、正弦与残差证据](markdown_assets/figure-03-01.png)
 
-```text
-2.00
-1.75
-1.50
-1.25
-1.00
-0.75
-0.50
-Differential gain (V/V)
-0.25
-0.00
-5
-6
-7
-8
-9
-10
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-200
-Output
-Sine fit
-150
-100
-50
-0
--50
-VOP - VON (mV)
--100
--150
--200
-0.6
-0.8
-1.0
-1.2
-1.4
-Time (us)
-100
-50
-0
--50
-Fit residual (uV)
--100
-0.6
-0.8
-1.0
-1.2
-1.4
-Time (us)
-```
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
-</details>
-
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 精确电路、迭代与复现
+## 精确电路、迭代与复现
 
 宽度和电阻均来自最终通过的输入快照；没有修改PDK或Bridge。
-
-```text
-simulator lang=spectre
-subckt gmr_degen (IREF VCM VDD VIN VIP VON VOP VSS)
-MREF (IREF IREF VSS VSS) n18 w=34.7800u l=1u
-MTAIL (tail IREF VSS VSS) n18 w=34.7800u l=1u m=10
-MINN (VON VIN sn VSS) n18 w=97.5000u l=.36u
-MINP (VOP VIP sp VSS) n18 w=97.5000u l=.36u
-RSN (sn tail) resistor r=600
-RSP (sp tail) resistor r=600
-RLN (VDD VON) resistor r=1989
-RLP (VDD VOP) resistor r=1989
-ends gmr_degen
-```
 
 | RL/Ω | 1MHz增益 | 带宽/MHz | SDR/dB | 结果 |
 | --- | --- | --- | --- | --- |
@@ -170,11 +75,12 @@ ends gmr_degen
 
 PSF解析说明：既有解析器把PROP的units元数据当作额外信号；工程读取器仅过滤该元数据，校验真实曲线长度、有限值及时间递增。输入/输出/时间列已与原始标量记录逐点核对。
 
-![第4页原图与排版](markdown_assets/page-04.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // SMIC18 source-degenerated differential amplifier. VCM port is unused.
@@ -191,8 +97,10 @@ RLP (VDD VOP) resistor r=1989
 ends gmr_degen
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

@@ -82,7 +82,9 @@ flowchart TB
 
 两种完整16码次序、动态码序与单边频谱。低于-80dBc的谱线仅在显示时截底；评分使用未经截断的原始功率。
 
-![两种完整16码次序、动态码序与单边频谱。低于-80dBc的谱线仅在显示时截底；评分使用未经截断的原始功率。](pdf_review/page-03.png)
+![两种完整16码次序、动态码序与单边频谱。低于-80dBc的谱线仅在显示时截底；评分使用未经截断的原始功率。](markdown_assets/figure-03-01.png)
+
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
 Nyquist点按原评分计半权功率；图中展示其原单边DFT幅值，未用于改变验收结果。
 
@@ -115,9 +117,12 @@ maxstep50→25ps，全局reltol1e-5→1e-6；conservative瞬态实际相对容�
 未执行器件噪声、失配、参考阻抗、亚稳态统计、PEX或可靠性寿命分析；电路SHA-256：
 a87f8ceb7193b5c69bc95a629ca3d628484b30cb708e843db74e2d94b0687f8d
 
-## 完整最终网表 1/2
+## 完整网表与电路图
 
-所有实例、尺寸和连接原样列出；HD内部器件见随附原厂CDL提取。
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
+
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 simulator lang=spectre
@@ -168,13 +173,6 @@ XMSBp (dctrlp3_raw dctrlp3 vdd vss vdd vss) INHDV8
 XDECn3 (clk3 dcmpp dctrln3_raw clkc vdd vss vdd vss) DRNQHDV1
 XMSBn (dctrln3_raw dctrln3 vdd vss vdd vss) INHDV8
 XSEQ2 (valid clk3 clk2 clkc vdd vss vdd vss) DRNQHDV1
-```
-
-## 完整最终网表 2/2
-
-所有实例、尺寸和连接原样列出；HD内部器件见随附原厂CDL提取。
-
-```spectre
 XDECp2 (clk2 dcmpp dctrlp2 clkc vdd vss vdd vss) DRNQHDV1
 XDECn2 (clk2 dcmpn dctrln2 clkc vdd vss vdd vss) DRNQHDV1
 XSEQ1 (valid clk2 clk1 clkc vdd vss vdd vss) DRNQHDV1
@@ -200,32 +198,30 @@ XLOG (clkc cmpck dcmpn dcmpp dctrln3 dctrln2 dctrln1 dctrlp3 dctrlp2 dctrlp1 dou
 ends sar_adc_4bit_async
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接审计](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![sheet-3](schematic/sheet-3.png)
+![电路分图 4](schematic/sheet-4.png)
 
-![sheet-4](schematic/sheet-4.png)
+![电路分图 5](schematic/sheet-5.png)
 
-![sheet-5](schematic/sheet-5.png)
+![电路分图 6](schematic/sheet-6.png)
 
-![sheet-6](schematic/sheet-6.png)
+![电路分图 7](schematic/sheet-7.png)
 
-![sheet-7](schematic/sheet-7.png)
+![电路分图 8](schematic/sheet-8.png)
 
-![sheet-8](schematic/sheet-8.png)
+![电路分图 9](schematic/sheet-9.png)
 
-![sheet-9](schematic/sheet-9.png)
+![电路分图 10](schematic/sheet-10.png)
 
-![sheet-10](schematic/sheet-10.png)
+![电路分图 11](schematic/sheet-11.png)
 
-![sheet-11](schematic/sheet-11.png)
+![电路分图 12](schematic/sheet-12.png)
 
-![sheet-12](schematic/sheet-12.png)
-
-![sheet-13](schematic/sheet-13.png)
+![电路分图 13](schematic/sheet-13.png)

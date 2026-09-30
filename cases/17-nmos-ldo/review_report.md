@@ -1,8 +1,29 @@
-# 17-nmos-ldo 审查报告
+# 17 · 0.4V NMOS LDO审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
+## 验收结果
+
+本模块通过误差放大器控制NMOS功率管，将1.8V输入稳压至约0.4V。PMOS输入对适应低参考电压，电流镜把误差信号转移到较高的功率管栅压，栅极MIM补偿控制环路带宽；代价是额外镜像支路电流、补偿面积和较大的输入输出压差。芯片中可为低压模拟或数字子模块提供局部电源，本次只验证1mA与5mA负载的标称工作。
+
+结论：两种标称负载的全部原门槛通过；额外真实STB也通过。
+
+SMIC18MMRF TT / 1.8V / 27°C，外部40uA偏置电流从ibias流向VSS，外部10pF不变；完整保留1mA与5mA两点。以下PM/GM均为严格大于门槛，工作点余量不放宽。
+
+| 指标 | 1mA | 5mA | 原 | 10% | 15% | 单位 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 输出距0.4V误差 | 1.5405 | 1.1137 | ≤50 | ≤55 | ≤57.5 | mV |
+| 静态电流 | 246.39 | 247.04 | &lt;400 | &lt;440 | &lt;460 | uA |
+| 原串联注入PM | 88.143 | 88.762 | &gt;45 | &gt;45 | &gt;45 | deg |
+| 原串联注入GM | 40.399 | 47.336 | &gt;6 | &gt;5.0849 | &gt;4.5884 | dB |
+| 真实STB PM | 87.965 | 88.583 | &gt;45 | &gt;45 | &gt;45 | deg |
+| 真实STB GM | 38.598 | 44.716 | &gt;6 | &gt;5.0849 | &gt;4.5884 | dB |
+| 1kHz PSRR | 46.882 | 46.834 | &gt;40 | &gt;39.085 | &gt;38.588 | dB |
+| 有流MOS最小余量 | 393.79 | 393.88 | &gt;30 | &gt;30 | &gt;30 | mV |
+
+输出分别0.40154054V、0.40111369V；最小原PM88.143°，最小STB PM87.965°。原网格每十倍频40点，最终160点；1Hz–1GHz完整覆盖，无额外0dB回穿。
+
+其他52个工艺/供电/温度/负载点及50个失配种子未执行；没有将标称两点改写成54点PVT或失配通过。噪声、动态负载、布局、PEX不属于本题本次已测结论。
 
 <!-- SYSTEM-BLOCK-DIAGRAM -->
 ## 系统框图
@@ -35,32 +56,7 @@ flowchart TB
 [独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
 <!-- END-SYSTEM-BLOCK-DIAGRAM -->
 
-## 第1页 · 17 | 0.4V NMOS LDO审查
-
-本模块通过误差放大器控制NMOS功率管，将1.8V输入稳压至约0.4V。PMOS输入对适应低参考电压，电流镜把误差信号转移到较高的功率管栅压，栅极MIM补偿控制环路带宽；代价是额外镜像支路电流、补偿面积和较大的输入输出压差。芯片中可为低压模拟或数字子模块提供局部电源，本次只验证1mA与5mA负载的标称工作。
-
-结论：两种标称负载的全部原门槛通过；额外真实STB也通过。
-
-SMIC18MMRF TT / 1.8V / 27°C，外部40uA偏置电流从ibias流向VSS，外部10pF不变；完整保留1mA与5mA两点。以下PM/GM均为严格大于门槛，工作点余量不放宽。
-
-| 指标 | 1mA | 5mA | 原 | 10% | 15% | 单位 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 输出距0.4V误差 | 1.5405 | 1.1137 | ≤50 | ≤55 | ≤57.5 | mV |
-| 静态电流 | 246.39 | 247.04 | &lt;400 | &lt;440 | &lt;460 | uA |
-| 原串联注入PM | 88.143 | 88.762 | &gt;45 | &gt;45 | &gt;45 | deg |
-| 原串联注入GM | 40.399 | 47.336 | &gt;6 | &gt;5.0849 | &gt;4.5884 | dB |
-| 真实STB PM | 87.965 | 88.583 | &gt;45 | &gt;45 | &gt;45 | deg |
-| 真实STB GM | 38.598 | 44.716 | &gt;6 | &gt;5.0849 | &gt;4.5884 | dB |
-| 1kHz PSRR | 46.882 | 46.834 | &gt;40 | &gt;39.085 | &gt;38.588 | dB |
-| 有流MOS最小余量 | 393.79 | 393.88 | &gt;30 | &gt;30 | &gt;30 | mV |
-
-输出分别0.40154054V、0.40111369V；最小原PM88.143°，最小STB PM87.965°。原网格每十倍频40点，最终160点；1Hz–1GHz完整覆盖，无额外0dB回穿。
-
-其他52个工艺/供电/温度/负载点及50个失配种子未执行；没有将标称两点改写成54点PVT或失配通过。噪声、动态负载、布局、PEX不属于本题本次已测结论。
-
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 电路选择、gm/ID与实际工作点
+## 电路选择、gm/ID与实际工作点
 
 镜像输出把输入共模约0.4V与功率管栅压约1V分开。
 
@@ -90,9 +86,7 @@ SMIC18MMRF TT / 1.8V / 27°C，外部40uA偏置电流从ibias流向VSS，外部1
 
 PMOS电流带原符号；余量=|VDS|-|VDSAT|。两点均11只MOS有流，最小余量约394mV，远大于固定30mV。无流MOS电容排除规则仍保留，实际补偿使用原生MIM。
 
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 原串联注入与真实STB交叉检查
+## 原串联注入与真实STB交叉检查
 
 两种返回量低频相同，高频受注入双向耦合影响，分别报告。
 
@@ -100,83 +94,11 @@ PMOS电流带原符号；余量=|VDS|-|VDSAT|。两点均11只MOS有流，最小
 
 两种测量分别检查首个下降0dB和-180°交越，均有有限GM；不以没有相位交越为由填入无限裕量。高频差异不改变两负载原指标通过的结论。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![原串联注入与真实STB交叉检查](markdown_assets/figure-03-01.png)
 
-```text
-1mA series
-0
-40
-1mA STB
-5mA series
-5mA STB
--50
-20
--100
-0
--150
--20
--200
--40
-Loop phase (deg)
--250
-Loop magnitude (dB)
--60
--300
--80
--350
--100
-10
-1000
-100000
-1e+07
-1e+09
-10
-1000
-100000
-1e+07
-1e+09
-Frequency (Hz)
-Frequency (Hz)
-1.4
-1mA
-5mA
-46
-1.2
-44
-1.0
-42
-0.8
-40
-0.6
-38
-36
-0.4
-Supply rejection (dB)
-Active MOS headroom (V)
-34
-0.2
-32
-0.0
-10
-1000
-100000
-1e+07
-1e+09
-2
-4
-6
-8
-10
-Frequency (Hz)
-MOS index (page 2 order)
-```
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
-</details>
-
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 原合同与数值精度确认
+## 原合同与数值精度确认
 
 从40点/dec、1e-6收紧至160点/dec、1e-7，同一电路和夹具。
 
@@ -199,30 +121,9 @@ MOS index (page 2 order)
 
 原verifier没有可单独调用的标称检查函数；独立审计导入其门槛常量，将原5组不等式分别应用于两个标称负载，共10组通过，不改写上游54点/50种子完整验收语义。全部8个精度运行日志0错误/0警告。
 
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 最终精确网表与工艺无源
+## 最终精确网表与工艺无源
 
 NMOS功率管总宽430um，以合法4.3um单位m100实现。
-
-```text
-simulator lang=spectre
-subckt nmos_pass_ldo (vdd vout vss vref ibias loop_out pass_gate)
-MPREF (ibias ibias vdd vdd) p18 w=20.78u l=1u m=4
-MPTAIL (tail ibias vdd vdd) p18 w=20.78u l=1u m=8
-MPINR (nr vref tail vdd) p18 w=47.72u l=1u m=4
-MPINF (nf vout tail vdd) p18 w=47.72u l=1u m=4
-MNDR (nr nr vss vss) n18 w=4.38u l=1u m=4
-MNDF (nf nf vss vss) n18 w=4.38u l=1u m=4
-MNSINK (pc nf vss vss) n18 w=4.38u l=1u m=8
-MNOUT (loop_out nr vss vss) n18 w=4.38u l=1u m=8
-MPD (pc pc vdd vdd) p18 w=20.78u l=1u m=8
-MPOUT (loop_out pc vdd vdd) p18 w=20.78u l=1u m=8
-MPASS (vdd pass_gate vout vss) n18 w=4.3u l=.18u m=100
-CGATE (loop_out vss) mim w=100u l=100u m=10.298661174
-COUT (vout vss) mim w=100u l=100u m=2.05973223481
-ends nmos_pass_ldo
-```
 
 CGATE名义100pF、COUT名义20pF，均为原生mim，单位100×100um及m倍率；实际模型的面积/周边、电压和温度依赖保留。外部10pF不计入DUT，也没有用外部超大电容替代内部补偿。
 
@@ -230,27 +131,26 @@ CGATE名义100pF、COUT名义20pF，均为原生mim，单位100×100um及m倍率
 
 电路SHA-256：050cce2389d138c31156a14b1bf955093cbefb0018a2ec14f29689e12d65298d
 
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 设计认识、复现路径与范围
+## 设计认识、复现路径与范围
 
 13实例48端子独立核对；附后两页展开所有器件及体端。
 
-低参考电压与NMOS源跟随功率级需要不同的节点电压。直接把PMOS输入支路漏端当功率管驱动，会压缩输入管余量；本例用两路镜像输出完成电平转移，代价是约247uA静态电流。两个负载的全部11管余量已按实际O P检查。
+低参考电压与NMOS源跟随功率级需要不同的节点电压。直接把PMOS输入支路漏端当功率管驱动，会压缩输入管余量；本例用两路镜像输出完成电平转移，代价是约247uA静态电流。两个负载的全部11管余量已按实际OP检查。
 
 较大的栅极补偿将主环路UGB控制在约1.9MHz，使低输出电容下仍有约88°PM。此题未规定瞬态建立门槛，因此不据AC结果宣称负载跃变或启动速度通过；未另减小负载来改善稳定性。
 
-复现（工程根目录，现有Bridge Python）：python scripts/case17\_nmos\_ldo.py python scripts/confirm17.py python scripts/schematic17.py python scripts/audit17.py python scripts/review17.py重建后应重新逐页查看报告和完整总图，再执行交付。
+复现（工程根目录，现有Bridge Python）： python scripts/case17\_nmos\_ldo.py python scripts/confirm17.py python scripts/schematic17.py python scripts/audit17.py python scripts/review17.py 重建后应重新逐页查看报告和完整总图，再执行交付。
 
-证据：source/与source\_provenance.json，circuit.scs、sizing.json、latest\_results.json，numerica l\_plan/baseline/confirmation.json，verification\_audit.json，schematic/connectivity.json。源资料、模型、LUT及所有运行输入均保留哈希。
+证据：source/与source\_provenance.json，circuit.scs、sizing.json、latest\_results.json，numerical\_plan/baseline/confirmation.json，verification\_audit.json，schematic/connectivity.json。源资料、模型、LUT及所有运行输入均保留哈希。
 
 未覆盖其他52个PVT/负载点、50次失配、布局或PEX。原PDK、Virtuoso Bridge、Spectre与LUT环境未修改。本批次没有恢复用户已取消的额度监控。
 
-![第6页原图与排版](markdown_assets/page-06.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 simulator lang=spectre
@@ -271,10 +171,12 @@ COUT (vout vss) mim w=100u l=100u m=2.05973223481
 ends nmos_pass_ldo
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

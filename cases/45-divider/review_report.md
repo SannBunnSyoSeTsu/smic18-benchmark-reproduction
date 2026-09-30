@@ -1,8 +1,28 @@
-# 45-divider 审查报告
+# 45 · HD 二分频审查报告
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
+## 验收结果
+
+本模块把输入时钟频率除以二，并通过异步复位建立确定的初始状态。触发器反馈实现逐沿翻转，专用复位路径保证复位和释放时序；HD标准单元提供可复用的逻辑实现。芯片中常用于时钟分配、计数器和PLL反馈分频链；本模块只提供除二功能，不单独构成完整PLL。
+
+结论：原始1 GHz时钟与20 fF负载下，全部 nominal 原始指标通过。条件：SMIC18MMRF / tt / 1.8 V / 27°C；时钟与复位各经20 ohm源阻抗，时钟边沿10 ps。使用原厂HD单元晶体管网表，无行为逻辑、无自定义门尺寸。
+
+| 指标 | 实测 | 原门槛 | 10%边界 | 15%边界 | 单位 |
+| --- | --- | --- | --- | --- | --- |
+| 异步复位延迟 | 26.7837 | ≤100.000 | ≤110.000 | ≤115.000 | ps |
+| 最大时钟到输出 | 304.4914 | ≤400.000 | ≤440.000 | ≤460.000 | ps |
+| 占空比偏离50% | 0.0624 | ≤1.000 | ≤1.100 | ≤1.150 | 百分点 |
+
+| 功能检查 | 实测 | 原门槛（不放宽） |
+| --- | --- | --- |
+| 输出频率 | 500.03141 MHz | 495–505 MHz |
+| 高电平占空比 | 49.9376–49.9471% | 49–51% |
+| 复位保持窗最大值 | 8.987 mV | ≤360 mV |
+| 异步释放后/下一沿前 | 7.657 mV | ≤360 mV |
+| 释放后下一有效沿 | 1.7921 V | ≥1.44 V |
+
+FF内部状态确实复位；输出NOR提供快速拉低路径。复位释放时内部QN仍为高，不会提前产生输出上升。连接以第3页精确网表为准。
 
 <!-- SYSTEM-BLOCK-DIAGRAM -->
 ## 系统框图
@@ -34,136 +54,23 @@ flowchart TB
 [独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
 <!-- END-SYSTEM-BLOCK-DIAGRAM -->
 
-## 第1页 · 45 | HD 二分频审查报告
+![HD 二分频审查报告](markdown_assets/figure-01-01.png)
 
-本模块把输入时钟频率除以二，并通过异步复位建立确定的初始状态。触发器反馈实现逐沿翻转，专用复位路径保证复位和释放时序；HD标准单元提供可复用的逻辑实现。芯片中常用于时钟分配、计数器和PLL反馈分频链；本模块只提供除二功能，不单独构成完整PLL。
+[查看矢量图](markdown_assets/figure-01-01.svg)
 
-结论：原始1 GHz时钟与20 fF负载下，全部 nominal 原始指标通过。条件：SMIC18MMRF / tt / 1.8 V / 27°C；时钟与复位各经20 ohm源阻抗，时钟边沿10 ps。使用原厂HD单元晶体管网表，无行为逻辑、无自定义门尺寸。
-
-| 指标 | 实测 | 原门槛 | 10%边界 | 15%边界 | 单位 |
-| --- | --- | --- | --- | --- | --- |
-| 异步复位延迟 | 26.7837 | ≤100.000 | ≤110.000 | ≤115.000 | ps |
-| 最大时钟到输出 | 304.4914 | ≤400.000 | ≤440.000 | ≤460.000 | ps |
-| 占空比偏离50% | 0.0624 | ≤1.000 | ≤1.100 | ≤1.150 | 百分点 |
-
-| 功能检查 | 实测 | 原门槛（不放宽） |
-| --- | --- | --- |
-| 输出频率 | 500.03141 MHz | 495–505 MHz |
-| 高电平占空比 | 49.9376–49.9471% | 49–51% |
-| 复位保持窗最大值 | 8.987 mV | ≤360 mV |
-| 异步释放后/下一沿前 | 7.657 mV | ≤360 mV |
-| 释放后下一有效沿 | 1.7921 V | ≥1.44 V |
-
-FF内部状态确实复位；输出NOR提供快速拉低路径。复位释放时内部QN仍为高，不会提前产生输出上升。连接以第3页精确网表为准。
-
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
-
-```text
-clkout
-clk
-QN
-DRNQNHDV1
-NOR2HDV16
-D = QN
-reset
-RDN
-INHDV2
-```
-
-</details>
-
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 瞬态证据与边沿定义
+## 瞬态证据与边沿定义
 
 边沿在实际DUT引脚0.9 V处线性插值；没有使用源端理想时刻替代。
 
 复位前1.65 ns检查为高；1.85–2.04 ns检查保持低；2.05–2.20 ns检查异步释放保持；2.70 ns检查下一沿已正确翻转。逐周期周期与高/低宽度也单独验收。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![瞬态证据与边沿定义](markdown_assets/figure-02-01.png)
 
-```text
-Divide by 2 at 1 GHz
-CLK
-OUT
-1.75
-1.50
-1.25
-1.00
-0.75
-Voltage (V)
-0.50
-0.25
-0.00
-1
-2
-3
-4
-5
-6
-7
-8
-Time (ns)
-Asynchronous assertion and release
-RESET
-OUT
-CLK
-1.75
-1.50
-1.25
-1.00
-0.75
-Voltage (V)
-0.50
-0.25
-0.00
-1.6
-1.8
-2.0
-2.2
-2.4
-2.6
-Time (ns)
-Reset edge detail
-1.75
-1.50
-1.25
-1.00
-0.75
-Voltage (V)
-0.50
-0.25
-OUT
-0.00
-RESET
-1720
-1740
-1760
-1780
-1800
-1820
-1840
-Time (ps)
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · HD单元与精确连接
+## HD单元与精确连接
 
 所有单元内部MOS尺寸和模型名保持原厂CDL值。
-
-```text
-simulator lang=spectre
-subckt divide_by_2 (clk reset vdd vss clkout)
-XR (reset rdn vdd vss vdd vss) INHDV2
-XFF (clk qn qn rdn vdd vss vdd vss) DRNQNHDV1
-XOUT (qn reset clkout vdd vss vdd vss) NOR2HDV16
-ends divide_by_2
-```
 
 | 原厂单元 | 端序 | MOS数 |
 | --- | --- | --- |
@@ -179,9 +86,7 @@ D与QN连接构成T触发器。RDN由reset反相驱动，使异步复位清除FF
 
 未覆盖：其他PVT、时钟抖动、全setup/hold扫描、复位recovery/removal统计、互连寄生。没有把本次波形作为上述范围的证明。
 
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 迭代、权衡与复现路径
+## 迭代、权衡与复现路径
 
 失败迭代保留在runs/45；最终验收使用同一最终电路的两套测试。
 
@@ -195,17 +100,18 @@ D与QN连接构成T触发器。RDN由reset反相驱动，使异步复位清除FF
 
 工程认识：门驱动档位同时改变输出上/下沿延迟和前一级负载，因此“所有单元加大”并不保证占空比更好。这里通过未修改的标准单元组合找到时序平衡；不是手改晶体管尺寸。
 
-复现命令（工程根目录）：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case45\_divider.py --ff 1 --nor 16生成PDF：同一Python运行 scripts/review\_pdf.py 45
+复现命令（工程根目录）： /home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case45\_divider.py --ff 1 --nor 16 生成PDF：同一Python运行 scripts/review\_pdf.py 45
 
 结果：cases/45-divider/latest\_results.json分频运行：runs/45/20260922T055442345725Z\_divide复位运行：runs/45/20260922T055443514982Z\_reset每次run.json保存精确输入、模型和库哈希。
 
 参考任务：sky130-transistor-divide-by-2。外部时钟、复位波形、源电阻和负载保持原nominal条件。
 
-![第4页原图与排版](markdown_assets/page-04.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Unmodified HD library cells. Internal FF is reset; output NOR adds a fast assertion path.
@@ -217,8 +123,10 @@ XOUT (qn reset clkout vdd vss vdd vss) NOR2HDV16
 ends divide_by_2
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

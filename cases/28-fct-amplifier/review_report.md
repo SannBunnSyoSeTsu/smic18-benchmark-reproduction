@@ -84,7 +84,9 @@ gm/ID确定原生器件初始电流密度，开关与浮动电荷转移过程不
 
 两种输入幅度的保持/提前100ps样本与单边DFT频谱；低于-100dBc只作显示截底，评分使用原始数据。
 
-![两种输入幅度的保持/提前100ps样本与单边DFT频谱；低于-100dBc只作显示截底，评分使用原始数据。](pdf_review/page-03.png)
+![两种输入幅度的保持/提前100ps样本与单边DFT频谱；低于-100dBc只作显示截底，评分使用原始数据。](markdown_assets/figure-03-01.png)
+
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
 ## 刺激、夹具与功耗边界
 
@@ -123,9 +125,12 @@ maxstep1.25→0.625ps，全局reltol1e-08→1e-09（conservative实际再除10�
 
 电路SHA-256：efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988
 
-## 完整最终网表 1/2
+## 完整网表与电路图
 
-所有实例、尺寸和连接原样列出。HD内部器件见随附原厂CDL提取。PDF长行仅作视觉折行，MD保留原始行。
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
+
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 simulator lang=spectre
@@ -178,13 +183,6 @@ C_INPUT_04 (cinp input_ctrl_n_b) capacitor c=1p
 C_INPUT_05 (vcm bias_reservoir_reset) capacitor c=431.276f
 C_INPUT_06 (vcm bias_input_reset) capacitor c=431.276f
 X_CLOCK_01 (sam reset_n_res_n vdddig vssdig vdddig vssdig) BUFHDV12
-```
-
-## 完整最终网表 2/2
-
-所有实例、尺寸和连接原样列出。HD内部器件见随附原厂CDL提取。PDF长行仅作视觉折行，MD保留原始行。
-
-```spectre
 X_CLOCK_02 (transfer output_en_n vdddig vssdig vdddig vssdig) BUFHDV12
 X_CLOCK_03 (sam reset_n_bias vdddig vssdig vdddig vssdig) BUFHDV12
 X_CLOCK_04 (sam reset_n_res_p vdddig vssdig vdddig vssdig) BUFHDV12
@@ -234,32 +232,30 @@ X_CLOCK_12 (sam reset_b_main vdddig vssdig vdddig vssdig) INHDV12
 ends test_fct
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接审计](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![sheet-3](schematic/sheet-3.png)
+![电路分图 4](schematic/sheet-4.png)
 
-![sheet-4](schematic/sheet-4.png)
+![电路分图 5](schematic/sheet-5.png)
 
-![sheet-5](schematic/sheet-5.png)
+![电路分图 6](schematic/sheet-6.png)
 
-![sheet-6](schematic/sheet-6.png)
+![电路分图 7](schematic/sheet-7.png)
 
-![sheet-7](schematic/sheet-7.png)
+![电路分图 8](schematic/sheet-8.png)
 
-![sheet-8](schematic/sheet-8.png)
+![电路分图 9](schematic/sheet-9.png)
 
-![sheet-9](schematic/sheet-9.png)
+![电路分图 10](schematic/sheet-10.png)
 
-![sheet-10](schematic/sheet-10.png)
+![电路分图 11](schematic/sheet-11.png)
 
-![sheet-11](schematic/sheet-11.png)
+![电路分图 12](schematic/sheet-12.png)
 
-![sheet-12](schematic/sheet-12.png)
-
-![sheet-13](schematic/sheet-13.png)
+![电路分图 13](schematic/sheet-13.png)

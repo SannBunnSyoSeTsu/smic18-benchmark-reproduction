@@ -1,10 +1,8 @@
-# 43-inductive-lna 审查报告
+# 43 · 2.4GHz电感退化LNA审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 43 | 2.4GHz电感退化LNA审查
+## 验收结果
 
 本模块放大2.4GHz附近的微弱射频信号，在两端50Ω条件下同时控制增益、噪声和反射。源极电感退化与栅极谐振网络帮助输入匹配，共栅级改善反向隔离，漏端电感及电容网络把高阻放大节点匹配到输出端口；代价是窄带响应和较大的无源面积。芯片中可用于无线接收机前端，本次以原理图工艺模型验证标称小信号性能，物理布局和互感仍需另行检查。
 
@@ -30,9 +28,7 @@ SMIC18MMRF TT / 1.8V / 27°C / 50uA参考，两端50Ω。增益、匹配、反�
 
 只执行TT标称，原27点PVT中的另外26点与公开0°C诊断未运行；失配、压缩、互调、天线/封装、布局与PEX未验证。小信号通过不等于完整接收机签核。
 
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · gm/ID尺寸与真实工作点
+## gm/ID尺寸与真实工作点
 
 只有iref外部模拟偏置；电流镜与双NMOS复制栈产生共栅偏置。
 
@@ -60,9 +56,7 @@ SMIC18MMRF TT / 1.8V / 27°C / 50uA参考，两端50Ω。增益、匹配、反�
 
 MOS使用现有SMIC18 n18/p18 LUT，L0.18/0.36um、VDS0.9V；实际输入gm/ID13.8183、共栅9.9119。所有8只MOS有正电压余量；参数符号沿用Spectre，PMOS电流表中取幅度。
 
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 完整工艺无源与匹配结构
+## 完整工艺无源与匹配结构
 
 DUT无用户理想R/C/L；所有spiral均使用文档示例r60um、n3.5的完整模型。
 
@@ -84,146 +78,31 @@ mim1\_rf含金属串联电阻、电感与衬底支路，名义1fF/um²面积值�
 
 独立spiral之间没有加入互感，尚无物理排布或电磁提取；MOS采用既有n18/p18模型，未额外构造版图门电阻。所有结论限于当前原生模型覆盖，不能假定实芯片有相同性能。
 
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 通带增益、匹配与噪声
+## 通带增益、匹配与噪声
 
 两端50Ω、50uA参考、原101点网格保留，最终201点取最坏值。
 
-最终增益18.552718–18.973414dB、纹波0.420696dB；噪声系数最坏1.619038dB。输入匹配最差-10.926464d B，比原-10dB有0.926dB余量，必须与其余指标同时判断。
+最终增益18.552718–18.973414dB、纹波0.420696dB；噪声系数最坏1.619038dB。输入匹配最差-10.926464dB，比原-10dB有0.926dB余量，必须与其余指标同时判断。
 
 最差输出匹配-15.769358dB，反向S12为-38.751989dB。保留50Ω输出实负载，未使用开路电压增益代替传输功率增益，也未从噪声中扣掉DUT无源损耗。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![通带增益、匹配与噪声](markdown_assets/figure-04-01.png)
 
-```text
--10
-18.9
--15
--20
-18.8
--25
-18.7
-Reflection (dB)
-Transducer gain (dB)
--30
-18.6
-S11
-S22
-2.36
-2.38
-2.40
-2.42
-2.44
-2.36
-2.38
-2.40
-2.42
-2.44
-Frequency (GHz)
-Frequency (GHz)
-2.0
--30
--32
-1.9
--34
-1.8
--36
-Noise figure (dB)
-1.7
-Reverse isolation S12 (dB)
--38
-1.6
-2.36
-2.38
-2.40
-2.42
-2.44
-2.36
-2.38
-2.40
-2.42
-2.44
-Frequency (GHz)
-Frequency (GHz)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 0.1–10GHz完整稳定性范围
+## 0.1–10GHz完整稳定性范围
 
 Rollet K与|delta|共同判断；不能仅凭2.4GHz点或反向隔离宣布稳定。
 
-K最小4.660687201，位于2.440619068GHz；|delta|最大0.997823069，位于100MHz。低端与1的距离约0.002 177，明确保留该有限余量。
+K最小4.660687201，位于2.440619068GHz；|delta|最大0.997823069，位于100MHz。低端与1的距离约0.002177，明确保留该有限余量。
 
 delta=S11·S22-S12·S21；K=(1-|S11|²-|S22|²+|delta|²)/(2|S12·S21|)。最终1601点均K&gt;1、|delta|&lt;1；这是给定频段及模型的线性双端口判据，未扩称带外、非线性或PVT稳定性。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![0.1–10GHz完整稳定性范围](markdown_assets/figure-05-01.png)
 
-```text
-1.0
-1200
-1000
-0.8
-800
-0.6
-600
-Rollet K
-0.4
-400
-Magnitude of delta
-200
-0.2
-0
-0.1
-1
-10
-0.1
-1
-10
-Frequency (GHz)
-Frequency (GHz)
-6.50
-0.0200
-6.25
-0.0175
-6.00
-0.0150
-5.75
-0.0125
-5.50
-0.0100
-5.25
-K near minimum
-0.0075
-5.00
-1 - |delta| at low frequency
-0.0050
-4.75
-0.0025
-1.5
-2.0
-2.5
-3.0
-3.5
-0.1
-0.2
-0.3
-0.4
-0.5
-Frequency (GHz)
-Frequency (GHz)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 独立测量与频率网格复核
+## 独立测量与频率网格复核
 
 原正向/反向两DUT台保留；输出负载无噪声是原测试条件，DUT噪声全开。
 
@@ -250,9 +129,7 @@ NF=20log10(max(e\_input)/sqrt(4kT×50))，T=300.15K。输入50Ω噪声保留、�
 
 独立13项测量与原7组检查全部通过。源文件、模型、RF子电路与LUT哈希未变；两个正式精度运行均0错误/0警告。39实例95端子另行独立连接审计。
 
-![第6页原图与排版](markdown_assets/page-06.png)
-
-## 第7页 · 迭代过程与复现入口
+## 迭代过程与复现入口
 
 调整输出阻抗变换，保持电流、原RF端口与噪声定义。
 
@@ -265,72 +142,26 @@ NF=20log10(max(e\_input)/sqrt(4kT×50))，T=300.15K。输入50Ω噪声保留、�
 
 从复数S22推导输出阻抗，在2.4GHz用电容网络估算下一次匹配值，再以完整工艺模型重新验证。没有用理论估算替代最终仿真。早期Spectre lin=101产生102点，发现后改为100个间隔，先恢复原101点再进行加密对照。
 
-复现（工程根目录，既有Bridge Python）：python scripts/case43\_lna.py python scripts/confirm43.py python scripts/schematic43.py python scripts/audit43.py python scripts/review43.py报告重建后须重新查看全部页面及完整总图。
+复现（工程根目录，既有Bridge Python）： python scripts/case43\_lna.py python scripts/confirm43.py python scripts/schematic43.py python scripts/audit43.py python scripts/review43.py 报告重建后须重新查看全部页面及完整总图。
 
-source/和source\_provenance.json保存原合同/测试台/验收器。iteration\_history.json保存失败方案；n umerical\_plan/baseline/confirmation保留精度计划和对照；verification\_audit.json保留独立公式与来源，implementation/冻结本次脚本。
+source/和source\_provenance.json保存原合同/测试台/验收器。iteration\_history.json保存失败方案；numerical\_plan/baseline/confirmation保留精度计划和对照；verification\_audit.json保留独立公式与来源，implementation/冻结本次脚本。
 
 原26个其他PVT点、失配、压缩/互调、布局互感与PEX未执行；不把本次TT结果标记为上游27点完整签核。
 
-![第7页原图与排版](markdown_assets/page-07.png)
-
-## 第8页 · 最终精确电路与证据边界
+## 最终精确电路与证据边界
 
 全部模拟实例在后附三页完整图纸中一一对应；未折叠无源阵列。
-
-```text
-simulator lang=spectre
-subckt inductive_lna (vss iref vdd rfin rfout)
-MREF (iref iref vss vss) n18 w=4.3u l=.18u
-MNSINK (pgate iref vss vss) n18 w=4.3u l=.18u m=6
-MPDIO (pgate pgate vdd vdd) p18 w=33.94u l=.36u m=6
-MPMIR (vcas pgate vdd vdd) p18 w=33.94u l=.36u m=6
-MCBOT (vbias vbias vss vss) n18 w=1.92u l=.18u m=6
-MCTOP (vcas vcas vbias vss) n18 w=1.92u l=.18u m=6
-MIN (nx ng ns vss) n18 w=4.3u l=.18u m=60
-MCAS (nd vcas nx vss) n18 w=1.92u l=.18u m=60
-RBIAS (iref ng vss) rpposab_3t w=1u l=150u
-XCIN0 (rfin nin) mim1_rf wr=30u lr=30u
-XCIN1 (rfin nin) mim1_rf wr=30u lr=30u
-XCIN2 (rfin nin) mim1_rf wr=30u lr=30u
-XCIN3 (rfin nin) mim1_rf wr=30u lr=30u
-XCIN4 (rfin nin) mim1_rf wr=30u lr=30u
-XCIN5 (rfin nin) mim1_rf wr=30u lr=30u
-XCBN0 (iref vss) mim1_rf wr=30u lr=30u
-XCBN1 (iref vss) mim1_rf wr=30u lr=30u
-XCBN2 (iref vss) mim1_rf wr=30u lr=30u
-XCBN3 (iref vss) mim1_rf wr=30u lr=30u
-XCBN4 (iref vss) mim1_rf wr=30u lr=30u
-XCBN5 (iref vss) mim1_rf wr=30u lr=30u
-XCBC0 (vcas vss) mim1_rf wr=30u lr=30u
-XCBC1 (vcas vss) mim1_rf wr=30u lr=30u
-XCBC2 (vcas vss) mim1_rf wr=30u lr=30u
-XCBC3 (vcas vss) mim1_rf wr=30u lr=30u
-XCOUT0 (nd rfout) mim1_rf wr=30u lr=21.8333333333u
-XCMATCH0 (rfout vss) mim1_rf wr=30u lr=26.4566666667u
-XCMATCH1 (rfout vss) mim1_rf wr=30u lr=26.4566666667u
-XLG0 (nin lg1) ind_rf r=60u n=3.5
-XLG1 (lg1 lg2) ind_rf r=60u n=3.5
-XLG2 (lg2 ng) ind_rf r=60u n=3.5
-XLD0 (vdd ld1) ind_rf r=60u n=3.5
-XLD1 (ld1 nd) ind_rf r=60u n=3.5
-XLS0 (ns vss) ind_rf r=60u n=3.5
-XLS1 (ns vss) ind_rf r=60u n=3.5
-XLS2 (ns vss) ind_rf r=60u n=3.5
-XLS3 (ns vss) ind_rf r=60u n=3.5
-XLS4 (ns vss) ind_rf r=60u n=3.5
-XLS5 (ns vss) ind_rf r=60u n=3.5
-ends inductive_lna
-```
 
 端序：MOS为D G S B；rpposab\_3t第三端为衬底；ind\_rf和mim1\_rf仅有两外部端口，其原厂衬底网络参考全局0，本测试vss=0。完整原厂RF模型未改写为用户理想器件。
 
 DUT SHA-256：dfceb74aacbcd14aeab9a680577996f67fbf2ffc8c7b4e321f7d3658b3ace2c5
 
-![第8页原图与排版](markdown_assets/page-08.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 simulator lang=spectre
@@ -377,12 +208,14 @@ XLS5 (ns vss) ind_rf r=60u n=3.5
 ends inductive_lna
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![电路分图 sheet-3](schematic/sheet-3.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

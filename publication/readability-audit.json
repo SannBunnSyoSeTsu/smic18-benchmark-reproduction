@@ -1,0 +1,2543 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+  "baseline_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+  "reports": 50,
+  "tables": 217,
+  "table_cells": 8637,
+  "figures": 116,
+  "removed_page_images": 277,
+  "removed_label_dumps": 110,
+  "local_links_checked": 872,
+  "protected_evidence_unchanged": true,
+  "browser_reports": 50,
+  "broken_images": 0,
+  "horizontal_overflow": 0,
+  "visual_review_scope": "All 116 figure layouts reviewed using contact sheets. 08 PPSF main text read across seven browser screenshots. This is a documentation readability review, not a new circuit verification.",
+  "cases": [
+    {
+      "case": "01-class-d",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "e223b24e53d216259a270da5ae32ef17a5a7eb8cc6188f04c9254071a0a4947b",
+      "pdf_sha256": "0a8b57830426ad23192789c204393537401da6ebdc618091cade4767db934433",
+      "circuit_sha256": "f59766bd4f72b90770dbac469f74a2494226731a573c3ce0e1a89f6b76d8f3b9",
+      "results_sha256": "c34de2d1434a8baa32fdc858825ba4e962ba8bd99a1c728830d314defbe318c4",
+      "removed_page_images": 9,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 4,
+          "position": 561.1,
+          "clip_pdf_points": [
+            0.0,
+            127.05520629882812,
+            595.4400024414062,
+            661.9364013671875
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "15010d1655f7807b5f794e0994814c543aba284d48c3fb3f70dc36f3482e8a14",
+          "svg_sha256": "469ee924b0c929a3dfcf72e41efcd6912927d5b7575a3f100f9ad8d3cacdcb33"
+        },
+        {
+          "page": 5,
+          "position": 577.1,
+          "clip_pdf_points": [
+            0.0,
+            109.04779815673828,
+            595.4400024414062,
+            683.9454956054688
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "2312d4e8f2c9e6f4c7189bced6e69d6d4fea2a97d1930f7dcff18a0cfd75a2a0",
+          "svg_sha256": "1d7bd03b996d5b7747c0d9b662a023968f892d452ac2c17722818164188024a8"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 6,
+      "table_cells": 227,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "02-mirror",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "96b05a913562ec1ae947f26fb634d7d3ba89dcb741bc6c7c587156f34bebf338",
+      "pdf_sha256": "8d4af2eef4b691b87599be9a5b7e1322645307e8d8fe602a877bb708d4d60dc3",
+      "circuit_sha256": "6c7258bcafc0a0050f1b2a210f2174404ae84e56347d6067ddb433b29d21ba0c",
+      "results_sha256": "8650429e6e8756846c8b8a25c512d420b737aa26d5dd67a047ec98f6fd2c0454",
+      "removed_page_images": 4,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 2,
+          "position": 322.7029951954611,
+          "clip_pdf_points": [
+            0.0,
+            112.38249969482422,
+            595.4400024414062,
+            313.47674560546875
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "5e27a3d7e858ca3ed97e0eafb4f15706a19567880fd1dcee415190b9061a0b6c",
+          "svg_sha256": "f6444fe58bf790adc1964725b25c5549e0adc058fcd62521eef219aa72afc117"
+        },
+        {
+          "page": 3,
+          "position": 618.1,
+          "clip_pdf_points": [
+            0.0,
+            119.71885681152344,
+            595.4400024414062,
+            739.3016357421875
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "a2bff1c9dc87ef3a235bc0a0d6394418c4a615a28e81945952d09c04374db8c3",
+          "svg_sha256": "6b9f75d9d07c8c440fa5371a408b5beed1f9ae944a30ed379ea4894959069acd"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 145,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "03-selfbiased-gmr",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "5835ddc1a8691d287d41c70550f567aeb49efde7ad081993dec717c5b04bd2e1",
+      "pdf_sha256": "18aca837298c04b51f9ee4a59e1dc6fd5f34c2a376202549164870e02d5abc72",
+      "circuit_sha256": "d4504f8b99aae74c22d49109938ee6d187d5e83a13dbcb02ad518e93df3748cd",
+      "results_sha256": "70c9cb2a8a4c60a2c7b66515666d80b521f500191a625ac010c2549b4c1b0300",
+      "removed_page_images": 4,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 2,
+          "position": 262.12700251666325,
+          "clip_pdf_points": [
+            0.0,
+            114.201904296875,
+            595.4400024414062,
+            195.53631591796875
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "5312e6f21e69c47ed9e7dc51ed0fb706be5bab79fe15fde00c1184ecf751fd52",
+          "svg_sha256": "936c5fc0e82af2e967f19cd5d4325191faa0e890e669b3d0003663f5da681ed0"
+        },
+        {
+          "page": 3,
+          "position": 608.1,
+          "clip_pdf_points": [
+            0.0,
+            122.61871337890625,
+            595.4400024414062,
+            726.6296997070312
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "7abcd6d50d238e14ce74d9769346fda2acca1fb12c79a9d4577e39ad23373272",
+          "svg_sha256": "5d32f90eaf41a0b928af5f17517293de874a7014ba1cd6f164c2f67424781954"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 3,
+      "table_cells": 93,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "04-gmr",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "7e38c45155b1717dda9ad144da914d1bbe0476dae0663ff6ff9746455c583b78",
+      "pdf_sha256": "05e3a437b7f41404201f85f4bafd4090e5fa2dc89ebe3ecf47ddfdad8b2454a3",
+      "circuit_sha256": "a24eabce265e3f4d1403df9021be27a53369767e545ee6fcb38ca90eaebd8554",
+      "results_sha256": "b5706dfe2b1c8a1b40fa715fb41a2e25869f664d22728ea34d9a6774e7a22dc6",
+      "removed_page_images": 4,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 1,
+          "position": 925.0,
+          "clip_pdf_points": [
+            0.0,
+            493.8729553222656,
+            595.4400024414062,
+            753.762939453125
+          ],
+          "png": "markdown_assets/figure-01-01.png",
+          "svg": "markdown_assets/figure-01-01.svg",
+          "png_sha256": "bca0fd63c496a730f3e4b1fd3ca50de5db76390ebeeeea821ceb7e43734eb738",
+          "svg_sha256": "2339763e73a23aa235ca674557d6603632afa27aec4770a47ea5cc653d01aab9"
+        },
+        {
+          "page": 3,
+          "position": 617.6,
+          "clip_pdf_points": [
+            0.0,
+            123.46038818359375,
+            595.4400024414062,
+            739.3016357421875
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "d25e8b2280740c958b18cf4a6bfcff8a3af7aeaec4878bb965469f01c58548cc",
+          "svg_sha256": "c137efd947ad32a285c9faf4d6c08f40118ec97725f47f22048f972fdf59e3c5"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 98,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "05-bootstrap-driver",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "1c2a9ce6d0babe4798a36fdcbd59143a82b65cd7ba10c9f525fb6f178d5a7e72",
+      "pdf_sha256": "ac041ec7668a3718a858bf7dfb1ebc7c72ec6d417e48654ec645fc9f0d98c2d6",
+      "circuit_sha256": "51ae51fce4ab67a9ce5b7e74e61e746bf6f22c7480f2c2802fef5c3ee071cd12",
+      "results_sha256": "c1d9657ba0ab11f71350b70071f3fe08a35b36e2913246a14bcb020a5d0ca8dd",
+      "removed_page_images": 1,
+      "removed_label_dumps": 0,
+      "figures": [
+        {
+          "page": 3,
+          "position": 644.1,
+          "clip_pdf_points": [
+            0.0,
+            101.04450225830078,
+            595.4400024414062,
+            769.31396484375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "165f051b9db21f04cefed6434f4cd202dc0561293d3c02f9c422e5f6792b316a",
+          "svg_sha256": "a967b61289c2c9477c7f8021056852acb6abeb1fbc199ef56440d68e9ea3d48d"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 3,
+      "table_cells": 95,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "06-ring-amplifier",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "12b1c018529b1a5d8f45d90e20a736735db797bd3e52c927c4b8fdf2c6676608",
+      "pdf_sha256": "f27c587a77d473e491a68b8df873e9a728d8da9b2a2b5002be65a620e377ba38",
+      "circuit_sha256": "96db77eac120380432cda805f3bfadaea45f6e649c99cefedde1bc0a7fa674a1",
+      "results_sha256": "d81e96f042d3a8601206a39b4e154cc30571ea33a70906366abbba275f9439aa",
+      "removed_page_images": 1,
+      "removed_label_dumps": 0,
+      "figures": [
+        {
+          "page": 3,
+          "position": 628.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            735.2999877929688
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "53d7dc875e4639356a48fb02dd3b3782da61ea733fd771f9806440d56b9875fb",
+          "svg_sha256": "686228fd9ca73cefd6e2d15badb1eb340c20034f003ef7eb4289cb8f5d83dade"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 2,
+      "table_cells": 72,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "07-ldo-ota5",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "f3957792e6b576037f1da00e588012b3b37f82a78577287ab244355a6a167ad9",
+      "pdf_sha256": "3d6bf9abde26791479c92198d0a9177432f945bdee310ae8271fd41274241c94",
+      "circuit_sha256": "76e466a10c5e9913522f67b64a5f1ee7498ad43eea2858a7405edc00c12c4bee",
+      "results_sha256": "b221b57e8a908b4bb420e3c3950f631d69fc0955680b27824488db223193ac08",
+      "removed_page_images": 7,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 2,
+          "position": 306.2970048045389,
+          "clip_pdf_points": [
+            0.0,
+            150.81500244140625,
+            595.4400024414062,
+            278.4417724609375
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "89b142bc390f7299039d48b32af11f9260a9d2c712da288a52341916d7a18b77",
+          "svg_sha256": "3f91eeda64d4e9c4f01ffc7282da0a033cb87399a828ec341a903d02b07974b7"
+        },
+        {
+          "page": 5,
+          "position": 621.6,
+          "clip_pdf_points": [
+            0.0,
+            123.46038818359375,
+            595.4400024414062,
+            719.2933959960938
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "6a6342baa262df6c224a45db3171ffa522586a1852b787aa06622cb581ad5ca4",
+          "svg_sha256": "5eec8e4a2f5f5bee1dfe3645e2b14ae9d0b4a020b803c0aa69368cdccc621f5c"
+        },
+        {
+          "page": 6,
+          "position": 580.6,
+          "clip_pdf_points": [
+            0.0,
+            123.46038818359375,
+            595.4400024414062,
+            671.9405517578125
+          ],
+          "png": "markdown_assets/figure-06-01.png",
+          "svg": "markdown_assets/figure-06-01.svg",
+          "png_sha256": "02d23ad0d7d87ebca7e3136bbd27c74709f42a04d023388796cfae12d7f8f5e5",
+          "svg_sha256": "1c590914ded67f916edda2c1260bb821ee7075e8f0c69f7d348f02b0e7c0fba4"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 5,
+      "table_cells": 431,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "08-ppsf",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "d9e6531858a38d7240b6bab82870381cede895e88996e4f9402609acba9471a8",
+      "pdf_sha256": "a6873a741cb11f3db9ac13a85ea1f9032c4aa0b796eb6ac039177c023cf10c44",
+      "circuit_sha256": "ffeed03d880f06caf2e1bada341477edcbc75089e3eb9b2a9d0a72995ecf88ca",
+      "results_sha256": "eca754f739577f26b045cd30d056c40fad664f549f30926cd948ecfb9b9b89df",
+      "removed_page_images": 6,
+      "removed_label_dumps": 4,
+      "figures": [
+        {
+          "page": 2,
+          "position": 325.85799862727464,
+          "clip_pdf_points": [
+            0.0,
+            138.78448486328125,
+            595.4400024414062,
+            319.1285400390625
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "64acef29866f45886ce3a594f8aa7ce8a82ae90b50c82045910d9b6b947873be",
+          "svg_sha256": "9932c33f25323cbb51f24c098f112b3fdfec2b7c677a0f45823a063528bd99dc"
+        },
+        {
+          "page": 3,
+          "position": 358.6700022878757,
+          "clip_pdf_points": [
+            0.0,
+            109.71473693847656,
+            595.4400024414062,
+            366.48138427734375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "798f80ef3257a3634a317e8e5c1aa435fc7d50cba8a622993085501932577d3b",
+          "svg_sha256": "7a5c65c6c7d683fddef72bae770c473304d18d96fef38983ab23c74f70f09ff5"
+        },
+        {
+          "page": 4,
+          "position": 626.1,
+          "clip_pdf_points": [
+            0.0,
+            119.05191802978516,
+            595.4400024414062,
+            750.9759681085021
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "752556b2214d4735b4e6231fd10b1d0ce88e275f15d75cfbc727e7b0dec5ee33",
+          "svg_sha256": "995cc46e1b57e45fdba8ed1604d1d54df79bd4ecd8ede02c78a38d0aac6b5348"
+        },
+        {
+          "page": 5,
+          "position": 342.2639890181968,
+          "clip_pdf_points": [
+            0.0,
+            115.0435791015625,
+            595.4400024414062,
+            353.80950927734375
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "127416ffbd03be1d5c8351da8eab6ae70c2c644e8c9a8e099536cff22811f79e",
+          "svg_sha256": "47554b5f4408435eb6accf5e95333581839bb973d484e165403832280f818e13"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 143,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "09-cml-divider",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "f090bd0209c7f7326c73c628929f609273e6aaccd0a47587dae166245f20efc0",
+      "pdf_sha256": "961818e57d2332d3c6eb01940f8d2bf39578688ef1044cd5558a26b4f4ce51bf",
+      "circuit_sha256": "b92dbeb47541da5d5b1137db661ae3624ef18c87bb0e152bebb98b803b9b1a55",
+      "results_sha256": "7207bd8526baf58b322dd6e484685928f1859709157d4d2dc83bc76e240b997d",
+      "removed_page_images": 8,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 4,
+          "position": 591.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            693.2826538085938
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "73440ddd2726a3c90744a240a458334d4248da7069662ec9476aa5c96e4989b0",
+          "svg_sha256": "b5d1dbb7061617e319b7a4698869a22a4ea4b0003e008d5fc4213a4536eff512"
+        },
+        {
+          "page": 5,
+          "position": 550.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            642.5950927734375
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "84b4adf9d5ac474b92d6da3b77943d64e74341c31418378a523d0ba79e6a81c4",
+          "svg_sha256": "b3f88e78f27968ec07a079d4e92e4fb7e215b39189ff1252e3213d75c3208ea0"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 230,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "10-tia",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "eda556eca78163742f599bc77762ca10c3e42acce744930c679b8868dac6b8b9",
+      "pdf_sha256": "6f1982d6ba509e6c72abdf2204657dc7ae20485336e8979bcef19cec588858af",
+      "circuit_sha256": "3e96952b371aec9580fd6fc7366ff78e08bf19958c732078db5e69c9341ff565",
+      "results_sha256": "b0d7c5bef8fa70cfb8143ca661f1480b62d43aa52385f34b272e60f9fecba2b3",
+      "removed_page_images": 6,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 2,
+          "position": 286.10499199243515,
+          "clip_pdf_points": [
+            0.0,
+            119.71885681152344,
+            595.4400024414062,
+            271.7757263183594
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "f3057bbb319cffef335ac60c8489f7a469da8093f8ee13c4e5cb39f2a1e87017",
+          "svg_sha256": "2097c8e897aaa60438e989eb8a757fc06968d2416f35613eae6d5dfaeca07bec"
+        },
+        {
+          "page": 3,
+          "position": 569.6,
+          "clip_pdf_points": [
+            0.0,
+            111.04862213134766,
+            595.4400024414062,
+            667.27197265625
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "2bacfe5fe587ef13ab991cce88870db657dafecdc86df3d5cc0fa94ab028a6b4",
+          "svg_sha256": "b336df6e4c80feb833674de1bfb6ce3f66a157996f0fa83a67ec269e5cd10952"
+        },
+        {
+          "page": 4,
+          "position": 474.1,
+          "clip_pdf_points": [
+            0.0,
+            115.88525390625,
+            595.4400024414062,
+            543.2208251953125
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "998f493bf81b2133992eb6e60c874885d171bc9caf8f45c09449a5fede82ce61",
+          "svg_sha256": "e67e2d305e9001192e7c128ca394bc81e076b4ede9cc4646ae1764ca0f8669bf"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 5,
+      "table_cells": 165,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "11-bandgap",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "fdc588983b8cb9f76fa9499ca6b7b9a54410e2e0d85942ad55307d19f7aefdde",
+      "pdf_sha256": "280f487b5ee1785fb20c5e5fc5d36f8d40e6c26ebdacc6e2261e5bb0669d0fdf",
+      "circuit_sha256": "35c5a82bce4de256e274a922797be82a4e0696d81bbd295a1da8830424083029",
+      "results_sha256": "75166d6aea0ec6450b2cf699079b6763ec4c26d2f1a3ecabb847b31b60e51b31",
+      "removed_page_images": 8,
+      "removed_label_dumps": 4,
+      "figures": [
+        {
+          "page": 4,
+          "position": 542.2910144136167,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            634.591796875
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "504ef19cb3ef21f404356fd768f9e0e09622b7398b6b03c5dc57620c53b24c65",
+          "svg_sha256": "d69ddace5d0b4ae4dee49ebb3ad411506db02383dc728f82f125e181699851dd"
+        },
+        {
+          "page": 5,
+          "position": 531.5639890181967,
+          "clip_pdf_points": [
+            0.0,
+            109.04779815673828,
+            595.4400024414062,
+            624.876017188119
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "4d9941f3c6ad9e1d97cf2e73af49039f090b069e31619557868393a7c6587e0f",
+          "svg_sha256": "9b268291ecba7c0637b3fa732b53365c476d72dc2d3d2368395bb80913b1b18a"
+        },
+        {
+          "page": 6,
+          "position": 531.5639890181967,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            624.876017188119
+          ],
+          "png": "markdown_assets/figure-06-01.png",
+          "svg": "markdown_assets/figure-06-01.svg",
+          "png_sha256": "b11f0f3870ab044c086ccf8dfc267d019c5036ec4b74451f6dffdb0959f4a315",
+          "svg_sha256": "3260aee477bb5a2f46bb6f90639df5392184a81a346d123f83741329fac0396e"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 9,
+      "table_cells": 309,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "12-beta",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "dafb798fb2d5f443db6ea4bf0c92a2f0cb2fd560fa374d8716283a38a9b6d367",
+      "pdf_sha256": "e1118a28a0ab6595f646ea1346d0a65b11eb01c5a4e67c25f2f47586c3d98072",
+      "circuit_sha256": "4b835cfbbebce5f00832ddba5038e657a2d1887c6e44689f8177dc34ca5d39dd",
+      "results_sha256": "3f334c0e9c3bf659987d6549dc1c5bbb3fb6ca4b9cf33b67d9efdc1b16730192",
+      "removed_page_images": 4,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 2,
+          "position": 339.10898558638326,
+          "clip_pdf_points": [
+            0.0,
+            109.04779815673828,
+            595.4400024414062,
+            341.8045654296875
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "ec9719b902d7d4876ecf8859c543291ac799ad0be9c493bb14542fa81fad1aa7",
+          "svg_sha256": "51622cc60cc0737373d546454a780f453a455d7d26a52f0fdc3ab18dd4cb556a"
+        },
+        {
+          "page": 3,
+          "position": 600.6,
+          "clip_pdf_points": [
+            0.0,
+            106.3800277709961,
+            595.4400024414062,
+            713.9578247070312
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "6f081976ae35c58075ec46fd8c1c8726cc2171ea9061b6717890c80d7332c9b4",
+          "svg_sha256": "57a0167ac90f75d5796414c004f9298bbc1a7608941efba874e35c983bd56a51"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 3,
+      "table_cells": 117,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "13-constant-gm",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "cecf0b0f59f4fcb66e345aca38a27131a8cd580276c92a6697cc49b8bd870b6d",
+      "pdf_sha256": "9645ef7299b6daa54b8890e9a4bac4a40cd12139b8a5b861fc8aec35dd10cf48",
+      "circuit_sha256": "ddae3c2eeb075e2861029154ff9555db01c3092a7860f44e7bc7d70b9d597090",
+      "results_sha256": "ce9fdbc6e47aa4ddd9db1f2e497416aa0c93979f7538cb118dc8fea61e65ffc4",
+      "removed_page_images": 4,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 2,
+          "position": 273.4849782651811,
+          "clip_pdf_points": [
+            0.0,
+            129.5926513671875,
+            595.4400024414062,
+            229.75840759277344
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "870fbff666f40e5b33ed90a25329323612921cf78bfa76d82ff598d71417d945",
+          "svg_sha256": "f245615b51b90edb4f60602e251bb0841c62e37141c7fd36284763f46f85f47b"
+        },
+        {
+          "page": 3,
+          "position": 588.6,
+          "clip_pdf_points": [
+            0.0,
+            123.46038818359375,
+            595.4400024414062,
+            697.2843017578125
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "510ac991a698de67119b9fcccff41f08aeda0c3caedf1166590f1c81213d89d6",
+          "svg_sha256": "757aea730c87dc60e450ff865f2eaea19f92ed2a57a1006d5b0b084511fab30c"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 117,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "14-oscillator",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "838d68ebf1b57f3d9888e6b3c6ee13c99cbea96cfeed3ee8ce3f591027fa3057",
+      "pdf_sha256": "bebd71d85bbd63606b313264289e47c53567fef2595b9965244dce99009f7984",
+      "circuit_sha256": "383ec5c083dff63dfe2d4529615c33f22d541e3bf14d2c927e3655b98488c1a6",
+      "results_sha256": "901a7bf80c322c929c086204f7980eb062f7da31d130a0bf86b1a319af181299",
+      "removed_page_images": 6,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 2,
+          "position": 315.7619922212227,
+          "clip_pdf_points": [
+            0.0,
+            124.110107421875,
+            595.4400024414062,
+            293.7847900390625
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "f2ee7c0d13b4ef7968ae70a39b2a92c8eea4bd8f391972e5284c7d165e08b1cf",
+          "svg_sha256": "b7c333d208daacfe61794882abda9d50351a92af30784487f6c90b1a5c27a171"
+        },
+        {
+          "page": 3,
+          "position": 485.1,
+          "clip_pdf_points": [
+            0.0,
+            117.568603515625,
+            595.4400024414062,
+            553.2249755859375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "1b00daf860e27b3714518f730baf454f554da9dc0f06b6cc8aa0fe4c95ca1156",
+          "svg_sha256": "36ec7f3e991d01894a264bfab4e6fd34b793d7e0e15724dfaa836d0de2d73d74"
+        },
+        {
+          "page": 4,
+          "position": 482.34597208791683,
+          "clip_pdf_points": [
+            0.0,
+            115.0435791015625,
+            595.4400024414062,
+            541.886962890625
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "73fdd436575c93b52cb7dfca55597fa3345435be40feb1d71bd59044bc3d3cd3",
+          "svg_sha256": "4625dfdc425ff22389748d59275aca3e621f9b5bc82d5294393728033407f32c"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 7,
+      "table_cells": 117,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "15-unregulated-pump",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "33a3104f3a05c3bb9e60b31f32dad2d0405073b73b2271512e0485f84ae34aac",
+      "pdf_sha256": "7b7fdc2b9e5d345db65f4aea6bca45afd48e4fe6b7aa6328bc2e95da7f3ad36e",
+      "circuit_sha256": "e04ccef10f5421ebe9f379e9baa59e99fd238fb5b7db73ba28bf47e11f07b0de",
+      "results_sha256": "dcdfcd4c3024b2d6dc103635f4c7a1491aa4ea522b43f91ed783ec57c4499852",
+      "removed_page_images": 8,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 3,
+          "position": 564.6,
+          "clip_pdf_points": [
+            0.0,
+            109.04779815673828,
+            595.4400024414062,
+            659.9356079101562
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "56164c549659f58a911b0755cf8b9aa24bef2fdece1aa5f0dfe144403a7dd372",
+          "svg_sha256": "2e604a68ca74702e38fdf2522f7118432eb178984c9b6b5a32509a956e279cb6"
+        },
+        {
+          "page": 4,
+          "position": 588.1,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            684.6124267578125
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "98e2f666998177fcab8356da599eb018f40c6dfadac1b137fd5a028b28ce77a1",
+          "svg_sha256": "4d0856e0206ba19915013347f6e69775388fc123ce9214afdd06c041f5c27d7c"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 5,
+      "table_cells": 147,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "16-miller",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "445ee7140a26eb1580b6e5237086ea8614d6e99b1daafe8b5665463df828ee26",
+      "pdf_sha256": "519bc3759cf923f9d1454c614e8fdcc018e2b75b9d30e5cda2ca5df612eea1a1",
+      "circuit_sha256": "86c144ccb47792bd6c7138674ec8c4a91ffeb98d9921b1860ba02759fdb7c971",
+      "results_sha256": "2ece5f97105407964968c88c0aef72d3ae15c09204239154c63d70fb46e069d5",
+      "removed_page_images": 5,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 2,
+          "position": 290.5220105242281,
+          "clip_pdf_points": [
+            0.0,
+            127.05520629882812,
+            595.4400024414062,
+            271.88873291015625
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "725fe8003aa32acec43a33d184a2db7be378869095d323c952436bdf9b54ce36",
+          "svg_sha256": "3eb1dff0f36344f75f0bd7975bb52817d3cfbe16f5ea65d57d8013398a286631"
+        },
+        {
+          "page": 3,
+          "position": 599.1,
+          "clip_pdf_points": [
+            0.0,
+            123.46038818359375,
+            595.4400024414062,
+            710.6231079101562
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "c4973154447948870fc956e5cb942fe0b482396a72a2cfc5689307095dc96aab",
+          "svg_sha256": "4a9536a7cd53e697e89631683c59e1922960fca0b4628c96b007fe2a73b925e5"
+        },
+        {
+          "page": 4,
+          "position": 623.1,
+          "clip_pdf_points": [
+            0.0,
+            106.3800277709961,
+            595.4400024414062,
+            746.974319965828
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "17352ca8d583fae42375a053c70e89f48d1625635d3ddec6db0e373d5cd7c363",
+          "svg_sha256": "44b8991a48861d319ae601e00f4d2f55c7736a36fe329f6fbd5265e084fedd37"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 3,
+      "table_cells": 161,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "17-nmos-ldo",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "879854bd7659db9786b473085587eb3e3a7129c566fb0f21ced597979e97b544",
+      "pdf_sha256": "cb7a7d8a049dd34a4acab8c8eb9da7b7db09d6d632ad0c1fabdd6d67267d7ef0",
+      "circuit_sha256": "050cce2389d138c31156a14b1bf955093cbefb0018a2ec14f29689e12d65298d",
+      "results_sha256": "e016f88dca67c43a99b9a2ea9f4eb46064dc90c1205074d0eb88e1f71fe23fbe",
+      "removed_page_images": 6,
+      "removed_label_dumps": 1,
+      "figures": [
+        {
+          "page": 3,
+          "position": 578.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            676.609130859375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "5da5e726fdd667d49e815e05608afd6a86e350d178eec5a3ec21ef6ec622f206",
+          "svg_sha256": "4d8f878a76efe532167fa1a06080b0fe274d4f21eeeeec4e4ee0dbb56bc838f2"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 192,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "18-regulated-pump",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "35e5545354c0157d2c486ac08dbbd9569874dccff356b0d594f41d0e782bd194",
+      "pdf_sha256": "aec329a204633d586252e738f9bcd38f30c5477de167365a9059740eb02529d5",
+      "circuit_sha256": "6fc878c0bf1ec3399b2991d1291687c0777fa5b3c642e9e8266ef6f957560e0c",
+      "results_sha256": "ced2d111caf599c97528fe3a3111e1ab01c568fda751447d0e22e26e7c5ac3c7",
+      "removed_page_images": 7,
+      "removed_label_dumps": 1,
+      "figures": [
+        {
+          "page": 3,
+          "position": 597.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            701.952880859375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "795cb22029922b30d0b8587c3e8cde8baaa11e445f0b766eb983d5b32aaae113",
+          "svg_sha256": "77ab4e5596d4b4f05a80534806bffb813b0e021b71bf326c77dfa76e9d53b1e9"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 3,
+      "table_cells": 85,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "19-sc-converter",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "fdea849a3da7fc3e6ff81201f5822770be39d68e7208bba6144635cfa9be7867",
+      "pdf_sha256": "33b55a66461bb6c80e2ca0a38894d3efcd75f77bbf3b0565247669a7106072c1",
+      "circuit_sha256": "69f65f854aa02cd025a190dd4448aa16840e73ba6a835cdde88687dfe010f144",
+      "results_sha256": "bf240fd5b87f9cfb1b215bd00d3d15de95c4ec8b6e06f745cbedc3dd465f4098",
+      "removed_page_images": 6,
+      "removed_label_dumps": 1,
+      "figures": [
+        {
+          "page": 3,
+          "position": 609.6,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            718.6264038085938
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "6fe8680f8fb8cf49440add99cd862fa9438ef95b0c2bbbf0455d13b19030fc7a",
+          "svg_sha256": "c24daa4ecab2f91d2d1ef6ad85339f454f773446840e3b6c4f740640cd5cf184"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 103,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "20-mux",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "d8e7c4f75089a6f4b973891b749834e51999f97676c5f546e2adfca1854eb8f0",
+      "pdf_sha256": "a34f414b632e9a350b8a8010cc3c0375148e5d66d08804661fe978a5897ce33b",
+      "circuit_sha256": "4343f4ada2c14da0014bc9d81efc5017d1ccbebd4d9fb77c50a885aaf21dbba0",
+      "results_sha256": "105d1ea0d5805777b4722f8e51fcba565167d995ab79d2d804104060e6c9dd2a",
+      "removed_page_images": 4,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 2,
+          "position": 347.3120036606011,
+          "clip_pdf_points": [
+            0.0,
+            115.71720886230469,
+            595.4400024414062,
+            327.7987976074219
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "4da39a9f48f1dbf066ae0642e06571e45b795a142b0e8c1e108a462917aaf6b4",
+          "svg_sha256": "08a7ee6fc3b3004b1bea7aa6e01c0da2bb8270283019be70a43e9aa6c82a826f"
+        },
+        {
+          "page": 3,
+          "position": 642.1,
+          "clip_pdf_points": [
+            0.0,
+            135.72544860839844,
+            595.4400024414062,
+            745.9710083007812
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "d28c096efcf10945e19084ccbac3fb723333e583a0aba38b4b82adaea6318307",
+          "svg_sha256": "2e2157982f8d61c5bccc21d2477289ce6bed5f81c6201e670ce5278c7e9fe321"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 80,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "21-highpsrr-bandgap",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "fc22afd2373048235a922a0530c5a2f28352892f6a388d9fc3c2a61bb2352e85",
+      "pdf_sha256": "e7426cd5d3ded97c3e1fb0fec10a55d8ae187f03249027b09444a0d48e25b845",
+      "circuit_sha256": "c44fb1be719bd559ccdcdeed956b61620db10de7cd08cefb35cf0b11f8f879de",
+      "results_sha256": "53911f354fd402a0dfdb1613aa118799bf1bbee832f934ae615cafb043d6572e",
+      "removed_page_images": 8,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 4,
+          "position": 556.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            651.265380859375
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "142f9ebedd231e040871386ae1a20153d86cbb41c394afdb9428835b296636bc",
+          "svg_sha256": "da485c3d693ea58a9d27bbedb5f8f9bf9c4ad565da926a7a6dc86362e777dccd"
+        },
+        {
+          "page": 5,
+          "position": 555.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            651.265380859375
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "a64b1dfbe31cca1efe5a90bfab09c868271e98b4b39385eab534df735da79860",
+          "svg_sha256": "784d1f5fbfea2ba16a8940f2c68144dbf27bae61705da70f5b8260efdfc5bbe3"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 232,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "22-bootstrap",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "7ecf754ab61dc9afcb011f1794e7109fcd995df3be973613a32df6b9a70ee831",
+      "pdf_sha256": "07abab300682755a37411d38889fcdfda6f58acee369530299fd14287fe01968",
+      "circuit_sha256": "496999c7be4b570b7703c9764e96497a300c7d78197c84eab4b3b99b97437152",
+      "results_sha256": "93c9afb135c47da08a3eefccc33f8e27eb4cce8a036c3963b7047e4d980c61c6",
+      "removed_page_images": 5,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 2,
+          "position": 323.9649874166838,
+          "clip_pdf_points": [
+            0.0,
+            144.370849609375,
+            595.4400024414062,
+            308.4574890136719
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "02b33fe17e493cb99401e4d2cbd5f45ce1ceabfde6f11b6163f81b4492e6f1e4",
+          "svg_sha256": "5bf64b0e67605faa4604ea0579f1e1c33e27f9de2735afd161b7b6b8c6cf5040"
+        },
+        {
+          "page": 3,
+          "position": 626.1,
+          "clip_pdf_points": [
+            0.0,
+            115.0435791015625,
+            595.4400024414062,
+            726.6296997070312
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "d91f723f9000c1a4517215582e95f83345270a0909c3a3490e9eb9ff8fb3e9bc",
+          "svg_sha256": "3049c4652fd1e1069fe68ded7122b4714e80c4a35438743f791c3ef93afd74d1"
+        },
+        {
+          "page": 4,
+          "position": 344.1570002287876,
+          "clip_pdf_points": [
+            0.0,
+            115.0435791015625,
+            595.4400024414062,
+            351.8086853027344
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "8c150f2e8c9e0023185019515fa2b815b39ab119017854e5383bb4de968d05de",
+          "svg_sha256": "f5e47781b6e32bf147832d274b74c52322c980ff57e00997d77adf42da75e765"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 84,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "23-resistor-dac",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "ff77f407ea24f1a713f9fa10f17f737a162fdffa6ce1362151f5d3a04c5a050c",
+      "pdf_sha256": "b468767db3a1778dbaa3854f6d98d64dd6f61171d40f430fc1fa02d04cc979b4",
+      "circuit_sha256": "e8388c72d139da2b34832dc179379e63bfa19e1f59e8c9e2cd45f85e566f75af",
+      "results_sha256": "2b2197317aeb0dbd6e14af7caae8238725aa60fa91c78732cffb9f4d7018aa14",
+      "removed_page_images": 6,
+      "removed_label_dumps": 4,
+      "figures": [
+        {
+          "page": 2,
+          "position": 341.63299290758545,
+          "clip_pdf_points": [
+            0.0,
+            111.9931640625,
+            595.4400024414062,
+            339.8037414550781
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "91e768640cd48a11403a49ccd63974cd6f30be0fad28b85eeae45916236443be",
+          "svg_sha256": "4fa8d8827df749678bba27f07b4339a72d55ab0090fd1661c4ce3ea0adc9fa49"
+        },
+        {
+          "page": 3,
+          "position": 543.6,
+          "clip_pdf_points": [
+            0.0,
+            112.5185546875,
+            595.4400024414062,
+            624.5877075195312
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "19320dc46d3833568f9344d64dfde970017c2a42da97ffd9deb1eff0f5c6dec0",
+          "svg_sha256": "f2a4a8af64f0833779c3302a4c7f66ac972d999aab13bea630128c073ba93579"
+        },
+        {
+          "page": 4,
+          "position": 540.1,
+          "clip_pdf_points": [
+            0.0,
+            107.71391296386719,
+            595.4400024414062,
+            623.9207763671875
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "179c67f7a9dc04690ccbaf142163b872b03ee089c62bc8b38fe5f706792905a4",
+          "svg_sha256": "d67ca47bd44f78ac8137d8c10960ffb5e67d79cd108e5fd788b8e00433df4554"
+        },
+        {
+          "page": 5,
+          "position": 608.9680054909016,
+          "clip_pdf_points": [
+            0.0,
+            327.9886474609375,
+            595.4400024414062,
+            525.2134399414062
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "8b99a179d784153aaa8ed5d9df9e2c824f7714fdefa4944f03833445f78e69dc",
+          "svg_sha256": "835d2c66823c80a8bf67d01116a661dc2a3721464ac3a63cff456fea54fca5d1"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 5,
+      "table_cells": 153,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "24-ring-vco",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "a1e441a9aae1b4ab013df39f2adda96ebcd26b9713e37c3d457a8c5fe3f4ba9d",
+      "pdf_sha256": "2708e77ca5d9225fe9dedced2ca551cbf1f2568f52c7965dff586aaab65522e4",
+      "circuit_sha256": "fc15de4598b7f285d780f50fc2a85f864935cf0bfa81dfb4d21208dfdfef662c",
+      "results_sha256": "69c7d2f3932f20ec339a6405f746f420f2f20b6a529aa01ee3a5b5b1d855b017",
+      "removed_page_images": 6,
+      "removed_label_dumps": 4,
+      "figures": [
+        {
+          "page": 2,
+          "position": 332.799001601513,
+          "clip_pdf_points": [
+            0.0,
+            109.04779815673828,
+            595.4400024414062,
+            318.46160888671875
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "f32a0b711d04f86d9fc5393efce6d13e674d6a57598c0c5e45885fff1875d64a",
+          "svg_sha256": "79d6da6317d30c3f5053f461f6f154724b3eaff3f64d7ffde8b6f0149a597063"
+        },
+        {
+          "page": 3,
+          "position": 353.6219876454714,
+          "clip_pdf_points": [
+            0.0,
+            115.71720886230469,
+            595.4400024414062,
+            359.1450500488281
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "80924bce34ac6cf182fd7c4f447081a8fac31a2e4a94346ed4ff0464d5577823",
+          "svg_sha256": "0b8bad1e2340f3a734b2c23410bbf9369db6cb289c4e28e7b4d694fe4b12d33a"
+        },
+        {
+          "page": 4,
+          "position": 493.6,
+          "clip_pdf_points": [
+            0.0,
+            111.6768798828125,
+            595.4400024414062,
+            560.5613403320312
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "615a0e20c79a451683e886da02c69d6524378de734a2d98091bf4f545cf54939",
+          "svg_sha256": "20ac2283648e3e5a38f2fae047d05015b924e960a341150145f61b5c5ed17a5b"
+        },
+        {
+          "page": 5,
+          "position": 569.4180169302799,
+          "clip_pdf_points": [
+            0.0,
+            294.3214111328125,
+            595.4400024414062,
+            513.8754272460938
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "1cc30caeaed198cb577a6c4fe2b33e7ac4016675926efb9960c4442f00683262",
+          "svg_sha256": "7f6e6af50b63a7bfbad9a5abbfb73746d0052b7a8c7f96789a39d59e1c48d241"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 6,
+      "table_cells": 179,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "25-complementary-ab",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "d5aec5d1408d08cb45e1a82897461c4626d45555f8d9f04b31620a3d27909cdc",
+      "pdf_sha256": "db92da4b77bf2533e7aa8f2ec0f2eb126ebceec5b0d538c5b4b446802bfb8d12",
+      "circuit_sha256": "96b5209db247cee7e96e92e1189b494a6d08dca1efd22237326692957ccbff80",
+      "results_sha256": "7ba9784f02f8b31783e1a4f3615e46b7d10623ef9111984f309c5dc20bb8a3a8",
+      "removed_page_images": 8,
+      "removed_label_dumps": 4,
+      "figures": [
+        {
+          "page": 4,
+          "position": 491.1800091515027,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            571.0085245123378
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "f895714cc640812e686a343c5264d7079e106f3a007335a244ba4a866d6d5f95",
+          "svg_sha256": "977a15ee4f228440a7730e2f79f43561adecc986b44c1af847abe347a4a86e17"
+        },
+        {
+          "page": 5,
+          "position": 541.6599725454919,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            635.2587280273438
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "710e4dd99ecff7c3a34aef209d4c0c3a0c5f0962d4cc97868154496a4db3df72",
+          "svg_sha256": "f486a0766ede828c26750bab031a102964f8a16912be1b1e60cf2880094b91c4"
+        },
+        {
+          "page": 6,
+          "position": 517.0509869591086,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            605.517374609994
+          ],
+          "png": "markdown_assets/figure-06-01.png",
+          "svg": "markdown_assets/figure-06-01.svg",
+          "png_sha256": "81061eaf67e9518edb324a17f2a991b71cfacb85a4e8688cd6185990e75443e5",
+          "svg_sha256": "6f5109b7b7fd22967f8da0207b1bfcea4c5279ad0e8f256fd6fa6763d7b8eee0"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 8,
+      "table_cells": 345,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "26-ota-c-biquad",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "b2bac121d78f4a08eb3e63233f12066af8578d5de4b497ecdcc4b988e3b6d8b6",
+      "pdf_sha256": "8892c36d9d0b7d9758697b292ab061ffdbe906e69f2a2627093a3d198ef5697a",
+      "circuit_sha256": "ca1d973f73e9bc1899742bfe7698bdb9dfd31c3b23f2dd842da9dc403d49a82d",
+      "results_sha256": "b4b543d1a0a7734b8d3459536f416a7f239e583ce3815f29d8ea1a2943ac0ff8",
+      "removed_page_images": 8,
+      "removed_label_dumps": 1,
+      "figures": [
+        {
+          "page": 4,
+          "position": 603.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            709.9561767578125
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "4c03b0cae1d97640cbc80d2179423467d9007e1db180e651147fbe0fcd13f81a",
+          "svg_sha256": "e1611576955beaf7f7ab127000ab706adeba5b55a64f4a28a75fdcd6610ad29c"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 194,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "27-flash-adc4bit",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "a61d148d6244e6aec1c2e6655e709c3286a78c79e0f883d44ac591be8b64b788",
+      "pdf_sha256": "660085266753f705c7ed061d0140508a02e2137f9bc7849311fca92cf6db7160",
+      "circuit_sha256": "3b70836f6c1c5d9bd5affd551b9be5fa04763a168d4a5a936beba835fb24c620",
+      "results_sha256": "e85e344ca82861903b38c00d66b7872e5600e575b5174cebaeb7c98ddf20a0d2",
+      "removed_page_images": 1,
+      "removed_label_dumps": 0,
+      "figures": [
+        {
+          "page": 3,
+          "position": 625.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            743.97021484375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "d9d42404557fd4a56298d62649867dae91493a4e27c1d9231a9a1399e8328983",
+          "svg_sha256": "c0bee54635df2eb1727c077b43edd1d60069c4b68b205b58e10acf44e60dc12a"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 2,
+      "table_cells": 65,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "28-fct-amplifier",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "fd875b87cc80b067ed0348942b975655cb43995a199e0c6f403fbef9a7750c54",
+      "pdf_sha256": "d432d05d4249e92bcf615c51339ed1c576135a24e4b0966ae70cc77ae9ebbfdd",
+      "circuit_sha256": "efce96d95dcf0ca96cfdd534ea6f4dbd8a564de41e7c74c7f7d0d093a5a24988",
+      "results_sha256": "9f3de8aa1e52abf9ead6448ae6ea6f42530c9e6e8ab6717c7726774ebee40203",
+      "removed_page_images": 1,
+      "removed_label_dumps": 0,
+      "figures": [
+        {
+          "page": 3,
+          "position": 656.24,
+          "clip_pdf_points": [
+            0.0,
+            101.04450225830078,
+            595.4400024414062,
+            769.31396484375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "d18535a38dcebccde7fa01a602a77053ad0c400d99a8c60bacbd53cac54dc82a",
+          "svg_sha256": "1feb067b570b1223d39366644475300c07748e25333dc71c01b4a647bc1b2ccb"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 3,
+      "table_cells": 86,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "29-ahuja",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "388cf6bbd0f67c81e43c8f25ce7e8c9493a820a8dc0a82dfbd198571d1793a67",
+      "pdf_sha256": "8d822bbc5795c9331b9a5e2f5dcad5f9f78994700181a20aec97f52ed6d63cb9",
+      "circuit_sha256": "5dc44123e5a36555ed339bf528dd09696385da5df0298ee34e558f26f14423d9",
+      "results_sha256": "208dac06612273637497f10fbe1e5916fede6329ebc7f5213d100249b6c5971c",
+      "removed_page_images": 4,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 2,
+          "position": 278.5329929075854,
+          "clip_pdf_points": [
+            0.0,
+            126.82708740234375,
+            595.4400024414062,
+            234.85479736328125
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "f18a01ebe4d5d1e6eb2e0f05fce1d6d18ce2265ffa5ba64a5e84c870334b90e2",
+          "svg_sha256": "2444b41b61b9c4b327dcf8684a89a18fbd302442a97d5d6038e0277e41b5b9e5"
+        },
+        {
+          "page": 3,
+          "position": 592.6,
+          "clip_pdf_points": [
+            0.0,
+            123.46038818359375,
+            595.4400024414062,
+            701.2859497070312
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "36e8b0072454da1ce5c1ee9f9db2b8f50a91e855bc41b94992e26038a4a7ab0a",
+          "svg_sha256": "1ae761ece4f69a17a0c3c860c71960702f2ca10f15549b73ef40265dbc43c0e7"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 155,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "30-gilbert-mixer",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "3a2ddebf97d17b4d5e35994f500c2a85c4f619d51d3bd39039f014c695f473c0",
+      "pdf_sha256": "854acd45ba5bd74fe48cefe5eaf8a9a5a1c45bfe9100ad26fce512b81c04de17",
+      "circuit_sha256": "e405fd9038a74aff43c984389a5b0cdfbc7eb96bc6f992c541b4bea568d89879",
+      "results_sha256": "1d62ba97950ff79df3923e52da645b86cc81252682aedc8566b97aa10c38c504",
+      "removed_page_images": 6,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 3,
+          "position": 785.6380077787773,
+          "clip_pdf_points": [
+            0.0,
+            388.589599609375,
+            595.4400024414062,
+            701.952880859375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "f2ccec4d3a38098dd4c6688c94471ff6bde277972f729bcef0ff9c6b4a4cdbae",
+          "svg_sha256": "fa635c363a10abbfa959cfa7b47a676312b36ddbd4be72bae0cf9a57f239f394"
+        },
+        {
+          "page": 4,
+          "position": 731.0,
+          "clip_pdf_points": [
+            0.0,
+            358.28912353515625,
+            595.4400024414062,
+            641.26123046875
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "9efc9b79fe19b2bd0ed9c7c23e4c221726a70937ad9ec634523c8f4d016943a5",
+          "svg_sha256": "d15678adf9a7f39b992f258ba7ccecd2b71600cc2d775b7e9a73414d8ecc68d1"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 5,
+      "table_cells": 156,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "31-bottom-plate",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "af379faf6e7365b565fe55adb3ac0bf363f4761e6e88dad58cbe4a004092d0d1",
+      "pdf_sha256": "f52b37f5504fc8d32b372938ff864e52ff1c7ea704730d506de37f4910a9c07b",
+      "circuit_sha256": "aa9c00f53d8d04c120509fbc370d6ba92027551f5456a404845071ffbf3ff2ec",
+      "results_sha256": "6f96dc4c1bb4e4af2baedc3a5ac854443f349130b9dc0f0a7d7a55dbc6851626",
+      "removed_page_images": 6,
+      "removed_label_dumps": 4,
+      "figures": [
+        {
+          "page": 2,
+          "position": 339.74000457575136,
+          "clip_pdf_points": [
+            0.0,
+            145.0626220703125,
+            595.4400024414062,
+            333.13433837890625
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "c4970c255aa33881982355b33dd5459237aa9ee4b498e501a6fb8c88cb9873ff",
+          "svg_sha256": "5002016b6affefb8a8e8d488ea788ce6b767fbf48a536bb4f59f9c46b97eb9cd"
+        },
+        {
+          "page": 3,
+          "position": 516.4199908484973,
+          "clip_pdf_points": [
+            0.0,
+            105.04615020751953,
+            595.4400024414062,
+            600.5778198242188
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "4c5d36c600cac9f6824ac0811552d8eb4e70483ab6add4703ef82266eed555e7",
+          "svg_sha256": "add3b252477c2554df88c6c5cf1dd4c93789ee4e7f1cdbd440e923972b32add3"
+        },
+        {
+          "page": 4,
+          "position": 481.71497597730547,
+          "clip_pdf_points": [
+            0.0,
+            115.0435791015625,
+            595.4400024414062,
+            549.8902587890625
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "39a9ec7d5917cffe960a5c504569d8dd03993e2be40001aa61e40a1d85ab7f44",
+          "svg_sha256": "7bf7597c2c3f07527a060a60f129b17422abfefaac60710a114f009372f2e96b"
+        },
+        {
+          "page": 5,
+          "position": 330.27499428031086,
+          "clip_pdf_points": [
+            0.0,
+            115.0435791015625,
+            595.4400024414062,
+            331.1335144042969
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "439cfd3028fc30ec8697c2bc8569fd8cc2d59be477dc9fe1e3c1f31cf81117ae",
+          "svg_sha256": "37336c8dd2df0768bafe63e91b8377de895f80faa5f82dfa5efc7cd0a0f24274"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 5,
+      "table_cells": 130,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "32-cml-tx",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "935f87bf3ca0c3934605629899486a78499d01c03abd22068d296325d44ae11a",
+      "pdf_sha256": "7a26ff7635be93ac019bf563a21b6c4f9b155786cbe46c1ab7ae4f1f8e0387cf",
+      "circuit_sha256": "4a3d75102319b904cbe4a9aabfdb373e34eb42a70c57c37fb97fb94aa7c29b91",
+      "results_sha256": "09da7d2735dd26435d860bce85f1936ad16213661ec43e50aeb0604f7e5ad9f6",
+      "removed_page_images": 10,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 4,
+          "position": 549.1,
+          "clip_pdf_points": [
+            0.0,
+            123.72050476074219,
+            595.4400024414062,
+            634.591796875
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "7afd79f8bb14bb68bf7af785c349c53a98516103a8f8f06376c4c2261bb40b68",
+          "svg_sha256": "ac1e4a22008f56fb76b349b0f54a992e21d564dd33241e612acc2536ee1bc886"
+        },
+        {
+          "page": 5,
+          "position": 539.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            625.9215698242188
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "d824dd6cfae568b1750658bee846113f898b4150082624ef6d6e860a7cfee4e0",
+          "svg_sha256": "b968a14323d8e46260b5926817e7c71ce533727e9cd3d974cac5dbcb292f6553"
+        },
+        {
+          "page": 7,
+          "position": 537.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            617.2513427734375
+          ],
+          "png": "markdown_assets/figure-07-01.png",
+          "svg": "markdown_assets/figure-07-01.svg",
+          "png_sha256": "b8cb29fb6d442f8d383e53947afd0db58fc51b104b2773bec0848266e8883aa0",
+          "svg_sha256": "caeb036892d0781143d72ffb199779a6543190a502e9686bca4aab9495d832d0"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 7,
+      "table_cells": 381,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "33-sampling-ota-gain1",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "57bac42490f44aa20486a41e539838d21b8577592025866b26f5031fc636dd60",
+      "pdf_sha256": "4763037aec612f383452ef10d7eb952c2d139f2e81b8a0aa29f07826b2582533",
+      "circuit_sha256": "05da74f7a23c1d2282c3274119e1fae0559296895141342ffc3a2b043dba1e44",
+      "results_sha256": "1d3c12bdd4009f0a8c742ced0f68b5bbb80b051d591627bca79d1a71f50938ea",
+      "removed_page_images": 8,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 4,
+          "position": 545.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            633.2579345703125
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "3fb6cfa8347ad9f4e7e2629775bb6243a599a6e13455670736dd252915afd6fd",
+          "svg_sha256": "d39b2088c8cd8b0da99a4026872e9879d6a7a89b4518d162e6a4d022e7a36b45"
+        },
+        {
+          "page": 5,
+          "position": 545.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            643.5984096134143
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "3b39741df9ae9f087103cf37e09e69a0939bf0d618375ed98d8fa0c9f883e3fb",
+          "svg_sha256": "19eb6ab26992112c225cf5a5dc0fe2f1faeefb860605bc35aea58235c842bbdc"
+        },
+        {
+          "page": 6,
+          "position": 491.1800091515027,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            571.0085245123378
+          ],
+          "png": "markdown_assets/figure-06-01.png",
+          "svg": "markdown_assets/figure-06-01.svg",
+          "png_sha256": "4c75c38e20fbe216903f7f19b2ed99d26ade23bb81e3a0aa412719fc42827ae0",
+          "svg_sha256": "426e9d18ae4873fc375d05d8d5a8b65c39f1fe758651776b671315ef6e81bd4d"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 6,
+      "table_cells": 268,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "34-sampling-ota-gain8",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "04900c7ff5dc51d33970ea928dd0fbeb030818c4a87d2a2eb2faecafefe59b59",
+      "pdf_sha256": "28687a26e87dae86e04ae7ef4d79869309c3d650c04971cf146893bd8d50e8be",
+      "circuit_sha256": "ad543b3c4d9ab88b0e6f9638569f8b72543f020f027c340503828215b0110a42",
+      "results_sha256": "48dd262bcb8ac119a24bcefeaa82d962cae926e796e7bb712764ded83156d1e3",
+      "removed_page_images": 8,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 4,
+          "position": 545.6,
+          "clip_pdf_points": [
+            0.0,
+            125.05438232421875,
+            595.4400024414062,
+            633.2579345703125
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "755bed3aa81355bf4d9d8ff088a3e25ae270be55b313860b36bbf927b26cf5c8",
+          "svg_sha256": "ed6839c5f7bfb3458266ea9eaf1aa7c35a9db7c1f17607ccf0dbbcfd0304d73d"
+        },
+        {
+          "page": 5,
+          "position": 545.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            643.5984096134143
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "757530d06ce472b2f605b0b04892a6c5dd17d436d8b8362d8e6b1a8175412e57",
+          "svg_sha256": "722f9f3a3744f53e3450c24c417d831cd307b85045bbe3a5845dbf31a4be31ae"
+        },
+        {
+          "page": 6,
+          "position": 491.1800091515027,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            571.0085245123378
+          ],
+          "png": "markdown_assets/figure-06-01.png",
+          "svg": "markdown_assets/figure-06-01.svg",
+          "png_sha256": "da07a7f97d76591a1bfc853f9df4fd6f395e6476fb0e591c178422e38ecb7e2f",
+          "svg_sha256": "8de113cf365e61123a607ecec33e13d54fda2fc41b4b555b0d84f236ada1f752"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 6,
+      "table_cells": 268,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "35-fd-miller",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "c12b7c6a840173cb887be3586745fc0dce3789f38576afb35b384066b2ffb787",
+      "pdf_sha256": "cb91052965a20f7f3d91af5fc4001cf8a04a18dbc104e5e26ca942d9105eb8f7",
+      "circuit_sha256": "6d9f5f72270985bfe6f78ef2b76d423773ed5271b7edac16c114f3c9b148289b",
+      "results_sha256": "35ed078eafc9a26f7f26b2fbbc68e2d1eb41fc88d6f815765c4f683cf36ab0ba",
+      "removed_page_images": 7,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 2,
+          "position": 282.9500114393784,
+          "clip_pdf_points": [
+            0.0,
+            107.0469741821289,
+            595.4400024414062,
+            235.61846923828125
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "a280282f06cafac4fef4eac71c72c624aa1f07d33d1dec511eb47edb3b6a0f24",
+          "svg_sha256": "1a65022f6f8e9ab762b40e0e4320de347052f7241d9f5827e692dfa87ec2d8bf"
+        },
+        {
+          "page": 4,
+          "position": 580.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            689.6173632541662
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "cdf4aae9f1b56e858dfb89e7928150645f3341edce90c0b0024835b24e042165",
+          "svg_sha256": "63276fb9f46bca5ac1ae14115c01e5fc7170db95c22b24f5385cee09fc11fd85"
+        },
+        {
+          "page": 5,
+          "position": 576.6,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            684.6124267578125
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "3b6600a01e957f707d6e4ae21ea19a7eacbd63d99c42867959fd73ed3c5bf841",
+          "svg_sha256": "171445a47fd97a060315747412970ed14579986e3476920bf0ac45adb999920b"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 5,
+      "table_cells": 246,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "36-telescopic",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "8962d08150a869332ce121161adf51b43126520be228ff6d72f932a21e8edbe1",
+      "pdf_sha256": "6a180b36cb77f27e403056fdb9b74565bb1b0ff8a3e5749e567f6eb7d3a48dfc",
+      "circuit_sha256": "2d4a9e9504ac804dd6b55067d359dc4d79fabc31be9e32557493978f80d8af81",
+      "results_sha256": "f4ac7e120b0e357f22f3fad5837e087bb3f037e3c2f4aa07d67233dbaf3945f1",
+      "removed_page_images": 6,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 2,
+          "position": 280.4259812394195,
+          "clip_pdf_points": [
+            0.0,
+            95.70896911621094,
+            595.4400024414062,
+            269.77490234375
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "0bf72728f68f004fb9a50ea0d4a083cac37818e955271575c0e40fbb194127b7",
+          "svg_sha256": "58edef1784f13375a89088590c1f0b94e0a70e8715b331c409ff89c8d2f3ebf4"
+        },
+        {
+          "page": 3,
+          "position": 571.1,
+          "clip_pdf_points": [
+            0.0,
+            106.3800277709961,
+            595.4400024414062,
+            677.2760620117188
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "4acaf8d7a13f3cebf9c24f39fc8b82638f083de7d9c59402bcc51e6c84048580",
+          "svg_sha256": "fc0b5c15fb4abd8bd8ae3b516d387f0c38f60fa99be22f173835de4e95a8259c"
+        },
+        {
+          "page": 4,
+          "position": 574.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            681.6140669688181
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "65a0afc161e00cc3d1c2253d166748f619e5410446ea988b0264dc7a405f8cbc",
+          "svg_sha256": "56b2650aecd33bbb2f2b9b5169e99ed674d9aa5d7347fc684642b24eaa9d0bab"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 182,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "37-nested-miller",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "ea8780979e7e1d573ad3c7bd750a0394a475dfc4fd500d50ab149607d296de82",
+      "pdf_sha256": "e4c5f5d538eec57708b729ab6e3cafc55c70ebdae285bfd4551863e1826ba6b4",
+      "circuit_sha256": "0014c2c3bce36d7ea1099c7c8c13df67508d37d3fff87a719166c916e21dcbbb",
+      "results_sha256": "781cf209e5aff6aaa918721cf49855383384960c94da9189d1e938a2f3560fab",
+      "removed_page_images": 6,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 2,
+          "position": 310.0830043469638,
+          "clip_pdf_points": [
+            0.0,
+            103.04532623291016,
+            595.4400024414062,
+            281.51007080078125
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "8e3067499a61255f1ebe587d28b1d2aab7e3640a264513d560a6cbde115f5ce9",
+          "svg_sha256": "a4226d2aa6d4badade25e27ddbf8bdd12cd95a39f3b697567d92788f0e189d8c"
+        },
+        {
+          "page": 4,
+          "position": 570.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            676.2785361119194
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "81cfce5b5696e206d594689864bc13acead174bd8904280c2f26c9c5d1838fab",
+          "svg_sha256": "66823e8f271cd19930b1f1c446e148f9692844a68bc4fb7f74294288787b834c"
+        },
+        {
+          "page": 5,
+          "position": 572.1,
+          "clip_pdf_points": [
+            0.0,
+            115.0502700805664,
+            595.4400024414062,
+            678.9463015403687
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "17b536ee508d48406893999004559eafa44baad1973d7fcbbb59a584c16464f5",
+          "svg_sha256": "1addb64b9290db90e31182c5c94567d1276c9153c1ef7d6bd9a51f71d8bab825"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 3,
+      "table_cells": 226,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "38-capless-ldo",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "752a6c13b28b3732b386c3588901494194770971050962447fc3f2f789ca5d90",
+      "pdf_sha256": "dfff24eb5c4de36e641cc70ce56a1bc95d8708cd9c18830776f085498efa0a4c",
+      "circuit_sha256": "44f175530b8c48e901aa078ddc595bec1cefd3f2487f5ea63e9d71566ec7d2d5",
+      "results_sha256": "90ba171aa1bbb68b8053eea303a103bd12ca67b771dcc8c960f897d6c2676a58",
+      "removed_page_images": 7,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 3,
+          "position": 595.1,
+          "clip_pdf_points": [
+            0.0,
+            115.0502700805664,
+            595.4400024414062,
+            701.952880859375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "5a79a083bf507f6bf3b30feae6d70c23e87382a0786b86a776c3cd9b35db7568",
+          "svg_sha256": "7773c3f7d1a937bf878f1c21856718b95a84ded1e82eeec0dddb9540694da18e"
+        },
+        {
+          "page": 4,
+          "position": 540.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            625.9215698242188
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "5df2fed59f01d38898c55194c2bb9977c7d4265554190e91f775835b48fb0d21",
+          "svg_sha256": "d350be5ddc5f2ac3f0639c21fa605663805c93462cccdcf5ba5500a0b6bd7e9c"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 5,
+      "table_cells": 228,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "39-line-driver",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "f2383e0a03249bb595aa8442093de0c8303d82ba9d99ccecd634f560e9cabfc9",
+      "pdf_sha256": "c145e40386df249052c052235a5a65d8a88b81dc155847e5bdd4c75a99a977d2",
+      "circuit_sha256": "45eb5290815c778d817a7b9e108994121159fdb0e952d17e8984bdd00b1af2af",
+      "results_sha256": "f435ff18408d5ef4c7a4c02c1137cad331ba6b260d231063cf6c77bb25e946f4",
+      "removed_page_images": 8,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 4,
+          "position": 545.1,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            642.5950927734375
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "4fe2a58a6f1db966aae7868a29066bfd3064408364d1661466331cf13a317f11",
+          "svg_sha256": "d59511aea9fdad9a9ce7cabc83daac14ecdd6664917d7fafd9f326c77aead2b3"
+        },
+        {
+          "page": 5,
+          "position": 542.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            634.591796875
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "c05a67a1d326ae43c81ee03c742b72928b55b48380d4c5acf4357ae25c3c39ad",
+          "svg_sha256": "6281b2f95f00aa508796612a9108539fe5db75bbd18d6efb42c92e7728df7d55"
+        },
+        {
+          "page": 6,
+          "position": 543.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            634.591796875
+          ],
+          "png": "markdown_assets/figure-06-01.png",
+          "svg": "markdown_assets/figure-06-01.svg",
+          "png_sha256": "2cfa1b19c53ab66f23f3c6297b772eb72b056b80b5aa7a04aee78ec125c864f4",
+          "svg_sha256": "1417c75cc593a3f66af8553b126e30dfb3f297ebad11803b97f7e1dcea5b2c98"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 211,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "40-delta-sigma",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "00b99d2957b57af1fc37b89329d5b161db4abe54b6d8c9f98e69fc51c2d39032",
+      "pdf_sha256": "2670b32e1c8cd338f5a64cf1766d87ac4d0d3c4367d8cc0d6eb1aca8319796f5",
+      "circuit_sha256": "86767b3e18b29812fe33bfdfa9971c67dff4512ca22bafaa31356676d058bbf4",
+      "results_sha256": "918b5b4eb8bfbc9d23bf88a22b025a02d643f23c206471f1d9e2cda1d86437be",
+      "removed_page_images": 1,
+      "removed_label_dumps": 0,
+      "figures": [
+        {
+          "page": 3,
+          "position": 635.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            751.9735107421875
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "1fa15a7f99a43efec19aa13dee2aeb77a1869a1c9c26b9456c9f1d759fdcc55f",
+          "svg_sha256": "f7e5b051f2ecc01cb2a59c3d7de2dc99fc8e98646945ec8d5e27d95bd1a65f9e"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 2,
+      "table_cells": 81,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "41-lowpower-miller",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "c4c368370b99c30bde864cc19f4c1e7495ab5240b4a2b74cfa306c3b8e7b2574",
+      "pdf_sha256": "b91704341aa321677385e8904ffd82ebd5b03c70c57e6c7049b8e91ab1402e0b",
+      "circuit_sha256": "09fc144dd0c6ea413977b2b7d0409f97aac83f192f915337a6d7dcc7af959a37",
+      "results_sha256": "2bc29c0619a6d4d9b9d2b6379e16f142a19e6b184aadc0d77d026f214b5045d9",
+      "removed_page_images": 5,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 2,
+          "position": 260.8650102954405,
+          "clip_pdf_points": [
+            0.0,
+            109.71473693847656,
+            595.4400024414062,
+            226.678466796875
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "1ad258f749173352ef126bdd6df16e64032152ede720af318b5c9302bc4da5d5",
+          "svg_sha256": "370d1e28ea280a130b80a68d324cd6419e93b78f2ca8297f85fb799320ebe094"
+        },
+        {
+          "page": 3,
+          "position": 597.6,
+          "clip_pdf_points": [
+            0.0,
+            123.46038818359375,
+            595.4400024414062,
+            710.6231079101562
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "fa6518d8d9aba62d31f26a1486f825a5b8ed6b43803367d0ce1d482a3bdd72f7",
+          "svg_sha256": "ccf562a39c764732a39b873d2d4d8de074b469435b1e0a545f37481e7b0455fd"
+        },
+        {
+          "page": 4,
+          "position": 618.1,
+          "clip_pdf_points": [
+            0.0,
+            106.3800277709961,
+            595.4400024414062,
+            740.3049063947046
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "778e0bc1c4925000df7de371e460b84958b06e5238f34a3f7435bd3a8a782baa",
+          "svg_sha256": "4c8e09e09af826ea9811e9054c64d6633a22f799a31a0108b63bc635d66fcce7"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 3,
+      "table_cells": 165,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "42-sar-adc6bit",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "e50ec47b377b80c856c1cf707aeab89f56487bf746dbbabade738b2a2a565fcb",
+      "pdf_sha256": "d20855c583160deb4733913d1338054cbeb9b0c5b3f86ba4a67cd944ddd33da1",
+      "circuit_sha256": "4aaf6d34c8b340befe6ed823cd465696013bfeb81a7958240afa39fd1c254f39",
+      "results_sha256": "5046dcbb29708b9b67ac2cbefc127b623bfb49c9c3b4db719ecdec4db78fdf39",
+      "removed_page_images": 1,
+      "removed_label_dumps": 0,
+      "figures": [
+        {
+          "page": 3,
+          "position": 644.6,
+          "clip_pdf_points": [
+            0.0,
+            101.04450225830078,
+            595.4400024414062,
+            769.31396484375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "a86bb1a57612620d800d3d9c391604041873cd76b886a4da1acb90e5b1a2ed84",
+          "svg_sha256": "2ef287c5f330489fb3a404dae75a4c6be3595547cff64e632d1cb6d6f4ee08b1"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 2,
+      "table_cells": 75,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "43-inductive-lna",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "75d181699113ea96f98c52ca71fff712191398cefe65f61c4e911a8ca3804ed1",
+      "pdf_sha256": "e53a6d373176010f665d528a9356b2f5803004bb56fe8a23ce22c2d133592aff",
+      "circuit_sha256": "dfceb74aacbcd14aeab9a680577996f67fbf2ffc8c7b4e321f7d3658b3ace2c5",
+      "results_sha256": "8dc1b78c976fdad12f4d42d93cb942fe1cc7c02d7a595b1798fdfc8e37d11f3f",
+      "removed_page_images": 8,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 4,
+          "position": 551.1,
+          "clip_pdf_points": [
+            0.0,
+            123.72050476074219,
+            595.4400024414062,
+            642.5950927734375
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "be404193083e542026d84069285a96646feb9de0f8c790cc3f72e26653c595f5",
+          "svg_sha256": "377d1c8ea569babae963da251d695d83f2fe8a46ecb8dadf0bdf8c258de26d22"
+        },
+        {
+          "page": 5,
+          "position": 545.1,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            634.591796875
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "57c3da692b4aecb8ce844340710fd58dd4a04474a7e2dac971b4fe4fd3e55a95",
+          "svg_sha256": "de107cd513de7b83a7a20d77cdff7f0f5fccabba6925edd4bc2826a80594e7de"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 6,
+      "table_cells": 256,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "44-ota5",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "d21b04e243345d1ff632f93b72bb08e5def5e1b7015d676a94e03aaad2b13262",
+      "pdf_sha256": "2b5fc1a68abadd27c56e42c40d52cac1a339d2f4eb42ecbdbe98e6a10c9378fb",
+      "circuit_sha256": "053803f14ee4aa318d697793134fe613cd16978b67680028e1b3ca9152bf1ad3",
+      "results_sha256": "edf7b10d794294b943018c4a4625bfd27d58e3117c467756e446e55638898d2c",
+      "removed_page_images": 4,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 1,
+          "position": 937.4224007321202,
+          "clip_pdf_points": [
+            0.0,
+            506.54486083984375,
+            595.4400024414062,
+            767.9801025390625
+          ],
+          "png": "markdown_assets/figure-01-01.png",
+          "svg": "markdown_assets/figure-01-01.svg",
+          "png_sha256": "7ee6ac83ca1d65dc586e45e3a5aefad2d5f21313c093a76e5c72a80863ab7a86",
+          "svg_sha256": "77dbbb3be2bdacdd7df2235dcbb2c869aee1949a6cb5b35337d2849374d71045"
+        },
+        {
+          "page": 3,
+          "position": 613.6,
+          "clip_pdf_points": [
+            0.0,
+            127.66876220703125,
+            595.4400024414062,
+            734.3024341806935
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "f9a7820fbe9c8dcf73c9f40ad6954a33bfd4b5697bf18cfaf5add60f0b138058",
+          "svg_sha256": "96bca344e2957c2fa5216e5e13ba31208d12dda68c736cf4ed9feb01fd530fe1"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 3,
+      "table_cells": 113,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "45-divider",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "a32450d3d483eebaf51417d999e09c5718de0bd6132f331417bd3206926b7e2c",
+      "pdf_sha256": "a19a797c8a74d633f9911fbb0463c21ab31d7f891654de47880efa08ee63e36b",
+      "circuit_sha256": "3225ed0ae81d4f67f378c1bab3cbff73b5e83f5c45ee7fb237eccd046f4ff846",
+      "results_sha256": "b7ec345db3b52e1ff495b4a1c2baf201cdd9eba52e26e496d720efdeaec1b422",
+      "removed_page_images": 4,
+      "removed_label_dumps": 2,
+      "figures": [
+        {
+          "page": 1,
+          "position": 985.7761877827439,
+          "clip_pdf_points": [
+            0.0,
+            596.9979858398438,
+            595.4400024414062,
+            739.3204956054688
+          ],
+          "png": "markdown_assets/figure-01-01.png",
+          "svg": "markdown_assets/figure-01-01.svg",
+          "png_sha256": "bb00876052e3502e37eff07b84245eab1ec18c908e8c43de49be43655caf813c",
+          "svg_sha256": "3df38b6048fd17e8039fc9a5ddb4f7570ae23b54b04f927d3dfeca0d51808e20"
+        },
+        {
+          "page": 2,
+          "position": 616.6,
+          "clip_pdf_points": [
+            0.0,
+            97.70979309082031,
+            595.4400024414062,
+            735.2999877929688
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "ad8bd4474d772a9fe719d635a9486d5eb8cfba9b7d5bd8974862e0b88597a939",
+          "svg_sha256": "99f4d2661df38930fc4dbae841825d52f1b0fe39a1678d9746a9d28e49835f92"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 78,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "46-flash-adc3bit",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "589bbfb95c883b552a83debca35f1ea42c5af7626768d4ad7123c9a16ba0063c",
+      "pdf_sha256": "e72b841b0b1c9bebcda5abc606354029f3d06b92d014067144c5ee2653098b78",
+      "circuit_sha256": "932079bd1b52f635b8632deb2e396f31044070eec8bb522322982af2f83ff7bd",
+      "results_sha256": "5e66dacd7f4579d250a4518ae07e24d2f3386cc5ea7c4a691455fd8af1131706",
+      "removed_page_images": 7,
+      "removed_label_dumps": 1,
+      "figures": [
+        {
+          "page": 3,
+          "position": 609.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            721.9925537109375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "aa60783a9dd27c73bef03f25504a1e51178794f3bdb73d974e369770ccc9cc07",
+          "svg_sha256": "d54cc6ffde19d2d24dac5861ae606bea3047ae274e5412e60058683c210a5890"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 2,
+      "table_cells": 95,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "47-charge-pump",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "efd0cb8a57ca49792747861d6be1c4b316be05e196f0dc39b5b4af451f9fca82",
+      "pdf_sha256": "f3e707ef9ecca4c797f8e833c1706db36d6b8a62124dcb13642c671e70d18c0a",
+      "circuit_sha256": "b17085a791dade0dd8a9d9543708ea5a9f3f81de25cc1314296b773d5124aa93",
+      "results_sha256": "207035649bafbca0ce69d3f34e05d328fa8904332f23960174a44b204a5297e4",
+      "removed_page_images": 5,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 2,
+          "position": 334.6919899333471,
+          "clip_pdf_points": [
+            0.0,
+            105.71308898925781,
+            595.4400024414062,
+            338.4698486328125
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "13bee241e6b5c3de4394d74e7b63172928ed01a5039ae57f1f1d4fca986f363b",
+          "svg_sha256": "b5b927c57c120fff3eb364be670d5e9ef069d0342162df4d8d3a33f795e0c70a"
+        },
+        {
+          "page": 3,
+          "position": 481.71497597730547,
+          "clip_pdf_points": [
+            0.0,
+            115.0502700805664,
+            595.4400024414062,
+            549.8902587890625
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "b91cf524e4e997498b97b353863eb116568573ca5aeb6a29926ff1d7bbf48984",
+          "svg_sha256": "88412cee83d81017a806c968ad84cd2ca5d7e0798f9323b07c67fe68e1479185"
+        },
+        {
+          "page": 4,
+          "position": 512.0029723167044,
+          "clip_pdf_points": [
+            0.0,
+            105.04615020751953,
+            595.4400024414062,
+            579.2356567382812
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "499d2f221072a8d8718a6dd3f42ef2abcb87e7986588fe2fafe10481bb109670",
+          "svg_sha256": "e04795ee4b9f764f1ed294dbb56d9e646935cc920f0cde6143b821e6d6737021"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 4,
+      "table_cells": 170,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "48-sar-adc4bit",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "8fadeed79ee36700dd4979addd6dd0112990e4fa49f4052b838a0a4769da279b",
+      "pdf_sha256": "0ab83c8f9ac407316837c45091628cbe67547c87e6ae836c245a12b9b2a8e063",
+      "circuit_sha256": "a87f8ceb7193b5c69bc95a629ca3d628484b30cb708e843db74e2d94b0687f8d",
+      "results_sha256": "931956409e838d4bab83dc466db4061f2959390f4cf4c8d98ab756d8e651c867",
+      "removed_page_images": 1,
+      "removed_label_dumps": 0,
+      "figures": [
+        {
+          "page": 3,
+          "position": 644.6,
+          "clip_pdf_points": [
+            0.0,
+            101.04450225830078,
+            595.4400024414062,
+            769.31396484375
+          ],
+          "png": "markdown_assets/figure-03-01.png",
+          "svg": "markdown_assets/figure-03-01.svg",
+          "png_sha256": "7b9024e48f68b7e6270ead870c6017d641951e71614b391cb2e7b52f8205875f",
+          "svg_sha256": "510138aeb3f55eff05b8ee368513c213cdafc536b6976fdaa10fab2f7b4066a3"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 2,
+      "table_cells": 65,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "49-lc-vco",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "043828e373cbbee079241f64f8f9b9e75c36e4ac55b6cc16a4b5586e496400bf",
+      "pdf_sha256": "356fae232d8ee4b7577a97cde2d4029c404c0dc1e6a1094fb14f08e7c2f9cebf",
+      "circuit_sha256": "56f91d72cc942ead964ed387c001590690600315d999f535cc6f0f26940c4753",
+      "results_sha256": "cbed80a7cae8804d0e7ba56960d082716a94c896f43898017a6fa9b223499df3",
+      "removed_page_images": 7,
+      "removed_label_dumps": 3,
+      "figures": [
+        {
+          "page": 2,
+          "position": 315.13099611061136,
+          "clip_pdf_points": [
+            0.0,
+            131.11968994140625,
+            595.4400024414062,
+            301.1211242675781
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "73785a3938beeecdf320178065b95a3aa66d535fac79e1d6c4addfd18ff78c76",
+          "svg_sha256": "0364e3ca3cc940b63f9d60d13825ec352073a9b7565e17167a0e1037e7f045c4"
+        },
+        {
+          "page": 4,
+          "position": 483.6079643091395,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            543.2208251953125
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "a247437cf0d4f27cedd47a39854ba21c5525fb37fb22272cc52e50ec38648dc8",
+          "svg_sha256": "48619de41bcf99832aa836faa8fc102588b786a8d98d412318e3286627653b39"
+        },
+        {
+          "page": 5,
+          "position": 318.9169956530362,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            330.466552734375
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "7ba37aec3295405d9059537b819b4681078fd66bd72dcb464f378eaa6a972d7c",
+          "svg_sha256": "ef8599e2e5191994f821320b38fcf4902230d9c5ddfb774595f90e0070a07ef4"
+        },
+        {
+          "page": 5,
+          "position": 918.5,
+          "clip_pdf_points": [
+            0.0,
+            541.775390625,
+            595.4400024414062,
+            700.6190185546875
+          ],
+          "png": "markdown_assets/figure-05-02.png",
+          "svg": "markdown_assets/figure-05-02.svg",
+          "png_sha256": "c6bcd070a3f456a63d4b2c02ffef895855838f6d77b9038e507c44cecef0e635",
+          "svg_sha256": "1206f3adc5ed73adc5bce8289593c09a87af562e61d5aab73146c0560e6c8257"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 8,
+      "table_cells": 321,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    },
+    {
+      "case": "50-gainboosted-folded",
+      "source_commit": "0d018d12741f99c4fd0c7ad105c4434f18638623",
+      "markdown_sha256": "8bfc2e55c758270605670740f3275bd9c7b1fb7a77463c603e49c69e290b2f38",
+      "pdf_sha256": "8f6b0ae847a00560327e0a80a696a4a411ccf33f16eb8d23c3ffca79b02861ee",
+      "circuit_sha256": "2bd50c5eb26a20f10d7e11c3a857716e417a47b187bcd32de1d617491ee51213",
+      "results_sha256": "f2ae49233223e59a9ef8fbbb8cc271c326a78f8e860049500917612e894147bb",
+      "removed_page_images": 7,
+      "removed_label_dumps": 4,
+      "figures": [
+        {
+          "page": 2,
+          "position": 304.4040164727048,
+          "clip_pdf_points": [
+            0.0,
+            114.3833236694336,
+            595.4400024414062,
+            283.11370849609375
+          ],
+          "png": "markdown_assets/figure-02-01.png",
+          "svg": "markdown_assets/figure-02-01.svg",
+          "png_sha256": "a8d484db43dfdc83b69b1b93b2436433d4554ae22da5e43045cb967c54ac706f",
+          "svg_sha256": "a9ffa90016e92a144d6edc6535822a2008395d20f399588c04fea1852b06d503"
+        },
+        {
+          "page": 4,
+          "position": 577.1,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            685.6157151114921
+          ],
+          "png": "markdown_assets/figure-04-01.png",
+          "svg": "markdown_assets/figure-04-01.svg",
+          "png_sha256": "3e5bb50ab4115e2bcbf72ac719d754836df071e1ca8e1c1eeae99499ae4b5994",
+          "svg_sha256": "7d10078b05f6b6b8225204f608e473edd6d3cda5d2a2a9cd29a2a97a1faca99d"
+        },
+        {
+          "page": 5,
+          "position": 376.3380077787773,
+          "clip_pdf_points": [
+            0.0,
+            123.05355834960938,
+            595.4400024414062,
+            415.8350524902344
+          ],
+          "png": "markdown_assets/figure-05-01.png",
+          "svg": "markdown_assets/figure-05-01.svg",
+          "png_sha256": "2ddd1d862840432fb9c613c38e234542c218dbc96c6cac30dc38682184f948a7",
+          "svg_sha256": "4594b834d35128efd18153b5c238b2d1bc5c9b86340b20db09c3dcfc186c3954"
+        },
+        {
+          "page": 6,
+          "position": 555.6,
+          "clip_pdf_points": [
+            0.0,
+            119.25201416015625,
+            595.4400024414062,
+            656.9372367556613
+          ],
+          "png": "markdown_assets/figure-06-01.png",
+          "svg": "markdown_assets/figure-06-01.svg",
+          "png_sha256": "daec4ef3bfcc352d7fe13effdeeb841b7ea36c73a9e2fb7470ca71d3e7ecdf06",
+          "svg_sha256": "941bf3d9b3f86da1638c078246b8f18e686ab5862d5ea63d4133adf9a6125b8f"
+        }
+      ],
+      "review_status": "passed",
+      "reviewed_at": "2026-09-30T04:26:40.749264+00:00",
+      "tables": 5,
+      "table_cells": 302,
+      "table_cells_equal_to_previous_release": true,
+      "visual_review": "Figure layout reviewed in contact sheets; 08 additionally read in browser at full text size."
+    }
+  ]
+}

@@ -1,10 +1,8 @@
-# 21-highpsrr-bandgap 审查报告
+# 21 · 高PSRR带隙基准审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 21 | 高PSRR带隙基准审查
+## 验收结果
 
 本模块提供约1.2V的片上电压基准，并重点降低供电扰动对输出的影响。级联电流镜与核心派生的放大器偏置提高低频电源抑制，工艺RC滤波降低高频耦合；代价是更多偏置器件、电压余量和电容面积。它适合稳压器、传感器和混合信号芯片的安静参考节点；本设计仍是高阻核心，驱动采样负载需要另行设计缓冲器。
 
@@ -26,9 +24,7 @@
 
 启动误差极小只表示同一确定性模型回到独立DC解，不表示绝对精度、随机失配或测量噪声达到该数量级。输出是高阻参考，1pF测试负载不等于ADC驱动验证。
 
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 结构与gm/ID尺寸依据
+## 结构与gm/ID尺寸依据
 
 级联PTAT/CTAT核心、第四路自偏置、独立启动及物理RC输出。
 
@@ -49,13 +45,11 @@
 
 全部MOS来自已有目标PDK TT LUT。L4um角色使用本工程既有补充表，VDS=0.9V；L1um角色也用现有0.9V表。体效应、低VDS余量和实际gm/ID均由最终OP复核。每单位镜宽52.02um，避免104um单实例超出100um模型范围。
 
-原厂NPN npn18a4单位2×2um，area=1/8/2。工艺电阻均rpposab\_3t且W=1um：RPTAT16.5um、RREF73.3um、RF ILT30um；RCB0–4各200um。所有第三端接SUB，bench把SUB接AVSS。
+原厂NPN npn18a4单位2×2um，area=1/8/2。工艺电阻均rpposab\_3t且W=1um：RPTAT16.5um、RREF73.3um、RFILT30um；RCB0–4各200um。所有第三端接SUB，bench把SUB接AVSS。
 
 CCORE/CFILT/CCOMP为工艺MIM，名义60/20/0.5pF，总板面积约0.0829mm²，另有1pF外部负载。没有理想R/C、源或行为器件放在DUT内部；未做布局/DRC/PEX。
 
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 实际工作点与级联余量
+## 实际工作点与级联余量
 
 全部18个MOS实例；电流幅度列取绝对值，电压符号沿Spectre定义。
 
@@ -84,9 +78,7 @@ pc0/pc1/pc2=1.592759/1.592759/1.593767V，cbias=1.009637V。输出上层MP2是�
 
 MSTART稳态电流6.265pA，注入关闭；检测器MPST仍有2.140uA直通电流，计入功耗。MNST处于预期低VDS状态，不能以放大管饱和条件判其失败。
 
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 全温扫与电源耦合
+## 全温扫与电源耦合
 
 温扫126点；AC为0.01Hz–100MHz，正式门槛仅在0.01Hz和1MHz两点。
 
@@ -94,81 +86,11 @@ MSTART稳态电流6.265pA，注入关闭；检测器MPST仍有2.140uA直通电�
 
 0.01Hz供电耦合-70.625079dB，1MHz为-35.392274dB。输出RC主要衰减高频耦合，无法修复直流供电依赖；低频改善来自级联及核心派生偏置。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![全温扫与电源耦合](markdown_assets/figure-04-01.png)
 
-```text
-1.236
-120
-1.235
-110
-1.234
-100
-VBG (V)
-1.233
-VDD power (uW)
-1.232
-90
-1.231
-80
-1.230
--40
--20
-0
-20
-40
-60
-80
--40
--20
-0
-20
-40
-60
-80
-Temperature (C)
-Temperature (C)
--30
-Core
-20
-Output
-Required points
--40
-19
--50
-18
--60
-17
--70
-va - vb (uV)
-Supply gain (dB)
-16
--80
-15
--90
--100
-14
-0.1
-10
-1000
-100000
-1e+07
--40
--20
-0
-20
-40
-60
-80
-Frequency (Hz)
-Temperature (C)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 独立DC目标下的真实供电启动
+## 独立DC目标下的真实供电启动
 
 VDD在首1us从0升至1.8V，运行100us；无非零初值，无强制输出轨迹。
 
@@ -176,83 +98,11 @@ VDD在首1us从0升至1.8V，运行100us；无非零初值，无强制输出轨�
 
 原题只约束100us内回到独立DC目标，未另设峰值电流、能量、入窗时间或过冲门槛。图中早期轨迹和供电电流作为完整工程证据；不把微小数值尾差解释成真实器件精度。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![独立DC目标下的真实供电启动](markdown_assets/figure-05-01.png)
 
-```text
-1.75
-1.75
-1.50
-1.50
-1.25
-1.25
-1.00
-1.00
-0.75
-0.75
-Voltage (V)
-Voltage (V)
-0.50
-0.50
-0.25
-0.25
-VDD
-VDD
-VBG
-VBG
-0.00
-0.00
-0
-20
-40
-60
-80
-100
-0
-2
-4
-6
-8
-10
-Time (us)
-Time (us)
-20
-400
-15
-10
-300
-5
-0
-200
--5
-100
--10
-Positive supply current (uA)
-Independent DC error (mV)
--15
-0
--20
-0
-2
-4
-6
-8
-10
-5
-10
-15
-20
-25
-30
-Time (us)
-Time (us)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 有因果依据的迭代记录
+## 有因果依据的迭代记录
 
 先测供电耦合，再隔离残余通路；失败运行和相同合同均保留。
 
@@ -262,7 +112,7 @@ Time (us)
 | 中间版 | 增加PMOS级联；偏置不变 | -57.463 / -34.759dB | 低频仍失败 |
 | 最终版 | 第四路镜生成放大器偏置 | -70.625 / -35.392dB | 五项原门槛通过 |
 
-长沟道提高输出电阻，但核心支路与输出支路漏压不同，仍有镜像误差随VDD变化。增加级联后，pc0/pc1/p c2约1.593V，上层镜漏压接近；输出参考的电源耦合下降，但尚未达到60dB目标。
+长沟道提高输出电阻，但核心支路与输出支路漏压不同，仍有镜像误差随VDD变化。增加级联后，pc0/pc1/pc2约1.593V，上层镜漏压接近；输出参考的电源耦合下降，但尚未达到60dB目标。
 
 低频AC显示放大器尾电流仍由VDD电阻支路调制；镜负载的二极管节点与pctrl跟随供电的斜率不同，通过输入对有限输出电阻转换成差分误差。最终从PTAT核心单独镜出约3uA，给MNB和三倍MTAIL建立偏置，切断该直接供电通路。
 
@@ -270,9 +120,7 @@ Time (us)
 
 这是一阶、无修调、高阻带隙。约0.083mm²的MIM电容板面积与级联电压余量是实际代价；没有宣称最小面积、最低功耗或完整PVT/失配鲁棒性。
 
-![第6页原图与排版](markdown_assets/page-06.png)
-
-## 第7页 · 原始算法、运行与证据边界
+## 原始算法、运行与证据边界
 
 9项数值交叉核对、上游5项nominal checks及完整端子复核。
 
@@ -282,67 +130,28 @@ Time (us)
 
 Spectre24.1实际日志均0错误/0警告。Bridge将日志中的license与“0 errors”组合误报license error；保留该元数据，并按成功许可检查、正常结束及完整PSF核实有效性。PDK、Bridge、Spectre和原LUT未修改。
 
-复现：激活virtuoso-bridge-lite/.venv，在工程根目录执行：python scripts/case21\_highpsrr\_bandgap.py python scripts/schematic21.py python scripts/audit21.py python scripts/review21.py重新生成后必须再次目检图纸和PDF；不会自动继承本次目检结论。
+复现：激活virtuoso-bridge-lite/.venv，在工程根目录执行： python scripts/case21\_highpsrr\_bandgap.py python scripts/schematic21.py python scripts/audit21.py python scripts/review21.py 重新生成后必须再次目检图纸和PDF；不会自动继承本次目检结论。
 
 最终运行：runs/21/20260926T031354634964Z\_static runs/21/20260926T031355779063Z\_ac runs/21/20260926T031356432862Z\_startup
 
 未覆盖：另外三个代表性工艺/电压/温度组合，完整笛卡尔PVT、失配、噪声、版图及PEX、输出缓冲与采样负载驱动。1°C步长的全温扫属于原功能合同；它不等于完成其他工艺角。
 
-![第7页原图与排版](markdown_assets/page-07.png)
-
-## 第8页 · 精确网表与完整图纸
+## 精确网表与完整图纸
 
 顶层端口顺序AVDD AVSS VBG SUB；DUT只用目标工艺物理器件。
 
-```text
-simulator lang=spectre
-subckt bandgap (AVDD AVSS VBG SUB)
-MP0 (pc0 pctrl AVDD AVDD) p18 w=52.02u l=4u m=2
-MP1 (pc1 pctrl AVDD AVDD) p18 w=52.02u l=4u m=2
-MP2 (pc2 pctrl AVDD AVDD) p18 w=52.02u l=4u m=4
-Q0 (va va AVSS SUB) npn18a4 area=1
-RPTAT (vb n1 SUB) rpposab_3t w=1u l=16.5u
-Q1 (n1 n1 AVSS SUB) npn18a4 area=8
-RREF (vcore vctat SUB) rpposab_3t w=1u l=73.3u
-QREF (vctat vctat AVSS SUB) npn18a4 area=2
-CCORE (vcore AVSS) mim w=100u l=617.91967u
-RFILT (vcore VBG SUB) rpposab_3t w=1u l=30u
-CFILT (VBG AVSS) mim w=100u l=205.97322u
-MPC0 (va cbias pc0 AVDD) p18 w=25.3u l=1u m=1
-MPC1 (vb cbias pc1 AVDD) p18 w=25.3u l=1u m=1
-MPC2 (vcore cbias pc2 AVDD) p18 w=25.3u l=1u m=2
-MPCB (cbias cbias AVDD AVDD) p18 w=0.76u l=1u
-RCB0 (cbias rcb1 SUB) rpposab_3t w=1u l=200u
-RCB1 (rcb1 rcb2 SUB) rpposab_3t w=1u l=200u
-RCB2 (rcb2 rcb3 SUB) rpposab_3t w=1u l=200u
-RCB3 (rcb3 rcb4 SUB) rpposab_3t w=1u l=200u
-RCB4 (rcb4 AVSS SUB) rpposab_3t w=1u l=200u
-MPA (namp pctrl AVDD AVDD) p18 w=31.220000000000002u l=4u
-MPCA (nbias cbias namp AVDD) p18 w=7.58u l=1u
-MNB (nbias nbias AVSS AVSS) n18 w=3.46u l=4u
-MTAIL (tail nbias AVSS AVSS) n18 w=3.46u l=4u m=3
-MINA (pctrl va tail AVSS) n18 w=48.5u l=4u
-MINB (nout vb tail AVSS) n18 w=48.5u l=4u
-MPD (nout nout AVDD AVDD) p18 w=50.72u l=4u
-MPM (pctrl nout AVDD AVDD) p18 w=50.72u l=4u
-CCOMP (pctrl AVSS) mim w=50u l=10.298661u
-MPST (st vcore AVDD AVDD) p18 w=2.82u l=1u
-MNST (st vcore AVSS AVSS) n18 w=0.58u l=1u
-MSTART (pctrl st AVSS AVSS) n18 w=0.58u l=1u
-ends bandgap
-```
-
 后附S1–S3为全部32个实例：18MOS、3NPN、8个工艺电阻、3个MIM电容，共114个端子。RFILT/CFILT是DUT的一部分，1pF外部CLOAD不计入DUT器件数。
 
-完整总图：cases/21-highpsrr-bandgap/schematic/full.svg / full.pdf连接清单：schematic/connectivity.json；独立图纸核对：schematic\_independent\_review.json
+完整总图：cases/21-highpsrr-bandgap/schematic/full.svg / full.pdf 连接清单：schematic/connectivity.json；独立图纸核对：schematic\_independent\_review.json
 
 电路SHA-256：c44fb1be719bd559ccdcdeed956b61620db10de7cd08cefb35cf0b11f8f879de
 
-![第8页原图与排版](markdown_assets/page-08.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Long-channel closed-loop bandgap plus physical RC output isolation.
@@ -383,12 +192,14 @@ MSTART (pctrl st AVSS AVSS) n18 w=0.58u l=1u
 ends bandgap
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![电路分图 sheet-3](schematic/sheet-3.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

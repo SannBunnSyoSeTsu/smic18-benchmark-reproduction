@@ -11,3 +11,5 @@
 43 份从 PDF 恢复的 MD 的原逐格检查为 201 张表、8,098 个单元格；28 份 Mermaid 使用真实解析器检查并逐图查看。历史回执保存在 `reports/`，本次发布的独立检查由 `tools/verify_distribution.py` 运行。
 
 上游固定提交：`c23f124de1e461655d2e02ce6cfae2654ccea0d3`。具体归属和使用条件见 [来源与许可](../NOTICE.md)。
+
+2026-09-30：50 份报告完成可读性修订，当前文档验收见 [修订记录](MARKDOWN-REVISION.md) 和 `publication/readability-audit.json`。`reports/` 及旧 `markdown_delivery.json` 属于此前交付回执，不能用作修订后 MD 的哈希。原 PDF、电路、合同和结果保持原值。

@@ -1,10 +1,8 @@
-# 11-bandgap 审查报告
+# 11 · 一阶带隙基准审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 11 | 一阶带隙基准审查
+## 验收结果
 
 本模块利用双极管VBE与不同电流密度产生的ΔVBE相加，提供约1.2V的低温漂片上基准。相比单独使用VBE或电阻分压，闭环带隙可同时降低温度与供电变化的影响，代价是偏置电流、启动电路和滤波电容面积。它适合偏置、阈值及稳压器参考；本设计为高阻核心，直接驱动ADC采样负载还需要缓冲器。
 
@@ -33,13 +31,11 @@
 
 本次为无修调、高阻带隙核心，不包含输出缓冲器。实际运行、网表快照、模型与LUT哈希、测量公式和完整晶体管图均随报告保留。
 
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 结构与 gm/ID 初始尺寸
+## 结构与 gm/ID 初始尺寸
 
 一阶 VBE + K·ΔVBE；三路PMOS镜、NPN面积比、误差放大器及独立启动。
 
-误差放大器使va≈vb，RPTAT上的电压近似ΔVBE。Q0:Q1发射区面积比1:8，PMOS支路电流比1:1:2；输出为 VB E(QREF) + IOUT·RREF。QREF面积取2，使其电流密度接近Q0。电阻比确定补偿权重，绝对电阻决定电流。
+误差放大器使va≈vb，RPTAT上的电压近似ΔVBE。Q0:Q1发射区面积比1:8，PMOS支路电流比1:1:2；输出为 VBE(QREF) + IOUT·RREF。QREF面积取2，使其电流密度接近Q0。电阻比确定补偿权重，绝对电阻决定电流。
 
 | 器件 | 模型 | W/L um | m | gm/ID | 初算I/uA |
 | --- | --- | --- | --- | --- | --- |
@@ -61,9 +57,7 @@ LUT：现有gmoverid\_smic18 TT表，MOS L=1um；镜与偏置VDS=0.9V，输入�
 
 滤波代价：CREF名义60pF，电容板面积约0.0618mm²，另有0.5pF补偿电容及5pF外部负载。模型包含工艺电阻衬底电容与MIM电压/温度系数；未进行布局、DRC或PEX。
 
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 标称工作点与启动关断
+## 标称工作点与启动关断
 
 用真实电路OP检查电流、体效应和余量；不把所有器件强制归为同一区域编号。
 
@@ -97,22 +91,9 @@ LUT：现有gmoverid\_smic18 TT表，MOS L=1um；镜与偏置VDS=0.9V，输入�
 
 启动注入关闭不代表启动检测器零功耗：MPST/MNST反相器的剩余直通电流已计入VDD总功耗。这里没有理想电流源给DUT供偏置。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+ΔVBE ≈ 54.862 mV，va−vb = 41.966 μV，MSTART 稳态电流为 6.656 pA。表中电流符号沿用 Spectre：PMOS 电流为负，幅度列取绝对值。
 
-```text
-ΔVBE ≈ 54.862 mV
-va-vb = 41.966 uV
-MSTART电流 = 6.656 pA
-表中符号沿用Spectre；
-PMOS电流为负，幅度列取绝对值。
-```
-
-</details>
-
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 温度补偿与线性调整率
+## 温度补偿与线性调整率
 
 TT / bjt\_tt / res\_tt / mim\_tt；温扫在1.8V，电压扫在27°C，二者不是完整笛卡尔PVT。
 
@@ -127,73 +108,11 @@ TT / bjt\_tt / res\_tt / mim\_tt；温扫在1.8V，电压扫在27°C，二者不
 
 TC=(max-min)/(mean×165)=7.453174ppm/°C；线性调整率=(max-min)/0.36=4.468537mV/V。保留全部原定义采样点。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![温度补偿与线性调整率](markdown_assets/figure-04-01.png)
 
-```text
-1.2250
-1.2256
-1.2248
-1.2254
-1.2252
-1.2246
-1.2250
-1.2244
-1.2248
-VREF (V)
-VREF (V)
-1.2242
-1.2246
-1.2240
-1.2244
-1.2238
-1.2242
-1.2236
--25
-0
-25
-50
-75
-100
-125
-1.65 1.70 1.75 1.80 1.85 1.90 1.95
-Temperature (C)
-Supply (V)
-150
-150
-140
-140
-130
-130
-120
-120
-110
-110
-VDD power (uW)
-VDD power (uW)
-100
-100
-90
-90
-80
-80
--25
-0
-25
-50
-75
-100
-125
-1.65 1.70 1.75 1.80 1.85 1.90 1.95
-Temperature (C)
-Supply (V)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 从零状态启动：1us 与10us供电斜坡
+## 从零状态启动：1us 与10us供电斜坡
 
 所有保存内部节点初始为0，skipdc=yes；无强制初始输出、无辅助时钟、无启动行为源。
 
@@ -206,84 +125,11 @@ Supply (V)
 
 1us斜坡最难：原3pF补偿/20pF输出电容曾过冲423mV。调整为0.5pF/60pF后保持相同斜坡、节点初始条件和观察窗，全部原门槛通过。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![从零状态启动：1us 与10us供电斜坡](markdown_assets/figure-05-01.png)
 
-```text
-startup1
-startup10
-VDD
-1.75
-1.75
-VREF
-1.50
-1.50
-1.25
-1.25
-1.00
-1.00
-0.75
-0.75
-Voltage (V)
-Voltage (V)
-0.50
-0.50
-0.25
-0.25
-VDD
-VREF
-0.00
-0.00
-0
-5
-10
-15
-20
-0
-5
-10
-15
-20
-25
-30
-Time (us)
-Time (us)
-600
-50
-500
-40
-400
-30
-300
-20
-200
-Positive VDD current (uA)
-Positive VDD current (uA)
-10
-100
-0
-0
-0
-5
-10
-15
-20
-0
-5
-10
-15
-20
-25
-30
-Time (us)
-Time (us)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 供电耦合、输出噪声与双向供电阶跃
+## 供电耦合、输出噪声与双向供电阶跃
 
 AC 10Hz–100MHz；噪声10Hz–1MHz；1.8→1.98→1.62V，10ns边沿。
 
@@ -296,94 +142,11 @@ AC 10Hz–100MHz；噪声10Hz–1MHz；1.8→1.98→1.62V，10ns边沿。
 
 阶跃建立时间保守取最后一次越界后的首个样点，误差带固定1mV，并检查之后持续保持。两段目标均取静态电压扫的独立结果，没有把未收敛尾值当作目标。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![供电耦合、输出噪声与双向供电阶跃](markdown_assets/figure-06-01.png)
 
-```text
-4
-10
-0.1
-3
-10
-|VREF / VDD| (V/V)
-0.01
-10
-2
-Output noise (nV/sqrt(Hz))
-1
-2
-3
-4
-5
-6
-7
-8
-1
-2
-3
-4
-5
-6
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-Frequency (Hz)
-6
-up
-1.2300
-down
-4
-1.2275
-2
-0
-1.2250
--2
-1.2225
-VREF (V)
--4
-1.2200
--6
-DC-target error (mV)
-1.2175
--8
-1.2150
--10
-1.2125
-0
-5
-10
-15
-20
-25
-30
-0.0
-2.5
-5.0
-7.5
-10.0
-12.5
-15.0
-Time (us)
-Time after step (us)
-```
+[查看矢量图](markdown_assets/figure-06-01.svg)
 
-</details>
-
-![第6页原图与排版](markdown_assets/page-06.png)
-
-## 第7页 · 验收覆盖、迭代与证据复现
+## 验收覆盖、迭代与证据复现
 
 仅第11项；原始资料只读，所有新设计与报告在smic18\_benchmark\_repro工作工程。
 
@@ -397,64 +160,30 @@ Time after step (us)
 
 未覆盖：其余MOS/BJT/无源工艺角；动态热低压和冷高压配对；30个固定随机种子；版图、寄生和负载驱动。TT温扫及电压扫是保留的功能表征，不是工艺角或良率签核。最终运行无Spectre警告，无模型尺寸越界。
 
-现用Spectre24.1，原26项18.1结果未改。Bridge把日志中的license与“0 errors”误组合为license error；保留此元数据，按原日志0错误/0警告、成功许可检查和完整数据确认运行有效。没有修改Bridge或Spect re环境。
+现用Spectre24.1，原26项18.1结果未改。Bridge把日志中的license与“0 errors”误组合为license error；保留此元数据，按原日志0错误/0警告、成功许可检查和完整数据确认运行有效。没有修改Bridge或Spectre环境。
 
-复现（先激活virtuoso-bridge-lite/.venv，在工程根目录执行）：python scripts/case11\_bandgap.py python scripts/case11\_bandgap.py --extract python scripts/schematic11.py python scripts/audit11.py python scripts/review11.py
+复现（先激活virtuoso-bridge-lite/.venv，在工程根目录执行）： python scripts/case11\_bandgap.py python scripts/case11\_bandgap.py --extract python scripts/schematic11.py python scripts/audit11.py python scripts/review11.py
 
 最终五组运行：runs/11/20260926T020532404519Z\_acnoise runs/11/20260926T020533129366Z\_startup1 runs/11/20260926T020534268332Z\_step runs/11/20260926T020742387816Z\_static runs/11/20260926T020743564236Z\_startup10
 
 验收边界预先冻结；没有改变5pF负载、供电范围、频段、温度采样点或启动窗口来制造通过。文档渲染与图纸连接审查完成后才登记正式交付。
 
-![第7页原图与排版](markdown_assets/page-07.png)
-
-## 第8页 · 精确网表与图纸对应
+## 精确网表与图纸对应
 
 MOS端序D G S B；BJT端序C B E SUB；所有工艺电阻第三端均接vss。
 
-```text
-simulator lang=spectre
-subckt bandgap_reference (vss vdd vref)
-MP0 (va pctrl vdd vdd) p18 w=25.3u l=1u
-MP1 (vb pctrl vdd vdd) p18 w=25.3u l=1u
-MP2 (vref pctrl vdd vdd) p18 w=25.3u l=1u m=2
-Q0 (va va vss vss) npn18a4 area=1
-RPTAT (vb n1 vss) rpposab_3t w=1u l=16.5u
-Q1 (n1 n1 vss vss) npn18a4 area=8
-RREF (vref vctat vss) rpposab_3t w=1u l=73.3u
-QREF (vctat vctat vss vss) npn18a4 area=2
-CREF (vref vss) mim w=100u l=617.91967u
-RB0 (vdd rb1 vss) rpposab_3t w=1u l=162.5u
-RB1 (rb1 rb2 vss) rpposab_3t w=1u l=162.5u
-RB2 (rb2 rb3 vss) rpposab_3t w=1u l=162.5u
-RB3 (rb3 rb4 vss) rpposab_3t w=1u l=162.5u
-RB4 (rb4 rb5 vss) rpposab_3t w=1u l=162.5u
-RB5 (rb5 rb6 vss) rpposab_3t w=1u l=162.5u
-RB6 (rb6 rb7 vss) rpposab_3t w=1u l=162.5u
-RB7 (rb7 nbias vss) rpposab_3t w=1u l=162.5u
-MNB (nbias nbias vss vss) n18 w=0.88u l=1u
-MTAIL (tail nbias vss vss) n18 w=0.88u l=1u m=3
-MINA (pctrl va tail vss) n18 w=13.0u l=1u
-MINB (nout vb tail vss) n18 w=13.0u l=1u
-MPD (nout nout vdd vdd) p18 w=12.52u l=1u
-MPM (pctrl nout vdd vdd) p18 w=12.52u l=1u
-CCOMP (pctrl vss) mim w=50u l=10.298661u
-MPST (st vref vdd vdd) p18 w=2.82u l=1u
-MNST (st vref vss vss) n18 w=0.58u l=1u
-MSTART (pctrl st vss vss) n18 w=0.58u l=1u
-ends bandgap_reference
-```
-
 后附S1–S3为全部27个器件的连接图：12个MOS、3个NPN定义、10个工艺电阻和2个MIM电容，共94个端子。m及area均明确标出；每个图纸端子都有可追踪的导线到正确网络标签。
 
-完整总图：cases/11-bandgap/schematic/full.svg / full.pdf图纸连接与参数审计：schematic/connectivity.json / schematic\_audit.json结果与来源：latest\_results.json / verification\_audit.json / source\_provenance.json
+完整总图：cases/11-bandgap/schematic/full.svg / full.pdf 图纸连接与参数审计：schematic/connectivity.json / schematic\_audit.json 结果与来源：latest\_results.json / verification\_audit.json / source\_provenance.json
 
 电路SHA-256：35c5a82bce4de256e274a922797be82a4e0696d81bbd295a1da8830424083029
 
-![第8页原图与排版](markdown_assets/page-08.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // First-order VBE + 2*RREF/RPTAT*DeltaVBE; untrimmed high-impedance output.
@@ -490,12 +219,14 @@ MSTART (pctrl st vss vss) n18 w=0.58u l=1u
 ends bandgap_reference
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![电路分图 sheet-3](schematic/sheet-3.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

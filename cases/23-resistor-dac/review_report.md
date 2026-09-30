@@ -1,38 +1,8 @@
-# 23-resistor-dac 审查报告
+# 23 · 五位开关电阻 DAC 审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-<!-- SYSTEM-BLOCK-DIAGRAM -->
-## 系统框图
-
-这是二进制加权电阻支路，非电阻串抽头译码结构。
-
-实线表示信号或能量通路，虚线表示时钟、控制或偏置。DUT框外为外部端口或测试夹具；精确端子连接见后附基本电路图。
-
-```mermaid
-flowchart TB
-    subgraph DUT["DUT"]
-        direction TB
-        DRV["5路HD位驱动"]
-        SW["按位互补开关"]
-        R["原生电阻按1/2/4/8/16并联加权"]
-    end
-    CODE["5位数字输入"]
-    REF["电源 / 地参考"]
-    OUT["电压输出及负载"]
-    CODE -.-> DRV
-    DRV -.->|"逐位控制"| SW
-    REF -->|"两参考轨"| SW
-    SW -->|"支路电压"| R
-    R -->|"加权汇流"| OUT
-```
-
-[独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
-<!-- END-SYSTEM-BLOCK-DIAGRAM -->
-
-## 第1页 · 23 | 五位开关电阻 DAC 审查
+## 验收结果
 
 本模块将5位数字码转换为模拟电压，用CMOS开关选择电阻网络的连接状态。电阻式DAC的优势是传输关系直观，便于实现静态单调性；相对电流舵结构，其输出阻抗和开关导通电阻更直接影响驱动与建立速度。芯片中常用于偏置调节、门限设定和低分辨率校准，实际精度还取决于电阻匹配及负载。
 
@@ -62,9 +32,35 @@ flowchart TB
 
 本次为确定性nominal迁移，不包含其余10个PVT点、8个固定种子局部失配回归、Monte Carlo良率和版图寄生。10%/15%只列数值边界；未延长5 ns代码或观察窗口。
 
-![第1页原图与排版](markdown_assets/page-01.png)
+<!-- SYSTEM-BLOCK-DIAGRAM -->
+## 系统框图
 
-## 第2页 · 电路连接、权重与 LUT 尺寸
+这是二进制加权电阻支路，非电阻串抽头译码结构。
+
+实线表示信号或能量通路，虚线表示时钟、控制或偏置。DUT框外为外部端口或测试夹具；精确端子连接见后附基本电路图。
+
+```mermaid
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        DRV["5路HD位驱动"]
+        SW["按位互补开关"]
+        R["原生电阻按1/2/4/8/16并联加权"]
+    end
+    CODE["5位数字输入"]
+    REF["电源 / 地参考"]
+    OUT["电压输出及负载"]
+    CODE -.-> DRV
+    DRV -.->|"逐位控制"| SW
+    REF -->|"两参考轨"| SW
+    SW -->|"支路电压"| R
+    R -->|"加权汇流"| OUT
+```
+
+[独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
+<!-- END-SYSTEM-BLOCK-DIAGRAM -->
+
+## 电路连接、权重与 LUT 尺寸
 
 32个同尺寸工艺电阻：五组二进制权重支路，加一个恒接地的LSB终端。
 
@@ -81,56 +77,11 @@ LUT：27°C、VDS=0.9 V、参考W=10 um。选gm/ID=6、参考ID=200 uA，得到�
 
 理想关系：Vout=(Σ 2^i·bi)/32·VDD。终端的一份电导保证分母32。全码平均静态功耗手算约546 uW，实测含内部数字翻转约645 uW。DUT无理想R/C、行为源或理想开关。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![电路连接、权重与 LUT 尺寸](markdown_assets/figure-02-01.png)
 
-```text
-nb0
-sw0
-n18→VSS / p18→VDD
-b0
-1 × Runit 并联
-INHDV2
-共栅nb，m=1
-nb1
-sw1
-n18→VSS / p18→VDD
-b1
-INHDV4
-2 × Runit 并联
-共栅nb，m=2
-nb2
-sw2
-n18→VSS / p18→VDD
-b2
-INHDV8
-4 × Runit 并联
-共栅nb，m=4
-vout
-nb3
-sw3
-n18→VSS / p18→VDD
-b3
-INHDV16
-8 × Runit 并联
-共栅nb，m=8
-nb4
-sw4
-n18→VSS / p18→VDD
-b4
-16 × Runit 并联
-INHDV32
-共栅nb，m=16
-VSS
-1 × Runit
-DUT引脚：vss b0 b1 b2 b3 b4 vdd vout；所有MOS阱接相应电源轨。
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 完整 32 码：动态爬码与线性度
+## 完整 32 码：动态爬码与线性度
 
 每码5 ns，在7+5k ns采样；端点拟合与绝对端点误差同时检查。
 
@@ -140,66 +91,11 @@ LSBfit=(V31−V0)/31=56.13983 mV；INL[k]=(V[k]−V[0])/LSBfit−k；DNL[k]=(V[k
 
 命令边沿50 ps，保持原PULSE/PWL。输入驱动采用原厂INHDV3→INHDV32两级缓冲，保留单独VDRV供电；DUT内数字反相同样采用HD。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![完整 32 码：动态爬码与线性度](markdown_assets/figure-03-01.png)
 
-```text
-1.75
-Actual output
-32 samples
-1.50
-1.25
-1.00
-0.75
-Output (V)
-0.50
-0.25
-0.00
-0
-20
-40
-60
-80
-100
-120
-140
-160
-Time (ns)
-0.2
-0.2
-0.1
-0.1
-0.0
-0.0
-DNL (LSB)
--0.1
--0.1
-Endpoint-fit INL (LSB)
--0.2
--0.2
-0
-5
-10
-15
-20
-25
-30
-0
-5
-10
-15
-20
-25
-30
-Code
-Code
-```
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
-</details>
-
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 六种大进位：建立与峰值越界
+## 六种大进位：建立与峰值越界
 
 以命令时刻为零；理想目标码与±0.25 LSB带均不随端点拟合移动。
 
@@ -214,110 +110,11 @@ Code
 | 15→16 | 0.6918 | 0.03292 | 0.02677 |
 | 16→15 | 3.0839 | 0.04890 | 0.86573 |
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![六种大进位：建立与峰值越界](markdown_assets/figure-04-01.png)
 
-```text
-3 -> 4
-4 -> 3
-4.2
-4.0
-4.0
-3.8
-3.8
-3.6
-3.6
-3.4
-3.2
-3.4
-Output / ideal LSB
-Output / ideal LSB
-3.0
-3.2
-2.8
-3.0
-0
-1
-2
-3
-4
-5
-0
-1
-2
-3
-4
-5
-After command (ns)
-After command (ns)
-7 -> 8
-8 -> 7
-8.2
-8.25
-8.0
-8.00
-7.8
-7.75
-7.6
-7.50
-7.4
-7.25
-Output / ideal LSB
-Output / ideal LSB
-7.2
-7.00
-7.0
-6.75
-0
-1
-2
-3
-4
-5
-0
-1
-2
-3
-4
-5
-After command (ns)
-After command (ns)
-15 -> 16
-16 -> 15
-16.2
-16.5
-16.0
-15.8
-16.0
-15.6
-15.5
-15.4
-Output / ideal LSB
-Output / ideal LSB
-15.2
-15.0
-15.0
-0
-1
-2
-3
-4
-5
-0
-1
-2
-3
-4
-5
-After command (ns)
-After command (ns)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 负载扰动、数值对照与复现
+## 负载扰动、数值对照与复现
 
 输出电阻保留原六个代表代码及向电源范围内的5 uA扰动方向。
 
@@ -330,96 +127,21 @@ After command (ns)
 | 28 | 吸收 | 1.5742075 | 1.5692727 | 986.9523 |
 | 31 | 吸收 | 1.7432962 | 1.7383302 | 993.1932 |
 
-每个代码驻留30 ns：前15 ns无负载，后15 ns施加5 uA；采样于本窗口14 ns和29 ns。码0取(Vloaded−Vun loaded)/5 uA，其余取相反电压差。保留整个扰动波形，非用1/gds替代外部测试。
+每个代码驻留30 ns：前15 ns无负载，后15 ns施加5 uA；采样于本窗口14 ns和29 ns。码0取(Vloaded−Vunloaded)/5 uA，其余取相反电压差。保留整个扰动波形，非用1/gds替代外部测试。
 
 数值对照：三类bench步长均缩小5倍（最终2/1/5 ps），reltol由2e−5收紧到2e−6。全部指标最大相对变化0.01049%。ramp/Rout仍有SPECTRE-16780局部LTE提示；没有模型尺寸越界，结论稳定。
 
-复现：在smic18\_benchmark\_repro目录执行/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case23\_dac.py --refined PDF：同一Python执行 scripts/review\_pdf.py 23
+复现：在smic18\_benchmark\_repro目录执行 /home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case23\_dac.py --refined PDF：同一Python执行 scripts/review\_pdf.py 23
 
 源任务与冻结instruction/verifier/bench：cases/23-resistor-dac/source/。失配统计与其他PVT点未执行；本次测得的单调性不能代表布局后匹配或良率。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![负载扰动、数值对照与复现](markdown_assets/figure-05-01.png)
 
-```text
-1.5
-1.0
-Output (V)
-0.5
-0.0
-0
-20
-40
-60
-80
-100
-120
-140
-160
-180
-Time (ns)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 完整 DUT 网表与证据路径
+## 完整 DUT 网表与证据路径
 
 所有D/G/S/B、数字单元端口、并联数、电阻单位与基底连接均可逐行核对。
-
-```text
-simulator lang=spectre
-subckt switched_resistor_dac_5bit (vss b0 b1 b2 b3 b4 vdd vout)
-XINV0 (b0 nb0 vdd vss vdd vss) INHDV2
-MSN0 (sw0 nb0 vss vss) n18 w=3.24u l=.18u m=1
-MSP0 (sw0 nb0 vdd vdd) p18 w=9.08u l=.18u m=1
-RB0_0 (vout sw0 vss) rpposab_3t w=1u l=96u
-XINV1 (b1 nb1 vdd vss vdd vss) INHDV4
-MSN1 (sw1 nb1 vss vss) n18 w=3.24u l=.18u m=2
-MSP1 (sw1 nb1 vdd vdd) p18 w=9.08u l=.18u m=2
-RB1_0 (vout sw1 vss) rpposab_3t w=1u l=96u
-RB1_1 (vout sw1 vss) rpposab_3t w=1u l=96u
-XINV2 (b2 nb2 vdd vss vdd vss) INHDV8
-MSN2 (sw2 nb2 vss vss) n18 w=3.24u l=.18u m=4
-MSP2 (sw2 nb2 vdd vdd) p18 w=9.08u l=.18u m=4
-RB2_0 (vout sw2 vss) rpposab_3t w=1u l=96u
-RB2_1 (vout sw2 vss) rpposab_3t w=1u l=96u
-RB2_2 (vout sw2 vss) rpposab_3t w=1u l=96u
-RB2_3 (vout sw2 vss) rpposab_3t w=1u l=96u
-XINV3 (b3 nb3 vdd vss vdd vss) INHDV16
-MSN3 (sw3 nb3 vss vss) n18 w=3.24u l=.18u m=8
-MSP3 (sw3 nb3 vdd vdd) p18 w=9.08u l=.18u m=8
-RB3_0 (vout sw3 vss) rpposab_3t w=1u l=96u
-RB3_1 (vout sw3 vss) rpposab_3t w=1u l=96u
-RB3_2 (vout sw3 vss) rpposab_3t w=1u l=96u
-RB3_3 (vout sw3 vss) rpposab_3t w=1u l=96u
-RB3_4 (vout sw3 vss) rpposab_3t w=1u l=96u
-RB3_5 (vout sw3 vss) rpposab_3t w=1u l=96u
-RB3_6 (vout sw3 vss) rpposab_3t w=1u l=96u
-RB3_7 (vout sw3 vss) rpposab_3t w=1u l=96u
-XINV4 (b4 nb4 vdd vss vdd vss) INHDV32
-MSN4 (sw4 nb4 vss vss) n18 w=3.24u l=.18u m=16
-MSP4 (sw4 nb4 vdd vdd) p18 w=9.08u l=.18u m=16
-RB4_0 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_1 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_2 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_3 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_4 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_5 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_6 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_7 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_8 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_9 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_10 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_11 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_12 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_13 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_14 (vout sw4 vss) rpposab_3t w=1u l=96u
-RB4_15 (vout sw4 vss) rpposab_3t w=1u l=96u
-RT (vout vss vss) rpposab_3t w=1u l=96u
-ends switched_resistor_dac_5bit
-```
 
 HD单元保持原厂内部W/L和模型，定义见hd\_cells.scs及manifest。所有include位于bench层；冻结inputs中的电路+HD文件构成实际运行闭包。LUT与模型完整SHA256见sizing.json、各run.json。
 
@@ -427,11 +149,12 @@ HD单元保持原厂内部W/L和模型，定义见hd\_cells.scs及manifest。所
 
 电路SHA256：e8388c72d139da2b34832dc179379e63bfa19e1f59e8c9e2cd45f85e566f75af
 
-![第6页原图与排版](markdown_assets/page-06.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // 5-bit binary-weighted PDK resistor DAC; b0 is LSB.
@@ -488,12 +211,14 @@ RT (vout vss vss) rpposab_3t w=1u l=96u
 ends switched_resistor_dac_5bit
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![电路分图 sheet-3](schematic/sheet-3.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

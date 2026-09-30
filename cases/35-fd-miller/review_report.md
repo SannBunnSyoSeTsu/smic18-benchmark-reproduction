@@ -1,10 +1,8 @@
-# 35-fd-miller 审查报告
+# 35 · 全差分两级 Miller 运放审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 35 | 全差分两级 Miller 运放审查
+## 验收结果
 
 本模块提供全差分闭环放大，并分别控制差分信号和输出共模。相比单级全差分OTA，第二级增加开环增益和驱动能力，Miller补偿用于维持差模环路稳定；同时需要设计共模反馈，避免共模动态成为瓶颈。芯片中常用于ADC驱动、开关电容放大器和差分模拟信号通路。
 
@@ -34,9 +32,7 @@
 
 范围边界：其余PVT、20个固定种子local-mismatch、版图寄生与无源变化未执行。匹配CMRR/PSRR只作数值表征，不能替代原失配验收，也不能把nV级平衡推广到失配。
 
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 架构、尺寸与目标工艺LUT
+## 架构、尺寸与目标工艺LUT
 
 所有偏置从iref生成；DUT中仅MOS及正值R/C，没有内部独立或受控源。
 
@@ -57,26 +53,11 @@ gm/ID初值：输入L=1 um、gm/ID=18、每侧100 uA，gm1≈1.8 mS；Cc=2 pF给
 
 LUT使用既有gmoverid\_smic18/lut/tt；每个查询的VDS、L、温度、体偏置、源路径与SHA-256保存在sizing.json。无需补扫，没有改动PDK、Bridge或原LUT。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![架构、尺寸与目标工艺LUT](markdown_assets/figure-02-01.png)
 
-```text
-VINP -> VOUTP; VINN -> VOUTN
-NMOS差分输入
-stagep / stagen
-对称NMOS共源
-PMOS折叠/共栅
-NMOS共栅/受控下拉
-固定PMOS负载
-each: 400 ohm + 2 pF Miller
-VOUT average -> CM amp -> first-stage sinks
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 实际工作点与CMFB修正
+## 实际工作点与CMFB修正
 
 CMFB动作节点的阻抗和偏置平衡共同影响恢复；原动态门槛通过仍须检查环路。
 
@@ -93,20 +74,18 @@ CMFB动作节点的阻抗和偏置平衡共同影响恢复；原动态门槛通�
 | MCMSENSE | 47.473 | 13.846 | 35.35 | 0.2359 | 118.14 |
 | MCMND | 56.073 | 13.670 | 224.99 | 0.5204 | 395.03 |
 
-中心节点：tail=0.34531 V，fp/fn=1.39783 V，stagep/stagen=0.69318 V，sinkp/sinkn=0.28708 V；vcm fb=0.52037 V。输出每侧732.06 uA，主输入98.77 uA。余量=|VDS|−|VDSAT|；不是全PVT保证。
+中心节点：tail=0.34531 V，fp/fn=1.39783 V，stagep/stagen=0.69318 V，sinkp/sinkn=0.28708 V；vcmfb=0.52037 V。输出每侧732.06 uA，主输入98.77 uA。余量=|VDS|−|VDSAT|；不是全PVT保证。
 
 | 版本 | ND电流/uA | ND gm/mS | CM PM | CM误差/mV | 恢复/ns |
 | --- | --- | --- | --- | --- | --- |
 | CM镜比1.2，初版 | 11.215 | 0.1533 | 13.680° | 8.254 | 31.387 |
 | CM镜比2.0，最终 | 56.073 | 0.7665 | 51.147° | 3.638 | 14.163 |
 
-CM镜的额外上拉电流流过二极管NMOS MCMND，后者与一阶受控下拉近似匹配电流密度。镜比从1.2改为2.0，同时把ND的m从1增至5，使动作节点近似1/gm由6.52 kΩ降到1.30 kΩ；独立CM UGB从87.88降到47.67 MHz，P M从13.68°升到51.15°。
+CM镜的额外上拉电流流过二极管NMOS MCMND，后者与一阶受控下拉近似匹配电流密度。镜比从1.2改为2.0，同时把ND的m从1增至5，使动作节点近似1/gm由6.52 kΩ降到1.30 kΩ；独立CM UGB从87.88降到47.67 MHz，PM从13.68°升到51.15°。
 
 CM极性：输出平均值升高→MCMSENSE下拉增强、镜像上拉减小→vcmfb下降→第一阶段下拉减小→stagep/stagen上升→输出NMOS电流上升→输出均值下降。该修正保留晶体管级连续反馈。
 
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 频率、噪声与共模环路证据
+## 频率、噪声与共模环路证据
 
 差模增益/PM、闭环输入噪声和CM STB使用各自正确的连接与测量定义。
 
@@ -114,97 +93,11 @@ CM极性：输出平均值升高→MCMSENSE下拉增强、镜像上拉减小→v
 
 噪声含619个频点；线性频率梯形积分与PSD幂律插值积分相差0.00095%。CM用感测节点到MCMSENSE栅的零压探针；图取−loopGain，51.1473°与Spectre原生51.1477°一致。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![频率、噪声与共模环路证据](markdown_assets/figure-04-01.png)
 
-```text
-0
-100
--50
-75
-50
--100
-25
--150
-0
-Differential gain (dB)
-Differential phase (deg)
--25
--200
--50
--250
-1
-3
-5
-7
-9
-1
-3
-5
-7
-9
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-Frequency (Hz)
-0
--50
--100
-2
-10
--150
--200
--250
-CM loop phase (deg)
-Input noise (nV/sqrt(Hz))
--300
-1
-10
--350
--400
-1
-2
-3
-4
-5
-6
-7
-0
-2
-4
-6
-8
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-Frequency (Hz)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 完整范围与动态目标
+## 完整范围与动态目标
 
 最后容差交越从20 ns边沿开始计；差模固定2 mV窗，共模固定15 mV窗。
 
@@ -212,145 +105,19 @@ Frequency (Hz)
 
 VOCM 0.85→0.95 V、同样1 ns边沿，零差分输入保持0.9 V。15 mV窗的末次交越减20 ns为14.163 ns；观察至1 us，终值误差4.971 mV≤10 mV。图仅放大边沿，提取扫描完整观察窗。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![完整范围与动态目标](markdown_assets/figure-05-01.png)
 
-```text
-Command
-0.8
-2
-Output
-0.6
-0.4
-1
-0.2
-0.0
-0
--0.2
-Tracking error (uV)
-Differential output (V)
--1
--0.4
--0.6
--2
--0.8
--0.8
--0.6
--0.4
--0.2
-0.0
-0.2
-0.4
-0.6
-0.8
--0.8
--0.6
--0.4
--0.2
-0.0
-0.2
-0.4
-0.6
-0.8
-Differential command (V)
-Differential command (V)
-0.98
-0.2
-0.96
-0.1
-0.94
-0.92
-0.0
-0.90
-Differential output (V)
--0.1
-0.88
-Output common mode (V)
-0.86
-Command
-VOCM
-Output
-Output CM
--0.2
-0
-5
-10
-15
-20
-25
-30
-35
-0
-20
-40
-60
-80
-100
-Time after edge start (ns)
-Time after edge start (ns)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 最终精确晶体管网表
+## 最终精确晶体管网表
 
 D G S B端序；共栅PMOS体端各接源端，物理设计必须保留相应独立井。
-
-```text
-simulator lang=spectre
-subckt fd_two_stage_miller_opamp (vss iref vdd vinn vinp vocm voutn voutp)
-MREF (iref iref vss vss) n18 w=4.68u l=1u m=5
-MBN (vbp iref vss vss) n18 w=4.68u l=1u
-MBP (vbp vbp vdd vdd) p18 w=9.5u l=1u
-MOBN (vbpout iref vss vss) n18 w=4.68u l=1u
-MOBP (vbpout vbpout vdd vdd) p18 w=1.96u l=.36u
-MNCB (vcn vbp vdd vdd) p18 w=9.5u l=1u
-MDN (vcn vcn ncb vss) n18 w=1.68u l=.36u
-RNB (ncb vss) resistor r=28000
-RPC (vdd pcb) resistor r=40000
-MDP (vpc vpc pcb pcb) p18 w=6.96u l=.36u
-MPCB (vpc iref vss vss) n18 w=4.68u l=1u
-MTAIL (tail iref vss vss) n18 w=4.68u l=1u m=20
-MINP (fp vinp tail vss) n18 w=10.26u l=1u m=10
-MINN (fn vinn tail vss) n18 w=10.26u l=1u m=10
-MSP (fp vbp vdd vdd) p18 w=9.5u l=1u m=15
-MSN (fn vbp vdd vdd) p18 w=9.5u l=1u m=15
-MPCP (stagep vpc fp fp) p18 w=6.96u l=.36u m=5
-MPCN (stagen vpc fn fn) p18 w=6.96u l=.36u m=5
-MNCP (stagep vcn sinkp vss) n18 w=1.68u l=.36u m=5
-MNCN (stagen vcn sinkn vss) n18 w=1.68u l=.36u m=5
-MSINKP (sinkp vcmfb vss vss) n18 w=4.68u l=1u m=5
-MSINKN (sinkn vcmfb vss vss) n18 w=4.68u l=1u m=5
-MSECONDP (voutp stagep vss vss) n18 w=0.3u l=.36u m=70
-MSECONDN (voutn stagen vss vss) n18 w=0.3u l=.36u m=70
-MLOADP (voutp vbpout vdd vdd) p18 w=1.96u l=.36u m=70
-MLOADN (voutn vbpout vdd vdd) p18 w=1.96u l=.36u m=70
-RZP (stagep zp) resistor r=400
-CCP (zp voutp) capacitor c=2p
-RZN (stagen zn) resistor r=400
-CCN (zn voutn) capacitor c=2p
-RCMP (voutp vcms) resistor r=100k
-RCMN (voutn vcms) resistor r=100k
-CCMP (voutp vcms) capacitor c=100f
-CCMN (voutn vcms) capacitor c=100f
-MCMT (cmt iref vss vss) n18 w=4.68u l=1u m=10
-MCMREF (cma vocm cmt vss) n18 w=1.68u l=.36u m=5
-MCMSENSE (vcmfb vcms cmt vss) n18 w=1.68u l=.36u m=5
-MCMD (cma cma vdd vdd) p18 w=9.5u l=1u m=5
-MCMM (vcmfb cma vdd vdd) p18 w=9.5u l=1u m=10
-MCMND (vcmfb vcmfb vss vss) n18 w=4.68u l=1u m=5
-ends fd_two_stage_miller_opamp
-```
 
 第一阶段PMOS固定源与NMOS输入电流之差流入折叠支路；连续CMFB调节两个底部下拉。输出为两组NMOS共源与PMOS固定电流负载，Miller支路直接从各输出返回各自stage节点。
 
 精确尺寸、m、总宽与端序另见geometry.json；最终circuit.scs SHA-256：6d9f5f72270985bfe6f78ef2b76d423773ed5271b7edac16c114f3c9b148289b
 
-![第6页原图与排版](markdown_assets/page-06.png)
-
-## 第7页 · 拒斥范围边界、提取与复现
+## 拒斥范围边界、提取与复现
 
 原20种子随机失配要求未执行；下面保留匹配nominal激励的原始结果，不能作为实际拒斥承诺。
 
@@ -366,17 +133,18 @@ CMRR/PSRR定义为差模信号增益与相应扰动到差分输出增益之比�
 
 原instruction、参考电路、verify.py、utils.py和六套bench均已冻结。提取按bench的.meas定义适配PSF，并用原verifier的nominal\_functional/threshold函数核对标量门槛；不运行原PVT/MC调度。差模采样50 ps、CM采样100 ps，内部最大步长25/50 ps。
 
-复现（工程根目录）：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case35\_fd\_miller.py同一Python运行 scripts/review\_pdf.py 35 生成PDF。原任务：sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt
+复现（工程根目录）： /home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case35\_fd\_miller.py 同一Python运行 scripts/review\_pdf.py 35 生成PDF。 原任务：sky130-fd-two-stage-miller-opamp-gain60-pm60-noise50uv-pvt
 
 最终运行（依次AC、noise、range、settling、CM、rejection、CM STB）：runs/35/20260922T091831965563Z\_ac runs/35/20260922T091832170295Z\_noise runs/35/20260922T091832394130Z\_range runs/35/20260922T091832565378Z\_settling runs/35/20260922T091833569988Z\_cm runs/35/20260922T091835170616Z\_rejection runs/35/20260922T091835756615Z\_cmstb
 
 每个run.json保存模型与输入哈希；inputs/与原始PSF保留。仅nominal原理图，不含剩余PVT、失配、寄生与无源容差。
 
-![第7页原图与排版](markdown_assets/page-07.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Fully differential folded-cascode first stage and symmetric second stage.
@@ -426,14 +194,16 @@ MCMND (vcmfb vcmfb vss vss) n18 w=4.68u l=1u m=5
 ends fd_two_stage_miller_opamp
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![电路分图 sheet-3](schematic/sheet-3.png)
+![电路分图 4](schematic/sheet-4.png)
 
-![电路分图 sheet-4](schematic/sheet-4.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

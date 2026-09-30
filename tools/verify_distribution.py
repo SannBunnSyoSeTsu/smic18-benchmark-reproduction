@@ -32,6 +32,16 @@ def main():
         assert sha(case / 'review.pdf') == sha(ROOT / proof['pdf']) == proof['sha256']
         text = (case / 'review_report.md').read_text()
         assert len(text) > 1000 and (case / 'schematic/full.svg').is_file()
+        readable = json.loads((case / 'markdown_readability.json').read_text())
+        assert readable['review_status'] == 'passed'
+        assert sha(case / 'review_report.md') == readable['markdown_sha256']
+        assert not re.search(r'!\[[^\]]*\]\([^)]*(?:markdown_assets|pdf_review)/page-\d', text)
+        assert '图内标注与坐标文字' not in text
+        netlists = re.findall(r'```spectre\n(.*?)\n```', text, re.S)
+        assert netlists == [(case / 'circuit.scs').read_text().rstrip()]
+        for fig in readable['figures']:
+            assert sha(case / fig['png']) == fig['png_sha256']
+            assert sha(case / fig['svg']) == fig['svg_sha256']
         if (case / 'system_block_diagram.mmd').exists():
             source = (case / 'system_block_diagram.mmd').read_text()
             assert '```mermaid\n' + source + '```' in text

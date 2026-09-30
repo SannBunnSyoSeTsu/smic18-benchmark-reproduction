@@ -1,10 +1,8 @@
-# 24-ring-vco 审查报告
+# 24 · 电流饥饿环形 VCO 审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 24 | 电流饥饿环形 VCO 审查
+## 验收结果
 
 本模块把控制电压转换成连续振荡频率，通过限制环形延迟单元的充放电电流来调节周期。相比固定驱动的反相器环，电流饥饿结构提供可控的调频范围，但增益、摆幅和启动能力会随偏置变化。芯片中可用于PLL、时钟发生器和低面积时序调节，噪声与抖动还需单独评估。
 
@@ -34,9 +32,7 @@
 
 未执行其余26个调谐PVT点、SS/FF推频、失配、相噪/抖动和PEX。近零确定性频率漂移只说明两个时间窗周期一致，不能解释为真实振荡器无抖动。
 
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · HD 延迟单元与模拟限流偏置
+## HD 延迟单元与模拟限流偏置
 
 环内数字反相器保持原厂内部MOS，仅在供电端外接gm/ID定尺寸限流管。
 
@@ -58,42 +54,11 @@ LUT点：27°C、|VDS|=0.45 V、VBS=0、参考W=10 um、ID=10 uA。n18单位2.04
 
 INHDV2原厂Wn/Wp=1.17/1.76 um，INHDV0=0.60/0.90 um，L均0.18 um。核心VDD/VSS接虚拟轨sXt/sXb；VNW/VPW始终接全局VDD/VSS，内部MOS尺寸和模型未改。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![HD 延迟单元与模拟限流偏置](markdown_assets/figure-02-01.png)
 
-```text
-pdio / ndio 控制5对限流管
-VCTRL → MVIN + RDEG 47kΩ
-MPDIO → MPSRC → MNDIO
-n5反馈到第1级；每级输出对地30 fF
-p18 限流
-p18 限流
-p18 限流
-p18 限流
-p18 限流
-INHDV2
-INHDV2
-INHDV2
-INHDV2
-INHDV2
-n1
-n2
-n3
-n4
-n5
-n18 限流
-n18 限流
-n18 限流
-n18 限流
-n18 限流
-n5 → INHDV0 → INHDV2 → vout；两个输出缓冲接全局VDD/VSS。
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 调谐、线性度与固定测量窗口
+## 调谐、线性度与固定测量窗口
 
 所有四个控制平台均测五个完整周期；最低频率不能借用下一个控制平台的边沿。
 
@@ -110,41 +75,11 @@ n5 → INHDV0 → INHDV2 → vout；两个输出缓冲接全局VDD/VSS。
 
 交叉核验：把各稳定窗内全部10/13/17/19个完整周期求平均，与合同五周期结果最大相对差1.478329e-05%。本次无求解警告；确定性模型不包含相噪、热噪声或失配抖动。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![调谐、线性度与固定测量窗口](markdown_assets/figure-03-01.png)
 
-```text
-50
-30
-28
-40
-26
-30
-24
-22
-20
-KVCO (MHz/V)
-Frequency (MHz)
-20
-10
-18
-0
-0.9
-1.0
-1.1
-1.2
-0.95
-1.05
-1.15
-VCTRL (V)
-Interval midpoint (V)
-```
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
-</details>
-
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 真实起振、占空比与虚拟电源
+## 真实起振、占空比与虚拟电源
 
 普通DC初始化；控制由0 V在50–51 ns升至0.9 V，没有额外kick或强制初值。
 
@@ -154,55 +89,11 @@ Interval midpoint (V)
 
 稳定段第1级虚拟轨约−3.83 mV至1.80406 V；毫伏级越轨来自瞬态寄生耦合。限流管在充放电过程中并非全程饱和，靠近轨端退出饱和属于工作机制；静态偏置三管保持正饱和余量。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![真实起振、占空比与虚拟电源](markdown_assets/figure-04-01.png)
 
-```text
-1.75
-vout
-vctrl
-1.50
-first rising VDD/2
-1.25
-1.00
-0.75
-Voltage (V)
-0.50
-0.25
-0.00
-0
-25
-50
-75
-100
-125
-150
-175
-200
-Time (ns)
-vout
-stage1 upper rail
-1.5
-stage1 lower rail
-1.0
-Voltage (V)
-0.5
-0.0
-0
-20
-40
-60
-80
-100
-120
-Time after 2.35us (ns)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 供电推频与完整 VDD 功耗
+## 供电推频与完整 VDD 功耗
 
 推频是本题nominal敏感度维度，保留1.71 V和1.89 V两路实际瞬态。
 
@@ -224,70 +115,17 @@ Time after 2.35us (ns)
 
 理想RDEG和五个30 fF电容为原任务明确允许项，本次未替代成实际工艺无源件。结果不含其片阻/容值PVT、匹配和布局面积保证。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![供电推频与完整 VDD 功耗](markdown_assets/figure-05-01.png)
 
-```text
-VDD=1.71V
-VDD=1.89V
-1.5
-1.0
-Output (V)
-0.5
-0.0
-550
-600
-650
-700
-750
-800
-Time (ns)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 完整网表、复现与证据范围
+## 完整网表、复现与证据范围
 
 保留全部设计尺寸、HD接口与两类bench的输入快照和真实PSF。
 
-```text
-simulator lang=spectre
-subckt current_starved_ring_vco (vss vctrl vdd vout)
-RDEG (ndeg vss) resistor r=47000
-MVIN (pdio vctrl ndeg vss) n18 w=2.04u l=0.36u
-MPDIO (pdio pdio vdd vdd) p18 w=8.52u l=0.36u
-MPSRC (ndio pdio vdd vdd) p18 w=8.52u l=0.36u
-MNDIO (ndio ndio vss vss) n18 w=2.04u l=0.36u
-MPS1 (s1t pdio vdd vdd) p18 w=8.52u l=0.36u
-XINV1 (n5 n1 s1t s1b vdd vss) INHDV2
-MNS1 (s1b ndio vss vss) n18 w=2.04u l=0.36u
-CS1 (n1 vss) capacitor c=30f
-MPS2 (s2t pdio vdd vdd) p18 w=8.52u l=0.36u
-XINV2 (n1 n2 s2t s2b vdd vss) INHDV2
-MNS2 (s2b ndio vss vss) n18 w=2.04u l=0.36u
-CS2 (n2 vss) capacitor c=30f
-MPS3 (s3t pdio vdd vdd) p18 w=8.52u l=0.36u
-XINV3 (n2 n3 s3t s3b vdd vss) INHDV2
-MNS3 (s3b ndio vss vss) n18 w=2.04u l=0.36u
-CS3 (n3 vss) capacitor c=30f
-MPS4 (s4t pdio vdd vdd) p18 w=8.52u l=0.36u
-XINV4 (n3 n4 s4t s4b vdd vss) INHDV2
-MNS4 (s4b ndio vss vss) n18 w=2.04u l=0.36u
-CS4 (n4 vss) capacitor c=30f
-MPS5 (s5t pdio vdd vdd) p18 w=8.52u l=0.36u
-XINV5 (n4 n5 s5t s5b vdd vss) INHDV2
-MNS5 (s5b ndio vss vss) n18 w=2.04u l=0.36u
-CS5 (n5 vss) capacitor c=30f
-XBUF0 (n5 bo1 vdd vss vdd vss) INHDV0
-XBUF1 (bo1 vout vdd vss vdd vss) INHDV2
-ends current_starved_ring_vco
-```
+DUT：14只模拟MOS + 7个原厂HD反相器 + 47 kΩ源极电阻 + 五个30 fF节点电容。所有HD定义include都在bench层；snapshot闭包和模型哈希见各run.json。
 
-DUT：14只模拟MOS + 7个原厂HD反相器 + 47 kΩ源极电阻 + 五个30 fF节点电容。所有HD定义include都在b ench层；snapshot闭包和模型哈希见各run.json。
-
-运行：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case24\_ring\_vco.py PDF：同一Python执行 scripts/review\_pdf.py 24
+运行：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python  scripts/case24\_ring\_vco.py PDF：同一Python执行 scripts/review\_pdf.py 24
 
 真实输出目录：runs/24/20260922T090830797411Z\_tune runs/24/20260922T090846079959Z\_push每目录包含inputs、run.json、output/bench.raw和measurements.json。
 
@@ -295,11 +133,12 @@ DUT：14只模拟MOS + 7个原厂HD反相器 + 47 kΩ源极电阻 + 五个30 fF�
 
 电路SHA256：fc15de4598b7f285d780f50fc2a85f864935cf0bfa81dfb4d21208dfdfef662c
 
-![第6页原图与排版](markdown_assets/page-06.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Five-stage current-starved VCO; original HD cells on virtual rails.
@@ -335,10 +174,12 @@ XBUF1 (bo1 vout vdd vss vdd vss) INHDV2
 ends current_starved_ring_vco
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

@@ -82,7 +82,9 @@ flowchart TB
 
 完整16码中心、90点静态斜坡、32码动态记录和原评分频谱。
 
-![完整16码中心、90点静态斜坡、32码动态记录和原评分频谱。](pdf_review/page-03.png)
+![完整16码中心、90点静态斜坡、32码动态记录和原评分频谱。](markdown_assets/figure-03-01.png)
+
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
 动态信号7.8125MHz，差分峰值1.7V，共模0.9V。图中INL/DNL来自离散斜坡阈值，精度受其采样网格限制。
 
@@ -115,9 +117,12 @@ case27_flash_adc.py → confirm27.py → schematic27.py → audit27.py → revie
 电路SHA-256：
 3b70836f6c1c5d9bd5affd551b9be5fa04763a168d4a5a936beba835fb24c620
 
-## 完整最终网表 1/4
+## 完整网表与电路图
 
-所有实例、尺寸和连接原样列出；HD内部器件见随附原厂CDL提取。
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
+
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 simulator lang=spectre
@@ -168,13 +173,6 @@ R1pA (vhp vp1) resistor r=200000
 R1pB (s15 vp1) resistor r=200000
 R1nA (vhn vn1) resistor r=200000
 R1nB (s1 vn1) resistor r=200000
-```
-
-## 完整最终网表 2/4
-
-所有实例、尺寸和连接原样列出；HD内部器件见随附原厂CDL提取。
-
-```spectre
 XC1 (clk vp1 vn1 cp1 cn1 vdd vss) fa_comp
 XS1 (cn1 cp1 q1 qb1 vdd vss) fa_sr
 R2pA (vhp vp2) resistor r=200000
@@ -223,13 +221,6 @@ R9pA (vhp vp9) resistor r=200000
 R9pB (s7 vp9) resistor r=200000
 R9nA (vhn vn9) resistor r=200000
 R9nB (s9 vn9) resistor r=200000
-```
-
-## 完整最终网表 3/4
-
-所有实例、尺寸和连接原样列出；HD内部器件见随附原厂CDL提取。
-
-```spectre
 XC9 (clk vp9 vn9 cp9 cn9 vdd vss) fa_comp
 XS9 (cn9 cp9 q9 qb9 vdd vss) fa_sr
 R10pA (vhp vp10) resistor r=200000
@@ -278,13 +269,6 @@ XE0_0_12 (q13 q14 b0l0n6 vdd vss vdd vss) XOR2HDV1
 XE0_1_0 (b0l0n0 b0l0n1 b0l1n0 vdd vss vdd vss) XOR2HDV1
 XE0_1_2 (b0l0n2 b0l0n3 b0l1n1 vdd vss vdd vss) XOR2HDV1
 XE0_1_4 (b0l0n4 b0l0n5 b0l1n2 vdd vss vdd vss) XOR2HDV1
-```
-
-## 完整最终网表 4/4
-
-所有实例、尺寸和连接原样列出；HD内部器件见随附原厂CDL提取。
-
-```spectre
 XE0_1_6 (b0l0n6 q15 b0l1n3 vdd vss vdd vss) XOR2HDV1
 XE0_2_0 (b0l1n0 b0l1n1 b0l2n0 vdd vss vdd vss) XOR2HDV1
 XE0_2_2 (b0l1n2 b0l1n3 b0l2n1 vdd vss vdd vss) XOR2HDV1
@@ -308,38 +292,36 @@ XB3b (outb3 dout3 vdd vss vdd vss) INHDV1
 ends flash_adc_4bit
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接审计](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![sheet-3](schematic/sheet-3.png)
+![电路分图 4](schematic/sheet-4.png)
 
-![sheet-4](schematic/sheet-4.png)
+![电路分图 5](schematic/sheet-5.png)
 
-![sheet-5](schematic/sheet-5.png)
+![电路分图 6](schematic/sheet-6.png)
 
-![sheet-6](schematic/sheet-6.png)
+![电路分图 7](schematic/sheet-7.png)
 
-![sheet-7](schematic/sheet-7.png)
+![电路分图 8](schematic/sheet-8.png)
 
-![sheet-8](schematic/sheet-8.png)
+![电路分图 9](schematic/sheet-9.png)
 
-![sheet-9](schematic/sheet-9.png)
+![电路分图 10](schematic/sheet-10.png)
 
-![sheet-10](schematic/sheet-10.png)
+![电路分图 11](schematic/sheet-11.png)
 
-![sheet-11](schematic/sheet-11.png)
+![电路分图 12](schematic/sheet-12.png)
 
-![sheet-12](schematic/sheet-12.png)
+![电路分图 13](schematic/sheet-13.png)
 
-![sheet-13](schematic/sheet-13.png)
+![电路分图 14](schematic/sheet-14.png)
 
-![sheet-14](schematic/sheet-14.png)
+![电路分图 15](schematic/sheet-15.png)
 
-![sheet-15](schematic/sheet-15.png)
-
-![sheet-16](schematic/sheet-16.png)
+![电路分图 16](schematic/sheet-16.png)

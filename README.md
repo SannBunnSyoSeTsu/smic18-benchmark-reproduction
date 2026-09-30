@@ -8,7 +8,7 @@
 
 [验收换算规则](contracts/acceptance-policy.md) · [复现环境与步骤](docs/REPRODUCING.md) · [发布范围与证据](docs/DISTRIBUTION.md) · [来源与许可](NOTICE.md) · [仓库校验](tools/verify_distribution.py)
 
-50 份 MD 报告均有完整正文、可编辑表格与图像。其中 7 份由报告生成器同步保存，43 份从已交付矢量 PDF 恢复，来源已标注。28 项系统级工作附 Mermaid 框图。原 PDF 共 533 页，保持已审阅版本的字节和 SHA-256。
+50 份 MD 报告按章节组织正文、可编辑表格和独立图表，完整网表仅保留一份。7 份源于报告生成器，43 份整理自已交付矢量 PDF；已移除整页截图与坐标文字堆叠。28 项系统级工作附 Mermaid 框图。原 PDF 共 533 页。详见 [Markdown 修订记录](docs/MARKDOWN-REVISION.md)。
 
 频谱离散谱线从图底基线向上绘制；第 40 项 ΔΣ 调制器使用对数频率轴，并附 20 dB/dec 理论参照，参照线不是实测拟合结果。
 

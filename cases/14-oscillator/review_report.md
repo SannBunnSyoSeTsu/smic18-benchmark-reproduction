@@ -1,10 +1,8 @@
-# 14-oscillator 审查报告
+# 14 · 低功耗 2 MHz 振荡器审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-## 第1页 · 14 | 低功耗 2 MHz 振荡器审查
+## 验收结果
 
 本模块利用外部微小偏置电流产生约2 MHz的内部时钟，并驱动后续数字电路。相比直接供电的高速反相器环，电流限制配合定时电容可降低振荡频率和功耗，代价是精度仍受器件与供电条件影响。芯片中常用于低功耗控制、待机管理和粗略时基；它不替代需要高精度频率基准的晶振。
 
@@ -34,9 +32,7 @@
 
 DUT只含工艺MOS、原厂HD反相器和原厂MIM电容。理想电源、外部2 uA和1 pF仅出现在bench层，全部落在可追溯的输入快照内。
 
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 限流环、原厂 HD 与 gm/ID 尺寸
+## 限流环、原厂 HD 与 gm/ID 尺寸
 
 外部2 uA以4:1参考比例产生约0.5 uA转接电流，各限流支路再取2倍单位。
 
@@ -45,7 +41,7 @@ DUT只含工艺MOS、原厂HD反相器和原厂MIM电容。理想电源、外部
 | n18 | 0.28/1.00 | 15 | 1.8449 | 0.5018 | 214.97 |
 | p18 | 1.28/1.00 | 15 | 0.3905 | 0.5196 | 337.98 |
 
-LUT点：TT/27°C、L=1 um、|VDS|=0.45 V、VBS=0、参考W=10 um。单位电流0.5 uA，精确Wn/Wp=0.271015/1.280503 um，按20 nm网格取0.28/1.28 um。
+LUT点：TT/27°C、L=1 um、|VDS|=0.45 V、VBS=0、参考W=10 um。 单位电流0.5 uA，精确Wn/Wp=0.271015/1.280503 um，按20 nm网格取0.28/1.28 um。
 
 | 实际偏置管 | \|平均ID\|/uA | 实际gm/ID | 最小\|VDS\|−\|VDSAT\|/V |
 | --- | --- | --- | --- |
@@ -59,31 +55,11 @@ INHDVL内部Wn/Wp=0.28/0.42 um，INHDV0=0.60/0.90 um，L均0.18 um。环内VDD/V
 
 三只MIM每只标称约75.2525 fF，总几何面积232.5 um²，未计布局边界。CT1接N1–AVDD；CT2/3接N2/3–AVSS，为电源斜坡提供实体非对称耦合。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![限流环、原厂 HD 与 gm/ID 尺寸](markdown_assets/figure-02-01.png)
 
-```text
-IBN2U → MNREF(m=4)
-IBN2U / VBP控制三对限流管
-MNBP(m=1) → MPREF(m=1)
-三级反相形成环；每级MIM 10×7.75 um²
-p18 m=2 → Pi
-p18 m=2 → Pi
-p18 m=2 → Pi
-INHDVL → N1
-INHDVL → N2
-INHDVL → N3
-Qi → n18 m=2
-Qi → n18 m=2
-Qi → n18 m=2
-N3 → INHDVL → INHDV0 → CLKO (1 pF)；输出缓冲接全局AVDD/AVSS。
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 电源斜坡起振与十周期测频
+## 电源斜坡起振与十周期测频
 
 固定原任务启动激励，全部门槛仍仅使用10–20 us保存区间。
 
@@ -93,48 +69,11 @@ N3 → INHDVL → INHDV0 → CLKO (1 pF)；输出缓冲接全局AVDD/AVSS。
 
 窗口内所有18个完整周期平均得到1.973570015 MHz，与合同值相对差1.687849e-06%。这项交叉核验确认测频一致，确定性周期差不解释为物理抖动。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![电源斜坡起振与十周期测频](markdown_assets/figure-03-01.png)
 
-```text
-1.75
-1.50
-1.25
-1.00
-0.75
-Voltage (V)
-0.50
-0.25
-CLKO
-AVDD ramp
-0.00
-0.0
-0.5
-1.0
-1.5
-2.0
-2.5
-3.0
-Time (us)
-1.5
-1.0
-CLKO (V)
-0.5
-0.0
-10
-12
-14
-16
-18
-20
-Time (us)
-```
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
-</details>
-
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 真实环内波形与完整功耗
+## 真实环内波形与完整功耗
 
 1 pF负载、两级输出缓冲及外部2 uA都由VSENSE上游统一供电。
 
@@ -149,49 +88,11 @@ Time (us)
 
 第1级虚拟上轨0.8543–1.8002 V，下轨−0.00007–1.0444 V。限流管随充放电靠近轨端而退出饱和属于机制；HD阱仍接全局轨，微小瞬态越轨来自寄生耦合。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![真实环内波形与完整功耗](markdown_assets/figure-04-01.png)
 
-```text
-N1
-N2
-N3
-CLKO
-1.5
-1.0
-Voltage (V)
-0.5
-0.0
-0.0
-0.2
-0.4
-0.6
-0.8
-1.0
-1.2
-Time after 11us (us)
-200
-mean, 10–20us
-150
-100
-50
-Supply current (uA)
-0
-0.0
-0.2
-0.4
-0.6
-0.8
-1.0
-1.2
-Time after 11us (us)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 迭代、精度核验与保留的失败证据
+## 迭代、精度核验与保留的失败证据
 
 所有三轮均保留实际输入、日志、PSF和测量结果；第三轮达到原门槛。
 
@@ -219,38 +120,13 @@ Time after 11us (us)
 
 尚未验证非nominal PVT、器件匹配、版图寄生、频率噪声或外部2 uA的真实发生器；片上使用仍需单独设计和计入该偏置源。
 
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 完整电路、可复现输入与证据边界
+## 完整电路、可复现输入与证据边界
 
 接口固定为osc\_2m AVDD AVSS CLKO IBN2U；所有HD定义include位于bench层。
 
-```text
-simulator lang=spectre
-subckt osc_2m (AVDD AVSS CLKO IBN2U)
-MNREF (IBN2U IBN2U AVSS AVSS) n18 w=0.28u l=1u m=4
-MNBP (VBP IBN2U AVSS AVSS) n18 w=0.28u l=1u
-MPREF (VBP VBP AVDD AVDD) p18 w=1.28u l=1u
-MPS1 (P1 VBP AVDD AVDD) p18 w=1.28u l=1u m=2
-XINV1 (N3 N1 P1 Q1 AVDD AVSS) INHDVL
-MNS1 (Q1 IBN2U AVSS AVSS) n18 w=0.28u l=1u m=2
-CT1 (N1 AVDD) mim w=10u l=7.75u
-MPS2 (P2 VBP AVDD AVDD) p18 w=1.28u l=1u m=2
-XINV2 (N1 N2 P2 Q2 AVDD AVSS) INHDVL
-MNS2 (Q2 IBN2U AVSS AVSS) n18 w=0.28u l=1u m=2
-CT2 (N2 AVSS) mim w=10u l=7.75u
-MPS3 (P3 VBP AVDD AVDD) p18 w=1.28u l=1u m=2
-XINV3 (N2 N3 P3 Q3 AVDD AVSS) INHDVL
-MNS3 (Q3 IBN2U AVSS AVSS) n18 w=0.28u l=1u m=2
-CT3 (N3 AVSS) mim w=10u l=7.75u
-XBUF0 (N3 B1 AVDD AVSS AVDD AVSS) INHDVL
-XBUF1 (B1 CLKO AVDD AVSS AVDD AVSS) INHDV0
-ends osc_2m
-```
-
 DUT：9只模拟MOS实例、5个原厂HD反相器、3只原厂MIM。n18/p18所有单元W≤1.28 um，远小于100 um模型上限；整数m保留同一LUT单位。
 
-运行：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python scripts/case14\_oscillator.py PDF：同一Python执行 scripts/review\_pdf.py 14
+运行：/home/IC/CodeX/virtuoso-bridge-lite/.venv/bin/python  scripts/case14\_oscillator.py PDF：同一Python执行 scripts/review\_pdf.py 14
 
 最终运行：runs/14/20260922T093117787976Z\_ramp目录内inputs/bench.scs与各DUT/HD/合同快照、run.json、output/bench.raw以及measurements.json共同构成证据链。前两轮也保留于runs/14。
 
@@ -258,11 +134,12 @@ DUT：9只模拟MOS实例、5个原厂HD反相器、3只原厂MIM。n18/p18所�
 
 电路SHA256：383ec5c083dff63dfe2d4529615c33f22d541e3bf14d2c927e3655b98488c1a6
 
-![第6页原图与排版](markdown_assets/page-06.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // 2MHz coarse oscillator; all digital stages are unmodified HD cells.
@@ -288,8 +165,10 @@ XBUF1 (B1 CLKO AVDD AVSS AVDD AVSS) INHDV0
 ends osc_2m
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

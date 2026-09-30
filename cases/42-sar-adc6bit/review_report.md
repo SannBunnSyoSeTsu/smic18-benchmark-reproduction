@@ -84,7 +84,9 @@ flowchart TB
 
 两种完整64码次序、动态码序与单边频谱。低于-80dBc的谱线仅在显示时截底；评分使用未经截断的原始功率。
 
-![两种完整64码次序、动态码序与单边频谱。低于-80dBc的谱线仅在显示时截底；评分使用未经截断的原始功率。](pdf_review/page-03.png)
+![两种完整64码次序、动态码序与单边频谱。低于-80dBc的谱线仅在显示时截底；评分使用未经截断的原始功率。](markdown_assets/figure-03-01.png)
+
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
 Nyquist点按原评分计半权功率；图中展示其原单边DFT幅值，未用于改变验收结果。
 
@@ -117,9 +119,12 @@ maxstep50→25ps，全局reltol1e-5→1e-6；conservative瞬态实际相对容�
 未执行器件噪声、失配、参考阻抗、亚稳态统计、PEX或可靠性寿命分析；电路SHA-256：
 4aaf6d34c8b340befe6ed823cd465696013bfeb81a7958240afa39fd1c254f39
 
-## 完整最终网表 1/2
+## 完整网表与电路图
 
-所有实例、尺寸和连接原样列出。HD内部器件见随附原厂CDL提取。PDF长行仅作视觉折行，MD保留原始行。
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
+
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 simulator lang=spectre
@@ -170,13 +175,6 @@ C5 (vtop bot5) capacitor c=480f
 MN5 (bot5 dctrl5 vrefn vss) n18 w=10.88u l=.18u
 MP5 (bot5 dctrl5 vrefp vdd) p18 w=32u l=.18u
 ends sar_cdac
-```
-
-## 完整最终网表 2/2
-
-所有实例、尺寸和连接原样列出。HD内部器件见随附原厂CDL提取。PDF长行仅作视觉折行，MD保留原始行。
-
-```spectre
 subckt sar_logic (clkc cmpck dcmpn dcmpp dctrln5 dctrln4 dctrln3 dctrln2 dctrln1 dctrlp5 dctrlp4 dctrlp3 dctrlp2 dctrlp1 do5 do4 do3 do2 do1 do0 vss vdd)
 XGATE (clkc rdyb clk_gate vdd vss vdd vss) AND2HDV1
 XLOOP (nvalid clk_gate loop vdd vss vdd vss) AND2HDV1
@@ -225,40 +223,38 @@ XLOG (clkc cmpck dcmpn dcmpp dctrln5 dctrln4 dctrln3 dctrln2 dctrln1 dctrlp5 dct
 ends sar_adc_6bit_async
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接审计](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![sheet-3](schematic/sheet-3.png)
+![电路分图 4](schematic/sheet-4.png)
 
-![sheet-4](schematic/sheet-4.png)
+![电路分图 5](schematic/sheet-5.png)
 
-![sheet-5](schematic/sheet-5.png)
+![电路分图 6](schematic/sheet-6.png)
 
-![sheet-6](schematic/sheet-6.png)
+![电路分图 7](schematic/sheet-7.png)
 
-![sheet-7](schematic/sheet-7.png)
+![电路分图 8](schematic/sheet-8.png)
 
-![sheet-8](schematic/sheet-8.png)
+![电路分图 9](schematic/sheet-9.png)
 
-![sheet-9](schematic/sheet-9.png)
+![电路分图 10](schematic/sheet-10.png)
 
-![sheet-10](schematic/sheet-10.png)
+![电路分图 11](schematic/sheet-11.png)
 
-![sheet-11](schematic/sheet-11.png)
+![电路分图 12](schematic/sheet-12.png)
 
-![sheet-12](schematic/sheet-12.png)
+![电路分图 13](schematic/sheet-13.png)
 
-![sheet-13](schematic/sheet-13.png)
+![电路分图 14](schematic/sheet-14.png)
 
-![sheet-14](schematic/sheet-14.png)
+![电路分图 15](schematic/sheet-15.png)
 
-![sheet-15](schematic/sheet-15.png)
+![电路分图 16](schematic/sheet-16.png)
 
-![sheet-16](schematic/sheet-16.png)
-
-![sheet-17](schematic/sheet-17.png)
+![电路分图 17](schematic/sheet-17.png)

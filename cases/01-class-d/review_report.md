@@ -1,8 +1,28 @@
-# 01-class-d 审查报告
+# 01 · Class-D半桥功率级审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
+## 验收结果
+
+本模块把5MHz时钟变为1.8V半桥开关波形，经外部串联LC向电阻负载传输功率。PMOS上管与NMOS下管交替导通，利用低导通电阻减小传输损耗；交叉反馈延迟链控制换向，分级驱动器充放大功率管栅极。代价是较大的器件面积、栅极动态功耗与换向损耗。芯片中可用于谐振功率驱动和开关输出级；本例只验证固定时钟与指定负载，不包含音频调制或闭环失真指标。
+
+结论：10%放宽范围内完成，逐项保留原门槛比较。
+
+SMIC18MMRF TT / 1.8V；保留原27°C和125°C两个效率分组，每温度7种负载，共14点。时钟5MHz、2ns边沿、50Ω源阻抗；外部3uH与345pF串联LC保持原值。
+
+| 验收量 | 实测 | 原门槛 | 10% | 15% | 单位 |
+| --- | --- | --- | --- | --- | --- |
+| 27°C峰值效率 | 95.759682 | &gt;95 | &gt;85.5 | &gt;80.75 | % |
+| 27°C最低效率 | 82.698836 | &gt;85 | &gt;76.5 | &gt;72.25 | % |
+| 125°C峰值效率 | 95.290394 | &gt;90 | &gt;81 | &gt;76.5 | % |
+| 125°C最低效率 | 81.664420 | &gt;80 | &gt;72 | &gt;68 | % |
+| 所有点最小输出功率 | 40.320567 | &gt;30 | &gt;30 | &gt;30 | mW |
+
+效率下限按线性比例放宽，所有比较仍为严格大于。输出功率&gt;30mW是防止无功率输出的功能检查，本项保持原值，未随效率一起放宽；效率≤100%及正有限功率也不放宽。
+
+输入功率覆盖半桥、全部HD逻辑和栅驱动器，以及50Ω之前的时钟源。对原18–20us窗口做时间加权积分，不用非均匀样点的算术平均，也不减掉驱动功耗或LC储能变化。
+
+本报告为固定时钟的原理图级功率验证；未执行其他工艺角、失配、音频调制、失真、版图或PEX，也不构成瞬态过压寿命签核。
 
 <!-- SYSTEM-BLOCK-DIAGRAM -->
 ## 系统框图
@@ -32,31 +52,7 @@ flowchart TB
 [独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
 <!-- END-SYSTEM-BLOCK-DIAGRAM -->
 
-## 第1页 · 01 | Class-D半桥功率级审查
-
-本模块把5MHz时钟变为1.8V半桥开关波形，经外部串联LC向电阻负载传输功率。PMOS上管与NMOS下管交替导通，利用低导通电阻减小传输损耗；交叉反馈延迟链控制换向，分级驱动器充放大功率管栅极。代价是较大的器件面积、栅极动态功耗与换向损耗。芯片中可用于谐振功率驱动和开关输出级；本例只验证固定时钟与指定负载，不包含音频调制或闭环失真指标。
-
-结论：10%放宽范围内完成，逐项保留原门槛比较。
-
-SMIC18MMRF TT / 1.8V；保留原27°C和125°C两个效率分组，每温度7种负载，共14点。时钟5MHz、2ns边沿、50Ω源阻抗；外部3uH与345pF串联LC保持原值。
-
-| 验收量 | 实测 | 原门槛 | 10% | 15% | 单位 |
-| --- | --- | --- | --- | --- | --- |
-| 27°C峰值效率 | 95.759682 | &gt;95 | &gt;85.5 | &gt;80.75 | % |
-| 27°C最低效率 | 82.698836 | &gt;85 | &gt;76.5 | &gt;72.25 | % |
-| 125°C峰值效率 | 95.290394 | &gt;90 | &gt;81 | &gt;76.5 | % |
-| 125°C最低效率 | 81.664420 | &gt;80 | &gt;72 | &gt;68 | % |
-| 所有点最小输出功率 | 40.320567 | &gt;30 | &gt;30 | &gt;30 | mW |
-
-效率下限按线性比例放宽，所有比较仍为严格大于。输出功率&gt;30mW是防止无功率输出的功能检查，本项保持原值，未随效率一起放宽；效率≤100%及正有限功率也不放宽。
-
-输入功率覆盖半桥、全部HD逻辑和栅驱动器，以及50Ω之前的时钟源。对原18–20us窗口做时间加权积分，不用非均匀样点的算术平均，也不减掉驱动功耗或LC储能变化。
-
-本报告为固定时钟的原理图级功率验证；未执行其他工艺角、失配、音频调制、失真、版图或PEX，也不构成瞬态过压寿命签核。
-
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 功率管、gm/ID初值与物理寄生
+## 功率管、gm/ID初值与物理寄生
 
 目标工艺实际W50um、L0.18um表征，驱动点取完整1.8V端点。
 
@@ -74,15 +70,13 @@ SMIC18MMRF TT / 1.8V；保留原27°C和125°C两个效率分组，每温度7种
 | 总W | 102400um | 51200um |
 | 每单位AD=AS / PD=PS | 15um² / 100.6um | 15um² / 100.6um |
 
-每单位扩散延伸取0.3um，并显式填写面积和周长。首轮单个PMOS m=2048使单实例源漏寄生电阻低于Spectr e默认minr，被CMI-2318删除；最终拆为四组m=512保留原寄生，未改minr或PDK电阻参数。
+每单位扩散延伸取0.3um，并显式填写面积和周长。首轮单个PMOS m=2048使单实例源漏寄生电阻低于Spectre默认minr，被CMI-2318删除；最终拆为四组m=512保留原寄生，未改minr或PDK电阻参数。
 
 n18补充LUT的gm/ID下限最初截掉VGS=1.8V端点；用同一次原始扫描重新提取到gm/ID≥0.5，保留实际端点，没有外推。两份W50um专用表仅写入本工程，既有gmoverid表保持不变。
 
 加宽会减小导通电阻，同时增加栅极、结电容和栅驱动负担。总宽度与大并联倍数不等于已完成合理布局；扩散共享、金属损耗和封装仍待验证。
 
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 完整14点功率与效率
+## 完整14点功率与效率
 
 负载、温度和积分窗保留原题；m0–m13逐项对应原验收器。
 
@@ -107,9 +101,7 @@ Pin = |1.8×mean(I\_VDD)| + |mean(VSS×I\_VSS)| + |mean(VCLK×I\_VCLK)|。电流
 
 Pout = |mean(V\_RLnode×I\_VMEAS\_RL)|。零伏电流感测源与RL串联；独立用mean(V\_RL²/RL)核对输出实功率。所有源电流按同一个18–20us窗口计算。
 
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 负载依赖与效率代价
+## 负载依赖与效率代价
 
 曲线由实测14点组成；不把峰值效率推广至全部负载。
 
@@ -117,56 +109,11 @@ Pout = |mean(V\_RLnode×I\_VMEAS\_RL)|。零伏电流感测源与RL串联；独�
 
 驱动器各级仅并联完整原厂HD单元，没有改动单元内部W/L或体端。非交叠时序、缓冲扇出与总栅电容需要共同权衡。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![负载依赖与效率代价](markdown_assets/figure-04-01.png)
 
-```text
-96
-27 C
-125 C
-94
-92
-90
-88
-Efficiency (%)
-86
-84
-82
-2
-4
-6
-8
-10
-12
-14
-16
-27 C
-160
-125 C
-Original power guard
-140
-120
-100
-80
-Output power (mW)
-60
-40
-2
-4
-6
-8
-10
-12
-14
-16
-Load resistance (ohm)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 建立、换向与栅极波形
+## 建立、换向与栅极波形
 
 原DC初始解和20us运行；图中节点取真实PSF，不以逻辑理想波形代替。
 
@@ -174,129 +121,11 @@ Load resistance (ohm)
 
 原合同不设专门的死区时间或端压寿命评分；本报告不由效率通过推断无直通电流或可靠性通过。实际版图与寿命评估还需检查全部器件端间应力。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![建立、换向与栅极波形](markdown_assets/figure-05-01.png)
 
-```text
-t27_r1
-t125_r16
-0.6
-0.06
-0.4
-0.04
-0.2
-0.02
-0.0
-0.00
--0.02
--0.2
-Tank current (A)
-Tank current (A)
--0.04
--0.4
--0.06
--0.6
-0.0
-2.5
-5.0
-7.5
-10.0
-12.5
-15.0
-17.5
-20.0
-0.0
-2.5
-5.0
-7.5
-10.0
-12.5
-15.0
-17.5
-20.0
-Time (us)
-Time (us)
-1.75
-2.0
-1.50
-1.25
-1.5
-1.00
-1.0
-SW (V)
-SW (V)
-0.75
-0.50
-0.5
-0.25
-0.0
-0.00
-0
-50
-100
-150
-200
-250
-300
-350
-400
-0
-50
-100
-150
-200
-250
-300
-350
-400
-From 19.6 us (ns)
-From 19.6 us (ns)
-1.75
-2.0
-1.50
-1.5
-1.25
-1.00
-1.0
-0.75
-0.50
-0.5
-Power gates (V)
-Power gates (V)
-0.25
-X.gp
-X.gp
-0.0
-X.gn
-X.gn
-0.00
-0
-50
-100
-150
-200
-250
-300
-350
-400
-0
-50
-100
-150
-200
-250
-300
-350
-400
-From 19.6 us (ns)
-From 19.6 us (ns)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 固定积分窗与LC储能
+## 固定积分窗与LC储能
 
 保留原18–20us合同，同时记录窗口两端谐振器的能量。
 
@@ -317,9 +146,7 @@ E = 0.5×L×I² + 0.5×C×(V\_lc\_node-V\_rl\_node)²。电感、电容和VMEAS\
 
 初版请求L1:p在此Spectre电感上无对应输出，被日志明确拒绝。修正为拓扑上严格相同的串联感测电流，最终台已移除无效save项；首轮错误日志完整归档。
 
-![第6页原图与排版](markdown_assets/page-06.png)
-
-## 第7页 · 数值收敛与独立验收
+## 数值收敛与独立验收
 
 全部14点最终采用0.25ns/1e-7；六个代表点与0.5ns/1e-6比较。
 
@@ -340,29 +167,9 @@ SPECTRE-16780表示换向附近局部截断误差容差暂时放宽，日志原�
 
 Bridge元数据中license error来自旧字符串分类器；实际Spectre日志均正常完成且0错误，许可、原始波形及所有模型哈希另行核对。没有据此忽略真实CMI或ERROR信息。
 
-![第7页原图与排版](markdown_assets/page-07.png)
-
-## 第8页 · 精确顶层与HD驱动层次
+## 精确顶层与HD驱动层次
 
 所有本地子电路在后附六页图纸逐一定义展开。
-
-```text
-subckt half_bridge (vss vdd clk_in sw)
-MP0 (sw gp vdd vdd) p18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
-MP1 (sw gp vdd vdd) p18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
-MP2 (sw gp vdd vdd) p18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
-MP3 (sw gp vdd vdd) p18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
-MN0 (sw gn vss vss) n18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
-MN1 (sw gn vss vss) n18 w=50u l=.18u m=512 ad=15p as=15p pd=100.6u ps=100.6u
-XINV (clk_in clkb vdd vss vdd vss) INHDV1
-XHP (clk_in noffd poff vdd vss vdd vss) NAND2HDV1
-XLN (clkb poffd noff vdd vss vdd vss) NAND2HDV1
-XDP (poff poffd vdd vss) delay4
-XDN (noff noffd vdd vss) delay4
-XBP (poff gp vdd vss) driver_p
-XBN (noff gn vdd vss) driver_n
-ends half_bridge
-```
 
 bank4由四个原厂INHDV32并联组成。driver\_p：INHDV4→INHDV32→2×bank4→8×bank4，为四级同相链；driver\_n：INHDV8→bank4→4×bank4，为三级反相链。NAND交叉反馈和四级MIM负载延迟形成先关后开的逻辑时序。
 
@@ -372,27 +179,26 @@ delay4含四个INHDV1，每级输出接0.1pF工艺MIM，顶层调用两次。所
 
 DUT SHA-256：f59766bd4f72b90770dbac469f74a2494226731a573c3ce0e1a89f6b76d8f3b9
 
-![第8页原图与排版](markdown_assets/page-08.png)
-
-## 第9页 · 迭代、复现入口与适用边界
+## 迭代、复现入口与适用边界
 
 报告、图纸、测量和知识库共享同一最终电路哈希。
 
 首轮未拆组PMOS在27°C的1/3/16Ω效率为90.208/95.648/82.718%，但出现CMI-2318，未用于验收。拆组后全14点电气通过，第一次六点数值对照仍失败；最终全14点进一步收紧精度。所有失败与中间结果分别保留。
 
-复现（工作工程根目录，既有Bridge Python）：python scripts/case01\_classd.py python scripts/confirm01.py python scripts/schematic01.py python scripts/audit01.py python scripts/review01.py每次重新生成报告，都须重新逐页目检并核对总图后才能交付。
+复现（工作工程根目录，既有Bridge Python）： python scripts/case01\_classd.py python scripts/confirm01.py python scripts/schematic01.py python scripts/audit01.py python scripts/review01.py 每次重新生成报告，都须重新逐页目检并核对总图后才能交付。
 
-证据入口：latest\_results.json：14点功率、原/放宽门槛和最终运行路径numerical\_confirmation.json：6点收敛对照及基线/最终分组verification\_audit.json：98项测量、原验收器与模型/HD/LUT哈希schematic/connectivity.json：全部器件端子和层次映射iteration\_history.json：未采用版本及其真实错误原因implementation/：本次生成及审查脚本快照
+证据入口： latest\_results.json：14点功率、原/放宽门槛和最终运行路径 numerical\_confirmation.json：6点收敛对照及基线/最终分组 verification\_audit.json：98项测量、原验收器与模型/HD/LUT哈希 schematic/connectivity.json：全部器件端子和层次映射 iteration\_history.json：未采用版本及其真实错误原因 implementation/：本次生成及审查脚本快照
 
 测量包含功率级和驱动功耗，却不包含外部理想LC的损耗、实际PCB或封装损耗。固定5MHz、1.8V、指定14点的结果不能替代音频系统、PWM调制、全PVT或不同谐振网络验证。
 
 原Sky130资料与既有PDK、Bridge、Spectre及LUT环境保持原样。本次更新写入SMIC18复现分区，并保留已交付模块的证据哈希。
 
-![第9页原图与排版](markdown_assets/page-09.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Full native power devices and parameter-free exact HD hierarchy.
@@ -456,18 +262,20 @@ XBN (noff gn vdd vss) driver_n
 ends half_bridge
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![电路分图 sheet-3](schematic/sheet-3.png)
+![电路分图 4](schematic/sheet-4.png)
 
-![电路分图 sheet-4](schematic/sheet-4.png)
+![电路分图 5](schematic/sheet-5.png)
 
-![电路分图 sheet-5](schematic/sheet-5.png)
+![电路分图 6](schematic/sheet-6.png)
 
-![电路分图 sheet-6](schematic/sheet-6.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

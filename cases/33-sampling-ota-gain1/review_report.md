@@ -1,8 +1,35 @@
-# 33-sampling-ota-gain1 审查报告
+# 33 · 采样反馈OTA：增益1
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
+## 验收结果
+
+本模块在电容采样反馈网络中建立差分输出电压，信号增益由Cs/Cf设定。折叠输入级和对称第二级提供高直流增益，Miller补偿稳定差模环路，连续共模反馈把两路输出平均值控制在vocm附近。它能在较短时间内驱动采样电容，但需要权衡放大器噪声、输出摆幅、功耗和共模恢复。芯片中可用于流水线或逐次逼近ADC的前端缓冲、开关电容增益级和采样信号通路。
+
+结论：TT标称14项检查在10%放宽内通过，仅3dB输出摆幅未达原门槛。
+
+TT / 1.8V / 27°C；IREF=50uA，VOCM=0.9V。保留Cs=Cf=1pF、每端CL=1pF，差分目标阶跃0.9V，双向建立与原10Hz–10GHz输出噪声积分。
+
+| 指标 | 实测 | 原门槛 | 10%边界 | 15%边界 | 单位 |
+| --- | --- | --- | --- | --- | --- |
+| 相位裕量 | 75.519 | ≥60 | ≥54 | ≥51 | ° |
+| 零差分共模误差 | 3.6382 | ≤25 | ≤27.5 | ≤28.75 | mV |
+| 总DC功耗 | 3.6308 | ≤5 | ≤5.5 | ≤5.75 | mW |
+| 原rise建立时间 | 20.861 | ≤40 | ≤44 | ≤46 | ns |
+| 原fall建立时间 | 22.063 | ≤40 | ≤44 | ≤46 | ns |
+| 原rise动态误差 | 0.0040397 | ≤0.1 | ≤0.11 | ≤0.115 | % |
+| 原fall动态误差 | 3.9254e-05 | ≤0.1 | ≤0.11 | ≤0.115 | % |
+| 高台静态误差 | 0.0014302 | ≤0.01 | ≤0.011 | ≤0.0115 | % |
+| 低台静态误差 | 3.6119e-07 | ≤0.01 | ≤0.011 | ≤0.0115 | % |
+| 开环3dB输出摆幅 | 1.6992 | ≥1.8 | ≥1.62 | ≥1.53 | V |
+| 差分输出噪声 | 178.13 | ≤300 | ≤330 | ≤345 | uVrms |
+| CMFB峰值偏移 | 10.006 | ≤150 | ≤165 | ≤172.5 | mV |
+| CMFB释放20ns残差 | 0.13159 | ≤50 | ≤55 | ≤57.5 | mV |
+| CMFB释放100ns残差 | 0.00036564 | ≤20 | ≤22 | ≤23 | mV |
+
+原开环3dB压缩摆幅要求≥1.8V，实测1.699153V，差5.60%；10%边界1.62V。双向动态误差、静态误差和所有其余适用nominal指标达到原值。
+
+只完成确定性的匹配nominal。原30点PVT的其余29点、另外两点共模扰动和20次局部失配未执行；不能把下文匹配抑制表征当作失配通过。
 
 <!-- SYSTEM-BLOCK-DIAGRAM -->
 ## 系统框图
@@ -39,38 +66,7 @@ flowchart TB
 [独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
 <!-- END-SYSTEM-BLOCK-DIAGRAM -->
 
-## 第1页 · 33 | 采样反馈OTA：增益1
-
-本模块在电容采样反馈网络中建立差分输出电压，信号增益由Cs/Cf设定。折叠输入级和对称第二级提供高直流增益，Miller补偿稳定差模环路，连续共模反馈把两路输出平均值控制在vocm附近。它能在较短时间内驱动采样电容，但需要权衡放大器噪声、输出摆幅、功耗和共模恢复。芯片中可用于流水线或逐次逼近ADC的前端缓冲、开关电容增益级和采样信号通路。
-
-结论：TT标称14项检查在10%放宽内通过，仅3dB输出摆幅未达原门槛。
-
-TT / 1.8V / 27°C；IREF=50uA，VOCM=0.9V。保留Cs=Cf=1pF、每端CL=1pF，差分目标阶跃0.9V，双向建立与原10Hz–10GHz输出噪声积分。
-
-| 指标 | 实测 | 原门槛 | 10%边界 | 15%边界 | 单位 |
-| --- | --- | --- | --- | --- | --- |
-| 相位裕量 | 75.519 | ≥60 | ≥54 | ≥51 | ° |
-| 零差分共模误差 | 3.6382 | ≤25 | ≤27.5 | ≤28.75 | mV |
-| 总DC功耗 | 3.6308 | ≤5 | ≤5.5 | ≤5.75 | mW |
-| 原rise建立时间 | 20.861 | ≤40 | ≤44 | ≤46 | ns |
-| 原fall建立时间 | 22.063 | ≤40 | ≤44 | ≤46 | ns |
-| 原rise动态误差 | 0.0040397 | ≤0.1 | ≤0.11 | ≤0.115 | % |
-| 原fall动态误差 | 3.9254e-05 | ≤0.1 | ≤0.11 | ≤0.115 | % |
-| 高台静态误差 | 0.0014302 | ≤0.01 | ≤0.011 | ≤0.0115 | % |
-| 低台静态误差 | 3.6119e-07 | ≤0.01 | ≤0.011 | ≤0.0115 | % |
-| 开环3dB输出摆幅 | 1.6992 | ≥1.8 | ≥1.62 | ≥1.53 | V |
-| 差分输出噪声 | 178.13 | ≤300 | ≤330 | ≤345 | uVrms |
-| CMFB峰值偏移 | 10.006 | ≤150 | ≤165 | ≤172.5 | mV |
-| CMFB释放20ns残差 | 0.13159 | ≤50 | ≤55 | ≤57.5 | mV |
-| CMFB释放100ns残差 | 0.00036564 | ≤20 | ≤22 | ≤23 | mV |
-
-原开环3dB压缩摆幅要求≥1.8V，实测1.699153V，差5.60%；10%边界1.62V。双向动态误差、静态误差和所有其余适用nominal指标达到原值。
-
-只完成确定性的匹配nominal。原30点PVT的其余29点、另外两点共模扰动和20次局部失配未执行；不能把下文匹配抑制表征当作失配通过。
-
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 结构、gm/ID与偏置选择
+## 结构、gm/ID与偏置选择
 
 折叠输入、对称共源输出、Miller补偿与连续共模反馈。
 
@@ -97,9 +93,7 @@ TT / 1.8V / 27°C；IREF=50uA，VOCM=0.9V。保留Cs=Cf=1pF、每端CL=1pF，差
 
 本题原器件规则允许理想R/C；DUT无独立源、受控源或行为器件。全电路为模拟，无HD数字单元。
 
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 实际OP、体端与余量
+## 实际OP、体端与余量
 
 30只MOS的工作点逐个保存；代表性支路列在下表。
 
@@ -126,9 +120,7 @@ TT / 1.8V / 27°C；IREF=50uA，VOCM=0.9V。保留Cs=Cf=1pF、每端CL=1pF，差
 
 输出零差分共模偏差3.638mV。局部共模检测器使用有限跨导和二极管NMOS负载，偏差及额外电流均保留。
 
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 差模环路与真实电容反馈建立
+## 差模环路与真实电容反馈建立
 
 原rise对应输出向-0.9V，原fall对应返回0V；名称沿用原验收器。
 
@@ -136,155 +128,23 @@ TT / 1.8V / 27°C；IREF=50uA，VOCM=0.9V。保留Cs=Cf=1pF、每端CL=1pF，差
 
 0.9V目标和0.9mV误差带保持不变；取各原时间窗的最后容差交越，且末端必须留在带内。输入边沿通过反馈电容产生瞬时反向馈通；源文件的导数峰值不应解释为纯放大器固有压摆率。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![差模环路与真实电容反馈建立](markdown_assets/figure-04-01.png)
 
-```text
-0
-100
--50
-75
-50
--100
-25
--150
-0
--200
--25
-Return ratio (dB)
-Loop phase (deg)
--250
--50
--300
--75
--350
-2
-4
-6
-8
-10
-2
-4
-6
-8
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-Frequency (Hz)
-3
-0.2
-rise
-fall
-2
-0.0
--0.2
-1
--0.4
-0
--0.6
--1
-Target error (mV)
-Differential output (V)
--0.8
--2
--1.0
--3
-0
-25
-50
-75
-100
-125
-150
-175
-0
-5
-10
-15
-20
-25
-30
-35
-40
-Time (ns)
-From original edge origin (ns)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 开环压缩摆幅与全带输出噪声
+## 开环压缩摆幅与全带输出噪声
 
 摆幅按开环DC局部增益下降3dB定义；噪声积分上限固定10GHz。
 
-原81点：输入-20至20uV、步长0.5uV。两压缩交点输出-0.849576/0.849576V，跨度1.699153V。0.25uV的16 1点诊断为1.712870V，相差13.717mV；原81点继续作为验收值。
+原81点：输入-20至20uV、步长0.5uV。两压缩交点输出-0.849576/0.849576V，跨度1.699153V。0.25uV的161点诊断为1.712870V，相差13.717mV；原81点继续作为验收值。
 
 差分输出噪声178.130295uVrms；对输出谱幅度平方做线性频率梯形积分。另用区间幂律PSD积分交叉核对，相对差0.00804%。未以较低输入折算噪声或有限信号带宽替代。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![开环压缩摆幅与全带输出噪声](markdown_assets/figure-05-01.png)
 
-```text
-1.5
-110
-1.0
-105
-0.5
-100
-95
-0.0
-90
--0.5
-Local DC gain (dB)
-Output differential (V)
-85
--1.0
-80
--1.5
--20
--15
--10
--5
-0
-5
-10
-15
-20
-Input differential (uV)
-1000
-100
-10
-1
-Output noise (nV/sqrt(Hz))
-0.1
-2
-4
-6
-8
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 共模扰动、参考轨迹与恢复
+## 共模扰动、参考轨迹与恢复
 
 每个输出同时吸收50uA，20ns平台、100ps边沿；与未扰动相同实例比较。
 
@@ -299,55 +159,11 @@ Frequency (Hz)
 
 OP的25mV共模要求针对零差分输入；差分阶跃中最大共模误差45.590mV另作表征，并未满足25mV。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![共模扰动、参考轨迹与恢复](markdown_assets/figure-06-01.png)
 
-```text
-Disturbed
-0.9125
-Undisturbed reference
-0.9100
-0.9075
-0.9050
-0.9025
-0.9000
-0.8975
-Output common mode (V)
-0.8950
-0
-20
-40
-60
-80
-100
-120
-140
-10.0
-7.5
-5.0
-2.5
-0.0
--2.5
--5.0
-Disturbed - reference (mV)
--7.5
--10.0
-0
-20
-40
-60
-80
-100
-120
-140
-Time (ns)
-```
+[查看矢量图](markdown_assets/figure-06-01.svg)
 
-</details>
-
-![第6页原图与排版](markdown_assets/page-06.png)
-
-## 第7页 · 功耗、匹配抑制表征与验收边界
+## 功耗、匹配抑制表征与验收边界
 
 完整保留原失配要求的分母与激励语义，但本次不执行失配矩阵。
 
@@ -367,9 +183,7 @@ Time (ns)
 
 不包含另外29个PVT点、两种非nominal共模扰动、20次局部失配、版图、寄生、电容失配或连续时间反馈网络之外的开关非理想。
 
-![第7页原图与排版](markdown_assets/page-07.png)
-
-## 第8页 · 独立复核、图纸与可重复证据
+## 独立复核、图纸与可重复证据
 
 40个器件实例、140个端子，全部模拟器件、无源值和体端可追溯。
 
@@ -377,19 +191,20 @@ Time (ns)
 
 修正了两个测试台接口差异：Spectre不允许AC起止频率相同，因此保留10Hz并额外求一个不计分的11Hz点；电流源p端保存不受支持，改用串联零伏测量源。初版真实报错保留，最终六组及加密扫点全部0错误、0警告。
 
-复现（工程根目录，既有Bridge Python）：python scripts/case33\_sampling.py python scripts/confirm33.py python scripts/schematic33.py python scripts/audit33.py python scripts/review33.py更新PDF后，必须重新逐页目检与核对完整总图。
+复现（工程根目录，既有Bridge Python）： python scripts/case33\_sampling.py python scripts/confirm33.py python scripts/schematic33.py python scripts/audit33.py python scripts/review33.py 更新PDF后，必须重新逐页目检与核对完整总图。
 
-证据：latest\_results.json / numerical\_confirmation.json / verification\_audit.json精确网表：circuit.scs；所有30只MOS实际OP在结果中。完整四页晶体管图及层次端子表：schematic/运行、模型及输入快照：各runs/33目录；生成脚本快照：implementation/
+证据：latest\_results.json / numerical\_confirmation.json / verification\_audit.json 精确网表：circuit.scs；所有30只MOS实际OP在结果中。 完整四页晶体管图及层次端子表：schematic/ 运行、模型及输入快照：各runs/33目录；生成脚本快照：implementation/
 
 最终电路SHA-256：05da74f7a23c1d2282c3274119e1fae0559296895141342ffc3a2b043dba1e44
 
 原资料、PDK和既有Bridge/Spectre环境保持原样；只在本次授权的SMIC18复现分区更新知识库。
 
-![第8页原图与排版](markdown_assets/page-08.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Fully differential folded-cascode first stage and symmetric second stage.
@@ -439,14 +254,16 @@ MCMND (vcmfb vcmfb vss vss) n18 w=4.68u l=1u m=5
 ends sampling_feedback_ota
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![电路分图 sheet-3](schematic/sheet-3.png)
+![电路分图 4](schematic/sheet-4.png)
 
-![电路分图 sheet-4](schematic/sheet-4.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

@@ -1,8 +1,34 @@
-# 47-charge-pump 审查报告
+# 47 · PLL 电荷泵审查报告
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
+## 验收结果
+
+本模块把UP和DN数字脉冲转换成向环路滤波器注入或抽取的电流，使脉冲宽度对应电荷量。相比直接启停电流源，电流转向结构让偏置支路持续工作，可减小重启延迟；级联管和复制偏置改善输出电压变化下的电流匹配，代价是静态功耗与电压余量。芯片中主要用于电荷泵PLL，将鉴相器的相位误差信号转换为振荡器控制电压的变化。
+
+结论：DC四状态、宽/窄脉冲、重叠电荷与开关速度全部原nominal通过。条件：SMIC18MMRF / tt / 1.8 V / 27°C，唯一外部模拟参考25 uA。输出0.45–1.15 V检查电流精度，0.30–1.35 V检查关断漏电；瞬态输出钳位0.9 V，控制上/下沿均200 ps。
+
+| 指标 | 实测 | 原门槛 | 10%边界 | 15%边界 | 单位 |
+| --- | --- | --- | --- | --- | --- |
+| UP绝对电流误差 | 1.3295 | ≤5 | ≤5.5 | ≤5.75 | % |
+| DN绝对电流误差 | 1.3734 | ≤5 | ≤5.5 | ≤5.75 | % |
+| UP平坦度 | 0.0075552 | ≤1 | ≤1.1 | ≤1.15 | % |
+| DN平坦度 | 0.032996 | ≤1 | ≤1.1 | ≤1.15 | % |
+| UP/DN匹配误差 | 0.051377 | ≤2 | ≤2.2 | ≤2.3 | % |
+| 两路低/最大漏电 | 0.0011945 | ≤1 | ≤1.1 | ≤1.15 | nA |
+| 两路高/净电流 | 0.025688 | ≤1 | ≤1.1 | ≤1.15 | uA |
+| UP 10ns电荷误差 | 0.26346 | ≤5 | ≤5.5 | ≤5.75 | % |
+| DN 10ns电荷误差 | 0.059243 | ≤5 | ≤5.5 | ≤5.75 | % |
+| UP 1ns电荷误差 | 1.4649 | ≤25 | ≤27.5 | ≤28.75 | % |
+| DN 1ns电荷误差 | 0.44621 | ≤25 | ≤27.5 | ≤28.75 | % |
+| 重叠净电荷 | 1.0983 | ≤20 | ≤22 | ≤23 | fC |
+| 最坏开启时间 | 173.03 | ≤500 | ≤550 | ≤575 | ps |
+| 最坏关断时间 | 13.249 | ≤50 | ≤55 | ≤57.5 | ps |
+| 平均VDD功耗 | 284.73 | ≤500 | ≤550 | ≤575 | uW |
+
+UP电流49.3352–49.3390 uA；DN为49.3133–49.3296 uA。所有43个DC点、其中29个合规点均保留，匹配按原0.45/0.90/1.15 V三点验收；全29点的最坏匹配也为0.05138%。
+
+没有运行其他PVT或20个tt\_mm固定种子；不宣称随机匹配、PLL杂散或锁定性能。开关速度参考时刻与脉冲电荷归一化见文末完整网表，不能将本表延迟直接当作逻辑门传播延迟。
 
 <!-- SYSTEM-BLOCK-DIAGRAM -->
 ## 系统框图
@@ -32,37 +58,7 @@ flowchart TB
 [独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
 <!-- END-SYSTEM-BLOCK-DIAGRAM -->
 
-## 第1页 · 47 | PLL 电荷泵审查报告
-
-本模块把UP和DN数字脉冲转换成向环路滤波器注入或抽取的电流，使脉冲宽度对应电荷量。相比直接启停电流源，电流转向结构让偏置支路持续工作，可减小重启延迟；级联管和复制偏置改善输出电压变化下的电流匹配，代价是静态功耗与电压余量。芯片中主要用于电荷泵PLL，将鉴相器的相位误差信号转换为振荡器控制电压的变化。
-
-结论：DC四状态、宽/窄脉冲、重叠电荷与开关速度全部原nominal通过。条件：SMIC18MMRF / tt / 1.8 V / 27°C，唯一外部模拟参考25 uA。输出0.45–1.15 V检查电流精度，0.30–1.35 V检查关断漏电；瞬态输出钳位0.9 V，控制上/下沿均200 ps。
-
-| 指标 | 实测 | 原门槛 | 10%边界 | 15%边界 | 单位 |
-| --- | --- | --- | --- | --- | --- |
-| UP绝对电流误差 | 1.3295 | ≤5 | ≤5.5 | ≤5.75 | % |
-| DN绝对电流误差 | 1.3734 | ≤5 | ≤5.5 | ≤5.75 | % |
-| UP平坦度 | 0.0075552 | ≤1 | ≤1.1 | ≤1.15 | % |
-| DN平坦度 | 0.032996 | ≤1 | ≤1.1 | ≤1.15 | % |
-| UP/DN匹配误差 | 0.051377 | ≤2 | ≤2.2 | ≤2.3 | % |
-| 两路低/最大漏电 | 0.0011945 | ≤1 | ≤1.1 | ≤1.15 | nA |
-| 两路高/净电流 | 0.025688 | ≤1 | ≤1.1 | ≤1.15 | uA |
-| UP 10ns电荷误差 | 0.26346 | ≤5 | ≤5.5 | ≤5.75 | % |
-| DN 10ns电荷误差 | 0.059243 | ≤5 | ≤5.5 | ≤5.75 | % |
-| UP 1ns电荷误差 | 1.4649 | ≤25 | ≤27.5 | ≤28.75 | % |
-| DN 1ns电荷误差 | 0.44621 | ≤25 | ≤27.5 | ≤28.75 | % |
-| 重叠净电荷 | 1.0983 | ≤20 | ≤22 | ≤23 | fC |
-| 最坏开启时间 | 173.03 | ≤500 | ≤550 | ≤575 | ps |
-| 最坏关断时间 | 13.249 | ≤50 | ≤55 | ≤57.5 | ps |
-| 平均VDD功耗 | 284.73 | ≤500 | ≤550 | ≤575 | uW |
-
-UP电流49.3352–49.3390 uA；DN为49.3133–49.3296 uA。所有43个DC点、其中29个合规点均保留，匹配按原0.45/0.90/1.15 V三点验收；全29点的最坏匹配也为0.05138%。
-
-没有运行其他PVT或20个tt\_mm固定种子；不宣称随机匹配、PLL杂散或锁定性能。开关速度参考时刻与脉冲电荷归一化见第4页，不能将本表延迟直接当作逻辑门传播延迟。
-
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · 电流转向、复制偏置与尺寸
+## 电流转向、复制偏置与尺寸
 
 主电流始终存在，低控制状态把电流转向内部dummy支路。
 
@@ -81,34 +77,13 @@ UP电流49.3352–49.3390 uA；DN为49.3133–49.3296 uA。所有43个DC点、�
 
 并联倍数：MN0=2；MN1/MN2=1；MNM/MNC=4；MP0=2.5；MPM=10；MPC=4；复制级联MPC0/MNC1=1。单位W均未超过100 um模型上限。UP/UPD/DN反相器为原厂INHDV8/2/4。
 
-偏置滤波：vbp/vbpc/vbnc各1 pF，iref 0.8 pF；dummy负载各0.4 pF，nc/nd各30 fF。DUT只有PDK MOS和正值电容，未加入理想电阻或内部激励源。精确连接见第5页。
+偏置滤波：vbp/vbpc/vbnc各1 pF，iref 0.8 pF；dummy负载各0.4 pF，nc/nd各30 fF。DUT只有PDK MOS和正值电容，未加入理想电阻或内部激励源。精确连接见文末完整网表。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![电流转向、复制偏置与尺寸](markdown_assets/figure-02-01.png)
 
-```text
-wu负载
-VDD → MPM/MPC
-UP转向
-PMOS电流源+级联
-MSUP/MSDU
-IREF 25 uA
-NMOS单位镜
-VOUT
-级联偏置
-PMOS复制支路
-MNC/MNM → VSS
-DN转向
-NMOS级联+电流源
-MSDN/MSDD
-wd负载
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 静态合规、匹配与电压余量
+## 静态合规、匹配与电压余量
 
 输出由外部电压源钳位并测其支路电流；UP为正，DN取吸入电流的绝对方向。
 
@@ -123,77 +98,11 @@ wd负载
 
 最紧余量在低端DN级联，仅58.16 mV；它支持本次nominal工作点，不构成跨PVT证明。转向开关在线性区是其正常用途，不能套用电流源饱和判据。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![静态合规、匹配与电压余量](markdown_assets/figure-03-01.png)
 
-```text
-49.50
-49.45
-0.5
-49.40
-0.4
-49.35
-0.3
-49.30
-0.2
-49.25
-Current (uA)
-UP-DN / 50uA (%)
-49.20
-0.1
-UP
-49.15
-DN
-0.0
-49.10
-0.4
-0.6
-0.8
-1.0
-1.2
-1.4
-0.4
-0.6
-0.8
-1.0
-1.2
-1.4
-VOUT (V)
-VOUT (V)
-1.0
-250
-200
-0.5
-150
-0.0
-100
-Both low net (pA)
-Both high net (nA)
--0.5
-50
-0
--1.0
-0.4
-0.6
-0.8
-1.0
-1.2
-1.4
-0.4
-0.6
-0.8
-1.0
-1.2
-1.4
-VOUT (V)
-VOUT (V)
-```
+[查看矢量图](markdown_assets/figure-03-01.svg)
 
-</details>
-
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 窄脉冲、重叠电荷与延迟定义
+## 窄脉冲、重叠电荷与延迟定义
 
 瞬态0–220 ns，最大步长/采样间隔2 ps；开启从输入上升开始计，关断从下降结束计。
 
@@ -206,113 +115,13 @@ Q10按本支路DC(0.9 V)×10 ns归一；Q1按实测Q10/10归一。积分窗分�
 
 开启门限为末段平台90%，使用首次交越；图中仍有明显注入尖峰。重叠指标是净积分绝对值，不是绝对电流积分。DN关断0.79 ps为2 ps样点间插值；最坏UP13.25 ps满足原50 ps限制。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![窄脉冲、重叠电荷与延迟定义](markdown_assets/figure-04-01.png)
 
-```text
-UP 10ns
-UP 1ns
-DN 10ns
-DN 1ns
-Overlap
-50
-25
-0
--25
--50
-Output current (uA)
--75
--100
-25
-50
-75
-100
-125
-150
-175
-200
-Time (ns)
-1.2
-UP
-UP
-2.0
-DN
-DN
-1.0
-1.5
-0.8
-1.0
-0.5
-0.6
-0.0
-I / plateau
-I / plateau
-0.4
--0.5
-0.2
--1.0
-0.0
--1.5
-0
-100
-200
-300
-400
--250
--200
--150
--100
--50
-0
-50
-100
-From rise start (ps)
-From fall end (ps)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 精确网表、工程认识与复现
+## 精确网表、工程认识与复现
 
 最终电路保留25 uA外部参考、原控制时序和所有nominal测量窗口。
-
-```text
-simulator lang=spectre
-subckt pll_charge_pump (vss iref up dn vdd vout)
-MN0 (iref iref vss vss) n18 w=14.44u l=4u m=2
-MN2 (vbpc iref vss vss) n18 w=14.44u l=4u m=1
-MPCB (vbpc vbpc vdd vdd) p18 w=10.68u l=4u m=1
-MP2X (vbnc vbpc vdd vdd) p18 w=10.68u l=4u m=1
-MNCB (vbnc vbnc vss vss) n18 w=2.04u l=4u m=1
-MP0 (n1a vbp vdd vdd) p18 w=29u l=4u m=2.5
-MPC0 (vbp vbpc n1a vdd) p18 w=39.1u l=1u m=1
-MNC1 (vbp vbnc n1b vss) n18 w=8.32u l=1u m=1
-MN1 (n1b iref vss vss) n18 w=14.44u l=4u m=1
-MPM (na vbp vdd vdd) p18 w=29u l=4u m=10
-MPC (nc vbpc na vdd) p18 w=39.1u l=1u m=4
-MSUP (vout upb nc vdd) p18 w=3.7u l=0.18u m=1
-MSDU (wu upd nc vdd) p18 w=3.7u l=0.18u m=1
-MNWU (wu wu vss vss) n18 w=1.46u l=1u m=1
-MNM (ne iref vss vss) n18 w=14.44u l=4u m=4
-MNC (nd vbnc ne vss) n18 w=8.32u l=1u m=4
-MSDN (vout dn nd vss) n18 w=1.28u l=0.18u m=1
-MSDD (wd dnb nd vss) n18 w=1.28u l=0.18u m=1
-MNWD (vdd vdd wd vss) n18 w=2.64u l=1u m=1
-XUP (up upb vdd vss vdd vss) INHDV8
-XUPD (upb upd vdd vss vdd vss) INHDV2
-XDN (dn dnb vdd vss vdd vss) INHDV4
-CBP (vbp vdd) capacitor c=1p
-CBPC (vbpc vdd) capacitor c=1p
-CBNC (vbnc vss) capacitor c=1p
-CIR (iref vss) capacitor c=.8p
-CWU (wu vss) capacitor c=.4p
-CWD (wd vdd) capacitor c=.4p
-CNC (nc vss) capacitor c=30f
-CND (nd vss) capacitor c=30f
-ends pll_charge_pump
-```
 
 电流转向维持主镜和级联偏置，dummy负载使切换节点电压接近输出。UP nc由关断时1.031 V变为导通1.021 V；DN nd由0.764 V变为0.820 V。残余节点变化与开关注入共同影响短脉冲电荷。
 
@@ -322,11 +131,12 @@ ends pll_charge_pump
 
 源任务：sky130-pll-charge-pump-pvt。原始合同、LUT查询、HD来源与全部运行依赖哈希分别保存在cases/47-charge-pump和上述runs目录。
 
-![第5页原图与排版](markdown_assets/page-05.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 // Current steering charge pump; only PDK MOS and bias capacitors in DUT.
@@ -365,12 +175,14 @@ CND (nd vss) capacitor c=30f
 ends pll_charge_pump
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![电路分图 sheet-3](schematic/sheet-3.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

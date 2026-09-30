@@ -1,8 +1,31 @@
-# 39-line-driver 审查报告
+# 39 · 低功耗Class-AB线驱动
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
+## 验收结果
+
+本模块用反相闭环把电压信号送到300Ω交流耦合线路，并驱动200pF输出电容。输入差分对和电流镜提供增益，浮动Class-AB偏置让互补输出管以较低静态电流提供毫安级动态电流；双路Miller补偿控制重负载下的稳定性。代价是复制偏置、输出级非线性及带宽需要共同权衡。芯片中可用于音频或低频通信线驱动，以及需要低待机功耗的模拟输出接口。
+
+结论：TT标称10项原门槛全部通过，无需放宽。
+
+TT / 1.8V / 27°C，IREF=50uA，反相闭环增益-1。两只10kΩ反馈电阻、0.9V参考、1uF耦合电容、300Ω线路和200pF输出电容全部保留。
+
+| 指标 | 实测 | 原要求 | 单位 | 状态 |
+| --- | --- | --- | --- | --- |
+| 10Hz环路增益 | 72.5127 | ≥40 | dB | 通过 |
+| 环路UGB | 0.592917 | ≥0.5 | MHz | 通过 |
+| 相位裕量 | 84.77 | ≥60 | ° | 通过 |
+| 静态输出偏差 | 2.82133 | ≤20 | mV | 通过 |
+| 静态VDD功耗 | 355.814 | ≤400 | uW | 通过 |
+| 20kHz输出基波 | 0.598105 | ≥0.55 | Vpk | 通过 |
+| 2–9次谐波THD | 0.323123 | ≤3 | % | 通过 |
+| 正弦峰值VDD电流 | 2.22355 | ≥2 | mA | 通过 |
+| 峰值/静态电流 | 11.2485 | ≥10 | 倍 | 通过 |
+| 连续跟踪命令范围 | 1.6 | ≥1.5 | Vpp | 通过 |
+
+报告包含原负载下的环路、静态偏差、完整功耗、四周期谐波、峰值驱动与连续跟踪范围。静态功耗包含50uA参考和所有内部偏置，不只计算输出对管。
+
+仅完成确定性匹配nominal。原45点PVT矩阵的另外44点、失配、版图、PEX和无源容差未执行；本结论不等同于原全矩阵签核。
 
 <!-- SYSTEM-BLOCK-DIAGRAM -->
 ## 系统框图
@@ -34,34 +57,7 @@ flowchart TB
 [独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
 <!-- END-SYSTEM-BLOCK-DIAGRAM -->
 
-## 第1页 · 39 | 低功耗Class-AB线驱动
-
-本模块用反相闭环把电压信号送到300Ω交流耦合线路，并驱动200pF输出电容。输入差分对和电流镜提供增益，浮动Class-AB偏置让互补输出管以较低静态电流提供毫安级动态电流；双路Miller补偿控制重负载下的稳定性。代价是复制偏置、输出级非线性及带宽需要共同权衡。芯片中可用于音频或低频通信线驱动，以及需要低待机功耗的模拟输出接口。
-
-结论：TT标称10项原门槛全部通过，无需放宽。
-
-TT / 1.8V / 27°C，IREF=50uA，反相闭环增益-1。两只10kΩ反馈电阻、0.9V参考、1uF耦合电容、300Ω线路和200pF输出电容全部保留。
-
-| 指标 | 实测 | 原要求 | 单位 | 状态 |
-| --- | --- | --- | --- | --- |
-| 10Hz环路增益 | 72.5127 | ≥40 | dB | 通过 |
-| 环路UGB | 0.592917 | ≥0.5 | MHz | 通过 |
-| 相位裕量 | 84.77 | ≥60 | ° | 通过 |
-| 静态输出偏差 | 2.82133 | ≤20 | mV | 通过 |
-| 静态VDD功耗 | 355.814 | ≤400 | uW | 通过 |
-| 20kHz输出基波 | 0.598105 | ≥0.55 | Vpk | 通过 |
-| 2–9次谐波THD | 0.323123 | ≤3 | % | 通过 |
-| 正弦峰值VDD电流 | 2.22355 | ≥2 | mA | 通过 |
-| 峰值/静态电流 | 11.2485 | ≥10 | 倍 | 通过 |
-| 连续跟踪命令范围 | 1.6 | ≥1.5 | Vpp | 通过 |
-
-报告包含原负载下的环路、静态偏差、完整功耗、四周期谐波、峰值驱动与连续跟踪范围。静态功耗包含50 uA参考和所有内部偏置，不只计算输出对管。
-
-仅完成确定性匹配nominal。原45点PVT矩阵的另外44点、失配、版图、PEX和无源容差未执行；本结论不等同于原全矩阵签核。
-
-![第1页原图与排版](markdown_assets/page-01.png)
-
-## 第2页 · gm/ID尺寸与浮动偏置结构
+## gm/ID尺寸与浮动偏置结构
 
 22只MOS均由目标工艺LUT初算；理想正值R/C符合原题器件规则。
 
@@ -83,9 +79,7 @@ TT / 1.8V / 27°C，IREF=50uA，反相闭环增益-1。两只10kΩ反馈电阻�
 
 最终每路串联Miller补偿为6pF/1kΩ，gp与gn之间保留2MΩ电阻。全部27个实例见后三页图纸。
 
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 实际工作点与电流预算
+## 实际工作点与电流预算
 
 实际输出静态电流约87uA，初始70uA目标不能直接当作测量。
 
@@ -113,55 +107,19 @@ TT / 1.8V / 27°C，IREF=50uA，反相闭环增益-1。两只10kΩ反馈电阻�
 
 所有供电、参考和返回连接见测试台；没有从功耗中扣掉外部50uA参考。
 
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 原始断环方法与带宽调整
+## 原始断环方法与带宽调整
 
 保留串联AC=1V测试源；T=-V(vout)/V(fbv)，不是简单开环增益。
 
 10Hz环路增益72.512717dB，第一次下降交越0.592917MHz、PM=84.769971°；频扫1Hz–1GHz、每十倍频60点，之后没有回穿零dB。
 
-初版每侧12pF补偿使UGB仅0.305379MHz，低于原0.5MHz及15%边界0.425MHz。减至6pF后达到0.592917MHz，P M从88.133°降为84.770°；电流和输出尺寸保持不变。
+初版每侧12pF补偿使UGB仅0.305379MHz，低于原0.5MHz及15%边界0.425MHz。减至6pF后达到0.592917MHz，PM从88.133°降为84.770°；电流和输出尺寸保持不变。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![原始断环方法与带宽调整](markdown_assets/figure-04-01.png)
 
-```text
-75
-50
-25
-0
--25
-Return ratio (dB)
--50
--75
-10
-1000
-100000
-1e+07
-1e+09
--20
--40
--60
--80
--100
-Loop phase (deg)
--120
--140
--160
-10
-1000
-100000
-1e+07
-1e+09
-Frequency (Hz)
-```
+[查看矢量图](markdown_assets/figure-04-01.svg)
 
-</details>
-
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 300Ω线路大信号与真实供电电流
+## 300Ω线路大信号与真实供电电流
 
 20kHz、0.6V峰值输入，共8周期；舍前4周期，评分后4周期。
 
@@ -169,53 +127,11 @@ Frequency (Hz)
 
 1uF耦合电容使线路直流隔离；200pF仍直接接在放大器输出。线路初始偏置和充电过程不擅自去除，严格保留原200–400us窗口；本项峰值不是未计入偏置的输出支路峰值。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![300Ω线路大信号与真实供电电流](markdown_assets/figure-05-01.png)
 
-```text
-1.5
-1.0
-0.5
-Voltage (V)
-0.0
-Ideal inverting target
-Vout
--0.5
-AC-coupled line
-200
-225
-250
-275
-300
-325
-350
-375
-400
-VDD total
-2
-Line current
-1
-0
-Current (mA)
--1
--2
-200
-225
-250
-275
-300
-325
-350
-375
-400
-Time (us)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 2–9次THD与连续跟踪范围
+## 2–9次THD与连续跟踪范围
 
 两个测试各保留原定义：正弦动态线性度与DC连续命令范围分别评分。
 
@@ -223,55 +139,11 @@ THD=0.323122988%，按原算法取后4周期2048个均匀点，末端不重复�
 
 输入从0.1扫至1.7V、步长2mV，共801点；命令=1.8-输入。全部点在固定20mV误差内，连续命令跨度1.6V，最大误差3.182339mV。DC时耦合电容开路，此范围不冒充带300Ω直流负载的1.6Vpp。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![2–9次THD与连续跟踪范围](markdown_assets/figure-06-01.png)
 
-```text
-0
--20
--40
--60
--80
--100
-Relative amplitude (dBc)
--120
--140
-1
-2
-3
-4
-5
-6
-7
-8
-9
-Harmonic index
-20
-15
-10
-5
-0
--5
-Tracking error (mV)
--10
--15
--20
-0.2
-0.4
-0.6
-0.8
-1.0
-1.2
-1.4
-1.6
-Commanded output (V)
-```
+[查看矢量图](markdown_assets/figure-06-01.svg)
 
-</details>
-
-![第6页原图与排版](markdown_assets/page-06.png)
-
-## 第7页 · 收敛失败、等效接地与精度复核
+## 收敛失败、等效接地与精度复核
 
 实际SPECTRE-16927保留为失败；没有用Bridge的license分类掩盖错误。
 
@@ -287,19 +159,17 @@ Commanded output (V)
 
 数值界限保持不变：THD差≤0.005个百分点、基波差≤0.1mV、峰值电流差≤1uA，且验收等级不变；全部通过。最终瞬态采用50ns最大步长，gear2only，保留自适应数据。
 
-最终三组与有效基线均正常完成，0错误、0警告；原模型/LUT哈希未变。14项独立测量核对及原8组检查以e xpected=1调用，不伪造45点PVT集合。
+最终三组与有效基线均正常完成，0错误、0警告；原模型/LUT哈希未变。14项独立测量核对及原8组检查以expected=1调用，不伪造45点PVT集合。
 
 27个实例、98个端子逐一连接核对；完整晶体管图附后，体端和所有无源值均明确。
 
-![第7页原图与排版](markdown_assets/page-07.png)
-
-## 第8页 · 可重复证据与适用范围
+## 可重复证据与适用范围
 
 完整报告、图纸、结果和源快照使用同一最终电路。
 
-复现（工程根目录，既有Bridge Python）：python scripts/case39\_line\_driver.py python scripts/confirm39.py python scripts/schematic39.py python scripts/audit39.py python scripts/review39.py每次重新生成PDF，都需重新查看全部页面和完整总图后再交付。
+复现（工程根目录，既有Bridge Python）： python scripts/case39\_line\_driver.py python scripts/confirm39.py python scripts/schematic39.py python scripts/audit39.py python scripts/review39.py 每次重新生成PDF，都需重新查看全部页面和完整总图后再交付。
 
-latest\_results.json：10项门槛、14个主测量量及全部22只MOS的OP。numerical\_confirmation.json：原/收紧步长及固定精度比较。verification\_audit.json：原验收器、独立算法、模型/输入/源文件哈希。iteration\_history.json：12pF带宽失败与实际瞬态收敛失败。schematic/：三页完整晶体管图、总图与连接映射。implementation/：生成、测量与审计脚本快照。
+latest\_results.json：10项门槛、14个主测量量及全部22只MOS的OP。 numerical\_confirmation.json：原/收紧步长及固定精度比较。 verification\_audit.json：原验收器、独立算法、模型/输入/源文件哈希。 iteration\_history.json：12pF带宽失败与实际瞬态收敛失败。 schematic/：三页完整晶体管图、总图与连接映射。 implementation/：生成、测量与审计脚本快照。
 
 本模块的Class-AB动态电流能力在20kHz、0.6Vpk、300Ω交流耦合线路和200pF负载下成立。不同线路阻抗、电容、频率、温度或供电需要重新验证；本题理想R/C的物理面积、容差和寄生没有建模。
 
@@ -309,11 +179,12 @@ DUT SHA-256：45eb5290815c778d817a7b9e108994121159fdb0e952d17e8984bdd00b1af2af
 
 原Sky130档案和既有PDK、Bridge、Spectre、LUT环境保持原样。
 
-![第8页原图与排版](markdown_assets/page-08.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 simulator lang=spectre
@@ -348,12 +219,14 @@ RZN (zn gn) resistor r=1000
 ends low_power_line_driver
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+![电路分图 3](schematic/sheet-3.png)
 
-![电路分图 sheet-3](schematic/sheet-3.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。

@@ -1,41 +1,8 @@
-# 07-ldo-ota5 审查报告
+# 07 · PMOS LDO 稳压器审查
 
-本Markdown根据已交付PDF的可选文字与表格恢复，保留可编辑正文和表格；原图通过页面预览及完整图纸引用保留。旧版未保存报告MD，因此这是补建版本，不是当时PDF的编译输入。PDF和实测数据未改动。
+[审查 PDF](review.pdf) · [实测结果](latest_results.json) · [验收合同](contract.json) · [最终网表](circuit.scs)
 
-[对应审查PDF](review.pdf) · [最终网表](circuit.scs) · [实测结果](latest_results.json) · [验收合同](contract.json)
-
-<!-- SYSTEM-BLOCK-DIAGRAM -->
-## 系统框图
-
-反馈、补偿和功率管构成同一稳压环路；参考与负载按本题合同保留。
-
-实线表示信号或能量通路，虚线表示时钟、控制或偏置。DUT框外为外部端口或测试夹具；精确端子连接见后附基本电路图。
-
-```mermaid
-flowchart TB
-    subgraph DUT["DUT"]
-        direction TB
-        ERR["5T误差放大器"]
-        DRV["栅极缓冲及补偿"]
-        PASS["PMOS功率管"]
-        FB["输出反馈网络"]
-    end
-    REF["参考电压"]
-    SUP["输入电源"]
-    LOAD["1.2V输出与指定负载"]
-    REF -->|"设定值"| ERR
-    ERR -->|"误差"| DRV
-    DRV -.->|"栅控制"| PASS
-    SUP -->|"供能"| PASS
-    PASS -->|"稳压输出"| LOAD
-    LOAD -->|"取样"| FB
-    FB -->|"负反馈"| ERR
-```
-
-[独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
-<!-- END-SYSTEM-BLOCK-DIAGRAM -->
-
-## 第1页 · 07 | PMOS LDO 稳压器审查
+## 验收结果
 
 本模块通过误差放大器控制PMOS功率管，将变化的输入电源稳压为1.2 V输出。相比直接驱动功率管栅极的基础5T OTA结构，栅极缓冲和频率补偿可改善大栅电容下的稳定性，但会增加静态电流、面积与启动设计约束。芯片中常用于给模拟前端、基准和其他低噪声电路提供局部稳压电源。
 
@@ -71,9 +38,38 @@ flowchart TB
 
 未验证其他工艺/温度、30次失配、SS125输出网络瞬态、版图或可靠性；最小负载为1 mA，本报告不宣称空载稳定。额外17个FVF局部环路PM最小59.047°。
 
-![第1页原图与排版](markdown_assets/page-01.png)
+<!-- SYSTEM-BLOCK-DIAGRAM -->
+## 系统框图
 
-## 第2页 · 五管误差放大器、缓冲和片内补偿
+反馈、补偿和功率管构成同一稳压环路；参考与负载按本题合同保留。
+
+实线表示信号或能量通路，虚线表示时钟、控制或偏置。DUT框外为外部端口或测试夹具；精确端子连接见后附基本电路图。
+
+```mermaid
+flowchart TB
+    subgraph DUT["DUT"]
+        direction TB
+        ERR["5T误差放大器"]
+        DRV["栅极缓冲及补偿"]
+        PASS["PMOS功率管"]
+        FB["输出反馈网络"]
+    end
+    REF["参考电压"]
+    SUP["输入电源"]
+    LOAD["1.2V输出与指定负载"]
+    REF -->|"设定值"| ERR
+    ERR -->|"误差"| DRV
+    DRV -.->|"栅控制"| PASS
+    SUP -->|"供能"| PASS
+    PASS -->|"稳压输出"| LOAD
+    LOAD -->|"取样"| FB
+    FB -->|"负反馈"| ERR
+```
+
+[独立Mermaid源文件](system_block_diagram.mmd) · [框图SVG](markdown_assets/system-block.svg)
+<!-- END-SYSTEM-BLOCK-DIAGRAM -->
+
+## 五管误差放大器、缓冲和片内补偿
 
 保持五管OTA功能级；总DUT为12只MOS、1个工艺电阻和1组工艺MIM电容。
 
@@ -93,25 +89,11 @@ PMOS输入对避免NMOS输入级在低栅压时失去漏端余量。输入对共
 
 MIM采用30×30 um单位、m=228.859，约0.206 mm²电容有效面积；rpposab\_3t为W1/L91.1083 um。这是稳定性与面积的明确代价。m含0.2/0.6模拟缩放，并非已完成版图阵列；所有MOS单位W≤86.32 um。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![五管误差放大器、缓冲和片内补偿](markdown_assets/figure-02-01.png)
 
-```text
-PMOS输入5T OTA
-PMOS FVF
-PMOS功率管
-比较FB与0.8 V
-30 uA偏置
-VOUT / 外部1 uF
-ampout → 30 kΩ → 200 pF → VSS
-外部300 kΩ/600 kΩ反馈
-```
+[查看矢量图](markdown_assets/figure-02-01.svg)
 
-</details>
-
-![第2页原图与排版](markdown_assets/page-02.png)
-
-## 第3页 · 工作点、完整供电与负载矩阵
+## 工作点、完整供电与负载矩阵
 
 9个点均在同一TT/27°C；Iq=abs(I(VIN))−ILOAD，包含外部50 uA参考和分压支路。
 
@@ -142,9 +124,7 @@ ampout → 30 kΩ → 200 pF → VSS
 
 沿用既有LUT与第12项n18 L4补表；所有查询、VDS、Wref和SHA保留。LUT给初宽，实际端压与体连接由最终OP确认。原厂模型、Bridge和已有LUT目录均未修改。
 
-![第3页原图与排版](markdown_assets/page-03.png)
-
-## 第4页 · 17个输出网络点与独立稳定性
+## 17个输出网络点与独立稳定性
 
 Lij为3供电×3负载、1uF/50mΩ；Eijk为1.8V、C/ESR/负载的完整8个极端组合。
 
@@ -174,92 +154,17 @@ Lij为3供电×3负载、1uF/50mΩ；Eijk为1.8V、C/ESR/负载的完整8个极�
 
 仅TT矩阵；原PVT×输出网络交互中的非nominal行未运行，不能用这些17点代替全签核。
 
-![第4页原图与排版](markdown_assets/page-04.png)
-
-## 第5页 · 主环路频响、供电抑制与输出噪声
+## 主环路频响、供电抑制与输出噪声
 
 全部曲线来自最终电路的真实PSF；固定积分带宽和输出负载。
 
 AC每十倍频100点；原提取按log(f)插值交越，PSRR读取原指定频点。输出噪声10 Hz–1 MHz共501点，sqrt(∫en²df)=66.672 uVrms；外部反馈电阻的模型热噪声按原测试连接保留。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![主环路频响、供电抑制与输出噪声](markdown_assets/figure-05-01.png)
 
-```text
-0
-75
-50
--50
-25
-0
--100
--25
-STB phase (deg)
--150
--50
-STB return ratio (dB)
--75
--200
--100
-1
-3
-5
-7
-1
-3
-5
-7
-10
-10
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-Frequency (Hz)
-60
-55
-50
-45
-2
-10
-40
-PSRR (dB)
-35
-Output noise (nV/sqrt(Hz))
-30
-25
-1
-3
-5
-7
-1
-2
-3
-4
-5
-6
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-Frequency (Hz)
-Frequency (Hz)
-```
+[查看矢量图](markdown_assets/figure-05-01.svg)
 
-</details>
-
-![第5页原图与排版](markdown_assets/page-05.png)
-
-## 第6页 · 启动、负载/电源跳变与压差
+## 启动、负载/电源跳变与压差
 
 瞬态完整70us、最大内部步2ns、保存步5ns；建立窗保持原定义，不因容差放宽而扩大。
 
@@ -269,81 +174,11 @@ Frequency (Hz)
 
 低VIN失调区的理想30mA负载会把VOUT拉成负值；没有输出钳位或欠压卸载模型。该区不作可用电压/应力保证，压差仅取持续进入阈值处。
 
-<details>
-<summary>图内标注与坐标文字（按原页保留）</summary>
+![启动、负载/电源跳变与压差](markdown_assets/figure-06-01.png)
 
-```text
-15
-1.75
-1.50
-10
-1.25
-5
-1.00
-0
-0.75
-Voltage (V)
--5
-Load-step error (mV)
-0.50
--10
-0.25
-0.00
--15
-0
-10
-20
-30
-40
-50
-60
-70
-20
-30
-40
-50
-60
-Startup time (us)
-Time (us)
-20
-1.0
-15
-0.5
-10
-0.0
-5
--0.5
-0
-VOUT (V)
--1.0
--5
-Line-step error (mV)
--1.5
--10
--2.0
--15
--2.5
-20
-30
-40
-50
-60
-1.2
-1.3
-1.4
-1.5
-1.6
-1.7
-1.8
-Time (us)
-VIN (V), 30mA load
-```
+[查看矢量图](markdown_assets/figure-06-01.svg)
 
-</details>
-
-![第6页原图与排版](markdown_assets/page-06.png)
-
-## 第7页 · 可复用认识、精确网表与证据
+## 可复用认识、精确网表与证据
 
 最终12只MOS、原生片阻与MIM；gate\_drive和gate在DUT内保持分离。
 
@@ -351,37 +186,18 @@ VIN (V), 30mA load
 
 补偿取舍：30kΩ/200pF降低高频增益并恢复相位，但引入约0.206mm²电容面积。不得仅优化原测试的电压比PM，或把静态稳压通过当作启动通过。最终真实STB53.861°使用15%边界；所有其他门槛至多使用10%放宽。
 
-```text
-simulator lang=spectre
-subckt ldo_ota5 (vin vout vss vref ibias fb gate_drive gate)
-MINP (nleft fb tail tail) p18 w=79.52u l=1u m=3
-MINN (ampout vref tail tail) p18 w=79.52u l=1u m=3
-MLOAD (nleft nleft vss vss) n18 w=86.32u l=4u m=1
-MLOUT (ampout nleft vss vss) n18 w=86.32u l=4u m=1
-MTAIL (tail pbias vin vin) p18 w=32.26u l=1u m=10
-MREF (ibias ibias vss vss) n18 w=23.42u l=1u m=1
-MPASS (vout gate vin vin) p18 w=49.88u l=0.18u m=60
-MPTREF (pbias pbias vin vin) p18 w=32.26u l=1u m=1
-MNPT (pbias ibias vss vss) n18 w=23.42u l=1u m=0.2
-MSF (pbuf ampout gate_drive gate_drive) p18 w=12.36u l=0.18u m=1
-MBUF (gate_drive pbuf vin vin) p18 w=0.74u l=0.18u m=1
-MNBUF (pbuf ibias vss vss) n18 w=23.42u l=1u m=0.6
-RLAG (ampout lag vss) rpposab_3t w=1u l=91.1083u
-CLAG (lag vss) mim w=30u l=30u m=228.859
-ends ldo_ota5
-```
-
-复现：既有Bridge Python运行 scripts/case07\_ldo.py --tail-uA 100 --input-gmid 18 --mirror-L 4 --mirror-gmid 14 --pinput --fvf --pass-m 60 --lag-C-pF 200 --lag-R 30000 --full；同模块local\_fv f()生成局部诊断。PDF：scripts/review\_pdf.py 7。
+复现：既有Bridge Python运行 scripts/case07\_ldo.py --tail-uA 100 --input-gmid 18 --mirror-L 4 --mirror-gmid 14 --pinput --fvf --pass-m 60 --lag-C-pF 200 --lag-R 30000 --full；同模块local\_fvf()生成局部诊断。PDF：scripts/review\_pdf.py 7。
 
 最终运行：runs/07/20260922T102553666969Z\_matrix runs/07/20260922T102554556954Z\_stb\_matrix runs/07/20260922T102555553119Z\_dropout\_noise runs/07/20260922T102555785585Z\_transient runs/07/20260922T102730830668Z\_local\_fvf
 
 原instruction/reference/正式verifier/bench冻结于source；每次运行保存inputs、模型/依赖SHA、日志与PSF。最终五次运行均无警告，geometry.json、sizing.json及verification\_audit.json记录单位几何、查表与审计。源任务：sky130-ldo-ota5-robust-pvt-mc。
 
-![第7页原图与排版](markdown_assets/page-07.png)
+## 完整网表与电路图
 
-## 完整最终网表
+[Spectre 网表](circuit.scs) · [全部分图 PDF](schematic/sheets.pdf) · [电路总图](schematic/full.svg) · [端子连接](schematic/connectivity.json)
 
-以下直接引用随报告保存的circuit.scs，避免PDF视觉折行改变网表。
+<details>
+<summary>展开完整 Spectre 网表</summary>
 
 ```spectre
 simulator lang=spectre
@@ -403,10 +219,12 @@ CLAG (lag vss) mim w=30u l=30u m=228.859
 ends ldo_ota5
 ```
 
-## 完整电路图
+</details>
 
-[全部分图PDF](schematic/sheets.pdf) · [电路总图](schematic/full.pdf) · [端子连接](schematic/connectivity.json)
+![电路分图 1](schematic/sheet-1.png)
 
-![电路分图 sheet-1](schematic/sheet-1.png)
+![电路分图 2](schematic/sheet-2.png)
 
-![电路分图 sheet-2](schematic/sheet-2.png)
+## 报告来源
+
+正文与表格整理自已交付的矢量 PDF，图表单独提取；本文件是后续整理的 Markdown，不是原 PDF 的编译输入。原 PDF、网表及测量数据保持原值。
